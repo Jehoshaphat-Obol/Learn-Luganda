@@ -15,7 +15,7 @@ describe('stories and guidebooks', () => {
   });
 
   it('catches bad stories and missing tips', () => {
-    const bad = [{ id: 'x', unit: 'u9', unlockAfter: 'nope', steps: [{ line: ['ghost', 'Hi', ''] }, { question: 'Q', options: ['a'], answer: 3 }] }];
+    const bad = [{ id: 'x', unit: 'u999', unlockAfter: 'nope', steps: [{ line: ['ghost', 'Hi', ''] }, { question: 'Q', options: ['a'], answer: 3 }] }];
     expect(validateStories(bad, ctx)).toHaveLength(5);
     expect(validateGuidebooks({}, UNITS_RAW)).toHaveLength(UNITS_RAW.length);
   });

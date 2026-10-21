@@ -59,6 +59,7 @@ describe('every lesson', () => {
         for (const e of ex) {
           if (e.type === 'choice') expect(e.options.length, id).toBeGreaterThanOrEqual(2);
           if (e.type === 'translate') expect(e.bank.length, id).toBeGreaterThan(0);
+          if (e.type === 'match') expect(new Set(e.pairs.map((p) => p.en.toLowerCase())).size, id).toBe(e.pairs.length);
         }
       }
     }
