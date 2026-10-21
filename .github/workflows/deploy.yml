@@ -23,6 +23,7 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - run: npm test
       - run: npm run build
       # Publishes dist/ to the gh-pages branch, which Pages serves.
       - if: github.event_name != 'pull_request'

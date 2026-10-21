@@ -1,20 +1,15 @@
 import './styles/tokens.css';
 import './styles/base.css';
-import './styles/placeholder.css';
+import './styles/components.css';
+import './styles/layout.css';
 
-const app = document.querySelector('#app');
+import { createRouter } from './app/router.js';
+import { createShell } from './app/shell.js';
+import { routes } from './app/routes.js';
 
-app.innerHTML = `
-  <main class="placeholder">
-    <svg class="placeholder__mark" viewBox="0 0 200 200" role="img" aria-label="Bauhaus shapes">
-      <circle cx="78" cy="80" r="52" fill="var(--color-paper-400)" />
-      <rect x="96" y="96" width="78" height="78" fill="var(--color-ink-900)" />
-      <path d="M26 176 L96 176 L26 106 Z" fill="var(--color-ink-700)" />
-      <circle cx="140" cy="54" r="22" fill="var(--color-primary)" />
-    </svg>
-    <h1 class="placeholder__title">Oli otya! <strong>Learn Luganda.</strong></h1>
-    <p class="placeholder__lead">Learn Luganda with bite-sized, game-like lessons. Coming soon.</p>
-    <button class="btn" type="button" disabled>Tandika</button>
-    <p class="placeholder__note caption"><em>Tandika</em> means "start".</p>
-  </main>
-`;
+const shell = createShell(document.querySelector('#app'));
+const router = createRouter({
+  routes,
+  onChange: (match) => shell.render(match, router.navigate),
+});
+router.start();

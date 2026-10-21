@@ -40,13 +40,25 @@
 
   /* Feedback */
   --color-success: #2e9e5b;
+  --color-success-strong: #24804a;
+  --color-success-shadow: #1a5e36;
+  --color-success-soft: #dcefe2;
   --color-error: #d7263d;
+  --color-error-shadow: #9c1a2b;
+  --color-error-soft: #f8dcdf;
+  --color-gold: #f4c430;
+  --color-gold-shadow: #b98f12;
 
   /* Semantic */
   --color-primary: var(--color-vermillion-500);
   --color-primary-strong: var(--color-vermillion-600);
   --color-primary-shadow: var(--color-vermillion-700);
   --color-on-primary: #ffffff;
+  /* Filled buttons sit one step darker than the brand vermillion so white
+     labels pass WCAG AA (4.8:1); vermillion text on paper uses the 700. */
+  --color-action: #d13a26;
+  --color-action-hover: var(--color-vermillion-600);
+  --color-primary-text: var(--color-vermillion-700);
   --color-bg: var(--color-paper-100);
   --color-bg-alt: var(--color-paper-200);
   --color-surface: #fbfaf8;
@@ -71,6 +83,7 @@
   --text-lg: 1.25rem;
   --text-xl: 1.75rem;
   --text-2xl: clamp(2.25rem, 6vw, 3.5rem);
+  --text-3xl: clamp(2.75rem, 8vw, 5rem);
 
   /* Space */
   --space-1: 0.25rem;
@@ -87,4 +100,12 @@
   --radius-lg: 20px;
   --radius-pill: 999px;
   --shadow-press: 0 4px 0 var(--color-primary-shadow);
+  --shadow-card: 0 2px 0 var(--color-border);
+  --shadow-float: 0 18px 40px -18px rgb(28 26 24 / 0.35);
+
+  /* Layout */
+  --nav-width: 232px;
+  --topbar-height: 60px;
+  --bottomnav-height: 68px;
+  --content-width: 640px;
 }
