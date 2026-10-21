@@ -12,7 +12,7 @@ import { routes } from './app/routes.js';
 import { applyMotion } from './ui/motion.js';
 import { preload } from './ui/sound.js';
 import { initMusic, setMusicScene, toggleMusic } from './ui/music.js';
-import { registerServiceWorker } from './app/pwa.js';
+import { initInstall, registerServiceWorker } from './app/pwa.js';
 import { startReminders } from './reminders/reminders.js';
 import { applyBrandMood, brandMood } from './app/brand-mood.js';
 import { startLanguages } from './app/languages.js';
@@ -60,4 +60,5 @@ startLanguages(() => router.refresh()).then(() => {
   router.start();
   startReminders();
 });
+initInstall();
 registerServiceWorker();

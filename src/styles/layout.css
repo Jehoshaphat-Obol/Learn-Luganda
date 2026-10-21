@@ -59,6 +59,11 @@
   margin-left: var(--space-1);
 }
 
+.topbar__install {
+  flex: none;
+  margin-left: var(--space-2);
+}
+
 .topbar__music[aria-pressed='true'] {
   color: var(--color-primary);
 }

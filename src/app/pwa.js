@@ -1,26 +1,132 @@
 /*
  * Installable app: registers the service worker built by
- * build/service-worker.js. Word reminders live in src/reminders.
+ * build/service-worker.js and drives the "Install app" buttons. Word
+ * reminders live in src/reminders.
+ *
+ * Chrome, Edge and Android fire `beforeinstallprompt`, which we keep and
+ * replay when the learner taps Install. iPhone and iPad Safari never fire it,
+ * so there the button shows the Share → Add to Home Screen steps instead.
+ * Every install button is hidden once the app runs installed.
+ *
+ * Buttons are plain markup with `data-install`; one document click handler
+ * (initInstall) serves them all, and syncInstall() updates them when the
+ * browser's offer arrives late or the app gets installed.
  */
+import { escapeHtml, openModal } from '../ui/components.js';
+import { icon } from '../ui/icons.js';
+import { mascot } from '../illustrations/index.js';
+import { t } from '../i18n/index.js';
 
 let installPrompt = null;
+let installed = false;
+
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   installPrompt = e;
+  syncInstall();
 });
 window.addEventListener('appinstalled', () => {
   installPrompt = null;
+  installed = true;
+  syncInstall();
 });
+
+/** True when the app is open as an installed app rather than in a browser tab. */
+export function isStandalone(win = window) {
+  return Boolean(win.matchMedia?.('(display-mode: standalone)').matches || win.navigator?.standalone === true);
+}
+
+/** iPhone, iPad (which reports itself as a Mac) and iPod. */
+export function isIos(nav = navigator) {
+  return /iPad|iPhone|iPod/.test(nav.userAgent ?? '') || (nav.platform === 'MacIntel' && nav.maxTouchPoints > 1);
+}
+
+/**
+ * - `installed`: running as the installed app, nothing to offer.
+ * - `prompt`: the browser offered to install (Chrome, Edge, Android).
+ * - `ios`: Safari on iPhone or iPad, installed by hand from the Share sheet.
+ * - `manual`: anything else; the browser menu may have an install item.
+ */
+export function installState() {
+  if (installed || isStandalone()) return 'installed';
+  if (installPrompt) return 'prompt';
+  if (isIos()) return 'ios';
+  return 'manual';
+}
+
+/** Headers only offer the button where installing is sure to work. */
+export const offerInstall = () => ['prompt', 'ios'].includes(installState());
 
 /** True when the browser offered to install the app (Chrome, Edge, Android). */
 export const canInstall = () => Boolean(installPrompt);
 
 export async function promptInstall() {
   if (!installPrompt) return false;
-  installPrompt.prompt();
-  const { outcome } = await installPrompt.userChoice;
+  const prompt = installPrompt;
+  prompt.prompt();
+  const { outcome } = await prompt.userChoice;
+  // A prompt can only be shown once; Chrome fires a fresh event if it may ask again.
   installPrompt = null;
+  if (outcome === 'accepted') installed = true;
+  syncInstall();
   return outcome === 'accepted';
+}
+
+const steps = (keys) => `<ol class="install-steps">${keys.map((k) => `<li>${escapeHtml(t(k))}</li>`).join('')}</ol>`;
+
+function instructions(state) {
+  if (state === 'ios') return steps(['install.iosStep1', 'install.iosStep2', 'install.iosStep3']);
+  return `${steps(['install.manualStep1', 'install.manualStep2'])}<p class="muted">${escapeHtml(t('install.manualNote'))}</p>`;
+}
+
+/** Uses the browser's own install prompt, or explains how to install by hand. */
+export async function installApp() {
+  const state = installState();
+  if (state === 'installed') return true;
+  if (state === 'prompt') return promptInstall();
+  await openModal({
+    title: t('install.title'),
+    body: instructions(state),
+    art: mascot({ pose: 'happy' }),
+    actions: [{ label: t('install.ok'), value: 'ok' }],
+  });
+  return false;
+}
+
+/** A compact button for headers; hidden until installing is possible. */
+export function installButton(className = '') {
+  const label = escapeHtml(t('install.label'));
+  return `<button class="btn btn--secondary install-btn ${className}" type="button" data-install aria-label="${label}" title="${label}"${offerInstall() ? '' : ' hidden'}>
+    ${icon('install', { size: 20 })}<span class="install-btn__label">${label}</span></button>`;
+}
+
+/** The Settings section: the right action or steps for this browser. */
+export function installSection() {
+  const state = installState();
+  if (state === 'installed') return `<h2>${escapeHtml(t('install.title'))}</h2><p class="muted">${escapeHtml(t('install.done'))}</p>`;
+  const action =
+    state === 'prompt'
+      ? `<button class="btn btn--secondary" type="button" data-install="always">${icon('install', { size: 20 })}<span>${escapeHtml(t('install.label'))}</span></button>`
+      : instructions(state);
+  return `<h2>${escapeHtml(t('install.title'))}</h2><p class="muted">${escapeHtml(t('install.lead'))}</p>${action}`;
+}
+
+/** Brings every install button and the Settings section up to date. */
+export function syncInstall(root = document) {
+  const show = offerInstall();
+  root.querySelectorAll('[data-install]:not([data-install="always"])').forEach((el) => {
+    el.hidden = !show;
+  });
+  root.querySelectorAll('[data-install-section]').forEach((el) => {
+    el.innerHTML = installSection();
+  });
+}
+
+export function initInstall() {
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('[data-install]')) installApp();
+  });
+  window.matchMedia?.('(display-mode: standalone)').addEventListener?.('change', () => syncInstall());
 }
 
 export function registerServiceWorker() {

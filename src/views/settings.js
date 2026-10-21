@@ -10,7 +10,7 @@ import { button, escapeHtml, openModal, toast } from '../ui/components.js';
 import { avatarIds, characterInfo, mascot } from '../illustrations/index.js';
 import { avatar } from '../ui/avatar.js';
 import { refreshTopBar } from '../app/shell.js';
-import { canInstall, promptInstall } from '../app/pwa.js';
+import { installSection } from '../app/pwa.js';
 import { backgroundSupported, remindersSupported, setReminderHour, setReminders } from '../reminders/reminders.js';
 import { REMINDER_STRINGS } from '../reminders/strings.js';
 import { PACKS, hapticsSupported, play, preload } from '../ui/sound.js';
@@ -148,15 +148,7 @@ export function settingsView({ root, query, navigate }) {
         </div>
       </section>
 
-      ${
-        canInstall()
-          ? `<section class="settings-group" id="install">
-              <h2>Install the app</h2>
-              <p class="muted">Add Learn Luganda to your home screen. Lessons work offline after your first visit.</p>
-              ${button({ label: 'Install app', variant: 'secondary', attrs: 'data-action="install"' })}
-            </section>`
-          : ''
-      }
+      <section class="settings-group" id="install" data-install-section>${installSection()}</section>
       <section class="settings-group" id="privacy">
         <h2>Ads and privacy</h2>
         ${adsConfigured() ? `<div>${toggle('personalisedAds', 'Personalised ads', 'Let Google use cookies to show ads that suit you. Off means basic, non-personalised ads.', adConsent() === 'granted')}</div>` : ''}
@@ -310,7 +302,6 @@ export function settingsView({ root, query, navigate }) {
       toast('Progress exported.');
     }
     if (action === 'import') fileInput.click();
-    if (action === 'install' && (await promptInstall())) root.querySelector('#install')?.remove();
     if (action === 'reset') {
       const choice = await openModal({
         title: 'Reset all progress?',

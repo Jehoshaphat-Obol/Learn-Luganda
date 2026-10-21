@@ -9,6 +9,7 @@ import { escapeHtml } from '../ui/components.js';
 import { brandMark } from './brand-mark.js';
 import { musicOn } from '../ui/music.js';
 import { t } from '../i18n/index.js';
+import { installButton } from './pwa.js';
 
 // `label` is a UI pack key.
 export const NAV = [
@@ -76,6 +77,7 @@ function appLayout(path) {
         <header class="topbar">
           <a class="topbar__brand" href="#/learn" aria-label="${escapeHtml(t('app.home'))}" data-brand data-mood="idle">${brandMark()}</a>
           <div class="topbar__stats" data-topbar-stats>${topBarStats()}</div>
+          ${installButton('topbar__install')}
           ${musicButton()}
         </header>
         <main id="view" class="view" tabindex="-1"></main>
