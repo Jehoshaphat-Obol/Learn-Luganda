@@ -9,6 +9,7 @@ import { store } from '../state/store.js';
 import { isLessonDone, isLessonUnlocked, isUnitUnlocked, nextLessonId, skillProgress, unitProgress } from '../state/progress.js';
 import { dailyGoal } from '../state/xp.js';
 import { streakStatus } from '../state/streak.js';
+import { dueWordIds } from '../state/review.js';
 import { portrait } from '../illustrations/index.js';
 import { button, escapeHtml, ring, toast } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
@@ -44,7 +45,12 @@ function checkpointNode(state, unit, position) {
     </li>`;
 }
 
+function needsReview(state, skill, due) {
+  return skillProgress(state, skill.id).complete && skill.lessons.some((l) => l.newWords.some((w) => due.has(w)));
+}
+
 function unitSection(state, unit, current) {
+  const due = new Set(dueWordIds(state));
   const prog = unitProgress(state, unit.id);
   const open = isUnitUnlocked(state, unit.id);
   let position = 0;
@@ -54,7 +60,7 @@ function unitSection(state, unit, current) {
       const nodes = skill.lessons.map((l) => lessonNode(state, l, position++, current)).join('');
       return `
         <li class="skill${sp.complete ? ' skill--complete' : ''}">
-          <h3 class="skill__title"><span>${escapeHtml(skill.title)}</span><span class="skill__count">${sp.done}/${sp.total}</span></h3>
+          <h3 class="skill__title"><span>${escapeHtml(skill.title)}</span><span class="skill__count">${sp.done}/${sp.total}</span>${needsReview(state, skill, due) ? `<a class="pill pill--primary skill__review" href="#/practice/session?mode=skill&id=${skill.id}">${icon('target', { size: 14 })}Review</a>` : ''}</h3>
           <ol class="trail">${nodes}</ol>
         </li>`;
     })

@@ -11,6 +11,8 @@ import { onboardingView } from '../views/onboarding.js';
 import { learnView } from '../views/learn.js';
 import { lessonView } from '../views/lesson.js';
 import { streakView } from '../views/streak.js';
+import { practiceHubView, practiceSessionView } from '../views/practice.js';
+import { checkpointView } from '../views/checkpoint.js';
 import { hasProfile } from '../state/store.js';
 
 export const routes = [
@@ -18,10 +20,11 @@ export const routes = [
   { path: '/onboarding', view: onboardingView, layout: 'bare', public: true, title: 'Get started' },
   { path: '/learn', view: learnView, title: 'Learn' },
   { path: '/lesson/:id', view: lessonView, layout: 'bare', title: 'Lesson' },
-  { path: '/checkpoint/:unit', view: placeholderView('Checkpoint', 'Unit checkpoints arrive soon.'), layout: 'bare', title: 'Checkpoint' },
+  { path: '/checkpoint/:unit', view: checkpointView, layout: 'bare', title: 'Checkpoint' },
   { path: '/guidebook/:unit', view: placeholderView('Guidebook', 'Unit guidebooks arrive soon.'), title: 'Guidebook' },
   { path: '/streak', view: streakView, title: 'Streak' },
-  { path: '/practice', view: placeholderView('Practice', 'Review sessions arrive soon.'), title: 'Practice' },
+  { path: '/practice', view: practiceHubView, title: 'Practice' },
+  { path: '/practice/session', view: practiceSessionView, layout: 'bare', title: 'Practice' },
   { path: '/leagues', view: placeholderView('Leagues', 'Weekly leagues arrive soon.'), title: 'Leagues' },
   { path: '/shop', view: placeholderView('Shop', 'The shop opens soon.'), title: 'Shop' },
   { path: '/profile', view: placeholderView('Profile', 'Your profile arrives soon.'), title: 'Profile' },

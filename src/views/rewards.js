@@ -29,15 +29,15 @@ function countUp(el, to, ms = 700) {
   requestAnimationFrame(tick);
 }
 
-function summaryScreen({ result, xp }) {
+function summaryScreen({ result, xp, title, subtitle }) {
   const pct = Math.round(result.accuracy * 100);
   const mins = Math.floor(result.seconds / 60);
   const secs = String(result.seconds % 60).padStart(2, '0');
   return {
     html: `
       <div class="complete__art">${lessonCompleteScene({ xp: xp.total })}</div>
-      <h1>${result.perfect ? 'Perfect lesson!' : 'Lesson complete!'}</h1>
-      <p class="complete__sub muted">${result.perfect ? 'Not a single mistake. Weebale nnyo!' : 'Weebale! Every lesson makes the words stick.'}</p>
+      <h1>${escapeHtml(title ?? (result.perfect ? 'Perfect lesson!' : 'Lesson complete!'))}</h1>
+      <p class="complete__sub muted">${escapeHtml(subtitle ?? (result.perfect ? 'Not a single mistake. Weebale nnyo!' : 'Weebale! Every lesson makes the words stick.'))}</p>
       <div class="complete__stats">
         <div class="complete__stat complete__stat--xp"><span>Total XP</span><strong>${icon('bolt', { size: 20 })}<b data-count="${xp.total}">0</b></strong></div>
         <div class="complete__stat complete__stat--acc"><span>${pct === 100 ? 'Perfect' : pct >= 80 ? 'Amazing' : pct >= 60 ? 'Good' : 'Accuracy'}</span><strong>${icon('target', { size: 20 })}${pct}%</strong></div>
