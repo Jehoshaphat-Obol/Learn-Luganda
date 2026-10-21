@@ -1,5 +1,6 @@
 /* Saving the outcome of a finished lesson. */
 import { store } from './store.js';
+import { addXp, dailyGoal, lessonXp } from './xp.js';
 
 /**
  * Applies a finished lesson's result to the state (pure, for tests).
@@ -23,6 +24,16 @@ export function applyLessonResult(s, lessonId, result, now = new Date()) {
   return s;
 }
 
-export function recordLessonResult(lessonId, result) {
-  store.update((s) => applyLessonResult(s, lessonId, result));
+/**
+ * Saves a finished lesson and its XP in one update.
+ * @returns {{ xp: { total: number, parts: object[] }, goalBefore: object, goalAfter: object, before: object, after: object }}
+ */
+export function finishLesson(lessonId, result, { replay = false, base, now = new Date() } = {}) {
+  const before = store.get();
+  const xp = lessonXp(result, { replay, base });
+  const after = store.update((s) => {
+    if (lessonId) applyLessonResult(s, lessonId, result, now);
+    addXp(s, xp.total, now);
+  });
+  return { xp, before, after, goalBefore: dailyGoal(before, now), goalAfter: dailyGoal(after, now) };
 }

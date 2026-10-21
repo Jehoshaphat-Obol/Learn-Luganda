@@ -568,3 +568,39 @@
 .avatar--lilac { --avatar-bg: var(--color-pastel-lilac); }
 .avatar--blush { --avatar-bg: var(--color-pastel-blush); }
 .avatar--paper { --avatar-bg: var(--color-paper-200); }
+
+/* Confetti */
+.confetti {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.confetti__piece {
+  position: absolute;
+  top: -24px;
+  left: var(--x);
+  width: var(--size);
+  height: var(--size);
+  background: var(--c);
+  animation: confetti-fall 2.6s cubic-bezier(0.25, 0.6, 0.4, 1) var(--delay) forwards;
+}
+
+.confetti__piece--circle { border-radius: 50%; }
+.confetti__piece--half { border-radius: var(--size) var(--size) 0 0; height: calc(var(--size) / 2); }
+.confetti__piece--triangle {
+  background: none;
+  width: 0;
+  height: 0;
+  border-left: calc(var(--size) / 2) solid transparent;
+  border-right: calc(var(--size) / 2) solid transparent;
+  border-bottom: var(--size) solid var(--c);
+}
+
+@keyframes confetti-fall {
+  to {
+    transform: translate(var(--drift), 110vh) rotate(var(--spin));
+  }
+}
