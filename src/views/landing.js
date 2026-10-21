@@ -84,7 +84,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
             <p class="eyebrow">${escapeHtml(t('landing.hero.eyebrow'))}</p>
             <h1>${tHtml('landing.hero.title', { language })}</h1>
             <p class="hero__lead">${tHtml('landing.hero.lead', { hello: copy.hello })}</p>
-            <div class="hero__ctas">${primaryCta}${secondaryCta}</div>
+            <div class="hero__ctas">${primaryCta}${installButton('hero__install', { size: 'lg' })}${secondaryCta}</div>
             ${copy.word ? `<p class="caption"${target}>${escapeHtml(copy.word)}</p>` : ''}
           </div>
           <div class="hero__art">${heroScene()}</div>

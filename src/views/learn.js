@@ -20,6 +20,7 @@ import { icon } from '../ui/icons.js';
 import { adSlot, mountAds } from '../ads/ads.js';
 import { siteLinks } from '../app/site.js';
 import { t } from '../i18n/index.js';
+import { installCard } from '../app/pwa.js';
 
 // Horizontal offsets (px) that make the trail wind left and right.
 const WIND = [0, 44, 72, 44, 0, -44, -72, -44];
@@ -189,6 +190,7 @@ export function learnView({ root, navigate }) {
       <div class="learn__path">
         <h1 class="visually-hidden">${escapeHtml(t('learn.heading'))}</h1>
         ${riskBanner(state)}
+        ${installCard()}
         ${goalStrip(state)}
         ${course.sections.map((s) => courseSection(state, s, current, s.id === openId) + (s.id === openId ? adSlot('path') : '')).join('')}
         ${isCourseComplete(state) ? `<p class="learn__more caption"><a href="#/complete">${escapeHtml(t('learn.finished'))}</a></p>` : `<p class="learn__more caption">${escapeHtml(t('learn.end', { units: course.units.length, thanks: course.phrases.thanks }))}</p>`}

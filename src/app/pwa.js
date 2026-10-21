@@ -54,8 +54,11 @@ export function installState() {
   return 'manual';
 }
 
-/** Headers only offer the button where installing is sure to work. */
-export const offerInstall = () => ['prompt', 'ios'].includes(installState());
+/**
+ * Offer Install everywhere until the app runs installed. Without a browser
+ * prompt the button explains the steps, so it never dead-ends.
+ */
+export const offerInstall = () => installState() !== 'installed';
 
 /** True when the browser offered to install the app (Chrome, Edge, Android). */
 export const canInstall = () => Boolean(installPrompt);
@@ -76,7 +79,7 @@ const steps = (keys) => `<ol class="install-steps">${keys.map((k) => `<li>${esca
 
 function instructions(state) {
   if (state === 'ios') return steps(['install.iosStep1', 'install.iosStep2', 'install.iosStep3']);
-  return `${steps(['install.manualStep1', 'install.manualStep2'])}<p class="muted">${escapeHtml(t('install.manualNote'))}</p>`;
+  return `${steps(['install.manualStep1', 'install.manualStep2'])}<p class="muted">${escapeHtml(t('install.manualNote'))} ${escapeHtml(t('install.already'))}</p>`;
 }
 
 /** Uses the browser's own install prompt, or explains how to install by hand. */
@@ -93,11 +96,38 @@ export async function installApp() {
   return false;
 }
 
-/** A compact button for headers; hidden until installing is possible. */
-export function installButton(className = '') {
+/** A vermillion-edged button (compact for headers, `lg` for the hero); hidden once installed. */
+export function installButton(className = '', { size = 'md' } = {}) {
   const label = escapeHtml(t('install.label'));
-  return `<button class="btn btn--secondary install-btn ${className}" type="button" data-install aria-label="${label}" title="${label}"${offerInstall() ? '' : ' hidden'}>
-    ${icon('install', { size: 20 })}<span class="install-btn__label">${label}</span></button>`;
+  return `<button class="btn btn--secondary${size === 'lg' ? ' btn--lg' : ''} install-btn ${className}" type="button" data-install aria-label="${label}" title="${label}"${offerInstall() ? '' : ' hidden'}>
+    ${icon('install', { size: 20 })}<span class="install-btn__label">${label}</span><span class="install-btn__short" aria-hidden="true">${escapeHtml(t('install.short'))}</span></button>`;
+}
+
+const CARD_KEY = 'learn-luganda-install-card';
+const CARD_PAUSE = 14 * 24 * 60 * 60 * 1000;
+
+function cardSnoozed(now = Date.now()) {
+  try {
+    return now - Number(localStorage.getItem(CARD_KEY) ?? 0) < CARD_PAUSE;
+  } catch {
+    return false;
+  }
+}
+
+/** "Get the app" card for the Learn page; "Not now" hides it for two weeks. */
+export function installCard() {
+  if (!offerInstall() || cardSnoozed()) return '';
+  return `<section class="card install-card" data-install-card aria-labelledby="install-card-title">
+    <span class="install-card__icon">${icon('install', { size: 30 })}</span>
+    <div class="install-card__text">
+      <h2 id="install-card-title">${escapeHtml(t('install.cardTitle'))}</h2>
+      <p>${escapeHtml(t('install.cardText'))}</p>
+    </div>
+    <div class="install-card__actions">
+      <button class="btn btn--primary" type="button" data-install="card">${icon('install', { size: 20 })}<span>${escapeHtml(t('install.label'))}</span></button>
+      <button class="btn btn--ghost" type="button" data-install-later>${escapeHtml(t('install.notNow'))}</button>
+    </div>
+  </section>`;
 }
 
 /** The Settings section: the right action or steps for this browser. */
@@ -114,17 +144,26 @@ export function installSection() {
 /** Brings every install button and the Settings section up to date. */
 export function syncInstall(root = document) {
   const show = offerInstall();
-  root.querySelectorAll('[data-install]:not([data-install="always"])').forEach((el) => {
+  root.querySelectorAll('.install-btn[data-install]').forEach((el) => {
     el.hidden = !show;
   });
   root.querySelectorAll('[data-install-section]').forEach((el) => {
     el.innerHTML = installSection();
   });
+  if (!show) root.querySelectorAll('[data-install-card]').forEach((el) => el.remove());
 }
 
 export function initInstall() {
   document.addEventListener('click', (e) => {
     if (e.target.closest('[data-install]')) installApp();
+    if (e.target.closest('[data-install-later]')) {
+      try {
+        localStorage.setItem(CARD_KEY, String(Date.now()));
+      } catch {
+        // Private mode: the card just comes back next visit.
+      }
+      e.target.closest('[data-install-card]')?.remove();
+    }
   });
   window.matchMedia?.('(display-mode: standalone)').addEventListener?.('change', () => syncInstall());
 }

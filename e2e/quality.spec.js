@@ -60,21 +60,46 @@ test('the app is installable: manifest and icons load', async ({ page, request }
   for (const icon of manifest.icons) expect((await request.get(icon.src)).ok()).toBe(true);
 });
 
-test('the Install button appears when the browser offers it, even after the page has drawn', async ({ page }) => {
+test('Install is always offered and uses the browser prompt once it arrives', async ({ page }) => {
   await openWith(page, savedState(), '#/learn');
   const install = page.locator('.topbar [data-install]');
   await expect(page.locator('.course-section').first()).toBeVisible();
-  await expect(install).toBeHidden();
+  // No prompt yet: the button is there and explains the steps.
+  await expect(install).toBeVisible();
+  await expect(page.locator('[data-install-card]')).toBeVisible();
+  await install.click();
+  await expect(page.getByRole('dialog')).toContainText('Already installed?');
+  await page.getByRole('dialog').getByRole('button', { name: 'Got it' }).click();
   await page.evaluate(() => {
     const e = new Event('beforeinstallprompt');
     e.prompt = () => (window.prompted = true);
     e.userChoice = Promise.resolve({ outcome: 'accepted' });
     window.dispatchEvent(e);
   });
-  await expect(install).toBeVisible();
   await install.click();
   await expect.poll(() => page.evaluate(() => window.prompted)).toBe(true);
   await expect(install).toBeHidden();
+  await expect(page.locator('[data-install-card]')).toHaveCount(0);
+});
+
+test('the landing page offers Install in the header and the hero', async ({ page }) => {
+  await page.goto('./');
+  // The header copy gives way to the hero button on the narrowest phones.
+  if (page.viewportSize().width >= 440) await expect(page.locator('.landing__header [data-install]')).toBeVisible();
+  await expect(page.locator('.hero [data-install]')).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(page.viewportSize().width);
+  await page.locator('.hero [data-install]').click();
+  await expect(page.getByRole('dialog')).toContainText('Install app or Add to Home screen');
+});
+
+test('"Not now" hides the Get the app card', async ({ page }) => {
+  await openWith(page, savedState(), '#/learn');
+  await page.locator('[data-install-later]').click();
+  await expect(page.locator('[data-install-card]')).toHaveCount(0);
+  await page.reload();
+  await expect(page.locator('.course-section').first()).toBeVisible();
+  await expect(page.locator('[data-install-card]')).toHaveCount(0);
+  await expect(page.locator('.topbar [data-install]')).toBeVisible();
 });
 
 test.describe('on an iPhone', () => {
@@ -82,7 +107,7 @@ test.describe('on an iPhone', () => {
 
   test('the Install button explains Share → Add to Home Screen', async ({ page }) => {
     await page.goto('./');
-    await page.locator('.landing__header [data-install]').click();
+    await page.locator('.hero [data-install]').click();
     await expect(page.getByRole('dialog')).toContainText('Add to Home Screen');
   });
 });

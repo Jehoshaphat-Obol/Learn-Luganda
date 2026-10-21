@@ -723,22 +723,90 @@
   transform: translateX(22px);
 }
 
-/* Install app button (headers) and steps (Settings, install help) */
+/* Install app button (headers), "Get the app" card and steps */
 .install-btn[hidden] {
   display: none;
 }
 
 .install-btn {
+  --btn-fg: var(--color-vermillion-700);
+  --btn-shadow: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.install-btn:not(.btn--lg) {
   min-height: 40px;
   padding: var(--space-2) var(--space-3);
   font-size: var(--text-sm);
 }
 
-/* On phones the header button is icon-only; its name stays in aria-label. */
+.install-btn__short {
+  display: none;
+}
+
+/* Phones: the landing header says "Install" (on the smallest screens the big
+   hero button takes over); the crowded app top bar shows a filled icon button
+   (its name stays in aria-label). */
 @media (max-width: 559px) {
-  .install-btn__label {
+  .install-btn:not(.btn--lg) .install-btn__label {
     display: none;
   }
+
+  .landing__header .install-btn__short {
+    display: inline;
+  }
+
+  .topbar .install-btn {
+    --btn-bg: var(--color-action);
+    --btn-bg-hover: var(--color-action-hover);
+    --btn-fg: var(--color-on-primary);
+    --btn-shadow: var(--color-primary-shadow);
+    width: 40px;
+    padding: 0;
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 439px) {
+  .landing__header .install-btn {
+    display: none;
+  }
+}
+
+.install-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-3) var(--space-4);
+  align-items: center;
+  margin-bottom: var(--space-4);
+  border: 2px solid var(--color-primary);
+}
+
+.install-card__icon {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.install-card h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.install-card p {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text-muted);
+}
+
+.install-card__actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
 }
 
 .install-steps {
