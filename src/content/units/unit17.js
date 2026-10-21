@@ -1,0 +1,107 @@
+/*
+ * Unit 17: Saying no. Negative verbs with si- (I), to- (you) and ta- (he,
+ * she), "there isn't" (tewali), and "don't!" commands.
+ */
+export default {
+  id: 'u17',
+  title: 'Saying no',
+  description: 'Say what you don’t want, don’t have and don’t know.',
+  color: 'lilac',
+  character: 'mukasa',
+  words: [
+    ['saagala', 'Saagala', 'I don’t want', { altEn: ['i do not want', 'i don’t like', 'i do not like'], notes: 'si- + yagala.' }],
+    ['sirya', 'Sirya', 'I don’t eat', { altEn: ['i do not eat'] }],
+    ['sinywa', 'Sinywa', 'I don’t drink', { altEn: ['i do not drink'] }],
+    ['sigenda', 'Sigenda', 'I’m not going', { altEn: ['i am not going', 'i don’t go', 'i do not go'] }],
+    ['mmanyi', 'Mmanyi', 'I know', { altEn: ['i know it'] }],
+    ['simanyi', 'Simanyi', 'I don’t know', { altEn: ['i do not know', 'no idea'] }],
+    ['sitegeera', 'Sitegeera', 'I don’t understand', { altEn: ['i do not understand'] }],
+    ['sirina', 'Sirina', 'I don’t have', { altEn: ['i do not have', 'i have no', 'i haven’t got'] }],
+    ['tewali', 'Tewali', 'There isn’t', { altEn: ['there is no', 'there are no', 'there aren’t', 'nothing'] }],
+    ['tetulina', 'tetulina', 'we don’t have', { altEn: ['we do not have', 'we have no'] }],
+    ['si-kyange', 'si kyange', 'not mine', { altEn: ['is not mine', 'isn’t mine'], notes: 'For eki- things. si = is not.' }],
+    ['kati', 'kati', 'now', { altEn: ['right now', 'at the moment'] }],
+    ['naye', 'naye', 'but', { altEn: ['however'] }],
+    ['toyagala', 'toyagala', 'you don’t want', { altEn: ['you do not want', 'don’t you want'] }],
+    ['tagenda', 'tagenda', 'he isn’t going', { altEn: ['she isn’t going', 'he is not going', 'she is not going', 'he doesn’t go', 'she doesn’t go'] }],
+    ['togenda', 'Togenda', 'Don’t go', { altEn: ['do not go'] }],
+    ['totya', 'Totya', 'Don’t be afraid', { altEn: ['do not be afraid', 'don’t worry', 'don’t fear', 'do not fear'] }],
+  ],
+  sentences: [
+    ['s17-saagala-kaawa', 'Saagala kaawa.', 'I don’t want coffee.', { altEn: ['I do not want coffee.', 'I don’t like coffee.'] }],
+    ['s17-sirya-nnyama', 'Sirya nnyama.', 'I don’t eat meat.', { altEn: ['I do not eat meat.'] }],
+    ['s17-sinywa-amata', 'Sinywa mata.', 'I don’t drink milk.', { altEn: ['I do not drink milk.'], notes: 'After a negative verb the noun usually drops its first vowel.' }],
+    ['s17-sigenda-leero', 'Sigenda leero.', 'I’m not going today.', { altEn: ['I am not going today.', 'I don’t go today.'] }],
+    ['s17-mmanyi', 'Yee, mmanyi.', 'Yes, I know.'],
+    ['s17-simanyi-ssebo', 'Simanyi, ssebo.', 'I don’t know, sir.', { altEn: ['I do not know, sir.'] }],
+    ['s17-sitegeera', 'Sitegeera. Ddamu.', 'I don’t understand. Repeat.', { altEn: ['I do not understand. Repeat.', 'I don’t understand. Say it again.'] }],
+    ['s17-sirina-ssente', 'Sirina ssente.', 'I don’t have money.', { altEn: ['I have no money.', 'I do not have money.', 'I don’t have any money.'] }],
+    ['s17-tewali-mazzi', 'Tewali mazzi.', 'There is no water.', { altEn: ['There isn’t any water.', 'There isn’t water.'] }],
+    ['s17-tetulina-sukaali', 'Tetulina sukaali.', 'We don’t have sugar.', { altEn: ['We have no sugar.', 'We do not have sugar.'] }],
+    ['s17-kino-si-kyange', 'Kino si kyange.', 'This is not mine.', { altEn: ['This isn’t mine.'] }],
+    ['s17-si-kati', 'Si kati, naye enkya.', 'Not now, but tomorrow.', { altEn: ['Not now but tomorrow.'] }],
+    ['s17-toyagala-caayi', 'Toyagala caayi?', 'Don’t you want tea?', { altEn: ['You don’t want tea?', 'Do you not want tea?'] }],
+    ['s17-tagenda', 'Nakato tagenda ku ssomero leero.', 'Nakato isn’t going to school today.', { altEn: ['Nakato is not going to school today.', 'Nakato doesn’t go to school today.'] }],
+    ['s17-togenda', 'Togenda! Enkuba etonnya.', 'Don’t go! It’s raining.', { altEn: ['Do not go! It is raining.', 'Don’t go! It is raining.'] }],
+    ['s17-totya', 'Totya, embwa ntono.', 'Don’t be afraid, the dog is small.', { altEn: ['Don’t worry, the dog is small.', 'Do not be afraid, the dog is small.'] }],
+  ],
+  skills: [
+    {
+      id: 'u17s1',
+      title: 'I don’t …',
+      icon: 'cross',
+      tip: 'negatives',
+      lessons: [
+        { id: 'u17s1l1', newWords: ['saagala', 'sirya'], sentences: ['s17-saagala-kaawa', 's17-sirya-nnyama'] },
+        { id: 'u17s1l2', newWords: ['sinywa', 'sigenda'], sentences: ['s17-sinywa-amata', 's17-sigenda-leero'] },
+        { id: 'u17s1l3', newWords: ['mmanyi', 'simanyi', 'sitegeera'], sentences: ['s17-mmanyi', 's17-simanyi-ssebo', 's17-sitegeera'] },
+      ],
+    },
+    {
+      id: 'u17s2',
+      title: 'I don’t have',
+      icon: 'shop',
+      lessons: [
+        { id: 'u17s2l1', newWords: ['sirina', 'tewali'], sentences: ['s17-sirina-ssente', 's17-tewali-mazzi'] },
+        { id: 'u17s2l2', newWords: ['tetulina', 'si-kyange'], sentences: ['s17-tetulina-sukaali', 's17-kino-si-kyange'] },
+        {
+          id: 'u17s2l3',
+          newWords: ['kati', 'naye'],
+          sentences: ['s17-si-kati', 's17-sirina-ssente'],
+          dialogues: [
+            {
+              speaker: 'mukasa',
+              line: 'Oyagala kaawa?',
+              translation: 'Do you want coffee?',
+              options: ['Nedda, saagala kaawa. Nnywa caayi.', 'Simanyi omusota.', 'Kino si kyange.'],
+              answer: 'Nedda, saagala kaawa. Nnywa caayi.',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'u17s3',
+      title: 'You, they and don’t!',
+      icon: 'bolt',
+      lessons: [
+        { id: 'u17s3l1', newWords: ['toyagala', 'tagenda'], sentences: ['s17-toyagala-caayi', 's17-tagenda'] },
+        { id: 'u17s3l2', newWords: ['togenda', 'totya'], sentences: ['s17-togenda', 's17-totya'] },
+        {
+          id: 'u17s3l3',
+          newWords: [],
+          sentences: ['s17-sitegeera', 's17-tewali-mazzi', 's17-toyagala-caayi', 's17-totya'],
+          dialogues: [
+            {
+              speaker: 'mukasa',
+              line: 'Eddwaliro liri wa?',
+              translation: 'Where is the hospital?',
+              options: ['Simanyi, ssebo. Buuza omupoliisi.', 'Sirya nnyama.', 'Togenda!'],
+              answer: 'Simanyi, ssebo. Buuza omupoliisi.',
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};

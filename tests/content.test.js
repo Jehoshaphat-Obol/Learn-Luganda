@@ -67,5 +67,5 @@ describe('every lesson', () => {
       const known = u.skills.flatMap((s) => s.lessons.flatMap((l) => l.newWords));
       expect(buildCheckpoint(u.id, { knownIds: known }).length, u.id).toBeGreaterThan(5);
     }
-  });
+  }, 60_000); // Grows with the course: hundreds of lessons × 3 seeds.
 });
