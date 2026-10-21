@@ -34,9 +34,13 @@ import unit29 from './units/unit29.js';
 import unit30 from './units/unit30.js';
 import unit31 from './units/unit31.js';
 import unit32 from './units/unit32.js';
+import unit33 from './units/unit33.js';
+import unit34 from './units/unit34.js';
+import unit35 from './units/unit35.js';
+import unit36 from './units/unit36.js';
 import { SECTIONS } from './sections.js';
 
-export const UNITS_RAW = [unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, unit10, unit11, unit12, unit13, unit14, unit15, unit16, unit17, unit18, unit19, unit20, unit21, unit22, unit23, unit24, unit25, unit26, unit27, unit28, unit29, unit30, unit31, unit32];
+export const UNITS_RAW = [unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, unit10, unit11, unit12, unit13, unit14, unit15, unit16, unit17, unit18, unit19, unit20, unit21, unit22, unit23, unit24, unit25, unit26, unit27, unit28, unit29, unit30, unit31, unit32, unit33, unit34, unit35, unit36];
 
 function toItem([id, lg, en, extras = {}], unitId) {
   return { id, lg, en, altLg: extras.altLg ?? [], altEn: extras.altEn ?? [], notes: extras.notes ?? '', audio: extras.audio ?? null, unit: unitId };
