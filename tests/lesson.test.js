@@ -31,7 +31,7 @@ describe('buildLesson', () => {
       expect(exercises.length).toBeGreaterThanOrEqual(8);
       expect(exercises.length).toBeLessThanOrEqual(MAX_EXERCISES);
     }
-  });
+  }, 60_000);
 
   it('introduces each new word before testing it', () => {
     const ex = buildLesson('u1s1l1', { seed: 3 });

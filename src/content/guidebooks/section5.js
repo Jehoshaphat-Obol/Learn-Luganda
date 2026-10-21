@@ -129,4 +129,133 @@ export const SECTION5_GUIDEBOOKS = {
       },
     ],
   },
+  u37: {
+    intro: 'To pass on news, say who spoke and add **nti** (that): **Agamba nti…**, he says that…',
+    phrases: [
+      ['Owulidde amawulire?', 'Have you heard the news?'],
+      ['Agamba nti enkuba ejja.', 'He says that rain is coming.'],
+      ['Bagamba nti ekkubo eriggya liwedde.', 'They say that the new road is finished.'],
+      ['Ndowooza nti kirungi.', 'I think that it is good.'],
+      ['Endowooza yo ki?', 'What is your opinion?'],
+      ['Nzikiriza naawe.', 'I agree with you.'],
+    ],
+    tips: [
+      {
+        id: 'reported-speech',
+        title: 'Saying what others said',
+        body: [
+          '**nti** works like English “that”. Put it after a verb of saying or thinking, then give the words: **Agamba nti…** (he says that…), **Bagamba nti…** (they say / people say that…), **Ndowooza nti…** (I think that…).',
+          'The words after **nti** keep their own tense, so **Agamba nti ajja** is “he says that he is coming”.',
+        ],
+        table: [
+          ['Luganda', 'English'],
+          ['Ngamba nti…', 'I say that…'],
+          ['Agamba nti…', 'He / she says that…'],
+          ['Bagamba nti…', 'They say that…'],
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'Radio and the village meeting',
+        body: ['Radio is still the main way news travels in Buganda, with lively call-in shows in Luganda. Local decisions are made at the **olukiiko**, where the **ssentebe** lets everyone give their **endowooza**.'],
+      },
+    ],
+  },
+  u38: {
+    intro: 'In an emergency, keep it short: **Nnyamba!** (help me!), **Yanguwa!** (hurry!). To say something was done to someone, Luganda uses the passive **-ibwa / -ebwa**.',
+    phrases: [
+      ['Nnyamba! Nnyamba!', 'Help me! Help me!'],
+      ['Kubira poliisi essimu!', 'Call the police!'],
+      ['Essimu yange ebbiddwa.', 'My phone has been stolen.'],
+      ['Omusajja alumiziddwa.', 'The man is injured.'],
+      ['Tukubire ambulensi mangu!', 'Let’s call an ambulance quickly!'],
+      ['Oli bulungi?', 'Are you okay?'],
+    ],
+    tips: [
+      {
+        id: 'passive',
+        title: 'Was stolen, is hurt',
+        body: [
+          'Add **-w-** near the end of a verb to turn it around: **okubba** (to steal) becomes **okubbibwa** (to be stolen), and **okulumya** (to hurt) becomes **okulumizibwa** (to be hurt).',
+          'In the perfect, “has been …”, the ending is **-iddwa**: **ebbiddwa** (it has been stolen), **alumiziddwa** (he has been hurt).',
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'Getting help',
+        body: ['In Uganda the emergency number for police is **999** or **112**. In a village, a loud **Nnyamba!** will bring neighbours running long before any car arrives.'],
+      },
+    ],
+  },
+  u39: {
+    intro: 'Respect is at the heart of Ganda manners. Greet elders kneeling, and speak to one elder as if to many: **Mwasuze mutya?**',
+    phrases: [
+      ['Mwasuze mutya, ssebo?', 'Good morning, sir.'],
+      ['Mwebale nnyo, nnyabo.', 'Thank you very much, madam.'],
+      ['Mwattu, mpa amazzi.', 'Please give me water.'],
+      ['Webale okujja!', 'Thanks for coming!'],
+      ['Yingira otuule.', 'Come in and sit down.'],
+      ['Tuula, olyeko.', 'Sit down and have some food.'],
+    ],
+    tips: [
+      {
+        id: 'kneeling',
+        title: 'Kneeling to greet',
+        body: ['Women and children traditionally **fukamira** (kneel) when they greet elders, parents-in-law or important guests, and stay low until the greeting ends. Men may bow or crouch. In town it is lighter, but at home and at ceremonies it matters.'],
+      },
+      {
+        id: 'respect-plural',
+        title: 'The plural of respect',
+        body: [
+          'To one elder, use the plural “you” (**mu-**) instead of the singular (**o-** / **w-**). It is like French *vous*.',
+        ],
+        table: [
+          ['To a friend', 'To an elder', 'English'],
+          ['Wasuze otya?', 'Mwasuze mutya?', 'Good morning'],
+          ['Webale', 'Mwebale', 'Thank you'],
+          ['Ogenda wa?', 'Mugenda wa?', 'Where are you going?'],
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'The guest comes first',
+        body: ['**Omugenyi ye mukulu**: a guest is always offered a seat and something to eat or drink, even on a short visit. Saying no outright is impolite; taste a little and say **Mwebale**.'],
+      },
+    ],
+  },
+  u40: {
+    intro: 'Ganda folktales (**enfumo**) are told in the evening. The two most famous are the tricks of **Wakayima** the hare, and the legend of **Kintu**, the first man.',
+    phrases: [
+      ['Wakayima yali mugezi nnyo.', 'The hare was very clever.'],
+      ['Wakayima yalimba enjovu.', 'The hare tricked the elephant.'],
+      ['Kintu ye muntu eyasooka.', 'Kintu was the first person.'],
+      ['Nnambi yeerabira obulo bw’enkoko.', 'Nnambi forgot the chicken’s millet.'],
+      ['Enfumo eno etuyigiriza ki?', 'What does this story teach us?'],
+      ['Etuyigiriza nti obugezi businga amaanyi.', 'It teaches us that wisdom beats strength.'],
+    ],
+    tips: [
+      {
+        id: 'wakayima',
+        title: 'Wakayima the trickster',
+        body: ['The small hare beats bigger animals by cleverness: he tricks the elephant, the lion and the leopard. The lesson is usually **obugezi businga amaanyi** (wisdom beats strength), though sometimes Wakayima is caught out by his own lies.'],
+      },
+      {
+        id: 'kintu-legend',
+        title: 'Kintu and Nnambi',
+        body: [
+          '**Kintu** lived alone with his cow until **Nnambi**, daughter of **Ggulu** (the sky), married him. Ggulu told them to leave quickly before her brother **Walumbe** (Death) could follow.',
+          'On the way, Nnambi went back for the millet she had forgotten for her chicken. **Walumbe** followed her, and that is why death came to the earth.',
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'Retelling',
+        body: ['A good storyteller opens with **Olwatuuka olwali olumu**, gets the listeners to answer, and ends with the lesson: **Enfumo eno etuyigiriza nti…**. Now you can tell one too. Congratulations on reaching the last unit!'],
+      },
+    ],
+  },
 };

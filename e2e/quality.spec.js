@@ -9,7 +9,7 @@ const axePath = require.resolve('axe-core/axe.min.js');
 const everything = Object.fromEntries(course.order.map((id) => [id, { completions: 1, bestAccuracy: 1 }]));
 const SCREENS = ['#/learn', '#/lesson/u1s1l1', '#/practice', '#/shop', '#/profile', '#/streak', '#/settings', '#/privacy', '#/about', '#/contact', '#/terms', '#/stories', '#/story/new-friend', '#/guidebook/u2', '#/guidebook/u9', '#/story/new-gomesi', '#/lesson/u10s3l3', '#/guidebook/u15', '#/guidebook/u19', '#/story/weekend-plans', '#/guidebook/u23', '#/story/cooking-luwombo', '#/guidebook/u25', '#/story/kasubi-visit'];
 // Content screens added with each new batch of units.
-const CONTENT_SCREENS = ['#/guidebook/u29', '#/story/source-of-nile', '#/guidebook/u33', '#/story/jjajjas-advice'];
+const CONTENT_SCREENS = ['#/guidebook/u29', '#/story/source-of-nile', '#/guidebook/u33', '#/story/jjajjas-advice', '#/guidebook/u39', '#/story/kintu-and-nnambi'];
 
 test('the landing page has no accessibility violations', async ({ page }) => {
   await page.goto('./');
@@ -28,6 +28,21 @@ for (const hash of [...SCREENS, ...CONTENT_SCREENS]) {
     expect(violations).toEqual([]);
   });
 }
+
+test('finishing the course shows the celebration, without accessibility violations', async ({ page }) => {
+  const last = course.units[course.units.length - 1].id;
+  await openWith(page, savedState({ lessons: { ...everything, [`checkpoint-${last}`]: { completions: 1, bestAccuracy: 1 } } }), '#/learn');
+  await page.getByRole('link', { name: /You finished the course/ }).click();
+  await expect(page.getByRole('heading', { name: 'Course complete!' })).toBeVisible();
+  await page.addScriptTag({ path: axePath });
+  const violations = await page.evaluate(async () => (await window.axe.run()).violations.map((v) => `${v.id}: ${v.nodes[0]?.target}`));
+  expect(violations).toEqual([]);
+});
+
+test('the celebration waits until the course is finished', async ({ page }) => {
+  await openWith(page, savedState({ lessons: everything }), '#/complete');
+  await expect(page).toHaveURL(/#\/learn/);
+});
 
 test('lessons still work offline after the first visit', async ({ page, context }) => {
   await openWith(page, savedState(), '#/learn');

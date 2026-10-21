@@ -3,8 +3,22 @@
  * punctuation, curly versus straight apostrophes or stray spaces.
  */
 
+// Lesson building normalises the same course text over and over, so remember results.
+const normalised = new Map();
+
 export function normalise(text) {
-  return String(text ?? '')
+  const key = String(text ?? '');
+  let out = normalised.get(key);
+  if (out === undefined) {
+    if (normalised.size > 20_000) normalised.clear();
+    out = normaliseUncached(key);
+    normalised.set(key, out);
+  }
+  return out;
+}
+
+function normaliseUncached(text) {
+  return text
     .toLowerCase()
     .normalize('NFC')
     // ŋ is often typed as "ng" on keyboards without it.

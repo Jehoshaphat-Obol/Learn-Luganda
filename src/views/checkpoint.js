@@ -1,7 +1,7 @@
 /* Unit checkpoint: a longer test over a whole unit, with hearts. */
 import { course } from '../content/course.js';
 import { store } from '../state/store.js';
-import { learnedWordIds, unitProgress } from '../state/progress.js';
+import { isCourseComplete, learnedWordIds, unitProgress } from '../state/progress.js';
 import { finishLesson } from '../state/lessons.js';
 import { XP } from '../state/xp.js';
 import { heartStatus } from '../state/hearts.js';
@@ -32,7 +32,8 @@ export function checkpointView({ root, params, navigate }) {
         ...summary,
         title: `Unit ${unit.index + 1} complete!`,
         subtitle: `You passed the ${unit.title} checkpoint. Weebale nnyo!`,
-        onDone: () => navigate('/learn'),
+        // Passing the last checkpoint for the first time ends the course.
+        onDone: () => navigate(!replay && isCourseComplete(store.get()) ? '/complete' : '/learn'),
       });
     },
   });

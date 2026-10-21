@@ -8,7 +8,7 @@
 import '../styles/learn.css';
 import { course } from '../content/course.js';
 import { store } from '../state/store.js';
-import { canJumpTo, isLessonDone, isLessonSkipped, isLessonUnlocked, isSectionUnlocked, isUnitUnlocked, nextLessonId, sectionProgress, skillProgress, unitProgress } from '../state/progress.js';
+import { canJumpTo, isCourseComplete, isLessonDone, isLessonSkipped, isLessonUnlocked, isSectionUnlocked, isUnitUnlocked, nextLessonId, sectionProgress, skillProgress, unitProgress } from '../state/progress.js';
 import { dailyGoal } from '../state/xp.js';
 import { streakStatus } from '../state/streak.js';
 import { dueWordIds } from '../state/review.js';
@@ -189,7 +189,7 @@ export function learnView({ root, navigate }) {
         ${riskBanner(state)}
         ${goalStrip(state)}
         ${course.sections.map((s) => courseSection(state, s, current, s.id === openId) + (s.id === openId ? adSlot('path') : '')).join('')}
-        <p class="learn__more caption">More units are on the way. Weebale for learning!</p>
+        ${isCourseComplete(state) ? `<p class="learn__more caption"><a href="#/complete">You finished the course! See your celebration.</a></p>` : '<p class="learn__more caption">The course ends with Unit 40. Weebale for learning!</p>'}
       </div>
       ${sidebar(state)}
     </div>`;

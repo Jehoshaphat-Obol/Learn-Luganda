@@ -140,9 +140,10 @@ export function wordsInSentence(sentence, words) {
 export function tilePools(course, known, unitId) {
   const unitOrder = Object.fromEntries(course.units.map((u, i) => [u.id, i]));
   const sentences = Object.values(course.sentences).filter((s) => unitOrder[s.unit] <= unitOrder[unitId]);
+  // Unique tokens, in first-seen order: exercises filter these per sentence.
   return {
-    lgTokens: [...known.flatMap((w) => tokens(w.lg)), ...sentences.flatMap((s) => tokens(s.lg))],
-    enTokens: [...known.flatMap((w) => tokens(w.en.toLowerCase())), ...sentences.flatMap((s) => tokens(s.en))],
+    lgTokens: [...new Set([...known.flatMap((w) => tokens(w.lg)), ...sentences.flatMap((s) => tokens(s.lg))])],
+    enTokens: [...new Set([...known.flatMap((w) => tokens(w.en.toLowerCase())), ...sentences.flatMap((s) => tokens(s.en))])],
   };
 }
 
