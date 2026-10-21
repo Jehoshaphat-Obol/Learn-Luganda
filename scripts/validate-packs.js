@@ -6,8 +6,10 @@ import { validateUiPack } from '../src/i18n/validate.js';
 const root = new URL('../', import.meta.url);
 const readJson = (path) => JSON.parse(readFileSync(new URL(path, root), 'utf8'));
 const ajv = new Ajv2020({ allErrors: true });
+const compiled = new Map();
 const schemaErrors = (schemaPath, data, where) => {
-  const check = ajv.compile(readJson(schemaPath));
+  if (!compiled.has(schemaPath)) compiled.set(schemaPath, ajv.compile(readJson(schemaPath)));
+  const check = compiled.get(schemaPath);
   return check(data) ? [] : check.errors.map((e) => `${where}${e.instancePath || ''}: ${e.message}`);
 };
 
@@ -30,9 +32,24 @@ for (const file of uiFiles) {
   if (result.missing.length) notes.push(`ui/${code}: ${result.missing.length} string(s) fall back to English`);
 }
 
+const coursesDir = new URL('src/packs/courses/', root);
+const courseDirs = readdirSync(coursesDir);
+for (const id of courseDirs) {
+  const meta = readJson(`src/packs/courses/${id}/course.json`);
+  errors.push(...schemaErrors('docs/packs/schema/course.schema.json', meta, `courses/${id}/course.json`));
+  if (meta.id !== id) errors.push(`courses/${id}: id "${meta.id}" doesn't match the folder name`);
+  if (meta.id !== `${meta.from}-${meta.to}`) errors.push(`courses/${id}: id must be "${meta.from}-${meta.to}"`);
+  for (const code of [meta.from, meta.to]) if (!codes.includes(code)) errors.push(`courses/${id}: "${code}" is not in languages.json`);
+  for (const file of readdirSync(new URL(`${id}/units/`, coursesDir)).filter((f) => f.endsWith('.json'))) {
+    const unit = readJson(`src/packs/courses/${id}/units/${file}`);
+    errors.push(...schemaErrors('docs/packs/schema/course-unit.schema.json', unit, `courses/${id}/units/${file}`));
+    if (`${unit.id}.json` !== file) errors.push(`courses/${id}/units/${file}: id "${unit.id}" doesn't match the file name`);
+  }
+}
+
 if (errors.length) {
   console.error(`Packs have ${errors.length} problem(s):\n- ${errors.join('\n- ')}`);
   process.exit(1);
 }
 for (const n of notes) console.log(n);
-console.log(`Packs OK: ${uiFiles.length} UI pack(s), ${registry.languages.length} languages in the registry.`);
+console.log(`Packs OK: ${uiFiles.length} UI pack(s), ${courseDirs.length} course pack(s), ${registry.languages.length} languages in the registry.`);

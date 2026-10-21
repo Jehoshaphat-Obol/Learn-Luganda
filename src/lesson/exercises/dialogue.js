@@ -1,4 +1,5 @@
 /* Dialogue: a cast member speaks; choose the right reply. */
+import { langAttr } from '../../content/course.js';
 import { CAST, portrait } from '../../illustrations/index.js';
 import { escapeHtml } from '../../ui/components.js';
 import { icon } from '../../ui/icons.js';
@@ -12,13 +13,13 @@ export function renderDialogue(ex, el, api) {
       <div class="ex-dialogue__scene">
         <div class="ex-dialogue__speaker">${portrait(ex.speaker, { expression: 'happy' })}<span>${escapeHtml(who)}</span></div>
         <div class="speech speech--left ex-dialogue__line">
-          <p lang="lg">${escapeHtml(ex.line)}</p>
+          <p${langAttr('target')}>${escapeHtml(ex.line)}</p>
           <button class="ex-dialogue__reveal" type="button" data-reveal aria-expanded="false">${icon('book', { size: 16 })} Show translation</button>
           <p class="ex-dialogue__translation muted" hidden>${escapeHtml(ex.translation)}</p>
         </div>
       </div>
       <div class="ex-choice__options" role="radiogroup" aria-label="Replies">
-        ${ex.options.map((o, i) => `<button class="choice" type="button" role="radio" aria-checked="false" data-value="${escapeHtml(o)}" lang="lg"><span class="choice__key">${i + 1}</span><span>${escapeHtml(o)}</span></button>`).join('')}
+        ${ex.options.map((o, i) => `<button class="choice" type="button" role="radio" aria-checked="false" data-value="${escapeHtml(o)}"${langAttr('target')}><span class="choice__key">${i + 1}</span><span>${escapeHtml(o)}</span></button>`).join('')}
       </div>
     </div>`;
   const buttons = [...el.querySelectorAll('[data-value]')];

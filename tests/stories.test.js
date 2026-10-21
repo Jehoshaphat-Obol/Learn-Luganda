@@ -1,11 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { UNITS_RAW, course } from '../src/content/course.js';
+import { course } from '../src/content/course.js';
 import { validateGuidebooks, validateStories } from '../src/content/validate.js';
-import { STORIES } from '../src/content/stories.js';
-import { GUIDEBOOKS } from '../src/content/guidebooks.js';
 import { CAST } from '../src/illustrations/characters.js';
 import { isStoryDone, isStoryUnlocked, storyKey } from '../src/state/stories.js';
 
+const UNITS_RAW = course.pack.units;
+const STORIES = course.stories;
+const GUIDEBOOKS = course.guidebooks;
 const ctx = { lessons: Object.keys(course.lessons), units: UNITS_RAW.map((u) => u.id), cast: Object.keys(CAST) };
 
 describe('stories and guidebooks', () => {
@@ -15,7 +16,7 @@ describe('stories and guidebooks', () => {
   });
 
   it('catches bad stories and missing tips', () => {
-    const bad = [{ id: 'x', unit: 'u999', unlockAfter: 'nope', steps: [{ line: ['ghost', 'Hi', ''] }, { question: 'Q', options: ['a'], answer: 3 }] }];
+    const bad = [{ id: 'x', unit: 'u999', unlockAfter: 'nope', steps: [{ line: { speaker: 'ghost', target: 'Hi', base: '' } }, { question: 'Q', options: ['a'], answer: 3 }] }];
     expect(validateStories(bad, ctx)).toHaveLength(5);
     expect(validateGuidebooks({}, UNITS_RAW)).toHaveLength(UNITS_RAW.length);
   });

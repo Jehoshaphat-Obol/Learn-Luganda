@@ -30,9 +30,9 @@ export function buildPractice(wordIds, { course = defaultCourse, seed, size = 12
     .filter((s) => s.wordIds.some((id) => focusIds.has(id)) && s.wordIds.every((id) => knownIdSet.has(id)));
 
   const out = [];
-  focus.forEach((w, i) => out.push(choiceExercise(w, choicePool, rng, i % 2 ? 'toEn' : 'toLg')));
+  focus.forEach((w, i) => out.push(choiceExercise(w, choicePool, rng, i % 2 ? 'toBase' : 'toTarget')));
   if (focus.length >= 3) out.push(matchExercise(focus, rng));
-  for (const [i, s] of rng.sample(sentences, 4).entries()) out.push(translateExercise(s, pools, rng, i % 2 ? 'toLg' : 'toEn'));
+  for (const [i, s] of rng.sample(sentences, 4).entries()) out.push(translateExercise(s, pools, rng, i % 2 ? 'toTarget' : 'toBase'));
   const fillFrom = rng.pick(sentences);
   const fill = fillFrom && fillExercise(fillFrom, known, rng);
   if (fill) out.push(fill);

@@ -1,0 +1,239 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u21",
+  "title": "Feelings",
+  "description": "Say how you feel and show care for others.",
+  "color": "vermillion",
+  "character": "amara",
+  "words": [
+    { "id": "nsanyuse", "target": "Nsanyuse", "base": "I am happy", "altBase": ["i’m happy", "i am glad", "i’m glad", "i am pleased"] },
+    { "id": "nnakuwadde", "target": "Nnakuwadde", "base": "I am sad", "altBase": ["i’m sad", "i am unhappy", "i’m upset"] },
+    {
+      "id": "oli-bulungi",
+      "target": "Oli bulungi?",
+      "base": "Are you okay?",
+      "altBase": ["are you ok", "are you alright", "are you well", "are you fine"]
+    },
+    {
+      "id": "nneewuunya",
+      "target": "Nneewuunya",
+      "base": "I am surprised",
+      "altBase": ["i’m surprised", "i’m amazed", "i am amazed", "i wonder"]
+    },
+    { "id": "nkooye", "target": "Nkooye", "base": "I am tired", "altBase": ["i’m tired", "i am exhausted", "i’m exhausted"] },
+    { "id": "ntidde", "target": "Ntidde", "base": "I am scared", "altBase": ["i’m scared", "i am afraid", "i’m afraid", "i am frightened"] },
+    {
+      "id": "nneeraliikirira",
+      "target": "Nneeraliikirira",
+      "base": "I am worried",
+      "altBase": ["i’m worried", "i worry", "i am anxious", "i’m anxious"]
+    },
+    { "id": "nnyiize", "target": "Nnyiize", "base": "I am angry", "altBase": ["i’m angry", "i am cross", "i’m upset", "i am mad"] },
+    {
+      "id": "ali-atya",
+      "target": "Ali atya?",
+      "base": "How is he?",
+      "altBase": ["how is she", "how is he doing", "how is she doing", "how are they"]
+    },
+    {
+      "id": "bambi",
+      "target": "Bambi",
+      "base": "Sorry",
+      "altBase": ["so sorry", "poor thing", "please"],
+      "notes": "Sympathy: said when something bad happens to someone."
+    },
+    {
+      "id": "nsonyiwa",
+      "target": "Nsonyiwa",
+      "base": "Forgive me",
+      "altBase": ["i’m sorry", "excuse me", "pardon me", "sorry"],
+      "notes": "An apology for something you did."
+    },
+    { "id": "nkwagala", "target": "Nkwagala", "base": "I love you", "altBase": ["i like you"] },
+    { "id": "nkusubwa", "target": "Nkusubwa", "base": "I miss you", "altBase": ["i’ve missed you", "i have missed you"] },
+    { "id": "mukwano-gwange", "target": "mukwano gwange", "base": "my friend", "altBase": ["friend", "dear friend"] },
+    { "id": "tokaaba", "target": "Tokaaba", "base": "Don’t cry", "altBase": ["do not cry", "stop crying"] }
+  ],
+  "sentences": [
+    {
+      "id": "s21-nsanyuse-nnyo",
+      "target": "Nsanyuse nnyo leero!",
+      "base": "I am very happy today!",
+      "altBase": ["I’m very happy today!", "I am so happy today!"]
+    },
+    { "id": "s21-lwaki-onakuwadde", "target": "Lwaki onakuwadde?", "base": "Why are you sad?", "altBase": ["Why are you unhappy?"] },
+    {
+      "id": "s21-oli-bulungi",
+      "target": "Oli bulungi, mukwano gwange?",
+      "base": "Are you okay, my friend?",
+      "altBase": ["Are you alright, my friend?", "Are you ok, my friend?"]
+    },
+    {
+      "id": "s21-nneewuunya",
+      "target": "Nneewuunya! Ojja leero?",
+      "base": "I’m surprised! You’re coming today?",
+      "altBase": ["I am surprised! Are you coming today?", "What a surprise! You are coming today?"]
+    },
+    {
+      "id": "s21-nkooye-nnyo",
+      "target": "Nkooye nnyo. Nja kwebaka.",
+      "base": "I am very tired. I will sleep.",
+      "altBase": ["I’m very tired. I’m going to sleep.", "I am very tired. I will go to sleep."]
+    },
+    {
+      "id": "s21-ntidde",
+      "target": "Ntidde, eggulu libwatuka.",
+      "base": "I’m scared, it’s thundering.",
+      "altBase": ["I am scared, it is thundering.", "I am afraid, there is thunder."]
+    },
+    {
+      "id": "s21-nneeraliikirira",
+      "target": "Nneeraliikirira ekigezo.",
+      "base": "I am worried about the exam.",
+      "altBase": ["I’m worried about the exam.", "I’m worried about the test."]
+    },
+    {
+      "id": "s21-nnyiize",
+      "target": "Nnyiize kubanga ttakisi teyajja.",
+      "base": "I am angry because the taxi didn’t come.",
+      "altBase": ["I’m angry because the taxi did not come."]
+    },
+    {
+      "id": "s21-maama-ali-atya",
+      "target": "Maama wo ali atya?",
+      "base": "How is your mother?",
+      "altBase": ["How’s your mother?", "How is your mum?"]
+    },
+    {
+      "id": "s21-bambi",
+      "target": "Bambi! Wona mangu.",
+      "base": "So sorry! Get well soon.",
+      "altBase": ["Sorry! Get well soon.", "Poor thing! Get well soon."]
+    },
+    {
+      "id": "s21-nsonyiwa",
+      "target": "Nsonyiwa, nzize kikeerezi.",
+      "base": "Forgive me, I have come late.",
+      "altBase": ["Sorry, I am late.", "Forgive me, I’m late.", "I’m sorry, I came late."]
+    },
+    {
+      "id": "s21-nkwagala-maama",
+      "target": "Nkwagala nnyo, Maama.",
+      "base": "I love you very much, Mum.",
+      "altBase": ["I love you so much, Mum.", "I love you very much, Mother."]
+    },
+    {
+      "id": "s21-nkusubwa",
+      "target": "Nkusubwa, mukwano gwange.",
+      "base": "I miss you, my friend.",
+      "altBase": ["I’ve missed you, my friend."]
+    },
+    { "id": "s21-tokaaba", "target": "Tokaaba, mwana wange.", "base": "Don’t cry, my child.", "altBase": ["Do not cry, my child."] }
+  ],
+  "skills": [
+    {
+      "id": "u21s1",
+      "title": "Happy and sad",
+      "icon": "heart",
+      "tip": "feeling-verbs",
+      "lessons": [
+        { "id": "u21s1l1", "newWords": ["nsanyuse", "nnakuwadde"], "sentences": ["s21-nsanyuse-nnyo", "s21-lwaki-onakuwadde"] },
+        { "id": "u21s1l2", "newWords": ["oli-bulungi", "mukwano-gwange"], "sentences": ["s21-oli-bulungi"] },
+        { "id": "u21s1l3", "newWords": ["nneewuunya"], "sentences": ["s21-nneewuunya", "s21-nsanyuse-nnyo"] }
+      ]
+    },
+    {
+      "id": "u21s2",
+      "title": "Tired and worried",
+      "icon": "flame",
+      "lessons": [
+        { "id": "u21s2l1", "newWords": ["nkooye", "ntidde"], "sentences": ["s21-nkooye-nnyo", "s21-ntidde"] },
+        { "id": "u21s2l2", "newWords": ["nneeraliikirira", "nnyiize"], "sentences": ["s21-nneeraliikirira", "s21-nnyiize"] },
+        {
+          "id": "u21s2l3",
+          "newWords": ["ali-atya"],
+          "sentences": ["s21-maama-ali-atya", "s21-nkooye-nnyo"],
+          "dialogues": [
+            {
+              "speaker": "amara",
+              "target": "Oli bulungi? Olabika okooye.",
+              "base": "Are you okay? You look tired.",
+              "options": ["Yee, nkooye nnyo. Nkoze nnyo leero.", "Nsanyuse okukulaba.", "Tokaaba."],
+              "answer": "Yee, nkooye nnyo. Nkoze nnyo leero."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u21s3",
+      "title": "Showing care",
+      "icon": "star",
+      "tip": "sorry",
+      "lessons": [
+        { "id": "u21s3l1", "newWords": ["bambi", "nsonyiwa"], "sentences": ["s21-bambi", "s21-nsonyiwa"] },
+        { "id": "u21s3l2", "newWords": ["nkwagala", "nkusubwa"], "sentences": ["s21-nkwagala-maama", "s21-nkusubwa"] },
+        {
+          "id": "u21s3l3",
+          "newWords": ["tokaaba"],
+          "sentences": ["s21-tokaaba", "s21-bambi"],
+          "dialogues": [
+            {
+              "speaker": "amara",
+              "target": "Nnakuwadde. Jjajja mulwadde.",
+              "base": "I’m sad. Grandma is sick.",
+              "options": ["Bambi! Nja kumukyalira.", "Nsanyuse nnyo!", "Nnyiize."],
+              "answer": "Bambi! Nja kumukyalira."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Most feelings in Luganda are verbs in the perfect: you have “become tired”, so you are tired. That’s why they look like the past forms from Unit 19.",
+    "phrases": [
+      { "target": "Nsanyuse nnyo leero!", "base": "I am very happy today!" },
+      { "target": "Oli bulungi, mukwano gwange?", "base": "Are you okay, my friend?" },
+      { "target": "Nkooye nnyo.", "base": "I am very tired." },
+      { "target": "Nneeraliikirira ekigezo.", "base": "I am worried about the exam." },
+      { "target": "Bambi! Wona mangu.", "base": "So sorry! Get well soon." },
+      { "target": "Nsonyiwa, nzize kikeerezi.", "base": "Forgive me, I have come late." },
+      { "target": "Nkusubwa.", "base": "I miss you." }
+    ],
+    "tips": [
+      {
+        "id": "feeling-verbs",
+        "title": "Feelings are states",
+        "body": [
+          "**Nkooye** comes from **-koowa** (get tired), **nsanyuse** from **-sanyuka** (become happy), **ntidde** from **-tya** (fear). The perfect ending says the change has happened and is still true.",
+          "Change the person prefix as usual: **okooye** (you are tired), **akooye** (he/she is tired), **tukooye** (we are tired)."
+        ],
+        "table": [
+          ["Verb", "I am …", "English"],
+          ["-sanyuka", "nsanyuse", "happy"],
+          ["-nakuwala", "nnakuwadde", "sad"],
+          ["-koowa", "nkooye", "tired"],
+          ["-tya", "ntidde", "scared"],
+          ["-nyiiga", "nnyiize", "angry"]
+        ]
+      },
+      {
+        "id": "sorry",
+        "title": "Two kinds of sorry",
+        "body": [
+          "**Bambi** shows sympathy: someone is sick, tired or had bad luck, and you feel for them. **Nsonyiwa** (forgive me) is an apology for something you did. Saying **Nsonyiwa** when someone falls over would sound like it was your fault."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Asking after everyone",
+        "body": [
+          "Conversations often include news of the whole family: **Maama wo ali atya?** (How is your mother?), **Abaana bali batya?** (How are the children?). Taking time to ask shows real care."
+        ]
+      }
+    ]
+  },
+  "stories": []
+}

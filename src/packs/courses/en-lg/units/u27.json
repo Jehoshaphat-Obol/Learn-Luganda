@@ -1,0 +1,195 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u27",
+  "title": "Village and farming",
+  "description": "Work the garden, name the crops and bring in the harvest.",
+  "color": "sage",
+  "character": "jjajja",
+  "words": [
+    { "id": "olusuku", "target": "olusuku", "base": "banana garden", "altBase": ["plantation", "banana plantation", "garden"] },
+    { "id": "enkumbi", "target": "enkumbi", "base": "hoe", "altBase": ["the hoe", "a hoe"] },
+    { "id": "ndima", "target": "Ndima", "base": "I dig", "altBase": ["i farm", "i cultivate", "i am digging"] },
+    { "id": "ensigo", "target": "ensigo", "base": "seeds", "altBase": ["seed", "the seeds"] },
+    { "id": "okusiga", "target": "okusiga", "base": "to plant", "altBase": ["to sow", "planting", "sowing"] },
+    { "id": "kasooli", "target": "kasooli", "base": "maize", "altBase": ["corn", "the maize"] },
+    { "id": "ebinyeebwa", "target": "ebinyeebwa", "base": "groundnuts", "altBase": ["peanuts", "the groundnuts"] },
+    {
+      "id": "emmwanyi",
+      "target": "emmwanyi",
+      "base": "coffee",
+      "altBase": ["coffee beans", "coffee plants"],
+      "notes": "The crop. A cup of coffee is kaawa."
+    },
+    { "id": "amakungula", "target": "amakungula", "base": "harvest", "altBase": ["the harvest", "harvest time"] },
+    { "id": "okukungula", "target": "okukungula", "base": "to harvest", "altBase": ["harvesting", "to reap"] },
+    {
+      "id": "ndimira",
+      "target": "Ndimira",
+      "base": "I dig for",
+      "altBase": ["i farm for", "i dig in"],
+      "notes": "Ndima + -ir-: for someone or somewhere."
+    },
+    { "id": "nfumbira", "target": "Nfumbira", "base": "I cook for", "altBase": ["i am cooking for"] },
+    { "id": "ntundira", "target": "Ntundira", "base": "I sell at", "altBase": ["i sell for", "i sell in"] },
+    { "id": "mpandiikira", "target": "Mpandiikira", "base": "I write to", "altBase": ["i write for"] }
+  ],
+  "sentences": [
+    {
+      "id": "s27-olusuku-lwange",
+      "target": "Olusuku lwange lunene.",
+      "base": "My banana garden is big.",
+      "altBase": ["My plantation is big.", "My garden is big."]
+    },
+    {
+      "id": "s27-ndima-n-enkumbi",
+      "target": "Ndima n’enkumbi ku makya.",
+      "base": "I dig with a hoe in the morning.",
+      "altTarget": ["Ndima nenkumbi ku makya."],
+      "altBase": ["I dig with the hoe in the morning.", "I farm with a hoe in the morning."]
+    },
+    {
+      "id": "s27-okusiga-ensigo",
+      "target": "Tusiga ensigo mu ttoggo.",
+      "base": "We plant seeds in the rainy season.",
+      "altBase": ["We sow seeds in the rainy season."]
+    },
+    {
+      "id": "s27-kasooli",
+      "target": "Kasooli akuze bulungi.",
+      "base": "The maize has grown well.",
+      "altBase": ["The maize grew well.", "The corn has grown well."]
+    },
+    {
+      "id": "s27-ebinyeebwa",
+      "target": "Ntunda ebinyeebwa ne kasooli.",
+      "base": "I sell groundnuts and maize.",
+      "altBase": ["I sell peanuts and maize.", "I sell groundnuts and corn."]
+    },
+    {
+      "id": "s27-emmwanyi",
+      "target": "Emmwanyi ya Buganda nnungi nnyo.",
+      "base": "Buganda’s coffee is very good.",
+      "altBase": ["The coffee of Buganda is very good."]
+    },
+    {
+      "id": "s27-amakungula",
+      "target": "Amakungula gatuuse!",
+      "base": "The harvest has come!",
+      "altBase": ["Harvest time has come!", "The harvest is here!"]
+    },
+    {
+      "id": "s27-okukungula",
+      "target": "Enkya tujja kukungula ebinyeebwa.",
+      "base": "Tomorrow we will harvest the groundnuts.",
+      "altBase": ["We will harvest the groundnuts tomorrow."]
+    },
+    {
+      "id": "s27-ndimira-jjajja",
+      "target": "Ndimira jjajja olusuku.",
+      "base": "I dig the garden for grandparent.",
+      "altBase": ["I dig the banana garden for grandma.", "I dig the garden for my grandparent.", "I dig the garden for grandpa."]
+    },
+    {
+      "id": "s27-nfumbira-abaana",
+      "target": "Nfumbira abaana emmere.",
+      "base": "I cook food for the children.",
+      "altBase": ["I cook for the children."]
+    },
+    {
+      "id": "s27-ntundira-mu-katale",
+      "target": "Ntundira emmwanyi mu katale.",
+      "base": "I sell coffee at the market.",
+      "altBase": ["I sell the coffee at the market."]
+    },
+    {
+      "id": "s27-mpandiikira-maama",
+      "target": "Mpandiikira maama obubaka.",
+      "base": "I write a message to mother.",
+      "altBase": ["I write mum a message.", "I write a message to my mother."]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u27s1",
+      "title": "The garden",
+      "icon": "home",
+      "lessons": [
+        { "id": "u27s1l1", "newWords": ["olusuku", "enkumbi", "ndima"], "sentences": ["s27-olusuku-lwange", "s27-ndima-n-enkumbi"] },
+        { "id": "u27s1l2", "newWords": ["ensigo", "okusiga"], "sentences": ["s27-okusiga-ensigo"] },
+        { "id": "u27s1l3", "newWords": [], "sentences": ["s27-olusuku-lwange", "s27-okusiga-ensigo", "s27-ndima-n-enkumbi"] }
+      ]
+    },
+    {
+      "id": "u27s2",
+      "title": "Crops",
+      "icon": "star",
+      "lessons": [
+        { "id": "u27s2l1", "newWords": ["kasooli", "ebinyeebwa"], "sentences": ["s27-kasooli", "s27-ebinyeebwa"] },
+        { "id": "u27s2l2", "newWords": ["emmwanyi"], "sentences": ["s27-emmwanyi", "s27-ebinyeebwa"] },
+        { "id": "u27s2l3", "newWords": ["amakungula", "okukungula"], "sentences": ["s27-amakungula", "s27-okukungula"] }
+      ]
+    },
+    {
+      "id": "u27s3",
+      "title": "Doing it for someone",
+      "icon": "heart",
+      "tip": "applicative",
+      "lessons": [
+        { "id": "u27s3l1", "newWords": ["ndimira", "nfumbira"], "sentences": ["s27-ndimira-jjajja", "s27-nfumbira-abaana"] },
+        { "id": "u27s3l2", "newWords": ["ntundira", "mpandiikira"], "sentences": ["s27-ntundira-mu-katale", "s27-mpandiikira-maama"] },
+        {
+          "id": "u27s3l3",
+          "newWords": [],
+          "sentences": ["s27-ndimira-jjajja", "s27-amakungula", "s27-nfumbira-abaana"],
+          "dialogues": [
+            {
+              "speaker": "jjajja",
+              "target": "Gyebale ko! Okola ki?",
+              "base": "Well done! What are you doing?",
+              "options": ["Ndimira jjajja olusuku.", "Ndi wa Lugave.", "Kabaka awangaale!"],
+              "answer": "Ndimira jjajja olusuku."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Most Baganda have roots in a village garden, with matooke, coffee and groundnuts growing side by side.",
+    "phrases": [
+      { "target": "Ndima n’enkumbi ku makya.", "base": "I dig with a hoe in the morning." },
+      { "target": "Tusiga ensigo mu ttoggo.", "base": "We plant seeds in the rainy season." },
+      { "target": "Amakungula gatuuse!", "base": "The harvest has come!" },
+      { "target": "Ndimira jjajja olusuku.", "base": "I dig the garden for grandparent." },
+      { "target": "Nfumbira abaana emmere.", "base": "I cook food for the children." },
+      { "target": "Mpandiikira maama obubaka.", "base": "I write a message to mother." }
+    ],
+    "tips": [
+      {
+        "id": "applicative",
+        "title": "Doing it for someone: -ir- / -er-",
+        "body": [
+          "Add **-ir-** or **-er-** before the last vowel to say “for”, “to” or “at”: **-lima** (dig) becomes **-limira** (dig for), **-fumba** becomes **-fumbira** (cook for), **-tunda** becomes **-tundira** (sell at).",
+          "Verbs with **e** or **o** in the stem usually take **-er-**: **-kola** becomes **-kolera** (work for), as in **Nkolera kampuni** from Unit 14."
+        ],
+        "table": [
+          ["Verb", "For / to / at"],
+          ["-lima (dig)", "-limira"],
+          ["-fumba (cook)", "-fumbira"],
+          ["-tunda (sell)", "-tundira"],
+          ["-kola (work)", "-kolera"],
+          ["-wandiika (write)", "-wandiikira"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "The banana garden",
+        "body": [
+          "The **olusuku** (banana garden) is the centre of a Ganda homestead. Matooke grows all year round, and a well-kept olusuku was a sign of a good household."
+        ]
+      }
+    ]
+  },
+  "stories": []
+}

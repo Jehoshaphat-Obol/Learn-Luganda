@@ -102,7 +102,7 @@ export function pickSnippet(s, day, { rand = Math.random, c = defaultCourse } = 
   const w = c.words[id];
   // Sometimes the word's own note says more than a stock line would.
   const body = w.notes && rand() < 0.4 ? w.notes : pick(REMINDER_STRINGS[kind], rand);
-  return { wordId: id, title: fill(REMINDER_STRINGS.title, { lg: w.lg, en: w.en }), body, url: kind === 'fresh' ? '#/learn' : '#/practice' };
+  return { wordId: id, title: fill(REMINDER_STRINGS.title, { target: w.target, base: w.base }), body, url: kind === 'fresh' ? '#/learn' : '#/practice' };
 }
 
 /**

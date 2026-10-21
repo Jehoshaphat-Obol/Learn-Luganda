@@ -1,76 +1,55 @@
 /*
- * The course: units in order, plus lookup indexes built once at load.
- * Content files stay plain data; everything derived lives here.
+ * The active course: one from→to course pack (src/packs/courses/<id>/)
+ * indexed for the app. A pack is plain JSON, a `course.json` plus one file
+ * per unit; everything derived (lesson order, word lookups, stories by id)
+ * is built here once and frozen.
+ *
+ * `course` is a live binding: the app loads a pack before its first render
+ * (see ./load.js) and every module reads the same frozen course after that.
+ * Functions take the course as an optional last argument so tests can pass
+ * their own.
  */
-import unit1 from './units/unit1.js';
-import unit2 from './units/unit2.js';
-import unit3 from './units/unit3.js';
-import unit4 from './units/unit4.js';
-import unit5 from './units/unit5.js';
-import unit6 from './units/unit6.js';
-import unit7 from './units/unit7.js';
-import unit8 from './units/unit8.js';
-import unit9 from './units/unit9.js';
-import unit10 from './units/unit10.js';
-import unit11 from './units/unit11.js';
-import unit12 from './units/unit12.js';
-import unit13 from './units/unit13.js';
-import unit14 from './units/unit14.js';
-import unit15 from './units/unit15.js';
-import unit16 from './units/unit16.js';
-import unit17 from './units/unit17.js';
-import unit18 from './units/unit18.js';
-import unit19 from './units/unit19.js';
-import unit20 from './units/unit20.js';
-import unit21 from './units/unit21.js';
-import unit22 from './units/unit22.js';
-import unit23 from './units/unit23.js';
-import unit24 from './units/unit24.js';
-import unit25 from './units/unit25.js';
-import unit26 from './units/unit26.js';
-import unit27 from './units/unit27.js';
-import unit28 from './units/unit28.js';
-import unit29 from './units/unit29.js';
-import unit30 from './units/unit30.js';
-import unit31 from './units/unit31.js';
-import unit32 from './units/unit32.js';
-import unit33 from './units/unit33.js';
-import unit34 from './units/unit34.js';
-import unit35 from './units/unit35.js';
-import unit36 from './units/unit36.js';
-import unit37 from './units/unit37.js';
-import unit38 from './units/unit38.js';
-import unit39 from './units/unit39.js';
-import unit40 from './units/unit40.js';
-import { SECTIONS } from './sections.js';
+import { deepFreeze } from '../i18n/freeze.js';
+import { upgradePack } from './format.js';
 
-export const UNITS_RAW = [unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, unit10, unit11, unit12, unit13, unit14, unit15, unit16, unit17, unit18, unit19, unit20, unit21, unit22, unit23, unit24, unit25, unit26, unit27, unit28, unit29, unit30, unit31, unit32, unit33, unit34, unit35, unit36, unit37, unit38, unit39, unit40];
-
-function toItem([id, lg, en, extras = {}], unitId) {
-  return { id, lg, en, altLg: extras.altLg ?? [], altEn: extras.altEn ?? [], notes: extras.notes ?? '', audio: extras.audio ?? null, unit: unitId };
+function toItem(raw, unitId) {
+  return {
+    id: raw.id,
+    target: raw.target,
+    base: raw.base,
+    altTarget: raw.altTarget ?? [],
+    altBase: raw.altBase ?? [],
+    notes: raw.notes ?? '',
+    audio: raw.audio ?? null,
+    unit: unitId,
+  };
 }
 
 /**
- * Builds the indexed course from raw units. Exported for tests. Without
- * `rawSections`, every unit goes into one section.
+ * Builds the indexed, frozen course from raw units. Without `rawSections`,
+ * every unit goes into one section. `meta` is the pack's course.json.
  */
-export function buildCourse(rawUnits, rawSections = [{ id: 's1', title: 'Course', level: '', description: '', units: rawUnits.map((u) => u.id) }]) {
+export function buildCourse(rawUnits, rawSections = [{ id: 's1', title: 'Course', level: '', description: '', units: rawUnits.map((u) => u.id) }], meta = {}) {
   const words = {};
   const sentences = {};
   const lessons = {};
   const skills = {};
   const order = [];
+  const stories = [];
+  const guidebooks = {};
 
   const units = rawUnits.map((u, ui) => {
-    for (const w of u.words) words[w[0]] = toItem(w, u.id);
-    for (const s of u.sentences) sentences[s[0]] = toItem(s, u.id);
+    for (const w of u.words) words[w.id] = toItem(w, u.id);
+    for (const s of u.sentences) sentences[s.id] = toItem(s, u.id);
+    if (u.guidebook) guidebooks[u.id] = u.guidebook;
+    for (const st of u.stories ?? []) stories.push({ ...st, unit: u.id });
     const unitSkills = u.skills.map((sk, si) => {
       const skill = {
         ...sk,
         unit: u.id,
         index: si,
         lessons: sk.lessons.map((l, li) => {
-          const lesson = { ...l, dialogues: l.dialogues ?? [], skill: sk.id, unit: u.id, index: li, order: order.length };
+          const lesson = { ...l, sentences: l.sentences ?? [], dialogues: l.dialogues ?? [], skill: sk.id, unit: u.id, index: li, order: order.length };
           lessons[l.id] = lesson;
           order.push(l.id);
           return lesson;
@@ -92,10 +71,51 @@ export function buildCourse(rawUnits, rawSections = [{ id: 's1', title: 'Course'
       return { ...sec, index };
     });
 
-  return { units, sections, words, sentences, lessons, skills, order };
+  return deepFreeze({
+    id: meta.id ?? 'course',
+    version: meta.version ?? 1,
+    from: meta.from ?? 'en',
+    to: meta.to ?? 'lg',
+    title: meta.title ?? '',
+    names: meta.names ?? { from: meta.from ?? 'en', to: meta.to ?? 'lg' },
+    units,
+    sections,
+    words,
+    sentences,
+    lessons,
+    skills,
+    order,
+    stories,
+    storyById: Object.fromEntries(stories.map((s) => [s.id, s])),
+    guidebooks,
+    pack: { meta, units: rawUnits },
+  });
 }
 
-export const course = buildCourse(UNITS_RAW, SECTIONS);
+/**
+ * Builds a course from a pack. `unitFiles` maps unit id to the parsed unit
+ * file; units appear in the order the sections list them.
+ */
+export function buildFromPack(rawMeta, rawUnits, names) {
+  const { meta, units: unitFiles } = upgradePack({ meta: rawMeta, units: rawUnits });
+  const units = meta.sections.flatMap((s) => s.units).map((id) => unitFiles[id]).filter(Boolean);
+  return buildCourse(units, meta.sections, { ...meta, names: names ?? { from: meta.from, to: meta.to } });
+}
+
+/** The course in use. Empty until a pack is loaded. */
+export let course = buildCourse([]);
+
+/** Makes `next` the active course. */
+export function useCourse(next) {
+  course = next;
+  return next;
+}
+
+/** The BCP 47 code for an exercise's `lang` role: 'target' or 'base'. */
+export const langCode = (role, c = course) => (role === 'target' ? c.to : c.from);
+
+/** A ` lang="…"` attribute for HTML, for a 'target' or 'base' string. */
+export const langAttr = (role, c = course) => ` lang="${langCode(role, c)}"`;
 
 /** The section a lesson or unit belongs to. */
 export function sectionOf(unitId, c = course) {
@@ -104,7 +124,7 @@ export function sectionOf(unitId, c = course) {
 
 /** Totals for the landing page and README. */
 export function courseStats(c = course) {
-  return { sections: c.sections.length, units: c.units.length, lessons: c.order.length, words: Object.keys(c.words).length };
+  return { sections: c.sections.length, units: c.units.length, lessons: c.order.length, words: Object.keys(c.words).length, stories: c.stories.length };
 }
 
 /** Words introduced up to and including `lessonId`, in course order. */
@@ -114,3 +134,6 @@ export function wordsUpTo(lessonId, c = course) {
   for (let i = 0; i <= stop; i += 1) out.push(...c.lessons[c.order[i]].newWords);
   return out;
 }
+
+/** The display name of the 'target' or 'base' language, e.g. "Luganda". */
+export const languageName = (role, c = course) => (role === 'target' ? c.names.to : c.names.from);

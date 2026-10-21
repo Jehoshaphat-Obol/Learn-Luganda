@@ -1,4 +1,5 @@
 /* Multiple choice: pick the translation of a word. Keys 1–4 select. */
+import { langAttr } from '../../content/course.js';
 import { escapeHtml } from '../../ui/components.js';
 
 export function renderChoice(ex, el, api) {
@@ -7,7 +8,7 @@ export function renderChoice(ex, el, api) {
     <div class="ex ex--choice">
       <h2 class="ex__prompt">${escapeHtml(ex.prompt)}</h2>
       <div class="ex-choice__options" role="radiogroup" aria-label="Answers">
-        ${ex.options.map((o, i) => `<button class="choice" type="button" role="radio" aria-checked="false" data-value="${escapeHtml(o.value)}" ${ex.lang === 'lg' ? 'lang="lg"' : ''}><span class="choice__key">${i + 1}</span><span>${escapeHtml(o.text)}</span></button>`).join('')}
+        ${ex.options.map((o, i) => `<button class="choice" type="button" role="radio" aria-checked="false" data-value="${escapeHtml(o.value)}" ${langAttr(ex.lang)}><span class="choice__key">${i + 1}</span><span>${escapeHtml(o.text)}</span></button>`).join('')}
       </div>
     </div>`;
 

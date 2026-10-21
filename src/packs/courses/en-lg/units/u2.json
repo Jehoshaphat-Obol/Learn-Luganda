@@ -1,0 +1,262 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u2",
+  "title": "People and things",
+  "description": "Family, everyday things and your first verbs.",
+  "color": "ink",
+  "character": "jjajja",
+  "words": [
+    { "id": "maama", "target": "maama", "base": "mother", "altBase": ["mom", "mum", "mama"] },
+    { "id": "taata", "target": "taata", "base": "father", "altBase": ["dad", "papa"] },
+    { "id": "jjajja", "target": "jjajja", "base": "grandparent", "altBase": ["grandmother", "grandfather", "grandma", "grandpa"] },
+    {
+      "id": "wange",
+      "target": "wange",
+      "base": "my",
+      "notes": "Agrees with people nouns (mu-/ba- class, singular): maama wange, my mother."
+    },
+    { "id": "omwana", "target": "omwana", "base": "child", "altBase": ["a child", "the child", "kid"] },
+    { "id": "abaana", "target": "abaana", "base": "children", "altBase": ["the children", "kids"] },
+    { "id": "omusajja", "target": "omusajja", "base": "man", "altBase": ["a man", "the man"] },
+    { "id": "abasajja", "target": "abasajja", "base": "men", "altBase": ["the men"] },
+    { "id": "omukazi", "target": "omukazi", "base": "woman", "altBase": ["a woman", "the woman"] },
+    { "id": "abakazi", "target": "abakazi", "base": "women", "altBase": ["the women"] },
+    { "id": "omuntu", "target": "omuntu", "base": "person", "altBase": ["a person", "the person"] },
+    { "id": "abantu", "target": "abantu", "base": "people", "altBase": ["the people"] },
+    { "id": "omuyizi", "target": "omuyizi", "base": "student", "altBase": ["a student", "the student", "learner"] },
+    { "id": "abayizi", "target": "abayizi", "base": "students", "altBase": ["the students", "learners"] },
+    { "id": "omusomesa", "target": "omusomesa", "base": "teacher", "altBase": ["a teacher", "the teacher"] },
+    { "id": "abasomesa", "target": "abasomesa", "base": "teachers", "altBase": ["the teachers"] },
+    { "id": "ekitabo", "target": "ekitabo", "base": "book", "altBase": ["a book", "the book"] },
+    { "id": "ebitabo", "target": "ebitabo", "base": "books", "altBase": ["the books"] },
+    { "id": "ekikopo", "target": "ekikopo", "base": "cup", "altBase": ["a cup", "the cup"] },
+    { "id": "ebikopo", "target": "ebikopo", "base": "cups", "altBase": ["the cups"] },
+    { "id": "ekintu", "target": "ekintu", "base": "thing", "altBase": ["a thing", "the thing"] },
+    { "id": "ebintu", "target": "ebintu", "base": "things", "altBase": ["the things"] },
+    { "id": "ekitanda", "target": "ekitanda", "base": "bed", "altBase": ["a bed", "the bed"] },
+    { "id": "ebitanda", "target": "ebitanda", "base": "beds", "altBase": ["the beds"] },
+    { "id": "amazzi", "target": "amazzi", "base": "water", "altBase": ["the water"] },
+    { "id": "emmere", "target": "emmere", "base": "food", "altBase": ["the food"] },
+    { "id": "caayi", "target": "caayi", "base": "tea", "altBase": ["the tea"] },
+    { "id": "oluganda", "target": "Oluganda", "base": "Luganda", "notes": "The language. A Muganda person speaks Oluganda." },
+    { "id": "njagala", "target": "Njagala", "base": "I want", "altBase": ["i like", "i love"] },
+    { "id": "ndya", "target": "Ndya", "base": "I eat", "altBase": ["i am eating", "i’m eating"] },
+    { "id": "nnywa", "target": "Nnywa", "base": "I drink", "altBase": ["i am drinking", "i’m drinking"] },
+    { "id": "nsoma", "target": "Nsoma", "base": "I read", "altBase": ["i am reading", "i’m reading", "i study"] },
+    { "id": "njiga", "target": "Njiga", "base": "I learn", "altBase": ["i am learning", "i’m learning"] },
+    { "id": "oyagala-ki", "target": "Oyagala ki?", "base": "What do you want?", "altBase": ["what would you like"] }
+  ],
+  "sentences": [
+    { "id": "s-maama-wange", "target": "Maama wange.", "base": "My mother.", "altBase": ["My mom.", "My mum."] },
+    { "id": "s-taata-wange", "target": "Taata wange.", "base": "My father.", "altBase": ["My dad."] },
+    {
+      "id": "s-jjajja-wange",
+      "target": "Jjajja wange.",
+      "base": "My grandparent.",
+      "altBase": ["My grandmother.", "My grandfather.", "My grandma.", "My grandpa."]
+    },
+    { "id": "s-omwana-wange", "target": "Omwana wange.", "base": "My child." },
+    { "id": "s-omusajja-omukazi", "target": "Omusajja n’omukazi.", "base": "A man and a woman.", "altBase": ["The man and the woman."] },
+    { "id": "s-abaana-abayizi", "target": "Abaana bayizi.", "base": "The children are students.", "altBase": ["Children are students."] },
+    { "id": "s-omusomesa-wange", "target": "Omusomesa wange.", "base": "My teacher." },
+    { "id": "s-ekitabo-kyange", "target": "Ekitabo kyange.", "base": "My book.", "notes": "ki- class nouns take kyange." },
+    { "id": "s-ebitabo-byange", "target": "Ebitabo byange.", "base": "My books.", "notes": "bi- class nouns take byange." },
+    {
+      "id": "s-njagala-amazzi",
+      "target": "Njagala amazzi.",
+      "base": "I want water.",
+      "altBase": ["I would like water.", "I want some water."]
+    },
+    {
+      "id": "s-njagala-emmere",
+      "target": "Njagala emmere.",
+      "base": "I want food.",
+      "altBase": ["I would like food.", "I want some food."]
+    },
+    { "id": "s-nnywa-caayi", "target": "Nnywa caayi.", "base": "I drink tea.", "altBase": ["I am drinking tea.", "I’m drinking tea."] },
+    {
+      "id": "s-ndya-emmere",
+      "target": "Ndya emmere.",
+      "base": "I eat food.",
+      "altBase": ["I am eating food.", "I’m eating food.", "I am eating."]
+    },
+    {
+      "id": "s-nsoma-ekitabo",
+      "target": "Nsoma ekitabo.",
+      "base": "I read a book.",
+      "altBase": ["I am reading a book.", "I’m reading a book.", "I read the book."]
+    },
+    {
+      "id": "s-njiga-oluganda",
+      "target": "Njiga Oluganda.",
+      "base": "I am learning Luganda.",
+      "altBase": ["I’m learning Luganda.", "I learn Luganda."]
+    },
+    { "id": "s-oyagala-ki", "target": "Oyagala ki?", "base": "What do you want?", "altBase": ["What would you like?"] },
+    { "id": "s-njagala-ekikopo", "target": "Njagala ekikopo.", "base": "I want a cup.", "altBase": ["I want the cup."] }
+  ],
+  "skills": [
+    {
+      "id": "u2s1",
+      "title": "Family",
+      "icon": "heart",
+      "lessons": [
+        {
+          "id": "u2s1l1",
+          "newWords": ["maama", "taata", "jjajja", "wange", "omwana"],
+          "sentences": ["s-maama-wange", "s-taata-wange", "s-jjajja-wange", "s-omwana-wange"]
+        },
+        {
+          "id": "u2s1l2",
+          "newWords": ["abaana", "omusajja", "omukazi", "abasajja", "abakazi"],
+          "sentences": ["s-omusajja-omukazi", "s-omwana-wange", "s-maama-wange"],
+          "dialogues": [
+            {
+              "speaker": "jjajja",
+              "target": "Ono ani?",
+              "base": "Who is this?",
+              "options": ["Maama wange.", "Njagala amazzi.", "Ebitabo byange."],
+              "answer": "Maama wange."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2s2",
+      "title": "People and things",
+      "icon": "book",
+      "tip": "noun-classes",
+      "lessons": [
+        {
+          "id": "u2s2l1",
+          "newWords": ["omuntu", "abantu", "omuyizi", "abayizi", "omusomesa", "abasomesa"],
+          "sentences": ["s-abaana-abayizi", "s-omusomesa-wange"]
+        },
+        { "id": "u2s2l2", "newWords": ["ekitabo", "ebitabo", "ekikopo", "ebikopo"], "sentences": ["s-ekitabo-kyange", "s-ebitabo-byange"] },
+        {
+          "id": "u2s2l3",
+          "newWords": ["ekintu", "ebintu", "ekitanda", "ebitanda"],
+          "sentences": ["s-ekitabo-kyange", "s-ebitabo-byange", "s-omusomesa-wange"]
+        }
+      ]
+    },
+    {
+      "id": "u2s3",
+      "title": "First verbs",
+      "icon": "bolt",
+      "lessons": [
+        {
+          "id": "u2s3l1",
+          "newWords": ["njagala", "amazzi", "emmere", "oyagala-ki"],
+          "sentences": ["s-njagala-amazzi", "s-njagala-emmere", "s-oyagala-ki"]
+        },
+        { "id": "u2s3l2", "newWords": ["ndya", "nnywa", "caayi"], "sentences": ["s-nnywa-caayi", "s-ndya-emmere", "s-njagala-amazzi"] },
+        {
+          "id": "u2s3l3",
+          "newWords": ["nsoma", "njiga", "oluganda"],
+          "sentences": ["s-nsoma-ekitabo", "s-njiga-oluganda", "s-njagala-ekikopo"],
+          "dialogues": [
+            {
+              "speaker": "nakato",
+              "target": "Oyagala ki?",
+              "base": "What do you want?",
+              "options": ["Njagala caayi.", "Nze Nakato.", "Wasuze otya?"],
+              "answer": "Njagala caayi."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "This unit introduces people, things and your first verbs, and with them the idea that drives Luganda grammar: noun classes.",
+    "phrases": [
+      { "target": "Maama wange.", "base": "My mother." },
+      { "target": "Omwana wange.", "base": "My child." },
+      { "target": "Abaana bayizi.", "base": "The children are students." },
+      { "target": "Ekitabo kyange.", "base": "My book." },
+      { "target": "Ebitabo byange.", "base": "My books." },
+      { "target": "Oyagala ki?", "base": "What do you want?" },
+      { "target": "Njagala amazzi.", "base": "I want water." },
+      { "target": "Nnywa caayi.", "base": "I drink tea." },
+      { "target": "Njiga Oluganda.", "base": "I am learning Luganda." }
+    ],
+    "tips": [
+      {
+        "id": "noun-classes",
+        "title": "Noun classes",
+        "body": [
+          "Every Luganda noun belongs to a class, shown by its prefix. Classes come in singular and plural pairs. People usually take **omu-** in the singular and **aba-** in the plural; many things take **eki-** and **ebi-**.",
+          "Words that go with a noun change to match its class. “My” is **wange** with one person, **bange** with people, **kyange** with an **eki-** thing and **byange** with **ebi-** things. You met another one in Unit 1: **erinnya lyange**, my name."
+        ],
+        "table": [
+          ["Singular", "Plural", "My …"],
+          ["omuntu (person)", "abantu (people)", "wange / bange"],
+          ["omukazi (woman)", "abakazi (women)", "wange / bange"],
+          ["ekitabo (book)", "ebitabo (books)", "kyange / byange"],
+          ["ekikopo (cup)", "ebikopo (cups)", "kyange / byange"]
+        ]
+      },
+      {
+        "id": "initial-vowel",
+        "title": "The first vowel comes and goes",
+        "body": [
+          "Most nouns start with a vowel: **o**muyizi, **e**kitabo, **a**baana. This initial vowel drops in some places, for example after “I am”: **Ndi muyizi** (I am a student), or when the noun describes something: **Abaana bayizi** (the children are students).",
+          "Family words like **maama**, **taata** and **jjajja** have no prefix and don’t change."
+        ]
+      },
+      {
+        "id": "verb-prefixes",
+        "title": "Who does it: n- and o-",
+        "body": ["Verbs show who is acting with a prefix. **n-** means “I” and **o-** means “you” (one person). The verb stem stays the same."],
+        "table": [["I", "You", "English"], ["njagala", "oyagala", "want"], ["nsoma", "osoma", "read"], ["njiga", "oyiga", "learn"]]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Family is wide",
+        "body": [
+          "Kinship words cover more people than in English. Your father’s brothers are also **taata**, and your mother’s sisters are also **maama**. Your father’s sister is your **ssenga** and your mother’s brother your **kojja**.",
+          "**Jjajja** means grandparent, and it is a warm, respectful way to address any elder."
+        ]
+      },
+      {
+        "title": "Oluganda, Muganda, Buganda",
+        "body": [
+          "The same root gives many words: **Oluganda** is the language, a **Muganda** is one person of the Baganda people, and **Buganda** is their kingdom in central Uganda."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "market-matooke",
+      "title": "Matooke at the market",
+      "unlockAfter": "u2s3l1",
+      "cast": ["emma", "mukasa"],
+      "summary": "Emma buys matooke for dinner.",
+      "steps": [
+        { "line": { "speaker": "emma", "target": "Oli otya, ssebo?", "base": "How are you, sir?" } },
+        { "line": { "speaker": "mukasa", "target": "Gyendi, nnyabo. Oyagala ki?", "base": "I’m fine, madam. What do you want?" } },
+        {
+          "line": { "speaker": "emma", "target": "Njagala matooke.", "base": "I want matooke." },
+          "gloss": { "matooke": "cooking bananas, a Ganda staple" }
+        },
+        { "question": "What does Emma want?", "options": ["Tea", "Matooke", "A book"], "answer": 1 },
+        {
+          "line": { "speaker": "mukasa", "target": "Kale. Ssente nkumi ttaano.", "base": "Okay. Five thousand shillings." },
+          "gloss": { "Ssente": "money", "nkumi": "thousands" }
+        },
+        { "question": "How much is the matooke?", "options": ["Two thousand", "Five thousand", "Ten thousand"], "answer": 1 },
+        { "line": { "speaker": "emma", "target": "Kale. Njagala n’amazzi.", "base": "Okay. I want water too." } },
+        {
+          "line": { "speaker": "mukasa", "target": "Gano amazzi. Weebale nnyo, nnyabo!", "base": "Here is the water. Thank you very much, madam!" },
+          "gloss": { "Gano": "here are (these)" }
+        },
+        { "question": "What else does Emma buy?", "options": ["Water", "Tea", "Food for Jjajja"], "answer": 0 },
+        { "line": { "speaker": "emma", "target": "Weebale, ssebo. Weraba!", "base": "Thank you, sir. Goodbye!" } }
+      ]
+    }
+  ]
+}

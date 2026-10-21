@@ -1,0 +1,215 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u15",
+  "title": "School",
+  "description": "The classroom, school subjects, questions and homework.",
+  "color": "vermillion",
+  "character": "amara",
+  "words": [
+    { "id": "ekibiina", "target": "ekibiina", "base": "class", "altBase": ["classroom", "the class", "group"] },
+    { "id": "ekkalaamu", "target": "ekkalaamu", "base": "pen", "altBase": ["pencil", "a pen", "the pen"] },
+    { "id": "olupapula", "target": "olupapula", "base": "paper", "altBase": ["a sheet of paper", "page", "the paper"] },
+    { "id": "ekigambo", "target": "ekigambo", "base": "word", "altBase": ["a word", "the word"] },
+    { "id": "ebigambo", "target": "ebigambo", "base": "words", "altBase": ["the words"] },
+    {
+      "id": "mpandiika",
+      "target": "Mpandiika",
+      "base": "I write",
+      "altBase": ["i am writing"],
+      "notes": "n- + wandiika becomes mpandiika."
+    },
+    {
+      "id": "musome",
+      "target": "Musome",
+      "base": "Read (all of you)",
+      "altBase": ["read", "study", "everyone read"],
+      "notes": "A command to a group: mu- … -e."
+    },
+    { "id": "muwandiike", "target": "Muwandiike", "base": "Write (all of you)", "altBase": ["write", "everyone write"] },
+    { "id": "muwulirize", "target": "Muwulirize", "base": "Listen (all of you)", "altBase": ["listen", "everyone listen"] },
+    {
+      "id": "olungereza",
+      "target": "Olungereza",
+      "base": "English",
+      "altBase": ["the english language"],
+      "notes": "The language. Like Oluganda."
+    },
+    { "id": "okubala", "target": "okubala", "base": "maths", "altBase": ["math", "mathematics", "counting", "to count"] },
+    { "id": "ssaayansi", "target": "ssaayansi", "base": "science", "altBase": ["the science"] },
+    { "id": "ebyafaayo", "target": "ebyafaayo", "base": "history", "altBase": ["the history"] },
+    { "id": "nnyagala-nnyo", "target": "Nnyagala nnyo", "base": "I really like", "altBase": ["i love", "i like very much", "i like a lot"] },
+    { "id": "ekibuuzo", "target": "ekibuuzo", "base": "question", "altBase": ["a question", "the question"] },
+    { "id": "ntegeera", "target": "Ntegeera", "base": "I understand", "altBase": ["i get it", "understood"] },
+    { "id": "otegeera", "target": "Otegeera?", "base": "Do you understand?", "altBase": ["you understand", "do you get it"] },
+    { "id": "ddamu", "target": "Ddamu", "base": "Repeat", "altBase": ["again", "say it again", "answer"], "notes": "Also “answer”." },
+    {
+      "id": "omulimu-gwawaka",
+      "target": "omulimu gw’awaka",
+      "base": "homework",
+      "altTarget": ["omulimu gwawaka"],
+      "altBase": ["home work", "the homework"]
+    },
+    { "id": "ekigezo", "target": "ekigezo", "base": "exam", "altBase": ["test", "an exam", "the exam"] }
+  ],
+  "sentences": [
+    { "id": "s15-ekibiina-kyaffe", "target": "Ekibiina kyaffe kinene.", "base": "Our class is big.", "altBase": ["Our classroom is big."] },
+    {
+      "id": "s15-mpa-ekkalaamu",
+      "target": "Mpa ekkalaamu, nnyabo.",
+      "base": "Give me a pen, madam.",
+      "altBase": ["Give me the pen, madam.", "Pass me a pen, madam."]
+    },
+    {
+      "id": "s15-mpandiika-ebigambo",
+      "target": "Mpandiika ebigambo ku lupapula.",
+      "base": "I write the words on paper.",
+      "altBase": ["I am writing the words on paper.", "I write words on the paper."]
+    },
+    {
+      "id": "s15-musome-ekitabo",
+      "target": "Musome ekitabo.",
+      "base": "Read the book, everyone.",
+      "altBase": ["Read the book.", "Everyone read the book."]
+    },
+    {
+      "id": "s15-muwandiike-erinnya",
+      "target": "Muwandiike erinnya lyammwe.",
+      "base": "Write your names, everyone.",
+      "altBase": ["Write your name.", "Everyone write your name."]
+    },
+    {
+      "id": "s15-muwulirize",
+      "target": "Muwulirize omusomesa.",
+      "base": "Listen to the teacher, everyone.",
+      "altBase": ["Listen to the teacher.", "Everyone listen to the teacher."]
+    },
+    {
+      "id": "s15-nsoma-olungereza",
+      "target": "Nsoma Olungereza n’Oluganda.",
+      "base": "I study English and Luganda.",
+      "altTarget": ["Nsoma Olungereza nOluganda."],
+      "altBase": ["I learn English and Luganda.", "I read English and Luganda."]
+    },
+    {
+      "id": "s15-nnyagala-nnyo-okubala",
+      "target": "Nnyagala nnyo okubala.",
+      "base": "I really like maths.",
+      "altBase": ["I love maths.", "I love math.", "I really like math."]
+    },
+    { "id": "s15-ssaayansi-nzibu", "target": "Ssaayansi nzibu.", "base": "Science is hard.", "altBase": ["Science is difficult."] },
+    { "id": "s15-nnina-ekibuuzo", "target": "Nnina ekibuuzo.", "base": "I have a question." },
+    {
+      "id": "s15-otegeera",
+      "target": "Otegeera? Yee, ntegeera.",
+      "base": "Do you understand? Yes, I understand.",
+      "altBase": ["Do you understand? Yes, I do."]
+    },
+    {
+      "id": "s15-ddamu-mpola",
+      "target": "Ddamu mpola, ssebo.",
+      "base": "Repeat slowly, sir.",
+      "altBase": ["Say it again slowly, sir.", "Repeat it slowly, sir."]
+    },
+    {
+      "id": "s15-omulimu-gwawaka",
+      "target": "Nkola omulimu gw’awaka.",
+      "base": "I am doing homework.",
+      "altTarget": ["Nkola omulimu gwawaka."],
+      "altBase": ["I do my homework.", "I am doing my homework.", "I do homework."]
+    },
+    { "id": "s15-ekigezo-enkya", "target": "Ekigezo kiri enkya.", "base": "The exam is tomorrow.", "altBase": ["The test is tomorrow."] }
+  ],
+  "skills": [
+    {
+      "id": "u15s1",
+      "title": "The classroom",
+      "icon": "book",
+      "lessons": [
+        { "id": "u15s1l1", "newWords": ["ekibiina", "ekkalaamu", "olupapula"], "sentences": ["s15-ekibiina-kyaffe", "s15-mpa-ekkalaamu"] },
+        { "id": "u15s1l2", "newWords": ["ekigambo", "ebigambo", "mpandiika"], "sentences": ["s15-mpandiika-ebigambo"] },
+        {
+          "id": "u15s1l3",
+          "newWords": ["musome", "muwandiike", "muwulirize"],
+          "sentences": ["s15-musome-ekitabo", "s15-muwandiike-erinnya", "s15-muwulirize"]
+        }
+      ]
+    },
+    {
+      "id": "u15s2",
+      "title": "Subjects",
+      "icon": "star",
+      "tip": "class-commands",
+      "lessons": [
+        { "id": "u15s2l1", "newWords": ["olungereza", "okubala"], "sentences": ["s15-nsoma-olungereza"] },
+        { "id": "u15s2l2", "newWords": ["ssaayansi", "ebyafaayo"], "sentences": ["s15-ssaayansi-nzibu", "s15-nsoma-olungereza"] },
+        { "id": "u15s2l3", "newWords": ["nnyagala-nnyo"], "sentences": ["s15-nnyagala-nnyo-okubala", "s15-ssaayansi-nzibu"] }
+      ]
+    },
+    {
+      "id": "u15s3",
+      "title": "Questions and homework",
+      "icon": "target",
+      "lessons": [
+        { "id": "u15s3l1", "newWords": ["ekibuuzo", "ntegeera", "otegeera"], "sentences": ["s15-nnina-ekibuuzo", "s15-otegeera"] },
+        { "id": "u15s3l2", "newWords": ["ddamu"], "sentences": ["s15-ddamu-mpola", "s15-otegeera"] },
+        {
+          "id": "u15s3l3",
+          "newWords": ["omulimu-gwawaka", "ekigezo"],
+          "sentences": ["s15-omulimu-gwawaka", "s15-ekigezo-enkya"],
+          "dialogues": [
+            {
+              "speaker": "mukasa",
+              "target": "Muwandiike ebigambo bino. Otegeera?",
+              "base": "Write these words, everyone. Do you understand?",
+              "options": ["Nedda. Ddamu mpola, ssebo.", "Ente zirya omuddo.", "Nnaaba ku makya."],
+              "answer": "Nedda. Ddamu mpola, ssebo."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "School vocabulary is full of commands. Teachers speak to the whole class, so you’ll hear plural commands all day.",
+    "phrases": [
+      { "target": "Musome ekitabo.", "base": "Read the book, everyone." },
+      { "target": "Muwulirize omusomesa.", "base": "Listen to the teacher, everyone." },
+      { "target": "Nnina ekibuuzo.", "base": "I have a question." },
+      { "target": "Otegeera?", "base": "Do you understand?" },
+      { "target": "Ddamu mpola, ssebo.", "base": "Repeat slowly, sir." },
+      { "target": "Nnyagala nnyo okubala.", "base": "I really like maths." }
+    ],
+    "tips": [
+      {
+        "id": "class-commands",
+        "title": "Commands to a group",
+        "body": [
+          "To one person, a command is the bare verb: **Soma** (read), **Wandiika** (write). To a group, add **mu-** in front and change the final **-a** to **-e**: **Musome**, **Muwandiike**, **Muwulirize**.",
+          "The same **-e** ending makes “let’s”: **Tusome** (let’s read). You’ll meet it again in **Tugende** (let’s go)."
+        ],
+        "table": [
+          ["One person", "Everyone", "Let’s"],
+          ["Soma", "Musome", "Tusome"],
+          ["Wandiika", "Muwandiike", "Tuwandiike"],
+          ["Wuliriza", "Muwulirize", "Tuwulirize"]
+        ]
+      },
+      {
+        "id": "n-sound-changes",
+        "title": "n- changes the sound after it",
+        "body": [
+          "When **n-** (I) meets **w**, it becomes **mp**: **wandiika** gives **mpandiika** (I write). With **l** or **r** it becomes **nd**: **laba** gives **ndaba** (I see). You have seen this in **mpulira** and **mpa** too."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Languages at school",
+        "body": [
+          "Uganda has over forty languages. Schools teach in English, and many in central Uganda also teach Luganda. It is common to grow up speaking three languages."
+        ]
+      }
+    ]
+  },
+  "stories": []
+}

@@ -4,7 +4,7 @@
  * continues; number keys pick options.
  */
 import '../styles/lesson.css';
-import { course } from '../content/course.js';
+import { course, langAttr } from '../content/course.js';
 import { buildLesson } from '../lesson/generate.js';
 import { createSession } from '../lesson/session.js';
 import { RENDERERS } from '../lesson/exercises/index.js';
@@ -129,7 +129,7 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
     footer.className = `lesson__footer lesson__footer--${correct ? 'good' : 'bad'}`;
     feedback.innerHTML = correct
       ? `<div class="fb"><span class="fb__icon">${icon('check', { size: 26 })}</span><div><strong>${note ? escapeHtml(note) : PRAISE[Math.floor(Math.random() * PRAISE.length)]}</strong>${(ex.type === 'translate' || note) && answerText ? `<p class="fb__answer">${escapeHtml(answerText)}</p>` : ''}</div></div>`
-      : `<div class="fb"><span class="fb__icon">${icon('cross', { size: 26 })}</span><div><strong>Correct answer:</strong><p class="fb__answer" ${ex.lang === 'lg' ? 'lang="lg"' : ''}>${escapeHtml(answerText ?? '')}</p></div></div>`;
+      : `<div class="fb"><span class="fb__icon">${icon('cross', { size: 26 })}</span><div><strong>Correct answer:</strong><p class="fb__answer"${ex.lang ? langAttr(ex.lang) : ''}>${escapeHtml(answerText ?? '')}</p></div></div>`;
     mainLabel.textContent = 'Continue';
     mainBtn.className = `btn btn--${correct ? 'success' : 'danger'} btn--lg btn--block`;
     mainBtn.disabled = false;

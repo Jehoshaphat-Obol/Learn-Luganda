@@ -31,9 +31,8 @@ const WORDS = [
   ['Webale kujja', 'Welcome'],
 ];
 
-const STATS = courseStats();
-
-const FAQ = [
+// Built at render time: the course loads after this module.
+const faq = (STATS = courseStats()) => [
   ['Is it free?', 'Yes. Learn Luganda is free, with no ads and no account.'],
   ['Where is my progress saved?', 'In your browser’s local storage on this device. You can export it to a file and import it on another device from Settings.'],
   ['Who is it for?', 'Complete beginners, diaspora families reconnecting with the language, and visitors to Uganda who want more than “hello”.'],
@@ -162,7 +161,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
           <p class="eyebrow">Questions</p>
           <h2>Good to <strong>know.</strong></h2>
           <div class="faq__list">
-            ${FAQ.map(([q, a]) => `<details class="faq__item"><summary>${escapeHtml(q)}</summary><p>${escapeHtml(a)}</p></details>`).join('')}
+            ${faq().map(([q, a]) => `<details class="faq__item"><summary>${escapeHtml(q)}</summary><p>${escapeHtml(a)}</p></details>`).join('')}
           </div>
         </section>
 

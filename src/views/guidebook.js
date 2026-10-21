@@ -3,8 +3,7 @@
  * unit's stories. `?tip=<id>` scrolls straight to one tip.
  */
 import '../styles/stories.css';
-import { course } from '../content/course.js';
-import { GUIDEBOOKS } from '../content/guidebooks.js';
+import { course, langAttr } from '../content/course.js';
 import { store } from '../state/store.js';
 import { storyList } from '../state/stories.js';
 import { portrait } from '../illustrations/index.js';
@@ -12,11 +11,13 @@ import { button, escapeHtml } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { richText, storyCard } from './stories.js';
 
-function table(rows) {
+// `targetColumns` lists the columns written in the target language (the
+// first two unless a tip says otherwise).
+function table(rows, targetColumns = [0, 1]) {
   const [head, ...body] = rows;
   return `<div class="guide-table"><table>
     <thead><tr>${head.map((h) => `<th scope="col">${escapeHtml(h)}</th>`).join('')}</tr></thead>
-    <tbody>${body.map((r) => `<tr>${r.map((c, i) => `<td${i < 2 ? ' lang="lg"' : ''}>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody>
+    <tbody>${body.map((r) => `<tr>${r.map((c, i) => `<td${langAttr(targetColumns.includes(i) ? 'target' : 'base')}>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody>
   </table></div>`;
 }
 
@@ -24,13 +25,13 @@ function note(item, kind) {
   return `<article class="card guide-note guide-note--${kind}"${item.id ? ` id="tip-${item.id}"` : ''}>
     <h3>${icon(kind === 'tip' ? 'bolt' : 'star', { size: 18 })}${escapeHtml(item.title)}</h3>
     ${item.body.map((p) => `<p>${richText(p)}</p>`).join('')}
-    ${item.table ? table(item.table) : ''}
+    ${item.table ? table(item.table, item.targetColumns) : ''}
   </article>`;
 }
 
 export function guidebookView({ root, params, query, navigate }) {
   const unit = course.units.find((u) => u.id === params.unit);
-  const book = GUIDEBOOKS[params.unit];
+  const book = course.guidebooks[params.unit];
   if (!unit || !book) {
     navigate('/learn', { replace: true });
     return;
@@ -50,7 +51,7 @@ export function guidebookView({ root, params, query, navigate }) {
       <section class="guide__section" aria-labelledby="guide-phrases">
         <h2 id="guide-phrases">Key phrases</h2>
         <ul class="phrase-list">
-          ${book.phrases.map(([lg, en]) => `<li><strong lang="lg">${escapeHtml(lg)}</strong><span>${escapeHtml(en)}</span></li>`).join('')}
+          ${book.phrases.map((p) => `<li><strong${langAttr('target')}>${escapeHtml(p.target)}</strong><span${langAttr('base')}>${escapeHtml(p.base)}</span></li>`).join('')}
         </ul>
       </section>
 

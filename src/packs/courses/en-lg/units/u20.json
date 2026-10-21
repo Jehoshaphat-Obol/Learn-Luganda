@@ -1,0 +1,241 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u20",
+  "title": "Plans",
+  "description": "Talk about tomorrow, the weekend and your dreams.",
+  "color": "blush",
+  "character": "ssali",
+  "words": [
+    {
+      "id": "nja",
+      "target": "nja",
+      "base": "I will",
+      "altBase": ["i’ll", "i am going to"],
+      "notes": "nja + ku- verb: nja kugenda, I will go."
+    },
+    { "id": "kugenda", "target": "kugenda", "base": "go", "altBase": ["to go"], "notes": "The ku- form after nja: nja kugenda." },
+    { "id": "tujja", "target": "tujja", "base": "we will", "altBase": ["we’ll", "we are going to", "we are coming"] },
+    { "id": "ajja", "target": "ajja", "base": "he will", "altBase": ["she will", "he’ll", "she’ll", "he is coming", "she is coming"] },
+    { "id": "awamu", "target": "awamu", "base": "together", "altBase": ["with each other"] },
+    { "id": "wiikendi", "target": "wiikendi", "base": "weekend", "altBase": ["the weekend"] },
+    { "id": "wiiki-ejja", "target": "wiiki ejja", "base": "next week", "altBase": ["the coming week"] },
+    { "id": "omwaka-ogujja", "target": "omwaka ogujja", "base": "next year", "altBase": ["the coming year"] },
+    { "id": "okukyalira", "target": "okukyalira", "base": "to visit", "altBase": ["visit", "to go and see"] },
+    {
+      "id": "ndigenda",
+      "target": "Ndigenda",
+      "base": "I will go",
+      "altBase": ["i’ll go", "i shall go"],
+      "notes": "Far future: someday, not soon."
+    },
+    { "id": "ndyogera", "target": "Ndyogera", "base": "I will speak", "altBase": ["i’ll speak", "i shall speak"] },
+    { "id": "olunaku-lumu", "target": "olunaku lumu", "base": "one day", "altBase": ["someday", "some day"] },
+    { "id": "nsuubira", "target": "Nsuubira", "base": "I hope", "altBase": ["i expect", "i am hoping"] },
+    {
+      "id": "oteekateeka-ki",
+      "target": "Oteekateeka ki?",
+      "base": "What are you planning?",
+      "altBase": ["what are your plans", "what do you plan", "what are you preparing"]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s20-nja-kugenda-masaka",
+      "target": "Enkya nja kugenda e Masaka.",
+      "base": "Tomorrow I will go to Masaka.",
+      "altBase": ["I will go to Masaka tomorrow.", "Tomorrow I’m going to Masaka.", "I’m going to Masaka tomorrow."]
+    },
+    {
+      "id": "s20-nja-kulya",
+      "target": "Nja kulya matooke.",
+      "base": "I will eat matooke.",
+      "altBase": ["I’ll eat matooke.", "I am going to eat matooke."]
+    },
+    {
+      "id": "s20-tujja-kusoma",
+      "target": "Tujja kusoma awamu.",
+      "base": "We will study together.",
+      "altBase": ["We’ll study together.", "We are going to study together."]
+    },
+    {
+      "id": "s20-ajja-kujja",
+      "target": "Nakato ajja kujja enkya.",
+      "base": "Nakato will come tomorrow.",
+      "altBase": ["Nakato is coming tomorrow.", "Nakato will come tomorrow."]
+    },
+    {
+      "id": "s20-wiikendi",
+      "target": "Ku wiikendi nja kukyalira jjajja.",
+      "base": "At the weekend I will visit grandparent.",
+      "altBase": [
+        "At the weekend I will visit grandma.",
+        "On the weekend I will visit grandpa.",
+        "This weekend I will visit my grandparent.",
+        "At the weekend I’ll visit grandma."
+      ]
+    },
+    {
+      "id": "s20-wiiki-ejja",
+      "target": "Wiiki ejja tujja kugenda e Jinja.",
+      "base": "Next week we will go to Jinja.",
+      "altBase": ["We will go to Jinja next week.", "Next week we’re going to Jinja."]
+    },
+    {
+      "id": "s20-omwaka-ogujja",
+      "target": "Omwaka ogujja nja kusoma ssaayansi.",
+      "base": "Next year I will study science.",
+      "altBase": ["I will study science next year."]
+    },
+    {
+      "id": "s20-olunaku-lumu-ndigenda",
+      "target": "Olunaku lumu ndigenda e Buganda.",
+      "base": "One day I will go to Buganda.",
+      "altBase": ["Someday I will go to Buganda.", "One day I’ll go to Buganda."]
+    },
+    {
+      "id": "s20-ndyogera-oluganda",
+      "target": "Olunaku lumu ndyogera Oluganda bulungi.",
+      "base": "One day I will speak Luganda well.",
+      "altBase": ["Someday I will speak Luganda well.", "One day I’ll speak Luganda well."]
+    },
+    {
+      "id": "s20-nsuubira",
+      "target": "Nsuubira okulaba Kabaka.",
+      "base": "I hope to see the Kabaka.",
+      "altBase": ["I hope to see the king."]
+    },
+    {
+      "id": "s20-oteekateeka-ki",
+      "target": "Oteekateeka ki ku wiikendi?",
+      "base": "What are you planning for the weekend?",
+      "altBase": ["What are your plans for the weekend?", "What are you planning at the weekend?"]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u20s1",
+      "title": "Tomorrow",
+      "icon": "arrow",
+      "tip": "near-future",
+      "lessons": [
+        { "id": "u20s1l1", "newWords": ["nja", "kugenda"], "sentences": ["s20-nja-kugenda-masaka", "s20-nja-kulya"] },
+        { "id": "u20s1l2", "newWords": ["tujja", "awamu"], "sentences": ["s20-tujja-kusoma"] },
+        { "id": "u20s1l3", "newWords": ["ajja"], "sentences": ["s20-ajja-kujja", "s20-nja-kugenda-masaka"] }
+      ]
+    },
+    {
+      "id": "u20s2",
+      "title": "This weekend",
+      "icon": "star",
+      "lessons": [
+        { "id": "u20s2l1", "newWords": ["wiikendi", "okukyalira"], "sentences": ["s20-wiikendi"] },
+        { "id": "u20s2l2", "newWords": ["wiiki-ejja", "omwaka-ogujja"], "sentences": ["s20-wiiki-ejja", "s20-omwaka-ogujja"] },
+        {
+          "id": "u20s2l3",
+          "newWords": ["oteekateeka-ki"],
+          "sentences": ["s20-oteekateeka-ki", "s20-wiikendi"],
+          "dialogues": [
+            {
+              "speaker": "ssali",
+              "target": "Oteekateeka ki ku wiikendi?",
+              "base": "What are you planning for the weekend?",
+              "options": ["Nja kukyalira jjajja.", "Jjo nnagenda e Jinja.", "Simanyi omusota."],
+              "answer": "Nja kukyalira jjajja."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u20s3",
+      "title": "Someday",
+      "icon": "trophy",
+      "tip": "far-future",
+      "lessons": [
+        { "id": "u20s3l1", "newWords": ["ndigenda", "olunaku-lumu"], "sentences": ["s20-olunaku-lumu-ndigenda"] },
+        { "id": "u20s3l2", "newWords": ["ndyogera", "nsuubira"], "sentences": ["s20-ndyogera-oluganda", "s20-nsuubira"] },
+        {
+          "id": "u20s3l3",
+          "newWords": [],
+          "sentences": ["s20-ndyogera-oluganda", "s20-wiiki-ejja", "s20-ajja-kujja", "s20-olunaku-lumu-ndigenda"]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Talking about the future lets you make plans, promises and dreams. Luganda has a near future and a far one.",
+    "phrases": [
+      { "target": "Enkya nja kugenda e Masaka.", "base": "Tomorrow I will go to Masaka." },
+      { "target": "Tujja kusoma awamu.", "base": "We will study together." },
+      { "target": "Oteekateeka ki ku wiikendi?", "base": "What are you planning for the weekend?" },
+      { "target": "Ku wiikendi nja kukyalira jjajja.", "base": "At the weekend I will visit grandparent." },
+      { "target": "Olunaku lumu ndyogera Oluganda bulungi.", "base": "One day I will speak Luganda well." },
+      { "target": "Nsuubira okulaba Kabaka.", "base": "I hope to see the Kabaka." }
+    ],
+    "tips": [
+      {
+        "id": "near-future",
+        "title": "Soon: ja + ku-",
+        "body": [
+          "The near future uses **-jja** (come) with the **ku-** form, a bit like English “going to”: **nja kugenda** (I will go), **ojja kugenda**, **ajja kugenda**, **tujja kugenda**, **bajja kugenda**.",
+          "The **o-** of the infinitive drops: **okulya** becomes **kulya** after **nja**."
+        ]
+      },
+      {
+        "id": "far-future",
+        "title": "Someday: li-",
+        "body": [
+          "For the distant or less certain future, add **-li-**: **ndigenda** (I will go, someday), **ndyogera** (I will speak). Pair it with **olunaku lumu** (one day)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Plans and “Katonda bw’anaayagala”",
+        "body": [
+          "Many Ugandans add **Katonda bw’anaayagala** (God willing) when talking about the future, much like “inshallah”. You’ll hear it at the end of plans of every size."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "weekend-plans",
+      "title": "Weekend plans",
+      "unlockAfter": "u20s3l3",
+      "cast": ["ssali", "nakato"],
+      "summary": "Ssali and Nakato talk about last weekend and the next one.",
+      "steps": [
+        { "line": { "speaker": "ssali", "target": "Nakato! Wiikendi ewedde wakola ki?", "base": "Nakato! What did you do last weekend?" } },
+        { "line": { "speaker": "nakato", "target": "Nnagenda e Masaka okukyalira maama.", "base": "I went to Masaka to visit my mother." } },
+        { "question": "Where did Nakato go last weekend?", "options": ["Jinja", "Masaka", "Entebbe"], "answer": 1 },
+        { "line": { "speaker": "ssali", "target": "Kirungi! Ate ku wiikendi eno?", "base": "Nice! And this weekend?" } },
+        { "line": { "speaker": "nakato", "target": "Simanyi. Oteekateeka ki ggwe?", "base": "I don’t know. What are you planning?" } },
+        {
+          "line": {
+            "speaker": "ssali",
+            "target": "Nja kugenda ku nnyanja e Entebbe. Ojja?",
+            "base": "I’m going to the lake in Entebbe. Are you coming?"
+          },
+          "gloss": { "nnyanja": "lake" }
+        },
+        { "question": "What is Ssali’s plan?", "options": ["Going to the lake", "Visiting his mother", "Studying at home"], "answer": 0 },
+        { "line": { "speaker": "nakato", "target": "Yee! Naye sirina ssente nnyingi.", "base": "Yes! But I don’t have much money." } },
+        { "line": { "speaker": "ssali", "target": "Totya. Tujja kugenda mu mmotoka yange.", "base": "Don’t worry. We’ll go in my car." } },
+        {
+          "question": "How does Ssali say “We will go”?",
+          "options": ["Tujja kugenda", "Twagenda", "Togenda"],
+          "answer": 0,
+          "optionsLang": "target"
+        },
+        {
+          "line": {
+            "speaker": "nakato",
+            "target": "Weebale nnyo! Tunaalabagana ku Lwamukaaga.",
+            "base": "Thank you very much! See you on Saturday."
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -131,7 +131,7 @@ describe('planning reminders', () => {
 });
 
 describe('what a reminder says', () => {
-  it('teaches a word: "Luganda — English"', () => {
+  it('teaches a word: "target — base"', () => {
     const snip = pickSnippet(state(), '2026-10-21', { rand: fixed(0.99) });
     const w = course.words[snip.wordId];
     expect(snip.title).toBe(fill(REMINDER_STRINGS.title, w));

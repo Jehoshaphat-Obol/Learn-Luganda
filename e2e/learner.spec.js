@@ -41,10 +41,10 @@ async function answerUntil(page, done) {
     if (await textarea.count()) await textarea.fill('hello');
     else if (await page.locator('[data-stage] .ex--match:visible').count()) {
       // Both columns carry the word id, so pairs can be matched directly.
-      const ids = await page.locator('[data-stage] [data-side="lg"]:visible').evaluateAll((els) => els.map((e) => e.dataset.id));
+      const ids = await page.locator('[data-stage] [data-side="target"]:visible').evaluateAll((els) => els.map((e) => e.dataset.id));
       for (const id of ids) {
-        await page.locator(`[data-stage] [data-side="lg"][data-id="${id}"]:visible`).click();
-        await page.locator(`[data-stage] [data-side="en"][data-id="${id}"]:visible`).click();
+        await page.locator(`[data-stage] [data-side="target"][data-id="${id}"]:visible`).click();
+        await page.locator(`[data-stage] [data-side="base"][data-id="${id}"]:visible`).click();
       }
       await page.waitForTimeout(700);
       continue;

@@ -1,0 +1,221 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u18",
+  "title": "Asking questions",
+  "description": "Ask who, what, where, when and why, and ask about words.",
+  "color": "butter",
+  "character": "emma",
+  "words": [
+    { "id": "ki", "target": "ki", "base": "what", "altBase": ["which"], "notes": "Comes after the verb: Oyagala ki?" },
+    { "id": "kiki", "target": "kiki", "base": "what is it", "altBase": ["what", "what is"], "notes": "Kino kiki? What is this?" },
+    { "id": "ekyo", "target": "ekyo", "base": "that", "altBase": ["that one", "that thing"], "notes": "For eki- things. Kino is “this”." },
+    { "id": "oyo", "target": "oyo", "base": "that person", "altBase": ["that", "that one", "he", "she"], "notes": "Ani oyo? Who is that?" },
+    { "id": "wa", "target": "wa", "base": "where", "notes": "Comes after the verb: Ogenda wa?" },
+    { "id": "oli-wa", "target": "Oli wa?", "base": "Where are you?", "altBase": ["where are you now"] },
+    { "id": "ddi", "target": "ddi", "base": "when", "notes": "Ojja ddi? When are you coming?" },
+    { "id": "ojja", "target": "ojja", "base": "you are coming", "altBase": ["you come", "are you coming"] },
+    { "id": "lwaki", "target": "lwaki", "base": "why", "altBase": ["for what reason"] },
+    { "id": "kubanga", "target": "kubanga", "base": "because", "altBase": ["since", "as"] },
+    { "id": "oba", "target": "oba", "base": "or", "altBase": ["whether", "maybe", "perhaps"] },
+    { "id": "okwogera", "target": "okwogera", "base": "to speak", "altBase": ["speaking", "to talk", "talking"] },
+    { "id": "njogera", "target": "Njogera", "base": "I speak", "altBase": ["i talk", "i am speaking"] },
+    { "id": "oyogera", "target": "Oyogera", "base": "You speak", "altBase": ["do you speak", "you talk", "you are speaking"] },
+    { "id": "katono", "target": "katono", "base": "a little", "altBase": ["a bit", "little", "slightly"] },
+    { "id": "kiyitibwa", "target": "kiyitibwa", "base": "it is called", "altBase": ["is called", "it’s called"] },
+    {
+      "id": "kitya",
+      "target": "kitya",
+      "base": "how",
+      "altBase": ["what", "how is it"],
+      "notes": "For eki- things: kiyitibwa kitya? what is it called?"
+    }
+  ],
+  "sentences": [
+    { "id": "s18-oyagala-ki", "target": "Oyagala ki leero?", "base": "What do you want today?" },
+    { "id": "s18-kino-kiki", "target": "Kino kiki?", "base": "What is this?", "altBase": ["What’s this?"] },
+    { "id": "s18-ekyo-kiki", "target": "Ekyo kiki?", "base": "What is that?", "altBase": ["What’s that?"] },
+    { "id": "s18-ani-oyo", "target": "Ani oyo?", "base": "Who is that?", "altBase": ["Who’s that?"] },
+    { "id": "s18-ekitabo-kiri-wa", "target": "Ekitabo kyange kiri wa?", "base": "Where is my book?", "altBase": ["Where’s my book?"] },
+    { "id": "s18-oli-wa", "target": "Oli wa kati?", "base": "Where are you now?" },
+    { "id": "s18-ojja-ddi", "target": "Ojja ddi?", "base": "When are you coming?", "altBase": ["When will you come?", "When do you come?"] },
+    {
+      "id": "s18-njija-enkya",
+      "target": "Nzija enkya.",
+      "base": "I am coming tomorrow.",
+      "altBase": ["I’m coming tomorrow.", "I will come tomorrow.", "I come tomorrow."]
+    },
+    {
+      "id": "s18-lwaki-osoma",
+      "target": "Lwaki osoma Oluganda?",
+      "base": "Why are you learning Luganda?",
+      "altBase": ["Why do you study Luganda?", "Why do you learn Luganda?"]
+    },
+    {
+      "id": "s18-kubanga",
+      "target": "Kubanga njagala okwogera n’abantu.",
+      "base": "Because I want to speak with people.",
+      "altTarget": ["Kubanga njagala okwogera nabantu."],
+      "altBase": ["Because I want to talk to people.", "Because I want to talk with people."]
+    },
+    { "id": "s18-caayi-oba-kaawa", "target": "Caayi oba kaawa?", "base": "Tea or coffee?" },
+    { "id": "s18-oyogera-oluganda", "target": "Oyogera Oluganda?", "base": "Do you speak Luganda?", "altBase": ["You speak Luganda?"] },
+    { "id": "s18-njogera-katono", "target": "Njogera katono.", "base": "I speak a little.", "altBase": ["I speak a bit."] },
+    {
+      "id": "s18-kiyitibwa-kitya",
+      "target": "Kino kiyitibwa kitya mu Luganda?",
+      "base": "What is this called in Luganda?",
+      "altBase": ["How do you say this in Luganda?", "What’s this called in Luganda?"]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u18s1",
+      "title": "Who and what",
+      "icon": "info",
+      "tip": "question-words",
+      "lessons": [
+        { "id": "u18s1l1", "newWords": ["ki", "kiki"], "sentences": ["s18-oyagala-ki", "s18-kino-kiki"] },
+        { "id": "u18s1l2", "newWords": ["ekyo", "oyo"], "sentences": ["s18-ekyo-kiki", "s18-ani-oyo"] },
+        {
+          "id": "u18s1l3",
+          "newWords": ["okwogera", "njogera", "oyogera", "katono"],
+          "sentences": ["s18-oyogera-oluganda", "s18-njogera-katono"]
+        }
+      ]
+    },
+    {
+      "id": "u18s2",
+      "title": "Where and when",
+      "icon": "clock",
+      "lessons": [
+        { "id": "u18s2l1", "newWords": ["wa", "oli-wa"], "sentences": ["s18-ekitabo-kiri-wa", "s18-oli-wa"] },
+        { "id": "u18s2l2", "newWords": ["ddi", "ojja"], "sentences": ["s18-ojja-ddi", "s18-njija-enkya"] },
+        {
+          "id": "u18s2l3",
+          "newWords": [],
+          "sentences": ["s18-oli-wa", "s18-ojja-ddi", "s18-ani-oyo"],
+          "dialogues": [
+            {
+              "speaker": "emma",
+              "target": "Oli wa kati?",
+              "base": "Where are you now?",
+              "options": ["Ndi ku paaka. Nzija!", "Simanyi Oluganda.", "Kino kiki?"],
+              "answer": "Ndi ku paaka. Nzija!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u18s3",
+      "title": "Why and how",
+      "icon": "target",
+      "tip": "ask-about-words",
+      "lessons": [
+        { "id": "u18s3l1", "newWords": ["lwaki", "kubanga"], "sentences": ["s18-lwaki-osoma", "s18-kubanga"] },
+        { "id": "u18s3l2", "newWords": ["oba"], "sentences": ["s18-caayi-oba-kaawa", "s18-oyagala-ki"] },
+        {
+          "id": "u18s3l3",
+          "newWords": ["kiyitibwa", "kitya"],
+          "sentences": ["s18-kiyitibwa-kitya", "s18-kino-kiki"],
+          "dialogues": [
+            {
+              "speaker": "emma",
+              "target": "Lwaki osoma Oluganda?",
+              "base": "Why are you learning Luganda?",
+              "options": ["Kubanga njagala okwogera ne jjajja wange.", "Caayi oba kaawa?", "Ojja ddi?"],
+              "answer": "Kubanga njagala okwogera ne jjajja wange."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Luganda questions keep the same word order as statements. The question word simply goes where the answer would be, usually at the end.",
+    "phrases": [
+      { "target": "Kino kiki?", "base": "What is this?" },
+      { "target": "Ani oyo?", "base": "Who is that?" },
+      { "target": "Oli wa kati?", "base": "Where are you now?" },
+      { "target": "Ojja ddi?", "base": "When are you coming?" },
+      { "target": "Lwaki osoma Oluganda?", "base": "Why are you learning Luganda?" },
+      { "target": "Oyogera Oluganda?", "base": "Do you speak Luganda?" },
+      { "target": "Kino kiyitibwa kitya mu Luganda?", "base": "What is this called in Luganda?" }
+    ],
+    "tips": [
+      {
+        "id": "question-words",
+        "title": "The answer goes in the same place",
+        "body": [
+          "Ask **Ogenda wa?** (you-go where?) and answer **Ŋŋenda Jinja** (I-go Jinja). Swap the question word for the answer and the sentence is done.",
+          "A yes/no question is a statement with a rising voice: **Oyogera Oluganda?** Add **oba** (or) to offer a choice: **Caayi oba kaawa?**"
+        ],
+        "table": [
+          ["Word", "Meaning", "Example"],
+          ["ki", "what", "Oyagala ki?"],
+          ["ani", "who", "Ani oyo?"],
+          ["wa", "where", "Oli wa?"],
+          ["ddi", "when", "Ojja ddi?"],
+          ["lwaki", "why", "Lwaki osoma?"],
+          ["mmeka", "how many / how much", "Ssente mmeka?"]
+        ]
+      },
+      {
+        "id": "ask-about-words",
+        "title": "Learning from people",
+        "body": [
+          "The best phrase for a learner: point and ask **Kino kiyitibwa kitya mu Luganda?** (What is this called in Luganda?). If you miss the answer, say **Ddamu mpola** (repeat slowly). People love helping a learner."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Njogera katono",
+        "body": [
+          "Answering **Njogera katono** (I speak a little) to **Oyogera Oluganda?** almost always gets a smile, and often a long conversation. Ugandans are proud when visitors try their language."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "what-is-this",
+      "title": "What is this called?",
+      "unlockAfter": "u18s3l3",
+      "cast": ["emma", "jjajja"],
+      "summary": "Emma asks Jjajja the names of things in her kitchen.",
+      "steps": [
+        {
+          "line": { "speaker": "emma", "target": "Jjajja, kino kiyitibwa kitya mu Luganda?", "base": "Grandma, what is this called in Luganda?" }
+        },
+        { "line": { "speaker": "jjajja", "target": "Ekyo kibbo.", "base": "That is a basket." }, "gloss": { "kibbo": "a basket" } },
+        {
+          "line": { "speaker": "emma", "target": "Kibbo. Ate kino kiki?", "base": "Basket. And what is this?" },
+          "gloss": { "Ate": "and, what about" }
+        },
+        { "line": { "speaker": "jjajja", "target": "Kino kyambe.", "base": "This is a knife." }, "gloss": { "kyambe": "a knife" } },
+        { "question": "What is Emma doing?", "options": ["Asking the names of things", "Cooking dinner", "Buying a basket"], "answer": 0 },
+        {
+          "line": { "speaker": "emma", "target": "Sitegeera. Ddamu mpola, Jjajja.", "base": "I don’t understand. Repeat slowly, Grandma." }
+        },
+        { "line": { "speaker": "jjajja", "target": "Ekyambe. Kino kyambe.", "base": "A knife. This is a knife." } },
+        {
+          "line": { "speaker": "jjajja", "target": "Lwaki osoma Oluganda, mwana wange?", "base": "Why are you learning Luganda, my child?" }
+        },
+        {
+          "line": { "speaker": "emma", "target": "Kubanga njagala okwogera naawe!", "base": "Because I want to talk with you!" },
+          "gloss": { "naawe": "with you" }
+        },
+        {
+          "question": "Why is Emma learning Luganda?",
+          "options": ["For school", "To talk with Jjajja", "To buy things at the market"],
+          "answer": 1
+        },
+        {
+          "line": { "speaker": "jjajja", "target": "Ayi, kirungi nnyo! Oyogera bulungi.", "base": "Oh, that’s very good! You speak well." }
+        },
+        { "line": { "speaker": "emma", "target": "Nedda, njogera katono.", "base": "No, I speak a little." } }
+      ]
+    }
+  ]
+}

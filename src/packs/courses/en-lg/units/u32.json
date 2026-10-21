@@ -1,0 +1,226 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u32",
+  "title": "Nature",
+  "description": "Lakes, rivers, forests and hills, and caring for the land.",
+  "color": "sky",
+  "character": "emma",
+  "words": [
+    { "id": "ennyanja", "target": "ennyanja", "base": "lake", "altBase": ["the lake", "sea"] },
+    { "id": "nnalubaale", "target": "Nnalubaale", "base": "Lake Victoria", "altBase": ["lake victoria", "nalubaale"] },
+    { "id": "omugga", "target": "omugga", "base": "river", "altBase": ["the river", "stream"] },
+    { "id": "kiyira", "target": "Kiyira", "base": "the Nile", "altBase": ["nile", "the river nile"] },
+    { "id": "ekibira", "target": "ekibira", "base": "forest", "altBase": ["the forest", "woods"] },
+    { "id": "omuti", "target": "omuti", "base": "tree", "altBase": ["the tree", "a tree"] },
+    { "id": "emiti", "target": "emiti", "base": "trees", "altBase": ["the trees"] },
+    { "id": "olusozi", "target": "olusozi", "base": "hill", "altBase": ["mountain", "the hill"] },
+    { "id": "ensozi", "target": "ensozi", "base": "hills", "altBase": ["mountains", "the hills"] },
+    { "id": "ebimuli", "target": "ebimuli", "base": "flowers", "altBase": ["the flowers", "flower"] },
+    { "id": "ettaka", "target": "ettaka", "base": "land", "altBase": ["soil", "earth", "the land", "ground"] },
+    {
+      "id": "okusimba",
+      "target": "okusimba",
+      "base": "to plant",
+      "altBase": ["planting"],
+      "notes": "For trees and bananas. Seeds use okusiga."
+    },
+    { "id": "okukuuma", "target": "okukuuma", "base": "to protect", "altBase": ["to look after", "to care for", "to keep", "protecting"] },
+    { "id": "kasasiro", "target": "kasasiro", "base": "rubbish", "altBase": ["trash", "garbage", "litter", "waste"] },
+    { "id": "tosuula", "target": "Tosuula", "base": "Don’t throw", "altBase": ["do not throw", "don’t drop", "do not dump"] }
+  ],
+  "sentences": [
+    {
+      "id": "s32-ennyanja-nnene",
+      "target": "Nnalubaale ye nnyanja ennene.",
+      "base": "Lake Victoria is a big lake.",
+      "altBase": ["Lake Victoria is the big lake.", "Nnalubaale is a big lake."]
+    },
+    {
+      "id": "s32-ebyennyanja",
+      "target": "Ebyennyanja biva mu nnyanja.",
+      "base": "Fish come from the lake.",
+      "altBase": ["The fish come from the lake."]
+    },
+    {
+      "id": "s32-omugga-kiyira",
+      "target": "Kiyira gwe mugga omuwanvu.",
+      "base": "The Nile is a long river.",
+      "altBase": ["The Nile is the long river."]
+    },
+    {
+      "id": "s32-kiyira-jinja",
+      "target": "Kiyira gutandikira e Jinja.",
+      "base": "The Nile starts at Jinja.",
+      "altBase": ["The Nile begins at Jinja.", "The Nile starts in Jinja."]
+    },
+    {
+      "id": "s32-ekibira",
+      "target": "Enkima ziri mu kibira.",
+      "base": "The monkeys are in the forest.",
+      "altBase": ["Monkeys are in the forest."]
+    },
+    { "id": "s32-omuti-omunene", "target": "Omuti guno munene nnyo.", "base": "This tree is very big.", "altBase": ["This tree is huge."] },
+    {
+      "id": "s32-ensozi-musanvu",
+      "target": "Kampala erina ensozi musanvu.",
+      "base": "Kampala has seven hills.",
+      "altBase": ["Kampala has 7 hills."]
+    },
+    {
+      "id": "s32-ku-lusozi",
+      "target": "Ennyumba yange eri ku lusozi.",
+      "base": "My house is on the hill.",
+      "altBase": ["My house is on a hill."]
+    },
+    {
+      "id": "s32-ebimuli",
+      "target": "Ebimuli birungi nnyo.",
+      "base": "The flowers are very beautiful.",
+      "altBase": ["The flowers are very nice.", "The flowers are very pretty."]
+    },
+    { "id": "s32-tusimbe-emiti", "target": "Tusimbe emiti!", "base": "Let’s plant trees!", "altBase": ["Let us plant trees!"] },
+    {
+      "id": "s32-tukuume-ettaka",
+      "target": "Tukuume ettaka lyaffe.",
+      "base": "Let’s protect our land.",
+      "altBase": ["Let us protect our land.", "Let’s look after our land."]
+    },
+    {
+      "id": "s32-tosuula-kasasiro",
+      "target": "Tosuula kasasiro wano!",
+      "base": "Don’t throw rubbish here!",
+      "altBase": ["Do not throw rubbish here!", "Don’t litter here!", "Don’t dump rubbish here!"]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u32s1",
+      "title": "Lakes and rivers",
+      "icon": "target",
+      "tip": "locatives",
+      "lessons": [
+        { "id": "u32s1l1", "newWords": ["ennyanja", "nnalubaale"], "sentences": ["s32-ennyanja-nnene", "s32-ebyennyanja"] },
+        { "id": "u32s1l2", "newWords": ["omugga", "kiyira"], "sentences": ["s32-omugga-kiyira", "s32-kiyira-jinja"] },
+        { "id": "u32s1l3", "newWords": [], "sentences": ["s32-kiyira-jinja", "s32-ennyanja-nnene", "s32-ebyennyanja"] }
+      ]
+    },
+    {
+      "id": "u32s2",
+      "title": "Forests and hills",
+      "icon": "star",
+      "lessons": [
+        { "id": "u32s2l1", "newWords": ["ekibira", "omuti", "emiti"], "sentences": ["s32-ekibira", "s32-omuti-omunene"] },
+        { "id": "u32s2l2", "newWords": ["olusozi", "ensozi"], "sentences": ["s32-ensozi-musanvu", "s32-ku-lusozi"] },
+        { "id": "u32s2l3", "newWords": ["ebimuli"], "sentences": ["s32-ebimuli", "s32-ku-lusozi"] }
+      ]
+    },
+    {
+      "id": "u32s3",
+      "title": "Caring for the land",
+      "icon": "heart",
+      "lessons": [
+        { "id": "u32s3l1", "newWords": ["ettaka", "okusimba"], "sentences": ["s32-tusimbe-emiti"] },
+        { "id": "u32s3l2", "newWords": ["okukuuma"], "sentences": ["s32-tukuume-ettaka", "s32-tusimbe-emiti"] },
+        {
+          "id": "u32s3l3",
+          "newWords": ["kasasiro", "tosuula"],
+          "sentences": ["s32-tosuula-kasasiro", "s32-tukuume-ettaka"],
+          "dialogues": [
+            {
+              "speaker": "emma",
+              "target": "Tukole ki okukuuma ettaka?",
+              "base": "What should we do to protect the land?",
+              "options": ["Tusimbe emiti, tosuula kasasiro.", "Kabaka awangaale!", "Nnywesa ente amazzi."],
+              "answer": "Tusimbe emiti, tosuula kasasiro."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Uganda is green, wet and full of water: Lake Victoria, the source of the Nile, forests and hills. Locatives tell you where things are.",
+    "phrases": [
+      { "target": "Nnalubaale ye nnyanja ennene.", "base": "Lake Victoria is a big lake." },
+      { "target": "Kiyira gutandikira e Jinja.", "base": "The Nile starts at Jinja." },
+      { "target": "Enkima ziri mu kibira.", "base": "The monkeys are in the forest." },
+      { "target": "Kampala erina ensozi musanvu.", "base": "Kampala has seven hills." },
+      { "target": "Tusimbe emiti!", "base": "Let’s plant trees!" },
+      { "target": "Tosuula kasasiro wano!", "base": "Don’t throw rubbish here!" }
+    ],
+    "tips": [
+      {
+        "id": "locatives",
+        "title": "mu, ku and e",
+        "body": [
+          "**mu** means “in, inside”: **mu kibira** (in the forest). **ku** means “on, at”: **ku lusozi** (on the hill). **e** goes before place names: **e Jinja**, **e Kampala**.",
+          "After **mu** and **ku**, the noun drops its first vowel: **ekibira** becomes **mu kibira**, **olusozi** becomes **ku lusozi**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Seven hills",
+        "body": [
+          "Kampala was traditionally said to stand on seven hills, among them **Mengo** (the Kabaka’s palace), **Rubaga**, **Namirembe** and **Kibuli**. The city has long since spread over many more."
+        ]
+      },
+      {
+        "title": "Kiyira",
+        "body": [
+          "The Nile, **Kiyira** in Luganda, leaves Lake Victoria at Jinja and flows north to the Mediterranean. Rafting the rapids near Jinja is famous."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "source-of-nile",
+      "title": "The source of the Nile",
+      "unlockAfter": "u32s3l3",
+      "cast": ["emma", "ssali"],
+      "summary": "Ssali takes Emma to see where the Nile begins.",
+      "steps": [
+        { "line": { "speaker": "ssali", "target": "Tutuuse e Jinja! Laba, Kiyira.", "base": "We’ve arrived in Jinja! Look, the Nile." } },
+        { "line": { "speaker": "emma", "target": "Wa Kiyira w’atandikira?", "base": "Where does the Nile start?" } },
+        {
+          "line": { "speaker": "ssali", "target": "Wano! Amazzi gava mu Nnalubaale.", "base": "Here! The water comes out of Lake Victoria." },
+          "gloss": { "gava": "come from" }
+        },
+        { "question": "Where does the Nile’s water come from?", "options": ["Lake Victoria", "The forest", "The rain only"], "answer": 0 },
+        { "line": { "speaker": "emma", "target": "Ekinyonyi ekyo kiki?", "base": "What is that bird?" } },
+        {
+          "line": {
+            "speaker": "ssali",
+            "target": "Ekyo ngaali! Ebuuka waggulu w’omugga.",
+            "base": "That’s a crested crane! It’s flying over the river."
+          },
+          "gloss": { "waggulu": "above" }
+        },
+        {
+          "line": { "speaker": "emma", "target": "Ebimuli n’emiti birungi nnyo wano.", "base": "The flowers and trees are very beautiful here." }
+        },
+        {
+          "line": { "speaker": "ssali", "target": "Yee. Naye laba, kasasiro ku lubalama.", "base": "Yes. But look, rubbish on the shore." },
+          "gloss": { "lubalama": "shore" }
+        },
+        { "question": "What does Ssali see on the shore?", "options": ["Rubbish", "A lion", "A boat"], "answer": 0 },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Tukuume ettaka lyaffe! Tukung’aanye kasasiro.",
+            "base": "Let’s protect our land! Let’s pick up the rubbish."
+          },
+          "gloss": { "Tukung’aanye": "let’s collect" }
+        },
+        {
+          "question": "How does Emma say “Let’s protect our land”?",
+          "options": ["Tukuume ettaka lyaffe", "Tosuula kasasiro", "Tusimbe emiti"],
+          "answer": 0,
+          "optionsLang": "target"
+        },
+        { "line": { "speaker": "ssali", "target": "Kirungi nnyo, Emma!", "base": "Very good, Emma!" } }
+      ]
+    }
+  ]
+}
