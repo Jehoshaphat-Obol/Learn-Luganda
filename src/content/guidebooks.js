@@ -6,6 +6,7 @@
  */
 import { SECTION2_GUIDEBOOKS } from './guidebooks/section2.js';
 import { SECTION3_GUIDEBOOKS } from './guidebooks/section3.js';
+import { SECTION4_GUIDEBOOKS } from './guidebooks/section4.js';
 
 export const GUIDEBOOKS = {
   u1: {
@@ -354,4 +355,5 @@ export const GUIDEBOOKS = {
   },
   ...SECTION2_GUIDEBOOKS,
   ...SECTION3_GUIDEBOOKS,
+  ...SECTION4_GUIDEBOOKS,
 };
