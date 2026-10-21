@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { answer, exercisesFor, openWith, readState, savedState } from './helpers.js';
+import { answer, continueToPath, exercisesFor, openWith, readState, savedState } from './helpers.js';
 
 // Headless Chromium reports notifications as denied whatever the context
 // grants, so stand in for the browser's permission prompt.
@@ -31,9 +31,7 @@ test('the first lesson never asks about reminders', async ({ page }) => {
   const seed = 42;
   await openWith(page, savedState(), `#/lesson/u1s1l1?seed=${seed}`);
   for (const ex of exercisesFor('u1s1l1', seed)) await answer(page, ex);
-  for (let i = 0; i < 6 && (await page.locator('[data-continue]').count()); i += 1) {
-    await expect(page.getByRole('heading', { name: 'A word a day?' })).toHaveCount(0);
-    await page.locator('[data-continue]').click();
-  }
-  expect((await readState(page)).reminders.on).toBe(false);
+  await continueToPath(page);
+  // Passing the offer with Continue would have recorded a "not now".
+  expect((await readState(page)).reminders).toMatchObject({ on: false, consent: 'unasked', asks: 0, askedAt: null });
 });
