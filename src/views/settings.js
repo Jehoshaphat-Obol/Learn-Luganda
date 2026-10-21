@@ -10,7 +10,9 @@ import { button, escapeHtml, openModal, toast } from '../ui/components.js';
 import { CAST, mascot } from '../illustrations/index.js';
 import { avatar } from '../ui/avatar.js';
 import { refreshTopBar } from '../app/shell.js';
-import { canInstall, enableReminders, notificationsSupported, promptInstall } from '../app/pwa.js';
+import { canInstall, promptInstall } from '../app/pwa.js';
+import { backgroundSupported, remindersSupported, setReminderHour, setReminders } from '../reminders/reminders.js';
+import { REMINDER_STRINGS } from '../reminders/strings.js';
 import { PACKS, hapticsSupported, play, preload } from '../ui/sound.js';
 import { adConsent, adsConfigured, changeAdConsent } from '../ads/ads.js';
 import { siteLinks } from '../app/site.js';
@@ -31,6 +33,19 @@ function toggle(key, label, hint, checked, disabled = false) {
     <span class="switch-row__text"><strong>${label}</strong><small>${hint}</small></span>
     <input class="switch" type="checkbox" role="switch" data-setting="${key}"${checked ? ' checked' : ''}${disabled ? ' disabled' : ''} />
   </label>`;
+}
+
+function remindersRows(r) {
+  const t = REMINDER_STRINGS.settings;
+  const hours = [...Array(14).keys()].map((i) => i + 8);
+  return `${toggle('reminder', t.label, `${t.hint}${backgroundSupported() ? '' : ` ${t.limited}`}`, r.on)}
+    <label class="switch-row" ${r.on ? '' : 'hidden'} data-hour-row>
+      <span class="switch-row__text"><strong>${t.time}</strong></span>
+      <select class="input settings-hour" data-hour>
+        <option value="auto"${r.hour == null ? ' selected' : ''}>${t.auto}</option>
+        ${hours.map((h) => `<option value="${h}"${h === r.hour ? ' selected' : ''}>${hourLabel(h)}</option>`).join('')}
+      </select>
+    </label>`;
 }
 
 function profileSection(p) {
@@ -66,7 +81,7 @@ function profileSection(p) {
 }
 
 export function settingsView({ root, query, navigate }) {
-  const { settings, profile } = store.get();
+  const { settings, profile, reminders } = store.get();
   const systemReduced = Boolean(window.matchMedia?.('(prefers-reduced-motion: reduce)').matches);
   root.innerHTML = `
     <div class="page">
@@ -85,11 +100,7 @@ export function settingsView({ root, query, navigate }) {
           </label>
           ${toggle('music', 'Background music', 'A quiet amadinda loop on the home screens. Lessons and stories stay quiet.', settings.music !== false)}
           ${toggle('haptics', 'Vibration', !hapticsSupported() ? 'This device or browser can’t vibrate (iPhones and most computers don’t allow it).' : systemReduced ? 'Your device asks for reduced motion, so vibration stays off.' : 'A small buzz for taps, answers and rewards.', hapticsSupported() && !systemReduced && settings.haptics !== false, !hapticsSupported() || systemReduced)}
-          ${profile && notificationsSupported() ? toggle('reminder', 'Daily reminder', `A nudge at ${hourLabel(settings.reminderHour)} if you haven’t practised yet, while the app is open.`, settings.reminder) : ''}
-          ${profile && notificationsSupported() ? `<label class="switch-row" ${settings.reminder ? '' : 'hidden'} data-hour-row>
-            <span class="switch-row__text"><strong>Reminder time</strong></span>
-            <select class="input settings-hour" data-hour>${[...Array(17).keys()].map((i) => i + 6).map((h) => `<option value="${h}"${h === settings.reminderHour ? ' selected' : ''}>${hourLabel(h)}</option>`).join('')}</select>
-          </label>` : ''}
+          ${profile && remindersSupported() ? remindersRows(reminders) : ''}
           ${toggle('motion', 'Animations', systemReduced ? 'Your device asks for reduced motion, so animations stay minimal.' : 'Confetti, bouncing and sliding.', settings.motion !== false && !systemReduced, systemReduced)}
           <p class="muted settings-credits">Sounds and music are free and openly licensed (CC0). <a href="./audio/CREDITS.md" target="_blank" rel="noopener">Audio credits</a></p>
         </div>
@@ -170,10 +181,7 @@ export function settingsView({ root, query, navigate }) {
       return;
     }
     if (e.target.matches('[data-hour]')) {
-      store.update((s) => {
-        s.settings.reminderHour = Number(e.target.value);
-        s.settings.lastReminder = null;
-      });
+      setReminderHour(e.target.value === 'auto' ? null : Number(e.target.value));
       return;
     }
     const key = e.target.dataset?.setting;
@@ -185,12 +193,9 @@ export function settingsView({ root, query, navigate }) {
     }
     if (key === 'reminder') {
       const wanted = e.target.checked;
-      const on = wanted && (await enableReminders());
+      const on = await setReminders(wanted);
       e.target.checked = on;
-      if (wanted && !on) toast('Notifications are blocked for this site. Allow them in your browser settings to get reminders.', { duration: 4000 });
-      store.update((s) => {
-        s.settings.reminder = on;
-      });
+      if (wanted && !on) toast(REMINDER_STRINGS.consent.blocked, { duration: 4000 });
       root.querySelector('[data-hour-row]').hidden = !on;
       return;
     }

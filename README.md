@@ -49,8 +49,11 @@ accounts and no server: your progress stays in your browser.
   daily goal, sound, animations and reminders. You can export and import
   your progress as JSON.
 - **Installable and offline**: it's a PWA with a service worker, so lessons
-  work offline after your first visit. Opt-in daily reminders work while the
-  app is open.
+  work offline after your first visit.
+- **Word reminders** (opt-in): at most one short Luganda word a day, like
+  "Weebale — Thank you", timed around when you usually learn and skipped on
+  days you've practised. With no server they arrive while the app is open in
+  the background, or via Periodic Background Sync on installed Chrome/Edge.
 - **Accessible**: the app is checked with axe and can be played by keyboard
   alone. It respects reduced motion, gives screen readers live feedback, and
   never uses colour alone to signal right or wrong.

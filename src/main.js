@@ -12,7 +12,8 @@ import { routes } from './app/routes.js';
 import { applyMotion } from './ui/motion.js';
 import { preload } from './ui/sound.js';
 import { initMusic, setMusicScene, toggleMusic } from './ui/music.js';
-import { registerServiceWorker, startReminders } from './app/pwa.js';
+import { registerServiceWorker } from './app/pwa.js';
+import { startReminders } from './reminders/reminders.js';
 
 setStatsProvider(() => {
   const s = store.get();
