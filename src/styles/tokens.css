@@ -1,6 +1,7 @@
 /*
- * Design tokens. Vermillion orange is the brand colour; the rest of the
- * palette is a Bauhaus primary set used for illustrations and accents.
+ * Design tokens. Vermillion orange is the brand colour. Neutrals and pastels
+ * follow the promada palette: warm grey "paper", near-black ink and soft
+ * pastels for highlights. Bauhaus yellow and blue stay as illustration accents.
  */
 :root {
   /* Brand */
@@ -11,11 +12,28 @@
   --color-vermillion-600: #c7341f;
   --color-vermillion-700: #a02916;
 
-  /* Bauhaus palette */
+  /* Paper and ink (warm neutrals) */
+  --color-paper-50: #f4f2ee;
+  --color-paper-100: #ebe8e2;
+  --color-paper-200: #e0dcd4;
+  --color-paper-300: #d2cdc3;
+  --color-paper-400: #b9b3a8;
+  --color-ink-500: #8a857c;
+  --color-ink-700: #4a4640;
+  --color-ink-900: #1c1a18;
+
+  /* Bauhaus accents */
   --color-bauhaus-yellow: #f4c430;
   --color-bauhaus-blue: #1d4e9e;
-  --color-bauhaus-black: #141414;
-  --color-bauhaus-cream: #f6f0e4;
+  --color-bauhaus-black: var(--color-ink-900);
+  --color-bauhaus-cream: var(--color-paper-100);
+
+  /* Pastels */
+  --color-pastel-butter: #f1e4b0;
+  --color-pastel-blush: #efd0c9;
+  --color-pastel-sky: #cfdbe9;
+  --color-pastel-sage: #d4e2cd;
+  --color-pastel-lilac: #dad5ec;
 
   /* Feedback */
   --color-success: #2e9e5b;
@@ -26,15 +44,25 @@
   --color-primary-strong: var(--color-vermillion-600);
   --color-primary-shadow: var(--color-vermillion-700);
   --color-on-primary: #ffffff;
-  --color-bg: var(--color-bauhaus-cream);
-  --color-surface: #ffffff;
-  --color-text: var(--color-bauhaus-black);
-  --color-text-muted: #5b5750;
-  --color-border: #e2dacb;
+  --color-bg: var(--color-paper-100);
+  --color-bg-alt: var(--color-paper-200);
+  --color-surface: #fbfaf8;
+  --color-surface-inverse: var(--color-ink-900);
+  --color-on-inverse: var(--color-paper-50);
+  --color-text: var(--color-ink-900);
+  --color-text-muted: var(--color-ink-700);
+  --color-text-subtle: var(--color-ink-500);
+  --color-border: var(--color-paper-300);
 
-  /* Type */
-  --font-display: 'Outfit', system-ui, sans-serif;
-  --font-body: 'Lexend', system-ui, sans-serif;
+  /* Type: a tight grotesk for headings and UI, an italic serif for captions */
+  --font-display: 'Inter Tight', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  --tracking-tight: -0.03em;
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-lg: 1.25rem;
@@ -61,9 +89,17 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #1a1816;
-    --color-surface: #24211e;
-    --color-text: #f6f0e4;
-    --color-text-muted: #b5ada0;
+    --color-bg-alt: #211e1b;
+    --color-surface: #26231f;
+    --color-surface-inverse: #0f0e0d;
+    --color-text: var(--color-paper-50);
+    --color-text-muted: #c2bbb0;
+    --color-text-subtle: #8f887d;
     --color-border: #3a352f;
+    --color-pastel-butter: #4a4227;
+    --color-pastel-blush: #4a302b;
+    --color-pastel-sky: #2b3846;
+    --color-pastel-sage: #2f3d2b;
+    --color-pastel-lilac: #36324a;
   }
 }
