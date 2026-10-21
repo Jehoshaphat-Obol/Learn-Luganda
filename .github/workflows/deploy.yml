@@ -26,6 +26,14 @@ jobs:
       - run: npm run validate
       - run: npm test
       - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run e2e
+      - if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-traces
+          path: test-results/
+          retention-days: 7
       # Publishes dist/ to the gh-pages branch, which Pages serves.
       - if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
