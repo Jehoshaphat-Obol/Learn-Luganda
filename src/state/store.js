@@ -13,7 +13,8 @@ export const DEFAULTS = {
   profile: null,
   onboarding: { step: 0, answers: {} },
   // reminder: opt-in daily notification at reminderHour (local time)
-  settings: { sound: true, motion: true, reminder: false, reminderHour: 19, lastReminder: null },
+  // soundPack: 'playful' | 'soft' (see src/ui/sound.js)
+  settings: { sound: true, soundPack: 'playful', music: true, haptics: true, motion: true, reminder: false, reminderHour: 19, lastReminder: null },
   // lessonId -> { completions, bestAccuracy, lastCompletedAt }
   lessons: {},
   xp: { total: 0, byDay: {} },

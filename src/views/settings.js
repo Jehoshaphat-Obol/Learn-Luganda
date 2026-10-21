@@ -1,6 +1,6 @@
 /*
- * Settings: profile (name, character, colour), daily goal, sound and
- * animation preferences, then the data section (export, import, reset).
+ * Settings: profile (name, character, colour), daily goal, sound, music,
+ * haptics and animation preferences, then the data section (export, import, reset).
  * Every change saves and applies straight away. The theme is light only.
  */
 import '../styles/onboarding.css';
@@ -11,7 +11,7 @@ import { CAST, mascot } from '../illustrations/index.js';
 import { avatar } from '../ui/avatar.js';
 import { refreshTopBar } from '../app/shell.js';
 import { canInstall, enableReminders, notificationsSupported, promptInstall } from '../app/pwa.js';
-import { play } from '../ui/sound.js';
+import { PACKS, hapticsSupported, play, preload } from '../ui/sound.js';
 import { adConsent, adsConfigured, changeAdConsent } from '../ads/ads.js';
 import { siteLinks } from '../app/site.js';
 
@@ -78,13 +78,20 @@ export function settingsView({ root, query, navigate }) {
       <section class="settings-group" id="preferences">
         <h2>Preferences</h2>
         <div>
-          ${toggle('sound', 'Sound effects', 'Chimes for right and wrong answers and rewards.', settings.sound !== false)}
+          ${toggle('sound', 'Sound effects', 'Sounds for taps, right and wrong answers, and rewards.', settings.sound !== false)}
+          <label class="switch-row">
+            <span class="switch-row__text"><strong>Sound style</strong><small>Playful is bright and bouncy, soft is gentle and warm.</small></span>
+            <select class="input settings-hour" data-pack>${Object.entries(PACKS).map(([id, label]) => `<option value="${id}"${id === (settings.soundPack ?? 'playful') ? ' selected' : ''}>${label}</option>`).join('')}</select>
+          </label>
+          ${toggle('music', 'Background music', 'A quiet amadinda loop on the home screens. Lessons and stories stay quiet.', settings.music !== false)}
+          ${toggle('haptics', 'Vibration', !hapticsSupported() ? 'This device or browser can’t vibrate (iPhones and most computers don’t allow it).' : systemReduced ? 'Your device asks for reduced motion, so vibration stays off.' : 'A small buzz for taps, answers and rewards.', hapticsSupported() && !systemReduced && settings.haptics !== false, !hapticsSupported() || systemReduced)}
           ${profile && notificationsSupported() ? toggle('reminder', 'Daily reminder', `A nudge at ${hourLabel(settings.reminderHour)} if you haven’t practised yet, while the app is open.`, settings.reminder) : ''}
           ${profile && notificationsSupported() ? `<label class="switch-row" ${settings.reminder ? '' : 'hidden'} data-hour-row>
             <span class="switch-row__text"><strong>Reminder time</strong></span>
             <select class="input settings-hour" data-hour>${[...Array(17).keys()].map((i) => i + 6).map((h) => `<option value="${h}"${h === settings.reminderHour ? ' selected' : ''}>${hourLabel(h)}</option>`).join('')}</select>
           </label>` : ''}
           ${toggle('motion', 'Animations', systemReduced ? 'Your device asks for reduced motion, so animations stay minimal.' : 'Confetti, bouncing and sliding.', settings.motion !== false && !systemReduced, systemReduced)}
+          <p class="muted settings-credits">Sounds and music are free and openly licensed (CC0). <a href="./audio/CREDITS.md" target="_blank" rel="noopener">Audio credits</a></p>
         </div>
       </section>
 
@@ -154,6 +161,14 @@ export function settingsView({ root, query, navigate }) {
   if (query.section) root.querySelector(`#${CSS.escape(query.section)}`)?.scrollIntoView({ block: 'start' });
 
   root.addEventListener('change', async (e) => {
+    if (e.target.matches('[data-pack]')) {
+      store.update((s) => {
+        s.settings.soundPack = e.target.value;
+      });
+      preload(e.target.value);
+      play('correct');
+      return;
+    }
     if (e.target.matches('[data-hour]')) {
       store.update((s) => {
         s.settings.reminderHour = Number(e.target.value);
@@ -183,6 +198,7 @@ export function settingsView({ root, query, navigate }) {
       s.settings[key] = e.target.checked;
     });
     if (key === 'sound' && e.target.checked) play('correct');
+    if (key === 'haptics' && e.target.checked) play('tap');
   });
 
   fileInput.addEventListener('change', async () => {

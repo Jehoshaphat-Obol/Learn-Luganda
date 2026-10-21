@@ -68,7 +68,7 @@ function goalScreen({ goalAfter }) {
       <div class="complete__ring">${ring(1, { size: 140, stroke: 12, content: `<strong class="complete__ring-num">${goalAfter.today}</strong><span>XP today</span>`, label: 'Daily goal' })}</div>
       <p class="complete__sub muted">You reached your ${goalAfter.goal} XP goal. Come back tomorrow to keep learning.</p>`,
     after: () => {
-      play('unlock');
+      play('levelup');
       confetti();
     },
   };
@@ -106,7 +106,7 @@ function achievementScreen(unlocked) {
       <h1>Achievement${unlocked.length > 1 ? 's' : ''} unlocked!</h1>
       <ul class="unlocks">${items.join('')}</ul>`,
     after: () => {
-      play('unlock');
+      play('achievement');
       confetti();
     },
   };
