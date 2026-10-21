@@ -67,3 +67,20 @@ test('no ads or consent card while AdSense is not configured', async ({ page }) 
   await page.goto('./#/stories');
   await expect(page.locator('[data-ad], .consent')).toHaveCount(0);
 });
+
+for (const width of [360, 412]) {
+  test(`a long profile name never runs under the Edit button at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 800 });
+    const state = savedState();
+    state.profile.name = 'JehoshaphatObolensky12345678';
+    await openWith(page, state, '#/profile');
+    const name = page.locator('.profile-head h1');
+    const edit = page.getByRole('link', { name: 'Edit profile' });
+    await expect(edit).toBeVisible();
+    const [a, b] = [await name.boundingBox(), await edit.boundingBox()];
+    const overlaps = a.x < b.x + b.width && b.x < a.x + a.width && a.y < b.y + b.height && b.y < a.y + a.height;
+    expect(overlaps).toBe(false);
+    expect(a.x + a.width).toBeLessThanOrEqual(width);
+    expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
+  });
+}
