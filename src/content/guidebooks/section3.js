@@ -154,4 +154,144 @@ export const SECTION3_GUIDEBOOKS = {
       },
     ],
   },
+  u21: {
+    intro: 'Most feelings in Luganda are verbs in the perfect: you have “become tired”, so you are tired. That’s why they look like the past forms from Unit 19.',
+    phrases: [
+      ['Nsanyuse nnyo leero!', 'I am very happy today!'],
+      ['Oli bulungi, mukwano gwange?', 'Are you okay, my friend?'],
+      ['Nkooye nnyo.', 'I am very tired.'],
+      ['Nneeraliikirira ekigezo.', 'I am worried about the exam.'],
+      ['Bambi! Wona mangu.', 'So sorry! Get well soon.'],
+      ['Nsonyiwa, nzize kikeerezi.', 'Forgive me, I have come late.'],
+      ['Nkusubwa.', 'I miss you.'],
+    ],
+    tips: [
+      {
+        id: 'feeling-verbs',
+        title: 'Feelings are states',
+        body: [
+          '**Nkooye** comes from **-koowa** (get tired), **nsanyuse** from **-sanyuka** (become happy), **ntidde** from **-tya** (fear). The perfect ending says the change has happened and is still true.',
+          'Change the person prefix as usual: **okooye** (you are tired), **akooye** (he/she is tired), **tukooye** (we are tired).',
+        ],
+        table: [
+          ['Verb', 'I am …', 'English'],
+          ['-sanyuka', 'nsanyuse', 'happy'],
+          ['-nakuwala', 'nnakuwadde', 'sad'],
+          ['-koowa', 'nkooye', 'tired'],
+          ['-tya', 'ntidde', 'scared'],
+          ['-nyiiga', 'nnyiize', 'angry'],
+        ],
+      },
+      {
+        id: 'sorry',
+        title: 'Two kinds of sorry',
+        body: ['**Bambi** shows sympathy: someone is sick, tired or had bad luck, and you feel for them. **Nsonyiwa** (forgive me) is an apology for something you did. Saying **Nsonyiwa** when someone falls over would sound like it was your fault.'],
+      },
+    ],
+    culture: [
+      {
+        title: 'Asking after everyone',
+        body: ['Conversations often include news of the whole family: **Maama wo ali atya?** (How is your mother?), **Abaana bali batya?** (How are the children?). Taking time to ask shows real care.'],
+      },
+    ],
+  },
+  u22: {
+    intro: 'Football is a passion across Uganda, music is everywhere, and there’s always a game of omweso under a tree somewhere.',
+    phrases: [
+      ['Nnyumirwa okusoma ebitabo.', 'I enjoy reading books.'],
+      ['Nzannya omupiira ku Lwamukaaga.', 'I play football on Saturday.'],
+      ['Ttiimu yange ewangudde!', 'My team has won!'],
+      ['Ani awangudde?', 'Who has won?'],
+      ['Nnyumirwa okuyimba n’okuzina.', 'I enjoy singing and dancing.'],
+      ['Njagala ennyimba z’Oluganda.', 'I like Luganda songs.'],
+    ],
+    tips: [
+      {
+        id: 'enjoy',
+        title: 'Saying what you like doing',
+        body: [
+          'Put a **ku-** infinitive after **Nnyumirwa** (I enjoy) or **Njagala** (I like, I want): **Nnyumirwa okuwuga**.',
+          'Join two activities with **n’** (and) before a vowel: **okuyimba n’okuzina**. Join two sentences with **era**: **Nsoma, era nzannya**.',
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'The Cranes',
+        body: ['Uganda’s national football team is called the Cranes, after the crested crane. On big match nights, crowds gather around any TV to watch, and a goal brings shouts of **Goolo!** from every house.'],
+      },
+      {
+        title: 'Omweso',
+        body: ['**Omweso** is a fast board game of four rows of pits and 64 seeds, related to games played all over Africa. Skilled players count and move seeds faster than you can follow.'],
+      },
+    ],
+  },
+  u23: {
+    intro: 'Phone calls and messages are how plans get made. This unit also shows how Luganda puts “me”, “you” and “him/her” inside the verb.',
+    phrases: [
+      ['Halo? Ani ayogera?', 'Hello? Who is speaking?'],
+      ['Nze Nakato ayogera.', 'It’s Nakato speaking.'],
+      ['Nja kukukubira essimu enkya.', 'I will call you tomorrow.'],
+      ['Sikuwulira bulungi.', 'I can’t hear you well.'],
+      ['Mpeereza obubaka.', 'Send me a message.'],
+      ['Tusisinkane ku ssaawa nnya.', 'Let’s meet at ten o’clock.'],
+      ['Ndi mu kkubo, nzija!', 'I’m on the way, I’m coming!'],
+    ],
+    tips: [
+      {
+        id: 'object-markers',
+        title: 'Me, you, him inside the verb',
+        body: [
+          'The object goes inside the verb, between the person doing it and the verb stem: **n-ku-kubira** (I-you-call), **m-mu-kubira** (I-him-call).',
+          'For “me”, the marker is **n-**, and it changes the next sound like the n- for “I” does: **Nkubira** (call me), **Mpa** (give me), **Mpeereza** (send me).',
+        ],
+        table: [
+          ['Object', 'Marker', 'Example'],
+          ['me', 'n-', 'Nkubira (call me)'],
+          ['you', '-ku-', 'nkukubira (I call you)'],
+          ['him / her', '-mu-', 'mmukubira (I call him/her)'],
+          ['us', '-tu-', 'otukubira (you call us)'],
+          ['them', '-ba-', 'mbakubira (I call them)'],
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'Beeping',
+        body: ['Some people call and hang up after one ring, a “beep” or “flash”, meaning “call me back”. It saves airtime for the person who has less.'],
+      },
+    ],
+  },
+  u24: {
+    intro: 'Cooking brings together everything: commands, time words, food and sharing. Luwombo, a stew steamed in banana leaves, is the dish of celebration.',
+    phrases: [
+      ['Teeka entamu ku muliro.', 'Put the pot on the fire.'],
+      ['Sooka sala obutungulu.', 'First cut the onions.'],
+      ['Oluvannyuma gattako ennyaanya.', 'Then add the tomatoes.'],
+      ['Tusiba matooke mu ndagala.', 'We wrap matooke in banana leaves.'],
+      ['Emmere eyidde. Tulye!', 'The food is ready. Let’s eat!'],
+      ['Nkkuse, weebale nnyo.', 'I’m full, thank you very much.'],
+      ['Webale okufumba!', 'Thanks for cooking!'],
+    ],
+    tips: [
+      {
+        id: 'recipe-steps',
+        title: 'Steps in order',
+        body: [
+          'A recipe is a list of commands: **Sala** (cut), **Teeka** (put), **Gattako** (add), **Siika** (fry). Start with **Sooka** (first) and continue with **Oluvannyuma** (then, afterwards).',
+          '**-ko** at the end of a verb adds “a bit, some”: **Gattako omunnyo** (add some salt). You met it in **Kendeezaako** (lower it a bit).',
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'Matooke in banana leaves',
+        body: ['Matooke is peeled, wrapped in **endagala** (banana leaves), steamed for hours and mashed inside the leaves. The leaves keep it warm and give it its taste, and they are used as plates and lids too.'],
+      },
+      {
+        title: 'Webale okufumba',
+        body: ['After a meal, thank the cook: **Webale okufumba**. Saying **Nkkuse** (I’m full) is the polite way to stop, otherwise your plate will be filled again.'],
+      },
+    ],
+  },
 };
