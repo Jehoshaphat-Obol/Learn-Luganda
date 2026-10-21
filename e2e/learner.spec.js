@@ -4,6 +4,9 @@ import { answer, continueToPath, exercisesFor, openWith, readState, savedState, 
 test('a new visitor signs up through onboarding', async ({ page }) => {
   await page.goto('./');
   await page.getByRole('link', { name: 'Get started' }).first().click();
+  // The browser speaks English, the one language courses are taught from today.
+  await page.getByRole('radio', { name: /I speak English/ }).click();
+  await page.locator('[data-nav="next"]').click();
   await page.getByRole('button', { name: /Let’s go/ }).click();
   await page.locator('[data-pick="motivation"]').first().click();
   await page.locator('[data-nav="next"]').click();

@@ -11,6 +11,7 @@ import { MASCOT_NAME } from '../app/brand.js';
 import { button, escapeHtml, progressBar, speech } from '../ui/components.js';
 import { avatar } from '../ui/avatar.js';
 import { icon } from '../ui/icons.js';
+import { applyLanguages, languageScreen, onGuessReply } from './language-picker.js';
 
 const MOTIVATIONS = [
   { id: 'family', label: 'Talk with family', icon: 'profile' },
@@ -26,7 +27,7 @@ const LEVELS = [
   { id: 'some', label: 'I know some words', detail: 'Start with a quick greetings review.' },
 ];
 
-const STEPS = ['welcome', 'motivation', 'goal', 'level', 'avatar', 'ready'];
+const STEPS = ['languages', 'welcome', 'motivation', 'goal', 'level', 'avatar', 'ready'];
 
 function saveOnboarding(patch) {
   store.update((s) => {
@@ -36,6 +37,8 @@ function saveOnboarding(patch) {
 
 function screen(step, answers) {
   switch (step) {
+    case 'languages':
+      return languageScreen(answers);
     case 'welcome':
       return {
         pose: 'happy',
@@ -150,8 +153,15 @@ export function onboardingView({ root, navigate }) {
     root.querySelector('#onb-name')?.focus();
   }
 
-  function next() {
+  async function next() {
     const { step = 0, answers } = store.get().onboarding;
+    if (STEPS[step] === 'languages') {
+      // Move on first: switching language or course redraws the screen.
+      saveOnboarding({ step: step + 1 });
+      await applyLanguages(answers);
+      render();
+      return;
+    }
     if (STEPS[step] === 'ready') {
       store.update((s) => {
         s.profile = createProfile({
@@ -171,9 +181,18 @@ export function onboardingView({ root, navigate }) {
   }
 
   root.addEventListener('click', (e) => {
+    const reply = e.target.closest('[data-lang-reply]');
+    if (reply) {
+      saveOnboarding({ answers: onGuessReply(reply.dataset.langReply) });
+      render();
+      root.querySelector('.onb__body [role="radio"], .onb__body button')?.focus();
+      return;
+    }
     const pick = e.target.closest('[data-pick]');
     if (pick) {
-      saveOnboarding({ answers: { [pick.dataset.pick]: pick.dataset.value } });
+      // A new base language may not offer the course picked before.
+      const extra = pick.dataset.pick === 'speak' ? { course: null } : {};
+      saveOnboarding({ answers: { [pick.dataset.pick]: pick.dataset.value, ...extra } });
       const focusKey = `[data-pick="${pick.dataset.pick}"][data-value="${pick.dataset.value}"]`;
       render();
       root.querySelector(focusKey)?.focus();

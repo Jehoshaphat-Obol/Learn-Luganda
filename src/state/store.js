@@ -13,7 +13,11 @@ export const DEFAULTS = {
   profile: null,
   onboarding: { step: 0, answers: {} },
   // soundPack: 'playful' | 'soft' (see src/ui/sound.js)
-  settings: { sound: true, soundPack: 'playful', music: true, haptics: true, motion: true },
+  // uiLang: the interface language (null = detect from the browser);
+  // course: the active from→to course pack
+  settings: { sound: true, soundPack: 'playful', music: true, haptics: true, motion: true, uiLang: null, course: 'en-lg' },
+  // Progress of courses other than the active one, by course id (see ./courses.js).
+  courses: {},
   // Opt-in word reminders (src/reminders). hour: null learns the routine from
   // `hours` (lessons finished per hour of day); consent: 'unasked' | 'granted'
   // | 'later' | 'declined'; sent: day keys reminders went out.

@@ -27,6 +27,47 @@
       "label": "Background music",
       "turnOff": "Turn music off",
       "turnOn": "Turn music on"
+    },
+    "picker": {
+      "other": "Something else",
+      "course": "{target}, taught in {base}",
+      "guess": {
+        "label": "Your languages",
+        "both": "Hey there! I have a hunch you know {language}. Do you speak it, or are you here to learn it?",
+        "learn": "Hey there! Fancy learning {language}? I know a few good words to start with.",
+        "speak": "Hello there! Do you read {language}? I can teach you from it.",
+        "learnIt": "Teach me {language}",
+        "learnDetail": "Start from the very first greeting.",
+        "speakIt": "I speak {language}",
+        "speakDetail": "Use {native} for the lessons."
+      },
+      "base": {
+        "label": "Learn it from",
+        "ask": "Lovely choice! Which language should I explain {language} in?",
+        "one": "Lovely choice! I’ll teach you {language} in {base}.",
+        "option": "In {base}"
+      },
+      "target": {
+        "label": "What to learn",
+        "ask": "Wonderful! Which language shall we learn together?",
+        "none": "Courses taught in {language} are still on their way. Until then, any of these could be your first:"
+      },
+      "pick": {
+        "say": "No problem! Tell me which languages are yours.",
+        "speak": "I speak",
+        "learn": "I want to learn"
+      }
+    },
+    "settings": {
+      "languages": {
+        "title": "Languages",
+        "ui": "App language",
+        "uiHint": "The language for menus, buttons and explanations.",
+        "automatic": "Automatic ({language})",
+        "course": "Course",
+        "courseHint": "Each course keeps its own progress. Your XP, streak and gems stay with you.",
+        "switched": "Now learning {target}."
+      }
     }
   }
 }

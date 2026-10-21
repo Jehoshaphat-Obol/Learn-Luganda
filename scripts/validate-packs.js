@@ -23,6 +23,11 @@ errors.push(...schemaErrors('docs/packs/schema/languages.schema.json', registry,
 const codes = registry.languages.map((l) => l.code);
 for (const c of new Set(codes)) if (codes.filter((x) => x === c).length > 1) errors.push(`languages.json: "${c}" is listed twice`);
 
+const regions = readJson('src/packs/regions.json');
+errors.push(...schemaErrors('docs/packs/schema/regions.schema.json', regions, 'regions.json'));
+for (const [country, langs] of Object.entries(regions.countries)) for (const c of langs) if (!codes.includes(c)) errors.push(`regions.json: ${country} lists "${c}", which is not in languages.json`);
+for (const [zone, country] of Object.entries(regions.timeZones)) if (!regions.countries[country]) errors.push(`regions.json: ${zone} maps to ${country}, which has no languages`);
+
 const english = readJson('src/packs/ui/en.json');
 const uiFiles = readdirSync(new URL('src/packs/ui/', root)).filter((f) => f.endsWith('.json'));
 for (const file of uiFiles) {

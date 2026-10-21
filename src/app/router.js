@@ -75,5 +75,7 @@ export function createRouter({ routes, onChange, fallback = '/' }) {
       resolve();
     },
     navigate,
+    // Re-renders the current route, e.g. after the language changes.
+    refresh: resolve,
   };
 }
