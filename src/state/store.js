@@ -12,7 +12,8 @@ export const DEFAULTS = {
   // null until onboarding finishes: { name, avatar, dailyGoal, motivation, level, joinedAt }
   profile: null,
   onboarding: { step: 0, answers: {} },
-  settings: { sound: true, motion: true },
+  // reminder: opt-in daily notification at reminderHour (local time)
+  settings: { sound: true, motion: true, reminder: false, reminderHour: 19, lastReminder: null },
   // lessonId -> { completions, bestAccuracy, lastCompletedAt }
   lessons: {},
   xp: { total: 0, byDay: {} },

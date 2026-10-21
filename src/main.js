@@ -11,6 +11,7 @@ import { settleStreak, streakStatus } from './state/streak.js';
 import { settleLeague } from './state/league.js';
 import { routes } from './app/routes.js';
 import { applyMotion } from './ui/motion.js';
+import { registerServiceWorker, startReminders } from './app/pwa.js';
 
 setStatsProvider(() => {
   const s = store.get();
@@ -37,3 +38,5 @@ const router = createRouter({
   },
 });
 router.start();
+registerServiceWorker();
+startReminders();
