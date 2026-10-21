@@ -7,6 +7,7 @@
  */
 import { SECTION2_STORIES } from './stories/section2.js';
 import { SECTION3_STORIES } from './stories/section3.js';
+import { SECTION4_STORIES } from './stories/section4.js';
 
 export const STORIES = [
   {
@@ -171,6 +172,7 @@ export const STORIES = [
   },
   ...SECTION2_STORIES,
   ...SECTION3_STORIES,
+  ...SECTION4_STORIES,
 ];
 
 export const storyById = Object.fromEntries(STORIES.map((s) => [s.id, s]));
