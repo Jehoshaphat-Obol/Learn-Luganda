@@ -17,4 +17,5 @@ export { PROP_IDS, prop, propGroup } from './props.js';
 export { PLACE_IDS, placeInfo, placeScene } from './places.js';
 export { heroScene, lessonCompleteScene, streakScene } from './scenes.js';
 export { celebrationArt, emptyStateArt, randomPose } from './moods.js';
+export { FLAGS, FLAG_COUNTRIES, chooseFlagCountry, flag, flagCountry, setFlagCountry } from './flags.js';
 export { setArtRandom, seededRandom } from './random.js';

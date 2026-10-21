@@ -20,7 +20,14 @@ import {
   seededRandom,
   setArtRandom,
   validateCharacter,
+  FLAGS,
+  chooseFlagCountry,
+  flag,
+  flagCountry,
+  setFlagCountry,
 } from '../src/illustrations/index.js';
+import { castMember, course } from '../src/content/course.js';
+import { LANGUAGES } from '../src/i18n/languages.js';
 
 const parse = (markup) => new DOMParser().parseFromString(markup, 'image/svg+xml');
 
@@ -38,7 +45,20 @@ function expectValidSvg(markup) {
   return doc;
 }
 
-afterEach(() => setArtRandom());
+/* Every url(#id) a drawing uses must point at an id it defines. */
+function expectRefsResolve(markup) {
+  const doc = parse(markup);
+  const ids = new Set([...doc.querySelectorAll('[id]')].map((el) => el.id));
+  for (const id of ids) expect(id).toMatch(/^[A-Za-z0-9_-]+$/);
+  const refs = [...markup.matchAll(/url\(#([^)]*)\)/g)].map((m) => m[1]);
+  expect(refs.length).toBeGreaterThan(0);
+  for (const ref of refs) expect(ids.has(ref), `url(#${ref})`).toBe(true);
+}
+
+afterEach(() => {
+  setArtRandom();
+  setFlagCountry(null);
+});
 
 describe('illustrations', () => {
   it('draws every cast member and critter in every expression and shape', () => {
@@ -115,5 +135,37 @@ describe('illustrations', () => {
     } finally {
       delete CAST['test-ade'];
     }
+  });
+
+  it('keeps clip paths and textures working for course cast looks', () => {
+    // Looks from a course pack are objects; their ids must still be id-safe.
+    for (const id of Object.keys(course.cast)) {
+      for (const shape of ['card', 'circle']) expectRefsResolve(portrait(castMember(id).look, { shape }));
+    }
+    expectRefsResolve(portrait({ ...CAST.amara, name: 'No id' }));
+  });
+
+  it('draws every flag, and a plain pennant when there is none', () => {
+    for (const code of Object.keys(FLAGS)) {
+      const doc = expectValidSvg(`<svg role="img" xmlns="http://www.w3.org/2000/svg"><title>f</title>${flag(code)}</svg>`);
+      expect(doc.querySelector('svg svg')).not.toBeNull();
+    }
+    expect(flag('XX')).toContain('f-verm');
+  });
+
+  it('shows the learned language’s flag, else the learner’s home flag', () => {
+    expect(chooseFlagCountry({ languageCountry: 'UG', homeCountry: 'KE' })).toBe('UG');
+    expect(chooseFlagCountry({ languageCountry: undefined, homeCountry: 'KE' })).toBe('KE');
+    expect(chooseFlagCountry({ homeCountry: 'XX' })).toBeNull();
+    expect(LANGUAGES.find((l) => l.code === 'lg').country).toBe('UG');
+    for (const l of LANGUAGES) if (l.country) expect(FLAGS[l.country], l.code).toBeTruthy();
+
+    setFlagCountry('UG');
+    expect(flagCountry()).toBe('UG');
+    expect(placeScene('school')).toContain('#fcdc04');
+    setFlagCountry('GH');
+    expect(placeScene('school')).toContain('#006b3f');
+    setFlagCountry(null);
+    expect(placeScene('school')).not.toContain('#fcdc04');
   });
 });

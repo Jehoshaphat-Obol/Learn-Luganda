@@ -6,9 +6,17 @@ import { store } from '../state/store.js';
 import { switchCourse } from '../state/courses.js';
 import { detectUiLanguage, setLanguage } from '../i18n/index.js';
 import { COURSE_IDS, loadCourse } from '../content/load.js';
-import { pairsOf } from '../i18n/catalog.js';
+import { deviceTimeZone, pairsOf } from '../i18n/catalog.js';
+import { languageInfo } from '../i18n/languages.js';
+import { chooseFlagCountry, setFlagCountry } from '../illustrations/flags.js';
+import regions from '../packs/regions.json';
 
 let redraw = () => {};
+
+/* Flags in the art: the learned language's country, else the learner's (guessed) home. */
+function applyFlag(course) {
+  setFlagCountry(chooseFlagCountry({ languageCountry: languageInfo(course.to).country, homeCountry: regions.timeZones[deviceTimeZone()] }));
+}
 
 /** Every course the app ships, as `{ id, from, to }`. */
 export const COURSES = Object.freeze(pairsOf(COURSE_IDS));
@@ -20,6 +28,7 @@ export async function startLanguages(onChange) {
   const [, loaded] = await Promise.all([setLanguage(uiLang ?? detectUiLanguage()), loadCourse(course)]);
   // A saved course that's no longer shipped: park its progress, don't mix it in.
   if (loaded.id !== course) store.update((s) => switchCourse(s, loaded.id));
+  applyFlag(loaded);
 }
 
 /** Changes the interface language (`null` goes back to the browser's). */
@@ -36,5 +45,6 @@ export async function changeCourse(id) {
   if (store.get().settings.course === id) return;
   const loaded = await loadCourse(id);
   store.update((s) => switchCourse(s, loaded.id));
+  applyFlag(loaded);
   redraw();
 }

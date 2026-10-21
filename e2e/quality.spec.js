@@ -17,6 +17,23 @@ test('the landing page has no accessibility violations', async ({ page }) => {
   expect(violations).toEqual([]);
 });
 
+test('every illustration on the landing page points at shapes that exist', async ({ page }) => {
+  // A url(#id) to a missing or malformed id drops clip paths and paints textures black.
+  await page.goto('./');
+  await expect(page.locator('#cast svg').first()).toBeVisible();
+  const broken = await page.evaluate(() => {
+    const out = [];
+    for (const el of document.querySelectorAll('svg [fill], svg [clip-path], svg [mask]')) {
+      for (const attr of ['fill', 'clip-path', 'mask']) {
+        const id = (el.getAttribute(attr) ?? '').match(/url\(#([^)]*)\)/)?.[1];
+        if (id && !document.getElementById(id)) out.push(id);
+      }
+    }
+    return out;
+  });
+  expect(broken).toEqual([]);
+});
+
 for (const hash of [...SCREENS, ...CONTENT_SCREENS]) {
   test(`${hash} has no accessibility violations`, async ({ page }) => {
     await openWith(page, savedState({ lessons: everything }), hash);

@@ -166,5 +166,5 @@ export function castMember(id, c = course) {
   const look = typeof entry?.look === 'object' ? { extras: [], ...entry.look, id: `${c.id}-${id}` } : CAST[entry?.look ?? id];
   if (!look) return { id, name: entry?.name ?? id, role: entry?.role ?? '', look: CAST.nakato };
   const name = entry?.name ?? look.name;
-  return { id, name, role: entry?.role ?? look.role ?? '', look: { ...look, name } };
+  return { id, name, role: entry?.role ?? look.role ?? '', look: { id, ...look, name } };
 }

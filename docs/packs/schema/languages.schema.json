@@ -49,6 +49,11 @@
               "ltr",
               "rtl"
             ]
+          },
+          "country": {
+            "type": "string",
+            "pattern": "^[A-Z]{2}$",
+            "description": "The language's home country (ISO 3166-1 alpha-2). The illustrations show its flag. Leave it out for languages spoken across many countries."
           }
         }
       }

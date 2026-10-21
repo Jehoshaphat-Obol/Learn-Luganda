@@ -17,7 +17,14 @@ import {
   heroScene,
   lessonCompleteScene,
   streakScene,
+  FLAGS,
+  flag,
+  setFlagCountry,
 } from './illustrations/index.js';
+import { languageInfo } from './i18n/languages.js';
+
+// The gallery shows the Luganda course's art, so its flag is Uganda's.
+setFlagCountry(languageInfo('lg').country);
 
 const castCards = Object.entries({ ...CAST, ...CRITTERS })
   .map(
@@ -50,6 +57,16 @@ const places = PLACE_IDS.map(
       <figcaption><strong>${placeInfo(id).name}</strong> <code>placeScene('${id}', { cast, pose })</code></figcaption>
     </figure>`,
 ).join('');
+
+const flags = Object.entries(FLAGS)
+  .map(
+    ([code, f]) => `
+    <figure class="gallery__item gallery__item--small">
+      <div class="gallery__art"><svg class="ill" viewBox="0 0 60 40" role="img" aria-label="Flag of ${f.name}">${flag(code, { x: 3, y: 3, width: 54 })}</svg></div>
+      <figcaption><code>${code}</code> ${f.name}</figcaption>
+    </figure>`,
+  )
+  .join('');
 
 const props = PROP_IDS.map(
   (id) => `
@@ -85,6 +102,12 @@ document.querySelector('#app').innerHTML = `
     <section>
       <h2>Props</h2>
       <div class="gallery__poses">${props}</div>
+    </section>
+
+    <section>
+      <h2>Flags</h2>
+      <p class="gallery__note">Places show the flag of the language being learned (<code>country</code> in languages.json), else the learner's home country, else a plain pennant.</p>
+      <div class="gallery__poses">${flags}</div>
     </section>
 
     <section>

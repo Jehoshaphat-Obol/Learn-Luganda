@@ -10,6 +10,7 @@ import { portraitGroup } from './characters.js';
 import { mascotGroup } from './mascot.js';
 import { propGroup } from './props.js';
 import { delay } from './random.js';
+import { flag } from './flags.js';
 
 const GROUND = 200;
 
@@ -137,8 +138,7 @@ const PLACES = {
       <path d="M82 ${GROUND} V34" class="s-ink" stroke-width="3"/>
       <circle cx="82" cy="32" r="3.5" class="f-yellow"/>
       <g class="anim-flag" ${delay(2)}>
-        ${['f-ink', 'f-yellow', 'f-verm', 'f-ink', 'f-yellow', 'f-verm'].map((c, i) => `<rect x="84" y="${38 + i * 6}" width="54" height="6" class="${c}"/>`).join('')}
-        <circle cx="111" cy="56" r="8" class="f-white"/>
+        ${flag(undefined, { x: 84, y: 38, width: 54 })}
       </g>
       ${propGroup('book', { x: 30, y: 150, scale: 0.7 })}`,
   },
@@ -193,8 +193,8 @@ export function placeInfo(id) {
 
 /* Where the cast and the crane stand, left to right. */
 const STAGE = [
-  { x: 24, y: 128 },
-  { x: 314, y: 128 },
+  { x: 26, y: 128 },
+  { x: 306, y: 128 },
 ];
 
 /**

@@ -9,7 +9,10 @@ let counter = 0;
 /** A document-unique id prefix so several SVGs can share one page. */
 export function uid(name = 'ill') {
   counter += 1;
-  return `${name}-${counter}`;
+  // Only id-safe characters: url(#…) references to an id with spaces or
+  // brackets fail silently, which drops clip paths and paints patterns black.
+  const safe = String(name).replace(/[^A-Za-z0-9_-]+/g, '') || 'ill';
+  return `${safe}-${counter}`;
 }
 
 export function escapeXml(text) {
