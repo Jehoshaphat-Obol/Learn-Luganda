@@ -5,6 +5,8 @@ import { extendStreak } from './streak.js';
 import { dayKey } from './dates.js';
 import { clearMistakes, recordSession } from './review.js';
 import { gainHeart } from './hearts.js';
+import { sessionGems, STREAK_GEMS } from './shop.js';
+import { evaluateAchievements } from './achievements.js';
 
 /**
  * Applies a finished lesson's result to the state (pure, for tests).
@@ -30,12 +32,14 @@ export function applyLessonResult(s, lessonId, result, now = new Date()) {
 
 /**
  * Saves a finished lesson and its XP in one update.
- * @returns {{ xp: { total: number, parts: object[] }, streak: object, goalBefore: object, goalAfter: object, before: object, after: object }}
+ * @returns {{ xp: { total: number, parts: object[] }, streak: object, gems: number, achievements: object[], goalBefore: object, goalAfter: object, before: object, after: object }}
  */
 export function finishLesson(lessonId, result, { replay = false, base, practice = false, now = new Date() } = {}) {
   const before = store.get();
   const xp = lessonXp(result, { replay, base });
   let streak;
+  let gems = 0;
+  let achievements = [];
   const after = store.update((s) => {
     if (lessonId) applyLessonResult(s, lessonId, result, now);
     addXp(s, xp.total, now);
@@ -44,7 +48,11 @@ export function finishLesson(lessonId, result, { replay = false, base, practice 
     if (practice) {
       clearMistakes(s, result);
       gainHeart(s, 1, now.getTime());
+      s.stats.practiceSessions += 1;
     }
+    gems = sessionGems(result, { practice }) + (streak.extended && streak.milestone ? STREAK_GEMS[streak.milestone] ?? 0 : 0);
+    s.gems += gems;
+    achievements = evaluateAchievements(s);
   });
-  return { xp, streak, before, after, goalBefore: dailyGoal(before, now), goalAfter: dailyGoal(after, now) };
+  return { xp, streak, gems, achievements, before, after, goalBefore: dailyGoal(before, now), goalAfter: dailyGoal(after, now) };
 }

@@ -13,6 +13,8 @@ import { lessonView } from '../views/lesson.js';
 import { streakView } from '../views/streak.js';
 import { practiceHubView, practiceSessionView } from '../views/practice.js';
 import { checkpointView } from '../views/checkpoint.js';
+import { shopView } from '../views/shop.js';
+import { profileView } from '../views/profile.js';
 import { hasProfile } from '../state/store.js';
 
 export const routes = [
@@ -26,8 +28,8 @@ export const routes = [
   { path: '/practice', view: practiceHubView, title: 'Practice' },
   { path: '/practice/session', view: practiceSessionView, layout: 'bare', title: 'Practice' },
   { path: '/leagues', view: placeholderView('Leagues', 'Weekly leagues arrive soon.'), title: 'Leagues' },
-  { path: '/shop', view: placeholderView('Shop', 'The shop opens soon.'), title: 'Shop' },
-  { path: '/profile', view: placeholderView('Profile', 'Your profile arrives soon.'), title: 'Profile' },
+  { path: '/shop', view: shopView, title: 'Shop' },
+  { path: '/profile', view: profileView, title: 'Profile' },
   { path: '/settings', view: settingsView, public: true, title: 'Settings' },
   { path: '/styleguide', view: styleguideView, public: true, title: 'Style guide' },
 ];

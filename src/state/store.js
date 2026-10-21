@@ -25,7 +25,7 @@ export const DEFAULTS = {
   achievements: {},
   inventory: {},
   league: {},
-  stats: { lessonsCompleted: 0, perfectLessons: 0, answers: 0, correctAnswers: 0, secondsLearning: 0 },
+  stats: { lessonsCompleted: 0, perfectLessons: 0, practiceSessions: 0, answers: 0, correctAnswers: 0, secondsLearning: 0 },
 };
 
 export const store = createStore({
