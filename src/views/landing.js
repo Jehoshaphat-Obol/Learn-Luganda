@@ -142,7 +142,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
           <article class="showcase__item">
             <div class="showcase__art">${lessonCompleteScene({ xp: 20 })}</div>
             <h3>Earn <strong>XP</strong> and unlock achievements</h3>
-            <p class="muted">Every lesson earns XP. Hit milestones to unlock achievement badges and earn gems.</p>
+            <p class="muted">Every lesson earns XP. Hit milestones to unlock achievement badges and earn gems. Gems are never sold: you earn every one.</p>
           </article>
         </section>
 

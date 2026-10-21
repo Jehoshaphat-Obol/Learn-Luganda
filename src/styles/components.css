@@ -656,6 +656,16 @@
   padding: calc(var(--avatar-size, 48px) * 0.1);
 }
 
+.avatar--frame-sky {
+  box-shadow: 0 0 0 4px var(--color-bauhaus-blue), 0 0 0 7px var(--color-pastel-sky);
+}
+
+.avatar--frame-sun {
+  box-shadow: 0 0 0 4px var(--color-surface);
+  background-image: repeating-conic-gradient(var(--color-bauhaus-yellow) 0 15deg, var(--color-primary) 0 30deg);
+  padding: calc(var(--avatar-size, 48px) * 0.1);
+}
+
 /* Switch: a checkbox styled as an on/off toggle */
 .switch-row {
   display: flex;

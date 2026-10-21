@@ -1,7 +1,8 @@
-/* The shop: spend gems on streak freezes, heart refills and avatar frames. */
+/* Gems: earned only by learning, spent on streak freezes, heart refills and avatar frames. */
 import '../styles/shop.css';
 import { store } from '../state/store.js';
-import { SHOP_ITEMS, buy, canBuy } from '../state/shop.js';
+import { SHOP_ITEMS, buy, canBuy, earnRules } from '../state/shop.js';
+import { GEMS_PER_TIER } from '../state/achievements.js';
 import { heartStatus, formatWait } from '../state/hearts.js';
 import { button, escapeHtml, toast } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
@@ -30,12 +31,12 @@ export function shopView({ root }) {
       <div class="page">
         <header class="page__header shop-header">
           <div>
-            <p class="eyebrow">Shop</p>
-            <h1>Spend your <strong>gems.</strong></h1>
+            <p class="eyebrow">Gems</p>
+            <h1>Use your <strong>gems.</strong></h1>
           </div>
           <span class="shop-balance" aria-label="${state.gems} gems">${icon('gem', { size: 26 })}${state.gems}</span>
         </header>
-        <p class="muted shop-earn">Earn gems by finishing lessons, practising, reaching streak milestones and unlocking achievements.</p>
+        <p class="muted shop-earn">Gems can’t be bought. You earn every one by learning, then use them to protect your streak, refill hearts or decorate your avatar.</p>
         <ul class="shop-list">
           ${SHOP_ITEMS.map((item) => {
             const check = canBuy(state, item);
@@ -43,7 +44,7 @@ export function shopView({ root }) {
             const equipped = owned && state.profile.avatar.frame === item.id;
             const action = owned
               ? button({ label: equipped ? 'Unequip' : 'Equip', variant: 'secondary', attrs: `data-equip="${item.id}"` })
-              : button({ label: `${item.price}`, iconName: 'gem', variant: check.ok ? 'blue' : 'secondary', disabled: !check.ok, attrs: `data-buy="${item.id}" aria-label="Buy ${escapeHtml(item.title)} for ${item.price} gems${check.ok ? '' : `, ${check.reason}`}"` });
+              : button({ label: `${item.price}`, iconName: 'gem', variant: check.ok ? 'blue' : 'secondary', disabled: !check.ok, attrs: `data-buy="${item.id}" aria-label="Get ${escapeHtml(item.title)} for ${item.price} gems${check.ok ? '' : `, ${check.reason}`}"` });
             return `<li class="shop-item">
               ${itemArt(item, state)}
               <div class="shop-item__body">
@@ -55,6 +56,10 @@ export function shopView({ root }) {
             </li>`;
           }).join('')}
         </ul>
+        <section class="shop-rules" aria-labelledby="shop-rules-title">
+          <h2 id="shop-rules-title">How to earn gems</h2>
+          <ul>${earnRules({ perTier: GEMS_PER_TIER }).map((r) => `<li><span>${escapeHtml(r.label)}</span><span class="shop-rules__gems">${icon('gem', { size: 14 })}${escapeHtml(r.gems)}</span></li>`).join('')}</ul>
+        </section>
       </div>`;
   }
 
@@ -67,7 +72,7 @@ export function shopView({ root }) {
         ok = buy(s, item.id);
       });
       play(ok ? 'reward' : 'wrong');
-      toast(ok ? `${item.title} bought!` : 'Couldn’t buy that right now.', { variant: ok ? 'success' : 'error' });
+      toast(ok ? `${item.title} unlocked!` : 'Not available right now.', { variant: ok ? 'success' : 'error' });
       draw();
       return;
     }

@@ -12,7 +12,7 @@ import { musicOn } from '../ui/music.js';
 export const NAV = [
   { path: '/learn', label: 'Learn', icon: 'home' },
   { path: '/practice', label: 'Practice', icon: 'practice' },
-  { path: '/shop', label: 'Shop', icon: 'shop' },
+  { path: '/shop', label: 'Gems', icon: 'gem' },
   { path: '/profile', label: 'Profile', icon: 'profile' },
 ];
 
