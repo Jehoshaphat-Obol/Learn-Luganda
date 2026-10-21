@@ -10,11 +10,19 @@ import { isUnitUnlocked, learnedWordIds, skillProgress } from '../state/progress
 import { finishLesson } from '../state/lessons.js';
 import { XP } from '../state/xp.js';
 import { buildPractice } from '../lesson/practice.js';
+import { storyList } from '../state/stories.js';
 import { runExercises } from './lesson.js';
 import { showRewards } from './rewards.js';
 import { mascot } from '../illustrations/index.js';
 import { button, escapeHtml, progressBar } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
+
+function storiesNote(state) {
+  const list = storyList(state);
+  const unread = list.filter((x) => x.unlocked && !x.done).length;
+  if (unread) return `${unread} new stor${unread === 1 ? 'y' : 'ies'} to read`;
+  return `${list.filter((x) => x.done).length} of ${list.length} read`;
+}
 
 function skillWords(skillId) {
   return course.skills[skillId].lessons.flatMap((l) => l.newWords);
@@ -55,6 +63,11 @@ export function practiceHubView({ root }) {
         <a class="practice-card practice-card--mistakes${mistakes.length ? '' : ' is-disabled'}" href="${mistakes.length ? '#/practice/session?mode=mistakes' : '#/practice'}" ${mistakes.length ? '' : 'aria-disabled="true"'}>
           <span class="practice-card__icon">${icon('cross', { size: 26 })}</span>
           <span><strong>Mistakes</strong><small>${mistakes.length ? `${mistakes.length} word${mistakes.length === 1 ? '' : 's'} to fix` : 'No recent mistakes. Nice!'}</small></span>
+          ${icon('arrow', { size: 22 })}
+        </a>
+        <a class="practice-card practice-card--stories" href="#/stories">
+          <span class="practice-card__icon">${icon('stories', { size: 26 })}</span>
+          <span><strong>Stories</strong><small>${storiesNote(state)}</small></span>
           ${icon('arrow', { size: 22 })}
         </a>
       </div>

@@ -59,3 +59,42 @@ export function validateUnits(rawUnits) {
   }
   return errors;
 }
+
+/** Checks stories against the course and cast. */
+export function validateStories(stories, { lessons, units, cast }) {
+  const errors = [];
+  const ids = new Set();
+  for (const story of stories) {
+    const where = `story ${story.id}`;
+    if (ids.has(story.id)) errors.push(`${where}: duplicate id`);
+    ids.add(story.id);
+    if (!units.includes(story.unit)) errors.push(`${where}: unknown unit "${story.unit}"`);
+    if (!lessons.includes(story.unlockAfter)) errors.push(`${where}: unknown lesson "${story.unlockAfter}"`);
+    if (!story.steps.some((s) => s.question)) errors.push(`${where}: needs at least one question`);
+    story.steps.forEach((step, i) => {
+      if (step.line) {
+        const [speaker, lg, en] = step.line;
+        if (!cast.includes(speaker)) errors.push(`${where} step ${i + 1}: unknown speaker "${speaker}"`);
+        if (!lg || !en) errors.push(`${where} step ${i + 1}: a line needs Luganda and English`);
+      } else if (step.question) {
+        if (!(step.answer >= 0 && step.answer < step.options.length)) errors.push(`${where} step ${i + 1}: answer out of range`);
+      } else errors.push(`${where} step ${i + 1}: needs a line or a question`);
+    });
+  }
+  return errors;
+}
+
+/** Checks guidebooks: one per unit, and every skill tip exists. */
+export function validateGuidebooks(guidebooks, rawUnits) {
+  const errors = [];
+  for (const unit of rawUnits) {
+    const book = guidebooks[unit.id];
+    if (!book) {
+      errors.push(`unit ${unit.id}: no guidebook`);
+      continue;
+    }
+    const tips = new Set(book.tips.map((t) => t.id));
+    for (const skill of unit.skills) if (skill.tip && !tips.has(skill.tip)) errors.push(`skill ${skill.id}: tip "${skill.tip}" not in the guidebook`);
+  }
+  return errors;
+}

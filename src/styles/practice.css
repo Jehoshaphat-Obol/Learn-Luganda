@@ -41,6 +41,11 @@
   color: #fff;
 }
 
+.practice-card--stories .practice-card__icon {
+  border-radius: var(--radius-lg) var(--radius-lg) var(--radius-sm) var(--radius-sm);
+  background: var(--color-ink-700);
+}
+
 .practice-card--mistakes .practice-card__icon {
   border-radius: var(--radius-sm);
   background: var(--color-ink-900);

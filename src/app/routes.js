@@ -3,7 +3,6 @@
  * inside the app frame with stats and navigation. Routes not marked
  * `public` need a profile and send new visitors to onboarding.
  */
-import { placeholderView } from '../views/placeholder.js';
 import { styleguideView } from '../views/styleguide.js';
 import { createLandingView } from '../views/landing.js';
 import { settingsView } from '../views/settings.js';
@@ -16,6 +15,8 @@ import { checkpointView } from '../views/checkpoint.js';
 import { shopView } from '../views/shop.js';
 import { profileView } from '../views/profile.js';
 import { leaguesView } from '../views/leagues.js';
+import { guidebookView } from '../views/guidebook.js';
+import { storiesView, storyView } from '../views/stories.js';
 import { hasProfile } from '../state/store.js';
 
 export const routes = [
@@ -24,7 +25,9 @@ export const routes = [
   { path: '/learn', view: learnView, title: 'Learn' },
   { path: '/lesson/:id', view: lessonView, layout: 'bare', title: 'Lesson' },
   { path: '/checkpoint/:unit', view: checkpointView, layout: 'bare', title: 'Checkpoint' },
-  { path: '/guidebook/:unit', view: placeholderView('Guidebook', 'Unit guidebooks arrive soon.'), title: 'Guidebook' },
+  { path: '/guidebook/:unit', view: guidebookView, title: 'Guidebook' },
+  { path: '/stories', view: storiesView, title: 'Stories' },
+  { path: '/story/:id', view: storyView, layout: 'bare', title: 'Story' },
   { path: '/streak', view: streakView, title: 'Streak' },
   { path: '/practice', view: practiceHubView, title: 'Practice' },
   { path: '/practice/session', view: practiceSessionView, layout: 'bare', title: 'Practice' },
