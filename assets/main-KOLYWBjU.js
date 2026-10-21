@@ -16,34 +16,34 @@ import{a as e,c as t,n,o as r,r as i,t as a}from"./illustrations-YnOToB_N.js";fu
         <div class="modal__actions">
           ${r.map(e=>m({label:e.label,variant:e.variant??`primary`,block:!0,attrs:`data-value="${p(e.value)}"`})).join(``)}
         </div>
-      </div>`;function c(e){document.removeEventListener(`keydown`,l),s.remove(),o?.focus?.(),a(e||null)}function l(e){if(e.key===`Escape`&&i&&c(null),e.key===`Tab`){let t=[...s.querySelectorAll(`button, a, input, select, textarea`)],n=t[0],r=t[t.length-1];e.shiftKey&&document.activeElement===n?(e.preventDefault(),r.focus()):!e.shiftKey&&document.activeElement===r&&(e.preventDefault(),n.focus())}}s.addEventListener(`click`,e=>{let t=e.target.closest(`[data-value]`);t?c(t.dataset.value):e.target===s&&i&&c(null)}),document.addEventListener(`keydown`,l),document.body.append(s),s.querySelector(`.modal__actions .btn`)?.focus()})}var S=[{path:`/learn`,label:`Learn`,icon:`home`},{path:`/practice`,label:`Practice`,icon:`practice`},{path:`/leagues`,label:`Leagues`,icon:`leagues`},{path:`/shop`,label:`Shop`,icon:`shop`},{path:`/profile`,label:`Profile`,icon:`profile`}],C=()=>({streak:0,gems:0,hearts:5,maxHearts:5,streakToday:!1});function w(e,t,n,r=``){return`<a class="stat stat--${e} ${r}" href="#/${e===`hearts`||e===`gems`?`shop`:`profile`}" aria-label="${p(n)}">
+      </div>`;function c(e){document.removeEventListener(`keydown`,l),s.remove(),o?.focus?.(),a(e||null)}function l(e){if(e.key===`Escape`&&i&&c(null),e.key===`Tab`){let t=[...s.querySelectorAll(`button, a, input, select, textarea`)],n=t[0],r=t[t.length-1];e.shiftKey&&document.activeElement===n?(e.preventDefault(),r.focus()):!e.shiftKey&&document.activeElement===r&&(e.preventDefault(),n.focus())}}s.addEventListener(`click`,e=>{let t=e.target.closest(`[data-value]`);t?c(t.dataset.value):e.target===s&&i&&c(null)}),document.addEventListener(`keydown`,l),document.body.append(s),s.querySelector(`.modal__actions .btn`)?.focus()})}var S=[{path:`/learn`,label:`Learn`,icon:`home`},{path:`/practice`,label:`Practice`,icon:`practice`},{path:`/leagues`,label:`Leagues`,icon:`leagues`},{path:`/shop`,label:`Shop`,icon:`shop`},{path:`/profile`,label:`Profile`,icon:`profile`}],C=()=>({streak:0,gems:0,hearts:5,maxHearts:5,streakToday:!1});function w(e){C=e}function T(e,t,n,r=``){return`<a class="stat stat--${e} ${r}" href="#/${e===`hearts`||e===`gems`?`shop`:`profile`}" aria-label="${p(n)}">
     ${f(e===`streak`?`flame`:e===`gems`?`gem`:`heart`,{size:22})}<span>${p(t)}</span>
-  </a>`}function T(){let e=C();return`
-    ${w(`streak`,e.streak,`${e.streak} day streak`,e.streakToday?``:`stat--dim`)}
-    ${w(`gems`,e.gems,`${e.gems} gems`)}
-    ${w(`hearts`,e.hearts,`${e.hearts} of ${e.maxHearts} hearts`)}`}function E(e){return S.map(t=>`<a class="nav__link${e.startsWith(t.path)?` is-active`:``}" href="#${t.path}" ${e.startsWith(t.path)?`aria-current="page"`:``}>
-      ${f(t.icon,{size:26})}<span>${t.label}</span></a>`).join(``)}function D(e){return`
+  </a>`}function E(){let e=C();return`
+    ${T(`streak`,e.streak,`${e.streak} day streak`,e.streakToday?``:`stat--dim`)}
+    ${T(`gems`,e.gems,`${e.gems} gems`)}
+    ${T(`hearts`,e.hearts,`${e.hearts} of ${e.maxHearts} hearts`)}`}function D(){let e=document.querySelector(`[data-topbar-stats]`);e&&(e.innerHTML=E())}function O(e){return S.map(t=>`<a class="nav__link${e.startsWith(t.path)?` is-active`:``}" href="#${t.path}" ${e.startsWith(t.path)?`aria-current="page"`:``}>
+      ${f(t.icon,{size:26})}<span>${t.label}</span></a>`).join(``)}function k(e){return`
     <div class="layout">
       <nav class="nav" aria-label="Main">
         <a class="nav__brand" href="#/learn" aria-label="Learn Luganda home">
           <span class="brand-mark" aria-hidden="true"><i></i><b></b></span><span>luganda</span>
         </a>
-        ${E(e)}
+        ${O(e)}
       </nav>
       <div class="layout__main">
         <header class="topbar">
           <a class="topbar__brand" href="#/learn" aria-label="Learn Luganda home"><span class="brand-mark" aria-hidden="true"><i></i><b></b></span></a>
-          <div class="topbar__stats" data-topbar-stats>${T()}</div>
+          <div class="topbar__stats" data-topbar-stats>${E()}</div>
         </header>
         <main id="view" class="view" tabindex="-1"></main>
       </div>
-    </div>`}function O(e){let t=null,n=null;return{render({route:r,params:i,query:a,path:o},s){typeof t==`function`&&t(),t=null;let c=r.layout??`app`,l;c===`app`?(e.innerHTML=D(o),l=e.querySelector(`#view`)):(e.innerHTML=`<main id="view" class="view view--bare" tabindex="-1"></main>`,l=e.querySelector(`#view`)),n=c,document.title=r.title?`${r.title} · Learn Luganda`:`Learn Luganda`,window.scrollTo(0,0),t=r.view({root:l,params:i,query:a,path:o,navigate:s})??null,n&&document.activeElement===document.body&&l.focus({preventScroll:!0})}}}function k(t,n){return({root:r})=>{r.innerHTML=`
+    </div>`}function A(e){let t=null,n=null;return{render({route:r,params:i,query:a,path:o},s){typeof t==`function`&&t(),t=null;let c=r.layout??`app`,l;c===`app`?(e.innerHTML=k(o),l=e.querySelector(`#view`)):(e.innerHTML=`<main id="view" class="view view--bare" tabindex="-1"></main>`,l=e.querySelector(`#view`)),n=c,document.title=r.title?`${r.title} · Learn Luganda`:`Learn Luganda`,window.scrollTo(0,0),t=r.view({root:l,params:i,query:a,path:o,navigate:s})??null,n&&document.activeElement===document.body&&l.focus({preventScroll:!0})}}}var j=e=>typeof e==`object`&&!!e&&!Array.isArray(e);function M(e,t){if(!j(t))return e===void 0?structuredClone(t):e;if(!j(e))return structuredClone(t);let n={...e};for(let[r,i]of Object.entries(t))n[r]=i===null?e[r]??null:M(e[r],i);return n}function N(){let e=new Map;return{getItem:t=>e.has(t)?e.get(t):null,setItem:(t,n)=>e.set(t,String(n)),removeItem:t=>e.delete(t)}}function P(e){try{let t=e??globalThis.localStorage,n=`__ll_probe__`;return t.setItem(n,`1`),t.removeItem(n),t}catch{return N()}}function F({key:e,version:t,defaults:n,migrations:r={},storage:i}){let a=P(i),o=new Set,s=u();function c(e){let n=e,i=Number(n.version)||0;for(;i<t;)i+=1,r[i]&&(n=r[i](n)),n={...n,version:i};return n}function l(e){if(!j(e))throw Error(`Saved progress is not an object`);if(Number(e.version)>t)throw Error(`Saved progress is from a newer version of the app`);return M(c(e),{...n,version:t})}function u(){let r=a.getItem(e);if(r==null)return structuredClone({...n,version:t});try{return l(JSON.parse(r))}catch{return a.setItem(`${e}:corrupt:${Date.now()}`,r),structuredClone({...n,version:t})}}function d(){try{a.setItem(e,JSON.stringify(s))}catch{}}function f(){for(let e of o)e(s)}return{get:()=>s,update(e){let t=structuredClone(s);return s=e(t)??t,d(),f(),s},subscribe(e){return o.add(e),()=>o.delete(e)},reset(){s=structuredClone({...n,version:t}),a.removeItem(e),f()},exportJSON(){return JSON.stringify({app:`learn-luganda`,exportedAt:new Date().toISOString(),data:s},null,2)},importJSON(e){let t;try{t=JSON.parse(e)}catch{throw Error(`That file isn’t valid JSON.`)}if(t?.app!==`learn-luganda`||!j(t.data))throw Error(`That file isn’t a Learn Luganda progress export.`);return s=l(t.data),d(),f(),s}}}var I=F({key:`learn-luganda`,version:1,defaults:{profile:null,onboarding:{step:0,answers:{}},settings:{sound:!0,motion:!0},lessons:{},xp:{total:0,byDay:{}},gems:50,hearts:{count:5,updatedAt:0},streak:{current:0,longest:0,lastDay:null,freezes:0,frozenDays:[]},words:{},mistakes:[],achievements:{},inventory:{},league:{},stats:{lessonsCompleted:0,perfectLessons:0,answers:0,correctAnswers:0,secondsLearning:0}}}),L=()=>!!I.get().profile;function R(t,n){return({root:r})=>{r.innerHTML=`
       <section class="empty-state">
         <div class="empty-state__art">${e({pose:`thinking`})}</div>
         <h1>${p(t)}</h1>
         <p class="muted">${p(n)}</p>
         ${m({label:`Back to learning`,href:`#/learn`,variant:`secondary`})}
-      </section>`}}function A({root:t}){t.innerHTML=`
+      </section>`}}function z({root:t}){t.innerHTML=`
     <div class="page page--wide styleguide">
       <header class="page__header">
         <p class="eyebrow">Nº 07 · UI kit</p>
@@ -132,7 +132,7 @@ import{a as e,c as t,n,o as r,r as i,t as a}from"./illustrations-YnOToB_N.js";fu
           ${d.map(e=>`<figure>${f(e,{size:28})}<figcaption>${e}</figcaption></figure>`).join(``)}
         </div>
       </section>
-    </div>`,t.addEventListener(`click`,async t=>{let n=t.target.closest(`[data-sg]`)?.dataset.sg;n===`toast`&&b(`Weebale! That’s a toast.`),n===`modal`&&b(`You chose: ${await x({title:`Quit lesson?`,body:`<p>You’ll lose your progress in this lesson.</p>`,art:e({pose:`sad`}),actions:[{label:`Keep learning`,value:`stay`},{label:`End session`,value:`quit`,variant:`ghost`}]})??`dismissed`}`)})}var j=[{icon:`bolt`,title:`Bite-sized lessons`,text:`Five-minute lessons with pictures, word tiles, listening and matching games.`},{icon:`flame`,title:`Daily streaks`,text:`Practise a little every day. Your streak and daily goal keep you coming back.`},{icon:`heart`,title:`Hearts`,text:`Mistakes cost a heart, so every answer counts. Practice wins them back.`},{icon:`target`,title:`Spaced review`,text:`Words return just before you’d forget them, so they stick for good.`}],M=[[`Oli otya?`,`How are you?`],[`Gyendi`,`I’m fine`],[`Weebale`,`Thank you`],[`Kale`,`Okay`],[`Mukwano`,`Friend`],[`Amazzi`,`Water`],[`Emmere`,`Food`],[`Ssebo`,`Sir`],[`Nnyabo`,`Madam`],[`Webale kujja`,`Welcome`]],N=[[`Is it free?`,`Yes. Learn Luganda is free, with no ads and no account.`],[`Where is my progress saved?`,`In your browser’s local storage on this device. You can export it to a file and import it on another device from Settings.`],[`Who is it for?`,`Complete beginners, diaspora families reconnecting with the language, and visitors to Uganda who want more than “hello”.`],[`What will I learn first?`,`Greetings, introductions and numbers, then family, food, the market, time, places and more, unit by unit.`],[`Does it work offline?`,`Once installed, lessons work without a connection.`]],P={prompt:`Which one means “thank you”?`,options:[`Oli otya?`,`Weebale`,`Nedda`],answer:`Weebale`};function F({hasProgress:o=()=>!1}={}){return function({root:s}){let c=o(),l=m(c?{label:`Continue learning`,size:`lg`,href:`#/learn`}:{label:`Get started`,size:`lg`,href:`#/onboarding`}),u=c?``:m({label:`I already have progress`,variant:`secondary`,size:`lg`,href:`#/settings?import=1`}),d=Object.keys(r);s.innerHTML=`
+    </div>`,t.addEventListener(`click`,async t=>{let n=t.target.closest(`[data-sg]`)?.dataset.sg;n===`toast`&&b(`Weebale! That’s a toast.`),n===`modal`&&b(`You chose: ${await x({title:`Quit lesson?`,body:`<p>You’ll lose your progress in this lesson.</p>`,art:e({pose:`sad`}),actions:[{label:`Keep learning`,value:`stay`},{label:`End session`,value:`quit`,variant:`ghost`}]})??`dismissed`}`)})}var B=[{icon:`bolt`,title:`Bite-sized lessons`,text:`Five-minute lessons with pictures, word tiles, listening and matching games.`},{icon:`flame`,title:`Daily streaks`,text:`Practise a little every day. Your streak and daily goal keep you coming back.`},{icon:`heart`,title:`Hearts`,text:`Mistakes cost a heart, so every answer counts. Practice wins them back.`},{icon:`target`,title:`Spaced review`,text:`Words return just before you’d forget them, so they stick for good.`}],V=[[`Oli otya?`,`How are you?`],[`Gyendi`,`I’m fine`],[`Weebale`,`Thank you`],[`Kale`,`Okay`],[`Mukwano`,`Friend`],[`Amazzi`,`Water`],[`Emmere`,`Food`],[`Ssebo`,`Sir`],[`Nnyabo`,`Madam`],[`Webale kujja`,`Welcome`]],H=[[`Is it free?`,`Yes. Learn Luganda is free, with no ads and no account.`],[`Where is my progress saved?`,`In your browser’s local storage on this device. You can export it to a file and import it on another device from Settings.`],[`Who is it for?`,`Complete beginners, diaspora families reconnecting with the language, and visitors to Uganda who want more than “hello”.`],[`What will I learn first?`,`Greetings, introductions and numbers, then family, food, the market, time, places and more, unit by unit.`],[`Does it work offline?`,`Once installed, lessons work without a connection.`]],U={prompt:`Which one means “thank you”?`,options:[`Oli otya?`,`Weebale`,`Nedda`],answer:`Weebale`};function W({hasProgress:o=()=>!1}={}){return function({root:s}){let c=o(),l=m(c?{label:`Continue learning`,size:`lg`,href:`#/learn`}:{label:`Get started`,size:`lg`,href:`#/onboarding`}),u=c?``:m({label:`I already have progress`,variant:`secondary`,size:`lg`,href:`#/settings?import=1`}),d=Object.keys(r);s.innerHTML=`
       <div class="landing">
         <header class="landing__header">
           <a class="landing__brand" href="#/"><span class="brand-mark" aria-hidden="true"><i></i><b></b></span><span>luganda</span></a>
@@ -160,7 +160,7 @@ import{a as e,c as t,n,o as r,r as i,t as a}from"./illustrations-YnOToB_N.js";fu
 
         <div class="ticker" aria-label="Sample words">
           <div class="ticker__track">
-            ${[...M,...M].map(([e,t],n)=>`<span class="ticker__item"${n>=M.length?` aria-hidden="true"`:``}><strong>${p(e)}</strong> ${p(t)}</span>`).join(``)}
+            ${[...V,...V].map(([e,t],n)=>`<span class="ticker__item"${n>=V.length?` aria-hidden="true"`:``}><strong>${p(e)}</strong> ${p(t)}</span>`).join(``)}
           </div>
         </div>
 
@@ -183,7 +183,7 @@ import{a as e,c as t,n,o as r,r as i,t as a}from"./illustrations-YnOToB_N.js";fu
           <p class="eyebrow">How it works</p>
           <h2>Learning that feels <strong>like a game.</strong></h2>
           <ol class="how__steps">
-            ${j.map((e,t)=>`
+            ${B.map((e,t)=>`
               <li class="how__step">
                 <span class="how__icon how__icon--${t}">${f(e.icon,{size:28})}</span>
                 <h3>${e.title}</h3>
@@ -195,9 +195,9 @@ import{a as e,c as t,n,o as r,r as i,t as a}from"./illustrations-YnOToB_N.js";fu
         <section class="landing__section try">
           <div class="try__card">
             <p class="eyebrow">Try it</p>
-            <h2>${p(P.prompt)}</h2>
+            <h2>${p(U.prompt)}</h2>
             <div class="try__options" role="group" aria-label="Answers">
-              ${P.options.map((e,t)=>`<button class="choice" type="button" data-answer="${p(e)}"><span class="choice__key">${t+1}</span>${p(e)}</button>`).join(``)}
+              ${U.options.map((e,t)=>`<button class="choice" type="button" data-answer="${p(e)}"><span class="choice__key">${t+1}</span>${p(e)}</button>`).join(``)}
             </div>
             <p class="try__feedback" aria-live="polite"></p>
           </div>
@@ -233,7 +233,7 @@ import{a as e,c as t,n,o as r,r as i,t as a}from"./illustrations-YnOToB_N.js";fu
           <p class="eyebrow">Questions</p>
           <h2>Good to <strong>know.</strong></h2>
           <div class="faq__list">
-            ${N.map(([e,t])=>`<details class="faq__item"><summary>${p(e)}</summary><p>${p(t)}</p></details>`).join(``)}
+            ${H.map(([e,t])=>`<details class="faq__item"><summary>${p(e)}</summary><p>${p(t)}</p></details>`).join(``)}
           </div>
         </section>
 
@@ -249,4 +249,25 @@ import{a as e,c as t,n,o as r,r as i,t as a}from"./illustrations-YnOToB_N.js";fu
           <p>Made with care for Luganda learners. Your progress stays on your device.</p>
           <p class="caption">Weebale nnyo — thank you very much.</p>
         </footer>
-      </div>`,s.addEventListener(`click`,t=>{let n=t.target.closest(`a[href^="#"]:not([href^="#/"])`);if(n){t.preventDefault(),s.querySelector(n.getAttribute(`href`))?.scrollIntoView({behavior:`smooth`});return}let r=t.target.closest(`[data-answer]`);if(!r)return;let i=r.dataset.answer===P.answer;s.querySelectorAll(`[data-answer]`).forEach(e=>e.classList.remove(`is-correct`,`is-wrong`)),r.classList.add(i?`is-correct`:`is-wrong`),s.querySelector(`.try__feedback`).innerHTML=i?`${f(`check`,{size:18})} Correct! <em>Weebale</em> means thank you.`:`${f(`cross`,{size:18})} Not quite. Try again!`,s.querySelector(`.try__feedback`).className=`try__feedback try__feedback--${i?`good`:`bad`}`,s.querySelector(`[data-try-art]`).innerHTML=e({pose:i?`cheering`:`sad`})})}}var I=[{path:`/`,view:F(),layout:`bare`},{path:`/onboarding`,view:k(`Onboarding`,`Setting up your profile arrives soon.`),layout:`bare`,title:`Get started`},{path:`/learn`,view:k(`Your path`,`The learning path arrives soon.`),title:`Learn`},{path:`/lesson/:id`,view:k(`Lesson`,`Lessons arrive soon.`),layout:`bare`,title:`Lesson`},{path:`/practice`,view:k(`Practice`,`Review sessions arrive soon.`),title:`Practice`},{path:`/leagues`,view:k(`Leagues`,`Weekly leagues arrive soon.`),title:`Leagues`},{path:`/shop`,view:k(`Shop`,`The shop opens soon.`),title:`Shop`},{path:`/profile`,view:k(`Profile`,`Your profile arrives soon.`),title:`Profile`},{path:`/settings`,view:k(`Settings`,`Settings arrive soon.`),title:`Settings`},{path:`/styleguide`,view:A,title:`Style guide`}],L=O(document.querySelector(`#app`)),R=l({routes:I,onChange:e=>L.render(e,R.navigate)});R.start();
+      </div>`,s.addEventListener(`click`,t=>{let n=t.target.closest(`a[href^="#"]:not([href^="#/"])`);if(n){t.preventDefault(),s.querySelector(n.getAttribute(`href`))?.scrollIntoView({behavior:`smooth`});return}let r=t.target.closest(`[data-answer]`);if(!r)return;let i=r.dataset.answer===U.answer;s.querySelectorAll(`[data-answer]`).forEach(e=>e.classList.remove(`is-correct`,`is-wrong`)),r.classList.add(i?`is-correct`:`is-wrong`),s.querySelector(`.try__feedback`).innerHTML=i?`${f(`check`,{size:18})} Correct! <em>Weebale</em> means thank you.`:`${f(`cross`,{size:18})} Not quite. Try again!`,s.querySelector(`.try__feedback`).className=`try__feedback try__feedback--${i?`good`:`bad`}`,s.querySelector(`[data-try-art]`).innerHTML=e({pose:i?`cheering`:`sad`})})}}function G(e,t){let n=URL.createObjectURL(new Blob([t],{type:`application/json`})),r=Object.assign(document.createElement(`a`),{href:n,download:e});document.body.append(r),r.click(),r.remove(),URL.revokeObjectURL(n)}function K({root:t,query:n,navigate:r}){t.innerHTML=`
+    <div class="page">
+      <header class="page__header">
+        <h1><strong>Settings</strong></h1>
+      </header>
+
+      <section class="settings-group" id="data">
+        <h2>Your progress</h2>
+        <p class="muted">Progress is saved in this browser only. Export it to keep a backup or to move to another device, then import it there.</p>
+        <div class="settings-actions">
+          ${m({label:`Export progress`,variant:`secondary`,iconName:`arrow`,attrs:`data-action="export"`})}
+          ${m({label:`Import progress`,variant:`secondary`,attrs:`data-action="import"`})}
+          <input type="file" accept="application/json,.json" hidden data-import-file />
+        </div>
+      </section>
+
+      <section class="settings-group settings-group--danger">
+        <h2>Start over</h2>
+        <p class="muted">Erase your profile, XP, streak and everything you’ve learned on this device.</p>
+        ${m({label:`Reset progress`,variant:`danger`,attrs:`data-action="reset"`})}
+      </section>
+    </div>`;let i=t.querySelector(`[data-import-file]`);i.addEventListener(`change`,async()=>{let e=i.files?.[0];if(i.value=``,!e)return;let t=await e.text();if(await x({title:`Replace your progress?`,body:`<p>Importing replaces everything saved on this device with the file’s progress.</p>`,actions:[{label:`Import`,value:`yes`},{label:`Cancel`,value:`no`,variant:`ghost`}]})===`yes`)try{let e=I.importJSON(t);D(),b(`Progress imported. Weebale!`,{variant:`success`}),r(e.profile?`/learn`:`/onboarding`)}catch(e){b(e.message,{variant:`error`,duration:4e3})}}),t.addEventListener(`click`,async t=>{let n=t.target.closest(`[data-action]`)?.dataset.action;n===`export`&&(G(`learn-luganda-${I.get().profile?.name?.toLowerCase().replace(/[^a-z0-9]+/g,`-`)||`learner`}-${new Date().toISOString().slice(0,10)}.json`,I.exportJSON()),b(`Progress exported.`)),n===`import`&&i.click(),n===`reset`&&await x({title:`Reset all progress?`,body:`<p>This can’t be undone. Export first if you might want it back.</p>`,art:e({pose:`sad`}),actions:[{label:`Keep my progress`,value:`keep`},{label:`Reset everything`,value:`reset`,variant:`danger`}]})===`reset`&&(I.reset(),b(`Progress reset.`),r(`/`))}),n.import&&i.click()}var q=[{path:`/`,view:W({hasProgress:L}),layout:`bare`},{path:`/onboarding`,view:R(`Onboarding`,`Setting up your profile arrives soon.`),layout:`bare`,title:`Get started`},{path:`/learn`,view:R(`Your path`,`The learning path arrives soon.`),title:`Learn`},{path:`/lesson/:id`,view:R(`Lesson`,`Lessons arrive soon.`),layout:`bare`,title:`Lesson`},{path:`/practice`,view:R(`Practice`,`Review sessions arrive soon.`),title:`Practice`},{path:`/leagues`,view:R(`Leagues`,`Weekly leagues arrive soon.`),title:`Leagues`},{path:`/shop`,view:R(`Shop`,`The shop opens soon.`),title:`Shop`},{path:`/profile`,view:R(`Profile`,`Your profile arrives soon.`),title:`Profile`},{path:`/settings`,view:K,title:`Settings`},{path:`/styleguide`,view:z,title:`Style guide`}];w(()=>{let e=I.get();return{streak:e.streak.current,gems:e.gems,hearts:e.hearts.count,maxHearts:5,streakToday:!1}}),I.subscribe(D);var J=A(document.querySelector(`#app`)),Y=l({routes:q,onChange:e=>J.render(e,Y.navigate)});Y.start();
