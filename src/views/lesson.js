@@ -83,7 +83,7 @@ export function runExercises({ root, exercises, onQuit, onFinish }) {
 
   function check() {
     const ex = session.current;
-    const { correct, answerText } = current.check();
+    const { correct, answerText, note } = current.check();
     locked = true;
     if (correct === null) {
       session.answer(null);
@@ -94,7 +94,7 @@ export function runExercises({ root, exercises, onQuit, onFinish }) {
     phase = 'feedback';
     footer.className = `lesson__footer lesson__footer--${correct ? 'good' : 'bad'}`;
     feedback.innerHTML = correct
-      ? `<div class="fb"><span class="fb__icon">${icon('check', { size: 26 })}</span><div><strong>${PRAISE[Math.floor(Math.random() * PRAISE.length)]}</strong>${ex.type === 'translate' && answerText ? `<p class="fb__answer">${escapeHtml(answerText)}</p>` : ''}</div></div>`
+      ? `<div class="fb"><span class="fb__icon">${icon('check', { size: 26 })}</span><div><strong>${note ? escapeHtml(note) : PRAISE[Math.floor(Math.random() * PRAISE.length)]}</strong>${(ex.type === 'translate' || note) && answerText ? `<p class="fb__answer">${escapeHtml(answerText)}</p>` : ''}</div></div>`
       : `<div class="fb"><span class="fb__icon">${icon('cross', { size: 26 })}</span><div><strong>Correct answer:</strong><p class="fb__answer" ${ex.lang === 'lg' ? 'lang="lg"' : ''}>${escapeHtml(answerText ?? '')}</p></div></div>`;
     mainLabel.textContent = 'Continue';
     mainBtn.className = `btn btn--${correct ? 'success' : 'danger'} btn--lg btn--block`;
