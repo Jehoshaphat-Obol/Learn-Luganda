@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../docs/packs/schema/ui-pack.schema.json",
+  "meta": {
+    "code": "en",
+    "status": "reviewed"
+  },
+  "strings": {
+    "app": {
+      "name": "Learn Luganda",
+      "shortName": "luganda",
+      "home": "Learn Luganda home",
+      "pageTitle": "{page} · {app}"
+    },
+    "nav": {
+      "main": "Main",
+      "learn": "Learn",
+      "practice": "Practice",
+      "gems": "Gems",
+      "profile": "Profile"
+    },
+    "stats": {
+      "streak": { "one": "{count} day streak", "other": "{count} day streak" },
+      "gems": { "one": "{count} gem", "other": "{count} gems" },
+      "hearts": { "one": "{count} of {max} hearts", "other": "{count} of {max} hearts" }
+    },
+    "music": {
+      "label": "Background music",
+      "turnOff": "Turn music off",
+      "turnOn": "Turn music on"
+    }
+  }
+}

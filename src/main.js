@@ -15,6 +15,7 @@ import { initMusic, setMusicScene, toggleMusic } from './ui/music.js';
 import { registerServiceWorker } from './app/pwa.js';
 import { startReminders } from './reminders/reminders.js';
 import { applyBrandMood, brandMood } from './app/brand-mood.js';
+import { detectUiLanguage, setLanguage } from './i18n/index.js';
 
 setStatsProvider(() => {
   const s = store.get();
@@ -52,6 +53,7 @@ document.addEventListener('click', (e) => {
   if (e.target.closest('[data-music-toggle]')) toggleMusic();
 });
 store.subscribe(refreshMusicButton);
-router.start();
+// The UI language is set before the first screen renders.
+setLanguage(detectUiLanguage()).then(() => router.start());
 registerServiceWorker();
 startReminders();
