@@ -49,3 +49,16 @@ test('Settings shows the languages and the course', async ({ page }) => {
   await expect.poll(async () => (await readState(page)).settings.uiLang).toBe('en');
   await expect(page.locator('[data-ui-lang]')).toHaveValue('en');
 });
+
+test('old saved progress follows the course pack, and ids it lacks are archived', async ({ page }) => {
+  const lessonId = 'u1s1l1';
+  const stray = { box: 2, due: '2026-01-01', seen: 1, correct: 1, wrong: 0, lastSeen: null };
+  await openWith(page, savedState({ lessons: { [lessonId]: { completions: 1, bestAccuracy: 1 } }, words: { 'no-such-word': stray } }));
+  await expect(page.locator('.node--current').first()).toBeVisible();
+  const s = await readState(page);
+  expect(s.version).toBe(4);
+  expect(s.courseVersion).toBe(1);
+  expect(s.lessons[lessonId].completions).toBe(1);
+  expect(s.words['no-such-word']).toBeUndefined();
+  expect(s.archive.words['no-such-word']).toEqual(stray);
+});

@@ -88,6 +88,8 @@ export function buildCourse(rawUnits, rawSections = [{ id: 's1', title: 'Course'
   return deepFreeze({
     id: meta.id ?? 'course',
     version: meta.version ?? 1,
+    // Steps that keep saved progress in step with renamed or removed ids (./migrations.js).
+    migrations: meta.migrations ?? [],
     from: meta.from ?? 'en',
     to: meta.to ?? 'lg',
     title: meta.title ?? '',

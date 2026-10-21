@@ -6,7 +6,7 @@
 import { createStore } from './storage.js';
 
 export const STORAGE_KEY = 'learn-luganda';
-export const SCHEMA_VERSION = 3;
+export const SCHEMA_VERSION = 4;
 
 export const DEFAULTS = {
   // null until onboarding finishes: { name, avatar, dailyGoal, motivation, level, joinedAt }
@@ -33,6 +33,10 @@ export const DEFAULTS = {
   mistakes: [],
   // section ids reached early by passing a section test
   jumps: [],
+  // Progress for ids the course no longer has, kept in case they come back
+  // (src/content/migrations.js), and the course version it was saved with.
+  archive: { words: {}, lessons: {}, mistakes: [], jumps: [] },
+  courseVersion: null,
   achievements: {},
   inventory: {},
   stats: { lessonsCompleted: 0, perfectLessons: 0, practiceSessions: 0, answers: 0, correctAnswers: 0, secondsLearning: 0 },
@@ -54,6 +58,9 @@ export const MIGRATIONS = {
     const reminders = { on: Boolean(reminder), hour: reminderHour === 19 ? null : reminderHour, consent: reminder ? 'granted' : 'unasked', askedAt: null, asks: 0, sent: lastReminder ? [lastReminder] : [], hours };
     return { ...doc, settings, reminders };
   },
+  // v4: progress belongs to a course pack with a content version. Everything
+  // saved so far was English→Luganda version 1.
+  4: (doc) => ({ ...doc, settings: { ...doc.settings, course: doc.settings?.course ?? 'en-lg' }, courseVersion: doc.courseVersion ?? 1, courses: doc.courses ?? {} }),
 };
 
 export const store = createStore({

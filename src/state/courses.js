@@ -8,8 +8,9 @@
  * progress is ever lost.
  */
 import { DEFAULTS } from './store.js';
+import { upgradeProgress } from '../content/migrations.js';
 
-export const COURSE_SLICES = ['lessons', 'words', 'mistakes', 'jumps'];
+export const COURSE_SLICES = ['lessons', 'words', 'mistakes', 'jumps', 'archive', 'courseVersion'];
 
 /** Id of the course whose progress is at the top of the document. */
 export const activeCourseId = (s) => s.settings.course;
@@ -31,4 +32,17 @@ export function switchCourse(s, id) {
 export function hasStarted(s, id) {
   const slices = id === s.settings.course ? s : s.courses?.[id];
   return Boolean(slices && Object.keys(slices.lessons ?? {}).length);
+}
+
+/**
+ * Brings the active course's progress up to the loaded pack's version
+ * (renames, merges, splits, removals) and archives ids it no longer has.
+ * Mutates `s`, for store.update.
+ */
+export function syncCourse(s, course) {
+  const saved = Object.fromEntries(COURSE_SLICES.map((k) => [k, s[k]]));
+  const { slices, version } = upgradeProgress(saved, s.courseVersion, course);
+  for (const k of ['lessons', 'words', 'mistakes', 'jumps', 'archive']) s[k] = slices[k];
+  s.courseVersion = version;
+  return s;
 }

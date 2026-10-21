@@ -113,6 +113,167 @@
           }
         }
       }
+    },
+    "migrations": {
+      "type": "array",
+      "description": "One step per content version that renamed or removed ids, oldest first. When a learner opens a newer pack, every step above their saved version is applied to their progress. Ids the pack no longer has are archived, never deleted.",
+      "items": {
+        "type": "object",
+        "required": [
+          "version"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "version": {
+            "type": "integer",
+            "minimum": 2,
+            "description": "The content version this step brings progress up to."
+          },
+          "note": {
+            "type": "string",
+            "description": "What changed, for authors."
+          },
+          "rename": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Old id → new id. Several old ids to one new id merge their progress; one old id to a list splits it (each new id gets a copy).",
+            "properties": {
+              "words": {
+                "type": "object",
+                "additionalProperties": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^[a-z0-9-]+$"
+                    },
+                    {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9-]+$"
+                      }
+                    }
+                  ]
+                }
+              },
+              "lessons": {
+                "type": "object",
+                "additionalProperties": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^[a-z0-9-]+$"
+                    },
+                    {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9-]+$"
+                      }
+                    }
+                  ]
+                }
+              },
+              "stories": {
+                "type": "object",
+                "additionalProperties": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^[a-z0-9-]+$"
+                    },
+                    {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9-]+$"
+                      }
+                    }
+                  ]
+                }
+              },
+              "units": {
+                "type": "object",
+                "additionalProperties": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^[a-z0-9-]+$"
+                    },
+                    {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9-]+$"
+                      }
+                    }
+                  ]
+                }
+              },
+              "sections": {
+                "type": "object",
+                "additionalProperties": {
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^[a-z0-9-]+$"
+                    },
+                    {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9-]+$"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "remove": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "Ids whose progress moves to the archive.",
+            "properties": {
+              "words": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "lessons": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "stories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "units": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "sections": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "$defs": {

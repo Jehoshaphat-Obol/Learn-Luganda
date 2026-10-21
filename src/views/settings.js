@@ -20,7 +20,7 @@ import { POLICY } from '../ads/policy.js';
 import { AD_STRINGS, duration } from '../ads/strings.js';
 import { fill } from '../reminders/strings.js';
 import { siteLinks } from '../app/site.js';
-import { COURSES, changeCourse, changeUiLanguage } from '../app/languages.js';
+import { COURSES, changeCourse, changeUiLanguage, loadSaved } from '../app/languages.js';
 import { detectUiLanguage, t, UI_LANGUAGES } from '../i18n/index.js';
 import { languageInfo } from '../i18n/languages.js';
 
@@ -274,7 +274,10 @@ export function settingsView({ root, query, navigate }) {
     });
     if (ok !== 'yes') return;
     try {
-      const state = store.importJSON(text);
+      store.importJSON(text);
+      // The file may be for another course or an older version of this one.
+      await loadSaved();
+      const state = store.get();
       refreshTopBar();
       toast('Progress imported. Weebale!', { variant: 'success' });
       navigate(state.profile ? '/learn' : '/onboarding');
