@@ -110,7 +110,7 @@ export function createShell(root) {
       }
       currentLayout = layout;
 
-      document.title = route.title ? t('app.pageTitle', { page: route.title, app: t('app.name') }) : t('app.name');
+      document.title = route.title ? t('app.pageTitle', { page: t(route.title), app: t('app.name') }) : t('app.name');
       window.scrollTo(0, 0);
       cleanup = route.view({ root: viewRoot, params, query, path, navigate }) ?? null;
       // Move focus to the new view for screen reader users, without scrolling.

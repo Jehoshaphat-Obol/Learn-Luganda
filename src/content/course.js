@@ -96,6 +96,8 @@ export function buildCourse(rawUnits, rawSections = [{ id: 's1', title: 'Course'
     names: meta.names ?? { from: meta.from ?? 'en', to: meta.to ?? 'lg' },
     settings,
     cast: meta.cast ?? {},
+    // Marketing copy for the landing page, onboarding and About page.
+    landing: meta.landing ?? null,
     units,
     sections,
     words,

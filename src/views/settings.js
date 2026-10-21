@@ -78,14 +78,14 @@ function profileSection(p) {
     <fieldset class="onb__fieldset">
       <legend>Colour</legend>
       <div class="onb__colors" role="radiogroup" aria-label="Colour">
-        ${AVATAR_COLORS.map((c) => `<button class="onb__color avatar--${c}" type="button" role="radio" aria-checked="${color === c}" aria-label="${c}" data-pick="color" data-value="${c}"></button>`).join('')}
+        ${AVATAR_COLORS.map((c) => `<button class="onb__color avatar--${c}" type="button" role="radio" aria-checked="${color === c}" aria-label="${escapeHtml(t(`colours.${c}`))}" data-pick="color" data-value="${c}"></button>`).join('')}
       </div>
     </fieldset>
   </section>
   <section class="settings-group" id="goal">
     <h2>Daily goal</h2>
     <div class="goal-options" role="radiogroup" aria-label="Daily goal">
-      ${DAILY_GOALS.map((g) => `<button class="choice" type="button" role="radio" aria-checked="${p.dailyGoal === g.xp}" data-goal="${g.xp}"><span><strong>${g.label}</strong> · ${g.xp} XP a day</span><span class="muted">${g.minutes} min</span></button>`).join('')}
+      ${DAILY_GOALS.map((g) => `<button class="choice" type="button" role="radio" aria-checked="${p.dailyGoal === g.xp}" data-goal="${g.xp}"><span><strong>${escapeHtml(t(`goals.${g.id}`))}</strong> · ${escapeHtml(t('goals.perDay', { xp: g.xp }))}</span><span class="muted">${escapeHtml(t('goals.minutes', { minutes: g.minutes }))}</span></button>`).join('')}
     </div>
   </section>`;
 }
