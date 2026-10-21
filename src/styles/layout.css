@@ -313,3 +313,26 @@
   flex-wrap: wrap;
   gap: var(--space-3);
 }
+
+.settings-group {
+  scroll-margin-top: calc(var(--topbar-height) + var(--space-2));
+}
+
+.settings-profile {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.settings-profile .field {
+  flex: 1;
+}
+
+.goal-options {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.goal-options .choice {
+  justify-content: space-between;
+}

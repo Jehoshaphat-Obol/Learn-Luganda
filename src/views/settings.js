@@ -1,10 +1,14 @@
 /*
- * Settings: sound and animation preferences, then the data section
- * (export, import, reset). More learning preferences join in #23.
+ * Settings: profile (name, character, colour), daily goal, sound and
+ * animation preferences, then the data section (export, import, reset).
+ * Every change saves and applies straight away. The theme is light only.
  */
+import '../styles/onboarding.css';
 import { store } from '../state/store.js';
-import { button, openModal, toast } from '../ui/components.js';
-import { mascot } from '../illustrations/index.js';
+import { AVATAR_COLORS, DAILY_GOALS, saveProfile } from '../state/profile.js';
+import { button, escapeHtml, openModal, toast } from '../ui/components.js';
+import { CAST, mascot } from '../illustrations/index.js';
+import { avatar } from '../ui/avatar.js';
 import { refreshTopBar } from '../app/shell.js';
 import { play } from '../ui/sound.js';
 
@@ -24,8 +28,40 @@ function toggle(key, label, hint, checked, disabled = false) {
   </label>`;
 }
 
+function profileSection(p) {
+  const { character, color } = p.avatar;
+  return `<section class="settings-group" id="profile">
+    <h2>Profile</h2>
+    <div class="settings-profile">
+      <div class="settings-profile__preview" data-preview>${avatar(p.avatar, { size: 88, label: 'Your avatar' })}</div>
+      <div class="field">
+        <label for="settings-name">Name</label>
+        <input id="settings-name" class="input" type="text" maxlength="30" autocomplete="given-name" value="${escapeHtml(p.name)}" data-name />
+      </div>
+    </div>
+    <fieldset class="onb__fieldset">
+      <legend>Character</legend>
+      <div class="onb__characters" role="radiogroup" aria-label="Character">
+        ${Object.keys(CAST).map((id) => `<button class="onb__character" type="button" role="radio" aria-checked="${character === id}" aria-label="${CAST[id].name}" data-pick="character" data-value="${id}">${avatar({ character: id, color: 'paper' }, { size: 56 })}</button>`).join('')}
+      </div>
+    </fieldset>
+    <fieldset class="onb__fieldset">
+      <legend>Colour</legend>
+      <div class="onb__colors" role="radiogroup" aria-label="Colour">
+        ${AVATAR_COLORS.map((c) => `<button class="onb__color avatar--${c}" type="button" role="radio" aria-checked="${color === c}" aria-label="${c}" data-pick="color" data-value="${c}"></button>`).join('')}
+      </div>
+    </fieldset>
+  </section>
+  <section class="settings-group" id="goal">
+    <h2>Daily goal</h2>
+    <div class="goal-options" role="radiogroup" aria-label="Daily goal">
+      ${DAILY_GOALS.map((g) => `<button class="choice" type="button" role="radio" aria-checked="${p.dailyGoal === g.xp}" data-goal="${g.xp}"><span><strong>${g.label}</strong> · ${g.xp} XP a day</span><span class="muted">${g.minutes} min</span></button>`).join('')}
+    </div>
+  </section>`;
+}
+
 export function settingsView({ root, query, navigate }) {
-  const { settings } = store.get();
+  const { settings, profile } = store.get();
   const systemReduced = Boolean(window.matchMedia?.('(prefers-reduced-motion: reduce)').matches);
   root.innerHTML = `
     <div class="page">
@@ -33,6 +69,7 @@ export function settingsView({ root, query, navigate }) {
         <h1><strong>Settings</strong></h1>
       </header>
 
+      ${profile ? profileSection(profile) : ''}
       <section class="settings-group" id="preferences">
         <h2>Preferences</h2>
         <div>
@@ -59,6 +96,36 @@ export function settingsView({ root, query, navigate }) {
     </div>`;
 
   const fileInput = root.querySelector('[data-import-file]');
+
+  // Profile edits save as they happen.
+  const nameInput = root.querySelector('[data-name]');
+  nameInput?.addEventListener('change', () => {
+    const name = nameInput.value.trim();
+    if (!name) {
+      nameInput.value = store.get().profile.name;
+      return;
+    }
+    saveProfile({ name });
+    toast('Name saved.');
+  });
+
+  root.addEventListener('click', (e) => {
+    const pick = e.target.closest('[data-pick]');
+    if (pick) {
+      saveProfile({ avatar: { [pick.dataset.pick]: pick.dataset.value } });
+      pick.parentElement.querySelectorAll('[data-pick]').forEach((b) => b.setAttribute('aria-checked', String(b === pick)));
+      root.querySelector('[data-preview]').innerHTML = avatar(store.get().profile.avatar, { size: 88, label: 'Your avatar' });
+      return;
+    }
+    const goal = e.target.closest('[data-goal]');
+    if (goal) {
+      saveProfile({ dailyGoal: Number(goal.dataset.goal) });
+      goal.parentElement.querySelectorAll('[data-goal]').forEach((b) => b.setAttribute('aria-checked', String(b === goal)));
+      refreshTopBar();
+    }
+  });
+
+  if (query.section) root.querySelector(`#${CSS.escape(query.section)}`)?.scrollIntoView({ block: 'start' });
 
   root.addEventListener('change', (e) => {
     const key = e.target.dataset?.setting;
