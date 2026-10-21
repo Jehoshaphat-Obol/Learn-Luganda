@@ -15,8 +15,7 @@ import { initMusic, setMusicScene, toggleMusic } from './ui/music.js';
 import { registerServiceWorker } from './app/pwa.js';
 import { startReminders } from './reminders/reminders.js';
 import { applyBrandMood, brandMood } from './app/brand-mood.js';
-import { detectUiLanguage, setLanguage } from './i18n/index.js';
-import { loadCourse } from './content/load.js';
+import { startLanguages } from './app/languages.js';
 
 setStatsProvider(() => {
   const s = store.get();
@@ -55,7 +54,7 @@ document.addEventListener('click', (e) => {
 });
 store.subscribe(refreshMusicButton);
 // The UI language and the course load before the first screen renders.
-Promise.all([setLanguage(detectUiLanguage()), loadCourse()]).then(() => {
+startLanguages(() => router.refresh()).then(() => {
   router.start();
   startReminders();
 });

@@ -20,6 +20,9 @@ import { POLICY } from '../ads/policy.js';
 import { AD_STRINGS, duration } from '../ads/strings.js';
 import { fill } from '../reminders/strings.js';
 import { siteLinks } from '../app/site.js';
+import { COURSES, changeCourse, changeUiLanguage } from '../app/languages.js';
+import { detectUiLanguage, t, UI_LANGUAGES } from '../i18n/index.js';
+import { languageInfo } from '../i18n/languages.js';
 
 function download(filename, text) {
   const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
@@ -84,6 +87,31 @@ function profileSection(p) {
   </section>`;
 }
 
+function languagesSection(settings) {
+  const option = (value, label, selected) => `<option value="${value}"${selected ? ' selected' : ''}>${escapeHtml(label)}</option>`;
+  const name = (code) => languageInfo(code).nativeName;
+  const ui = [
+    option('auto', t('settings.languages.automatic', { language: name(detectUiLanguage()) }), !settings.uiLang),
+    ...UI_LANGUAGES.map((code) => option(code, name(code), settings.uiLang === code)),
+  ];
+  const courses = COURSES.map((p) =>
+    option(p.id, t('picker.course', { target: languageInfo(p.to).name, base: languageInfo(p.from).name }), p.id === settings.course),
+  );
+  return `<section class="settings-group" id="languages">
+    <h2>${escapeHtml(t('settings.languages.title'))}</h2>
+    <div>
+      <label class="switch-row">
+        <span class="switch-row__text"><strong>${escapeHtml(t('settings.languages.ui'))}</strong><small>${escapeHtml(t('settings.languages.uiHint'))}</small></span>
+        <select class="input settings-hour" data-ui-lang>${ui.join('')}</select>
+      </label>
+      <label class="switch-row">
+        <span class="switch-row__text"><strong>${escapeHtml(t('settings.languages.course'))}</strong><small>${escapeHtml(t('settings.languages.courseHint'))}</small></span>
+        <select class="input settings-hour" data-course>${courses.join('')}</select>
+      </label>
+    </div>
+  </section>`;
+}
+
 function adBreakRow() {
   const s = adBreakNow();
   const S = AD_STRINGS.settings;
@@ -102,6 +130,7 @@ export function settingsView({ root, query, navigate }) {
       </header>
 
       ${profile ? profileSection(profile) : ''}
+      ${languagesSection(settings)}
       <section class="settings-group" id="preferences">
         <h2>Preferences</h2>
         <div>
@@ -185,6 +214,17 @@ export function settingsView({ root, query, navigate }) {
   if (query.section) root.querySelector(`#${CSS.escape(query.section)}`)?.scrollIntoView({ block: 'start' });
 
   root.addEventListener('change', async (e) => {
+    // Both redraw the page once the new pack has loaded.
+    if (e.target.matches('[data-ui-lang]')) {
+      await changeUiLanguage(e.target.value === 'auto' ? null : e.target.value);
+      return;
+    }
+    if (e.target.matches('[data-course]')) {
+      const to = COURSES.find((p) => p.id === e.target.value)?.to;
+      await changeCourse(e.target.value);
+      toast(t('settings.languages.switched', { target: languageInfo(to).name }));
+      return;
+    }
     if (e.target.matches('[data-pack]')) {
       store.update((s) => {
         s.settings.soundPack = e.target.value;

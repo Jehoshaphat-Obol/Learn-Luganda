@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jehoshaphat-obol.github.io/Learn-Luganda/schema/regions.schema.json",
+  "title": "Regions",
+  "description": "src/packs/regions.json: device time zone → country, and country → languages commonly used there, most common first. Used to suggest a language on the get-started screen.",
+  "type": "object",
+  "required": ["timeZones", "countries"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "$comment": { "type": "string" },
+    "timeZones": { "type": "object", "propertyNames": { "pattern": "^[A-Za-z_]+/[A-Za-z_/+-]+$" }, "additionalProperties": { "type": "string", "pattern": "^[A-Z]{2}$" } },
+    "countries": {
+      "type": "object",
+      "propertyNames": { "pattern": "^[A-Z]{2}$" },
+      "additionalProperties": { "type": "array", "minItems": 1, "items": { "type": "string" } }
+    }
+  }
+}
