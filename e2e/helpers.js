@@ -1,4 +1,5 @@
 /* Shared helpers: seeding saved progress and answering exercises correctly. */
+import { expect } from '@playwright/test';
 import { buildLesson } from '../src/lesson/generate.js';
 import { course } from '../src/content/course.js';
 import { dayKey, addDays } from '../src/state/dates.js';
@@ -84,3 +85,16 @@ export async function answer(page, ex, { correct = true } = {}) {
 
 const cssEscape = (v) => String(v).replace(/["\\]/g, '\\$&');
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/**
+ * Clicks through the reward screens until the path shows. Each screen swaps
+ * in a new Continue button, so a click can race the swap: retry the whole
+ * step rather than wait on a button that may already be gone.
+ */
+export async function continueToPath(page) {
+  await expect(async () => {
+    const next = page.locator('[data-continue]');
+    if (await next.count()) await next.click({ timeout: 2000 });
+    await expect(page).toHaveURL(/#\/learn/, { timeout: 500 });
+  }).toPass({ timeout: 20_000 });
+}
