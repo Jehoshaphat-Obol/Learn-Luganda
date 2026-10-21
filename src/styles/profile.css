@@ -1,13 +1,34 @@
 /* Profile */
 .profile-head {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: 'avatar text edit';
   align-items: center;
-  gap: var(--space-4);
+  column-gap: var(--space-4);
+  row-gap: var(--space-3);
   margin-bottom: var(--space-8);
 }
 
+.profile-head > .avatar { grid-area: avatar; }
+.profile-head__text { grid-area: text; }
+.profile-head > .btn { grid-area: edit; }
+
+/* Long names wrap (even a single long word) instead of running under Edit. */
 .profile-head h1 {
-  font-size: var(--text-2xl);
+  font-size: clamp(var(--text-xl), 9vw, var(--text-2xl));
+  overflow-wrap: anywhere;
+}
+
+/* Phones: Edit drops to its own row under the name so it never overlaps it. */
+@media (max-width: 560px) {
+  .profile-head {
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-areas:
+      'avatar text'
+      'avatar edit';
+  }
+
+  .profile-head > .btn { justify-self: start; }
 }
 
 .profile-head p {
@@ -74,7 +95,6 @@
 }
 
 .profile-head__text {
-  flex: 1;
   min-width: 0;
 }
 
