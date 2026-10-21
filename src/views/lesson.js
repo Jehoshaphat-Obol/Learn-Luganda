@@ -4,6 +4,7 @@
  * continues; number keys pick options.
  */
 import '../styles/lesson.css';
+import { canSynthesize, speechOn } from '../audio/speech.js';
 import { course, langAttr } from '../content/course.js';
 import { buildLesson } from '../lesson/generate.js';
 import { createSession } from '../lesson/session.js';
@@ -219,7 +220,7 @@ export function lessonView({ root, params, query = {}, navigate }) {
     root,
     hearts: lesson.settings.lesson.hearts,
     // `?seed=` replays the same exercises (used by the end-to-end tests).
-    exercises: buildLesson(lesson.id, { firstTime, seed: Number(query.seed) || undefined }),
+    exercises: buildLesson(lesson.id, { firstTime, seed: Number(query.seed) || undefined, listening: speechOn(), speakable: speechOn() && canSynthesize() }),
     onQuit: () => navigate('/learn'),
     onFinish: (result) => {
       runner.cleanup();

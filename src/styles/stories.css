@@ -342,3 +342,8 @@ a.story-card:active {
 .guide__back {
   text-align: center;
 }
+
+.story-line__speak {
+  align-self: center;
+  margin-inline-start: 0;
+}

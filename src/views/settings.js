@@ -24,6 +24,8 @@ import { siteLinks } from '../app/site.js';
 import { COURSES, changeCourse, changeUiLanguage, loadSaved } from '../app/languages.js';
 import { detectUiLanguage, t, UI_LANGUAGES } from '../i18n/index.js';
 import { languageInfo } from '../i18n/languages.js';
+import { canSynthesize, speak, stopSpeech } from '../audio/speech.js';
+import { course } from '../content/course.js';
 
 function download(filename, text) {
   const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
@@ -88,6 +90,13 @@ function profileSection(p) {
   </section>`;
 }
 
+function speechRows(settings) {
+  const on = settings.speech !== false;
+  const hint = canSynthesize() ? t('settings.speech.hint') : t('settings.speech.hintNoVoice', { language: languageInfo(course.to).name });
+  return `${toggle('speech', t('settings.speech.label'), hint, on)}
+    <div data-speech-slow${on ? '' : ' hidden'}>${toggle('speechSlow', t('settings.speech.slow'), t('settings.speech.slowHint'), Boolean(settings.speechSlow))}</div>`;
+}
+
 function languagesSection(settings) {
   const option = (value, label, selected) => `<option value="${value}"${selected ? ' selected' : ''}>${escapeHtml(label)}</option>`;
   const name = (code) => languageInfo(code).nativeName;
@@ -140,6 +149,7 @@ export function settingsView({ root, query, navigate }) {
             <span class="switch-row__text"><strong>Sound style</strong><small>Playful is bright and bouncy, soft is gentle and warm.</small></span>
             <select class="input settings-hour" data-pack>${Object.entries(PACKS).map(([id, label]) => `<option value="${id}"${id === (settings.soundPack ?? 'playful') ? ' selected' : ''}>${label}</option>`).join('')}</select>
           </label>
+          ${speechRows(settings)}
           ${toggle('music', 'Background music', 'A quiet amadinda loop on the home screens. Lessons and stories stay quiet.', settings.music !== false)}
           ${toggle('haptics', 'Vibration', !hapticsSupported() ? 'This device or browser can’t vibrate (iPhones and most computers don’t allow it).' : systemReduced ? 'Your device asks for reduced motion, so vibration stays off.' : 'A small buzz for taps, answers and rewards.', hapticsSupported() && !systemReduced && settings.haptics !== false, !hapticsSupported() || systemReduced)}
           ${profile && remindersSupported() ? remindersRows(reminders) : ''}
@@ -254,6 +264,15 @@ export function settingsView({ root, query, navigate }) {
     store.update((s) => {
       s.settings[key] = e.target.checked;
     });
+    if (key === 'speech') {
+      root.querySelector('[data-speech-slow]').hidden = !e.target.checked;
+      if (!e.target.checked) stopSpeech();
+    }
+    if ((key === 'speech' && e.target.checked) || key === 'speechSlow') {
+      // The course's first word, so the learner hears the change.
+      const [first] = Object.values(course.words);
+      if (first) speak(first.target, { audio: first.audio });
+    }
     if (key === 'sound' && e.target.checked) play('correct');
     if (key === 'haptics' && e.target.checked) play('tap');
   });

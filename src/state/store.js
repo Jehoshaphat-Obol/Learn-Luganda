@@ -14,8 +14,9 @@ export const DEFAULTS = {
   onboarding: { step: 0, answers: {} },
   // soundPack: 'playful' | 'soft' (see src/ui/sound.js)
   // uiLang: the interface language (null = detect from the browser);
-  // course: the active from→to course pack
-  settings: { sound: true, soundPack: 'playful', music: true, haptics: true, motion: true, uiLang: null, course: 'en-lg' },
+  // course: the active from→to course pack; speech / speechSlow: spoken
+  // words and lines (src/audio/speech.js)
+  settings: { sound: true, soundPack: 'playful', music: true, haptics: true, motion: true, uiLang: null, course: 'en-lg', speech: true, speechSlow: false },
   // Progress of courses other than the active one, by course id (see ./courses.js).
   courses: {},
   // Opt-in word reminders (src/reminders). hour: null learns the routine from

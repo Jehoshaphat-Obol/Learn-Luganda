@@ -1,16 +1,16 @@
 /*
- * Listening: play a recording and build what you hear from tiles. Only
- * generated for items with recorded audio, since browsers can't speak
- * Luganda.
+ * Listening: hear the target-language answer and build it from tiles. The
+ * recording plays when the pack has one, otherwise the device's voice
+ * (only generated then when the course allows it; see listen.synthesized).
  */
 import { langAttr } from '../../content/course.js';
 import { escapeHtml } from '../../ui/components.js';
 import { icon } from '../../ui/icons.js';
 import { isAccepted } from '../answers.js';
+import { speak } from '../../audio/speech.js';
 
 export function renderListen(ex, el, api) {
   const placed = [];
-  const audio = new Audio(ex.audio);
   el.innerHTML = `
     <div class="ex ex--listen">
       <h2 class="ex__prompt">${escapeHtml(ex.prompt)}</h2>
@@ -22,10 +22,7 @@ export function renderListen(ex, el, api) {
     </div>`;
   const answerEl = el.querySelector('[data-answer]');
   const tiles = [...el.querySelectorAll('[data-tile]')];
-  const play = () => {
-    audio.currentTime = 0;
-    audio.play().catch(() => {});
-  };
+  const play = () => speak(ex.answerText, { audio: ex.audio });
   function draw() {
     answerEl.innerHTML = placed.map((i, pos) => `<button class="tile" type="button" data-placed="${pos}"${langAttr('target')}>${escapeHtml(ex.bank[i])}</button>`).join('');
     tiles.forEach((b, i) => {

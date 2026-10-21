@@ -5,6 +5,7 @@
  */
 import '../styles/lesson.css';
 import '../styles/stories.css';
+import { speak, speakButton } from '../audio/speech.js';
 import { castMember, course, langAttr } from '../content/course.js';
 import { store } from '../state/store.js';
 import { storyKey, storyList, isStoryUnlocked, isStoryDone } from '../state/stories.js';
@@ -81,7 +82,7 @@ export function storiesView({ root }) {
   return mountAds(root);
 }
 
-function lineHtml({ speaker, target, base }, gloss, side) {
+function lineHtml({ speaker, target, base, audio }, gloss, side) {
   const who = castMember(speaker);
   const glossHtml = gloss ? `<span class="story-line__gloss">${Object.entries(gloss).map(([w, m]) => `<span><strong${langAttr('target')}>${escapeHtml(w)}</strong> ${escapeHtml(m)}</span>`).join('')}</span>` : '';
   return `<div class="story-line story-line--${side}">
@@ -92,6 +93,7 @@ function lineHtml({ speaker, target, base }, gloss, side) {
       <span class="story-line__en"${langAttr('base')}>${escapeHtml(base)}</span>
       ${glossHtml}
     </button>
+    ${speakButton(target, { audio, speaker, label: `Hear ${who.name}`, className: 'story-line__speak' })}
   </div>`;
 }
 
@@ -173,7 +175,11 @@ export function storyView({ root, params, navigate }) {
     const s = story.steps[step];
     const el = document.createElement('div');
     el.className = 'story__step';
-    if (s.line) el.innerHTML = lineHtml(s.line, s.gloss, sides[s.line.speaker] ?? 'left');
+    if (s.line) {
+      el.innerHTML = lineHtml(s.line, s.gloss, sides[s.line.speaker] ?? 'left');
+      // Each person reads their line aloud in their own voice.
+      if (el.querySelector('[data-speak]')) speak(s.line.target, { audio: s.line.audio, speaker: s.line.speaker });
+    }
     else {
       el.innerHTML = questionHtml(s, step);
       waiting = true;
