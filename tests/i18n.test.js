@@ -1,9 +1,9 @@
 import { describe, expect, it, vi } from 'vitest';
 import { deepFreeze } from '../src/i18n/freeze.js';
 import { detectLanguage, flatten, format, lookup, placeholders } from '../src/i18n/format.js';
-import { DEFAULT_LANGUAGE, UI_LANGUAGES, currentLanguage, detectUiLanguage, onLanguageChange, setLanguage, t } from '../src/i18n/index.js';
+import { DEFAULT_LANGUAGE, UI_LANGUAGES, currentLanguage, detectUiLanguage, onLanguageChange, setLanguage, t, tList, useUiPack } from '../src/i18n/index.js';
 import { LANGUAGES, languageInfo } from '../src/i18n/languages.js';
-import { validateUiPack } from '../src/i18n/validate.js';
+import { LIST_GROUPS, validateUiPack } from '../src/i18n/validate.js';
 import en from '../src/packs/ui/en.json';
 
 describe('formatting', () => {
@@ -114,6 +114,26 @@ describe('UI pack validation', () => {
     expect(errors.join('\n')).toMatch(/"nav.lern" is not an English key/);
     expect(errors.join('\n')).toMatch(/"stats.hearts" uses \{count\} but English uses \{count\}, \{max\}/);
     expect(errors.join('\n')).toMatch(/"stats.gems" must have plural forms/);
+  });
+
+  it('lets list groups have their own entries, without new placeholders', () => {
+    const praise = { a: 'Vizuri!', b: 'Hongera!', c: 'Safi sana!' };
+    const ok = validateUiPack({ meta, strings: { lesson: { praise } } }, en, { code: 'sw', languages });
+    expect(ok.errors).toEqual([]);
+    expect(ok.missing.some((k) => k.startsWith('lesson.praise.'))).toBe(false);
+    const bad = validateUiPack({ meta, strings: { lesson: { praise: { a: 'Vizuri {name}!' } } } }, en, { code: 'sw', languages });
+    expect(bad.errors.join('\n')).toMatch(/uses \{name\}/);
+  });
+
+  it('lists every group read with tList', () => {
+    for (const group of LIST_GROUPS) expect(tList(group).length).toBeGreaterThan(0);
+  });
+
+  it('tList reads the active pack, falling back to English', () => {
+    useUiPack({ meta, strings: { lesson: { praise: { a: 'Vizuri!' } } } });
+    expect(tList('lesson.praise')).toEqual(['Vizuri!']);
+    expect(tList('reminders.fresh')).toEqual(Object.values(en.strings.reminders.fresh));
+    useUiPack(en);
   });
 
   it('passes for English itself', () => {

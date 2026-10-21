@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../schema/course.schema.json",
+  "formatVersion": 1,
+  "id": "en-sw",
+  "version": 1,
+  "from": "en",
+  "to": "sw",
+  "status": "draft",
+  "title": "Swahili for English speakers (example)",
+  "description": "A one-unit example that shows every part of a course pack. Not shipped in the app.",
+  "notes": "Example only. The Swahili was drafted by Claude and has not been reviewed by a native speaker.",
+  "cheers": ["Safi!", "Hongera!"],
+  "phrases": {
+    "congrats": "Hongera",
+    "thanks": "Asante sana!"
+  },
+  "landing": {
+    "hello": "Habari?",
+    "thanks": "Asante",
+    "place": "East Africa",
+    "word": "kujifunza — v. to learn",
+    "words": [
+      ["Habari?", "How are you?"],
+      ["Nzuri", "Fine"],
+      ["Asante", "Thank you"],
+      ["Karibu", "Welcome"],
+      ["Rafiki", "Friend"]
+    ],
+    "why": {
+      "title": "The language of **the Swahili coast.**",
+      "text": "Swahili is spoken by tens of millions of people across East Africa, from Mombasa and Dar es Salaam to Kampala and Goma.",
+      "cards": [
+        { "title": "For travellers", "text": "Greet people from the coast to the Great Lakes." },
+        { "title": "For families", "text": "Keep the language alive at home." },
+        { "title": "For the curious", "text": "Meet noun classes and a rich poetry tradition." }
+      ]
+    },
+    "sample": {
+      "prompt": "Which one means “thank you”?",
+      "options": ["Habari?", "Asante", "Hapana"],
+      "answer": "Asante",
+      "explain": "_Asante_ means thank you."
+    },
+    "start": { "word": "Anza!", "caption": "anza — v. start, begin" },
+    "farewell": "Asante sana — thank you very much.",
+    "audience": "Complete beginners who want their first Swahili greetings.",
+    "first": "Greetings, saying who you are and saying goodbye."
+  },
+  "settings": {
+    "lesson": { "maxExercises": 10 },
+    "speech": { "fallbacks": [] }
+  },
+  "cast": {
+    "amani": {
+      "name": "Amani",
+      "role": "A student in Mombasa",
+      "look": "amara",
+      "voice": { "pitch": 1.3, "rate": 1, "hints": ["female", "girl"] }
+    },
+    "baraka": {
+      "name": "Baraka",
+      "role": "Amani's uncle, who runs a café",
+      "look": "mukasa",
+      "voice": { "pitch": 0.85, "rate": 0.9, "hints": ["male", "man"] }
+    }
+  },
+  "sections": [
+    {
+      "id": "s1",
+      "title": "First words",
+      "level": "Beginner",
+      "description": "Say hello, thank you and goodbye.",
+      "units": ["u1"]
+    }
+  ]
+}

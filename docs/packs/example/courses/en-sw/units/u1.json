@@ -1,0 +1,81 @@
+{
+  "$schema": "../../../../schema/course-unit.schema.json",
+  "id": "u1",
+  "title": "Greetings",
+  "description": "Say hello, thank you and goodbye.",
+  "color": "vermillion",
+  "character": "amani",
+  "words": [
+    { "id": "habari", "target": "habari", "base": "hello", "altBase": ["how are you"], "notes": "Literally “news”: “what news?”" },
+    { "id": "nzuri", "target": "nzuri", "base": "fine", "altBase": ["good"] },
+    { "id": "asante", "target": "asante", "base": "thank you", "altBase": ["thanks"] },
+    { "id": "karibu", "target": "karibu", "base": "welcome" },
+    { "id": "rafiki", "target": "rafiki", "base": "friend" },
+    { "id": "jina", "target": "jina", "base": "name" },
+    { "id": "langu", "target": "langu", "base": "my", "notes": "Agrees with jina: jina langu, “my name”." },
+    { "id": "kwa-heri", "target": "kwa heri", "base": "goodbye" }
+  ],
+  "sentences": [
+    { "id": "s-habari-yako", "target": "Habari yako?", "base": "How are you?" },
+    { "id": "s-nzuri-asante", "target": "Nzuri, asante.", "base": "Fine, thank you.", "altBase": ["Good, thank you.", "Fine, thanks."] },
+    { "id": "s-karibu-rafiki", "target": "Karibu, rafiki.", "base": "Welcome, friend." },
+    { "id": "s-jina-langu", "target": "Jina langu ni Amani.", "base": "My name is Amani." },
+    { "id": "s-kwa-heri-rafiki", "target": "Kwa heri, rafiki!", "base": "Goodbye, friend!" }
+  ],
+  "skills": [
+    {
+      "id": "u1s1",
+      "title": "Hello",
+      "icon": "star",
+      "tip": "habari",
+      "lessons": [
+        { "id": "u1s1l1", "newWords": ["habari", "nzuri", "asante"], "sentences": ["s-habari-yako", "s-nzuri-asante"] },
+        {
+          "id": "u1s1l2",
+          "newWords": ["karibu", "rafiki"],
+          "sentences": ["s-karibu-rafiki"],
+          "dialogues": [
+            { "speaker": "baraka", "target": "Habari yako, Amani?", "base": "How are you, Amani?", "options": ["Nzuri, asante.", "Kwa heri.", "Karibu."], "answer": "Nzuri, asante." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u1s2",
+      "title": "Who you are",
+      "icon": "profile",
+      "lessons": [
+        { "id": "u1s2l1", "newWords": ["jina", "langu", "kwa-heri"], "sentences": ["s-jina-langu", "s-kwa-heri-rafiki"] }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Swahili greetings are a small conversation: a question about your news and a positive answer.",
+    "phrases": [
+      { "target": "Habari yako?", "base": "How are you?" },
+      { "target": "Nzuri, asante.", "base": "Fine, thank you." },
+      { "target": "Kwa heri!", "base": "Goodbye!" }
+    ],
+    "tips": [
+      { "id": "habari", "title": "Habari means news", "body": ["**Habari?** asks for your news. The usual answer is **nzuri** (good), even on a slow day."] }
+    ],
+    "culture": [
+      { "title": "Greet first", "body": ["Start with a greeting before asking anyone for anything. Skipping it can feel rude."] }
+    ]
+  },
+  "stories": [
+    {
+      "id": "cafe-hello",
+      "title": "At the café",
+      "unlockAfter": "u1s1l2",
+      "cast": ["amani", "baraka"],
+      "summary": "Amani visits her uncle's café.",
+      "steps": [
+        { "line": { "speaker": "baraka", "target": "Karibu, Amani!", "base": "Welcome, Amani!" } },
+        { "line": { "speaker": "amani", "target": "Asante. Habari yako?", "base": "Thank you. How are you?" } },
+        { "line": { "speaker": "baraka", "target": "Nzuri, asante.", "base": "Fine, thank you." } },
+        { "question": "How is Baraka?", "options": ["Fine", "Tired", "Hungry"], "answer": 0 }
+      ]
+    }
+  ]
+}

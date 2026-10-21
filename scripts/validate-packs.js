@@ -2,8 +2,11 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { Ajv2020 } from 'ajv/dist/2020.js';
 import { validateUiPack } from '../src/i18n/validate.js';
+import { packRoot } from './load-pack.js';
 
 const root = new URL('../', import.meta.url);
+// Paths under the packs being checked (src/packs, or --root <dir>).
+const packPath = (path) => new URL(path, packRoot).pathname.slice(new URL(root).pathname.length);
 const readJson = (path) => JSON.parse(readFileSync(new URL(path, root), 'utf8'));
 const ajv = new Ajv2020({ allErrors: true });
 // Shared parts other schemas point at.
@@ -29,26 +32,26 @@ for (const [country, langs] of Object.entries(regions.countries)) for (const c o
 for (const [zone, country] of Object.entries(regions.timeZones)) if (!regions.countries[country]) errors.push(`regions.json: ${zone} maps to ${country}, which has no languages`);
 
 const english = readJson('src/packs/ui/en.json');
-const uiFiles = readdirSync(new URL('src/packs/ui/', root)).filter((f) => f.endsWith('.json'));
+const uiFiles = readdirSync(new URL('ui/', packRoot)).filter((f) => f.endsWith('.json'));
 for (const file of uiFiles) {
   const code = file.replace(/\.json$/, '');
-  const pack = readJson(`src/packs/ui/${file}`);
+  const pack = readJson(packPath(`ui/${file}`));
   errors.push(...schemaErrors('docs/packs/schema/ui-pack.schema.json', pack, `ui/${code}`));
   const result = validateUiPack(pack, english, { code, languages: registry.languages });
   errors.push(...result.errors);
   if (result.missing.length) notes.push(`ui/${code}: ${result.missing.length} string(s) fall back to English`);
 }
 
-const coursesDir = new URL('src/packs/courses/', root);
+const coursesDir = new URL('courses/', packRoot);
 const courseDirs = readdirSync(coursesDir);
 for (const id of courseDirs) {
-  const meta = readJson(`src/packs/courses/${id}/course.json`);
+  const meta = readJson(packPath(`courses/${id}/course.json`));
   errors.push(...schemaErrors('docs/packs/schema/course.schema.json', meta, `courses/${id}/course.json`));
   if (meta.id !== id) errors.push(`courses/${id}: id "${meta.id}" doesn't match the folder name`);
   if (meta.id !== `${meta.from}-${meta.to}`) errors.push(`courses/${id}: id must be "${meta.from}-${meta.to}"`);
   for (const code of [meta.from, meta.to]) if (!codes.includes(code)) errors.push(`courses/${id}: "${code}" is not in languages.json`);
   for (const file of readdirSync(new URL(`${id}/units/`, coursesDir)).filter((f) => f.endsWith('.json'))) {
-    const unit = readJson(`src/packs/courses/${id}/units/${file}`);
+    const unit = readJson(packPath(`courses/${id}/units/${file}`));
     errors.push(...schemaErrors('docs/packs/schema/course-unit.schema.json', unit, `courses/${id}/units/${file}`));
     if (`${unit.id}.json` !== file) errors.push(`courses/${id}/units/${file}: id "${unit.id}" doesn't match the file name`);
   }
@@ -59,4 +62,4 @@ if (errors.length) {
   process.exit(1);
 }
 for (const n of notes) console.log(n);
-console.log(`Packs OK: ${uiFiles.length} UI pack(s), ${courseDirs.length} course pack(s), ${registry.languages.length} languages in the registry.`);
+console.log(`Packs OK${packRoot.href.endsWith('/src/packs/') ? '' : ` (${packPath('')})`}: ${uiFiles.length} UI pack(s), ${courseDirs.length} course pack(s), ${registry.languages.length} languages in the registry.`);

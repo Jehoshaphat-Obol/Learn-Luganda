@@ -3,7 +3,9 @@ import { validateGuidebooks, validateSections, validateStories, validateUnits } 
 import { courseStats } from '../src/content/course.js';
 import { PATHS } from '../src/ui/icons.js';
 import { CAST } from '../src/illustrations/characters.js';
-import { courseIds, loadPack, readPack } from './load-pack.js';
+import { relative } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { courseIds, loadPack, packRoot, readPack } from './load-pack.js';
 import { knownIds, validateMigrations } from '../src/content/migrations.js';
 
 const errors = [];
@@ -38,4 +40,4 @@ if (errors.length) {
   console.error(`Content has ${errors.length} problem(s):\n- ${errors.join('\n- ')}`);
   process.exit(1);
 }
-console.log(`Content OK: ${summaries.join('; ')}.`);
+console.log(`Content OK${packRoot.href.endsWith('/src/packs/') ? '' : ` (${relative(process.cwd(), fileURLToPath(packRoot))})`}: ${summaries.join('; ')}.`);
