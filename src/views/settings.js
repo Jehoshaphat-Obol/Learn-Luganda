@@ -10,6 +10,7 @@ import { button, escapeHtml, openModal, toast } from '../ui/components.js';
 import { CAST, mascot } from '../illustrations/index.js';
 import { avatar } from '../ui/avatar.js';
 import { refreshTopBar } from '../app/shell.js';
+import { canInstall, enableReminders, notificationsSupported, promptInstall } from '../app/pwa.js';
 import { play } from '../ui/sound.js';
 
 function download(filename, text) {
@@ -20,6 +21,8 @@ function download(filename, text) {
   a.remove();
   URL.revokeObjectURL(url);
 }
+
+const hourLabel = (h) => new Date(2026, 0, 1, h).toLocaleTimeString('en', { hour: 'numeric' });
 
 function toggle(key, label, hint, checked, disabled = false) {
   return `<label class="switch-row">
@@ -74,10 +77,24 @@ export function settingsView({ root, query, navigate }) {
         <h2>Preferences</h2>
         <div>
           ${toggle('sound', 'Sound effects', 'Chimes for right and wrong answers and rewards.', settings.sound !== false)}
+          ${profile && notificationsSupported() ? toggle('reminder', 'Daily reminder', `A nudge at ${hourLabel(settings.reminderHour)} if you haven’t practised yet, while the app is open.`, settings.reminder) : ''}
+          ${profile && notificationsSupported() ? `<label class="switch-row" ${settings.reminder ? '' : 'hidden'} data-hour-row>
+            <span class="switch-row__text"><strong>Reminder time</strong></span>
+            <select class="input settings-hour" data-hour>${[...Array(17).keys()].map((i) => i + 6).map((h) => `<option value="${h}"${h === settings.reminderHour ? ' selected' : ''}>${hourLabel(h)}</option>`).join('')}</select>
+          </label>` : ''}
           ${toggle('motion', 'Animations', systemReduced ? 'Your device asks for reduced motion, so animations stay minimal.' : 'Confetti, bouncing and sliding.', settings.motion !== false && !systemReduced, systemReduced)}
         </div>
       </section>
 
+      ${
+        canInstall()
+          ? `<section class="settings-group" id="install">
+              <h2>Install the app</h2>
+              <p class="muted">Add Learn Luganda to your home screen. Lessons work offline after your first visit.</p>
+              ${button({ label: 'Install app', variant: 'secondary', attrs: 'data-action="install"' })}
+            </section>`
+          : ''
+      }
       <section class="settings-group" id="data">
         <h2>Your progress</h2>
         <p class="muted">Progress is saved in this browser only. Export it to keep a backup or to move to another device, then import it there.</p>
@@ -127,9 +144,27 @@ export function settingsView({ root, query, navigate }) {
 
   if (query.section) root.querySelector(`#${CSS.escape(query.section)}`)?.scrollIntoView({ block: 'start' });
 
-  root.addEventListener('change', (e) => {
+  root.addEventListener('change', async (e) => {
+    if (e.target.matches('[data-hour]')) {
+      store.update((s) => {
+        s.settings.reminderHour = Number(e.target.value);
+        s.settings.lastReminder = null;
+      });
+      return;
+    }
     const key = e.target.dataset?.setting;
     if (!key) return;
+    if (key === 'reminder') {
+      const wanted = e.target.checked;
+      const on = wanted && (await enableReminders());
+      e.target.checked = on;
+      if (wanted && !on) toast('Notifications are blocked for this site. Allow them in your browser settings to get reminders.', { duration: 4000 });
+      store.update((s) => {
+        s.settings.reminder = on;
+      });
+      root.querySelector('[data-hour-row]').hidden = !on;
+      return;
+    }
     store.update((s) => {
       s.settings[key] = e.target.checked;
     });
@@ -168,6 +203,7 @@ export function settingsView({ root, query, navigate }) {
       toast('Progress exported.');
     }
     if (action === 'import') fileInput.click();
+    if (action === 'install' && (await promptInstall())) root.querySelector('#install')?.remove();
     if (action === 'reset') {
       const choice = await openModal({
         title: 'Reset all progress?',
