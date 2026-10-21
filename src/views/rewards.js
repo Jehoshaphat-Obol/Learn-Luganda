@@ -3,7 +3,8 @@
  * lesson unlocked (daily goal met, later the streak). Each screen has one
  * Continue button; the last one calls `onDone`.
  */
-import { lessonCompleteScene, mascot } from '../illustrations/index.js';
+import { lessonCompleteScene, mascot, streakScene } from '../illustrations/index.js';
+import { nextMilestone } from '../state/streak.js';
 import { button, escapeHtml, ring } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { confetti } from '../ui/confetti.js';
@@ -61,8 +62,25 @@ function goalScreen({ goalAfter }) {
   };
 }
 
+function streakScreen({ streak }) {
+  const next = nextMilestone(streak.current);
+  const message = streak.milestone
+    ? `A ${streak.milestone} day milestone. Amazing commitment!`
+    : streak.current === 1
+      ? 'Your streak starts today. Come back tomorrow to grow it.'
+      : `You’ve learned ${streak.current} days in a row.${next ? ` ${next - streak.current} more to reach ${next}!` : ''}`;
+  return {
+    html: `
+      <div class="complete__art">${streakScene({ days: streak.current })}</div>
+      <h1>${streak.current} day streak!</h1>
+      <p class="complete__sub muted">${message}</p>`,
+    after: () => streak.milestone && confetti(),
+  };
+}
+
 export function showRewards(root, summary) {
   const steps = [summaryScreen(summary)];
+  if (summary.streak?.extended) steps.push(streakScreen(summary));
   if (!summary.goalBefore.met && summary.goalAfter.met) steps.push(goalScreen(summary));
   for (const make of extraSteps) {
     const step = make(summary);

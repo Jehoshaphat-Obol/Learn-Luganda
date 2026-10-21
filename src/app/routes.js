@@ -10,6 +10,7 @@ import { settingsView } from '../views/settings.js';
 import { onboardingView } from '../views/onboarding.js';
 import { learnView } from '../views/learn.js';
 import { lessonView } from '../views/lesson.js';
+import { streakView } from '../views/streak.js';
 import { hasProfile } from '../state/store.js';
 
 export const routes = [
@@ -19,6 +20,7 @@ export const routes = [
   { path: '/lesson/:id', view: lessonView, layout: 'bare', title: 'Lesson' },
   { path: '/checkpoint/:unit', view: placeholderView('Checkpoint', 'Unit checkpoints arrive soon.'), layout: 'bare', title: 'Checkpoint' },
   { path: '/guidebook/:unit', view: placeholderView('Guidebook', 'Unit guidebooks arrive soon.'), title: 'Guidebook' },
+  { path: '/streak', view: streakView, title: 'Streak' },
   { path: '/practice', view: placeholderView('Practice', 'Review sessions arrive soon.'), title: 'Practice' },
   { path: '/leagues', view: placeholderView('Leagues', 'Weekly leagues arrive soon.'), title: 'Leagues' },
   { path: '/shop', view: placeholderView('Shop', 'The shop opens soon.'), title: 'Shop' },

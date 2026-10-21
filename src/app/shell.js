@@ -23,7 +23,7 @@ export function setStatsProvider(fn) {
 }
 
 function stat(name, value, label, extra = '') {
-  return `<a class="stat stat--${name} ${extra}" href="#/${name === 'hearts' ? 'shop' : name === 'gems' ? 'shop' : 'profile'}" aria-label="${escapeHtml(label)}">
+  return `<a class="stat stat--${name} ${extra}" href="#/${name === 'streak' ? 'streak' : 'shop'}" aria-label="${escapeHtml(label)}">
     ${icon(name === 'streak' ? 'flame' : name === 'gems' ? 'gem' : 'heart', { size: 22 })}<span>${escapeHtml(value)}</span>
   </a>`;
 }

@@ -8,6 +8,7 @@ import { course } from '../content/course.js';
 import { store } from '../state/store.js';
 import { isLessonDone, isLessonUnlocked, isUnitUnlocked, nextLessonId, skillProgress, unitProgress } from '../state/progress.js';
 import { dailyGoal } from '../state/xp.js';
+import { streakStatus } from '../state/streak.js';
 import { portrait } from '../illustrations/index.js';
 import { button, escapeHtml, ring, toast } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
@@ -79,6 +80,16 @@ function unitSection(state, unit, current) {
     </section>`;
 }
 
+/** Nudge when a streak would be lost tonight. */
+function riskBanner(state) {
+  const st = streakStatus(state);
+  if (!st.atRisk) return '';
+  return `<div class="risk-banner" role="status">
+    ${icon('flame', { size: 28 })}
+    <p><strong>Your ${st.current} day streak is at risk!</strong> Finish a lesson today to keep it${st.freezes ? ` (you have ${st.freezes} streak freeze${st.freezes > 1 ? 's' : ''})` : ''}.</p>
+  </div>`;
+}
+
 /** Compact daily goal shown above the path on narrow screens. */
 function goalStrip(state) {
   const g = dailyGoal(state);
@@ -90,6 +101,7 @@ function goalStrip(state) {
 
 function sidebar(state) {
   const { goal, today } = dailyGoal(state);
+  const streak = streakStatus(state);
   return `
     <aside class="learn__side">
       <div class="card side-card">
@@ -99,13 +111,13 @@ function sidebar(state) {
           <p class="muted">${Math.min(today, goal)} / ${goal} XP today</p>
         </div>
       </div>
-      <div class="card side-card">
-        <span class="side-card__icon">${icon('flame', { size: 34 })}</span>
+      <a class="card side-card side-card--link" href="#/streak">
+        <span class="side-card__icon${streak.doneToday ? '' : ' is-dim'}">${icon('flame', { size: 34 })}</span>
         <div>
-          <h3>${state.streak.current} day streak</h3>
-          <p class="muted">${state.streak.current ? 'Keep it going!' : 'Finish a lesson to start one.'}</p>
+          <h3>${streak.current} day streak</h3>
+          <p class="muted">${streak.doneToday ? 'Done for today. Weebale!' : streak.current ? 'Do a lesson to extend it.' : 'Finish a lesson to start one.'}</p>
         </div>
-      </div>
+      </a>
     </aside>`;
 }
 
@@ -116,6 +128,7 @@ export function learnView({ root, navigate }) {
   root.innerHTML = `
     <div class="learn">
       <div class="learn__path">
+        ${riskBanner(state)}
         ${goalStrip(state)}
         ${course.units.map((u) => unitSection(state, u, current)).join('')}
         <p class="learn__more caption">More units are on the way. Weebale for learning!</p>
