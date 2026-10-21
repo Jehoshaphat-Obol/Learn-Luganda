@@ -1,0 +1,67 @@
+/* Stories for Section 5: Confident speaker. Same shape as ../stories.js. */
+export const SECTION5_STORIES = [
+  {
+    id: 'amaras-story',
+    title: 'Amara tells a story',
+    unit: 'u35',
+    unlockAfter: 'u35s3l3',
+    cast: ['amara', 'emma'],
+    summary: 'Amara tells Emma a folktale about a boy and a lion.',
+    steps: [
+      { line: ['emma', 'Amara, ngerera enfumo!', 'Amara, tell me a story!'], gloss: { ngerera: 'tell for me' } },
+      { line: ['amara', 'Kale nno. Olwatuuka olwali olumu, waaliwo omulenzi omu.', 'Well then. Once upon a time, there was a boy.'], gloss: { omulenzi: 'boy' } },
+      { line: ['amara', 'Awo n’agenda mu kibira okunoonya enku.', 'Then he went into the forest to look for firewood.'], gloss: { okunoonya: 'to look for', enku: 'firewood' } },
+      {
+        question: 'Why did the boy go into the forest?',
+        options: ['To find firewood', 'To hunt', 'To play football'],
+        answer: 0,
+      },
+      { line: ['emma', 'N’alaba ki?', 'And what did he see?'] },
+      { line: ['amara', 'N’alaba empologoma nnene nnyo!', 'He saw a very big lion!'] },
+      { line: ['emma', 'Ayi! N’adduka?', 'Oh! Did he run?'] },
+      { line: ['amara', 'Nedda. N’atuula wansi, n’ayimba oluyimba.', 'No. He sat down and sang a song.'] },
+      {
+        question: 'What did the boy do when he saw the lion?',
+        options: ['He ran away', 'He sat and sang a song', 'He climbed a tree'],
+        answer: 1,
+      },
+      { line: ['amara', 'Empologoma n’ewuliriza, n’ewummula, n’egenda.', 'The lion listened, rested and went away.'] },
+      { line: ['amara', 'Ekyavaamu, omulenzi n’addayo awaka n’enku. Enfumo yange ekomye awo.', 'In the end, the boy went home with the firewood. My story ends there.'] },
+      {
+        question: 'How does Amara end the story?',
+        options: ['Enfumo yange ekomye awo.', 'Olwatuuka olwali olumu.', 'Waaliwo omusajja.'],
+        answer: 0,
+        lang: 'lg',
+      },
+    ],
+  },
+  {
+    id: 'jjajjas-advice',
+    title: 'Jjajja’s advice',
+    unit: 'u36',
+    unlockAfter: 'u36s3l3',
+    cast: ['ssali', 'jjajja'],
+    summary: 'Ssali is impatient with his new business, and Jjajja answers with proverbs.',
+    steps: [
+      { line: ['ssali', 'Jjajja, bizinensi yange tekola bulungi. Abaguzi batono.', 'Grandma, my business isn’t doing well. There are few customers.'] },
+      { line: ['jjajja', 'Totya, mwana wange. Akwata empola atuuka wala.', 'Don’t worry, my child. Slow and steady goes far.'] },
+      { line: ['ssali', 'Kitegeeza ki?', 'What does it mean?'] },
+      { line: ['jjajja', 'Kitegeeza nti, gumiikiriza. Kamu kamu gwe muganda.', 'It means: be patient. Little by little makes a bundle.'], gloss: { gumiikiriza: 'be patient' } },
+      {
+        question: 'What is Jjajja’s advice?',
+        options: ['Be patient', 'Close the shop', 'Move to Jinja'],
+        answer: 0,
+      },
+      { line: ['ssali', 'Naye nkola nzekka. Nkooye.', 'But I work alone. I’m tired.'], gloss: { nzekka: 'alone, by myself' } },
+      { line: ['jjajja', 'Olugalo olumu terutta nda! Kola ne Nakato.', 'One finger can’t kill a louse! Work with Nakato.'] },
+      {
+        question: 'Which proverb tells Ssali to work with others?',
+        options: ['Olugalo olumu terutta nda', 'Akwata empola atuuka wala', 'Kamu kamu gwe muganda'],
+        answer: 0,
+        lang: 'lg',
+      },
+      { line: ['ssali', 'Kirungi. Agali awamu ge galuma ennyama!', 'Good idea. Teeth together bite the meat!'] },
+      { line: ['jjajja', 'Haha! Kati oyogera nga Jjajja!', 'Haha! Now you speak like a grandparent!'] },
+    ],
+  },
+];

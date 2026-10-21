@@ -9,7 +9,7 @@ const axePath = require.resolve('axe-core/axe.min.js');
 const everything = Object.fromEntries(course.order.map((id) => [id, { completions: 1, bestAccuracy: 1 }]));
 const SCREENS = ['#/learn', '#/lesson/u1s1l1', '#/practice', '#/shop', '#/profile', '#/streak', '#/settings', '#/privacy', '#/about', '#/contact', '#/terms', '#/stories', '#/story/new-friend', '#/guidebook/u2', '#/guidebook/u9', '#/story/new-gomesi', '#/lesson/u10s3l3', '#/guidebook/u15', '#/guidebook/u19', '#/story/weekend-plans', '#/guidebook/u23', '#/story/cooking-luwombo', '#/guidebook/u25', '#/story/kasubi-visit'];
 // Content screens added with each new batch of units.
-const CONTENT_SCREENS = ['#/guidebook/u29', '#/story/source-of-nile'];
+const CONTENT_SCREENS = ['#/guidebook/u29', '#/story/source-of-nile', '#/guidebook/u33', '#/story/jjajjas-advice'];
 
 test('the landing page has no accessibility violations', async ({ page }) => {
   await page.goto('./');
