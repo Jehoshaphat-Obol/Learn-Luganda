@@ -96,6 +96,10 @@ export function buildCourse(rawUnits, rawSections = [{ id: 's1', title: 'Course'
     names: meta.names ?? { from: meta.from ?? 'en', to: meta.to ?? 'lg' },
     settings,
     cast: meta.cast ?? {},
+    // Target-language praise mixed into lesson feedback.
+    cheers: meta.cheers ?? [],
+    // Set phrases in the target language for celebrations ("Weebale nnyo!").
+    phrases: { congrats: '', thanks: '', ...meta.phrases },
     // Marketing copy for the landing page, onboarding and About page.
     landing: meta.landing ?? null,
     units,

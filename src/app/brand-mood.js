@@ -7,13 +7,9 @@ import { dailyGoal } from '../state/xp.js';
 import { MILESTONES, streakStatus } from '../state/streak.js';
 import { dayKey } from '../state/dates.js';
 import { brandMark, faviconSvg } from './brand-mark.js';
+import { t } from '../i18n/index.js';
 
-const TITLES = {
-  idle: 'Learn Luganda home',
-  happy: "Learn Luganda home. Today's goal is done!",
-  sleepy: 'Learn Luganda home. Your streak is waiting for today’s lesson.',
-  celebrating: 'Learn Luganda home. Streak milestone today!',
-};
+const MOODS = ['idle', 'happy', 'sleepy', 'celebrating'];
 
 /** @returns {'idle'|'happy'|'sleepy'|'celebrating'} */
 export function brandMood(s, now = new Date()) {
@@ -25,7 +21,7 @@ export function brandMood(s, now = new Date()) {
   return 'idle';
 }
 
-export const moodLabel = (mood) => TITLES[mood] ?? TITLES.idle;
+export const moodLabel = (mood) => t(`mood.${MOODS.includes(mood) ? mood : 'idle'}`, { app: t('app.name') });
 
 let shown = 'idle';
 

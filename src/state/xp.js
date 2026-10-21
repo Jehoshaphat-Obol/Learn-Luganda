@@ -6,10 +6,10 @@ import { dayKey } from './dates.js';
 
 export const XP = { lesson: 10, replay: 5, perfectBonus: 5, practice: 10, checkpoint: 20, story: 15 };
 
-/** @returns {{ total: number, parts: Array<{ label: string, xp: number }> }} */
+/** @returns {{ total: number, parts: Array<{ id: 'lesson' | 'replay' | 'perfect', xp: number }> }} */
 export function lessonXp(result, { replay = false, base } = {}) {
-  const parts = [{ label: replay ? 'Practice' : 'Lesson', xp: base ?? (replay ? XP.replay : XP.lesson) }];
-  if (result.perfect) parts.push({ label: 'Perfect bonus', xp: XP.perfectBonus });
+  const parts = [{ id: replay ? 'replay' : 'lesson', xp: base ?? (replay ? XP.replay : XP.lesson) }];
+  if (result.perfect) parts.push({ id: 'perfect', xp: XP.perfectBonus });
   return { total: parts.reduce((n, p) => n + p.xp, 0), parts };
 }
 

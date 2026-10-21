@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { BACKOFF_DAYS, DEFAULT_HOUR, dueSlot, ignoredCount, markSent, pickSnippet, plan, recordStudyHour, reminderWindow, seeded, shouldOfferReminders, usualHour } from '../src/reminders/rules.js';
-import { REMINDER_STRINGS, fill } from '../src/reminders/strings.js';
+import { t, tList } from '../src/i18n/index.js';
 import { DEFAULTS, MIGRATIONS } from '../src/state/store.js';
 import { course } from '../src/content/course.js';
 
@@ -134,7 +134,7 @@ describe('what a reminder says', () => {
   it('teaches a word: "target — base"', () => {
     const snip = pickSnippet(state(), '2026-10-21', { rand: fixed(0.99) });
     const w = course.words[snip.wordId];
-    expect(snip.title).toBe(fill(REMINDER_STRINGS.title, w));
+    expect(snip.title).toBe(t('reminders.title', w));
     expect(snip.title).toContain(' — ');
     expect(snip.url).toBe('#/learn');
   });
@@ -150,7 +150,7 @@ describe('what a reminder says', () => {
   });
 
   it('never guilt-trips', () => {
-    const all = [...REMINDER_STRINGS.review, ...REMINDER_STRINGS.learned, ...REMINDER_STRINGS.fresh].join(' ');
+    const all = ['review', 'learned', 'fresh'].flatMap((kind) => tList(`reminders.${kind}`)).join(' ');
     expect(all).not.toMatch(/miss|sad|streak|lose|disappoint/i);
   });
 });

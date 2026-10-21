@@ -7,6 +7,8 @@
  */
 import '../styles/ads.css';
 import { PIXEL } from './pixel.config.js';
+import { t, tHtml } from '../i18n/index.js';
+import { escapeHtml } from '../ui/components.js';
 
 const KEY = 'learn-luganda:pixel-consent';
 const ID_RE = /^\d{10,20}$/;
@@ -93,12 +95,12 @@ export function askPixelConsent(config = PIXEL) {
     el.className = 'consent';
     el.dataset.consentFor = 'pixel';
     el.setAttribute('role', 'region');
-    el.setAttribute('aria-label', 'Facebook measurement');
+    el.setAttribute('aria-label', t('pixel.label'));
     el.innerHTML = `
-      <p><strong>Help more people find Learn Luganda?</strong> May Meta (Facebook) count your visits so our ads reach people who want to learn? Your name, lessons and answers stay on this device. <a href="#/privacy">Privacy policy</a></p>
+      <p>${tHtml('pixel.text', { app: t('app.name') })}</p>
       <div class="consent__actions">
-        <button class="btn btn--secondary" type="button" data-pixel-consent="denied">No thanks</button>
-        <button class="btn" type="button" data-pixel-consent="granted">Allow</button>
+        <button class="btn btn--secondary" type="button" data-pixel-consent="denied">${escapeHtml(t('pixel.deny'))}</button>
+        <button class="btn" type="button" data-pixel-consent="granted">${escapeHtml(t('pixel.allow'))}</button>
       </div>`;
     el.addEventListener('click', (e) => {
       const choice = e.target.closest('[data-pixel-consent]')?.dataset.pixelConsent;

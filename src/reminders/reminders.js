@@ -6,16 +6,23 @@
  *    service worker now and then (the browser decides how often, about daily)
  *    and it shows the next reminder from a plan the page keeps in the cache.
  * Safari and Firefox have no background wake-up, so there reminders only
- * arrive while the app is open. Rules and wording live in rules.js and
- * strings.js.
+ * arrive while the app is open. Rules live in rules.js and wording in the
+ * UI pack (`reminders.*`).
  */
 import { store } from '../state/store.js';
 import { dayKey } from '../state/dates.js';
 import { addRewardStep } from '../views/rewards.js';
-import { button, speech } from '../ui/components.js';
+import { button, escapeHtml, speech } from '../ui/components.js';
 import { mascot } from '../illustrations/index.js';
 import { dueSlot, markSent, plan, shouldOfferReminders } from './rules.js';
-import { REMINDER_STRINGS } from './strings.js';
+import { course, languageName } from '../content/course.js';
+import { t } from '../i18n/index.js';
+
+/** A sample reminder title from the course, like “Weebale — Thank you”. */
+export function exampleSnippet(c = course) {
+  const w = Object.values(c.words).find((x) => !x.target.includes(' ')) ?? Object.values(c.words)[0];
+  return w ? t('reminders.title', { target: w.target, base: w.base }) : '';
+}
 
 const CHECK_MS = 5 * 60 * 1000;
 export const REMINDER_CACHE = 'learn-luganda-reminders';
@@ -115,21 +122,21 @@ export function setReminderHour(hour) {
 // The offer after a lesson: our own card first, the browser prompt only on "yes".
 addRewardStep(() => {
   if (!shouldOfferReminders(store.get(), { supported: remindersSupported(), permission: permission() })) return null;
-  const t = REMINDER_STRINGS.consent;
+  const say = (key, params) => escapeHtml(t(`reminders.consent.${key}`, params));
   return {
     html: `
-      <div class="complete__art complete__art--small reminder-offer__art" aria-hidden="true">${speech('Weebale!', { tail: 'right' })}${mascot({ pose: 'happy' })}</div>
-      <h1>${t.title}</h1>
-      <p class="complete__sub muted" data-offer-text>${t.body}</p>
-      <div class="reminder-offer__yes">${button({ label: t.yes, variant: 'secondary', size: 'lg', block: true, attrs: 'data-offer-yes' })}</div>
-      <p class="muted reminder-offer__later" data-offer-later>${t.later}</p>`,
+      <div class="complete__art complete__art--small reminder-offer__art" aria-hidden="true">${speech(escapeHtml(course.phrases.thanks), { tail: 'right' })}${mascot({ pose: 'happy' })}</div>
+      <h1>${say('title')}</h1>
+      <p class="complete__sub muted" data-offer-text>${say('body', { language: languageName('target'), example: exampleSnippet() })}</p>
+      <div class="reminder-offer__yes">${button({ label: t('reminders.consent.yes'), variant: 'secondary', size: 'lg', block: true, attrs: 'data-offer-yes' })}</div>
+      <p class="muted reminder-offer__later" data-offer-later>${say('later')}</p>`,
     after(root) {
       let decided = false;
       root.querySelector('[data-offer-yes]').addEventListener('click', async (e) => {
         decided = true;
         e.currentTarget.disabled = true;
         const on = await setReminders(true);
-        root.querySelector('[data-offer-text]').textContent = on ? t.on : t.blocked;
+        root.querySelector('[data-offer-text]').textContent = on ? t('reminders.consent.on', { thanks: course.phrases.thanks }) : t('reminders.consent.blocked');
         root.querySelector('[data-offer-later]').hidden = true;
         e.currentTarget.parentElement.hidden = true;
         root.querySelector('[data-continue]')?.focus();

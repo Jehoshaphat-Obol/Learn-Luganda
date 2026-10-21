@@ -10,7 +10,7 @@ import { course as defaultCourse } from '../content/course.js';
 import { nextLessonId } from '../state/progress.js';
 import { dueWordIds } from '../state/review.js';
 import { addDays, dayKey, daysBetween, fromDayKey } from '../state/dates.js';
-import { REMINDER_STRINGS, fill } from './strings.js';
+import { t, tList } from '../i18n/index.js';
 
 export const DEFAULT_HOUR = 19;
 export const QUIET = { start: 22, end: 8 }; // no reminders from 22:00 to 08:00
@@ -101,8 +101,8 @@ export function pickSnippet(s, day, { rand = Math.random, c = defaultCourse } = 
   else [kind, id] = ['learned', Object.keys(c.words)[0]];
   const w = c.words[id];
   // Sometimes the word's own note says more than a stock line would.
-  const body = w.notes && rand() < 0.4 ? w.notes : pick(REMINDER_STRINGS[kind], rand);
-  return { wordId: id, title: fill(REMINDER_STRINGS.title, { target: w.target, base: w.base }), body, url: kind === 'fresh' ? '#/learn' : '#/practice' };
+  const body = w.notes && rand() < 0.4 ? w.notes : pick(tList(`reminders.${kind}`), rand);
+  return { wordId: id, title: t('reminders.title', { target: w.target, base: w.base }), body, url: kind === 'fresh' ? '#/learn' : '#/practice' };
 }
 
 /**

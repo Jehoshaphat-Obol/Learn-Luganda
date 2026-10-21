@@ -275,6 +275,29 @@
         }
       }
     },
+    "cheers": {
+      "type": "array",
+      "description": "Short words of praise in the target language (\"Kale!\"). The lesson mixes them in with the UI pack's praise after a right answer.",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "phrases": {
+      "type": "object",
+      "description": "Set phrases in the target language that celebrations drop into UI pack text.",
+      "additionalProperties": false,
+      "properties": {
+        "congrats": {
+          "type": "string",
+          "description": "Well done, on finishing the course (\"Wayita bulungi\")."
+        },
+        "thanks": {
+          "type": "string",
+          "description": "A warm thank-you after a checkpoint (\"Weebale nnyo!\")."
+        }
+      }
+    },
     "landing": {
       "type": "object",
       "description": "What the landing page, onboarding and About page say about this course, in the base language. Text may use **bold**, _italic_ and [links](#/path). Target-language words are written as the learner will see them.",

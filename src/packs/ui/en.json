@@ -74,6 +74,74 @@
         "hintNoVoice": "Plays recordings where the course has them. This device has no voice for {language} yet.",
         "slow": "Slower speech",
         "slowHint": "Read aloud at a gentler pace."
+      },
+      "title": "Settings",
+      "profile": {
+        "title": "Profile",
+        "avatar": "Your avatar",
+        "name": "Name",
+        "character": "Character",
+        "colour": "Colour",
+        "saved": "Name saved."
+      },
+      "goal": "Daily goal",
+      "preferences": "Preferences",
+      "sound": {
+        "label": "Sound effects",
+        "hint": "Sounds for taps, right and wrong answers, and rewards.",
+        "style": "Sound style",
+        "styleHint": "Playful is bright and bouncy, soft is gentle and warm."
+      },
+      "music": {
+        "label": "Background music",
+        "hint": "A quiet amadinda loop on the home screens. Lessons and stories stay quiet."
+      },
+      "haptics": {
+        "label": "Vibration",
+        "unsupported": "This device or browser can’t vibrate (iPhones and most computers don’t allow it).",
+        "reduced": "Your device asks for reduced motion, so vibration stays off.",
+        "hint": "A small buzz for taps, answers and rewards."
+      },
+      "motion": {
+        "label": "Animations",
+        "reduced": "Your device asks for reduced motion, so animations stay minimal.",
+        "hint": "Confetti, bouncing and sliding."
+      },
+      "credits": "Sounds and music are free and openly licensed (CC0).",
+      "creditsLink": "Audio credits",
+      "privacy": {
+        "title": "Ads and privacy",
+        "ads": "Personalised ads",
+        "adsHint": "Let Google use cookies to show ads that suit you. Off means basic, non-personalised ads.",
+        "pixel": "Facebook measurement",
+        "pixelHint": "Let Meta (Facebook) count your visits and milestones so our ads reach more learners. Your name and answers are never sent.",
+        "note": "Your lessons and progress never leave this device. [Read the privacy policy](#/privacy).",
+        "adsOn": "Personalised ads allowed.",
+        "adsOff": "You’ll see basic ads only.",
+        "pixelOn": "Facebook measurement allowed.",
+        "pixelOff": "Facebook measurement is off."
+      },
+      "data": {
+        "title": "Your progress",
+        "body": "Progress is saved in this browser only. Export it to keep a backup or to move to another device, then import it there.",
+        "export": "Export progress",
+        "import": "Import progress",
+        "exported": "Progress exported.",
+        "imported": "Progress imported. {thanks}",
+        "replaceTitle": "Replace your progress?",
+        "replaceBody": "Importing replaces everything saved on this device with the file’s progress.",
+        "replaceYes": "Import",
+        "cancel": "Cancel"
+      },
+      "reset": {
+        "title": "Start over",
+        "body": "Erase your profile, XP, streak and everything you’ve learned on this device.",
+        "button": "Reset progress",
+        "confirmTitle": "Reset all progress?",
+        "confirmBody": "This can’t be undone. Export first if you might want it back.",
+        "keep": "Keep my progress",
+        "yes": "Reset everything",
+        "done": "Progress reset."
       }
     },
     "install": {
@@ -345,7 +413,14 @@
     "ui": {
       "progress": "Progress",
       "ok": "OK",
-      "close": "Close"
+      "close": "Close",
+      "backToPath": "Back to the path",
+      "tryAgain": "Try again",
+      "startLearning": "Start learning",
+      "avatar": "Avatar",
+      "chartGoal": "Goal {goal}",
+      "chartDay": "Day",
+      "chartBar": "{day}: {value} {unit}"
     },
     "colours": {
       "vermillion": "Vermillion",
@@ -355,6 +430,471 @@
       "sage": "Sage",
       "lilac": "Lilac",
       "blush": "Blush"
+    },
+    "lesson": {
+      "title": "Lesson",
+      "check": "Check",
+      "continue": "Continue",
+      "progress": "Lesson progress",
+      "heartsLeft": { "one": "{count} heart left", "other": "{count} hearts left" },
+      "correctAnswer": "Correct answer:",
+      "praise": {
+        "nice": "Nice!",
+        "great": "Great job!",
+        "correct": "Correct!",
+        "done": "Well done!",
+        "excellent": "Excellent!"
+      },
+      "quit": {
+        "label": "Quit lesson",
+        "title": "Wait, don’t go!",
+        "body": "You’ll lose your progress in this lesson if you quit now.",
+        "stay": "Keep learning",
+        "leave": "End session"
+      },
+      "prompt": {
+        "choiceToTarget": "Which one means “{word}”?",
+        "choiceToBase": "What does “{word}” mean?",
+        "translate": "Write this in {language}",
+        "match": "Tap the matching pairs",
+        "type": "Type this in {language}",
+        "fill": "Fill in the blank",
+        "dialogue": "Choose the best reply",
+        "listen": "Tap what you hear"
+      },
+      "answers": "Answers",
+      "replies": "Replies",
+      "hear": "Hear {name}",
+      "showTranslation": "Show translation",
+      "newWord": "New word",
+      "play": "Play audio",
+      "yourAnswer": "Your answer",
+      "typeIn": "Type in {language}",
+      "keyboard": "Use keyboard",
+      "wordBank": "Use word bank",
+      "typo": "You have a typo."
+    },
+    "heartReview": {
+      "out": {
+        "title": "Let’s take a quick step back",
+        "body": "That was your last heart. A short look back at words you’ve already met fills them all up again, then you carry on right where you left off.",
+        "review": "Review to refill hearts",
+        "refill": "Use {cost} gems instead",
+        "quit": "Leave for now"
+      },
+      "gate": {
+        "title": "Warm up first",
+        "body": "Your hearts are empty, so start with a quick review of earlier words. Finish it and your hearts fill up for the next lesson.",
+        "review": "Start warm-up review",
+        "refill": "Use {cost} gems instead",
+        "back": "Back to the path"
+      },
+      "session": "Heart review",
+      "quit": {
+        "label": "Leave heart review",
+        "title": "Leave the review?",
+        "body": "Your hearts only refill when you finish it. It’s just a few questions.",
+        "stay": "Keep reviewing",
+        "leave": "Leave"
+      },
+      "done": {
+        "title": "Hearts refilled!",
+        "body": "Those words are fresher now. Back to it!",
+        "next": "Continue lesson",
+        "start": "Let’s go"
+      }
+    },
+    "practice": {
+      "storiesNew": { "one": "{count} new story to read", "other": "{count} new stories to read" },
+      "storiesRead": "{done} of {total} read",
+      "empty": {
+        "title": "Nothing to practise yet",
+        "body": "Finish your first lesson and the words you learn will show up here for review."
+      },
+      "eyebrow": "Practice hub",
+      "title": "Keep words **fresh.**",
+      "lead": "Practice doesn’t cost hearts, and each session earns one back.",
+      "review": "Review",
+      "reviewDue": { "one": "{count} word due today", "other": "{count} words due today" },
+      "reviewWeak": "Strengthen your weakest words",
+      "mistakes": "Mistakes",
+      "mistakesCount": { "one": "{count} word to fix", "other": "{count} words to fix" },
+      "noMistakes": "No recent mistakes. Nice!",
+      "stories": "Stories",
+      "skills": "Practise a skill",
+      "unit": "Unit {number} · {title}",
+      "strength": "{skill} strength",
+      "due": "{count} due",
+      "locked": "Finish a lesson in this unit to practise it.",
+      "done": {
+        "title": "Practice complete!",
+        "subtitle": "You earned a heart back. Those words will stick better now."
+      }
+    },
+    "checkpoint": {
+      "title": "Unit {number} complete!",
+      "subtitle": "You passed the {unit} checkpoint. {thanks}"
+    },
+    "jump": {
+      "failTitle": "Not quite yet",
+      "failBody": "You got {score}% right first time, and you need {mark}% to jump to Section {number}. Keep going on the path, or try again.",
+      "title": "Welcome to Section {number}!",
+      "subtitle": "You jumped ahead to {section}. Earlier lessons stay open for review."
+    },
+    "complete": {
+      "title": "Course complete!",
+      "sub": "{congrats}! You finished all {units} units of {app}.",
+      "subNamed": "{congrats}, {name}! You finished all {units} units of {app}.",
+      "words": "Words learned",
+      "xp": "Total XP",
+      "longest": "Longest streak",
+      "days": { "one": "{count} day", "other": "{count} days" },
+      "outro": "Keep your {language} fresh with daily practice, retell the stories, and greet someone in {language} today. {thanks}",
+      "keep": "Keep practising"
+    },
+    "learn": {
+      "heading": "Your learning path",
+      "node": {
+        "label": "{skill}, lesson {number} of {total}: {status}",
+        "locked": "locked",
+        "done": "completed",
+        "skipped": "skipped",
+        "start": "start",
+        "bubble": "Start"
+      },
+      "checkpoint": "{unit} checkpoint",
+      "checkpointLocked": "{unit} checkpoint, locked",
+      "tip": "Tip",
+      "tipLabel": "{skill} tip",
+      "review": "Review",
+      "unit": "Unit {number}",
+      "guidebook": "Guidebook",
+      "guidebookLabel": "{unit} guidebook",
+      "unitMeter": "{unit}: {done} of {total} lessons complete",
+      "section": "Section {number}",
+      "sectionLevel": "Section {number} · {level}",
+      "sectionStatus": {
+        "complete": "Complete",
+        "progress": "{done} of {total} lessons",
+        "locked": "Locked"
+      },
+      "units": { "one": "{count} unit", "other": "{count} units" },
+      "jump": "Jump to Section {number}",
+      "showUnits": "Show units",
+      "hideUnits": "Hide units",
+      "risk": {
+        "title": "Your {count} day streak is at risk!",
+        "body": "Finish a lesson today to keep it.",
+        "freezes": { "one": "Finish a lesson today to keep it (you have {count} streak freeze).", "other": "Finish a lesson today to keep it (you have {count} streak freezes)." }
+      },
+      "goal": "Daily goal",
+      "goalMet": "Daily goal met!",
+      "goalXp": "{done} / {goal} XP",
+      "goalToday": "{done} / {goal} XP today",
+      "streak": {
+        "done": "Done for today. {thanks}",
+        "extend": "Do a lesson to extend it.",
+        "start": "Finish a lesson to start one."
+      },
+      "stories": "Stories",
+      "storiesNew": { "one": "{count} new to read", "other": "{count} new to read" },
+      "storiesNone": "Read along with the cast.",
+      "finished": "You finished the course! See your celebration.",
+      "end": "The course ends with Unit {units}. {thanks}",
+      "checkpointToast": "Finish every lesson in this unit to unlock the checkpoint.",
+      "lockedToast": "Complete the lessons before this one to unlock it.",
+      "pop": {
+        "lesson": "Lesson {number} of {total}",
+        "again": "Practise again +{xp} XP",
+        "start": "Start +{xp} XP"
+      }
+    },
+    "achievements": {
+      "wildfire": {
+        "title": "Wildfire",
+        "describe": { "one": "Reach a {count} day streak", "other": "Reach a {count} day streak" }
+      },
+      "sage": {
+        "title": "Sage",
+        "describe": { "one": "Earn {count} XP", "other": "Earn {count} XP" }
+      },
+      "scholar": {
+        "title": "Scholar",
+        "describe": { "one": "Learn {count} word", "other": "Learn {count} words" }
+      },
+      "perfectionist": {
+        "title": "Perfectionist",
+        "describe": { "one": "Finish {count} lesson with no mistakes", "other": "Finish {count} lessons with no mistakes" }
+      },
+      "reviewer": {
+        "title": "Sharp Mind",
+        "describe": { "one": "Complete {count} practice session", "other": "Complete {count} practice sessions" }
+      },
+      "explorer": {
+        "title": "Explorer",
+        "describe": { "one": "Complete {count} unit", "other": "Complete {count} units" }
+      }
+    },
+    "shop": {
+      "items": {
+        "freeze": {
+          "title": "Streak freeze",
+          "description": "Keeps your streak if you miss a day. Hold up to {max}."
+        },
+        "refill": {
+          "title": "Heart refill",
+          "description": "Refill to {max} hearts right away."
+        },
+        "frameGold": {
+          "title": "Gold frame",
+          "description": "A gold ring around your avatar."
+        },
+        "frameBauhaus": {
+          "title": "Bauhaus frame",
+          "description": "Vermillion, ink and gold quarters around your avatar."
+        },
+        "frameSky": {
+          "title": "Lake frame",
+          "description": "A deep blue ring, like a lake at dusk."
+        },
+        "frameSun": {
+          "title": "Sunburst frame",
+          "description": "Yellow and vermillion rays around your avatar."
+        }
+      },
+      "earn": {
+        "lesson": "Finish a lesson",
+        "practice": "Finish a practice session",
+        "perfect": "No mistakes in a session",
+        "perfectGems": "+{gems} bonus",
+        "streak": "Streak milestones ({first} to {last} days)",
+        "streakGems": "+{first} to +{last}",
+        "achievement": "Achievement levels",
+        "achievementGems": "+{gems} per level"
+      },
+      "reasons": {
+        "gems": "Not enough gems",
+        "stocked": "Fully stocked",
+        "full": "Hearts are full",
+        "owned": "Owned"
+      },
+      "freezes": "{count} of {max} equipped",
+      "hearts": "{count} of {max} · next in {wait}",
+      "equipped": "Equipped",
+      "eyebrow": "Gems",
+      "title": "Use your **gems.**",
+      "balance": { "one": "{count} gem", "other": "{count} gems" },
+      "lead": "Gems can’t be bought. You earn every one by learning, then use them to protect your streak, refill hearts or decorate your avatar.",
+      "equip": "Equip",
+      "unequip": "Unequip",
+      "get": "Get {item} for {price} gems",
+      "getUnavailable": "Get {item} for {price} gems, {reason}",
+      "rules": "How to earn gems",
+      "unlocked": "{item} unlocked!",
+      "unavailable": "Not available right now."
+    },
+    "rewards": {
+      "perfect": "Perfect lesson!",
+      "complete": "Lesson complete!",
+      "perfectSub": "Not a single mistake. {thanks}",
+      "completeSub": "{thanks} Every lesson makes the words stick.",
+      "xp": "Total XP",
+      "accuracy": {
+        "perfect": "Perfect",
+        "amazing": "Amazing",
+        "good": "Good",
+        "other": "Accuracy"
+      },
+      "time": "Time",
+      "part": {
+        "lesson": "Lesson",
+        "replay": "Practice",
+        "perfect": "Perfect bonus"
+      },
+      "partXp": "+{xp} XP",
+      "gems": "Gems",
+      "goal": {
+        "title": "Daily goal met!",
+        "today": "XP today",
+        "body": "You reached your {goal} XP goal. Come back tomorrow to keep learning."
+      },
+      "streak": {
+        "title": "{count} day streak!",
+        "milestone": "A {count} day milestone. Amazing commitment!",
+        "first": "Your streak starts today. Come back tomorrow to grow it.",
+        "days": "You’ve learned {count} days in a row.",
+        "next": "{count} more to reach {next}!"
+      },
+      "achievement": {
+        "title": { "one": "Achievement unlocked!", "other": "Achievements unlocked!" },
+        "badge": "{title} level {tier}",
+        "gems": "+{gems} gems"
+      }
+    },
+    "time": {
+      "waitHours": "{hours}h {minutes}m",
+      "waitMinutes": "{minutes}m",
+      "today": "Today"
+    },
+    "profile": {
+      "badge": "{title}, level {tier} of {max}",
+      "level": "Level {tier}",
+      "locked": "Locked",
+      "allDone": "All levels complete!",
+      "progress": "{title} progress",
+      "count": "{value} / {next}",
+      "since": "Learning {language} since {date}",
+      "edit": "Edit",
+      "editLabel": "Edit profile",
+      "stats": "Statistics",
+      "streak": "day streak",
+      "streakBest": "day streak · best {best}",
+      "xp": "total XP",
+      "words": "words learned",
+      "lessons": "lessons · {perfect} perfect",
+      "accuracy": "accuracy",
+      "minutes": "minutes learning",
+      "stories": "stories read",
+      "week": {
+        "title": "XP this week",
+        "total": "{xp} XP in 7 days",
+        "unit": "XP",
+        "caption": "XP earned each day for the last 7 days"
+      },
+      "achievements": "Achievements"
+    },
+    "streak": {
+      "eyebrow": "Streak",
+      "days": { "one": "**{count}** day", "other": "**{count}** days" },
+      "today": "You’ve practised today. See you tomorrow!",
+      "extend": "Finish a lesson today to extend your streak.",
+      "start": "Finish a lesson to start a streak.",
+      "next": "Next milestone: {count} days",
+      "nextLabel": "Progress to next milestone",
+      "toGo": { "one": "{count} day to go", "other": "{count} days to go" },
+      "longest": "Longest streak",
+      "freezes": "Streak freezes",
+      "freezesCount": "{count} / {max}",
+      "shop": "A streak freeze covers a day you miss.",
+      "shopCta": "Get one with gems",
+      "previous": "Previous month",
+      "nextMonth": "Next month",
+      "day": "{date}",
+      "dayPractised": "{date}, practised",
+      "dayFrozen": "{date}, streak freeze used",
+      "practised": "Practised",
+      "frozen": "Freeze used"
+    },
+    "guidebook": {
+      "eyebrow": "Unit {number} guidebook",
+      "phrases": "Key phrases",
+      "tips": "Tips",
+      "culture": "Culture",
+      "stories": "Stories"
+    },
+    "stories": {
+      "unlock": "Finish {skill}, lesson {number}",
+      "read": "Read",
+      "new": "New",
+      "eyebrow": "Stories",
+      "title": "Read **with the cast.**",
+      "lead": "Short conversations that use what you’ve learned. Tap any line to see it in {language}. Stories never cost hearts.",
+      "unit": "Unit {number}: {title}",
+      "close": "Close story",
+      "start": "Start",
+      "progress": "Story progress",
+      "done": {
+        "title": "Story complete!",
+        "subtitle": "You finished “{story}”. {thanks}"
+      }
+    },
+    "reminders": {
+      "title": "{target} — {base}",
+      "review": {
+        "aloud": "Say it out loud once today.",
+        "minutes": "Two minutes of practice keeps it fresh.",
+        "tap": "Tap to practise a few words.",
+        "ready": "A quick review is ready when you are."
+      },
+      "learned": {
+        "use": "One you already know. Can you use it today?",
+        "short": "Tap for a short practice.",
+        "try": "Try it on someone today."
+      },
+      "fresh": {
+        "next": "A word from your next lesson.",
+        "new": "New today. Tap to learn it properly."
+      },
+      "consent": {
+        "title": "A word a day?",
+        "body": "We can send one short {language} word, like “{example}”, around the time you usually learn. Never more than once a day, and never on days you’ve already practised.",
+        "yes": "Yes, send me words",
+        "later": "Tap Continue if you’d rather not. You can turn this on in Settings any time.",
+        "on": "Done. Your first word arrives soon. {thanks}",
+        "blocked": "Notifications are blocked for this site. Allow them in your browser settings to get word reminders."
+      },
+      "settings": {
+        "label": "Word reminders",
+        "hint": "One short {language} word a day, around when you usually learn. Skipped on days you’ve practised, and less often if you’re busy.",
+        "time": "Reminder time",
+        "auto": "Automatic (learns your routine)",
+        "limited": "This browser only shows reminders while the app is open in the background. Install the app in Chrome or Edge for reminders when it’s closed."
+      }
+    },
+    "ads": {
+      "sponsored": "Sponsored",
+      "about": "About ads",
+      "cardButton": "Ad break",
+      "cardButtonLabel": "Take a break from ads",
+      "offer": {
+        "title": "Fancy an ad break?",
+        "body": "{mascot} here. These sponsored cards pay for my birdseed and keep every lesson free for everyone. Between you and me, I’d rather be teaching than advertising. Want me to shoo them away for {duration}? It’s on the house.",
+        "streak": "Your {streak} day streak earned you the long version.",
+        "left": "Ad breaks left this week: {left}.",
+        "yes": "Clear the skies",
+        "no": "Ads are fine"
+      },
+      "done": "Clear skies until {time}. Thanks for keeping me flying!",
+      "none": {
+        "title": "All out of ad breaks",
+        "body": "You’ve had all {perWeek} of this week’s breaks. The next one lands {when}. Until then, the sponsored cards keep the lessons free. Thanks for sticking with me!",
+        "ok": "Fair enough"
+      },
+      "settings": {
+        "title": "Ad breaks",
+        "hint": "Pause ads for {duration}, free. {left} left this week.",
+        "active": "Ads are on a break until {time}.",
+        "take": "Take an ad break",
+        "end": "Bring ads back early",
+        "ended": "Ads are back. Thank you, that helps keep the lessons free!"
+      },
+      "duration": {
+        "day": "a whole day",
+        "twoDays": "two whole days",
+        "hours": { "one": "{count} hour", "other": "{count} hours" }
+      },
+      "consent": {
+        "label": "Ad choices",
+        "text": "**Ads keep {app} free.** May our ad partner, Google, use cookies to show ads that suit you? Your lessons and progress never leave this device. [Privacy policy](#/privacy)",
+        "deny": "Basic ads only",
+        "allow": "Allow"
+      }
+    },
+    "pixel": {
+      "label": "Facebook measurement",
+      "text": "**Help more people find {app}?** May Meta (Facebook) count your visits so our ads reach people who want to learn? Your name, lessons and answers stay on this device. [Privacy policy](#/privacy)",
+      "deny": "No thanks",
+      "allow": "Allow"
+    },
+    "mood": {
+      "idle": "{app} home",
+      "happy": "{app} home. Today’s goal is done!",
+      "sleepy": "{app} home. Your streak is waiting for today’s lesson.",
+      "celebrating": "{app} home. Streak milestone today!"
+    },
+    "sounds": {
+      "playful": "Playful",
+      "soft": "Soft"
     }
   }
 }

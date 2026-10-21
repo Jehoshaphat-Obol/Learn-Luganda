@@ -18,7 +18,12 @@ const EXERCISES = DEFAULT_SETTINGS.exercises;
 /** The `i`th entry of a list, wrapping round: directions alternate this way. */
 const cycle = (list, i) => list[i % list.length];
 
-const quote = (t) => `“${t.replace(/[?.!]$/, '')}”`;
+/**
+ * A word for a prompt, without its closing punctuation (the pack adds quotes).
+ * Prompts are `{ id, params }`: renderers turn them into text with the UI
+ * pack's `lesson.prompt.<id>`, so exercises stay plain data.
+ */
+const bare = (text) => text.replace(/[?.!]$/, '');
 
 export function choiceExercise(word, pool, rng, direction, { options: count = EXERCISES.choice.options } = {}) {
   const others = rng.sample(pool.filter((w) => w.id !== word.id && normalise(w.target) !== normalise(word.target) && normalise(w.base) !== normalise(word.base)), count - 1);
@@ -26,7 +31,7 @@ export function choiceExercise(word, pool, rng, direction, { options: count = EX
   const options = rng.shuffle([word, ...others]).map((w) => ({ text: toTarget ? w.target : w.base, value: w.id }));
   return {
     type: 'choice',
-    prompt: toTarget ? `Which one means ${quote(word.base)}?` : `What does ${quote(word.target)} mean?`,
+    prompt: { id: toTarget ? 'choiceToTarget' : 'choiceToBase', params: { word: bare(toTarget ? word.base : word.target) } },
     lang: toTarget ? 'target' : 'base',
     options,
     answer: word.id,
@@ -44,7 +49,7 @@ export function translateExercise(item, pools, rng, direction, { minDistractors 
   const distractors = rng.sample([...new Set(pool)], Math.min(maxDistractors, Math.max(minDistractors, 6 - answerTokens.length)));
   return {
     type: 'translate',
-    prompt: 'Write this in ' + (toBase ? defaultCourse.names.from : defaultCourse.names.to),
+    prompt: { id: 'translate', params: { language: toBase ? defaultCourse.names.from : defaultCourse.names.to } },
     source: toBase ? item.target : item.base,
     sourceLang: toBase ? 'target' : 'base',
     lang: toBase ? 'base' : 'target',
@@ -71,7 +76,7 @@ export function matchExercise(words, rng, { pairs = DEFAULT_SETTINGS.lesson.matc
     .slice(0, pairs);
   return {
     type: 'match',
-    prompt: 'Tap the matching pairs',
+    prompt: { id: 'match' },
     pairs: chosen.map((w) => ({ id: w.id, target: w.target, base: w.base })),
     left: rng.shuffle(chosen.map((w) => w.id)),
     right: rng.shuffle(chosen.map((w) => w.id)),
@@ -84,7 +89,7 @@ export function typeExercise(item, direction = 'toBase') {
   const toBase = direction === 'toBase';
   return {
     type: 'type',
-    prompt: `Type this in ${toBase ? defaultCourse.names.from : defaultCourse.names.to}`,
+    prompt: { id: 'type', params: { language: toBase ? defaultCourse.names.from : defaultCourse.names.to } },
     source: toBase ? item.target : item.base,
     sourceLang: toBase ? 'target' : 'base',
     lang: toBase ? 'base' : 'target',
@@ -113,7 +118,7 @@ export function fillExercise(sentence, known, rng, { distractors = DEFAULT_SETTI
   if (others.length < distractors) return null;
   return {
     type: 'fill',
-    prompt: 'Fill in the blank',
+    prompt: { id: 'fill' },
     sentence: blanked,
     translation: sentence.base,
     full: sentence.target,
@@ -127,7 +132,7 @@ export function fillExercise(sentence, known, rng, { distractors = DEFAULT_SETTI
 function dialogueExercise(d, rng) {
   return {
     type: 'dialogue',
-    prompt: 'Choose the best reply',
+    prompt: { id: 'dialogue' },
     speaker: d.speaker,
     line: d.target,
     translation: d.base,
@@ -140,7 +145,7 @@ function dialogueExercise(d, rng) {
 
 function listenExercise(item, pools, rng) {
   const ex = translateExercise(item, pools, rng, 'toTarget');
-  return { ...ex, type: 'listen', prompt: 'Tap what you hear', audio: item.audio };
+  return { ...ex, type: 'listen', prompt: { id: 'listen' }, audio: item.audio };
 }
 
 /** Words that appear in a sentence, by matching their target-language text. */

@@ -16,12 +16,13 @@ import { showRewards } from './rewards.js';
 import { emptyStateArt } from '../illustrations/index.js';
 import { button, escapeHtml, progressBar } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
+import { t, tHtml } from '../i18n/index.js';
 
 function storiesNote(state) {
   const list = storyList(state);
   const unread = list.filter((x) => x.unlocked && !x.done).length;
-  if (unread) return `${unread} new stor${unread === 1 ? 'y' : 'ies'} to read`;
-  return `${list.filter((x) => x.done).length} of ${list.length} read`;
+  if (unread) return t('practice.storiesNew', { count: unread });
+  return t('practice.storiesRead', { done: list.filter((x) => x.done).length, total: list.length });
 }
 
 function skillWords(skillId) {
@@ -38,9 +39,9 @@ export function practiceHubView({ root }) {
     root.innerHTML = `
       <section class="empty-state">
         <div class="empty-state__art">${emptyStateArt('empty')}</div>
-        <h1>Nothing to practise yet</h1>
-        <p class="muted">Finish your first lesson and the words you learn will show up here for review.</p>
-        ${button({ label: 'Start learning', href: '#/learn' })}
+        <h1>${escapeHtml(t('practice.empty.title'))}</h1>
+        <p class="muted">${escapeHtml(t('practice.empty.body'))}</p>
+        ${button({ label: t('ui.startLearning'), href: '#/learn' })}
       </section>`;
     return;
   }
@@ -49,33 +50,33 @@ export function practiceHubView({ root }) {
   root.innerHTML = `
     <div class="page">
       <header class="page__header">
-        <p class="eyebrow">Practice hub</p>
-        <h1>Keep words <strong>fresh.</strong></h1>
-        <p class="muted">Practice doesn’t cost hearts, and each session earns one back.</p>
+        <p class="eyebrow">${escapeHtml(t('practice.eyebrow'))}</p>
+        <h1>${tHtml('practice.title')}</h1>
+        <p class="muted">${escapeHtml(t('practice.lead'))}</p>
       </header>
 
       <div class="practice-cards">
         <a class="practice-card practice-card--review" href="#/practice/session?mode=review">
           <span class="practice-card__icon">${icon('target', { size: 30 })}</span>
-          <span><strong>Review</strong><small>${due.length ? `${due.length} word${due.length === 1 ? '' : 's'} due today` : 'Strengthen your weakest words'}</small></span>
+          <span><strong>${escapeHtml(t('practice.review'))}</strong><small>${escapeHtml(due.length ? t('practice.reviewDue', { count: due.length }) : t('practice.reviewWeak'))}</small></span>
           ${icon('arrow', { size: 22 })}
         </a>
         <a class="practice-card practice-card--mistakes${mistakes.length ? '' : ' is-disabled'}" href="${mistakes.length ? '#/practice/session?mode=mistakes' : '#/practice'}" ${mistakes.length ? '' : 'aria-disabled="true"'}>
           <span class="practice-card__icon">${icon('cross', { size: 26 })}</span>
-          <span><strong>Mistakes</strong><small>${mistakes.length ? `${mistakes.length} word${mistakes.length === 1 ? '' : 's'} to fix` : 'No recent mistakes. Nice!'}</small></span>
+          <span><strong>${escapeHtml(t('practice.mistakes'))}</strong><small>${escapeHtml(mistakes.length ? t('practice.mistakesCount', { count: mistakes.length }) : t('practice.noMistakes'))}</small></span>
           ${icon('arrow', { size: 22 })}
         </a>
         <a class="practice-card practice-card--stories" href="#/stories">
           <span class="practice-card__icon">${icon('stories', { size: 26 })}</span>
-          <span><strong>Stories</strong><small>${storiesNote(state)}</small></span>
+          <span><strong>${escapeHtml(t('practice.stories'))}</strong><small>${escapeHtml(storiesNote(state))}</small></span>
           ${icon('arrow', { size: 22 })}
         </a>
       </div>
 
-      <h2 class="practice-heading">Practise a skill</h2>
+      <h2 class="practice-heading">${escapeHtml(t('practice.skills'))}</h2>
       ${units.map((u) => `
         <section class="practice-unit">
-          <h3>Unit ${u.index + 1} · ${escapeHtml(u.title)}</h3>
+          <h3>${escapeHtml(t('practice.unit', { number: u.index + 1, title: u.title }))}</h3>
           <ul class="practice-skills">
             ${u.skills.filter((sk) => skillProgress(state, sk.id).done > 0).map((sk) => {
               const words = skillWords(sk.id);
@@ -83,10 +84,10 @@ export function practiceHubView({ root }) {
               const dueHere = words.filter((id) => due.includes(id)).length;
               return `<li><a class="practice-skill" href="#/practice/session?mode=skill&id=${sk.id}">
                 <span class="practice-skill__icon">${icon(sk.icon ?? 'star', { size: 22 })}</span>
-                <span class="practice-skill__body"><strong>${escapeHtml(sk.title)}</strong>${progressBar(st, { label: `${sk.title} strength`, variant: st > 0.6 ? 'success' : 'gold' })}</span>
-                ${dueHere ? `<span class="pill pill--primary">${dueHere} due</span>` : ''}
+                <span class="practice-skill__body"><strong>${escapeHtml(sk.title)}</strong>${progressBar(st, { label: t('practice.strength', { skill: sk.title }), variant: st > 0.6 ? 'success' : 'gold' })}</span>
+                ${dueHere ? `<span class="pill pill--primary">${escapeHtml(t('practice.due', { count: dueHere }))}</span>` : ''}
               </a></li>`;
-            }).join('') || '<li class="muted">Finish a lesson in this unit to practise it.</li>'}
+            }).join('') || `<li class="muted">${escapeHtml(t('practice.locked'))}</li>`}
           </ul>
         </section>`).join('')}
     </div>`;
@@ -125,8 +126,8 @@ export function practiceSessionView({ root, query, navigate }) {
       showRewards(root, {
         result,
         ...summary,
-        title: 'Practice complete!',
-        subtitle: 'You earned a heart back. Those words will stick better now.',
+        title: t('practice.done.title'),
+        subtitle: t('practice.done.subtitle'),
         onDone: () => navigate('/practice'),
       });
     },

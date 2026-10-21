@@ -4,6 +4,8 @@ import { portrait } from '../../illustrations/index.js';
 import { escapeHtml } from '../../ui/components.js';
 import { icon } from '../../ui/icons.js';
 import { speakButton } from '../../audio/speech.js';
+import { t } from '../../i18n/index.js';
+import { promptHtml } from './prompt.js';
 
 export function renderDialogue(ex, el, api) {
   let selected = null;
@@ -11,16 +13,16 @@ export function renderDialogue(ex, el, api) {
   const who = speaker.name;
   el.innerHTML = `
     <div class="ex ex--dialogue">
-      <h2 class="ex__prompt">${escapeHtml(ex.prompt)}</h2>
+      ${promptHtml(ex)}
       <div class="ex-dialogue__scene">
         <div class="ex-dialogue__speaker">${portrait(speaker.look, { expression: 'happy' })}<span>${escapeHtml(who)}</span></div>
         <div class="speech speech--left ex-dialogue__line">
-          <p${langAttr('target')}>${escapeHtml(ex.line)}${speakButton(ex.line, { speaker: ex.speaker, label: `Hear ${who}` })}</p>
-          <button class="ex-dialogue__reveal" type="button" data-reveal aria-expanded="false">${icon('book', { size: 16 })} Show translation</button>
+          <p${langAttr('target')}>${escapeHtml(ex.line)}${speakButton(ex.line, { speaker: ex.speaker, label: t('lesson.hear', { name: who }) })}</p>
+          <button class="ex-dialogue__reveal" type="button" data-reveal aria-expanded="false">${icon('book', { size: 16 })} ${escapeHtml(t('lesson.showTranslation'))}</button>
           <p class="ex-dialogue__translation muted" hidden>${escapeHtml(ex.translation)}</p>
         </div>
       </div>
-      <div class="ex-choice__options" role="radiogroup" aria-label="Replies">
+      <div class="ex-choice__options" role="radiogroup" aria-label="${escapeHtml(t('lesson.replies'))}">
         ${ex.options.map((o, i) => `<button class="choice" type="button" role="radio" aria-checked="false" data-value="${escapeHtml(o)}"${langAttr('target')}><span class="choice__key">${i + 1}</span><span>${escapeHtml(o)}</span></button>`).join('')}
       </div>
     </div>`;

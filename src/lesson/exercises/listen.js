@@ -8,14 +8,16 @@ import { escapeHtml } from '../../ui/components.js';
 import { icon } from '../../ui/icons.js';
 import { isAccepted } from '../answers.js';
 import { speak } from '../../audio/speech.js';
+import { t } from '../../i18n/index.js';
+import { promptHtml } from './prompt.js';
 
 export function renderListen(ex, el, api) {
   const placed = [];
   el.innerHTML = `
     <div class="ex ex--listen">
-      <h2 class="ex__prompt">${escapeHtml(ex.prompt)}</h2>
+      ${promptHtml(ex)}
       <div class="ex-listen__controls">
-        <button class="btn btn--blue ex-listen__play" type="button" data-play aria-label="Play audio">${icon('speaker', { size: 40 })}</button>
+        <button class="btn btn--blue ex-listen__play" type="button" data-play aria-label="${escapeHtml(t('lesson.play'))}">${icon('speaker', { size: 40 })}</button>
       </div>
       <div class="ex-translate__answer" data-answer aria-live="polite"></div>
       <div class="ex-translate__bank">${ex.bank.map((t, i) => `<button class="tile" type="button" data-tile="${i}"${langAttr('target')}>${escapeHtml(t)}</button>`).join('')}</div>

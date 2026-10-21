@@ -9,6 +9,7 @@ import { buildCheckpoint } from '../lesson/practice.js';
 import { runExercises } from './lesson.js';
 import { heartGate } from './heart-review.js';
 import { showRewards } from './rewards.js';
+import { t } from '../i18n/index.js';
 
 export function checkpointView({ root, params, navigate }) {
   const state = store.get();
@@ -32,8 +33,8 @@ export function checkpointView({ root, params, navigate }) {
       showRewards(root, {
         result,
         ...summary,
-        title: `Unit ${unit.index + 1} complete!`,
-        subtitle: `You passed the ${unit.title} checkpoint. Weebale nnyo!`,
+        title: t('checkpoint.title', { number: unit.index + 1 }),
+        subtitle: t('checkpoint.subtitle', { unit: unit.title, thanks: course.phrases.thanks }),
         // Passing the last checkpoint for the first time ends the course.
         onDone: () => navigate(!replay && isCourseComplete(store.get()) ? '/complete' : '/learn'),
       });

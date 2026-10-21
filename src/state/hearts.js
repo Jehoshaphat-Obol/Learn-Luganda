@@ -7,6 +7,7 @@
  */
 import { clearMistakes, recordSession, weakestWordIds } from './review.js';
 import { dayKey } from './dates.js';
+import { t } from '../i18n/index.js';
 
 export const MAX_HEARTS = 5;
 export const REFILL_MS = 4 * 60 * 60 * 1000;
@@ -93,5 +94,5 @@ export function formatWait(ms) {
   const mins = Math.max(1, Math.ceil(ms / 60000));
   const h = Math.floor(mins / 60);
   const m = mins % 60;
-  return h ? `${h}h ${m}m` : `${m}m`;
+  return h ? t('time.waitHours', { hours: h, minutes: m }) : t('time.waitMinutes', { minutes: m });
 }

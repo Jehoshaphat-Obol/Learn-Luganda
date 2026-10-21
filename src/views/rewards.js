@@ -13,6 +13,8 @@ import { reducedMotion } from '../ui/motion.js';
 import { badge } from '../ui/badge.js';
 import { ACHIEVEMENTS } from '../state/achievements.js';
 import { adSlot, mountAds } from '../ads/ads.js';
+import { course } from '../content/course.js';
+import { t } from '../i18n/index.js';
 
 /** Extra screens registered by other features (e.g. streaks). */
 const extraSteps = [];
@@ -26,8 +28,8 @@ function countUp(el, to, ms = 700) {
     return;
   }
   const start = performance.now();
-  const tick = (t) => {
-    const k = Math.min(1, (t - start) / ms);
+  const tick = (now) => {
+    const k = Math.min(1, (now - start) / ms);
     el.textContent = Math.round(to * k);
     if (k < 1) requestAnimationFrame(tick);
   };
@@ -41,14 +43,14 @@ function summaryScreen({ result, xp, gems = 0, title, subtitle }) {
   return {
     html: `
       <div class="complete__art">${celebrationArt({ xp: xp.total })}</div>
-      <h1>${escapeHtml(title ?? (result.perfect ? 'Perfect lesson!' : 'Lesson complete!'))}</h1>
-      <p class="complete__sub muted">${escapeHtml(subtitle ?? (result.perfect ? 'Not a single mistake. Weebale nnyo!' : 'Weebale! Every lesson makes the words stick.'))}</p>
+      <h1>${escapeHtml(title ?? t(result.perfect ? 'rewards.perfect' : 'rewards.complete'))}</h1>
+      <p class="complete__sub muted">${escapeHtml(subtitle ?? t(result.perfect ? 'rewards.perfectSub' : 'rewards.completeSub', { thanks: course.phrases.thanks }))}</p>
       <div class="complete__stats">
-        <div class="complete__stat complete__stat--xp"><span>Total XP</span><strong>${icon('bolt', { size: 20 })}<b data-count="${xp.total}">0</b></strong></div>
-        <div class="complete__stat complete__stat--acc"><span>${pct === 100 ? 'Perfect' : pct >= 80 ? 'Amazing' : pct >= 60 ? 'Good' : 'Accuracy'}</span><strong>${icon('target', { size: 20 })}${pct}%</strong></div>
-        <div class="complete__stat complete__stat--time"><span>Time</span><strong>${icon('clock', { size: 20 })}${mins}:${secs}</strong></div>
+        <div class="complete__stat complete__stat--xp"><span>${escapeHtml(t('rewards.xp'))}</span><strong>${icon('bolt', { size: 20 })}<b data-count="${xp.total}">0</b></strong></div>
+        <div class="complete__stat complete__stat--acc"><span>${escapeHtml(t(`rewards.accuracy.${pct === 100 ? 'perfect' : pct >= 80 ? 'amazing' : pct >= 60 ? 'good' : 'other'}`))}</span><strong>${icon('target', { size: 20 })}${pct}%</strong></div>
+        <div class="complete__stat complete__stat--time"><span>${escapeHtml(t('rewards.time'))}</span><strong>${icon('clock', { size: 20 })}${mins}:${secs}</strong></div>
       </div>
-      <ul class="complete__parts">${xp.parts.map((p) => `<li><span>${escapeHtml(p.label)}</span><span>+${p.xp} XP</span></li>`).join('')}${gems ? `<li class="complete__gems"><span>${icon('gem', { size: 16 })} Gems</span><span>+${gems}</span></li>` : ''}</ul>
+      <ul class="complete__parts">${xp.parts.map((p) => `<li><span>${escapeHtml(t(`rewards.part.${p.id}`))}</span><span>${escapeHtml(t('rewards.partXp', { xp: p.xp }))}</span></li>`).join('')}${gems ? `<li class="complete__gems"><span>${icon('gem', { size: 16 })} ${escapeHtml(t('rewards.gems'))}</span><span>+${gems}</span></li>` : ''}</ul>
       ${adSlot('complete', { accuracy: result.accuracy })}`,
     after(root) {
       // Never ask for consent here; the Continue button is right below.
@@ -64,9 +66,9 @@ function goalScreen({ goalAfter }) {
   return {
     html: `
       <div class="complete__art complete__art--small">${mascot({ pose: randomPose('celebrate') })}</div>
-      <h1>Daily goal met!</h1>
-      <div class="complete__ring">${ring(1, { size: 140, stroke: 12, content: `<strong class="complete__ring-num">${goalAfter.today}</strong><span>XP today</span>`, label: 'Daily goal' })}</div>
-      <p class="complete__sub muted">You reached your ${goalAfter.goal} XP goal. Come back tomorrow to keep learning.</p>`,
+      <h1>${escapeHtml(t('rewards.goal.title'))}</h1>
+      <div class="complete__ring">${ring(1, { size: 140, stroke: 12, content: `<strong class="complete__ring-num">${goalAfter.today}</strong><span>${escapeHtml(t('rewards.goal.today'))}</span>`, label: t('learn.goal') })}</div>
+      <p class="complete__sub muted">${escapeHtml(t('rewards.goal.body', { goal: goalAfter.goal }))}</p>`,
     after: () => {
       play('levelup');
       confetti();
@@ -77,15 +79,15 @@ function goalScreen({ goalAfter }) {
 function streakScreen({ streak }) {
   const next = nextMilestone(streak.current);
   const message = streak.milestone
-    ? `A ${streak.milestone} day milestone. Amazing commitment!`
+    ? t('rewards.streak.milestone', { count: streak.milestone })
     : streak.current === 1
-      ? 'Your streak starts today. Come back tomorrow to grow it.'
-      : `You’ve learned ${streak.current} days in a row.${next ? ` ${next - streak.current} more to reach ${next}!` : ''}`;
+      ? t('rewards.streak.first')
+      : [t('rewards.streak.days', { count: streak.current }), next ? t('rewards.streak.next', { count: next - streak.current, next }) : ''].filter(Boolean).join(' ');
   return {
     html: `
       <div class="complete__art">${streakScene({ days: streak.current })}</div>
-      <h1>${streak.current} day streak!</h1>
-      <p class="complete__sub muted">${message}</p>`,
+      <h1>${escapeHtml(t('rewards.streak.title', { count: streak.current }))}</h1>
+      <p class="complete__sub muted">${escapeHtml(message)}</p>`,
     after: () => {
       play('streak');
       if (streak.milestone) confetti();
@@ -97,13 +99,13 @@ function achievementScreen(unlocked) {
   const items = unlocked.map((u) => {
     const a = ACHIEVEMENTS.find((x) => x.id === u.id);
     return `<li class="unlock">
-      ${badge({ shape: a.shape, iconName: a.icon, tier: u.tier, size: 88, label: `${a.title} level ${u.tier}` })}
-      <div><strong>${escapeHtml(a.title)}</strong><p class="muted">${escapeHtml(u.description)}</p><span class="pill pill--blue">${icon('gem', { size: 14 })} +${u.gems} gems</span></div>
+      ${badge({ shape: a.shape, iconName: a.icon, tier: u.tier, size: 88, label: t('rewards.achievement.badge', { title: a.title, tier: u.tier }) })}
+      <div><strong>${escapeHtml(a.title)}</strong><p class="muted">${escapeHtml(u.description)}</p><span class="pill pill--blue">${icon('gem', { size: 14 })} ${escapeHtml(t('rewards.achievement.gems', { gems: u.gems }))}</span></div>
     </li>`;
   });
   return {
     html: `
-      <h1>Achievement${unlocked.length > 1 ? 's' : ''} unlocked!</h1>
+      <h1>${escapeHtml(t('rewards.achievement.title', { count: unlocked.length }))}</h1>
       <ul class="unlocks">${items.join('')}</ul>`,
     after: () => {
       play('achievement');
@@ -128,7 +130,7 @@ export function showRewards(root, summary) {
     root.innerHTML = `
       <div class="complete">
         ${step.html}
-        <div class="complete__actions">${button({ label: 'Continue', size: 'lg', block: true, attrs: 'data-continue' })}</div>
+        <div class="complete__actions">${button({ label: t('lesson.continue'), size: 'lg', block: true, attrs: 'data-continue' })}</div>
       </div>`;
     step.after?.(root);
     const btn = root.querySelector('[data-continue]');
