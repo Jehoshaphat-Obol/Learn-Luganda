@@ -66,7 +66,7 @@ export const SECTION2_STORIES = [
       },
       { line: ['jjajja', 'Tuula wano. Mpulira empewo. Ggwe?', 'Sit here. I feel cold. And you?'] },
       { line: ['amara', 'Nange. Njagala caayi.', 'Me too. I want tea.'], gloss: { Nange: 'me too' } },
-      { line: ['jjajja', 'Kale, tunywa caayi. Oluvannyuma, twala ekiwempe kyange.', 'Okay, let’s drink tea. Afterwards, take my umbrella.'] },
+      { line: ['jjajja', 'Kale, tunywe caayi. Oluvannyuma, twala ekiwempe kyange.', 'Okay, let’s drink tea. Afterwards, take my umbrella.'] },
       {
         question: 'What will Amara take home?',
         options: ['Jjajja’s umbrella', 'A sweater', 'Some food'],
