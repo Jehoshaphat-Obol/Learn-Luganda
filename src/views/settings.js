@@ -14,6 +14,7 @@ import { canInstall, promptInstall } from '../app/pwa.js';
 import { backgroundSupported, remindersSupported, setReminderHour, setReminders } from '../reminders/reminders.js';
 import { REMINDER_STRINGS } from '../reminders/strings.js';
 import { PACKS, hapticsSupported, play, preload } from '../ui/sound.js';
+import { pixelConfigured, pixelConsent, setPixelConsent } from '../marketing/pixel.js';
 import { adBreakNow, adBreakTime, adConsent, adsConfigured, changeAdConsent, offerAdBreak } from '../ads/ads.js';
 import { endAdBreak } from '../ads/breaks.js';
 import { POLICY } from '../ads/policy.js';
@@ -159,6 +160,7 @@ export function settingsView({ root, query, navigate }) {
       <section class="settings-group" id="privacy">
         <h2>Ads and privacy</h2>
         ${adsConfigured() ? `<div>${toggle('personalisedAds', 'Personalised ads', 'Let Google use cookies to show ads that suit you. Off means basic, non-personalised ads.', adConsent() === 'granted')}</div>` : ''}
+        ${pixelConfigured() ? `<div>${toggle('pixel', 'Facebook measurement', 'Let Meta (Facebook) count your visits and milestones so our ads reach more learners. Your name and answers are never sent.', pixelConsent() === 'granted')}</div>` : ''}
         ${adsConfigured() && POLICY.adBreak.perWeek ? `<div class="ad-break-row" data-ad-break-row>${adBreakRow()}</div>` : ''}
         <p class="muted">Your lessons and progress never leave this device. <a href="#/privacy">Read the privacy policy</a>.</p>
         ${siteLinks()}
@@ -242,6 +244,11 @@ export function settingsView({ root, query, navigate }) {
     if (key === 'personalisedAds') {
       changeAdConsent(e.target.checked ? 'granted' : 'denied');
       toast(e.target.checked ? 'Personalised ads allowed.' : 'You’ll see basic ads only.');
+      return;
+    }
+    if (key === 'pixel') {
+      setPixelConsent(e.target.checked ? 'granted' : 'denied');
+      toast(e.target.checked ? 'Facebook measurement allowed.' : 'Facebook measurement is off.');
       return;
     }
     if (key === 'reminder') {

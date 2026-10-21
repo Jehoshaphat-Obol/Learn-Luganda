@@ -16,6 +16,7 @@ import { registerServiceWorker } from './app/pwa.js';
 import { startReminders } from './reminders/reminders.js';
 import { applyBrandMood, brandMood } from './app/brand-mood.js';
 import { startLanguages } from './app/languages.js';
+import { pixelOnRoute } from './marketing/pixel.js';
 
 setStatsProvider(() => {
   const s = store.get();
@@ -44,6 +45,7 @@ const router = createRouter({
     shell.render(match, router.navigate);
     refreshBrand();
     setMusicScene((match.route.layout ?? 'app') === 'app' && hasProfile());
+    pixelOnRoute(match);
   },
 });
 initMusic();

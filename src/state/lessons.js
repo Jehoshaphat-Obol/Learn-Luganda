@@ -8,6 +8,7 @@ import { gainHeart } from './hearts.js';
 import { sessionGems, STREAK_GEMS } from './shop.js';
 import { evaluateAchievements } from './achievements.js';
 import { recordStudyHour } from '../reminders/rules.js';
+import { trackPixel } from '../marketing/pixel.js';
 
 /**
  * Applies a finished lesson's result to the state (pure, for tests).
@@ -56,5 +57,9 @@ export function finishLesson(lessonId, result, { replay = false, base, practice 
     s.gems += gems;
     achievements = evaluateAchievements(s);
   });
+  // `kind` is lesson, practice, checkpoint, jump or story: no answers or names.
+  const kind = practice ? 'practice' : lessonId?.includes('-') ? lessonId.split('-')[0] : 'lesson';
+  trackPixel('lessonComplete', { kind, xp: xp.total });
+  if (streak.extended && streak.milestone) trackPixel('streakMilestone', { days: streak.milestone });
   return { xp, streak, gems, achievements, before, after, goalBefore: dailyGoal(before, now), goalAfter: dailyGoal(after, now) };
 }
