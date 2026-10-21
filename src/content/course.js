@@ -22,9 +22,13 @@ import unit17 from './units/unit17.js';
 import unit18 from './units/unit18.js';
 import unit19 from './units/unit19.js';
 import unit20 from './units/unit20.js';
+import unit21 from './units/unit21.js';
+import unit22 from './units/unit22.js';
+import unit23 from './units/unit23.js';
+import unit24 from './units/unit24.js';
 import { SECTIONS } from './sections.js';
 
-export const UNITS_RAW = [unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, unit10, unit11, unit12, unit13, unit14, unit15, unit16, unit17, unit18, unit19, unit20];
+export const UNITS_RAW = [unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, unit10, unit11, unit12, unit13, unit14, unit15, unit16, unit17, unit18, unit19, unit20, unit21, unit22, unit23, unit24];
 
 function toItem([id, lg, en, extras = {}], unitId) {
   return { id, lg, en, altLg: extras.altLg ?? [], altEn: extras.altEn ?? [], notes: extras.notes ?? '', audio: extras.audio ?? null, unit: unitId };
