@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { MAX_HEARTS, REFILL_COST, REFILL_MS, formatWait, gainHeart, heartStatus, loseHeart, refillHearts, settleHearts } from '../src/state/hearts.js';
+import { HEART_REVIEW_WORDS, MAX_HEARTS, REFILL_COST, REFILL_MS, finishHeartReview, formatWait, gainHeart, heartReviewWordIds, heartStatus, loseHeart, refillHearts, settleHearts } from '../src/state/hearts.js';
 
 const fresh = () => ({ gems: 50, hearts: { count: 5, updatedAt: 0 } });
 
@@ -54,5 +54,41 @@ describe('hearts', () => {
   it('formats the wait', () => {
     expect(formatWait(3 * 3600000 + 12 * 60000)).toBe('3h 12m');
     expect(formatWait(1000)).toBe('1m');
+  });
+});
+
+describe('heart review', () => {
+  const state = (extra = {}) => ({ gems: 0, hearts: { count: 0, updatedAt: 0 }, words: {}, mistakes: [], ...extra });
+
+  it('steps back to what was missed, then saved mistakes, then weak earlier words', () => {
+    const s = state({
+      mistakes: ['m1', 'x'],
+      words: {
+        strong: { box: 5, due: '2099-01-01', seen: 9, correct: 9, wrong: 0 },
+        weak: { box: 1, due: '2000-01-01', seen: 3, correct: 1, wrong: 2 },
+      },
+    });
+    const ids = heartReviewWordIds(s, { missed: ['x'], seen: ['now'], learned: ['strong', 'weak', 'fresh'] });
+    expect(ids).toEqual(['x', 'm1', 'weak', 'strong', 'fresh', 'now']);
+  });
+
+  it('keeps it short and skips unknown words', () => {
+    const learned = Array.from({ length: 20 }, (_, i) => `w${i}`);
+    expect(heartReviewWordIds(state(), { learned })).toHaveLength(HEART_REVIEW_WORDS);
+    expect(heartReviewWordIds(state(), { learned: ['a', 'b'], exists: (id) => id === 'b' })).toEqual(['b']);
+  });
+
+  it('works for a brand new learner from the words just seen', () => {
+    expect(heartReviewWordIds(state(), { missed: ['a'], seen: ['a', 'b'] })).toEqual(['a', 'b']);
+  });
+
+  it('fills hearts, records the words and clears fixed mistakes', () => {
+    const s = state({ mistakes: ['a', 'b'] });
+    finishHeartReview(s, { wordIds: ['a', 'b'], missed: { b: 1 } }, Date.UTC(2026, 9, 21));
+    expect(s.hearts).toEqual({ count: MAX_HEARTS, updatedAt: Date.UTC(2026, 9, 21) });
+    expect(s.mistakes).toEqual(['b']);
+    expect(s.words.a.box).toBe(1);
+    expect(s.words.b.wrong).toBe(1);
+    expect(s.gems).toBe(0); // free: gems are only a shortcut
   });
 });

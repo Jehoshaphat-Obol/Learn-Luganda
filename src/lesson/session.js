@@ -51,6 +51,11 @@ export function createSession(exercises, { now = () => Date.now() } = {}) {
       index += 1;
     },
 
+    /** Words shown so far, up to and including the current exercise. */
+    seenWordIds() {
+      return [...new Set(queue.slice(0, index + 1).flatMap((q) => q.wordIds ?? []))];
+    },
+
     /** Notes words got wrong without failing the exercise (e.g. a bad match). */
     noteMiss(wordIds) {
       for (const id of wordIds) missed.set(id, (missed.get(id) ?? 0) + 1);

@@ -40,7 +40,7 @@ accounts and no server: your progress stays in your browser.
 - **Stories**: 17 illustrated conversations with the cast, with comprehension
   questions along the way.
 - **Motivation**: XP and a daily goal, streaks with freezes and milestones,
-  hearts that refill over time, gems earned by learning (never bought), achievements with five levels
+  hearts that never lock you out (run out and a short review of earlier words refills them), gems earned by learning (never bought), achievements with five levels
   each. It is a solo, offline app: no leagues, friends or accounts.
 - **Spaced review**: words come back on a Leitner schedule. The practice hub
   offers review, mistakes and per-skill practice, and practice earns hearts

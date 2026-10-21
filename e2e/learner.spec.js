@@ -34,15 +34,57 @@ test('a full lesson, answered perfectly, earns XP, gems and a streak', async ({ 
   expect(s.gems).toBeGreaterThanOrEqual(60);
 });
 
-test('running out of hearts pauses the lesson', async ({ page }) => {
+/** Answers whatever exercise is shown until `done` matches (practice and heart reviews). */
+async function answerUntil(page, done) {
+  for (let i = 0; i < 60 && !(await done.count()); i += 1) {
+    const textarea = page.locator('[data-stage] textarea:visible');
+    if (await textarea.count()) await textarea.fill('hello');
+    else if (await page.locator('[data-stage] .ex--match:visible').count()) {
+      // Both columns carry the word id, so pairs can be matched directly.
+      const ids = await page.locator('[data-stage] [data-side="lg"]:visible').evaluateAll((els) => els.map((e) => e.dataset.id));
+      for (const id of ids) {
+        await page.locator(`[data-stage] [data-side="lg"][data-id="${id}"]:visible`).click();
+        await page.locator(`[data-stage] [data-side="en"][data-id="${id}"]:visible`).click();
+      }
+      await page.waitForTimeout(700);
+      continue;
+    } else await page.locator('[data-stage] [data-value]:visible, [data-stage] [data-tile]:not([disabled]):visible').first().click();
+    await page.locator('[data-main]:visible').click();
+    await page.locator('[data-main]:visible').click();
+  }
+}
+
+test('running out of hearts steps back to a review, then the lesson goes on', async ({ page }) => {
+  test.setTimeout(90_000);
   const seed = 7;
   await openWith(page, savedState({ hearts: { count: 1, updatedAt: Date.now() }, gems: 0 }), `#/lesson/u1s1l1?seed=${seed}`);
   const exercises = exercisesFor('u1s1l1', seed);
   const first = exercises.findIndex((e) => e.type === 'choice');
   for (const ex of exercises.slice(0, first)) await answer(page, ex);
   await answer(page, exercises[first], { correct: false });
-  await expect(page.getByRole('dialog')).toContainText(/hearts/i);
   expect((await readState(page)).hearts.count).toBe(0);
+  const dialog = page.getByRole('dialog');
+  await expect(dialog).toContainText(/step back/i);
+  await expect(dialog).not.toContainText(/gems/); // can't afford a refill, and doesn't need one
+  await dialog.getByRole('button', { name: 'Review to refill hearts' }).click();
+  await expect(page.locator('[data-heart-review]')).toBeVisible();
+  await answerUntil(page, page.getByRole('heading', { name: 'Hearts refilled!' }));
+  await expect(page.getByRole('heading', { name: 'Hearts refilled!' })).toBeVisible();
+  expect((await readState(page)).hearts.count).toBe(5);
+  await page.getByRole('button', { name: 'Continue lesson' }).click();
+  await expect(page.locator('[data-heart-review]')).toHaveCount(0);
+  await expect(page.locator('.lesson__hearts')).toContainText('5');
+  await expect(page.locator('[data-stage] .lesson__exercise')).toBeVisible();
+});
+
+test('opening a lesson with no hearts offers a warm-up review, never a wait', async ({ page }) => {
+  const done = Object.fromEntries(['u1s1l1', 'u1s1l2'].map((id) => [id, { completions: 1, bestAccuracy: 1 }]));
+  await openWith(page, savedState({ lessons: done, hearts: { count: 0, updatedAt: Date.now() }, gems: 100 }), '#/lesson/u1s1l3');
+  await expect(page.getByRole('heading', { name: 'Warm up first' })).toBeVisible();
+  await expect(page.locator('#view')).not.toContainText(/arrives in/);
+  await page.getByRole('button', { name: /Use 40 gems/ }).click();
+  await expect(page.locator('.lesson__hearts')).toContainText('5');
+  expect((await readState(page)).gems).toBe(60);
 });
 
 test('finishing a lesson the day after extends the streak', async ({ page }) => {
@@ -61,22 +103,7 @@ test('a review session in the practice hub earns a heart back', async ({ page })
   await page.getByRole('link', { name: /Review/ }).click();
   await expect(page).toHaveURL(/practice\/session/);
   // Answer whatever is shown until the session ends; practice never costs hearts.
-  for (let i = 0; i < 60 && !(await page.locator('.complete').count()); i += 1) {
-    const textarea = page.locator('[data-stage] textarea:visible');
-    if (await textarea.count()) await textarea.fill('hello');
-    else if (await page.locator('[data-stage] .ex--match').count()) {
-      // Both columns carry the word id, so pairs can be matched directly.
-      const ids = await page.locator('[data-stage] [data-side="lg"]').evaluateAll((els) => els.map((e) => e.dataset.id));
-      for (const id of ids) {
-        await page.locator(`[data-stage] [data-side="lg"][data-id="${id}"]`).click();
-        await page.locator(`[data-stage] [data-side="en"][data-id="${id}"]`).click();
-      }
-      await page.waitForTimeout(700);
-      continue;
-    } else await page.locator('[data-stage] [data-value], [data-stage] [data-tile]:not([disabled])').first().click();
-    await page.locator('[data-main]').click();
-    await page.locator('[data-main]').click();
-  }
+  await answerUntil(page, page.locator('.complete'));
   await expect(page.getByRole('heading', { name: 'Practice complete!' })).toBeVisible();
   const s = await readState(page);
   expect(s.stats.practiceSessions).toBe(1);
