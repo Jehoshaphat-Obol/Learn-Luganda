@@ -49,7 +49,7 @@ function summaryScreen({ result, xp, gems = 0, title, subtitle }) {
         <div class="complete__stat complete__stat--time"><span>Time</span><strong>${icon('clock', { size: 20 })}${mins}:${secs}</strong></div>
       </div>
       <ul class="complete__parts">${xp.parts.map((p) => `<li><span>${escapeHtml(p.label)}</span><span>+${p.xp} XP</span></li>`).join('')}${gems ? `<li class="complete__gems"><span>${icon('gem', { size: 16 })} Gems</span><span>+${gems}</span></li>` : ''}</ul>
-      ${adSlot('complete')}`,
+      ${adSlot('complete', { accuracy: result.accuracy })}`,
     after(root) {
       // Never ask for consent here; the Continue button is right below.
       mountAds(root, { ask: false });

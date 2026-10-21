@@ -188,7 +188,7 @@ export function learnView({ root, navigate }) {
         <h1 class="visually-hidden">Your learning path</h1>
         ${riskBanner(state)}
         ${goalStrip(state)}
-        ${course.sections.map((s) => courseSection(state, s, current, s.id === openId) + (s.id === openId ? adSlot('feed') : '')).join('')}
+        ${course.sections.map((s) => courseSection(state, s, current, s.id === openId) + (s.id === openId ? adSlot('path') : '')).join('')}
         <p class="learn__more caption">More units are on the way. Weebale for learning!</p>
       </div>
       ${sidebar(state)}

@@ -2,40 +2,68 @@
  * Native-style ad slots. Each slot is a card in the app's own paper style,
  * plainly labelled "Sponsored", that sits between pieces of content the way
  * a sponsored post sits in a feed. Slots only render when AdSense is
- * configured and the device is online; a slot that gets no ad collapses so
+ * configured, the device is online and the ad policy (`policy.js`) allows
+ * one; a slot that gets no ad collapses so
  * the page never shows an empty box. Ads are never placed inside lessons,
  * practice or stories being read.
  */
 import '../styles/ads.css';
 import { ADS } from './config.js';
+import { POLICY } from './policy.js';
+import { adLog, recordAdShown } from './log.js';
 import { adConsent, setAdConsent } from './consent.js';
+import { store } from '../state/store.js';
+import { escapeHtml } from '../ui/components.js';
 
 export { adConsent };
-import { escapeHtml } from '../ui/components.js';
 
 const CLIENT_RE = /^ca-pub-\d{10,20}$/;
 let scriptPromise = null;
 
-/** True when a publisher ID is set and this placement has a slot. */
-export function adsConfigured(placement, config = ADS) {
+/** True when a publisher ID is set and the given ad type (or any) has a slot. */
+export function adsConfigured(type, config = ADS) {
   if (!CLIENT_RE.test(config.client)) return false;
-  return placement ? Boolean(config.placements[placement]?.slot) : Object.values(config.placements).some((p) => p.slot);
+  return type ? Boolean(config.units[type]?.slot) : Object.values(config.units).some((u) => u.slot);
 }
 
 const online = () => typeof navigator === 'undefined' || navigator.onLine !== false;
 
-/** The HTML for one ad card, or '' when ads are off or offline. */
-export function adSlot(placement, config = ADS) {
-  if (!adsConfigured(placement, config) || !online()) return '';
-  const p = config.placements[placement];
-  const layout = p.format === 'fluid' && p.layoutKey ? ` data-ad-layout-key="${escapeHtml(p.layoutKey)}"` : '';
-  const format = p.format === 'fluid' && !p.layoutKey ? 'auto' : p.format;
+/** Lessons and sessions finished so far, from saved progress. */
+const sessionsDone = () => Object.values(store.get().lessons ?? {}).reduce((n, l) => n + (l.completions || 0), 0);
+
+/**
+ * Applies the ad policy. `context.sessions` is the number of finished
+ * sessions; `context.accuracy` the accuracy of the one just finished (for
+ * the complete placement). Returns false whenever any rule says no.
+ */
+export function allowAd(placement, context = {}, { policy = POLICY, log = adLog(), now = Date.now() } = {}) {
+  const rule = policy.placements[placement];
+  if (!rule?.enabled) return false;
+  const sessions = context.sessions ?? sessionsDone();
+  if (sessions < policy.graceSessions) return false;
+  if (log.shown >= policy.maxPerDay) return false;
+  if (log.last && now - log.last < policy.cooldownMinutes * 60_000) return false;
+  if (placement === 'complete') {
+    if (sessions % policy.everyNthSession !== 0) return false;
+    if ((context.accuracy ?? 1) < policy.minAccuracy) return false;
+  }
+  return true;
+}
+
+/** The HTML for one ad card, or '' when the policy, config or network says no. */
+export function adSlot(placement, context = {}, { config = ADS, policy = POLICY, log, now } = {}) {
+  const type = policy.placements[placement]?.type;
+  if (!type || !adsConfigured(type, config) || !online()) return '';
+  if (!allowAd(placement, context, { policy, log, now })) return '';
+  const u = config.units[type];
+  const layout = u.format === 'fluid' && u.layoutKey ? ` data-ad-layout-key="${escapeHtml(u.layoutKey)}"` : '';
+  const format = u.format === 'fluid' && !u.layoutKey ? 'auto' : u.format;
   return `<aside class="ad-card ad-card--${placement}" data-ad aria-label="Sponsored">
     <header class="ad-card__head">
       <span class="ad-card__label">Sponsored</span>
       <a class="ad-card__about" href="#/privacy">About ads</a>
     </header>
-    <ins class="adsbygoogle ad-card__unit" style="display:block" data-ad-client="${escapeHtml(config.client)}" data-ad-slot="${escapeHtml(p.slot)}" data-ad-format="${format}"${layout}${format === 'auto' ? ' data-full-width-responsive="true"' : ''}></ins>
+    <ins class="adsbygoogle ad-card__unit" style="display:block" data-ad-client="${escapeHtml(config.client)}" data-ad-slot="${escapeHtml(u.slot)}" data-ad-format="${format}"${layout}${format === 'auto' ? ' data-full-width-responsive="true"' : ''}></ins>
   </aside>`;
 }
 
@@ -66,7 +94,10 @@ function watch(card) {
   const unit = card.querySelector('ins');
   const apply = () => {
     const status = unit.getAttribute('data-ad-status');
-    if (status === 'filled') card.classList.add('is-filled');
+    if (status === 'filled' && !card.classList.contains('is-filled')) {
+      card.classList.add('is-filled');
+      recordAdShown();
+    }
     else if (status === 'unfilled') card.remove();
   };
   new MutationObserver(apply).observe(unit, { attributes: true, attributeFilter: ['data-ad-status'] });

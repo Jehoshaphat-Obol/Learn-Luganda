@@ -42,9 +42,33 @@ from the site, what's already done, and what the owner has to do.
      Inter) and note its slot ID and layout key;
    - a **Display** unit, responsive, for the lesson complete screen.
 7. **Set the IDs** in `src/ads/config.js`, or as build variables
-   `VITE_ADSENSE_CLIENT`, `VITE_ADSENSE_SLOT_FEED`,
-   `VITE_ADSENSE_LAYOUT_KEY`, `VITE_ADSENSE_SLOT_COMPLETE`. Ads appear on the
+   `VITE_ADSENSE_CLIENT`, `VITE_ADSENSE_SLOT_IN_FEED`,
+   `VITE_ADSENSE_LAYOUT_KEY`, `VITE_ADSENSE_SLOT_DISPLAY`. Ads appear on the
    next deploy.
+
+## Tuning how much ads affect learning
+
+All the rules live in `src/ads/policy.js`. They are frozen when the app
+loads, so no setting, saved data or browser console can change them; the
+only way is to edit the file and deploy. A test (`tests/ads-policy.test.js`)
+fails CI if a level drifts outside safe bounds.
+
+Change the one line `const LEVEL = 'gentle';` to pick a level:
+
+| Rule | off | gentle (default) | balanced | generous |
+| --- | --- | --- | --- | --- |
+| Path ad (in-feed, after the section you're on) | no | yes | yes | yes |
+| Stories list ad (in-feed) | no | no | yes | yes |
+| Lesson complete ad (display, above Continue) | no | yes | yes | yes |
+| No ads until this many sessions finished | – | 5 | 3 | 1 |
+| Minutes between any two ads | – | 15 | 8 | 4 |
+| Most ads per day | 0 | 3 | 6 | 10 |
+| Lesson complete ad after every Nth session | – | 4th | 3rd | 2nd |
+| Skip the complete ad below this accuracy | – | 80% | 60% | 50% |
+
+Ads never appear inside lessons, practice, checkpoints, section tests,
+stories being read, onboarding or the landing page: those screens have no
+placement at all. To fine-tune, edit a preset's numbers in `policy.js`.
 
 ## Policy notes
 

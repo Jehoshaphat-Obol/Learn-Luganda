@@ -71,7 +71,7 @@ export function storiesView({ root }) {
           </section>`;
         })
         // A sponsored card after the first unit's stories.
-        .map((html, i, all) => (i === all.findIndex(Boolean) ? html + adSlot('feed') : html))
+        .map((html, i, all) => (i === all.findIndex(Boolean) ? html + adSlot('stories') : html))
         .join('')}
     </div>`;
   return mountAds(root);
