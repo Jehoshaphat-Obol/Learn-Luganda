@@ -47,3 +47,24 @@ describe('validateUnits', () => {
     expect(errors).toMatch(/"c" is never introduced/);
   });
 });
+
+describe('every lesson', () => {
+  it('builds a full lesson and a checkpoint for each unit', async () => {
+    const { buildLesson } = await import('../src/lesson/generate.js');
+    const { buildCheckpoint } = await import('../src/lesson/practice.js');
+    for (const id of course.order) {
+      for (const seed of [1, 2, 3]) {
+        const ex = buildLesson(id, { seed });
+        expect(ex.length, id).toBeGreaterThanOrEqual(8);
+        for (const e of ex) {
+          if (e.type === 'choice') expect(e.options.length, id).toBeGreaterThanOrEqual(2);
+          if (e.type === 'translate') expect(e.bank.length, id).toBeGreaterThan(0);
+        }
+      }
+    }
+    for (const u of course.units) {
+      const known = u.skills.flatMap((s) => s.lessons.flatMap((l) => l.newWords));
+      expect(buildCheckpoint(u.id, { knownIds: known }).length, u.id).toBeGreaterThan(5);
+    }
+  });
+});

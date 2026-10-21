@@ -59,6 +59,11 @@ speaker. Please confirm before launch:
       *Oyagala ki?*
 - [ ] Dialogue lines: *Wasuze otya, mwana wange?*, *Ono ani?*
 - [ ] Spelling of double consonants and long vowels throughout.
+- [ ] Stories (#21): *Nange ndi muyizi*, *Ssente nkumi ttaano*,
+      *Njagala n’amazzi*, *Gano amazzi*; plural greetings in the Unit 1
+      guidebook (*Mwasuze mutya*, *Mwebale*, *Mweraba*).
+- [ ] Units 3–8 (#25): see the checklist in
+      `2026-10-21-units-3-8.md`.
 
 ## Next
 
