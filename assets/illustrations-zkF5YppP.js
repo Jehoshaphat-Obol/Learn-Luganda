@@ -203,7 +203,7 @@
     <path d="M60 110 H40 M60 115 L42 120 M100 110 H120 M100 115 L118 120" class="s-ink" stroke-width="1"/>
     ${R(e,92,[68,92],3.4)}`,crane:e=>`
     <circle cx="84" cy="214" r="56" class="f-grey"/>
-    <g transform="translate(-8 46)">${ne(e===`happy`||e===`wink`?`happy`:e===`sad`?`sad`:`idle`)}</g>`};function B(e,{expression:n=`neutral`,shape:a=`card`,label:o,animate:s=!0}={}){let c=k[e]??A[e];if(!c)throw Error(`Unknown character: ${e}`);let l=t(e),u=i(l),d={face:`${l}-face`,frame:`${l}-frame`,hatch:u.hatch},f={dots:`<rect x="110" y="14" width="36" height="30" fill="${u.dots}"/>`,grid:`<rect x="116" y="150" width="30" height="26" fill="${u.grid}"/>`,hatch:`<rect x="14" y="14" width="30" height="24" fill="${u.hatch}"/>`},p=`<defs>${u.defs}
+    <g transform="translate(-8 46)">${ne(e===`happy`||e===`wink`?`happy`:e===`sad`?`sad`:`idle`)}</g>`};function B(e,{expression:n=`neutral`,shape:a=`card`,label:o,animate:s=!0}={}){let c=typeof e==`object`?e:k[e]??A[e];if(!c)throw Error(`Unknown character: ${e}`);let l=t(c.id??e),u=i(l),d={face:`${l}-face`,frame:`${l}-frame`,hatch:u.hatch},f={dots:`<rect x="110" y="14" width="36" height="30" fill="${u.dots}"/>`,grid:`<rect x="116" y="150" width="30" height="26" fill="${u.grid}"/>`,hatch:`<rect x="14" y="14" width="30" height="24" fill="${u.hatch}"/>`},p=`<defs>${u.defs}
     <clipPath id="${d.face}"><ellipse cx="80" cy="88" rx="25" ry="30"/></clipPath>
     ${a===`circle`?`<clipPath id="${d.frame}"><circle cx="80" cy="92" r="62"/></clipPath>`:`<clipPath id="${d.frame}"><rect x="4" y="4" width="152" height="192" rx="16"/></clipPath>`}</defs>`,m=`<g clip-path="url(#${d.frame})">
       <rect width="160" height="200" class="${c.card}"/>
