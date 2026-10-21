@@ -6,21 +6,23 @@
 :root {
   --ill-verm: var(--color-primary, #e34234);
   --ill-verm-deep: var(--color-primary-shadow, #a02916);
-  --ill-ink: var(--color-bauhaus-black, #1c1917);
-  --ill-ink-soft: #3b3531;
-  --ill-grey: #9c958b;
-  --ill-grey-light: #cfc8bd;
-  --ill-paper: #ddd7ce;
-  --ill-paper-light: #f2eee7;
-  --ill-white: #fbf9f5;
-  --ill-cream: #efe4c9;
-  --ill-lavender: #d2cfe8;
-  --ill-blush: #f2d8cc;
-  --ill-sage: #d4dccb;
+  --ill-ink: var(--color-ink-900, #1c1a18);
+  --ill-ink-soft: var(--color-ink-700, #4a4640);
+  --ill-grey: var(--color-ink-500, #8a857c);
+  --ill-grey-light: var(--color-paper-400, #b9b3a8);
+  --ill-paper: var(--color-paper-200, #e0dcd4);
+  --ill-paper-light: var(--color-paper-50, #f4f2ee);
+  --ill-white: #fbfaf8;
+  /* Card pastels match the theme's light pastels but do not switch in dark
+     mode: the cards read as printed paper on either background. */
+  --ill-cream: #f1e4b0;
+  --ill-lavender: #dad5ec;
+  --ill-blush: #efd0c9;
+  --ill-sage: #d4e2cd;
   /* Lines drawn straight onto the page (rules, ticks, captions) follow the
      text colour so they stay visible in dark mode. */
-  --ill-rule: var(--color-text, #1c1917);
-  --ill-font-caption: var(--font-caption, 'Instrument Serif', Georgia, 'Times New Roman', serif);
+  --ill-rule: var(--color-text, #1c1a18);
+  --ill-font-caption: var(--font-serif, 'Instrument Serif', Georgia, serif);
   --ill-font-mono: var(--font-mono, ui-monospace, 'SFMono-Regular', Menlo, monospace);
 }
 

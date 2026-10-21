@@ -85,7 +85,7 @@ export function streakScene({ days = 7, label } = {}) {
         <path d="M200 58 C200 58 266 132 266 190 A66 66 0 0 1 200 256 Z" class="f-verm-deep" opacity="0.35"/>
         <path d="M200 136 C200 136 234 176 234 206 A34 34 0 0 1 166 206 C166 176 200 136 200 136 Z" class="f-ink"/>
         <circle cx="200" cy="210" r="22" class="f-paper-light"/>
-        <text x="200" y="219" text-anchor="middle" font-size="26" font-weight="900" class="f-ink" style="font-family: var(--font-display, system-ui, sans-serif)">${escapeXml(days)}</text>
+        <text x="200" y="219" text-anchor="middle" font-size="26" font-weight="700" class="f-ink" style="font-family: var(--font-display, system-ui, sans-serif)">${escapeXml(days)}</text>
       </g>
       <path d="M92 270 H308" class="s-ink" stroke-width="1"/>
       ${dots}

@@ -33,8 +33,9 @@ tick rulers and small italic serif captions on warm grey paper.
 
 - Inline SVG strings from plain functions, not image files: they take theme
   colours from CSS, can be animated, and need no framework.
-- Colours go through classes (`f-verm`, `f-ink`…) rather than hex, so the
-  promada theme work (#3) can re-skin everything by redefining `--ill-*`.
+- Colours go through classes (`f-verm`, `f-ink`…) rather than hex. The
+  `--ill-*` properties point at the promada paper / ink tokens from #3, so a
+  theme change re-skins everything.
   Skin and hair tones are fixed per character since they are not theme
   colours.
 - Lines drawn straight onto the page use `--ill-rule` (the text colour) so
@@ -51,5 +52,3 @@ tick rulers and small italic serif captions on warm grey paper.
 - Give the mascot a name (open question for the owner or a native speaker).
 - Use `heroScene()` on the landing page and the cast in onboarding's
   avatar step.
-- Once the theme from #3 lands, point `--ill-paper`, `--ill-ink` and the
-  caption font at its tokens.
