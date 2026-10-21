@@ -12,8 +12,14 @@ import { ADS } from './config.js';
 import { POLICY } from './policy.js';
 import { adLog, recordAdShown } from './log.js';
 import { adConsent, setAdConsent } from './consent.js';
+import { adBreakStatus, adBreakUntil, takeAdBreak } from './breaks.js';
+import { AD_STRINGS, duration } from './strings.js';
 import { store } from '../state/store.js';
-import { escapeHtml } from '../ui/components.js';
+import { streakStatus } from '../state/streak.js';
+import { MASCOT_NAME } from '../app/brand.js';
+import { mascot } from '../illustrations/index.js';
+import { fill as fillText } from '../reminders/strings.js';
+import { escapeHtml, openModal, toast } from '../ui/components.js';
 
 export { adConsent };
 
@@ -34,11 +40,13 @@ const sessionsDone = () => Object.values(store.get().lessons ?? {}).reduce((n, l
 /**
  * Applies the ad policy. `context.sessions` is the number of finished
  * sessions; `context.accuracy` the accuracy of the one just finished (for
- * the complete placement). Returns false whenever any rule says no.
+ * the complete placement). Returns false whenever any rule says no,
+ * including while the learner is on an ad break.
  */
-export function allowAd(placement, context = {}, { policy = POLICY, log = adLog(), now = Date.now() } = {}) {
+export function allowAd(placement, context = {}, { policy = POLICY, log = adLog(), now = Date.now(), breakUntil = adBreakUntil(now) } = {}) {
   const rule = policy.placements[placement];
   if (!rule?.enabled) return false;
+  if (breakUntil > now) return false;
   const sessions = context.sessions ?? sessionsDone();
   if (sessions < policy.graceSessions) return false;
   if (log.shown >= policy.maxPerDay) return false;
@@ -62,6 +70,7 @@ export function adSlot(placement, context = {}, { config = ADS, policy = POLICY,
     <header class="ad-card__head">
       <span class="ad-card__label">Sponsored</span>
       <a class="ad-card__about" href="#/privacy">About ads</a>
+      ${policy.adBreak.perWeek ? `<button class="ad-card__break" type="button" data-ad-break aria-label="${AD_STRINGS.cardButtonLabel}">${AD_STRINGS.cardButton}</button>` : ''}
     </header>
     <ins class="adsbygoogle ad-card__unit" style="display:block" data-ad-client="${escapeHtml(config.client)}" data-ad-slot="${escapeHtml(u.slot)}" data-ad-format="${format}"${layout}${format === 'auto' ? ' data-full-width-responsive="true"' : ''}></ins>
   </aside>`;
@@ -173,7 +182,57 @@ export function mountAds(root, { ask = true, config = ADS } = {}) {
   return dismissConsent;
 }
 
-// Going offline mid-visit: take any ad cards away rather than leave holes.
+const timeLabel = (t) => new Date(t).toLocaleString('en', { weekday: 'long', hour: 'numeric', minute: '2-digit' });
+const currentStreak = () => streakStatus(store.get()).current;
+
+/** The learner's ad-break standing, for Settings. */
+export const adBreakNow = (policy = POLICY) => adBreakStatus({ streak: currentStreak(), policy });
+export { timeLabel as adBreakTime };
+
+/**
+ * The crane offers an ad break (or explains when the next one comes).
+ * Resolves with when the break ends, or 0 if none was taken.
+ */
+export async function offerAdBreak({ policy = POLICY } = {}) {
+  const streak = currentStreak();
+  const status = adBreakStatus({ streak, policy });
+  if (status.active) return status.until;
+  if (!status.available) {
+    await openModal({
+      title: AD_STRINGS.none.title,
+      art: mascot({ pose: 'thinking' }),
+      body: `<p>${fillText(AD_STRINGS.none.body, { perWeek: policy.adBreak.perWeek, when: timeLabel(status.nextAt) })}</p>`,
+      actions: [{ label: AD_STRINGS.none.ok, value: 'ok' }],
+    });
+    return 0;
+  }
+  const body = [
+    fillText(AD_STRINGS.offer.body, { mascot: MASCOT_NAME, duration: duration(status.hours) }),
+    status.streakBonus ? fillText(AD_STRINGS.offer.streak, { streak }) : '',
+    fillText(AD_STRINGS.offer.left, { left: status.left }),
+  ].filter(Boolean);
+  const choice = await openModal({
+    title: AD_STRINGS.offer.title,
+    art: mascot({ pose: 'happy' }),
+    body: body.map((p) => `<p>${escapeHtml(p)}</p>`).join(''),
+    actions: [
+      { label: AD_STRINGS.offer.no, value: 'no', variant: 'secondary' },
+      { label: AD_STRINGS.offer.yes, value: 'yes' },
+    ],
+  });
+  if (choice !== 'yes') return 0;
+  const until = takeAdBreak({ streak, policy });
+  if (until) {
+    removeAll(document);
+    toast(fillText(AD_STRINGS.done, { time: timeLabel(until) }));
+  }
+  return until;
+}
+
 if (typeof window !== 'undefined') {
+  // Going offline mid-visit: take any ad cards away rather than leave holes.
   window.addEventListener('offline', () => removeAll(document));
+  document.addEventListener('click', (e) => {
+    if (e.target.closest?.('[data-ad-break]')) offerAdBreak();
+  });
 }
