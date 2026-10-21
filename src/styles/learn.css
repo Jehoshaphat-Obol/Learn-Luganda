@@ -50,7 +50,7 @@
 
 /* Unit */
 .unit {
-  --unit-bg: var(--color-primary);
+  --unit-bg: var(--color-action);
   --unit-fg: #fff;
   --unit-node: var(--color-primary);
   --unit-node-shadow: var(--color-primary-shadow);
@@ -100,7 +100,6 @@
   font-weight: var(--weight-bold);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  opacity: 0.85;
 }
 
 .unit__banner h2 {
@@ -110,7 +109,6 @@
 
 .unit__desc {
   margin: var(--space-1) 0 0;
-  opacity: 0.9;
 }
 
 .unit__guide {

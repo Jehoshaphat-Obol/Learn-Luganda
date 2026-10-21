@@ -10,6 +10,7 @@ import { heartStatus } from './state/hearts.js';
 import { settleStreak, streakStatus } from './state/streak.js';
 import { settleLeague } from './state/league.js';
 import { routes } from './app/routes.js';
+import { applyMotion } from './ui/motion.js';
 
 setStatsProvider(() => {
   const s = store.get();
@@ -21,6 +22,8 @@ setStatsProvider(() => {
 if (store.get().streak.lastDay) store.update((s) => settleStreak(s));
 if (store.get().profile) store.update((s) => settleLeague(s));
 store.subscribe(refreshTopBar);
+applyMotion();
+store.subscribe(applyMotion);
 
 const shell = createShell(document.querySelector('#app'));
 const router = createRouter({

@@ -1,11 +1,12 @@
 /*
- * Settings. For now: the data section (export, import, reset). Learning
- * preferences join it in the profile and settings issue.
+ * Settings: sound and animation preferences, then the data section
+ * (export, import, reset). More learning preferences join in #23.
  */
 import { store } from '../state/store.js';
 import { button, openModal, toast } from '../ui/components.js';
 import { mascot } from '../illustrations/index.js';
 import { refreshTopBar } from '../app/shell.js';
+import { play } from '../ui/sound.js';
 
 function download(filename, text) {
   const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
@@ -16,12 +17,29 @@ function download(filename, text) {
   URL.revokeObjectURL(url);
 }
 
+function toggle(key, label, hint, checked, disabled = false) {
+  return `<label class="switch-row">
+    <span class="switch-row__text"><strong>${label}</strong><small>${hint}</small></span>
+    <input class="switch" type="checkbox" role="switch" data-setting="${key}"${checked ? ' checked' : ''}${disabled ? ' disabled' : ''} />
+  </label>`;
+}
+
 export function settingsView({ root, query, navigate }) {
+  const { settings } = store.get();
+  const systemReduced = Boolean(window.matchMedia?.('(prefers-reduced-motion: reduce)').matches);
   root.innerHTML = `
     <div class="page">
       <header class="page__header">
         <h1><strong>Settings</strong></h1>
       </header>
+
+      <section class="settings-group" id="preferences">
+        <h2>Preferences</h2>
+        <div>
+          ${toggle('sound', 'Sound effects', 'Chimes for right and wrong answers and rewards.', settings.sound !== false)}
+          ${toggle('motion', 'Animations', systemReduced ? 'Your device asks for reduced motion, so animations stay minimal.' : 'Confetti, bouncing and sliding.', settings.motion !== false && !systemReduced, systemReduced)}
+        </div>
+      </section>
 
       <section class="settings-group" id="data">
         <h2>Your progress</h2>
@@ -41,6 +59,15 @@ export function settingsView({ root, query, navigate }) {
     </div>`;
 
   const fileInput = root.querySelector('[data-import-file]');
+
+  root.addEventListener('change', (e) => {
+    const key = e.target.dataset?.setting;
+    if (!key) return;
+    store.update((s) => {
+      s.settings[key] = e.target.checked;
+    });
+    if (key === 'sound' && e.target.checked) play('correct');
+  });
 
   fileInput.addEventListener('change', async () => {
     const file = fileInput.files?.[0];

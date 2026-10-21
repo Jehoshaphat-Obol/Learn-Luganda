@@ -1,9 +1,10 @@
 /* Bauhaus confetti: circles, squares and triangles tumbling down. */
+import { reducedMotion } from './motion.js';
 const COLORS = ['var(--color-primary)', 'var(--color-ink-900)', 'var(--color-gold)', 'var(--color-paper-400)', 'var(--color-vermillion-300)'];
 const SHAPES = ['circle', 'square', 'triangle', 'half'];
 
 export function confetti(host = document.body, { count = 48, duration = 2600 } = {}) {
-  if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+  if (reducedMotion()) return;
   const layer = document.createElement('div');
   layer.className = 'confetti';
   layer.setAttribute('aria-hidden', 'true');

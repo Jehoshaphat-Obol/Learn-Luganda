@@ -484,3 +484,17 @@
 .unlock p {
   margin: 2px 0 var(--space-2);
 }
+
+.ex-translate__mode {
+  justify-self: center;
+  margin: var(--space-4) auto 0;
+  display: flex;
+  min-height: 0;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.ex-translate__answer[hidden],
+.ex-translate__bank[hidden] {
+  display: none;
+}

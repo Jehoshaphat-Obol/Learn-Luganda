@@ -8,6 +8,8 @@ import { nextMilestone } from '../state/streak.js';
 import { button, escapeHtml, ring } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { confetti } from '../ui/confetti.js';
+import { play } from '../ui/sound.js';
+import { reducedMotion } from '../ui/motion.js';
 import { badge } from '../ui/badge.js';
 import { ACHIEVEMENTS } from '../state/achievements.js';
 
@@ -18,7 +20,7 @@ export function addRewardStep(step) {
 }
 
 function countUp(el, to, ms = 700) {
-  if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) {
+  if (reducedMotion()) {
     el.textContent = to;
     return;
   }
@@ -48,6 +50,7 @@ function summaryScreen({ result, xp, gems = 0, title, subtitle }) {
       <ul class="complete__parts">${xp.parts.map((p) => `<li><span>${escapeHtml(p.label)}</span><span>+${p.xp} XP</span></li>`).join('')}${gems ? `<li class="complete__gems"><span>${icon('gem', { size: 16 })} Gems</span><span>+${gems}</span></li>` : ''}</ul>`,
     after(root) {
       root.querySelectorAll('[data-count]').forEach((el) => countUp(el, Number(el.dataset.count)));
+      play('complete');
       confetti();
     },
   };
@@ -60,7 +63,10 @@ function goalScreen({ goalAfter }) {
       <h1>Daily goal met!</h1>
       <div class="complete__ring">${ring(1, { size: 140, stroke: 12, content: `<strong class="complete__ring-num">${goalAfter.today}</strong><span>XP today</span>`, label: 'Daily goal' })}</div>
       <p class="complete__sub muted">You reached your ${goalAfter.goal} XP goal. Come back tomorrow to keep learning.</p>`,
-    after: () => confetti(),
+    after: () => {
+      play('unlock');
+      confetti();
+    },
   };
 }
 
@@ -76,7 +82,10 @@ function streakScreen({ streak }) {
       <div class="complete__art">${streakScene({ days: streak.current })}</div>
       <h1>${streak.current} day streak!</h1>
       <p class="complete__sub muted">${message}</p>`,
-    after: () => streak.milestone && confetti(),
+    after: () => {
+      play('streak');
+      if (streak.milestone) confetti();
+    },
   };
 }
 
@@ -92,7 +101,10 @@ function achievementScreen(unlocked) {
     html: `
       <h1>Achievement${unlocked.length > 1 ? 's' : ''} unlocked!</h1>
       <ul class="unlocks">${items.join('')}</ul>`,
-    after: () => confetti(),
+    after: () => {
+      play('unlock');
+      confetti();
+    },
   };
 }
 

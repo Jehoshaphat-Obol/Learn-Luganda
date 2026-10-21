@@ -16,6 +16,8 @@ import { CAST, portrait } from '../illustrations/index.js';
 import { avatar } from '../ui/avatar.js';
 import { button, escapeHtml, progressBar } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
+import { play } from '../ui/sound.js';
+import { reducedMotion } from '../ui/motion.js';
 
 const CAST_COLORS = ['vermillion', 'butter', 'sky', 'sage'];
 
@@ -116,7 +118,7 @@ export function storyView({ root, params, navigate }) {
         <button class="icon-btn" type="button" data-quit aria-label="Close story">${icon('close')}</button>
         <div class="lesson__progress" data-progress></div>
       </header>
-      <main class="lesson__stage">
+      <div class="lesson__stage">
         <div class="story__script" data-script aria-live="polite">
           <header class="story__title">
             <div class="story__cast" aria-hidden="true">${castRow(story.cast, 88)}</div>
@@ -124,7 +126,7 @@ export function storyView({ root, params, navigate }) {
             <p class="muted">${escapeHtml(story.summary)}</p>
           </header>
         </div>
-      </main>
+      </div>
       <footer class="lesson__footer">
         <div class="lesson__actions">${button({ label: 'Start', size: 'lg', block: true, attrs: 'data-next' })}</div>
       </footer>
@@ -172,7 +174,7 @@ export function storyView({ root, params, navigate }) {
     }
     script.append(el);
     drawProgress();
-    el.scrollIntoView({ block: 'end', behavior: 'smooth' });
+    el.scrollIntoView({ block: 'end', behavior: reducedMotion() ? 'auto' : 'smooth' });
     if (s.question) el.querySelector('[data-opt]').focus();
     else next.focus();
   }
@@ -183,6 +185,7 @@ export function storyView({ root, params, navigate }) {
     const i = Number(btn.dataset.opt);
     if (i === s.answer) {
       btn.classList.add('is-correct');
+      play('correct');
       btn.closest('.story-q').querySelectorAll('[data-opt]').forEach((b) => (b.disabled = true));
       if (!missedThis) firstTry += 1;
       waiting = false;
@@ -190,6 +193,7 @@ export function storyView({ root, params, navigate }) {
       next.focus();
     } else {
       btn.classList.add('is-wrong');
+      play('wrong');
       btn.disabled = true;
       missedThis = true;
       wrong += 1;

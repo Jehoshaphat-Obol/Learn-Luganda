@@ -18,14 +18,14 @@ function calendar(year, month, state, frozen) {
   const lead = (first.getDay() + 6) % 7;
   const today = dayKey();
   const cells = [];
-  for (let i = 0; i < lead; i += 1) cells.push('<span class="cal__cell cal__cell--empty"></span>');
+  for (let i = 0; i < lead; i += 1) cells.push('<span class="cal__cell cal__cell--empty" aria-hidden="true"></span>');
   for (let d = 1; d <= days; d += 1) {
     const key = dayKey(new Date(year, month, d));
     const active = (state.xp.byDay[key] ?? 0) > 0;
     const isFrozen = frozen.includes(key);
     const cls = ['cal__cell', active && 'is-active', isFrozen && 'is-frozen', key === today && 'is-today'].filter(Boolean).join(' ');
     const label = `${first.toLocaleString('en', { month: 'long' })} ${d}${active ? ', practised' : isFrozen ? ', streak freeze used' : ''}`;
-    cells.push(`<span class="${cls}" aria-label="${label}">${isFrozen ? icon('snowflake', { size: 14 }) : d}</span>`);
+    cells.push(`<span class="${cls}" role="listitem" aria-label="${label}">${isFrozen ? icon('snowflake', { size: 14 }) : d}</span>`);
   }
   return cells.join('');
 }
@@ -69,7 +69,7 @@ export function streakView({ root }) {
             <h2>${escapeHtml(monthName)}</h2>
             <button class="icon-btn" type="button" data-month="1" aria-label="Next month">${icon('arrow', { size: 20 })}</button>
           </header>
-          <div class="cal__grid" role="grid">
+          <div class="cal__grid" role="list" aria-label="${escapeHtml(monthName)}">
             ${WEEKDAYS.map((d) => `<span class="cal__dow" aria-hidden="true">${d}</span>`).join('')}
             ${calendar(year, month, state, st.frozenDays)}
           </div>

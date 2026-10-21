@@ -139,7 +139,7 @@ export function onboardingView({ root, navigate }) {
         <section class="onb__main onb__main--${step}">
           <div class="talk onb__talk">
             <div class="talk__art">${mascot({ pose: s.pose })}</div>
-            ${speech(s.say)}
+            ${speech(`<h1 class="onb__say">${s.say}</h1>`)}
           </div>
           <div class="onb__body">${s.body}</div>
         </section>

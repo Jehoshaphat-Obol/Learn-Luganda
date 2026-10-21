@@ -181,3 +181,9 @@
   background: var(--color-bg);
   border-top: 2px solid var(--color-border);
 }
+
+.onb__say {
+  margin: 0;
+  font: inherit;
+  letter-spacing: inherit;
+}
