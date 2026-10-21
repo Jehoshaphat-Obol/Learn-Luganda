@@ -4,6 +4,7 @@ import { courseStats } from '../src/content/course.js';
 import { PATHS } from '../src/ui/icons.js';
 import { CAST } from '../src/illustrations/characters.js';
 import { courseIds, loadPack, readPack } from './load-pack.js';
+import { knownIds, validateMigrations } from '../src/content/migrations.js';
 
 const errors = [];
 const summaries = [];
@@ -26,6 +27,7 @@ for (const id of courseIds()) {
     ...at(Object.entries(meta.cast ?? {}).filter(([, c]) => typeof c.look === 'string' && !CAST[c.look]).map(([who, c]) => `cast ${who}: unknown look "${c.look}"`)),
     ...at(validateGuidebooks(course.guidebooks, raw)),
     ...at(validateSections(meta.sections, raw)),
+    ...at(validateMigrations(meta.migrations, meta.version, knownIds(course))),
     ...at(raw.flatMap((u) => u.skills.filter((sk) => sk.icon && !PATHS[sk.icon]).map((sk) => `skill ${sk.id}: unknown icon "${sk.icon}"`))),
   );
   const { sections, units: n, lessons, words, stories } = courseStats(course);
