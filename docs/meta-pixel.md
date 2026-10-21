@@ -17,10 +17,10 @@ It ships switched off. Everything lives in one file:
    id: env.VITE_META_PIXEL_ID ?? '123456789012345',
    ```
 
-   Or keep the file untouched and set a repository variable instead: add
+   Or keep the file untouched and add a repository variable named
    `VITE_META_PIXEL_ID` under *Settings › Secrets and variables › Actions ›
-   Variables* and pass it to the build step in `.github/workflows/deploy.yml`
-   (`env: VITE_META_PIXEL_ID: ${{ vars.VITE_META_PIXEL_ID }}`).
+   Variables*; the deploy workflow already passes it to the build. (A pixel
+   ID is public anyway: it's visible in every page that loads the pixel.)
 3. **Pick events.** In the same file, set any of these to `false` to stop
    sending them:
 
