@@ -11,32 +11,44 @@ import { RENDERERS } from '../lesson/exercises/index.js';
 import { store } from '../state/store.js';
 import { isLessonDone, isLessonUnlocked } from '../state/progress.js';
 import { finishLesson } from '../state/lessons.js';
-import { REFILL_COST, formatWait, heartStatus, loseHeart, refillHearts } from '../state/hearts.js';
+import { heartStatus, loseHeart } from '../state/hearts.js';
+import { heartGate, stepBack } from './heart-review.js';
 import { showRewards } from './rewards.js';
 import { mascot } from '../illustrations/index.js';
 import { button, escapeHtml, openModal, progressBar } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { play } from '../ui/sound.js';
 
+const QUIT = {
+  label: 'Quit lesson',
+  title: 'Wait, don’t go!',
+  body: 'You’ll lose your progress in this lesson if you quit now.',
+  stay: 'Keep learning',
+  leave: 'End session',
+};
+
 const PRAISE = ['Nice!', 'Great job!', 'Correct!', 'Kale!', 'Well done!', 'Excellent!'];
 
 /**
  * Generic runner shared by lessons, practice and checkpoints.
  * @param {{ root: HTMLElement, exercises: object[], onQuit: Function,
- *   onFinish: (result: object) => void, hearts?: boolean, navigate?: Function }} options
- *   With `hearts`, each wrong answer costs a heart and running out pauses the lesson.
+ *   onFinish: (result: object) => void, hearts?: boolean, title?: string,
+ *   quitPrompt?: { title: string, body: string, stay: string, leave: string } }} options
+ *   With `hearts`, each wrong answer costs a heart, and running out steps back
+ *   to a short heart review before the lesson goes on.
  */
-export function runExercises({ root, exercises, onQuit, onFinish, hearts = false, navigate }) {
+export function runExercises({ root, exercises, onQuit, onFinish, hearts = false, title = 'Lesson', quitPrompt = QUIT }) {
   const session = createSession(exercises);
   let current = null; // renderer handle
   let phase = 'answer'; // 'answer' | 'feedback'
   let locked = false;
+  let detour = null; // cleanup of a heart review running over the lesson
 
   root.innerHTML = `
     <div class="lesson">
-      <h1 class="visually-hidden">Lesson</h1>
+      <h1 class="visually-hidden">${escapeHtml(title)}</h1>
       <header class="lesson__top">
-        <button class="icon-btn" type="button" data-quit aria-label="Quit lesson">${icon('close')}</button>
+        <button class="icon-btn" type="button" data-quit aria-label="${escapeHtml(quitPrompt.label)}">${icon('close')}</button>
         <div class="lesson__progress" data-progress></div>
         <div class="lesson__extra" data-extra></div>
       </header>
@@ -127,7 +139,16 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
 
   async function advance() {
     if (hearts && heartStatus(store.get()).count === 0) {
-      const ok = await outOfHearts({ navigate, onQuit });
+      const ok = await stepBack({
+        root,
+        lessonEl: root.querySelector('.lesson'),
+        missed: Object.keys(session.result().missed),
+        seen: session.seenWordIds(),
+        onQuit,
+        track: (cleanup) => {
+          detour = cleanup;
+        },
+      });
       if (!ok) return;
       drawHearts();
     }
@@ -147,12 +168,12 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
 
   async function quit() {
     const choice = await openModal({
-      title: 'Wait, don’t go!',
-      body: '<p>You’ll lose your progress in this lesson if you quit now.</p>',
+      title: quitPrompt.title,
+      body: `<p>${escapeHtml(quitPrompt.body)}</p>`,
       art: mascot({ pose: 'sad' }),
       actions: [
-        { label: 'Keep learning', value: 'stay' },
-        { label: 'End session', value: 'quit', variant: 'ghost' },
+        { label: quitPrompt.stay, value: 'stay' },
+        { label: quitPrompt.leave, value: 'quit', variant: 'ghost' },
       ],
     });
     if (choice === 'quit') onQuit();
@@ -160,7 +181,7 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
   root.querySelector('[data-quit]').addEventListener('click', quit);
 
   function onKey(e) {
-    if (document.querySelector('.modal-backdrop')) return;
+    if (detour || document.querySelector('.modal-backdrop')) return;
     if (e.target.matches('input, textarea') && e.key !== 'Enter') return;
     // Enter checks, except on buttons that do their own thing (tiles, quit).
     // Picking an option is idempotent, so Enter on a selected option checks.
@@ -177,49 +198,11 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
   show();
   return {
     extraEl: root.querySelector('[data-extra]'),
-    cleanup: () => document.removeEventListener('keydown', onKey),
+    cleanup: () => {
+      detour?.();
+      document.removeEventListener('keydown', onKey);
+    },
   };
-}
-
-/** Out-of-hearts choice. Resolves true when refilled and the lesson can go on. */
-async function outOfHearts({ navigate, onQuit }) {
-  const st = store.get();
-  const status = heartStatus(st);
-  const canRefill = st.gems >= REFILL_COST;
-  const choice = await openModal({
-    title: 'You’re out of hearts',
-    body: `<p>Your next heart arrives in ${formatWait(status.nextAt - Date.now())}.</p><p>Practise words you know to earn hearts back${canRefill ? `, or refill now for ${REFILL_COST} gems` : ''}.</p>`,
-    art: mascot({ pose: 'sad' }),
-    dismissible: false,
-    actions: [
-      ...(canRefill ? [{ label: `Refill for ${REFILL_COST} gems`, value: 'refill', variant: 'blue' }] : []),
-      { label: 'Practise to earn hearts', value: 'practice', variant: canRefill ? 'secondary' : 'primary' },
-      { label: 'End lesson', value: 'quit', variant: 'ghost' },
-    ],
-  });
-  if (choice === 'refill') {
-    store.update((s) => {
-      refillHearts(s);
-    });
-    return true;
-  }
-  if (choice === 'practice') navigate?.('/practice');
-  else onQuit();
-  return false;
-}
-
-function noHeartsScreen(root) {
-  const status = heartStatus(store.get());
-  const canRefill = store.get().gems >= REFILL_COST;
-  root.innerHTML = `
-    <section class="empty-state">
-      <div class="empty-state__art">${mascot({ pose: 'sad' })}</div>
-      <h1>Out of hearts</h1>
-      <p class="muted">Your next heart arrives in ${formatWait(status.nextAt - Date.now())}. Practise to earn hearts now${canRefill ? `, or refill for ${REFILL_COST} gems` : ''}.</p>
-      ${canRefill ? button({ label: `Refill for ${REFILL_COST} gems`, variant: 'blue', size: 'lg', attrs: 'data-refill' }) : ''}
-      ${button({ label: 'Practise to earn hearts', href: '#/practice', variant: canRefill ? 'secondary' : 'primary' })}
-      ${button({ label: 'Back to the path', href: '#/learn', variant: 'ghost' })}
-    </section>`;
 }
 
 export function lessonView({ root, params, query = {}, navigate }) {
@@ -230,20 +213,11 @@ export function lessonView({ root, params, query = {}, navigate }) {
     return undefined;
   }
   const firstTime = !isLessonDone(state, lesson.id);
-  if (heartStatus(state).count === 0) {
-    noHeartsScreen(root);
-    root.querySelector('[data-refill]')?.addEventListener('click', () => {
-      store.update((s) => {
-        refillHearts(s);
-      });
-      lessonView({ root, params, query, navigate });
-    });
-    return undefined;
-  }
+  // No hearts: warm up with a heart review first, then start.
+  if (heartStatus(state).count === 0) return heartGate({ root, navigate, onReady: () => lessonView({ root, params, query, navigate }) });
   const runner = runExercises({
     root,
     hearts: true,
-    navigate,
     // `?seed=` replays the same exercises (used by the end-to-end tests).
     exercises: buildLesson(lesson.id, { firstTime, seed: Number(query.seed) || undefined }),
     onQuit: () => navigate('/learn'),

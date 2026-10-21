@@ -14,7 +14,7 @@ import { siteLinks } from '../app/site.js';
 const STEPS = [
   { icon: 'bolt', title: 'Bite-sized lessons', text: 'Five-minute lessons with pictures, word tiles, listening and matching games.' },
   { icon: 'flame', title: 'Daily streaks', text: 'Practise a little every day. Your streak and daily goal keep you coming back.' },
-  { icon: 'heart', title: 'Hearts', text: 'Mistakes cost a heart, so every answer counts. Practice wins them back.' },
+  { icon: 'heart', title: 'Hearts', text: 'Mistakes cost a heart, so every answer counts. Run out and a quick look back at earlier words fills them up again. You never have to stop learning.' },
   { icon: 'target', title: 'Spaced review', text: 'Words return just before you’d forget them, so they stick for good.' },
 ];
 

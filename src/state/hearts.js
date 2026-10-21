@@ -1,8 +1,13 @@
 /*
- * Hearts: five lives per lesson. A wrong answer costs one; they come back
- * one every four hours, worked out from timestamps when read, so no timer
- * has to run in the background.
+ * Hearts: five lives per lesson. A wrong answer costs one. Running out never
+ * locks a learner out: a short heart review of earlier words fills them back
+ * up (gems are an optional shortcut). They also come back one every four
+ * hours, worked out from timestamps when read, so no timer has to run in the
+ * background.
  */
+import { clearMistakes, recordSession, weakestWordIds } from './review.js';
+import { dayKey } from './dates.js';
+
 export const MAX_HEARTS = 5;
 export const REFILL_MS = 4 * 60 * 60 * 1000;
 export const REFILL_COST = 40; // gems for a full refill
@@ -56,6 +61,31 @@ export function refillHearts(s, now = Date.now()) {
   s.gems -= REFILL_COST;
   s.hearts = { count: MAX_HEARTS, updatedAt: now };
   return true;
+}
+
+export const HEART_REVIEW_WORDS = 8;
+
+/**
+ * Words for a heart review, a small step back before going on: what was just
+ * missed, then saved mistakes, then the weakest words from earlier lessons,
+ * then anything else met this session.
+ * @param {object} s state
+ * @param {{ missed?: string[], seen?: string[], learned?: string[], exists?: (id: string) => boolean }} from
+ */
+export function heartReviewWordIds(s, { missed = [], seen = [], learned = [], exists = () => true } = {}) {
+  const known = new Set(learned);
+  const earlier = weakestWordIds(s).filter((id) => known.has(id));
+  const rest = learned.filter((id) => !s.words[id]);
+  const ids = [...new Set([...missed, ...s.mistakes, ...earlier, ...rest, ...seen])].filter(exists);
+  return ids.slice(0, HEART_REVIEW_WORDS);
+}
+
+/** A finished heart review: words move through spaced review and hearts fill up. */
+export function finishHeartReview(s, result, now = Date.now()) {
+  recordSession(s, result, dayKey(new Date(now)));
+  clearMistakes(s, result);
+  s.hearts = { count: MAX_HEARTS, updatedAt: now };
+  return s;
 }
 
 /** "3h 12m" until the next heart. */
