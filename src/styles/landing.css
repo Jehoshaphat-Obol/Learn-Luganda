@@ -500,3 +500,7 @@
 .landing__footer p {
   margin: 0;
 }
+
+.landing__footer .site-links {
+  justify-content: center;
+}

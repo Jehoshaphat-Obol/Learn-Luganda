@@ -17,6 +17,8 @@ import { shopView } from '../views/shop.js';
 import { profileView } from '../views/profile.js';
 import { guidebookView } from '../views/guidebook.js';
 import { storiesView, storyView } from '../views/stories.js';
+import { privacyView } from '../views/privacy.js';
+import { aboutView, contactView, termsView } from '../views/info.js';
 import { hasProfile } from '../state/store.js';
 
 export const routes = [
@@ -35,5 +37,9 @@ export const routes = [
   { path: '/shop', view: shopView, title: 'Shop' },
   { path: '/profile', view: profileView, title: 'Profile' },
   { path: '/settings', view: settingsView, public: true, title: 'Settings' },
+  { path: '/privacy', view: privacyView, public: true, title: 'Privacy' },
+  { path: '/about', view: aboutView, public: true, title: 'About' },
+  { path: '/contact', view: contactView, public: true, title: 'Contact' },
+  { path: '/terms', view: termsView, public: true, title: 'Terms' },
   { path: '/styleguide', view: styleguideView, public: true, title: 'Style guide' },
 ];

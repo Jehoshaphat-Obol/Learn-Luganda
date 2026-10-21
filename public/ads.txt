@@ -1,0 +1,8 @@
+# ads.txt for Learn Luganda
+#
+# Once an AdSense account is approved, replace the line below with the one
+# AdSense shows under Sites › ads.txt (uncommented), e.g.
+#   google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+#
+# Note: crawlers only read ads.txt at the root of a domain, so this file
+# takes effect once the app is served from its own domain.

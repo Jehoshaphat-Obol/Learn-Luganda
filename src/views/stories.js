@@ -18,6 +18,7 @@ import { button, escapeHtml, progressBar } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { play } from '../ui/sound.js';
 import { reducedMotion } from '../ui/motion.js';
+import { adSlot, mountAds } from '../ads/ads.js';
 
 const CAST_COLORS = ['vermillion', 'butter', 'sky', 'sage'];
 
@@ -69,8 +70,11 @@ export function storiesView({ root }) {
             <div class="story-list">${items.map(storyCard).join('')}</div>
           </section>`;
         })
+        // A sponsored card after the first unit's stories.
+        .map((html, i, all) => (i === all.findIndex(Boolean) ? html + adSlot('feed') : html))
         .join('')}
     </div>`;
+  return mountAds(root);
 }
 
 function lineHtml([speaker, lg, en], gloss, side) {

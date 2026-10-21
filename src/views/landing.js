@@ -9,6 +9,7 @@ import { icon } from '../ui/icons.js';
 import { reducedMotion } from '../ui/motion.js';
 import { courseStats } from '../content/course.js';
 import { brandMark } from '../app/brand-mark.js';
+import { siteLinks } from '../app/site.js';
 
 const STEPS = [
   { icon: 'bolt', title: 'Bite-sized lessons', text: 'Five-minute lessons with pictures, word tiles, listening and matching games.' },
@@ -176,6 +177,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
           <span class="landing__brand">${brandMark()}<span>luganda</span></span>
           <p>Made with care for Luganda learners. Your progress stays on your device.</p>
           <p class="caption">Weebale nnyo — thank you very much.</p>
+          ${siteLinks()}
         </footer>
       </div>`;
 

@@ -1,0 +1,95 @@
+/*
+ * Ad cards borrow the app's card language (paper surface, soft border, big
+ * radius) so they sit calmly in the feed, but always carry a visible
+ * "Sponsored" label so nobody mistakes them for lessons.
+ */
+.ad-card {
+  margin: 0 0 var(--space-12);
+  padding: var(--space-4);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+/* Hidden until AdSense fills it. Kept laid out (not display: none) so the
+   unit can measure its width. */
+.ad-card:not(.is-filled) {
+  height: 0;
+  margin: 0;
+  padding: 0 var(--space-4);
+  border-width: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+.ad-card__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.ad-card__label {
+  padding: 2px var(--space-3);
+  border-radius: var(--radius-pill);
+  background: var(--color-bg-alt);
+  font-family: var(--font-display);
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.ad-card__about {
+  margin-left: auto;
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
+.ad-card__unit {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  min-width: 250px;
+}
+
+/* On the lesson complete screen: keep clear of the Continue button. */
+.ad-card--complete {
+  width: 100%;
+  margin: var(--space-4) 0 var(--space-8);
+}
+
+/* Consent card: floats above the bottom navigation on phones. */
+.consent {
+  position: fixed;
+  z-index: 50;
+  left: var(--space-4);
+  right: var(--space-4);
+  bottom: calc(var(--space-4) + var(--bottomnav-height) + env(safe-area-inset-bottom));
+  max-width: 560px;
+  margin: 0 auto;
+  padding: var(--space-4);
+  border: 3px solid var(--color-ink-900);
+  border-radius: var(--radius-lg);
+  background: var(--color-paper-50);
+  box-shadow: 6px 6px 0 var(--color-ink-900);
+}
+
+.consent p {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.consent__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}
+
+@media (min-width: 900px) {
+  .consent {
+    bottom: var(--space-6);
+  }
+}
