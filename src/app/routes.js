@@ -15,6 +15,7 @@ import { practiceHubView, practiceSessionView } from '../views/practice.js';
 import { checkpointView } from '../views/checkpoint.js';
 import { shopView } from '../views/shop.js';
 import { profileView } from '../views/profile.js';
+import { leaguesView } from '../views/leagues.js';
 import { hasProfile } from '../state/store.js';
 
 export const routes = [
@@ -27,7 +28,7 @@ export const routes = [
   { path: '/streak', view: streakView, title: 'Streak' },
   { path: '/practice', view: practiceHubView, title: 'Practice' },
   { path: '/practice/session', view: practiceSessionView, layout: 'bare', title: 'Practice' },
-  { path: '/leagues', view: placeholderView('Leagues', 'Weekly leagues arrive soon.'), title: 'Leagues' },
+  { path: '/leagues', view: leaguesView, title: 'Leagues' },
   { path: '/shop', view: shopView, title: 'Shop' },
   { path: '/profile', view: profileView, title: 'Profile' },
   { path: '/settings', view: settingsView, public: true, title: 'Settings' },
