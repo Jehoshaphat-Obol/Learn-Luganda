@@ -98,3 +98,46 @@ describe('session', () => {
     expect(s.result()).toMatchObject({ perfect: true, accuracy: 1 });
   });
 });
+
+import { checkTyped, levenshtein } from '../src/lesson/answers.js';
+
+describe('typed answers', () => {
+  it('measures edit distance', () => {
+    expect(levenshtein('weebale', 'webale')).toBe(1);
+    expect(levenshtein('abc', 'abc')).toBe(0);
+  });
+
+  it('accepts exact answers and flags small typos', () => {
+    expect(checkTyped('How are you sir', ['How are you, sir?'])).toMatchObject({ correct: true, typo: false });
+    expect(checkTyped('How are yuo, sir', ['How are you, sir?'])).toMatchObject({ correct: false });
+    expect(checkTyped('How ar you, sir', ['How are you, sir?'])).toMatchObject({ correct: true, typo: true });
+    expect(checkTyped('Good bye', ['Goodbye'])).toMatchObject({ correct: true, typo: true });
+    expect(checkTyped('thank', ['Thank you'])).toMatchObject({ correct: false });
+  });
+});
+
+describe('new exercise types', () => {
+  it('includes fill, dialogue and typing where content allows', () => {
+    const types = new Set(buildLesson('u1s2l3', { seed: 2 }).map((e) => e.type));
+    expect(types.has('dialogue')).toBe(true);
+    expect(types.has('type')).toBe(true);
+    const all = new Set(course.order.flatMap((id) => buildLesson(id, { seed: 4 }).map((e) => e.type)));
+    expect(all.has('fill')).toBe(true);
+  });
+
+  it('builds fill exercises whose answer completes the sentence', () => {
+    for (const id of course.order) {
+      for (const e of buildLesson(id, { seed: 7 }).filter((x) => x.type === 'fill')) {
+        expect(e.options).toContain(e.answer);
+        expect(e.sentence.replace('___', e.answer)).toBe(e.full);
+      }
+    }
+  });
+
+  it('keeps every authored dialogue in its lesson', () => {
+    for (const id of course.order) {
+      const n = course.lessons[id].dialogues.length;
+      expect(buildLesson(id, { seed: 1 }).filter((e) => e.type === 'dialogue')).toHaveLength(n);
+    }
+  });
+});

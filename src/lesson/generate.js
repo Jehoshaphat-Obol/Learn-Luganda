@@ -7,7 +7,7 @@ import { course as defaultCourse, wordsUpTo } from '../content/course.js';
 import { tokens, normalise } from './answers.js';
 import { createRng } from './random.js';
 
-export const MAX_EXERCISES = 16;
+export const MAX_EXERCISES = 18;
 
 const quote = (t) => `“${t.replace(/[?.!]$/, '')}”`;
 
@@ -59,6 +59,67 @@ function matchExercise(words, rng) {
   };
 }
 
+function typeExercise(item) {
+  return {
+    type: 'type',
+    prompt: 'Type this in English',
+    source: item.lg,
+    sourceLang: 'lg',
+    lang: 'en',
+    accepted: [item.en, ...item.altEn],
+    answerText: item.en,
+    sentenceId: item.id,
+    wordIds: item.wordIds ?? [],
+  };
+}
+
+/** Blanks out one known word of a sentence and offers it among look-alikes. */
+function fillExercise(sentence, known, rng) {
+  const parts = tokens(sentence.lg);
+  const candidates = known.filter((w) => !w.lg.includes(' ') && parts.some((p) => normalise(p) === normalise(w.lg)));
+  if (!candidates.length) return null;
+  const word = rng.pick(candidates);
+  const regex = new RegExp(`(^|[\\s,])${word.lg.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?=$|[\\s,.?!])`, 'i');
+  const m = regex.exec(sentence.lg);
+  if (!m) return null;
+  const answer = m[0].slice(m[1].length);
+  const blanked = sentence.lg.replace(regex, '$1___');
+  // Match the case the word has in this sentence (capitalised at the start).
+  const cased = (t) => (answer[0] === answer[0].toUpperCase() ? t[0].toUpperCase() + t.slice(1) : t[0].toLowerCase() + t.slice(1));
+  const others = rng.sample(known.filter((w) => w.id !== word.id && !w.lg.includes(' ') && normalise(w.lg) !== normalise(word.lg)), 2);
+  if (others.length < 2) return null;
+  return {
+    type: 'fill',
+    prompt: 'Fill in the blank',
+    sentence: blanked,
+    translation: sentence.en,
+    full: sentence.lg,
+    options: rng.shuffle([answer, ...others.map((w) => cased(w.lg))]),
+    answer,
+    lang: 'lg',
+    wordIds: [word.id],
+  };
+}
+
+function dialogueExercise(d, rng) {
+  return {
+    type: 'dialogue',
+    prompt: 'Choose the best reply',
+    speaker: d.speaker,
+    line: d.line,
+    translation: d.translation,
+    options: rng.shuffle(d.options),
+    answer: d.answer,
+    lang: 'lg',
+    wordIds: [],
+  };
+}
+
+function listenExercise(item, pools, rng) {
+  const ex = translateExercise(item, pools, rng, 'toLg');
+  return { ...ex, type: 'listen', prompt: 'Tap what you hear', audio: item.audio };
+}
+
 /** Words that appear in a sentence, by matching their Luganda text. */
 function wordsInSentence(sentence, words) {
   const n = ` ${normalise(sentence.lg)} `;
@@ -100,6 +161,24 @@ export function buildLesson(lessonId, { course = defaultCourse, seed, firstTime 
   if (matchPool.length >= 3) out.push(matchExercise(matchPool, rng));
 
   sentences.forEach((s, i) => out.push(translateExercise(s, pools, rng, i % 2 ? 'toLg' : 'toEn')));
+
+  // One fill-in-the-blank, the lesson's dialogues, then a typed answer.
+  for (const s of rng.shuffle(sentences)) {
+    const fill = fillExercise(s, known, rng);
+    if (fill) {
+      out.push(fill);
+      break;
+    }
+  }
+  for (const d of lesson.dialogues) out.push(dialogueExercise(d, rng));
+  if (sentences.length) out.push(typeExercise(rng.pick(sentences)));
+  else if (newWords.length) {
+    const w = rng.pick(newWords);
+    out.push(typeExercise({ ...w, wordIds: [w.id] }));
+  }
+
+  // Recorded audio becomes listening practice.
+  for (const item of [...sentences, ...newWords].filter((x) => x.audio).slice(0, 2)) out.push(listenExercise(item, pools, rng));
 
   for (const extra of extras) out.push(...extra({ lesson, course, rng, known, newWords, sentences, pools }));
 
