@@ -13,20 +13,24 @@ import { avatar } from '../ui/avatar.js';
 import { icon } from '../ui/icons.js';
 import { trackPixel } from '../marketing/pixel.js';
 import { applyLanguages, languageScreen, onGuessReply } from './language-picker.js';
+import { course, languageName } from '../content/course.js';
+import { t, tHtml } from '../i18n/index.js';
 
+// Labels are UI pack keys under onboarding.motivation / onboarding.level.
 const MOTIVATIONS = [
-  { id: 'family', label: 'Talk with family', icon: 'profile' },
-  { id: 'travel', label: 'Travel to Uganda', icon: 'arrow' },
-  { id: 'friends', label: 'Connect with friends', icon: 'heart' },
-  { id: 'culture', label: 'Explore the culture', icon: 'book' },
-  { id: 'work', label: 'Work or study', icon: 'target' },
-  { id: 'fun', label: 'Just for fun', icon: 'star' },
+  { id: 'family', icon: 'profile' },
+  { id: 'travel', icon: 'arrow' },
+  { id: 'friends', icon: 'heart' },
+  { id: 'culture', icon: 'book' },
+  { id: 'work', icon: 'target' },
+  { id: 'fun', icon: 'star' },
 ];
 
-const LEVELS = [
-  { id: 'new', label: 'I’m new to Luganda', detail: 'Start from the very first lesson.' },
-  { id: 'some', label: 'I know some words', detail: 'Start with a quick greetings review.' },
-];
+const LEVELS = ['new', 'some'];
+
+/** Values onboarding text can use: the course's language, greeting and place. */
+const params = () => ({ language: languageName('target'), hello: course.landing?.hello ?? '', thanks: course.landing?.thanks ?? '', place: course.landing?.place ?? '', mascot: MASCOT_NAME });
+const say = (key, extra) => escapeHtml(t(key, { ...params(), ...extra }));
 
 const STEPS = ['languages', 'welcome', 'motivation', 'goal', 'level', 'avatar', 'ready'];
 
@@ -43,37 +47,37 @@ function screen(step, answers) {
     case 'welcome':
       return {
         pose: 'happy',
-        say: `Oli otya! I’m ${escapeHtml(MASCOT_NAME)}, your guide to Luganda.`,
-        body: '<p class="onb__lead">A few quick questions and we’ll set up your course.</p>',
+        say: say('onboarding.welcome.say'),
+        body: `<p class="onb__lead">${say('onboarding.welcome.lead')}</p>`,
         ready: true,
-        cta: 'Let’s go',
+        cta: t('onboarding.welcome.cta'),
       };
     case 'motivation':
       return {
         pose: 'thinking',
-        say: 'Why are you learning Luganda?',
-        body: `<div class="onb__options onb__options--grid" role="radiogroup" aria-label="Why are you learning">
-          ${MOTIVATIONS.map((m) => `<button class="choice" type="button" role="radio" aria-checked="${answers.motivation === m.id}" data-pick="motivation" data-value="${m.id}">${icon(m.icon, { size: 22 })}<span>${m.label}</span></button>`).join('')}
+        say: say('onboarding.motivation.say'),
+        body: `<div class="onb__options onb__options--grid" role="radiogroup" aria-label="${say('onboarding.motivation.label')}">
+          ${MOTIVATIONS.map((m) => `<button class="choice" type="button" role="radio" aria-checked="${answers.motivation === m.id}" data-pick="motivation" data-value="${m.id}">${icon(m.icon, { size: 22 })}<span>${say(`onboarding.motivation.${m.id}`)}</span></button>`).join('')}
         </div>`,
         ready: Boolean(answers.motivation),
       };
     case 'goal':
       return {
         pose: 'idle',
-        say: 'What’s your daily goal?',
-        body: `<div class="onb__options" role="radiogroup" aria-label="Daily goal">
+        say: say('onboarding.goal.say'),
+        body: `<div class="onb__options" role="radiogroup" aria-label="${say('onboarding.goal.label')}">
           ${DAILY_GOALS.map((g) => `<button class="choice onb__goal" type="button" role="radio" aria-checked="${Number(answers.dailyGoal) === g.xp}" data-pick="dailyGoal" data-value="${g.xp}">
-            <strong>${g.label}</strong><span>${g.minutes} min a day</span><span class="onb__xp">${g.xp} XP</span></button>`).join('')}
+            <strong>${say(`goals.${g.id}`)}</strong><span>${say('goals.minutes', { minutes: g.minutes })}</span><span class="onb__xp">${say('goals.xp', { xp: g.xp })}</span></button>`).join('')}
         </div>`,
         ready: Boolean(answers.dailyGoal),
       };
     case 'level':
       return {
         pose: 'thinking',
-        say: 'How much Luganda do you know?',
-        body: `<div class="onb__options" role="radiogroup" aria-label="Your level">
-          ${LEVELS.map((l) => `<button class="choice onb__level" type="button" role="radio" aria-checked="${answers.level === l.id}" data-pick="level" data-value="${l.id}">
-            <strong>${l.label}</strong><span>${l.detail}</span></button>`).join('')}
+        say: say('onboarding.level.say'),
+        body: `<div class="onb__options" role="radiogroup" aria-label="${say('onboarding.level.label')}">
+          ${LEVELS.map((id) => `<button class="choice onb__level" type="button" role="radio" aria-checked="${answers.level === id}" data-pick="level" data-value="${id}">
+            <strong>${say(`onboarding.level.${id}`)}</strong><span>${say(`onboarding.level.${id}Detail`)}</span></button>`).join('')}
         </div>`,
         ready: Boolean(answers.level),
       };
@@ -82,27 +86,27 @@ function screen(step, answers) {
       const color = answers.color ?? 'vermillion';
       return {
         pose: 'happy',
-        say: 'Make it yours. What should I call you?',
+        say: say('onboarding.avatar.say'),
         body: `
-          <div class="onb__avatar-preview">${avatar({ character, color }, { size: 120, label: 'Your avatar' })}</div>
+          <div class="onb__avatar-preview">${avatar({ character, color }, { size: 120, label: t('onboarding.avatar.preview') })}</div>
           <div class="field">
-            <label for="onb-name">Your name</label>
-            <input id="onb-name" class="input" type="text" maxlength="30" autocomplete="given-name" placeholder="e.g. Amani" value="${escapeHtml(answers.name ?? '')}" />
+            <label for="onb-name">${say('onboarding.avatar.name')}</label>
+            <input id="onb-name" class="input" type="text" maxlength="30" autocomplete="given-name" placeholder="${say('onboarding.avatar.placeholder')}" value="${escapeHtml(answers.name ?? '')}" />
           </div>
           <fieldset class="onb__fieldset">
-            <legend>Character</legend>
-            <div class="onb__characters" role="radiogroup" aria-label="Character">
+            <legend>${say('onboarding.avatar.character')}</legend>
+            <div class="onb__characters" role="radiogroup" aria-label="${say('onboarding.avatar.character')}">
               ${avatarIds().map((id) => `<button class="onb__character" type="button" role="radio" aria-checked="${character === id}" aria-label="${characterInfo(id).name}" data-pick="character" data-value="${id}">${avatar({ character: id, color: 'paper' }, { size: 64 })}</button>`).join('')}
             </div>
           </fieldset>
           <fieldset class="onb__fieldset">
-            <legend>Colour</legend>
-            <div class="onb__colors" role="radiogroup" aria-label="Colour">
-              ${AVATAR_COLORS.map((c) => `<button class="onb__color avatar--${c}" type="button" role="radio" aria-checked="${color === c}" aria-label="${c}" data-pick="color" data-value="${c}"></button>`).join('')}
+            <legend>${say('onboarding.avatar.colour')}</legend>
+            <div class="onb__colors" role="radiogroup" aria-label="${say('onboarding.avatar.colour')}">
+              ${AVATAR_COLORS.map((c) => `<button class="onb__color avatar--${c}" type="button" role="radio" aria-checked="${color === c}" aria-label="${say(`colours.${c}`)}" data-pick="color" data-value="${c}"></button>`).join('')}
             </div>
           </fieldset>`,
         ready: Boolean((answers.name ?? '').trim()),
-        cta: 'Continue',
+        cta: t('onboarding.continue'),
       };
     }
     case 'ready':
@@ -110,14 +114,14 @@ function screen(step, answers) {
       const goal = DAILY_GOALS.find((g) => g.xp === Number(answers.dailyGoal)) ?? DAILY_GOALS[1];
       return {
         pose: 'cheering',
-        say: `Weebale, ${escapeHtml(answers.name ?? '')}! You’re all set.`,
+        say: say('onboarding.ready.say', { name: answers.name ?? '' }),
         body: `<div class="onb__summary card">
             ${avatar({ character: answers.character ?? 'nakato', color: answers.color ?? 'vermillion' }, { size: 72 })}
-            <div><strong>${escapeHtml(answers.name ?? '')}</strong><p class="muted">${goal.label} goal · ${goal.xp} XP a day</p></div>
+            <div><strong>${escapeHtml(answers.name ?? '')}</strong><p class="muted">${say('goals.summary', { goal: t(`goals.${goal.id}`), xp: goal.xp })}</p></div>
           </div>
-          <p class="onb__lead">Your first lesson: greetings. You’ll learn to say <em>Oli otya?</em> in under five minutes.</p>`,
+          <p class="onb__lead">${tHtml('onboarding.ready.lead', params())}</p>`,
         ready: true,
-        cta: 'Start learning',
+        cta: t('onboarding.ready.cta'),
       };
     }
   }
@@ -137,8 +141,8 @@ export function onboardingView({ root, navigate }) {
     root.innerHTML = `
       <div class="onb">
         <header class="onb__top">
-          ${i > 0 ? `<button class="icon-btn" type="button" data-nav="back" aria-label="Back">${icon('back')}</button>` : `<a class="icon-btn" href="#/" aria-label="Close">${icon('close')}</a>`}
-          ${progressBar(i / (STEPS.length - 1), { label: 'Setup progress' })}
+          ${i > 0 ? `<button class="icon-btn" type="button" data-nav="back" aria-label="${escapeHtml(t('onboarding.back'))}">${icon('back')}</button>` : `<a class="icon-btn" href="#/" aria-label="${escapeHtml(t('onboarding.close'))}">${icon('close')}</a>`}
+          ${progressBar(i / (STEPS.length - 1), { label: t('onboarding.progress') })}
         </header>
         <section class="onb__main onb__main--${step}">
           <div class="talk onb__talk">
@@ -148,7 +152,7 @@ export function onboardingView({ root, navigate }) {
           <div class="onb__body">${s.body}</div>
         </section>
         <footer class="onb__footer">
-          ${button({ label: s.cta ?? 'Continue', size: 'lg', block: true, disabled: !s.ready, attrs: 'data-nav="next"' })}
+          ${button({ label: s.cta ?? t('onboarding.continue'), size: 'lg', block: true, disabled: !s.ready, attrs: 'data-nav="next"' })}
         </footer>
       </div>`;
     root.querySelector('#onb-name')?.focus();

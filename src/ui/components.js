@@ -3,6 +3,7 @@
  * compose them with template literals; `openModal` and `toast` manage their
  * own DOM because they float above the current view.
  */
+import { t } from '../i18n/index.js';
 import { icon } from './icons.js';
 
 export function escapeHtml(text) {
@@ -27,7 +28,7 @@ export function button({ label, variant = 'primary', size = 'md', href, attrs = 
 }
 
 /** Horizontal progress bar; `value` from 0 to 1. */
-export function progressBar(value, { label = 'Progress', variant = 'primary' } = {}) {
+export function progressBar(value, { label = t('ui.progress'), variant = 'primary' } = {}) {
   const pct = Math.round(Math.max(0, Math.min(1, value)) * 100);
   return `<div class="progress progress--${variant}" role="progressbar" aria-label="${escapeHtml(label)}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}">
     <div class="progress__fill" style="width:${pct}%"></div>
@@ -35,7 +36,7 @@ export function progressBar(value, { label = 'Progress', variant = 'primary' } =
 }
 
 /** A circular ring, e.g. the daily goal; `value` from 0 to 1. */
-export function ring(value, { size = 56, stroke = 6, content = '', label = 'Progress' } = {}) {
+export function ring(value, { size = 56, stroke = 6, content = '', label = t('ui.progress') } = {}) {
   const r = (size - stroke) / 2;
   const c = 2 * Math.PI * r;
   const v = Math.max(0, Math.min(1, value));
@@ -85,14 +86,14 @@ export function toast(message, { variant = 'neutral', duration = 2600 } = {}) {
  * @param {{ title: string, body?: string, art?: string,
  *   actions?: Array<{ label: string, value: string, variant?: string }>, dismissible?: boolean }} options
  */
-export function openModal({ title, body = '', art = '', actions = [{ label: 'OK', value: 'ok' }], dismissible = true }) {
+export function openModal({ title, body = '', art = '', actions = [{ label: t('ui.ok'), value: 'ok' }], dismissible = true }) {
   return new Promise((resolve) => {
     const previous = document.activeElement;
     const backdrop = document.createElement('div');
     backdrop.className = 'modal-backdrop';
     backdrop.innerHTML = `
       <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-        ${dismissible ? `<button class="icon-btn modal__close" type="button" data-value="" aria-label="Close">${icon('close', { size: 20 })}</button>` : ''}
+        ${dismissible ? `<button class="icon-btn modal__close" type="button" data-value="" aria-label="${escapeHtml(t('ui.close'))}">${icon('close', { size: 20 })}</button>` : ''}
         ${art ? `<div class="modal__art">${art}</div>` : ''}
         <h2 id="modal-title" class="modal__title">${escapeHtml(title)}</h2>
         ${body ? `<div class="modal__body">${body}</div>` : ''}

@@ -9,6 +9,43 @@
   "title": "Luganda for English speakers",
   "description": "Luganda is the language of Buganda in central Uganda, spoken by millions in and around Kampala.",
   "notes": "All Luganda in this course was drafted by Claude and needs a native-speaker review (see the checklists in journal/).",
+  "landing": {
+    "hello": "Oli otya?",
+    "thanks": "Weebale",
+    "place": "Uganda",
+    "word": "okuyiga — v. to learn",
+    "words": [
+      ["Oli otya?", "How are you?"],
+      ["Gyendi", "I’m fine"],
+      ["Weebale", "Thank you"],
+      ["Kale", "Okay"],
+      ["Mukwano", "Friend"],
+      ["Amazzi", "Water"],
+      ["Emmere", "Food"],
+      ["Ssebo", "Sir"],
+      ["Nnyabo", "Madam"],
+      ["Webale kujja", "Welcome"]
+    ],
+    "why": {
+      "title": "The language of **Kampala’s streets.**",
+      "text": "Luganda is spoken by millions of people across central Uganda and is the most widely spoken language in Kampala. Learn it to talk with family, make friends at the market, or feel at home on your next trip.",
+      "cards": [
+        { "title": "For families", "text": "Reconnect with grandparents and pass the language on." },
+        { "title": "For travellers", "text": "Greet, bargain and get around with confidence." },
+        { "title": "For the curious", "text": "Discover noun classes, tones and proverbs." }
+      ]
+    },
+    "sample": {
+      "prompt": "Which one means “thank you”?",
+      "options": ["Oli otya?", "Weebale", "Nedda"],
+      "answer": "Weebale",
+      "explain": "_Weebale_ means thank you."
+    },
+    "start": { "word": "Tandika!", "caption": "tandika — v. start, begin" },
+    "farewell": "Weebale nnyo — thank you very much.",
+    "audience": "Complete beginners, diaspora families reconnecting with the language, and visitors to Uganda who want more than “hello”.",
+    "first": "Greetings, introductions and numbers, then family, food, the market, time, places and more, unit by unit."
+  },
   "settings": { "answers": { "equivalents": { "ŋ": "ng" } }, "speech": { "fallbacks": ["sw"] } },
   "cast": {
     "nakato": {

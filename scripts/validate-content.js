@@ -28,6 +28,7 @@ for (const id of courseIds()) {
     ...at(validateGuidebooks(course.guidebooks, raw)),
     ...at(validateSections(meta.sections, raw)),
     ...at(validateMigrations(meta.migrations, meta.version, knownIds(course))),
+    ...at(meta.landing && !meta.landing.sample.options.includes(meta.landing.sample.answer) ? ['landing.sample: the answer must be one of the options'] : []),
     ...at(raw.flatMap((u) => u.skills.filter((sk) => sk.icon && !PATHS[sk.icon]).map((sk) => `skill ${sk.id}: unknown icon "${sk.icon}"`))),
   );
   const { sections, units: n, lessons, words, stories } = courseStats(course);

@@ -16,6 +16,7 @@ import en from '../packs/ui/en.json';
 import { deepFreeze } from './freeze.js';
 import { detectLanguage, format, lookup } from './format.js';
 import { languageInfo } from './languages.js';
+import { rich } from './rich.js';
 
 export const DEFAULT_LANGUAGE = 'en';
 
@@ -75,4 +76,12 @@ export function t(key, params) {
   const value = lookup(active.strings, key) ?? lookup(ENGLISH.strings, key);
   if (value === undefined) return key;
   return format(value, params, active.meta.code);
+}
+
+/** Like `t`, as safe HTML with the pack's **bold**, _italic_ and [links](#/path). */
+export const tHtml = (key, params) => rich(t(key, params));
+
+/** Uses `pack` as the interface language directly (tests: pseudo-locales). */
+export function useUiPack(pack) {
+  active = deepFreeze(pack);
 }
