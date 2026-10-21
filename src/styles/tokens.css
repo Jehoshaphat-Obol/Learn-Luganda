@@ -4,6 +4,9 @@
  * pastels for highlights. Bauhaus yellow and blue stay as illustration accents.
  */
 :root {
+  /* Light-only, like promada: keep the paper look on dark-mode devices too. */
+  color-scheme: light;
+
   /* Brand */
   --color-vermillion-50: #fdecea;
   --color-vermillion-100: #fbd2cc;
@@ -84,22 +87,4 @@
   --radius-lg: 20px;
   --radius-pill: 999px;
   --shadow-press: 0 4px 0 var(--color-primary-shadow);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #1a1816;
-    --color-bg-alt: #211e1b;
-    --color-surface: #26231f;
-    --color-surface-inverse: #0f0e0d;
-    --color-text: var(--color-paper-50);
-    --color-text-muted: #c2bbb0;
-    --color-text-subtle: #8f887d;
-    --color-border: #3a352f;
-    --color-pastel-butter: #4a4227;
-    --color-pastel-blush: #4a302b;
-    --color-pastel-sky: #2b3846;
-    --color-pastel-sage: #2f3d2b;
-    --color-pastel-lilac: #36324a;
-  }
 }
