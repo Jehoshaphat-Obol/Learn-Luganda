@@ -5,6 +5,7 @@
  * their guidebooks in ./guidebooks/ to keep this file readable.
  */
 import { SECTION2_GUIDEBOOKS } from './guidebooks/section2.js';
+import { SECTION3_GUIDEBOOKS } from './guidebooks/section3.js';
 
 export const GUIDEBOOKS = {
   u1: {
@@ -352,4 +353,5 @@ export const GUIDEBOOKS = {
     ],
   },
   ...SECTION2_GUIDEBOOKS,
+  ...SECTION3_GUIDEBOOKS,
 };

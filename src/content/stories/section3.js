@@ -1,0 +1,67 @@
+/* Stories for Section 3: Conversations. Same shape as ../stories.js. */
+export const SECTION3_STORIES = [
+  {
+    id: 'what-is-this',
+    title: 'What is this called?',
+    unit: 'u18',
+    unlockAfter: 'u18s3l3',
+    cast: ['emma', 'jjajja'],
+    summary: 'Emma asks Jjajja the names of things in her kitchen.',
+    steps: [
+      { line: ['emma', 'Jjajja, kino kiyitibwa kitya mu Luganda?', 'Grandma, what is this called in Luganda?'] },
+      { line: ['jjajja', 'Ekyo kibbo.', 'That is a basket.'], gloss: { kibbo: 'a basket' } },
+      { line: ['emma', 'Kibbo. Ate kino kiki?', 'Basket. And what is this?'], gloss: { Ate: 'and, what about' } },
+      { line: ['jjajja', 'Kino kyambe.', 'This is a knife.'], gloss: { kyambe: 'a knife' } },
+      {
+        question: 'What is Emma doing?',
+        options: ['Asking the names of things', 'Cooking dinner', 'Buying a basket'],
+        answer: 0,
+      },
+      { line: ['emma', 'Sitegeera. Ddamu mpola, Jjajja.', 'I don’t understand. Repeat slowly, Grandma.'] },
+      { line: ['jjajja', 'Ekyambe. Kino kyambe.', 'A knife. This is a knife.'] },
+      { line: ['jjajja', 'Lwaki osoma Oluganda, mwana wange?', 'Why are you learning Luganda, my child?'] },
+      { line: ['emma', 'Kubanga njagala okwogera naawe!', 'Because I want to talk with you!'], gloss: { naawe: 'with you' } },
+      {
+        question: 'Why is Emma learning Luganda?',
+        options: ['For school', 'To talk with Jjajja', 'To buy things at the market'],
+        answer: 1,
+      },
+      { line: ['jjajja', 'Ayi, kirungi nnyo! Oyogera bulungi.', 'Oh, that’s very good! You speak well.'] },
+      { line: ['emma', 'Nedda, njogera katono.', 'No, I speak a little.'] },
+    ],
+  },
+  {
+    id: 'weekend-plans',
+    title: 'Weekend plans',
+    unit: 'u20',
+    unlockAfter: 'u20s3l3',
+    cast: ['ssali', 'nakato'],
+    summary: 'Ssali and Nakato talk about last weekend and the next one.',
+    steps: [
+      { line: ['ssali', 'Nakato! Wiikendi ewedde wakola ki?', 'Nakato! What did you do last weekend?'] },
+      { line: ['nakato', 'Nnagenda e Masaka okukyalira maama.', 'I went to Masaka to visit my mother.'] },
+      {
+        question: 'Where did Nakato go last weekend?',
+        options: ['Jinja', 'Masaka', 'Entebbe'],
+        answer: 1,
+      },
+      { line: ['ssali', 'Kirungi! Ate ku wiikendi eno?', 'Nice! And this weekend?'] },
+      { line: ['nakato', 'Simanyi. Oteekateeka ki ggwe?', 'I don’t know. What are you planning?'] },
+      { line: ['ssali', 'Nja kugenda ku nnyanja e Entebbe. Ojja?', 'I’m going to the lake in Entebbe. Are you coming?'], gloss: { nnyanja: 'lake' } },
+      {
+        question: 'What is Ssali’s plan?',
+        options: ['Going to the lake', 'Visiting his mother', 'Studying at home'],
+        answer: 0,
+      },
+      { line: ['nakato', 'Yee! Naye sirina ssente nnyingi.', 'Yes! But I don’t have much money.'] },
+      { line: ['ssali', 'Totya. Tujja kugenda mu mmotoka yange.', 'Don’t worry. We’ll go in my car.'] },
+      {
+        question: 'How does Ssali say “We will go”?',
+        options: ['Tujja kugenda', 'Twagenda', 'Togenda'],
+        answer: 0,
+        lang: 'lg',
+      },
+      { line: ['nakato', 'Weebale nnyo! Tunaalabagana ku Lwamukaaga.', 'Thank you very much! See you on Saturday.'] },
+    ],
+  },
+];
