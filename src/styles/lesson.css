@@ -428,3 +428,24 @@
   line-height: 1;
   color: var(--color-primary-text);
 }
+
+.lesson__hearts {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: var(--color-error);
+  font-size: var(--text-lg);
+}
+
+.lesson__hearts span {
+  color: var(--color-error);
+}
+
+.lesson__hearts.is-lost .icon {
+  animation: heart-lost 500ms ease;
+}
+
+@keyframes heart-lost {
+  30% { transform: scale(1.35) rotate(-10deg); }
+  60% { transform: scale(0.8) rotate(8deg); }
+}

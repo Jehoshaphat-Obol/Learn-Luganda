@@ -11,6 +11,7 @@ import { RENDERERS } from '../lesson/exercises/index.js';
 import { store } from '../state/store.js';
 import { isLessonDone, isLessonUnlocked } from '../state/progress.js';
 import { finishLesson } from '../state/lessons.js';
+import { REFILL_COST, formatWait, heartStatus, loseHeart, refillHearts } from '../state/hearts.js';
 import { showRewards } from './rewards.js';
 import { mascot } from '../illustrations/index.js';
 import { button, escapeHtml, openModal, progressBar } from '../ui/components.js';
@@ -20,10 +21,11 @@ const PRAISE = ['Nice!', 'Great job!', 'Correct!', 'Kale!', 'Well done!', 'Excel
 
 /**
  * Generic runner shared by lessons, practice and checkpoints.
- * @param {{ root: HTMLElement, exercises: object[], title: string, onQuit: Function,
- *   onFinish: (result: object) => void }} options
+ * @param {{ root: HTMLElement, exercises: object[], onQuit: Function,
+ *   onFinish: (result: object) => void, hearts?: boolean, navigate?: Function }} options
+ *   With `hearts`, each wrong answer costs a heart and running out pauses the lesson.
  */
-export function runExercises({ root, exercises, onQuit, onFinish }) {
+export function runExercises({ root, exercises, onQuit, onFinish, hearts = false, navigate }) {
   const session = createSession(exercises);
   let current = null; // renderer handle
   let phase = 'answer'; // 'answer' | 'feedback'
@@ -48,6 +50,12 @@ export function runExercises({ root, exercises, onQuit, onFinish }) {
   const feedback = root.querySelector('[data-feedback]');
   const mainBtn = root.querySelector('[data-main]');
   const mainLabel = mainBtn.querySelector('span');
+
+  function drawHearts(lost = false) {
+    if (!hearts) return;
+    const { count } = heartStatus(store.get());
+    root.querySelector('[data-extra]').innerHTML = `<span class="lesson__hearts${lost ? ' is-lost' : ''}" aria-label="${count} hearts left">${icon('heart', { size: 26 })}<span>${count}</span></span>`;
+  }
 
   function drawProgress() {
     root.querySelector('[data-progress]').innerHTML = progressBar(session.progress, { label: 'Lesson progress' });
@@ -92,6 +100,10 @@ export function runExercises({ root, exercises, onQuit, onFinish }) {
       return;
     }
     session.answer(correct);
+    if (!correct && hearts) {
+      store.update((st) => loseHeart(st));
+      drawHearts(true);
+    }
     phase = 'feedback';
     footer.className = `lesson__footer lesson__footer--${correct ? 'good' : 'bad'}`;
     feedback.innerHTML = correct
@@ -104,7 +116,12 @@ export function runExercises({ root, exercises, onQuit, onFinish }) {
     drawProgress();
   }
 
-  function advance() {
+  async function advance() {
+    if (hearts && heartStatus(store.get()).count === 0) {
+      const ok = await outOfHearts({ navigate, onQuit });
+      if (!ok) return;
+      drawHearts();
+    }
     session.next();
     if (session.done) {
       onFinish(session.result());
@@ -145,11 +162,53 @@ export function runExercises({ root, exercises, onQuit, onFinish }) {
   }
   document.addEventListener('keydown', onKey);
 
+  drawHearts();
   show();
   return {
     extraEl: root.querySelector('[data-extra]'),
     cleanup: () => document.removeEventListener('keydown', onKey),
   };
+}
+
+/** Out-of-hearts choice. Resolves true when refilled and the lesson can go on. */
+async function outOfHearts({ navigate, onQuit }) {
+  const st = store.get();
+  const status = heartStatus(st);
+  const canRefill = st.gems >= REFILL_COST;
+  const choice = await openModal({
+    title: 'You’re out of hearts',
+    body: `<p>Your next heart arrives in ${formatWait(status.nextAt - Date.now())}.</p><p>Practise words you know to earn hearts back${canRefill ? `, or refill now for ${REFILL_COST} gems` : ''}.</p>`,
+    art: mascot({ pose: 'sad' }),
+    dismissible: false,
+    actions: [
+      ...(canRefill ? [{ label: `Refill for ${REFILL_COST} gems`, value: 'refill', variant: 'blue' }] : []),
+      { label: 'Practise to earn hearts', value: 'practice', variant: canRefill ? 'secondary' : 'primary' },
+      { label: 'End lesson', value: 'quit', variant: 'ghost' },
+    ],
+  });
+  if (choice === 'refill') {
+    store.update((s) => {
+      refillHearts(s);
+    });
+    return true;
+  }
+  if (choice === 'practice') navigate?.('/practice');
+  else onQuit();
+  return false;
+}
+
+function noHeartsScreen(root) {
+  const status = heartStatus(store.get());
+  const canRefill = store.get().gems >= REFILL_COST;
+  root.innerHTML = `
+    <section class="empty-state">
+      <div class="empty-state__art">${mascot({ pose: 'sad' })}</div>
+      <h1>Out of hearts</h1>
+      <p class="muted">Your next heart arrives in ${formatWait(status.nextAt - Date.now())}. Practise to earn hearts now${canRefill ? `, or refill for ${REFILL_COST} gems` : ''}.</p>
+      ${canRefill ? button({ label: `Refill for ${REFILL_COST} gems`, variant: 'blue', size: 'lg', attrs: 'data-refill' }) : ''}
+      ${button({ label: 'Practise to earn hearts', href: '#/practice', variant: canRefill ? 'secondary' : 'primary' })}
+      ${button({ label: 'Back to the path', href: '#/learn', variant: 'ghost' })}
+    </section>`;
 }
 
 export function lessonView({ root, params, navigate }) {
@@ -160,8 +219,20 @@ export function lessonView({ root, params, navigate }) {
     return undefined;
   }
   const firstTime = !isLessonDone(state, lesson.id);
+  if (heartStatus(state).count === 0) {
+    noHeartsScreen(root);
+    root.querySelector('[data-refill]')?.addEventListener('click', () => {
+      store.update((s) => {
+        refillHearts(s);
+      });
+      lessonView({ root, params, navigate });
+    });
+    return undefined;
+  }
   const runner = runExercises({
     root,
+    hearts: true,
+    navigate,
     exercises: buildLesson(lesson.id, { firstTime }),
     onQuit: () => navigate('/learn'),
     onFinish: (result) => {

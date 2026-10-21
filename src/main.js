@@ -6,11 +6,13 @@ import './styles/layout.css';
 import { createRouter } from './app/router.js';
 import { createShell, refreshTopBar, setStatsProvider } from './app/shell.js';
 import { store, hasProfile } from './state/store.js';
+import { heartStatus } from './state/hearts.js';
 import { routes } from './app/routes.js';
 
 setStatsProvider(() => {
   const s = store.get();
-  return { streak: s.streak.current, gems: s.gems, hearts: s.hearts.count, maxHearts: 5, streakToday: false };
+  const hearts = heartStatus(s);
+  return { streak: s.streak.current, gems: s.gems, hearts: hearts.count, maxHearts: hearts.max, streakToday: false };
 });
 store.subscribe(refreshTopBar);
 
