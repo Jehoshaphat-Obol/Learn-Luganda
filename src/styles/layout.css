@@ -27,6 +27,12 @@
   flex: none;
 }
 
+/* Wraps the sidebar mark so its mood can be redrawn on its own */
+.nav__mark {
+  display: block;
+  flex: none;
+}
+
 /* Top bar */
 .topbar {
   position: sticky;

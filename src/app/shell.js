@@ -66,13 +66,13 @@ function appLayout(path) {
     <div class="layout">
       <nav class="nav" aria-label="Main">
         <a class="nav__brand" href="#/learn" aria-label="Learn Luganda home">
-          ${brandMark()}<span>luganda</span>
+          <span class="nav__mark" data-brand data-mood="idle">${brandMark()}</span><span>luganda</span>
         </a>
         ${navLinks(path)}
       </nav>
       <div class="layout__main">
         <header class="topbar">
-          <a class="topbar__brand" href="#/learn" aria-label="Learn Luganda home">${brandMark()}</a>
+          <a class="topbar__brand" href="#/learn" aria-label="Learn Luganda home" data-brand data-mood="idle">${brandMark()}</a>
           <div class="topbar__stats" data-topbar-stats>${topBarStats()}</div>
           ${musicButton()}
         </header>
