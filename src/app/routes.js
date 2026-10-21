@@ -9,13 +9,14 @@ import { createLandingView } from '../views/landing.js';
 import { settingsView } from '../views/settings.js';
 import { onboardingView } from '../views/onboarding.js';
 import { learnView } from '../views/learn.js';
+import { lessonView } from '../views/lesson.js';
 import { hasProfile } from '../state/store.js';
 
 export const routes = [
   { path: '/', view: createLandingView({ hasProgress: hasProfile }), layout: 'bare', public: true },
   { path: '/onboarding', view: onboardingView, layout: 'bare', public: true, title: 'Get started' },
   { path: '/learn', view: learnView, title: 'Learn' },
-  { path: '/lesson/:id', view: placeholderView('Lesson', 'Lessons arrive soon.'), layout: 'bare', title: 'Lesson' },
+  { path: '/lesson/:id', view: lessonView, layout: 'bare', title: 'Lesson' },
   { path: '/checkpoint/:unit', view: placeholderView('Checkpoint', 'Unit checkpoints arrive soon.'), layout: 'bare', title: 'Checkpoint' },
   { path: '/guidebook/:unit', view: placeholderView('Guidebook', 'Unit guidebooks arrive soon.'), title: 'Guidebook' },
   { path: '/practice', view: placeholderView('Practice', 'Review sessions arrive soon.'), title: 'Practice' },
