@@ -78,6 +78,21 @@ export function t(key, params) {
   return format(value, params, active.meta.code);
 }
 
+/**
+ * Every string in the group `key` (an object of strings), filled with
+ * `params`: for lists a pack may make as long as it likes, such as praise.
+ * Falls back to English when the active pack has no such group.
+ */
+export function tList(key, params) {
+  const group = (strings) => {
+    let node = strings;
+    for (const part of key.split('.')) node = node?.[part];
+    return node && typeof node === 'object' ? Object.values(node).filter((v) => typeof v === 'string') : [];
+  };
+  const list = group(active.strings);
+  return (list.length ? list : group(ENGLISH.strings)).map((v) => format(v, params, active.meta.code));
+}
+
 /** Like `t`, as safe HTML with the pack's **bold**, _italic_ and [links](#/path). */
 export const tHtml = (key, params) => rich(t(key, params));
 

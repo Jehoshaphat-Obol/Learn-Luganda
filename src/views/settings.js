@@ -12,20 +12,17 @@ import { avatar } from '../ui/avatar.js';
 import { refreshTopBar } from '../app/shell.js';
 import { installSection } from '../app/pwa.js';
 import { backgroundSupported, remindersSupported, setReminderHour, setReminders } from '../reminders/reminders.js';
-import { REMINDER_STRINGS } from '../reminders/strings.js';
 import { PACKS, hapticsSupported, play, preload } from '../ui/sound.js';
 import { pixelConfigured, pixelConsent, setPixelConsent } from '../marketing/pixel.js';
-import { adBreakNow, adBreakTime, adConsent, adsConfigured, changeAdConsent, offerAdBreak } from '../ads/ads.js';
+import { adBreakNow, adBreakTime, adConsent, adsConfigured, changeAdConsent, duration, offerAdBreak } from '../ads/ads.js';
 import { endAdBreak } from '../ads/breaks.js';
 import { POLICY } from '../ads/policy.js';
-import { AD_STRINGS, duration } from '../ads/strings.js';
-import { fill } from '../reminders/strings.js';
 import { siteLinks } from '../app/site.js';
 import { COURSES, changeCourse, changeUiLanguage, loadSaved } from '../app/languages.js';
-import { detectUiLanguage, t, UI_LANGUAGES } from '../i18n/index.js';
+import { currentLanguage, detectUiLanguage, t, tHtml, UI_LANGUAGES } from '../i18n/index.js';
 import { languageInfo } from '../i18n/languages.js';
 import { canSynthesize, speak, stopSpeech } from '../audio/speech.js';
-import { course } from '../content/course.js';
+import { course, languageName } from '../content/course.js';
 
 function download(filename, text) {
   const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
@@ -36,23 +33,24 @@ function download(filename, text) {
   URL.revokeObjectURL(url);
 }
 
-const hourLabel = (h) => new Date(2026, 0, 1, h).toLocaleTimeString('en', { hour: 'numeric' });
+const hourLabel = (h) => new Date(2026, 0, 1, h).toLocaleTimeString(currentLanguage(), { hour: 'numeric' });
+const say = (key, params) => escapeHtml(t(key, params));
 
 function toggle(key, label, hint, checked, disabled = false) {
   return `<label class="switch-row">
-    <span class="switch-row__text"><strong>${label}</strong><small>${hint}</small></span>
+    <span class="switch-row__text"><strong>${escapeHtml(label)}</strong><small>${escapeHtml(hint)}</small></span>
     <input class="switch" type="checkbox" role="switch" data-setting="${key}"${checked ? ' checked' : ''}${disabled ? ' disabled' : ''} />
   </label>`;
 }
 
 function remindersRows(r) {
-  const t = REMINDER_STRINGS.settings;
   const hours = [...Array(14).keys()].map((i) => i + 8);
-  return `${toggle('reminder', t.label, `${t.hint}${backgroundSupported() ? '' : ` ${t.limited}`}`, r.on)}
+  const hint = [t('reminders.settings.hint', { language: languageName('target') }), backgroundSupported() ? '' : t('reminders.settings.limited')].filter(Boolean).join(' ');
+  return `${toggle('reminder', t('reminders.settings.label'), hint, r.on)}
     <label class="switch-row" ${r.on ? '' : 'hidden'} data-hour-row>
-      <span class="switch-row__text"><strong>${t.time}</strong></span>
+      <span class="switch-row__text"><strong>${say('reminders.settings.time')}</strong></span>
       <select class="input settings-hour" data-hour>
-        <option value="auto"${r.hour == null ? ' selected' : ''}>${t.auto}</option>
+        <option value="auto"${r.hour == null ? ' selected' : ''}>${say('reminders.settings.auto')}</option>
         ${hours.map((h) => `<option value="${h}"${h === r.hour ? ' selected' : ''}>${hourLabel(h)}</option>`).join('')}
       </select>
     </label>`;
@@ -61,30 +59,30 @@ function remindersRows(r) {
 function profileSection(p) {
   const { character, color } = p.avatar;
   return `<section class="settings-group" id="profile">
-    <h2>Profile</h2>
+    <h2>${say('settings.profile.title')}</h2>
     <div class="settings-profile">
-      <div class="settings-profile__preview" data-preview>${avatar(p.avatar, { size: 88, label: 'Your avatar' })}</div>
+      <div class="settings-profile__preview" data-preview>${avatar(p.avatar, { size: 88, label: t('settings.profile.avatar') })}</div>
       <div class="field">
-        <label for="settings-name">Name</label>
+        <label for="settings-name">${say('settings.profile.name')}</label>
         <input id="settings-name" class="input" type="text" maxlength="30" autocomplete="given-name" value="${escapeHtml(p.name)}" data-name />
       </div>
     </div>
     <fieldset class="onb__fieldset">
-      <legend>Character</legend>
-      <div class="onb__characters" role="radiogroup" aria-label="Character">
+      <legend>${say('settings.profile.character')}</legend>
+      <div class="onb__characters" role="radiogroup" aria-label="${say('settings.profile.character')}">
         ${avatarIds().map((id) => `<button class="onb__character" type="button" role="radio" aria-checked="${character === id}" aria-label="${characterInfo(id).name}" data-pick="character" data-value="${id}">${avatar({ character: id, color: 'paper' }, { size: 56 })}</button>`).join('')}
       </div>
     </fieldset>
     <fieldset class="onb__fieldset">
-      <legend>Colour</legend>
-      <div class="onb__colors" role="radiogroup" aria-label="Colour">
+      <legend>${say('settings.profile.colour')}</legend>
+      <div class="onb__colors" role="radiogroup" aria-label="${say('settings.profile.colour')}">
         ${AVATAR_COLORS.map((c) => `<button class="onb__color avatar--${c}" type="button" role="radio" aria-checked="${color === c}" aria-label="${escapeHtml(t(`colours.${c}`))}" data-pick="color" data-value="${c}"></button>`).join('')}
       </div>
     </fieldset>
   </section>
   <section class="settings-group" id="goal">
-    <h2>Daily goal</h2>
-    <div class="goal-options" role="radiogroup" aria-label="Daily goal">
+    <h2>${say('settings.goal')}</h2>
+    <div class="goal-options" role="radiogroup" aria-label="${say('settings.goal')}">
       ${DAILY_GOALS.map((g) => `<button class="choice" type="button" role="radio" aria-checked="${p.dailyGoal === g.xp}" data-goal="${g.xp}"><span><strong>${escapeHtml(t(`goals.${g.id}`))}</strong> · ${escapeHtml(t('goals.perDay', { xp: g.xp }))}</span><span class="muted">${escapeHtml(t('goals.minutes', { minutes: g.minutes }))}</span></button>`).join('')}
     </div>
   </section>`;
@@ -124,10 +122,9 @@ function languagesSection(settings) {
 
 function adBreakRow() {
   const s = adBreakNow();
-  const S = AD_STRINGS.settings;
-  const text = s.active ? fill(S.active, { time: adBreakTime(s.until) }) : fill(S.hint, { duration: duration(s.hours), left: s.left });
-  return `<span class="switch-row__text"><strong>${S.title}</strong><small>${escapeHtml(text)}</small></span>
-    ${s.active ? button({ label: S.end, variant: 'secondary', attrs: 'data-action="ad-break-end"' }) : button({ label: S.take, variant: 'secondary', attrs: 'data-action="ad-break"' })}`;
+  const text = s.active ? t('ads.settings.active', { time: adBreakTime(s.until) }) : t('ads.settings.hint', { duration: duration(s.hours), left: s.left });
+  return `<span class="switch-row__text"><strong>${say('ads.settings.title')}</strong><small>${escapeHtml(text)}</small></span>
+    ${s.active ? button({ label: t('ads.settings.end'), variant: 'secondary', attrs: 'data-action="ad-break-end"' }) : button({ label: t('ads.settings.take'), variant: 'secondary', attrs: 'data-action="ad-break"' })}`;
 }
 
 export function settingsView({ root, query, navigate }) {
@@ -136,52 +133,52 @@ export function settingsView({ root, query, navigate }) {
   root.innerHTML = `
     <div class="page">
       <header class="page__header">
-        <h1><strong>Settings</strong></h1>
+        <h1><strong>${say('settings.title')}</strong></h1>
       </header>
 
       ${profile ? profileSection(profile) : ''}
       ${languagesSection(settings)}
       <section class="settings-group" id="preferences">
-        <h2>Preferences</h2>
+        <h2>${say('settings.preferences')}</h2>
         <div>
-          ${toggle('sound', 'Sound effects', 'Sounds for taps, right and wrong answers, and rewards.', settings.sound !== false)}
+          ${toggle('sound', t('settings.sound.label'), t('settings.sound.hint'), settings.sound !== false)}
           <label class="switch-row">
-            <span class="switch-row__text"><strong>Sound style</strong><small>Playful is bright and bouncy, soft is gentle and warm.</small></span>
-            <select class="input settings-hour" data-pack>${Object.entries(PACKS).map(([id, label]) => `<option value="${id}"${id === (settings.soundPack ?? 'playful') ? ' selected' : ''}>${label}</option>`).join('')}</select>
+            <span class="switch-row__text"><strong>${say('settings.sound.style')}</strong><small>${say('settings.sound.styleHint')}</small></span>
+            <select class="input settings-hour" data-pack>${Object.keys(PACKS).map((id) => `<option value="${id}"${id === (settings.soundPack ?? 'playful') ? ' selected' : ''}>${say(`sounds.${id}`)}</option>`).join('')}</select>
           </label>
           ${speechRows(settings)}
-          ${toggle('music', 'Background music', 'A quiet amadinda loop on the home screens. Lessons and stories stay quiet.', settings.music !== false)}
-          ${toggle('haptics', 'Vibration', !hapticsSupported() ? 'This device or browser can’t vibrate (iPhones and most computers don’t allow it).' : systemReduced ? 'Your device asks for reduced motion, so vibration stays off.' : 'A small buzz for taps, answers and rewards.', hapticsSupported() && !systemReduced && settings.haptics !== false, !hapticsSupported() || systemReduced)}
+          ${toggle('music', t('settings.music.label'), t('settings.music.hint'), settings.music !== false)}
+          ${toggle('haptics', t('settings.haptics.label'), t(!hapticsSupported() ? 'settings.haptics.unsupported' : systemReduced ? 'settings.haptics.reduced' : 'settings.haptics.hint'), hapticsSupported() && !systemReduced && settings.haptics !== false, !hapticsSupported() || systemReduced)}
           ${profile && remindersSupported() ? remindersRows(reminders) : ''}
-          ${toggle('motion', 'Animations', systemReduced ? 'Your device asks for reduced motion, so animations stay minimal.' : 'Confetti, bouncing and sliding.', settings.motion !== false && !systemReduced, systemReduced)}
-          <p class="muted settings-credits">Sounds and music are free and openly licensed (CC0). <a href="./audio/CREDITS.md" target="_blank" rel="noopener">Audio credits</a></p>
+          ${toggle('motion', t('settings.motion.label'), t(systemReduced ? 'settings.motion.reduced' : 'settings.motion.hint'), settings.motion !== false && !systemReduced, systemReduced)}
+          <p class="muted settings-credits">${say('settings.credits')} <a href="./audio/CREDITS.md" target="_blank" rel="noopener">${say('settings.creditsLink')}</a></p>
         </div>
       </section>
 
       <section class="settings-group" id="install" data-install-section>${installSection()}</section>
       <section class="settings-group" id="privacy">
-        <h2>Ads and privacy</h2>
-        ${adsConfigured() ? `<div>${toggle('personalisedAds', 'Personalised ads', 'Let Google use cookies to show ads that suit you. Off means basic, non-personalised ads.', adConsent() === 'granted')}</div>` : ''}
-        ${pixelConfigured() ? `<div>${toggle('pixel', 'Facebook measurement', 'Let Meta (Facebook) count your visits and milestones so our ads reach more learners. Your name and answers are never sent.', pixelConsent() === 'granted')}</div>` : ''}
+        <h2>${say('settings.privacy.title')}</h2>
+        ${adsConfigured() ? `<div>${toggle('personalisedAds', t('settings.privacy.ads'), t('settings.privacy.adsHint'), adConsent() === 'granted')}</div>` : ''}
+        ${pixelConfigured() ? `<div>${toggle('pixel', t('settings.privacy.pixel'), t('settings.privacy.pixelHint'), pixelConsent() === 'granted')}</div>` : ''}
         ${adsConfigured() && POLICY.adBreak.perWeek ? `<div class="ad-break-row" data-ad-break-row>${adBreakRow()}</div>` : ''}
-        <p class="muted">Your lessons and progress never leave this device. <a href="#/privacy">Read the privacy policy</a>.</p>
+        <p class="muted">${tHtml('settings.privacy.note')}</p>
         ${siteLinks()}
       </section>
 
       <section class="settings-group" id="data">
-        <h2>Your progress</h2>
-        <p class="muted">Progress is saved in this browser only. Export it to keep a backup or to move to another device, then import it there.</p>
+        <h2>${say('settings.data.title')}</h2>
+        <p class="muted">${say('settings.data.body')}</p>
         <div class="settings-actions">
-          ${button({ label: 'Export progress', variant: 'secondary', iconName: 'arrow', attrs: 'data-action="export"' })}
-          ${button({ label: 'Import progress', variant: 'secondary', attrs: 'data-action="import"' })}
+          ${button({ label: t('settings.data.export'), variant: 'secondary', iconName: 'arrow', attrs: 'data-action="export"' })}
+          ${button({ label: t('settings.data.import'), variant: 'secondary', attrs: 'data-action="import"' })}
           <input type="file" accept="application/json,.json" hidden data-import-file />
         </div>
       </section>
 
       <section class="settings-group settings-group--danger">
-        <h2>Start over</h2>
-        <p class="muted">Erase your profile, XP, streak and everything you’ve learned on this device.</p>
-        ${button({ label: 'Reset progress', variant: 'danger', attrs: 'data-action="reset"' })}
+        <h2>${say('settings.reset.title')}</h2>
+        <p class="muted">${say('settings.reset.body')}</p>
+        ${button({ label: t('settings.reset.button'), variant: 'danger', attrs: 'data-action="reset"' })}
       </section>
     </div>`;
 
@@ -196,7 +193,7 @@ export function settingsView({ root, query, navigate }) {
       return;
     }
     saveProfile({ name });
-    toast('Name saved.');
+    toast(t('settings.profile.saved'));
   });
 
   root.addEventListener('click', (e) => {
@@ -204,7 +201,7 @@ export function settingsView({ root, query, navigate }) {
     if (pick) {
       saveProfile({ avatar: { [pick.dataset.pick]: pick.dataset.value } });
       pick.parentElement.querySelectorAll('[data-pick]').forEach((b) => b.setAttribute('aria-checked', String(b === pick)));
-      root.querySelector('[data-preview]').innerHTML = avatar(store.get().profile.avatar, { size: 88, label: 'Your avatar' });
+      root.querySelector('[data-preview]').innerHTML = avatar(store.get().profile.avatar, { size: 88, label: t('settings.profile.avatar') });
       return;
     }
     const goal = e.target.closest('[data-goal]');
@@ -245,19 +242,19 @@ export function settingsView({ root, query, navigate }) {
     if (!key) return;
     if (key === 'personalisedAds') {
       changeAdConsent(e.target.checked ? 'granted' : 'denied');
-      toast(e.target.checked ? 'Personalised ads allowed.' : 'You’ll see basic ads only.');
+      toast(t(e.target.checked ? 'settings.privacy.adsOn' : 'settings.privacy.adsOff'));
       return;
     }
     if (key === 'pixel') {
       setPixelConsent(e.target.checked ? 'granted' : 'denied');
-      toast(e.target.checked ? 'Facebook measurement allowed.' : 'Facebook measurement is off.');
+      toast(t(e.target.checked ? 'settings.privacy.pixelOn' : 'settings.privacy.pixelOff'));
       return;
     }
     if (key === 'reminder') {
       const wanted = e.target.checked;
       const on = await setReminders(wanted);
       e.target.checked = on;
-      if (wanted && !on) toast(REMINDER_STRINGS.consent.blocked, { duration: 4000 });
+      if (wanted && !on) toast(t('reminders.consent.blocked'), { duration: 4000 });
       root.querySelector('[data-hour-row]').hidden = !on;
       return;
     }
@@ -283,11 +280,11 @@ export function settingsView({ root, query, navigate }) {
     if (!file) return;
     const text = await file.text();
     const ok = await openModal({
-      title: 'Replace your progress?',
-      body: '<p>Importing replaces everything saved on this device with the file’s progress.</p>',
+      title: t('settings.data.replaceTitle'),
+      body: `<p>${say('settings.data.replaceBody')}</p>`,
       actions: [
-        { label: 'Import', value: 'yes' },
-        { label: 'Cancel', value: 'no', variant: 'ghost' },
+        { label: t('settings.data.replaceYes'), value: 'yes' },
+        { label: t('settings.data.cancel'), value: 'no', variant: 'ghost' },
       ],
     });
     if (ok !== 'yes') return;
@@ -297,7 +294,7 @@ export function settingsView({ root, query, navigate }) {
       await loadSaved();
       const state = store.get();
       refreshTopBar();
-      toast('Progress imported. Weebale!', { variant: 'success' });
+      toast(t('settings.data.imported', { thanks: course.phrases.thanks }), { variant: 'success' });
       navigate(state.profile ? '/learn' : '/onboarding');
     } catch (err) {
       toast(err.message, { variant: 'error', duration: 4000 });
@@ -310,7 +307,7 @@ export function settingsView({ root, query, navigate }) {
       if (action === 'ad-break') await offerAdBreak();
       else {
         endAdBreak();
-        toast(AD_STRINGS.settings.ended);
+        toast(t('ads.settings.ended'));
       }
       root.querySelector('[data-ad-break-row]').innerHTML = adBreakRow();
       return;
@@ -318,22 +315,22 @@ export function settingsView({ root, query, navigate }) {
     if (action === 'export') {
       const name = store.get().profile?.name?.toLowerCase().replace(/[^a-z0-9]+/g, '-') || 'learner';
       download(`learn-luganda-${name}-${new Date().toISOString().slice(0, 10)}.json`, store.exportJSON());
-      toast('Progress exported.');
+      toast(t('settings.data.exported'));
     }
     if (action === 'import') fileInput.click();
     if (action === 'reset') {
       const choice = await openModal({
-        title: 'Reset all progress?',
-        body: '<p>This can’t be undone. Export first if you might want it back.</p>',
+        title: t('settings.reset.confirmTitle'),
+        body: `<p>${say('settings.reset.confirmBody')}</p>`,
         art: mascot({ pose: 'sad' }),
         actions: [
-          { label: 'Keep my progress', value: 'keep' },
-          { label: 'Reset everything', value: 'reset', variant: 'danger' },
+          { label: t('settings.reset.keep'), value: 'keep' },
+          { label: t('settings.reset.yes'), value: 'reset', variant: 'danger' },
         ],
       });
       if (choice === 'reset') {
         store.reset();
-        toast('Progress reset.');
+        toast(t('settings.reset.done'));
         navigate('/');
       }
     }

@@ -10,6 +10,7 @@ import { portrait } from '../illustrations/index.js';
 import { button, escapeHtml } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { richText, storyCard } from './stories.js';
+import { t } from '../i18n/index.js';
 
 // `targetColumns` lists the columns written in the target language (the
 // first two unless a tip says otherwise).
@@ -41,7 +42,7 @@ export function guidebookView({ root, params, query, navigate }) {
     <div class="page guide">
       <header class="guide__head">
         <div>
-          <p class="eyebrow">Unit ${unit.index + 1} guidebook</p>
+          <p class="eyebrow">${escapeHtml(t('guidebook.eyebrow', { number: unit.index + 1 }))}</p>
           <h1>${escapeHtml(unit.title)}</h1>
           <p class="muted">${escapeHtml(book.intro)}</p>
         </div>
@@ -49,31 +50,31 @@ export function guidebookView({ root, params, query, navigate }) {
       </header>
 
       <section class="guide__section" aria-labelledby="guide-phrases">
-        <h2 id="guide-phrases">Key phrases</h2>
+        <h2 id="guide-phrases">${escapeHtml(t('guidebook.phrases'))}</h2>
         <ul class="phrase-list">
           ${book.phrases.map((p) => `<li><strong${langAttr('target')}>${escapeHtml(p.target)}</strong><span${langAttr('base')}>${escapeHtml(p.base)}</span></li>`).join('')}
         </ul>
       </section>
 
       <section class="guide__section" aria-labelledby="guide-tips">
-        <h2 id="guide-tips">Tips</h2>
-        ${book.tips.map((t) => note(t, 'tip')).join('')}
+        <h2 id="guide-tips">${escapeHtml(t('guidebook.tips'))}</h2>
+        ${book.tips.map((tip) => note(tip, 'tip')).join('')}
       </section>
 
       <section class="guide__section" aria-labelledby="guide-culture">
-        <h2 id="guide-culture">Culture</h2>
+        <h2 id="guide-culture">${escapeHtml(t('guidebook.culture'))}</h2>
         ${book.culture.map((c) => note(c, 'culture')).join('')}
       </section>
 
       ${
         stories.length
           ? `<section class="guide__section" aria-labelledby="guide-stories">
-              <h2 id="guide-stories">Stories</h2>
+              <h2 id="guide-stories">${escapeHtml(t('guidebook.stories'))}</h2>
               <div class="story-list">${stories.map(storyCard).join('')}</div>
             </section>`
           : ''
       }
-      <p class="guide__back">${button({ label: 'Back to the path', href: '#/learn', variant: 'secondary', iconName: 'back' })}</p>
+      <p class="guide__back">${button({ label: t('ui.backToPath'), href: '#/learn', variant: 'secondary', iconName: 'back' })}</p>
     </div>`;
 
   if (query.tip) {

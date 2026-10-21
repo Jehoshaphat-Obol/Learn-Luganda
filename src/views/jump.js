@@ -12,8 +12,8 @@ import { buildSectionTest } from '../lesson/practice.js';
 import { runExercises } from './lesson.js';
 import { showRewards } from './rewards.js';
 import { emptyStateArt } from '../illustrations/index.js';
-import { button } from '../ui/components.js';
-
+import { button, escapeHtml } from '../ui/components.js';
+import { t } from '../i18n/index.js';
 
 export function jumpView({ root, params, query = {}, navigate }) {
   const section = course.sections.find((s) => s.id === params.section);
@@ -34,10 +34,10 @@ export function jumpView({ root, params, query = {}, navigate }) {
         root.innerHTML = `
           <section class="empty-state">
             <div class="empty-state__art">${emptyStateArt('ponder')}</div>
-            <h1>Not quite yet</h1>
-            <p class="muted">You got ${Math.round(result.accuracy * 100)}% right first time, and you need ${Math.round(passMark * 100)}% to jump to Section ${section.index + 1}. Keep going on the path, or try again.</p>
-            ${button({ label: 'Try again', size: 'lg', attrs: 'data-retry' })}
-            ${button({ label: 'Back to the path', href: '#/learn', variant: 'ghost' })}
+            <h1>${escapeHtml(t('jump.failTitle'))}</h1>
+            <p class="muted">${escapeHtml(t('jump.failBody', { score: Math.round(result.accuracy * 100), mark: Math.round(passMark * 100), number: section.index + 1 }))}</p>
+            ${button({ label: t('ui.tryAgain'), size: 'lg', attrs: 'data-retry' })}
+            ${button({ label: t('ui.backToPath'), href: '#/learn', variant: 'ghost' })}
           </section>`;
         root.querySelector('[data-retry]').addEventListener('click', () => jumpView({ root, params, navigate }));
         return;
@@ -49,8 +49,8 @@ export function jumpView({ root, params, query = {}, navigate }) {
       showRewards(root, {
         result,
         ...summary,
-        title: `Welcome to Section ${section.index + 1}!`,
-        subtitle: `You jumped ahead to ${section.title}. Earlier lessons stay open for review.`,
+        title: t('jump.title', { number: section.index + 1 }),
+        subtitle: t('jump.subtitle', { section: section.title }),
         onDone: () => navigate('/learn'),
       });
     },

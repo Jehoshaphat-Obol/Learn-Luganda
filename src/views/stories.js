@@ -6,7 +6,7 @@
 import '../styles/lesson.css';
 import '../styles/stories.css';
 import { speak, speakButton } from '../audio/speech.js';
-import { castMember, course, langAttr } from '../content/course.js';
+import { castMember, course, langAttr, languageName } from '../content/course.js';
 import { store } from '../state/store.js';
 import { storyKey, storyList, isStoryUnlocked, isStoryDone } from '../state/stories.js';
 import { finishLesson } from '../state/lessons.js';
@@ -19,6 +19,7 @@ import { icon } from '../ui/icons.js';
 import { play } from '../ui/sound.js';
 import { reducedMotion } from '../ui/motion.js';
 import { adSlot, mountAds } from '../ads/ads.js';
+import { t, tHtml } from '../i18n/index.js';
 
 const CAST_COLORS = ['vermillion', 'butter', 'sky', 'sage'];
 
@@ -40,11 +41,11 @@ export function richText(text) {
 function unlockHint(story) {
   const lesson = course.lessons[story.unlockAfter];
   const skill = course.skills[lesson.skill];
-  return `Finish ${skill.title}, lesson ${lesson.index + 1}`;
+  return t('stories.unlock', { skill: skill.title, number: lesson.index + 1 });
 }
 
 export function storyCard({ story, unlocked, done }) {
-  const status = done ? `${icon('check', { size: 16 })} Read` : unlocked ? 'New' : `${icon('lock', { size: 14 })} ${escapeHtml(unlockHint(story))}`;
+  const status = done ? `${icon('check', { size: 16 })} ${escapeHtml(t('stories.read'))}` : unlocked ? escapeHtml(t('stories.new')) : `${icon('lock', { size: 14 })} ${escapeHtml(unlockHint(story))}`;
   const inner = `
     <span class="story-card__art" aria-hidden="true">${castRow(story.cast, 56)}</span>
     <span class="story-card__text">
@@ -62,16 +63,16 @@ export function storiesView({ root }) {
   root.innerHTML = `
     <div class="page">
       <header class="page__header">
-        <p class="eyebrow">Stories</p>
-        <h1>Read <strong>with the cast.</strong></h1>
-        <p class="muted">Short conversations that use what you’ve learned. Tap any line to see it in English. Stories never cost hearts.</p>
+        <p class="eyebrow">${escapeHtml(t('stories.eyebrow'))}</p>
+        <h1>${tHtml('stories.title')}</h1>
+        <p class="muted">${escapeHtml(t('stories.lead', { language: languageName('base') }))}</p>
       </header>
       ${course.units
         .map((u) => {
           const items = list.filter((x) => x.story.unit === u.id);
           if (!items.length) return '';
           return `<section class="stories-unit">
-            <h2 class="stories-unit__title">Unit ${u.index + 1}: ${escapeHtml(u.title)}</h2>
+            <h2 class="stories-unit__title">${escapeHtml(t('stories.unit', { number: u.index + 1, title: u.title }))}</h2>
             <div class="story-list">${items.map(storyCard).join('')}</div>
           </section>`;
         })
@@ -93,7 +94,7 @@ function lineHtml({ speaker, target, base, audio }, gloss, side) {
       <span class="story-line__en"${langAttr('base')}>${escapeHtml(base)}</span>
       ${glossHtml}
     </button>
-    ${speakButton(target, { audio, speaker, label: `Hear ${who.name}`, className: 'story-line__speak' })}
+    ${speakButton(target, { audio, speaker, label: t('lesson.hear', { name: who.name }), className: 'story-line__speak' })}
   </div>`;
 }
 
@@ -126,7 +127,7 @@ export function storyView({ root, params, navigate }) {
   root.innerHTML = `
     <div class="lesson story">
       <header class="lesson__top">
-        <button class="icon-btn" type="button" data-quit aria-label="Close story">${icon('close')}</button>
+        <button class="icon-btn" type="button" data-quit aria-label="${escapeHtml(t('stories.close'))}">${icon('close')}</button>
         <div class="lesson__progress" data-progress></div>
       </header>
       <div class="lesson__stage">
@@ -139,7 +140,7 @@ export function storyView({ root, params, navigate }) {
         </div>
       </div>
       <footer class="lesson__footer">
-        <div class="lesson__actions">${button({ label: 'Start', size: 'lg', block: true, attrs: 'data-next' })}</div>
+        <div class="lesson__actions">${button({ label: t('stories.start'), size: 'lg', block: true, attrs: 'data-next' })}</div>
       </footer>
     </div>`;
 
@@ -148,7 +149,7 @@ export function storyView({ root, params, navigate }) {
   const nextLabel = next.querySelector('span');
 
   function drawProgress() {
-    root.querySelector('[data-progress]').innerHTML = progressBar((step + 1) / story.steps.length, { label: 'Story progress' });
+    root.querySelector('[data-progress]').innerHTML = progressBar((step + 1) / story.steps.length, { label: t('stories.progress') });
   }
 
   function finish() {
@@ -158,8 +159,8 @@ export function storyView({ root, params, navigate }) {
     showRewards(root, {
       result,
       ...summary,
-      title: 'Story complete!',
-      subtitle: `You finished “${story.title}”. Weebale nnyo!`,
+      title: t('stories.done.title'),
+      subtitle: t('stories.done.subtitle', { story: story.title, thanks: course.phrases.thanks }),
       onDone: () => navigate('/stories'),
     });
   }
@@ -171,7 +172,7 @@ export function storyView({ root, params, navigate }) {
       finish();
       return;
     }
-    nextLabel.textContent = 'Continue';
+    nextLabel.textContent = t('lesson.continue');
     const s = story.steps[step];
     const el = document.createElement('div');
     el.className = 'story__step';

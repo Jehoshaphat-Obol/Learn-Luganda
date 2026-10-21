@@ -13,12 +13,11 @@ import { POLICY } from './policy.js';
 import { adLog, recordAdShown } from './log.js';
 import { adConsent, setAdConsent } from './consent.js';
 import { adBreakStatus, adBreakUntil, takeAdBreak } from './breaks.js';
-import { AD_STRINGS, duration } from './strings.js';
+import { t, tHtml, currentLanguage } from '../i18n/index.js';
 import { store } from '../state/store.js';
 import { streakStatus } from '../state/streak.js';
 import { MASCOT_NAME } from '../app/brand.js';
 import { mascot } from '../illustrations/index.js';
-import { fill as fillText } from '../reminders/strings.js';
 import { escapeHtml, openModal, toast } from '../ui/components.js';
 
 export { adConsent };
@@ -66,11 +65,11 @@ export function adSlot(placement, context = {}, { config = ADS, policy = POLICY,
   const u = config.units[type];
   const layout = u.format === 'fluid' && u.layoutKey ? ` data-ad-layout-key="${escapeHtml(u.layoutKey)}"` : '';
   const format = u.format === 'fluid' && !u.layoutKey ? 'auto' : u.format;
-  return `<aside class="ad-card ad-card--${placement}" data-ad aria-label="Sponsored">
+  return `<aside class="ad-card ad-card--${placement}" data-ad aria-label="${escapeHtml(t('ads.sponsored'))}">
     <header class="ad-card__head">
-      <span class="ad-card__label">Sponsored</span>
-      <a class="ad-card__about" href="#/privacy">About ads</a>
-      ${policy.adBreak.perWeek ? `<button class="ad-card__break" type="button" data-ad-break aria-label="${AD_STRINGS.cardButtonLabel}">${AD_STRINGS.cardButton}</button>` : ''}
+      <span class="ad-card__label">${escapeHtml(t('ads.sponsored'))}</span>
+      <a class="ad-card__about" href="#/privacy">${escapeHtml(t('ads.about'))}</a>
+      ${policy.adBreak.perWeek ? `<button class="ad-card__break" type="button" data-ad-break aria-label="${escapeHtml(t('ads.cardButtonLabel'))}">${escapeHtml(t('ads.cardButton'))}</button>` : ''}
     </header>
     <ins class="adsbygoogle ad-card__unit" style="display:block" data-ad-client="${escapeHtml(config.client)}" data-ad-slot="${escapeHtml(u.slot)}" data-ad-format="${format}"${layout}${format === 'auto' ? ' data-full-width-responsive="true"' : ''}></ins>
   </aside>`;
@@ -147,12 +146,12 @@ export function askForConsent() {
     el.className = 'consent';
     el.dataset.consentFor = 'ads';
     el.setAttribute('role', 'region');
-    el.setAttribute('aria-label', 'Ad choices');
+    el.setAttribute('aria-label', t('ads.consent.label'));
     el.innerHTML = `
-      <p><strong>Ads keep Learn Luganda free.</strong> May our ad partner, Google, use cookies to show ads that suit you? Your lessons and progress never leave this device. <a href="#/privacy">Privacy policy</a></p>
+      <p>${tHtml('ads.consent.text', { app: t('app.name') })}</p>
       <div class="consent__actions">
-        <button class="btn btn--secondary" type="button" data-consent="denied">Basic ads only</button>
-        <button class="btn" type="button" data-consent="granted">Allow</button>
+        <button class="btn btn--secondary" type="button" data-consent="denied">${escapeHtml(t('ads.consent.deny'))}</button>
+        <button class="btn" type="button" data-consent="granted">${escapeHtml(t('ads.consent.allow'))}</button>
       </div>`;
     el.addEventListener('click', (e) => {
       const choice = e.target.closest('[data-consent]')?.dataset.consent;
@@ -183,7 +182,14 @@ export function mountAds(root, { ask = true, config = ADS } = {}) {
   return dismissConsent;
 }
 
-const timeLabel = (t) => new Date(t).toLocaleString('en', { weekday: 'long', hour: 'numeric', minute: '2-digit' });
+const timeLabel = (time) => new Date(time).toLocaleString(currentLanguage(), { weekday: 'long', hour: 'numeric', minute: '2-digit' });
+
+/** "a whole day", "two whole days" or "6 hours". */
+export function duration(hours) {
+  if (hours === 24) return t('ads.duration.day');
+  if (hours === 48) return t('ads.duration.twoDays');
+  return t('ads.duration.hours', { count: hours });
+}
 const currentStreak = () => streakStatus(store.get()).current;
 
 /** The learner's ad-break standing, for Settings. */
@@ -200,32 +206,32 @@ export async function offerAdBreak({ policy = POLICY } = {}) {
   if (status.active) return status.until;
   if (!status.available) {
     await openModal({
-      title: AD_STRINGS.none.title,
+      title: t('ads.none.title'),
       art: mascot({ pose: 'thinking' }),
-      body: `<p>${fillText(AD_STRINGS.none.body, { perWeek: policy.adBreak.perWeek, when: timeLabel(status.nextAt) })}</p>`,
-      actions: [{ label: AD_STRINGS.none.ok, value: 'ok' }],
+      body: `<p>${escapeHtml(t('ads.none.body', { perWeek: policy.adBreak.perWeek, when: timeLabel(status.nextAt) }))}</p>`,
+      actions: [{ label: t('ads.none.ok'), value: 'ok' }],
     });
     return 0;
   }
   const body = [
-    fillText(AD_STRINGS.offer.body, { mascot: MASCOT_NAME, duration: duration(status.hours) }),
-    status.streakBonus ? fillText(AD_STRINGS.offer.streak, { streak }) : '',
-    fillText(AD_STRINGS.offer.left, { left: status.left }),
+    t('ads.offer.body', { mascot: MASCOT_NAME, duration: duration(status.hours) }),
+    status.streakBonus ? t('ads.offer.streak', { streak }) : '',
+    t('ads.offer.left', { left: status.left }),
   ].filter(Boolean);
   const choice = await openModal({
-    title: AD_STRINGS.offer.title,
+    title: t('ads.offer.title'),
     art: mascot({ pose: 'happy' }),
     body: body.map((p) => `<p>${escapeHtml(p)}</p>`).join(''),
     actions: [
-      { label: AD_STRINGS.offer.no, value: 'no', variant: 'secondary' },
-      { label: AD_STRINGS.offer.yes, value: 'yes' },
+      { label: t('ads.offer.no'), value: 'no', variant: 'secondary' },
+      { label: t('ads.offer.yes'), value: 'yes' },
     ],
   });
   if (choice !== 'yes') return 0;
   const until = takeAdBreak({ streak, policy });
   if (until) {
     removeAll(document);
-    toast(fillText(AD_STRINGS.done, { time: timeLabel(until) }));
+    toast(t('ads.done', { time: timeLabel(until) }));
   }
   return until;
 }

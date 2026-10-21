@@ -13,17 +13,19 @@ import { barChart } from '../ui/barchart.js';
 import { profileStats } from '../state/stats.js';
 import { dailyGoal, xpHistory } from '../state/xp.js';
 import { fromDayKey } from '../state/dates.js';
+import { languageName } from '../content/course.js';
+import { currentLanguage, t } from '../i18n/index.js';
 
 export function achievementList(state) {
   return `<ul class="achievements">
     ${ACHIEVEMENTS.map((a) => {
       const p = achievementProgress(state, a);
       return `<li class="achievement">
-        ${badge({ shape: a.shape, iconName: a.icon, tier: p.tier, size: 64, label: `${a.title}, level ${p.tier} of ${p.maxTier}` })}
+        ${badge({ shape: a.shape, iconName: a.icon, tier: p.tier, size: 64, label: t('profile.badge', { title: a.title, tier: p.tier, max: p.maxTier }) })}
         <div class="achievement__body">
-          <h3>${escapeHtml(a.title)} <span class="muted">${p.tier ? `Level ${p.tier}` : 'Locked'}</span></h3>
-          <p class="muted">${escapeHtml(p.next ? a.describe(p.next) : 'All levels complete!')}</p>
-          ${p.next ? `${progressBar(p.ratio, { label: `${a.title} progress`, variant: 'gold' })}<span class="achievement__count">${p.value} / ${p.next}</span>` : ''}
+          <h3>${escapeHtml(a.title)} <span class="muted">${escapeHtml(p.tier ? t('profile.level', { tier: p.tier }) : t('profile.locked'))}</span></h3>
+          <p class="muted">${escapeHtml(p.next ? a.describe(p.next) : t('profile.allDone'))}</p>
+          ${p.next ? `${progressBar(p.ratio, { label: t('profile.progress', { title: a.title }), variant: 'gold' })}<span class="achievement__count">${escapeHtml(t('profile.count', { value: p.value, next: p.next }))}</span>` : ''}
         </div>
       </li>`;
     }).join('')}
@@ -31,7 +33,7 @@ export function achievementList(state) {
 }
 
 function tile(iconName, value, label, cls = '') {
-  return `<li class="stat-tile ${cls}">${icon(iconName, { size: 26 })}<div><strong>${value}</strong><span>${label}</span></div></li>`;
+  return `<li class="stat-tile ${cls}">${icon(iconName, { size: 26 })}<div><strong>${escapeHtml(String(value))}</strong><span>${escapeHtml(label)}</span></div></li>`;
 }
 
 export function profileView({ root }) {
@@ -39,12 +41,13 @@ export function profileView({ root }) {
   const p = state.profile;
   const st = profileStats(state);
   const history = xpHistory(state, 7);
+  const locale = currentLanguage();
   const week = history.reduce((n, d) => n + d.xp, 0);
   const chartData = history.map((d, i) => {
     const date = fromDayKey(d.day);
     return {
-      label: i === history.length - 1 ? 'Today' : date.toLocaleDateString('en', { weekday: 'short' }),
-      long: date.toLocaleDateString('en', { weekday: 'long', month: 'long', day: 'numeric' }),
+      label: i === history.length - 1 ? t('time.today') : date.toLocaleDateString(locale, { weekday: 'short' }),
+      long: date.toLocaleDateString(locale, { weekday: 'long', month: 'long', day: 'numeric' }),
       value: d.xp,
       highlight: i === history.length - 1,
     };
@@ -55,31 +58,31 @@ export function profileView({ root }) {
         ${avatar(p.avatar, { size: 96, label: p.name })}
         <div class="profile-head__text">
           <h1><strong>${escapeHtml(p.name)}</strong></h1>
-          <p class="muted">Learning Luganda since ${new Date(p.joinedAt).toLocaleDateString('en', { month: 'long', year: 'numeric' })}</p>
+          <p class="muted">${escapeHtml(t('profile.since', { language: languageName('target'), date: new Date(p.joinedAt).toLocaleDateString(locale, { month: 'long', year: 'numeric' }) }))}</p>
         </div>
-        ${button({ label: 'Edit', variant: 'secondary', href: '#/settings?section=profile', attrs: 'aria-label="Edit profile"' })}
+        ${button({ label: t('profile.edit'), variant: 'secondary', href: '#/settings?section=profile', attrs: `aria-label="${escapeHtml(t('profile.editLabel'))}"` })}
       </header>
 
-      <h2 class="profile-section">Statistics</h2>
+      <h2 class="profile-section">${escapeHtml(t('profile.stats'))}</h2>
       <ul class="stat-tiles">
-        ${tile('flame', st.streak, `day streak${st.longestStreak > st.streak ? ` · best ${st.longestStreak}` : ''}`, 'stat-tile--flame')}
-        ${tile('bolt', st.totalXp, 'total XP', 'stat-tile--xp')}
-        ${tile('book', st.words, 'words learned')}
-        ${tile('check', st.lessons, `lessons · ${st.perfect} perfect`)}
-        ${tile('target', st.accuracy === null ? '—' : `${Math.round(st.accuracy * 100)}%`, 'accuracy')}
-        ${tile('clock', st.minutes, 'minutes learning')}
-        ${tile('stories', st.stories, 'stories read')}
+        ${tile('flame', st.streak, st.longestStreak > st.streak ? t('profile.streakBest', { best: st.longestStreak }) : t('profile.streak'), 'stat-tile--flame')}
+        ${tile('bolt', st.totalXp, t('profile.xp'), 'stat-tile--xp')}
+        ${tile('book', st.words, t('profile.words'))}
+        ${tile('check', st.lessons, t('profile.lessons', { perfect: st.perfect }))}
+        ${tile('target', st.accuracy === null ? '—' : `${Math.round(st.accuracy * 100)}%`, t('profile.accuracy'))}
+        ${tile('clock', st.minutes, t('profile.minutes'))}
+        ${tile('stories', st.stories, t('profile.stories'))}
       </ul>
 
       <section class="card xp-week" aria-labelledby="xp-week-title">
         <header class="xp-week__head">
-          <h2 id="xp-week-title">XP this week</h2>
-          <span class="muted">${week} XP in 7 days</span>
+          <h2 id="xp-week-title">${escapeHtml(t('profile.week.title'))}</h2>
+          <span class="muted">${escapeHtml(t('profile.week.total', { xp: week }))}</span>
         </header>
-        ${barChart(chartData, { unit: 'XP', caption: 'XP earned each day for the last 7 days', goal: dailyGoal(state).goal })}
+        ${barChart(chartData, { unit: t('profile.week.unit'), caption: t('profile.week.caption'), goal: dailyGoal(state).goal })}
       </section>
 
-      <h2 class="profile-section">Achievements</h2>
+      <h2 class="profile-section">${escapeHtml(t('profile.achievements'))}</h2>
       ${achievementList(state)}
     </div>`;
 }

@@ -5,6 +5,7 @@
  */
 import { langAttr } from '../../content/course.js';
 import { escapeHtml } from '../../ui/components.js';
+import { promptHtml } from './prompt.js';
 
 export function renderMatch(ex, el, api) {
   const byId = Object.fromEntries(ex.pairs.map((p) => [p.id, p]));
@@ -12,7 +13,7 @@ export function renderMatch(ex, el, api) {
   let matched = 0;
   el.innerHTML = `
     <div class="ex ex--match">
-      <h2 class="ex__prompt">${escapeHtml(ex.prompt)}</h2>
+      ${promptHtml(ex)}
       <div class="ex-match__grid">
         <div class="ex-match__col">${ex.left.map((id, i) => `<button class="tile" type="button" data-side="target" data-id="${id}"${langAttr('target')}><span class="choice__key">${i + 1}</span>${escapeHtml(byId[id].target)}</button>`).join('')}</div>
         <div class="ex-match__col">${ex.right.map((id, i) => `<button class="tile" type="button" data-side="base" data-id="${id}"${langAttr('base')}><span class="choice__key">${(i + 1 + ex.left.length) % 10}</span>${escapeHtml(byId[id].base)}</button>`).join('')}</div>

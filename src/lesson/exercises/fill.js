@@ -1,16 +1,18 @@
 /* Fill in the blank: pick the missing word of a Luganda sentence. */
 import { langAttr } from '../../content/course.js';
 import { escapeHtml } from '../../ui/components.js';
+import { t } from '../../i18n/index.js';
+import { promptHtml } from './prompt.js';
 
 export function renderFill(ex, el, api) {
   let selected = null;
   const [before, after] = ex.sentence.split('___');
   el.innerHTML = `
     <div class="ex ex--fill">
-      <h2 class="ex__prompt">${escapeHtml(ex.prompt)}</h2>
+      ${promptHtml(ex)}
       <p class="ex-fill__hint muted">${escapeHtml(ex.translation)}</p>
       <p class="ex-fill__sentence"${langAttr('target')}>${escapeHtml(before)}<span class="ex-fill__blank" data-blank>&nbsp;</span>${escapeHtml(after)}</p>
-      <div class="ex-fill__options" role="radiogroup" aria-label="Answers">
+      <div class="ex-fill__options" role="radiogroup" aria-label="${escapeHtml(t('lesson.answers'))}">
         ${ex.options.map((o, i) => `<button class="tile" type="button" role="radio" aria-checked="false" data-value="${escapeHtml(o)}"${langAttr('target')}><span class="choice__key">${i + 1}</span>${escapeHtml(o)}</button>`).join('')}
       </div>
     </div>`;

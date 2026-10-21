@@ -4,10 +4,12 @@ import { store } from '../state/store.js';
 import { SHOP_ITEMS, buy, canBuy, earnRules } from '../state/shop.js';
 import { GEMS_PER_TIER } from '../state/achievements.js';
 import { heartStatus, formatWait } from '../state/hearts.js';
+import { MAX_FREEZES } from '../state/streak.js';
 import { button, escapeHtml, toast } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { avatar } from '../ui/avatar.js';
 import { play } from '../ui/sound.js';
+import { t, tHtml } from '../i18n/index.js';
 
 function itemArt(item, state) {
   if (item.cosmetic) return avatar({ ...state.profile.avatar, frame: item.id }, { size: 56 });
@@ -15,12 +17,12 @@ function itemArt(item, state) {
 }
 
 function itemNote(item, state) {
-  if (item.id === 'freeze') return `${state.streak.freezes} of 2 equipped`;
+  if (item.id === 'freeze') return t('shop.freezes', { count: state.streak.freezes, max: MAX_FREEZES });
   if (item.id === 'refill') {
     const h = heartStatus(state);
-    return h.full ? 'Hearts are full' : `${h.count} of ${h.max} · next in ${formatWait(h.nextAt - Date.now())}`;
+    return h.full ? t('shop.reasons.full') : t('shop.hearts', { count: h.count, max: h.max, wait: formatWait(h.nextAt - Date.now()) });
   }
-  if (item.cosmetic && state.inventory[item.id]) return state.profile.avatar.frame === item.id ? 'Equipped' : 'Owned';
+  if (item.cosmetic && state.inventory[item.id]) return t(state.profile.avatar.frame === item.id ? 'shop.equipped' : 'shop.reasons.owned');
   return '';
 }
 
@@ -31,20 +33,20 @@ export function shopView({ root }) {
       <div class="page">
         <header class="page__header shop-header">
           <div>
-            <p class="eyebrow">Gems</p>
-            <h1>Use your <strong>gems.</strong></h1>
+            <p class="eyebrow">${escapeHtml(t('shop.eyebrow'))}</p>
+            <h1>${tHtml('shop.title')}</h1>
           </div>
-          <span class="shop-balance" aria-label="${state.gems} gems">${icon('gem', { size: 26 })}${state.gems}</span>
+          <span class="shop-balance" aria-label="${escapeHtml(t('shop.balance', { count: state.gems }))}">${icon('gem', { size: 26 })}${state.gems}</span>
         </header>
-        <p class="muted shop-earn">Gems can’t be bought. You earn every one by learning, then use them to protect your streak, refill hearts or decorate your avatar.</p>
+        <p class="muted shop-earn">${escapeHtml(t('shop.lead'))}</p>
         <ul class="shop-list">
           ${SHOP_ITEMS.map((item) => {
             const check = canBuy(state, item);
             const owned = item.cosmetic && state.inventory[item.id];
             const equipped = owned && state.profile.avatar.frame === item.id;
             const action = owned
-              ? button({ label: equipped ? 'Unequip' : 'Equip', variant: 'secondary', attrs: `data-equip="${item.id}"` })
-              : button({ label: `${item.price}`, iconName: 'gem', variant: check.ok ? 'blue' : 'secondary', disabled: !check.ok, attrs: `data-buy="${item.id}" aria-label="Get ${escapeHtml(item.title)} for ${item.price} gems${check.ok ? '' : `, ${check.reason}`}"` });
+              ? button({ label: t(equipped ? 'shop.unequip' : 'shop.equip'), variant: 'secondary', attrs: `data-equip="${item.id}"` })
+              : button({ label: `${item.price}`, iconName: 'gem', variant: check.ok ? 'blue' : 'secondary', disabled: !check.ok, attrs: `data-buy="${item.id}" aria-label="${escapeHtml(check.ok ? t('shop.get', { item: item.title, price: item.price }) : t('shop.getUnavailable', { item: item.title, price: item.price, reason: check.reason }))}"` });
             return `<li class="shop-item">
               ${itemArt(item, state)}
               <div class="shop-item__body">
@@ -57,7 +59,7 @@ export function shopView({ root }) {
           }).join('')}
         </ul>
         <section class="shop-rules" aria-labelledby="shop-rules-title">
-          <h2 id="shop-rules-title">How to earn gems</h2>
+          <h2 id="shop-rules-title">${escapeHtml(t('shop.rules'))}</h2>
           <ul>${earnRules({ perTier: GEMS_PER_TIER }).map((r) => `<li><span>${escapeHtml(r.label)}</span><span class="shop-rules__gems">${icon('gem', { size: 14 })}${escapeHtml(r.gems)}</span></li>`).join('')}</ul>
         </section>
       </div>`;
@@ -72,7 +74,7 @@ export function shopView({ root }) {
         ok = buy(s, item.id);
       });
       play(ok ? 'reward' : 'wrong');
-      toast(ok ? `${item.title} unlocked!` : 'Not available right now.', { variant: ok ? 'success' : 'error' });
+      toast(ok ? t('shop.unlocked', { item: item.title }) : t('shop.unavailable'), { variant: ok ? 'success' : 'error' });
       draw();
       return;
     }

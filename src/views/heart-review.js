@@ -9,11 +9,11 @@ import { store } from '../state/store.js';
 import { learnedWordIds } from '../state/progress.js';
 import { HEART_REVIEW_WORDS, MAX_HEARTS, REFILL_COST, finishHeartReview, heartReviewWordIds, refillHearts } from '../state/hearts.js';
 import { buildPractice } from '../lesson/practice.js';
-import { runExercises } from './lesson.js';
+import { quitText, runExercises } from './lesson.js';
 import { mascot } from '../illustrations/index.js';
 import { button, escapeHtml, openModal } from '../ui/components.js';
 import { play } from '../ui/sound.js';
-import { HEART_STRINGS as T, fill } from './heart-review-strings.js';
+import { t } from '../i18n/index.js';
 
 /** Words to step back to, given what this session missed and showed. */
 export function reviewWords({ missed = [], seen = [] } = {}) {
@@ -21,7 +21,7 @@ export function reviewWords({ missed = [], seen = [] } = {}) {
   return heartReviewWordIds(state, { missed, seen, learned: learnedWordIds(state), exists: (id) => Boolean(course.words[id]) });
 }
 
-const refillAction = (label) => (store.get().gems >= REFILL_COST ? [{ label: fill(label, { cost: REFILL_COST }), value: 'refill', variant: 'secondary' }] : []);
+const refillAction = (key) => (store.get().gems >= REFILL_COST ? [{ label: t(key, { cost: REFILL_COST }), value: 'refill', variant: 'secondary' }] : []);
 
 export function refillWithGems() {
   store.update((s) => {
@@ -47,8 +47,8 @@ export function runHeartReview({ root, words, onDone, onQuit }) {
   const runner = runExercises({
     root,
     exercises,
-    title: T.session,
-    quitPrompt: T.quit,
+    title: t('heartReview.session'),
+    quitPrompt: quitText('heartReview.quit'),
     onQuit,
     onFinish: (result) => {
       runner.cleanup();
@@ -63,8 +63,8 @@ export function runHeartReview({ root, words, onDone, onQuit }) {
 /** The "hearts refilled" card shown before going back to the lesson. */
 export function celebrateRefill(next) {
   return openModal({
-    title: T.done.title,
-    body: `<p>${escapeHtml(T.done.body)}</p>`,
+    title: t('heartReview.done.title'),
+    body: `<p>${escapeHtml(t('heartReview.done.body'))}</p>`,
     art: mascot({ pose: 'cheering' }),
     dismissible: false,
     actions: [{ label: next, value: 'go' }],
@@ -79,14 +79,14 @@ export function celebrateRefill(next) {
 export async function stepBack({ root, lessonEl, missed, seen, onQuit, track }) {
   const words = reviewWords({ missed, seen });
   const choice = await openModal({
-    title: T.out.title,
-    body: `<p>${escapeHtml(T.out.body)}</p>`,
+    title: t('heartReview.out.title'),
+    body: `<p>${escapeHtml(t('heartReview.out.body'))}</p>`,
     art: mascot({ pose: 'thinking' }),
     dismissible: false,
     actions: [
-      { label: T.out.review, value: 'review' },
-      ...refillAction(T.out.refill),
-      { label: T.out.quit, value: 'quit', variant: 'ghost' },
+      { label: t('heartReview.out.review'), value: 'review' },
+      ...refillAction('heartReview.out.refill'),
+      { label: t('heartReview.out.quit'), value: 'quit', variant: 'ghost' },
     ],
   });
   if (choice === 'refill') {
@@ -111,7 +111,7 @@ export async function stepBack({ root, lessonEl, missed, seen, onQuit, track }) 
     return false;
   }
   lessonEl.hidden = false;
-  await celebrateRefill(T.done.next);
+  await celebrateRefill(t('heartReview.done.next'));
   return true;
 }
 
@@ -133,11 +133,11 @@ export function heartGate({ root, navigate, onReady }) {
   root.innerHTML = `
     <section class="empty-state">
       <div class="empty-state__art">${mascot({ pose: 'thinking' })}</div>
-      <h1>${escapeHtml(T.gate.title)}</h1>
-      <p class="muted">${escapeHtml(T.gate.body)}</p>
-      ${button({ label: T.gate.review, size: 'lg', attrs: 'data-review' })}
-      ${canRefill ? button({ label: fill(T.gate.refill, { cost: REFILL_COST }), variant: 'secondary', attrs: 'data-refill' }) : ''}
-      ${button({ label: T.gate.back, href: '#/learn', variant: 'ghost' })}
+      <h1>${escapeHtml(t('heartReview.gate.title'))}</h1>
+      <p class="muted">${escapeHtml(t('heartReview.gate.body'))}</p>
+      ${button({ label: t('heartReview.gate.review'), size: 'lg', attrs: 'data-review' })}
+      ${canRefill ? button({ label: t('heartReview.gate.refill', { cost: REFILL_COST }), variant: 'secondary', attrs: 'data-refill' }) : ''}
+      ${button({ label: t('heartReview.gate.back'), href: '#/learn', variant: 'ghost' })}
     </section>`;
   root.querySelector('[data-refill]')?.addEventListener('click', () => {
     refillWithGems();
@@ -149,7 +149,7 @@ export function heartGate({ root, navigate, onReady }) {
       words,
       onQuit: () => navigate('/learn'),
       onDone: async () => {
-        await celebrateRefill(T.done.start);
+        await celebrateRefill(t('heartReview.done.start'));
         cleanup = onReady() ?? (() => {});
       },
     });

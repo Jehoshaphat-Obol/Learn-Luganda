@@ -19,16 +19,16 @@ import { mascot } from '../illustrations/index.js';
 import { button, escapeHtml, openModal, progressBar } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { play } from '../ui/sound.js';
+import { t, tList } from '../i18n/index.js';
 
-const QUIT = {
-  label: 'Quit lesson',
-  title: 'Wait, don’t go!',
-  body: 'You’ll lose your progress in this lesson if you quit now.',
-  stay: 'Keep learning',
-  leave: 'End session',
-};
+/** The quit dialog's text, from `lesson.quit.*` or another prefix. */
+export const quitText = (prefix = 'lesson.quit') => Object.fromEntries(['label', 'title', 'body', 'stay', 'leave'].map((k) => [k, t(`${prefix}.${k}`)]));
 
-const PRAISE = ['Nice!', 'Great job!', 'Correct!', 'Kale!', 'Well done!', 'Excellent!'];
+/** One word of praise: the UI pack's, or now and then the course's own. */
+function praise() {
+  const words = [...tList('lesson.praise'), ...course.cheers];
+  return words[Math.floor(Math.random() * words.length)] ?? '';
+}
 
 /**
  * Generic runner shared by lessons, practice and checkpoints.
@@ -38,7 +38,7 @@ const PRAISE = ['Nice!', 'Great job!', 'Correct!', 'Kale!', 'Well done!', 'Excel
  *   With `hearts`, each wrong answer costs a heart, and running out steps back
  *   to a short heart review before the lesson goes on.
  */
-export function runExercises({ root, exercises, onQuit, onFinish, hearts = false, title = 'Lesson', quitPrompt = QUIT }) {
+export function runExercises({ root, exercises, onQuit, onFinish, hearts = false, title = t('lesson.title'), quitPrompt = quitText() }) {
   const session = createSession(exercises);
   let current = null; // renderer handle
   let phase = 'answer'; // 'answer' | 'feedback'
@@ -56,7 +56,7 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
       <div class="lesson__stage" data-stage></div>
       <footer class="lesson__footer" data-footer>
         <div class="lesson__feedback" data-feedback role="status" aria-live="polite"></div>
-        <div class="lesson__actions">${button({ label: 'Check', size: 'lg', block: true, disabled: true, attrs: 'data-main' })}</div>
+        <div class="lesson__actions">${button({ label: t('lesson.check'), size: 'lg', block: true, disabled: true, attrs: 'data-main' })}</div>
       </footer>
     </div>`;
 
@@ -75,11 +75,11 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
   function drawHearts(lost = false) {
     if (!hearts) return;
     const { count } = heartStatus(store.get());
-    root.querySelector('[data-extra]').innerHTML = `<span class="lesson__hearts${lost ? ' is-lost' : ''}" aria-label="${count} hearts left">${icon('heart', { size: 26 })}<span>${count}</span></span>`;
+    root.querySelector('[data-extra]').innerHTML = `<span class="lesson__hearts${lost ? ' is-lost' : ''}" aria-label="${escapeHtml(t('lesson.heartsLeft', { count }))}">${icon('heart', { size: 26 })}<span>${count}</span></span>`;
   }
 
   function drawProgress() {
-    root.querySelector('[data-progress]').innerHTML = progressBar(session.progress, { label: 'Lesson progress' });
+    root.querySelector('[data-progress]').innerHTML = progressBar(session.progress, { label: t('lesson.progress') });
   }
 
   const api = {
@@ -103,7 +103,7 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
     locked = false;
     footer.className = 'lesson__footer';
     feedback.innerHTML = '';
-    mainLabel.textContent = ex.type === 'intro' ? 'Continue' : 'Check';
+    mainLabel.textContent = t(ex.type === 'intro' ? 'lesson.continue' : 'lesson.check');
     mainBtn.className = 'btn btn--primary btn--lg btn--block';
     stage.innerHTML = '<div class="lesson__exercise" data-ex></div>';
     current = RENDERERS[ex.type](ex, stage.querySelector('[data-ex]'), api);
@@ -129,9 +129,9 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
     phase = 'feedback';
     footer.className = `lesson__footer lesson__footer--${correct ? 'good' : 'bad'}`;
     feedback.innerHTML = correct
-      ? `<div class="fb"><span class="fb__icon">${icon('check', { size: 26 })}</span><div><strong>${note ? escapeHtml(note) : PRAISE[Math.floor(Math.random() * PRAISE.length)]}</strong>${(ex.type === 'translate' || note) && answerText ? `<p class="fb__answer">${escapeHtml(answerText)}</p>` : ''}</div></div>`
-      : `<div class="fb"><span class="fb__icon">${icon('cross', { size: 26 })}</span><div><strong>Correct answer:</strong><p class="fb__answer"${ex.lang ? langAttr(ex.lang) : ''}>${escapeHtml(answerText ?? '')}</p></div></div>`;
-    mainLabel.textContent = 'Continue';
+      ? `<div class="fb"><span class="fb__icon">${icon('check', { size: 26 })}</span><div><strong>${note ? escapeHtml(note) : escapeHtml(praise())}</strong>${(ex.type === 'translate' || note) && answerText ? `<p class="fb__answer">${escapeHtml(answerText)}</p>` : ''}</div></div>`
+      : `<div class="fb"><span class="fb__icon">${icon('cross', { size: 26 })}</span><div><strong>${escapeHtml(t('lesson.correctAnswer'))}</strong><p class="fb__answer"${ex.lang ? langAttr(ex.lang) : ''}>${escapeHtml(answerText ?? '')}</p></div></div>`;
+    mainLabel.textContent = t('lesson.continue');
     mainBtn.className = `btn btn--${correct ? 'success' : 'danger'} btn--lg btn--block`;
     mainBtn.disabled = false;
     mainBtn.focus({ preventScroll: true });
