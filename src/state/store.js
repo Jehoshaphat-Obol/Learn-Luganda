@@ -6,15 +6,18 @@
 import { createStore } from './storage.js';
 
 export const STORAGE_KEY = 'learn-luganda';
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 
 export const DEFAULTS = {
   // null until onboarding finishes: { name, avatar, dailyGoal, motivation, level, joinedAt }
   profile: null,
   onboarding: { step: 0, answers: {} },
-  // reminder: opt-in daily notification at reminderHour (local time)
   // soundPack: 'playful' | 'soft' (see src/ui/sound.js)
-  settings: { sound: true, soundPack: 'playful', music: true, haptics: true, motion: true, reminder: false, reminderHour: 19, lastReminder: null },
+  settings: { sound: true, soundPack: 'playful', music: true, haptics: true, motion: true },
+  // Opt-in word reminders (src/reminders). hour: null learns the routine from
+  // `hours` (lessons finished per hour of day); consent: 'unasked' | 'granted'
+  // | 'later' | 'declined'; sent: day keys reminders went out.
+  reminders: { on: false, hour: null, consent: 'unasked', askedAt: null, asks: 0, sent: [], hours: Array(24).fill(0) },
   // lessonId -> { completions, bestAccuracy, lastCompletedAt }
   lessons: {},
   xp: { total: 0, byDay: {} },
@@ -35,6 +38,18 @@ export const DEFAULTS = {
 export const MIGRATIONS = {
   // v2: weekly leagues were removed; drop their saved slice.
   2: ({ league, ...doc }) => doc,
+  // v3: the fixed-hour daily reminder became smart word reminders. Keep an
+  // explicit hour (19 was the default, so treat it as "learn my routine") and
+  // seed the routine from when lessons were last finished.
+  3: (doc) => {
+    const { reminder = false, reminderHour = 19, lastReminder = null, ...settings } = doc.settings ?? {};
+    const hours = Array(24).fill(0);
+    for (const l of Object.values(doc.lessons ?? {})) {
+      if (l?.lastCompletedAt) hours[new Date(l.lastCompletedAt).getHours()] += 1;
+    }
+    const reminders = { on: Boolean(reminder), hour: reminderHour === 19 ? null : reminderHour, consent: reminder ? 'granted' : 'unasked', askedAt: null, asks: 0, sent: lastReminder ? [lastReminder] : [], hours };
+    return { ...doc, settings, reminders };
+  },
 };
 
 export const store = createStore({

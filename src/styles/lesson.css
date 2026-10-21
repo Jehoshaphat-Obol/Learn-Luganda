@@ -498,3 +498,21 @@
 .ex-translate__bank[hidden] {
   display: none;
 }
+
+/* Word-reminder offer after a lesson (src/reminders). */
+.reminder-offer__art {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-2);
+}
+
+.reminder-offer__yes {
+  width: 100%;
+  max-width: 420px;
+}
+
+.reminder-offer__later {
+  font-size: var(--text-sm);
+  text-align: center;
+  max-width: 36ch;
+}

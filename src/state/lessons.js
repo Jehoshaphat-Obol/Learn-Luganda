@@ -7,6 +7,7 @@ import { clearMistakes, recordSession } from './review.js';
 import { gainHeart } from './hearts.js';
 import { sessionGems, STREAK_GEMS } from './shop.js';
 import { evaluateAchievements } from './achievements.js';
+import { recordStudyHour } from '../reminders/rules.js';
 
 /**
  * Applies a finished lesson's result to the state (pure, for tests).
@@ -45,6 +46,7 @@ export function finishLesson(lessonId, result, { replay = false, base, practice 
     addXp(s, xp.total, now);
     streak = extendStreak(s, dayKey(now));
     recordSession(s, result, dayKey(now));
+    recordStudyHour(s, now);
     if (practice) {
       clearMistakes(s, result);
       gainHeart(s, 1, now.getTime());
