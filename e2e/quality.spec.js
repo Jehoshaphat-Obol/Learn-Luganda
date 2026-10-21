@@ -7,7 +7,7 @@ const require = createRequire(import.meta.url);
 const axePath = require.resolve('axe-core/axe.min.js');
 
 const everything = Object.fromEntries(course.order.map((id) => [id, { completions: 1, bestAccuracy: 1 }]));
-const SCREENS = ['#/learn', '#/lesson/u1s1l1', '#/practice', '#/shop', '#/profile', '#/streak', '#/settings', '#/stories', '#/story/new-friend', '#/guidebook/u2', '#/guidebook/u9', '#/story/new-gomesi', '#/lesson/u10s3l3', '#/guidebook/u15', '#/guidebook/u19', '#/story/weekend-plans', '#/guidebook/u23', '#/story/cooking-luwombo', '#/guidebook/u25', '#/story/kasubi-visit'];
+const SCREENS = ['#/learn', '#/lesson/u1s1l1', '#/practice', '#/shop', '#/profile', '#/streak', '#/settings', '#/privacy', '#/about', '#/contact', '#/terms', '#/stories', '#/story/new-friend', '#/guidebook/u2', '#/guidebook/u9', '#/story/new-gomesi', '#/lesson/u10s3l3', '#/guidebook/u15', '#/guidebook/u19', '#/story/weekend-plans', '#/guidebook/u23', '#/story/cooking-luwombo', '#/guidebook/u25', '#/story/kasubi-visit'];
 // Content screens added with each new batch of units.
 const CONTENT_SCREENS = ['#/guidebook/u29', '#/story/source-of-nile'];
 
@@ -44,4 +44,12 @@ test('the app is installable: manifest and icons load', async ({ page, request }
   const manifest = await (await request.get(href)).json();
   expect(manifest.display).toBe('standalone');
   for (const icon of manifest.icons) expect((await request.get(icon.src)).ok()).toBe(true);
+});
+
+test('no ads or consent card while AdSense is not configured', async ({ page }) => {
+  await openWith(page, savedState(), '#/learn');
+  await expect(page.locator('.course-section').first()).toBeVisible();
+  await expect(page.locator('[data-ad], .consent')).toHaveCount(0);
+  await page.goto('./#/stories');
+  await expect(page.locator('[data-ad], .consent')).toHaveCount(0);
 });

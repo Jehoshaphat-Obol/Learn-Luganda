@@ -16,6 +16,8 @@ import { storyList } from '../state/stories.js';
 import { portrait } from '../illustrations/index.js';
 import { button, escapeHtml, ring, toast } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
+import { adSlot, mountAds } from '../ads/ads.js';
+import { siteLinks } from '../app/site.js';
 
 // Horizontal offsets (px) that make the trail wind left and right.
 const WIND = [0, 44, 72, 44, 0, -44, -72, -44];
@@ -171,6 +173,7 @@ function sidebar(state) {
           <p class="muted">${unread ? `${unread} new to read` : 'Read along with the cast.'}</p>
         </div>
       </a>
+      ${siteLinks()}
     </aside>`;
 }
 
@@ -185,7 +188,7 @@ export function learnView({ root, navigate }) {
         <h1 class="visually-hidden">Your learning path</h1>
         ${riskBanner(state)}
         ${goalStrip(state)}
-        ${course.sections.map((s) => courseSection(state, s, current, s.id === openId)).join('')}
+        ${course.sections.map((s) => courseSection(state, s, current, s.id === openId) + (s.id === openId ? adSlot('path') : '')).join('')}
         <p class="learn__more caption">More units are on the way. Weebale for learning!</p>
       </div>
       ${sidebar(state)}
@@ -203,6 +206,9 @@ export function learnView({ root, navigate }) {
       details.querySelector('summary').textContent = details.open ? 'Hide units' : 'Show units';
     });
   }
+
+  // One sponsored card, after the section being studied.
+  const stopAds = mountAds(root);
 
   let popover = null;
   function closePopover() {
@@ -245,4 +251,6 @@ export function learnView({ root, navigate }) {
   root.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closePopover();
   });
+
+  return stopAds;
 }

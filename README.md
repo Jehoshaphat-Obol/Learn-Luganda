@@ -53,6 +53,11 @@ accounts and no server: your progress stays in your browser.
 - **Design**: a light "promada paper" theme with vermillion orange and
   Bauhaus-style characters, avatars and a crowned-crane mascot.
 
+- **Ads (off until configured)**: native-style AdSense cards labelled
+  Sponsored, governed by a frozen rule-based policy in `src/ads/policy.js`
+  with one level to tune how much they touch learning. Setup and tuning:
+  [docs/adsense.md](docs/adsense.md).
+
 ## Develop
 
 ```sh
@@ -86,6 +91,7 @@ Pages → Source: Deploy from a branch, `gh-pages` / root).
 - `src/state/`: the versioned localStorage store and the learning mechanics:
   XP, hearts, streaks, review, shop, achievements, stories and stats
 - `src/views/`: one module per screen; `src/app/`: router, shell, PWA
+- `src/ads/`: ad policy, AdSense IDs, consent and the ad card
 - `src/ui/`: components, icons, avatars, badges, sound, motion and the bar chart
 - `src/illustrations/`: the cast, the mascot and scenes, drawn as SVG
 - `build/`: the Vite plugin that generates the service worker

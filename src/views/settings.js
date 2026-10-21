@@ -12,6 +12,8 @@ import { avatar } from '../ui/avatar.js';
 import { refreshTopBar } from '../app/shell.js';
 import { canInstall, enableReminders, notificationsSupported, promptInstall } from '../app/pwa.js';
 import { play } from '../ui/sound.js';
+import { adConsent, adsConfigured, changeAdConsent } from '../ads/ads.js';
+import { siteLinks } from '../app/site.js';
 
 function download(filename, text) {
   const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
@@ -95,6 +97,13 @@ export function settingsView({ root, query, navigate }) {
             </section>`
           : ''
       }
+      <section class="settings-group" id="privacy">
+        <h2>Ads and privacy</h2>
+        ${adsConfigured() ? `<div>${toggle('personalisedAds', 'Personalised ads', 'Let Google use cookies to show ads that suit you. Off means basic, non-personalised ads.', adConsent() === 'granted')}</div>` : ''}
+        <p class="muted">Your lessons and progress never leave this device. <a href="#/privacy">Read the privacy policy</a>.</p>
+        ${siteLinks()}
+      </section>
+
       <section class="settings-group" id="data">
         <h2>Your progress</h2>
         <p class="muted">Progress is saved in this browser only. Export it to keep a backup or to move to another device, then import it there.</p>
@@ -154,6 +163,11 @@ export function settingsView({ root, query, navigate }) {
     }
     const key = e.target.dataset?.setting;
     if (!key) return;
+    if (key === 'personalisedAds') {
+      changeAdConsent(e.target.checked ? 'granted' : 'denied');
+      toast(e.target.checked ? 'Personalised ads allowed.' : 'You’ll see basic ads only.');
+      return;
+    }
     if (key === 'reminder') {
       const wanted = e.target.checked;
       const on = wanted && (await enableReminders());
