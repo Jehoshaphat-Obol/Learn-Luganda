@@ -22,8 +22,23 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
+  font-weight: var(--weight-light);
+  letter-spacing: var(--tracking-tight);
   line-height: 1.1;
   margin: 0;
+}
+
+/* Light headline with a bold second phrase. */
+h1 strong,
+h2 strong,
+h3 strong {
+  font-weight: var(--weight-bold);
+}
+
+.caption {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--color-text-muted);
 }
 
 .btn {

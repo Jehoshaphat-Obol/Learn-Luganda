@@ -22,7 +22,7 @@ Source: Deploy from a branch, `gh-pages` / root).
 
 ## Project layout
 
-- `src/styles/tokens.css`: theme tokens (vermillion orange, Bauhaus palette, type, spacing)
+- `src/styles/tokens.css`: theme tokens (vermillion orange, promada paper/ink neutrals and pastels, Bauhaus accents, Inter Tight / Inter / Instrument Serif type)
 - `src/main.js`: app entry
 - `public/`: static files copied as-is
 - `journal/`: development log, one entry per PR
