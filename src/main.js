@@ -4,12 +4,14 @@ import './styles/components.css';
 import './styles/layout.css';
 
 import { createRouter } from './app/router.js';
-import { createShell, refreshTopBar, setStatsProvider } from './app/shell.js';
+import { createShell, refreshMusicButton, refreshTopBar, setStatsProvider } from './app/shell.js';
 import { store, hasProfile } from './state/store.js';
 import { heartStatus } from './state/hearts.js';
 import { settleStreak, streakStatus } from './state/streak.js';
 import { routes } from './app/routes.js';
 import { applyMotion } from './ui/motion.js';
+import { preload } from './ui/sound.js';
+import { initMusic, setMusicScene, toggleMusic } from './ui/music.js';
 import { registerServiceWorker, startReminders } from './app/pwa.js';
 
 setStatsProvider(() => {
@@ -33,8 +35,16 @@ const router = createRouter({
       return;
     }
     shell.render(match, router.navigate);
+    setMusicScene((match.route.layout ?? 'app') === 'app' && hasProfile());
   },
 });
+initMusic();
+// Effects load after the first interaction, when audio is allowed to start.
+document.addEventListener('pointerdown', () => preload(), { once: true });
+document.addEventListener('click', (e) => {
+  if (e.target.closest('[data-music-toggle]')) toggleMusic();
+});
+store.subscribe(refreshMusicButton);
 router.start();
 registerServiceWorker();
 startReminders();

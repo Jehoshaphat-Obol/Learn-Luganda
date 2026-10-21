@@ -48,6 +48,15 @@
   margin-left: auto;
 }
 
+.topbar__music {
+  flex: none;
+  margin-left: var(--space-1);
+}
+
+.topbar__music[aria-pressed='true'] {
+  color: var(--color-primary);
+}
+
 .stat {
   display: inline-flex;
   align-items: center;
@@ -349,4 +358,9 @@
   margin-top: var(--space-12);
   padding-top: var(--space-4);
   border-top: 2px solid var(--color-border);
+}
+
+.settings-credits {
+  margin: var(--space-3) 0 0;
+  font-size: 0.875rem;
 }

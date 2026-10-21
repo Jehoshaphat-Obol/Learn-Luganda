@@ -52,6 +52,12 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
   const feedback = root.querySelector('[data-feedback]');
   const mainBtn = root.querySelector('[data-main]');
   const mainLabel = mainBtn.querySelector('span');
+  play('start');
+  // A soft tap for picking options and tiles (not the play-audio button).
+  stage.addEventListener('click', (e) => {
+    const btn = e.target.closest('button');
+    if (btn && !btn.disabled && !btn.matches('[data-play]') && !locked) play('tap');
+  });
 
   function drawHearts(lost = false) {
     if (!hearts) return;

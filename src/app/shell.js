@@ -7,6 +7,7 @@
 import { icon } from '../ui/icons.js';
 import { escapeHtml } from '../ui/components.js';
 import { brandMark } from './brand-mark.js';
+import { musicOn } from '../ui/music.js';
 
 export const NAV = [
   { path: '/learn', label: 'Learn', icon: 'home' },
@@ -36,6 +37,17 @@ function topBarStats() {
     ${stat('hearts', s.hearts, `${s.hearts} of ${s.maxHearts} hearts`)}`;
 }
 
+function musicButton() {
+  const on = musicOn();
+  return `<button class="icon-btn topbar__music" type="button" data-music-toggle aria-pressed="${on}" aria-label="Background music" title="${on ? 'Turn music off' : 'Turn music on'}">${icon(on ? 'music' : 'music-off', { size: 22 })}</button>`;
+}
+
+/** Redraws the music button after the setting changes. */
+export function refreshMusicButton() {
+  const el = document.querySelector('[data-music-toggle]');
+  if (el && el.getAttribute('aria-pressed') !== String(musicOn())) el.outerHTML = musicButton();
+}
+
 /** Re-reads the stats provider and redraws the counters. */
 export function refreshTopBar() {
   const el = document.querySelector('[data-topbar-stats]');
@@ -62,6 +74,7 @@ function appLayout(path) {
         <header class="topbar">
           <a class="topbar__brand" href="#/learn" aria-label="Learn Luganda home">${brandMark()}</a>
           <div class="topbar__stats" data-topbar-stats>${topBarStats()}</div>
+          ${musicButton()}
         </header>
         <main id="view" class="view" tabindex="-1"></main>
       </div>

@@ -6,6 +6,7 @@ import { heartStatus, formatWait } from '../state/hearts.js';
 import { button, escapeHtml, toast } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { avatar } from '../ui/avatar.js';
+import { play } from '../ui/sound.js';
 
 function itemArt(item, state) {
   if (item.cosmetic) return avatar({ ...state.profile.avatar, frame: item.id }, { size: 56 });
@@ -65,6 +66,7 @@ export function shopView({ root }) {
       store.update((s) => {
         ok = buy(s, item.id);
       });
+      play(ok ? 'reward' : 'wrong');
       toast(ok ? `${item.title} bought!` : 'Couldn’t buy that right now.', { variant: ok ? 'success' : 'error' });
       draw();
       return;
