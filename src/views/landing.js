@@ -7,6 +7,7 @@ import { heroScene, streakScene, lessonCompleteScene, mascot, portrait, CAST } f
 import { button, escapeHtml } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { reducedMotion } from '../ui/motion.js';
+import { courseStats } from '../content/course.js';
 
 const STEPS = [
   { icon: 'bolt', title: 'Bite-sized lessons', text: 'Five-minute lessons with pictures, word tiles, listening and matching games.' },
@@ -28,11 +29,14 @@ const WORDS = [
   ['Webale kujja', 'Welcome'],
 ];
 
+const STATS = courseStats();
+
 const FAQ = [
   ['Is it free?', 'Yes. Learn Luganda is free, with no ads and no account.'],
   ['Where is my progress saved?', 'In your browser’s local storage on this device. You can export it to a file and import it on another device from Settings.'],
   ['Who is it for?', 'Complete beginners, diaspora families reconnecting with the language, and visitors to Uganda who want more than “hello”.'],
   ['What will I learn first?', 'Greetings, introductions and numbers, then family, food, the market, time, places and more, unit by unit.'],
+  ['How long is the course?', `${STATS.units} units in ${STATS.sections} section${STATS.sections > 1 ? 's' : ''}: ${STATS.lessons} lessons and ${STATS.words} words, from first greetings to real conversations. Already know some? Take a section test to jump ahead.`],
   ['Does it work offline?', 'Once installed, lessons work without a connection.'],
 ];
 

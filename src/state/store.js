@@ -23,6 +23,8 @@ export const DEFAULTS = {
   // wordId -> { box, due, seen, correct, wrong, lastSeen }
   words: {},
   mistakes: [],
+  // section ids reached early by passing a section test
+  jumps: [],
   achievements: {},
   inventory: {},
   league: {},

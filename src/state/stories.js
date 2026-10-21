@@ -1,11 +1,11 @@
-/* Story progress: a story opens once its `unlockAfter` lesson is done. */
+/* Story progress: a story opens once its `unlockAfter` lesson is done (or skipped). */
 import { STORIES } from '../content/stories.js';
-import { isLessonDone } from './progress.js';
+import { isLessonPassed } from './progress.js';
 
 export const storyKey = (id) => `story-${id}`;
 
 export function isStoryUnlocked(s, story) {
-  return isLessonDone(s, story.unlockAfter);
+  return isLessonPassed(s, story.unlockAfter);
 }
 
 export function isStoryDone(s, story) {

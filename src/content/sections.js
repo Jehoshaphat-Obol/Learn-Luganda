@@ -1,0 +1,42 @@
+/*
+ * Sections group units into stages of the course, like chapters. A section
+ * may list units that aren't written yet; the course only shows units that
+ * exist, so new content can land a few units at a time.
+ */
+export const SECTIONS = [
+  {
+    id: 's1',
+    title: 'Foundations',
+    level: 'Beginner',
+    description: 'Greetings, people, food, numbers, time, places, the home and health.',
+    units: ['u1', 'u2', 'u3', 'u4', 'u5', 'u6', 'u7', 'u8'],
+  },
+  {
+    id: 's2',
+    title: 'Everyday life',
+    level: 'Elementary',
+    description: 'Describe things, get dressed, talk about your day, the weather, animals, work, school and travel.',
+    units: ['u9', 'u10', 'u11', 'u12', 'u13', 'u14', 'u15', 'u16'],
+  },
+  {
+    id: 's3',
+    title: 'Conversations',
+    level: 'Pre-intermediate',
+    description: 'Say no, ask questions, talk about the past and the future, feelings, hobbies, phone calls and cooking.',
+    units: ['u17', 'u18', 'u19', 'u20', 'u21', 'u22', 'u23', 'u24'],
+  },
+  {
+    id: 's4',
+    title: 'Community and culture',
+    level: 'Intermediate',
+    description: 'Clans and totems, the kingdom, farming, celebrations, music, faith, business and nature.',
+    units: ['u25', 'u26', 'u27', 'u28', 'u29', 'u30', 'u31', 'u32'],
+  },
+  {
+    id: 's5',
+    title: 'Confident speaker',
+    level: 'Upper intermediate',
+    description: 'Compare, imagine, tell stories, use proverbs, follow the news, handle emergencies and show respect.',
+    units: ['u33', 'u34', 'u35', 'u36', 'u37', 'u38', 'u39', 'u40'],
+  },
+];

@@ -1,12 +1,14 @@
 /*
- * The learning path: each unit is a banner followed by a winding trail of
- * lesson nodes, grouped by skill, ending in a unit checkpoint. Tapping a
- * node opens a small card to start (or redo) that lesson.
+ * The learning path: sections of units. Each unit is a banner followed by a
+ * winding trail of lesson nodes, grouped by skill, ending in a unit
+ * checkpoint. Tapping a node opens a small card to start (or redo) that
+ * lesson. Only the current section is drawn open; the others render their
+ * units when expanded, so a long course stays light.
  */
 import '../styles/learn.css';
 import { course } from '../content/course.js';
 import { store } from '../state/store.js';
-import { isLessonDone, isLessonUnlocked, isUnitUnlocked, nextLessonId, skillProgress, unitProgress } from '../state/progress.js';
+import { canJumpTo, isLessonDone, isLessonSkipped, isLessonUnlocked, isSectionUnlocked, isUnitUnlocked, nextLessonId, sectionProgress, skillProgress, unitProgress } from '../state/progress.js';
 import { dailyGoal } from '../state/xp.js';
 import { streakStatus } from '../state/streak.js';
 import { dueWordIds } from '../state/review.js';
@@ -21,9 +23,9 @@ const WIND = [0, 44, 72, 44, 0, -44, -72, -44];
 function lessonNode(state, lesson, position, current) {
   const done = isLessonDone(state, lesson.id);
   const unlocked = isLessonUnlocked(state, lesson.id);
-  const status = done ? 'done' : lesson.id === current ? 'current' : unlocked ? 'open' : 'locked';
+  const status = done ? 'done' : lesson.id === current ? 'current' : isLessonSkipped(state, lesson.id) ? 'skipped' : unlocked ? 'open' : 'locked';
   const skill = course.skills[lesson.skill];
-  const label = `${skill.title}, lesson ${lesson.index + 1} of ${skill.lessons.length}: ${status === 'locked' ? 'locked' : status === 'done' ? 'completed' : 'start'}`;
+  const label = `${skill.title}, lesson ${lesson.index + 1} of ${skill.lessons.length}: ${{ locked: 'locked', done: 'completed', skipped: 'skipped' }[status] ?? 'start'}`;
   const glyph = status === 'locked' ? 'lock' : status === 'done' ? 'check' : skill.icon ?? 'star';
   return `
     <li class="node-wrap" style="--x:${WIND[position % WIND.length]}px">
@@ -37,7 +39,7 @@ function lessonNode(state, lesson, position, current) {
 function checkpointNode(state, unit, position) {
   const prog = unitProgress(state, unit.id);
   const passed = Boolean(state.lessons[`checkpoint-${unit.id}`]?.completions);
-  const status = passed ? 'done' : prog.complete ? 'current' : 'locked';
+  const status = passed ? 'done' : prog.passed ? 'current' : 'locked';
   return `
     <li class="node-wrap" style="--x:${WIND[position % WIND.length]}px">
       <button class="node node--checkpoint node--${status}" type="button" data-checkpoint="${unit.id}" aria-label="${escapeHtml(`${unit.title} checkpoint${status === 'locked' ? ', locked' : ''}`)}">
@@ -50,8 +52,7 @@ function needsReview(state, skill, due) {
   return skillProgress(state, skill.id).complete && skill.lessons.some((l) => l.newWords.some((w) => due.has(w)));
 }
 
-function unitSection(state, unit, current) {
-  const due = new Set(dueWordIds(state));
+function unitSection(state, unit, current, due) {
   const prog = unitProgress(state, unit.id);
   const open = isUnitUnlocked(state, unit.id);
   let position = 0;
@@ -61,7 +62,7 @@ function unitSection(state, unit, current) {
       const nodes = skill.lessons.map((l) => lessonNode(state, l, position++, current)).join('');
       return `
         <li class="skill${sp.complete ? ' skill--complete' : ''}">
-          <h3 class="skill__title"><span>${escapeHtml(skill.title)}</span><span class="skill__count">${sp.done}/${sp.total}</span>${skill.tip ? `<a class="pill skill__review" href="#/guidebook/${unit.id}?tip=${skill.tip}" aria-label="${escapeHtml(skill.title)} tip">${icon('bolt', { size: 14 })}Tip</a>` : ''}${needsReview(state, skill, due) ? `<a class="pill pill--primary skill__review" href="#/practice/session?mode=skill&id=${skill.id}">${icon('target', { size: 14 })}Review</a>` : ''}</h3>
+          <h4 class="skill__title"><span>${escapeHtml(skill.title)}</span><span class="skill__count">${sp.done}/${sp.total}</span>${skill.tip ? `<a class="pill skill__review" href="#/guidebook/${unit.id}?tip=${skill.tip}" aria-label="${escapeHtml(skill.title)} tip">${icon('bolt', { size: 14 })}Tip</a>` : ''}${needsReview(state, skill, due) ? `<a class="pill pill--primary skill__review" href="#/practice/session?mode=skill&id=${skill.id}">${icon('target', { size: 14 })}Review</a>` : ''}</h4>
           <ol class="trail">${nodes}</ol>
         </li>`;
     })
@@ -73,7 +74,7 @@ function unitSection(state, unit, current) {
       <header class="unit__banner">
         <div>
           <p class="unit__eyebrow">Unit ${unit.index + 1}</p>
-          <h2 id="unit-${unit.id}">${escapeHtml(unit.title)}</h2>
+          <h3 id="unit-${unit.id}">${escapeHtml(unit.title)}</h3>
           <p class="unit__desc">${escapeHtml(unit.description)}</p>
         </div>
         <a class="unit__guide" href="#/guidebook/${unit.id}" aria-label="${escapeHtml(unit.title)} guidebook">${icon('book', { size: 22 })}<span>Guidebook</span></a>
@@ -84,6 +85,43 @@ function unitSection(state, unit, current) {
         <ol class="skills">${skills}</ol>
         <ol class="trail trail--checkpoint">${checkpointNode(state, unit, position)}</ol>
       </div>
+    </section>`;
+}
+
+/** The section to draw open: the one holding the next lesson, else the furthest open one. */
+function openSectionId(state, current) {
+  if (current) return course.units.find((u) => u.id === course.lessons[current].unit).section;
+  return course.sections.findLast((s) => isSectionUnlocked(state, s.id))?.id ?? course.sections[0].id;
+}
+
+function sectionUnits(state, section, current) {
+  const due = new Set(dueWordIds(state));
+  return section.units.map((u) => unitSection(state, u, current, due)).join('');
+}
+
+function courseSection(state, section, current, open) {
+  const prog = sectionProgress(state, section.id);
+  const unlocked = isSectionUnlocked(state, section.id);
+  const status = prog.complete ? 'Complete' : unlocked ? `${prog.passed} of ${prog.total} lessons` : 'Locked';
+  const jump = canJumpTo(state, section.id)
+    ? button({ label: `Jump to Section ${section.index + 1}`, variant: 'secondary', href: `#/jump/${section.id}` })
+    : '';
+  return `
+    <section class="course-section${unlocked ? '' : ' course-section--locked'}" aria-labelledby="section-${section.id}" data-section="${section.id}">
+      <header class="course-section__head">
+        <p class="course-section__eyebrow">Section ${section.index + 1}${section.level ? ` · ${escapeHtml(section.level)}` : ''}</p>
+        <h2 id="section-${section.id}">${escapeHtml(section.title)}</h2>
+        <p class="course-section__desc">${escapeHtml(section.description)}</p>
+        <div class="course-section__meta">
+          <span class="pill">${unlocked ? '' : icon('lock', { size: 14 })}${status}</span>
+          <span class="caption">${section.units.length} units</span>
+          ${jump}
+        </div>
+      </header>
+      <details class="course-section__units"${open ? ' open' : ''}>
+        <summary>${open ? 'Hide units' : 'Show units'}</summary>
+        <div data-units>${open ? sectionUnits(state, section, current) : ''}</div>
+      </details>
     </section>`;
 }
 
@@ -139,6 +177,7 @@ function sidebar(state) {
 export function learnView({ root, navigate }) {
   const state = store.get();
   const current = nextLessonId(state);
+  const openId = openSectionId(state, current);
 
   root.innerHTML = `
     <div class="learn">
@@ -146,7 +185,7 @@ export function learnView({ root, navigate }) {
         <h1 class="visually-hidden">Your learning path</h1>
         ${riskBanner(state)}
         ${goalStrip(state)}
-        ${course.units.map((u) => unitSection(state, u, current)).join('')}
+        ${course.sections.map((s) => courseSection(state, s, current, s.id === openId)).join('')}
         <p class="learn__more caption">More units are on the way. Weebale for learning!</p>
       </div>
       ${sidebar(state)}
@@ -154,6 +193,16 @@ export function learnView({ root, navigate }) {
 
   // Bring the current lesson into view.
   root.querySelector('.node--current')?.scrollIntoView({ block: 'center' });
+
+  // Closed sections draw their units the first time they're opened.
+  for (const details of root.querySelectorAll('.course-section__units')) {
+    details.addEventListener('toggle', () => {
+      const section = course.sections.find((s) => s.id === details.closest('[data-section]').dataset.section);
+      const holder = details.querySelector('[data-units]');
+      if (details.open && !holder.childElementCount) holder.innerHTML = sectionUnits(store.get(), section, nextLessonId(store.get()));
+      details.querySelector('summary').textContent = details.open ? 'Hide units' : 'Show units';
+    });
+  }
 
   let popover = null;
   function closePopover() {

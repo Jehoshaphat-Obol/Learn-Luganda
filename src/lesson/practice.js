@@ -43,6 +43,22 @@ export function buildPractice(wordIds, { course = defaultCourse, seed, size = 12
   return rng.shuffle(out).slice(0, size);
 }
 
+/**
+ * A section test: to jump ahead to `sectionId`, show you know the sections
+ * before it. Leans on the section just before, with some older words mixed in.
+ */
+export function buildSectionTest(sectionId, { course = defaultCourse, seed } = {}) {
+  const section = course.sections.find((s) => s.id === sectionId);
+  const before = course.sections.slice(0, section.index);
+  const wordsOf = (sec) => sec.units.flatMap((u) => u.skills.flatMap((s) => s.lessons.flatMap((l) => l.newWords)));
+  const rng = createRng(seed ?? Date.now());
+  const last = wordsOf(before.at(-1));
+  const older = before.slice(0, -1).flatMap(wordsOf);
+  const focus = [...rng.sample(last, 6), ...rng.sample(older, 2)];
+  const all = before.flatMap(wordsOf);
+  return buildPractice(focus.length ? focus : rng.sample(all, 8), { course, seed: rng.int(1e9), size: 15, knownIds: all });
+}
+
 /** A unit checkpoint: words and sentences from the whole unit. */
 export function buildCheckpoint(unitId, { course = defaultCourse, seed, knownIds } = {}) {
   const unit = course.units.find((u) => u.id === unitId);

@@ -12,6 +12,7 @@ import { lessonView } from '../views/lesson.js';
 import { streakView } from '../views/streak.js';
 import { practiceHubView, practiceSessionView } from '../views/practice.js';
 import { checkpointView } from '../views/checkpoint.js';
+import { jumpView } from '../views/jump.js';
 import { shopView } from '../views/shop.js';
 import { profileView } from '../views/profile.js';
 import { leaguesView } from '../views/leagues.js';
@@ -25,6 +26,7 @@ export const routes = [
   { path: '/learn', view: learnView, title: 'Learn' },
   { path: '/lesson/:id', view: lessonView, layout: 'bare', title: 'Lesson' },
   { path: '/checkpoint/:unit', view: checkpointView, layout: 'bare', title: 'Checkpoint' },
+  { path: '/jump/:section', view: jumpView, layout: 'bare', title: 'Section test' },
   { path: '/guidebook/:unit', view: guidebookView, title: 'Guidebook' },
   { path: '/stories', view: storiesView, title: 'Stories' },
   { path: '/story/:id', view: storyView, layout: 'bare', title: 'Story' },

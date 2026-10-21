@@ -14,7 +14,9 @@ accounts and no server: your progress stays in your browser.
 
 ## Features
 
-- **Course**: 8 units, 53 lessons and 198 words.
+- **Course**: 8 units, 53 lessons and 198 words, grouped into sections
+  (`npm run validate` prints the current totals). Learners who already know
+  some Luganda can pass a section test to jump ahead.
   - Units: greetings; people and things; food and the market; numbers and
     money; time and days; places and directions; the home; health and the
     body.
