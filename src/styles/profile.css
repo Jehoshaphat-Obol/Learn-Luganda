@@ -1,0 +1,74 @@
+/* Profile */
+.profile-head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.profile-head h1 {
+  font-size: var(--text-2xl);
+}
+
+.profile-head p {
+  margin: var(--space-1) 0 0;
+}
+
+.profile-section {
+  margin: var(--space-8) 0 var(--space-4);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+}
+
+.achievements {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.achievement {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+}
+
+.achievement + .achievement {
+  border-top: 2px solid var(--color-border);
+}
+
+.achievement__body {
+  flex: 1;
+  display: grid;
+  gap: var(--space-1);
+}
+
+.achievement__body h3 {
+  font-size: var(--text-base);
+  font-weight: var(--weight-bold);
+}
+
+.achievement__body h3 span {
+  font-weight: var(--weight-regular);
+  font-size: var(--text-sm);
+  margin-left: var(--space-1);
+}
+
+.achievement__body p {
+  margin: 0;
+  font-size: var(--text-sm);
+}
+
+.achievement__body .progress {
+  height: 10px;
+}
+
+.achievement__count {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  justify-self: end;
+}

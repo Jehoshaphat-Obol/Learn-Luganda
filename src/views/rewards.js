@@ -8,6 +8,8 @@ import { nextMilestone } from '../state/streak.js';
 import { button, escapeHtml, ring } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { confetti } from '../ui/confetti.js';
+import { badge } from '../ui/badge.js';
+import { ACHIEVEMENTS } from '../state/achievements.js';
 
 /** Extra screens registered by other features (e.g. streaks). */
 const extraSteps = [];
@@ -29,7 +31,7 @@ function countUp(el, to, ms = 700) {
   requestAnimationFrame(tick);
 }
 
-function summaryScreen({ result, xp, title, subtitle }) {
+function summaryScreen({ result, xp, gems = 0, title, subtitle }) {
   const pct = Math.round(result.accuracy * 100);
   const mins = Math.floor(result.seconds / 60);
   const secs = String(result.seconds % 60).padStart(2, '0');
@@ -43,7 +45,7 @@ function summaryScreen({ result, xp, title, subtitle }) {
         <div class="complete__stat complete__stat--acc"><span>${pct === 100 ? 'Perfect' : pct >= 80 ? 'Amazing' : pct >= 60 ? 'Good' : 'Accuracy'}</span><strong>${icon('target', { size: 20 })}${pct}%</strong></div>
         <div class="complete__stat complete__stat--time"><span>Time</span><strong>${icon('clock', { size: 20 })}${mins}:${secs}</strong></div>
       </div>
-      <ul class="complete__parts">${xp.parts.map((p) => `<li><span>${escapeHtml(p.label)}</span><span>+${p.xp} XP</span></li>`).join('')}</ul>`,
+      <ul class="complete__parts">${xp.parts.map((p) => `<li><span>${escapeHtml(p.label)}</span><span>+${p.xp} XP</span></li>`).join('')}${gems ? `<li class="complete__gems"><span>${icon('gem', { size: 16 })} Gems</span><span>+${gems}</span></li>` : ''}</ul>`,
     after(root) {
       root.querySelectorAll('[data-count]').forEach((el) => countUp(el, Number(el.dataset.count)));
       confetti();
@@ -78,10 +80,27 @@ function streakScreen({ streak }) {
   };
 }
 
+function achievementScreen(unlocked) {
+  const items = unlocked.map((u) => {
+    const a = ACHIEVEMENTS.find((x) => x.id === u.id);
+    return `<li class="unlock">
+      ${badge({ shape: a.shape, iconName: a.icon, tier: u.tier, size: 88, label: `${a.title} level ${u.tier}` })}
+      <div><strong>${escapeHtml(a.title)}</strong><p class="muted">${escapeHtml(u.description)}</p><span class="pill pill--blue">${icon('gem', { size: 14 })} +${u.gems} gems</span></div>
+    </li>`;
+  });
+  return {
+    html: `
+      <h1>Achievement${unlocked.length > 1 ? 's' : ''} unlocked!</h1>
+      <ul class="unlocks">${items.join('')}</ul>`,
+    after: () => confetti(),
+  };
+}
+
 export function showRewards(root, summary) {
   const steps = [summaryScreen(summary)];
   if (summary.streak?.extended) steps.push(streakScreen(summary));
   if (!summary.goalBefore.met && summary.goalAfter.met) steps.push(goalScreen(summary));
+  if (summary.achievements?.length) steps.push(achievementScreen(summary.achievements));
   for (const make of extraSteps) {
     const step = make(summary);
     if (step) steps.push(step);

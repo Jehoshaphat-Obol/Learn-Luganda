@@ -604,3 +604,54 @@
     transform: translate(var(--drift), 110vh) rotate(var(--spin));
   }
 }
+
+/* Badges */
+.badge {
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: var(--badge-size);
+  height: var(--badge-size);
+  flex: none;
+}
+
+.badge > svg {
+  position: absolute;
+  inset: 0;
+}
+
+.badge__icon {
+  position: relative;
+  color: var(--badge-fg);
+  margin-top: 6%;
+}
+
+.badge__tier {
+  position: absolute;
+  top: 9%;
+  right: 9%;
+  width: 22%;
+  text-align: center;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: calc(var(--badge-size) * 0.15);
+  line-height: 1;
+  transform: translate(25%, -15%);
+  color: var(--color-ink-900);
+}
+
+.badge--locked {
+  opacity: 0.55;
+}
+
+/* Avatar frames bought in the shop */
+.avatar--frame-gold {
+  box-shadow: 0 0 0 4px var(--color-gold), 0 0 0 6px var(--color-gold-shadow);
+}
+
+.avatar--frame-bauhaus {
+  box-shadow: 0 0 0 4px var(--color-surface);
+  outline: 4px solid transparent;
+  background-image: conic-gradient(var(--color-primary) 0 25%, var(--color-ink-900) 0 50%, var(--color-gold) 0 75%, var(--color-paper-400) 0);
+  padding: calc(var(--avatar-size, 48px) * 0.1);
+}
