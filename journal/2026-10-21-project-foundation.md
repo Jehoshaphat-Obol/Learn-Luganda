@@ -1,5 +1,7 @@
 # 2026-10-21: Project foundation
 
+Issue: #1
+
 ## Context
 
 The repository started empty (README only). The goal is a Duolingo-style web
@@ -32,8 +34,6 @@ illustrations. Work proceeds one issue, one branch and one PR at a time.
   should use hash routes to stay compatible with Pages.
 - **Build on PRs, deploy only from `main`.** PRs get a build check without
   publishing.
-- The GitHub integration could not create issues (403), so this first PR was
-  opened without a linked issue.
 
 ## Next
 
