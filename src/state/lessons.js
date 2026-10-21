@@ -3,6 +3,8 @@ import { store } from './store.js';
 import { addXp, dailyGoal, lessonXp } from './xp.js';
 import { extendStreak } from './streak.js';
 import { dayKey } from './dates.js';
+import { clearMistakes, recordSession } from './review.js';
+import { gainHeart } from './hearts.js';
 
 /**
  * Applies a finished lesson's result to the state (pure, for tests).
@@ -30,7 +32,7 @@ export function applyLessonResult(s, lessonId, result, now = new Date()) {
  * Saves a finished lesson and its XP in one update.
  * @returns {{ xp: { total: number, parts: object[] }, streak: object, goalBefore: object, goalAfter: object, before: object, after: object }}
  */
-export function finishLesson(lessonId, result, { replay = false, base, now = new Date() } = {}) {
+export function finishLesson(lessonId, result, { replay = false, base, practice = false, now = new Date() } = {}) {
   const before = store.get();
   const xp = lessonXp(result, { replay, base });
   let streak;
@@ -38,6 +40,11 @@ export function finishLesson(lessonId, result, { replay = false, base, now = new
     if (lessonId) applyLessonResult(s, lessonId, result, now);
     addXp(s, xp.total, now);
     streak = extendStreak(s, dayKey(now));
+    recordSession(s, result, dayKey(now));
+    if (practice) {
+      clearMistakes(s, result);
+      gainHeart(s, 1, now.getTime());
+    }
   });
   return { xp, streak, before, after, goalBefore: dailyGoal(before, now), goalAfter: dailyGoal(after, now) };
 }

@@ -443,3 +443,10 @@
 @keyframes bubble-flicker {
   50% { transform: scale(1.12) rotate(-4deg); }
 }
+
+.skill__review {
+  text-decoration: none;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 0.75rem;
+}

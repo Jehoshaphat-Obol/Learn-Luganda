@@ -11,7 +11,7 @@ export const MAX_EXERCISES = 18;
 
 const quote = (t) => `“${t.replace(/[?.!]$/, '')}”`;
 
-function choiceExercise(word, pool, rng, direction) {
+export function choiceExercise(word, pool, rng, direction) {
   const others = rng.sample(pool.filter((w) => w.id !== word.id && normalise(w.lg) !== normalise(word.lg) && normalise(w.en) !== normalise(word.en)), 3);
   const toLg = direction === 'toLg';
   const options = rng.shuffle([word, ...others]).map((w) => ({ text: toLg ? w.lg : w.en, value: w.id }));
@@ -26,7 +26,7 @@ function choiceExercise(word, pool, rng, direction) {
   };
 }
 
-function translateExercise(item, pools, rng, direction) {
+export function translateExercise(item, pools, rng, direction) {
   const toEn = direction === 'toEn';
   const answer = toEn ? item.en : item.lg;
   const answerTokens = tokens(answer);
@@ -47,7 +47,7 @@ function translateExercise(item, pools, rng, direction) {
   };
 }
 
-function matchExercise(words, rng) {
+export function matchExercise(words, rng) {
   const chosen = rng.sample(words, Math.min(5, words.length));
   return {
     type: 'match',
@@ -59,7 +59,7 @@ function matchExercise(words, rng) {
   };
 }
 
-function typeExercise(item) {
+export function typeExercise(item) {
   return {
     type: 'type',
     prompt: 'Type this in English',
@@ -74,7 +74,7 @@ function typeExercise(item) {
 }
 
 /** Blanks out one known word of a sentence and offers it among look-alikes. */
-function fillExercise(sentence, known, rng) {
+export function fillExercise(sentence, known, rng) {
   const parts = tokens(sentence.lg);
   const candidates = known.filter((w) => !w.lg.includes(' ') && parts.some((p) => normalise(p) === normalise(w.lg)));
   if (!candidates.length) return null;
@@ -121,9 +121,19 @@ function listenExercise(item, pools, rng) {
 }
 
 /** Words that appear in a sentence, by matching their Luganda text. */
-function wordsInSentence(sentence, words) {
+export function wordsInSentence(sentence, words) {
   const n = ` ${normalise(sentence.lg)} `;
   return words.filter((w) => n.includes(` ${normalise(w.lg)} `)).map((w) => w.id);
+}
+
+/** Distractor tiles: tokens from known words and sentences up to `unitId`. */
+export function tilePools(course, known, unitId) {
+  const unitOrder = Object.fromEntries(course.units.map((u, i) => [u.id, i]));
+  const sentences = Object.values(course.sentences).filter((s) => unitOrder[s.unit] <= unitOrder[unitId]);
+  return {
+    lgTokens: [...known.flatMap((w) => tokens(w.lg)), ...sentences.flatMap((s) => tokens(s.lg))],
+    enTokens: [...known.flatMap((w) => tokens(w.en.toLowerCase())), ...sentences.flatMap((s) => tokens(s.en))],
+  };
 }
 
 /**
@@ -142,12 +152,7 @@ export function buildLesson(lessonId, { course = defaultCourse, seed, firstTime 
   const sentences = lesson.sentences.map((id) => ({ ...course.sentences[id], wordIds: wordsInSentence(course.sentences[id], known) }));
 
   // Tile pools: tokens from everything the learner has seen so far.
-  const unitOrder = Object.fromEntries(course.units.map((u, i) => [u.id, i]));
-  const knownSentences = Object.values(course.sentences).filter((s) => unitOrder[s.unit] <= unitOrder[lesson.unit]);
-  const pools = {
-    lgTokens: [...known.flatMap((w) => tokens(w.lg)), ...knownSentences.flatMap((s) => tokens(s.lg))],
-    enTokens: [...known.flatMap((w) => tokens(w.en.toLowerCase())), ...knownSentences.flatMap((s) => tokens(s.en))],
-  };
+  const pools = tilePools(course, known, lesson.unit);
   // Choice options need at least four words; borrow from the unit if the course is young.
   const choicePool = known.length >= 4 ? known : Object.values(course.words).filter((w) => w.unit === lesson.unit);
 
