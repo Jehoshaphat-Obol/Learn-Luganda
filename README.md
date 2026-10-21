@@ -14,20 +14,20 @@ accounts and no server: your progress stays in your browser.
 
 ## Features
 
-- **Course**: 12 units, 89 lessons and 282 words in 2 sections so far, growing
+- **Course**: 16 units, 125 lessons and 360 words in 2 sections so far, growing
   to 40 units in 5 sections (`npm run validate` prints the current totals).
   Learners who already know some Luganda can pass a section test to jump ahead.
   - Section 1, Foundations: greetings; people and things; food and the market;
     numbers and money; time and days; places and directions; the home; health
     and the body.
   - Section 2, Everyday life: colours and describing; clothes; my day; weather
-    and seasons.
+    and seasons; animals; work and jobs; school; travel and transport.
   - Each unit ends with a checkpoint and has a guidebook of key phrases,
     grammar tips and culture notes.
 - **Exercises**: introductions, multiple choice, translate with a word bank or
   the keyboard, match pairs, fill in the blank, dialogues, typed answers with
   typo tolerance, and listening when audio is available.
-- **Stories**: 7 illustrated conversations with the cast, with comprehension
+- **Stories**: 9 illustrated conversations with the cast, with comprehension
   questions along the way.
 - **Motivation**: XP and a daily goal, streaks with freezes and milestones,
   hearts that refill over time, gems, a shop, achievements with five levels

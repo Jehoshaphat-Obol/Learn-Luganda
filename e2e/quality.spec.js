@@ -7,7 +7,7 @@ const require = createRequire(import.meta.url);
 const axePath = require.resolve('axe-core/axe.min.js');
 
 const everything = Object.fromEntries(course.order.map((id) => [id, { completions: 1, bestAccuracy: 1 }]));
-const SCREENS = ['#/learn', '#/lesson/u1s1l1', '#/practice', '#/leagues', '#/shop', '#/profile', '#/streak', '#/settings', '#/stories', '#/story/new-friend', '#/guidebook/u2', '#/guidebook/u9', '#/story/new-gomesi', '#/lesson/u10s3l3'];
+const SCREENS = ['#/learn', '#/lesson/u1s1l1', '#/practice', '#/leagues', '#/shop', '#/profile', '#/streak', '#/settings', '#/stories', '#/story/new-friend', '#/guidebook/u2', '#/guidebook/u9', '#/story/new-gomesi', '#/lesson/u10s3l3', '#/guidebook/u15'];
 
 test('the landing page has no accessibility violations', async ({ page }) => {
   await page.goto('./');

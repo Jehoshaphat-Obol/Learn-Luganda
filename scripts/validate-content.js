@@ -4,6 +4,7 @@ import { validateGuidebooks, validateSections, validateStories, validateUnits } 
 import { STORIES } from '../src/content/stories.js';
 import { GUIDEBOOKS } from '../src/content/guidebooks.js';
 import { SECTIONS } from '../src/content/sections.js';
+import { PATHS } from '../src/ui/icons.js';
 import { CAST } from '../src/illustrations/characters.js';
 
 const errors = [
@@ -11,6 +12,7 @@ const errors = [
   ...validateStories(STORIES, { lessons: Object.keys(course.lessons), units: UNITS_RAW.map((u) => u.id), cast: Object.keys(CAST) }),
   ...validateGuidebooks(GUIDEBOOKS, UNITS_RAW),
   ...validateSections(SECTIONS, UNITS_RAW),
+  ...UNITS_RAW.flatMap((u) => u.skills.filter((sk) => sk.icon && !PATHS[sk.icon]).map((sk) => `skill ${sk.id}: unknown icon "${sk.icon}"`)),
 ];
 if (errors.length) {
   console.error(`Content has ${errors.length} problem(s):\n- ${errors.join('\n- ')}`);
