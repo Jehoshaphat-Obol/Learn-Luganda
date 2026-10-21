@@ -97,3 +97,44 @@
     width: 100%;
   }
 }
+
+.shop-rules {
+  margin-top: var(--space-6);
+  padding: var(--space-4);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+}
+
+.shop-rules h2 {
+  font-size: var(--text-base);
+  font-weight: var(--weight-bold);
+  margin-bottom: var(--space-2);
+}
+
+.shop-rules ul {
+  display: grid;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-sm);
+}
+
+.shop-rules li {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.shop-rules__gems {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex: none;
+  font-weight: var(--weight-bold);
+}
+
+.shop-rules__gems .icon {
+  color: var(--color-bauhaus-blue);
+}

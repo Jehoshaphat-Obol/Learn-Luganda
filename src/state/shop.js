@@ -1,4 +1,4 @@
-/* Gems and the shop. */
+/* Gems: earned by learning, never bought, spent on streak freezes, refills and frames. */
 import { MAX_FREEZES } from './streak.js';
 import { MAX_HEARTS, REFILL_COST, heartStatus, refillHearts } from './hearts.js';
 
@@ -10,7 +10,23 @@ export const SHOP_ITEMS = [
   { id: 'refill', title: 'Heart refill', icon: 'heart', price: REFILL_COST, description: `Refill to ${MAX_HEARTS} hearts right away.` },
   { id: 'frame-gold', title: 'Gold frame', icon: 'star', price: 100, description: 'A gold ring around your avatar.', cosmetic: true },
   { id: 'frame-bauhaus', title: 'Bauhaus frame', icon: 'target', price: 150, description: 'Vermillion, ink and gold quarters around your avatar.', cosmetic: true },
+  { id: 'frame-sky', title: 'Lake frame', icon: 'target', price: 200, description: 'A deep blue ring, like Lake Nalubaale at dusk.', cosmetic: true },
+  { id: 'frame-sun', title: 'Sunburst frame', icon: 'star', price: 300, description: 'Yellow and vermillion rays around your avatar.', cosmetic: true },
 ];
+
+/** Every way to earn gems, from the real reward numbers (shown on the gems screen). */
+export function earnRules({ perTier = 10 } = {}) {
+  const milestones = Object.entries(STREAK_GEMS);
+  const [firstDay, firstGems] = milestones[0];
+  const [lastDay, lastGems] = milestones[milestones.length - 1];
+  return [
+    { label: 'Finish a lesson', gems: `+${GEMS.lesson}` },
+    { label: 'Finish a practice session', gems: `+${GEMS.practice}` },
+    { label: 'No mistakes in a session', gems: `+${GEMS.perfect} bonus` },
+    { label: `Streak milestones (${firstDay} to ${lastDay} days)`, gems: `+${firstGems} to +${lastGems}` },
+    { label: 'Achievement levels', gems: `+${perTier} per level` },
+  ];
+}
 
 /** Gems earned for a session (before achievements). */
 export function sessionGems(result, { practice = false } = {}) {

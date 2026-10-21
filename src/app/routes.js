@@ -36,7 +36,7 @@ export const routes = [
   { path: '/streak', view: streakView, title: 'Streak' },
   { path: '/practice', view: practiceHubView, title: 'Practice' },
   { path: '/practice/session', view: practiceSessionView, layout: 'bare', title: 'Practice' },
-  { path: '/shop', view: shopView, title: 'Shop' },
+  { path: '/shop', view: shopView, title: 'Gems' },
   { path: '/profile', view: profileView, title: 'Profile' },
   { path: '/settings', view: settingsView, public: true, title: 'Settings' },
   { path: '/privacy', view: privacyView, public: true, title: 'Privacy' },

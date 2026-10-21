@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { ACHIEVEMENTS, evaluateAchievements, achievementProgress } from '../src/state/achievements.js';
-import { buy, canBuy, sessionGems, SHOP_ITEMS } from '../src/state/shop.js';
+import { buy, canBuy, earnRules, sessionGems, GEMS, SHOP_ITEMS } from '../src/state/shop.js';
 
 const state = () => ({
   profile: { avatar: { character: 'nakato', color: 'sky' } },
@@ -68,5 +68,19 @@ describe('shop', () => {
   it('pays gems per session', () => {
     expect(sessionGems({ perfect: true })).toBe(10);
     expect(sessionGems({ perfect: false }, { practice: true })).toBe(3);
+  });
+
+  it('only takes gems the learner has earned', () => {
+    const s = state();
+    s.gems = 0;
+    for (const item of SHOP_ITEMS) expect(canBuy(s, item, 0)).toMatchObject({ ok: false, reason: 'Not enough gems' });
+    expect(SHOP_ITEMS.every((i) => Number.isInteger(i.price) && i.price > 0)).toBe(true);
+  });
+
+  it('lists the ways to earn gems from the real numbers', () => {
+    const rules = earnRules({ perTier: 10 });
+    expect(rules[0]).toEqual({ label: 'Finish a lesson', gems: `+${GEMS.lesson}` });
+    expect(rules.map((r) => r.label).join(' ')).toMatch(/Streak milestones \(3 to 365 days\)/);
+    expect(rules.at(-1).gems).toBe('+10 per level');
   });
 });

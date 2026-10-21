@@ -61,7 +61,7 @@ export function streakView({ root }) {
           <div class="card"><span class="streak-stats__icon">${icon('flame', { size: 26 })}</span><strong>${st.longest}</strong><span class="muted">Longest streak</span></div>
           <div class="card"><span class="streak-stats__icon streak-stats__icon--freeze">${icon('snowflake', { size: 26 })}</span><strong>${st.freezes} / ${MAX_FREEZES}</strong><span class="muted">Streak freezes</span></div>
         </section>
-        ${st.freezes < MAX_FREEZES ? `<p class="streak-shop">A streak freeze covers a day you miss. ${button({ label: 'Get one in the shop', href: '#/shop', variant: 'ghost' })}</p>` : ''}
+        ${st.freezes < MAX_FREEZES ? `<p class="streak-shop">A streak freeze covers a day you miss. ${button({ label: 'Get one with gems', href: '#/shop', variant: 'ghost' })}</p>` : ''}
 
         <section class="card cal">
           <header class="cal__head">
