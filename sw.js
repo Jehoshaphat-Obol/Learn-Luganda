@@ -1,5 +1,5 @@
 /* Learn Luganda service worker (generated at build time). */
-const VERSION = 'f260749cec3d';
+const VERSION = '0d80fcbc1e1c';
 const CACHE = `learn-luganda-${VERSION}`;
 const FONTS = 'learn-luganda-fonts';
 const PRECACHE = [
@@ -9,8 +9,8 @@ const PRECACHE = [
   "assets/illustrations-Cr8FpFuX.js",
   "assets/illustrations-Ct7VAUfj.css",
   "assets/illustrations-hR0XIK6T.js",
-  "assets/main-C-InrwyD.css",
-  "assets/main-XfGokBj4.js",
+  "assets/main-B02ymncF.js",
+  "assets/main-DzfvBXDY.css",
   "audio/CREDITS.md",
   "audio/music/amadinda-loop.mp3",
   "audio/sfx/LICENSE.txt",
