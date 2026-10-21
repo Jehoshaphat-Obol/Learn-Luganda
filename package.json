@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "validate": "node scripts/validate-content.js && node scripts/validate-packs.js",
+    "validate": "node scripts/validate-content.js && node scripts/validate-packs.js && npm run validate:example",
+    "validate:example": "node scripts/validate-content.js --root docs/packs/example && node scripts/validate-packs.js --root docs/packs/example",
     "e2e": "playwright test"
   },
   "devDependencies": {
