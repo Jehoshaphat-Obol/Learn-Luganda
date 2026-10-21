@@ -253,7 +253,21 @@
   }
 }
 
-.unit--locked .unit__character {
+.unit__prop {
+  width: 56px;
+  align-self: flex-end;
+  margin-inline-end: var(--space-2);
+  opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+  .unit__prop {
+    width: 40px;
+  }
+}
+
+.unit--locked .unit__character,
+.unit--locked .unit__prop {
   filter: grayscale(1);
   opacity: 0.5;
 }

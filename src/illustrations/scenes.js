@@ -4,15 +4,31 @@
  * hero, the lesson complete screen and the streak celebration.
  */
 import { svg, uid, patterns, cropMarks, crosshair, tickRuler, caption, pill, escapeXml } from './core.js';
-import { portraitGroup } from './characters.js';
+import { CAST, portraitGroup } from './characters.js';
 import { mascotGroup } from './mascot.js';
+import { propGroup, PROP_IDS } from './props.js';
+import { chance, pick, sample } from './random.js';
 
-/** Landing page hero: two learners, the crane and a Bauhaus still life. */
-export function heroScene({ label = 'Nakato and Mukasa greet you beside the crane mascot' } = {}) {
+const GREETINGS = ['Oli otya?', 'Gyebale ko!', 'Wasuze otya?'];
+const CHEERS = [
+  ['Weebale nnyo!', 'weebale — thank you, well done'],
+  ['Kirungi nnyo!', 'kirungi nnyo — very good'],
+  ['Bulungi!', 'bulungi — well, nicely done'],
+];
+
+/**
+ * Landing page hero: two learners, the crane and a Bauhaus still life.
+ * Leave out `pair`, `pose` or `greeting` to get a random one each visit.
+ */
+export function heroScene({ pair, pose, greeting, label } = {}) {
   const tex = patterns(uid('hero'));
+  const [front, back] = pair ?? sample(Object.keys(CAST), 2);
+  const cranePose = pose ?? pick(['happy', 'waving', 'idle', 'dancing']);
+  const hello = greeting ?? pick(GREETINGS);
+  const text = label ?? `${CAST[front].name} and ${CAST[back].name} greet you beside the crane mascot`;
   return svg({
     viewBox: '0 0 560 420',
-    label,
+    label: text,
     className: 'ill--scene',
     body: `<defs>${tex.defs}</defs>
       <circle cx="70" cy="58" r="9" class="s-rule" stroke-width="1.4"/>
@@ -28,22 +44,29 @@ export function heroScene({ label = 'Nakato and Mukasa greet you beside the cran
       </g>
       ${cropMarks(196, 42, 216, 246, 12)}
       <path d="M446 150 L459 174 L433 174 Z" class="f-verm anim-drift"/>
-      ${portraitGroup('nakato', { x: 84, y: 82, scale: 0.86, rotate: -4, expression: 'happy' })}
-      ${portraitGroup('mukasa', { x: 316, y: 200, scale: 0.68, rotate: 4 })}
-      ${pill(150, 300, 'Oli otya?')}
+      ${portraitGroup(front, { x: 84, y: 82, scale: 0.86, rotate: -4, expression: pick(['happy', 'wink']) })}
+      ${portraitGroup(back, { x: 316, y: 200, scale: 0.68, rotate: 4, expression: pick(['neutral', 'happy', 'surprised']) })}
+      ${pill(150, 300, hello)}
       <rect x="250" y="306" width="24" height="24" fill="${tex.grid}"/>
-      ${mascotGroup({ pose: 'happy', x: 12, y: 238, scale: 0.72 })}
+      ${mascotGroup({ pose: cranePose, x: 12, y: 238, scale: 0.72 })}
       ${caption(476, 360, 'okuyiga — v. to learn, a little every day', { anchor: 'end' })}
       ${tickRuler(436, 392, 78, { step: 6, label: 'LESSON Nº 001' })}`,
   });
 }
 
-/** Lesson complete: the crane cheers on a vermillion sun. */
-export function lessonCompleteScene({ xp = 15, label } = {}) {
+/**
+ * Lesson complete: the crane cheers on a vermillion sun. The pose, the
+ * cheer, a friend who pops in and a prop are random unless given.
+ */
+export function lessonCompleteScene({ xp = 15, label, pose, friend, prop } = {}) {
   const tex = patterns(uid('done'));
+  const cranePose = pose ?? pick(['cheering', 'dancing', 'cheering', 'waving']);
+  const [cheer, note] = pick(CHEERS);
+  const who = friend === undefined ? (chance(0.6) ? pick(Object.keys(CAST)) : null) : friend;
+  const thing = prop === undefined ? pick(PROP_IDS) : prop;
   return svg({
     viewBox: '0 0 400 360',
-    label: label ?? `Lesson complete. The crane cheers. You earned ${xp} XP.`,
+    label: label ?? `Lesson complete. The crane cheers${who ? ` with ${CAST[who].name}` : ''}. You earned ${xp} XP.`,
     className: 'ill--scene',
     body: `<defs>${tex.defs}</defs>
       ${cropMarks(16, 16, 368, 328, 14)}
@@ -52,9 +75,11 @@ export function lessonCompleteScene({ xp = 15, label } = {}) {
       <rect x="48" y="52" width="40" height="30" fill="${tex.dots}"/>
       <g class="anim-spin"><circle cx="210" cy="160" r="104" class="f-verm"/></g>
       <path d="M100 236 H330" class="s-rule" stroke-width="1"/>
-      ${mascotGroup({ pose: 'cheering', x: 86, y: 34, scale: 1.12 })}
-      ${pill(140, 282, `Weebale nnyo!  +${xp} XP`, { size: 10 })}
-      ${caption(364, 330, 'weebale — thank you, well done', { anchor: 'end' })}
+      ${thing ? propGroup(thing, { x: 316, y: 176, scale: 0.8 }) : ''}
+      ${mascotGroup({ pose: cranePose, x: 86, y: 34, scale: 1.12 })}
+      ${who ? portraitGroup(who, { expression: pick(['happy', 'wink', 'surprised']), x: 18, y: 150, scale: 0.5, rotate: -8 }) : ''}
+      ${pill(140, 282, `${cheer}  +${xp} XP`, { size: 10 })}
+      ${caption(364, 330, note, { anchor: 'end' })}
       <text class="mono" x="36" y="34" font-size="7">Nº 01 — LESSON COMPLETE</text>`,
   });
 }

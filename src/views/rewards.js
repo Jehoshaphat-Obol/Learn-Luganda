@@ -3,7 +3,7 @@
  * lesson unlocked (daily goal met, later the streak). Each screen has one
  * Continue button; the last one calls `onDone`.
  */
-import { lessonCompleteScene, mascot, streakScene } from '../illustrations/index.js';
+import { celebrationArt, mascot, randomPose, streakScene } from '../illustrations/index.js';
 import { nextMilestone } from '../state/streak.js';
 import { button, escapeHtml, ring } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
@@ -40,7 +40,7 @@ function summaryScreen({ result, xp, gems = 0, title, subtitle }) {
   const secs = String(result.seconds % 60).padStart(2, '0');
   return {
     html: `
-      <div class="complete__art">${lessonCompleteScene({ xp: xp.total })}</div>
+      <div class="complete__art">${celebrationArt({ xp: xp.total })}</div>
       <h1>${escapeHtml(title ?? (result.perfect ? 'Perfect lesson!' : 'Lesson complete!'))}</h1>
       <p class="complete__sub muted">${escapeHtml(subtitle ?? (result.perfect ? 'Not a single mistake. Weebale nnyo!' : 'Weebale! Every lesson makes the words stick.'))}</p>
       <div class="complete__stats">
@@ -63,7 +63,7 @@ function summaryScreen({ result, xp, gems = 0, title, subtitle }) {
 function goalScreen({ goalAfter }) {
   return {
     html: `
-      <div class="complete__art complete__art--small">${mascot({ pose: 'cheering' })}</div>
+      <div class="complete__art complete__art--small">${mascot({ pose: randomPose('celebrate') })}</div>
       <h1>Daily goal met!</h1>
       <div class="complete__ring">${ring(1, { size: 140, stroke: 12, content: `<strong class="complete__ring-num">${goalAfter.today}</strong><span>XP today</span>`, label: 'Daily goal' })}</div>
       <p class="complete__sub muted">You reached your ${goalAfter.goal} XP goal. Come back tomorrow to keep learning.</p>`,

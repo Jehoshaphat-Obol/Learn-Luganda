@@ -7,7 +7,7 @@ import '../styles/onboarding.css';
 import { store } from '../state/store.js';
 import { AVATAR_COLORS, DAILY_GOALS, saveProfile } from '../state/profile.js';
 import { button, escapeHtml, openModal, toast } from '../ui/components.js';
-import { CAST, mascot } from '../illustrations/index.js';
+import { avatarIds, characterInfo, mascot } from '../illustrations/index.js';
 import { avatar } from '../ui/avatar.js';
 import { refreshTopBar } from '../app/shell.js';
 import { canInstall, promptInstall } from '../app/pwa.js';
@@ -66,7 +66,7 @@ function profileSection(p) {
     <fieldset class="onb__fieldset">
       <legend>Character</legend>
       <div class="onb__characters" role="radiogroup" aria-label="Character">
-        ${Object.keys(CAST).map((id) => `<button class="onb__character" type="button" role="radio" aria-checked="${character === id}" aria-label="${CAST[id].name}" data-pick="character" data-value="${id}">${avatar({ character: id, color: 'paper' }, { size: 56 })}</button>`).join('')}
+        ${avatarIds().map((id) => `<button class="onb__character" type="button" role="radio" aria-checked="${character === id}" aria-label="${characterInfo(id).name}" data-pick="character" data-value="${id}">${avatar({ character: id, color: 'paper' }, { size: 56 })}</button>`).join('')}
       </div>
     </fieldset>
     <fieldset class="onb__fieldset">

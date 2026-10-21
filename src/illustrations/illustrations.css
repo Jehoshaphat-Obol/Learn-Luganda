@@ -19,6 +19,10 @@
   --ill-lavender: #dad5ec;
   --ill-blush: #efd0c9;
   --ill-sage: #d4e2cd;
+  --ill-sky: var(--color-pastel-sky, #cfdbe9);
+  /* Bauhaus primaries, kept inside the drawings (never on brand marks). */
+  --ill-yellow: var(--color-bauhaus-yellow, #f4c430);
+  --ill-blue: var(--color-bauhaus-blue, #1d4e9e);
   /* Lines drawn straight onto the page (rules, ticks, captions) follow the
      text colour so they stay visible in dark mode. */
   --ill-rule: var(--color-text, #1c1a18);
@@ -46,6 +50,9 @@
 .ill .f-lavender { fill: var(--ill-lavender); }
 .ill .f-blush { fill: var(--ill-blush); }
 .ill .f-sage { fill: var(--ill-sage); }
+.ill .f-sky { fill: var(--ill-sky); }
+.ill .f-yellow { fill: var(--ill-yellow); }
+.ill .f-blue { fill: var(--ill-blue); }
 .ill .f-rule { fill: var(--ill-rule); }
 
 .ill .s-ink { stroke: var(--ill-ink); fill: none; }
@@ -78,27 +85,44 @@
   fill: var(--ill-ink);
 }
 
-/* Motion: a slow bob for the mascot, a blink for eyes, a drift for shapes. */
-.ill .anim-bob {
-  animation: ill-bob 3.2s ease-in-out infinite;
-  transform-box: fill-box;
-}
-
-.ill .anim-blink {
-  animation: ill-blink 5s infinite;
-  transform-box: fill-box;
-  transform-origin: center;
-}
-
-.ill .anim-drift {
-  animation: ill-drift 9s ease-in-out infinite;
-  transform-box: fill-box;
-}
-
-.ill .anim-spin {
-  animation: ill-spin 40s linear infinite;
+/*
+ * Motion. Every loop is a transform on an element that has no transform
+ * attribute of its own (a CSS animation would replace it), with
+ * transform-box: fill-box so origins are relative to the shape itself.
+ * `--d` is a random negative delay so copies of a loop never sync up.
+ */
+.ill [class*='anim-'] {
   transform-box: fill-box;
   transform-origin: center;
+}
+
+.ill .anim-bob { animation: ill-bob 3.2s ease-in-out infinite; }
+.ill .anim-blink { animation: ill-blink 5s infinite; }
+.ill .anim-drift { animation: ill-drift 9s ease-in-out infinite; }
+.ill .anim-spin { animation: ill-spin 40s linear infinite; }
+.ill .anim-breathe { animation: ill-breathe 4.5s ease-in-out infinite; transform-origin: center bottom; }
+.ill .anim-nod { animation: ill-nod 6s ease-in-out infinite; transform-origin: right bottom; }
+.ill .anim-flap { animation: ill-flap 0.7s ease-in-out infinite alternate; transform-origin: left bottom; }
+.ill .anim-flap-r { animation: ill-flap-r 0.7s ease-in-out infinite alternate; transform-origin: right bottom; }
+.ill .anim-wave-wing { animation: ill-wave-wing 1.4s ease-in-out infinite; transform-origin: left bottom; }
+.ill .anim-dance { animation: ill-dance 1.2s ease-in-out infinite; transform-origin: center bottom; }
+.ill .anim-zzz { animation: ill-zzz 2.7s ease-out infinite; }
+.ill .anim-sway { animation: ill-sway 3s ease-in-out infinite; transform-origin: center top; }
+.ill .anim-sway-base { animation: ill-sway 4s ease-in-out infinite; transform-origin: center bottom; }
+.ill .anim-hop { animation: ill-hop 1.8s ease-in-out infinite; transform-origin: center bottom; }
+.ill .anim-shadow { animation: ill-shadow 1.8s ease-in-out infinite; }
+.ill .anim-beat { animation: ill-beat 0.9s ease-in-out infinite; transform-origin: center bottom; }
+.ill .anim-steam { animation: ill-steam 2.6s ease-out infinite; transform-origin: center bottom; }
+.ill .anim-pulse { animation: ill-pulse 1.6s ease-in-out infinite; }
+.ill .anim-flip { animation: ill-flip 5s ease-in-out infinite; transform-origin: left center; }
+.ill .anim-ripple { animation: ill-ripple 5s ease-in-out infinite; }
+.ill .anim-idle { animation: ill-idle 0.35s steps(2) infinite; }
+.ill .anim-flag { animation: ill-flag 1.8s ease-in-out infinite; transform-origin: left center; }
+.ill .anim-peck { animation: ill-peck 2.4s ease-in-out infinite; transform-origin: right bottom; }
+
+/* After the shorthands above, so the random delay wins. */
+.ill [class*='anim-'] {
+  animation-delay: var(--d, 0s);
 }
 
 @keyframes ill-bob {
@@ -120,11 +144,109 @@
   to { transform: rotate(360deg); }
 }
 
+@keyframes ill-breathe {
+  0%, 100% { transform: translateY(0) scaleY(1); }
+  50% { transform: translateY(-1.5px) scaleY(1.01); }
+}
+
+@keyframes ill-nod {
+  0%, 70%, 100% { transform: rotate(0); }
+  78% { transform: rotate(-6deg); }
+  86% { transform: rotate(3deg); }
+}
+
+@keyframes ill-flap {
+  from { transform: rotate(6deg); }
+  to { transform: rotate(-16deg); }
+}
+
+@keyframes ill-flap-r {
+  from { transform: rotate(-6deg); }
+  to { transform: rotate(16deg); }
+}
+
+@keyframes ill-wave-wing {
+  0%, 100% { transform: rotate(0); }
+  25% { transform: rotate(-22deg); }
+  50% { transform: rotate(4deg); }
+  75% { transform: rotate(-18deg); }
+}
+
+@keyframes ill-dance {
+  0%, 100% { transform: rotate(-5deg) translateY(0); }
+  25% { transform: rotate(0) translateY(-6px); }
+  50% { transform: rotate(5deg) translateY(0); }
+  75% { transform: rotate(0) translateY(-6px); }
+}
+
+@keyframes ill-zzz {
+  0% { transform: translate(0, 0); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translate(8px, -14px); opacity: 0; }
+}
+
+@keyframes ill-sway {
+  0%, 100% { transform: rotate(-4deg); }
+  50% { transform: rotate(4deg); }
+}
+
+@keyframes ill-hop {
+  0%, 100% { transform: translateY(0) scale(1.04, 0.96); }
+  15% { transform: translateY(0) scale(1, 1); }
+  45% { transform: translateY(-12px) scale(0.98, 1.03); }
+  75% { transform: translateY(0) scale(1, 1); }
+}
+
+@keyframes ill-shadow {
+  0%, 15%, 75%, 100% { transform: scale(1); }
+  45% { transform: scale(0.6); }
+}
+
+@keyframes ill-beat {
+  0%, 60%, 100% { transform: scaleY(1); }
+  70% { transform: scaleY(0.93); }
+}
+
+@keyframes ill-steam {
+  0% { transform: translateY(2px); opacity: 0; }
+  30% { opacity: 0.9; }
+  100% { transform: translateY(-10px); opacity: 0; }
+}
+
+@keyframes ill-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.12); opacity: 0.6; }
+}
+
+@keyframes ill-flip {
+  0%, 60%, 100% { transform: scaleX(1); }
+  75% { transform: scaleX(-0.2); }
+  85% { transform: scaleX(1); }
+}
+
+@keyframes ill-ripple {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+}
+
+@keyframes ill-idle {
+  from { transform: translateY(0); }
+  to { transform: translateY(-1px); }
+}
+
+@keyframes ill-flag {
+  0%, 100% { transform: skewY(0) scaleX(1); }
+  50% { transform: skewY(4deg) scaleX(0.92); }
+}
+
+@keyframes ill-peck {
+  0%, 60%, 100% { transform: rotate(0); }
+  70%, 80% { transform: rotate(-24deg); }
+  75% { transform: rotate(-16deg); }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .ill .anim-bob,
-  .ill .anim-blink,
-  .ill .anim-drift,
-  .ill .anim-spin {
+  .ill [class*='anim-'] {
     animation: none;
   }
 }

@@ -13,7 +13,8 @@ import { dailyGoal } from '../state/xp.js';
 import { streakStatus } from '../state/streak.js';
 import { dueWordIds } from '../state/review.js';
 import { storyList } from '../state/stories.js';
-import { portrait } from '../illustrations/index.js';
+import { portrait, prop, PROP_IDS } from '../illustrations/index.js';
+import { pick } from '../illustrations/random.js';
 import { button, escapeHtml, ring, toast } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { adSlot, mountAds } from '../ads/ads.js';
@@ -83,7 +84,7 @@ function unitSection(state, unit, current, due) {
         <div class="unit__meter" role="progressbar" aria-valuemin="0" aria-valuemax="${prog.total}" aria-valuenow="${prog.done}" aria-label="${escapeHtml(unit.title)}: ${prog.done} of ${prog.total} lessons complete"><span style="width:${(prog.done / prog.total) * 100}%"></span></div>
       </header>
       <div class="unit__body">
-        <div class="unit__cast" aria-hidden="true">${cast.map((id) => `<div class="unit__character">${portrait(id, { expression: prog.complete ? 'happy' : 'neutral' })}</div>`).join('')}</div>
+        <div class="unit__cast" aria-hidden="true">${cast.map((id) => `<div class="unit__character">${portrait(id, { expression: prog.complete ? pick(['happy', 'wink']) : pick(['neutral', 'neutral', 'happy', 'surprised']) })}</div>`).join('')}<div class="unit__prop">${prop(pick(PROP_IDS))}</div></div>
         <ol class="skills">${skills}</ol>
         <ol class="trail trail--checkpoint">${checkpointNode(state, unit, position)}</ol>
       </div>

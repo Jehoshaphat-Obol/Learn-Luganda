@@ -406,6 +406,28 @@
   line-height: 1.3;
 }
 
+/* Places */
+.places h2 {
+  margin-bottom: var(--space-8);
+}
+
+.places__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-8);
+}
+
+.places__item {
+  margin: 0;
+}
+
+.places__item figcaption {
+  margin-top: var(--space-2);
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--color-text-muted);
+}
+
 /* FAQ */
 .faq h2 {
   margin-bottom: var(--space-6);
