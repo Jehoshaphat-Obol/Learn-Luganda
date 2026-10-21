@@ -1,0 +1,20 @@
+import './styles/tokens.css';
+import './styles/base.css';
+import './styles/placeholder.css';
+
+const app = document.querySelector('#app');
+
+app.innerHTML = `
+  <main class="placeholder">
+    <svg class="placeholder__mark" viewBox="0 0 200 200" role="img" aria-label="Bauhaus shapes">
+      <circle cx="78" cy="80" r="52" fill="var(--color-bauhaus-yellow)" />
+      <rect x="96" y="96" width="78" height="78" fill="var(--color-bauhaus-blue)" />
+      <path d="M26 176 L96 176 L26 106 Z" fill="var(--color-bauhaus-black)" />
+      <circle cx="140" cy="54" r="22" fill="var(--color-primary)" />
+    </svg>
+    <h1 class="placeholder__title">Oli otya!</h1>
+    <p class="placeholder__lead">Learn Luganda with bite-sized, game-like lessons. Coming soon.</p>
+    <button class="btn" type="button" disabled>Tandika</button>
+    <p class="placeholder__note"><em>Tandika</em> means "start".</p>
+  </main>
+`;

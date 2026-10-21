@@ -1,0 +1,69 @@
+/*
+ * Design tokens. Vermillion orange is the brand colour; the rest of the
+ * palette is a Bauhaus primary set used for illustrations and accents.
+ */
+:root {
+  /* Brand */
+  --color-vermillion-50: #fdecea;
+  --color-vermillion-100: #fbd2cc;
+  --color-vermillion-300: #f08a7c;
+  --color-vermillion-500: #e34234;
+  --color-vermillion-600: #c7341f;
+  --color-vermillion-700: #a02916;
+
+  /* Bauhaus palette */
+  --color-bauhaus-yellow: #f4c430;
+  --color-bauhaus-blue: #1d4e9e;
+  --color-bauhaus-black: #141414;
+  --color-bauhaus-cream: #f6f0e4;
+
+  /* Feedback */
+  --color-success: #2e9e5b;
+  --color-error: #d7263d;
+
+  /* Semantic */
+  --color-primary: var(--color-vermillion-500);
+  --color-primary-strong: var(--color-vermillion-600);
+  --color-primary-shadow: var(--color-vermillion-700);
+  --color-on-primary: #ffffff;
+  --color-bg: var(--color-bauhaus-cream);
+  --color-surface: #ffffff;
+  --color-text: var(--color-bauhaus-black);
+  --color-text-muted: #5b5750;
+  --color-border: #e2dacb;
+
+  /* Type */
+  --font-display: 'Outfit', system-ui, sans-serif;
+  --font-body: 'Lexend', system-ui, sans-serif;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: clamp(2.25rem, 6vw, 3.5rem);
+
+  /* Space */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+
+  /* Shape */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+  --shadow-press: 0 4px 0 var(--color-primary-shadow);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1a1816;
+    --color-surface: #24211e;
+    --color-text: #f6f0e4;
+    --color-text-muted: #b5ada0;
+    --color-border: #3a352f;
+  }
+}
