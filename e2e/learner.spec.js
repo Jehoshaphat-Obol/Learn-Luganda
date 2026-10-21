@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { answer, exercisesFor, openWith, readState, savedState, today, yesterday } from './helpers.js';
+import { answer, continueToPath, exercisesFor, openWith, readState, savedState, today, yesterday } from './helpers.js';
 
 test('a new visitor signs up through onboarding', async ({ page }) => {
   await page.goto('./');
@@ -25,8 +25,7 @@ test('a full lesson, answered perfectly, earns XP, gems and a streak', async ({ 
   await openWith(page, savedState(), `#/lesson/u1s1l1?seed=${seed}`);
   for (const ex of exercisesFor('u1s1l1', seed)) await answer(page, ex);
   await expect(page.getByRole('heading', { name: 'Perfect lesson!' })).toBeVisible();
-  while (await page.locator('[data-continue]').count()) await page.locator('[data-continue]').click();
-  await expect(page).toHaveURL(/#\/learn/);
+  await continueToPath(page);
   const s = await readState(page);
   expect(s.lessons.u1s1l1.completions).toBe(1);
   expect(s.xp.total).toBe(15);
