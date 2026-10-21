@@ -1,5 +1,5 @@
 import { describe, expect, it, vi } from 'vitest';
-import { installButton, installSection, installState, isIos, isStandalone, promptInstall, syncInstall } from '../src/app/pwa.js';
+import { installButton, installCard, installSection, installState, isIos, isStandalone, promptInstall, syncInstall } from '../src/app/pwa.js';
 
 function offer(outcome = 'accepted') {
   const e = new Event('beforeinstallprompt');
@@ -23,11 +23,11 @@ describe('install button', () => {
     expect(isStandalone({ matchMedia: () => ({ matches: false }), navigator: {} })).toBe(false);
   });
 
-  it('stays hidden until the browser offers to install, then appears without a reload', async () => {
+  it('is offered before the browser prompt, then switches to the prompt without a reload', async () => {
     document.body.innerHTML = `${installButton()}<section data-install-section>${installSection()}</section>`;
     const btn = document.querySelector('[data-install]');
     expect(installState()).toBe('manual');
-    expect(btn.hidden).toBe(true);
+    expect(btn.hidden).toBe(false);
     // Settings explains the browser menu while there is no prompt.
     expect(document.querySelector('.install-steps')).not.toBeNull();
 
@@ -39,16 +39,28 @@ describe('install button', () => {
     expect(await promptInstall()).toBe(false);
     expect(e.prompt).toHaveBeenCalled();
     // A dismissed prompt can't be reused: back to the steps until Chrome offers again.
-    expect(btn.hidden).toBe(true);
+    expect(installState()).toBe('manual');
+    expect(btn.hidden).toBe(false);
+  });
+
+  it('shows the Get the app card until "Not now"', () => {
+    localStorage.clear();
+    expect(installCard()).toContain('data-install-card');
+    localStorage.setItem('learn-luganda-install-card', String(Date.now()));
+    expect(installCard()).toBe('');
+    localStorage.setItem('learn-luganda-install-card', String(Date.now() - 15 * 24 * 60 * 60 * 1000));
+    expect(installCard()).toContain('data-install-card');
   });
 
   it('hides everywhere once installed', async () => {
-    document.body.innerHTML = `${installButton()}<section data-install-section></section>`;
+    document.body.innerHTML = `${installButton()}${installCard()}<section data-install-section></section>`;
     offer('accepted');
     expect(await promptInstall()).toBe(true);
     syncInstall();
     expect(installState()).toBe('installed');
     expect(document.querySelector('[data-install]').hidden).toBe(true);
+    expect(document.querySelector('[data-install-card]')).toBeNull();
+    expect(installCard()).toBe('');
     expect(document.querySelector('[data-install-section]').textContent).toMatch(/installed/i);
   });
 });

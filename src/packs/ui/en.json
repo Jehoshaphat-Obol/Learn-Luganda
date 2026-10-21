@@ -155,7 +155,12 @@
       "manualStep1": "Open your browser’s menu (⋮ or ⋯).",
       "manualStep2": "Choose Install app or Add to Home screen.",
       "manualNote": "Some browsers, like Firefox on a computer, can’t install web apps. Chrome, Edge and Safari can.",
-      "ok": "Got it"
+      "already": "Already installed? Open Learn Luganda from your home screen or apps list.",
+      "ok": "Got it",
+      "short": "Install",
+      "cardTitle": "Get the app",
+      "cardText": "Install Learn Luganda for one-tap lessons from your home screen, even offline.",
+      "notNow": "Not now"
     },
     "titles": {
       "onboarding": "Get started",
