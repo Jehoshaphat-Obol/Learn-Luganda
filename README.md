@@ -8,9 +8,9 @@ accounts and no server: your progress stays in your browser.
 
 ![The landing page](docs/screenshots/landing.png)
 
-| Learning path | Lesson | Story | Profile | Leagues |
-| --- | --- | --- | --- | --- |
-| ![Path](docs/screenshots/learn.png) | ![Lesson](docs/screenshots/lesson.png) | ![Story](docs/screenshots/story.png) | ![Profile](docs/screenshots/profile.png) | ![Leagues](docs/screenshots/leagues.png) |
+| Learning path | Lesson | Story | Profile |
+| --- | --- | --- | --- |
+| ![Path](docs/screenshots/learn.png) | ![Lesson](docs/screenshots/lesson.png) | ![Story](docs/screenshots/story.png) | ![Profile](docs/screenshots/profile.png) |
 
 ## Features
 
@@ -36,7 +36,7 @@ accounts and no server: your progress stays in your browser.
   questions along the way.
 - **Motivation**: XP and a daily goal, streaks with freezes and milestones,
   hearts that refill over time, gems, a shop, achievements with five levels
-  each, and weekly leagues (simulated rivals, real XP).
+  each. It is a solo, offline app: no leagues, friends or accounts.
 - **Spaced review**: words come back on a Leitner schedule. The practice hub
   offers review, mistakes and per-skill practice, and practice earns hearts
   back.
@@ -83,7 +83,7 @@ Pages → Source: Deploy from a branch, `gh-pages` / root).
 - `src/lesson/`: exercise generation (seeded), answer checking, sessions, and
   one renderer per exercise type
 - `src/state/`: the versioned localStorage store and the learning mechanics:
-  XP, hearts, streaks, review, shop, achievements, leagues, stories and stats
+  XP, hearts, streaks, review, shop, achievements, stories and stats
 - `src/views/`: one module per screen; `src/app/`: router, shell, PWA
 - `src/ui/`: components, icons, avatars, badges, sound, motion and the bar chart
 - `src/illustrations/`: the cast, the mascot and scenes, drawn as SVG

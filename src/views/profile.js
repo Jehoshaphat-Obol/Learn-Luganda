@@ -64,7 +64,6 @@ export function profileView({ root }) {
       <ul class="stat-tiles">
         ${tile('flame', st.streak, `day streak${st.longestStreak > st.streak ? ` · best ${st.longestStreak}` : ''}`, 'stat-tile--flame')}
         ${tile('bolt', st.totalXp, 'total XP', 'stat-tile--xp')}
-        ${tile('leagues', st.league ?? '—', st.league ? 'league' : 'no league yet')}
         ${tile('book', st.words, 'words learned')}
         ${tile('check', st.lessons, `lessons · ${st.perfect} perfect`)}
         ${tile('target', st.accuracy === null ? '—' : `${Math.round(st.accuracy * 100)}%`, 'accuracy')}

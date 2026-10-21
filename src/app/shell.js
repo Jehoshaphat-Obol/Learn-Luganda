@@ -11,7 +11,6 @@ import { brandMark } from './brand-mark.js';
 export const NAV = [
   { path: '/learn', label: 'Learn', icon: 'home' },
   { path: '/practice', label: 'Practice', icon: 'practice' },
-  { path: '/leagues', label: 'Leagues', icon: 'leagues' },
   { path: '/shop', label: 'Shop', icon: 'shop' },
   { path: '/profile', label: 'Profile', icon: 'profile' },
 ];

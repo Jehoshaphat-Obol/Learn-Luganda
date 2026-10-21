@@ -6,7 +6,7 @@
 import { createStore } from './storage.js';
 
 export const STORAGE_KEY = 'learn-luganda';
-export const SCHEMA_VERSION = 1;
+export const SCHEMA_VERSION = 2;
 
 export const DEFAULTS = {
   // null until onboarding finishes: { name, avatar, dailyGoal, motivation, level, joinedAt }
@@ -27,14 +27,20 @@ export const DEFAULTS = {
   jumps: [],
   achievements: {},
   inventory: {},
-  league: {},
   stats: { lessonsCompleted: 0, perfectLessons: 0, practiceSessions: 0, answers: 0, correctAnswers: 0, secondsLearning: 0 },
+};
+
+/** `MIGRATIONS[n]` upgrades a saved document from version n-1 to n. */
+export const MIGRATIONS = {
+  // v2: weekly leagues were removed; drop their saved slice.
+  2: ({ league, ...doc }) => doc,
 };
 
 export const store = createStore({
   key: STORAGE_KEY,
   version: SCHEMA_VERSION,
   defaults: DEFAULTS,
+  migrations: MIGRATIONS,
 });
 
 export const hasProfile = () => Boolean(store.get().profile);
