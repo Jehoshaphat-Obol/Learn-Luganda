@@ -60,6 +60,33 @@ test('the app is installable: manifest and icons load', async ({ page, request }
   for (const icon of manifest.icons) expect((await request.get(icon.src)).ok()).toBe(true);
 });
 
+test('the Install button appears when the browser offers it, even after the page has drawn', async ({ page }) => {
+  await openWith(page, savedState(), '#/learn');
+  const install = page.locator('.topbar [data-install]');
+  await expect(page.locator('.course-section').first()).toBeVisible();
+  await expect(install).toBeHidden();
+  await page.evaluate(() => {
+    const e = new Event('beforeinstallprompt');
+    e.prompt = () => (window.prompted = true);
+    e.userChoice = Promise.resolve({ outcome: 'accepted' });
+    window.dispatchEvent(e);
+  });
+  await expect(install).toBeVisible();
+  await install.click();
+  await expect.poll(() => page.evaluate(() => window.prompted)).toBe(true);
+  await expect(install).toBeHidden();
+});
+
+test.describe('on an iPhone', () => {
+  test.use({ userAgent: 'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1' });
+
+  test('the Install button explains Share → Add to Home Screen', async ({ page }) => {
+    await page.goto('./');
+    await page.locator('.landing__header [data-install]').click();
+    await expect(page.getByRole('dialog')).toContainText('Add to Home Screen');
+  });
+});
+
 test('no ads or consent card while AdSense is not configured', async ({ page }) => {
   await openWith(page, savedState(), '#/learn');
   await expect(page.locator('.course-section').first()).toBeVisible();

@@ -22,6 +22,7 @@ import { reducedMotion } from '../ui/motion.js';
 import { castMember, course, courseStats } from '../content/course.js';
 import { brandMark } from '../app/brand-mark.js';
 import { siteLinks } from '../app/site.js';
+import { installButton } from '../app/pwa.js';
 
 const STEPS = [
   { icon: 'bolt', title: 'Bite-sized lessons', text: 'Five-minute lessons with pictures, word tiles, listening and matching games.' },
@@ -50,7 +51,7 @@ const faq = (STATS = courseStats()) => [
   ['Who is it for?', 'Complete beginners, diaspora families reconnecting with the language, and visitors to Uganda who want more than “hello”.'],
   ['What will I learn first?', 'Greetings, introductions and numbers, then family, food, the market, time, places and more, unit by unit.'],
   ['How long is the course?', `${STATS.units} units in ${STATS.sections} section${STATS.sections > 1 ? 's' : ''}: ${STATS.lessons} lessons and ${STATS.words} words, from first greetings to real conversations. Already know some? Take a section test to jump ahead.`],
-  ['Does it work offline?', 'Once installed, lessons work without a connection.'],
+  ['Can I install it like an app?', 'Yes. Tap Install app at the top of the page, or on an iPhone tap Share and then Add to Home Screen. Once installed, lessons work without a connection.'],
 ];
 
 const SAMPLE = {
@@ -83,7 +84,10 @@ export function createLandingView({ hasProgress = () => false } = {}) {
             <a href="#cast">Meet the cast</a>
             <a href="#faq">FAQ</a>
           </nav>
-          ${button({ label: returning ? 'Continue' : 'Get started', href: returning ? '#/learn' : '#/onboarding' })}
+          <div class="landing__actions">
+            ${installButton('landing__install')}
+            ${button({ label: returning ? 'Continue' : 'Get started', href: returning ? '#/learn' : '#/onboarding' })}
+          </div>
         </header>
 
         <section class="hero">
