@@ -139,4 +139,138 @@ export const SECTION4_GUIDEBOOKS = {
       },
     ],
   },
+  u29: {
+    intro: 'Ganda music is built on drums, xylophones and harps, and songs carry history, praise and humour. This unit also shows how to say “the one who…”.',
+    phrases: [
+      ['Kuba engoma!', 'Play the drum!'],
+      ['Oluyimba luno lulungi.', 'This song is good.'],
+      ['Omuyimbi ayimba bulungi.', 'The singer sings well.'],
+      ['Tuzina Bakisimba.', 'We dance Bakisimba.'],
+      ['Abaana abazina basanyuse.', 'The children who are dancing are happy.'],
+      ['Kinyuma nnyo!', 'It’s great fun!'],
+    ],
+    tips: [
+      {
+        id: 'relatives',
+        title: '“Who” and “which”: add the vowel back',
+        body: [
+          'A verb that describes a noun (“the people who sing”) takes the noun’s initial vowel: **abantu bayimba** is “the people sing”, but **abantu abayimba** is “the people who sing”. **Ekintu kigwa** is “the thing falls”; **ekintu ekigwa** is “the thing that falls”.',
+          'For one person (**omu-** nouns) the written form is **a-** in both, and only the tone changes: **omusajja akuba engoma** can mean “the man plays the drum” or “the man who plays the drum”.',
+        ],
+        table: [
+          ['Noun', 'It does', 'Which does'],
+          ['abantu', 'bayimba', 'abayimba'],
+          ['ekintu', 'kigwa', 'ekigwa'],
+          ['ente', 'erya', 'erya'],
+          ['ebintu', 'bigwa', 'ebigwa'],
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'The royal drums',
+        body: ['Drums once carried messages between villages and announced the Kabaka. The royal drums, **Mujaguzo**, are beaten at coronations and great royal occasions, and a Kabaka was said to “eat Buganda” when he took the throne to their sound.'],
+      },
+      {
+        title: 'Bakisimba',
+        body: ['**Bakisimba** is the best-known Ganda dance, danced mostly with the waist to drums and amadinda. Its name comes from words said to be spoken when the first banana wine was made: “they planted the banana”.'],
+      },
+    ],
+  },
+  u30: {
+    intro: 'Most Ugandans are Christian or Muslim, and religious holidays are shared by everyone. Blessings are part of everyday talk.',
+    phrases: [
+      ['Ku Ssabbiiti ŋŋenda mu kkanisa.', 'On Sunday I go to church.'],
+      ['Ku Lwakutaano agenda mu muzigiti.', 'On Friday he goes to the mosque.'],
+      ['Ssekukkulu ennungi!', 'Happy Christmas!'],
+      ['Iddi ennungi!', 'Happy Eid!'],
+      ['Omwaka omuggya omulungi!', 'Happy New Year!'],
+      ['Katonda akuwe omukisa!', 'God bless you!'],
+    ],
+    tips: [
+      {
+        id: 'holiday-greetings',
+        title: 'Holiday greetings',
+        body: [
+          'A holiday greeting is the holiday plus “good”, agreeing with its class: **Ssekukkulu ennungi**, **Paasika ennungi**, **Iddi ennungi**, **Omwaka omuggya omulungi**.',
+          'Answer with **Naawe** (and you too) and the same greeting. **Nsaba** means “I pray” and also “I ask”: **Nsaba amazzi** is a polite way to ask for water.',
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'Martyrs Day',
+        body: ['On 3 June, pilgrims from across East Africa walk to **Namugongo**, near Kampala, to honour the Uganda Martyrs, young Christians killed in the 1880s. Many walk for days to get there.'],
+      },
+      {
+        title: 'Balubaale',
+        body: ['Before Christianity and Islam arrived, the Baganda honoured spirits called **balubaale**. Their names live on in places: **Nnalubaale**, Lake Victoria, is “the home of the balubaale”.'],
+      },
+    ],
+  },
+  u31: {
+    intro: 'Small businesses keep Uganda running: market stalls, kiosks, tailors and boda bodas. This unit adds verbs for making someone else do something.',
+    phrases: [
+      ['Nnina bizinensi entono.', 'I have a small business.'],
+      ['Leero abaguzi bangi.', 'Today there are many customers.'],
+      ['Nfunye amagoba mangi.', 'I have made a lot of profit.'],
+      ['Ntereka ssente mu bbanka.', 'I save money in the bank.'],
+      ['Nsomesa abaana Oluganda.', 'I teach the children Luganda.'],
+      ['Nnywesa ente amazzi.', 'I give the cows water.'],
+    ],
+    tips: [
+      {
+        id: 'causative',
+        title: 'Making someone do: -is- / -es-',
+        body: [
+          'Add **-is-** or **-es-** before the last vowel to mean “make someone do” or “help someone do”: **-soma** (read) becomes **-somesa** (teach), **-lya** (eat) becomes **-lisa** (feed), **-nywa** (drink) becomes **-nywesa** (give a drink).',
+          'You already know one: **omusomesa** (teacher) is literally “one who makes people read”.',
+        ],
+        table: [
+          ['Verb', 'Make do', 'English'],
+          ['-soma', '-somesa', 'teach'],
+          ['-lya', '-lisa', 'feed'],
+          ['-nywa', '-nywesa', 'give a drink'],
+          ['-tunda', '-tunza', 'sell (as trade)'],
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'Savings groups',
+        body: ['Many people save in groups: members pay in every week and take turns receiving the pot. These groups also lend to members, so a debt (**ebbanja**) is owed to friends, not a bank.'],
+      },
+    ],
+  },
+  u32: {
+    intro: 'Uganda is green, wet and full of water: Lake Victoria, the source of the Nile, forests and hills. Locatives tell you where things are.',
+    phrases: [
+      ['Nnalubaale ye nnyanja ennene.', 'Lake Victoria is a big lake.'],
+      ['Kiyira gutandikira e Jinja.', 'The Nile starts at Jinja.'],
+      ['Enkima ziri mu kibira.', 'The monkeys are in the forest.'],
+      ['Kampala erina ensozi musanvu.', 'Kampala has seven hills.'],
+      ['Tusimbe emiti!', 'Let’s plant trees!'],
+      ['Tosuula kasasiro wano!', 'Don’t throw rubbish here!'],
+    ],
+    tips: [
+      {
+        id: 'locatives',
+        title: 'mu, ku and e',
+        body: [
+          '**mu** means “in, inside”: **mu kibira** (in the forest). **ku** means “on, at”: **ku lusozi** (on the hill). **e** goes before place names: **e Jinja**, **e Kampala**.',
+          'After **mu** and **ku**, the noun drops its first vowel: **ekibira** becomes **mu kibira**, **olusozi** becomes **ku lusozi**.',
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'Seven hills',
+        body: ['Kampala was traditionally said to stand on seven hills, among them **Mengo** (the Kabaka’s palace), **Rubaga**, **Namirembe** and **Kibuli**. The city has long since spread over many more.'],
+      },
+      {
+        title: 'Kiyira',
+        body: ['The Nile, **Kiyira** in Luganda, leaves Lake Victoria at Jinja and flows north to the Mediterranean. Rafting the rapids near Jinja is famous.'],
+      },
+    ],
+  },
 };
