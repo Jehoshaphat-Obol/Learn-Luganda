@@ -10,8 +10,9 @@ import { createSession } from '../lesson/session.js';
 import { RENDERERS } from '../lesson/exercises/index.js';
 import { store } from '../state/store.js';
 import { isLessonDone, isLessonUnlocked } from '../state/progress.js';
-import { recordLessonResult } from '../state/lessons.js';
-import { lessonCompleteScene, mascot } from '../illustrations/index.js';
+import { finishLesson } from '../state/lessons.js';
+import { showRewards } from './rewards.js';
+import { mascot } from '../illustrations/index.js';
 import { button, escapeHtml, openModal, progressBar } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 
@@ -151,27 +152,6 @@ export function runExercises({ root, exercises, onQuit, onFinish }) {
   };
 }
 
-/** Shown after a lesson; the XP issue enriches it. */
-export function renderComplete(root, { result, onContinue, xp = 0 }) {
-  const pct = Math.round(result.accuracy * 100);
-  const mins = Math.floor(result.seconds / 60);
-  const secs = String(result.seconds % 60).padStart(2, '0');
-  root.innerHTML = `
-    <div class="complete">
-      <div class="complete__art">${lessonCompleteScene({ xp })}</div>
-      <h1>${result.perfect ? 'Perfect lesson!' : 'Lesson complete!'}</h1>
-      <div class="complete__stats">
-        <div class="complete__stat complete__stat--xp"><span>Total XP</span><strong>${icon('bolt', { size: 20 })}${xp}</strong></div>
-        <div class="complete__stat complete__stat--acc"><span>${pct >= 90 ? 'Amazing' : pct >= 70 ? 'Good' : 'Accuracy'}</span><strong>${icon('target', { size: 20 })}${pct}%</strong></div>
-        <div class="complete__stat complete__stat--time"><span>Time</span><strong>${icon('stories', { size: 20 })}${mins}:${secs}</strong></div>
-      </div>
-      <div class="complete__actions">${button({ label: 'Continue', size: 'lg', block: true, attrs: 'data-continue' })}</div>
-    </div>`;
-  const btn = root.querySelector('[data-continue]');
-  btn.addEventListener('click', onContinue);
-  btn.focus();
-}
-
 export function lessonView({ root, params, navigate }) {
   const lesson = course.lessons[params.id];
   const state = store.get();
@@ -186,8 +166,8 @@ export function lessonView({ root, params, navigate }) {
     onQuit: () => navigate('/learn'),
     onFinish: (result) => {
       runner.cleanup();
-      recordLessonResult(lesson.id, result);
-      renderComplete(root, { result, onContinue: () => navigate('/learn') });
+      const summary = finishLesson(lesson.id, result, { replay: !firstTime });
+      showRewards(root, { result, ...summary, onDone: () => navigate('/learn') });
     },
   });
   return runner.cleanup;

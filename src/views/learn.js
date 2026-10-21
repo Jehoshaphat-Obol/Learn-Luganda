@@ -7,7 +7,7 @@ import '../styles/learn.css';
 import { course } from '../content/course.js';
 import { store } from '../state/store.js';
 import { isLessonDone, isLessonUnlocked, isUnitUnlocked, nextLessonId, skillProgress, unitProgress } from '../state/progress.js';
-import { dayKey } from '../state/dates.js';
+import { dailyGoal } from '../state/xp.js';
 import { portrait } from '../illustrations/index.js';
 import { button, escapeHtml, ring, toast } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
@@ -79,9 +79,17 @@ function unitSection(state, unit, current) {
     </section>`;
 }
 
+/** Compact daily goal shown above the path on narrow screens. */
+function goalStrip(state) {
+  const g = dailyGoal(state);
+  return `<a class="goal-strip" href="#/profile">
+    ${ring(g.ratio, { size: 40, stroke: 5, content: icon('bolt', { size: 16 }), label: 'Daily goal' })}
+    <span><strong>${g.met ? 'Daily goal met!' : 'Daily goal'}</strong> ${Math.min(g.today, g.goal)} / ${g.goal} XP</span>
+  </a>`;
+}
+
 function sidebar(state) {
-  const goal = state.profile?.dailyGoal ?? 20;
-  const today = state.xp.byDay[dayKey()] ?? 0;
+  const { goal, today } = dailyGoal(state);
   return `
     <aside class="learn__side">
       <div class="card side-card">
@@ -108,6 +116,7 @@ export function learnView({ root, navigate }) {
   root.innerHTML = `
     <div class="learn">
       <div class="learn__path">
+        ${goalStrip(state)}
         ${course.units.map((u) => unitSection(state, u, current)).join('')}
         <p class="learn__more caption">More units are on the way. Weebale for learning!</p>
       </div>
