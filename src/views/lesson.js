@@ -216,7 +216,7 @@ function noHeartsScreen(root) {
     </section>`;
 }
 
-export function lessonView({ root, params, navigate }) {
+export function lessonView({ root, params, query = {}, navigate }) {
   const lesson = course.lessons[params.id];
   const state = store.get();
   if (!lesson || !isLessonUnlocked(state, params.id)) {
@@ -230,7 +230,7 @@ export function lessonView({ root, params, navigate }) {
       store.update((s) => {
         refillHearts(s);
       });
-      lessonView({ root, params, navigate });
+      lessonView({ root, params, query, navigate });
     });
     return undefined;
   }
@@ -238,7 +238,8 @@ export function lessonView({ root, params, navigate }) {
     root,
     hearts: true,
     navigate,
-    exercises: buildLesson(lesson.id, { firstTime }),
+    // `?seed=` replays the same exercises (used by the end-to-end tests).
+    exercises: buildLesson(lesson.id, { firstTime, seed: Number(query.seed) || undefined }),
     onQuit: () => navigate('/learn'),
     onFinish: (result) => {
       runner.cleanup();
