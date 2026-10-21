@@ -65,6 +65,14 @@ Change the one line `const LEVEL = 'gentle';` to pick a level:
 | Most ads per day | 0 | 3 | 6 | 10 |
 | Lesson complete ad after every Nth session | – | 4th | 3rd | 2nd |
 | Skip the complete ad below this accuracy | – | 80% | 60% | 50% |
+| Ad break length (free pause) | – | 24 h | 12 h | 6 h |
+| Ad break with a 7+ day streak | – | 48 h | 24 h | 12 h |
+| Ad breaks per rolling week | 0 | 3 | 2 | 2 |
+
+Learners take an ad break from the "Ad break" button on any ad card or in
+Settings › Ads and privacy. The crane offers it in a short, playful note
+(text in `src/ads/strings.js`). Breaks can't stack, and ending one early
+still counts towards the week.
 
 Ads never appear inside lessons, practice, checkpoints, section tests,
 stories being read, onboarding or the landing page: those screens have no

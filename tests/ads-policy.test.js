@@ -25,6 +25,9 @@ describe('ad policy', () => {
     expect(p.everyNthSession).toBeGreaterThanOrEqual(2);
     expect(p.minAccuracy).toBeGreaterThanOrEqual(0.5);
     for (const rule of Object.values(p.placements)) expect(Object.values(AD_TYPES)).toContain(rule.type);
+    expect(p.adBreak.hours).toBeGreaterThanOrEqual(6);
+    expect(p.adBreak.perWeek).toBeGreaterThanOrEqual(1);
+    expect(p.adBreak.streakHours).toBeGreaterThanOrEqual(p.adBreak.hours);
   });
 
   it('never has a placement inside learning screens', () => {
