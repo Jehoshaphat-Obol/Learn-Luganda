@@ -1,0 +1,189 @@
+/* Leagues */
+.leagues__head {
+  text-align: center;
+  margin-bottom: var(--space-6);
+}
+
+.leagues__head h1 {
+  margin: var(--space-3) 0 var(--space-1);
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+}
+
+.leagues__head p {
+  margin: 0;
+}
+
+.leagues__head .icon {
+  vertical-align: -3px;
+}
+
+.leagues__rank {
+  margin-top: var(--space-2) !important;
+}
+
+.tier-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Tier shields: ink, greys, vermillion and gold, in that rising order. */
+.tier-shield {
+  --fill: var(--color-paper-400);
+  --fg: #fff;
+  position: relative;
+  display: inline-grid;
+  place-items: center;
+  width: var(--size);
+  height: calc(var(--size) * 1.15);
+  color: var(--fg);
+}
+
+.tier-shield__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: var(--fill);
+}
+
+.tier-shield .icon {
+  position: relative;
+}
+
+.tier-shield--bronze { --fill: #b5835a; }
+.tier-shield--silver { --fill: var(--color-ink-500); }
+.tier-shield--gold { --fill: var(--color-gold); --fg: var(--color-ink-900); }
+.tier-shield--sapphire { --fill: var(--color-ink-700); }
+.tier-shield--ruby { --fill: var(--color-primary); }
+.tier-shield--emerald { --fill: var(--color-vermillion-300); --fg: var(--color-ink-900); }
+.tier-shield--diamond { --fill: var(--color-ink-900); --fg: var(--color-gold); }
+
+.tier-shield.is-locked {
+  --fill: var(--color-paper-300);
+  --fg: var(--color-ink-500);
+}
+
+.tier-shield.is-current .tier-shield__bg {
+  filter: drop-shadow(0 4px 0 rgb(0 0 0 / 0.18));
+}
+
+.leagues__empty {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  padding: var(--space-4);
+}
+
+.leagues__empty h2 {
+  margin: 0;
+  font-size: var(--text-lg);
+}
+
+.leagues__empty p {
+  margin: var(--space-1) 0 var(--space-3);
+}
+
+.leagues__empty-art {
+  flex: 0 0 96px;
+}
+
+.league-table {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  overflow: hidden;
+}
+
+.league-row {
+  display: grid;
+  grid-template-columns: 2.25rem auto 1fr auto;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) var(--space-4);
+}
+
+.league-row + .league-row {
+  border-top: 1px solid var(--color-paper-200);
+}
+
+.league-row__rank {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+.league-row--promote .league-row__rank {
+  color: var(--color-primary-text);
+}
+
+.league-row--demote .league-row__rank {
+  color: var(--color-text-subtle);
+}
+
+.league-row__name {
+  font-weight: var(--weight-bold);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.league-row__name .pill {
+  margin-left: var(--space-1);
+}
+
+.league-row__xp {
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.league-row.is-me {
+  background: var(--color-vermillion-50);
+}
+
+.league-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: var(--color-paper-50);
+  border-top: 1px dashed var(--color-paper-400);
+  border-bottom: 1px dashed var(--color-paper-400);
+}
+
+.league-divider--promote {
+  color: var(--color-primary-text);
+}
+
+.league-divider--demote {
+  color: var(--color-text-subtle);
+}
+
+.leagues__note {
+  margin-top: var(--space-4);
+  text-align: center;
+}
+
+.leagues__note .icon {
+  vertical-align: -2px;
+}
+
+.league-modal__art {
+  display: grid;
+  place-items: center;
+}

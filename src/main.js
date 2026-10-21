@@ -8,6 +8,7 @@ import { createShell, refreshTopBar, setStatsProvider } from './app/shell.js';
 import { store, hasProfile } from './state/store.js';
 import { heartStatus } from './state/hearts.js';
 import { settleStreak, streakStatus } from './state/streak.js';
+import { settleLeague } from './state/league.js';
 import { routes } from './app/routes.js';
 
 setStatsProvider(() => {
@@ -18,6 +19,7 @@ setStatsProvider(() => {
 });
 // Apply any missed days (freezes or a reset) as soon as the app opens.
 if (store.get().streak.lastDay) store.update((s) => settleStreak(s));
+if (store.get().profile) store.update((s) => settleLeague(s));
 store.subscribe(refreshTopBar);
 
 const shell = createShell(document.querySelector('#app'));
