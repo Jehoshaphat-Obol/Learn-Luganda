@@ -1,6 +1,7 @@
 /*
  * Section test: jump ahead to a later section by showing you know the ones
- * before it. No hearts, but you need 80% first-try accuracy to pass.
+ * before it. By default no hearts, but you need 80% first-try accuracy to
+ * pass; the course pack sets both (`settings.sectionTest`).
  */
 import { course } from '../content/course.js';
 import { store } from '../state/store.js';
@@ -13,7 +14,6 @@ import { showRewards } from './rewards.js';
 import { emptyStateArt } from '../illustrations/index.js';
 import { button } from '../ui/components.js';
 
-export const JUMP_PASS = 0.8;
 
 export function jumpView({ root, params, query = {}, navigate }) {
   const section = course.sections.find((s) => s.id === params.section);
@@ -21,19 +21,21 @@ export function jumpView({ root, params, query = {}, navigate }) {
     navigate('/learn', { replace: true });
     return undefined;
   }
+  const { passMark, hearts } = course.settings.sectionTest;
   const runner = runExercises({
     root,
+    hearts,
     navigate,
     exercises: buildSectionTest(section.id, { seed: Number(query.seed) || undefined }),
     onQuit: () => navigate('/learn'),
     onFinish: (result) => {
       runner.cleanup();
-      if (result.accuracy < JUMP_PASS) {
+      if (result.accuracy < passMark) {
         root.innerHTML = `
           <section class="empty-state">
             <div class="empty-state__art">${emptyStateArt('ponder')}</div>
             <h1>Not quite yet</h1>
-            <p class="muted">You got ${Math.round(result.accuracy * 100)}% right first time, and you need ${JUMP_PASS * 100}% to jump to Section ${section.index + 1}. Keep going on the path, or try again.</p>
+            <p class="muted">You got ${Math.round(result.accuracy * 100)}% right first time, and you need ${Math.round(passMark * 100)}% to jump to Section ${section.index + 1}. Keep going on the path, or try again.</p>
             ${button({ label: 'Try again', size: 'lg', attrs: 'data-retry' })}
             ${button({ label: 'Back to the path', href: '#/learn', variant: 'ghost' })}
           </section>`;

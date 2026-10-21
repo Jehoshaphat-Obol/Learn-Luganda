@@ -6,6 +6,8 @@ import { validateUiPack } from '../src/i18n/validate.js';
 const root = new URL('../', import.meta.url);
 const readJson = (path) => JSON.parse(readFileSync(new URL(path, root), 'utf8'));
 const ajv = new Ajv2020({ allErrors: true });
+// Shared parts other schemas point at.
+ajv.addSchema(readJson('docs/packs/schema/settings.schema.json'), 'settings.schema.json');
 const compiled = new Map();
 const schemaErrors = (schemaPath, data, where) => {
   if (!compiled.has(schemaPath)) compiled.set(schemaPath, ajv.compile(readJson(schemaPath)));

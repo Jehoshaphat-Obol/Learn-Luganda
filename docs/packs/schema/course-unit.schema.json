@@ -4,54 +4,156 @@
   "title": "Course pack: one unit",
   "description": "src/packs/courses/<from>-<to>/units/<id>.json. A unit is self-contained: its words and sentences, the skills and lessons that teach them, its guidebook and its stories. `target` is text in the language being taught, `base` the same meaning in the learner's language.",
   "type": "object",
-  "required": ["id", "title", "words", "sentences", "skills", "guidebook"],
+  "required": [
+    "id",
+    "title",
+    "words",
+    "sentences",
+    "skills",
+    "guidebook"
+  ],
   "additionalProperties": false,
   "properties": {
-    "$schema": { "type": "string" },
-    "id": { "$ref": "#/$defs/id" },
-    "title": { "type": "string", "minLength": 1 },
-    "description": { "type": "string" },
-    "color": { "enum": ["vermillion", "butter", "sky", "sage", "ink", "blush", "lilac"], "description": "Accent colour of the unit on the path." },
-    "character": { "type": "string", "description": "Cast member shown with the unit." },
-    "words": { "type": "array", "items": { "$ref": "#/$defs/item" } },
-    "sentences": { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "$ref": "#/$defs/id"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "description": {
+      "type": "string"
+    },
+    "color": {
+      "enum": [
+        "vermillion",
+        "butter",
+        "sky",
+        "sage",
+        "ink",
+        "blush",
+        "lilac"
+      ],
+      "description": "Accent colour of the unit on the path."
+    },
+    "character": {
+      "type": "string",
+      "description": "Cast member shown with the unit."
+    },
+    "words": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "sentences": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
     "skills": {
       "type": "array",
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["id", "title", "lessons"],
+        "required": [
+          "id",
+          "title",
+          "lessons"
+        ],
         "additionalProperties": false,
         "properties": {
-          "id": { "$ref": "#/$defs/id" },
-          "title": { "type": "string", "minLength": 1 },
-          "icon": { "type": "string", "description": "An icon name from src/ui/icons.js." },
-          "tip": { "type": "string", "description": "Id of a guidebook tip the path links to." },
+          "id": {
+            "$ref": "#/$defs/id"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "icon": {
+            "type": "string",
+            "description": "An icon name from src/ui/icons.js."
+          },
+          "tip": {
+            "type": "string",
+            "description": "Id of a guidebook tip the path links to."
+          },
           "lessons": {
             "type": "array",
             "minItems": 1,
             "items": {
               "type": "object",
-              "required": ["id", "newWords"],
+              "required": [
+                "id",
+                "newWords"
+              ],
               "additionalProperties": false,
               "properties": {
-                "id": { "$ref": "#/$defs/id" },
-                "newWords": { "type": "array", "items": { "type": "string" }, "description": "Word ids introduced here. Each word is introduced in exactly one lesson." },
-                "sentences": { "type": "array", "items": { "type": "string" }, "description": "Sentence ids practised here." },
+                "id": {
+                  "$ref": "#/$defs/id"
+                },
+                "newWords": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Word ids introduced here. Each word is introduced in exactly one lesson."
+                },
+                "sentences": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Sentence ids practised here."
+                },
                 "dialogues": {
                   "type": "array",
                   "items": {
                     "type": "object",
-                    "required": ["speaker", "target", "base", "options", "answer"],
+                    "required": [
+                      "speaker",
+                      "target",
+                      "base",
+                      "options",
+                      "answer"
+                    ],
                     "additionalProperties": false,
                     "properties": {
-                      "speaker": { "type": "string" },
-                      "target": { "type": "string", "minLength": 1, "description": "What the speaker says." },
-                      "base": { "type": "string", "minLength": 1, "description": "Its translation." },
-                      "options": { "type": "array", "minItems": 2, "items": { "type": "string" }, "description": "Replies in the target language." },
-                      "answer": { "type": "string", "description": "The best reply; one of the options." }
+                      "speaker": {
+                        "type": "string"
+                      },
+                      "target": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "What the speaker says."
+                      },
+                      "base": {
+                        "type": "string",
+                        "minLength": 1,
+                        "description": "Its translation."
+                      },
+                      "options": {
+                        "type": "array",
+                        "minItems": 2,
+                        "items": {
+                          "type": "string"
+                        },
+                        "description": "Replies in the target language."
+                      },
+                      "answer": {
+                        "type": "string",
+                        "description": "The best reply; one of the options."
+                      }
                     }
                   }
+                },
+                "settings": {
+                  "$ref": "settings.schema.json",
+                  "description": "Overrides for this lesson only."
                 }
               }
             }
@@ -61,23 +163,62 @@
     },
     "guidebook": {
       "type": "object",
-      "required": ["intro", "phrases", "tips", "culture"],
+      "required": [
+        "intro",
+        "phrases",
+        "tips",
+        "culture"
+      ],
       "additionalProperties": false,
       "properties": {
-        "intro": { "type": "string" },
-        "phrases": { "type": "array", "items": { "$ref": "#/$defs/pair" } },
+        "intro": {
+          "type": "string"
+        },
+        "phrases": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/pair"
+          }
+        },
         "tips": {
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["id", "title", "body"],
+            "required": [
+              "id",
+              "title",
+              "body"
+            ],
             "additionalProperties": false,
             "properties": {
-              "id": { "$ref": "#/$defs/id" },
-              "title": { "type": "string" },
-              "body": { "$ref": "#/$defs/paragraphs" },
-              "table": { "type": "array", "minItems": 2, "items": { "type": "array", "items": { "type": "string" } }, "description": "First row is the header." },
-              "targetColumns": { "type": "array", "items": { "type": "integer", "minimum": 0 }, "description": "Table columns written in the target language. Default [0, 1]." }
+              "id": {
+                "$ref": "#/$defs/id"
+              },
+              "title": {
+                "type": "string"
+              },
+              "body": {
+                "$ref": "#/$defs/paragraphs"
+              },
+              "table": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "description": "First row is the header."
+              },
+              "targetColumns": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "description": "Table columns written in the target language. Default [0, 1]."
+              }
             }
           }
         },
@@ -85,9 +226,19 @@
           "type": "array",
           "items": {
             "type": "object",
-            "required": ["title", "body"],
+            "required": [
+              "title",
+              "body"
+            ],
             "additionalProperties": false,
-            "properties": { "title": { "type": "string" }, "body": { "$ref": "#/$defs/paragraphs" } }
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "body": {
+                "$ref": "#/$defs/paragraphs"
+              }
+            }
           }
         }
       }
@@ -96,14 +247,36 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "title", "unlockAfter", "cast", "summary", "steps"],
+        "required": [
+          "id",
+          "title",
+          "unlockAfter",
+          "cast",
+          "summary",
+          "steps"
+        ],
         "additionalProperties": false,
         "properties": {
-          "id": { "$ref": "#/$defs/id" },
-          "title": { "type": "string" },
-          "unlockAfter": { "type": "string", "description": "Lesson id that opens the story." },
-          "cast": { "type": "array", "minItems": 1, "items": { "type": "string" } },
-          "summary": { "type": "string" },
+          "id": {
+            "$ref": "#/$defs/id"
+          },
+          "title": {
+            "type": "string"
+          },
+          "unlockAfter": {
+            "type": "string",
+            "description": "Lesson id that opens the story."
+          },
+          "cast": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string"
+            }
+          },
+          "summary": {
+            "type": "string"
+          },
           "steps": {
             "type": "array",
             "minItems": 1,
@@ -111,27 +284,71 @@
               "oneOf": [
                 {
                   "type": "object",
-                  "required": ["line"],
+                  "required": [
+                    "line"
+                  ],
                   "additionalProperties": false,
                   "properties": {
                     "line": {
                       "type": "object",
-                      "required": ["speaker", "target", "base"],
+                      "required": [
+                        "speaker",
+                        "target",
+                        "base"
+                      ],
                       "additionalProperties": false,
-                      "properties": { "speaker": { "type": "string" }, "target": { "type": "string" }, "base": { "type": "string" } }
+                      "properties": {
+                        "speaker": {
+                          "type": "string"
+                        },
+                        "target": {
+                          "type": "string"
+                        },
+                        "base": {
+                          "type": "string"
+                        }
+                      }
                     },
-                    "gloss": { "type": "object", "additionalProperties": { "type": "string" }, "description": "Target-language word or phrase → short meaning." }
+                    "gloss": {
+                      "type": "object",
+                      "additionalProperties": {
+                        "type": "string"
+                      },
+                      "description": "Target-language word or phrase → short meaning."
+                    }
                   }
                 },
                 {
                   "type": "object",
-                  "required": ["question", "options", "answer"],
+                  "required": [
+                    "question",
+                    "options",
+                    "answer"
+                  ],
                   "additionalProperties": false,
                   "properties": {
-                    "question": { "type": "string" },
-                    "options": { "type": "array", "minItems": 2, "items": { "type": "string" } },
-                    "answer": { "type": "integer", "minimum": 0, "description": "Index of the right option." },
-                    "optionsLang": { "enum": ["target", "base"], "description": "Language of the options. Default base." }
+                    "question": {
+                      "type": "string"
+                    },
+                    "options": {
+                      "type": "array",
+                      "minItems": 2,
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "answer": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "description": "Index of the right option."
+                    },
+                    "optionsLang": {
+                      "enum": [
+                        "target",
+                        "base"
+                      ],
+                      "description": "Language of the options. Default base."
+                    }
                   }
                 }
               ]
@@ -139,29 +356,84 @@
           }
         }
       }
+    },
+    "settings": {
+      "$ref": "settings.schema.json",
+      "description": "Overrides for this unit only."
     }
   },
   "$defs": {
-    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
-    "paragraphs": { "type": "array", "items": { "type": "string" }, "description": "Paragraphs; **bold** marks target-language text." },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "paragraphs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Paragraphs; **bold** marks target-language text."
+    },
     "pair": {
       "type": "object",
-      "required": ["target", "base"],
+      "required": [
+        "target",
+        "base"
+      ],
       "additionalProperties": false,
-      "properties": { "target": { "type": "string", "minLength": 1 }, "base": { "type": "string", "minLength": 1 } }
+      "properties": {
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "base": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
     },
     "item": {
       "type": "object",
-      "required": ["id", "target", "base"],
+      "required": [
+        "id",
+        "target",
+        "base"
+      ],
       "additionalProperties": false,
       "properties": {
-        "id": { "$ref": "#/$defs/id" },
-        "target": { "type": "string", "minLength": 1 },
-        "base": { "type": "string", "minLength": 1 },
-        "altTarget": { "type": "array", "items": { "type": "string" }, "description": "Other accepted answers in the target language." },
-        "altBase": { "type": "array", "items": { "type": "string" }, "description": "Other accepted answers in the base language." },
-        "notes": { "type": "string", "description": "Shown on the new-word card." },
-        "audio": { "type": "string", "description": "Path of a recording under public/, e.g. audio/en-lg/weebale.mp3." }
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "base": {
+          "type": "string",
+          "minLength": 1
+        },
+        "altTarget": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Other accepted answers in the target language."
+        },
+        "altBase": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Other accepted answers in the base language."
+        },
+        "notes": {
+          "type": "string",
+          "description": "Shown on the new-word card."
+        },
+        "audio": {
+          "type": "string",
+          "description": "Path of a recording under public/, e.g. audio/en-lg/weebale.mp3."
+        }
       }
     }
   }

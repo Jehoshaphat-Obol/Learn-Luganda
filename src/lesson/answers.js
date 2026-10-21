@@ -1,28 +1,48 @@
 /*
  * Answer checking. Learners shouldn't lose a heart over capitals,
- * punctuation, curly versus straight apostrophes or stray spaces.
+ * punctuation, curly versus straight apostrophes or stray spaces. Each
+ * course adds its own rules in `settings.answers`: letters that may be typed
+ * another way (Luganda's ŋ as "ng"), whether tone marks and accents are
+ * optional, and how many typos to forgive.
  */
+import { course } from '../content/course.js';
 
-// Lesson building normalises the same course text over and over, so remember results.
+// Lesson building normalises the same course text over and over, so remember
+// results, per course since the rules differ.
 const normalised = new Map();
+let cachedFor = null;
+
+const escapeRegex = (t) => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+function rulesFor(c) {
+  const { equivalents, ignoreDiacritics } = c.settings.answers;
+  const keys = Object.keys(equivalents).map((k) => k.toLowerCase().normalize('NFC'));
+  const pattern = keys.length ? new RegExp(keys.map(escapeRegex).join('|'), 'g') : null;
+  const map = Object.fromEntries(Object.entries(equivalents).map(([k, v]) => [k.toLowerCase().normalize('NFC'), v.toLowerCase()]));
+  return { pattern, map, ignoreDiacritics };
+}
 
 export function normalise(text) {
+  if (cachedFor?.course !== course) {
+    normalised.clear();
+    cachedFor = { course, rules: rulesFor(course) };
+  }
   const key = String(text ?? '');
   let out = normalised.get(key);
   if (out === undefined) {
     if (normalised.size > 20_000) normalised.clear();
-    out = normaliseUncached(key);
+    out = normaliseUncached(key, cachedFor.rules);
     normalised.set(key, out);
   }
   return out;
 }
 
-function normaliseUncached(text) {
-  return text
-    .toLowerCase()
-    .normalize('NFC')
-    // ŋ is often typed as "ng" on keyboards without it.
-    .replace(/ŋ/g, 'ng')
+function normaliseUncached(text, { pattern, map, ignoreDiacritics }) {
+  let out = text.toLowerCase().normalize('NFC');
+  if (pattern) out = out.replace(pattern, (m) => map[m]);
+  // Strip combining marks (tones, accents) when the course makes them optional.
+  if (ignoreDiacritics) out = out.normalize('NFD').replace(/\p{M}/gu, '').normalize('NFC');
+  return out
     .replace(/[’‘`´]/g, "'")
     .replace(/[.,!?¿¡;:"“”()–—-]/g, ' ')
     // An apostrophe only counts inside a word (n'omukazi); drop quote marks around words.
@@ -60,8 +80,8 @@ export function levenshtein(a, b) {
 }
 
 /**
- * Checks a typed answer. A near miss (one slip per ten letters, at least
- * one) counts as correct but is flagged as a typo so the learner sees the
+ * Checks a typed answer. A near miss (one slip per `lettersPerTypo`
+ * letters, ten by default, and at least one) counts as correct but is flagged as a typo so the learner sees the
  * right spelling.
  * @returns {{ correct: boolean, typo: boolean, closest: string }}
  */
@@ -74,7 +94,7 @@ export function checkTyped(input, accepted) {
     if (d === 0) return { correct: true, typo: false, closest: a };
     if (d < best.distance) best = { distance: d, answer: a };
   }
-  const allowed = Math.max(1, Math.floor(normalise(best.answer).length / 10));
+  const allowed = Math.max(1, Math.floor(normalise(best.answer).length / course.settings.answers.lettersPerTypo));
   const typo = best.distance <= allowed;
   return { correct: typo, typo, closest: best.answer };
 }

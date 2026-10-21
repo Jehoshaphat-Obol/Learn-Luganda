@@ -18,12 +18,12 @@ export function checkpointView({ root, params, navigate }) {
     return undefined;
   }
   // No hearts: warm up with a heart review first, then start.
-  if (heartStatus(state).count === 0) return heartGate({ root, navigate, onReady: () => checkpointView({ root, params, navigate }) });
+  if (unit.settings.checkpoint.hearts && heartStatus(state).count === 0) return heartGate({ root, navigate, onReady: () => checkpointView({ root, params, navigate }) });
   const id = `checkpoint-${unit.id}`;
   const replay = Boolean(state.lessons[id]?.completions);
   const runner = runExercises({
     root,
-    hearts: true,
+    hearts: unit.settings.checkpoint.hearts,
     exercises: buildCheckpoint(unit.id, { knownIds: learnedWordIds(state) }),
     onQuit: () => navigate('/learn'),
     onFinish: (result) => {

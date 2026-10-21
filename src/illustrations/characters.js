@@ -533,16 +533,17 @@ const SPECIES = {
 };
 
 /**
- * Draws a cast member.
- * @param {keyof CAST} id
+ * Draws a cast member: a CAST id, or a look object with the same fields
+ * (course packs can define their own people this way) plus `id` and `name`.
+ * @param {keyof CAST | object} id
  * @param {{ expression?: 'neutral'|'happy'|'sad', shape?: 'card'|'circle', label?: string }} [options]
  *   `card` is the framed portrait used in scenes and stories; `circle` is the
  *   compact profile avatar.
  */
 export function portrait(id, { expression = 'neutral', shape = 'card', label, animate = true } = {}) {
-  const c = CAST[id] ?? CRITTERS[id];
+  const c = typeof id === 'object' ? id : CAST[id] ?? CRITTERS[id];
   if (!c) throw new Error(`Unknown character: ${id}`);
-  const p = uid(id);
+  const p = uid(c.id ?? id);
   const tex = patterns(p);
   const ids = { face: `${p}-face`, frame: `${p}-frame`, hatch: tex.hatch };
   const textures = {

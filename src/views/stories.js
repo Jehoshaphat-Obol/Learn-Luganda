@@ -5,13 +5,13 @@
  */
 import '../styles/lesson.css';
 import '../styles/stories.css';
-import { course, langAttr } from '../content/course.js';
+import { castMember, course, langAttr } from '../content/course.js';
 import { store } from '../state/store.js';
 import { storyKey, storyList, isStoryUnlocked, isStoryDone } from '../state/stories.js';
 import { finishLesson } from '../state/lessons.js';
 import { XP } from '../state/xp.js';
 import { showRewards } from './rewards.js';
-import { CAST, portrait } from '../illustrations/index.js';
+import { portrait } from '../illustrations/index.js';
 import { avatar } from '../ui/avatar.js';
 import { button, escapeHtml, progressBar } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
@@ -23,7 +23,12 @@ const CAST_COLORS = ['vermillion', 'butter', 'sky', 'sage'];
 
 /** The story's cast as a row of overlapping avatars. */
 export function castRow(ids, size) {
-  return `<span class="cast-row">${ids.map((id, i) => avatar({ character: id, color: CAST_COLORS[i % CAST_COLORS.length] }, { size, label: CAST[id].name })).join('')}</span>`;
+  return `<span class="cast-row">${ids
+    .map((id, i) => {
+      const who = castMember(id);
+      return avatar({ character: who.look, color: CAST_COLORS[i % CAST_COLORS.length] }, { size, label: who.name });
+    })
+    .join('')}</span>`;
 }
 
 /** Escapes text, then turns **word** into bold target-language text. */
@@ -77,11 +82,12 @@ export function storiesView({ root }) {
 }
 
 function lineHtml({ speaker, target, base }, gloss, side) {
+  const who = castMember(speaker);
   const glossHtml = gloss ? `<span class="story-line__gloss">${Object.entries(gloss).map(([w, m]) => `<span><strong${langAttr('target')}>${escapeHtml(w)}</strong> ${escapeHtml(m)}</span>`).join('')}</span>` : '';
   return `<div class="story-line story-line--${side}">
-    <span class="story-line__who">${portrait(speaker, { shape: 'circle', expression: 'happy', label: CAST[speaker].name })}</span>
-    <button class="story-line__bubble" type="button" aria-expanded="false">
-      <span class="story-line__name">${escapeHtml(CAST[speaker].name)}</span>
+    <span class="story-line__who">${portrait(who.look, { shape: 'circle', expression: 'happy', label: who.name })}</span>
+    <button class="story-line__bubble" type="button" aria-expanded="${course.settings.stories.translations === 'always'}">
+      <span class="story-line__name">${escapeHtml(who.name)}</span>
       <span class="story-line__lg"${langAttr('target')}>${escapeHtml(target)}</span>
       <span class="story-line__en"${langAttr('base')}>${escapeHtml(base)}</span>
       ${glossHtml}
