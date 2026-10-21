@@ -19,7 +19,7 @@ import { pick, sample, shuffle } from '../illustrations/random.js';
 import { button, escapeHtml } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { reducedMotion } from '../ui/motion.js';
-import { courseStats } from '../content/course.js';
+import { castMember, course, courseStats } from '../content/course.js';
 import { brandMark } from '../app/brand-mark.js';
 import { siteLinks } from '../app/site.js';
 
@@ -71,7 +71,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
       : button({ label: 'I already have progress', variant: 'secondary', size: 'lg', href: '#/settings?import=1' });
 
     // A different order, faces and places on every visit.
-    const castIds = shuffle(Object.keys(CAST));
+    const cast = shuffle(Object.keys(course.cast)).map((id) => castMember(id));
     const places = sample(PLACE_IDS, 3);
 
     root.innerHTML = `
@@ -163,10 +163,10 @@ export function createLandingView({ hasProgress = () => false } = {}) {
           <p class="eyebrow">Meet the cast</p>
           <h2>Friends who’ll <strong>talk with you.</strong></h2>
           <div class="cast__grid">
-            ${castIds.map((id) => `
+            ${cast.map((who) => `
               <figure class="cast__item">
-                <div class="cast__art">${portrait(id, { expression: pick(['happy', 'happy', 'wink', 'neutral', 'surprised']) })}</div>
-                <figcaption><strong>${escapeHtml(CAST[id].name)}</strong><span>${escapeHtml(CAST[id].role)}</span></figcaption>
+                <div class="cast__art">${portrait(who.look, { expression: pick(['happy', 'happy', 'wink', 'neutral', 'surprised']) })}</div>
+                <figcaption><strong>${escapeHtml(who.name)}</strong><span>${escapeHtml(who.role)}</span></figcaption>
               </figure>`).join('')}
           </div>
         </section>

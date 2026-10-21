@@ -11,6 +11,8 @@
  */
 import { deepFreeze } from '../i18n/freeze.js';
 import { upgradePack } from './format.js';
+import { DEFAULT_SETTINGS, mergeSettings } from './settings.js';
+import { CAST } from '../illustrations/characters.js';
 
 function toItem(raw, unitId) {
   return {
@@ -37,8 +39,11 @@ export function buildCourse(rawUnits, rawSections = [{ id: 's1', title: 'Course'
   const order = [];
   const stories = [];
   const guidebooks = {};
+  // Settings cascade: app defaults, then the course, the unit, the lesson.
+  const settings = mergeSettings(DEFAULT_SETTINGS, meta.settings);
 
   const units = rawUnits.map((u, ui) => {
+    const unitSettings = mergeSettings(settings, u.settings);
     for (const w of u.words) words[w.id] = toItem(w, u.id);
     for (const s of u.sentences) sentences[s.id] = toItem(s, u.id);
     if (u.guidebook) guidebooks[u.id] = u.guidebook;
@@ -49,7 +54,16 @@ export function buildCourse(rawUnits, rawSections = [{ id: 's1', title: 'Course'
         unit: u.id,
         index: si,
         lessons: sk.lessons.map((l, li) => {
-          const lesson = { ...l, sentences: l.sentences ?? [], dialogues: l.dialogues ?? [], skill: sk.id, unit: u.id, index: li, order: order.length };
+          const lesson = {
+            ...l,
+            sentences: l.sentences ?? [],
+            dialogues: l.dialogues ?? [],
+            settings: l.settings ? mergeSettings(unitSettings, l.settings) : unitSettings,
+            skill: sk.id,
+            unit: u.id,
+            index: li,
+            order: order.length,
+          };
           lessons[l.id] = lesson;
           order.push(l.id);
           return lesson;
@@ -58,7 +72,7 @@ export function buildCourse(rawUnits, rawSections = [{ id: 's1', title: 'Course'
       skills[sk.id] = skill;
       return skill;
     });
-    return { id: u.id, title: u.title, description: u.description, color: u.color, character: u.character, index: ui, skills: unitSkills };
+    return { id: u.id, title: u.title, description: u.description, color: u.color, character: u.character, index: ui, settings: unitSettings, skills: unitSkills };
   });
 
   // Sections keep only the units that exist; empty ones are left out.
@@ -78,6 +92,8 @@ export function buildCourse(rawUnits, rawSections = [{ id: 's1', title: 'Course'
     to: meta.to ?? 'lg',
     title: meta.title ?? '',
     names: meta.names ?? { from: meta.from ?? 'en', to: meta.to ?? 'lg' },
+    settings,
+    cast: meta.cast ?? {},
     units,
     sections,
     words,
@@ -137,3 +153,18 @@ export function wordsUpTo(lessonId, c = course) {
 
 /** The display name of the 'target' or 'base' language, e.g. "Luganda". */
 export const languageName = (role, c = course) => (role === 'target' ? c.names.to : c.names.from);
+
+/**
+ * A character of the course: `{ id, name, role, look }`, where `look` is
+ * what `portrait()` draws. Packs name their own cast and either reuse one
+ * of the illustrated looks (`"look": "nakato"`) or describe a new one with
+ * the same fields as src/illustrations/characters.js. Ids the pack doesn't
+ * list fall back to the illustrated cast.
+ */
+export function castMember(id, c = course) {
+  const entry = c.cast[id];
+  const look = typeof entry?.look === 'object' ? { extras: [], ...entry.look, id: `${c.id}-${id}` } : CAST[entry?.look ?? id];
+  if (!look) return { id, name: entry?.name ?? id, role: entry?.role ?? '', look: CAST.nakato };
+  const name = entry?.name ?? look.name;
+  return { id, name, role: entry?.role ?? look.role ?? '', look: { ...look, name } };
+}

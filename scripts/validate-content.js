@@ -12,10 +12,18 @@ for (const id of courseIds()) {
   const course = loadPack(id, { activate: false });
   const raw = course.pack.units;
   const at = (list) => list.map((e) => `${id}: ${e}`);
+  // A course with its own cast may only use those characters.
+  const castIds = Object.keys(meta.cast ?? {}).length ? Object.keys(meta.cast) : Object.keys(CAST);
+  const speakers = raw.flatMap((u) => [
+    ...(u.character ? [[u.character, `unit ${u.id}`]] : []),
+    ...u.skills.flatMap((sk) => sk.lessons.flatMap((l) => (l.dialogues ?? []).map((d) => [d.speaker, `lesson ${l.id}`]))),
+  ]);
   errors.push(
     ...at(Object.entries(units).filter(([unitId]) => !meta.sections.some((s) => s.units.includes(unitId))).map(([unitId]) => `unit file ${unitId} is not in any section`)),
     ...at(validateUnits(raw)),
-    ...at(validateStories(course.stories, { lessons: Object.keys(course.lessons), units: raw.map((u) => u.id), cast: Object.keys(CAST) })),
+    ...at(validateStories(course.stories, { lessons: Object.keys(course.lessons), units: raw.map((u) => u.id), cast: castIds })),
+    ...at(speakers.filter(([who]) => !castIds.includes(who)).map(([who, where]) => `${where}: "${who}" is not in the cast`)),
+    ...at(Object.entries(meta.cast ?? {}).filter(([, c]) => typeof c.look === 'string' && !CAST[c.look]).map(([who, c]) => `cast ${who}: unknown look "${c.look}"`)),
     ...at(validateGuidebooks(course.guidebooks, raw)),
     ...at(validateSections(meta.sections, raw)),
     ...at(raw.flatMap((u) => u.skills.filter((sk) => sk.icon && !PATHS[sk.icon]).map((sk) => `skill ${sk.id}: unknown icon "${sk.icon}"`))),

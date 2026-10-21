@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jehoshaphat-obol.github.io/Learn-Luganda/schema/settings.schema.json",
+  "title": "Course settings",
+  "description": "How a course teaches. Every key is optional: anything left out keeps the app default (src/content/settings.js). Set in course.json for the whole course, in a unit file for one unit, or on one lesson. Objects merge key by key; lists and plain values replace.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "lesson": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "steps": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "enum": ["newWords", "match", "sentences", "fill", "dialogues", "type", "listen", "reverse", "newWordReview", "earlierReview"] },
+          "description": "The exercises a lesson builds, in order. newWords: a new-word card and a multiple choice per new word. match: tap the pairs. sentences: translate each sentence (word bank). fill: fill in the blank. dialogues: choose the reply. type: type a translation. listen: tap what you hear (needs audio). reverse, newWordReview, earlierReview: padding for short lessons."
+        },
+        "maxExercises": { "type": "integer", "minimum": 1, "maximum": 40 },
+        "hearts": { "type": "boolean", "description": "Wrong answers cost a heart." },
+        "introCards": { "type": "boolean", "description": "Show a card before each new word is first tested." },
+        "newWords": { "type": "object", "additionalProperties": false, "properties": { "directions": { "$ref": "#/$defs/directions" } } },
+        "match": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": { "pairs": { "type": "integer", "minimum": 2, "maximum": 8 }, "minPairs": { "type": "integer", "minimum": 2, "maximum": 8 } }
+        },
+        "sentences": { "type": "object", "additionalProperties": false, "properties": { "directions": { "$ref": "#/$defs/directions" } } },
+        "fill": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": { "count": { "type": "integer", "minimum": 0, "maximum": 5 }, "distractors": { "type": "integer", "minimum": 1, "maximum": 5 } }
+        },
+        "type": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": { "count": { "type": "integer", "minimum": 0, "maximum": 5 }, "direction": { "$ref": "#/$defs/direction" } }
+        },
+        "listen": { "type": "object", "additionalProperties": false, "properties": { "count": { "type": "integer", "minimum": 0, "maximum": 6 } } },
+        "reverse": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": { "upTo": { "type": "integer", "minimum": 0 }, "directions": { "$ref": "#/$defs/directions" } }
+        },
+        "newWordReview": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": { "upTo": { "type": "integer", "minimum": 0 }, "direction": { "$ref": "#/$defs/direction" } }
+        },
+        "earlierReview": { "type": "object", "additionalProperties": false, "properties": { "count": { "type": "integer", "minimum": 0, "maximum": 10 } } }
+      }
+    },
+    "exercises": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "choice": { "type": "object", "additionalProperties": false, "properties": { "options": { "type": "integer", "minimum": 2, "maximum": 6 } } },
+        "translate": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": { "minDistractors": { "type": "integer", "minimum": 0, "maximum": 8 }, "maxDistractors": { "type": "integer", "minimum": 0, "maximum": 8 } }
+        }
+      }
+    },
+    "practice": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "steps": { "type": "array", "minItems": 1, "items": { "enum": ["choice", "match", "translate", "fill", "type"] } },
+        "size": { "type": "integer", "minimum": 4, "maximum": 40 },
+        "focusWords": { "type": "integer", "minimum": 1, "maximum": 20 },
+        "sentences": { "type": "integer", "minimum": 0, "maximum": 10 },
+        "shuffle": { "type": "boolean" }
+      }
+    },
+    "checkpoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": { "size": { "type": "integer", "minimum": 4, "maximum": 40 }, "hearts": { "type": "boolean" } }
+    },
+    "sectionTest": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "size": { "type": "integer", "minimum": 4, "maximum": 40 },
+        "passMark": { "type": "number", "minimum": 0.5, "maximum": 1 },
+        "hearts": { "type": "boolean" }
+      }
+    },
+    "answers": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "equivalents": { "type": "object", "additionalProperties": { "type": "string" }, "description": "Letters learners may type another way, e.g. { \"ŋ\": \"ng\" }." },
+        "ignoreDiacritics": { "type": "boolean", "description": "Make tone marks and accents optional in typed answers." },
+        "lettersPerTypo": { "type": "integer", "minimum": 3, "maximum": 50, "description": "Forgive one slip per this many letters (at least one)." }
+      }
+    },
+    "stories": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": { "translations": { "enum": ["tap", "always"], "description": "Show line translations on tap, or under every line." } }
+    }
+  },
+  "$defs": {
+    "direction": { "enum": ["toTarget", "toBase"], "description": "toTarget: answer in the language being learned. toBase: answer in the learner's language." },
+    "directions": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/direction" }, "description": "Used in turn, one exercise after another." }
+  }
+}

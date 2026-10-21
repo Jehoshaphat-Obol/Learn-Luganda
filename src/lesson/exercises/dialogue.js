@@ -1,17 +1,18 @@
 /* Dialogue: a cast member speaks; choose the right reply. */
-import { langAttr } from '../../content/course.js';
-import { CAST, portrait } from '../../illustrations/index.js';
+import { castMember, langAttr } from '../../content/course.js';
+import { portrait } from '../../illustrations/index.js';
 import { escapeHtml } from '../../ui/components.js';
 import { icon } from '../../ui/icons.js';
 
 export function renderDialogue(ex, el, api) {
   let selected = null;
-  const who = CAST[ex.speaker]?.name ?? '';
+  const speaker = castMember(ex.speaker);
+  const who = speaker.name;
   el.innerHTML = `
     <div class="ex ex--dialogue">
       <h2 class="ex__prompt">${escapeHtml(ex.prompt)}</h2>
       <div class="ex-dialogue__scene">
-        <div class="ex-dialogue__speaker">${portrait(ex.speaker, { expression: 'happy' })}<span>${escapeHtml(who)}</span></div>
+        <div class="ex-dialogue__speaker">${portrait(speaker.look, { expression: 'happy' })}<span>${escapeHtml(who)}</span></div>
         <div class="speech speech--left ex-dialogue__line">
           <p${langAttr('target')}>${escapeHtml(ex.line)}</p>
           <button class="ex-dialogue__reveal" type="button" data-reveal aria-expanded="false">${icon('book', { size: 16 })} Show translation</button>

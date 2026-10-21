@@ -214,10 +214,10 @@ export function lessonView({ root, params, query = {}, navigate }) {
   }
   const firstTime = !isLessonDone(state, lesson.id);
   // No hearts: warm up with a heart review first, then start.
-  if (heartStatus(state).count === 0) return heartGate({ root, navigate, onReady: () => lessonView({ root, params, query, navigate }) });
+  if (lesson.settings.lesson.hearts && heartStatus(state).count === 0) return heartGate({ root, navigate, onReady: () => lessonView({ root, params, query, navigate }) });
   const runner = runExercises({
     root,
-    hearts: true,
+    hearts: lesson.settings.lesson.hearts,
     // `?seed=` replays the same exercises (used by the end-to-end tests).
     exercises: buildLesson(lesson.id, { firstTime, seed: Number(query.seed) || undefined }),
     onQuit: () => navigate('/learn'),
