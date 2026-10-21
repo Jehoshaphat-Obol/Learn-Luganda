@@ -1,0 +1,31 @@
+{
+  "$schema": "../../schema/ui-pack.schema.json",
+  "meta": {
+    "code": "sw",
+    "status": "draft",
+    "notes": "Example only: a few strings to show the format. Drafted by Claude; needs a fluent Swahili speaker's review. Every key left out falls back to English."
+  },
+  "strings": {
+    "nav": {
+      "learn": "Jifunze",
+      "practice": "Mazoezi",
+      "profile": "Wasifu"
+    },
+    "stats": {
+      "streak": { "one": "Siku {count} mfululizo", "other": "Siku {count} mfululizo" }
+    },
+    "lesson": {
+      "check": "Angalia",
+      "continue": "Endelea",
+      "praise": {
+        "good": "Vizuri!",
+        "great": "Hongera!",
+        "superb": "Safi sana!"
+      },
+      "prompt": {
+        "match": "Gusa jozi zinazolingana",
+        "translate": "Andika hii kwa {language}"
+      }
+    }
+  }
+}

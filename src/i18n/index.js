@@ -81,7 +81,8 @@ export function t(key, params) {
 /**
  * Every string in the group `key` (an object of strings), filled with
  * `params`: for lists a pack may make as long as it likes, such as praise.
- * Falls back to English when the active pack has no such group.
+ * Falls back to English when the active pack has no such group. A group
+ * read this way must be listed in LIST_GROUPS (./validate.js).
  */
 export function tList(key, params) {
   const group = (strings) => {
