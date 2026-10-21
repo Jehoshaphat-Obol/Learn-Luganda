@@ -10,6 +10,7 @@ import unit5 from './units/unit5.js';
 import unit6 from './units/unit6.js';
 import unit7 from './units/unit7.js';
 import unit8 from './units/unit8.js';
+import { SECTIONS } from './sections.js';
 
 export const UNITS_RAW = [unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8];
 
@@ -17,8 +18,11 @@ function toItem([id, lg, en, extras = {}], unitId) {
   return { id, lg, en, altLg: extras.altLg ?? [], altEn: extras.altEn ?? [], notes: extras.notes ?? '', audio: extras.audio ?? null, unit: unitId };
 }
 
-/** Builds the indexed course from raw units. Exported for tests. */
-export function buildCourse(rawUnits) {
+/**
+ * Builds the indexed course from raw units. Exported for tests. Without
+ * `rawSections`, every unit goes into one section.
+ */
+export function buildCourse(rawUnits, rawSections = [{ id: 's1', title: 'Course', level: '', description: '', units: rawUnits.map((u) => u.id) }]) {
   const words = {};
   const sentences = {};
   const lessons = {};
@@ -46,10 +50,30 @@ export function buildCourse(rawUnits) {
     return { id: u.id, title: u.title, description: u.description, color: u.color, character: u.character, index: ui, skills: unitSkills };
   });
 
-  return { units, words, sentences, lessons, skills, order };
+  // Sections keep only the units that exist; empty ones are left out.
+  const byId = Object.fromEntries(units.map((u) => [u.id, u]));
+  const sections = rawSections
+    .map((sec) => ({ ...sec, units: sec.units.map((id) => byId[id]).filter(Boolean) }))
+    .filter((sec) => sec.units.length)
+    .map((sec, index) => {
+      for (const u of sec.units) u.section = sec.id;
+      return { ...sec, index };
+    });
+
+  return { units, sections, words, sentences, lessons, skills, order };
 }
 
-export const course = buildCourse(UNITS_RAW);
+export const course = buildCourse(UNITS_RAW, SECTIONS);
+
+/** The section a lesson or unit belongs to. */
+export function sectionOf(unitId, c = course) {
+  return c.sections.find((s) => s.units.some((u) => u.id === unitId)) ?? null;
+}
+
+/** Totals for the landing page and README. */
+export function courseStats(c = course) {
+  return { sections: c.sections.length, units: c.units.length, lessons: c.order.length, words: Object.keys(c.words).length };
+}
 
 /** Words introduced up to and including `lessonId`, in course order. */
 export function wordsUpTo(lessonId, c = course) {

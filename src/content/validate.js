@@ -98,3 +98,31 @@ export function validateGuidebooks(guidebooks, rawUnits) {
   }
   return errors;
 }
+
+/** Checks sections: every unit sits in exactly one section, in course order. */
+export function validateSections(sections, rawUnits) {
+  const errors = [];
+  const where = new Map();
+  const ids = new Set();
+  for (const sec of sections) {
+    if (ids.has(sec.id)) errors.push(`section ${sec.id}: duplicate id`);
+    ids.add(sec.id);
+    if (!sec.title) errors.push(`section ${sec.id}: missing title`);
+    for (const u of sec.units) {
+      if (where.has(u)) errors.push(`unit ${u}: in sections ${where.get(u)} and ${sec.id}`);
+      where.set(u, sec.id);
+    }
+  }
+  const listed = sections.flatMap((s) => s.units);
+  let last = -1;
+  for (const unit of rawUnits) {
+    if (!where.has(unit.id)) {
+      errors.push(`unit ${unit.id}: not in any section`);
+      continue;
+    }
+    const at = listed.indexOf(unit.id);
+    if (at < last) errors.push(`unit ${unit.id}: out of order with its section`);
+    last = at;
+  }
+  return errors;
+}

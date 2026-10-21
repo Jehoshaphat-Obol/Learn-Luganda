@@ -12,7 +12,7 @@ import { showRewards } from './rewards.js';
 export function checkpointView({ root, params, navigate }) {
   const state = store.get();
   const unit = course.units.find((u) => u.id === params.unit);
-  if (!unit || !unitProgress(state, unit.id).complete || heartStatus(state).count === 0) {
+  if (!unit || !unitProgress(state, unit.id).passed || heartStatus(state).count === 0) {
     navigate(heartStatus(state).count === 0 && unit ? `/lesson/${unit.skills[0].lessons[0].id}` : '/learn', { replace: true });
     return undefined;
   }
