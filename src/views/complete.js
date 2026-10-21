@@ -6,7 +6,7 @@ import '../styles/lesson.css';
 import { course, courseStats } from '../content/course.js';
 import { store } from '../state/store.js';
 import { isCourseComplete, learnedWordIds } from '../state/progress.js';
-import { mascot } from '../illustrations/index.js';
+import { mascot, randomPose } from '../illustrations/index.js';
 import { button, escapeHtml } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { confetti } from '../ui/confetti.js';
@@ -22,7 +22,7 @@ export function completeView({ root, navigate }) {
   const name = state.profile?.name;
   root.innerHTML = `
     <section class="empty-state course-complete">
-      <div class="empty-state__art">${mascot({ pose: 'cheering' })}</div>
+      <div class="empty-state__art">${mascot({ pose: randomPose('celebrate'), prop: 'drum' })}</div>
       <h1>Course complete!</h1>
       <p class="complete__sub">Wayita bulungi${name ? `, ${escapeHtml(name)}` : ''}! You finished all ${stats.units} units of Learn Luganda.</p>
       <ul class="complete__parts">

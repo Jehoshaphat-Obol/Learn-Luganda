@@ -3,7 +3,19 @@
  * question and an FAQ. Returning learners get a "continue" call to action.
  */
 import '../styles/landing.css';
-import { heroScene, streakScene, lessonCompleteScene, mascot, portrait, CAST } from '../illustrations/index.js';
+import {
+  heroScene,
+  streakScene,
+  lessonCompleteScene,
+  mascot,
+  portrait,
+  placeScene,
+  placeInfo,
+  randomPose,
+  CAST,
+  PLACE_IDS,
+} from '../illustrations/index.js';
+import { pick, sample, shuffle } from '../illustrations/random.js';
 import { button, escapeHtml } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { reducedMotion } from '../ui/motion.js';
@@ -59,7 +71,9 @@ export function createLandingView({ hasProgress = () => false } = {}) {
       ? ''
       : button({ label: 'I already have progress', variant: 'secondary', size: 'lg', href: '#/settings?import=1' });
 
-    const castIds = Object.keys(CAST);
+    // A different order, faces and places on every visit.
+    const castIds = shuffle(Object.keys(CAST));
+    const places = sample(PLACE_IDS, 3);
 
     root.innerHTML = `
       <div class="landing">
@@ -152,8 +166,20 @@ export function createLandingView({ hasProgress = () => false } = {}) {
           <div class="cast__grid">
             ${castIds.map((id) => `
               <figure class="cast__item">
-                <div class="cast__art">${portrait(id, { expression: 'happy' })}</div>
+                <div class="cast__art">${portrait(id, { expression: pick(['happy', 'happy', 'wink', 'neutral', 'surprised']) })}</div>
                 <figcaption><strong>${escapeHtml(CAST[id].name)}</strong><span>${escapeHtml(CAST[id].role)}</span></figcaption>
+              </figure>`).join('')}
+          </div>
+        </section>
+
+        <section class="landing__section places">
+          <p class="eyebrow">Out and about</p>
+          <h2>Practise where <strong>Luganda lives.</strong></h2>
+          <div class="places__grid">
+            ${places.map((id) => `
+              <figure class="places__item">
+                <div class="places__art">${placeScene(id, { cast: sample(Object.keys(CAST), 2), pose: randomPose('greet') })}</div>
+                <figcaption>${escapeHtml(placeInfo(id).name)}</figcaption>
               </figure>`).join('')}
           </div>
         </section>
@@ -167,7 +193,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
         </section>
 
         <section class="final-cta">
-          <div class="final-cta__art">${mascot({ pose: 'cheering' })}</div>
+          <div class="final-cta__art">${mascot({ pose: randomPose('celebrate') })}</div>
           <h2>Ready? <strong>Tandika!</strong></h2>
           <p class="caption">tandika — v. start, begin</p>
           ${primaryCta}
@@ -197,7 +223,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
         ? `${icon('check', { size: 18 })} Correct! <em>Weebale</em> means thank you.`
         : `${icon('cross', { size: 18 })} Not quite. Try again!`;
       root.querySelector('.try__feedback').className = `try__feedback try__feedback--${correct ? 'good' : 'bad'}`;
-      root.querySelector('[data-try-art]').innerHTML = mascot({ pose: correct ? 'cheering' : 'sad' });
+      root.querySelector('[data-try-art]').innerHTML = mascot({ pose: correct ? randomPose('celebrate') : 'sad' });
     });
 
   };

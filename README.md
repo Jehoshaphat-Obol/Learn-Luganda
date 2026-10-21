@@ -100,7 +100,7 @@ Pages → Source: Deploy from a branch, `gh-pages` / root).
 - `src/views/`: one module per screen; `src/app/`: router, shell, PWA
 - `src/ads/`: ad policy, AdSense IDs, consent and the ad card
 - `src/ui/`: components, icons, avatars, badges, sound, motion and the bar chart
-- `src/illustrations/`: the cast, the mascot and scenes, drawn as SVG
+- `src/illustrations/`: the cast, animal avatars, the mascot, places, props and scenes, drawn as animated SVG
 - `build/`: the Vite plugin that generates the service worker
 - `e2e/`: Playwright tests; `tests/`: Vitest unit tests
 - `journal/`: the development log, one entry per issue

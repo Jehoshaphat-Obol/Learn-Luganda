@@ -10,7 +10,7 @@ import { XP } from '../state/xp.js';
 import { buildSectionTest } from '../lesson/practice.js';
 import { runExercises } from './lesson.js';
 import { showRewards } from './rewards.js';
-import { mascot } from '../illustrations/index.js';
+import { emptyStateArt } from '../illustrations/index.js';
 import { button } from '../ui/components.js';
 
 export const JUMP_PASS = 0.8;
@@ -31,7 +31,7 @@ export function jumpView({ root, params, query = {}, navigate }) {
       if (result.accuracy < JUMP_PASS) {
         root.innerHTML = `
           <section class="empty-state">
-            <div class="empty-state__art">${mascot({ pose: 'thinking' })}</div>
+            <div class="empty-state__art">${emptyStateArt('ponder')}</div>
             <h1>Not quite yet</h1>
             <p class="muted">You got ${Math.round(result.accuracy * 100)}% right first time, and you need ${JUMP_PASS * 100}% to jump to Section ${section.index + 1}. Keep going on the path, or try again.</p>
             ${button({ label: 'Try again', size: 'lg', attrs: 'data-retry' })}

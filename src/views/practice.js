@@ -13,7 +13,7 @@ import { buildPractice } from '../lesson/practice.js';
 import { storyList } from '../state/stories.js';
 import { runExercises } from './lesson.js';
 import { showRewards } from './rewards.js';
-import { mascot } from '../illustrations/index.js';
+import { emptyStateArt } from '../illustrations/index.js';
 import { button, escapeHtml, progressBar } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 
@@ -37,7 +37,7 @@ export function practiceHubView({ root }) {
   if (!learned.length) {
     root.innerHTML = `
       <section class="empty-state">
-        <div class="empty-state__art">${mascot({ pose: 'thinking' })}</div>
+        <div class="empty-state__art">${emptyStateArt('empty')}</div>
         <h1>Nothing to practise yet</h1>
         <p class="muted">Finish your first lesson and the words you learn will show up here for review.</p>
         ${button({ label: 'Start learning', href: '#/learn' })}

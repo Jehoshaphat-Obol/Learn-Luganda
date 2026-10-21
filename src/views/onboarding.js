@@ -6,7 +6,7 @@
 import '../styles/onboarding.css';
 import { store } from '../state/store.js';
 import { DAILY_GOALS, AVATAR_COLORS, createProfile } from '../state/profile.js';
-import { CAST, mascot } from '../illustrations/index.js';
+import { avatarIds, characterInfo, mascot } from '../illustrations/index.js';
 import { MASCOT_NAME } from '../app/brand.js';
 import { button, escapeHtml, progressBar, speech } from '../ui/components.js';
 import { avatar } from '../ui/avatar.js';
@@ -88,7 +88,7 @@ function screen(step, answers) {
           <fieldset class="onb__fieldset">
             <legend>Character</legend>
             <div class="onb__characters" role="radiogroup" aria-label="Character">
-              ${Object.keys(CAST).map((id) => `<button class="onb__character" type="button" role="radio" aria-checked="${character === id}" aria-label="${CAST[id].name}" data-pick="character" data-value="${id}">${avatar({ character: id, color: 'paper' }, { size: 64 })}</button>`).join('')}
+              ${avatarIds().map((id) => `<button class="onb__character" type="button" role="radio" aria-checked="${character === id}" aria-label="${characterInfo(id).name}" data-pick="character" data-value="${id}">${avatar({ character: id, color: 'paper' }, { size: 64 })}</button>`).join('')}
             </div>
           </fieldset>
           <fieldset class="onb__fieldset">
