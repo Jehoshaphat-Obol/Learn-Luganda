@@ -14,7 +14,7 @@ It ships switched off. Everything lives in one file:
 2. **Paste the ID** into `src/marketing/pixel.config.js`:
 
    ```js
-   id: env.VITE_META_PIXEL_ID ?? '123456789012345',
+   id: env.VITE_META_PIXEL_ID || '123456789012345',
    ```
 
    Or keep the file untouched and add a repository variable named

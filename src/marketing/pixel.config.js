@@ -13,7 +13,7 @@
 const env = import.meta.env ?? {};
 
 export const PIXEL = Object.freeze({
-  id: env.VITE_META_PIXEL_ID ?? '',
+  id: env.VITE_META_PIXEL_ID || '',
   enabled: true,
   events: Object.freeze({
     // Standard "PageView" each time a screen opens.
