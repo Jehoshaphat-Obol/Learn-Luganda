@@ -1,6 +1,7 @@
 /* Shared helpers: seeding saved progress and answering exercises correctly. */
 import { expect } from '@playwright/test';
 import { buildLesson } from '../src/lesson/generate.js';
+import { buildSectionTest } from '../src/lesson/practice.js';
 import { course } from '../src/content/course.js';
 import { dayKey, addDays } from '../src/state/dates.js';
 import { tokens } from '../src/lesson/answers.js';
@@ -36,6 +37,9 @@ export const readState = (page) => page.evaluate((key) => JSON.parse(localStorag
 
 /** The exercises the app will show for `lessonId` with `seed`. */
 export const exercisesFor = (lessonId, seed, firstTime = true) => buildLesson(lessonId, { seed, firstTime });
+
+/** The exercises of the section test for `sectionId` with `seed`. */
+export const sectionTestFor = (sectionId, seed) => buildSectionTest(sectionId, { seed });
 
 export { course };
 

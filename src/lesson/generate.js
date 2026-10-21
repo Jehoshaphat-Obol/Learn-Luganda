@@ -48,7 +48,17 @@ export function translateExercise(item, pools, rng, direction) {
 }
 
 export function matchExercise(words, rng) {
-  const chosen = rng.sample(words, Math.min(5, words.length));
+  // Pairs must be unambiguous: no two with the same Luganda or English.
+  const seen = new Set();
+  const chosen = rng
+    .shuffle(words)
+    .filter((w) => {
+      const keys = [`lg:${normalise(w.lg)}`, `en:${normalise(w.en)}`];
+      if (keys.some((k) => seen.has(k))) return false;
+      keys.forEach((k) => seen.add(k));
+      return true;
+    })
+    .slice(0, 5);
   return {
     type: 'match',
     prompt: 'Tap the matching pairs',

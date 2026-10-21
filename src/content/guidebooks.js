@@ -1,8 +1,11 @@
 /*
  * Unit guidebooks: key phrases, grammar tips and culture notes. Paragraphs
  * may use **bold** for Luganda words. A tip's `id` can be referenced from
- * a skill's `tip` so the path links straight to it.
+ * a skill's `tip` so the path links straight to it. Later sections keep
+ * their guidebooks in ./guidebooks/ to keep this file readable.
  */
+import { SECTION2_GUIDEBOOKS } from './guidebooks/section2.js';
+
 export const GUIDEBOOKS = {
   u1: {
     intro: 'Greetings are the heart of conversation in Buganda. Nobody asks for directions or buys a mango before saying hello first.',
@@ -348,4 +351,5 @@ export const GUIDEBOOKS = {
       },
     ],
   },
+  ...SECTION2_GUIDEBOOKS,
 };

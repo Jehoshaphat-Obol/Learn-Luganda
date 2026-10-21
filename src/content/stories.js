@@ -3,7 +3,10 @@
  * by a cast member (tap it for the English); a `question` checks the
  * learner is following. A story opens once `unlockAfter` is complete.
  * Like the units, every line needs a native-speaker review before launch.
+ * Later sections keep their stories in ./stories/.
  */
+import { SECTION2_STORIES } from './stories/section2.js';
+
 export const STORIES = [
   {
     id: 'new-friend',
@@ -165,6 +168,7 @@ export const STORIES = [
       { line: ['mukasa', 'Kale. Wona mangu!', 'Okay. Get well soon!'] },
     ],
   },
+  ...SECTION2_STORIES,
 ];
 
 export const storyById = Object.fromEntries(STORIES.map((s) => [s.id, s]));

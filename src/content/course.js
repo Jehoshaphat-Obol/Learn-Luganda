@@ -10,9 +10,13 @@ import unit5 from './units/unit5.js';
 import unit6 from './units/unit6.js';
 import unit7 from './units/unit7.js';
 import unit8 from './units/unit8.js';
+import unit9 from './units/unit9.js';
+import unit10 from './units/unit10.js';
+import unit11 from './units/unit11.js';
+import unit12 from './units/unit12.js';
 import { SECTIONS } from './sections.js';
 
-export const UNITS_RAW = [unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8];
+export const UNITS_RAW = [unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, unit10, unit11, unit12];
 
 function toItem([id, lg, en, extras = {}], unitId) {
   return { id, lg, en, altLg: extras.altLg ?? [], altEn: extras.altEn ?? [], notes: extras.notes ?? '', audio: extras.audio ?? null, unit: unitId };

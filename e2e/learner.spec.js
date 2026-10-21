@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { answer, continueToPath, exercisesFor, openWith, readState, savedState, today, yesterday } from './helpers.js';
+import { answer, continueToPath, exercisesFor, openWith, readState, savedState, sectionTestFor, today, yesterday } from './helpers.js';
 
 test('a new visitor signs up through onboarding', async ({ page }) => {
   await page.goto('./');
@@ -99,4 +99,20 @@ test('progress exports and imports', async ({ page }, testInfo) => {
   expect(s.xp.total).toBe(321);
   expect(s.gems).toBe(77);
   expect(s.profile.name).toBe('Amani');
+});
+
+test('passing a section test jumps ahead to Section 2', async ({ page }) => {
+  const seed = 11;
+  await openWith(page, savedState());
+  await page.getByRole('link', { name: 'Jump to Section 2' }).click();
+  await expect(page).toHaveURL(/#\/jump\/s2/);
+  // Reload with a fixed seed so the questions are predictable.
+  await page.goto(`./#/jump/s2?seed=${seed}`);
+  for (const ex of sectionTestFor('s2', seed)) await answer(page, ex);
+  await expect(page.getByRole('heading', { name: 'Welcome to Section 2!' })).toBeVisible();
+  await continueToPath(page);
+  const s = await readState(page);
+  expect(s.jumps).toEqual(['s2']);
+  await expect(page.locator('[data-lesson="u9s1l1"]')).toHaveClass(/node--current/);
+  await expect(page.locator('[data-section="s1"] .pill')).toHaveText('Complete');
 });

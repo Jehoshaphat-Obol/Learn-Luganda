@@ -1,0 +1,78 @@
+/* Stories for Section 2: Everyday life. Same shape as ../stories.js. */
+export const SECTION2_STORIES = [
+  {
+    id: 'new-gomesi',
+    title: 'A gomesi for the party',
+    unit: 'u10',
+    unlockAfter: 'u10s3l3',
+    cast: ['nakato', 'ssali'],
+    summary: 'Nakato shops for something to wear to her cousin’s introduction.',
+    steps: [
+      { line: ['ssali', 'Gyebale ko, nnyabo! Oyagala ki?', 'Hello, madam! What would you like?'] },
+      { line: ['nakato', 'Njagala gomesi. Waliwo kwanjula ku Lwamukaaga.', 'I want a gomesi. There is an introduction on Saturday.'], gloss: { kwanjula: 'introduction ceremony', Waliwo: 'there is' } },
+      {
+        question: 'When is the introduction?',
+        options: ['On Monday', 'On Saturday', 'Today'],
+        answer: 1,
+      },
+      { line: ['ssali', 'Gomesi eno ya kakobe. Nnungi nnyo!', 'This gomesi is purple. It’s very nice!'] },
+      { line: ['nakato', 'Nedda, njagala emmyufu.', 'No, I want a red one.'], gloss: { emmyufu: 'a red one (n- class)' } },
+      {
+        question: 'Which colour does Nakato want?',
+        options: ['Purple', 'Red', 'White'],
+        answer: 1,
+      },
+      { line: ['ssali', 'Kale. Eno emmyufu. Yambala!', 'Okay. Here is a red one. Try it on!'] },
+      { line: ['nakato', 'Eno ntono. Waliwo ennene?', 'This one is small. Is there a big one?'] },
+      {
+        question: 'What is wrong with the red gomesi?',
+        options: ['It is too small', 'It is too expensive', 'It is old'],
+        answer: 0,
+      },
+      { line: ['ssali', 'Yee, eno nnene. Emitwalo etaano.', 'Yes, this one is big. Fifty thousand.'] },
+      { line: ['nakato', 'Ya bbeeyi nnyo! Kendeezaako.', 'That’s very expensive! Lower the price a bit.'] },
+      { line: ['ssali', 'Kale, emitwalo ena.', 'Okay, forty thousand.'] },
+      {
+        question: 'How does Nakato say “Okay, I’ll take it”?',
+        options: ['Kale, ngitwala.', 'Yambula engatto.', 'Mpulira empewo.'],
+        answer: 0,
+        lang: 'lg',
+      },
+      { line: ['nakato', 'Kale, ngitwala. Weebale nnyo!', 'Okay, I’ll take it. Thank you very much!'] },
+    ],
+  },
+  {
+    id: 'rainy-day',
+    title: 'A rainy afternoon',
+    unit: 'u12',
+    unlockAfter: 'u12s3l3',
+    cast: ['amara', 'jjajja'],
+    summary: 'A storm keeps Amara at her grandmother’s house.',
+    steps: [
+      { line: ['amara', 'Jjajja, ŋŋenda awaka.', 'Grandma, I am going home.'] },
+      { line: ['jjajja', 'Nedda! Laba, ebire bingi. Enkuba ejja.', 'No! Look, there are lots of clouds. Rain is coming.'], gloss: { Laba: 'look', ejja: 'is coming' } },
+      {
+        question: 'Why does Jjajja say no?',
+        options: ['It is late', 'Rain is coming', 'Amara is sick'],
+        answer: 1,
+      },
+      { line: ['amara', 'Naye omusana gwaka!', 'But the sun is shining!'], gloss: { Naye: 'but' } },
+      { line: ['jjajja', 'Wuliriza… eggulu libwatuka.', 'Listen… it’s thundering.'], gloss: { Wuliriza: 'listen' } },
+      { line: ['amara', 'Ayi! Enkuba etonnya nnyo nnyo!', 'Oh! It’s raining really hard!'] },
+      {
+        question: 'What is the weather like now?',
+        options: ['Sunny and hot', 'Raining very hard', 'Cool and dry'],
+        answer: 1,
+      },
+      { line: ['jjajja', 'Tuula wano. Mpulira empewo. Ggwe?', 'Sit here. I feel cold. And you?'] },
+      { line: ['amara', 'Nange. Njagala caayi.', 'Me too. I want tea.'], gloss: { Nange: 'me too' } },
+      { line: ['jjajja', 'Kale, tunywe caayi. Oluvannyuma, twala ekiwempe kyange.', 'Okay, let’s drink tea. Afterwards, take my umbrella.'] },
+      {
+        question: 'What will Amara take home?',
+        options: ['Jjajja’s umbrella', 'A sweater', 'Some food'],
+        answer: 0,
+      },
+      { line: ['amara', 'Weebale nnyo, Jjajja!', 'Thank you very much, Grandma!'] },
+    ],
+  },
+];
