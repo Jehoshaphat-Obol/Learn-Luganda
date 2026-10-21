@@ -103,6 +103,68 @@ export const STORIES = [
       { line: ['emma', 'Weebale, ssebo. Weraba!', 'Thank you, sir. Goodbye!'] },
     ],
   },
+  {
+    id: 'boda-ride',
+    title: 'A boda boda ride',
+    unit: 'u6',
+    unlockAfter: 'u6s3l2',
+    cast: ['emma', 'ssali'],
+    summary: 'Emma takes a boda boda into town.',
+    steps: [
+      { line: ['ssali', 'Ogenda wa, nnyabo?', 'Where are you going, madam?'] },
+      { line: ['emma', 'Ntwala mu kibuga. Ssente mmeka?', 'Take me to town. How much?'] },
+      { line: ['ssali', 'Nkumi ttaano.', 'Five thousand.'] },
+      { line: ['emma', 'Kya bbeeyi nnyo! Kendeezaako.', 'That’s very expensive! Lower it a bit.'] },
+      { line: ['ssali', 'Kale, nkumi ssatu.', 'Okay, three thousand.'], gloss: { ssatu: 'three (nkumi ssatu: 3,000)' } },
+      {
+        question: 'What price do they agree on?',
+        options: ['Five thousand', 'Three thousand', 'One thousand'],
+        answer: 1,
+      },
+      { line: ['ssali', 'Ndaga ekkubo.', 'Show me the way.'], gloss: { Ndaga: 'show me', ekkubo: 'road, way' } },
+      { line: ['emma', 'Genda butereevu, kyuka ku ddyo.', 'Go straight, turn right.'] },
+      {
+        question: 'Which way does Emma say to turn?',
+        options: ['Left', 'Right'],
+        answer: 1,
+      },
+      { line: ['emma', 'Yimirira wano. Weebale nnyo, ssebo!', 'Stop here. Thank you very much, sir!'] },
+      { line: ['ssali', 'Kale, nnyabo. Weraba!', 'Okay, madam. Goodbye!'] },
+      {
+        question: 'How does Emma ask Ssali to stop?',
+        options: ['Genda butereevu', 'Yimirira wano', 'Kyuka ku kkono'],
+        answer: 1,
+        lang: 'lg',
+      },
+    ],
+  },
+  {
+    id: 'doctor-visit',
+    title: 'At the clinic',
+    unit: 'u8',
+    unlockAfter: 'u8s3l2',
+    cast: ['amara', 'mukasa'],
+    summary: 'Amara isn’t feeling well and sees a health worker.',
+    steps: [
+      { line: ['mukasa', 'Oli otya, Amara?', 'How are you, Amara?'] },
+      { line: ['amara', 'Ndi mulwadde. Omutwe gunnuma.', 'I am sick. My head hurts.'] },
+      {
+        question: 'What hurts?',
+        options: ['Her stomach', 'Her head', 'Her leg'],
+        answer: 1,
+      },
+      { line: ['mukasa', 'Olina omusujja?', 'Do you have a fever?'], gloss: { Olina: 'you have' } },
+      { line: ['amara', 'Yee, nnina omusujja.', 'Yes, I have a fever.'] },
+      { line: ['mukasa', 'Nywa eddagala lino, owummule.', 'Take this medicine and rest.'], gloss: { lino: 'this (for li- nouns)', owummule: 'and rest' } },
+      {
+        question: 'What does Mukasa give Amara?',
+        options: ['Medicine', 'Tea', 'Matooke'],
+        answer: 0,
+      },
+      { line: ['amara', 'Weebale nnyo, musawo.', 'Thank you very much, doctor.'] },
+      { line: ['mukasa', 'Kale. Wona mangu!', 'Okay. Get well soon!'] },
+    ],
+  },
 ];
 
 export const storyById = Object.fromEntries(STORIES.map((s) => [s.id, s]));

@@ -7,6 +7,8 @@ export function normalise(text) {
   return String(text ?? '')
     .toLowerCase()
     .normalize('NFC')
+    // ŋ is often typed as "ng" on keyboards without it.
+    .replace(/ŋ/g, 'ng')
     .replace(/[’‘`´]/g, "'")
     .replace(/[.,!?¿¡;:"“”()–—-]/g, ' ')
     // An apostrophe only counts inside a word (n'omukazi); drop quote marks around words.

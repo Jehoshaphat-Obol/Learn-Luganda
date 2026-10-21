@@ -1,0 +1,112 @@
+/*
+ * Unit 3: Food and the market. Staple foods, hunger and thirst, and
+ * buying at the market (prices come in Unit 4).
+ */
+export default {
+  id: 'u3',
+  title: 'Food and the market',
+  description: 'Name staple foods, say you’re hungry and shop at the market.',
+  color: 'sage',
+  character: 'emma',
+  words: [
+    ['matooke', 'matooke', 'cooking bananas', { altEn: ['matooke', 'bananas', 'plantains'], notes: 'Steamed green bananas, the Ganda staple.' }],
+    ['lumonde', 'lumonde', 'sweet potatoes', { altEn: ['sweet potato'] }],
+    ['muwogo', 'muwogo', 'cassava'],
+    ['omuceere', 'omuceere', 'rice', { altEn: ['the rice'] }],
+    ['ebijanjaalo', 'ebijanjaalo', 'beans', { altEn: ['the beans'] }],
+    ['ennyama', 'ennyama', 'meat', { altEn: ['the meat'] }],
+    ['enkoko', 'enkoko', 'chicken', { altEn: ['a chicken', 'the chicken'] }],
+    ['ekyennyanja', 'ekyennyanja', 'fish', { altEn: ['a fish', 'the fish'] }],
+    ['enva', 'enva', 'sauce', { altEn: ['stew', 'relish'], notes: 'Whatever is served with the staple: beans, meat, groundnut sauce.' }],
+    ['amata', 'amata', 'milk', { altEn: ['the milk'] }],
+    ['kaawa', 'kaawa', 'coffee', { altEn: ['the coffee'] }],
+    ['sukaali', 'sukaali', 'sugar', { altEn: ['the sugar'] }],
+    ['omunnyo', 'omunnyo', 'salt', { altEn: ['the salt'] }],
+    ['nnina', 'Nnina', 'I have', { altEn: ['i’ve got'] }],
+    ['enjala', 'enjala', 'hunger', { notes: 'Nnina enjala: I am hungry (literally “I have hunger”).' }],
+    ['ennyonta', 'ennyonta', 'thirst', { notes: 'Nnina ennyonta: I am thirsty.' }],
+    ['kiwooma', 'kiwooma', 'it’s tasty', { altEn: ['it is tasty', 'it’s delicious', 'it is delicious', 'tasty'] }],
+    ['akatale', 'akatale', 'market', { altEn: ['the market', 'a market'] }],
+    ['ngula', 'Ngula', 'I buy', { altEn: ['i am buying', 'i’m buying'] }],
+    ['ogula-ki', 'Ogula ki?', 'What are you buying?', { altEn: ['what do you buy', 'what will you buy'] }],
+    ['otunda-ki', 'Otunda ki?', 'What do you sell?', { altEn: ['what are you selling'] }],
+    ['ntunda', 'Ntunda', 'I sell', { altEn: ['i am selling', 'i’m selling'] }],
+    ['emicungwa', 'emicungwa', 'oranges', { altEn: ['the oranges'] }],
+    ['ennanaasi', 'ennanaasi', 'pineapple', { altEn: ['a pineapple', 'the pineapple', 'pineapples'] }],
+    ['amenvu', 'amenvu', 'sweet bananas', { altEn: ['ripe bananas', 'bananas'] }],
+  ],
+  sentences: [
+    ['s-ndya-matooke', 'Ndya matooke.', 'I eat matooke.', { altEn: ['I am eating matooke.', 'I eat cooking bananas.'] }],
+    ['s-njagala-omuceere', 'Njagala omuceere.', 'I want rice.', { altEn: ['I would like rice.', 'I want some rice.'] }],
+    ['s-ndya-lumonde', 'Ndya lumonde.', 'I eat sweet potatoes.', { altEn: ['I am eating sweet potatoes.'] }],
+    ['s-matooke-ne-ebijanjaalo', 'Matooke n’ebijanjaalo.', 'Matooke and beans.', { altEn: ['Cooking bananas and beans.'] }],
+    ['s-njagala-ennyama', 'Njagala ennyama.', 'I want meat.', { altEn: ['I would like meat.'] }],
+    ['s-ndya-enkoko', 'Ndya enkoko.', 'I eat chicken.', { altEn: ['I am eating chicken.'] }],
+    ['s-nnywa-amata', 'Nnywa amata.', 'I drink milk.', { altEn: ['I am drinking milk.'] }],
+    ['s-nnywa-kaawa', 'Nnywa kaawa.', 'I drink coffee.', { altEn: ['I am drinking coffee.'] }],
+    ['s-caayi-ne-sukaali', 'Caayi ne sukaali.', 'Tea with sugar.', { altEn: ['Tea and sugar.'] }],
+    ['s-nnina-enjala', 'Nnina enjala.', 'I am hungry.', { altEn: ['I’m hungry.'] }],
+    ['s-nnina-ennyonta', 'Nnina ennyonta.', 'I am thirsty.', { altEn: ['I’m thirsty.'] }],
+    ['s-kiwooma-nnyo', 'Kiwooma nnyo!', 'It’s very tasty!', { altEn: ['It is very tasty!', 'It’s delicious!', 'It is delicious!'] }],
+    ['s-ngula-matooke', 'Ngula matooke.', 'I am buying matooke.', { altEn: ['I buy matooke.', 'I’m buying matooke.'] }],
+    ['s-ntunda-emicungwa', 'Ntunda emicungwa.', 'I sell oranges.', { altEn: ['I am selling oranges.', 'I’m selling oranges.'] }],
+    ['s-ngula-ennanaasi', 'Ngula ennanaasi.', 'I am buying a pineapple.', { altEn: ['I buy a pineapple.', 'I’m buying a pineapple.', 'I am buying pineapple.'] }],
+    ['s-njagala-amenvu', 'Njagala amenvu.', 'I want sweet bananas.', { altEn: ['I want bananas.', 'I would like sweet bananas.'] }],
+  ],
+  skills: [
+    {
+      id: 'u3s1',
+      title: 'Staple foods',
+      icon: 'star',
+      tip: 'staples',
+      lessons: [
+        { id: 'u3s1l1', newWords: ['matooke', 'lumonde', 'muwogo', 'omuceere'], sentences: ['s-ndya-matooke', 's-njagala-omuceere', 's-ndya-lumonde'] },
+        { id: 'u3s1l2', newWords: ['ebijanjaalo', 'ennyama', 'enkoko', 'ekyennyanja', 'enva'], sentences: ['s-matooke-ne-ebijanjaalo', 's-njagala-ennyama', 's-ndya-enkoko'] },
+      ],
+    },
+    {
+      id: 'u3s2',
+      title: 'Eating and drinking',
+      icon: 'heart',
+      lessons: [
+        { id: 'u3s2l1', newWords: ['amata', 'kaawa', 'sukaali', 'omunnyo'], sentences: ['s-nnywa-amata', 's-nnywa-kaawa', 's-caayi-ne-sukaali'] },
+        {
+          id: 'u3s2l2',
+          newWords: ['nnina', 'enjala', 'ennyonta', 'kiwooma'],
+          sentences: ['s-nnina-enjala', 's-nnina-ennyonta', 's-kiwooma-nnyo'],
+          dialogues: [
+            {
+              speaker: 'jjajja',
+              line: 'Oyagala ki, mwana wange?',
+              translation: 'What do you want, my child?',
+              options: ['Nnina enjala.', 'Weraba.', 'Ntunda emicungwa.'],
+              answer: 'Nnina enjala.',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'u3s3',
+      title: 'At the market',
+      icon: 'shop',
+      lessons: [
+        { id: 'u3s3l1', newWords: ['akatale', 'ngula', 'ogula-ki', 'ntunda', 'otunda-ki'], sentences: ['s-ngula-matooke', 's-ntunda-emicungwa'] },
+        {
+          id: 'u3s3l2',
+          newWords: ['emicungwa', 'ennanaasi', 'amenvu'],
+          sentences: ['s-ngula-ennanaasi', 's-njagala-amenvu', 's-ntunda-emicungwa'],
+          dialogues: [
+            {
+              speaker: 'mukasa',
+              line: 'Ogula ki, nnyabo?',
+              translation: 'What are you buying, madam?',
+              options: ['Ngula ennanaasi.', 'Nsuze bulungi.', 'Ndi muyizi.'],
+              answer: 'Ngula ennanaasi.',
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
