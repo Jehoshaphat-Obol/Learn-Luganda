@@ -67,6 +67,13 @@
         "course": "Course",
         "courseHint": "Each course keeps its own progress. Your XP, streak and gems stay with you.",
         "switched": "Now learning {target}."
+      },
+      "speech": {
+        "label": "Spoken words",
+        "hint": "Hear words, sentences and each character’s lines read aloud.",
+        "hintNoVoice": "Plays recordings where the course has them. This device has no voice for {language} yet.",
+        "slow": "Slower speech",
+        "slowHint": "Read aloud at a gentler pace."
       }
     },
     "install": {

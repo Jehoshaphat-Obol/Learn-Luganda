@@ -17,6 +17,7 @@ import { startReminders } from './reminders/reminders.js';
 import { applyBrandMood, brandMood } from './app/brand-mood.js';
 import { startLanguages } from './app/languages.js';
 import { pixelOnRoute } from './marketing/pixel.js';
+import { startSpeech } from './audio/speech.js';
 
 setStatsProvider(() => {
   const s = store.get();
@@ -56,7 +57,8 @@ document.addEventListener('click', (e) => {
 });
 store.subscribe(refreshMusicButton);
 // The UI language and the course load before the first screen renders.
-startLanguages(() => router.refresh()).then(() => {
+// Device voices load too, so speaker buttons know whether they can speak.
+Promise.all([startLanguages(() => router.refresh()), startSpeech()]).then(() => {
   router.start();
   startReminders();
 });

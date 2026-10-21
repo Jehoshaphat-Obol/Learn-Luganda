@@ -53,6 +53,7 @@ export function translateExercise(item, pools, rng, direction, { minDistractors 
     bank: rng.shuffle([...answerTokens, ...distractors]),
     sentenceId: item.id,
     wordIds: item.wordIds ?? [],
+    audio: item.audio ?? null,
   };
 }
 
@@ -91,6 +92,7 @@ export function typeExercise(item, direction = 'toBase') {
     answerText: toBase ? item.base : item.target,
     sentenceId: item.id,
     wordIds: item.wordIds ?? [],
+    audio: item.audio ?? null,
   };
 }
 
@@ -201,9 +203,12 @@ export const STEPS = {
       }
     }
   },
-  // Recorded audio becomes listening practice.
-  listen({ out, sentences, newWords, pools, rng }, cfg) {
-    for (const item of [...sentences, ...newWords].filter((x) => x.audio).slice(0, cfg.count)) out.push(listenExercise(item, pools, rng));
+  // Recorded audio becomes listening practice, and so can the device's
+  // voice when the course allows it and the device has one.
+  listen({ out, sentences, newWords, pools, rng, listening, speakable }, cfg) {
+    if (!listening) return;
+    const audible = (x) => x.audio || (cfg.synthesized && speakable);
+    for (const item of [...sentences, ...newWords].filter(audible).slice(0, cfg.count)) out.push(listenExercise(item, pools, rng));
   },
   // Short lessons get each sentence the other way round...
   reverse({ out, sentences, pools, rng, exercises }, cfg) {
@@ -230,9 +235,11 @@ export const STEPS = {
 
 /**
  * @param {string} lessonId
- * @param {{ course?: object, seed?: number, firstTime?: boolean }} [options]
+ * @param {{ course?: object, seed?: number, firstTime?: boolean, speakable?: boolean }} [options]
+ *   `listening`: false when spoken audio is turned off (no listening exercises);
+ *   `speakable`: the device can voice the target language (for `listen.synthesized`).
  */
-export function buildLesson(lessonId, { course = defaultCourse, seed, firstTime = true } = {}) {
+export function buildLesson(lessonId, { course = defaultCourse, seed, firstTime = true, listening = true, speakable = false } = {}) {
   const lesson = course.lessons[lessonId];
   if (!lesson) throw new Error(`Unknown lesson: ${lessonId}`);
   const rng = createRng(seed ?? Date.now());
@@ -249,7 +256,7 @@ export function buildLesson(lessonId, { course = defaultCourse, seed, firstTime 
   const choicePool = known.length >= exercises.choice.options ? known : Object.values(course.words).filter((w) => w.unit === lesson.unit);
 
   const out = [];
-  const ctx = { out, lesson, course, rng, firstTime, settings, exercises, known, newWords, earlier, sentences, pools, choicePool };
+  const ctx = { out, lesson, course, rng, firstTime, settings, exercises, known, newWords, earlier, sentences, pools, choicePool, listening, speakable };
   for (const step of settings.steps) STEPS[step](ctx, settings[step] ?? {});
   return out.slice(0, settings.maxExercises);
 }

@@ -303,6 +303,10 @@
               "$ref": "#/$defs/look"
             }
           ]
+        },
+        "voice": {
+          "$ref": "settings.schema.json#/$defs/voice",
+          "description": "This person's voice in dialogues and stories, over the course's default (settings.speech.voice)."
         }
       }
     },

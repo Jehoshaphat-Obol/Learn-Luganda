@@ -6,6 +6,7 @@
 import { langAttr, languageName } from '../../content/course.js';
 import { escapeHtml } from '../../ui/components.js';
 import { checkTyped, isAccepted } from '../answers.js';
+import { speakButton } from '../../audio/speech.js';
 
 let preferKeyboard = false;
 
@@ -16,7 +17,7 @@ export function renderTranslate(ex, el, api) {
     <div class="ex ex--translate">
       <h2 class="ex__prompt">${escapeHtml(ex.prompt)}</h2>
       <div class="ex-translate__source">
-        <p class="speech speech--left"${langAttr(ex.sourceLang)}>${escapeHtml(ex.source)}</p>
+        <p class="speech speech--left"${langAttr(ex.sourceLang)}>${escapeHtml(ex.source)}${ex.sourceLang === 'target' ? speakButton(ex.source, { audio: ex.audio }) : ''}</p>
       </div>
       <div class="ex-translate__answer" data-answer aria-label="Your answer" aria-live="polite"></div>
       <div class="ex-translate__bank" data-bank>

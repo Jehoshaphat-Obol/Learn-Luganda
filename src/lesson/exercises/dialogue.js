@@ -3,6 +3,7 @@ import { castMember, langAttr } from '../../content/course.js';
 import { portrait } from '../../illustrations/index.js';
 import { escapeHtml } from '../../ui/components.js';
 import { icon } from '../../ui/icons.js';
+import { speakButton } from '../../audio/speech.js';
 
 export function renderDialogue(ex, el, api) {
   let selected = null;
@@ -14,7 +15,7 @@ export function renderDialogue(ex, el, api) {
       <div class="ex-dialogue__scene">
         <div class="ex-dialogue__speaker">${portrait(speaker.look, { expression: 'happy' })}<span>${escapeHtml(who)}</span></div>
         <div class="speech speech--left ex-dialogue__line">
-          <p${langAttr('target')}>${escapeHtml(ex.line)}</p>
+          <p${langAttr('target')}>${escapeHtml(ex.line)}${speakButton(ex.line, { speaker: ex.speaker, label: `Hear ${who}` })}</p>
           <button class="ex-dialogue__reveal" type="button" data-reveal aria-expanded="false">${icon('book', { size: 16 })} Show translation</button>
           <p class="ex-dialogue__translation muted" hidden>${escapeHtml(ex.translation)}</p>
         </div>

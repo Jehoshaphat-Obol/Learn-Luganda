@@ -30,7 +30,9 @@ export const DEFAULT_SETTINGS = deepFreeze({
     sentences: { directions: ['toBase', 'toTarget'] },
     fill: { count: 1, distractors: 2 },
     type: { count: 1, direction: 'toBase' },
-    listen: { count: 2 },
+    // synthesized: also listen to items without a recording, using the
+    // device's voice, when it has one for the course (src/audio/speech.js).
+    listen: { count: 2, synthesized: false },
     // Padding for short lessons: reverse sentences up to `upTo` exercises,
     // then new words again, then a few earlier words.
     reverse: { upTo: 12, directions: ['toTarget', 'toBase'] },
@@ -61,6 +63,13 @@ export const DEFAULT_SETTINGS = deepFreeze({
   stories: {
     // 'tap': translations show when a line is tapped; 'always': under each line.
     translations: 'tap',
+  },
+  speech: {
+    // Languages whose device voices may stand in when there's none for the
+    // target language, closest first (e.g. ["sw"] for Luganda).
+    fallbacks: [],
+    // The narrator's voice; cast members can override it (course.json cast.*.voice).
+    voice: { pitch: 1, rate: 0.9, volume: 1, hints: [] },
   },
 });
 
