@@ -4,10 +4,10 @@
  */
 import { placeholderView } from '../views/placeholder.js';
 import { styleguideView } from '../views/styleguide.js';
-import { landingView } from '../views/landing.js';
+import { createLandingView } from '../views/landing.js';
 
 export const routes = [
-  { path: '/', view: landingView, layout: 'bare' },
+  { path: '/', view: createLandingView(), layout: 'bare' },
   { path: '/onboarding', view: placeholderView('Onboarding', 'Setting up your profile arrives soon.'), layout: 'bare', title: 'Get started' },
   { path: '/learn', view: placeholderView('Your path', 'The learning path arrives soon.'), title: 'Learn' },
   { path: '/lesson/:id', view: placeholderView('Lesson', 'Lessons arrive soon.'), layout: 'bare', title: 'Lesson' },
