@@ -176,4 +176,149 @@ export const SECTION2_GUIDEBOOKS = {
       },
     ],
   },
+  u13: {
+    intro: 'Most animal names belong to the n- class, so the agreement you learnt for clothes works for animals too.',
+    phrases: [
+      ['Waliwo ebisolo bingi.', 'There are many animals.'],
+      ['Nnina embuzi bbiri.', 'I have two goats.'],
+      ['Ente zirya omuddo.', 'The cows eat grass.'],
+      ['Enjovu nnene nnyo.', 'The elephant is very big.'],
+      ['Ntya omusota!', 'I’m afraid of the snake!'],
+      ['Engaali ebuuka.', 'The crested crane is flying.'],
+    ],
+    tips: [
+      {
+        id: 'same-plural',
+        title: 'One cow, many cows',
+        body: [
+          'Many n- nouns are the same in the singular and the plural: **ente** is one cow or a herd. The words around the noun tell you which. **Ente erya** is “the cow eats”, **ente zirya** is “the cows eat”.',
+          '**Waliwo** means “there is” or “there are”, for any noun: **Waliwo empologoma?** (Is there a lion?).',
+        ],
+        table: [
+          ['', 'One', 'Many'],
+          ['eats', 'ente erya', 'ente zirya'],
+          ['is here / are here', 'embwa eri wano', 'embwa ziri wano'],
+          ['my', 'embuzi yange', 'embuzi zange'],
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'The crested crane',
+        body: ['The grey crowned crane, **engaali**, stands on Uganda’s flag and coat of arms. It mates for life and dances to court, which is why it is a symbol of the nation. (It is also our mascot’s inspiration.)'],
+      },
+      {
+        title: 'Cattle as wealth',
+        body: ['Cows have long meant wealth and status. They feature in bride price, in proverbs and in many clan totems you’ll meet in Section 4.'],
+      },
+    ],
+  },
+  u14: {
+    intro: 'Job titles are people nouns, so they take **omu-** for one person and **aba-** for many. Many come straight from a verb.',
+    phrases: [
+      ['Okola mulimu ki?', 'What work do you do?'],
+      ['Ndi mulimi.', 'I am a farmer.'],
+      ['Maama musuubuzi.', 'Mother is a trader.'],
+      ['Nkola mu ofiisi.', 'I work in an office.'],
+      ['Nkolera kampuni ennene.', 'I work for a big company.'],
+      ['Nfuna omusaala buli mwezi.', 'I get a salary every month.'],
+    ],
+    tips: [
+      {
+        id: 'people-nouns',
+        title: 'From verb to job',
+        body: [
+          'Put **omu-** on a verb stem and change the last **-a** to **-i** to get the person who does it: **-lima** (dig) gives **omulimi** (farmer), **-zimba** (build) gives **omuzimbi** (builder), **-fumba** (cook) gives **omufumbi** (cook).',
+          'To say what someone is, drop the first vowel: **Ndi mulimi** (I am a farmer), **Ssali muvuzi** (Ssali is a driver).',
+        ],
+        table: [
+          ['Verb', 'One person', 'Many people'],
+          ['-lima (dig)', 'omulimi', 'abalimi'],
+          ['-zimba (build)', 'omuzimbi', 'abazimbi'],
+          ['-vuga (drive)', 'omuvuzi', 'abavuzi'],
+          ['-kola (work)', 'omukozi', 'abakozi'],
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'Everyone farms',
+        body: ['Even people with office jobs often keep a garden, **ennimiro**, in the village. Weekends “at the farm” are common, and the harvest feeds the family in town.'],
+      },
+      {
+        title: 'Gyebale ko again',
+        body: ['Remember **Gyebale ko** from Unit 1? It thanks someone for their work. Say it to any worker you meet: the builder, the trader, the cook.'],
+      },
+    ],
+  },
+  u15: {
+    intro: 'School vocabulary is full of commands. Teachers speak to the whole class, so you’ll hear plural commands all day.',
+    phrases: [
+      ['Musome ekitabo.', 'Read the book, everyone.'],
+      ['Muwulirize omusomesa.', 'Listen to the teacher, everyone.'],
+      ['Nnina ekibuuzo.', 'I have a question.'],
+      ['Otegeera?', 'Do you understand?'],
+      ['Ddamu mpola, ssebo.', 'Repeat slowly, sir.'],
+      ['Nnyagala nnyo okubala.', 'I really like maths.'],
+    ],
+    tips: [
+      {
+        id: 'class-commands',
+        title: 'Commands to a group',
+        body: [
+          'To one person, a command is the bare verb: **Soma** (read), **Wandiika** (write). To a group, add **mu-** in front and change the final **-a** to **-e**: **Musome**, **Muwandiike**, **Muwulirize**.',
+          'The same **-e** ending makes “let’s”: **Tusome** (let’s read). You’ll meet it again in **Tugende** (let’s go).',
+        ],
+        table: [
+          ['One person', 'Everyone', 'Let’s'],
+          ['Soma', 'Musome', 'Tusome'],
+          ['Wandiika', 'Muwandiike', 'Tuwandiike'],
+          ['Wuliriza', 'Muwulirize', 'Tuwulirize'],
+        ],
+      },
+      {
+        id: 'n-sound-changes',
+        title: 'n- changes the sound after it',
+        body: ['When **n-** (I) meets **w**, it becomes **mp**: **wandiika** gives **mpandiika** (I write). With **l** or **r** it becomes **nd**: **laba** gives **ndaba** (I see). You have seen this in **mpulira** and **mpa** too.'],
+      },
+    ],
+    culture: [
+      {
+        title: 'Languages at school',
+        body: ['Uganda has over forty languages. Schools teach in English, and many in central Uganda also teach Luganda. It is common to grow up speaking three languages.'],
+      },
+    ],
+  },
+  u16: {
+    intro: 'Travel in Uganda means shared taxis, long-distance buses and boda bodas. Knowing a few words makes every journey easier.',
+    phrases: [
+      ['Ttakisi eno egenda wa?', 'Where does this taxi go?'],
+      ['Yimirira ku siteegi.', 'Stop at the stage.'],
+      ['Genda mpola, ssebo!', 'Go slowly, sir!'],
+      ['Okuva e Kampala okutuuka e Masaka.', 'From Kampala to Masaka.'],
+      ['Ntuuse bulungi.', 'I have arrived safely.'],
+      ['Olugendo olulungi!', 'Have a good journey!'],
+    ],
+    tips: [
+      {
+        id: 'taxis',
+        title: 'Taxi, stage and park',
+        body: ['A **ttakisi** is a shared minibus that runs a fixed route from a **paaka** (taxi park). Along the way it stops at a **siteegi** (stage). Tell the conductor **Yimirira wano** when you want to get off.'],
+      },
+      {
+        id: 'from-to',
+        title: 'From … to …',
+        body: [
+          'Use **okuva** (from) and **okutuuka** (until, up to) for a journey: **Okuva e Kampala okutuuka e Jinja**.',
+          'Before a town name, Luganda often adds **e**: **e Kampala**, **e Masaka**. It works like “at” or “to” for places.',
+        ],
+      },
+    ],
+    culture: [
+      {
+        title: 'Safe arrival',
+        body: ['When someone arrives from a journey, people say **Kulika olugendo** (well done for the journey). The traveller answers **Weebale**. Calling to say **Ntuuse** (I’ve arrived) is a kindness.'],
+      },
+    ],
+  },
 };

@@ -14,9 +14,13 @@ import unit9 from './units/unit9.js';
 import unit10 from './units/unit10.js';
 import unit11 from './units/unit11.js';
 import unit12 from './units/unit12.js';
+import unit13 from './units/unit13.js';
+import unit14 from './units/unit14.js';
+import unit15 from './units/unit15.js';
+import unit16 from './units/unit16.js';
 import { SECTIONS } from './sections.js';
 
-export const UNITS_RAW = [unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, unit10, unit11, unit12];
+export const UNITS_RAW = [unit1, unit2, unit3, unit4, unit5, unit6, unit7, unit8, unit9, unit10, unit11, unit12, unit13, unit14, unit15, unit16];
 
 function toItem([id, lg, en, extras = {}], unitId) {
   return { id, lg, en, altLg: extras.altLg ?? [], altEn: extras.altEn ?? [], notes: extras.notes ?? '', audio: extras.audio ?? null, unit: unitId };

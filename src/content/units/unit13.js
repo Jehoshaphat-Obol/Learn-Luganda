@@ -1,0 +1,97 @@
+/*
+ * Unit 13: Animals. Farm and wild animals, pets and birds, "there is"
+ * with waliwo, and n- nouns that look the same in the plural.
+ */
+export default {
+  id: 'u13',
+  title: 'Animals',
+  description: 'Farm animals, wild animals, pets and Uganda’s crested crane.',
+  color: 'blush',
+  character: 'emma',
+  words: [
+    ['ekisolo', 'ekisolo', 'animal', { altEn: ['an animal', 'the animal'] }],
+    ['ebisolo', 'ebisolo', 'animals', { altEn: ['the animals'] }],
+    ['ente', 'ente', 'cow', { altEn: ['cows', 'cattle', 'the cow'], notes: 'One or many: n- nouns often look the same in the plural.' }],
+    ['embuzi', 'embuzi', 'goat', { altEn: ['goats', 'the goat'] }],
+    ['endiga', 'endiga', 'sheep', { altEn: ['the sheep'] }],
+    ['embizzi', 'embizzi', 'pig', { altEn: ['pigs', 'the pig'] }],
+    ['omuddo', 'omuddo', 'grass', { altEn: ['the grass'] }],
+    ['zirya', 'zirya', 'they eat', { altEn: ['eat', 'they are eating'], notes: 'For n- animals: ente zirya, the cows eat.' }],
+    ['waliwo', 'waliwo', 'there is', { altEn: ['there are', 'there’s'] }],
+    ['empologoma', 'empologoma', 'lion', { altEn: ['lions', 'the lion'] }],
+    ['enjovu', 'enjovu', 'elephant', { altEn: ['elephants', 'the elephant'] }],
+    ['envubu', 'envubu', 'hippo', { altEn: ['hippopotamus', 'hippos', 'the hippo'] }],
+    ['enkima', 'enkima', 'monkey', { altEn: ['monkeys', 'the monkey'] }],
+    ['entugga', 'entugga', 'giraffe', { altEn: ['giraffes', 'the giraffe'] }],
+    ['omusota', 'omusota', 'snake', { altEn: ['the snake', 'a snake'] }],
+    ['ntya', 'Ntya', 'I fear', { altEn: ['i am afraid of', 'i’m scared of', 'i am scared of', 'i fear'] }],
+    ['embwa', 'embwa', 'dog', { altEn: ['dogs', 'the dog'] }],
+    ['kkapa', 'kkapa', 'cat', { altEn: ['cats', 'the cat'] }],
+    ['ekinyonyi', 'ekinyonyi', 'bird', { altEn: ['a bird', 'the bird'] }],
+    ['ebinyonyi', 'ebinyonyi', 'birds', { altEn: ['the birds'] }],
+    ['engaali', 'engaali', 'crested crane', { altEn: ['crane', 'the crested crane', 'grey crowned crane'], notes: 'Uganda’s national bird, on the flag.' }],
+    ['ebuuka', 'ebuuka', 'it flies', { altEn: ['flies', 'is flying'], notes: 'For n- nouns. Okubuuka, to fly.' }],
+  ],
+  sentences: [
+    ['s13-ente-zirya-omuddo', 'Ente zirya omuddo.', 'The cows eat grass.', { altEn: ['Cows eat grass.', 'The cows are eating grass.'] }],
+    ['s13-nnina-embuzi-bbiri', 'Nnina embuzi bbiri.', 'I have two goats.'],
+    ['s13-ebisolo-bingi', 'Waliwo ebisolo bingi.', 'There are many animals.', { altEn: ['There are lots of animals.'] }],
+    ['s13-endiga-n-embizzi', 'Endiga n’embizzi.', 'Sheep and pigs.', { altLg: ['Endiga nembizzi.'], altEn: ['The sheep and the pigs.', 'A sheep and a pig.'] }],
+    ['s13-waliwo-empologoma', 'Waliwo empologoma?', 'Is there a lion?', { altEn: ['Are there lions?', 'Is there a lion here?'] }],
+    ['s13-enjovu-nnene', 'Enjovu nnene nnyo.', 'The elephant is very big.', { altEn: ['Elephants are very big.', 'The elephant is huge.'] }],
+    ['s13-envubu-mu-mazzi', 'Envubu eri mu mazzi.', 'The hippo is in the water.'],
+    ['s13-enkima-ntono', 'Enkima ntono.', 'The monkey is small.', { altEn: ['Monkeys are small.'] }],
+    ['s13-entugga-mpanvu', 'Entugga mpanvu.', 'The giraffe is tall.', { altEn: ['Giraffes are tall.'] }],
+    ['s13-ntya-omusota', 'Ntya omusota!', 'I’m afraid of the snake!', { altEn: ['I am afraid of snakes!', 'I fear the snake!', 'I am scared of the snake!'] }],
+    ['s13-nnina-embwa', 'Nnina embwa.', 'I have a dog.'],
+    ['s13-kkapa-yange', 'Kkapa yange nnungi.', 'My cat is nice.', { altEn: ['My cat is beautiful.', 'My cat is good.'] }],
+    ['s13-ekinyonyi-kiri-wano', 'Ekinyonyi kiri wano.', 'The bird is here.'],
+    ['s13-engaali-ebuuka', 'Engaali ebuuka.', 'The crested crane is flying.', { altEn: ['The crane flies.', 'The crane is flying.', 'The crested crane flies.'] }],
+  ],
+  skills: [
+    {
+      id: 'u13s1',
+      title: 'Farm animals',
+      icon: 'home',
+      tip: 'same-plural',
+      lessons: [
+        { id: 'u13s1l1', newWords: ['ekisolo', 'ebisolo', 'ente', 'embuzi'], sentences: ['s13-nnina-embuzi-bbiri'] },
+        { id: 'u13s1l2', newWords: ['endiga', 'embizzi', 'waliwo'], sentences: ['s13-endiga-n-embizzi', 's13-ebisolo-bingi'] },
+        { id: 'u13s1l3', newWords: ['omuddo', 'zirya'], sentences: ['s13-ente-zirya-omuddo', 's13-nnina-embuzi-bbiri'] },
+      ],
+    },
+    {
+      id: 'u13s2',
+      title: 'Wild animals',
+      icon: 'trophy',
+      lessons: [
+        { id: 'u13s2l1', newWords: ['empologoma', 'enjovu', 'envubu'], sentences: ['s13-waliwo-empologoma', 's13-enjovu-nnene', 's13-envubu-mu-mazzi'] },
+        { id: 'u13s2l2', newWords: ['enkima', 'entugga'], sentences: ['s13-enkima-ntono', 's13-entugga-mpanvu'] },
+        { id: 'u13s2l3', newWords: ['omusota', 'ntya'], sentences: ['s13-ntya-omusota', 's13-waliwo-empologoma'] },
+      ],
+    },
+    {
+      id: 'u13s3',
+      title: 'Pets and birds',
+      icon: 'heart',
+      lessons: [
+        { id: 'u13s3l1', newWords: ['embwa', 'kkapa'], sentences: ['s13-nnina-embwa', 's13-kkapa-yange'] },
+        { id: 'u13s3l2', newWords: ['ekinyonyi', 'ebinyonyi'], sentences: ['s13-ekinyonyi-kiri-wano'] },
+        {
+          id: 'u13s3l3',
+          newWords: ['engaali', 'ebuuka'],
+          sentences: ['s13-engaali-ebuuka', 's13-ekinyonyi-kiri-wano'],
+          dialogues: [
+            {
+              speaker: 'emma',
+              line: 'Olina ekisolo awaka?',
+              translation: 'Do you have an animal at home?',
+              options: ['Yee, nnina embwa.', 'Enjovu nnene nnyo.', 'Ntya omusota!'],
+              answer: 'Yee, nnina embwa.',
+            },
+          ],
+        },
+      ],
+    },
+  ],
+};
