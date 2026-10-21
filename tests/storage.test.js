@@ -128,3 +128,11 @@ describe('createStore', () => {
     expect(storage.getItem('k')).toBeNull();
   });
 });
+
+describe('app migrations', () => {
+  it('v2 drops the removed leagues slice and keeps the rest', async () => {
+    const { MIGRATIONS } = await import('../src/state/store.js');
+    const old = { version: 1, gems: 80, league: { week: '2026-10-19', tier: 2 } };
+    expect(MIGRATIONS[2](old)).toEqual({ version: 1, gems: 80 });
+  });
+});
