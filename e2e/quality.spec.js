@@ -87,12 +87,16 @@ test.describe('on an iPhone', () => {
   });
 });
 
-test('no ads or consent card while AdSense is not configured', async ({ page }) => {
+test('no ads, pixel or consent card while AdSense and the Meta Pixel are not configured', async ({ page }) => {
+  const meta = [];
+  page.on('request', (r) => r.url().includes('facebook') && meta.push(r.url()));
   await openWith(page, savedState(), '#/learn');
   await expect(page.locator('.course-section').first()).toBeVisible();
   await expect(page.locator('[data-ad], .consent')).toHaveCount(0);
   await page.goto('./#/stories');
   await expect(page.locator('[data-ad], .consent')).toHaveCount(0);
+  expect(meta).toEqual([]);
+  expect(await page.evaluate(() => typeof window.fbq)).toBe('undefined');
 });
 
 for (const width of [360, 412]) {

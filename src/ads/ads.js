@@ -137,7 +137,7 @@ export function changeAdConsent(choice) {
   if (window.adsbygoogle) window.adsbygoogle.requestNonPersonalizedAds = choice === 'granted' ? 0 : 1;
 }
 
-export const dismissConsent = () => document.querySelector('.consent')?.remove();
+export const dismissConsent = () => document.querySelector('[data-consent-for="ads"]')?.remove();
 
 /** A small card asking how ads may use data. Resolves with the choice. */
 export function askForConsent() {
@@ -145,6 +145,7 @@ export function askForConsent() {
   return new Promise((resolve) => {
     const el = document.createElement('section');
     el.className = 'consent';
+    el.dataset.consentFor = 'ads';
     el.setAttribute('role', 'region');
     el.setAttribute('aria-label', 'Ad choices');
     el.innerHTML = `

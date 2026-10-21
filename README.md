@@ -64,6 +64,9 @@ accounts and no server: your progress stays in your browser.
   Sponsored, governed by a frozen rule-based policy in `src/ads/policy.js`
   with one level to tune how much they touch learning. Setup and tuning:
   [docs/adsense.md](docs/adsense.md).
+- **Meta Pixel (off until configured)**: paste a Pixel ID into
+  `src/marketing/pixel.config.js` and pick which events to send. It loads
+  only after the learner taps Allow. Setup: [docs/meta-pixel.md](docs/meta-pixel.md).
 
 ## Develop
 
@@ -99,6 +102,7 @@ Pages → Source: Deploy from a branch, `gh-pages` / root).
   XP, hearts, streaks, review, shop, achievements, stories and stats
 - `src/views/`: one module per screen; `src/app/`: router, shell, PWA
 - `src/ads/`: ad policy, AdSense IDs, consent and the ad card
+- `src/marketing/`: the Meta Pixel config, consent card and events
 - `src/ui/`: components, icons, avatars, badges, sound, motion and the bar chart
 - `src/illustrations/`: the cast, animal avatars, the mascot, places, props and scenes, drawn as animated SVG
 - `build/`: the Vite plugin that generates the service worker

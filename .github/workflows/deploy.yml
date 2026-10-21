@@ -26,6 +26,9 @@ jobs:
       - run: npm run validate
       - run: npm test
       - run: npm run build
+        env:
+          # Optional: set as a repository variable to turn on the Meta Pixel.
+          VITE_META_PIXEL_ID: ${{ vars.VITE_META_PIXEL_ID }}
       - run: npx playwright install --with-deps chromium
       - run: npm run e2e
       - if: failure()

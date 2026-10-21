@@ -11,6 +11,7 @@ import { MASCOT_NAME } from '../app/brand.js';
 import { button, escapeHtml, progressBar, speech } from '../ui/components.js';
 import { avatar } from '../ui/avatar.js';
 import { icon } from '../ui/icons.js';
+import { trackPixel } from '../marketing/pixel.js';
 import { applyLanguages, languageScreen, onGuessReply } from './language-picker.js';
 
 const MOTIVATIONS = [
@@ -173,6 +174,7 @@ export function onboardingView({ root, navigate }) {
         });
         s.onboarding = { step: 0, answers: {} };
       });
+      trackPixel('signUp', { content_name: 'onboarding' });
       navigate('/learn');
       return;
     }
