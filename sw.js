@@ -1,5 +1,5 @@
 /* Learn Luganda service worker (generated at build time). */
-const VERSION = 'c5e203de7001';
+const VERSION = 'b99ebced8b9e';
 const CACHE = `learn-luganda-${VERSION}`;
 const FONTS = 'learn-luganda-fonts';
 const PRECACHE = [
@@ -9,7 +9,7 @@ const PRECACHE = [
   "assets/illustrations-CdARiJv3.css",
   "assets/illustrations-Ct7VAUfj.css",
   "assets/main-Bp4Kw-bv.css",
-  "assets/main-DmaN_4me.js",
+  "assets/main-DWnyk3RE.js",
   "favicon.svg",
   "icons/apple-touch-icon.png",
   "icons/icon-192.png",
