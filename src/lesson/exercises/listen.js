@@ -3,6 +3,7 @@
  * generated for items with recorded audio, since browsers can't speak
  * Luganda.
  */
+import { langAttr } from '../../content/course.js';
 import { escapeHtml } from '../../ui/components.js';
 import { icon } from '../../ui/icons.js';
 import { isAccepted } from '../answers.js';
@@ -17,7 +18,7 @@ export function renderListen(ex, el, api) {
         <button class="btn btn--blue ex-listen__play" type="button" data-play aria-label="Play audio">${icon('speaker', { size: 40 })}</button>
       </div>
       <div class="ex-translate__answer" data-answer aria-live="polite"></div>
-      <div class="ex-translate__bank">${ex.bank.map((t, i) => `<button class="tile" type="button" data-tile="${i}" lang="lg">${escapeHtml(t)}</button>`).join('')}</div>
+      <div class="ex-translate__bank">${ex.bank.map((t, i) => `<button class="tile" type="button" data-tile="${i}"${langAttr('target')}>${escapeHtml(t)}</button>`).join('')}</div>
     </div>`;
   const answerEl = el.querySelector('[data-answer]');
   const tiles = [...el.querySelectorAll('[data-tile]')];
@@ -26,7 +27,7 @@ export function renderListen(ex, el, api) {
     audio.play().catch(() => {});
   };
   function draw() {
-    answerEl.innerHTML = placed.map((i, pos) => `<button class="tile" type="button" data-placed="${pos}" lang="lg">${escapeHtml(ex.bank[i])}</button>`).join('');
+    answerEl.innerHTML = placed.map((i, pos) => `<button class="tile" type="button" data-placed="${pos}"${langAttr('target')}>${escapeHtml(ex.bank[i])}</button>`).join('');
     tiles.forEach((b, i) => {
       b.disabled = placed.includes(i);
       b.classList.toggle('is-used', b.disabled);

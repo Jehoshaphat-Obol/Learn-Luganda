@@ -3,6 +3,7 @@
  * tile to send it back. "Use keyboard" swaps the bank for a text box (and
  * stays that way for the rest of the visit).
  */
+import { langAttr, languageName } from '../../content/course.js';
 import { escapeHtml } from '../../ui/components.js';
 import { checkTyped, isAccepted } from '../answers.js';
 
@@ -15,14 +16,14 @@ export function renderTranslate(ex, el, api) {
     <div class="ex ex--translate">
       <h2 class="ex__prompt">${escapeHtml(ex.prompt)}</h2>
       <div class="ex-translate__source">
-        <p class="speech speech--left" ${ex.sourceLang === 'lg' ? 'lang="lg"' : ''}>${escapeHtml(ex.source)}</p>
+        <p class="speech speech--left"${langAttr(ex.sourceLang)}>${escapeHtml(ex.source)}</p>
       </div>
       <div class="ex-translate__answer" data-answer aria-label="Your answer" aria-live="polite"></div>
       <div class="ex-translate__bank" data-bank>
-        ${ex.bank.map((t, i) => `<button class="tile" type="button" data-tile="${i}" ${ex.lang === 'lg' ? 'lang="lg"' : ''}>${escapeHtml(t)}</button>`).join('')}
+        ${ex.bank.map((t, i) => `<button class="tile" type="button" data-tile="${i}"${langAttr(ex.lang)}>${escapeHtml(t)}</button>`).join('')}
       </div>
       <label class="visually-hidden" for="ex-translate-input">Your answer</label>
-      <textarea id="ex-translate-input" class="input ex-type__input" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" hidden ${ex.lang === 'lg' ? 'lang="lg"' : ''} placeholder="Type in ${ex.lang === 'lg' ? 'Luganda' : 'English'}"></textarea>
+      <textarea id="ex-translate-input" class="input ex-type__input" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" hidden${langAttr(ex.lang)} placeholder="Type in ${escapeHtml(languageName(ex.lang))}"></textarea>
       <button class="btn btn--ghost btn--sm ex-translate__mode" type="button" data-mode>Use keyboard</button>
     </div>`;
 
@@ -49,7 +50,7 @@ export function renderTranslate(ex, el, api) {
   });
 
   function draw() {
-    answerEl.innerHTML = placed.map((i, pos) => `<button class="tile" type="button" data-placed="${pos}" ${ex.lang === 'lg' ? 'lang="lg"' : ''}>${escapeHtml(ex.bank[i])}</button>`).join('');
+    answerEl.innerHTML = placed.map((i, pos) => `<button class="tile" type="button" data-placed="${pos}"${langAttr(ex.lang)}>${escapeHtml(ex.bank[i])}</button>`).join('');
     bankTiles.forEach((b, i) => {
       const used = placed.includes(i);
       b.classList.toggle('is-used', used);

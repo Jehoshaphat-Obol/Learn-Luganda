@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
-import { UNITS_RAW, buildCourse, course, courseStats, sectionOf } from '../src/content/course.js';
-import { SECTIONS } from '../src/content/sections.js';
+import { buildCourse, course, courseStats, sectionOf } from '../src/content/course.js';
+
+const UNITS_RAW = course.pack.units;
+const SECTIONS = course.pack.meta.sections;
 import { validateSections } from '../src/content/validate.js';
 import { canJumpTo, isCourseComplete, isLessonPassed, isLessonSkipped, isLessonUnlocked, isSectionUnlocked, nextLessonId, sectionProgress, unitProgress } from '../src/state/progress.js';
 import { buildSectionTest } from '../src/lesson/practice.js';

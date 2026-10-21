@@ -6,7 +6,7 @@
 
 export const REMINDER_STRINGS = {
   // A notification's title is the snippet itself: "Weebale — Thank you".
-  title: '{lg} — {en}',
+  title: '{target} — {base}',
   // Bodies are picked at random so the same nudge doesn't repeat word for word.
   review: ['Say it out loud once today.', 'Two minutes of practice keeps it fresh.', 'Tap to practise a few words.', 'A quick review is ready when you are.'],
   learned: ['One you already know. Can you use it today?', 'Tap for a short practice.', 'Try it on someone today.'],

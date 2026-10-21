@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jehoshaphat-obol.github.io/Learn-Luganda/schema/course.schema.json",
+  "title": "Course pack: course.json",
+  "description": "The top of a course pack in src/packs/courses/<from>-<to>/: which languages it pairs and how its units group into sections. Each unit lives in units/<unitId>.json.",
+  "type": "object",
+  "required": ["formatVersion", "id", "version", "from", "to", "status", "title", "sections"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "formatVersion": { "const": 1, "description": "Version of the pack file format. The app upgrades older formats when it loads them." },
+    "id": { "type": "string", "pattern": "^[a-z]{2,3}-[a-z]{2,3}$", "description": "<from>-<to>; must match the folder name." },
+    "version": { "type": "integer", "minimum": 1, "description": "Content version. Raise it whenever an id is renamed or removed, and add a migration so saved progress follows." },
+    "from": { "type": "string", "description": "Base language: the one the learner already reads. A code from languages.json." },
+    "to": { "type": "string", "description": "Target language: the one being taught. A code from languages.json." },
+    "status": { "enum": ["draft", "reviewed"], "description": "draft until a fluent speaker has reviewed the whole course." },
+    "title": { "type": "string", "minLength": 1, "description": "In the base language, e.g. \"Luganda for English speakers\"." },
+    "description": { "type": "string", "description": "One or two sentences, in the base language, about the target language and where it is spoken." },
+    "notes": { "type": "string", "description": "For authors and reviewers; never shown to learners." },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Stages of the course, in order. Units appear in the order listed here.",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "units"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "title": { "type": "string", "minLength": 1 },
+          "level": { "type": "string", "description": "e.g. Beginner, Intermediate." },
+          "description": { "type": "string" },
+          "units": { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }, "description": "Unit ids. A listed unit with no file yet is skipped, so content can land a few units at a time." }
+        }
+      }
+    }
+  }
+}

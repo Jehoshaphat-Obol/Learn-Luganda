@@ -1,7 +1,6 @@
 import { createRequire } from 'node:module';
 import { expect, test } from '@playwright/test';
-import { course } from '../src/content/course.js';
-import { openWith, savedState } from './helpers.js';
+import { course, openWith, savedState } from './helpers.js';
 
 const require = createRequire(import.meta.url);
 const axePath = require.resolve('axe-core/axe.min.js');

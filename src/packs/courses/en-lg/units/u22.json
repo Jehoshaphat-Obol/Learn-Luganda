@@ -1,0 +1,233 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u22",
+  "title": "Hobbies and sport",
+  "description": "Talk about free time, football, music and games.",
+  "color": "sky",
+  "character": "ssali",
+  "words": [
+    { "id": "nnyumirwa", "target": "Nnyumirwa", "base": "I enjoy", "altBase": ["i like", "i love", "i am enjoying"] },
+    { "id": "okudduka", "target": "okudduka", "base": "to run", "altBase": ["running", "to jog"] },
+    { "id": "okuwuga", "target": "okuwuga", "base": "to swim", "altBase": ["swimming"] },
+    { "id": "era", "target": "era", "base": "and", "altBase": ["also", "and also"], "notes": "Links two sentences or ideas." },
+    { "id": "omupiira", "target": "omupiira", "base": "football", "altBase": ["soccer", "ball", "the ball", "the match"] },
+    { "id": "nzannya", "target": "Nzannya", "base": "I play", "altBase": ["i am playing"] },
+    { "id": "ttiimu", "target": "ttiimu", "base": "team", "altBase": ["the team", "side"] },
+    { "id": "goolo", "target": "goolo", "base": "goal", "altBase": ["a goal", "the goal"] },
+    {
+      "id": "ewangudde",
+      "target": "ewangudde",
+      "base": "has won",
+      "altBase": ["won", "it has won", "it won"],
+      "notes": "For n- nouns like ttiimu."
+    },
+    {
+      "id": "awangudde",
+      "target": "awangudde",
+      "base": "has won",
+      "altBase": ["won", "he has won", "she has won", "who won"],
+      "notes": "For a person: Ani awangudde? Who won?"
+    },
+    { "id": "okuyimba", "target": "okuyimba", "base": "to sing", "altBase": ["singing"] },
+    { "id": "okuzina", "target": "okuzina", "base": "to dance", "altBase": ["dancing"] },
+    { "id": "ennyimba", "target": "ennyimba", "base": "songs", "altBase": ["music", "the songs"] },
+    { "id": "omuzannyo", "target": "omuzannyo", "base": "game", "altBase": ["a game", "play", "sport"] },
+    {
+      "id": "omweso",
+      "target": "omweso",
+      "base": "omweso",
+      "altBase": ["board game", "mancala"],
+      "notes": "A traditional board game played with seeds."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s22-nnyumirwa-okusoma",
+      "target": "Nnyumirwa okusoma ebitabo.",
+      "base": "I enjoy reading books.",
+      "altBase": ["I like reading books.", "I love reading books."]
+    },
+    {
+      "id": "s22-ndduka-ku-makya",
+      "target": "Nnyumirwa okudduka ku makya.",
+      "base": "I enjoy running in the morning.",
+      "altBase": ["I like running in the morning.", "I like to run in the morning."]
+    },
+    {
+      "id": "s22-okuwuga",
+      "target": "Njagala okuwuga mu nnyanja.",
+      "base": "I like swimming in the lake.",
+      "altBase": ["I want to swim in the lake.", "I like to swim in the lake."]
+    },
+    {
+      "id": "s22-era",
+      "target": "Nsoma, era nzannya.",
+      "base": "I study, and I play.",
+      "altBase": ["I read and I play.", "I study and also play."]
+    },
+    {
+      "id": "s22-nzannya-omupiira",
+      "target": "Nzannya omupiira ku Lwamukaaga.",
+      "base": "I play football on Saturday.",
+      "altBase": ["I play soccer on Saturday.", "I play football on Saturdays."]
+    },
+    { "id": "s22-ttiimu-yange", "target": "Ttiimu yange ewangudde!", "base": "My team has won!", "altBase": ["My team won!"] },
+    { "id": "s22-goolo", "target": "Goolo! Goolo bbiri!", "base": "Goal! Two goals!" },
+    { "id": "s22-ani-awangudde", "target": "Ani awangudde?", "base": "Who has won?", "altBase": ["Who won?"] },
+    {
+      "id": "s22-okuyimba",
+      "target": "Nnyumirwa okuyimba n’okuzina.",
+      "base": "I enjoy singing and dancing.",
+      "altTarget": ["Nnyumirwa okuyimba nokuzina."],
+      "altBase": ["I like singing and dancing.", "I love singing and dancing."]
+    },
+    {
+      "id": "s22-ennyimba-za-luganda",
+      "target": "Njagala ennyimba z’Oluganda.",
+      "base": "I like Luganda songs.",
+      "altTarget": ["Njagala ennyimba zOluganda."],
+      "altBase": ["I love Luganda songs.", "I want Luganda songs."]
+    },
+    {
+      "id": "s22-omuzannyo",
+      "target": "Omuzannyo gutandika ssaawa kkumi.",
+      "base": "The game starts at four o’clock.",
+      "altBase": ["The match starts at four o’clock.", "The game starts at 4 pm.", "The game starts at four."]
+    },
+    {
+      "id": "s22-omweso",
+      "target": "Jjajja azannya omweso.",
+      "base": "Grandparent plays omweso.",
+      "altBase": ["Grandpa plays omweso.", "Grandma plays omweso.", "Grandparent is playing omweso."]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u22s1",
+      "title": "Free time",
+      "icon": "star",
+      "tip": "enjoy",
+      "lessons": [
+        { "id": "u22s1l1", "newWords": ["nnyumirwa", "okudduka"], "sentences": ["s22-nnyumirwa-okusoma", "s22-ndduka-ku-makya"] },
+        { "id": "u22s1l2", "newWords": ["okuwuga", "era"], "sentences": ["s22-okuwuga", "s22-era"] },
+        {
+          "id": "u22s1l3",
+          "newWords": [],
+          "sentences": ["s22-nnyumirwa-okusoma", "s22-era", "s22-okuwuga"],
+          "dialogues": [
+            {
+              "speaker": "ssali",
+              "target": "Onyumirwa ki?",
+              "base": "What do you enjoy?",
+              "options": ["Nnyumirwa okudduka n’okuwuga.", "Nkooye nnyo.", "Simanyi omweso."],
+              "answer": "Nnyumirwa okudduka n’okuwuga."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u22s2",
+      "title": "Football",
+      "icon": "trophy",
+      "lessons": [
+        { "id": "u22s2l1", "newWords": ["omupiira", "nzannya"], "sentences": ["s22-nzannya-omupiira"] },
+        { "id": "u22s2l2", "newWords": ["ttiimu", "goolo", "ewangudde"], "sentences": ["s22-ttiimu-yange", "s22-goolo"] },
+        { "id": "u22s2l3", "newWords": ["awangudde"], "sentences": ["s22-ani-awangudde", "s22-ttiimu-yange"] }
+      ]
+    },
+    {
+      "id": "u22s3",
+      "title": "Music and games",
+      "icon": "speaker",
+      "lessons": [
+        { "id": "u22s3l1", "newWords": ["okuyimba", "okuzina"], "sentences": ["s22-okuyimba"] },
+        { "id": "u22s3l2", "newWords": ["ennyimba"], "sentences": ["s22-ennyimba-za-luganda", "s22-okuyimba"] },
+        { "id": "u22s3l3", "newWords": ["omuzannyo", "omweso"], "sentences": ["s22-omuzannyo", "s22-omweso"] }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Football is a passion across Uganda, music is everywhere, and there’s always a game of omweso under a tree somewhere.",
+    "phrases": [
+      { "target": "Nnyumirwa okusoma ebitabo.", "base": "I enjoy reading books." },
+      { "target": "Nzannya omupiira ku Lwamukaaga.", "base": "I play football on Saturday." },
+      { "target": "Ttiimu yange ewangudde!", "base": "My team has won!" },
+      { "target": "Ani awangudde?", "base": "Who has won?" },
+      { "target": "Nnyumirwa okuyimba n’okuzina.", "base": "I enjoy singing and dancing." },
+      { "target": "Njagala ennyimba z’Oluganda.", "base": "I like Luganda songs." }
+    ],
+    "tips": [
+      {
+        "id": "enjoy",
+        "title": "Saying what you like doing",
+        "body": [
+          "Put a **ku-** infinitive after **Nnyumirwa** (I enjoy) or **Njagala** (I like, I want): **Nnyumirwa okuwuga**.",
+          "Join two activities with **n’** (and) before a vowel: **okuyimba n’okuzina**. Join two sentences with **era**: **Nsoma, era nzannya**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "The Cranes",
+        "body": [
+          "Uganda’s national football team is called the Cranes, after the crested crane. On big match nights, crowds gather around any TV to watch, and a goal brings shouts of **Goolo!** from every house."
+        ]
+      },
+      {
+        "title": "Omweso",
+        "body": [
+          "**Omweso** is a fast board game of four rows of pits and 64 seeds, related to games played all over Africa. Skilled players count and move seeds faster than you can follow."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "match-day",
+      "title": "Match day",
+      "unlockAfter": "u22s3l3",
+      "cast": ["ssali", "mukasa"],
+      "summary": "Ssali and Mukasa watch the Cranes play.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "ssali",
+            "target": "Mukasa! Omupiira gutandika ssaawa kkumi. Ojja?",
+            "base": "Mukasa! The match starts at four. Are you coming?"
+          }
+        },
+        {
+          "line": { "speaker": "mukasa", "target": "Yee! Naye nkooye. Nkoze nnyo leero.", "base": "Yes! But I’m tired. I’ve worked hard today." }
+        },
+        { "question": "How does Mukasa feel?", "options": ["Happy", "Tired", "Angry"], "answer": 1 },
+        {
+          "line": {
+            "speaker": "ssali",
+            "target": "Totya, tujja kutuula butuuzi. Tunywa caayi.",
+            "base": "Don’t worry, we’ll just sit. We’ll drink tea."
+          },
+          "gloss": { "butuuzi": "just, only" }
+        },
+        {
+          "line": { "speaker": "mukasa", "target": "Ttiimu yaffe ejja kuwangula?", "base": "Will our team win?" },
+          "gloss": { "yaffe": "our (for n- nouns)" }
+        },
+        { "line": { "speaker": "ssali", "target": "Simanyi. Ttiimu eyo nnungi nnyo.", "base": "I don’t know. That team is very good." } },
+        { "line": { "speaker": "mukasa", "target": "Goolo! Goolo!", "base": "Goal! Goal!" } },
+        { "question": "What just happened?", "options": ["A goal", "The game ended", "It started raining"], "answer": 0 },
+        {
+          "line": { "speaker": "ssali", "target": "Nsanyuse nnyo! Ani akubye goolo?", "base": "I’m so happy! Who scored?" },
+          "gloss": { "akubye": "has struck, scored" }
+        },
+        { "line": { "speaker": "mukasa", "target": "Ssaabaganzi! Ttiimu yaffe ewangudde!", "base": "Ssaabaganzi! Our team has won!" } },
+        {
+          "question": "How does Mukasa say “our team has won”?",
+          "options": ["Ttiimu yaffe ewangudde", "Ani awangudde?", "Nnyumirwa omupiira"],
+          "answer": 0,
+          "optionsLang": "target"
+        }
+      ]
+    }
+  ]
+}

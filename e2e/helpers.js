@@ -2,7 +2,7 @@
 import { expect } from '@playwright/test';
 import { buildLesson } from '../src/lesson/generate.js';
 import { buildSectionTest } from '../src/lesson/practice.js';
-import { course } from '../src/content/course.js';
+import { loadPack } from '../scripts/load-pack.js';
 import { dayKey, addDays } from '../src/state/dates.js';
 import { tokens } from '../src/lesson/answers.js';
 
@@ -41,7 +41,8 @@ export const exercisesFor = (lessonId, seed, firstTime = true) => buildLesson(le
 /** The exercises of the section test for `sectionId` with `seed`. */
 export const sectionTestFor = (sectionId, seed) => buildSectionTest(sectionId, { seed });
 
-export { course };
+// The app's default course, read from disk the way the app builds it.
+export const course = loadPack('en-lg');
 
 const main = (page) => page.locator('[data-main]');
 
@@ -61,8 +62,8 @@ export async function answer(page, ex, { correct = true } = {}) {
     }
     case 'match': {
       for (const pair of ex.pairs) {
-        await stage.locator(`[data-side="lg"][data-id="${pair.id}"]`).click();
-        await stage.locator(`[data-side="en"][data-id="${pair.id}"]`).click();
+        await stage.locator(`[data-side="target"][data-id="${pair.id}"]`).click();
+        await stage.locator(`[data-side="base"][data-id="${pair.id}"]`).click();
       }
       // Matching finishes the exercise by itself.
       await page.waitForTimeout(700);

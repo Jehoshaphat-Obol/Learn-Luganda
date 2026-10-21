@@ -1,4 +1,5 @@
 /* Fill in the blank: pick the missing word of a Luganda sentence. */
+import { langAttr } from '../../content/course.js';
 import { escapeHtml } from '../../ui/components.js';
 
 export function renderFill(ex, el, api) {
@@ -8,9 +9,9 @@ export function renderFill(ex, el, api) {
     <div class="ex ex--fill">
       <h2 class="ex__prompt">${escapeHtml(ex.prompt)}</h2>
       <p class="ex-fill__hint muted">${escapeHtml(ex.translation)}</p>
-      <p class="ex-fill__sentence" lang="lg">${escapeHtml(before)}<span class="ex-fill__blank" data-blank>&nbsp;</span>${escapeHtml(after)}</p>
+      <p class="ex-fill__sentence"${langAttr('target')}>${escapeHtml(before)}<span class="ex-fill__blank" data-blank>&nbsp;</span>${escapeHtml(after)}</p>
       <div class="ex-fill__options" role="radiogroup" aria-label="Answers">
-        ${ex.options.map((o, i) => `<button class="tile" type="button" role="radio" aria-checked="false" data-value="${escapeHtml(o)}" lang="lg"><span class="choice__key">${i + 1}</span>${escapeHtml(o)}</button>`).join('')}
+        ${ex.options.map((o, i) => `<button class="tile" type="button" role="radio" aria-checked="false" data-value="${escapeHtml(o)}"${langAttr('target')}><span class="choice__key">${i + 1}</span>${escapeHtml(o)}</button>`).join('')}
       </div>
     </div>`;
   const buttons = [...el.querySelectorAll('[data-value]')];

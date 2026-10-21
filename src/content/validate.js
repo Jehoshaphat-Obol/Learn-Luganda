@@ -1,6 +1,8 @@
 /*
- * Content checks, run by `npm run validate` and the unit tests. Returns a
- * list of human-readable problems; an empty list means the course is valid.
+ * Course pack checks that a JSON Schema can't express (ids that must exist,
+ * words taught exactly once, units in section order), run by
+ * `npm run validate` and the unit tests. Returns a list of human-readable
+ * problems; an empty list means the course is valid.
  */
 const ID = /^[a-z0-9-]+$/;
 
@@ -19,16 +21,14 @@ export function validateUnits(rawUnits) {
     if (!u.title) errors.push(`${u.id}: missing title`);
     const words = new Set();
     const sentences = new Set();
-    for (const entry of u.words) {
-      const [id, lg, en, extras] = entry;
+    for (const { id, target, base } of u.words) {
       claim('word', id, `${u.id} words`);
-      if (!lg || !en) errors.push(`${u.id}: word "${id}" needs Luganda and English`);
-      if (extras && typeof extras !== 'object') errors.push(`${u.id}: word "${id}" extras must be an object`);
+      if (!target || !base) errors.push(`${u.id}: word "${id}" needs target and base text`);
       words.add(id);
     }
-    for (const [id, lg, en] of u.sentences) {
+    for (const { id, target, base } of u.sentences) {
       claim('sentence', id, `${u.id} sentences`);
-      if (!lg || !en) errors.push(`${u.id}: sentence "${id}" needs Luganda and English`);
+      if (!target || !base) errors.push(`${u.id}: sentence "${id}" needs target and base text`);
       sentences.add(id);
     }
     if (!u.skills?.length) errors.push(`${u.id}: needs at least one skill`);
@@ -47,7 +47,7 @@ export function validateUnits(rawUnits) {
           if (!sentences.has(s)) errors.push(`${l.id}: unknown sentence "${s}"`);
         }
         for (const [i, d] of (l.dialogues ?? []).entries()) {
-          if (!d.line || !d.translation) errors.push(`${l.id} dialogue ${i + 1}: needs line and translation`);
+          if (!d.target || !d.base) errors.push(`${l.id} dialogue ${i + 1}: needs target and base text`);
           if (!d.options?.includes(d.answer)) errors.push(`${l.id} dialogue ${i + 1}: answer must be one of the options`);
           if (d.options?.length < 2) errors.push(`${l.id} dialogue ${i + 1}: needs at least two options`);
         }
@@ -73,9 +73,9 @@ export function validateStories(stories, { lessons, units, cast }) {
     if (!story.steps.some((s) => s.question)) errors.push(`${where}: needs at least one question`);
     story.steps.forEach((step, i) => {
       if (step.line) {
-        const [speaker, lg, en] = step.line;
+        const { speaker, target, base } = step.line;
         if (!cast.includes(speaker)) errors.push(`${where} step ${i + 1}: unknown speaker "${speaker}"`);
-        if (!lg || !en) errors.push(`${where} step ${i + 1}: a line needs Luganda and English`);
+        if (!target || !base) errors.push(`${where} step ${i + 1}: a line needs target and base text`);
       } else if (step.question) {
         if (!(step.answer >= 0 && step.answer < step.options.length)) errors.push(`${where} step ${i + 1}: answer out of range`);
       } else errors.push(`${where} step ${i + 1}: needs a line or a question`);

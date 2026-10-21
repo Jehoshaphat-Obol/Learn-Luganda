@@ -5,8 +5,7 @@
  */
 import '../styles/lesson.css';
 import '../styles/stories.css';
-import { course } from '../content/course.js';
-import { storyById } from '../content/stories.js';
+import { course, langAttr } from '../content/course.js';
 import { store } from '../state/store.js';
 import { storyKey, storyList, isStoryUnlocked, isStoryDone } from '../state/stories.js';
 import { finishLesson } from '../state/lessons.js';
@@ -27,9 +26,9 @@ export function castRow(ids, size) {
   return `<span class="cast-row">${ids.map((id, i) => avatar({ character: id, color: CAST_COLORS[i % CAST_COLORS.length] }, { size, label: CAST[id].name })).join('')}</span>`;
 }
 
-/** Escapes text, then turns **word** into bold Luganda. */
+/** Escapes text, then turns **word** into bold target-language text. */
 export function richText(text) {
-  return escapeHtml(text).replace(/\*\*(.+?)\*\*/g, '<strong lang="lg">$1</strong>');
+  return escapeHtml(text).replace(/\*\*(.+?)\*\*/g, `<strong${langAttr('target')}>$1</strong>`);
 }
 
 function unlockHint(story) {
@@ -77,14 +76,14 @@ export function storiesView({ root }) {
   return mountAds(root);
 }
 
-function lineHtml([speaker, lg, en], gloss, side) {
-  const glossHtml = gloss ? `<span class="story-line__gloss">${Object.entries(gloss).map(([w, m]) => `<span><strong lang="lg">${escapeHtml(w)}</strong> ${escapeHtml(m)}</span>`).join('')}</span>` : '';
+function lineHtml({ speaker, target, base }, gloss, side) {
+  const glossHtml = gloss ? `<span class="story-line__gloss">${Object.entries(gloss).map(([w, m]) => `<span><strong${langAttr('target')}>${escapeHtml(w)}</strong> ${escapeHtml(m)}</span>`).join('')}</span>` : '';
   return `<div class="story-line story-line--${side}">
     <span class="story-line__who">${portrait(speaker, { shape: 'circle', expression: 'happy', label: CAST[speaker].name })}</span>
     <button class="story-line__bubble" type="button" aria-expanded="false">
       <span class="story-line__name">${escapeHtml(CAST[speaker].name)}</span>
-      <span class="story-line__lg" lang="lg">${escapeHtml(lg)}</span>
-      <span class="story-line__en">${escapeHtml(en)}</span>
+      <span class="story-line__lg"${langAttr('target')}>${escapeHtml(target)}</span>
+      <span class="story-line__en"${langAttr('base')}>${escapeHtml(base)}</span>
       ${glossHtml}
     </button>
   </div>`;
@@ -94,13 +93,13 @@ function questionHtml(step, n) {
   return `<div class="story-q" role="group" aria-labelledby="story-q-${n}">
     <p class="story-q__prompt" id="story-q-${n}">${icon('target', { size: 18 })} ${escapeHtml(step.question)}</p>
     <div class="story-q__options">
-      ${step.options.map((o, i) => `<button class="choice" type="button" data-opt="${i}"${step.lang ? ` lang="${step.lang}"` : ''}><span class="choice__key">${i + 1}</span><span>${escapeHtml(o)}</span></button>`).join('')}
+      ${step.options.map((o, i) => `<button class="choice" type="button" data-opt="${i}"${langAttr(step.optionsLang ?? 'base')}><span class="choice__key">${i + 1}</span><span>${escapeHtml(o)}</span></button>`).join('')}
     </div>
   </div>`;
 }
 
 export function storyView({ root, params, navigate }) {
-  const story = storyById[params.id];
+  const story = course.storyById[params.id];
   const state = store.get();
   if (!story || !isStoryUnlocked(state, story)) {
     navigate('/stories', { replace: true });
@@ -168,7 +167,7 @@ export function storyView({ root, params, navigate }) {
     const s = story.steps[step];
     const el = document.createElement('div');
     el.className = 'story__step';
-    if (s.line) el.innerHTML = lineHtml(s.line, s.gloss, sides[s.line[0]] ?? 'left');
+    if (s.line) el.innerHTML = lineHtml(s.line, s.gloss, sides[s.line.speaker] ?? 'left');
     else {
       el.innerHTML = questionHtml(s, step);
       waiting = true;

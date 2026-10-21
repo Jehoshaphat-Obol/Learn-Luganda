@@ -1,10 +1,10 @@
 import { describe, expect, it } from 'vitest';
-import { UNITS_RAW, buildCourse, course, wordsUpTo } from '../src/content/course.js';
+import { buildCourse, course, wordsUpTo } from '../src/content/course.js';
 import { validateUnits } from '../src/content/validate.js';
 
 describe('course content', () => {
   it('passes validation', () => {
-    expect(validateUnits(UNITS_RAW)).toEqual([]);
+    expect(validateUnits(course.pack.units)).toEqual([]);
   });
 
   it('indexes lessons in course order', () => {
@@ -25,8 +25,11 @@ describe('validateUnits', () => {
   const base = () => ({
     id: 'ux',
     title: 'T',
-    words: [['a', 'A', 'a'], ['b', 'B', 'b']],
-    sentences: [['s1', 'A B', 'a b']],
+    words: [
+      { id: 'a', target: 'A', base: 'a' },
+      { id: 'b', target: 'B', base: 'b' },
+    ],
+    sentences: [{ id: 's1', target: 'A B', base: 'a b' }],
     skills: [{ id: 'ux1', lessons: [{ id: 'ux1l1', newWords: ['a', 'b'], sentences: ['s1'] }] }],
   });
 
@@ -37,8 +40,8 @@ describe('validateUnits', () => {
 
   it('catches unknown refs, duplicates and untaught words', () => {
     const u = base();
-    u.words.push(['c', 'C', 'c']);
-    u.skills[0].lessons.push({ id: 'ux1l2', newWords: ['a', 'zz'], sentences: ['nope'], dialogues: [{ line: 'x', translation: 'y', options: ['p', 'q'], answer: 'r' }] });
+    u.words.push({ id: 'c', target: 'C', base: 'c' });
+    u.skills[0].lessons.push({ id: 'ux1l2', newWords: ['a', 'zz'], sentences: ['nope'], dialogues: [{ target: 'x', base: 'y', options: ['p', 'q'], answer: 'r' }] });
     const errors = validateUnits([u]).join('\n');
     expect(errors).toMatch(/already introduced/);
     expect(errors).toMatch(/unknown word "zz"/);
@@ -59,7 +62,7 @@ describe('every lesson', () => {
         for (const e of ex) {
           if (e.type === 'choice') expect(e.options.length, id).toBeGreaterThanOrEqual(2);
           if (e.type === 'translate') expect(e.bank.length, id).toBeGreaterThan(0);
-          if (e.type === 'match') expect(new Set(e.pairs.map((p) => p.en.toLowerCase())).size, id).toBe(e.pairs.length);
+          if (e.type === 'match') expect(new Set(e.pairs.map((p) => p.base.toLowerCase())).size, id).toBe(e.pairs.length);
         }
       }
     }
@@ -68,4 +71,44 @@ describe('every lesson', () => {
       expect(buildCheckpoint(u.id, { knownIds: known }).length, u.id).toBeGreaterThan(5);
     }
   }, 60_000); // Grows with the course: hundreds of lessons × 3 seeds.
+});
+
+describe('the course pack', () => {
+  it('loads English→Luganda by default, frozen', async () => {
+    const { COURSE_IDS, DEFAULT_COURSE } = await import('../src/content/load.js');
+    expect(COURSE_IDS).toContain(DEFAULT_COURSE);
+    expect(course).toMatchObject({ id: 'en-lg', from: 'en', to: 'lg', names: { from: 'English', to: 'Luganda' } });
+    expect(Object.isFrozen(course.words.weebale)).toBe(true);
+    expect(() => {
+      course.words.weebale.target = 'x';
+    }).toThrow(TypeError);
+  });
+
+  it('gives target and base text their language codes', async () => {
+    const { langAttr, languageName } = await import('../src/content/course.js');
+    expect(langAttr('target')).toBe(' lang="lg"');
+    expect(langAttr('base')).toBe(' lang="en"');
+    expect(languageName('target')).toBe('Luganda');
+  });
+
+  it('keeps stories and guidebooks with their units', () => {
+    expect(course.guidebooks.u1.phrases[0]).toEqual({ target: 'Oli otya?', base: 'How are you?' });
+    expect(course.storyById['new-friend'].unit).toBe('u1');
+    expect(course.stories.length).toBeGreaterThan(20);
+  });
+});
+
+describe('pack formats', () => {
+  it('upgrades older formats step by step and refuses newer ones', async () => {
+    const { upgradePack } = await import('../src/content/format.js');
+    const pack = { meta: { id: 'x-y', formatVersion: 1 }, units: {} };
+    const upgrades = { 2: (p) => ({ ...p, meta: { ...p.meta, two: true } }), 3: (p) => ({ ...p, meta: { ...p.meta, three: true } }) };
+    expect(upgradePack(pack, upgrades, 3).meta).toEqual({ id: 'x-y', formatVersion: 3, two: true, three: true });
+    expect(upgradePack(pack, {}, 1)).toBe(pack);
+    expect(() => upgradePack({ meta: { id: 'x-y', formatVersion: 9 } }, {}, 1)).toThrow(/format 9/);
+  });
+
+  it('records the content version', () => {
+    expect(course.version).toBe(1);
+  });
 });
