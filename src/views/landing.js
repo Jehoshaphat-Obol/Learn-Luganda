@@ -8,6 +8,7 @@ import { button, escapeHtml } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { reducedMotion } from '../ui/motion.js';
 import { courseStats } from '../content/course.js';
+import { brandMark } from '../app/brand-mark.js';
 
 const STEPS = [
   { icon: 'bolt', title: 'Bite-sized lessons', text: 'Five-minute lessons with pictures, word tiles, listening and matching games.' },
@@ -62,7 +63,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
     root.innerHTML = `
       <div class="landing">
         <header class="landing__header">
-          <a class="landing__brand" href="#/"><span class="brand-mark" aria-hidden="true"><i></i><b></b></span><span>luganda</span></a>
+          <a class="landing__brand" href="#/">${brandMark()}<span>luganda</span></a>
           <nav class="landing__links" aria-label="Page">
             <a href="#how">How it works</a>
             <a href="#cast">Meet the cast</a>
@@ -172,7 +173,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
         </section>
 
         <footer class="landing__footer">
-          <span class="landing__brand"><span class="brand-mark" aria-hidden="true"><i></i><b></b></span><span>luganda</span></span>
+          <span class="landing__brand">${brandMark()}<span>luganda</span></span>
           <p>Made with care for Luganda learners. Your progress stays on your device.</p>
           <p class="caption">Weebale nnyo — thank you very much.</p>
         </footer>
