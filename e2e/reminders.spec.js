@@ -33,7 +33,11 @@ test('the first lesson never asks about reminders', async ({ page }) => {
   for (const ex of exercisesFor('u1s1l1', seed)) await answer(page, ex);
   for (let i = 0; i < 6 && (await page.locator('[data-continue]').count()); i += 1) {
     await expect(page.getByRole('heading', { name: 'A word a day?' })).toHaveCount(0);
-    await page.locator('[data-continue]').click();
+    // Every Continue replaces or removes its button, but the last one only
+    // goes once the route changes; wait for it so the next count is current.
+    const btn = await page.locator('[data-continue]').elementHandle();
+    await btn.click();
+    await btn.waitForElementState('hidden');
   }
   expect((await readState(page)).reminders.on).toBe(false);
 });
