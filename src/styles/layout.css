@@ -286,3 +286,30 @@
   font-size: 0.75rem;
   color: var(--color-text-muted);
 }
+
+/* Settings */
+.settings-group {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-6) 0;
+  border-top: 2px solid var(--color-border);
+}
+
+.settings-group h2 {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-bold);
+}
+
+.settings-group p {
+  margin: 0;
+}
+
+.settings-group .btn {
+  justify-self: start;
+}
+
+.settings-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
