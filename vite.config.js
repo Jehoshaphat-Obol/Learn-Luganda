@@ -6,5 +6,11 @@ export default defineConfig({
   base: './',
   build: {
     outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: 'index.html',
+        illustrations: 'illustrations.html',
+      },
+    },
   },
 });

@@ -1,0 +1,128 @@
+/*
+ * Illustration palette. Every colour used by the SVG art is a custom
+ * property that falls back to the theme tokens, so a theme change re-skins
+ * the whole cast without touching the drawings.
+ */
+:root {
+  --ill-verm: var(--color-primary, #e34234);
+  --ill-verm-deep: var(--color-primary-shadow, #a02916);
+  --ill-ink: var(--color-bauhaus-black, #1c1917);
+  --ill-ink-soft: #3b3531;
+  --ill-grey: #9c958b;
+  --ill-grey-light: #cfc8bd;
+  --ill-paper: #ddd7ce;
+  --ill-paper-light: #f2eee7;
+  --ill-white: #fbf9f5;
+  --ill-cream: #efe4c9;
+  --ill-lavender: #d2cfe8;
+  --ill-blush: #f2d8cc;
+  --ill-sage: #d4dccb;
+  /* Lines drawn straight onto the page (rules, ticks, captions) follow the
+     text colour so they stay visible in dark mode. */
+  --ill-rule: var(--color-text, #1c1917);
+  --ill-font-caption: var(--font-caption, 'Instrument Serif', Georgia, 'Times New Roman', serif);
+  --ill-font-mono: var(--font-mono, ui-monospace, 'SFMono-Regular', Menlo, monospace);
+}
+
+.ill {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.ill .f-verm { fill: var(--ill-verm); }
+.ill .f-verm-deep { fill: var(--ill-verm-deep); }
+.ill .f-ink { fill: var(--ill-ink); }
+.ill .f-ink-soft { fill: var(--ill-ink-soft); }
+.ill .f-grey { fill: var(--ill-grey); }
+.ill .f-grey-light { fill: var(--ill-grey-light); }
+.ill .f-paper { fill: var(--ill-paper); }
+.ill .f-paper-light { fill: var(--ill-paper-light); }
+.ill .f-white { fill: var(--ill-white); }
+.ill .f-cream { fill: var(--ill-cream); }
+.ill .f-lavender { fill: var(--ill-lavender); }
+.ill .f-blush { fill: var(--ill-blush); }
+.ill .f-sage { fill: var(--ill-sage); }
+.ill .f-rule { fill: var(--ill-rule); }
+
+.ill .s-ink { stroke: var(--ill-ink); fill: none; }
+.ill .s-verm { stroke: var(--ill-verm); fill: none; }
+.ill .s-white { stroke: var(--ill-white); fill: none; }
+.ill .s-rule { stroke: var(--ill-rule); fill: none; }
+.ill .s-ink-soft { stroke: var(--ill-ink-soft); fill: none; }
+.ill .s-verm-deep { stroke: var(--ill-verm-deep); fill: none; }
+
+.ill .card-edge {
+  stroke: var(--ill-ink);
+  stroke-width: 1.2;
+}
+
+.ill .caption {
+  font-family: var(--ill-font-caption);
+  font-style: italic;
+  fill: var(--ill-rule);
+}
+
+.ill .mono {
+  font-family: var(--ill-font-mono);
+  letter-spacing: 0.18em;
+  fill: var(--ill-rule);
+}
+
+.ill .label {
+  font-family: var(--font-body, system-ui, sans-serif);
+  font-weight: 500;
+  fill: var(--ill-ink);
+}
+
+/* Motion: a slow bob for the mascot, a blink for eyes, a drift for shapes. */
+.ill .anim-bob {
+  animation: ill-bob 3.2s ease-in-out infinite;
+  transform-box: fill-box;
+}
+
+.ill .anim-blink {
+  animation: ill-blink 5s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.ill .anim-drift {
+  animation: ill-drift 9s ease-in-out infinite;
+  transform-box: fill-box;
+}
+
+.ill .anim-spin {
+  animation: ill-spin 40s linear infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes ill-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes ill-blink {
+  0%, 94%, 100% { transform: scaleY(1); }
+  97% { transform: scaleY(0.1); }
+}
+
+@keyframes ill-drift {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(3px, -5px); }
+}
+
+@keyframes ill-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ill .anim-bob,
+  .ill .anim-blink,
+  .ill .anim-drift,
+  .ill .anim-spin {
+    animation: none;
+  }
+}
