@@ -19,37 +19,12 @@
   min-height: 100vh;
 }
 
-/* Brand mark: a vermillion circle over an ink square */
+/* Brand mark: the crane's head (src/app/brand-mark.js) */
 .brand-mark {
-  position: relative;
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  flex: none;
-}
-
-.brand-mark i,
-.brand-mark b {
-  position: absolute;
   display: block;
-}
-
-.brand-mark b {
-  right: 0;
-  bottom: 0;
-  width: 18px;
-  height: 18px;
-  background: var(--color-text);
-}
-
-.brand-mark i {
-  left: 0;
-  top: 0;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: var(--color-primary);
-  z-index: 1;
+  width: 34px;
+  height: 34px;
+  flex: none;
 }
 
 /* Top bar */

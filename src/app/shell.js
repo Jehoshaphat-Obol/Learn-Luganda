@@ -6,6 +6,7 @@
  */
 import { icon } from '../ui/icons.js';
 import { escapeHtml } from '../ui/components.js';
+import { brandMark } from './brand-mark.js';
 
 export const NAV = [
   { path: '/learn', label: 'Learn', icon: 'home' },
@@ -54,13 +55,13 @@ function appLayout(path) {
     <div class="layout">
       <nav class="nav" aria-label="Main">
         <a class="nav__brand" href="#/learn" aria-label="Learn Luganda home">
-          <span class="brand-mark" aria-hidden="true"><i></i><b></b></span><span>luganda</span>
+          ${brandMark()}<span>luganda</span>
         </a>
         ${navLinks(path)}
       </nav>
       <div class="layout__main">
         <header class="topbar">
-          <a class="topbar__brand" href="#/learn" aria-label="Learn Luganda home"><span class="brand-mark" aria-hidden="true"><i></i><b></b></span></a>
+          <a class="topbar__brand" href="#/learn" aria-label="Learn Luganda home">${brandMark()}</a>
           <div class="topbar__stats" data-topbar-stats>${topBarStats()}</div>
         </header>
         <main id="view" class="view" tabindex="-1"></main>
