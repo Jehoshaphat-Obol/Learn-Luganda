@@ -50,6 +50,16 @@ test('Settings shows the languages and the course', async ({ page }) => {
   await expect(page.locator('[data-ui-lang]')).toHaveValue('en');
 });
 
+test('switching the interface to Luganda translates the whole app', async ({ page }) => {
+  await openWith(page, savedState(), '#/settings');
+  await page.locator('[data-ui-lang]').selectOption('lg');
+  await expect(page.getByRole('heading', { name: 'Ennimi' })).toBeVisible();
+  await expect(page.locator('html')).toHaveAttribute('lang', 'lg');
+  await page.goto('./#/learn');
+  await expect(page.getByRole('link', { name: 'Yiga' }).first()).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Learn', exact: true })).toHaveCount(0);
+});
+
 test('old saved progress follows the course pack, and ids it lacks are archived', async ({ page }) => {
   const lessonId = 'u1s1l1';
   const stray = { box: 2, due: '2026-01-01', seen: 1, correct: 1, wrong: 0, lastSeen: null };

@@ -5,6 +5,7 @@ import { DEFAULT_LANGUAGE, UI_LANGUAGES, currentLanguage, detectUiLanguage, onLa
 import { LANGUAGES, languageInfo } from '../src/i18n/languages.js';
 import { LIST_GROUPS, validateUiPack } from '../src/i18n/validate.js';
 import en from '../src/packs/ui/en.json';
+import lg from '../src/packs/ui/lg.json';
 
 describe('formatting', () => {
   it('fills placeholders and leaves unknown ones visible', () => {
@@ -138,5 +139,17 @@ describe('UI pack validation', () => {
 
   it('passes for English itself', () => {
     expect(validateUiPack(en, en, { code: 'en', languages: LANGUAGES }).errors).toEqual([]);
+  });
+
+  it('has a complete Luganda pack, so Luganda speakers never see English', async () => {
+    const { errors, missing } = validateUiPack(lg, en, { code: 'lg', languages: LANGUAGES });
+    expect(errors).toEqual([]);
+    expect(missing).toEqual([]);
+    expect(UI_LANGUAGES).toContain('lg');
+    expect(detectUiLanguage(['lg-UG', 'en'])).toBe('lg');
+    expect(await setLanguage('lg')).toBe('lg');
+    expect(t('nav.learn')).toBe('Yiga');
+    expect(document.documentElement.lang).toBe('lg');
+    await setLanguage('en');
   });
 });
