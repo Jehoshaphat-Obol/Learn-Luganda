@@ -14,7 +14,7 @@ export function renderMatch(ex, el, api) {
       <h2 class="ex__prompt">${escapeHtml(ex.prompt)}</h2>
       <div class="ex-match__grid">
         <div class="ex-match__col">${ex.left.map((id, i) => `<button class="tile" type="button" data-side="lg" data-id="${id}" lang="lg"><span class="choice__key">${i + 1}</span>${escapeHtml(byId[id].lg)}</button>`).join('')}</div>
-        <div class="ex-match__col">${ex.right.map((id, i) => `<button class="tile" type="button" data-side="en" data-id="${id}"><span class="choice__key">${i + 1 + ex.left.length}</span>${escapeHtml(byId[id].en)}</button>`).join('')}</div>
+        <div class="ex-match__col">${ex.right.map((id, i) => `<button class="tile" type="button" data-side="en" data-id="${id}"><span class="choice__key">${(i + 1 + ex.left.length) % 10}</span>${escapeHtml(byId[id].en)}</button>`).join('')}</div>
       </div>
     </div>`;
 
@@ -56,7 +56,8 @@ export function renderMatch(ex, el, api) {
   api.setReady(false, { hideCheck: true });
   return {
     keydown(e) {
-      const n = Number(e.key);
+      // Keys 1–9, then 0 for the tenth tile.
+      const n = e.key === '0' ? 10 : Number(e.key);
       if (n >= 1 && n <= tiles.length) {
         choose(tiles[n - 1]);
         return true;

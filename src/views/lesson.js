@@ -16,6 +16,7 @@ import { showRewards } from './rewards.js';
 import { mascot } from '../illustrations/index.js';
 import { button, escapeHtml, openModal, progressBar } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
+import { play } from '../ui/sound.js';
 
 const PRAISE = ['Nice!', 'Great job!', 'Correct!', 'Kale!', 'Well done!', 'Excellent!'];
 
@@ -33,14 +34,15 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
 
   root.innerHTML = `
     <div class="lesson">
+      <h1 class="visually-hidden">Lesson</h1>
       <header class="lesson__top">
         <button class="icon-btn" type="button" data-quit aria-label="Quit lesson">${icon('close')}</button>
         <div class="lesson__progress" data-progress></div>
         <div class="lesson__extra" data-extra></div>
       </header>
-      <main class="lesson__stage" data-stage aria-live="polite"></main>
+      <div class="lesson__stage" data-stage></div>
       <footer class="lesson__footer" data-footer>
-        <div class="lesson__feedback" data-feedback></div>
+        <div class="lesson__feedback" data-feedback role="status" aria-live="polite"></div>
         <div class="lesson__actions">${button({ label: 'Check', size: 'lg', block: true, disabled: true, attrs: 'data-main' })}</div>
       </footer>
     </div>`;
@@ -87,7 +89,7 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
     stage.innerHTML = '<div class="lesson__exercise" data-ex></div>';
     current = RENDERERS[ex.type](ex, stage.querySelector('[data-ex]'), api);
     drawProgress();
-    stage.querySelector('button, input, textarea')?.focus({ preventScroll: true });
+    [...stage.querySelectorAll('button, input, textarea')].find((x) => x.offsetParent !== null && !x.disabled)?.focus({ preventScroll: true });
   }
 
   function check() {
@@ -100,6 +102,7 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
       return;
     }
     session.answer(correct);
+    play(correct ? 'correct' : 'wrong');
     if (!correct && hearts) {
       store.update((st) => loseHeart(st));
       drawHearts(true);
@@ -153,7 +156,9 @@ export function runExercises({ root, exercises, onQuit, onFinish, hearts = false
   function onKey(e) {
     if (document.querySelector('.modal-backdrop')) return;
     if (e.target.matches('input, textarea') && e.key !== 'Enter') return;
-    if (e.key === 'Enter' && !mainBtn.disabled && e.target.tagName !== 'BUTTON') {
+    // Enter checks, except on buttons that do their own thing (tiles, quit).
+    // Picking an option is idempotent, so Enter on a selected option checks.
+    if (e.key === 'Enter' && !mainBtn.disabled && (e.target.tagName !== 'BUTTON' || e.target.closest('[role="radio"]'))) {
       e.preventDefault();
       mainBtn.click();
       return;

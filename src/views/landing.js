@@ -6,6 +6,7 @@ import '../styles/landing.css';
 import { heroScene, streakScene, lessonCompleteScene, mascot, portrait, CAST } from '../illustrations/index.js';
 import { button, escapeHtml } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
+import { reducedMotion } from '../ui/motion.js';
 
 const STEPS = [
   { icon: 'bolt', title: 'Bite-sized lessons', text: 'Five-minute lessons with pictures, word tiles, listening and matching games.' },
@@ -177,7 +178,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
       const link = e.target.closest('a[href^="#"]:not([href^="#/"])');
       if (link) {
         e.preventDefault();
-        root.querySelector(link.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+        root.querySelector(link.getAttribute('href'))?.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth' });
         return;
       }
       const choice = e.target.closest('[data-answer]');

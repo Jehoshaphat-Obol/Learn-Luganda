@@ -77,7 +77,7 @@ function unitSection(state, unit, current) {
           <p class="unit__desc">${escapeHtml(unit.description)}</p>
         </div>
         <a class="unit__guide" href="#/guidebook/${unit.id}" aria-label="${escapeHtml(unit.title)} guidebook">${icon('book', { size: 22 })}<span>Guidebook</span></a>
-        <div class="unit__meter" aria-label="${prog.done} of ${prog.total} lessons complete"><span style="width:${(prog.done / prog.total) * 100}%"></span></div>
+        <div class="unit__meter" role="progressbar" aria-valuemin="0" aria-valuemax="${prog.total}" aria-valuenow="${prog.done}" aria-label="${escapeHtml(unit.title)}: ${prog.done} of ${prog.total} lessons complete"><span style="width:${(prog.done / prog.total) * 100}%"></span></div>
       </header>
       <div class="unit__body">
         <div class="unit__cast" aria-hidden="true">${cast.map((id) => `<div class="unit__character">${portrait(id, { expression: prog.complete ? 'happy' : 'neutral' })}</div>`).join('')}</div>
@@ -143,6 +143,7 @@ export function learnView({ root, navigate }) {
   root.innerHTML = `
     <div class="learn">
       <div class="learn__path">
+        <h1 class="visually-hidden">Your learning path</h1>
         ${riskBanner(state)}
         ${goalStrip(state)}
         ${course.units.map((u) => unitSection(state, u, current)).join('')}
