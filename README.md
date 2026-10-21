@@ -16,9 +16,9 @@ Requires Node 20.19+ (CI uses Node 22).
 
 ## Deploy
 
-Pushes to `main` are built and deployed by
-`.github/workflows/deploy.yml`. One-time setup: in the repository's
-**Settings → Pages**, set **Source** to **GitHub Actions**.
+Pushes to `main` are built by `.github/workflows/deploy.yml`, which publishes
+`dist/` to the `gh-pages` branch. Pages serves that branch (Settings → Pages →
+Source: Deploy from a branch, `gh-pages` / root).
 
 ## Project layout
 

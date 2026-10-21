@@ -15,7 +15,8 @@ illustrations. Work proceeds one issue, one branch and one PR at a time.
 - Set `base: './'` in `vite.config.js` so the same build works at
   `https://<user>.github.io/Learn-Luganda/` and locally.
 - Added a GitHub Actions workflow (`.github/workflows/deploy.yml`) that builds
-  on every PR and deploys `dist/` to Pages on pushes to `main`.
+  on every PR and, on pushes to `main`, publishes `dist/` to the `gh-pages`
+  branch that Pages serves.
 - Added design tokens in `src/styles/tokens.css`: a vermillion scale around
   `#e34234`, a Bauhaus set (yellow `#f4c430`, blue `#1d4e9e`, black, cream),
   feedback colours, type scale, spacing, radii and the "pressable" button
@@ -34,10 +35,16 @@ illustrations. Work proceeds one issue, one branch and one PR at a time.
   should use hash routes to stay compatible with Pages.
 - **Build on PRs, deploy only from `main`.** PRs get a build check without
   publishing.
+- **Deploy via a `gh-pages` branch** rather than the Pages Actions source.
+  The Actions source has to be switched on in repo settings, which Claude
+  can't do from its environment; a `gh-pages` branch can be served without it.
+- **Branch names:** from the next issue on, branches are named
+  `<type>/<issue>-<slug>`, e.g. `feat/3-landing-page`. Claude merges its own
+  PRs once CI is green.
 
 ## Next
 
-- Enable Pages in repo settings (Source: GitHub Actions) after merging.
+- Confirm the site is live at https://jehoshaphat-obol.github.io/Learn-Luganda/.
 - Follow the issue roadmap: landing page, app shell and routing, localStorage
   progress store, lesson engine, Bauhaus avatars, gamification (XP, streaks,
   hearts, spaced review).
