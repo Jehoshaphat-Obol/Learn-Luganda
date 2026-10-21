@@ -4,7 +4,7 @@
  */
 import { dayKey } from './dates.js';
 
-export const XP = { lesson: 10, replay: 5, perfectBonus: 5, practice: 10, checkpoint: 20 };
+export const XP = { lesson: 10, replay: 5, perfectBonus: 5, practice: 10, checkpoint: 20, story: 15 };
 
 /** @returns {{ total: number, parts: Array<{ label: string, xp: number }> }} */
 export function lessonXp(result, { replay = false, base } = {}) {

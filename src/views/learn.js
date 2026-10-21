@@ -10,6 +10,7 @@ import { isLessonDone, isLessonUnlocked, isUnitUnlocked, nextLessonId, skillProg
 import { dailyGoal } from '../state/xp.js';
 import { streakStatus } from '../state/streak.js';
 import { dueWordIds } from '../state/review.js';
+import { storyList } from '../state/stories.js';
 import { portrait } from '../illustrations/index.js';
 import { button, escapeHtml, ring, toast } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
@@ -60,7 +61,7 @@ function unitSection(state, unit, current) {
       const nodes = skill.lessons.map((l) => lessonNode(state, l, position++, current)).join('');
       return `
         <li class="skill${sp.complete ? ' skill--complete' : ''}">
-          <h3 class="skill__title"><span>${escapeHtml(skill.title)}</span><span class="skill__count">${sp.done}/${sp.total}</span>${needsReview(state, skill, due) ? `<a class="pill pill--primary skill__review" href="#/practice/session?mode=skill&id=${skill.id}">${icon('target', { size: 14 })}Review</a>` : ''}</h3>
+          <h3 class="skill__title"><span>${escapeHtml(skill.title)}</span><span class="skill__count">${sp.done}/${sp.total}</span>${skill.tip ? `<a class="pill skill__review" href="#/guidebook/${unit.id}?tip=${skill.tip}" aria-label="${escapeHtml(skill.title)} tip">${icon('bolt', { size: 14 })}Tip</a>` : ''}${needsReview(state, skill, due) ? `<a class="pill pill--primary skill__review" href="#/practice/session?mode=skill&id=${skill.id}">${icon('target', { size: 14 })}Review</a>` : ''}</h3>
           <ol class="trail">${nodes}</ol>
         </li>`;
     })
@@ -108,6 +109,7 @@ function goalStrip(state) {
 function sidebar(state) {
   const { goal, today } = dailyGoal(state);
   const streak = streakStatus(state);
+  const unread = storyList(state).filter((x) => x.unlocked && !x.done).length;
   return `
     <aside class="learn__side">
       <div class="card side-card">
@@ -122,6 +124,13 @@ function sidebar(state) {
         <div>
           <h3>${streak.current} day streak</h3>
           <p class="muted">${streak.doneToday ? 'Done for today. Weebale!' : streak.current ? 'Do a lesson to extend it.' : 'Finish a lesson to start one.'}</p>
+        </div>
+      </a>
+      <a class="card side-card side-card--link" href="#/stories">
+        <span class="side-card__icon">${icon('stories', { size: 34 })}</span>
+        <div>
+          <h3>Stories</h3>
+          <p class="muted">${unread ? `${unread} new to read` : 'Read along with the cast.'}</p>
         </div>
       </a>
     </aside>`;
