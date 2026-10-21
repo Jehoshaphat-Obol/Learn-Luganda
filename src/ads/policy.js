@@ -19,6 +19,9 @@
  *                   finished session.
  *   minAccuracy     no lesson complete ad after a session below this
  *                   accuracy: a struggling learner gets a quiet screen.
+ *   adBreak         free, temporary pauses the learner can take: `hours`
+ *                   long, `perWeek` in any 7 days, and `streakHours` long
+ *                   instead once their streak reaches `streakDays`.
  */
 
 /** Ad types, matching the AdSense units in `config.js`. */
@@ -36,6 +39,7 @@ const PRESETS = {
     maxPerDay: 0,
     everyNthSession: Infinity,
     minAccuracy: 1,
+    adBreak: { hours: 0, perWeek: 0, streakDays: Infinity, streakHours: 0 },
   },
   gentle: {
     impact: 'About 3 ads a day at most; never in the first 5 lessons; complete-screen ads after every 4th session.',
@@ -45,6 +49,7 @@ const PRESETS = {
     maxPerDay: 3,
     everyNthSession: 4,
     minAccuracy: 0.8,
+    adBreak: { hours: 24, perWeek: 3, streakDays: 7, streakHours: 48 },
   },
   balanced: {
     impact: 'Up to 6 ads a day, at least 8 minutes apart; complete-screen ads after every 3rd session.',
@@ -54,6 +59,7 @@ const PRESETS = {
     maxPerDay: 6,
     everyNthSession: 3,
     minAccuracy: 0.6,
+    adBreak: { hours: 12, perWeek: 2, streakDays: 7, streakHours: 24 },
   },
   generous: {
     impact: 'Up to 10 ads a day, at least 4 minutes apart; complete-screen ads after every 2nd session.',
@@ -63,6 +69,7 @@ const PRESETS = {
     maxPerDay: 10,
     everyNthSession: 2,
     minAccuracy: 0.5,
+    adBreak: { hours: 6, perWeek: 2, streakDays: 7, streakHours: 12 },
   },
 };
 

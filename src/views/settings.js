@@ -14,7 +14,11 @@ import { canInstall, promptInstall } from '../app/pwa.js';
 import { backgroundSupported, remindersSupported, setReminderHour, setReminders } from '../reminders/reminders.js';
 import { REMINDER_STRINGS } from '../reminders/strings.js';
 import { PACKS, hapticsSupported, play, preload } from '../ui/sound.js';
-import { adConsent, adsConfigured, changeAdConsent } from '../ads/ads.js';
+import { adBreakNow, adBreakTime, adConsent, adsConfigured, changeAdConsent, offerAdBreak } from '../ads/ads.js';
+import { endAdBreak } from '../ads/breaks.js';
+import { POLICY } from '../ads/policy.js';
+import { AD_STRINGS, duration } from '../ads/strings.js';
+import { fill } from '../reminders/strings.js';
 import { siteLinks } from '../app/site.js';
 
 function download(filename, text) {
@@ -80,6 +84,14 @@ function profileSection(p) {
   </section>`;
 }
 
+function adBreakRow() {
+  const s = adBreakNow();
+  const S = AD_STRINGS.settings;
+  const text = s.active ? fill(S.active, { time: adBreakTime(s.until) }) : fill(S.hint, { duration: duration(s.hours), left: s.left });
+  return `<span class="switch-row__text"><strong>${S.title}</strong><small>${escapeHtml(text)}</small></span>
+    ${s.active ? button({ label: S.end, variant: 'secondary', attrs: 'data-action="ad-break-end"' }) : button({ label: S.take, variant: 'secondary', attrs: 'data-action="ad-break"' })}`;
+}
+
 export function settingsView({ root, query, navigate }) {
   const { settings, profile, reminders } = store.get();
   const systemReduced = Boolean(window.matchMedia?.('(prefers-reduced-motion: reduce)').matches);
@@ -118,6 +130,7 @@ export function settingsView({ root, query, navigate }) {
       <section class="settings-group" id="privacy">
         <h2>Ads and privacy</h2>
         ${adsConfigured() ? `<div>${toggle('personalisedAds', 'Personalised ads', 'Let Google use cookies to show ads that suit you. Off means basic, non-personalised ads.', adConsent() === 'granted')}</div>` : ''}
+        ${adsConfigured() && POLICY.adBreak.perWeek ? `<div class="ad-break-row" data-ad-break-row>${adBreakRow()}</div>` : ''}
         <p class="muted">Your lessons and progress never leave this device. <a href="#/privacy">Read the privacy policy</a>.</p>
         ${siteLinks()}
       </section>
@@ -232,6 +245,15 @@ export function settingsView({ root, query, navigate }) {
 
   root.addEventListener('click', async (e) => {
     const action = e.target.closest('[data-action]')?.dataset.action;
+    if (action === 'ad-break' || action === 'ad-break-end') {
+      if (action === 'ad-break') await offerAdBreak();
+      else {
+        endAdBreak();
+        toast(AD_STRINGS.settings.ended);
+      }
+      root.querySelector('[data-ad-break-row]').innerHTML = adBreakRow();
+      return;
+    }
     if (action === 'export') {
       const name = store.get().profile?.name?.toLowerCase().replace(/[^a-z0-9]+/g, '-') || 'learner';
       download(`learn-luganda-${name}-${new Date().toISOString().slice(0, 10)}.json`, store.exportJSON());

@@ -14,6 +14,8 @@ import { preload } from './ui/sound.js';
 import { initMusic, setMusicScene, toggleMusic } from './ui/music.js';
 import { registerServiceWorker } from './app/pwa.js';
 import { startReminders } from './reminders/reminders.js';
+import { applyBrandMood, brandMood } from './app/brand-mood.js';
+import { detectUiLanguage, setLanguage } from './i18n/index.js';
 
 setStatsProvider(() => {
   const s = store.get();
@@ -24,6 +26,10 @@ setStatsProvider(() => {
 // Apply any missed days (freezes or a reset) as soon as the app opens.
 if (store.get().streak.lastDay) store.update((s) => settleStreak(s));
 store.subscribe(refreshTopBar);
+const refreshBrand = () => applyBrandMood(brandMood(store.get()));
+store.subscribe(refreshBrand);
+// The mood depends on the day, so re-check when the app comes back into view.
+document.addEventListener('visibilitychange', () => document.visibilityState === 'visible' && refreshBrand());
 applyMotion();
 store.subscribe(applyMotion);
 
@@ -36,6 +42,7 @@ const router = createRouter({
       return;
     }
     shell.render(match, router.navigate);
+    refreshBrand();
     setMusicScene((match.route.layout ?? 'app') === 'app' && hasProfile());
   },
 });
@@ -46,6 +53,7 @@ document.addEventListener('click', (e) => {
   if (e.target.closest('[data-music-toggle]')) toggleMusic();
 });
 store.subscribe(refreshMusicButton);
-router.start();
+// The UI language is set before the first screen renders.
+setLanguage(detectUiLanguage()).then(() => router.start());
 registerServiceWorker();
 startReminders();
