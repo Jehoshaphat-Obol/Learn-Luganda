@@ -91,3 +91,9 @@ export function isUnitUnlocked(state, unitId, c = defaultCourse) {
 export function learnedWordIds(state, c = defaultCourse) {
   return c.order.filter((id) => isLessonDone(state, id)).flatMap((id) => c.lessons[id].newWords);
 }
+
+/** The whole course is done: every lesson passed and the last checkpoint taken. */
+export function isCourseComplete(state, c = defaultCourse) {
+  const last = c.units[c.units.length - 1];
+  return Boolean(last && state.lessons[`checkpoint-${last.id}`]?.completions) && c.order.every((id) => isLessonPassed(state, id, c));
+}

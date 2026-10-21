@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { UNITS_RAW, buildCourse, course, courseStats, sectionOf } from '../src/content/course.js';
 import { SECTIONS } from '../src/content/sections.js';
 import { validateSections } from '../src/content/validate.js';
-import { canJumpTo, isLessonPassed, isLessonSkipped, isLessonUnlocked, isSectionUnlocked, nextLessonId, sectionProgress, unitProgress } from '../src/state/progress.js';
+import { canJumpTo, isCourseComplete, isLessonPassed, isLessonSkipped, isLessonUnlocked, isSectionUnlocked, nextLessonId, sectionProgress, unitProgress } from '../src/state/progress.js';
 import { buildSectionTest } from '../src/lesson/practice.js';
 
 // The real units split into two sections, so jumping can be tested today.
@@ -75,5 +75,21 @@ describe('jumping ahead', () => {
       const words = ex.flatMap((e) => e.wordIds ?? (e.word ? [e.word.id] : []));
       for (const w of words) expect(before.has(w), w).toBe(true);
     }
+  });
+});
+
+describe('finishing the course', () => {
+  const allDone = Object.fromEntries(course.order.map((id) => [id, { completions: 1, bestAccuracy: 1 }]));
+  const last = course.units[course.units.length - 1].id;
+
+  it('has 40 units in 5 sections', () => {
+    expect(courseStats(course)).toMatchObject({ sections: 5, units: 40 });
+  });
+
+  it('needs every lesson and the last checkpoint', () => {
+    expect(isCourseComplete({ lessons: allDone, jumps: [] })).toBe(false);
+    expect(isCourseComplete({ lessons: { ...allDone, [`checkpoint-${last}`]: { completions: 1 } }, jumps: [] })).toBe(true);
+    const { [course.order[0]]: _, ...missingOne } = allDone;
+    expect(isCourseComplete({ lessons: { ...missingOne, [`checkpoint-${last}`]: { completions: 1 } }, jumps: [] })).toBe(false);
   });
 });

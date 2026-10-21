@@ -14,8 +14,9 @@ accounts and no server: your progress stays in your browser.
 
 ## Features
 
-- **Course**: 36 units, 305 lessons and 636 words in 5 sections so far, growing
-  to 40 units (`npm run validate` prints the current totals).
+- **Course**: 40 units, 341 lessons, 679 words and 21 stories in 5 sections
+  (`npm run validate` prints the current totals), ending with a
+  course-complete celebration.
   Learners who already know some Luganda can pass a section test to jump ahead.
   - Section 1, Foundations: greetings; people and things; food and the market;
     numbers and money; time and days; places and directions; the home; health
@@ -29,7 +30,8 @@ accounts and no server: your progress stays in your browser.
     and farming; celebrations; music and dance; faith and holidays; business;
     nature.
   - Section 5, Confident speaker: comparing; if and when; telling stories;
-    proverbs.
+    proverbs; news and community; emergencies; respect and etiquette;
+    folktales.
   - Each unit ends with a checkpoint and has a guidebook of key phrases,
     grammar tips and culture notes.
 - **Exercises**: introductions, multiple choice, translate with a word bank or
