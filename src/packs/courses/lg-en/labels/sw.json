@@ -15,6 +15,11 @@
       "title": "Mazungumzo",
       "level": "Kabla ya kati",
       "description": "Kataa, uliza maswali, zungumza kuhusu yaliyopita na yajayo, hisia, burudani, simu na upishi."
+    },
+    "s4": {
+      "title": "Jamii na utamaduni",
+      "level": "Kati",
+      "description": "Koo na alama zao, ufalme, kilimo, sherehe, muziki, imani, biashara na mazingira."
     }
   },
   "units": {
@@ -113,6 +118,38 @@
     "u24": {
       "title": "Upishi",
       "description": "Fuata mapishi, pika matoke kwa majani ya ndizi na ushiriki mlo."
+    },
+    "u25": {
+      "title": "Koo na alama zao",
+      "description": "Jifunze kuhusu koo za Buganda, alama zao na kusema wewe ni nani."
+    },
+    "u26": {
+      "title": "Ufalme",
+      "description": "Kabaka, serikali yake na maeneo ya kihistoria ya Buganda."
+    },
+    "u27": {
+      "title": "Kijiji na kilimo",
+      "description": "Fanya kazi shambani, taja mazao na vuna."
+    },
+    "u28": {
+      "title": "Sherehe",
+      "description": "Kwanjula, harusi, siku za kuzaliwa na kuwatakia watu heri."
+    },
+    "u29": {
+      "title": "Muziki na densi",
+      "description": "Ngoma, nyimbo na densi, na kueleza watu kwa wanachofanya."
+    },
+    "u30": {
+      "title": "Imani na sikukuu",
+      "description": "Nyumba za ibada, Krismasi, Idi, Siku ya Mashahidi na baraka."
+    },
+    "u31": {
+      "title": "Biashara",
+      "description": "Endesha duka dogo, hudumia wateja, weka akiba na wafundishe wengine."
+    },
+    "u32": {
+      "title": "Mazingira",
+      "description": "Maziwa, mito, misitu na milima, na kutunza ardhi."
     }
   },
   "skills": {
@@ -187,6 +224,30 @@
     "u23s3": "Kukutana",
     "u24s1": "Jikoni",
     "u24s2": "Kupika matoke",
-    "u24s3": "Kushiriki mlo"
+    "u24s3": "Kushiriki mlo",
+    "u25s1": "Ebika",
+    "u25s2": "Alama za koo",
+    "u25s3": "Majina na koo",
+    "u26s1": "Kabaka",
+    "u26s2": "Maeneo ya Buganda",
+    "u26s3": "Historia",
+    "u27s1": "Shamba",
+    "u27s2": "Mazao",
+    "u27s3": "Kumfanyia mtu",
+    "u28s1": "Kwanjula",
+    "u28s2": "Harusi",
+    "u28s3": "Siku za kuzaliwa",
+    "u29s1": "Ngoma",
+    "u29s2": "Nyimbo na densi",
+    "u29s3": "Nani anafanya nini",
+    "u30s1": "Kanisa na msikiti",
+    "u30s2": "Sikukuu",
+    "u30s3": "Baraka",
+    "u31s1": "Duka dogo",
+    "u31s2": "Mambo ya pesa",
+    "u31s3": "Kuwafanya wengine wafanye",
+    "u32s1": "Maziwa na mito",
+    "u32s2": "Misitu na milima",
+    "u32s3": "Kutunza ardhi"
   }
 }

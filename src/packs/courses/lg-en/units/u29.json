@@ -1,0 +1,417 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u29",
+  "title": "Ennyimba n’amazina",
+  "description": "Engoma, ennyimba n’amazina, n’okunnyonnyola abantu okusinziira ku bye bakola.",
+  "color": "lilac",
+  "character": "amara",
+  "words": [
+    {
+      "id": "engoma",
+      "target": "drum",
+      "base": "engoma",
+      "altTarget": ["drums", "the drum"]
+    },
+    {
+      "id": "okukuba",
+      "target": "to beat",
+      "base": "okukuba",
+      "altTarget": ["to play", "to hit", "to strike", "beating"]
+    },
+    {
+      "id": "endingidi",
+      "target": "tube fiddle",
+      "base": "endingidi",
+      "altTarget": ["fiddle", "the endingidi"]
+    },
+    {
+      "id": "amadinda",
+      "target": "xylophone",
+      "base": "amadinda",
+      "altTarget": ["the xylophone", "amadinda"]
+    },
+    {
+      "id": "ennanga",
+      "target": "harp",
+      "base": "ennanga",
+      "altTarget": ["the harp", "bow harp"]
+    },
+    {
+      "id": "oluyimba",
+      "target": "song",
+      "base": "oluyimba",
+      "altTarget": ["a song", "the song"]
+    },
+    {
+      "id": "omuyimbi",
+      "target": "singer",
+      "base": "omuyimbi",
+      "altTarget": ["musician", "a singer", "the singer"]
+    },
+    {
+      "id": "amazina",
+      "target": "dance",
+      "base": "amazina",
+      "altTarget": ["dances", "dancing", "the dance"]
+    },
+    {
+      "id": "bakisimba",
+      "target": "Bakisimba",
+      "base": "Bakisimba",
+      "altTarget": ["bakisimba dance", "royal dance"]
+    },
+    {
+      "id": "abayimba",
+      "target": "who sing",
+      "base": "abayimba",
+      "altTarget": ["that sing", "singing", "who are singing"]
+    },
+    {
+      "id": "abazina",
+      "target": "who dance",
+      "base": "abazina",
+      "altTarget": ["that dance", "dancing", "who are dancing"]
+    },
+    {
+      "id": "akuba",
+      "target": "who plays",
+      "base": "akuba",
+      "altTarget": ["plays", "who beats", "beats", "who is playing"]
+    },
+    {
+      "id": "kinyuma",
+      "target": "it’s fun",
+      "base": "kinyuma",
+      "altTarget": [
+        "it is fun",
+        "it’s enjoyable",
+        "it is enjoyable",
+        "fun",
+        "enjoyable"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s29-kuba-engoma",
+      "target": "Play the drum!",
+      "base": "Kuba engoma!",
+      "altTarget": ["Beat the drum!"]
+    },
+    {
+      "id": "s29-njagala-okukuba-engoma",
+      "target": "I want to play the drum.",
+      "base": "Njagala okukuba engoma.",
+      "altTarget": ["I like playing the drum.", "I like to play the drums."]
+    },
+    {
+      "id": "s29-endingidi",
+      "target": "The tube fiddle and the xylophone.",
+      "base": "Endingidi n’amadinda.",
+      "altTarget": ["Fiddle and xylophone."],
+      "altBase": ["Endingidi namadinda."]
+    },
+    {
+      "id": "s29-ennanga",
+      "target": "The harp is very beautiful.",
+      "base": "Ennanga nnungi nnyo.",
+      "altTarget": ["The harp is very nice.", "The harp sounds very good."]
+    },
+    {
+      "id": "s29-oluyimba-lwe",
+      "target": "This song is good.",
+      "base": "Oluyimba luno lulungi.",
+      "altTarget": ["This song is nice.", "This song is beautiful."]
+    },
+    {
+      "id": "s29-omuyimbi",
+      "target": "The singer sings well.",
+      "base": "Omuyimbi ayimba bulungi.",
+      "altTarget": ["The singer is singing well."]
+    },
+    {
+      "id": "s29-amazina-kinyuma",
+      "target": "This dance is fun!",
+      "base": "Amazina gano ganyuma!",
+      "altTarget": ["These dances are fun!", "This dancing is fun!"]
+    },
+    {
+      "id": "s29-bakisimba",
+      "target": "We dance Bakisimba.",
+      "base": "Tuzina Bakisimba.",
+      "altTarget": ["We are dancing Bakisimba."]
+    },
+    {
+      "id": "s29-abantu-abayimba",
+      "target": "The people who are singing are many.",
+      "base": "Abantu abayimba bangi.",
+      "altTarget": [
+        "There are many people singing.",
+        "Many people are singing."
+      ]
+    },
+    {
+      "id": "s29-abaana-abazina",
+      "target": "The children who are dancing are happy.",
+      "base": "Abaana abazina basanyuse.",
+      "altTarget": ["The dancing children are happy."]
+    },
+    {
+      "id": "s29-omusajja-akuba",
+      "target": "The man who plays the drum is father.",
+      "base": "Omusajja akuba engoma ye taata.",
+      "altTarget": [
+        "The man playing the drum is father.",
+        "The man who plays the drum is my father.",
+        "The man playing the drum is dad."
+      ]
+    },
+    {
+      "id": "s29-kinyuma",
+      "target": "It’s great fun!",
+      "base": "Kinyuma nnyo!",
+      "altTarget": [
+        "It is very enjoyable!",
+        "It’s very fun!",
+        "It is a lot of fun!"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u29s1",
+      "title": "Engoma",
+      "icon": "speaker",
+      "tip": "play",
+      "lessons": [
+        {
+          "id": "u29s1l1",
+          "newWords": ["engoma", "okukuba"],
+          "sentences": ["s29-kuba-engoma", "s29-njagala-okukuba-engoma"]
+        },
+        {
+          "id": "u29s1l2",
+          "newWords": ["endingidi", "amadinda"],
+          "sentences": ["s29-endingidi"]
+        },
+        {
+          "id": "u29s1l3",
+          "newWords": ["ennanga"],
+          "sentences": ["s29-ennanga", "s29-endingidi"]
+        }
+      ]
+    },
+    {
+      "id": "u29s2",
+      "title": "Ennyimba n’amazina",
+      "icon": "star",
+      "lessons": [
+        {
+          "id": "u29s2l1",
+          "newWords": ["oluyimba", "omuyimbi"],
+          "sentences": ["s29-oluyimba-lwe", "s29-omuyimbi"]
+        },
+        {
+          "id": "u29s2l2",
+          "newWords": ["amazina", "kinyuma"],
+          "sentences": ["s29-amazina-kinyuma", "s29-kinyuma"]
+        },
+        {
+          "id": "u29s2l3",
+          "newWords": ["bakisimba"],
+          "sentences": ["s29-bakisimba", "s29-amazina-kinyuma"]
+        }
+      ]
+    },
+    {
+      "id": "u29s3",
+      "title": "Ani akola ki",
+      "icon": "profile",
+      "tip": "who",
+      "lessons": [
+        {
+          "id": "u29s3l1",
+          "newWords": ["abayimba", "abazina"],
+          "sentences": ["s29-abantu-abayimba", "s29-abaana-abazina"]
+        },
+        {
+          "id": "u29s3l2",
+          "newWords": ["akuba"],
+          "sentences": ["s29-omusajja-akuba"]
+        },
+        {
+          "id": "u29s3l3",
+          "newWords": [],
+          "sentences": [
+            "s29-abantu-abayimba",
+            "s29-omusajja-akuba",
+            "s29-kinyuma"
+          ],
+          "dialogues": [
+            {
+              "speaker": "amara",
+              "target": "Who is the man playing the drum?",
+              "base": "Omusajja akuba engoma y’ani?",
+              "options": [
+                "He is my father!",
+                "The drum is big.",
+                "Thank you for coming."
+              ],
+              "answer": "He is my father!"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Yogera ku ngoma, ennyimba n’amazina, era onnyonnyole ani akola ki.",
+    "phrases": [
+      {
+        "target": "Play the drum!",
+        "base": "Kuba engoma!"
+      },
+      {
+        "target": "This song is good.",
+        "base": "Oluyimba luno lulungi."
+      },
+      {
+        "target": "The singer sings well.",
+        "base": "Omuyimbi ayimba bulungi."
+      },
+      {
+        "target": "We dance Bakisimba.",
+        "base": "Tuzina Bakisimba."
+      },
+      {
+        "target": "The children who are dancing are happy.",
+        "base": "Abaana abazina basanyuse."
+      },
+      {
+        "target": "It’s great fun!",
+        "base": "Kinyuma nnyo!"
+      }
+    ],
+    "tips": [
+      {
+        "id": "play",
+        "title": "“Play the drum”",
+        "body": [
+          "Mu Luganda **okukuba engoma**. Mu Lungereza ku bivuga byonna ogamba **play**: **play the drum**, **play the harp**, **play the xylophone**."
+        ]
+      },
+      {
+        "id": "who",
+        "title": "“Who” ku bantu",
+        "body": [
+          "Mu Luganda **abazina** kitegeeza “abo abazina”. Mu Lungereza kozesa **who** ku bantu: **the children who are dancing**, **the man who plays the drum**.",
+          "Ku bintu kozesa **that** oba **which**: **the song that I like**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Engoma",
+        "body": [
+          "Engoma ekulu nnyo mu Buganda: ekuŋŋaanya abantu era eraga ebiseera by’emikolo. Mu Lungereza: **The drum calls people together.** **Bakisimba is a royal dance.**"
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "drum-lesson",
+      "title": "Okuyiga okukuba engoma",
+      "unlockAfter": "u29s3l3",
+      "cast": ["amara", "mukasa"],
+      "summary": "Amara ayiga okukuba engoma olw’ekivvulu ky’essomero.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "Sir, I want to play the drum at the school concert.",
+            "base": "Ssebo, njagala okukuba engoma ku mukolo gw’essomero."
+          }
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "Good! Hold this drum.",
+            "base": "Kirungi! Kwata engoma eno."
+          }
+        },
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "The big one or the small one?",
+            "base": "Ennene oba entono?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "The small one. Listen: bum, bum, ka-bum.",
+            "base": "Entono. Wuliriza: bum, bum, ka-bum."
+          }
+        },
+        {
+          "question": "Amara akuba ngoma ki?",
+          "options": ["The big one", "The small one", "No drum"],
+          "optionsLang": "target",
+          "answer": 1
+        },
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "Bum, bum, ka-bum! It’s great fun!",
+            "base": "Bum, bum, ka-bum! Kinyuma nnyo!"
+          }
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "The children who dance will dance Bakisimba.",
+            "base": "Abaana abazina bajja kuzina Bakisimba."
+          }
+        },
+        {
+          "question": "Abazinyi banaazina ki?",
+          "options": ["Bakisimba", "Football", "Omweso"],
+          "optionsLang": "target",
+          "answer": 0
+        },
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "And who will sing?",
+            "base": "Ate ani ajja kuyimba?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "Nakato! She is a good singer.",
+            "base": "Nakato! Ye muyimbi omulungi."
+          }
+        },
+        {
+          "question": "Mu Lungereza ogamba otya “abaana abazina”?",
+          "options": [
+            "the children who dance",
+            "the children dance",
+            "the children play"
+          ],
+          "optionsLang": "target",
+          "answer": 0
+        },
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "I’m so happy. Thank you, sir!",
+            "base": "Nsanyuse nnyo. Weebale, ssebo!"
+          }
+        }
+      ]
+    }
+  ]
+}

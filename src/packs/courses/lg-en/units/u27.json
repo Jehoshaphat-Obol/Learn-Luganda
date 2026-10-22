@@ -1,0 +1,331 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u27",
+  "title": "Ekyalo n’okulima",
+  "description": "Kola mu nnimiro, manya ebirime era okungule.",
+  "color": "sage",
+  "character": "jjajja",
+  "words": [
+    {
+      "id": "olusuku",
+      "target": "banana garden",
+      "base": "olusuku",
+      "altTarget": ["plantation", "banana plantation", "garden"]
+    },
+    {
+      "id": "enkumbi",
+      "target": "hoe",
+      "base": "enkumbi",
+      "altTarget": ["the hoe", "a hoe"]
+    },
+    {
+      "id": "ndima",
+      "target": "I dig",
+      "base": "Ndima",
+      "altTarget": ["i farm", "i cultivate", "i am digging"]
+    },
+    {
+      "id": "ensigo",
+      "target": "seeds",
+      "base": "ensigo",
+      "altTarget": ["seed", "the seeds"]
+    },
+    {
+      "id": "okusiga",
+      "target": "to plant",
+      "base": "okusiga",
+      "altTarget": ["to sow", "planting", "sowing"]
+    },
+    {
+      "id": "kasooli",
+      "target": "maize",
+      "base": "kasooli",
+      "altTarget": ["corn", "the maize"]
+    },
+    {
+      "id": "ebinyeebwa",
+      "target": "groundnuts",
+      "base": "ebinyeebwa",
+      "altTarget": ["peanuts", "the groundnuts"]
+    },
+    {
+      "id": "emmwanyi",
+      "target": "coffee beans",
+      "base": "emmwanyi",
+      "altTarget": ["coffee", "coffee plants", "coffee beans"]
+    },
+    {
+      "id": "amakungula",
+      "target": "harvest",
+      "base": "amakungula",
+      "altTarget": ["the harvest", "harvest time"]
+    },
+    {
+      "id": "okukungula",
+      "target": "to harvest",
+      "base": "okukungula",
+      "altTarget": ["harvesting", "to reap"]
+    },
+    {
+      "id": "ndimira",
+      "target": "I dig for",
+      "base": "Ndimira",
+      "altTarget": ["i farm for", "i dig in"]
+    },
+    {
+      "id": "nfumbira",
+      "target": "I cook for",
+      "base": "Nfumbira",
+      "altTarget": ["i am cooking for"]
+    },
+    {
+      "id": "ntundira",
+      "target": "I sell at",
+      "base": "Ntundira",
+      "altTarget": ["i sell for", "i sell in"]
+    },
+    {
+      "id": "mpandiikira",
+      "target": "I write to",
+      "base": "Mpandiikira",
+      "altTarget": ["i write for"]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s27-olusuku-lwange",
+      "target": "My banana garden is big.",
+      "base": "Olusuku lwange lunene.",
+      "altTarget": ["My plantation is big.", "My garden is big."]
+    },
+    {
+      "id": "s27-ndima-n-enkumbi",
+      "target": "I dig with a hoe in the morning.",
+      "base": "Ndima n’enkumbi ku makya.",
+      "altTarget": [
+        "I dig with the hoe in the morning.",
+        "I farm with a hoe in the morning."
+      ],
+      "altBase": ["Ndima nenkumbi ku makya."]
+    },
+    {
+      "id": "s27-okusiga-ensigo",
+      "target": "We plant seeds in the rainy season.",
+      "base": "Tusiga ensigo mu ttoggo.",
+      "altTarget": ["We sow seeds in the rainy season."]
+    },
+    {
+      "id": "s27-kasooli",
+      "target": "The maize has grown well.",
+      "base": "Kasooli akuze bulungi.",
+      "altTarget": ["The maize grew well.", "The corn has grown well."]
+    },
+    {
+      "id": "s27-ebinyeebwa",
+      "target": "I sell groundnuts and maize.",
+      "base": "Ntunda ebinyeebwa ne kasooli.",
+      "altTarget": ["I sell peanuts and maize.", "I sell groundnuts and corn."]
+    },
+    {
+      "id": "s27-emmwanyi",
+      "target": "Buganda’s coffee is very good.",
+      "base": "Emmwanyi ya Buganda nnungi nnyo.",
+      "altTarget": ["The coffee of Buganda is very good."]
+    },
+    {
+      "id": "s27-amakungula",
+      "target": "The harvest has come!",
+      "base": "Amakungula gatuuse!",
+      "altTarget": ["Harvest time has come!", "The harvest is here!"]
+    },
+    {
+      "id": "s27-okukungula",
+      "target": "Tomorrow we will harvest the groundnuts.",
+      "base": "Enkya tujja kukungula ebinyeebwa.",
+      "altTarget": ["We will harvest the groundnuts tomorrow."]
+    },
+    {
+      "id": "s27-ndimira-jjajja",
+      "target": "I dig the garden for grandparent.",
+      "base": "Ndimira jjajja olusuku.",
+      "altTarget": [
+        "I dig the banana garden for grandma.",
+        "I dig the garden for my grandparent.",
+        "I dig the garden for grandpa."
+      ]
+    },
+    {
+      "id": "s27-nfumbira-abaana",
+      "target": "I cook food for the children.",
+      "base": "Nfumbira abaana emmere.",
+      "altTarget": ["I cook for the children."]
+    },
+    {
+      "id": "s27-ntundira-mu-katale",
+      "target": "I sell coffee at the market.",
+      "base": "Ntundira emmwanyi mu katale.",
+      "altTarget": ["I sell the coffee at the market."]
+    },
+    {
+      "id": "s27-mpandiikira-maama",
+      "target": "I write a message to mother.",
+      "base": "Mpandiikira maama obubaka.",
+      "altTarget": [
+        "I write mum a message.",
+        "I write a message to my mother."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u27s1",
+      "title": "Ennimiro",
+      "icon": "home",
+      "tip": "garden",
+      "lessons": [
+        {
+          "id": "u27s1l1",
+          "newWords": ["olusuku", "enkumbi", "ndima"],
+          "sentences": ["s27-olusuku-lwange", "s27-ndima-n-enkumbi"]
+        },
+        {
+          "id": "u27s1l2",
+          "newWords": ["ensigo", "okusiga"],
+          "sentences": ["s27-okusiga-ensigo"]
+        },
+        {
+          "id": "u27s1l3",
+          "newWords": [],
+          "sentences": [
+            "s27-olusuku-lwange",
+            "s27-okusiga-ensigo",
+            "s27-ndima-n-enkumbi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u27s2",
+      "title": "Ebirime",
+      "icon": "star",
+      "lessons": [
+        {
+          "id": "u27s2l1",
+          "newWords": ["kasooli", "ebinyeebwa"],
+          "sentences": ["s27-kasooli", "s27-ebinyeebwa"]
+        },
+        {
+          "id": "u27s2l2",
+          "newWords": ["emmwanyi"],
+          "sentences": ["s27-emmwanyi", "s27-ebinyeebwa"]
+        },
+        {
+          "id": "u27s2l3",
+          "newWords": ["amakungula", "okukungula"],
+          "sentences": ["s27-amakungula", "s27-okukungula"]
+        }
+      ]
+    },
+    {
+      "id": "u27s3",
+      "title": "Okukolera omuntu",
+      "icon": "heart",
+      "tip": "for-someone",
+      "lessons": [
+        {
+          "id": "u27s3l1",
+          "newWords": ["ndimira", "nfumbira"],
+          "sentences": ["s27-ndimira-jjajja", "s27-nfumbira-abaana"]
+        },
+        {
+          "id": "u27s3l2",
+          "newWords": ["ntundira", "mpandiikira"],
+          "sentences": ["s27-ntundira-mu-katale", "s27-mpandiikira-maama"]
+        },
+        {
+          "id": "u27s3l3",
+          "newWords": [],
+          "sentences": [
+            "s27-ndimira-jjajja",
+            "s27-amakungula",
+            "s27-nfumbira-abaana"
+          ],
+          "dialogues": [
+            {
+              "speaker": "jjajja",
+              "target": "Well done! What are you doing?",
+              "base": "Gyebale ko! Okola ki?",
+              "options": [
+                "I dig the garden for my grandparent.",
+                "I am of the Lugave clan.",
+                "Long live the Kabaka!"
+              ],
+              "answer": "I dig the garden for my grandparent."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Yogera ku lusuku, ebirime, okusiga n’amakungula.",
+    "phrases": [
+      {
+        "target": "I dig with a hoe in the morning.",
+        "base": "Ndima n’enkumbi ku makya."
+      },
+      {
+        "target": "We plant seeds in the rainy season.",
+        "base": "Tusiga ensigo mu ttoggo."
+      },
+      {
+        "target": "The harvest has come!",
+        "base": "Amakungula gatuuse!"
+      },
+      {
+        "target": "I dig the garden for grandparent.",
+        "base": "Ndimira jjajja olusuku."
+      },
+      {
+        "target": "I cook food for the children.",
+        "base": "Nfumbira abaana emmere."
+      },
+      {
+        "target": "I write a message to mother.",
+        "base": "Mpandiikira maama obubaka."
+      }
+    ],
+    "tips": [
+      {
+        "id": "garden",
+        "title": "“With a hoe”",
+        "body": [
+          "Ekintu ky’okozesa kijja ne **with**: **I dig with a hoe.** **I write with a pen.**",
+          "Ekiseera kijja ne **in**: **in the morning**, **in the rainy season**."
+        ]
+      },
+      {
+        "id": "for-someone",
+        "title": "Okukolera omuntu",
+        "body": [
+          "Mu Luganda ekikolwa kikyuka: **ndima → ndimira**, **nfumba → nfumbira**. Mu Lungereza ekikolwa tekikyuka, wabula oyongerako **for** oba **to**: **I dig for Jjajja. I cook for the children. I write to Mother.**"
+        ],
+        "table": [
+          ["Oluganda", "Olungereza"],
+          ["ndimira", "I dig for"],
+          ["nfumbira", "I cook for"],
+          ["ntundira", "I sell at"],
+          ["mpandiikira", "I write to"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "“Garden” mu Uganda",
+        "body": [
+          "Mu Lungereza lwa Uganda **garden** kitegeeza ennimiro oba olusuku. Mu Bungereza **garden** kitera okuba ekifo ky’ebimuli okumpi n’ennyumba, ate ennimiro bagiyita **farm** oba **field**."
+        ]
+      }
+    ]
+  }
+}
