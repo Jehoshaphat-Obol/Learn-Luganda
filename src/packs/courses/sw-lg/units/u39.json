@@ -1,0 +1,401 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u39",
+  "title": "Heshima na adabu",
+  "description": "Wasalimie wazee kwa heshima na uwe mgeni mwema.",
+  "color": "lilac",
+  "character": "jjajja",
+  "words": [
+    {
+      "id": "okufukamira",
+      "target": "okufukamira",
+      "base": "kupiga magoti",
+      "altBase": [
+        "kupiga goti",
+        "kuinama",
+        "piga magoti"
+      ]
+    },
+    {
+      "id": "abakadde",
+      "target": "abakadde",
+      "base": "wazee",
+      "altBase": [
+        "watu wazima",
+        "wakubwa"
+      ]
+    },
+    {
+      "id": "ekitiibwa",
+      "target": "ekitiibwa",
+      "base": "heshima",
+      "altBase": [
+        "adabu",
+        "staha"
+      ]
+    },
+    {
+      "id": "mwasuze",
+      "target": "Mwasuze mutya?",
+      "base": "Habari za asubuhi (kwa heshima)",
+      "altBase": [
+        "mmeamkaje",
+        "habari za asubuhi",
+        "mlilalaje",
+        "shikamoo"
+      ],
+      "notes": "“Ninyi” wa wingi, hutumika kwa mzee mmoja kwa heshima."
+    },
+    {
+      "id": "mwebale",
+      "target": "Mwebale",
+      "base": "Asanteni (kwa heshima)",
+      "altBase": [
+        "asanteni",
+        "asante",
+        "ahsanteni"
+      ],
+      "notes": "“Ninyi” wa wingi, hutumika kwa mzee mmoja kwa heshima."
+    },
+    {
+      "id": "mwattu",
+      "target": "mwattu",
+      "base": "tafadhali",
+      "altBase": [
+        "naomba",
+        "kwa hisani yako"
+      ]
+    },
+    {
+      "id": "webale-okujja",
+      "target": "Webale okujja",
+      "base": "Asanteni kwa kuja",
+      "altBase": [
+        "asante kwa kuja",
+        "karibu",
+        "karibuni"
+      ]
+    },
+    {
+      "id": "omugenyi",
+      "target": "omugenyi",
+      "base": "mgeni",
+      "altBase": [
+        "mtembeleaji",
+        "mgeni wetu"
+      ]
+    },
+    {
+      "id": "olyeko",
+      "target": "Olyeko",
+      "base": "Karibu chakula",
+      "altBase": [
+        "kula kidogo",
+        "tafadhali kula",
+        "karibu ule",
+        "karibuni chakula"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s39-bafukamira",
+      "target": "Abaana bafukamira nga babuuza abakadde.",
+      "base": "Watoto hupiga magoti wanapowasalimia wazee.",
+      "altBase": [
+        "Watoto hupiga magoti wakiwasalimia wazee.",
+        "Watoto wanapiga magoti wanapowasalimu wazee."
+      ]
+    },
+    {
+      "id": "s39-mwasuze-ssebo",
+      "target": "Mwasuze mutya, ssebo?",
+      "base": "Habari za asubuhi, bwana.",
+      "altBase": [
+        "Mmeamkaje, bwana?",
+        "Shikamoo, mzee.",
+        "Habari za asubuhi, mzee."
+      ]
+    },
+    {
+      "id": "s39-mwebale-nnyabo",
+      "target": "Mwebale nnyo, nnyabo.",
+      "base": "Asanteni sana, mama.",
+      "altBase": [
+        "Asante sana, mama.",
+        "Ahsanteni sana, mama."
+      ]
+    },
+    {
+      "id": "s39-ekitiibwa",
+      "target": "Tulina okuwa abakadde ekitiibwa.",
+      "base": "Lazima tuwape wazee heshima.",
+      "altBase": [
+        "Lazima tuwaheshimu wazee.",
+        "Tunapaswa kuwaheshimu wazee."
+      ]
+    },
+    {
+      "id": "s39-mwattu",
+      "target": "Mwattu, mpa amazzi.",
+      "base": "Tafadhali nipe maji.",
+      "altBase": [
+        "Naomba maji tafadhali.",
+        "Nipe maji, tafadhali."
+      ]
+    },
+    {
+      "id": "s39-webale-okujja",
+      "target": "Webale okujja! Tusanyuse okukulaba.",
+      "base": "Asanteni kwa kuja! Tumefurahi kuwaona.",
+      "altBase": [
+        "Asante kwa kuja! Tumefurahi kukuona.",
+        "Karibuni! Tumefurahi kuwaona."
+      ]
+    },
+    {
+      "id": "s39-omugenyi",
+      "target": "Omugenyi ye mukulu.",
+      "base": "Mgeni ndiye mkubwa.",
+      "altBase": [
+        "Mgeni ndiye wa kwanza.",
+        "Mgeni ni mfalme.",
+        "Mgeni ndiye muhimu."
+      ],
+      "notes": "Msemo: wageni huheshimiwa kuliko wote. Kama Kiswahili “Mgeni njoo, mwenyeji apone”."
+    },
+    {
+      "id": "s39-olyeko",
+      "target": "Tuula, olyeko.",
+      "base": "Keti ule chakula.",
+      "altBase": [
+        "Kaa ule chakula.",
+        "Keti, karibu chakula.",
+        "Kaa ule kidogo."
+      ]
+    },
+    {
+      "id": "s39-yingira-otuule",
+      "target": "Yingira otuule.",
+      "base": "Karibu ndani uketi.",
+      "altBase": [
+        "Ingia ukae.",
+        "Karibu ndani, keti.",
+        "Karibu ukae."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u39s1",
+      "title": "Kuwasalimia wazee",
+      "icon": "star",
+      "tip": "kneeling",
+      "lessons": [
+        {
+          "id": "u39s1l1",
+          "newWords": [
+            "okufukamira",
+            "abakadde"
+          ],
+          "sentences": [
+            "s39-bafukamira"
+          ]
+        },
+        {
+          "id": "u39s1l2",
+          "newWords": [
+            "mwasuze",
+            "mwebale"
+          ],
+          "sentences": [
+            "s39-mwasuze-ssebo",
+            "s39-mwebale-nnyabo"
+          ]
+        },
+        {
+          "id": "u39s1l3",
+          "newWords": [
+            "ekitiibwa"
+          ],
+          "sentences": [
+            "s39-ekitiibwa",
+            "s39-bafukamira"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u39s2",
+      "title": "Maneno ya adabu",
+      "icon": "heart",
+      "tip": "respect-plural",
+      "lessons": [
+        {
+          "id": "u39s2l1",
+          "newWords": [
+            "mwattu"
+          ],
+          "sentences": [
+            "s39-mwattu",
+            "s39-mwebale-nnyabo"
+          ]
+        },
+        {
+          "id": "u39s2l2",
+          "newWords": [],
+          "sentences": [
+            "s39-mwasuze-ssebo",
+            "s39-ekitiibwa",
+            "s39-mwattu"
+          ]
+        },
+        {
+          "id": "u39s2l3",
+          "newWords": [],
+          "sentences": [
+            "s39-mwebale-nnyabo"
+          ],
+          "dialogues": [
+            {
+              "speaker": "jjajja",
+              "target": "Mwana wange, wasuze otya?",
+              "base": "Mwanangu, umeamkaje?",
+              "options": [
+                "Bulungi, ssebo. Mwasuze mutya?",
+                "Nzikiriza naawe.",
+                "Yanguwa!"
+              ],
+              "answer": "Bulungi, ssebo. Mwasuze mutya?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u39s3",
+      "title": "Kuwa mgeni",
+      "icon": "home",
+      "lessons": [
+        {
+          "id": "u39s3l1",
+          "newWords": [
+            "webale-okujja"
+          ],
+          "sentences": [
+            "s39-webale-okujja",
+            "s39-yingira-otuule"
+          ]
+        },
+        {
+          "id": "u39s3l2",
+          "newWords": [
+            "omugenyi",
+            "olyeko"
+          ],
+          "sentences": [
+            "s39-omugenyi",
+            "s39-olyeko"
+          ]
+        },
+        {
+          "id": "u39s3l3",
+          "newWords": [],
+          "sentences": [
+            "s39-yingira-otuule",
+            "s39-webale-okujja"
+          ],
+          "dialogues": [
+            {
+              "speaker": "jjajja",
+              "target": "Webale okujja! Tuula, olyeko.",
+              "base": "Asanteni kwa kuja! Keti ule chakula.",
+              "options": [
+                "Mwebale nnyo, ssebo.",
+                "Omubbi! Mumukwate!",
+                "Sikkiriza."
+              ],
+              "answer": "Mwebale nnyo, ssebo."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Heshima ndiyo kiini cha adabu za Waganda. Wasalimie wazee ukiwa umepiga magoti, na zungumza na mzee mmoja kana kwamba unazungumza na wengi: **Mwasuze mutya?**",
+    "phrases": [
+      {
+        "target": "Mwasuze mutya, ssebo?",
+        "base": "Habari za asubuhi, bwana."
+      },
+      {
+        "target": "Mwebale nnyo, nnyabo.",
+        "base": "Asanteni sana, mama."
+      },
+      {
+        "target": "Mwattu, mpa amazzi.",
+        "base": "Tafadhali nipe maji."
+      },
+      {
+        "target": "Webale okujja!",
+        "base": "Asanteni kwa kuja!"
+      },
+      {
+        "target": "Yingira otuule.",
+        "base": "Karibu ndani uketi."
+      },
+      {
+        "target": "Tuula, olyeko.",
+        "base": "Keti ule chakula."
+      }
+    ],
+    "tips": [
+      {
+        "id": "kneeling",
+        "title": "Kupiga magoti kusalimia",
+        "body": [
+          "Kwa desturi wanawake na watoto **hufukamira** (hupiga magoti) wanapowasalimia wazee, wakwe au wageni muhimu, na hubaki chini hadi salamu iishe. Wanaume huweza kuinama au kuchuchumaa. Mjini ni kwa wepesi zaidi, lakini nyumbani na katika sherehe ni muhimu."
+        ]
+      },
+      {
+        "id": "respect-plural",
+        "title": "Wingi wa heshima",
+        "body": [
+          "Kwa mzee mmoja, tumia “ninyi” wa wingi (**mu-**) badala ya “wewe” (**o-** / **w-**). Ni kama Kiswahili cha pwani kinachosema **Hamjambo?** au **Mmeamkaje?** kwa mzee mmoja. Kiswahili kingine hutumia **Shikamoo** kwa kazi hiyo hiyo."
+        ],
+        "table": [
+          [
+            "Kwa rafiki",
+            "Kwa mzee",
+            "Kiswahili"
+          ],
+          [
+            "Wasuze otya?",
+            "Mwasuze mutya?",
+            "Umeamkaje? / Mmeamkaje?"
+          ],
+          [
+            "Webale",
+            "Mwebale",
+            "Asante / Asanteni"
+          ],
+          [
+            "Ogenda wa?",
+            "Mugenda wa?",
+            "Unaenda wapi? / Mnaenda wapi?"
+          ]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Mgeni kwanza",
+        "body": [
+          "**Omugenyi ye mukulu** (mgeni ndiye mkubwa): mgeni hukaribishwa kiti na kitu cha kula au kunywa, hata kwa ziara fupi. Kukataa moja kwa moja ni ukosefu wa adabu; onja kidogo na sema **Mwebale**, kama ukarimu wa **karibu chakula** wa Afrika Mashariki yote."
+        ]
+      }
+    ]
+  },
+  "stories": []
+}
