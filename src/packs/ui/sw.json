@@ -186,7 +186,11 @@
       "short": "Sakinisha",
       "cardTitle": "Pata programu",
       "cardText": "Sakinisha Learn Luganda upate masomo kwa mguso mmoja kutoka skrini yako ya mwanzo, hata bila mtandao.",
-      "notNow": "Si sasa"
+      "notNow": "Si sasa",
+      "onDeviceLabel": "Programu imesakinishwa",
+      "onDeviceShort": "Imesakinishwa",
+      "onDeviceTitle": "Tayari iko kwenye kifaa hiki",
+      "onDeviceText": "Learn Luganda imesakinishwa hapa. Ifungue kutoka skrini yako ya mwanzo au orodha ya programu ili ujifunze ndani ya programu. Ili kuisakinisha tena, iondoe kwanza, kisha urudi na uguse Sakinisha programu."
     },
     "titles": {
       "onboarding": "Anza",
