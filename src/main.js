@@ -10,6 +10,7 @@ import { heartStatus } from './state/hearts.js';
 import { settleStreak, streakStatus } from './state/streak.js';
 import { routes } from './app/routes.js';
 import { applyMotion } from './ui/motion.js';
+import { startTheme } from './ui/theme.js';
 import { preload } from './ui/sound.js';
 import { initMusic, setMusicScene, toggleMusic } from './ui/music.js';
 import { initInstall, registerServiceWorker } from './app/pwa.js';
@@ -34,6 +35,7 @@ store.subscribe(refreshBrand);
 document.addEventListener('visibilitychange', () => document.visibilityState === 'visible' && refreshBrand());
 applyMotion();
 store.subscribe(applyMotion);
+startTheme();
 
 const shell = createShell(document.querySelector('#app'));
 const router = createRouter({

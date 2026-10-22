@@ -186,8 +186,8 @@
   }
 
   .nav__link.is-active {
-    background: var(--color-vermillion-50);
-    border-color: var(--color-vermillion-100);
+    background: var(--color-primary-soft);
+    border-color: var(--color-primary-soft-border);
   }
 
   .toast-host {

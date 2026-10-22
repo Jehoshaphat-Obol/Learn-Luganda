@@ -561,12 +561,13 @@
 }
 
 .avatar--vermillion { --avatar-bg: var(--color-primary); }
-.avatar--ink { --avatar-bg: var(--color-ink-900); }
-.avatar--butter { --avatar-bg: var(--color-pastel-butter); }
-.avatar--sky { --avatar-bg: var(--color-pastel-sky); }
-.avatar--sage { --avatar-bg: var(--color-pastel-sage); }
-.avatar--lilac { --avatar-bg: var(--color-pastel-lilac); }
-.avatar--blush { --avatar-bg: var(--color-pastel-blush); }
+.avatar--ink { --avatar-bg: var(--color-block); }
+/* Avatars keep the light pastels in dark mode too, like printed stickers. */
+.avatar--butter { --avatar-bg: #f1e4b0; }
+.avatar--sky { --avatar-bg: #cfdbe9; }
+.avatar--sage { --avatar-bg: #d4e2cd; }
+.avatar--lilac { --avatar-bg: #dad5ec; }
+.avatar--blush { --avatar-bg: #efd0c9; }
 .avatar--paper { --avatar-bg: var(--color-paper-200); }
 
 /* Confetti */
@@ -652,7 +653,7 @@
 .avatar--frame-bauhaus {
   box-shadow: 0 0 0 4px var(--color-surface);
   outline: 4px solid transparent;
-  background-image: conic-gradient(var(--color-primary) 0 25%, var(--color-ink-900) 0 50%, var(--color-gold) 0 75%, var(--color-paper-400) 0);
+  background-image: conic-gradient(var(--color-primary) 0 25%, var(--color-block) 0 50%, var(--color-gold) 0 75%, var(--color-paper-400) 0);
   padding: calc(var(--avatar-size, 48px) * 0.1);
 }
 
@@ -677,7 +678,7 @@
 }
 
 .switch-row + .switch-row {
-  border-top: 1px solid var(--color-paper-200);
+  border-top: 1px solid var(--color-divider);
 }
 
 .switch-row__text {
@@ -697,7 +698,7 @@
   height: 30px;
   margin: 0;
   border-radius: var(--radius-pill);
-  background: var(--color-paper-400);
+  background: var(--color-border-strong);
   cursor: pointer;
   transition: background 150ms ease;
 }
@@ -729,7 +730,7 @@
 }
 
 .install-btn {
-  --btn-fg: var(--color-vermillion-700);
+  --btn-fg: var(--color-primary-text);
   --btn-shadow: var(--color-primary);
   border-color: var(--color-primary);
 }

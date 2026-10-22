@@ -4,7 +4,9 @@
  * pastels for highlights. Bauhaus yellow and blue stay as illustration accents.
  */
 :root {
-  /* Light-only, like promada: keep the paper look on dark-mode devices too. */
+  /* Light by default, like promada, even on dark-mode devices. Dark mode is
+     opt-in from settings (src/ui/theme.js) and overrides the semantic
+     tokens below under [data-theme='dark']. */
   color-scheme: light;
 
   /* Brand */
@@ -68,6 +70,19 @@
   --color-text-muted: var(--color-ink-700);
   --color-text-subtle: var(--color-ink-500);
   --color-border: var(--color-paper-300);
+  --color-border-strong: var(--color-paper-400);
+  --color-divider: var(--color-paper-200);
+  /* Raised "printed" cards with a hard ink outline and offset shadow. */
+  --color-surface-raised: var(--color-paper-50);
+  --color-outline: var(--color-ink-900);
+  /* Solid ink blocks (unit banners, shapes, icons) that carry white text. */
+  --color-block: var(--color-ink-900);
+  --color-block-soft: var(--color-ink-700);
+  --color-primary-soft: var(--color-vermillion-50);
+  --color-primary-soft-border: var(--color-vermillion-100);
+  /* Feedback text on page or soft feedback backgrounds. */
+  --color-success-text: var(--color-success-strong);
+  --color-error-text: var(--color-error);
 
   /* Type: a tight grotesk for headings and UI, an italic serif for captions */
   --font-display: 'Inter Tight', system-ui, sans-serif;
@@ -108,4 +123,46 @@
   --topbar-height: 60px;
   --bottomnav-height: 68px;
   --content-width: 640px;
+}
+
+/*
+ * Dark: warm ink "paper" with light paper "ink", from the same promada
+ * neutrals. Vermillion stays the brand colour; pastels deepen so light text
+ * reads on them. Illustrations keep their printed palette
+ * (src/illustrations/illustrations.css).
+ */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  --color-pastel-butter: #4a4128;
+  --color-pastel-blush: #4d3430;
+  --color-pastel-sky: #2b3a4d;
+  --color-pastel-sage: #2f3e2c;
+  --color-pastel-lilac: #3a3650;
+
+  --color-success-soft: #1c3426;
+  --color-error-soft: #3e1d22;
+  --color-success-text: #74d39a;
+  --color-error-text: #ff8f99;
+
+  --color-primary-text: var(--color-vermillion-300);
+  --color-primary-soft: #3a211b;
+  --color-primary-soft-border: #5c2c21;
+  --color-bg: #181614;
+  --color-bg-alt: #24211d;
+  --color-surface: #2a2723;
+  --color-surface-raised: #221f1c;
+  --color-surface-inverse: #36322c;
+  --color-on-inverse: var(--color-paper-50);
+  --color-text: var(--color-paper-50);
+  --color-text-muted: #cfc9be;
+  --color-text-subtle: #a19b90;
+  --color-border: #3e3a34;
+  --color-border-strong: #57524a;
+  --color-divider: #34302b;
+  --color-outline: var(--color-paper-300);
+  --color-block: #4a4640;
+  --color-block-soft: #6a655d;
+
+  --shadow-float: 0 18px 40px -18px rgb(0 0 0 / 0.7);
 }

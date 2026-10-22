@@ -19,7 +19,7 @@
   --ill-lavender: #dad5ec;
   --ill-blush: #efd0c9;
   --ill-sage: #d4e2cd;
-  --ill-sky: var(--color-pastel-sky, #cfdbe9);
+  --ill-sky: #cfdbe9;
   /* Bauhaus primaries, kept inside the drawings (never on brand marks). */
   --ill-yellow: var(--color-bauhaus-yellow, #f4c430);
   --ill-blue: var(--color-bauhaus-blue, #1d4e9e);

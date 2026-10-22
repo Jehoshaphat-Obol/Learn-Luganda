@@ -1,7 +1,8 @@
 /*
  * Settings: profile (name, character, colour), daily goal, sound, music,
  * haptics and animation preferences, then the data section (export, import, reset).
- * Every change saves and applies straight away. The theme is light only.
+ * Every change saves and applies straight away. The colour theme is light
+ * unless the learner picks dark or the device setting (src/ui/theme.js).
  */
 import '../styles/onboarding.css';
 import { store } from '../state/store.js';
@@ -23,6 +24,7 @@ import { COURSES, autoUiLanguage, changeCourse, changeUiLanguage, loadSaved } fr
 import { currentLanguage, languageLabel, t, tHtml, UI_LANGUAGES } from '../i18n/index.js';
 import { languageInfo } from '../i18n/languages.js';
 import { canSynthesize, speak, stopSpeech } from '../audio/speech.js';
+import { THEMES, setTheme, themePreference } from '../ui/theme.js';
 import { course } from '../content/course.js';
 import { courseLanguage } from '../content/names.js';
 
@@ -143,6 +145,10 @@ export function settingsView({ root, query, navigate }) {
       <section class="settings-group" id="preferences">
         <h2>${say('settings.preferences')}</h2>
         <div>
+          <label class="switch-row">
+            <span class="switch-row__text"><strong>${say('settings.theme.label')}</strong><small>${say('settings.theme.hint')}</small></span>
+            <select class="input settings-hour" data-theme-pick>${THEMES.map((id) => `<option value="${id}"${id === themePreference() ? ' selected' : ''}>${say(`settings.theme.${id}`)}</option>`).join('')}</select>
+          </label>
           ${toggle('sound', t('settings.sound.label'), t('settings.sound.hint'), settings.sound !== false)}
           <label class="switch-row">
             <span class="switch-row__text"><strong>${say('settings.sound.style')}</strong><small>${say('settings.sound.styleHint')}</small></span>
@@ -226,6 +232,10 @@ export function settingsView({ root, query, navigate }) {
       const to = COURSES.find((p) => p.id === e.target.value)?.to;
       await changeCourse(e.target.value);
       toast(t('settings.languages.switched', { target: languageLabel(to) }));
+      return;
+    }
+    if (e.target.matches('[data-theme-pick]')) {
+      setTheme(e.target.value);
       return;
     }
     if (e.target.matches('[data-pack]')) {

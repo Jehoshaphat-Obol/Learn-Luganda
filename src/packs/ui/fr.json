@@ -112,6 +112,13 @@
         "reduced": "Ton appareil demande de réduire les animations, donc les vibrations restent désactivées.",
         "hint": "Une petite vibration pour les touches, les réponses et les récompenses."
       },
+      "theme": {
+        "label": "Apparence",
+        "hint": "Papier clair, encre sombre, ou comme ton appareil.",
+        "light": "Clair",
+        "dark": "Sombre",
+        "system": "Comme l’appareil"
+      },
       "motion": {
         "label": "Animations",
         "reduced": "Ton appareil demande de réduire les animations, donc elles restent minimales.",
