@@ -1,0 +1,108 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u29",
+  "words": {
+    "engoma": { "text": "tambour", "alts": ["tambours", "le tambour", "danse", "percussions"] },
+    "okukuba": { "text": "frapper", "alts": ["jouer", "battre", "taper"] },
+    "endingidi": { "text": "vièle tubulaire", "alts": ["vièle", "violon", "l’endingidi", "endingidi"] },
+    "amadinda": { "text": "xylophone", "alts": ["le xylophone", "amadinda"] },
+    "ennanga": { "text": "harpe", "alts": ["la harpe", "harpe arquée"] },
+    "oluyimba": { "text": "chanson", "alts": ["une chanson", "la chanson", "chant"] },
+    "omuyimbi": { "text": "chanteur", "alts": ["chanteuse", "musicien", "musicienne", "le chanteur"] },
+    "amazina": { "text": "danse", "alts": ["danses", "la danse"] },
+    "bakisimba": { "text": "Bakisimba", "alts": ["danse bakisimba", "danse royale"] },
+    "abayimba": { "text": "qui chantent", "alts": ["en train de chanter"] },
+    "abazina": { "text": "qui dansent", "alts": ["en train de danser"] },
+    "akuba": { "text": "qui joue", "alts": ["joue", "qui bat", "qui frappe"] },
+    "kinyuma": { "text": "c’est amusant", "alts": ["c’est sympa", "amusant", "c’est génial", "c’est chouette"] },
+    "mazoezi": { "text": "entraînement", "alts": ["répétition", "exercice", "exercices"] },
+    "mchezaji": { "text": "joueur", "alts": ["joueuse", "danseur", "danseuse"] },
+    "mpiga-ngoma": { "text": "percussionniste", "alts": ["joueur de tambour", "le batteur", "batteur"] },
+    "bendi": { "text": "groupe", "alts": ["orchestre", "le groupe"] },
+    "taarab": { "text": "taarab", "alts": ["musique taarab"] },
+    "gitaa": { "text": "guitare", "alts": ["la guitare"] },
+    "sauti": { "text": "voix", "alts": ["son", "bruit", "la voix"] },
+    "tamasha": { "text": "concert", "alts": ["spectacle", "festival", "le concert"] },
+    "kusikiliza": { "text": "écouter" }
+  },
+  "sentences": {
+    "s29-kuba-engoma": { "text": "Joue du tambour !", "alts": ["Frappe le tambour !", "Jouez du tambour !"] },
+    "s29-njagala-okukuba-engoma": { "text": "Je veux jouer du tambour.", "alts": ["J’aime jouer du tambour."] },
+    "s29-endingidi": { "text": "La vièle et le xylophone.", "alts": ["La vièle tubulaire et le xylophone."] },
+    "s29-ennanga": { "text": "La harpe est très belle.", "alts": ["La harpe sonne très bien."] },
+    "s29-oluyimba-lwe": { "text": "Cette chanson est bonne.", "alts": ["Cette chanson est belle.", "Cette chanson est bien."] },
+    "s29-omuyimbi": { "text": "Le chanteur chante bien.", "alts": ["La chanteuse chante bien."] },
+    "s29-amazina-kinyuma": { "text": "Cette danse est amusante !", "alts": ["Ces danses sont amusantes !", "Danser, c’est amusant !"] },
+    "s29-bakisimba": { "text": "Nous dansons le Bakisimba.", "alts": ["On danse le Bakisimba."] },
+    "s29-abantu-abayimba": { "text": "Les gens qui chantent sont nombreux.", "alts": ["Beaucoup de gens chantent.", "Il y a beaucoup de gens qui chantent."] },
+    "s29-abaana-abazina": { "text": "Les enfants qui dansent sont contents.", "alts": ["Les enfants qui dansent sont heureux."] },
+    "s29-omusajja-akuba": {
+      "text": "L’homme qui joue du tambour, c’est papa.",
+      "alts": ["L’homme qui joue du tambour est mon père.", "L’homme qui joue du tambour est papa."]
+    },
+    "s29-kinyuma": { "text": "C’est super amusant !", "alts": ["C’est très amusant !", "C’est vraiment génial !"] },
+    "s-wanacheza-ngoma": { "text": "Ils dansent.", "alts": ["Elles dansent.", "Ils jouent du tambour."] },
+    "s-mazoezi-kila-siku": { "text": "J’ai entraînement tous les jours.", "alts": ["Je m’entraîne tous les jours.", "J’ai répétition tous les jours."] },
+    "s-mwimbaji": { "text": "La chanteuse a une belle voix.", "alts": ["Le chanteur a une belle voix.", "La chanteuse a une jolie voix."] },
+    "s-mchezaji": { "text": "{@amara} est une danseuse douée.", "alts": ["{@amara} est une bonne danseuse.", "{@amara} est un danseur doué."] },
+    "s-mpiga-ngoma": { "text": "Le percussionniste, c’est mon grand-père.", "alts": ["Le percussionniste est mon grand-père."] },
+    "s-bendi": { "text": "Le groupe jouera de la musique ce soir.", "alts": ["Le groupe va jouer ce soir."] },
+    "s-taarab": { "text": "Mamie adore le taarab.", "alts": ["Mamie aime le taarab."] },
+    "s-kupiga-gitaa": { "text": "J’apprends à jouer de la guitare." },
+    "s-tamasha": { "text": "Il y a un concert samedi." },
+    "s-kusikiliza": { "text": "J’aime écouter de la musique.", "alts": ["J’adore écouter de la musique."] },
+    "s-sauti": { "text": "Le son est très fort !", "alts": ["C’est très fort !"] }
+  },
+  "phrases": [
+    "Joue du tambour !",
+    "Cette chanson est bonne.",
+    "Le chanteur chante bien.",
+    "Nous dansons le Bakisimba.",
+    "Les enfants qui dansent sont contents.",
+    "C’est super amusant !"
+  ],
+  "dialogues": {
+    "u29s3l3": [{ "line": "Qui est l’homme qui joue du tambour ?", "options": ["C’est mon père !", "Le tambour est grand.", "Merci d’être venus."] }]
+  },
+  "stories": {
+    "drum-lesson": {
+      "title": "La leçon de tambour",
+      "summary": "{@amara} apprend à jouer du tambour pour le concert de l’école.",
+      "lines": [
+        "Monsieur, je veux jouer du tambour au concert de l’école.",
+        "Bien ! Tiens ce tambour.",
+        "Le grand ou le petit ?",
+        "Le petit. Écoute : boum, boum, ka-boum.",
+        "Boum, boum, ka-boum ! C’est super amusant !",
+        "Les enfants qui dansent danseront le Bakisimba.",
+        "Et qui va chanter ?",
+        "{@nakato} ! C’est une bonne chanteuse.",
+        "Je suis tellement contente. Merci, monsieur !"
+      ],
+      "questions": [
+        { "question": "Quel tambour {@amara} joue-t-elle ?", "options": ["Le grand", "Le petit", "Aucun tambour"] },
+        { "question": "Que vont danser les danseurs ?", "options": ["Le Bakisimba", "Le foot", "L’omweso"] },
+        {
+          "question": "Comment dit-on « les enfants qui dansent » ?",
+          "options": ["les enfants qui dansent", "les enfants dansent", "les enfants jouent"]
+        }
+      ]
+    },
+    "sw-concert-night": {
+      "title": "Soirée concert",
+      "summary": "Neema et Juma vont à un concert à Nairobi.",
+      "lines": [
+        "Neema, tu as entendu ? Il y a un grand concert ce soir.",
+        "Oui ! Ma chanteuse préférée va chanter.",
+        "Et le groupe va aussi jouer du taarab.",
+        "Allons danser !",
+        "C’est tellement fort… mais c’est vraiment génial !"
+      ],
+      "questions": [
+        { "question": "Qui va chanter ?", "options": ["La chanteuse préférée de Neema", "Juma", "Bibi"] },
+        { "question": "Que va jouer le groupe aussi ?", "options": ["Du taarab", "Du rock", "Rien"] },
+        { "question": "Comment Neema dit-elle « chanteuse » ?", "options": ["chanteuse", "joueuse", "groupe"] }
+      ]
+    }
+  }
+}

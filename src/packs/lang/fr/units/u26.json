@@ -1,0 +1,76 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u26",
+  "words": {
+    "kabaka": { "text": "roi", "alts": ["le roi", "le kabaka", "kabaka"] },
+    "nnaabagereka": { "text": "reine", "alts": ["la reine"] },
+    "ssaabasajja": { "text": "Sa Majesté", "alts": ["chef des hommes", "le roi"] },
+    "obwakabaka": { "text": "royaume", "alts": ["le royaume", "monarchie"] },
+    "afuga": { "text": "règne", "alts": ["il règne", "gouverne", "il gouverne"] },
+    "awangaale": { "text": "vive", "alts": ["longue vie à", "qu’il vive longtemps"] },
+    "katikkiro": { "text": "Premier ministre", "alts": ["le Premier ministre", "ministre en chef", "katikkiro"] },
+    "lukiiko": { "text": "parlement", "alts": ["le parlement", "conseil", "assemblée", "lukiiko"] },
+    "olubiri": { "text": "palais", "alts": ["le palais", "enceinte royale"] },
+    "bulange": { "text": "Bulange", "alts": ["bâtiment du parlement"] },
+    "amasiro": { "text": "tombeaux royaux", "alts": ["tombeaux", "les tombeaux royaux"] },
+    "essaza": { "text": "comté", "alts": ["district", "le comté"] },
+    "amasaza": { "text": "comtés", "alts": ["districts", "les comtés"] },
+    "edda-ennyo": { "text": "il y a très longtemps", "alts": ["il y a bien longtemps", "jadis"] },
+    "abunuwasi": { "text": "Abunuwasi", "alts": ["Abu Nuwas"] }
+  },
+  "sentences": {
+    "s26-kabaka-afuga": { "text": "Le Kabaka règne sur le Buganda.", "alts": ["Le roi règne sur le Buganda.", "Le Kabaka gouverne le Buganda."] },
+    "s26-kabaka-awangaale": { "text": "Vive le Kabaka !", "alts": ["Vive le roi !", "Longue vie au Kabaka !"] },
+    "s26-nnaabagereka": { "text": "La reine vient aujourd’hui.", "alts": ["La reine arrive aujourd’hui."] },
+    "s26-ssaabasajja": { "text": "Sa Majesté le Kabaka est arrivé.", "alts": ["Le roi est arrivé.", "Sa Majesté est arrivée."] },
+    "s26-obwakabaka-bwa-buganda": { "text": "Le royaume du Buganda est très ancien.", "alts": ["Le royaume du Buganda est très vieux."] },
+    "s26-katikkiro": {
+      "text": "Le Premier ministre parle au parlement.",
+      "alts": ["Le Katikkiro parle au Lukiiko.", "Le Premier ministre parle devant le parlement."]
+    },
+    "s26-olubiri-e-mengo": { "text": "Le palais est à Mengo." },
+    "s26-bulange": { "text": "Le parlement siège au Bulange.", "alts": ["Le Lukiiko se réunit au Bulange.", "Le parlement se réunit au Bulange."] },
+    "s26-amasiro-e-kasubi": { "text": "Les tombeaux royaux de Kasubi.", "alts": ["Les tombeaux de Kasubi."] },
+    "s26-amasaza": { "text": "Le Buganda a dix-huit comtés.", "alts": ["Le Buganda compte dix-huit comtés.", "Le Buganda a 18 comtés."] },
+    "s26-essaza-lyange": { "text": "Mon comté, c’est Kyaddondo.", "alts": ["Mon comté est Kyaddondo."] },
+    "s26-edda-ennyo": {
+      "text": "Il y a très longtemps, Kintu fut le premier Kabaka.",
+      "alts": ["Il y a très longtemps, Kintu était le premier Kabaka.", "Il y a bien longtemps, Kintu a été le premier roi."]
+    },
+    "s-abunuwasi": { "text": "Abunuwasi était très malin.", "alts": ["Abunuwasi était très intelligent.", "Abunuwasi était très rusé."] },
+    "s-mfalme": { "text": "Le roi a appelé Abunuwasi.", "alts": ["Le roi a convoqué Abunuwasi.", "Le roi fit venir Abunuwasi."] }
+  },
+  "phrases": [
+    "Vive le Kabaka !",
+    "Le Kabaka règne sur le Buganda.",
+    "Le Premier ministre parle au parlement.",
+    "Le palais est à Mengo.",
+    "Les tombeaux royaux de Kasubi.",
+    "Le Buganda a dix-huit comtés."
+  ],
+  "dialogues": { "u26s3l3": [{ "line": "Vive le Kabaka !", "options": ["Vive le roi !", "Je ne t’entends pas.", "Je n’ai plus faim."] }] },
+  "stories": {
+    "kasubi-visit": {
+      "title": "Une visite à Kasubi",
+      "summary": "{@mukasa} montre les tombeaux royaux à {@emma} et lui parle du royaume.",
+      "lines": [
+        "{@emma}, voici les tombeaux royaux de Kasubi.",
+        "La maison est très grande ! Qui est enterré ici ?",
+        "Quatre Kabakas.",
+        "Et où est le Kabaka d’aujourd’hui ?",
+        "Il vit au palais de Mengo.",
+        "Où siège le parlement ?",
+        "Au Bulange. C’est là que parle le Premier ministre.",
+        "Qui était le premier Kabaka ?",
+        "Kintu. Il y a très longtemps !",
+        "Vive le Kabaka !",
+        "Longue vie à lui !"
+      ],
+      "questions": [
+        { "question": "Combien de Kabakas sont enterrés à Kasubi ?", "options": ["Deux", "Quatre", "Dix-huit"] },
+        { "question": "Où se réunit le Lukiiko ?", "options": ["Au Bulange", "À Kasubi", "Au marché"] },
+        { "question": "Que répond-on à « Kabaka awangaale ! » ?", "options": ["Longue vie à lui !", "Au revoir !", "Félicitations !"] }
+      ]
+    }
+  }
+}
