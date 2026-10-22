@@ -32,7 +32,7 @@ describe('language switcher', () => {
   it('says "Language" in every language while on Automatic', () => {
     document.body.innerHTML = languageSwitcher();
     const items = [...document.querySelectorAll('[data-lang-switch] .cycle__item')];
-    expect(items.map((i) => i.textContent)).toEqual(['Language', 'Olulimi', 'Lugha']);
+    expect(items.map((i) => i.textContent)).toEqual(['Language', 'Langue', 'Olulimi', 'Lugha']);
     expect(items.filter((i) => !i.hasAttribute('aria-hidden'))).toHaveLength(1);
     stop();
   });

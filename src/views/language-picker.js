@@ -15,7 +15,7 @@
  * learner types), and each language shows a small flag beside its name.
  */
 import regions from '../packs/regions.json';
-import { detectUiLanguage, languageLabel, t, UI_LANGUAGES } from '../i18n/index.js';
+import { detectUiLanguage, languageLabel, languageTitle, t, UI_LANGUAGES } from '../i18n/index.js';
 import { LANGUAGES, languageInfo } from '../i18n/languages.js';
 import { baseLanguages, coursesFrom, coursesTo, deviceTimeZone, likelyLanguages, suggestLanguage } from '../i18n/catalog.js';
 import { COURSES, changeCourse, changeUiLanguage } from '../app/languages.js';
@@ -214,14 +214,14 @@ export function languageScreen(answers) {
       <fieldset class="onb__fieldset">
         <legend data-legend="speak">${legend('speak', query)}</legend>
         <div class="onb__options onb__options--grid" role="radiogroup" aria-label="${escapeHtml(t('picker.pick.speak'))}">
-          ${flow.bases.map((code) => choice(`data-pick="speak" data-value="${code}"`, escapeHtml(nativeOf(code)), nativeOf(code) === nameOf(code) ? '' : escapeHtml(nameOf(code)), code === flow.speak, { lang: code, search: true })).join('')}
+          ${flow.bases.map((code) => choice(`data-pick="speak" data-value="${code}"`, escapeHtml(nativeOf(code)), nativeOf(code) === languageTitle(code) ? '' : escapeHtml(languageTitle(code)), code === flow.speak, { lang: code, search: true })).join('')}
         </div>
         ${noMatches(!anyMatch(flow.bases))}
       </fieldset>
       <fieldset class="onb__fieldset">
         <legend data-legend="learn">${legend('learn', query)}</legend>
         <div class="onb__options" role="radiogroup" aria-label="${escapeHtml(t('picker.pick.learn'))}">
-          ${flow.options.map((p) => courseChoice(p, flow, escapeHtml(nameOf(p.to)), p.to, true)).join('')}
+          ${flow.options.map((p) => courseChoice(p, flow, escapeHtml(languageTitle(p.to)), p.to, true)).join('')}
         </div>
         ${noMatches(!anyMatch(flow.options.map((p) => p.to)))}
       </fieldset>`,

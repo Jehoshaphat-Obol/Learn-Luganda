@@ -16,7 +16,7 @@ afterEach(async () => {
 describe('labels in every language', () => {
   it('lists every pack, the current language first', async () => {
     await setLanguage('sw');
-    expect(wordings('landing.cta.start').map(([code]) => code)).toEqual(['sw', 'en', 'lg']);
+    expect(wordings('landing.cta.start').map(([code]) => code)).toEqual(['sw', 'en', 'fr', 'lg']);
     expect(wordings('landing.cta.start')[0][1]).toBe('Anza sasa');
   });
 
@@ -26,10 +26,10 @@ describe('labels in every language', () => {
     expect(on()).toEqual(['en', 'en']);
     expect(document.querySelectorAll('.cycle__item:not([aria-hidden])')).toHaveLength(2);
     showWording(1);
-    expect(on()).toEqual(['lg', 'lg']);
+    expect(on()).toEqual(['fr', 'fr']);
     expect(document.querySelector('input').placeholder).toBe(wordings('picker.search.label')[1][1]);
     expect(document.querySelector('input').getAttribute('aria-label')).toBe('Search languages');
-    showWording(3);
+    showWording(4);
     expect(on()).toEqual(['en', 'en']);
   });
 

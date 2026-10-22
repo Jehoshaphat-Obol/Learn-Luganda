@@ -223,3 +223,21 @@ test.describe('with a Swahili browser', () => {
     await expect(page.getByText(/Habari yako|Nzuri|Asante|bwana|mama|Oli otya|Gyendi|Weebale/).first()).toBeVisible();
   });
 });
+
+test.describe('with a French browser', () => {
+  test.use({ locale: 'fr-CD' });
+
+  test('the landing page is in French', async ({ page }) => {
+    await page.goto('./');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'fr');
+    await expect(page.getByRole('link', { name: 'Commencer' }).first()).toBeVisible();
+  });
+
+  test('French can be picked for the app, and the path headings follow', async ({ page }) => {
+    await openWith(page, savedState({ settings: { course: 'en-lg' } }), '#/settings');
+    await page.locator('[data-ui-lang]').selectOption('fr');
+    await expect(page.getByRole('heading', { name: 'Langues', exact: true })).toBeVisible();
+    await page.goto('./#/learn');
+    await expect(page.getByText('Les bases').first()).toBeVisible();
+  });
+});

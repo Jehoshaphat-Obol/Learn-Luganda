@@ -50,8 +50,15 @@ describe('course labels', () => {
       expect(course.words['oli-otya'].base).toBe('How are you?');
     });
 
-    it('keeps the course’s own text when there are no labels for the language', async () => {
+    it('has French headings for every course', async () => {
+      await loadCourse('sw-en', 'fr');
+      expect(course.units[0].title).toBe('Salutations');
       await loadCourse('en-lg', 'fr');
+      expect(course.sections[0].title).toBe('Les bases');
+    });
+
+    it('keeps the course’s own text when there are no labels for the language', async () => {
+      await loadCourse('en-lg', 'zz');
       expect(course.units[0].title).toBe('Greetings');
     });
   });

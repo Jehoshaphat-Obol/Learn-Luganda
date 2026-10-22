@@ -1,16 +1,33 @@
 import { describe, expect, it, vi } from 'vitest';
 import { deepFreeze } from '../src/i18n/freeze.js';
 import { detectLanguage, flatten, format, lookup, placeholders } from '../src/i18n/format.js';
-import { DEFAULT_LANGUAGE, UI_LANGUAGES, currentLanguage, detectUiLanguage, languageLabel, onLanguageChange, setLanguage, t, tList, useUiPack } from '../src/i18n/index.js';
+import { DEFAULT_LANGUAGE, UI_LANGUAGES, currentLanguage, detectUiLanguage, languageLabel, languageTitle, onLanguageChange, setLanguage, t, tList, useUiPack } from '../src/i18n/index.js';
 import { LANGUAGES, languageInfo } from '../src/i18n/languages.js';
 import { LIST_GROUPS, validateUiPack } from '../src/i18n/validate.js';
 import en from '../src/packs/ui/en.json';
+import fr from '../src/packs/ui/fr.json';
 import lg from '../src/packs/ui/lg.json';
 
 describe('formatting', () => {
   it('fills placeholders and leaves unknown ones visible', () => {
     expect(format('Hello, {name}!', { name: 'Amara' })).toBe('Hello, Amara!');
     expect(format('Hello, {name}!')).toBe('Hello, {name}!');
+  });
+
+  it('elides French short words before a vowel the value brings', () => {
+    expect(format('Tu connais le {language} ?', { language: 'anglais' }, 'fr')).toBe('Tu connais l’anglais ?');
+    expect(format('Combien de {language} ?', { language: 'anglais' }, 'fr')).toBe('Combien d’anglais ?');
+    expect(format('Le {language}', { language: 'amharique' }, 'fr')).toBe('L’amharique');
+    expect(format('le {language}', { language: 'luganda' }, 'fr')).toBe('le luganda');
+    expect(format('le {language}', { language: 'haoussa' }, 'fr')).toBe('le haoussa');
+    expect(format('ta {x}', { x: 'amie' }, 'fr')).toBe('ta amie');
+    expect(format('le {language}', { language: 'anglais' })).toBe('le anglais');
+  });
+
+  it('starts a string that opens with a placeholder with a capital', () => {
+    expect(format('{target}, enseigné en {base}', { target: 'luganda', base: 'anglais' }, 'fr')).toBe('Luganda, enseigné en anglais');
+    expect(format('{count} days', { count: 2 })).toBe('2 days');
+    expect(format('Learn {x}', { x: 'iPhone' })).toBe('Learn iPhone');
   });
 
   it('picks plural forms and formats numbers for the locale', () => {
@@ -152,6 +169,20 @@ describe('UI pack validation', () => {
     expect(languageLabel('en')).toBe('Olungereza');
     expect(languageLabel('zz')).toBe('zz');
     expect(document.documentElement.lang).toBe('lg');
+    await setLanguage('en');
+  });
+
+  it('has a complete French pack, with language names in lower case and capitals when they stand alone', async () => {
+    const { errors, missing } = validateUiPack(fr, en, { code: 'fr', languages: LANGUAGES });
+    expect(errors).toEqual([]);
+    expect(missing).toEqual([]);
+    expect(detectUiLanguage(['fr-CD', 'en'])).toBe('fr');
+    expect(await setLanguage('fr')).toBe('fr');
+    expect(t('nav.learn')).toBe('Apprendre');
+    expect(languageLabel('en')).toBe('anglais');
+    expect(languageTitle('en')).toBe('Anglais');
+    expect(t('picker.guess.both', { language: languageLabel('en') })).toMatch(/^Coucou\u00a0! J’ai l’impression que tu connais l’anglais\./);
+    expect(t('picker.course', { target: languageLabel('lg'), base: languageLabel('fr') })).toBe('Luganda, enseigné en français');
     await setLanguage('en');
   });
 });
