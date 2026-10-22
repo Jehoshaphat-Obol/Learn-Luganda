@@ -4,7 +4,7 @@
  */
 import { store } from '../state/store.js';
 import { switchCourse, syncCourse } from '../state/courses.js';
-import { detectUiLanguage, setLanguage } from '../i18n/index.js';
+import { detectUiLanguage, setLanguage, UI_LANGUAGES } from '../i18n/index.js';
 import { COURSE_IDS, loadCourse } from '../content/load.js';
 import { pairsOf } from '../i18n/catalog.js';
 
@@ -12,6 +12,18 @@ let redraw = () => {};
 
 /** Every course the app ships, as `{ id, from, to }`. */
 export const COURSES = Object.freeze(pairsOf(COURSE_IDS));
+
+/**
+ * The interface language "Automatic" stands for. Once the learner has a
+ * course, that's the language the course is taught in (when there's a pack
+ * for it), so the menus match the lessons; before that, the browser's.
+ */
+export function autoUiLanguage(state = store.get()) {
+  const from = state.profile ? COURSES.find((p) => p.id === state.settings.course)?.from : null;
+  return UI_LANGUAGES.includes(from) ? from : detectUiLanguage();
+}
+
+const uiLanguage = (state = store.get()) => state.settings.uiLang ?? autoUiLanguage(state);
 
 /** Loads the saved (or detected) language and course; call once before the first render. */
 export async function startLanguages(onChange) {
@@ -24,18 +36,18 @@ export async function startLanguages(onChange) {
  * import) and brings that course's progress up to the pack's version.
  */
 export async function loadSaved() {
-  const { uiLang, course } = store.get().settings;
-  const [, loaded] = await Promise.all([setLanguage(uiLang ?? detectUiLanguage()), loadCourse(course)]);
+  const { course } = store.get().settings;
+  const [, loaded] = await Promise.all([setLanguage(uiLanguage()), loadCourse(course)]);
   // A saved course that's no longer shipped: park its progress, don't mix it in.
   store.update((s) => syncCourse(loaded.id === course ? s : switchCourse(s, loaded.id), loaded));
 }
 
-/** Changes the interface language (`null` goes back to the browser's). */
+/** Changes the interface language (`null` goes back to automatic). */
 export async function changeUiLanguage(code) {
   store.update((s) => {
     s.settings.uiLang = code;
   });
-  await setLanguage(code ?? detectUiLanguage());
+  await setLanguage(uiLanguage());
   redraw();
 }
 
@@ -44,5 +56,6 @@ export async function changeCourse(id) {
   if (store.get().settings.course === id) return;
   const loaded = await loadCourse(id);
   store.update((s) => syncCourse(switchCourse(s, loaded.id), loaded));
+  await setLanguage(uiLanguage());
   redraw();
 }

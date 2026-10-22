@@ -168,3 +168,15 @@ for (const width of [360, 412]) {
     expect(await page.evaluate(() => document.documentElement.scrollWidth)).toBeLessThanOrEqual(width);
   });
 }
+
+test('on a phone, the stuck unit banner stays a slim bar under the top bar', async ({ page }) => {
+  await page.setViewportSize({ width: 412, height: 915 });
+  await openWith(page, savedState({ settings: { course: 'en-sw' } }), '#/learn');
+  const banner = page.locator('.unit__banner').first();
+  await expect(banner).toBeVisible();
+  await page.evaluate(() => window.scrollBy(0, document.querySelector('.unit__banner').getBoundingClientRect().top + 400));
+  const box = await banner.boundingBox();
+  const bar = await page.locator('.topbar').boundingBox();
+  expect(box.y).toBeLessThan(bar.y + bar.height + 16);
+  expect(box.height).toBeLessThan(915 * 0.15);
+});

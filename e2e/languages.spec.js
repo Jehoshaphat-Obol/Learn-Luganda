@@ -151,13 +151,27 @@ test('old saved progress follows the course pack, and ids it lacks are archived'
 test.describe('with a Swahili browser', () => {
   test.use({ locale: 'sw-KE' });
 
-  test('the interface is in Swahili, and English is one tap away', async ({ page }) => {
+  test('the landing page is in Swahili', async ({ page }) => {
     await page.goto('./');
     await expect(page.locator('html')).toHaveAttribute('lang', 'sw');
     await expect(page.getByRole('link', { name: 'Anza sasa' }).first()).toBeVisible();
-    await openWith(page, savedState(), '#/settings');
+  });
+
+  test('a course taught in English shows the app in English, and Swahili is one tap away', async ({ page }) => {
+    await openWith(page, savedState({ settings: { course: 'en-sw' } }), '#/learn');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+    await expect(page.getByText('Unit 1', { exact: true })).toBeVisible();
+    await page.goto('./#/settings');
+    await expect(page.locator('[data-ui-lang] option[value="auto"]')).toHaveText('Automatic (English)');
+    await page.locator('[data-ui-lang]').selectOption('sw');
     await expect(page.getByRole('heading', { name: 'Lugha', exact: true })).toBeVisible();
-    await page.locator('[data-ui-lang]').selectOption('en');
-    await expect(page.getByRole('heading', { name: 'Languages' })).toBeVisible();
+    expect((await readState(page)).settings.uiLang).toBe('sw');
+  });
+
+  test('on Automatic, switching to a course taught in Luganda switches the app too', async ({ page }) => {
+    await openWith(page, savedState({ settings: { course: 'en-lg' } }), '#/settings');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+    await page.locator('[data-course]').selectOption('lg-en');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'lg');
   });
 });

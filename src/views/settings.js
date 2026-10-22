@@ -18,8 +18,8 @@ import { adBreakNow, adBreakTime, adConsent, adsConfigured, changeAdConsent, dur
 import { endAdBreak } from '../ads/breaks.js';
 import { POLICY } from '../ads/policy.js';
 import { siteLinks } from '../app/site.js';
-import { COURSES, changeCourse, changeUiLanguage, loadSaved } from '../app/languages.js';
-import { currentLanguage, detectUiLanguage, languageLabel, t, tHtml, UI_LANGUAGES } from '../i18n/index.js';
+import { COURSES, autoUiLanguage, changeCourse, changeUiLanguage, loadSaved } from '../app/languages.js';
+import { currentLanguage, languageLabel, t, tHtml, UI_LANGUAGES } from '../i18n/index.js';
 import { languageInfo } from '../i18n/languages.js';
 import { canSynthesize, speak, stopSpeech } from '../audio/speech.js';
 import { course } from '../content/course.js';
@@ -100,7 +100,7 @@ function languagesSection(settings) {
   const option = (value, label, selected) => `<option value="${value}"${selected ? ' selected' : ''}>${escapeHtml(label)}</option>`;
   const name = (code) => languageInfo(code).nativeName;
   const ui = [
-    option('auto', t('settings.languages.automatic', { language: name(detectUiLanguage()) }), !settings.uiLang),
+    option('auto', t('settings.languages.automatic', { language: name(autoUiLanguage()) }), !settings.uiLang),
     ...UI_LANGUAGES.map((code) => option(code, name(code), settings.uiLang === code)),
   ];
   const courses = COURSES.map((p) =>
