@@ -10,6 +10,11 @@
       "title": "Everyday life",
       "level": "Elementary",
       "description": "Describe things, get dressed, help at home, the weather, animals, work, school and travel."
+    },
+    "s3": {
+      "title": "Conversations",
+      "level": "Pre-intermediate",
+      "description": "Say no, ask questions, talk about the past and the future, feelings, hobbies, phone calls and cooking."
     }
   },
   "units": {
@@ -76,6 +81,38 @@
     "u16": {
       "title": "Travel",
       "description": "Buy a ticket, catch a train or a plane, and say what you will do."
+    },
+    "u17": {
+      "title": "Saying no",
+      "description": "Say what you don’t want or like, what isn’t true, and what you didn’t or won’t do."
+    },
+    "u18": {
+      "title": "Asking questions",
+      "description": "Ask what, why, how and how many, ask someone’s age, and ask about words."
+    },
+    "u19": {
+      "title": "What I did",
+      "description": "Say what you have already done, what you did yesterday and what happened long ago."
+    },
+    "u20": {
+      "title": "Plans",
+      "description": "Talk about tomorrow, the weekend and your dreams, and say what you would like."
+    },
+    "u21": {
+      "title": "Feelings",
+      "description": "Say how you feel, share good and bad news, and show you care."
+    },
+    "u22": {
+      "title": "Hobbies and sport",
+      "description": "Talk about free time, football, singing, dancing and games."
+    },
+    "u23": {
+      "title": "On the phone",
+      "description": "Make calls, send messages, sort out airtime and arrange to meet."
+    },
+    "u24": {
+      "title": "Cooking",
+      "description": "Cook in a Swahili kitchen: cut, fry, boil and season a pot of pilau, then share the meal."
     }
   },
   "skills": {
@@ -126,6 +163,30 @@
     "u15s3": "Questions and homework",
     "u16s1": "Tickets and stations",
     "u16s2": "Will travel",
-    "u16s3": "On the road"
+    "u16s3": "On the road",
+    "u17s1": "I don’t want",
+    "u17s2": "Not true, not yet",
+    "u17s3": "Didn’t and won’t",
+    "u18s1": "Who and what",
+    "u18s2": "How and how many",
+    "u18s3": "Why, and words",
+    "u19s1": "Today so far",
+    "u19s2": "Yesterday",
+    "u19s3": "Long ago",
+    "u20s1": "Tomorrow",
+    "u20s2": "This weekend",
+    "u20s3": "Someday",
+    "u21s1": "Happy and sad",
+    "u21s2": "Angry and afraid",
+    "u21s3": "Showing care",
+    "u22s1": "Free time",
+    "u22s2": "Football",
+    "u22s3": "Music and games",
+    "u23s1": "Calling",
+    "u23s2": "Messages",
+    "u23s3": "Meeting up",
+    "u24s1": "In the kitchen",
+    "u24s2": "Making pilau",
+    "u24s3": "Sharing a meal"
   }
 }
