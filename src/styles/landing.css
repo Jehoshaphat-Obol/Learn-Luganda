@@ -156,7 +156,7 @@
   right: -40px;
   top: 20px;
   border-radius: 50%;
-  background: var(--color-paper-400);
+  background: var(--color-border-strong);
   animation: float 9s ease-in-out infinite;
 }
 
@@ -165,7 +165,7 @@
   height: 54px;
   left: 46%;
   bottom: 24px;
-  background: var(--color-ink-900);
+  background: var(--color-block);
   animation: float 11s ease-in-out infinite reverse;
 }
 
@@ -328,7 +328,7 @@
 }
 
 .how__icon--3 {
-  background: var(--color-ink-700);
+  background: var(--color-block-soft);
   border-radius: 0 50% 0 50%;
 }
 
@@ -366,8 +366,8 @@
   font-weight: var(--weight-medium);
 }
 
-.try__feedback--good { color: var(--color-success-strong); }
-.try__feedback--bad { color: var(--color-error); }
+.try__feedback--good { color: var(--color-success-text); }
+.try__feedback--bad { color: var(--color-error-text); }
 
 .try__art {
   width: min(260px, 70vw);

@@ -142,6 +142,13 @@
         "reduced": "Kifaa chako kinaomba mwendo mdogo, kwa hiyo mtetemo unabaki umezimwa.",
         "hint": "Mtetemo mdogo kwa kugusa, majibu na zawadi."
       },
+      "theme": {
+        "label": "Mwonekano",
+        "hint": "Rangi za programu: angavu, giza, au kama kifaa chako.",
+        "light": "Angavu",
+        "dark": "Giza",
+        "system": "Kama kifaa"
+      },
       "motion": {
         "label": "Uhuishaji",
         "reduced": "Kifaa chako kinaomba mwendo mdogo, kwa hiyo uhuishaji unabaki kidogo.",

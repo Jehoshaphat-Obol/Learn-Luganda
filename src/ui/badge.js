@@ -4,7 +4,7 @@
  */
 import { icon } from './icons.js';
 
-const TIER_COLORS = ['var(--color-paper-300)', 'var(--color-vermillion-300)', 'var(--color-primary)', 'var(--color-gold)', 'var(--color-ink-900)', 'var(--color-bauhaus-blue)'];
+const TIER_COLORS = ['var(--color-paper-300)', 'var(--color-vermillion-300)', 'var(--color-primary)', 'var(--color-gold)', 'var(--color-block)', 'var(--color-bauhaus-blue)'];
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V'];
 
 const SHAPES = {
@@ -18,7 +18,7 @@ export function badge({ shape = 'circle', iconName = 'star', tier = 0, size = 72
   const fill = TIER_COLORS[Math.min(tier, TIER_COLORS.length - 1)];
   const fg = tier === 0 ? 'var(--color-ink-500)' : tier === 3 ? 'var(--color-ink-900)' : '#fff';
   return `<span class="badge${tier ? '' : ' badge--locked'}" style="--badge-size:${size}px;--badge-fg:${fg}" ${label ? `role="img" aria-label="${label}"` : 'aria-hidden="true"'}>
-    <svg viewBox="0 0 100 100" aria-hidden="true"><g fill="${fill}">${SHAPES[shape]}</g><circle cx="82" cy="18" r="10" fill="var(--color-surface)" stroke="var(--color-ink-900)" stroke-width="2"/></svg>
+    <svg viewBox="0 0 100 100" aria-hidden="true"><g fill="${fill}">${SHAPES[shape]}</g><circle cx="82" cy="18" r="10" fill="var(--color-surface)" stroke="var(--color-outline)" stroke-width="2"/></svg>
     <span class="badge__icon">${icon(iconName, { size: Math.round(size * 0.38) })}</span>
     ${tier ? `<span class="badge__tier">${ROMAN[tier]}</span>` : ''}
   </span>`;

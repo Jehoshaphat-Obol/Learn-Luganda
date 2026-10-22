@@ -104,6 +104,8 @@
 
 .lesson__footer--good .fb { color: var(--color-success-shadow); }
 .lesson__footer--bad .fb { color: var(--color-error-shadow); }
+:root[data-theme='dark'] .lesson__footer--good .fb { color: var(--color-success-text); }
+:root[data-theme='dark'] .lesson__footer--bad .fb { color: var(--color-error-text); }
 
 .fb__icon {
   display: grid;
@@ -321,8 +323,8 @@
   font-weight: var(--weight-bold);
 }
 
-.ex-fill__blank.is-correct { color: var(--color-success-strong); border-color: var(--color-success); }
-.ex-fill__blank.is-wrong { color: var(--color-error); border-color: var(--color-error); }
+.ex-fill__blank.is-correct { color: var(--color-success-text); border-color: var(--color-success); }
+.ex-fill__blank.is-wrong { color: var(--color-error-text); border-color: var(--color-error); }
 
 .ex-fill__options {
   display: flex;
@@ -433,12 +435,12 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-1);
-  color: var(--color-error);
+  color: var(--color-error-text);
   font-size: var(--text-lg);
 }
 
 .lesson__hearts span {
-  color: var(--color-error);
+  color: var(--color-error-text);
 }
 
 .lesson__hearts.is-lost .icon {

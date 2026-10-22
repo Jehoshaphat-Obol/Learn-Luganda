@@ -126,6 +126,13 @@
         "reduced": "Ekyuma kyo kisaba entambula ntono, kale okukankana kusigala nga kuggyiddwako.",
         "hint": "Okukankana akatono ku kunyiga, eby’okuddamu n’ebirabo."
       },
+      "theme": {
+        "label": "Endabika",
+        "hint": "Langi za app: kitangaala, kizikiza, oba nga ekyuma kyo bwe kiri.",
+        "light": "Kitangaala",
+        "dark": "Kizikiza",
+        "system": "Nga ekyuma kyo"
+      },
       "motion": {
         "label": "Ebitambula",
         "reduced": "Ekyuma kyo kisaba entambula ntono, kale ebitambula bisigala bitono.",

@@ -116,6 +116,13 @@
         "reduced": "Your device asks for reduced motion, so vibration stays off.",
         "hint": "A small buzz for taps, answers and rewards."
       },
+      "theme": {
+        "label": "Appearance",
+        "hint": "Light paper, dark ink, or match your device.",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "Match device"
+      },
       "motion": {
         "label": "Animations",
         "reduced": "Your device asks for reduced motion, so animations stay minimal.",

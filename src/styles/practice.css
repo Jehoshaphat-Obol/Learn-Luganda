@@ -43,12 +43,12 @@
 
 .practice-card--stories .practice-card__icon {
   border-radius: var(--radius-lg) var(--radius-lg) var(--radius-sm) var(--radius-sm);
-  background: var(--color-ink-700);
+  background: var(--color-block-soft);
 }
 
 .practice-card--mistakes .practice-card__icon {
   border-radius: var(--radius-sm);
-  background: var(--color-ink-900);
+  background: var(--color-block);
 }
 
 .practice-card.is-disabled {
@@ -91,7 +91,7 @@
 }
 
 .practice-skill:hover {
-  border-color: var(--color-paper-400);
+  border-color: var(--color-border-strong);
 }
 
 .practice-skill__icon {
