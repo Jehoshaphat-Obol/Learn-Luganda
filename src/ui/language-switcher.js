@@ -11,7 +11,7 @@
  *   bindLanguageSwitcher(root)  opens the sheet from any button inside root,
  *                               now or after a redraw (call once per view)
  */
-import { currentLanguage, languageLabel, t, UI_LANGUAGES } from '../i18n/index.js';
+import { currentLanguage, languageTitle, t, UI_LANGUAGES } from '../i18n/index.js';
 import { languageInfo } from '../i18n/languages.js';
 import { languageSearchText, matchesSearch } from '../i18n/search.js';
 import { autoUiLanguage, changeUiLanguage } from '../app/languages.js';
@@ -50,7 +50,7 @@ export function switcherOptions(saved = store.get().settings.uiLang ?? null) {
     ...UI_LANGUAGES.map((code) => ({
       value: code,
       name: nativeOf(code),
-      detail: languageLabel(code) === nativeOf(code) ? '' : languageLabel(code),
+      detail: languageTitle(code) === nativeOf(code) ? '' : languageTitle(code),
       lang: code,
       checked: saved === code,
     })),

@@ -9,10 +9,21 @@
  * the categories the language has (zero, one, two, few, many, other);
  * `other` is required and used whenever a category is missing. Numbers in
  * `params` are formatted for the locale.
+ *
+ * A filled-in value can change the words around it, so after filling:
+ * a string that starts with a placeholder starts with a capital ("{target} —
+ * {base}" with French "luganda" reads "Luganda — anglais"), and languages
+ * listed in ELISION drop a vowel before one ("le {language}" with "anglais"
+ * reads "l’anglais").
  */
 
 const PLACEHOLDER = /\{(\w+)\}/g;
 export const PLURAL_CATEGORIES = ['zero', 'one', 'two', 'few', 'many', 'other'];
+
+/** Short words that elide before a vowel, per language: "le" + "anglais" -> "l’anglais". */
+const ELISION = {
+  fr: /(?<!\p{L})(?:(l)a|(l|d|qu|j|n|m|t|s)e) (?=[aeiouàâäéèêëîïôöùûüœæ])/giu,
+};
 
 export const isPlural = (v) => v !== null && typeof v === 'object' && !Array.isArray(v) && typeof v.other === 'string';
 
@@ -51,11 +62,16 @@ export function format(value, params = {}, locale = 'en') {
     text = value[category] ?? value.other;
   }
   const nf = numberFormat(locale);
-  return text.replace(PLACEHOLDER, (whole, name) => {
+  let out = text.replace(PLACEHOLDER, (whole, name) => {
     if (!(name in params)) return whole;
     const v = params[name];
     return typeof v === 'number' ? nf.format(v) : String(v);
   });
+  if (out === text) return out;
+  const elide = ELISION[String(locale).split('-')[0]];
+  if (elide) out = out.replace(elide, (_, la, e) => `${la ?? e}’`);
+  if (/^\{\w+\}/.test(text)) out = out.charAt(0).toLocaleUpperCase(locale) + out.slice(1);
+  return out;
 }
 
 /** The placeholder names a string (or every form of a plural) uses. */

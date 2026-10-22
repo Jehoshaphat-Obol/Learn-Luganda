@@ -102,6 +102,16 @@ export function languageLabel(code) {
   return lookup(active.strings, `languageNames.${code}`) ?? lookup(ENGLISH.strings, `languageNames.${code}`) ?? languageInfo(code).name;
 }
 
+/**
+ * A language's name standing alone, as a list item or button: capitalised,
+ * since some languages (French "anglais") write names in lower case inside
+ * a sentence.
+ */
+export function languageTitle(code) {
+  const name = languageLabel(code);
+  return name.charAt(0).toLocaleUpperCase(currentLanguage()) + name.slice(1);
+}
+
 /** Like `t`, as safe HTML with the pack's **bold**, _italic_ and [links](#/path). */
 export const tHtml = (key, params) => rich(t(key, params));
 

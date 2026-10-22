@@ -39,6 +39,9 @@ function baseCopy(meta, ui) {
     .map(plain);
 }
 
+/** Whether `text` holds `phrase` as whole words ("Madame" doesn’t hold "Madam"). */
+const holds = (text, phrase) => new RegExp(`(?<!\\p{L})${phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?!\\p{L})`, 'u').test(text);
+
 const pageText = (root) => {
   const copy = root.cloneNode(true);
   copy.querySelectorAll('svg, style, script').forEach((n) => n.remove());
@@ -65,7 +68,7 @@ describe('landing copy in every interface language', () => {
     createLandingView()({ root });
     root.querySelectorAll('details').forEach((d) => d.setAttribute('open', ''));
     const text = pageText(root);
-    expect(baseCopy(metaOf(id), ui).filter((x) => text.includes(x))).toEqual([]);
+    expect(baseCopy(metaOf(id), ui).filter((x) => holds(text, x))).toEqual([]);
 
     aboutView({ root });
     expect(pageText(root)).not.toContain(metaOf(id).description);

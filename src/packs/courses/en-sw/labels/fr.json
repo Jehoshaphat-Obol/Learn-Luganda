@@ -1,0 +1,357 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-labels.schema.json",
+  "description": "Le swahili est la langue commune de l’Afrique de l’Est, parlée par des dizaines de millions de personnes, de Mombasa et Zanzibar jusqu’à Kampala, Kigali et Goma.",
+  "cast": {
+    "amani": "Ton guide, étudiant à l’université à Dar es Salaam",
+    "baraka": "Tient un stand de chai et de chapati à Mombasa",
+    "bibi": "Une grand-mère de Zanzibar qui répond à tout par un proverbe",
+    "juma": "Un chauffeur de matatu à Nairobi qui connaît tous les arrêts",
+    "neema": "Une lycéenne d’Arusha qui adore le bongo flava",
+    "emma": "Une bénévole venue de l’étranger, qui apprend le swahili comme toi"
+  },
+  "landing": {
+    "word": "kujifunza — v. apprendre",
+    "words": [
+      "Comment ça va ?",
+      "Bien",
+      "Merci",
+      "Bienvenue",
+      "Ami",
+      "Eau",
+      "Nourriture",
+      "Doucement",
+      "Pas de problème",
+      "Au revoir"
+    ],
+    "why": {
+      "title": "Une langue pour **toute l’Afrique de l’Est.**",
+      "text": "Le swahili est une langue officielle du Kenya, de la Tanzanie, de l’Ouganda et de la Communauté d’Afrique de l’Est, et la langue de tous les jours de la côte de l’océan Indien jusqu’au Congo. Apprends-le pour voyager, commercer, te faire des amis et suivre la musique, du taarab au bongo flava.",
+      "cards": [
+        {
+          "title": "Pour les voyageurs",
+          "text": "Te déplacer de Mombasa à Mwanza, en matatu, en daladala ou en ferry."
+        },
+        {
+          "title": "Pour le travail",
+          "text": "Parler avec tes collègues et tes clients dans toute la région."
+        },
+        {
+          "title": "Pour les curieux",
+          "text": "Découvrir les classes nominales, les proverbes et mille ans de poésie côtière."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Lequel veut dire « merci » ?",
+      "explain": "_Asante_ veut dire merci."
+    },
+    "start": {
+      "caption": "tuanze — commençons"
+    },
+    "farewell": "Asante sana — merci beaucoup.",
+    "audience": "Les grands débutants, les voyageurs et bénévoles en route pour l’Afrique de l’Est, et les familles qui font vivre le swahili à la maison.",
+    "first": "Salutations et respect, la famille, la nourriture et le marché, les nombres et l’heure, les lieux et les déplacements, la maison, les jours de la semaine et ta santé, unité par unité."
+  },
+  "sections": {
+    "s1": {
+      "title": "Les bases",
+      "level": "Débutant",
+      "description": "Salutations, famille, nourriture, nombres et heure, lieux, la maison, la vie quotidienne et la santé."
+    },
+    "s2": {
+      "title": "La vie de tous les jours",
+      "level": "Élémentaire",
+      "description": "Décrire les choses, s’habiller, aider à la maison, les saisons, les animaux, le travail, l’école et les voyages."
+    },
+    "s3": {
+      "title": "Conversations",
+      "level": "Pré-intermédiaire",
+      "description": "Dire non, poser des questions, parler du passé et de l’avenir, des sentiments, des loisirs, du téléphone et de la cuisine."
+    },
+    "s4": {
+      "title": "Communauté et culture",
+      "level": "Intermédiaire",
+      "description": "La côte swahilie, la vie au village, les fêtes, la musique, la foi, le commerce, la nature et la communauté."
+    },
+    "s5": {
+      "title": "Locuteur confiant",
+      "level": "Intermédiaire supérieur",
+      "description": "Comparer, imaginer, raconter des histoires, utiliser des proverbes, suivre l’actualité, gérer les urgences, montrer du respect et savourer les contes."
+    }
+  },
+  "units": {
+    "u1": {
+      "title": "Salutations",
+      "description": "Dire bonjour, saluer les aînés avec respect, te présenter et compter jusqu’à dix."
+    },
+    "u2": {
+      "title": "Famille et amis",
+      "description": "Parler de ta famille, dire ce que tu as et décrire les gens."
+    },
+    "u3": {
+      "title": "La nourriture et le marché",
+      "description": "Nommer les aliments, dire que tu as faim ou soif, et acheter au marché."
+    },
+    "u4": {
+      "title": "Nombres et heure",
+      "description": "Compter jusqu’à cent, dire l’heure à la manière swahilie et parler d’aujourd’hui et de demain."
+    },
+    "u5": {
+      "title": "Se déplacer",
+      "description": "Demander où sont les choses, indiquer le chemin et voyager en matatu, en daladala ou en boda boda."
+    },
+    "u6": {
+      "title": "À la maison",
+      "description": "Décrire ta maison, dire ce qu’il y a et ce qu’il n’y a pas, et nommer les couleurs."
+    },
+    "u7": {
+      "title": "Ma journée",
+      "description": "Nommer les jours de la semaine, décrire ta routine et parler de la météo."
+    },
+    "u8": {
+      "title": "Le corps et la santé",
+      "description": "Nommer les parties du corps, dire où tu as mal, voir un médecin et souhaiter une bonne santé."
+    },
+    "u9": {
+      "title": "Décrire les choses",
+      "description": "Dire comment sont les choses et les gens : bons ou mauvais, neufs, grands ou petits, lourds ou légers."
+    },
+    "u10": {
+      "title": "Les vêtements",
+      "description": "Nommer tes vêtements, t’habiller selon la météo et acheter quelque chose de neuf."
+    },
+    "u11": {
+      "title": "Aider à la maison",
+      "description": "Demander et répondre : viens, assieds-toi, apporte, nettoie, lave et aide aux tâches ménagères."
+    },
+    "u12": {
+      "title": "Météo et saisons",
+      "description": "Parler du vent et des nuages, des saisons des pluies et sèche, et du temps qu’il faisait hier."
+    },
+    "u13": {
+      "title": "Les animaux",
+      "description": "Animaux de la ferme, animaux de compagnie et animaux sauvages de la savane."
+    },
+    "u14": {
+      "title": "Le travail et les métiers",
+      "description": "Dire ce que tu fais, interroger les autres sur leur travail et parler du salaire et des congés."
+    },
+    "u15": {
+      "title": "L’école",
+      "description": "La salle de classe, les matières, les questions, les examens et les devoirs."
+    },
+    "u16": {
+      "title": "Les voyages",
+      "description": "Acheter un billet, prendre un train ou un avion, et dire ce que tu vas faire."
+    },
+    "u17": {
+      "title": "Dire non",
+      "description": "Dire ce que tu ne veux pas ou n’aimes pas, ce qui n’est pas vrai, et ce que tu n’as pas fait ou ne feras pas."
+    },
+    "u18": {
+      "title": "Poser des questions",
+      "description": "Demander quoi, pourquoi, comment et combien, demander l’âge de quelqu’un, et poser des questions sur les mots."
+    },
+    "u19": {
+      "title": "Ce que j’ai fait",
+      "description": "Dire ce que tu as déjà fait, ce que tu as fait hier et ce qui s’est passé il y a longtemps."
+    },
+    "u20": {
+      "title": "Projets",
+      "description": "Parler de demain, du week-end et de tes rêves, et dire ce que tu aimerais."
+    },
+    "u21": {
+      "title": "Les sentiments",
+      "description": "Dire comment tu te sens, partager les bonnes et les mauvaises nouvelles, et montrer que tu tiens aux autres."
+    },
+    "u22": {
+      "title": "Loisirs et sport",
+      "description": "Parler du temps libre, du football, du chant, de la danse et des jeux."
+    },
+    "u23": {
+      "title": "Au téléphone",
+      "description": "Passer des appels, envoyer des messages, recharger ton crédit et fixer un rendez-vous."
+    },
+    "u24": {
+      "title": "La cuisine",
+      "description": "Cuisiner dans une cuisine swahilie : couper, frire, faire bouillir et assaisonner une marmite de pilau, puis partager le repas."
+    },
+    "u25": {
+      "title": "La côte swahilie",
+      "description": "Ports, boutres et mille ans de commerce : la côte où est né le swahili."
+    },
+    "u26": {
+      "title": "Village et agriculture",
+      "description": "La vie au village : les semis, la récolte et se rendre service."
+    },
+    "u27": {
+      "title": "Les fêtes",
+      "description": "Fêtes, mariages et cadeaux, et ceux qui sont venus, ont mangé et dansé."
+    },
+    "u28": {
+      "title": "Musique et danse",
+      "description": "Le taarab, le bongo flava et le tambour, et les mots pour ceux qui font la musique."
+    },
+    "u29": {
+      "title": "Foi et bénédictions",
+      "description": "Lieux de culte, prière, jeûne et les bénédictions que les gens se donnent."
+    },
+    "u30": {
+      "title": "Le commerce",
+      "description": "Tenir un petit commerce : clients, gains et pertes, épargne, et transmettre le métier."
+    },
+    "u31": {
+      "title": "La nature",
+      "description": "Montagnes, lacs, forêts et rivières, et prendre soin de la terre."
+    },
+    "u32": {
+      "title": "La communauté",
+      "description": "Réunions, dirigeants et entraide : harambee."
+    },
+    "u33": {
+      "title": "Comparer",
+      "description": "Dire ce qui est plus grand, meilleur, le meilleur, pareil ou différent."
+    },
+    "u34": {
+      "title": "Si et quand",
+      "description": "Parler de ce qui arrive quand, de ce qui arriverait si, et de ce que tu souhaites."
+    },
+    "u35": {
+      "title": "Raconter des histoires",
+      "description": "Commencer une histoire à la manière swahilie, la faire avancer et la conclure."
+    },
+    "u36": {
+      "title": "Proverbes",
+      "description": "Apprendre des proverbes swahilis connus, leur sens et quand les utiliser."
+    },
+    "u37": {
+      "title": "Actualité et opinions",
+      "description": "Suivre l’actualité, dire ce que tu penses, et être d’accord ou non avec politesse."
+    },
+    "u38": {
+      "title": "Urgences",
+      "description": "Appeler à l’aide, expliquer ce qui s’est passé et calmer quelqu’un."
+    },
+    "u39": {
+      "title": "Respect et politesse",
+      "description": "Rendre visite chez quelqu’un, demander poliment et montrer du respect à la manière swahilie."
+    },
+    "u40": {
+      "title": "Contes",
+      "description": "Rencontrer Sungura le lièvre et Abunuwasi le farceur, et trouver la morale d’une histoire."
+    }
+  },
+  "skills": {
+    "u1s1": "Bonjour",
+    "u1s2": "Présentations",
+    "u1s3": "Nombres de 1 à 10",
+    "u2s1": "Ma famille",
+    "u2s2": "Avoir et ne pas avoir",
+    "u2s3": "Les gens",
+    "u3s1": "Les boissons",
+    "u3s2": "La nourriture",
+    "u3s3": "Au marché",
+    "u4s1": "Nombres jusqu’à 100",
+    "u4s2": "Dire l’heure",
+    "u4s3": "Aujourd’hui et demain",
+    "u5s1": "Où est-ce ?",
+    "u5s2": "Les directions",
+    "u5s3": "En route",
+    "u6s1": "Les pièces",
+    "u6s2": "Il y a, il n’y a pas",
+    "u6s3": "Les couleurs",
+    "u7s1": "Les jours de la semaine",
+    "u7s2": "Ma routine",
+    "u7s3": "La météo",
+    "u8s1": "Le corps",
+    "u8s2": "Où as-tu mal ?",
+    "u8s3": "Mots gentils",
+    "u9s1": "Bon, mauvais et neuf",
+    "u9s2": "Grand et petit",
+    "u9s3": "Décrire les gens",
+    "u10s1": "Ce que je porte",
+    "u10s2": "S’habiller",
+    "u10s3": "Acheter des vêtements",
+    "u11s1": "Viens t’asseoir",
+    "u11s2": "Le ménage",
+    "u11s3": "Donner un coup de main",
+    "u12s1": "Soleil, vent et nuages",
+    "u12s2": "Les saisons",
+    "u12s3": "Hier",
+    "u13s1": "Animaux de la ferme",
+    "u13s2": "Animaux sauvages",
+    "u13s3": "Dans le parc",
+    "u14s1": "Les métiers",
+    "u14s2": "Au travail",
+    "u14s3": "Gagner sa vie",
+    "u15s1": "La salle de classe",
+    "u15s2": "Les matières",
+    "u15s3": "Questions et devoirs",
+    "u16s1": "Billets et gares",
+    "u16s2": "Je vais voyager",
+    "u16s3": "Sur la route",
+    "u17s1": "Je ne veux pas",
+    "u17s2": "Pas vrai, pas encore",
+    "u17s3": "Pas fait, ne fera pas",
+    "u18s1": "Qui et quoi",
+    "u18s2": "Comment et combien",
+    "u18s3": "Pourquoi, et les mots",
+    "u19s1": "Aujourd’hui jusqu’ici",
+    "u19s2": "Hier",
+    "u19s3": "Il y a longtemps",
+    "u20s1": "Demain",
+    "u20s2": "Ce week-end",
+    "u20s3": "Un jour",
+    "u21s1": "Content et triste",
+    "u21s2": "En colère et effrayé",
+    "u21s3": "Prendre soin des autres",
+    "u22s1": "Le temps libre",
+    "u22s2": "Le football",
+    "u22s3": "Musique et jeux",
+    "u23s1": "Appeler",
+    "u23s2": "Les messages",
+    "u23s3": "Se retrouver",
+    "u24s1": "Dans la cuisine",
+    "u24s2": "Préparer le pilau",
+    "u24s3": "Partager un repas",
+    "u25s1": "Mer et îles",
+    "u25s2": "Le commerce",
+    "u25s3": "Vieilles villes",
+    "u26s1": "Le village",
+    "u26s2": "Semis et récolte",
+    "u26s3": "Faire pour quelqu’un",
+    "u27s1": "Les fêtes",
+    "u27s2": "Les mariages",
+    "u27s3": "Qui est venu",
+    "u28s1": "Qui fait la musique",
+    "u28s2": "Jouer et écouter",
+    "u29s1": "Lieux et prière",
+    "u29s2": "Né et appelé",
+    "u30s1": "Une petite boutique",
+    "u30s2": "Faire faire",
+    "u31s1": "Montagnes et eaux",
+    "u31s2": "Prendre soin de la terre",
+    "u32s1": "Réunions et dirigeants",
+    "u32s2": "S’entraider",
+    "u33s1": "Plus grand et plus petit",
+    "u33s2": "Pareil et différent",
+    "u34s1": "Quand…",
+    "u34s2": "Si…",
+    "u35s1": "Il était une fois",
+    "u35s2": "Et puis",
+    "u36s1": "Proverbes du quotidien",
+    "u36s2": "Proverbes sur les gens",
+    "u37s1": "Les gros titres",
+    "u37s2": "Donner son avis",
+    "u37s3": "D’accord ou pas",
+    "u38s1": "Au secours !",
+    "u38s2": "Les accidents",
+    "u38s3": "Après le danger",
+    "u39s1": "Saluer les aînés",
+    "u39s2": "Mots polis",
+    "u39s3": "Être invité",
+    "u40s1": "Sungura le lièvre",
+    "u40s2": "Abunuwasi",
+    "u40s3": "La morale"
+  }
+}
