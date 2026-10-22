@@ -568,7 +568,7 @@
     gap: var(--space-3);
   }
 
-  .landing__header > .landing__brand span {
+  .landing__header > .landing__brand > span:not([data-brand]) {
     display: none;
   }
 }

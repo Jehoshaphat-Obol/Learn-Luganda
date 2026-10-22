@@ -15,6 +15,7 @@ import { initMusic, setMusicScene, toggleMusic } from './ui/music.js';
 import { initInstall, registerServiceWorker } from './app/pwa.js';
 import { startReminders } from './reminders/reminders.js';
 import { applyBrandMood, brandMood } from './app/brand-mood.js';
+import { brandScene, refreshWeather } from './app/brand-scene.js';
 import { startLanguages } from './app/languages.js';
 import { pixelOnRoute } from './marketing/pixel.js';
 import { startSpeech } from './audio/speech.js';
@@ -28,10 +29,18 @@ setStatsProvider(() => {
 // Apply any missed days (freezes or a reset) as soon as the app opens.
 if (store.get().streak.lastDay) store.update((s) => settleStreak(s));
 store.subscribe(refreshTopBar);
-const refreshBrand = () => applyBrandMood(brandMood(store.get()));
+const refreshBrand = () => {
+  const s = store.get();
+  const weather = s.settings.weather === true;
+  applyBrandMood(brandMood(s), document, brandScene(new Date(), { weather }));
+  // New weather (at most hourly, only if the learner turned it on) redraws the crane.
+  if (weather) refreshWeather().then((fresh) => fresh && refreshBrand());
+};
 store.subscribe(refreshBrand);
-// The mood depends on the day, so re-check when the app comes back into view.
+// The mood and sky depend on the time, so re-check when the app comes back
+// into view and every few minutes while it stays open.
 document.addEventListener('visibilitychange', () => document.visibilityState === 'visible' && refreshBrand());
+setInterval(() => document.visibilityState === 'visible' && refreshBrand(), 5 * 60 * 1000);
 applyMotion();
 store.subscribe(applyMotion);
 

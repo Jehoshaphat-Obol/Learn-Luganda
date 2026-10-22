@@ -131,6 +131,11 @@
         "label": "Muziki wa nyuma",
         "hint": "Mdundo mtulivu wa amadinda kwenye kurasa za mwanzo. Masomo na hadithi hubaki kimya."
       },
+      "weather": {
+        "label": "Hali ya hewa kwenye korongo",
+        "hint": "Onyesha hali ya hewa ya eneo lako kwenye nembo. Mahali ulipo kwa makadirio (karibu km 10) hutumika kuuliza Open-Meteo mara moja kwa saa; hakuna kingine kinachoshirikiwa.",
+        "denied": "Mahali pamezimwa kwa tovuti hii, kwa hiyo korongo haliwezi kuonyesha hali ya hewa."
+      },
       "haptics": {
         "label": "Mtetemo",
         "unsupported": "Kifaa au kivinjari hiki hakiwezi kutetemeka (iPhone na kompyuta nyingi haziruhusu).",
@@ -448,6 +453,8 @@
         "meta": "Jifunze zaidi kwenye [sera ya faragha ya Meta](https://www.facebook.com/privacy/policy).",
         "fontsTitle": "Fonti",
         "fonts": "Maandishi yanatumia fonti kutoka Google Fonts, kwa hiyo kivinjari chako kinaziomba kutoka Google mara ya kwanza unapotembelea. Baada ya hapo zinahifadhiwa kwenye kifaa chako.",
+        "weatherTitle": "Hali ya hewa",
+        "weather": "Ukiwasha _Hali ya hewa kwenye korongo_ katika [Mipangilio](#/settings), kivinjari chako kinaomba mahali ulipo mara moja. Panakadiriwa hadi karibu km 10, panahifadhiwa kwenye kifaa hiki, na kutumwa kwa [Open-Meteo](https://open-meteo.com) si zaidi ya mara moja kwa saa ili kupata hali ya hewa ya eneo lako. Open-Meteo haihitaji akaunti wala haiweki vidakuzi. Imezimwa usipoiwasha.",
         "childrenTitle": "Watoto",
         "children": "Hatukusanyi kwa makusudi taarifa binafsi za mtu yeyote. Kwa sababu matangazo yanaweza kuchaguliwa kwa ajili yako tu kwa idhini yako, wazazi wanaweza kuchagua _Matangazo ya kawaida tu_ kwa wanafunzi wadogo.",
         "changesTitle": "Mabadiliko",
@@ -962,6 +969,31 @@
       "happy": "Ukurasa wa mwanzo wa {app}. Lengo la leo limefikiwa!",
       "sleepy": "Ukurasa wa mwanzo wa {app}. Mfululizo wako unasubiri somo la leo.",
       "celebrating": "Ukurasa wa mwanzo wa {app}. Hatua muhimu ya mfululizo leo!"
+    },
+    "brandScene": {
+      "phase": {
+        "dawn": "Alfajiri.",
+        "day": "Mchana.",
+        "dusk": "Jioni.",
+        "night": "Usiku."
+      },
+      "weather": {
+        "cloudy": "Kuna mawingu nje.",
+        "fog": "Kuna ukungu nje.",
+        "rain": "Mvua inanyesha nje.",
+        "snow": "Theluji inaanguka nje.",
+        "storm": "Kuna dhoruba nje."
+      },
+      "holiday": {
+        "newYear": "Heri ya Mwaka Mpya!",
+        "valentine": "Heri ya Siku ya Wapendanao!",
+        "womensDay": "Heri ya Siku ya Wanawake!",
+        "easter": "Heri ya Pasaka!",
+        "martyrsDay": "Siku ya Mashahidi wa Uganda.",
+        "heroesDay": "Siku ya Mashujaa.",
+        "independence": "Heri ya Siku ya Uhuru, Uganda!",
+        "christmas": "Heri ya Krismasi!"
+      }
     },
     "sounds": {
       "playful": "Ya uchangamfu",

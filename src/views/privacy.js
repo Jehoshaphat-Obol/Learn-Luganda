@@ -33,7 +33,7 @@ export function privacyView({ root }) {
       <p>${text(pixelConfigured() ? 'pixelOn' : 'pixelOff')} ${text('pixel')}</p>
       <p>${text('meta')}</p>
 
-      ${['fonts', 'children', 'changes'].map((k) => part('privacy', k, p)).join('')}
+      ${['fonts', 'weather', 'children', 'changes'].map((k) => part('privacy', k, p)).join('')}
       ${siteLinks('site-links site-links--page')}
     </div>`;
 }

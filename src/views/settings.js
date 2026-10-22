@@ -12,6 +12,7 @@ import { avatar } from '../ui/avatar.js';
 import { icon } from '../ui/icons.js';
 import { refreshTopBar } from '../app/shell.js';
 import { installSection } from '../app/pwa.js';
+import { askLocation, setWeatherPlace } from '../app/brand-scene.js';
 import { backgroundSupported, remindersSupported, setReminderHour, setReminders } from '../reminders/reminders.js';
 import { PACKS, hapticsSupported, play, preload } from '../ui/sound.js';
 import { pixelConfigured, pixelConsent, setPixelConsent } from '../marketing/pixel.js';
@@ -150,6 +151,7 @@ export function settingsView({ root, query, navigate }) {
           </label>
           ${speechRows(settings)}
           ${toggle('music', t('settings.music.label'), t('settings.music.hint'), settings.music !== false)}
+          ${'geolocation' in navigator ? toggle('weather', t('settings.weather.label'), t('settings.weather.hint'), settings.weather === true) : ''}
           ${toggle('haptics', t('settings.haptics.label'), t(!hapticsSupported() ? 'settings.haptics.unsupported' : systemReduced ? 'settings.haptics.reduced' : 'settings.haptics.hint'), hapticsSupported() && !systemReduced && settings.haptics !== false, !hapticsSupported() || systemReduced)}
           ${profile && remindersSupported() ? remindersRows(reminders) : ''}
           ${toggle('motion', t('settings.motion.label'), t(systemReduced ? 'settings.motion.reduced' : 'settings.motion.hint'), settings.motion !== false && !systemReduced, systemReduced)}
@@ -250,6 +252,19 @@ export function settingsView({ root, query, navigate }) {
     if (key === 'pixel') {
       setPixelConsent(e.target.checked ? 'granted' : 'denied');
       toast(t(e.target.checked ? 'settings.privacy.pixelOn' : 'settings.privacy.pixelOff'));
+      return;
+    }
+    if (key === 'weather') {
+      // Off by default: the location is asked for only when this is turned on.
+      const place = e.target.checked ? await askLocation() : null;
+      if (e.target.checked && !place) {
+        e.target.checked = false;
+        toast(t('settings.weather.denied'), { duration: 4000 });
+      }
+      setWeatherPlace(place);
+      store.update((s) => {
+        s.settings.weather = Boolean(place);
+      });
       return;
     }
     if (key === 'reminder') {
