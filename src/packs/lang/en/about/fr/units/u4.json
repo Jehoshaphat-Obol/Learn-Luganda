@@ -1,0 +1,60 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u4",
+  "notes": {
+    "kkumi-na-emu": "Onze: one of the six numbers from 11 to 16 with its own name.",
+    "abiri": "Vingt: the -t is silent, except in vingt-deux, vingt-trois…",
+    "kikumi": "Cent, never un cent.",
+    "lukumi": "Mille, never un mille, and never with -s.",
+    "kya-bbeeyi": "Cher for a masculine noun, chère for a feminine one.",
+    "kendeezaako": "To a stranger, the polite form is Baissez un peu le prix.",
+    "sabini": "Soixante-dix in France; septante in Belgium and DR Congo.",
+    "themanini": "Quatre-vingts: “four twenties”.",
+    "tisini": "Quatre-vingt-dix: “four twenties and ten”."
+  },
+  "tips": { "u4s1": "onze-seize", "u4s3": "combien", "u4s4": "soixante-dix" },
+  "guidebook": {
+    "intro": "French numbers are regular up to sixty, then they start doing sums. You’ll also learn to ask the price and bargain politely.",
+    "tips": [
+      {
+        "id": "onze-seize",
+        "title": "Eleven to nineteen",
+        "body": [
+          "From 11 to 16 the numbers have their own names: **onze, douze, treize, quatorze, quinze, seize**. From 17 they add up: **dix-sept** (ten-seven), **dix-huit, dix-neuf**.",
+          "The tens: **vingt, trente, quarante, cinquante, soixante**. Add the units with a hyphen: **vingt-deux, trente-cinq**, but say **et un** for one: **vingt et un**."
+        ]
+      },
+      {
+        "id": "soixante-dix",
+        "title": "Seventy, eighty, ninety",
+        "body": [
+          "In France, 70 is **soixante-dix** (sixty-ten), 80 is **quatre-vingts** (four-twenties) and 90 is **quatre-vingt-dix** (four-twenty-ten). So 75 is **soixante-quinze** and 99 is **quatre-vingt-dix-neuf**.",
+          "Belgium, Switzerland and the Democratic Republic of Congo often say **septante** (70) and **nonante** (90) instead, and the Swiss say **huitante** for 80."
+        ],
+        "table": [
+          ["Number", "France", "Belgium, DR Congo"],
+          ["70", "soixante-dix", "septante"],
+          ["80", "quatre-vingts", "quatre-vingts"],
+          ["90", "quatre-vingt-dix", "nonante"]
+        ],
+        "targetColumns": [1, 2]
+      },
+      {
+        "id": "combien",
+        "title": "C’est combien ?",
+        "body": [
+          "To ask the price: **C’est combien ?** or **Combien coûte ceci ?** To bargain, ask the seller to lower the price: **Vous pouvez baisser un peu ?** When you agree: **D’accord, je le prends.**",
+          "**Cent** (100) and **mille** (1,000) don’t take **un**: **cent shillings, mille shillings**. **Mille** never takes an -s: **cinq mille**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Francs CFA and other money",
+        "body": [
+          "Fourteen countries in West and Central Africa share the **franc CFA**; Congo, Rwanda and Burundi each have their own franc. Prices are often in thousands, so **mille** is a word you’ll hear a lot."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u6",
+  "notes": {
+    "ku-ddyo": "On the right ; tourne à droite : turn right.",
+    "ku-kkono": "On the left ; tourne à gauche : turn left.",
+    "awaka": "Home : I am going home, sans to.",
+    "ogenda-wa": "Where are you going? : where en premier.",
+    "matatu": "Minibus taxi en anglais ougandais : taxi.",
+    "ntwala": "Take me : take me to town."
+  },
+  "tips": { "u6s2": "going-to", "u6s3": "where-is" },
+  "guidebook": {
+    "intro": "Trouve ton chemin en ville. L’anglais n’a pas de au ni de à la : un seul petit mot, « to », indique où tu vas.",
+    "tips": [
+      {
+        "id": "going-to",
+        "title": "« Going to »",
+        "body": [
+          "Pour dire où tu vas : **I am going to school**, **I am going to the market**. **To** remplace à, au, à la et en. Mais pour la maison, pas de **to** : **I am going home.**",
+          "Pour situer : **at** pour un point (**at the bank**), **in** pour l’intérieur (**in town**, **in the kitchen**)."
+        ]
+      },
+      {
+        "id": "where-is",
+        "title": "« Where is…? »",
+        "body": [
+          "**Where is the hospital?** On répond : **It’s here** (ici), **It’s over there** (là-bas), **It’s near** (près), **It’s far** (loin).",
+          "Pour les directions : **Turn right. Turn left. Go straight.** C’est la même forme pour une personne ou plusieurs."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Boda-boda",
+        "body": [
+          "À Kampala, les moto-taxis s’appellent **boda-boda**, de « border to border » : à l’origine, ils faisaient passer la frontière entre l’Ouganda et le Kenya."
+        ]
+      }
+    ]
+  }
+}

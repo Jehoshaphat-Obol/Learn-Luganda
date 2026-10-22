@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "French is spoken on five continents, from Paris and Montreal to Kinshasa, Dakar and Abidjan, and Africa is home to most of its speakers.",
+  "notes": "Drafted by Claude (AI) for the French courses (#145); needs a native-speaker review.",
+  "landing": {
+    "hello": "Bonjour !",
+    "thanks": "Merci",
+    "place": "the French-speaking world",
+    "word": "apprendre — v. to learn",
+    "words": [
+      ["Bonjour", "Hello"],
+      ["Ça va ?", "How’s it going?"],
+      ["Merci", "Thank you"],
+      ["D’accord", "Okay"],
+      ["Ami", "Friend"],
+      ["Eau", "Water"],
+      ["Nourriture", "Food"],
+      ["Monsieur", "Sir"],
+      ["Madame", "Madam"],
+      ["Au revoir", "Goodbye"]
+    ],
+    "why": {
+      "title": "A language for **half of Africa, and beyond.**",
+      "text": "French is an official language in more than twenty African countries, from Senegal to the Democratic Republic of Congo, and Uganda’s neighbours Rwanda and Burundi. Learn it to travel, study, work across borders and enjoy the music, from rumba to coupé-décalé.",
+      "cards": [
+        { "title": "For travellers", "text": "Find your way from Kigali to Kinshasa, Dakar or Paris." },
+        { "title": "For work", "text": "Trade, study and work with partners across French-speaking Africa." },
+        { "title": "For the curious", "text": "Meet gendered nouns, silent letters and a few surprising numbers." }
+      ]
+    },
+    "sample": {
+      "prompt": "Which one means “thank you”?",
+      "options": ["Bonjour", "Merci", "Non"],
+      "answer": "Merci",
+      "explain": "_Merci_ means thank you."
+    },
+    "start": { "word": "C’est parti !", "caption": "c’est parti — here we go" },
+    "farewell": "Merci beaucoup — thank you very much.",
+    "audience": "Complete beginners, students and travellers heading to French-speaking Africa or Europe, and anyone who wants to talk with francophone neighbours.",
+    "first": "Greetings, introductions and numbers, then family, food, the market, time, places, the home and health, unit by unit."
+  },
+  "cast": { "emma": "A visitor from abroad who speaks French" }
+}

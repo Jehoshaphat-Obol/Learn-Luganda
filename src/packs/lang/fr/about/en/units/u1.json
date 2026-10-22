@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u1",
+  "notes": {
+    "nnyabo": "Madam : poli, pour une femme qu’on ne connaît pas.",
+    "wasuze-otya": "Good morning, jusqu’à midi environ.",
+    "osiibye-otya": "Good afternoon, de midi jusqu’au soir.",
+    "gyebale-ko": "Pas d’équivalent exact en anglais : on dit souvent Well done ou Good job.",
+    "nze": "I, toujours avec une majuscule.",
+    "ggwe": "You, pour une personne ou plusieurs.",
+    "erinnya": "Name : my name, your name.",
+    "ndi": "I am, souvent raccourci en I’m.",
+    "nsanyuse-okukulaba": "Nice to meet you, pour une première rencontre."
+  },
+  "tips": { "u1s1": "greetings-clock", "u1s2": "i-am", "u1s4": "you-one-many" },
+  "guidebook": {
+    "intro": "En anglais, on salue selon le moment de la journée, et un seul mot, « you », sert à tutoyer comme à vouvoyer.",
+    "tips": [
+      {
+        "id": "greetings-clock",
+        "title": "Les salutations suivent l’heure",
+        "body": [
+          "Jusqu’à midi, dis **Good morning**. L’après-midi, **Good afternoon**. Le soir, **Good evening**. **Good night** sert seulement à dire bonne nuit en partant. **How are you?** marche à toute heure, et la réponse habituelle est **I’m fine, thank you.**"
+        ]
+      },
+      {
+        "id": "i-am",
+        "title": "« I » et « I am »",
+        "body": [
+          "**I am** veut dire « je suis » : **I am a student.** **I** s’écrit toujours avec une majuscule, même au milieu de la phrase. À l’oral, **I am** devient souvent **I’m** : **I’m Nakato.**",
+          "Pour ton nom : **My name is Nakato** ou simplement **I’m Nakato**."
+        ]
+      },
+      {
+        "id": "you-one-many",
+        "title": "Un seul « you »",
+        "body": [
+          "L’anglais n’a pas de tu ni de vous : **you** sert pour un ami, un inconnu, un aîné ou un groupe. **How are you?** se dit à tout le monde.",
+          "La politesse passe par d’autres mots : **please**, **thank you**, **sir** et **madam**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Saluer d’abord",
+        "body": [
+          "En Ouganda comme ailleurs, on salue avant de demander quoi que ce soit. Un simple **Hello, how are you?** ouvre presque toutes les conversations."
+        ]
+      }
+    ]
+  }
+}

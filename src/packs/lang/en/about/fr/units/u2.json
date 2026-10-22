@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u2",
+  "notes": {
+    "wange": "Mon, ma or mes, depending on the noun: mon père, ma mère, mes enfants.",
+    "jjajja": "A grandmother is une grand-mère, a grandfather un grand-père.",
+    "abaana": "Enfant(s) is masculine or feminine depending on the child: un enfant, une enfant.",
+    "omusomesa": "For a woman: la professeure, or simply la prof.",
+    "amazzi": "Feminine: l’eau, de l’eau.",
+    "emmere": "Feminine: la nourriture. People also say à manger: Je veux à manger.",
+    "caayi": "Masculine: le thé, du thé.",
+    "oluganda": "Language names are masculine and lower case: le luganda, le français.",
+    "wako": "Ton, ta or tes.",
+    "wake": "Son, sa or ses: it agrees with the noun, not with the owner. Sa mère is “his mother” or “her mother”."
+  },
+  "tips": { "u2s1": "gender", "u2s2": "plural", "u2s3": "some" },
+  "guidebook": {
+    "intro": "Every French noun is masculine or feminine, and the little words around it, like “the”, “a” and “my”, change to match.",
+    "tips": [
+      {
+        "id": "gender",
+        "title": "Le or la: every noun has a gender",
+        "body": [
+          "Masculine nouns take **le** (the) and **un** (a): **le livre, un livre**. Feminine nouns take **la** and **une**: **la tasse, une tasse**. Before a vowel both become **l’**: **l’enfant, l’eau**.",
+          "The gender of things has to be learned with the word, so always learn **la table**, not just **table**. People follow their sex: **le père, la mère**."
+        ],
+        "table": [
+          ["Masculine", "Feminine", "English"],
+          ["le père", "la mère", "the father / the mother"],
+          ["un livre", "une tasse", "a book / a cup"],
+          ["mon frère", "ma sœur", "my brother / my sister"]
+        ],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "plural",
+        "title": "Plurals: les, des and a silent -s",
+        "body": [
+          "In the plural, **le** and **la** both become **les**, and **un, une** become **des**: **les enfants, des livres**. Most nouns add **-s**, but you don’t hear it: **livre** and **livres** sound the same. The little word in front tells you it’s plural.",
+          "“My” has three forms: **mon** (masculine), **ma** (feminine) and **mes** (plural): **mon livre, ma tasse, mes livres**."
+        ]
+      },
+      {
+        "id": "some",
+        "title": "Je veux de l’eau: “some”",
+        "body": [
+          "For things you don’t count, French adds **du, de la, de l’**: **Je bois du thé** (I drink tea), **Je veux de l’eau** (I want water). English often leaves this out, but French needs it.",
+          "Verbs change with the person: **je mange, je bois, je lis, j’apprends**. You’ll meet the other persons step by step."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Family words",
+        "body": [
+          "**Grand-mère** and **grand-père** become **mamie** and **papi** at home. **Tonton** and **tata** (uncle, aunt) are used for any older family friend in much of francophone Africa."
+        ]
+      }
+    ]
+  }
+}

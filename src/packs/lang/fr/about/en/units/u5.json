@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u5",
+  "notes": {
+    "bbalaza": "Monday, avec une majuscule.",
+    "ssaawa-emu": "Seven o’clock : l’anglais compte depuis minuit, comme le français.",
+    "ssaawa-mukaaga": "Twelve o’clock, ou noon.",
+    "na-nusu": "Half past : half past nine, neuf heures et demie.",
+    "enkya": "Tomorrow. À demain : see you tomorrow.",
+    "makya": "In the morning."
+  },
+  "tips": { "u5s2": "days-on", "u5s3": "english-time" },
+  "guidebook": {
+    "intro": "Les jours de la semaine prennent une majuscule en anglais, et l’heure se dit sur douze heures avec « in the morning » ou « in the evening ».",
+    "tips": [
+      {
+        "id": "english-time",
+        "title": "Dire l’heure",
+        "body": [
+          "On compte sur douze heures : **seven o’clock**, **ten o’clock**. Pour préciser, ajoute **in the morning**, **in the afternoon** ou **in the evening** : **eight o’clock in the evening** (20 heures). À l’écrit : **8 a.m.** (matin), **8 p.m.** (soir).",
+          "Et demie se dit **half past** : **half past nine** (neuf heures et demie). Midi, **noon** ou **twelve o’clock**."
+        ]
+      },
+      {
+        "id": "days-on",
+        "title": "« On Monday »",
+        "body": [
+          "Les jours prennent une majuscule : **Monday, Friday**. Devant un jour, mets **on** : **on Monday** (lundi). Pour une partie de la journée, **in** : **in the morning**, **in the afternoon**. Mais la nuit, c’est **at night**.",
+          "Pour « tous les lundis » : **on Mondays** ou **every Monday**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Deux horloges en Ouganda",
+        "body": [
+          "En luganda et en swahili, les heures se comptent à partir du lever du soleil : sept heures du matin s’y dit « une heure ». En anglais, comme en français, on compte depuis minuit."
+        ]
+      }
+    ]
+  }
+}

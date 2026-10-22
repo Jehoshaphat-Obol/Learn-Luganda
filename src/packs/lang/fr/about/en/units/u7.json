@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u7",
+  "notes": {
+    "kkodi": "On frappe en disant Knock knock! ou Hello?",
+    "yingira": "Come in! pour une personne comme pour plusieurs.",
+    "tuula": "Sit down, ou plus poli : Please have a seat.",
+    "mpa": "Give me ; avec please : Please give me the cup.",
+    "ggalawo": "Close : close the door.",
+    "ggulawo": "Open : open the window."
+  },
+  "tips": { "u7s2": "please", "u7s4": "there-is" },
+  "guidebook": {
+    "intro": "Accueille des invités et demande des choses poliment. En anglais, l’impératif est le même pour une personne ou un groupe, et « please » fait toute la différence.",
+    "tips": [
+      {
+        "id": "please",
+        "title": "Demander avec politesse",
+        "body": [
+          "L’impératif est simple : **Sit down. Close the door.** C’est la même forme pour tu et vous. Pour être poli, ajoute **please** : **Please sit down. Bring me water, please.** Sans please, la phrase peut sembler sèche.",
+          "Pour accueillir : **Come in!** et **Welcome!**"
+        ]
+      },
+      {
+        "id": "there-is",
+        "title": "« There is » et « there are »",
+        "body": [
+          "Le français **il y a** a deux formes en anglais : **there is** pour une chose (**there is a bed**) et **there are** pour plusieurs (**there are three rooms**).",
+          "Pour situer : **on** (sur), **under** (sous), **in** (dans) : **The tea is on the table.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Recevoir des invités",
+        "body": [
+          "En Ouganda, on accueille un invité avec **You are welcome** et on lui offre aussitôt une chaise et à boire. Refuser tout peut paraître impoli ; un peu d’eau ou de thé suffit."
+        ]
+      }
+    ]
+  }
+}

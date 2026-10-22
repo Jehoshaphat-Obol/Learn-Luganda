@@ -1,0 +1,58 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u6",
+  "notes": {
+    "ekibuga": "Feminine: la ville. In town is en ville.",
+    "essomero": "Feminine and begins with a vowel: l’école, à l’école.",
+    "eddwaliro": "Masculine, silent h: l’hôpital, à l’hôpital.",
+    "awaka": "At home is à la maison or chez moi.",
+    "ngenda": "From aller: je vais, tu vas, il va.",
+    "ku-ddyo": "À droite. Tout droit (straight on) sounds similar, so listen for the “tout”.",
+    "yimirira": "Arrête-toi to one friend, Arrêtez-vous to anyone else.",
+    "boda-boda": "Une moto-taxi; à moto, by motorbike."
+  },
+  "tips": { "u6s2": "au-a-la", "u6s3": "imperative", "u6s1": "ou-est" },
+  "guidebook": {
+    "intro": "Find your way around town: where things are, where you’re going, and how to tell a driver to turn or stop.",
+    "tips": [
+      {
+        "id": "au-a-la",
+        "title": "À la, au, aux: going places",
+        "body": [
+          "**À** means “to” or “at”. It joins with **le** and **les**: **à + le = au**, **à + les = aux**. **À la** and **à l’** stay as they are.",
+          "So: **Je vais à l’école, à la boutique, au marché, à l’hôpital.** For home, say **à la maison** or **chez moi**. For a town, just **à**: **Je vais à Kampala.** “In town” is **en ville**."
+        ],
+        "table": [
+          ["Masculine", "Feminine", "Before a vowel"],
+          ["au marché", "à la banque", "à l’école"],
+          ["au village", "à la mosquée", "à l’hôpital"]
+        ],
+        "targetColumns": [0, 1, 2]
+      },
+      {
+        "id": "ou-est",
+        "title": "Où est … ?",
+        "body": [
+          "Ask for a place with **Où est … ?**: **Où est l’hôpital ?** Answers: **C’est ici** (here), **C’est là-bas** (over there), **C’est près** (near), **C’est loin** (far).",
+          "**Près de** means “near to”: **près de la banque**. **De + le** joins as **du**: **près du marché**."
+        ]
+      },
+      {
+        "id": "imperative",
+        "title": "Tourne à droite: telling someone what to do",
+        "body": [
+          "To give directions, use the verb without **tu**: **Tourne à droite. Va tout droit. Arrête-toi ici.** With **vous** the ending is **-ez**: **Tournez à gauche. Allez tout droit.**",
+          "Ways to travel use **en** for things you get inside, and **à** for things you sit on: **en minibus, en voiture, à moto, à pied** (on foot)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Taxi-motos and taxis-brousse",
+        "body": [
+          "Across francophone Africa, motorbike taxis go by many names: **taxi-moto**, **moto-taxi**, or **zémidjan** in Benin and Togo. Long-distance minibuses are often called **taxis-brousse**, “bush taxis”."
+        ]
+      }
+    ]
+  }
+}

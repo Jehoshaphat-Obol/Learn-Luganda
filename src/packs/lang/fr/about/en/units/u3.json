@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u3",
+  "notes": {
+    "matooke": "Mot ougandais : on garde matooke en anglais.",
+    "nnina": "I have ; à la troisième personne, she has, he has.",
+    "enjala": "Hungry est un adjectif : I am hungry.",
+    "ennyonta": "Thirsty : I am thirsty.",
+    "akatale": "The market : at the market, au marché.",
+    "ana": "Has, avec he ou she : she has a friend."
+  },
+  "tips": { "u3s2": "hungry", "u3s3": "now-or-always" },
+  "guidebook": {
+    "intro": "Au marché, tu nommes les aliments et tu dis que tu as faim. En anglais, on « est » affamé, et le présent a deux formes.",
+    "tips": [
+      {
+        "id": "hungry",
+        "title": "« I am hungry »",
+        "body": [
+          "Le français dit « j’ai faim », l’anglais dit **I am hungry** (je suis affamé) et **I am thirsty**. Même chose pour l’âge : **I am twenty** (j’ai vingt ans).",
+          "Pour « je n’ai pas de… » : **I don’t have a sister**, ou **I have no sister**."
+        ]
+      },
+      {
+        "id": "now-or-always",
+        "title": "« I eat » ou « I am eating »",
+        "body": [
+          "Le français **je mange** a deux traductions. **I eat matooke** : d’habitude, en général. **I am eating matooke** : en ce moment.",
+          "Au marché, **I am buying oranges** veut dire que tu es en train d’en acheter, **I buy oranges here** que tu les achètes là d’habitude."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Matooke et rolex",
+        "body": [
+          "Le **matooke** (bananes plantains écrasées) est le plat ougandais par excellence. En ville, essaie un **rolex** : une omelette roulée dans un chapati, « rolled eggs »."
+        ]
+      }
+    ]
+  }
+}

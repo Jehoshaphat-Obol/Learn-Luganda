@@ -1,0 +1,58 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u3",
+  "notes": {
+    "matooke": "Cooking bananas are bananes plantains, or just plantains.",
+    "lumonde": "Feminine: une patate douce, des patates douces.",
+    "nnina": "From avoir: j’ai, tu as, il a.",
+    "enjala": "Feminine: la faim. J’ai faim, I’m hungry.",
+    "ennyonta": "Feminine: la soif. J’ai soif, I’m thirsty.",
+    "kiwooma": "C’est bon ! is also how you praise a meal.",
+    "ana": "Il a for a man, elle a for a woman.",
+    "pilipili": "Also le piment; spicy is fort or piquant."
+  },
+  "tips": { "u3s2": "avoir-faim", "u3s3": "du-de-la", "u3s4": "ne-pas" },
+  "guidebook": {
+    "intro": "At the market you’ll name food, say you’re hungry, and buy and sell. French has a few surprises: you “have” hunger, and “no” turns “some” into “de”.",
+    "tips": [
+      {
+        "id": "avoir-faim",
+        "title": "J’ai faim: “I have hunger”",
+        "body": [
+          "French uses **avoir** (to have) where English uses “to be”: **J’ai faim** (I’m hungry), **J’ai soif** (I’m thirsty). The same goes for age: **J’ai vingt ans** (I’m twenty).",
+          "The forms of avoir: **j’ai, tu as, il a, elle a**. You’ll use them all the time."
+        ]
+      },
+      {
+        "id": "du-de-la",
+        "title": "Du, de la, des at the market",
+        "body": [
+          "Food you don’t count takes **du** (masculine) or **de la** (feminine): **du riz, du poulet, de la viande**. Countable things in the plural take **des**: **des oranges, des haricots**.",
+          "After a negative, all of these become **de** (or **d’**): **Je n’ai pas de sœur**, **Je ne veux pas de viande**."
+        ],
+        "table": [
+          ["Positive", "Negative", "English"],
+          ["Je veux du thé.", "Je ne veux pas de thé.", "I want tea. / I don’t want tea."],
+          ["J’ai des oranges.", "Je n’ai pas d’oranges.", "I have oranges. / I don’t have oranges."]
+        ],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "ne-pas",
+        "title": "Saying no: ne … pas",
+        "body": [
+          "French wraps the verb in two words: **ne** before and **pas** after. **Je mange** → **Je ne mange pas**. Before a vowel, **ne** becomes **n’**: **Je n’ai pas faim**.",
+          "In everyday speech people often drop the **ne**: **J’ai pas faim**. Write it, but don’t be surprised when you don’t hear it."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Le marché",
+        "body": [
+          "Open-air markets are at the heart of daily life across francophone Africa and France. Greet the seller first, ask **C’est combien ?**, and don’t be shy about choosing your own tomatoes."
+        ]
+      }
+    ]
+  }
+}
