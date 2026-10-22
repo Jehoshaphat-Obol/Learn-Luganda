@@ -189,6 +189,33 @@ Lessons, guidebooks and stories stay in the course's language.
 }
 ```
 
+The same files put the course's landing page in `<ui>`: `description`
+(About page), `cast` (each character's role) and `landing`, which holds the
+base-language parts of the course's `landing` block (the why section and its
+cards, the ticker's meanings in `words`, the sample question's prompt and
+explanation, captions, farewell, audience and first lessons). Target-language
+words stay as the course writes them. A test (`tests/landing-i18n.test.js`)
+fails when any of this is missing or the landing page still shows the
+course's own copy in another interface language, so a new UI pack or course
+needs these filled in for every pairing.
+
+```json
+{
+  "description": "…",
+  "cast": { "nakato": "Kiongozi wako, mwanafunzi wa chuo kikuu Kampala" },
+  "landing": {
+    "word": "okuyiga — kujifunza",
+    "words": ["Habari yako?", "Nzuri", "…"],
+    "why": { "title": "Lugha ya **mitaa ya Kampala.**", "text": "…", "cards": [{ "title": "…", "text": "…" }] },
+    "sample": { "prompt": "Lipi maana yake “asante”?", "explain": "_Weebale_ maana yake asante." },
+    "start": { "caption": "tandika — anza" },
+    "farewell": "Weebale nnyo — asante sana.",
+    "audience": "…",
+    "first": "…"
+  }
+}
+```
+
 When you add units or skills to a course, add their headings to its labels
 files too.
 

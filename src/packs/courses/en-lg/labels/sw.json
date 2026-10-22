@@ -310,5 +310,57 @@
     "u40s1": "Wakayima sungura",
     "u40s2": "Kintu na Nnambi",
     "u40s3": "Funzo"
+  },
+  "description": "Kiganda ni lugha ya Buganda katikati mwa Uganda, inayozungumzwa na mamilioni ya watu Kampala na maeneo jirani.",
+  "cast": {
+    "nakato": "Kiongozi wako, mwanafunzi wa chuo kikuu Kampala",
+    "mukasa": "Mwalimu mvumilivu kutoka Masaka",
+    "jjajja": "Bibi anayependa methali",
+    "ssali": "Dereva wa bodaboda anayejua kila barabara",
+    "amara": "Mwanafunzi wa sekondari anayependa muziki",
+    "emma": "Mgeni anayejifunza Kiganda kabla ya safari yake"
+  },
+  "landing": {
+    "word": "okuyiga — kitenzi: kujifunza",
+    "words": [
+      "Habari yako?",
+      "Nzuri",
+      "Asante",
+      "Sawa",
+      "Rafiki",
+      "Maji",
+      "Chakula",
+      "Bwana",
+      "Mama",
+      "Karibu"
+    ],
+    "why": {
+      "title": "Lugha ya **mitaa ya Kampala.**",
+      "text": "Kiganda huzungumzwa na mamilioni ya watu katikati mwa Uganda, na ndiyo lugha inayosikika zaidi Kampala. Jifunze uzungumze na familia, upate marafiki sokoni, au ujisikie nyumbani katika safari yako ijayo.",
+      "cards": [
+        {
+          "title": "Kwa familia",
+          "text": "Ungana tena na babu na bibi, na urithishe lugha kwa watoto."
+        },
+        {
+          "title": "Kwa wasafiri",
+          "text": "Salimia, patana bei na zunguka kwa kujiamini."
+        },
+        {
+          "title": "Kwa wadadisi",
+          "text": "Gundua ngeli, toni na methali."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Lipi maana yake “asante”?",
+      "explain": "_Weebale_ maana yake asante."
+    },
+    "start": {
+      "caption": "tandika — kitenzi: anza"
+    },
+    "farewell": "Weebale nnyo — asante sana.",
+    "audience": "Wanaoanza kabisa, familia za ughaibuni zinazotaka kurudi kwenye lugha, na wageni wa Uganda wanaotaka zaidi ya “habari”.",
+    "first": "Salamu, kujitambulisha na namba, kisha familia, chakula, sokoni, wakati, mahali na zaidi, sehemu kwa sehemu."
   }
 }

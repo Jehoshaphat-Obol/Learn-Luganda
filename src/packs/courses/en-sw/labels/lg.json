@@ -301,5 +301,57 @@
     "u40s1": "Sungura wakayima",
     "u40s2": "Abunuwasi",
     "u40s3": "Eky’okuyiga"
+  },
+  "description": "Oluswayiri lwe lulimi Abafirika ab’Ebuvanjuba lwe bagabana, era lwogerwa abantu bukadde makumi okuva e Mombasa ne Zanzibar okutuuka e Kampala, Kigali ne Goma.",
+  "cast": {
+    "amani": "Omukulembeze wo, omuyizi wa yunivasite e Dar es Salaam",
+    "baraka": "Alina akadduuka ka caayi ne capati e Mombasa",
+    "bibi": "Jjajja e Zanzibar addamu buli kimu n’olugero",
+    "juma": "Omuvuzi wa matatu e Nairobi amanyi buli siteegi",
+    "neema": "Omuyizi wa siniya e Arusha ayagala bongo flava",
+    "emma": "Omwetegefu okuva ebweru, ayiga Oluswayiri nga ggwe"
+  },
+  "landing": {
+    "word": "kujifunza — okuyiga",
+    "words": [
+      "Oli otya?",
+      "Bulungi",
+      "Weebale",
+      "Tukwaniriza",
+      "Mukwano",
+      "Amazzi",
+      "Emmere",
+      "Mpola mpola",
+      "Tewali buzibu",
+      "Weeraba"
+    ],
+    "why": {
+      "title": "Olulimi lumu olw’**Obuvanjuba bwa Afirika bwonna.**",
+      "text": "Oluswayiri lulimi lwa gavumenti mu Kenya, Tanzania, Uganda n’Omukago gw’Obuvanjuba bwa Afirika, era lwe lwogerwa buli lunaku okuva ku lubalama lw’Ennyanja Buyindi okutuuka e Kongo. Luyige otambule, osuubule, ofune emikwano era owuliriz’ennyimba, okuva ku taarab okutuuka ku bongo flava.",
+      "cards": [
+        {
+          "title": "Eri abatambuze",
+          "text": "Tambula okuva e Mombasa okutuuka e Mwanza, mu matatu, daladala oba ekidyeri."
+        },
+        {
+          "title": "Ku mulimu",
+          "text": "Yogera ne bakozi banno ne bakasitoma mu kitundu kyonna."
+        },
+        {
+          "title": "Eri abaagala okumanya",
+          "text": "Sisinkana ebika by’amannya, engero n’ebitontome by’oku lubalama eby’emyaka lukumi."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Kiki ekitegeeza “weebale”?",
+      "explain": "_Asante_ kitegeeza weebale."
+    },
+    "start": {
+      "caption": "tuanze — ka tutandike"
+    },
+    "farewell": "Asante sana — weebale nnyo.",
+    "audience": "Abatandika okuva ku ntandikwa, abatambuze n’abeetegefu abagenda mu Buvanjuba bwa Afirika, n’ab’omu maka abakuuma Oluswayiri awaka.",
+    "first": "Okulamusa n’ekitiibwa, ab’omu maka, emmere n’akatale, ennamba n’essaawa, ebifo n’entambula, awaka, ennaku za wiiki n’obulamu, ekitundu ku kitundu."
   }
 }

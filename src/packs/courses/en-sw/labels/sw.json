@@ -301,5 +301,45 @@
     "u40s1": "Sungura",
     "u40s2": "Abunuwasi",
     "u40s3": "Funzo"
+  },
+  "description": "Kiswahili ni lugha ya pamoja ya Afrika Mashariki, inayozungumzwa na makumi ya mamilioni kutoka Mombasa na Zanzibar hadi Kampala, Kigali na Goma.",
+  "cast": {
+    "amani": "Kiongozi wako, mwanafunzi wa chuo kikuu Dar es Salaam",
+    "baraka": "Ana kibanda cha chai na chapati Mombasa",
+    "bibi": "Bibi wa Zanzibar anayejibu kila kitu kwa methali",
+    "juma": "Dereva wa matatu Nairobi anayejua kila stendi",
+    "neema": "Mwanafunzi wa sekondari Arusha anayependa bongo flava",
+    "emma": "Mjitolea kutoka nje, anayejifunza Kiswahili kama wewe"
+  },
+  "landing": {
+    "word": "kujifunza — kitenzi: kupata maarifa mapya",
+    "why": {
+      "title": "Lugha moja kwa **Afrika Mashariki yote.**",
+      "text": "Kiswahili ni lugha rasmi ya Kenya, Tanzania, Uganda na Jumuiya ya Afrika Mashariki, na lugha ya kila siku kutoka pwani ya Bahari ya Hindi hadi Kongo. Kijifunze kwa usafiri, biashara, marafiki na muziki, kutoka taarab hadi bongo flava.",
+      "cards": [
+        {
+          "title": "Kwa wasafiri",
+          "text": "Zunguka kutoka Mombasa hadi Mwanza, kwa matatu, daladala au kivuko."
+        },
+        {
+          "title": "Kwa kazi",
+          "text": "Zungumza na wafanyakazi wenzako na wateja kote kanda."
+        },
+        {
+          "title": "Kwa wadadisi",
+          "text": "Kutana na ngeli, methali na miaka elfu ya mashairi ya pwani."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Lipi maana yake “thank you” kwa Kiingereza?",
+      "explain": "_Asante_ ndiyo “thank you”."
+    },
+    "start": {
+      "caption": "tuanze — twende tuanze"
+    },
+    "farewell": "Asante sana.",
+    "audience": "Wanaoanza kabisa, wasafiri na wajitolea wanaokwenda Afrika Mashariki, na familia zinazodumisha Kiswahili nyumbani.",
+    "first": "Salamu na heshima, familia, chakula na sokoni, namba na saa, mahali na usafiri, nyumbani, siku za wiki na afya, sehemu kwa sehemu."
   }
 }

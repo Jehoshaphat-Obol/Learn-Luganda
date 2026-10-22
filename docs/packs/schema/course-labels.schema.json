@@ -2,20 +2,28 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://jehoshaphat-obol.github.io/Learn-Luganda/schema/course-labels.schema.json",
   "title": "Course pack: headings in another interface language",
-  "description": "src/packs/courses/<from>-<to>/labels/<ui>.json. Section, unit and skill headings for learners who read the app in <ui>. Every entry is optional; anything left out keeps the course's own text.",
+  "description": "src/packs/courses/<from>-<to>/labels/<ui>.json. Section, unit and skill headings, the course description, cast roles and the landing page's copy for learners who read the app in <ui>. Every entry is optional; anything left out keeps the course's own text.",
   "type": "object",
   "additionalProperties": false,
   "properties": {
-    "$schema": { "type": "string" },
+    "$schema": {
+      "type": "string"
+    },
     "sections": {
       "type": "object",
       "additionalProperties": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "title": { "$ref": "#/$defs/text" },
-          "level": { "$ref": "#/$defs/text" },
-          "description": { "$ref": "#/$defs/text" }
+          "title": {
+            "$ref": "#/$defs/text"
+          },
+          "level": {
+            "$ref": "#/$defs/text"
+          },
+          "description": {
+            "$ref": "#/$defs/text"
+          }
         }
       }
     },
@@ -25,17 +33,111 @@
         "type": "object",
         "additionalProperties": false,
         "properties": {
-          "title": { "$ref": "#/$defs/text" },
-          "description": { "$ref": "#/$defs/text" }
+          "title": {
+            "$ref": "#/$defs/text"
+          },
+          "description": {
+            "$ref": "#/$defs/text"
+          }
         }
       }
     },
     "skills": {
       "type": "object",
-      "additionalProperties": { "$ref": "#/$defs/text" }
+      "additionalProperties": {
+        "$ref": "#/$defs/text"
+      }
+    },
+    "description": {
+      "$ref": "#/$defs/text",
+      "description": "The course description (About page)."
+    },
+    "cast": {
+      "type": "object",
+      "description": "Each character's one-line role, by cast id.",
+      "additionalProperties": {
+        "$ref": "#/$defs/text"
+      }
+    },
+    "landing": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "The base-language parts of the course's landing block. Target-language words (hello, the sample's options, the start word) are not repeated here.",
+      "properties": {
+        "word": {
+          "$ref": "#/$defs/text"
+        },
+        "words": {
+          "type": "array",
+          "description": "One meaning per ticker word, in the course's order.",
+          "items": {
+            "$ref": "#/$defs/text"
+          }
+        },
+        "why": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "title": {
+              "$ref": "#/$defs/text"
+            },
+            "text": {
+              "$ref": "#/$defs/text"
+            },
+            "cards": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                  "title": {
+                    "$ref": "#/$defs/text"
+                  },
+                  "text": {
+                    "$ref": "#/$defs/text"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "sample": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "prompt": {
+              "$ref": "#/$defs/text"
+            },
+            "explain": {
+              "$ref": "#/$defs/text"
+            }
+          }
+        },
+        "start": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "caption": {
+              "$ref": "#/$defs/text"
+            }
+          }
+        },
+        "farewell": {
+          "$ref": "#/$defs/text"
+        },
+        "audience": {
+          "$ref": "#/$defs/text"
+        },
+        "first": {
+          "$ref": "#/$defs/text"
+        }
+      }
     }
   },
   "$defs": {
-    "text": { "type": "string", "minLength": 1 }
+    "text": {
+      "type": "string",
+      "minLength": 1
+    }
   }
 }

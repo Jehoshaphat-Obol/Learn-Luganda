@@ -310,5 +310,45 @@
     "u40s1": "Wakayima the hare",
     "u40s2": "Kintu and Nnambi",
     "u40s3": "The lesson"
+  },
+  "description": "English is Uganda’s official language: in schools, offices and the news, and it is spoken in many countries.",
+  "cast": {
+    "nakato": "Your guide, a university student in Kampala",
+    "mukasa": "A patient teacher from Masaka",
+    "jjajja": "A grandmother who loves proverbs",
+    "ssali": "A boda boda rider who knows every road",
+    "amara": "A secondary school student who loves music",
+    "emma": "A visitor from abroad who speaks English"
+  },
+  "landing": {
+    "word": "learn — to get new knowledge or skills",
+    "why": {
+      "title": "The language of **school and work.**",
+      "text": "English is Uganda’s official language. It is used in schools, courts, offices and online. Learn it to study, find work, and talk with people from all over the world.",
+      "cards": [
+        {
+          "title": "At school",
+          "text": "Understand teachers and books, and pass your exams."
+        },
+        {
+          "title": "At work",
+          "text": "Write, speak and work with all kinds of people with confidence."
+        },
+        {
+          "title": "Around the world",
+          "text": "Talk with visitors, travel and read online."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Which one means “weebale”?",
+      "explain": "_Thank you_ means weebale."
+    },
+    "start": {
+      "caption": "let’s go — come on, let’s start"
+    },
+    "farewell": "Thank you very much.",
+    "audience": "Luganda speakers who want to learn English from the start: students, workers, and parents who want to help their children at school.",
+    "first": "Greetings, introductions and numbers, then family, food, the market, time, places, the home and health, unit by unit."
   }
 }
