@@ -35,7 +35,21 @@
     "nnywa": { "text": "Ninakunywa", "alts": ["nakunywa"] },
     "nsoma": { "text": "Ninasoma", "alts": ["nasoma"] },
     "njiga": { "text": "Ninajifunza", "alts": ["najifunza"] },
-    "oyagala-ki": { "text": "Unataka nini?", "alts": ["wataka nini", "unapenda nini"] }
+    "oyagala-ki": { "text": "Unataka nini?", "alts": ["wataka nini", "unapenda nini"] },
+    "kaka": { "text": "kaka" },
+    "dada": { "text": "dada" },
+    "bibi": { "text": "bibi" },
+    "babu": { "text": "babu" },
+    "mjukuu": { "text": "mjukuu" },
+    "familia": { "text": "familia" },
+    "rafiki": { "text": "rafiki" },
+    "wako": { "text": "wako" },
+    "wake": { "text": "wake" },
+    "huyu": { "text": "huyu" },
+    "mzee": { "text": "mzee" },
+    "kijana": { "text": "kijana" },
+    "ugali": { "text": "ugali" },
+    "ninaitwa": { "text": "Ninaitwa" }
   },
   "sentences": {
     "s-maama-wange": { "text": "Mama yangu.", "alts": ["Mama wangu."] },
@@ -54,7 +68,31 @@
     "s-nsoma-ekitabo": { "text": "Ninasoma kitabu.", "alts": ["Nasoma kitabu."] },
     "s-njiga-oluganda": { "text": "Ninajifunza Kiganda.", "alts": ["Najifunza Kiganda.", "Ninajifunza Luganda.", "Ninajifunza Oluganda."] },
     "s-oyagala-ki": { "text": "Unataka nini?", "alts": ["Wataka nini?"] },
-    "s-njagala-ekikopo": { "text": "Ninataka kikombe.", "alts": ["Nataka kikombe."] }
+    "s-njagala-ekikopo": { "text": "Ninataka kikombe.", "alts": ["Nataka kikombe."] },
+    "s-mama-yangu": { "text": "Huyu ni mama yangu." },
+    "s-baba-wangu-mwalimu": { "text": "Baba yangu ni mwalimu." },
+    "s-kaka-na-dada": { "text": "Kaka na dada." },
+    "s-bibi-na-babu": { "text": "Bibi na babu." },
+    "s-rafiki-wangu": { "text": "Huyu ni rafiki wangu." },
+    "s-mjukuu-wangu": { "text": "Mjukuu wangu ni mwanafunzi." },
+    "s-una-watoto": { "text": "Una watoto?" },
+    "s-nina-watoto-watatu": { "text": "Nina watoto watatu." },
+    "s-familia-yangu": { "text": "Familia yangu ni nzuri." },
+    "s-mzee-na-kijana": { "text": "Mzee na kijana." },
+    "s-watu-wazuri": { "text": "Watu wazuri." },
+    "s-nataka-chai": { "text": "Nataka chai." },
+    "s-ninakula-ugali": { "text": "Ninakula ugali." },
+    "s-wali-na-maharage": { "text": "Wali na maharage." },
+    "s-kikombe-safi": { "text": "Kikombe ni safi." },
+    "s-chakula-kizuri": { "text": "Chakula ni kizuri sana!" },
+    "s-vikombe-vizuri": { "text": "Vikombe vizuri." },
+    "s-vitabu-vitatu": { "text": "Nina vitabu vitatu." },
+    "s-darasa-kubwa": { "text": "Darasa ni kubwa." },
+    "s-najifunza-kiingereza": { "text": "Ninajifunza Kiingereza." },
+    "s-unapenda-nini": { "text": "Unapenda nini?" },
+    "s-ninaitwa-amani": { "text": "Ninaitwa Amani." },
+    "s-je-una-watoto": { "text": "Je, una watoto?" },
+    "s-je-ni-kweli": { "text": "Je, ni kweli?" }
   },
   "phrases": [
     "Mama yangu.",
@@ -67,7 +105,10 @@
     "Ninakunywa chai.",
     "Ninajifunza Kiganda."
   ],
-  "dialogues": { "u2s1l2": [{ "line": "Huyu ni nani?" }], "u2s3l3": [{ "line": "Unataka nini?" }] },
+  "dialogues": {
+    "u2s1l2": [{ "line": "Huyu ni nani?", "options": ["Mama yangu.", "Nataka maji.", "Vitabu vyangu."] }],
+    "u2s3l3": [{ "line": "Unataka nini?", "options": ["Nataka chai.", "Mimi ni Nakato.", "Habari za asubuhi?"] }]
+  },
   "stories": {
     "market-matooke": {
       "title": "Matooke sokoni",

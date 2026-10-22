@@ -26,7 +26,17 @@
     "ntunda": { "text": "Ntunda" },
     "emicungwa": { "text": "emicungwa" },
     "ennanaasi": { "text": "ennanaasi" },
-    "amenvu": { "text": "amenvu" }
+    "amenvu": { "text": "amenvu" },
+    "una": { "text": "Olina" },
+    "ana": { "text": "alina" },
+    "chapati": { "text": "kyapati" },
+    "ndizi": { "text": "amenvu" },
+    "embe": { "text": "muyembe" },
+    "kitamu": { "text": "ewooma" },
+    "sokoni": { "text": "mu katale" },
+    "pilipili": { "text": "kamulali" },
+    "pilau": { "text": "pilawu" },
+    "karibu-chakula": { "text": "Jangu olye!" }
   },
   "sentences": {
     "s-ndya-matooke": { "text": "Ndya matooke." },
@@ -44,7 +54,21 @@
     "s-ngula-matooke": { "text": "Ngula matooke." },
     "s-ntunda-emicungwa": { "text": "Ntunda emicungwa." },
     "s-ngula-ennanaasi": { "text": "Ngula ennanaasi." },
-    "s-njagala-amenvu": { "text": "Njagala amenvu." }
+    "s-njagala-amenvu": { "text": "Njagala amenvu." },
+    "s-nina-kaka-mmoja": { "text": "Nnina muganda wange." },
+    "s-sina-dada": { "text": "Sirina mwannyinaze." },
+    "s-ana-rafiki": { "text": "Neema alina mukwano gwe." },
+    "s-chai-na-maziwa": { "text": "Caayi n'amata." },
+    "s-kahawa-na-sukari": { "text": "Kaawa ne ssukaali." },
+    "s-ninakula-samaki": { "text": "Ndya ebyennyanja." },
+    "s-chakula-kitamu": { "text": "Emmere ewooma nnyo!" },
+    "s-chapati-na-chai": { "text": "Kyapati ne caayi." },
+    "s-nataka-machungwa": { "text": "Njagala emicungwa." },
+    "s-chai-sokoni": { "text": "Nnywa caayi mu katale." },
+    "s-nyanya-tatu": { "text": "Ennyaanya ssatu n'akatungulu kamu." },
+    "s-pilipili-kali": { "text": "Kamulali ayokya!" },
+    "s-tunapika-pilau": { "text": "Leero tufumba pilawu." },
+    "s-mchuzi-mtamu": { "text": "Enva ziwooma nnyo!" }
   },
   "phrases": ["Nnina enjala.", "Nnina ennyonta.", "Ndya matooke.", "Matooke n’ebijanjaalo.", "Kiwooma nnyo!", "Ogula ki?", "Ngula ennanaasi."],
   "dialogues": {

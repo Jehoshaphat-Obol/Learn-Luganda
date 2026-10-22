@@ -23,7 +23,16 @@
     "kya-bbeeyi": { "text": "ghali", "alts": ["ni ghali", "ghali sana"] },
     "kya-buseere": { "text": "rahisi", "alts": ["ni rahisi", "bei nafuu", "nafuu"] },
     "kendeezaako": { "text": "Punguza bei kidogo", "alts": ["punguza kidogo", "punguza bei", "nipunguzie"] },
-    "kale-nkitwala-w": { "text": "Sawa, nitachukua", "alts": ["haya, nitachukua", "sawa, nitanunua", "sawa, nakichukua"] }
+    "kale-nkitwala-w": { "text": "Sawa, nitachukua", "alts": ["haya, nitachukua", "sawa, nitanunua", "sawa, nakichukua"] },
+    "punguza": { "text": "Punguza" },
+    "arobaini": { "text": "arobaini" },
+    "sitini": { "text": "sitini" },
+    "sabini": { "text": "sabini" },
+    "themanini": { "text": "themanini" },
+    "tisini": { "text": "tisini" },
+    "mia": { "text": "mia" },
+    "elfu": { "text": "elfu" },
+    "likizo": { "text": "likizo" }
   },
   "sentences": {
     "s-ebitabo-kkumi-na-bbiri": { "text": "Vitabu kumi na viwili.", "alts": ["Vitabu 12."] },
@@ -37,7 +46,17 @@
     "s-kino-ssente-mmeka": { "text": "Hiki ni bei gani?", "alts": ["Hiki ni shilingi ngapi?", "Bei ya hiki ni gani?"] },
     "s-kya-bbeeyi-nnyo": { "text": "Ni ghali sana!", "alts": ["Ghali sana!"] },
     "s-kendeezaako-ssebo": { "text": "Punguza bei kidogo, bwana.", "alts": ["Punguza kidogo, bwana.", "Nipunguzie bei, bwana."] },
-    "s-kale-nkitwala": { "text": "Sawa, nitachukua.", "alts": ["Haya, nitachukua.", "Sawa, nitanunua."] }
+    "s-kale-nkitwala": { "text": "Sawa, nitachukua.", "alts": ["Haya, nitachukua.", "Sawa, nitanunua."] },
+    "s-bei-gani-embe": { "text": "Embe ni bei gani?" },
+    "s-shilingi-kumi": { "text": "Shilingi kumi." },
+    "s-punguza-bei": { "text": "Punguza bei, tafadhali." },
+    "s-nipe-ndizi": { "text": "Nipe ndizi tano." },
+    "s-shilingi-ishirini": { "text": "Shilingi ishirini." },
+    "s-shilingi-hamsini": { "text": "Shilingi hamsini." },
+    "s-shilingi-kumi-na-mbili": { "text": "Shilingi kumi na mbili." },
+    "s-sina-pesa": { "text": "Sina pesa leo." },
+    "s-mshahara-mdogo": { "text": "Mshahara ni mdogo." },
+    "s-likizo-kesho": { "text": "Nina likizo kesho!" }
   },
   "phrases": [
     "Pesa kiasi gani?",
@@ -48,5 +67,5 @@
     "Punguza bei kidogo, bwana.",
     "Sawa, nitachukua."
   ],
-  "dialogues": { "u4s3l2": [{ "line": "Shilingi elfu tano." }] }
+  "dialogues": { "u4s3l2": [{ "line": "Shilingi elfu tano.", "options": ["Ni ghali sana! Punguza kidogo.", "Nina kiu.", "Habari za asubuhi?"] }] }
 }

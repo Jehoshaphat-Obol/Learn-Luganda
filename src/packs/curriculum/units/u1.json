@@ -41,7 +41,14 @@
     "musanvu",
     "munaana",
     "mwenda",
-    "kkumi"
+    "kkumi",
+    "karibu",
+    "jambo",
+    "mambo",
+    "poa",
+    "shikamoo",
+    "marahaba",
+    "ni"
   ],
   "sentences": [
     "s-oli-otya-ssebo",
@@ -63,7 +70,19 @@
     "s-mbeera-kampala",
     "s-nva-masaka",
     "s-ndi-muyizi",
-    "s-nsanyuse-okukulaba"
+    "s-nsanyuse-okukulaba",
+    "s-habari-yako",
+    "s-karibu-sana",
+    "s-mambo-poa",
+    "s-shikamoo-bibi",
+    "s-ndiyo-asante",
+    "s-hapana-asante",
+    "s-habari-za-asubuhi-baraka",
+    "s-jina-langu-amani",
+    "s-mimi-ni-emma",
+    "s-ninaishi-mombasa",
+    "s-ninatoka-arusha",
+    "s-nimefurahi-kukuona"
   ],
   "phrases": 10,
   "skills": [
@@ -119,6 +138,28 @@
       "lessons": [
         { "id": "u1s3l1", "newWords": ["emu", "bbiri", "ssatu", "nnya", "ttaano"] },
         { "id": "u1s3l2", "newWords": ["mukaaga", "musanvu", "munaana", "mwenda", "kkumi"] }
+      ]
+    },
+    {
+      "id": "u1s4",
+      "icon": "star",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u1s4l1",
+          "newWords": ["karibu", "jambo", "mambo", "poa"],
+          "sentences": ["s-karibu-sana", "s-habari-yako", "s-mambo-poa", "s-ndiyo-asante"]
+        },
+        {
+          "id": "u1s4l2",
+          "newWords": ["shikamoo", "marahaba", "ni"],
+          "sentences": ["s-hapana-asante", "s-shikamoo-bibi", "s-habari-za-asubuhi-baraka", "s-mimi-ni-emma"]
+        },
+        {
+          "id": "u1s4l3",
+          "newWords": [],
+          "sentences": ["s-ninaishi-mombasa", "s-ninatoka-arusha", "s-jina-langu-amani", "s-nimefurahi-kukuona"]
+        }
       ]
     }
   ],

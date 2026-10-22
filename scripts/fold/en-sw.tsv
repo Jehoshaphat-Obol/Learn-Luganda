@@ -1,0 +1,232 @@
+# lang	kind	id	text	(hint)
+lg	word	karibu	Tukusanyukidde	Welcome = Karibu
+lg	word	jambo	Nkulamusizza	Hello = Jambo
+lg	word	mambo	Ki kati?	What’s up? = Mambo?
+lg	word	poa	Kiri bulungi	Cool = Poa
+lg	word	shikamoo	Nkulamusizza n'ekitiibwa	My respects = Shikamoo
+lg	word	marahaba	Weebale, mwana wange	Thank you, I accept = Marahaba
+lg	word	ni	ndi	am = ni
+lg	sentence	s-habari-yako	Oli otya?	How are you? = Habari yako?
+lg	sentence	s-karibu-sana	Tukusanyukidde nnyo!	You’re very welcome! = Karibu sana!
+lg	sentence	s-mambo-poa	Ki kati? Kiri bulungi!	What’s up? Cool! = Mambo? Poa!
+lg	sentence	s-shikamoo-bibi	Nkulamusizza n'ekitiibwa, jjajja.	My respects, grandmother. = Shikamoo, bibi.
+lg	sentence	s-ndiyo-asante	Yee, weebale.	Yes, thank you. = Ndiyo, asante.
+lg	sentence	s-hapana-asante	Nedda, weebale.	No, thank you. = Hapana, asante.
+lg	sentence	s-habari-za-asubuhi-baraka	Wasuze otya, Baraka?	Good morning, Baraka. = Habari za asubuhi, Baraka?
+lg	sentence	s-jina-langu-amani	Erinnya lyange Amani.	My name is Amani. = Jina langu ni Amani.
+lg	sentence	s-mimi-ni-emma	Nze Emma.	I am Emma. = Mimi ni Emma.
+lg	sentence	s-ninaishi-mombasa	Mbeera Mombasa.	I live in Mombasa. = Ninaishi Mombasa.
+lg	sentence	s-ninatoka-arusha	Nva Arusha.	I come from Arusha. = Ninatoka Arusha.
+lg	sentence	s-nimefurahi-kukuona	Nsanyuse okukulaba, Juma.	Nice to meet you, Juma. = Nimefurahi kukuona, Juma.
+lg	word	kaka	muganda	brother = kaka
+lg	word	dada	mwannyinaze	sister = dada
+lg	word	bibi	jjajja omukazi	grandmother = bibi
+lg	word	babu	jjajja omusajja	grandfather = babu
+lg	word	mjukuu	muzzukulu	grandchild = mjukuu
+lg	word	familia	amaka	family = familia
+lg	word	rafiki	mukwano	friend = rafiki
+lg	word	wako	wo	your = wako
+lg	word	wake	we	his = wake
+lg	word	huyu	ono	this = huyu
+lg	word	una	Olina	You have = Una
+lg	word	ana	alina	has = ana
+lg	word	mzee	omukadde	elder = mzee
+lg	word	kijana	omuvubuka	young person = kijana
+lg	sentence	s-mama-yangu	Ono ye maama wange.	This is my mother. = Huyu ni mama yangu.
+lg	sentence	s-baba-wangu-mwalimu	Taata wange musomesa.	My father is a teacher. = Baba yangu ni mwalimu.
+lg	sentence	s-kaka-na-dada	Muganda wange ne mwannyinaze.	Brother and sister. = Kaka na dada.
+lg	sentence	s-bibi-na-babu	Jjajja omukazi ne jjajja omusajja.	Grandmother and grandfather. = Bibi na babu.
+lg	sentence	s-rafiki-wangu	Ono ye mukwano gwange.	This is my friend. = Huyu ni rafiki wangu.
+lg	sentence	s-mjukuu-wangu	Muzzukulu wange muyizi.	My grandchild is a student. = Mjukuu wangu ni mwanafunzi.
+lg	sentence	s-nina-kaka-mmoja	Nnina muganda wange.	I have a brother. = Nina kaka.
+lg	sentence	s-sina-dada	Sirina mwannyinaze.	I don’t have a sister. = Sina dada.
+lg	sentence	s-una-watoto	Olina abaana?	Do you have children? = Una watoto?
+lg	sentence	s-nina-watoto-watatu	Nnina abaana basatu.	I have three children. = Nina watoto watatu.
+lg	sentence	s-ana-rafiki	Neema alina mukwano gwe.	Neema has a friend. = Neema ana rafiki.
+lg	sentence	s-familia-yangu	Amaka gange malungi.	My family is lovely. = Familia yangu ni nzuri.
+lg	sentence	s-mzee-na-kijana	Omukadde n'omuvubuka.	An elder and a young person. = Mzee na kijana.
+lg	sentence	s-watu-wazuri	Abantu abalungi.	Good people. = Watu wazuri.
+lg	word	ugali	posho	ugali = ugali
+lg	word	chapati	kyapati	chapati = chapati
+lg	word	ndizi	amenvu	bananas = ndizi
+lg	word	embe	muyembe	mango = embe
+lg	word	kitamu	ewooma	tasty = kitamu
+lg	word	sokoni	mu katale	at the market = sokoni
+lg	word	punguza	Kendeeza	Reduce = Punguza
+lg	sentence	s-nataka-chai	Njagala caayi.	I want tea. = Nataka chai.
+lg	sentence	s-chai-na-maziwa	Caayi n'amata.	Tea with milk. = Chai na maziwa.
+lg	sentence	s-kahawa-na-sukari	Kaawa ne ssukaali.	Coffee with sugar. = Kahawa na sukari.
+lg	sentence	s-ninakula-ugali	Ndya posho.	I eat ugali. = Ninakula ugali.
+lg	sentence	s-wali-na-maharage	Omuceere n'ebijanjaalo.	Rice and beans. = Wali na maharage.
+lg	sentence	s-ninakula-samaki	Ndya ebyennyanja.	I eat fish. = Ninakula samaki.
+lg	sentence	s-chakula-kitamu	Emmere ewooma nnyo!	The food is very tasty! = Chakula ni kitamu sana!
+lg	sentence	s-chapati-na-chai	Kyapati ne caayi.	Chapati and tea. = Chapati na chai.
+lg	sentence	s-bei-gani-embe	Omuyembe gwa ssente mmeka?	How much is the mango? = Embe ni bei gani?
+lg	sentence	s-shilingi-kumi	Silingi kkumi.	Ten shillings. = Shilingi kumi.
+lg	sentence	s-punguza-bei	Kendeeza ku bbeeyi, nkwegayiridde.	Lower the price, please. = Punguza bei, tafadhali.
+lg	sentence	s-nipe-ndizi	Mpa amenvu ataano.	Give me five bananas. = Nipe ndizi tano.
+lg	sentence	s-nataka-machungwa	Njagala emicungwa.	I want oranges. = Nataka machungwa.
+lg	sentence	s-chai-sokoni	Nnywa caayi mu katale.	I drink tea at the market. = Ninakunywa chai sokoni.
+lg	word	arobaini	amakumi ana	forty = arobaini
+lg	word	sitini	nkaaga	sixty = sitini
+lg	word	sabini	nsanvu	seventy = sabini
+lg	word	themanini	kinaana	eighty = themanini
+lg	word	tisini	kyenda	ninety = tisini
+lg	word	mia	kikumi	hundred = mia
+lg	word	elfu	lukumi	thousand = elfu
+lg	word	na-nusu	n'ekitundu	and a half = na nusu
+lg	word	jioni	akawungeezi	evening = jioni
+lg	sentence	s-shilingi-ishirini	Silingi amakumi abiri.	Twenty shillings. = Shilingi ishirini.
+lg	sentence	s-shilingi-hamsini	Silingi ataano.	Fifty shillings. = Shilingi hamsini.
+lg	sentence	s-shilingi-kumi-na-mbili	Silingi kkumi na bbiri.	Twelve shillings. = Shilingi kumi na mbili.
+lg	sentence	s-saa-ngapi-sasa	Kati ssaawa mmeka?	What time is it now? = Ni saa ngapi sasa?
+lg	sentence	s-saa-tatu-na-nusu	Ssaawa ssatu n'ekitundu.	Half past nine. = Saa tatu na nusu.
+lg	sentence	s-saa-sita-mchana	Ssaawa mukaaga ez'emisana.	Twelve noon. = Saa sita mchana.
+lg	sentence	s-saa-mbili-usiku	Ssaawa bbiri ez'ekiro.	Eight at night. = Saa mbili usiku.
+lg	sentence	s-leo-na-kesho	Leero n'enkya.	Today and tomorrow. = Leo na kesho.
+lg	sentence	s-jana-jioni	Jjo akawungeezi.	Yesterday evening. = Jana jioni.
+lg	sentence	s-siku-saba	Wiiki erina ennaku musanvu.	A week is seven days. = Wiki ni siku saba.
+lg	word	pale	eri	there = pale
+lg	word	karibu-na	okumpi ne	near = karibu na
+lg	word	shuleni	ku ssomero	to school = shuleni
+lg	word	kazini	ku mulimu	to work = kazini
+lg	word	barabara	oluguudo	road = barabara
+lg	word	matatu	kamunye	minibus = matatu
+lg	word	boda-boda	bodaboda	motorbike taxi = boda boda
+lg	word	nauli	ssente z'olugendo	fare = nauli
+lg	sentence	s-benki-iko-wapi	Bbanka eri ludda wa?	Where is the bank? = Benki iko wapi?
+lg	sentence	s-duka-iko-hapa	Edduuka liri wano.	The shop is here. = Duka iko hapa.
+lg	sentence	s-msikiti-uko-pale	Omuzikiti guli eri.	The mosque is over there. = Msikiti iko pale.
+lg	sentence	s-karibu-na-benki	Kiri kumpi ne bbanka.	It’s near the bank. = Iko karibu na benki.
+lg	sentence	s-ni-mbali	Kiri wala nnyo?	Is it very far? = Ni mbali sana?
+lg	sentence	s-simama-hapa	Yimirira wano, nkwegayiridde.	Stop here, please. = Simama hapa, tafadhali.
+lg	sentence	s-ninaenda-mjini	Ŋŋenda mu kibuga mu kamunye.	I am going to town by minibus. = Ninaenda mjini kwa matatu.
+lg	sentence	s-nauli-ni-bei-gani	Ssente z'olugendo mmeka?	How much is the fare? = Nauli ni bei gani?
+lg	sentence	s-boda-boda-haraka	Bodaboda ya mangu.	A motorbike taxi is quick. = Boda boda ni haraka.
+lg	sentence	s-sawa-asante	Kale, weebale.	Okay, thank you. = Sawa, asante.
+lg	word	jikoni	mu ffumbiro	in the kitchen = jikoni
+lg	word	viti	entebe	chairs = viti
+lg	word	yuko	ali	is (at) = yuko
+lg	word	ndani	munda	inside = ndani
+lg	word	nje	ebweru	outside = nje
+lg	word	juu-ya	waggulu ku	on top of = juu ya
+lg	word	chini-ya	wansi wa	under = chini ya
+lg	sentence	s-nyumba-yangu	Ennyumba yange ntono.	My house is small. = Nyumba yangu ni ndogo.
+lg	sentence	s-nyumba-kubwa	Ennyumba yo nnene!	Your house is big! = Nyumba yako ni kubwa!
+lg	sentence	s-kuna-vyumba-vitatu	Waliwo ebisenge bisatu.	There are three rooms. = Kuna vyumba vitatu.
+lg	sentence	s-kuna-kitanda	Waliwo ekitanda mu kisenge.	There is a bed in the room. = Kuna kitanda chumbani.
+lg	sentence	s-viti-vinne	Entebe nnya n'emmeeza.	Four chairs and a table. = Viti vinne na meza.
+lg	sentence	s-chai-juu-ya-meza	Caayi eri ku mmeeza.	The tea is on the table. = Chai iko juu ya meza.
+lg	sentence	s-chini-ya-kitanda	Kiri wansi w'ekitanda.	It’s under the bed. = Iko chini ya kitanda.
+lg	sentence	s-mtoto-yuko-nje	Omwana ali bweru.	The child is outside. = Mtoto yuko nje.
+lg	sentence	s-karibu-ndani	Yingira!	Come inside! = Karibu ndani!
+lg	sentence	s-leo-ni-jumatatu	Leero Bbalaza.	Today is Monday. = Leo ni Jumatatu.
+lg	sentence	s-kesho-ni-jumanne	Enkya Lwakubiri.	Tomorrow is Tuesday. = Kesho ni Jumanne.
+lg	sentence	s-jumamosi-na-jumapili	Lwamukaaga ne Ssande.	Saturday and Sunday. = Jumamosi na Jumapili.
+lg	word	mwili	omubiri	body = mwili
+lg	word	jino	erinnyo	tooth = jino
+lg	word	mgonjwa	omulwadde	sick = mgonjwa
+lg	word	ninaumwa	Ndi mu bulumi	I am in pain = Ninaumwa
+lg	word	inauma	kiruma	it hurts = inauma
+lg	word	nimepona	Mponye	I have recovered = Nimepona
+lg	word	afya	obulamu	health = afya
+lg	word	njema	ennungi	good = njema
+lg	sentence	s-kichwa-kinauma	Omutwe gunnuma.	My head hurts. = Kichwa kinauma.
+lg	sentence	s-ninaumwa-na-tumbo	Olubuto lunnuma.	I have a stomach ache. = Ninaumwa na tumbo.
+lg	sentence	s-mguu-inauma	Okugulu kwange kunnuma.	My leg hurts. = Mguu wangu unauma.
+lg	sentence	s-jino-linauma	Erinnyo linnuma.	My tooth hurts. = Jino linauma.
+lg	sentence	s-macho-mazuri	Akamwa n'amaaso.	Mouth and eyes. = Mdomo na macho.
+lg	sentence	s-osha-mikono	Omukono n'ekigere.	Hand and foot. = Mkono na mguu.
+lg	sentence	s-daktari-yuko-wapi	Omusawo ali ludda wa?	Where is the doctor? = Daktari yuko wapi?
+lg	sentence	s-nataka-dawa	Njagala eddagala, nkwegayiridde.	I want medicine, please. = Nataka dawa, tafadhali.
+lg	sentence	s-pumzika-leo	Wummula leero.	Rest today. = Pumzika leo.
+lg	sentence	s-nimepona-asante	Mponye, weebale.	I’ve recovered, thank you. = Nimepona, asante.
+lg	sentence	s-ugua-pole	Owone mangu, mukwano gwange.	Get well soon, my friend. = Ugua pole, rafiki yangu.
+lg	sentence	s-afya-njema	Obulamu obulungi!	Good health! = Afya njema!
+lg	sentence	s-kikombe-safi	Ekikopo kiyonjo.	The cup is clean. = Kikombe ni safi.
+lg	sentence	s-chakula-kizuri	Emmere nnungi nnyo!	The food is very good! = Chakula ni kizuri sana!
+lg	sentence	s-vikombe-vizuri	Ebikopo ebirungi.	Nice cups. = Vikombe vizuri.
+lg	word	njoo	Jangu	Come = Njoo
+lg	word	leta	Leeta	Bring = Leta
+lg	word	chukua	Twala	Take = Chukua
+lg	sentence	s-njoo-hapa	Jangu wano!	Come here! = Njoo hapa!
+lg	sentence	s-kaa-tafadhali	Tuula, nkwegayiridde.	Sit down, please. = Kaa, tafadhali.
+lg	sentence	s-leta-maji	Leeta amazzi.	Bring water. = Leta maji.
+lg	sentence	s-weka-kikombe	Teeka ekikopo ku mmeeza.	Put the cup on the table. = Weka kikombe juu ya meza.
+lg	sentence	s-chukua-kiti	Twala entebe.	Take a chair. = Chukua kiti.
+lg	sentence	s-fungua-dirisha	Ggulawo eddirisa, nkwegayiridde.	Open the window, please. = Fungua dirisha, tafadhali.
+lg	sentence	s-kila-mwezi	Buli mwezi ŋŋenda Mombasa.	Every month I go to Mombasa. = Kila mwezi ninaenda Mombasa.
+lg	sentence	s-kila-mwaka	Ttoggo lijja buli mwaka.	The long rains come every year. = Masika yanakuja kila mwaka.
+lg	word	likizo	luwummula	holiday = likizo
+lg	sentence	s-sina-pesa	Leero sirina ssente.	I don’t have money today. = Sina pesa leo.
+lg	sentence	s-mshahara-mdogo	Omusaala mutono.	The salary is small. = Mshahara ni mdogo.
+lg	sentence	s-likizo-kesho	Enkya ndi mu luwummula!	I’m on holiday tomorrow! = Nina likizo kesho!
+lg	sentence	s-vitabu-vitatu	Nnina ebitabo bisatu.	I have three books. = Nina vitabu vitatu.
+lg	sentence	s-darasa-kubwa	Ekibiina kinene.	The classroom is big. = Darasa ni kubwa.
+lg	sentence	s-najifunza-kiingereza	Njiga Olungereza.	I’m learning English. = Ninajifunza Kiingereza.
+lg	word	ninaitwa	Bampita	I’m called = Ninaitwa
+lg	sentence	s-unapenda-nini	Oyagala ki?	What do you like? = Unapenda nini?
+lg	sentence	s-ninaitwa-amani	Bampita Amani.	I’m called Amani. = Ninaitwa Amani.
+lg	sentence	s-je-una-watoto	Olina abaana?	Do you have children? = Je, una watoto?
+lg	sentence	s-je-ni-kweli	Kya mazima?	Is it true? = Je, ni kweli?
+lg	word	pilipili	kamulali	chilli = pilipili
+lg	word	pilau	pilawu	pilau = pilau
+lg	word	karibu-chakula	Jangu olye!	Come and eat! = Karibu chakula!
+lg	sentence	s-nyanya-tatu	Ennyaanya ssatu n'akatungulu kamu.	Three tomatoes and one onion. = Nyanya tatu na kitunguu kimoja.
+lg	sentence	s-pilipili-kali	Kamulali ayokya!	The chilli is hot! = Pilipili ni kali!
+lg	sentence	s-tunapika-pilau	Leero tufumba pilawu.	Today we’re cooking pilau. = Leo tunapika pilau.
+lg	sentence	s-mchuzi-mtamu	Enva ziwooma nnyo!	The stew is very tasty! = Mchuzi ni mtamu sana!
+lg	word	nimlimie	mmulimire	farm for him = nimlimie
+lg	word	ninakupikia	nkufumbira	I’m cooking for you = ninakupikia
+lg	word	jirani	muliraanwa	neighbour = jirani
+lg	sentence	s-kijijini	Mbeera mu kyalo.	I live in the village. = Ninaishi kijijini.
+lg	sentence	s-kulima-mahindi	Tulima kasooli.	We grow maize. = Tunalima mahindi.
+lg	sentence	s-nimlimie	Nja kulimira jjajja ennimiro ye.	I will farm Grandma’s field for her. = Nitamlimia bibi shamba.
+lg	sentence	s-ninakupikia	Nkufumbira posho.	I’m cooking ugali for you. = Ninakupikia ugali.
+lg	sentence	s-niletee-maji	Ndeetera amazzi, nkwegayiridde.	Bring me water, please. = Niletee maji, tafadhali.
+lg	sentence	s-jirani	Muliraanwa wange mulimi.	My neighbour is a farmer. = Jirani yangu ni mkulima.
+fr	skill	u1s4	Encore des salutations	
+fr	skill	u2s4	Parents et amis	
+fr	skill	u3s4	Encore à manger	
+fr	skill	u4s4	Grands nombres	
+fr	skill	u5s4	Moments de la journée	
+fr	skill	u6s4	Se déplacer	
+fr	skill	u7s4	Où sont les choses	
+fr	skill	u8s4	La santé	
+lg	skill	u1s4	Okulamusa okulala	
+lg	skill	u2s4	Ab'oluganda ne mikwano	
+lg	skill	u3s4	Emmere endala	
+lg	skill	u4s4	Ennamba ennene	
+lg	skill	u5s4	Ebiseera by'olunaku	
+lg	skill	u6s4	Okutambula mu kibuga	
+lg	skill	u7s4	Ebintu we biri	
+lg	skill	u8s4	Obulamu	
+en	skill	u1s4	More greetings	
+en	skill	u2s4	Relatives and friends	
+en	skill	u3s4	More food	
+en	skill	u4s4	Big numbers	
+en	skill	u5s4	Times of day	
+en	skill	u6s4	Getting around	
+en	skill	u7s4	Where things are	
+en	skill	u8s4	Health	
+sw	skill	u1s4	Salamu zaidi	
+sw	skill	u2s4	Ndugu na marafiki	
+sw	skill	u3s4	Vyakula zaidi	
+sw	skill	u4s4	Namba kubwa	
+sw	skill	u5s4	Nyakati za siku	
+sw	skill	u6s4	Kuzunguka mjini	
+sw	skill	u7s4	Vitu viko wapi	
+sw	skill	u8s4	Afya
+sw	dialogue	u1s1l3.0	Nimelala salama, mama. | Kwaheri, mama. | Hapana, bwana.	Habari za asubuhi, mwanangu. :: Nsuze bulungi, nnyabo. | Weraba, nnyabo. | Nedda, ssebo. (answer 1)
+sw	dialogue	u1s1l4.0	Kwaheri, tutaonana. | Habari za asubuhi? | Nzuri.	Sawa, kwaheri! :: Weraba, tunaalabagana. | Wasuze otya? | Gyendi. (answer 1)
+sw	dialogue	u1s2l3.0	Mimi ni Amara. | Ninaishi Kampala. | Pole na kazi.	Jina lako ni nani? :: Nze Amara. | Mbeera Kampala. | Gyebale ko. (answer 1)
+sw	dialogue	u1s2l3.1	Ninatoka Masaka. | Mimi ni mwanafunzi. | Asante sana.	Mimi ni Emma. Unatoka wapi? :: Nva Masaka. | Ndi muyizi. | Weebale nnyo. (answer 1)
+sw	dialogue	u2s1l2.0	Mama yangu. | Nataka maji. | Vitabu vyangu.	Huyu ni nani? :: Maama wange. | Njagala amazzi. | Ebitabo byange. (answer 1)
+sw	dialogue	u2s3l3.0	Nataka chai. | Mimi ni Nakato. | Habari za asubuhi?	Unataka nini? :: Njagala caayi. | Nze Nakato. | Wasuze otya? (answer 1)
+sw	dialogue	u3s2l2.0	Nina njaa. | Kwaheri. | Ninauza machungwa.	Unataka nini, mwanangu? :: Nnina enjala. | Weraba. | Ntunda emicungwa. (answer 1)
+sw	dialogue	u3s3l2.0	Ninanunua nanasi. | Nimelala salama. | Mimi ni mwanafunzi.	Unanunua nini, mama? :: Ngula ennanaasi. | Nsuze bulungi. | Ndi muyizi. (answer 1)
+sw	dialogue	u4s3l2.0	Ni ghali sana! Punguza kidogo. | Nina kiu. | Habari za asubuhi?	Shilingi elfu tano. :: Kya bbeeyi nnyo! Kendeezaako. | Nnina ennyonta. | Wasuze otya? (answer 1)
+sw	dialogue	u5s3l2.0	Saa kumi. | Shilingi elfu mbili. | Jumatatu.	Ni saa ngapi? :: Ssaawa nnya. | Ssente nkumi bbiri. | Ku Bbalaza. (answer 1)
+sw	dialogue	u6s3l2.0	Ninaenda mjini. | Ni kitamu sana! | Saa kumi.	Unakwenda wapi, mama? :: Ntwala mu kibuga. | Kiwooma nnyo! | Ssaawa nnya. (answer 1)
+sw	dialogue	u7s2l2.0	Karibu! Tumefurahi kukuona. | Funga mlango. | Ni saa ngapi?	Hodi! :: Yingira! Tusanyuse okukulaba. | Ggalawo oluggi. | Ssaawa mmeka? (answer 1)
+sw	dialogue	u8s3l2.0	Ni mgonjwa. Kichwa kinauma. | Pinda kulia. | Ninauza machungwa.	Habari yako? :: Ndi mulwadde. Omutwe gunnuma. | Kyuka ku ddyo. | Ntunda emicungwa. (answer 1)

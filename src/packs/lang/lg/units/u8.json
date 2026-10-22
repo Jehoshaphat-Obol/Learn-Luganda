@@ -19,7 +19,15 @@
     "omusawo": { "text": "omusawo" },
     "eddagala": { "text": "eddagala" },
     "wona-mangu": { "text": "Wona mangu!" },
-    "wummula": { "text": "Wummula" }
+    "wummula": { "text": "Wummula" },
+    "mwili": { "text": "omubiri" },
+    "jino": { "text": "erinnyo" },
+    "mgonjwa": { "text": "omulwadde" },
+    "ninaumwa": { "text": "Ndi mu bulumi" },
+    "inauma": { "text": "kiruma" },
+    "nimepona": { "text": "Mponye" },
+    "afya": { "text": "obulamu" },
+    "njema": { "text": "ennungi" }
   },
   "sentences": {
     "s-omutwe-gunnuma": { "text": "Omutwe gunnuma." },
@@ -32,7 +40,19 @@
     "s-ngenda-eri-omusawo": { "text": "Ŋŋenda mu ddwaliro.", "alts": ["Ngenda mu ddwaliro."] },
     "s-omusawo-wange": { "text": "Omusawo wange." },
     "s-nnywa-eddagala": { "text": "Nnywa eddagala." },
-    "s-wummula-wona-mangu": { "text": "Wummula. Wona mangu!" }
+    "s-wummula-wona-mangu": { "text": "Wummula. Wona mangu!" },
+    "s-kichwa-kinauma": { "text": "Omutwe gunnuma." },
+    "s-ninaumwa-na-tumbo": { "text": "Olubuto lunnuma." },
+    "s-mguu-inauma": { "text": "Okugulu kwange kunnuma." },
+    "s-jino-linauma": { "text": "Erinnyo linnuma." },
+    "s-macho-mazuri": { "text": "Akamwa n'amaaso." },
+    "s-osha-mikono": { "text": "Omukono n'ekigere." },
+    "s-daktari-yuko-wapi": { "text": "Omusawo ali ludda wa?" },
+    "s-nataka-dawa": { "text": "Njagala eddagala, nkwegayiridde." },
+    "s-pumzika-leo": { "text": "Wummula leero." },
+    "s-nimepona-asante": { "text": "Mponye, weebale." },
+    "s-ugua-pole": { "text": "Owone mangu, mukwano gwange." },
+    "s-afya-njema": { "text": "Obulamu obulungi!" }
   },
   "phrases": ["Ndi mulwadde.", "Omutwe gunnuma.", "Olubuto lunnuma.", "Nnina omusujja.", "Ŋŋenda mu ddwaliro.", "Wona mangu!"],
   "dialogues": { "u8s3l2": [{ "line": "Oli otya?", "options": ["Ndi mulwadde. Omutwe gunnuma.", "Kyuka ku ddyo.", "Ntunda emicungwa."] }] },

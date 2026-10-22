@@ -109,6 +109,7 @@ describe('pack formats', () => {
   });
 
   it('records the content version', () => {
-    expect(course.version).toBe(1);
+    // Version 2: the curriculum grew with the Swahili courses (#187).
+    expect(course.version).toBe(2);
   });
 });

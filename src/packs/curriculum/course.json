@@ -1,7 +1,7 @@
 {
   "$schema": "../../../docs/packs/schema/curriculum.schema.json",
   "formatVersion": 2,
-  "version": 1,
+  "version": 2,
   "cast": {
     "nakato": { "name": "Nakato", "look": "nakato", "voice": { "pitch": 1.2, "rate": 0.95, "hints": ["female", "woman"] } },
     "mukasa": { "name": "Mukasa", "look": "mukasa", "voice": { "pitch": 0.8, "rate": 0.85, "hints": ["male", "man"] } },

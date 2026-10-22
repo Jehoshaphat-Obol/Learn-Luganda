@@ -6,8 +6,11 @@
  * (tests/fixtures/legacy-courses.json.gz, written from the packs at the
  * commit before they were deleted). Every difference must be one of the
  * deliberate ones listed here. When shared text is changed on purpose
- * later, add the path to INTENDED, or retire this test once phase 2 has
- * reshaped the catalog.
+ * later, add the path to INTENDED.
+ *
+ * Phase 2 (#187) grows the curriculum: concepts, skills and headings the
+ * legacy packs didn't have are left out before comparing (see `known`), so
+ * what learners already had must stay as it was.
  */
 import { gunzipSync } from 'node:zlib';
 import { readFileSync } from 'node:fs';
@@ -47,13 +50,26 @@ function accepted(pack) {
   return normalize(copy);
 }
 
+/** `pack` without the units' words, sentences and skills `old` doesn't have, nor their headings. */
+function known(pack, old) {
+  const copy = structuredClone(pack);
+  for (const [id, u] of Object.entries(copy.units)) {
+    const was = old.units[id];
+    for (const kind of ['words', 'sentences', 'skills']) u[kind] = u[kind].filter((x) => was[kind].some((y) => y.id === x.id));
+  }
+  for (const [ui, l] of Object.entries(copy.labels ?? {})) if (l.skills) l.skills = Object.fromEntries(Object.entries(l.skills).filter(([k]) => k in (old.labels[ui]?.skills ?? {})));
+  return copy;
+}
+
 describe('composed courses match the hand-built packs they replaced', () => {
   it.each(Object.keys(legacy))('%s', (id) => {
     const old = accepted(legacy[id]);
-    const now = accepted(composeCourse(id, readCatalog(), { registry: readLanguages(), uis: Object.keys(legacy[id].labels) }));
+    const now = accepted(known(composeCourse(id, readCatalog(), { registry: readLanguages(), uis: Object.keys(legacy[id].labels) }), legacy[id]));
     const unexpected = diff(old, now).filter((line) => {
       const [path] = line.split(': ');
       if (INTENDED[id].includes(path)) return false;
+      // Phase 2 raised the curriculum version (new skills carry `since`).
+      if (path === 'meta.version') return false;
       // Landing copy in another interface language now comes from the notes
       // about the target language in that language, not a per-course copy.
       if (/^labels\.[a-z]+\.landing\./.test(path)) return false;

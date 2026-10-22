@@ -154,7 +154,9 @@ One text per language has to work on both sides of a course, so:
   own way: `"Do you speak {to}?"` in English, `"Oyogera {to}?"` in Luganda.
   `{to.mu}` picks another form of a name (`"mu {to.mu}"` → "mu Luganda").
 - Words whose answer repeats an earlier word's are left out of a course,
-  since they'd be two questions with one answer.
+  since they'd be two questions with one answer. Words from older skills
+  win: a skill added later carries `since` (the curriculum version that
+  added it), so a new concept never pushes out one learners already have.
 - Accepted answers (`alts`) serve both directions.
 
 A pair is offered when its target language covers at least 95% of the text a
@@ -167,7 +169,24 @@ so a language with only headings (like `lang/fr`) still labels every course.
 
 `scripts/split-course.js` built the catalog from the hand-built en-lg, sw-lg
 and lg-en packs (#185), and `tests/compose.test.js` checks the composed
-courses against them.
+courses against them: anything learners already had must stay as it was.
+
+`scripts/fold-course.js` folds another hand-built pair into the catalog
+(#187), one section at a time:
+
+```
+node scripts/fold-course.js --course en-sw --units u9-u16 --drafts scripts/fold/en-sw.tsv
+```
+
+Each word and sentence either matches a concept the curriculum has (the
+two languages agree, one of them on the main text), which gains the pair's
+accepted answers and notes, or becomes a new concept. New concepts go to
+the unit where most of their source lesson's words already are, as an extra
+skill (`uNs4`). The pair's languages bring their own text; every other
+language that writes lesson text needs a line in the drafts file
+(`lang  kind  id  text`, kind `word`, `sentence`, `skill` or `dialogue`).
+The script appends the lines it still needs; fill them in and run it again
+with `--write`, then `npm run coverage`.
 
 ## Course packs
 

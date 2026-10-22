@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u7",
+  "guidebook": {
+    "intro": "Nyumbani: vyumba, vitu vilivyopo na visivyokuwepo, na rangi.",
+    "tips": [
+      {
+        "id": "in-on-under",
+        "title": "“In”, “on”, “under”",
+        "body": [
+          "Kiswahili hutumia **-ni** na **juu ya**, **chini ya**. Kiingereza kina maneno mafupi: **in the kitchen** (jikoni), **on the table** (mezani, juu ya meza), **under the bed** (chini ya kitanda).",
+          "Mara nyingi tumia **the** kabla ya kitu: **The tea is on the table.**"
+        ]
+      },
+      {
+        "id": "there-is",
+        "title": "“There is” na “there are”",
+        "body": [
+          "**Kuna** ni **there is** kwa kitu kimoja, na **there are** kwa vingi: **There is a chair.** **There are three rooms.**",
+          "**Hakuna** ni **there isn’t** au **there aren’t**: **There is no water.** (Hakuna maji.)"
+        ]
+      },
+      {
+        "id": "adjectives-first",
+        "title": "Rangi huja kabla ya kitu",
+        "body": [
+          "Kiswahili husema **nyumba nyeupe** (kitu kisha rangi). Kiingereza hugeuza: **a white house**, **a red door**.",
+          "Rangi haibadiliki kwa wingi: **a red car**, **two red cars**. Kuuliza: **What colour is it?** (Ni rangi gani?)"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Karibu nyumbani",
+        "body": [
+          "Mgeni akibisha hodi, kwa Kiingereza unasema **Come in!** au **Welcome!** Kumkaribisha kukaa: **Please sit down.** Kumpa kinywaji: **Would you like some tea?**"
+        ]
+      }
+    ]
+  }
+}

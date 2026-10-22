@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u6",
+  "notes": { "ngenda": "I am going (sasa) au I go (kila siku).", "awaka": "Go home: bila “to”." },
+  "guidebook": {
+    "intro": "Kuuliza mahali, kutoa maelekezo na kusafiri kwa matatu au boda boda.",
+    "tips": [
+      {
+        "id": "where-is",
+        "title": "“Where is…?”",
+        "body": [
+          "**…iko wapi?** ni **Where is…?** Neno la swali huja mwanzoni: **Where is the bank?**",
+          "Majibu: **It’s near the church.** (Iko karibu na kanisa.) **It’s far.** (Iko mbali.) **It’s here.** (Iko hapa.)"
+        ]
+      },
+      {
+        "id": "going-to",
+        "title": "“I am going to…”",
+        "body": [
+          "**Ninaenda mjini** ni **I am going to town.** Tumia **to** kabla ya mahali: **to school**, **to the market**.",
+          "Lakini **home** haichukui **to**: **I am going home.** Kuuliza: **Where are you going?** (Unaenda wapi?)"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Matatu, daladala, boda boda",
+        "body": [
+          "Maneno haya ya Kiswahili hutumika hata kwa Kiingereza cha Afrika Mashariki: **I took a matatu to town.** Mgeni anaweza kusema **minibus** au **motorbike taxi**."
+        ]
+      }
+    ]
+  }
+}

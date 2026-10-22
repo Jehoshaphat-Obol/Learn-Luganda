@@ -26,7 +26,17 @@
     "ntunda": { "text": "Ninauza", "alts": ["nauza"] },
     "emicungwa": { "text": "machungwa", "alts": ["chungwa"] },
     "ennanaasi": { "text": "nanasi", "alts": ["mananasi"] },
-    "amenvu": { "text": "ndizi mbivu", "alts": ["ndizi tamu", "ndizi"] }
+    "amenvu": { "text": "ndizi mbivu", "alts": ["ndizi tamu", "ndizi"] },
+    "una": { "text": "Una" },
+    "ana": { "text": "ana" },
+    "chapati": { "text": "chapati" },
+    "ndizi": { "text": "ndizi" },
+    "embe": { "text": "embe" },
+    "kitamu": { "text": "kitamu" },
+    "sokoni": { "text": "sokoni" },
+    "pilipili": { "text": "pilipili" },
+    "pilau": { "text": "pilau" },
+    "karibu-chakula": { "text": "Karibu chakula!" }
   },
   "sentences": {
     "s-ndya-matooke": { "text": "Ninakula matooke.", "alts": ["Nakula matooke.", "Ninakula ndizi za kupika."] },
@@ -44,8 +54,25 @@
     "s-ngula-matooke": { "text": "Ninanunua matooke.", "alts": ["Nanunua matooke."] },
     "s-ntunda-emicungwa": { "text": "Ninauza machungwa.", "alts": ["Nauza machungwa."] },
     "s-ngula-ennanaasi": { "text": "Ninanunua nanasi.", "alts": ["Nanunua nanasi."] },
-    "s-njagala-amenvu": { "text": "Ninataka ndizi mbivu.", "alts": ["Nataka ndizi mbivu.", "Ninataka ndizi."] }
+    "s-njagala-amenvu": { "text": "Ninataka ndizi mbivu.", "alts": ["Nataka ndizi mbivu.", "Ninataka ndizi."] },
+    "s-nina-kaka-mmoja": { "text": "Nina kaka." },
+    "s-sina-dada": { "text": "Sina dada." },
+    "s-ana-rafiki": { "text": "Neema ana rafiki." },
+    "s-chai-na-maziwa": { "text": "Chai na maziwa." },
+    "s-kahawa-na-sukari": { "text": "Kahawa na sukari." },
+    "s-ninakula-samaki": { "text": "Ninakula samaki." },
+    "s-chakula-kitamu": { "text": "Chakula ni kitamu sana!" },
+    "s-chapati-na-chai": { "text": "Chapati na chai." },
+    "s-nataka-machungwa": { "text": "Nataka machungwa." },
+    "s-chai-sokoni": { "text": "Ninakunywa chai sokoni." },
+    "s-nyanya-tatu": { "text": "Nyanya tatu na kitunguu kimoja." },
+    "s-pilipili-kali": { "text": "Pilipili ni kali!" },
+    "s-tunapika-pilau": { "text": "Leo tunapika pilau." },
+    "s-mchuzi-mtamu": { "text": "Mchuzi ni mtamu sana!" }
   },
   "phrases": ["Nina njaa.", "Nina kiu.", "Ninakula matooke.", "Matooke na maharagwe.", "Ni kitamu sana!", "Unanunua nini?", "Ninanunua nanasi."],
-  "dialogues": { "u3s2l2": [{ "line": "Unataka nini, mwanangu?" }], "u3s3l2": [{ "line": "Unanunua nini, mama?" }] }
+  "dialogues": {
+    "u3s2l2": [{ "line": "Unataka nini, mwanangu?", "options": ["Nina njaa.", "Kwaheri.", "Ninauza machungwa."] }],
+    "u3s3l2": [{ "line": "Unanunua nini, mama?", "options": ["Ninanunua nanasi.", "Nimelala salama.", "Mimi ni mwanafunzi."] }]
+  }
 }

@@ -25,7 +25,16 @@
     "kya-bbeeyi",
     "kya-buseere",
     "kendeezaako",
-    "kale-nkitwala-w"
+    "kale-nkitwala-w",
+    "punguza",
+    "arobaini",
+    "sitini",
+    "sabini",
+    "themanini",
+    "tisini",
+    "mia",
+    "elfu",
+    "likizo"
   ],
   "sentences": [
     "s-ebitabo-kkumi-na-bbiri",
@@ -39,7 +48,17 @@
     "s-kino-ssente-mmeka",
     "s-kya-bbeeyi-nnyo",
     "s-kendeezaako-ssebo",
-    "s-kale-nkitwala"
+    "s-kale-nkitwala",
+    "s-bei-gani-embe",
+    "s-shilingi-kumi",
+    "s-punguza-bei",
+    "s-nipe-ndizi",
+    "s-shilingi-ishirini",
+    "s-shilingi-hamsini",
+    "s-shilingi-kumi-na-mbili",
+    "s-sina-pesa",
+    "s-mshahara-mdogo",
+    "s-likizo-kesho"
   ],
   "phrases": 7,
   "skills": [
@@ -78,6 +97,24 @@
           "sentences": ["s-kya-bbeeyi-nnyo", "s-kendeezaako-ssebo", "s-kale-nkitwala"],
           "dialogues": [{ "speaker": "mukasa", "answer": 0 }]
         }
+      ]
+    },
+    {
+      "id": "u4s4",
+      "icon": "shop",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u4s4l1",
+          "newWords": ["punguza", "arobaini", "sitini", "sabini"],
+          "sentences": ["s-punguza-bei", "s-bei-gani-embe", "s-shilingi-kumi", "s-nipe-ndizi"]
+        },
+        {
+          "id": "u4s4l2",
+          "newWords": ["themanini", "tisini", "mia", "elfu"],
+          "sentences": ["s-shilingi-hamsini", "s-shilingi-ishirini", "s-shilingi-kumi-na-mbili"]
+        },
+        { "id": "u4s4l3", "newWords": ["likizo"], "sentences": ["s-sina-pesa", "s-mshahara-mdogo", "s-likizo-kesho"] }
       ]
     }
   ]

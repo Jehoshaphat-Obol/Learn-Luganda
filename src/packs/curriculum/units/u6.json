@@ -24,7 +24,16 @@
     "wano",
     "kumpi",
     "wala",
-    "ntwala"
+    "ntwala",
+    "pale",
+    "karibu-na",
+    "shuleni",
+    "kazini",
+    "barabara",
+    "matatu",
+    "boda-boda",
+    "nauli",
+    "jirani"
   ],
   "sentences": [
     "s-mbeera-mu-kibuga",
@@ -41,7 +50,20 @@
     "s-yimirira-wano",
     "s-kiri-kumpi",
     "s-kiri-wala",
-    "s-ntwala-mu-kibuga"
+    "s-ntwala-mu-kibuga",
+    "s-benki-iko-wapi",
+    "s-duka-iko-hapa",
+    "s-msikiti-uko-pale",
+    "s-karibu-na-benki",
+    "s-ni-mbali",
+    "s-simama-hapa",
+    "s-ninaenda-mjini",
+    "s-nauli-ni-bei-gani",
+    "s-boda-boda-haraka",
+    "s-sawa-asante",
+    "s-kijijini",
+    "s-kulima-mahindi",
+    "s-jirani"
   ],
   "phrases": 7,
   "skills": [
@@ -83,6 +105,28 @@
           "newWords": ["yimirira", "wano", "ntwala"],
           "sentences": ["s-yimirira-wano", "s-ntwala-mu-kibuga", "s-genda-butereevu"],
           "dialogues": [{ "speaker": "ssali", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u6s4",
+      "icon": "target",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u6s4l1",
+          "newWords": ["pale", "karibu-na"],
+          "sentences": ["s-duka-iko-hapa", "s-msikiti-uko-pale", "s-karibu-na-benki", "s-ni-mbali"]
+        },
+        {
+          "id": "u6s4l2",
+          "newWords": ["shuleni", "kazini", "barabara", "matatu", "nauli"],
+          "sentences": ["s-simama-hapa", "s-ninaenda-mjini", "s-nauli-ni-bei-gani"]
+        },
+        {
+          "id": "u6s4l3",
+          "newWords": ["boda-boda", "jirani"],
+          "sentences": ["s-boda-boda-haraka", "s-benki-iko-wapi", "s-sawa-asante", "s-kijijini", "s-kulima-mahindi", "s-jirani"]
         }
       ]
     }

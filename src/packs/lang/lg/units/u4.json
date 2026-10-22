@@ -23,7 +23,16 @@
     "kya-bbeeyi": { "text": "kya bbeeyi" },
     "kya-buseere": { "text": "kya buseere" },
     "kendeezaako": { "text": "Kendeezaako" },
-    "kale-nkitwala-w": { "text": "Kale, nkitwala" }
+    "kale-nkitwala-w": { "text": "Kale, nkitwala" },
+    "punguza": { "text": "Kendeeza" },
+    "arobaini": { "text": "amakumi ana" },
+    "sitini": { "text": "nkaaga" },
+    "sabini": { "text": "nsanvu" },
+    "themanini": { "text": "kinaana" },
+    "tisini": { "text": "kyenda" },
+    "mia": { "text": "kikumi" },
+    "elfu": { "text": "lukumi" },
+    "likizo": { "text": "luwummula" }
   },
   "sentences": {
     "s-ebitabo-kkumi-na-bbiri": { "text": "Ebitabo kkumi na bbiri." },
@@ -37,7 +46,17 @@
     "s-kino-ssente-mmeka": { "text": "Kino ssente mmeka?" },
     "s-kya-bbeeyi-nnyo": { "text": "Kya bbeeyi nnyo!" },
     "s-kendeezaako-ssebo": { "text": "Kendeezaako, ssebo." },
-    "s-kale-nkitwala": { "text": "Kale, nkitwala." }
+    "s-kale-nkitwala": { "text": "Kale, nkitwala." },
+    "s-bei-gani-embe": { "text": "Omuyembe gwa ssente mmeka?" },
+    "s-shilingi-kumi": { "text": "Silingi kkumi." },
+    "s-punguza-bei": { "text": "Kendeeza ku bbeeyi, nkwegayiridde." },
+    "s-nipe-ndizi": { "text": "Mpa amenvu ataano." },
+    "s-shilingi-ishirini": { "text": "Silingi amakumi abiri." },
+    "s-shilingi-hamsini": { "text": "Silingi ataano." },
+    "s-shilingi-kumi-na-mbili": { "text": "Silingi kkumi na bbiri." },
+    "s-sina-pesa": { "text": "Leero sirina ssente." },
+    "s-mshahara-mdogo": { "text": "Omusaala mutono." },
+    "s-likizo-kesho": { "text": "Enkya ndi mu luwummula!" }
   },
   "phrases": [
     "Ssente mmeka?",

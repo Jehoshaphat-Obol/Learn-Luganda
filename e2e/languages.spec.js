@@ -147,7 +147,7 @@ test('old saved progress follows the course pack, and ids it lacks are archived'
   await expect(page.locator('.node--current').first()).toBeVisible();
   const s = await readState(page);
   expect(s.version).toBe(4);
-  expect(s.courseVersion).toBe(1);
+  expect(s.courseVersion).toBe(2);
   expect(s.lessons[lessonId].completions).toBe(1);
   expect(s.words['no-such-word']).toBeUndefined();
   expect(s.archive.words['no-such-word']).toEqual(stray);
