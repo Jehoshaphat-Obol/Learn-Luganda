@@ -1,0 +1,641 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u18",
+  "title": "Kuuliza maswali",
+  "description": "Uliza nani, nini, wapi, lini na kwa nini, na uliza kuhusu maneno.",
+  "color": "butter",
+  "character": "emma",
+  "words": [
+    {
+      "id": "ki",
+      "target": "ki",
+      "base": "nini",
+      "altBase": [
+        "gani"
+      ],
+      "notes": "Huja baada ya kitenzi, kama Kiswahili: Oyagala ki? Unataka nini?"
+    },
+    {
+      "id": "kiki",
+      "target": "kiki",
+      "base": "ni nini",
+      "altBase": [
+        "nini"
+      ],
+      "notes": "Kino kiki? Hiki ni nini?"
+    },
+    {
+      "id": "ekyo",
+      "target": "ekyo",
+      "base": "kile",
+      "altBase": [
+        "hicho",
+        "kitu kile"
+      ],
+      "notes": "Kwa vitu vya eki-. Kino ni “hiki”."
+    },
+    {
+      "id": "oyo",
+      "target": "oyo",
+      "base": "yule",
+      "altBase": [
+        "huyo",
+        "mtu yule",
+        "yeye"
+      ],
+      "notes": "Ani oyo? Yule ni nani?"
+    },
+    {
+      "id": "wa",
+      "target": "wa",
+      "base": "wapi",
+      "notes": "Huja baada ya kitenzi: Ogenda wa? Unakwenda wapi?"
+    },
+    {
+      "id": "oli-wa",
+      "target": "Oli wa?",
+      "base": "Uko wapi?",
+      "altBase": [
+        "uko wapi sasa",
+        "upo wapi"
+      ]
+    },
+    {
+      "id": "ddi",
+      "target": "ddi",
+      "base": "lini",
+      "notes": "Ojja ddi? Unakuja lini?"
+    },
+    {
+      "id": "ojja",
+      "target": "ojja",
+      "base": "unakuja",
+      "altBase": [
+        "waja",
+        "utakuja"
+      ]
+    },
+    {
+      "id": "lwaki",
+      "target": "lwaki",
+      "base": "kwa nini",
+      "altBase": [
+        "kwa sababu gani",
+        "mbona"
+      ]
+    },
+    {
+      "id": "kubanga",
+      "target": "kubanga",
+      "base": "kwa sababu",
+      "altBase": [
+        "kwani",
+        "maana"
+      ]
+    },
+    {
+      "id": "oba",
+      "target": "oba",
+      "base": "au",
+      "altBase": [
+        "ama",
+        "labda"
+      ]
+    },
+    {
+      "id": "okwogera",
+      "target": "okwogera",
+      "base": "kuzungumza",
+      "altBase": [
+        "kuongea",
+        "kusema"
+      ]
+    },
+    {
+      "id": "njogera",
+      "target": "Njogera",
+      "base": "Ninazungumza",
+      "altBase": [
+        "nazungumza",
+        "ninaongea",
+        "naongea"
+      ]
+    },
+    {
+      "id": "oyogera",
+      "target": "Oyogera",
+      "base": "Unazungumza",
+      "altBase": [
+        "waongea",
+        "unaongea",
+        "wazungumza"
+      ]
+    },
+    {
+      "id": "katono",
+      "target": "katono",
+      "base": "kidogo",
+      "altBase": [
+        "kiasi"
+      ]
+    },
+    {
+      "id": "kiyitibwa",
+      "target": "kiyitibwa",
+      "base": "kinaitwa",
+      "altBase": [
+        "huitwa",
+        "kinaitwaje"
+      ]
+    },
+    {
+      "id": "kitya",
+      "target": "kitya",
+      "base": "vipi",
+      "altBase": [
+        "-je",
+        "namna gani"
+      ],
+      "notes": "Kwa vitu vya eki-: kiyitibwa kitya? kinaitwaje?"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s18-oyagala-ki",
+      "target": "Oyagala ki leero?",
+      "base": "Unataka nini leo?",
+      "altBase": [
+        "Leo unataka nini?"
+      ]
+    },
+    {
+      "id": "s18-kino-kiki",
+      "target": "Kino kiki?",
+      "base": "Hiki ni nini?",
+      "altBase": [
+        "Hiki ni kitu gani?"
+      ]
+    },
+    {
+      "id": "s18-ekyo-kiki",
+      "target": "Ekyo kiki?",
+      "base": "Kile ni nini?",
+      "altBase": [
+        "Hicho ni nini?"
+      ]
+    },
+    {
+      "id": "s18-ani-oyo",
+      "target": "Ani oyo?",
+      "base": "Yule ni nani?",
+      "altBase": [
+        "Huyo ni nani?"
+      ]
+    },
+    {
+      "id": "s18-ekitabo-kiri-wa",
+      "target": "Ekitabo kyange kiri wa?",
+      "base": "Kitabu changu kiko wapi?"
+    },
+    {
+      "id": "s18-oli-wa",
+      "target": "Oli wa kati?",
+      "base": "Uko wapi sasa?",
+      "altBase": [
+        "Sasa uko wapi?",
+        "Upo wapi sasa?"
+      ]
+    },
+    {
+      "id": "s18-ojja-ddi",
+      "target": "Ojja ddi?",
+      "base": "Unakuja lini?",
+      "altBase": [
+        "Utakuja lini?"
+      ]
+    },
+    {
+      "id": "s18-njija-enkya",
+      "target": "Nzija enkya.",
+      "base": "Ninakuja kesho.",
+      "altBase": [
+        "Naja kesho.",
+        "Nitakuja kesho."
+      ]
+    },
+    {
+      "id": "s18-lwaki-osoma",
+      "target": "Lwaki osoma Oluganda?",
+      "base": "Kwa nini unajifunza Kiganda?",
+      "altBase": [
+        "Mbona unajifunza Kiganda?",
+        "Kwa nini unasoma Kiganda?"
+      ]
+    },
+    {
+      "id": "s18-kubanga",
+      "target": "Kubanga njagala okwogera n’abantu.",
+      "base": "Kwa sababu ninataka kuzungumza na watu.",
+      "altTarget": [
+        "Kubanga njagala okwogera nabantu."
+      ],
+      "altBase": [
+        "Kwa sababu nataka kuzungumza na watu.",
+        "Kwa sababu ninataka kuongea na watu."
+      ]
+    },
+    {
+      "id": "s18-caayi-oba-kaawa",
+      "target": "Caayi oba kaawa?",
+      "base": "Chai au kahawa?",
+      "altBase": [
+        "Chai ama kahawa?"
+      ]
+    },
+    {
+      "id": "s18-oyogera-oluganda",
+      "target": "Oyogera Oluganda?",
+      "base": "Unazungumza Kiganda?",
+      "altBase": [
+        "Unaongea Kiganda?",
+        "Wazungumza Kiganda?"
+      ]
+    },
+    {
+      "id": "s18-njogera-katono",
+      "target": "Njogera katono.",
+      "base": "Ninazungumza kidogo.",
+      "altBase": [
+        "Nazungumza kidogo.",
+        "Ninaongea kidogo."
+      ]
+    },
+    {
+      "id": "s18-kiyitibwa-kitya",
+      "target": "Kino kiyitibwa kitya mu Luganda?",
+      "base": "Hiki kinaitwaje kwa Kiganda?",
+      "altBase": [
+        "Hiki kinaitwa nini kwa Kiganda?",
+        "Unasemaje hiki kwa Kiganda?"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u18s1",
+      "title": "Nani na nini",
+      "icon": "info",
+      "tip": "question-words",
+      "lessons": [
+        {
+          "id": "u18s1l1",
+          "newWords": [
+            "ki",
+            "kiki"
+          ],
+          "sentences": [
+            "s18-oyagala-ki",
+            "s18-kino-kiki"
+          ]
+        },
+        {
+          "id": "u18s1l2",
+          "newWords": [
+            "ekyo",
+            "oyo"
+          ],
+          "sentences": [
+            "s18-ekyo-kiki",
+            "s18-ani-oyo"
+          ]
+        },
+        {
+          "id": "u18s1l3",
+          "newWords": [
+            "okwogera",
+            "njogera",
+            "oyogera",
+            "katono"
+          ],
+          "sentences": [
+            "s18-oyogera-oluganda",
+            "s18-njogera-katono"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u18s2",
+      "title": "Wapi na lini",
+      "icon": "clock",
+      "lessons": [
+        {
+          "id": "u18s2l1",
+          "newWords": [
+            "wa",
+            "oli-wa"
+          ],
+          "sentences": [
+            "s18-ekitabo-kiri-wa",
+            "s18-oli-wa"
+          ]
+        },
+        {
+          "id": "u18s2l2",
+          "newWords": [
+            "ddi",
+            "ojja"
+          ],
+          "sentences": [
+            "s18-ojja-ddi",
+            "s18-njija-enkya"
+          ]
+        },
+        {
+          "id": "u18s2l3",
+          "newWords": [],
+          "sentences": [
+            "s18-oli-wa",
+            "s18-ojja-ddi",
+            "s18-ani-oyo"
+          ],
+          "dialogues": [
+            {
+              "speaker": "emma",
+              "target": "Oli wa kati?",
+              "base": "Uko wapi sasa?",
+              "options": [
+                "Ndi ku paaka. Nzija!",
+                "Simanyi Oluganda.",
+                "Kino kiki?"
+              ],
+              "answer": "Ndi ku paaka. Nzija!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u18s3",
+      "title": "Kwa nini na vipi",
+      "icon": "target",
+      "tip": "ask-about-words",
+      "lessons": [
+        {
+          "id": "u18s3l1",
+          "newWords": [
+            "lwaki",
+            "kubanga"
+          ],
+          "sentences": [
+            "s18-lwaki-osoma",
+            "s18-kubanga"
+          ]
+        },
+        {
+          "id": "u18s3l2",
+          "newWords": [
+            "oba"
+          ],
+          "sentences": [
+            "s18-caayi-oba-kaawa",
+            "s18-oyagala-ki"
+          ]
+        },
+        {
+          "id": "u18s3l3",
+          "newWords": [
+            "kiyitibwa",
+            "kitya"
+          ],
+          "sentences": [
+            "s18-kiyitibwa-kitya",
+            "s18-kino-kiki"
+          ],
+          "dialogues": [
+            {
+              "speaker": "emma",
+              "target": "Lwaki osoma Oluganda?",
+              "base": "Kwa nini unajifunza Kiganda?",
+              "options": [
+                "Kubanga njagala okwogera ne jjajja wange.",
+                "Caayi oba kaawa?",
+                "Ojja ddi?"
+              ],
+              "answer": "Kubanga njagala okwogera ne jjajja wange."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Maswali ya Kiganda hufuata mpangilio uleule wa maneno kama sentensi za kawaida, sawa na Kiswahili. Neno la swali huwekwa mahali jibu lingekuwa, kwa kawaida mwishoni.",
+    "phrases": [
+      {
+        "target": "Kino kiki?",
+        "base": "Hiki ni nini?"
+      },
+      {
+        "target": "Ani oyo?",
+        "base": "Yule ni nani?"
+      },
+      {
+        "target": "Oli wa kati?",
+        "base": "Uko wapi sasa?"
+      },
+      {
+        "target": "Ojja ddi?",
+        "base": "Unakuja lini?"
+      },
+      {
+        "target": "Lwaki osoma Oluganda?",
+        "base": "Kwa nini unajifunza Kiganda?"
+      },
+      {
+        "target": "Oyogera Oluganda?",
+        "base": "Unazungumza Kiganda?"
+      },
+      {
+        "target": "Kino kiyitibwa kitya mu Luganda?",
+        "base": "Hiki kinaitwaje kwa Kiganda?"
+      }
+    ],
+    "tips": [
+      {
+        "id": "question-words",
+        "title": "Jibu huenda mahali palepale",
+        "body": [
+          "Uliza **Ogenda wa?** (unakwenda wapi?) na ujibu **Ŋŋenda Jinja** (ninakwenda Jinja). Badilisha neno la swali kwa jibu na sentensi imekamilika, kama Kiswahili.",
+          "Swali la ndiyo/hapana ni sentensi ya kawaida yenye sauti inayopanda: **Oyogera Oluganda?** (unazungumza Kiganda?). Ongeza **oba** (au) kutoa chaguo: **Caayi oba kaawa?** (chai au kahawa?)."
+        ],
+        "table": [
+          [
+            "Neno",
+            "Maana",
+            "Mfano"
+          ],
+          [
+            "ki",
+            "nini",
+            "Oyagala ki?"
+          ],
+          [
+            "ani",
+            "nani",
+            "Ani oyo?"
+          ],
+          [
+            "wa",
+            "wapi",
+            "Oli wa?"
+          ],
+          [
+            "ddi",
+            "lini",
+            "Ojja ddi?"
+          ],
+          [
+            "lwaki",
+            "kwa nini",
+            "Lwaki osoma?"
+          ],
+          [
+            "mmeka",
+            "-ngapi",
+            "Ssente mmeka?"
+          ]
+        ]
+      },
+      {
+        "id": "ask-about-words",
+        "title": "Kujifunza kutoka kwa watu",
+        "body": [
+          "Kauli bora kwa mwanafunzi: onyesha kwa kidole na uulize **Kino kiyitibwa kitya mu Luganda?** (hiki kinaitwaje kwa Kiganda?). Ukikosa jibu, sema **Ddamu mpola** (rudia polepole). Linganisha **mpola** na **polepole**! Watu hupenda kumsaidia mwanafunzi."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Njogera katono",
+        "body": [
+          "Kujibu **Njogera katono** (ninazungumza kidogo) kwa swali **Oyogera Oluganda?** karibu kila mara huleta tabasamu, na mara nyingi mazungumzo marefu. Waganda hujivunia wageni wanapojaribu lugha yao."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "what-is-this",
+      "title": "Hiki kinaitwaje?",
+      "unlockAfter": "u18s3l3",
+      "cast": [
+        "emma",
+        "jjajja"
+      ],
+      "summary": "Emma anamwuliza Jjajja majina ya vitu jikoni kwake.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Jjajja, kino kiyitibwa kitya mu Luganda?",
+            "base": "Bibi, hiki kinaitwaje kwa Kiganda?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "jjajja",
+            "target": "Ekyo kibbo.",
+            "base": "Hicho ni kikapu."
+          },
+          "gloss": {
+            "kibbo": "kikapu"
+          }
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Kibbo. Ate kino kiki?",
+            "base": "Kikapu. Na hiki je?"
+          },
+          "gloss": {
+            "Ate": "na, je"
+          }
+        },
+        {
+          "line": {
+            "speaker": "jjajja",
+            "target": "Kino kyambe.",
+            "base": "Hiki ni kisu."
+          },
+          "gloss": {
+            "kyambe": "kisu"
+          }
+        },
+        {
+          "question": "Emma anafanya nini?",
+          "options": [
+            "Anauliza majina ya vitu",
+            "Anapika chakula cha jioni",
+            "Ananunua kikapu"
+          ],
+          "answer": 0
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Sitegeera. Ddamu mpola, Jjajja.",
+            "base": "Sielewi. Rudia polepole, Bibi."
+          }
+        },
+        {
+          "line": {
+            "speaker": "jjajja",
+            "target": "Ekyambe. Kino kyambe.",
+            "base": "Kisu. Hiki ni kisu."
+          }
+        },
+        {
+          "line": {
+            "speaker": "jjajja",
+            "target": "Lwaki osoma Oluganda, mwana wange?",
+            "base": "Kwa nini unajifunza Kiganda, mwanangu?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Kubanga njagala okwogera naawe!",
+            "base": "Kwa sababu ninataka kuzungumza nawe!"
+          },
+          "gloss": {
+            "naawe": "nawe, na wewe"
+          }
+        },
+        {
+          "question": "Kwa nini Emma anajifunza Kiganda?",
+          "options": [
+            "Kwa ajili ya shule",
+            "Kuzungumza na Jjajja",
+            "Kununua vitu sokoni"
+          ],
+          "answer": 1
+        },
+        {
+          "line": {
+            "speaker": "jjajja",
+            "target": "Ayi, kirungi nnyo! Oyogera bulungi.",
+            "base": "Lo, vizuri sana! Unazungumza vizuri."
+          }
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Nedda, njogera katono.",
+            "base": "Hapana, ninazungumza kidogo."
+          }
+        }
+      ]
+    }
+  ]
+}

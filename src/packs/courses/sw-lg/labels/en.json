@@ -10,6 +10,11 @@
       "title": "Everyday life",
       "level": "Elementary",
       "description": "Describe things, get dressed, talk about your day, the weather, animals, work, school and travel."
+    },
+    "s3": {
+      "title": "Conversations",
+      "level": "Pre-intermediate",
+      "description": "Say no, ask questions, talk about the past and the future, feelings, hobbies, phone calls and cooking."
     }
   },
   "units": {
@@ -76,6 +81,38 @@
     "u16": {
       "title": "Travel and transport",
       "description": "Catch a taxi or bus and plan a journey across Uganda."
+    },
+    "u17": {
+      "title": "Saying no",
+      "description": "Say what you don’t want, don’t have and don’t know."
+    },
+    "u18": {
+      "title": "Asking questions",
+      "description": "Ask who, what, where, when and why, and ask about words."
+    },
+    "u19": {
+      "title": "What I did",
+      "description": "Say what you’ve done today, what you did yesterday and long ago."
+    },
+    "u20": {
+      "title": "Plans",
+      "description": "Talk about tomorrow, the weekend and your dreams."
+    },
+    "u21": {
+      "title": "Feelings",
+      "description": "Say how you feel and show care for others."
+    },
+    "u22": {
+      "title": "Hobbies and sport",
+      "description": "Talk about free time, football, music and games."
+    },
+    "u23": {
+      "title": "On the phone",
+      "description": "Make calls, send messages and arrange to meet."
+    },
+    "u24": {
+      "title": "Cooking",
+      "description": "Follow a recipe, cook matooke in banana leaves and share a meal."
     }
   },
   "skills": {
@@ -126,6 +163,30 @@
     "u15s3": "Questions and homework",
     "u16s1": "Taxi and bus",
     "u16s2": "Boda boda and car",
-    "u16s3": "A journey"
+    "u16s3": "A journey",
+    "u17s1": "I don’t …",
+    "u17s2": "I don’t have",
+    "u17s3": "You, they and don’t!",
+    "u18s1": "Who and what",
+    "u18s2": "Where and when",
+    "u18s3": "Why and how",
+    "u19s1": "Today so far",
+    "u19s2": "Yesterday",
+    "u19s3": "Long ago",
+    "u20s1": "Tomorrow",
+    "u20s2": "This weekend",
+    "u20s3": "Someday",
+    "u21s1": "Happy and sad",
+    "u21s2": "Tired and worried",
+    "u21s3": "Showing care",
+    "u22s1": "Free time",
+    "u22s2": "Football",
+    "u22s3": "Music and games",
+    "u23s1": "Calling",
+    "u23s2": "Messages",
+    "u23s3": "Meeting up",
+    "u24s1": "In the kitchen",
+    "u24s2": "Making matooke",
+    "u24s3": "Sharing a meal"
   }
 }

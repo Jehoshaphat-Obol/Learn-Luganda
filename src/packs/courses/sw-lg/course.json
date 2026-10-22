@@ -224,6 +224,22 @@
         "u15",
         "u16"
       ]
+    },
+    {
+      "id": "s3",
+      "title": "Mazungumzo",
+      "level": "Kabla ya kati",
+      "description": "Kataa, uliza maswali, zungumza kuhusu yaliyopita na yajayo, hisia, burudani, simu na upishi.",
+      "units": [
+        "u17",
+        "u18",
+        "u19",
+        "u20",
+        "u21",
+        "u22",
+        "u23",
+        "u24"
+      ]
     }
   ]
 }
