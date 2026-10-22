@@ -1,5 +1,5 @@
 /* Learn Luganda service worker (generated at build time). */
-const VERSION = '72d9c51f6dc2';
+const VERSION = '1da6464c2d23';
 const CACHE = `learn-luganda-${VERSION}`;
 const FONTS = 'learn-luganda-fonts';
 // Written by the page (src/reminders/reminders.js): the reminder plan and the sent log.
@@ -15,6 +15,12 @@ const PRECACHE = [
   "assets/en-CPU22sH5.js",
   "assets/en-CyeRzzdK.js",
   "assets/en-xJ3kYRFA.js",
+  "assets/fr-65_iMKfR.js",
+  "assets/fr-CYd1PZ1p.js",
+  "assets/fr-CsppYPMH.js",
+  "assets/fr-FAMKiHd-.js",
+  "assets/fr-MTSqJjjI.js",
+  "assets/fr-OL5QS0tg.js",
   "assets/illustrations-Ct7VAUfj.css",
   "assets/illustrations-DtpbPOmb.css",
   "assets/illustrations-Wp6qqPt8.js",
@@ -25,7 +31,7 @@ const PRECACHE = [
   "assets/lg-D-0Vk17W.js",
   "assets/lg-bCOR69zL.js",
   "assets/main-8EaD6wmS.css",
-  "assets/main-wnvO5nPc.js",
+  "assets/main-pgcHkoO5.js",
   "assets/pt-DZ2ADgIR.svg",
   "assets/sw-BS9YUUMG.js",
   "assets/sw-C2UOGUQZ.js",
