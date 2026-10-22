@@ -31,14 +31,14 @@
   },
   "sentences": {
     "s16-ttakisi-egenda-wa": { "text": "Where does this taxi go?", "alts": ["Where is this taxi going?"] },
-    "s16-ttakisi-egenda-entebbe": { "text": "The taxi goes to Entebbe.", "alts": ["The taxi is going to Entebbe."] },
+    "s16-ttakisi-egenda-entebbe": { "text": "The taxi goes to {@nearby}.", "alts": ["The taxi is going to {@nearby}."] },
     "s16-bbaasi-eri-ku-paaka": { "text": "The bus is at the park.", "alts": ["The bus is at the bus park.", "The bus is at the station."] },
     "s16-yimirira-ku-siteegi": { "text": "Stop at the stage.", "alts": ["Stop at the bus stop."] },
     "s16-mmotoka-yange": { "text": "My car is new." },
     "s16-ntwala-ku-bodaboda": { "text": "I am going by boda boda.", "alts": ["I go by boda boda.", "I am going on a boda boda."] },
     "s16-genda-mpola": { "text": "Go slowly, sir!", "alts": ["Drive slowly, sir!", "Slow down, sir!"] },
     "s16-tugende-mangu": { "text": "Let’s go quickly!", "alts": ["Let us go quickly!", "Let’s go fast!"] },
-    "s16-okuva-kampala": { "text": "From Kampala to Masaka.", "alts": ["From Kampala up to Masaka."] },
+    "s16-okuva-kampala": { "text": "From {@city} to {@hometown}.", "alts": ["From {@city} up to {@hometown}."] },
     "s16-olugendo-luwanvu": { "text": "The journey is long.", "alts": ["It’s a long journey.", "It is a long trip."] },
     "s16-ntuuse": { "text": "I have arrived safely.", "alts": ["I arrived well.", "I’ve arrived safely.", "I arrived safely."] },
     "s16-ennyonyi-ebuuka": { "text": "The plane is flying.", "alts": ["The aeroplane flies.", "The plane flies."] },
@@ -47,7 +47,7 @@
     "s-haraka": { "text": "Quickly, quickly!", "alts": ["Hurry, hurry!", "Fast, fast!"] },
     "s-tiketi-bei": { "text": "How much is the ticket?", "alts": ["How much does the ticket cost?"] },
     "s-kituo-cha-basi": { "text": "Where is the bus stop?", "alts": ["Where’s the bus stop?", "Where is the bus station?"] },
-    "s-safari-ndefu": { "text": "The journey to Dar es Salaam is long.", "alts": ["The trip to Dar es Salaam is long."] },
+    "s-safari-ndefu": { "text": "The journey to {@city} is long.", "alts": ["The trip to {@city} is long."] },
     "s-twende-kituoni": { "text": "Let’s go to the station.", "alts": ["Let us go to the station."] },
     "s-uwanja-wa-ndege": { "text": "The airport is far.", "alts": ["The airport is far away."] },
     "s-nitasafiri-kesho": { "text": "I will travel tomorrow.", "alts": ["I’ll travel tomorrow.", "I am travelling tomorrow."] },
@@ -59,7 +59,7 @@
     "Where does this taxi go?",
     "Stop at the stage.",
     "Go slowly, sir!",
-    "From Kampala to Masaka.",
+    "From {@city} to {@hometown}.",
     "I have arrived safely.",
     "Have a good journey!"
   ],
@@ -67,31 +67,31 @@
     "u16s1l3": [
       {
         "line": "Where are you going?",
-        "options": ["I am going to Entebbe. Does this taxi go to Entebbe?", "I’m afraid of the snake!", "I have a question."]
+        "options": ["I am going to {@nearby}. Does this taxi go to {@nearby}?", "I’m afraid of the snake!", "I have a question."]
       }
     ]
   },
   "stories": {
     "taxi-to-jinja": {
-      "title": "The taxi to Jinja",
-      "summary": "Nakato finds the right taxi and makes it to Jinja.",
+      "title": "The taxi to {@getaway}",
+      "summary": "{@nakato} finds the right taxi and makes it to {@getaway}.",
       "lines": [
         "Sir, where does this taxi go?",
         "It goes to Mukono. Where are you going?",
-        "I am going to Jinja.",
-        "The Jinja taxi is over there, at the stage.",
-        "Thank you very much! How much is it to Jinja?",
+        "I am going to {@getaway}.",
+        "The {@getaway} taxi is over there, at the stage.",
+        "Thank you very much! How much is it to {@getaway}?",
         "Ten thousand.",
         "Is the journey long?",
         "No, only two hours.",
         "Okay. Let’s go!",
-        "Mum, I have arrived safely in Jinja!"
+        "Mum, I have arrived safely in {@getaway}!"
       ],
       "questions": [
-        { "question": "Where does Nakato want to go?", "options": ["Mukono", "Jinja", "Masaka"] },
+        { "question": "Where does {@nakato} want to go?", "options": ["Mukono", "{@getaway}", "{@hometown}"] },
         { "question": "How much is the fare?", "options": ["Five thousand", "Ten thousand", "One thousand"] },
         {
-          "question": "How does Nakato tell her mother she has arrived?",
+          "question": "How does {@nakato} tell her mother she has arrived?",
           "options": ["I have arrived safely.", "Go slowly.", "Stop here."]
         }
       ]

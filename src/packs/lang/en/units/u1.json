@@ -64,16 +64,16 @@
     "s-gyebale-ko-ssebo": { "text": "Well done, sir.", "alts": ["Good work, sir."] },
     "s-kale-weraba": { "text": "Okay, goodbye.", "alts": ["Ok, goodbye.", "Okay, bye.", "Alright, goodbye."] },
     "s-weraba-tunaalabagana": { "text": "Goodbye, see you later.", "alts": ["Bye, see you later.", "Goodbye, see you soon."] },
-    "s-nze-nakato": { "text": "I am Nakato.", "alts": ["I’m Nakato.", "My name is Nakato."] },
+    "s-nze-nakato": { "text": "I am {@nakato}.", "alts": ["I’m {@nakato}.", "My name is {@nakato}."] },
     "s-erinnya-lyo-ani": { "text": "What is your name?", "alts": ["What’s your name?"] },
-    "s-erinnya-lyange-mukasa": { "text": "My name is Mukasa.", "alts": ["My name’s Mukasa."] },
+    "s-erinnya-lyange-mukasa": { "text": "My name is {@mukasa}.", "alts": ["My name’s {@mukasa}."] },
     "s-ggwe-ani": { "text": "Who are you?" },
-    "s-mbeera-kampala": { "text": "I live in Kampala.", "alts": ["I stay in Kampala."] },
-    "s-nva-masaka": { "text": "I come from Masaka.", "alts": ["I am from Masaka.", "I’m from Masaka."] },
+    "s-mbeera-kampala": { "text": "I live in {@city}.", "alts": ["I stay in {@city}."] },
+    "s-nva-masaka": { "text": "I come from {@hometown}.", "alts": ["I am from {@hometown}.", "I’m from {@hometown}."] },
     "s-ndi-muyizi": { "text": "I am a student.", "alts": ["I’m a student.", "I am a learner."] },
     "s-nsanyuse-okukulaba": {
-      "text": "Nice to meet you, Ssali.",
-      "alts": ["Pleased to meet you, Ssali.", "I am happy to see you, Ssali.", "I’m happy to see you, Ssali."]
+      "text": "Nice to meet you, {@ssali}.",
+      "alts": ["Pleased to meet you, {@ssali}.", "I am happy to see you, {@ssali}.", "I’m happy to see you, {@ssali}."]
     },
     "s-habari-yako": { "text": "How are you?", "alts": ["How are you doing?", "What is your news?"] },
     "s-karibu-sana": { "text": "You’re very welcome!", "alts": ["Very welcome!", "You are very welcome!", "Welcome!"] },
@@ -81,14 +81,14 @@
     "s-shikamoo-bibi": { "text": "My respects, grandmother.", "alts": ["My respects, grandma.", "Hello, grandmother."] },
     "s-ndiyo-asante": { "text": "Yes, thank you.", "alts": ["Yes, thanks."] },
     "s-hapana-asante": { "text": "No, thank you.", "alts": ["No, thanks."] },
-    "s-habari-za-asubuhi-baraka": { "text": "Good morning, Baraka.", "alts": ["Good morning, Baraka?"] },
-    "s-jina-langu-amani": { "text": "My name is Amani.", "alts": ["My name’s Amani."] },
-    "s-mimi-ni-emma": { "text": "I am Emma.", "alts": ["I’m Emma.", "My name is Emma."] },
-    "s-ninaishi-mombasa": { "text": "I live in Mombasa.", "alts": ["I stay in Mombasa."] },
-    "s-ninatoka-arusha": { "text": "I come from Arusha.", "alts": ["I am from Arusha.", "I’m from Arusha."] },
+    "s-habari-za-asubuhi-baraka": { "text": "Good morning, {@mukasa}.", "alts": ["Good morning, {@mukasa}?"] },
+    "s-jina-langu-amani": { "text": "My name is {@nakato}.", "alts": ["My name’s {@nakato}."] },
+    "s-mimi-ni-emma": { "text": "I am {@emma}.", "alts": ["I’m {@emma}.", "My name is {@emma}."] },
+    "s-ninaishi-mombasa": { "text": "I live in {@getaway}.", "alts": ["I stay in {@getaway}."] },
+    "s-ninatoka-arusha": { "text": "I come from {@town}.", "alts": ["I am from {@town}.", "I’m from {@town}."] },
     "s-nimefurahi-kukuona": {
-      "text": "Nice to meet you, Juma.",
-      "alts": ["Pleased to meet you, Juma.", "I am happy to see you, Juma.", "I’m happy to see you, Juma."]
+      "text": "Nice to meet you, {@ssali}.",
+      "alts": ["Pleased to meet you, {@ssali}.", "I am happy to see you, {@ssali}.", "I’m happy to see you, {@ssali}."]
     }
   },
   "phrases": [
@@ -99,41 +99,44 @@
     "Good afternoon (how has your day been?)",
     "Well done! (to someone working)",
     "What is your name?",
-    "I am Nakato.",
-    "I come from Masaka.",
+    "I am {@nakato}.",
+    "I come from {@hometown}.",
     "Goodbye, see you later."
   ],
   "dialogues": {
     "u1s1l3": [{ "line": "Good morning, my child.", "options": ["I slept well, madam.", "Goodbye, madam.", "No, sir."] }],
     "u1s1l4": [{ "line": "Okay, goodbye!", "options": ["Goodbye, see you later.", "Good morning.", "I’m fine."] }],
     "u1s2l3": [
-      { "line": "What is your name?", "options": ["I am Amara.", "I live in Kampala.", "Well done."] },
-      { "line": "I am Emma. Where are you from?", "options": ["I come from Masaka.", "I am a student.", "Thank you very much."] }
+      { "line": "What is your name?", "options": ["I am {@amara}.", "I live in {@city}.", "Well done."] },
+      { "line": "I am {@emma}. Where are you from?", "options": ["I come from {@hometown}.", "I am a student.", "Thank you very much."] }
     ]
   },
   "stories": {
     "new-friend": {
       "title": "A new friend",
-      "summary": "Emma meets Nakato outside the library.",
+      "summary": "{@emma} meets {@nakato} outside the library.",
       "lines": [
         "How are you?",
         "I’m fine, thank you. How are you?",
         "Good. What is your name?",
-        "I am Emma. Who are you?",
-        "I am Nakato. Where are you from, Emma?",
-        "I come from Masaka. I am a student.",
+        "I am {@emma}. Who are you?",
+        "I am {@nakato}. Where are you from, {@emma}?",
+        "I come from {@hometown}. I am a student.",
         "I am a student too! Nice to meet you.",
         "Thank you very much. See you later!"
       ],
       "questions": [
-        { "question": "What did Nakato ask?", "options": ["Emma’s name", "Where Emma lives", "If Emma is hungry"] },
-        { "question": "Where does Emma come from?", "options": ["Kampala", "Masaka", "The library"] },
-        { "question": "How does Nakato say “nice to meet you”?", "options": ["Thank you very much", "Nice to meet you", "See you later"] }
+        { "question": "What did {@nakato} ask?", "options": ["{@emma}’s name", "Where {@emma} lives", "If {@emma} is hungry"] },
+        { "question": "Where does {@emma} come from?", "options": ["{@city}", "{@hometown}", "The library"] },
+        {
+          "question": "How does {@nakato} say “nice to meet you”?",
+          "options": ["Thank you very much", "Nice to meet you", "See you later"]
+        }
       ]
     },
     "morning-jjajja": {
-      "title": "Good morning, Jjajja",
-      "summary": "Amara greets her grandmother before school.",
+      "title": "Good morning, {@jjajja}",
+      "summary": "{@amara} greets her grandmother before school.",
       "lines": [
         "Good morning, Grandma.",
         "I slept well, my child. How did you sleep?",
@@ -144,8 +147,8 @@
       ],
       "questions": [
         { "question": "What time of day is it?", "options": ["Morning", "Evening", "Night"] },
-        { "question": "How does Amara answer Jjajja’s greeting?", "options": ["No, madam", "I slept well", "Goodbye"] },
-        { "question": "Is Amara leaving or arriving?", "options": ["Arriving", "Leaving"] }
+        { "question": "How does {@amara} answer {@jjajja}’s greeting?", "options": ["No, madam", "I slept well", "Goodbye"] },
+        { "question": "Is {@amara} leaving or arriving?", "options": ["Arriving", "Leaving"] }
       ]
     }
   }

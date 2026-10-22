@@ -15,7 +15,7 @@
 import { gunzipSync } from 'node:zlib';
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { asTarget, composePack, composedIds, coverage, fillNames, pickAbout, aboutChain } from '../src/content/compose.js';
+import { asTarget, composePack, composedIds, coverage, cultureOf, fillCulture, fillNames, pickAbout, aboutChain } from '../src/content/compose.js';
 import { COURSE_IDS } from '../src/content/load.js';
 import { readCatalog, readLanguages, readPack } from '../scripts/load-pack.js';
 import { composeCourse } from '../src/content/compose.js';
@@ -153,6 +153,28 @@ describe('composing', () => {
     expect(meta).toMatchObject({ id: 'en-lg', title: 'Luganda for English speakers', cheers: ['Kale!'], cast: { nakato: { name: 'Nakato', role: 'Your guide' } } });
     expect(units.u1).toMatchObject({ title: 'Class', skills: [{ title: 'Reading' }] });
     expect(units.u1.skills[0].lessons[0].dialogues[0]).toEqual({ speaker: 'nakato', target: 'Oli otya', base: 'Hello', options: ['Nedda', 'Gyendi!'], answer: 'Gyendi!' });
+  });
+
+  it('fills culture slots from the target language, else the base, else the curriculum', () => {
+    const cm = { cast: { nakato: { name: 'Nakato' }, jjajja: { name: 'Jjajja Nalwoga', short: 'Jjajja' } }, places: { city: 'Kampala', island: 'Ssese' } };
+    const sw = { culture: { cast: { jjajja: { name: 'Bibi Mwanaisha', short: 'Bibi' } }, places: { city: 'Dar es Salaam' } } };
+    const swahili = cultureOf(cm, {}, sw);
+    expect(fillCulture('{@nakato} and {@jjajja} ({@jjajja.name}) live in {@city}, not {@island}.', swahili)).toBe('Nakato and Bibi (Bibi Mwanaisha) live in Dar es Salaam, not Ssese.');
+    expect(cultureOf(cm, sw, {}).places.city).toBe('Dar es Salaam');
+    expect(cultureOf(cm, sw, { culture: {} }).places.city).toBe('Kampala');
+    expect(fillCulture('{@nobody}', swahili)).toBe('{@nobody}');
+  });
+
+  it('gives each real course its target language’s cast and places', () => {
+    const lgSw = readPack('lg-sw');
+    const enLg = readPack('en-lg');
+    const text = (pack) => JSON.stringify(pack.units);
+    expect(lgSw.meta.cast.nakato.name).toBe('Amani');
+    expect(text(lgSw)).toContain('Ninaishi Dar es Salaam.');
+    expect(text(lgSw)).not.toMatch(/\bNakato\b/);
+    expect(enLg.meta.cast.nakato.name).toBe('Nakato');
+    expect(text(enLg)).not.toMatch(/\b(Amani|Baraka|Neema)\b/);
+    expect(text(readPack('sw-lg'))).toContain('Ninaishi Kampala.');
   });
 
   it('falls back to notes in the pivot language, then English', () => {

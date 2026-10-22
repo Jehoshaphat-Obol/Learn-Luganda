@@ -70,7 +70,7 @@
   "stories": {
     "rainy-day": {
       "title": "Mchana wa mvua",
-      "summary": "Dhoruba inamzuia Amara nyumbani kwa bibi yake.",
+      "summary": "Dhoruba inamzuia {@amara} nyumbani kwa bibi yake.",
       "lines": [
         "Bibi, ninakwenda nyumbani.",
         "Hapana! Tazama, kuna mawingu mengi. Mvua inakuja.",
@@ -83,9 +83,9 @@
         "Asante sana, Bibi!"
       ],
       "questions": [
-        { "question": "Kwa nini Jjajja anasema hapana?", "options": ["Ni usiku sana", "Mvua inakuja", "Amara ni mgonjwa"] },
+        { "question": "Kwa nini {@jjajja} anasema hapana?", "options": ["Ni usiku sana", "Mvua inakuja", "{@amara} ni mgonjwa"] },
         { "question": "Hali ya hewa iko vipi sasa?", "options": ["Jua na joto", "Mvua kubwa sana", "Baridi na ukavu"] },
-        { "question": "Amara atachukua nini kwenda nyumbani?", "options": ["Mwavuli wa Jjajja", "Sweta", "Chakula kidogo"] }
+        { "question": "{@amara} atachukua nini kwenda nyumbani?", "options": ["Mwavuli wa {@jjajja}", "Sweta", "Chakula kidogo"] }
       ]
     }
   }

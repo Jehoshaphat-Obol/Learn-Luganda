@@ -59,9 +59,9 @@
   "stories": {
     "doctor-visit": {
       "title": "At the clinic",
-      "summary": "Amara isn’t feeling well and sees a health worker.",
+      "summary": "{@amara} isn’t feeling well and sees a health worker.",
       "lines": [
-        "How are you, Amara?",
+        "How are you, {@amara}?",
         "I am sick. My head hurts.",
         "Do you have a fever?",
         "Yes, I have a fever.",
@@ -71,7 +71,7 @@
       ],
       "questions": [
         { "question": "What hurts?", "options": ["Her stomach", "Her head", "Her leg"] },
-        { "question": "What does Mukasa give Amara?", "options": ["Medicine", "Tea", "Matooke"] }
+        { "question": "What does {@mukasa} give {@amara}?", "options": ["Medicine", "Tea", "Matooke"] }
       ]
     }
   }

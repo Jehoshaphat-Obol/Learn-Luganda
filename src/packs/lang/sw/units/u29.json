@@ -41,7 +41,7 @@
     "s-wanacheza-ngoma": { "text": "Wanacheza ngoma." },
     "s-mazoezi-kila-siku": { "text": "Nina mazoezi kila siku." },
     "s-mwimbaji": { "text": "Mwimbaji ana sauti nzuri." },
-    "s-mchezaji": { "text": "Neema ni mchezaji hodari." },
+    "s-mchezaji": { "text": "{@amara} ni mchezaji hodari." },
     "s-mpiga-ngoma": { "text": "Mpiga ngoma ni babu yangu." },
     "s-bendi": { "text": "Bendi itapiga muziki usiku." },
     "s-taarab": { "text": "Bibi anapenda taarab." },
@@ -62,7 +62,7 @@
   "stories": {
     "drum-lesson": {
       "title": "Somo la ngoma",
-      "summary": "Amara anajifunza kupiga ngoma kwa ajili ya tamasha la shule.",
+      "summary": "{@amara} anajifunza kupiga ngoma kwa ajili ya tamasha la shule.",
       "lines": [
         "Mwalimu, ninataka kupiga ngoma kwenye tamasha la shule.",
         "Vizuri! Shika ngoma hii.",
@@ -71,11 +71,11 @@
         "Bum, bum, ka-bum! Inafurahisha sana!",
         "Watoto wanaocheza watacheza Bakisimba.",
         "Na nani ataimba?",
-        "Nakato! Ni mwimbaji mzuri.",
+        "{@nakato}! Ni mwimbaji mzuri.",
         "Nimefurahi sana. Asante, mwalimu!"
       ],
       "questions": [
-        { "question": "Amara anapiga ngoma ipi?", "options": ["Kubwa", "Ndogo", "Hakuna ngoma"] },
+        { "question": "{@amara} anapiga ngoma ipi?", "options": ["Kubwa", "Ndogo", "Hakuna ngoma"] },
         { "question": "Wachezaji watacheza nini?", "options": ["Bakisimba", "Mpira wa miguu", "Omweso"] },
         {
           "question": "Unasemaje “watoto wanaocheza”?",

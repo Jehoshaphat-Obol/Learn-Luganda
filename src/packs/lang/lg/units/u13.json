@@ -67,7 +67,7 @@
   "stories": {
     "village-farm": {
       "lines": [
-        "Tusanyuse okukulaba, Emma! Yingira.",
+        "Tusanyuse okukulaba, {@emma}! Yingira.",
         "Weebale, Jjajja. Ebisolo biri wa?",
         "Laba! Ente zirya omuddo.",
         "Ente mmeka?",
@@ -78,9 +78,9 @@
         "Laba waggulu: engaali ebuuka!",
         "Nnungi nnyo!"
       ],
-      "title": "Ku faamu ya Jjajja",
-      "summary": "Emma akyalira ekyalo era alaba ebisolo.",
-      "questions": [{ "question": "Ente zikola ki?" }, { "question": "Jjajja alina embuzi mmeka?" }, { "question": "Emma kiki kye yalaba ddala?" }]
+      "title": "Ku faamu ya {@jjajja}",
+      "summary": "{@emma} akyalira ekyalo era alaba ebisolo.",
+      "questions": [{ "question": "Ente zikola ki?" }, { "question": "{@jjajja} alina embuzi mmeka?" }, { "question": "{@emma} kiki kye yalaba ddala?" }]
     }
   }
 }

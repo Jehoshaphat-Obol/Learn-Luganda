@@ -49,9 +49,9 @@
   "stories": {
     "kasubi-visit": {
       "title": "Ziara Kasubi",
-      "summary": "Mukasa anamwonyesha Emma makaburi ya kifalme na kumweleza kuhusu ufalme.",
+      "summary": "{@mukasa} anamwonyesha {@emma} makaburi ya kifalme na kumweleza kuhusu ufalme.",
       "lines": [
-        "Emma, haya ni makaburi ya kifalme ya Kasubi.",
+        "{@emma}, haya ni makaburi ya kifalme ya Kasubi.",
         "Nyumba ni kubwa sana! Nani amezikwa hapa?",
         "Kabaka wanne.",
         "Na Kabaka wa leo yuko wapi?",

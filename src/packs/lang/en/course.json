@@ -30,8 +30,8 @@
     }
   },
   "cast": {
-    "nakato": "Your guide, a university student in Kampala",
-    "mukasa": "A patient teacher from Masaka",
+    "nakato": "Your guide, a university student in {@city}",
+    "mukasa": "A patient teacher from {@hometown}",
     "jjajja": "A grandmother who loves proverbs",
     "ssali": "A boda boda rider who knows every road",
     "amara": "A secondary school student who loves music",

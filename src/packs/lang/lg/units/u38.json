@@ -56,22 +56,25 @@
     "stolen-phone": {
       "lines": [
         "Omubbi! Omubbi! Nnyamba!",
-        "Nakato! Kiki ekibaddewo?",
+        "{@nakato}! Kiki ekibaddewo?",
         "Essimu yange ebbiddwa! Omusajja adduse n’agenda eri.",
         "Oli bulungi? Olumiziddwa?",
         "Nedda, ndi bulungi. Naye ntidde nnyo.",
         "Tuula wano, linda. Nja kukubira poliisi essimu.",
         "Poliisi egamba nti ejja mangu.",
-        "Weebale nnyo, Ssali.",
+        "Weebale nnyo, {@ssali}.",
         "Tewali kizibu. Ky’omukwano!"
       ],
       "questions": [
-        { "question": "Kiki ekyatuuka ku Nakato?" },
-        { "question": "Ssali akola ki?" },
-        { "options": ["Tewali kizibu.", "Yanguwa!", "Nnyamba!"], "question": "Nakato bw’agamba “Thank you very much”, Ssali addamu atya?" }
+        { "question": "Kiki ekyatuuka ku {@nakato}?" },
+        { "question": "{@ssali} akola ki?" },
+        {
+          "options": ["Tewali kizibu.", "Yanguwa!", "Nnyamba!"],
+          "question": "{@nakato} bw’agamba “Thank you very much”, {@ssali} addamu atya?"
+        }
       ],
       "title": "Essimu ebbiddwa",
-      "summary": "Essimu ya Nakato ebbibwa mu katale, ne Ssali amuyamba."
+      "summary": "Essimu ya {@nakato} ebbibwa mu katale, ne {@ssali} amuyamba."
     }
   }
 }

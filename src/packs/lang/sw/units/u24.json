@@ -65,8 +65,8 @@
   },
   "stories": {
     "cooking-luwombo": {
-      "title": "Kupika na Jjajja",
-      "summary": "Amara anajifunza kupika luwombo ya kuku.",
+      "title": "Kupika na {@jjajja}",
+      "summary": "{@amara} anajifunza kupika luwombo ya kuku.",
       "lines": [
         "Leo tutapika luwombo ya kuku.",
         "Sawa! Nifanye nini?",
@@ -79,9 +79,9 @@
         "Ni kitamu sana! Asante kwa kupika, Bibi."
       ],
       "questions": [
-        { "question": "Amara anafanya nini kwanza?", "options": ["Anakata vitunguu na nyanya", "Anawasha moto", "Anaosha sufuria"] },
+        { "question": "{@amara} anafanya nini kwanza?", "options": ["Anakata vitunguu na nyanya", "Anawasha moto", "Anaosha sufuria"] },
         { "question": "Luwombo inapikwa kwa muda gani?", "options": ["Dakika kumi", "Saa mbili", "Usiku mzima"] },
-        { "question": "Amara anasema nini baada ya mlo?", "options": ["Asante kwa kupika", "Kwanza kata", "Ninakusubiri"] }
+        { "question": "{@amara} anasema nini baada ya mlo?", "options": ["Asante kwa kupika", "Kwanza kata", "Ninakusubiri"] }
       ]
     }
   }

@@ -49,7 +49,7 @@
     "s-leo-ni-jumatatu": { "text": "Leero Bbalaza." },
     "s-kesho-ni-jumanne": { "text": "Enkya Lwakubiri." },
     "s-jumamosi-na-jumapili": { "text": "Lwamukaaga ne Ssande." },
-    "s-kila-mwezi": { "text": "Buli mwezi ŋŋenda Mombasa." },
+    "s-kila-mwezi": { "text": "Buli mwezi ŋŋenda {@getaway}." },
     "s-kila-mwaka": { "text": "Ttoggo lijja buli mwaka." }
   },
   "phrases": ["Leero", "Enkya", "Tunaalabagana enkya.", "Nsoma ku Bbalaza.", "Ssaawa mmeka?", "Ssaawa nnya."],

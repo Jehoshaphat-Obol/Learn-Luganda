@@ -49,7 +49,7 @@
     "s-leo-ni-jumatatu": { "text": "Leo ni Jumatatu." },
     "s-kesho-ni-jumanne": { "text": "Kesho ni Jumanne." },
     "s-jumamosi-na-jumapili": { "text": "Jumamosi na Jumapili." },
-    "s-kila-mwezi": { "text": "Kila mwezi ninaenda Mombasa." },
+    "s-kila-mwezi": { "text": "Kila mwezi ninaenda {@getaway}." },
     "s-kila-mwaka": { "text": "Masika yanakuja kila mwaka." }
   },
   "phrases": ["Leo", "Kesho", "Tutaonana kesho.", "Ninasoma Jumatatu.", "Ni saa ngapi?", "Ni saa nne."],

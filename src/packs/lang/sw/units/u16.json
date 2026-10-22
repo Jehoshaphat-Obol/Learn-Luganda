@@ -31,14 +31,14 @@
   },
   "sentences": {
     "s16-ttakisi-egenda-wa": { "text": "Teksi hii inakwenda wapi?", "alts": ["Teksi hii inaenda wapi?", "Matatu hii inakwenda wapi?"] },
-    "s16-ttakisi-egenda-entebbe": { "text": "Teksi inakwenda Entebbe.", "alts": ["Teksi inaenda Entebbe."] },
+    "s16-ttakisi-egenda-entebbe": { "text": "Teksi inakwenda {@nearby}.", "alts": ["Teksi inaenda {@nearby}."] },
     "s16-bbaasi-eri-ku-paaka": { "text": "Basi liko stendi.", "alts": ["Basi liko stendini.", "Basi iko stendi."] },
     "s16-yimirira-ku-siteegi": { "text": "Simama kituoni.", "alts": ["Simama kwenye kituo.", "Simamisha kituoni."] },
     "s16-mmotoka-yange": { "text": "Gari langu ni jipya." },
     "s16-ntwala-ku-bodaboda": { "text": "Ninakwenda kwa bodaboda.", "alts": ["Naenda kwa bodaboda.", "Ninaenda kwa bodaboda."] },
     "s16-genda-mpola": { "text": "Nenda polepole, bwana!", "alts": ["Endesha polepole, bwana!", "Pole pole, bwana!"] },
     "s16-tugende-mangu": { "text": "Twende haraka!", "alts": ["Twende upesi!", "Tuende haraka!"] },
-    "s16-okuva-kampala": { "text": "Kutoka Kampala hadi Masaka.", "alts": ["Kutoka Kampala mpaka Masaka."] },
+    "s16-okuva-kampala": { "text": "Kutoka {@city} hadi {@hometown}.", "alts": ["Kutoka {@city} mpaka {@hometown}."] },
     "s16-olugendo-luwanvu": { "text": "Safari ni ndefu.", "alts": ["Ni safari ndefu."] },
     "s16-ntuuse": { "text": "Nimefika salama.", "alts": ["Nimewasili salama.", "Nimefika salama salimini."] },
     "s16-ennyonyi-ebuuka": { "text": "Ndege inaruka.", "alts": ["Ndege inapaa."] },
@@ -47,7 +47,7 @@
     "s-haraka": { "text": "Haraka, haraka!" },
     "s-tiketi-bei": { "text": "Tiketi ni bei gani?" },
     "s-kituo-cha-basi": { "text": "Kituo cha basi kiko wapi?" },
-    "s-safari-ndefu": { "text": "Safari ya Dar es Salaam ni ndefu." },
+    "s-safari-ndefu": { "text": "Safari ya {@city} ni ndefu." },
     "s-twende-kituoni": { "text": "Twende kituoni." },
     "s-uwanja-wa-ndege": { "text": "Uwanja wa ndege uko mbali." },
     "s-nitasafiri-kesho": { "text": "Nitasafiri kesho." },
@@ -59,33 +59,36 @@
     "Teksi hii inakwenda wapi?",
     "Simama kituoni.",
     "Nenda polepole, bwana!",
-    "Kutoka Kampala hadi Masaka.",
+    "Kutoka {@city} hadi {@hometown}.",
     "Nimefika salama.",
     "Safari njema!"
   ],
   "dialogues": {
-    "u16s1l3": [{ "line": "Unakwenda wapi?", "options": ["Ninaenda Entebbe. Teksi hii inaenda Entebbe?", "Ninaogopa nyoka!", "Nina swali."] }]
+    "u16s1l3": [{ "line": "Unakwenda wapi?", "options": ["Ninaenda {@nearby}. Teksi hii inaenda {@nearby}?", "Ninaogopa nyoka!", "Nina swali."] }]
   },
   "stories": {
     "taxi-to-jinja": {
-      "title": "Teksi ya Jinja",
-      "summary": "Nakato anapata teksi sahihi na kufika Jinja.",
+      "title": "Teksi ya {@getaway}",
+      "summary": "{@nakato} anapata teksi sahihi na kufika {@getaway}.",
       "lines": [
         "Bwana, teksi hii inakwenda wapi?",
         "Inakwenda Mukono. Wewe unakwenda wapi?",
-        "Ninakwenda Jinja.",
-        "Teksi ya Jinja iko kule, kituoni.",
-        "Asante sana! Ni bei gani hadi Jinja?",
+        "Ninakwenda {@getaway}.",
+        "Teksi ya {@getaway} iko kule, kituoni.",
+        "Asante sana! Ni bei gani hadi {@getaway}?",
         "Elfu kumi.",
         "Safari ni ndefu?",
         "Hapana, saa mbili tu.",
         "Sawa. Twende!",
-        "Mama, nimefika Jinja salama!"
+        "Mama, nimefika {@getaway} salama!"
       ],
       "questions": [
-        { "question": "Nakato anataka kwenda wapi?", "options": ["Mukono", "Jinja", "Masaka"] },
+        { "question": "{@nakato} anataka kwenda wapi?", "options": ["Mukono", "{@getaway}", "{@hometown}"] },
         { "question": "Nauli ni kiasi gani?", "options": ["Elfu tano", "Elfu kumi", "Elfu moja"] },
-        { "question": "Nakato anamwambiaje mama yake kwamba amefika?", "options": ["Nimefika salama.", "Nenda polepole.", "Simama hapa."] }
+        {
+          "question": "{@nakato} anamwambiaje mama yake kwamba amefika?",
+          "options": ["Nimefika salama.", "Nenda polepole.", "Simama hapa."]
+        }
       ]
     }
   }

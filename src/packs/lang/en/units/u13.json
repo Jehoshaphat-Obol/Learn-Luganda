@@ -80,10 +80,10 @@
   },
   "stories": {
     "village-farm": {
-      "title": "At Jjajja’s farm",
-      "summary": "Emma visits the village and meets the animals.",
+      "title": "At {@jjajja}’s farm",
+      "summary": "{@emma} visits the village and meets the animals.",
       "lines": [
-        "We are happy to see you, Emma! Come in.",
+        "We are happy to see you, {@emma}! Come in.",
         "Thank you, Grandma. Where are the animals?",
         "Look! The cows are eating grass.",
         "How many cows?",
@@ -96,8 +96,8 @@
       ],
       "questions": [
         { "question": "What are the cows doing?", "options": ["Sleeping", "Eating grass", "Drinking water"] },
-        { "question": "How many goats does Jjajja have?", "options": ["Five", "Two", "Ten"] },
-        { "question": "What did Emma really see?", "options": ["A rope", "A snake", "A dog"] }
+        { "question": "How many goats does {@jjajja} have?", "options": ["Five", "Two", "Ten"] },
+        { "question": "What did {@emma} really see?", "options": ["A rope", "A snake", "A dog"] }
       ]
     }
   }

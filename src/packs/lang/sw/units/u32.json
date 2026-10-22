@@ -46,9 +46,9 @@
   },
   "phrases": [
     "Ziwa Viktoria ni ziwa kubwa.",
-    "Naili inaanzia Jinja.",
+    "Naili inaanzia {@getaway}.",
     "Tumbili wako msituni.",
-    "Kampala ina vilima saba.",
+    "{@city} ina vilima saba.",
     "Tupande miti!",
     "Usitupe takataka hapa!"
   ],
@@ -63,9 +63,9 @@
   "stories": {
     "source-of-nile": {
       "title": "Chanzo cha Mto Naili",
-      "summary": "Ssali anampeleka Emma kuona mahali Mto Naili unapoanzia.",
+      "summary": "{@ssali} anampeleka {@emma} kuona mahali Mto Naili unapoanzia.",
       "lines": [
-        "Tumefika Jinja! Tazama, Mto Naili.",
+        "Tumefika {@getaway}! Tazama, Mto Naili.",
         "Naili inaanzia wapi?",
         "Hapa! Maji yanatoka Ziwa Viktoria.",
         "Ndege yule ni nini?",
@@ -73,12 +73,12 @@
         "Maua na miti ni mizuri sana hapa.",
         "Ndiyo. Lakini tazama, takataka ufukweni.",
         "Tulinde ardhi yetu! Tuokote takataka.",
-        "Vizuri sana, Emma!"
+        "Vizuri sana, {@emma}!"
       ],
       "questions": [
         { "question": "Maji ya Naili yanatoka wapi?", "options": ["Ziwa Viktoria", "Msituni", "Mvua peke yake"] },
-        { "question": "Ssali anaona nini ufukweni?", "options": ["Takataka", "Simba", "Mashua"] },
-        { "question": "Emma anasemaje “Tulinde ardhi yetu”?", "options": ["Tutunze ardhi yetu", "Usitupe takataka", "Tupande miti"] }
+        { "question": "{@ssali} anaona nini ufukweni?", "options": ["Takataka", "Simba", "Mashua"] },
+        { "question": "{@emma} anasemaje “Tulinde ardhi yetu”?", "options": ["Tutunze ardhi yetu", "Usitupe takataka", "Tupande miti"] }
       ]
     }
   }

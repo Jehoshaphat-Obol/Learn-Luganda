@@ -90,7 +90,7 @@
     "s-darasa-kubwa": { "text": "Ekibiina kinene." },
     "s-najifunza-kiingereza": { "text": "Njiga Olungereza." },
     "s-unapenda-nini": { "text": "Oyagala ki?" },
-    "s-ninaitwa-amani": { "text": "Bampita Amani." },
+    "s-ninaitwa-amani": { "text": "Bampita {@nakato}." },
     "s-je-una-watoto": { "text": "Olina abaana?" },
     "s-je-ni-kweli": { "text": "Kya mazima?" }
   },
@@ -107,7 +107,7 @@
   ],
   "dialogues": {
     "u2s1l2": [{ "line": "Ono ani?", "options": ["Maama wange.", "Njagala amazzi.", "Ebitabo byange."] }],
-    "u2s3l3": [{ "line": "Oyagala ki?", "options": ["Njagala caayi.", "Nze Nakato.", "Wasuze otya?"] }]
+    "u2s3l3": [{ "line": "Oyagala ki?", "options": ["Njagala caayi.", "Nze {@nakato}.", "Wasuze otya?"] }]
   },
   "stories": {
     "market-matooke": {
@@ -121,11 +121,11 @@
         "Weebale, ssebo. Weraba!"
       ],
       "title": "Matooke mu katale",
-      "summary": "Emma agula matooke ow’eky’eggulo.",
+      "summary": "{@emma} agula matooke ow’eky’eggulo.",
       "questions": [
-        { "question": "Emma ayagala ki?", "options": ["Caayi", "Matooke", "Ekitabo"] },
+        { "question": "{@emma} ayagala ki?", "options": ["Caayi", "Matooke", "Ekitabo"] },
         { "question": "Matooke ssente mmeka?", "options": ["Nkumi bbiri", "Nkumi ttaano", "Omutwalo"] },
-        { "question": "Emma agula ki ekirala?", "options": ["Amazzi", "Caayi", "Emmere ya Jjajja"] }
+        { "question": "{@emma} agula ki ekirala?", "options": ["Amazzi", "Caayi", "Emmere ya {@jjajja}"] }
       ]
     }
   }

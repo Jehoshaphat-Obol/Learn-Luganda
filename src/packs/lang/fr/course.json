@@ -246,8 +246,8 @@
     "u40s4": "Le lièvre et la hyène"
   },
   "cast": {
-    "nakato": "Ta guide, étudiante à l’université à Kampala",
-    "mukasa": "Un professeur patient de Masaka",
+    "nakato": "Ta guide, étudiante à l’université à {@city}",
+    "mukasa": "Un professeur patient de {@hometown}",
     "jjajja": "Une grand-mère qui adore les proverbes",
     "ssali": "Un conducteur de boda boda qui connaît toutes les routes",
     "amara": "Une lycéenne qui adore la musique",

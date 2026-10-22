@@ -69,12 +69,12 @@
         "Kiwooma nnyo! Webale okufumba, Jjajja."
       ],
       "questions": [
-        { "question": "Amara asooka kukola ki?" },
+        { "question": "{@amara} asooka kukola ki?" },
         { "question": "Luwombo afumbibwa bbanga ki?" },
-        { "options": ["Webale okufumba", "Sooka sala", "Nkulinze"], "question": "Mu Lungereza Amara agamba ki ng’amaze okulya?" }
+        { "options": ["Webale okufumba", "Sooka sala", "Nkulinze"], "question": "Mu Lungereza {@amara} agamba ki ng’amaze okulya?" }
       ],
-      "title": "Okufumba ne Jjajja",
-      "summary": "Amara ayiga okufumba luwombo w’enkoko."
+      "title": "Okufumba ne {@jjajja}",
+      "summary": "{@amara} ayiga okufumba luwombo w’enkoko."
     }
   }
 }

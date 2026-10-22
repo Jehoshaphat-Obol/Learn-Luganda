@@ -57,7 +57,7 @@
     "s-njagala-amenvu": { "text": "I want sweet bananas.", "alts": ["I want bananas.", "I would like sweet bananas."] },
     "s-nina-kaka-mmoja": { "text": "I have a brother.", "alts": ["I have an older brother."] },
     "s-sina-dada": { "text": "I don’t have a sister.", "alts": ["I do not have a sister.", "I have no sister."] },
-    "s-ana-rafiki": { "text": "Neema has a friend.", "alts": ["Neema has friends."] },
+    "s-ana-rafiki": { "text": "{@amara} has a friend.", "alts": ["{@amara} has friends."] },
     "s-chai-na-maziwa": { "text": "Tea with milk.", "alts": ["Tea and milk."] },
     "s-kahawa-na-sukari": { "text": "Coffee with sugar.", "alts": ["Coffee and sugar."] },
     "s-ninakula-samaki": { "text": "I eat fish.", "alts": ["I am eating fish.", "I’m eating fish."] },

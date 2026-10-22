@@ -59,10 +59,10 @@
   },
   "stories": {
     "amaras-story": {
-      "title": "Amara tells a story",
-      "summary": "Amara tells Emma a folktale about a boy and a lion.",
+      "title": "{@amara} tells a story",
+      "summary": "{@amara} tells {@emma} a folktale about a boy and a lion.",
       "lines": [
-        "Amara, tell me a story!",
+        "{@amara}, tell me a story!",
         "Well then. Once upon a time, there was a boy.",
         "Then he went into the forest to look for firewood.",
         "And what did he see?",
@@ -79,7 +79,7 @@
           "options": ["He ran away", "He sat and sang a song", "He climbed a tree"]
         },
         {
-          "question": "How does Amara end the story?",
+          "question": "How does {@amara} end the story?",
           "options": ["My story ends there.", "Once upon a time, one day…", "There was a man."]
         }
       ]

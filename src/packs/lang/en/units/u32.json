@@ -46,9 +46,9 @@
   },
   "phrases": [
     "Lake Victoria is a big lake.",
-    "The Nile starts at Jinja.",
+    "The Nile starts at {@getaway}.",
     "The monkeys are in the forest.",
-    "Kampala has seven hills.",
+    "{@city} has seven hills.",
     "Let’s plant trees!",
     "Don’t throw rubbish here!"
   ],
@@ -63,9 +63,9 @@
   "stories": {
     "source-of-nile": {
       "title": "The source of the Nile",
-      "summary": "Ssali takes Emma to see where the Nile begins.",
+      "summary": "{@ssali} takes {@emma} to see where the Nile begins.",
       "lines": [
-        "We’ve arrived in Jinja! Look, the Nile.",
+        "We’ve arrived in {@getaway}! Look, the Nile.",
         "Where does the Nile start?",
         "Here! The water comes out of Lake Victoria.",
         "What is that bird?",
@@ -73,13 +73,13 @@
         "The flowers and trees are very beautiful here.",
         "Yes. But look, rubbish on the shore.",
         "Let’s protect our land! Let’s pick up the rubbish.",
-        "Very good, Emma!"
+        "Very good, {@emma}!"
       ],
       "questions": [
         { "question": "Where does the Nile’s water come from?", "options": ["Lake Victoria", "The forest", "The rain only"] },
-        { "question": "What does Ssali see on the shore?", "options": ["Rubbish", "A lion", "A boat"] },
+        { "question": "What does {@ssali} see on the shore?", "options": ["Rubbish", "A lion", "A boat"] },
         {
-          "question": "How does Emma say “Let’s protect our land”?",
+          "question": "How does {@emma} say “Let’s protect our land”?",
           "options": ["Let’s protect our land", "Don’t throw rubbish", "Let’s plant trees"]
         }
       ]

@@ -24,12 +24,12 @@
     "ndoto": { "text": "ekirooto" }
   },
   "sentences": {
-    "s20-nja-kugenda-masaka": { "text": "Enkya nja kugenda e Masaka." },
+    "s20-nja-kugenda-masaka": { "text": "Enkya nja kugenda e {@hometown}." },
     "s20-nja-kulya": { "text": "Nja kulya matooke." },
     "s20-tujja-kusoma": { "text": "Tujja kusoma awamu." },
-    "s20-ajja-kujja": { "text": "Nakato ajja kujja enkya." },
+    "s20-ajja-kujja": { "text": "{@nakato} ajja kujja enkya." },
     "s20-wiikendi": { "text": "Ku wiikendi nja kukyalira jjajja." },
-    "s20-wiiki-ejja": { "text": "Wiiki ejja tujja kugenda e Jinja." },
+    "s20-wiiki-ejja": { "text": "Wiiki ejja tujja kugenda e {@getaway}." },
     "s20-omwaka-ogujja": { "text": "Omwaka ogujja nja kusoma ssaayansi." },
     "s20-olunaku-lumu-ndigenda": { "text": "Olunaku lumu ndigenda e Buganda." },
     "s20-ndyogera-oluganda": { "text": "Olunaku lumu ndyogera {to} bulungi." },
@@ -49,7 +49,7 @@
     "s-siku-moja": { "text": "Olunaku lumu ndiba musomesa." }
   },
   "phrases": [
-    "Enkya nja kugenda e Masaka.",
+    "Enkya nja kugenda e {@hometown}.",
     "Tujja kusoma awamu.",
     "Oteekateeka ki ku wiikendi?",
     "Ku wiikendi nja kukyalira jjajja.",
@@ -57,27 +57,27 @@
     "Nsuubira okulaba Kabaka."
   ],
   "dialogues": {
-    "u20s2l3": [{ "line": "Oteekateeka ki ku wiikendi?", "options": ["Nja kukyalira jjajja.", "Jjo nnagenda e Jinja.", "Simanyi omusota."] }]
+    "u20s2l3": [{ "line": "Oteekateeka ki ku wiikendi?", "options": ["Nja kukyalira jjajja.", "Jjo nnagenda e {@getaway}.", "Simanyi omusota."] }]
   },
   "stories": {
     "weekend-plans": {
       "lines": [
-        "Nakato! Wiikendi ewedde wakola ki?",
-        "Nnagenda e Masaka okukyalira maama.",
+        "{@nakato}! Wiikendi ewedde wakola ki?",
+        "Nnagenda e {@hometown} okukyalira maama.",
         "Kirungi! Ate ku wiikendi eno?",
         "Simanyi. Oteekateeka ki ggwe?",
-        "Nja kugenda ku nnyanja e Entebbe. Ojja?",
+        "Nja kugenda ku nnyanja e {@nearby}. Ojja?",
         "Yee! Naye sirina ssente nnyingi.",
         "Totya. Tujja kugenda mu mmotoka yange.",
         "Weebale nnyo! Tunaalabagana ku Lwamukaaga."
       ],
       "questions": [
-        { "question": "Nakato yagenda wa wiikendi ewedde?" },
-        { "question": "Ssali ateekateeka ki?" },
+        { "question": "{@nakato} yagenda wa wiikendi ewedde?" },
+        { "question": "{@ssali} ateekateeka ki?" },
         { "options": ["Tujja kugenda", "Twagenda", "Togenda"], "question": "Mu Lungereza ogamba otya “Tujja kugenda”?" }
       ],
       "title": "Enteekateeka za wiikendi",
-      "summary": "Ssali ne Nakato boogera ku wiikendi ewedde n’eyo ejja."
+      "summary": "{@ssali} ne {@nakato} boogera ku wiikendi ewedde n’eyo ejja."
     }
   }
 }

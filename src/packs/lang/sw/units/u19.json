@@ -39,10 +39,13 @@
     "s19-jjo-nnagenda": { "text": "Jana nilikwenda mjini.", "alts": ["Nilikwenda mjini jana.", "Jana nilienda mjini."] },
     "s19-jjo-nnalya": { "text": "Jana nilikula nyama.", "alts": ["Nilikula nyama jana."] },
     "s19-nnasoma": { "text": "Nilisoma Kiingereza shuleni.", "alts": ["Nilijifunza Kiingereza shuleni."] },
-    "s19-twagenda-jinja": { "text": "Wiki iliyopita tulikwenda Jinja.", "alts": ["Tulikwenda Jinja wiki iliyopita.", "Wiki iliyopita tulienda Jinja."] },
+    "s19-twagenda-jinja": {
+      "text": "Wiki iliyopita tulikwenda {@getaway}.",
+      "alts": ["Tulikwenda {@getaway} wiki iliyopita.", "Wiki iliyopita tulienda {@getaway}."]
+    },
     "s19-yagenda-awaka": { "text": "Mama alikwenda nyumbani.", "alts": ["Mama alienda nyumbani."] },
     "s19-edda-nnali": { "text": "Zamani nilikuwa mwanafunzi.", "alts": ["Nilikuwa mwanafunzi zamani."] },
-    "s19-omwaka-oguwedde": { "text": "Mwaka uliopita nilikuwa Masaka.", "alts": ["Nilikuwa Masaka mwaka uliopita.", "Mwaka jana nilikuwa Masaka."] },
+    "s19-omwaka-oguwedde": { "text": "Mwaka uliopita nilikuwa {@hometown}.", "alts": ["Nilikuwa {@hometown} mwaka uliopita.", "Mwaka jana nilikuwa {@hometown}."] },
     "s19-nkyali-muyizi": { "text": "Bado mimi ni mwanafunzi.", "alts": ["Ningali mwanafunzi.", "Bado ni mwanafunzi."] },
     "s-osha-vyombo": { "text": "Osha vyombo sasa hivi!" },
     "s-fua-nguo": { "text": "Fua nguo leo." },
@@ -56,19 +59,19 @@
     "s-nilikula-wali": { "text": "Nilikula wali na maharage." },
     "s-ulifanya-nini": { "text": "Ulifanya nini jana?" },
     "s-nilifanya-kazi": { "text": "Nilifanya kazi ya nyumbani." },
-    "s-neema-alienda": { "text": "Neema alienda shuleni." },
-    "s-tulienda-mombasa": { "text": "Tulienda Mombasa kwa basi." },
+    "s-neema-alienda": { "text": "{@amara} alienda shuleni." },
+    "s-tulienda-mombasa": { "text": "Tulienda {@getaway} kwa basi." },
     "s-walifika-jana": { "text": "Watoto walifika jana." },
     "s-juzi-nilinunua": { "text": "Juzi nilinunua viatu." },
     "s-niliona-tembo": { "text": "Wiki iliyopita niliona tembo!" },
-    "s-mwaka-jana-zanzibar": { "text": "Mwaka jana tulienda Zanzibar." }
+    "s-mwaka-jana-zanzibar": { "text": "Mwaka jana tulienda {@island}." }
   },
   "phrases": [
     "Umekula? Ndiyo, nimekula.",
     "Leo nimefanya kazi kwa bidii.",
     "Nimemaliza kazi yangu.",
     "Jana nilikwenda mjini.",
-    "Wiki iliyopita tulikwenda Jinja.",
+    "Wiki iliyopita tulikwenda {@getaway}.",
     "Zamani nilikuwa mwanafunzi."
   ],
   "dialogues": { "u19s3l3": [{ "line": "Ulifanya nini jana?", "options": ["Nilienda mjini.", "Nitaenda kesho.", "Sili nyama."] }] }

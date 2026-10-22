@@ -52,10 +52,10 @@
   "dialogues": { "u35s3l3": [{ "line": "Palikuwa na mwanamume. Kisha akaenda msituni…", "options": ["Akaona nini?", "Ningependa chai.", "Ni sawa."] }] },
   "stories": {
     "amaras-story": {
-      "title": "Amara anasimulia hadithi",
-      "summary": "Amara anamsimulia Emma hadithi kuhusu mvulana na simba.",
+      "title": "{@amara} anasimulia hadithi",
+      "summary": "{@amara} anamsimulia {@emma} hadithi kuhusu mvulana na simba.",
       "lines": [
-        "Amara, nisimulie hadithi!",
+        "{@amara}, nisimulie hadithi!",
         "Basi. Hapo zamani za kale, palikuwa na mvulana.",
         "Kisha akaenda msituni kutafuta kuni.",
         "Na akaona nini?",
@@ -69,7 +69,7 @@
         { "question": "Kwa nini mvulana alienda msituni?", "options": ["Kutafuta kuni", "Kuwinda", "Kucheza mpira"] },
         { "question": "Mvulana alifanya nini alipomwona simba?", "options": ["Alikimbia", "Aliketi akaimba wimbo", "Alipanda mti"] },
         {
-          "question": "Amara anamalizaje hadithi?",
+          "question": "{@amara} anamalizaje hadithi?",
           "options": ["Hadithi yangu imeishia hapo.", "Hapo zamani za kale.", "Palikuwa na mwanamume."]
         }
       ]

@@ -45,8 +45,8 @@
     "s-kusali-kanisani": { "text": "Jumapili tunasali kanisani." },
     "s-ramadhani": { "text": "Wakati wa Ramadhani, watu wanafunga." },
     "s-baraka": { "text": "Mvua ni baraka." },
-    "s-alizaliwa": { "text": "Bibi alizaliwa Zanzibar." },
-    "s-anaitwa": { "text": "Mtoto anaitwa Amani." },
+    "s-alizaliwa": { "text": "Bibi alizaliwa {@island}." },
+    "s-anaitwa": { "text": "Mtoto anaitwa {@nakato}." },
     "s-akubariki": { "text": "Mungu akubariki, mwanangu." }
   },
   "phrases": ["Jumapili ninaenda kanisani.", "Ijumaa anaenda msikitini.", "Krismasi njema!", "Idi njema!", "Heri ya mwaka mpya!", "Mungu akubariki!"],

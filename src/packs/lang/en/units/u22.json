@@ -43,7 +43,7 @@
     "s22-omweso": { "text": "Grandparent plays omweso.", "alts": ["Grandpa plays omweso.", "Grandma plays omweso.", "Grandparent is playing omweso."] },
     "s-sina-muda": { "text": "I don’t have time today.", "alts": ["I have no time today."] },
     "s-kuogelea": { "text": "I like swimming.", "alts": ["I like to swim.", "I love swimming."] },
-    "s-neema-kuimba": { "text": "Neema likes singing.", "alts": ["Neema likes to sing.", "Neema loves singing."] },
+    "s-neema-kuimba": { "text": "{@amara} likes singing.", "alts": ["{@amara} likes to sing.", "{@amara} loves singing."] },
     "s-kuangalia-mpira": { "text": "I like watching football.", "alts": ["I like to watch football.", "I love watching football."] },
     "s-mpira-wa-miguu": { "text": "I like football.", "alts": ["I love football.", "I like soccer."] },
     "s-timu-hodari": { "text": "My team is good.", "alts": ["My team is skilful.", "My team is strong."] },
@@ -71,9 +71,9 @@
   "stories": {
     "match-day": {
       "title": "Match day",
-      "summary": "Ssali and Mukasa watch the Cranes play.",
+      "summary": "{@ssali} and {@mukasa} watch the Cranes play.",
       "lines": [
-        "Mukasa! The match starts at four. Are you coming?",
+        "{@mukasa}! The match starts at four. Are you coming?",
         "Yes! But I’m tired. I’ve worked hard today.",
         "Don’t worry, we’ll just sit. We’ll drink tea.",
         "Will our team win?",
@@ -83,9 +83,9 @@
         "Ssaabaganzi! Our team has won!"
       ],
       "questions": [
-        { "question": "How does Mukasa feel?", "options": ["Happy", "Tired", "Angry"] },
+        { "question": "How does {@mukasa} feel?", "options": ["Happy", "Tired", "Angry"] },
         { "question": "What just happened?", "options": ["A goal", "The game ended", "It started raining"] },
-        { "question": "How does Mukasa say “our team has won”?", "options": ["Our team has won", "Who has won?", "I enjoy football"] }
+        { "question": "How does {@mukasa} say “our team has won”?", "options": ["Our team has won", "Who has won?", "I enjoy football"] }
       ]
     }
   }

@@ -63,7 +63,7 @@
     "s-fagia-nje": { "text": "Sweep outside." },
     "s-osha-vyombo-tafadhali": { "text": "Wash the dishes, please.", "alts": ["Please wash the dishes."] },
     "s-asante-msaada": { "text": "Thanks for the help!", "alts": ["Thank you for the help!", "Thanks for your help!"] },
-    "s-kazi-nzuri": { "text": "Good job, Neema!", "alts": ["Good work, Neema!", "Well done, Neema!"] },
+    "s-kazi-nzuri": { "text": "Good job, {@amara}!", "alts": ["Good work, {@amara}!", "Well done, {@amara}!"] },
     "s-tukutane-sokoni": { "text": "Let’s meet at the market.", "alts": ["Let us meet at the market."] },
     "s-tukutane-saa-ngapi": { "text": "What time shall we meet?", "alts": ["When shall we meet?"] },
     "s-tutaonana-baadaye": { "text": "See you later.", "alts": ["We’ll see each other later."] }

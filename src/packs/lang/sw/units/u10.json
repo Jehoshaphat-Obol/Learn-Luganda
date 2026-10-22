@@ -83,7 +83,7 @@
   "stories": {
     "new-gomesi": {
       "title": "Gomesi ya sherehe",
-      "summary": "Nakato anatafuta nguo ya kuvaa kwenye kwanjula ya binamu yake.",
+      "summary": "{@nakato} anatafuta nguo ya kuvaa kwenye kwanjula ya binamu yake.",
       "lines": [
         "Habari, mama! Unataka nini?",
         "Ninataka gomesi. Kuna kwanjula Jumamosi.",
@@ -98,9 +98,9 @@
       ],
       "questions": [
         { "question": "Kwanjula ni lini?", "options": ["Jumatatu", "Jumamosi", "Leo"] },
-        { "question": "Nakato anataka rangi gani?", "options": ["Zambarau", "Nyekundu", "Nyeupe"] },
+        { "question": "{@nakato} anataka rangi gani?", "options": ["Zambarau", "Nyekundu", "Nyeupe"] },
         { "question": "Gomesi nyekundu ina tatizo gani?", "options": ["Ni ndogo mno", "Ni ghali mno", "Ni kuukuu"] },
-        { "question": "Nakato anasemaje “Sawa, nitaichukua”?", "options": ["Sawa, nitachukua.", "Vua viatu.", "Ninahisi baridi."] }
+        { "question": "{@nakato} anasemaje “Sawa, nitaichukua”?", "options": ["Sawa, nitachukua.", "Vua viatu.", "Ninahisi baridi."] }
       ]
     }
   }

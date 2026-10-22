@@ -63,19 +63,19 @@
         "Kitegeeza ki?",
         "Kitegeeza nti, gumiikiriza. Kamu kamu gwe muganda.",
         "Naye nkola nzekka. Nkooye.",
-        "Olugalo olumu terutta nda! Kola ne Nakato.",
+        "Olugalo olumu terutta nda! Kola ne {@nakato}.",
         "Kirungi. Agali awamu ge galuma ennyama!",
         "Haha! Kati oyogera nga Jjajja!"
       ],
       "questions": [
-        { "question": "Jjajja awa Ssali magezi ki?" },
+        { "question": "{@jjajja} awa {@ssali} magezi ki?" },
         {
           "options": ["Olugalo olumu terutta nda", "Akwata empola atuuka wala", "Kamu kamu gwe muganda"],
-          "question": "Lugero ki olugamba Ssali okukolera awamu n’abalala?"
+          "question": "Lugero ki olugamba {@ssali} okukolera awamu n’abalala?"
         }
       ],
-      "title": "Amagezi ga Jjajja",
-      "summary": "Ssali talina bugumiikiriza ku bizinensi ye empya, ne Jjajja amuddamu n’engero."
+      "title": "Amagezi ga {@jjajja}",
+      "summary": "{@ssali} talina bugumiikiriza ku bizinensi ye empya, ne {@jjajja} amuddamu n’engero."
     }
   }
 }

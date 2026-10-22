@@ -59,7 +59,7 @@
   "stories": {
     "doctor-visit": {
       "lines": [
-        "Oli otya, Amara?",
+        "Oli otya, {@amara}?",
         "Ndi mulwadde. Omutwe gunnuma.",
         "Olina omusujja?",
         "Yee, nnina omusujja.",
@@ -68,10 +68,10 @@
         "Kale. Wona mangu!"
       ],
       "title": "Mu ddwaliro",
-      "summary": "Amara tawulira bulungi era alaba omusawo.",
+      "summary": "{@amara} tawulira bulungi era alaba omusawo.",
       "questions": [
         { "question": "Kiki ekimuluma?", "options": ["Olubuto", "Omutwe", "Okugulu"] },
-        { "question": "Mukasa awa Amara ki?", "options": ["Eddagala", "Caayi", "Matooke"] }
+        { "question": "{@mukasa} awa {@amara} ki?", "options": ["Eddagala", "Caayi", "Matooke"] }
       ]
     }
   }

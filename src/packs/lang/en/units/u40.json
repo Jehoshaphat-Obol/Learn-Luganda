@@ -67,7 +67,7 @@
   "stories": {
     "kintu-and-nnambi": {
       "title": "Kintu and Nnambi",
-      "summary": "Jjajja tells Emma the legend of how death came to the earth.",
+      "summary": "{@jjajja} tells {@emma} the legend of how death came to the earth.",
       "lines": [
         "Grandma, I hear there is a story about Kintu. Tell me!",
         "Well. Once upon a time, Kintu was the first person. He lived alone with his cow.",
@@ -82,7 +82,7 @@
       "questions": [
         { "question": "Who was Nnambi?", "options": ["Ggulu’s daughter", "Kintu’s sister", "A clever hare"] },
         { "question": "Why did Nnambi go back?", "options": ["For her cow", "For the chicken’s millet", "To see Walumbe"] },
-        { "question": "What lesson does Jjajja give?", "options": ["Listen to elders", "Wisdom beats strength", "Hurry home"] }
+        { "question": "What lesson does {@jjajja} give?", "options": ["Listen to elders", "Wisdom beats strength", "Hurry home"] }
       ]
     }
   }

@@ -40,7 +40,7 @@
     "s22-omweso": { "text": "Jjajja azannya omweso." },
     "s-sina-muda": { "text": "Sirina kaseera leero." },
     "s-kuogelea": { "text": "Nsiima okuwuga." },
-    "s-neema-kuimba": { "text": "Neema asiima okuyimba." },
+    "s-neema-kuimba": { "text": "{@amara} asiima okuyimba." },
     "s-kuangalia-mpira": { "text": "Nsiima okulaba omupiira." },
     "s-mpira-wa-miguu": { "text": "Nsiima omupiira gw'ebigere." },
     "s-timu-hodari": { "text": "Ttiimu yange nnungi." },
@@ -66,7 +66,7 @@
   "stories": {
     "match-day": {
       "lines": [
-        "Mukasa! Omupiira gutandika ssaawa kkumi. Ojja?",
+        "{@mukasa}! Omupiira gutandika ssaawa kkumi. Ojja?",
         "Yee! Naye nkooye. Nkoze nnyo leero.",
         "Totya, tujja kutuula butuuzi. Tunywa caayi.",
         "Ttiimu yaffe ejja kuwangula?",
@@ -76,7 +76,7 @@
         "Ssaabaganzi! Ttiimu yaffe ewangudde!"
       ],
       "questions": [
-        { "question": "Mukasa awulira atya?" },
+        { "question": "{@mukasa} awulira atya?" },
         { "question": "Kiki ekibaddewo kati?" },
         {
           "options": ["Ttiimu yaffe ewangudde", "Ani awangudde?", "Nnyumirwa omupiira"],
@@ -84,7 +84,7 @@
         }
       ],
       "title": "Olunaku lw’omupiira",
-      "summary": "Ssali ne Mukasa balaba Cranes ng’ezannya."
+      "summary": "{@ssali} ne {@mukasa} balaba Cranes ng’ezannya."
     }
   }
 }

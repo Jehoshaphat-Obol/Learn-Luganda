@@ -62,9 +62,9 @@
   "stories": {
     "the-kwanjula": {
       "title": "The introduction",
-      "summary": "Nakato gets ready for her cousin’s kwanjula with Jjajja.",
+      "summary": "{@nakato} gets ready for her cousin’s kwanjula with {@jjajja}.",
       "lines": [
-        "Nakato, have you put on your gomesi?",
+        "{@nakato}, have you put on your gomesi?",
         "Yes, Grandma. Is it nice?",
         "Very nice! Where is the gift?",
         "It’s here. Sugar and salt.",
@@ -75,9 +75,9 @@
         "Let’s celebrate! Thank you all for coming!"
       ],
       "questions": [
-        { "question": "What gift is Nakato bringing?", "options": ["A cake", "Sugar and salt", "A hoe"] },
+        { "question": "What gift is {@nakato} bringing?", "options": ["A cake", "Sugar and salt", "A hoe"] },
         { "question": "Who helps the bride at a kwanjula?", "options": ["The ssenga", "The Kabaka", "The teacher"] },
-        { "question": "How does Nakato say “I wish you”?", "options": ["I wish you", "I love you", "I’m waiting for you"] }
+        { "question": "How does {@nakato} say “I wish you”?", "options": ["I wish you", "I love you", "I’m waiting for you"] }
       ]
     }
   }

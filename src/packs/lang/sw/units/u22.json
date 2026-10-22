@@ -43,7 +43,7 @@
     "s22-omweso": { "text": "Babu anacheza omweso.", "alts": ["Bibi anacheza omweso.", "Babu anacheza bao."] },
     "s-sina-muda": { "text": "Sina muda leo." },
     "s-kuogelea": { "text": "Ninapenda kuogelea." },
-    "s-neema-kuimba": { "text": "Neema anapenda kuimba." },
+    "s-neema-kuimba": { "text": "{@amara} anapenda kuimba." },
     "s-kuangalia-mpira": { "text": "Ninapenda kuangalia mpira." },
     "s-mpira-wa-miguu": { "text": "Ninapenda mpira wa miguu." },
     "s-timu-hodari": { "text": "Timu yangu ni hodari." },
@@ -69,9 +69,9 @@
   "stories": {
     "match-day": {
       "title": "Siku ya mechi",
-      "summary": "Ssali na Mukasa wanatazama Cranes wakicheza.",
+      "summary": "{@ssali} na {@mukasa} wanatazama Cranes wakicheza.",
       "lines": [
-        "Mukasa! Mechi inaanza saa kumi. Unakuja?",
+        "{@mukasa}! Mechi inaanza saa kumi. Unakuja?",
         "Ndiyo! Lakini nimechoka. Leo nimefanya kazi kwa bidii.",
         "Usijali, tutakaa tu. Tutakunywa chai.",
         "Timu yetu itashinda?",
@@ -81,10 +81,10 @@
         "Ssaabaganzi! Timu yetu imeshinda!"
       ],
       "questions": [
-        { "question": "Mukasa anajisikiaje?", "options": ["Amefurahi", "Amechoka", "Amekasirika"] },
+        { "question": "{@mukasa} anajisikiaje?", "options": ["Amefurahi", "Amechoka", "Amekasirika"] },
         { "question": "Nini kimetokea sasa hivi?", "options": ["Goli", "Mchezo umeisha", "Mvua imeanza kunyesha"] },
         {
-          "question": "Mukasa anasemaje “timu yetu imeshinda”?",
+          "question": "{@mukasa} anasemaje “timu yetu imeshinda”?",
           "options": ["Timu yetu imeshinda", "Nani ameshinda?", "Ninafurahia mpira"]
         }
       ]

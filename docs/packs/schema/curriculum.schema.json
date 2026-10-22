@@ -38,15 +38,32 @@
         "properties": {
           "name": {
             "type": "string",
-            "minLength": 1
+            "minLength": 1,
+            "description": "The default name, used by languages whose lang pack has no culture for this cast member. Text writes {@id} for it."
           },
           "look": {
             "$ref": "course.schema.json#/$defs/castMember/properties/look"
           },
           "voice": {
             "$ref": "settings.schema.json#/$defs/voice"
+          },
+          "short": {
+            "type": "string",
+            "minLength": 1,
+            "description": "What text calls them ({@id}) when it isn't the full name ({@id.name}), e.g. Jjajja for Jjajja Nalwoga."
           }
         }
+      }
+    },
+    "places": {
+      "type": "object",
+      "description": "Culture slots for places: the default for each {@id} in lang text (a home city, a hometown, a trip away...). A language's `culture.places` replaces them in courses that teach it.",
+      "propertyNames": {
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
       }
     },
     "sections": {

@@ -43,7 +43,7 @@
     "s18-kiyitibwa-kitya": { "text": "Kino kiyitibwa kitya mu {to.mu}?" },
     "s-tutaondoka-mapema": { "text": "Tunaasimbula nga bukyali." },
     "s-utasafiri-lini": { "text": "Olitambula ddi?" },
-    "s-kesho-kutwa-mombasa": { "text": "Oluvannyuma lw'enkya ndigenda e Mombasa." },
+    "s-kesho-kutwa-mombasa": { "text": "Oluvannyuma lw'enkya ndigenda e {@getaway}." },
     "s-miaka-mingapi": { "text": "Olina emyaka emeka?" },
     "s-miaka-ishirini": { "text": "Nnina emyaka abiri." },
     "s-shilingi-ngapi": { "text": "Siringi mmeka?" },
@@ -72,8 +72,8 @@
         "Nedda, njogera katono."
       ],
       "title": "Kino kiyitibwa kitya?",
-      "summary": "Emma abuuza Jjajja amannya g’ebintu mu ffumbiro lye.",
-      "questions": [{ "question": "Emma akola ki?" }, { "question": "Lwaki Emma ayiga Oluganda?" }]
+      "summary": "{@emma} abuuza {@jjajja} amannya g’ebintu mu ffumbiro lye.",
+      "questions": [{ "question": "{@emma} akola ki?" }, { "question": "Lwaki {@emma} ayiga Oluganda?" }]
     }
   }
 }

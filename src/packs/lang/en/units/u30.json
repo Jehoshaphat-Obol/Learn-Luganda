@@ -48,8 +48,8 @@
     "s-kusali-kanisani": { "text": "On Sunday we pray at church.", "alts": ["On Sundays we pray in church."] },
     "s-ramadhani": { "text": "During Ramadan, people fast." },
     "s-baraka": { "text": "Rain is a blessing." },
-    "s-alizaliwa": { "text": "Grandma was born in Zanzibar." },
-    "s-anaitwa": { "text": "The child is called Amani.", "alts": ["The child’s name is Amani."] },
+    "s-alizaliwa": { "text": "Grandma was born in {@island}." },
+    "s-anaitwa": { "text": "The child is called {@nakato}.", "alts": ["The child’s name is {@nakato}."] },
     "s-akubariki": { "text": "God bless you, my child." }
   },
   "phrases": ["On Sunday I go to church.", "On Friday he goes to the mosque.", "Happy Christmas!", "Happy Eid!", "Happy New Year!", "God bless you!"],

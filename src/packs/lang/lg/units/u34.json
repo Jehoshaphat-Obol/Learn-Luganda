@@ -25,7 +25,7 @@
     "s34-singa-nnina-ssente": { "text": "Singa nnali nnina ssente, nnandiguze mmotoka." },
     "s34-singa-tewali-nkuba": { "text": "Singa tewaali nkuba, nnandigenze." },
     "s34-nnandyagadde-caayi": { "text": "Nnandyagadde caayi, nsaba." },
-    "s34-nnandyagadde-okugenda": { "text": "Nnandyagadde okugenda e Jinja." },
+    "s34-nnandyagadde-okugenda": { "text": "Nnandyagadde okugenda e {@getaway}." },
     "s34-ka-tulabe": { "text": "Ka tulabe enkya." },
     "s34-katonda-bwanaayagala": { "text": "Nja kujja, Katonda bw’anaayagala.", "alts": ["Nja kujja, Katonda bwanaayagala."] },
     "s-ukifika": { "text": "Bw'onootuuka, onkubire essimu." },

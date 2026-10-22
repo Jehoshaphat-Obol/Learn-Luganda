@@ -19,7 +19,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { formatJson } from './format-json.js';
-import { fillNames } from '../src/content/compose.js';
+import { cultureOf, fillCulture, fillNames } from '../src/content/compose.js';
 
 const args = process.argv.slice(2);
 const opt = (name, fallback) => (args.includes(name) ? args[args.indexOf(name) + 1] : fallback);
@@ -66,8 +66,9 @@ const norm = (t) =>
     .trim();
 
 // Curriculum text names languages as `{to}`/`{from}`; the pair spells
-// them out, so match on the pair's own names.
-const named = (code, t) => fillNames(t, lang[code].meta.languageNames, { from, to });
+// them out, so match on the pair's own names, and its own culture.
+const culture = cultureOf(curriculum.meta, lang[from]?.meta, lang[to]?.meta);
+const named = (code, t) => fillCulture(fillNames(t, lang[code].meta.languageNames, { from, to }), culture);
 
 // Index the curriculum: text in each language -> concept ids.
 const index = { words: {}, sentences: {} };

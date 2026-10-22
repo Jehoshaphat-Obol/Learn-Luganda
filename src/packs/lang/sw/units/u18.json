@@ -46,7 +46,7 @@
     "s18-kiyitibwa-kitya": { "text": "Hiki kinaitwaje kwa {to}?", "alts": ["Hiki kinaitwa nini kwa {to}?", "Unasemaje hiki kwa {to}?"] },
     "s-tutaondoka-mapema": { "text": "Tutaondoka mapema." },
     "s-utasafiri-lini": { "text": "Utasafiri lini?" },
-    "s-kesho-kutwa-mombasa": { "text": "Kesho kutwa nitaenda Mombasa." },
+    "s-kesho-kutwa-mombasa": { "text": "Kesho kutwa nitaenda {@getaway}." },
     "s-miaka-mingapi": { "text": "Una miaka mingapi?" },
     "s-miaka-ishirini": { "text": "Nina miaka ishirini." },
     "s-shilingi-ngapi": { "text": "Shilingi ngapi?" },
@@ -71,7 +71,7 @@
   "stories": {
     "what-is-this": {
       "title": "Hiki kinaitwaje?",
-      "summary": "Emma anamwuliza Jjajja majina ya vitu jikoni kwake.",
+      "summary": "{@emma} anamwuliza {@jjajja} majina ya vitu jikoni kwake.",
       "lines": [
         "Bibi, hiki kinaitwaje kwa Kiganda?",
         "Hicho ni kikapu.",
@@ -85,10 +85,10 @@
         "Hapana, ninazungumza kidogo."
       ],
       "questions": [
-        { "question": "Emma anafanya nini?", "options": ["Anauliza majina ya vitu", "Anapika chakula cha jioni", "Ananunua kikapu"] },
+        { "question": "{@emma} anafanya nini?", "options": ["Anauliza majina ya vitu", "Anapika chakula cha jioni", "Ananunua kikapu"] },
         {
-          "question": "Kwa nini Emma anajifunza Kiganda?",
-          "options": ["Kwa ajili ya shule", "Kuzungumza na Jjajja", "Kununua vitu sokoni"]
+          "question": "Kwa nini {@emma} anajifunza Kiganda?",
+          "options": ["Kwa ajili ya shule", "Kuzungumza na {@jjajja}", "Kununua vitu sokoni"]
         }
       ]
     }

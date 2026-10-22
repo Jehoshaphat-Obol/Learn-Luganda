@@ -63,7 +63,7 @@
     "s-fagia-nje": { "text": "Fagia nje." },
     "s-osha-vyombo-tafadhali": { "text": "Osha vyombo, tafadhali." },
     "s-asante-msaada": { "text": "Asante kwa msaada!" },
-    "s-kazi-nzuri": { "text": "Kazi nzuri, Neema!" },
+    "s-kazi-nzuri": { "text": "Kazi nzuri, {@amara}!" },
     "s-tukutane-sokoni": { "text": "Tukutane sokoni." },
     "s-tukutane-saa-ngapi": { "text": "Tukutane saa ngapi?" },
     "s-tutaonana-baadaye": { "text": "Tutaonana baadaye." }

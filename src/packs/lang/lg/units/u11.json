@@ -60,7 +60,7 @@
     "s-fagia-nje": { "text": "Yera ebweru." },
     "s-osha-vyombo-tafadhali": { "text": "Yoza ebibya, mwattu." },
     "s-asante-msaada": { "text": "Weebale obuyambi!" },
-    "s-kazi-nzuri": { "text": "Okoze bulungi, Neema!" },
+    "s-kazi-nzuri": { "text": "Okoze bulungi, {@amara}!" },
     "s-tukutane-sokoni": { "text": "Tusisinkane mu katale." },
     "s-tukutane-saa-ngapi": { "text": "Tusisinkane ssaawa mmeka?" },
     "s-tutaonana-baadaye": { "text": "Tunaalabagana oluvannyuma." }

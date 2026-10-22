@@ -5,11 +5,12 @@
   "cast": {
     "nakato": { "name": "Nakato", "look": "nakato", "voice": { "pitch": 1.2, "rate": 0.95, "hints": ["female", "woman"] } },
     "mukasa": { "name": "Mukasa", "look": "mukasa", "voice": { "pitch": 0.8, "rate": 0.85, "hints": ["male", "man"] } },
-    "jjajja": { "name": "Jjajja Nalwoga", "look": "jjajja", "voice": { "pitch": 1.05, "rate": 0.75, "hints": ["female", "woman"] } },
+    "jjajja": { "name": "Jjajja Nalwoga", "short": "Jjajja", "look": "jjajja", "voice": { "pitch": 1.05, "rate": 0.75, "hints": ["female", "woman"] } },
     "ssali": { "name": "Ssali", "look": "ssali", "voice": { "pitch": 0.9, "rate": 1.05, "hints": ["male", "man"] } },
     "amara": { "name": "Amara", "look": "amara", "voice": { "pitch": 1.4, "rate": 1, "hints": ["female", "girl"] } },
     "emma": { "name": "Emma", "look": "emma", "voice": { "pitch": 1.1, "rate": 0.9, "hints": ["female", "woman"] } }
   },
+  "places": { "city": "Kampala", "hometown": "Masaka", "town": "Mbarara", "getaway": "Jinja", "island": "Ssese", "nearby": "Entebbe" },
   "sections": [
     { "id": "s1", "units": ["u1", "u2", "u3", "u4", "u5", "u6", "u7", "u8"] },
     { "id": "s2", "units": ["u9", "u10", "u11", "u12", "u13", "u14", "u15", "u16"] },

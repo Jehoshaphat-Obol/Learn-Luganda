@@ -78,8 +78,12 @@
         "Weebale nnyo, Jjajja!"
       ],
       "title": "Olweggulo lw’enkuba",
-      "summary": "Enkuba ey’amaanyi ekuuma Amara ewa jjajja we.",
-      "questions": [{ "question": "Lwaki Jjajja agamba nedda?" }, { "question": "Obudde buli butya kati?" }, { "question": "Amara anaatwala ki eka?" }]
+      "summary": "Enkuba ey’amaanyi ekuuma {@amara} ewa jjajja we.",
+      "questions": [
+        { "question": "Lwaki {@jjajja} agamba nedda?" },
+        { "question": "Obudde buli butya kati?" },
+        { "question": "{@amara} anaatwala ki eka?" }
+      ]
     }
   }
 }

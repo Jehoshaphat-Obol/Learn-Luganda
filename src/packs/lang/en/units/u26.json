@@ -52,9 +52,9 @@
   "stories": {
     "kasubi-visit": {
       "title": "A visit to Kasubi",
-      "summary": "Mukasa shows Emma the royal tombs and tells her about the kingdom.",
+      "summary": "{@mukasa} shows {@emma} the royal tombs and tells her about the kingdom.",
       "lines": [
-        "Emma, these are the Kasubi royal tombs.",
+        "{@emma}, these are the Kasubi royal tombs.",
         "The house is very big! Who is buried here?",
         "Four Kabakas.",
         "And where is the Kabaka of today?",

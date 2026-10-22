@@ -62,8 +62,8 @@
   },
   "stories": {
     "cooking-luwombo": {
-      "title": "Cooking with Jjajja",
-      "summary": "Amara learns to cook chicken luwombo.",
+      "title": "Cooking with {@jjajja}",
+      "summary": "{@amara} learns to cook chicken luwombo.",
       "lines": [
         "Today we will cook chicken luwombo.",
         "Okay! What do I do?",
@@ -76,9 +76,9 @@
         "It’s very tasty! Thanks for cooking, Grandma."
       ],
       "questions": [
-        { "question": "What does Amara do first?", "options": ["Cut onions and tomatoes", "Light the fire", "Wash the pot"] },
+        { "question": "What does {@amara} do first?", "options": ["Cut onions and tomatoes", "Light the fire", "Wash the pot"] },
         { "question": "How long does the luwombo cook?", "options": ["Ten minutes", "Two hours", "All night"] },
-        { "question": "What does Amara say after the meal?", "options": ["Thanks for cooking", "First cut", "I’m waiting for you"] }
+        { "question": "What does {@amara} say after the meal?", "options": ["Thanks for cooking", "First cut", "I’m waiting for you"] }
       ]
     }
   }

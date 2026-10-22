@@ -48,22 +48,22 @@
   "stories": {
     "stolen-phone": {
       "title": "Simu iliyoibiwa",
-      "summary": "Simu ya Nakato inanyakuliwa sokoni, na Ssali anamsaidia.",
+      "summary": "Simu ya {@nakato} inanyakuliwa sokoni, na {@ssali} anamsaidia.",
       "lines": [
         "Mwizi! Mwizi! Nisaidie!",
-        "Nakato! Nini kimetokea?",
+        "{@nakato}! Nini kimetokea?",
         "Simu yangu imeibiwa! Mwanamume amekimbia kule.",
         "Uko sawa? Umeumia?",
         "Hapana, niko sawa. Lakini nimeogopa sana.",
         "Kaa hapa usubiri. Nitawaita polisi.",
         "Polisi wanasema kwamba wanakuja haraka.",
-        "Asante sana, Ssali.",
+        "Asante sana, {@ssali}.",
         "Hakuna shida. Marafiki ni wa nini!"
       ],
       "questions": [
-        { "question": "Nini kilimtokea Nakato?", "options": ["Simu yake iliibiwa", "Alipata ajali", "Alipoteza mkoba wake"] },
-        { "question": "Ssali anafanya nini?", "options": ["Anamkimbiza mwizi", "Anawaita polisi", "Anaita gari la wagonjwa"] },
-        { "question": "Ssali anajibuje “Weebale nnyo”?", "options": ["Hamna shida.", "Haraka!", "Nisaidie!"] }
+        { "question": "Nini kilimtokea {@nakato}?", "options": ["Simu yake iliibiwa", "Alipata ajali", "Alipoteza mkoba wake"] },
+        { "question": "{@ssali} anafanya nini?", "options": ["Anamkimbiza mwizi", "Anawaita polisi", "Anaita gari la wagonjwa"] },
+        { "question": "{@ssali} anajibuje “Weebale nnyo”?", "options": ["Hamna shida.", "Haraka!", "Nisaidie!"] }
       ]
     }
   }

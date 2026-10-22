@@ -61,26 +61,26 @@
     "s-gyebale-ko-ssebo": { "text": "Gyebale ko, ssebo." },
     "s-kale-weraba": { "text": "Kale, weraba." },
     "s-weraba-tunaalabagana": { "text": "Weraba, tunaalabagana." },
-    "s-nze-nakato": { "text": "Nze Nakato." },
+    "s-nze-nakato": { "text": "Nze {@nakato}." },
     "s-erinnya-lyo-ani": { "text": "Erinnya lyo ani?" },
-    "s-erinnya-lyange-mukasa": { "text": "Erinnya lyange Mukasa." },
+    "s-erinnya-lyange-mukasa": { "text": "Erinnya lyange {@mukasa}." },
     "s-ggwe-ani": { "text": "Ggwe ani?" },
-    "s-mbeera-kampala": { "text": "Mbeera Kampala." },
-    "s-nva-masaka": { "text": "Nva Masaka." },
+    "s-mbeera-kampala": { "text": "Mbeera {@city}." },
+    "s-nva-masaka": { "text": "Nva {@hometown}." },
     "s-ndi-muyizi": { "text": "Ndi muyizi." },
-    "s-nsanyuse-okukulaba": { "text": "Nsanyuse okukulaba, Ssali." },
+    "s-nsanyuse-okukulaba": { "text": "Nsanyuse okukulaba, {@ssali}." },
     "s-habari-yako": { "text": "Oli otya?" },
     "s-karibu-sana": { "text": "Tukusanyukidde nnyo!" },
     "s-mambo-poa": { "text": "Ki kati? Kiri bulungi!" },
     "s-shikamoo-bibi": { "text": "Nkulamusizza n'ekitiibwa, jjajja." },
     "s-ndiyo-asante": { "text": "Yee, weebale." },
     "s-hapana-asante": { "text": "Nedda, weebale." },
-    "s-habari-za-asubuhi-baraka": { "text": "Wasuze otya, Baraka?" },
-    "s-jina-langu-amani": { "text": "Erinnya lyange Amani." },
-    "s-mimi-ni-emma": { "text": "Nze Emma." },
-    "s-ninaishi-mombasa": { "text": "Mbeera Mombasa." },
-    "s-ninatoka-arusha": { "text": "Nva Arusha." },
-    "s-nimefurahi-kukuona": { "text": "Nsanyuse okukulaba, Juma." }
+    "s-habari-za-asubuhi-baraka": { "text": "Wasuze otya, {@mukasa}?" },
+    "s-jina-langu-amani": { "text": "Erinnya lyange {@nakato}." },
+    "s-mimi-ni-emma": { "text": "Nze {@emma}." },
+    "s-ninaishi-mombasa": { "text": "Mbeera {@getaway}." },
+    "s-ninatoka-arusha": { "text": "Nva {@town}." },
+    "s-nimefurahi-kukuona": { "text": "Nsanyuse okukulaba, {@ssali}." }
   },
   "phrases": [
     "Oli otya?",
@@ -90,16 +90,16 @@
     "Osiibye otya?",
     "Gyebale ko!",
     "Erinnya lyo ani?",
-    "Nze Nakato.",
-    "Nva Masaka.",
+    "Nze {@nakato}.",
+    "Nva {@hometown}.",
     "Weraba, tunaalabagana."
   ],
   "dialogues": {
     "u1s1l3": [{ "line": "Wasuze otya, mwana wange?", "options": ["Nsuze bulungi, nnyabo.", "Weraba, nnyabo.", "Nedda, ssebo."] }],
     "u1s1l4": [{ "line": "Kale, weraba!", "options": ["Weraba, tunaalabagana.", "Wasuze otya?", "Gyendi."] }],
     "u1s2l3": [
-      { "line": "Erinnya lyo ani?", "options": ["Nze Amara.", "Mbeera Kampala.", "Gyebale ko."] },
-      { "line": "Nze Emma. Ova wa?", "options": ["Nva Masaka.", "Ndi muyizi.", "Weebale nnyo."] }
+      { "line": "Erinnya lyo ani?", "options": ["Nze {@amara}.", "Mbeera {@city}.", "Gyebale ko."] },
+      { "line": "Nze {@emma}. Ova wa?", "options": ["Nva {@hometown}.", "Ndi muyizi.", "Weebale nnyo."] }
     ]
   },
   "stories": {
@@ -108,19 +108,19 @@
         "Oli otya?",
         "Gyendi, weebale. Ggwe oli otya?",
         "Bulungi. Erinnya lyo ani?",
-        "Nze Emma. Ggwe ani?",
-        "Nze Nakato. Ova wa, Emma?",
-        "Nva Masaka. Ndi muyizi.",
+        "Nze {@emma}. Ggwe ani?",
+        "Nze {@nakato}. Ova wa, {@emma}?",
+        "Nva {@hometown}. Ndi muyizi.",
         "Nange ndi muyizi! Nsanyuse okukulaba.",
         "Weebale nnyo. Tunaalabagana!"
       ],
       "questions": [
-        { "question": "Nakato yabuuza ki?", "options": ["Erinnya lya Emma", "Emma gy’abeera", "Oba Emma alumwa enjala"] },
-        { "question": "Emma ava wa?", "options": ["Kampala", "Masaka", "Mu tterekero ly’ebitabo"] },
-        { "options": ["Weebale nnyo", "Nsanyuse okukulaba", "Tunaalabagana"], "question": "Nakato agamba atya “nsanyuse okukulaba”?" }
+        { "question": "{@nakato} yabuuza ki?", "options": ["Erinnya lya {@emma}", "{@emma} gy’abeera", "Oba {@emma} alumwa enjala"] },
+        { "question": "{@emma} ava wa?", "options": ["{@city}", "{@hometown}", "Mu tterekero ly’ebitabo"] },
+        { "options": ["Weebale nnyo", "Nsanyuse okukulaba", "Tunaalabagana"], "question": "{@nakato} agamba atya “nsanyuse okukulaba”?" }
       ],
       "title": "Mukwano omuggya",
-      "summary": "Emma asisinkana Nakato ebweru w’etterekero ly’ebitabo."
+      "summary": "{@emma} asisinkana {@nakato} ebweru w’etterekero ly’ebitabo."
     },
     "morning-jjajja": {
       "lines": [
@@ -133,11 +133,11 @@
       ],
       "questions": [
         { "question": "Budde ki?", "options": ["Ku makya", "Olweggulo", "Ekiro"] },
-        { "options": ["Nedda, nnyabo", "Nsuze bulungi", "Weraba"], "question": "Amara addamu atya okulamusa kwa Jjajja?" },
-        { "question": "Amara agenda oba atuuka?", "options": ["Atuuka", "Agenda"] }
+        { "options": ["Nedda, nnyabo", "Nsuze bulungi", "Weraba"], "question": "{@amara} addamu atya okulamusa kwa {@jjajja}?" },
+        { "question": "{@amara} agenda oba atuuka?", "options": ["Atuuka", "Agenda"] }
       ],
-      "title": "Ku makya ne Jjajja",
-      "summary": "Amara alamusa jjajja we nga tannagenda ku ssomero."
+      "title": "Ku makya ne {@jjajja}",
+      "summary": "{@amara} alamusa jjajja we nga tannagenda ku ssomero."
     }
   }
 }

@@ -66,8 +66,8 @@
         "Mwebale nnyo, Jjajja!"
       ],
       "title": "Kintu ne Nnambi",
-      "summary": "Jjajja anyumiza Emma olufumo lw’engeri okufa gye kwajja ku nsi.",
-      "questions": [{ "question": "Nnambi yali ani?" }, { "question": "Lwaki Nnambi yaddayo?" }, { "question": "Jjajja awa ssomo ki?" }]
+      "summary": "{@jjajja} anyumiza {@emma} olufumo lw’engeri okufa gye kwajja ku nsi.",
+      "questions": [{ "question": "Nnambi yali ani?" }, { "question": "Lwaki Nnambi yaddayo?" }, { "question": "{@jjajja} awa ssomo ki?" }]
     }
   }
 }

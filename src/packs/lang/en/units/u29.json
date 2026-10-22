@@ -44,7 +44,7 @@
     "s-wanacheza-ngoma": { "text": "They are dancing.", "alts": ["They’re dancing.", "They are drumming.", "They’re playing the drums."] },
     "s-mazoezi-kila-siku": { "text": "I have practice every day.", "alts": ["I train every day.", "I have training every day."] },
     "s-mwimbaji": { "text": "The singer has a beautiful voice.", "alts": ["The singer has a nice voice.", "The singer has a good voice."] },
-    "s-mchezaji": { "text": "Neema is a skilful dancer.", "alts": ["Neema is a good dancer.", "Neema is a great dancer."] },
+    "s-mchezaji": { "text": "{@amara} is a skilful dancer.", "alts": ["{@amara} is a good dancer.", "{@amara} is a great dancer."] },
     "s-mpiga-ngoma": { "text": "The drummer is my grandfather." },
     "s-bendi": { "text": "The band will play music tonight.", "alts": ["The band will play at night."] },
     "s-taarab": { "text": "Grandma loves taarab.", "alts": ["Grandma likes taarab."] },
@@ -67,7 +67,7 @@
   "stories": {
     "drum-lesson": {
       "title": "The drum lesson",
-      "summary": "Amara learns to play the drum for the school concert.",
+      "summary": "{@amara} learns to play the drum for the school concert.",
       "lines": [
         "Sir, I want to play the drum at the school concert.",
         "Good! Hold this drum.",
@@ -76,11 +76,11 @@
         "Bum, bum, ka-bum! It’s great fun!",
         "The children who dance will dance Bakisimba.",
         "And who will sing?",
-        "Nakato! She is a good singer.",
+        "{@nakato}! She is a good singer.",
         "I’m so happy. Thank you, sir!"
       ],
       "questions": [
-        { "question": "Which drum does Amara play?", "options": ["The big one", "The small one", "No drum"] },
+        { "question": "Which drum does {@amara} play?", "options": ["The big one", "The small one", "No drum"] },
         { "question": "What will the dancers dance?", "options": ["Bakisimba", "Football", "Omweso"] },
         {
           "question": "How do you say “the children who dance”?",

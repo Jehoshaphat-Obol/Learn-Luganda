@@ -45,8 +45,8 @@
     "s-kusali-kanisani": { "text": "Ku Ssande tusabira mu kkanisa." },
     "s-ramadhani": { "text": "Mu Lamadaani, abantu basiiba." },
     "s-baraka": { "text": "Enkuba mukisa." },
-    "s-alizaliwa": { "text": "Jjajja yazaalibwa e Zanzibar." },
-    "s-anaitwa": { "text": "Omwana ayitibwa Amani." },
+    "s-alizaliwa": { "text": "Jjajja yazaalibwa e {@island}." },
+    "s-anaitwa": { "text": "Omwana ayitibwa {@nakato}." },
     "s-akubariki": { "text": "Katonda akuwe omukisa, mwana wange." }
   },
   "phrases": [

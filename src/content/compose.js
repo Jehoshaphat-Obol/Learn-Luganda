@@ -32,6 +32,10 @@
  * - `{to}` and `{from}` in any text stand for the course's languages, named
  *   in the text's own language (`languageNames` in lang/<code>/course.json);
  *   `{to.mu}` picks another form of the name, for languages that inflect it.
+ * - `{@nakato}`, `{@city}` and the other culture slots stand for the cast's
+ *   names and the places they live in and travel to (see cultureOf), so a
+ *   Swahili course meets Amani in Dar es Salaam where a Luganda one meets
+ *   Nakato in Kampala. `{@jjajja.name}` is a cast member's full name.
  */
 import { LANDING_TEXT } from './labels.js';
 
@@ -58,6 +62,35 @@ export function fillNames(text, names, codes) {
     const entry = names?.[codes[role]];
     const value = typeof entry === 'string' ? (form ? undefined : entry) : entry?.[form ?? 'name'];
     return value ?? match;
+  });
+}
+
+/**
+ * The cast names and places for a course from `from` to `to` (lang pack
+ * metas): the `culture` of the target language, else of the base language
+ * (English has none, so English for Swahili speakers keeps the Swahili
+ * cast), over the curriculum's defaults. The defaults are Luganda's, so
+ * lang/lg has an empty culture. Returns `{ cast, places }`, cast
+ * as `{ id: { name, short } }`.
+ */
+export function cultureOf(curriculumMeta, from, to) {
+  const own = to?.culture ?? from?.culture ?? {};
+  const person = (c) => (typeof c === 'string' ? { name: c } : c ?? {});
+  const cast = {};
+  for (const [id, c] of Object.entries(curriculumMeta.cast ?? {})) {
+    const mine = own.cast?.[id];
+    cast[id] = mine ? person(mine) : { name: c.name, short: c.short };
+  }
+  return { cast, places: { ...curriculumMeta.places, ...own.places } };
+}
+
+/** `text` with its culture slots (`{@id}`, `{@id.name}`) filled from `culture`. */
+export function fillCulture(text, culture) {
+  if (typeof text !== 'string' || !text.includes('{@')) return text;
+  return text.replace(/\{@([a-z0-9-]+)(?:\.(name))?\}/g, (match, id, form) => {
+    const person = culture.cast[id];
+    if (person) return (form ? person.name : person.short ?? person.name) ?? match;
+    return (!form && culture.places[id]) || match;
   });
 }
 
@@ -89,9 +122,10 @@ const clean = (obj) => Object.fromEntries(Object.entries(obj).filter(([, v]) => 
  */
 export function composePack({ curriculum, from, to, about = { meta: null, units: {} } }) {
   const codes = { from: from.meta.code, to: to.meta.code };
-  const base = (text) => fillNames(text, from.meta.languageNames, codes);
-  const target = (text) => fillNames(text, to.meta.languageNames, codes);
-  const fill = (text) => fillNames(text, about.meta?.languageNames ?? from.meta.languageNames, codes);
+  const culture = cultureOf(curriculum.meta, from.meta, to.meta);
+  const base = (text) => fillCulture(fillNames(text, from.meta.languageNames, codes), culture);
+  const target = (text) => fillCulture(fillNames(text, to.meta.languageNames, codes), culture);
+  const fill = (text) => fillCulture(fillNames(text, about.meta?.languageNames ?? from.meta.languageNames, codes), culture);
   const alts = (item, f) => list((item?.alts ?? []).map(f));
   const cm = curriculum.meta;
   const order = cm.sections.flatMap((s) => s.units).filter((id) => curriculum.units[id]);
@@ -216,7 +250,7 @@ export function composePack({ curriculum, from, to, about = { meta: null, units:
     phrases: to.meta.phrases,
     landing: am.landing,
     settings: to.meta.settings,
-    cast: Object.fromEntries(Object.entries(cm.cast ?? {}).map(([cid, c]) => [cid, clean({ name: c.name, role: about.meta?.cast?.[cid] ?? from.meta.cast?.[cid], look: c.look, voice: c.voice })])),
+    cast: Object.fromEntries(Object.entries(cm.cast ?? {}).map(([cid, c]) => [cid, clean({ name: culture.cast[cid].name, role: fill(about.meta?.cast?.[cid] ?? from.meta.cast?.[cid]), look: c.look, voice: c.voice })])),
     sections: cm.sections.map((s) => clean({ id: s.id, ...from.meta.sections?.[s.id], units: s.units })),
   });
   return { meta, units };
@@ -227,10 +261,13 @@ export function composePack({ curriculum, from, to, about = { meta: null, units:
  * lang pack and, for the landing copy, its notes about the course's target
  * language. `lang` is lang/<ui>/course.json; `about` is
  * lang/<ui>/about/<to>/course.json or null; `learning` is true when
- * <ui> is the course's target language.
+ * <ui> is the course's target language; `culture` (cultureOf) fills the
+ * cast roles' culture slots.
  */
-export function composeLabels(lang, about, { learning = false } = {}) {
-  const labels = clean({ sections: lang.sections, units: lang.units, skills: lang.skills, cast: about?.cast ? { ...lang.cast, ...about.cast } : lang.cast, description: about?.description });
+export function composeLabels(lang, about, { learning = false, culture = null } = {}) {
+  const cast = about?.cast ? { ...lang.cast, ...about.cast } : lang.cast;
+  const roles = cast && culture ? Object.fromEntries(Object.entries(cast).map(([id, role]) => [id, fillCulture(role, culture)])) : cast;
+  const labels = clean({ sections: lang.sections, units: lang.units, skills: lang.skills, cast: roles, description: about?.description });
   const landing = about?.landing;
   if (landing) {
     const out = {};
@@ -339,7 +376,8 @@ export function composeCourse(id, catalog, { registry = [], uis } = {}) {
   const notes = pickAbout(chain, Object.fromEntries(chain.map((c) => [c, about[c]?.[to]])));
   const pack = composePack({ curriculum, from: lang[from], to: lang[to], about: notes });
   const labels = {};
-  for (const ui of uis ?? Object.keys(lang)) if (ui !== from && lang[ui]) labels[ui] = composeLabels(lang[ui].meta, about[ui]?.[to]?.meta ?? null, { learning: ui === to });
+  const culture = cultureOf(curriculum.meta, lang[from].meta, lang[to].meta);
+  for (const ui of uis ?? Object.keys(lang)) if (ui !== from && lang[ui]) labels[ui] = composeLabels(lang[ui].meta, about[ui]?.[to]?.meta ?? null, { learning: ui === to, culture });
   return { ...pack, labels };
 }
 

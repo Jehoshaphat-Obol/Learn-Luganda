@@ -11,6 +11,7 @@
     "sw": { "name": "Oluswayiri", "mu": "Luswayiri" },
     "fr": { "name": "Olufalansa", "mu": "Lufalansa" }
   },
+  "culture": {},
   "cheers": ["Kale!", "Bulungi nnyo!"],
   "phrases": { "congrats": "Wayita bulungi", "thanks": "Weebale nnyo!" },
   "settings": { "answers": { "equivalents": { "ŋ": "ng" } }, "speech": { "fallbacks": ["sw"] } },
@@ -245,8 +246,8 @@
     "u40s4": "Wakayima n'empisi"
   },
   "cast": {
-    "nakato": "Omukulembeze wo, omuyizi wa yunivasite e Kampala",
-    "mukasa": "Omusomesa omugumiikiriza okuva e Masaka",
+    "nakato": "Omukulembeze wo, omuyizi wa yunivasite e {@city}",
+    "mukasa": "Omusomesa omugumiikiriza okuva e {@hometown}",
     "jjajja": "Jjajja ayagala ennyo engero",
     "ssali": "Omuvuzi wa bodaboda amanyi buli kkubo",
     "amara": "Omuyizi wa siniya ayagala ennyimba",
