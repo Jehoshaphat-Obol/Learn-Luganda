@@ -1,0 +1,165 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u34",
+  "title": "Kama na wakati",
+  "description": "Zungumza kuhusu kinachotokea wakati fulani, ambacho kingetokea, na unachotamani.",
+  "color": "ink",
+  "character": "amani",
+  "words": [
+    { "id": "ukifika", "target": "when you arrive", "base": "ukifika", "altTarget": ["if you arrive", "when you get there"] },
+    { "id": "mvua-ikinyesha", "target": "if it rains", "base": "mvua ikinyesha", "altTarget": ["when it rains"] },
+    { "id": "nikipata", "target": "if I get", "base": "nikipata", "altTarget": ["when i get", "if i find"] },
+    { "id": "ningekuwa", "target": "if I were", "base": "ningekuwa", "altTarget": ["i would be", "i’d be"] },
+    { "id": "ningenunua", "target": "I would buy", "base": "ningenunua", "altTarget": ["i’d buy"] },
+    { "id": "laiti", "target": "if only", "base": "laiti", "altTarget": ["i wish"] },
+    { "id": "ikiwa", "target": "if", "base": "ikiwa", "altTarget": ["in case", "provided that"] },
+    { "id": "tajiri", "target": "rich", "base": "tajiri", "altTarget": ["wealthy", "a rich person"] }
+  ],
+  "sentences": [
+    {
+      "id": "s-ukifika",
+      "target": "When you arrive, call me.",
+      "base": "Ukifika, nipigie simu.",
+      "altTarget": ["If you arrive, call me.", "When you get there, call me."]
+    },
+    {
+      "id": "s-mvua-ikinyesha",
+      "target": "If it rains, we will stay at home.",
+      "base": "Mvua ikinyesha, tutakaa nyumbani.",
+      "altTarget": ["When it rains, we’ll stay home."]
+    },
+    {
+      "id": "s-nikipata-pesa",
+      "target": "If I get money, I will travel.",
+      "base": "Nikipata pesa, nitasafiri.",
+      "altTarget": ["When I get money, I’ll travel."]
+    },
+    {
+      "id": "s-ningekuwa-tajiri",
+      "target": "If I were rich, I would buy a car.",
+      "base": "Ningekuwa tajiri, ningenunua gari.",
+      "altTarget": ["If I was rich, I’d buy a car."]
+    },
+    {
+      "id": "s-ningenunua",
+      "target": "I would buy a big house.",
+      "base": "Ningenunua nyumba kubwa.",
+      "altTarget": ["I’d buy a big house."]
+    },
+    { "id": "s-laiti", "target": "If only I had time!", "base": "Laiti ningekuwa na muda!", "altTarget": ["I wish I had time!"] },
+    {
+      "id": "s-ikiwa",
+      "target": "If you have a question, ask.",
+      "base": "Ikiwa una swali, uliza.",
+      "altTarget": ["If you’ve got a question, ask."]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u34s1",
+      "title": "Wakati…",
+      "icon": "clock",
+      "tip": "first-conditional",
+      "lessons": [
+        {
+          "id": "u34s1l1",
+          "newWords": ["ukifika", "mvua-ikinyesha", "nikipata"],
+          "sentences": ["s-ukifika", "s-mvua-ikinyesha", "s-nikipata-pesa"],
+          "dialogues": [
+            {
+              "speaker": "juma",
+              "target": "When you get to Mombasa, will you call me?",
+              "base": "Ukifika Mombasa, utanipigia?",
+              "options": ["Yes, when I arrive I’ll call you.", "I would buy a car.", "If only!"],
+              "answer": "Yes, when I arrive I’ll call you."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u34s2",
+      "title": "Kama…",
+      "icon": "star",
+      "tip": "second-conditional",
+      "lessons": [
+        {
+          "id": "u34s2l1",
+          "newWords": ["ningekuwa", "tajiri", "ningenunua"],
+          "sentences": ["s-ningekuwa-tajiri", "s-ningenunua", "s-mvua-ikinyesha"]
+        },
+        { "id": "u34s2l2", "newWords": ["laiti", "ikiwa"], "sentences": ["s-laiti", "s-ikiwa", "s-ningekuwa-tajiri"] }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Kiswahili huweka “kama” ndani ya kitenzi (**-ki-**, **-nge-**). Kiingereza hutumia **if** na **when** pamoja na mpangilio maalum wa nyakati.",
+    "phrases": [
+      { "target": "When you arrive, call me.", "base": "Ukifika, nipigie simu." },
+      { "target": "If it rains, we will stay at home.", "base": "Mvua ikinyesha, tutakaa nyumbani." },
+      { "target": "If I were rich, I would buy a car.", "base": "Ningekuwa tajiri, ningenunua gari." }
+    ],
+    "tips": [
+      {
+        "id": "first-conditional",
+        "title": "If + sasa, will",
+        "body": [
+          "**-ki-** ni **if** au **when**. Upande wa **if** hutumia wakati uliopo, upande mwingine **will**: **If it rains, we will stay home.** (Mvua ikinyesha, tutakaa nyumbani.)",
+          "Usiseme “if it will rain”. **Ukifika, nipigie** ni **When you arrive, call me.**"
+        ]
+      },
+      {
+        "id": "second-conditional",
+        "title": "If I were…, I would…",
+        "body": [
+          "Kwa jambo la kufikirika (**-nge-**), Kiingereza hutumia wakati uliopita baada ya **if** na **would** upande mwingine: **If I were rich, I would buy a car.**",
+          "Na **be**, tumia **were** kwa kila mtu: **If I were you…** **Laiti** ni **If only…** au **I wish…**: **I wish I had time!**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "God willing",
+        "body": ["**Mungu akipenda** kwa Kiingereza ni **God willing** au **hopefully**: **See you tomorrow, hopefully!**"]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-if-i-were-rich",
+      "title": "Ningekuwa tajiri",
+      "unlockAfter": "u34s2l2",
+      "cast": ["amani", "juma"],
+      "summary": "Wakisubiri matatu, Amani na Juma wanaota watakavyofanya na pesa.",
+      "steps": [
+        {
+          "line": { "speaker": "juma", "target": "Amani, if you were rich, what would you do?", "base": "Amani, ungekuwa tajiri, ungefanya nini?" }
+        },
+        { "line": { "speaker": "amani", "target": "I would build a school in our village.", "base": "Ningejenga shule kijijini kwetu." } },
+        { "question": "Amani angefanya nini?", "options": ["Angejenga shule", "Angenunua gari", "Angesafiri"], "answer": 0 },
+        {
+          "line": {
+            "speaker": "juma",
+            "target": "I would buy a new matatu, the best of all!",
+            "base": "Mimi ningenunua matatu mpya, nzuri kuliko zote!"
+          }
+        },
+        { "question": "Juma angenunua nini?", "options": ["Matatu mpya", "Nyumba", "Boti"], "answer": 0 },
+        {
+          "line": {
+            "speaker": "amani",
+            "target": "And if it rains, would you give me a free lift?",
+            "base": "Na mvua ikinyesha, ningekupa lifti bure?"
+          }
+        },
+        { "line": { "speaker": "juma", "target": "If you pay the fare, yes!", "base": "Ukilipa nauli, ndiyo!" } },
+        {
+          "question": "Juma anasemaje “ukilipa”?",
+          "options": ["If you pay", "If you paid", "You have paid"],
+          "answer": 0,
+          "optionsLang": "target"
+        }
+      ]
+    }
+  ]
+}
