@@ -1,0 +1,205 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u3",
+  "title": "Food and the market",
+  "description": "Name everyday food, say you’re hungry or thirsty, and buy at the market.",
+  "color": "sage",
+  "character": "baraka",
+  "words": [
+    { "id": "chakula", "target": "chakula", "base": "food", "altBase": ["the food", "a meal"] },
+    { "id": "maji", "target": "maji", "base": "water", "altBase": ["the water"] },
+    { "id": "chai", "target": "chai", "base": "tea", "altBase": ["the tea"], "notes": "Usually milky and sweet, often spiced with ginger or cardamom." },
+    { "id": "kahawa", "target": "kahawa", "base": "coffee", "altBase": ["the coffee"] },
+    { "id": "maziwa", "target": "maziwa", "base": "milk", "altBase": ["the milk"] },
+    { "id": "sukari", "target": "sukari", "base": "sugar", "altBase": ["the sugar"] },
+    { "id": "wali", "target": "wali", "base": "rice", "altBase": ["cooked rice", "the rice"], "notes": "Cooked rice. Uncooked rice is mchele." },
+    { "id": "ugali", "target": "ugali", "base": "ugali", "altBase": ["maize porridge", "posho"], "notes": "Stiff maize porridge, eaten with the hands with stew or greens. In Uganda it’s called posho." },
+    { "id": "chapati", "target": "chapati", "base": "chapati", "altBase": ["flatbread"] },
+    { "id": "maharage", "target": "maharage", "base": "beans", "altBase": ["the beans"], "notes": "Also spelled maharagwe." },
+    { "id": "samaki", "target": "samaki", "base": "fish", "altBase": ["a fish", "the fish"] },
+    { "id": "kuku", "target": "kuku", "base": "chicken", "altBase": ["a chicken", "the chicken"] },
+    { "id": "nyama", "target": "nyama", "base": "meat", "altBase": ["the meat"] },
+    { "id": "ndizi", "target": "ndizi", "base": "bananas", "altBase": ["banana", "a banana", "the bananas"] },
+    { "id": "embe", "target": "embe", "base": "mango", "altBase": ["a mango", "the mango"], "notes": "Plural: maembe." },
+    { "id": "machungwa", "target": "machungwa", "base": "oranges", "altBase": ["the oranges"] },
+    { "id": "nataka", "target": "Nataka", "base": "I want", "altBase": ["i would like", "i’d like"], "notes": "Short for ninataka." },
+    { "id": "ninakula", "target": "Ninakula", "base": "I eat", "altBase": ["i am eating", "i’m eating"] },
+    { "id": "ninakunywa", "target": "Ninakunywa", "base": "I drink", "altBase": ["i am drinking", "i’m drinking"] },
+    { "id": "njaa", "target": "njaa", "base": "hunger", "notes": "Nina njaa, I am hungry (literally “I have hunger”)." },
+    { "id": "kiu", "target": "kiu", "base": "thirst", "notes": "Nina kiu, I am thirsty." },
+    { "id": "kitamu", "target": "kitamu", "base": "tasty", "altBase": ["delicious", "it’s tasty", "it is tasty", "sweet"], "notes": "Agrees with chakula: chakula kitamu. Fruit can be tamu: embe tamu." },
+    { "id": "sokoni", "target": "sokoni", "base": "at the market", "altBase": ["to the market", "the market", "market"], "notes": "Soko is market; -ni adds “at, to, in”." },
+    { "id": "bei-gani", "target": "Bei gani?", "base": "How much?", "altBase": ["what is the price", "what’s the price", "how much is it"] },
+    { "id": "shilingi", "target": "shilingi", "base": "shillings", "altBase": ["shilling"], "notes": "Kenya, Tanzania and Uganda all use shillings." },
+    { "id": "ghali", "target": "ghali", "base": "expensive", "altBase": ["dear", "costly"] },
+    { "id": "rahisi", "target": "rahisi", "base": "cheap", "altBase": ["easy", "inexpensive"] },
+    { "id": "punguza", "target": "Punguza", "base": "Reduce", "altBase": ["lower it", "reduce the price", "bring it down"], "notes": "Punguza bei, lower the price. Bargaining is normal at the market." },
+    { "id": "bei", "target": "bei", "base": "price", "altBase": ["the price", "cost"] },
+    { "id": "tafadhali", "target": "tafadhali", "base": "please" },
+    { "id": "nipe", "target": "Nipe", "base": "Give me", "altBase": ["can i have"] }
+  ],
+  "sentences": [
+    { "id": "s-nataka-chai", "target": "Nataka chai.", "base": "I want tea.", "altBase": ["I would like tea.", "I’d like tea.", "I want some tea."] },
+    { "id": "s-nataka-maji", "target": "Nataka maji.", "base": "I want water.", "altBase": ["I would like water.", "I’d like water.", "I want some water."] },
+    { "id": "s-chai-na-maziwa", "target": "Chai na maziwa.", "base": "Tea with milk.", "altBase": ["Tea and milk."] },
+    { "id": "s-kahawa-na-sukari", "target": "Kahawa na sukari.", "base": "Coffee with sugar.", "altBase": ["Coffee and sugar."] },
+    { "id": "s-ninakula-ugali", "target": "Ninakula ugali.", "base": "I eat ugali.", "altBase": ["I am eating ugali.", "I’m eating ugali."] },
+    { "id": "s-wali-na-maharage", "target": "Wali na maharage.", "base": "Rice and beans.", "altBase": ["Rice with beans."] },
+    { "id": "s-ninakula-samaki", "target": "Ninakula samaki.", "base": "I eat fish.", "altBase": ["I am eating fish.", "I’m eating fish."] },
+    { "id": "s-ninakunywa-kahawa", "target": "Ninakunywa kahawa.", "base": "I drink coffee.", "altBase": ["I am drinking coffee.", "I’m drinking coffee."] },
+    { "id": "s-nina-njaa", "target": "Nina njaa.", "base": "I am hungry.", "altBase": ["I’m hungry."] },
+    { "id": "s-nina-kiu", "target": "Nina kiu.", "base": "I am thirsty.", "altBase": ["I’m thirsty."] },
+    { "id": "s-chakula-kitamu", "target": "Chakula ni kitamu sana!", "base": "The food is very tasty!", "altBase": ["The food is delicious!", "The food is very delicious!"] },
+    { "id": "s-chapati-na-chai", "target": "Chapati na chai.", "base": "Chapati and tea.", "altBase": ["Chapati with tea."] },
+    { "id": "s-bei-gani-embe", "target": "Embe ni bei gani?", "base": "How much is the mango?", "altBase": ["How much is a mango?", "What’s the price of the mango?"] },
+    { "id": "s-shilingi-kumi", "target": "Shilingi kumi.", "base": "Ten shillings.", "altBase": ["10 shillings."] },
+    { "id": "s-ni-ghali", "target": "Ni ghali sana!", "base": "It’s very expensive!", "altBase": ["It is very expensive!", "That’s very expensive!"] },
+    { "id": "s-punguza-bei", "target": "Punguza bei, tafadhali.", "base": "Lower the price, please.", "altBase": ["Reduce the price, please.", "Bring the price down, please."] },
+    { "id": "s-nipe-ndizi", "target": "Nipe ndizi tano.", "base": "Give me five bananas.", "altBase": ["Can I have five bananas?"] },
+    { "id": "s-nataka-machungwa", "target": "Nataka machungwa.", "base": "I want oranges.", "altBase": ["I would like oranges.", "I’d like oranges."] },
+    { "id": "s-chai-sokoni", "target": "Ninakunywa chai sokoni.", "base": "I drink tea at the market.", "altBase": ["I am drinking tea at the market.", "I’m drinking tea at the market."] }
+  ],
+  "skills": [
+    {
+      "id": "u3s1",
+      "title": "Drinks",
+      "icon": "flame",
+      "lessons": [
+        { "id": "u3s1l1", "newWords": ["maji", "chai", "kahawa", "nataka"], "sentences": ["s-nataka-chai", "s-nataka-maji"] },
+        {
+          "id": "u3s1l2",
+          "newWords": ["maziwa", "sukari", "ninakunywa", "kiu"],
+          "sentences": ["s-chai-na-maziwa", "s-kahawa-na-sukari", "s-ninakunywa-kahawa", "s-nina-kiu"],
+          "dialogues": [
+            { "speaker": "baraka", "target": "Karibu! Unataka chai?", "base": "Welcome! Do you want tea?", "options": ["Ndiyo, chai na maziwa.", "Nina watoto watatu.", "Kwaheri."], "answer": "Ndiyo, chai na maziwa." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3s2",
+      "title": "Food",
+      "icon": "heart",
+      "tip": "ki-vi",
+      "lessons": [
+        { "id": "u3s2l1", "newWords": ["chakula", "wali", "ugali", "maharage", "ninakula"], "sentences": ["s-ninakula-ugali", "s-wali-na-maharage"] },
+        { "id": "u3s2l2", "newWords": ["samaki", "kuku", "nyama", "chapati"], "sentences": ["s-ninakula-samaki", "s-chapati-na-chai"] },
+        {
+          "id": "u3s2l3",
+          "newWords": ["njaa", "kitamu"],
+          "sentences": ["s-nina-njaa", "s-chakula-kitamu", "s-nina-kiu"],
+          "dialogues": [
+            { "speaker": "amani", "target": "Una njaa?", "base": "Are you hungry?", "options": ["Ndiyo, nina njaa sana!", "Nina kaka.", "Shilingi kumi."], "answer": "Ndiyo, nina njaa sana!" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u3s3",
+      "title": "At the market",
+      "icon": "shop",
+      "tip": "bargaining",
+      "lessons": [
+        { "id": "u3s3l1", "newWords": ["sokoni", "ndizi", "embe", "machungwa"], "sentences": ["s-nataka-machungwa", "s-chai-sokoni"] },
+        { "id": "u3s3l2", "newWords": ["bei-gani", "bei", "shilingi", "nipe"], "sentences": ["s-bei-gani-embe", "s-shilingi-kumi", "s-nipe-ndizi"] },
+        {
+          "id": "u3s3l3",
+          "newWords": ["ghali", "rahisi", "punguza", "tafadhali"],
+          "sentences": ["s-ni-ghali", "s-punguza-bei", "s-bei-gani-embe"],
+          "dialogues": [
+            { "speaker": "baraka", "target": "Embe ni shilingi hamsini.", "base": "The mango is fifty shillings.", "options": ["Ni ghali sana! Punguza bei.", "Nimefurahi kukuona.", "Habari za asubuhi?"], "answer": "Ni ghali sana! Punguza bei." }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Food is how East Africa says welcome. Expect to be offered chai the moment you sit down, and expect to bargain, cheerfully, at the market.",
+    "phrases": [
+      { "target": "Nataka chai.", "base": "I want tea." },
+      { "target": "Nina njaa.", "base": "I am hungry." },
+      { "target": "Nina kiu.", "base": "I am thirsty." },
+      { "target": "Chakula ni kitamu sana!", "base": "The food is very tasty!" },
+      { "target": "Bei gani?", "base": "How much?" },
+      { "target": "Ni ghali sana!", "base": "It’s very expensive!" },
+      { "target": "Punguza bei, tafadhali.", "base": "Lower the price, please." },
+      { "target": "Nipe ndizi tano.", "base": "Give me five bananas." }
+    ],
+    "tips": [
+      {
+        "id": "hungry-thirsty",
+        "title": "You have hunger",
+        "body": [
+          "Swahili says you **have** hunger and thirst: **Nina njaa** (I am hungry), **Nina kiu** (I am thirsty). To ask, swap to **una**: **Una njaa?**"
+        ]
+      },
+      {
+        "id": "ki-vi",
+        "title": "Things: ki- and vi-",
+        "body": [
+          "Many words for things start with **ki-** for one and **vi-** for more: **kitu**, **vitu** (thing, things); **chakula** is one of them (**ch-** before a vowel).",
+          "Describing words follow: **chakula kitamu** (tasty food). Fruit and many other foods are in a different class, so you say **embe tamu** (a sweet mango)."
+        ]
+      },
+      {
+        "id": "bargaining",
+        "title": "Bargaining is a conversation",
+        "body": [
+          "Ask **Bei gani?** (how much?), react with **Ni ghali!** (it’s expensive!), and suggest **Punguza bei** (lower the price). Smile, greet the seller first, and settle somewhere in the middle."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Ugali, posho, sima",
+        "body": [
+          "Stiff maize porridge is the staple across the region: **ugali** in Kenya and Tanzania, **posho** in Uganda. It is eaten with the right hand, rolled into a ball and dipped in stew."
+        ]
+      },
+      {
+        "title": "Tafadhali",
+        "body": [
+          "**Tafadhali** means please. You’ll hear it with requests: **Nipe maji, tafadhali** (give me water, please)."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-chai-stall",
+      "title": "Chai at Baraka’s",
+      "unlockAfter": "u3s2l3",
+      "cast": ["baraka", "emma"],
+      "summary": "Emma has breakfast at Baraka’s stall in Mombasa.",
+      "steps": [
+        { "line": { "speaker": "baraka", "target": "Karibu, Emma! Habari za asubuhi?", "base": "Welcome, Emma! Good morning?" } },
+        { "line": { "speaker": "emma", "target": "Nzuri, Baraka. Nina njaa sana!", "base": "Fine, Baraka. I am very hungry!" } },
+        { "question": "How is Emma feeling?", "options": ["Thirsty", "Very hungry", "Tired"], "answer": 1 },
+        { "line": { "speaker": "baraka", "target": "Unataka chapati na chai?", "base": "Do you want chapati and tea?" }, "gloss": { "Unataka": "you want, do you want" } },
+        { "line": { "speaker": "emma", "target": "Ndiyo! Chai na maziwa na sukari, tafadhali.", "base": "Yes! Tea with milk and sugar, please." } },
+        { "question": "What does Emma put in her tea?", "options": ["Milk and sugar", "Nothing", "Coffee"], "answer": 0 },
+        { "line": { "speaker": "emma", "target": "Chakula ni kitamu sana!", "base": "The food is very tasty!" } },
+        { "question": "How does Emma say the food is tasty?", "options": ["Ni ghali", "Ni kitamu", "Ni rahisi"], "answer": 1, "optionsLang": "target" },
+        { "line": { "speaker": "baraka", "target": "Asante! Karibu tena.", "base": "Thank you! Come again." }, "gloss": { "tena": "again" } }
+      ]
+    },
+    {
+      "id": "sw-mango-deal",
+      "title": "A good price for mangoes",
+      "unlockAfter": "u3s3l3",
+      "cast": ["amani", "juma"],
+      "summary": "Amani bargains for mangoes at Kariakoo market, with Juma’s help.",
+      "steps": [
+        { "line": { "speaker": "amani", "target": "Embe ni bei gani?", "base": "How much is a mango?" } },
+        { "line": { "speaker": "juma", "target": "Shilingi mia moja.", "base": "One hundred shillings." }, "gloss": { "mia moja": "one hundred" } },
+        { "line": { "speaker": "amani", "target": "Ni ghali sana! Punguza bei, tafadhali.", "base": "That’s very expensive! Lower the price, please." } },
+        { "question": "What does Amani think of the price?", "options": ["It’s cheap", "It’s expensive", "It’s fair"], "answer": 1 },
+        { "line": { "speaker": "juma", "target": "Haya, shilingi themanini.", "base": "Okay, eighty shillings." }, "gloss": { "themanini": "eighty" } },
+        { "line": { "speaker": "amani", "target": "Sawa. Nipe maembe matano.", "base": "Fine. Give me five mangoes." }, "gloss": { "Sawa": "fine, okay", "maembe matano": "five mangoes" } },
+        { "question": "How many mangoes does Amani buy?", "options": ["Three", "Five", "Ten"], "answer": 1 },
+        { "line": { "speaker": "juma", "target": "Asante sana! Maembe ni matamu.", "base": "Thank you very much! The mangoes are sweet." } },
+        { "question": "Which word did Amani use to ask for a lower price?", "options": ["Nipe", "Punguza", "Karibu"], "answer": 1, "optionsLang": "target" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u8",
+  "title": "Body and health",
+  "description": "Name parts of the body, say what hurts, visit the doctor and wish someone well.",
+  "color": "vermillion",
+  "character": "bibi",
+  "words": [
+    { "id": "mwili", "target": "mwili", "base": "body", "altBase": ["the body"] },
+    { "id": "kichwa", "target": "kichwa", "base": "head", "altBase": ["the head"] },
+    { "id": "tumbo", "target": "tumbo", "base": "stomach", "altBase": ["belly", "tummy", "the stomach"] },
+    { "id": "mkono", "target": "mkono", "base": "hand", "altBase": ["arm", "the hand", "the arm"], "notes": "One word for hand and arm. Plural: mikono." },
+    { "id": "mguu", "target": "mguu", "base": "leg", "altBase": ["foot", "the leg", "the foot"], "notes": "One word for leg and foot. Plural: miguu." },
+    { "id": "jicho", "target": "jicho", "base": "eye", "altBase": ["the eye"], "notes": "Plural: macho, eyes." },
+    { "id": "macho", "target": "macho", "base": "eyes", "altBase": ["the eyes"] },
+    { "id": "mdomo", "target": "mdomo", "base": "mouth", "altBase": ["the mouth", "lips"] },
+    { "id": "jino", "target": "jino", "base": "tooth", "altBase": ["the tooth"], "notes": "Plural: meno, teeth." },
+    { "id": "mgonjwa", "target": "mgonjwa", "base": "sick", "altBase": ["ill", "a sick person", "patient"], "notes": "Mimi ni mgonjwa, I am sick." },
+    { "id": "ninaumwa", "target": "Ninaumwa", "base": "I am in pain", "altBase": ["it hurts", "i’m in pain", "i am sick", "i’m sick", "i hurt"], "notes": "Ninaumwa na kichwa, I have a headache (literally “I am hurt by the head”)." },
+    { "id": "inauma", "target": "inauma", "base": "it hurts", "altBase": ["hurts", "it is painful", "it’s painful"] },
+    { "id": "homa", "target": "homa", "base": "fever", "altBase": ["a fever", "flu"] },
+    { "id": "daktari", "target": "daktari", "base": "doctor", "altBase": ["the doctor", "a doctor"] },
+    { "id": "dawa", "target": "dawa", "base": "medicine", "altBase": ["the medicine", "medication", "drugs", "pills"] },
+    { "id": "pumzika", "target": "Pumzika", "base": "Rest", "altBase": ["take a rest", "relax"] },
+    { "id": "pole", "target": "Pole", "base": "Sorry", "altBase": ["sorry to hear that", "i’m sorry"], "notes": "Sympathy, not apology: said when someone is ill, tired or has had bad luck. Reply: Asante, or Nimeshapoa." },
+    { "id": "samahani", "target": "Samahani", "base": "Excuse me", "altBase": ["sorry", "i apologise", "i apologize"], "notes": "An apology, or to get someone’s attention." },
+    { "id": "nimechoka", "target": "Nimechoka", "base": "I am tired", "altBase": ["i’m tired"] },
+    { "id": "nimepona", "target": "Nimepona", "base": "I have recovered", "altBase": ["i’m better", "i am better", "i’ve recovered", "i am well again"] },
+    { "id": "afya", "target": "afya", "base": "health", "altBase": ["good health"] },
+    { "id": "njema", "target": "njema", "base": "good", "altBase": ["well", "fine"], "notes": "Afya njema, good health. Used as a toast too." },
+    { "id": "ugua-pole", "target": "Ugua pole", "base": "Get well soon", "altBase": ["get well", "feel better soon"], "notes": "Literally “be ill gently”." }
+  ],
+  "sentences": [
+    { "id": "s-kichwa-kinauma", "target": "Kichwa kinauma.", "base": "My head hurts.", "altBase": ["The head hurts.", "I have a headache."] },
+    { "id": "s-ninaumwa-na-tumbo", "target": "Ninaumwa na tumbo.", "base": "I have a stomach ache.", "altBase": ["My stomach hurts.", "I have stomach pain."] },
+    { "id": "s-mguu-inauma", "target": "Mguu wangu unauma.", "base": "My leg hurts.", "altBase": ["My foot hurts."] },
+    { "id": "s-jino-linauma", "target": "Jino linauma.", "base": "My tooth hurts.", "altBase": ["I have a toothache.", "The tooth hurts."] },
+    { "id": "s-macho-mazuri", "target": "Mdomo na macho.", "base": "Mouth and eyes.", "altBase": ["The mouth and the eyes."] },
+    { "id": "s-osha-mikono", "target": "Mkono na mguu.", "base": "Hand and foot.", "altBase": ["Arm and leg.", "Hand and leg.", "Arm and foot."] },
+    { "id": "s-mimi-ni-mgonjwa", "target": "Mimi ni mgonjwa.", "base": "I am sick.", "altBase": ["I’m sick.", "I am ill.", "I’m ill."] },
+    { "id": "s-nina-homa", "target": "Nina homa.", "base": "I have a fever.", "altBase": ["I’ve got a fever.", "I have flu."] },
+    { "id": "s-daktari-yuko-wapi", "target": "Daktari yuko wapi?", "base": "Where is the doctor?", "altBase": ["Where’s the doctor?"] },
+    { "id": "s-nataka-dawa", "target": "Nataka dawa, tafadhali.", "base": "I want medicine, please.", "altBase": ["I need medicine, please.", "I’d like medicine, please."] },
+    { "id": "s-pumzika-leo", "target": "Pumzika leo.", "base": "Rest today.", "altBase": ["Take a rest today."] },
+    { "id": "s-pole-sana", "target": "Pole sana!", "base": "So sorry!", "altBase": ["Very sorry!", "I’m so sorry!", "Sorry to hear that!"] },
+    { "id": "s-samahani-daktari", "target": "Samahani, daktari.", "base": "Excuse me, doctor.", "altBase": ["Sorry, doctor."] },
+    { "id": "s-nimechoka-sana", "target": "Nimechoka sana.", "base": "I am very tired.", "altBase": ["I’m very tired.", "I’m so tired."] },
+    { "id": "s-nimepona-asante", "target": "Nimepona, asante.", "base": "I’ve recovered, thank you.", "altBase": ["I’m better, thank you.", "I am better, thanks.", "I have recovered, thank you."] },
+    { "id": "s-ugua-pole", "target": "Ugua pole, rafiki yangu.", "base": "Get well soon, my friend.", "altBase": ["Get well, my friend.", "Feel better soon, my friend."] },
+    { "id": "s-afya-njema", "target": "Afya njema!", "base": "Good health!", "altBase": ["Cheers!", "To good health!"] }
+  ],
+  "skills": [
+    {
+      "id": "u8s1",
+      "title": "The body",
+      "icon": "profile",
+      "lessons": [
+        { "id": "u8s1l1", "newWords": ["mwili", "kichwa", "tumbo", "mkono", "mguu"], "sentences": ["s-osha-mikono"] },
+        { "id": "u8s1l2", "newWords": ["jicho", "macho", "mdomo", "jino"], "sentences": ["s-macho-mazuri"] }
+      ]
+    },
+    {
+      "id": "u8s2",
+      "title": "What hurts?",
+      "icon": "heart",
+      "tip": "it-hurts",
+      "lessons": [
+        { "id": "u8s2l1", "newWords": ["ninaumwa", "inauma", "mgonjwa"], "sentences": ["s-kichwa-kinauma", "s-ninaumwa-na-tumbo", "s-mguu-inauma", "s-jino-linauma", "s-mimi-ni-mgonjwa"] },
+        {
+          "id": "u8s2l2",
+          "newWords": ["homa", "daktari", "dawa", "pumzika"],
+          "sentences": ["s-nina-homa", "s-daktari-yuko-wapi", "s-nataka-dawa", "s-pumzika-leo"],
+          "dialogues": [
+            { "speaker": "amani", "target": "Una nini?", "base": "What’s wrong?", "options": ["Nina homa, na kichwa kinauma.", "Ninapenda muziki.", "Kuna vyumba vitatu."], "answer": "Nina homa, na kichwa kinauma." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u8s3",
+      "title": "Kind words",
+      "icon": "star",
+      "tip": "pole-samahani",
+      "lessons": [
+        { "id": "u8s3l1", "newWords": ["pole", "samahani", "nimechoka"], "sentences": ["s-pole-sana", "s-samahani-daktari", "s-nimechoka-sana"] },
+        {
+          "id": "u8s3l2",
+          "newWords": ["nimepona", "afya", "njema", "ugua-pole"],
+          "sentences": ["s-nimepona-asante", "s-ugua-pole", "s-afya-njema"],
+          "dialogues": [
+            { "speaker": "baraka", "target": "Pole! Ulikuwa mgonjwa?", "base": "Sorry! Were you sick?", "options": ["Ndiyo, lakini nimepona. Asante.", "Hakuna maji leo.", "Geuka kulia."], "answer": "Ndiyo, lakini nimepona. Asante." }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "When someone is unwell, everyone has a word of sympathy and an opinion about the right medicine. Pole is the word you’ll use most.",
+    "phrases": [
+      { "target": "Kichwa kinauma.", "base": "My head hurts." },
+      { "target": "Nina homa.", "base": "I have a fever." },
+      { "target": "Mimi ni mgonjwa.", "base": "I am sick." },
+      { "target": "Daktari yuko wapi?", "base": "Where is the doctor?" },
+      { "target": "Pole sana!", "base": "So sorry! (sympathy)" },
+      { "target": "Samahani.", "base": "Excuse me, I’m sorry (apology)." },
+      { "target": "Ugua pole.", "base": "Get well soon." },
+      { "target": "Nimepona, asante.", "base": "I’ve recovered, thank you." }
+    ],
+    "tips": [
+      {
+        "id": "it-hurts",
+        "title": "What hurts, agreeing",
+        "body": [
+          "“It hurts” is **-na-uma** with the body part’s prefix in front: **kichwa ki-na-uma** (my head hurts), **mguu u-na-uma** (my leg hurts), **jino li-na-uma** (my tooth hurts). If you’re unsure, **inauma** is understood.",
+          "Or say who is hurting: **Ninaumwa na tumbo**, “I am hurt by the stomach”."
+        ]
+      },
+      {
+        "id": "pole-samahani",
+        "title": "Pole or samahani?",
+        "body": [
+          "**Pole** is sympathy: someone trips, is tired, is ill, has lost someone. You didn’t cause it; you share it. Say **Pole sana**.",
+          "**Samahani** is an apology for something you did, or “excuse me” to get attention. Mixing them up is a classic learner’s mistake, and people will smile kindly."
+        ]
+      },
+      {
+        "id": "nime-done",
+        "title": "Nime-: done and still true",
+        "body": [
+          "**Nime-** says something has happened and is still true now: **nimechoka** (I have got tired, so I’m tired), **nimepona** (I have recovered), **nimefurahi** (I have become happy, so I’m glad)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Pole for everything",
+        "body": [
+          "You’ll hear **pole** constantly: to a mother carrying a heavy load, to someone caught in the rain, to a traveller after a long journey (**Pole na safari!**). It’s a small kindness that keeps everyday life gentle."
+        ]
+      },
+      {
+        "title": "Bibi’s remedy",
+        "body": [
+          "Many families trust old remedies alongside the clinic: ginger and lemon for a cold, or **mchaichai** (lemongrass) tea. A good doctor, **daktari**, is still the first stop for a fever."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-at-the-clinic",
+      "title": "At the clinic",
+      "unlockAfter": "u8s2l2",
+      "cast": ["emma", "amani"],
+      "summary": "Emma feels unwell and Amani takes her to the clinic.",
+      "steps": [
+        { "line": { "speaker": "amani", "target": "Emma, habari? Una nini?", "base": "Emma, how are you? What’s wrong?" } },
+        { "line": { "speaker": "emma", "target": "Mimi ni mgonjwa. Nina homa, na kichwa kinauma.", "base": "I am sick. I have a fever, and my head hurts." } },
+        { "question": "What is wrong with Emma?", "options": ["Her leg hurts", "She has a fever and a headache", "She is hungry"], "answer": 1 },
+        { "line": { "speaker": "amani", "target": "Pole sana! Twende hospitali.", "base": "So sorry! Let’s go to the hospital." }, "gloss": { "Twende": "let’s go" } },
+        { "line": { "speaker": "emma", "target": "Samahani, daktari yuko wapi?", "base": "Excuse me, where is the doctor?" } },
+        { "question": "Why does Emma say samahani here?", "options": ["To apologise for being late", "To get someone’s attention", "To show sympathy"], "answer": 1 },
+        { "line": { "speaker": "amani", "target": "Daktari anasema: dawa na pumzika siku tatu.", "base": "The doctor says: medicine and rest for three days." }, "gloss": { "anasema": "says" } },
+        { "question": "How long must Emma rest?", "options": ["One day", "Three days", "A week"], "answer": 1 },
+        { "line": { "speaker": "amani", "target": "Ugua pole, rafiki yangu.", "base": "Get well soon, my friend." } },
+        { "question": "How does Amani say “get well soon”?", "options": ["Afya njema", "Ugua pole", "Nimepona"], "answer": 1, "optionsLang": "target" }
+      ]
+    },
+    {
+      "id": "sw-bibi-remedy",
+      "title": "Better again",
+      "unlockAfter": "u8s3l2",
+      "cast": ["emma", "bibi"],
+      "summary": "A week later, Emma visits Bibi Mwanaisha, who has advice for everything.",
+      "steps": [
+        { "line": { "speaker": "bibi", "target": "Karibu, Emma! Ulikuwa mgonjwa?", "base": "Welcome, Emma! Were you sick?" }, "gloss": { "Ulikuwa": "you were" } },
+        { "line": { "speaker": "emma", "target": "Ndiyo, bibi. Lakini sasa nimepona.", "base": "Yes, grandmother. But now I’ve recovered." }, "gloss": { "Lakini": "but" } },
+        { "question": "How is Emma now?", "options": ["Still sick", "Better", "Very tired"], "answer": 1 },
+        { "line": { "speaker": "bibi", "target": "Pole! Kunywa chai ya tangawizi kila siku.", "base": "Sorry to hear! Drink ginger tea every day." }, "gloss": { "Kunywa": "drink", "tangawizi": "ginger" } },
+        { "line": { "speaker": "emma", "target": "Asante, bibi. Nimechoka kidogo tu.", "base": "Thank you, grandmother. I’m just a little tired." }, "gloss": { "kidogo tu": "just a little" } },
+        { "line": { "speaker": "bibi", "target": "Pumzika. Afya ni bora kuliko mali.", "base": "Rest. Health is better than wealth." }, "gloss": { "bora kuliko mali": "better than wealth (a proverb)" } },
+        { "question": "What does Bibi’s proverb say is better than wealth?", "options": ["Health", "Tea", "Family"], "answer": 0 },
+        { "line": { "speaker": "emma", "target": "Afya njema, bibi!", "base": "Good health, grandmother!" } }
+      ]
+    }
+  ]
+}
