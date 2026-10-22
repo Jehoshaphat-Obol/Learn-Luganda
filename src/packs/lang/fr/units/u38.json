@@ -1,0 +1,88 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u38",
+  "words": {
+    "nnyamba": { "text": "Au secours !", "alts": ["aide-moi", "à l’aide", "aidez-moi"] },
+    "yanguwa": { "text": "Vite !", "alts": ["dépêche-toi", "dépêchez-vous", "plus vite"] },
+    "omubbi": { "text": "voleur", "alts": ["voleuse", "un voleur", "le voleur"] },
+    "poliisi": { "text": "police", "alts": ["la police", "policier"] },
+    "ebbiddwa": { "text": "a été volé", "alts": ["volé", "a été volée", "volée"] },
+    "akabenje": { "text": "accident", "alts": ["un accident", "l’accident", "collision"] },
+    "alumiziddwa": { "text": "est blessé", "alts": ["est blessée", "blessé", "blessée", "il est blessé", "elle est blessée", "s’est blessé"] },
+    "omusaayi": { "text": "sang", "alts": ["le sang", "saignement"] },
+    "ambulensi": { "text": "ambulance", "alts": ["l’ambulance", "une ambulance"] },
+    "linda": { "text": "Attends", "alts": ["attends ici", "patiente", "attends un peu", "attendez"] },
+    "tewali-kizibu": { "text": "Pas de problème", "alts": ["il n’y a pas de problème", "ce n’est rien", "pas de souci", "de rien"] },
+    "ndi-bulungi": { "text": "ça va", "alts": ["je vais bien", "je vais bien merci", "ça va bien"] },
+    "kumetokea": { "text": "il y a eu", "alts": ["il s’est passé", "quelque chose est arrivé"] },
+    "ameibiwa": { "text": "il s’est fait voler", "alts": ["elle s’est fait voler", "on l’a volé", "on l’a volée"] },
+    "naomba": { "text": "puis-je avoir", "alts": ["je voudrais", "je demande", "s’il vous plaît"] },
+    "pole-kwa-kazi": { "text": "Bon courage pour ton travail", "alts": ["merci pour ton travail", "bon courage", "bravo pour le travail"] }
+  },
+  "sentences": {
+    "s38-nnyamba": { "text": "Au secours ! Au secours !", "alts": ["À l’aide ! À l’aide !", "Aidez-moi ! Aidez-moi !"] },
+    "s38-omuliro": { "text": "Au feu ! Vite !", "alts": ["Au feu ! Dépêche-toi !", "Au feu ! Dépêchez-vous !"] },
+    "s38-omubbi": { "text": "Au voleur ! Attrapez-le !", "alts": ["Au voleur ! Attrapez-la !", "Un voleur ! Attrapez-le !"] },
+    "s38-kubira-poliisi": { "text": "Appelle la police !", "alts": ["Appelez la police !", "Téléphone à la police !"] },
+    "s38-essimu-ebbiddwa": { "text": "On m’a volé mon téléphone.", "alts": ["Mon téléphone a été volé.", "Quelqu’un a volé mon téléphone."] },
+    "s38-akabenje": { "text": "Il y a un accident sur la route.", "alts": ["Il y a eu un accident sur la route."] },
+    "s38-alumiziddwa": { "text": "L’homme est blessé. Il saigne.", "alts": ["L’homme s’est blessé. Il saigne."] },
+    "s38-ambulensi": { "text": "Appelons vite une ambulance !", "alts": ["Appelle vite une ambulance !", "Appelez vite une ambulance !"] },
+    "s38-linda-wano": { "text": "Assieds-toi ici et attends.", "alts": ["Assieds-toi là et attends.", "Asseyez-vous ici et attendez."] },
+    "s38-oli-bulungi": { "text": "Ça va ? Oui, ça va.", "alts": ["Tu vas bien ? Oui, je vais bien.", "Ça va ? Oui, je vais bien."] },
+    "s38-tewali-kizibu": { "text": "Merci beaucoup ! Pas de problème.", "alts": ["Merci beaucoup ! De rien.", "Merci beaucoup ! Pas de souci."] },
+    "s-ajali": { "text": "Il y a eu un accident sur la route !" },
+    "s-gari-wagonjwa": { "text": "Il nous faut vite une ambulance !", "alts": ["Nous avons besoin d’une ambulance rapidement !"] },
+    "s-damu": { "text": "Il saigne beaucoup.", "alts": ["Elle saigne beaucoup."] },
+    "s-ameumia": { "text": "L’enfant s’est blessé à la jambe.", "alts": ["L’enfant s’est fait mal à la jambe.", "L’enfant s’est blessée à la jambe."] },
+    "s-mwizi": { "text": "Au voleur ! Au voleur !", "alts": ["Arrêtez le voleur !"] },
+    "s-ameibiwa": { "text": "On lui a volé son téléphone.", "alts": ["Il s’est fait voler son téléphone.", "Elle s’est fait voler son téléphone."] },
+    "s-naomba": {
+      "text": "Puis-je avoir de l’eau, s’il vous plaît ?",
+      "alts": ["Je voudrais de l’eau, s’il vous plaît.", "De l’eau, s’il vous plaît."]
+    },
+    "s-hamna-shida": { "text": "Pas de problème, mon ami.", "alts": ["Pas de souci, mon ami.", "Pas de problème, mon amie."] },
+    "s-pole-kwa-kazi": { "text": "Bon courage pour ton travail, maman !", "alts": ["Merci pour ton travail, maman !", "Bon courage, maman !"] }
+  },
+  "phrases": [
+    "Au secours ! Au secours !",
+    "Appelle la police !",
+    "On m’a volé mon téléphone.",
+    "L’homme est blessé.",
+    "Appelons vite une ambulance !",
+    "Ça va ?"
+  ],
+  "dialogues": {
+    "u38s3l3": [
+      {
+        "line": "Il y a un accident ! Un homme est blessé.",
+        "options": ["Appelons vite une ambulance !", "Je suis d’accord avec toi.", "Pas de problème."]
+      }
+    ]
+  },
+  "stories": {
+    "stolen-phone": {
+      "title": "Le téléphone volé",
+      "summary": "On arrache le téléphone de {@nakato} au marché, et {@ssali} l’aide.",
+      "lines": [
+        "Au voleur ! Au voleur ! Au secours !",
+        "{@nakato} ! Qu’est-ce qui s’est passé ?",
+        "On m’a volé mon téléphone ! Un homme est parti en courant par là.",
+        "Ça va ? Tu es blessée ?",
+        "Non, ça va. Mais j’ai très peur.",
+        "Assieds-toi ici et attends. Je vais appeler la police.",
+        "La police dit qu’elle arrive vite.",
+        "Merci beaucoup, {@ssali}.",
+        "Pas de problème. C’est à ça que servent les amis !"
+      ],
+      "questions": [
+        {
+          "question": "Qu’est-il arrivé à {@nakato} ?",
+          "options": ["On lui a volé son téléphone", "Elle a eu un accident", "Elle a perdu son sac"]
+        },
+        { "question": "Que fait {@ssali} ?", "options": ["Il poursuit le voleur", "Il appelle la police", "Il appelle une ambulance"] },
+        { "question": "Que répond {@ssali} à « Weebale nnyo » ?", "options": ["Pas de problème.", "Vite !", "Au secours !"] }
+      ]
+    }
+  }
+}

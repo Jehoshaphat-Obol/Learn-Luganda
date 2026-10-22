@@ -1,0 +1,137 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u35",
+  "words": {
+    "enfumo": { "text": "conte", "alts": ["histoire", "fable", "légende", "le conte", "contes"] },
+    "olwatuuka": { "text": "Il était une fois", "alts": ["il arriva", "un jour", "il y a très longtemps", "autrefois"] },
+    "olwali-olumu": { "text": "un jour", "alts": ["une fois", "un beau jour"] },
+    "waaliwo": { "text": "il y avait", "alts": ["il était"] },
+    "awo": { "text": "Alors", "alts": ["et puis", "puis", "ensuite", "après ça"] },
+    "nagenda": { "text": "et il alla", "alts": ["et elle alla", "puis il est allé", "puis elle est allée", "et il est allé", "et elle est allée"] },
+    "nalaba": { "text": "et il vit", "alts": ["et elle vit", "puis il a vu", "puis elle a vu", "et il a vu", "et elle a vu"] },
+    "nagamba": { "text": "et il dit", "alts": ["et elle dit", "puis il a dit", "puis elle a dit", "et il a dit", "et elle a dit"] },
+    "ekyavaamu": { "text": "Finalement", "alts": ["à la fin", "au bout du compte", "enfin"] },
+    "kale-nno": { "text": "Eh bien", "alts": ["bon", "alors", "eh bien alors"] },
+    "enfumo-ewedde": { "text": "Et mon histoire s’arrête là", "alts": ["fin", "c’est la fin de mon histoire", "mon histoire se termine ici"] },
+    "ilinyesha": { "text": "il a plu", "alts": ["il pleuvait"] },
+    "ilikuwa": { "text": "C’était", "alts": ["il était", "il faisait"] },
+    "paukwa": { "text": "Paukwa !", "alts": ["il était une fois", "une histoire !"] },
+    "pakawa": { "text": "Pakawa !", "alts": ["raconte !", "on écoute"] },
+    "mwisho": { "text": "fin", "alts": ["la fin", "finalement", "dernier"] },
+    "hadithi-imeishia": { "text": "C’est la fin de l’histoire", "alts": ["l’histoire s’arrête là", "fin"] }
+  },
+  "sentences": {
+    "s35-olwatuuka": { "text": "Il était une fois, un jour…", "alts": ["Il était une fois…", "Il arriva un jour…"] },
+    "s35-waaliwo-omusajja": { "text": "Il y avait un homme.", "alts": ["Il était une fois un homme."] },
+    "s35-waaliwo-omukazi": { "text": "Il y avait une femme et son enfant.", "alts": ["Il y avait une femme avec son enfant."] },
+    "s35-nagenda-mu-kibira": {
+      "text": "Alors il alla dans la forêt.",
+      "alts": ["Alors elle alla dans la forêt.", "Puis il est allé dans la forêt.", "Puis elle est allée dans la forêt."]
+    },
+    "s35-nalaba-empologoma": { "text": "Et il vit un lion !", "alts": ["Et elle vit un lion !", "Et il a vu un lion !", "Et elle a vu un lion !"] },
+    "s35-nagamba": { "text": "Et il dit : « N’aie pas peur ! »", "alts": ["Et elle dit : « N’aie pas peur ! »", "Puis il a dit : « N’aie pas peur ! »"] },
+    "s35-ekyavaamu": {
+      "text": "Finalement, il rentra chez lui.",
+      "alts": ["Finalement, elle rentra chez elle.", "À la fin, il est rentré chez lui.", "À la fin, elle est rentrée chez elle."]
+    },
+    "s35-kale-nno": { "text": "Eh bien, écoute cette histoire.", "alts": ["Alors, écoute ce conte.", "Eh bien, écoutez cette histoire."] },
+    "s35-enfumo-ekomye": { "text": "Et mon histoire s’arrête là.", "alts": ["C’est la fin de mon histoire.", "Mon histoire se termine ici."] },
+    "s-jana-ilinyesha": { "text": "Hier, il a plu.", "alts": ["Il a plu hier."] },
+    "s-ilikuwa-baridi": { "text": "Il faisait très froid." },
+    "s-kulikuwa-na-upepo": { "text": "Il y avait du vent." },
+    "s-paukwa": { "text": "Une histoire ! Raconte !", "alts": ["Il était une fois ! On écoute !"] },
+    "s-hapo-zamani": { "text": "Il était une fois un lièvre.", "alts": ["Il y a longtemps, il y avait un lièvre."] },
+    "s-hadithi": { "text": "Mamie, raconte-nous une histoire !", "alts": ["Grand-mère, raconte-nous une histoire !"] },
+    "s-akaenda": { "text": "Et le lièvre alla à la rivière.", "alts": ["Puis le lièvre est allé à la rivière."] },
+    "s-akasema": { "text": "Et il dit : « Comment allez-vous tous ? »", "alts": ["Et elle dit : « Comment allez-vous tous ? »"] },
+    "s-mwisho": { "text": "Finalement, le lièvre gagna.", "alts": ["À la fin, le lièvre a gagné."] },
+    "s-imeishia": { "text": "C’est la fin de l’histoire.", "alts": ["L’histoire s’arrête là."] }
+  },
+  "phrases": [
+    "Il était une fois, un jour…",
+    "Il y avait un homme.",
+    "Alors il alla dans la forêt.",
+    "Et il vit un lion !",
+    "Finalement, il rentra chez lui.",
+    "Et mon histoire s’arrête là."
+  ],
+  "dialogues": {
+    "u35s3l3": [
+      {
+        "line": "Il y avait un homme. Alors il alla dans la forêt…",
+        "options": ["Et qu’est-ce qu’il a vu ?", "Je voudrais du thé.", "C’est pareil."]
+      }
+    ]
+  },
+  "stories": {
+    "amaras-story": {
+      "title": "{@amara} raconte une histoire",
+      "summary": "{@amara} raconte à {@emma} un conte sur un garçon et un lion.",
+      "lines": [
+        "{@amara}, raconte-moi une histoire !",
+        "Eh bien. Il était une fois un garçon.",
+        "Un jour, il alla dans la forêt chercher du bois.",
+        "Et qu’est-ce qu’il a vu ?",
+        "Il a vu un très gros lion !",
+        "Oh ! Il s’est enfui ?",
+        "Non. Il s’est assis et il a chanté une chanson.",
+        "Le lion a écouté, s’est reposé et s’en est allé.",
+        "Finalement, le garçon est rentré avec le bois. Et mon histoire s’arrête là."
+      ],
+      "questions": [
+        {
+          "question": "Pourquoi le garçon est-il allé dans la forêt ?",
+          "options": ["Pour chercher du bois", "Pour chasser", "Pour jouer au foot"]
+        },
+        {
+          "question": "Qu’a fait le garçon quand il a vu le lion ?",
+          "options": ["Il s’est enfui", "Il s’est assis et a chanté", "Il a grimpé à un arbre"]
+        },
+        {
+          "question": "Comment {@amara} termine-t-elle l’histoire ?",
+          "options": ["Et mon histoire s’arrête là.", "Il était une fois, un jour…", "Il y avait un homme."]
+        }
+      ]
+    },
+    "sw-long-rains": {
+      "title": "Les grandes pluies",
+      "summary": "À l’arrêt des matatus, Juma et Emma regardent le premier gros orage des grandes pluies.",
+      "lines": [
+        "Emma, regarde les nuages ! Les grandes pluies sont là.",
+        "Hier aussi, il a beaucoup plu.",
+        "Oui. La saison sèche a été longue cette année.",
+        "Du tonnerre ! Rentrons.",
+        "D’accord. La pluie est une bénédiction pour les agriculteurs."
+      ],
+      "questions": [
+        { "question": "Quel temps faisait-il hier ?", "options": ["Il a beaucoup plu", "Il faisait soleil", "Il y avait du vent"] },
+        { "question": "Qu’est-ce qui a été long cette année ?", "options": ["La saison sèche", "Les grandes pluies", "La nuit"] },
+        {
+          "question": "Comment Emma dit-elle « il y a du tonnerre » ?",
+          "options": ["Il y a du tonnerre", "Il y a du vent", "C’est nuageux"]
+        }
+      ]
+    },
+    "sw-hare-and-crocodile": {
+      "title": "Le lièvre et le crocodile",
+      "summary": "Bibi raconte à Neema comment le lièvre rusé a dupé le crocodile.",
+      "lines": [
+        "Une histoire !",
+        "Raconte !",
+        "Il était une fois un lièvre très rusé.",
+        "Un jour, le lièvre voulut traverser la rivière, mais il vit un crocodile.",
+        "Le lièvre dit : « Le roi veut compter tous les crocodiles ! »",
+        "Les crocodiles se mirent en rang, et le lièvre sauta sur leur dos jusqu’à l’autre rive.",
+        "Le lièvre est vraiment malin !"
+      ],
+      "questions": [
+        { "question": "Que voulait faire le lièvre ?", "options": ["Traverser la rivière", "Manger le crocodile", "Rentrer chez lui"] },
+        {
+          "question": "Comment le lièvre a-t-il traversé ?",
+          "options": ["Il a sauté sur les crocodiles", "Il a nagé", "Il a pris un bateau"]
+        },
+        { "question": "Comment Bibi commence-t-elle l’histoire ?", "options": ["Une histoire !", "Raconte !", "Fin !"] }
+      ]
+    }
+  }
+}
