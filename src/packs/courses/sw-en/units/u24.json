@@ -95,7 +95,7 @@
       "id": "u24s2",
       "title": "Kupika pilau",
       "icon": "star",
-      "tip": "commands",
+      "tip": "recipe-commands",
       "lessons": [
         {
           "id": "u24s2l1",
@@ -165,7 +165,7 @@
         ]
       },
       {
-        "id": "commands",
+        "id": "recipe-commands",
         "title": "Amri za mapishi",
         "body": [
           "Amri ni kitenzi chenyewe, bila **you**: **Cut**, **Fry**, **Add**, **Mix**. Ni ile ile kwa mtu mmoja au wengi.",

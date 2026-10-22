@@ -106,7 +106,7 @@
       "id": "u20s1",
       "title": "Kesho",
       "icon": "clock",
-      "tip": "going-to",
+      "tip": "will-going-to",
       "lessons": [
         {
           "id": "u20s1l1",
@@ -176,7 +176,7 @@
     ],
     "tips": [
       {
-        "id": "going-to",
+        "id": "will-going-to",
         "title": "Will na going to",
         "body": [
           "**Will** ni sawa na **-ta-**: **I will go**. Kwa mpango ulioamuliwa tayari, Kiingereza husema mara nyingi **going to**: **I’m going to travel on Friday.**",
