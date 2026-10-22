@@ -18,7 +18,17 @@
     "nkwagala",
     "nkusubwa",
     "mukwano-gwange",
-    "tokaaba"
+    "tokaaba",
+    "samahani",
+    "furaha",
+    "nina-furaha",
+    "huzuni",
+    "hasira",
+    "naogopa",
+    "wasiwasi",
+    "kuhusu",
+    "usijali",
+    "bahati-njema"
   ],
   "sentences": [
     "s21-nsanyuse-nnyo",
@@ -34,7 +44,22 @@
     "s21-nsonyiwa",
     "s21-nkwagala-maama",
     "s21-nkusubwa",
-    "s21-tokaaba"
+    "s21-tokaaba",
+    "s-pole-sana",
+    "s-samahani-daktari",
+    "s-nimechoka-sana",
+    "s-nina-furaha",
+    "s-siku-ya-furaha",
+    "s-nina-huzuni",
+    "s-nimefurahi-sana",
+    "s-nimeshangaa",
+    "s-bosi-hasira",
+    "s-nimekasirika",
+    "s-naogopa-mbwa",
+    "s-usijali",
+    "s-nakupenda-bibi",
+    "s-hongera-mtihani",
+    "s-bahati-njema"
   ],
   "phrases": 7,
   "skills": [
@@ -72,6 +97,28 @@
           "newWords": ["tokaaba"],
           "sentences": ["s21-tokaaba", "s21-bambi"],
           "dialogues": [{ "speaker": "amara", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u21s4",
+      "icon": "star",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u21s4l1",
+          "newWords": ["samahani", "furaha", "nina-furaha", "huzuni"],
+          "sentences": ["s-pole-sana", "s-samahani-daktari", "s-nimechoka-sana", "s-nina-furaha"]
+        },
+        {
+          "id": "u21s4l2",
+          "newWords": ["hasira", "naogopa"],
+          "sentences": ["s-siku-ya-furaha", "s-nina-huzuni", "s-bosi-hasira", "s-nimekasirika"]
+        },
+        {
+          "id": "u21s4l3",
+          "newWords": ["wasiwasi", "kuhusu", "usijali", "bahati-njema"],
+          "sentences": ["s-naogopa-mbwa", "s-usijali", "s-nakupenda-bibi", "s-hongera-mtihani", "s-bahati-njema", "s-nimefurahi-sana", "s-nimeshangaa"]
         }
       ]
     }

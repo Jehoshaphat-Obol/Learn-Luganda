@@ -15,7 +15,13 @@
     "ndyogera": { "text": "Ndyogera" },
     "olunaku-lumu": { "text": "olunaku lumu" },
     "nsuubira": { "text": "Nsuubira" },
-    "oteekateeka-ki": { "text": "Oteekateeka ki?" }
+    "oteekateeka-ki": { "text": "Oteekateeka ki?" },
+    "utaenda": { "text": "oligenda" },
+    "atakuja": { "text": "alijja" },
+    "tutakutana": { "text": "Tulisisinkana" },
+    "nitarudi": { "text": "Ndikomawo" },
+    "mwezi-ujao": { "text": "omwezi ogujja" },
+    "ndoto": { "text": "ekirooto" }
   },
   "sentences": {
     "s20-nja-kugenda-masaka": { "text": "Enkya nja kugenda e Masaka." },
@@ -28,7 +34,19 @@
     "s20-olunaku-lumu-ndigenda": { "text": "Olunaku lumu ndigenda e Buganda." },
     "s20-ndyogera-oluganda": { "text": "Olunaku lumu ndyogera {to} bulungi." },
     "s20-nsuubira": { "text": "Nsuubira okulaba Kabaka." },
-    "s20-oteekateeka-ki": { "text": "Oteekateeka ki ku wiikendi?" }
+    "s20-oteekateeka-ki": { "text": "Oteekateeka ki ku wiikendi?" },
+    "s-nisaidie-tafadhali": { "text": "Nnyamba, mwattu." },
+    "s-kwanza-halafu": { "text": "Sooka oyoze ebibya, oluvannyuma oyere." },
+    "s-pamoja": { "text": "Tukolere wamu." },
+    "s-nitaenda-kazini": { "text": "Enkya nja kugenda ku mulimu." },
+    "s-bibi-atakuja": { "text": "Jjajja alijja ku Lwomukaaga." },
+    "s-tutakutana": { "text": "Tulisisinkana ssaawa munaana." },
+    "s-nitarudi": { "text": "Ndikomawo wiiki ejja." },
+    "s-mwezi-ujao": { "text": "Omwezi ogujja nditambula." },
+    "s-ningependa-kahawa": { "text": "Nandyagadde kaawa, mwattu." },
+    "s-ningependa-kusafiri": { "text": "Nandyagadde okutambula." },
+    "s-ndoto-yangu": { "text": "Ekirooto kyange kwe kuba omusawo." },
+    "s-siku-moja": { "text": "Olunaku lumu ndiba musomesa." }
   },
   "phrases": [
     "Enkya nja kugenda e Masaka.",

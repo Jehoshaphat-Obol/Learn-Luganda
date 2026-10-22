@@ -2,15 +2,15 @@
   "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
   "id": "u18",
   "words": {
-    "ki": { "text": "what", "alts": ["which"] },
+    "ki": { "text": "what", "alts": ["which", "what thing"] },
     "kiki": { "text": "what is it", "alts": ["what", "what is"] },
     "ekyo": { "text": "that", "alts": ["that one", "that thing"] },
     "oyo": { "text": "that person", "alts": ["that", "that one", "he", "she"] },
-    "wa": { "text": "where" },
+    "wa": { "text": "where", "alts": ["where is"] },
     "oli-wa": { "text": "Where are you?", "alts": ["where are you now"] },
-    "ddi": { "text": "when" },
+    "ddi": { "text": "when", "alts": ["what time"] },
     "ojja": { "text": "you are coming", "alts": ["you come", "are you coming"] },
-    "lwaki": { "text": "why", "alts": ["for what reason"] },
+    "lwaki": { "text": "why", "alts": ["for what reason", "what for"] },
     "kubanga": { "text": "because", "alts": ["since", "as"] },
     "oba": { "text": "or", "alts": ["whether", "maybe", "perhaps"] },
     "okwogera": { "text": "to speak", "alts": ["speaking", "to talk", "talking"] },
@@ -18,7 +18,13 @@
     "oyogera": { "text": "You speak", "alts": ["do you speak", "you talk", "you are speaking"] },
     "katono": { "text": "a little", "alts": ["a bit", "little", "slightly"] },
     "kiyitibwa": { "text": "it is called", "alts": ["is called", "it’s called"] },
-    "kitya": { "text": "how", "alts": ["what", "how is it"] }
+    "kitya": { "text": "how", "alts": ["what", "how is it", "how about", "what about"] },
+    "kesho-kutwa": { "text": "the day after tomorrow", "alts": ["day after tomorrow"] },
+    "mapema": { "text": "early", "alts": ["in good time"] },
+    "miaka": { "text": "years", "alts": ["years old", "the years"] },
+    "mingapi": { "text": "how many", "alts": ["how old"] },
+    "ngapi": { "text": "how many", "alts": ["how much"] },
+    "wangapi": { "text": "how many (people)", "alts": ["how many"] }
   },
   "sentences": {
     "s18-oyagala-ki": { "text": "What do you want today?" },
@@ -34,7 +40,20 @@
     "s18-caayi-oba-kaawa": { "text": "Tea or coffee?" },
     "s18-oyogera-oluganda": { "text": "Do you speak {to}?", "alts": ["You speak {to}?"] },
     "s18-njogera-katono": { "text": "I speak a little.", "alts": ["I speak a bit."] },
-    "s18-kiyitibwa-kitya": { "text": "What is this called in {to}?", "alts": ["How do you say this in {to}?", "What’s this called in {to}?"] }
+    "s18-kiyitibwa-kitya": { "text": "What is this called in {to}?", "alts": ["How do you say this in {to}?", "What’s this called in {to}?"] },
+    "s-tutaondoka-mapema": { "text": "We will leave early.", "alts": ["We’ll leave early."] },
+    "s-utasafiri-lini": { "text": "When will you travel?", "alts": ["When are you travelling?", "When will you go?"] },
+    "s-kesho-kutwa-mombasa": {
+      "text": "The day after tomorrow I will go to Mombasa.",
+      "alts": ["I’ll go to Mombasa the day after tomorrow.", "The day after tomorrow I’m going to Mombasa."]
+    },
+    "s-miaka-mingapi": { "text": "How old are you?" },
+    "s-miaka-ishirini": { "text": "I’m twenty years old.", "alts": ["I am twenty years old.", "I’m twenty.", "I am twenty."] },
+    "s-shilingi-ngapi": { "text": "How many shillings?", "alts": ["How much?", "How much is it?"] },
+    "s-watoto-wangapi": { "text": "How many children do you have?", "alts": ["How many kids do you have?"] },
+    "s-habari-vipi": { "text": "How are things?", "alts": ["How’s it going?", "How are you?"] },
+    "s-kwa-nini": { "text": "Why don’t you want tea?", "alts": ["Why do you not want tea?"] },
+    "s-kwa-sababu": { "text": "Because I don’t like tea.", "alts": ["Because I do not like tea."] }
   },
   "phrases": [
     "What is this?",

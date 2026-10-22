@@ -16,7 +16,13 @@
     "nnamba",
     "tusisinkane",
     "nkulinze",
-    "ndi-mu-kkubo"
+    "ndi-mu-kkubo",
+    "piga-simu",
+    "nitakupigia",
+    "tuma",
+    "mtandao",
+    "betri",
+    "salio"
   ],
   "sentences": [
     "s23-halo",
@@ -29,7 +35,17 @@
     "s23-mpa-nnamba",
     "s23-tusisinkane",
     "s23-nkulinze",
-    "s23-ndi-mu-kkubo"
+    "s23-ndi-mu-kkubo",
+    "s-simu-iko-wapi",
+    "s-haloo-nani",
+    "s-piga-simu",
+    "s-nipigie-jioni",
+    "s-subiri-kidogo",
+    "s-tuma-ujumbe",
+    "s-namba-yako",
+    "s-hakuna-mtandao",
+    "s-sina-betri",
+    "s-sina-salio"
   ],
   "phrases": 7,
   "skills": [
@@ -67,6 +83,23 @@
           "newWords": [],
           "sentences": ["s23-tusisinkane", "s23-ndi-mu-kkubo", "s23-sikuwulira"],
           "dialogues": [{ "speaker": "nakato", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u23s4",
+      "icon": "speaker",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u23s4l1",
+          "newWords": ["piga-simu", "nitakupigia"],
+          "sentences": ["s-simu-iko-wapi", "s-haloo-nani", "s-piga-simu", "s-nipigie-jioni"]
+        },
+        {
+          "id": "u23s4l2",
+          "newWords": ["tuma", "mtandao", "betri", "salio"],
+          "sentences": ["s-subiri-kidogo", "s-tuma-ujumbe", "s-namba-yako", "s-hakuna-mtandao", "s-sina-betri", "s-sina-salio"]
         }
       ]
     }

@@ -236,9 +236,9 @@ lg	sentence	s-mtu-mzuri	Jjajja muntu mulungi.	Grandmother is a good person. = Bi
 lg	sentence	s-mwalimu-wake	Omusomesa we mulungi.	Her teacher is good. = Mwalimu wake ni mzuri.
 lg	sentence	s-pole-pole	Mpola mpola, mwattu.	Slowly, please. = Pole pole, tafadhali.
 lg	sentence	s-haraka	Mangu, mangu!	Quickly, quickly! = Haraka, haraka!
-lg	word	hakuna-matata	Teweeraliikirira	No worries = Hakuna matata
+lg	word	hakuna-matata	Tewali buzibu	No worries = Hakuna matata
 lg	sentence	s-hakuna-maji	Leero tewali mazzi.	There is no water today. = Hakuna maji leo.
-lg	sentence	s-hakuna-matata	Teweeraliikirira!	No worries! = Hakuna matata!
+lg	sentence	s-hakuna-matata	Tewali buzibu!	No worries! = Hakuna matata!
 lg	sentence	s-mlango-mwekundu	Oluggi lumyufu.	The door is red. = Mlango ni mwekundu.
 lg	sentence	s-rangi-gani	Kya langi ki?	What colour is it? = Ni rangi gani?
 lg	sentence	s-nyumba-nyeupe	Ennyumba enjeru.	A white house. = Nyumba nyeupe.
@@ -463,3 +463,218 @@ sw	dialogue	u13s3l3.0	Ndiyo, nina mbwa. | Tembo ni mkubwa sana. | Ninaogopa nyok
 sw	dialogue	u14s2l3.0	Mimi ni mwalimu. | Ng'ombe wanakula nyasi. | Ninahisi baridi.	Unafanya kazi gani? :: Ndi musomesa. | Ente zirya omuddo. | Mpulira empewo. (answer 1)
 sw	dialogue	u15s3l3.0	Hapana. Rudia polepole, bwana. | Ng'ombe wanakula nyasi. | Ninaoga asubuhi.	Andikeni maneno haya. Mnaelewa? :: Nedda. Ddamu mpola, ssebo. | Ente zirya omuddo. | Nnaaba ku makya. (answer 1)
 sw	dialogue	u16s1l3.0	Ninaenda Entebbe. Teksi hii inaenda Entebbe? | Ninaogopa nyoka! | Nina swali.	Unakwenda wapi? :: Ŋŋenda Entebbe. Ttakisi eno egenda Entebbe? | Ntya omusota! | Nnina ekibuuzo. (answer 1)
+lg	word	samahani	Kambuuze	Excuse me = Samahani
+lg	sentence	s-pole-sana	Bambi nnyo!	So sorry! = Pole sana!
+lg	sentence	s-samahani-daktari	Kambuuze, omusawo.	Excuse me, doctor. = Samahani, daktari.
+lg	sentence	s-nimechoka-sana	Nkooye nnyo.	I am very tired. = Nimechoka sana.
+lg	word	fua	Yoza engoye	Wash (clothes) = Fua
+lg	word	sasa-hivi	kaakati	right now = sasa hivi
+lg	sentence	s-osha-vyombo	Yoza ebibya kaakati!	Wash the dishes right now! = Osha vyombo sasa hivi!
+lg	sentence	s-fua-nguo	Yoza engoye leero.	Wash the clothes today. = Fua nguo leo.
+lg	sentence	s-nimemaliza	Mmaze!	I’ve finished! = Nimemaliza!
+lg	sentence	s-nisaidie-tafadhali	Nnyamba, mwattu.	Help me, please. = Nisaidie, tafadhali.
+lg	sentence	s-kwanza-halafu	Sooka oyoze ebibya, oluvannyuma oyere.	First wash the dishes, then sweep. = Kwanza osha vyombo, halafu fagia.
+lg	sentence	s-pamoja	Tukolere wamu.	Let’s work together. = Tufanye kazi pamoja.
+lg	sentence	s-nilikuwa-nyumbani	Jjo nnali waka.	Yesterday I was at home. = Jana nilikuwa nyumbani.
+lg	sentence	s-zamani-sana	Kyali dda nnyo.	It was a very long time ago. = Ilikuwa zamani sana.
+lg	sentence	s-sielewi-rudia	Sitegeera. Ddamu, mwattu.	I don’t understand. Repeat, please. = Sielewi. Rudia, tafadhali.
+lg	sentence	s-sijui	Simanyi kya kuddamu.	I don’t know the answer. = Sijui jibu.
+lg	word	kesho-kutwa	oluvannyuma lw'enkya	the day after tomorrow = kesho kutwa
+lg	word	mapema	nga bukyali	early = mapema
+lg	sentence	s-tutaondoka-mapema	Tunaasimbula nga bukyali.	We will leave early. = Tutaondoka mapema.
+lg	sentence	s-utasafiri-lini	Olitambula ddi?	When will you travel? = Utasafiri lini?
+lg	sentence	s-kesho-kutwa-mombasa	Oluvannyuma lw'enkya ndigenda e Mombasa.	The day after tomorrow I will go to Mombasa. = Kesho kutwa nitaenda Mombasa.
+lg	word	hataki	tayagala	he doesn’t want = hataki
+lg	word	hatutaki	tetwagala	we don’t want = hatutaki
+lg	word	hawataki	tebaagala	they don’t want = hawataki
+lg	word	sipendi	Sisiima	I don’t like = sipendi
+lg	word	si	si	is not = si
+lg	word	kweli	kituufu	true = kweli
+lg	word	labda	oboolyawo	maybe = labda
+lg	word	bado	tennaba	not yet = bado
+lg	word	hata-kidogo	n'akatono	not at all = hata kidogo
+lg	word	kamwe	emirembe n'emirembe	never = kamwe
+lg	word	sikuenda	Saagenda	I didn’t go = sikuenda
+lg	word	sikula	Saalya	I didn’t eat = sikula
+lg	word	sitaenda	Sirigenda	I won’t go = sitaenda
+lg	sentence	s-sitaki-chai	Saagala caayi, weebale.	I don’t want tea, thanks. = Sitaki chai, asante.
+lg	sentence	s-hutaki-kahawa	Toyagala kaawa?	Don’t you want coffee? = Hutaki kahawa?
+lg	sentence	s-neema-hataki	Neema tayagala byennyanja.	Neema doesn’t want fish. = Neema hataki samaki.
+lg	sentence	s-hatutaki-chakula	Tetwagala mmere kati.	We don’t want food now. = Hatutaki chakula sasa.
+lg	sentence	s-hawataki-kulala	Abaana tebaagala kwebaka.	The children don’t want to sleep. = Watoto hawataki kulala.
+lg	sentence	s-sipendi-baridi	Sisiima mpewo.	I don’t like the cold. = Sipendi baridi.
+lg	sentence	s-si-kweli	Si kituufu!	It’s not true! = Si kweli!
+lg	sentence	s-ni-kweli	Kituufu.	It’s true. = Ni kweli.
+lg	sentence	s-mimi-si-mwalimu	Nze siri musomesa.	I’m not a teacher. = Mimi si mwalimu.
+lg	sentence	s-labda-kesho	Oboolyawo enkya.	Maybe tomorrow. = Labda kesho.
+lg	sentence	s-bado	Nkyasoma.	I’m still studying. = Bado ninasoma.
+lg	sentence	s-hata-kidogo	Sikisiima n'akatono!	I don’t like it at all! = Sipendi hata kidogo!
+lg	sentence	s-kamwe	Sirigenda emirembe n'emirembe!	I will never go! = Sitaenda kamwe!
+lg	sentence	s-sikuenda-shuleni	Jjo saagenda ku ssomero.	Yesterday I didn’t go to school. = Jana sikuenda shuleni.
+lg	sentence	s-sikula-asubuhi	Saalya ku makya.	I didn’t eat in the morning. = Sikula asubuhi.
+lg	sentence	s-sitaenda-kazini	Enkya sirigenda ku mulimu.	Tomorrow I won’t go to work. = Kesho sitaenda kazini.
+lg	word	miaka	emyaka	years = miaka
+lg	word	mingapi	emeka	how many = mingapi
+lg	word	ngapi	mmeka	how many = ngapi
+lg	word	wangapi	bameka	how many (people) = wangapi
+lg	sentence	s-miaka-mingapi	Olina emyaka emeka?	How old are you? = Una miaka mingapi?
+lg	sentence	s-miaka-ishirini	Nnina emyaka abiri.	I’m twenty years old. = Nina miaka ishirini.
+lg	sentence	s-shilingi-ngapi	Siringi mmeka?	How many shillings? = Shilingi ngapi?
+lg	sentence	s-watoto-wangapi	Olina abaana bameka?	How many children do you have? = Una watoto wangapi?
+lg	sentence	s-habari-vipi	Ebintu bitambula bitya?	How are things? = Habari vipi?
+lg	sentence	s-kwa-nini	Lwaki toyagala caayi?	Why don’t you want tea? = Kwa nini hutaki chai?
+lg	sentence	s-kwa-sababu	Kubanga sisiima caayi.	Because I don’t like tea. = Kwa sababu sipendi chai.
+lg	word	tayari	dda	already = tayari
+lg	word	sijala	Sinnalya	I haven’t eaten = sijala
+lg	word	nilifanya	Nnakola	I did = Nilifanya
+lg	word	ulifanya	wakola	you did = ulifanya
+lg	word	walifika	baatuuka	they arrived = walifika
+lg	word	juzi	jjuuzi	the day before yesterday = juzi
+lg	word	nilinunua	Nnagula	I bought = Nilinunua
+lg	word	niliona	Nnalaba	I saw = Niliona
+lg	sentence	s-nimekula-asante	Ndidde, weebale.	I’ve eaten, thank you. = Nimekula, asante.
+lg	sentence	s-tayari-nimekula	Nnaliddeko dda.	I’ve already eaten. = Tayari nimekula.
+lg	sentence	s-bado-sijala	Sinnalya.	I haven’t eaten yet. = Bado sijala.
+lg	sentence	s-nilienda-sokoni	Jjo nnagenda mu katale.	Yesterday I went to the market. = Jana nilienda sokoni.
+lg	sentence	s-nilikula-wali	Nnalya omuceere n'ebijanjaalo.	I ate rice and beans. = Nilikula wali na maharage.
+lg	sentence	s-ulifanya-nini	Wakola ki jjo?	What did you do yesterday? = Ulifanya nini jana?
+lg	sentence	s-nilifanya-kazi	Nnakola omulimu gw'awaka.	I did homework. = Nilifanya kazi ya nyumbani.
+lg	sentence	s-neema-alienda	Neema yagenda ku ssomero.	Neema went to school. = Neema alienda shuleni.
+lg	sentence	s-tulienda-mombasa	Twagenda e Mombasa mu bbaasi.	We went to Mombasa by bus. = Tulienda Mombasa kwa basi.
+lg	sentence	s-walifika-jana	Abaana baatuuka jjo.	The children arrived yesterday. = Watoto walifika jana.
+lg	sentence	s-juzi-nilinunua	Jjuuzi nnagula engatto.	The day before yesterday I bought shoes. = Juzi nilinunua viatu.
+lg	sentence	s-niliona-tembo	Wiiki ewedde nnalaba enjovu!	Last week I saw an elephant! = Wiki iliyopita niliona tembo!
+lg	sentence	s-mwaka-jana-zanzibar	Omwaka oguwedde twagenda e Zanzibar.	Last year we went to Zanzibar. = Mwaka jana tulienda Zanzibar.
+lg	word	utaenda	oligenda	you will go = utaenda
+lg	word	atakuja	alijja	he will come = atakuja
+lg	word	tutakutana	Tulisisinkana	We will meet = Tutakutana
+lg	word	nitarudi	Ndikomawo	I will come back = Nitarudi
+lg	word	mwezi-ujao	omwezi ogujja	next month = mwezi ujao
+lg	word	ndoto	ekirooto	dream = ndoto
+lg	sentence	s-nitaenda-kazini	Enkya nja kugenda ku mulimu.	Tomorrow I will go to work. = Kesho nitaenda kazini.
+lg	sentence	s-bibi-atakuja	Jjajja alijja ku Lwomukaaga.	Grandma will come on Saturday. = Bibi atakuja Jumamosi.
+lg	sentence	s-tutakutana	Tulisisinkana ssaawa munaana.	We will meet at two o’clock. = Tutakutana saa nane.
+lg	sentence	s-nitarudi	Ndikomawo wiiki ejja.	I will come back next week. = Nitarudi wiki ijayo.
+lg	sentence	s-mwezi-ujao	Omwezi ogujja nditambula.	Next month I will travel. = Mwezi ujao nitasafiri.
+lg	sentence	s-ningependa-kahawa	Nandyagadde kaawa, mwattu.	I would like coffee, please. = Ningependa kahawa, tafadhali.
+lg	sentence	s-ningependa-kusafiri	Nandyagadde okutambula.	I would like to travel. = Ningependa kusafiri.
+lg	sentence	s-ndoto-yangu	Ekirooto kyange kwe kuba omusawo.	My dream is to be a doctor. = Ndoto yangu ni kuwa daktari.
+lg	sentence	s-siku-moja	Olunaku lumu ndiba musomesa.	One day I will be a teacher. = Siku moja nitakuwa mwalimu.
+lg	word	furaha	essanyu	happiness = furaha
+lg	word	nina-furaha	Ndi musanyufu	I’m happy = Nina furaha
+lg	word	huzuni	ennaku	sadness = huzuni
+lg	word	hasira	obusungu	anger = hasira
+lg	word	naogopa	Nnina okutya	I’m afraid = Naogopa
+lg	word	wasiwasi	okweraliikirira	worry = wasiwasi
+lg	word	kuhusu	ebikwata ku	about = kuhusu
+lg	word	usijali	Teweeraliikirira	Don’t worry = Usijali
+lg	word	bahati-njema	Kila kirungi	Good luck = Bahati njema
+lg	sentence	s-nina-furaha	Ndi musanyufu leero!	I’m happy today! = Nina furaha leo!
+lg	sentence	s-siku-ya-furaha	Lunaku lwa ssanyu.	It’s a happy day. = Ni siku ya furaha.
+lg	sentence	s-nina-huzuni	Nnina ennaku.	I’m sad. = Nina huzuni.
+lg	sentence	s-nimefurahi-sana	Nsanyuse nnyo nnyo!	I’m very glad! = Nimefurahi sana!
+lg	sentence	s-nimeshangaa	Nneewuunyizza ddala!	I’m completely surprised! = Nimeshangaa kabisa!
+lg	sentence	s-bosi-hasira	Bbosi alina obusungu.	The boss is angry. = Bosi ana hasira.
+lg	sentence	s-nimekasirika	Nnyiize nnyo!	I’m very angry! = Nimekasirika sana!
+lg	sentence	s-naogopa-mbwa	Ntya embwa.	I’m afraid of dogs. = Naogopa mbwa.
+lg	sentence	s-usijali	Teweeraliikirira, tewali buzibu.	Don’t worry, no problem. = Usijali, hakuna matata.
+lg	sentence	s-nakupenda-bibi	Nkwagala, jjajja.	I love you, Grandma. = Nakupenda, bibi.
+lg	sentence	s-hongera-mtihani	Kulikayo ku kigezo!	Congratulations on the exam! = Hongera kwa mtihani!
+lg	sentence	s-bahati-njema	Kila kirungi enkya!	Good luck tomorrow! = Bahati njema kesho!
+lg	word	muda	akaseera	time = muda
+lg	word	kuangalia	okulaba	to watch = kuangalia
+lg	word	mashabiki	abawagizi	fans = mashabiki
+lg	word	tumeshinda	Tuwangudde	We’ve won = Tumeshinda
+lg	word	tumefungwa	Tukubiddwa	We’ve lost = Tumefungwa
+lg	word	karata	kaadi	cards = karata
+lg	word	bao	omweso	bao = bao
+lg	sentence	s-sina-muda	Sirina kaseera leero.	I don’t have time today. = Sina muda leo.
+lg	sentence	s-kuogelea	Nsiima okuwuga.	I like swimming. = Ninapenda kuogelea.
+lg	sentence	s-neema-kuimba	Neema asiima okuyimba.	Neema likes singing. = Neema anapenda kuimba.
+lg	sentence	s-kuangalia-mpira	Nsiima okulaba omupiira.	I like watching football. = Ninapenda kuangalia mpira.
+lg	sentence	s-mpira-wa-miguu	Nsiima omupiira gw'ebigere.	I like football. = Ninapenda mpira wa miguu.
+lg	sentence	s-timu-hodari	Ttiimu yange nnungi.	My team is good. = Timu yangu ni hodari.
+lg	sentence	s-goli	Goolo! Goolo!	Goal! Goal! = Goli! Goli!
+lg	sentence	s-mchezo-gani	Muzannyo ki?	Which game? = Mchezo gani?
+lg	sentence	s-mashabiki-wengi	Abawagizi bangi!	Lots of fans! = Mashabiki wengi!
+lg	sentence	s-tumeshinda	Tuwangudde!	We’ve won! = Tumeshinda!
+lg	sentence	s-tumefungwa-leo	Tukubiddwa leero.	We lost today. = Tumefungwa leo.
+lg	sentence	s-wimbo-wako	Nsiima oluyimba lwo.	I like your song. = Ninapenda wimbo wako.
+lg	sentence	s-nyimbo-bongo	Ennyimba za bongo flava.	Bongo flava songs. = Nyimbo za bongo flava.
+lg	sentence	s-tucheze-karata	Tuzannye kaadi!	Let’s play cards! = Tucheze karata!
+lg	sentence	s-babu-bao	Jjajja azannya omweso.	Grandfather is playing bao. = Babu anacheza bao.
+lg	word	piga-simu	kuba essimu	make a call = piga simu
+lg	word	nitakupigia	Nja kukukubira	I’ll call you = Nitakupigia
+lg	word	tuma	Weereza	Send = Tuma
+lg	word	mtandao	netiweeke	network = mtandao
+lg	word	betri	bbaatule	battery = betri
+lg	word	salio	ssente za ku ssimu	airtime = salio
+lg	sentence	s-simu-iko-wapi	Essimu yange eri ludda wa?	Where is my phone? = Simu yangu iko wapi?
+lg	sentence	s-haloo-nani	Halo? Ani?	Hello? Who is it? = Haloo? Ni nani?
+lg	sentence	s-piga-simu	Kuba essimu enkya.	Call tomorrow. = Piga simu kesho.
+lg	sentence	s-nipigie-jioni	Nkubira akawungeezi.	Call me in the evening. = Nipigie jioni.
+lg	sentence	s-subiri-kidogo	Linda katono.	Wait a little. = Subiri kidogo.
+lg	sentence	s-tuma-ujumbe	Weereza obubaka.	Send a message. = Tuma ujumbe.
+lg	sentence	s-namba-yako	Nnamba yo y'eruwa?	What’s your number? = Namba yako ni ngapi?
+lg	sentence	s-hakuna-mtandao	Wano tewali netiweeke.	There’s no network here. = Hakuna mtandao hapa.
+lg	sentence	s-sina-betri	Bbaatule yange eweddemu.	My battery is dead. = Sina betri.
+lg	sentence	s-sina-salio	Sirina ssente za ku ssimu.	I don’t have any airtime. = Sina salio.
+lg	word	chemsha	Bugumya	Boil = Chemsha
+lg	word	kaanga	Siika	Fry = Kaanga
+lg	word	kitunguu	akatungulu	onion = kitunguu
+lg	word	changanya	Tabula	Mix = Changanya
+lg	sentence	s-kupika	Nsiima okufumba.	I like cooking. = Ninapenda kupika.
+lg	sentence	s-mafuta-moto	Amafuta gookya nnyo.	The oil is very hot. = Mafuta ni moto sana.
+lg	sentence	s-kata-kitunguu	Sala akatungulu.	Cut the onion. = Kata kitunguu.
+lg	sentence	s-chemsha-maji	Bugumya amazzi.	Boil the water. = Chemsha maji.
+lg	sentence	s-kaanga-vitunguu	Siika obutungulu.	Fry the onions. = Kaanga vitunguu.
+lg	sentence	s-changanya-pamoja	Tabula wamu.	Mix together. = Changanya pamoja.
+lg	word	salama	mirembe	safe = salama
+lg	word	tulia	Kkakkana	Calm down = Tulia
+lg	sentence	s-salama	Kati oli mirembe.	Now you are safe. = Sasa uko salama.
+lg	sentence	s-tulia	Kkakkana, obuyambi bujja.	Calm down, help is coming. = Tulia, msaada unakuja.
+lg	sentence	s-usiogope	Totya, ndi wano.	Don’t be afraid, I’m here. = Usiogope, niko hapa.
+fr	skill	u17s4	Encore des négations	
+fr	skill	u18s4	Combien ?	
+fr	skill	u19s4	Ce que j'ai fait	
+fr	skill	u20s4	Projets et rêves	
+fr	skill	u21s4	Les émotions	
+fr	skill	u22s4	Supporters et jeux	
+fr	skill	u23s4	Réseau et crédit	
+fr	skill	u24s4	Étapes de cuisine	
+lg	skill	u17s4	Okugaana okulala	
+lg	skill	u18s4	Mmeka?	
+lg	skill	u19s4	Bye nnakola	
+lg	skill	u20s4	Enteekateeka n'ebirooto	
+lg	skill	u21s4	Enneewulira	
+lg	skill	u22s4	Abawagizi n'emizannyo	
+lg	skill	u23s4	Essimu ne netiweeke	
+lg	skill	u24s4	Emitendera gy'okufumba	
+en	skill	u17s4	More negatives	
+en	skill	u18s4	How many?	
+en	skill	u19s4	What I did	
+en	skill	u20s4	Plans and dreams	
+en	skill	u21s4	Feelings	
+en	skill	u22s4	Fans and games	
+en	skill	u23s4	Network and airtime	
+en	skill	u24s4	Cooking steps	
+sw	skill	u17s4	Kukanusha zaidi	
+sw	skill	u18s4	Ngapi?	
+sw	skill	u19s4	Nilichofanya	
+sw	skill	u20s4	Mipango na ndoto	
+sw	skill	u21s4	Hisia	
+sw	skill	u22s4	Mashabiki na michezo	
+sw	skill	u23s4	Mtandao na salio	
+sw	skill	u24s4	Hatua za kupika	
+sw	dialogue	u17s2l3.0	Hapana, sitaki kahawa. Ninakunywa chai. | Simjui nyoka. | Hiki si changu.	Unataka kahawa? :: Nedda, saagala kaawa. Nnywa caayi. | Simanyi omusota. | Kino si kyange. (answer 1)
+sw	dialogue	u17s3l3.0	Sijui, bwana. Muulize polisi. | Sili nyama. | Usiende!	Hospitali iko wapi? :: Simanyi, ssebo. Buuza omupoliisi. | Sirya nnyama. | Togenda! (answer 1)
+sw	dialogue	u18s2l3.0	Niko stendi. Ninakuja! | Sijui Kiganda. | Hiki ni nini?	Uko wapi sasa? :: Ndi ku paaka. Nzija! | Simanyi Oluganda. | Kino kiki? (answer 1)
+sw	dialogue	u18s3l3.0	Kwa sababu nataka kuongea na bibi yangu. | Chai au kahawa? | Unakuja lini?	Kwa nini unajifunza {to}? :: Kubanga njagala okwogera ne jjajja wange. | Caayi oba kaawa? | Ojja ddi? (answer 1)
+sw	dialogue	u19s3l3.0	Nilienda mjini. | Nitaenda kesho. | Sili nyama.	Ulifanya nini jana? :: Nnagenda mu kibuga. | Nja kugenda enkya. | Sirya nnyama. (answer 1)
+sw	dialogue	u20s2l3.0	Nitamtembelea bibi. | Jana nilienda Jinja. | Simjui nyoka.	Unapanga nini wikendi? :: Nja kukyalira jjajja. | Jjo nnagenda e Jinja. | Simanyi omusota. (answer 1)
+sw	dialogue	u21s2l3.0	Ndiyo, nimechoka sana. Nimefanya kazi sana leo. | Nimefurahi kukuona. | Usilie.	Uko sawa? Unaonekana umechoka. :: Yee, nkooye nnyo. Nkoze nnyo leero. | Nsanyuse okukulaba. | Tokaaba. (answer 1)
+sw	dialogue	u21s3l3.0	Pole sana! Nitamtembelea. | Nimefurahi sana! | Nimekasirika.	Nina huzuni. Bibi ni mgonjwa. :: Bambi! Nja kumukyalira. | Nsanyuse nnyo! | Nnyiize. (answer 1)
+sw	dialogue	u22s1l3.0	Ninafurahia kukimbia na kuogelea. | Nimechoka sana. | Sijui bao.	Unafurahia nini? :: Nnyumirwa okudduka n’okuwuga. | Nkooye nnyo. | Simanyi omweso. (answer 1)
+sw	dialogue	u23s2l3.0	Ni mimi Ssali. Habari yako, Nakato? | Niko njiani. | Sina pesa.	Halo? Ni nani anaongea? :: Nze Ssali. Oli otya, Nakato? | Ndi mu kkubo. | Sirina ssente. (answer 1)
+sw	dialogue	u23s3l3.0	Samahani, niko njiani. Ninakuja! | Tukutane kesho. | Nipe kalamu.	Uko wapi? Ninakusubiri! :: Nsonyiwa, ndi mu kkubo. Nzija! | Tusisinkane jjo. | Mpa ekkalaamu. (answer 1)
+sw	dialogue	u24s3l3.0	Hapana, nimeshiba. Asante kwa kupika! | Kwanza kata vitunguu. | Ninakusubiri stendi.	Unataka chakula zaidi? :: Nedda, nkkuse. Webale okufumba! | Sooka sala obutungulu. | Nkulinze ku siteegi. (answer 1)

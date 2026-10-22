@@ -14,7 +14,13 @@
     "nnamba": { "text": "nnamba" },
     "tusisinkane": { "text": "Tusisinkane" },
     "nkulinze": { "text": "Nkulinze" },
-    "ndi-mu-kkubo": { "text": "Ndi mu kkubo" }
+    "ndi-mu-kkubo": { "text": "Ndi mu kkubo" },
+    "piga-simu": { "text": "kuba essimu" },
+    "nitakupigia": { "text": "Nja kukukubira" },
+    "tuma": { "text": "Weereza" },
+    "mtandao": { "text": "netiweeke" },
+    "betri": { "text": "bbaatule" },
+    "salio": { "text": "ssente za ku ssimu" }
   },
   "sentences": {
     "s23-halo": { "text": "Halo? Ani ayogera?" },
@@ -27,7 +33,17 @@
     "s23-mpa-nnamba": { "text": "Mpa nnamba yo." },
     "s23-tusisinkane": { "text": "Tusisinkane ku ssaawa nnya." },
     "s23-nkulinze": { "text": "Nkulinze ku siteegi." },
-    "s23-ndi-mu-kkubo": { "text": "Ndi mu kkubo, nzija!" }
+    "s23-ndi-mu-kkubo": { "text": "Ndi mu kkubo, nzija!" },
+    "s-simu-iko-wapi": { "text": "Essimu yange eri ludda wa?" },
+    "s-haloo-nani": { "text": "Halo? Ani?" },
+    "s-piga-simu": { "text": "Kuba essimu enkya." },
+    "s-nipigie-jioni": { "text": "Nkubira akawungeezi." },
+    "s-subiri-kidogo": { "text": "Linda katono." },
+    "s-tuma-ujumbe": { "text": "Weereza obubaka." },
+    "s-namba-yako": { "text": "Nnamba yo y'eruwa?" },
+    "s-hakuna-mtandao": { "text": "Wano tewali netiweeke." },
+    "s-sina-betri": { "text": "Bbaatule yange eweddemu." },
+    "s-sina-salio": { "text": "Sirina ssente za ku ssimu." }
   },
   "phrases": [
     "Halo? Ani ayogera?",

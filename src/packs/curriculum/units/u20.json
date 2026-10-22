@@ -17,7 +17,13 @@
     "ndyogera",
     "olunaku-lumu",
     "nsuubira",
-    "oteekateeka-ki"
+    "oteekateeka-ki",
+    "utaenda",
+    "atakuja",
+    "tutakutana",
+    "nitarudi",
+    "mwezi-ujao",
+    "ndoto"
   ],
   "sentences": [
     "s20-nja-kugenda-masaka",
@@ -30,7 +36,19 @@
     "s20-olunaku-lumu-ndigenda",
     "s20-ndyogera-oluganda",
     "s20-nsuubira",
-    "s20-oteekateeka-ki"
+    "s20-oteekateeka-ki",
+    "s-nisaidie-tafadhali",
+    "s-kwanza-halafu",
+    "s-pamoja",
+    "s-nitaenda-kazini",
+    "s-bibi-atakuja",
+    "s-tutakutana",
+    "s-nitarudi",
+    "s-mwezi-ujao",
+    "s-ningependa-kahawa",
+    "s-ningependa-kusafiri",
+    "s-ndoto-yangu",
+    "s-siku-moja"
   ],
   "phrases": 6,
   "skills": [
@@ -67,6 +85,28 @@
           "id": "u20s3l3",
           "newWords": [],
           "sentences": ["s20-ndyogera-oluganda", "s20-wiiki-ejja", "s20-ajja-kujja", "s20-olunaku-lumu-ndigenda"]
+        }
+      ]
+    },
+    {
+      "id": "u20s4",
+      "icon": "heart",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u20s4l1",
+          "newWords": ["utaenda", "atakuja", "tutakutana"],
+          "sentences": ["s-nisaidie-tafadhali", "s-kwanza-halafu", "s-pamoja", "s-nitaenda-kazini"]
+        },
+        {
+          "id": "u20s4l2",
+          "newWords": ["nitarudi", "mwezi-ujao"],
+          "sentences": ["s-bibi-atakuja", "s-tutakutana", "s-nitarudi", "s-mwezi-ujao"]
+        },
+        {
+          "id": "u20s4l3",
+          "newWords": ["ndoto"],
+          "sentences": ["s-ningependa-kahawa", "s-ningependa-kusafiri", "s-ndoto-yangu", "s-siku-moja"]
         }
       ]
     }

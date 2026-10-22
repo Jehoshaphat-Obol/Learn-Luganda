@@ -15,7 +15,13 @@
     "ndyogera": { "text": "Nitazungumza", "alts": ["nitaongea", "nitasema"] },
     "olunaku-lumu": { "text": "siku moja", "alts": ["siku fulani", "siku mojawapo"] },
     "nsuubira": { "text": "Natumaini", "alts": ["ninatumaini", "natarajia", "ninatarajia"] },
-    "oteekateeka-ki": { "text": "Unapanga nini?", "alts": ["una mipango gani", "mipango yako ni ipi", "unapanga kufanya nini"] }
+    "oteekateeka-ki": { "text": "Unapanga nini?", "alts": ["una mipango gani", "mipango yako ni ipi", "unapanga kufanya nini"] },
+    "utaenda": { "text": "utaenda" },
+    "atakuja": { "text": "atakuja" },
+    "tutakutana": { "text": "Tutakutana" },
+    "nitarudi": { "text": "Nitarudi" },
+    "mwezi-ujao": { "text": "mwezi ujao" },
+    "ndoto": { "text": "ndoto" }
   },
   "sentences": {
     "s20-nja-kugenda-masaka": { "text": "Kesho nitakwenda Masaka.", "alts": ["Nitakwenda Masaka kesho.", "Kesho nitaenda Masaka."] },
@@ -31,7 +37,19 @@
     "s20-olunaku-lumu-ndigenda": { "text": "Siku moja nitakwenda Buganda.", "alts": ["Siku moja nitaenda Buganda."] },
     "s20-ndyogera-oluganda": { "text": "Siku moja nitazungumza {to} vizuri.", "alts": ["Siku moja nitaongea {to} vizuri."] },
     "s20-nsuubira": { "text": "Natumaini kumwona Kabaka.", "alts": ["Ninatumaini kumwona Kabaka.", "Natumaini kumwona mfalme."] },
-    "s20-oteekateeka-ki": { "text": "Unapanga nini wikendi?", "alts": ["Una mipango gani wikendi?", "Unapanga nini mwisho wa wiki?"] }
+    "s20-oteekateeka-ki": { "text": "Unapanga nini wikendi?", "alts": ["Una mipango gani wikendi?", "Unapanga nini mwisho wa wiki?"] },
+    "s-nisaidie-tafadhali": { "text": "Nisaidie, tafadhali." },
+    "s-kwanza-halafu": { "text": "Kwanza osha vyombo, halafu fagia." },
+    "s-pamoja": { "text": "Tufanye kazi pamoja." },
+    "s-nitaenda-kazini": { "text": "Kesho nitaenda kazini." },
+    "s-bibi-atakuja": { "text": "Bibi atakuja Jumamosi." },
+    "s-tutakutana": { "text": "Tutakutana saa nane." },
+    "s-nitarudi": { "text": "Nitarudi wiki ijayo." },
+    "s-mwezi-ujao": { "text": "Mwezi ujao nitasafiri." },
+    "s-ningependa-kahawa": { "text": "Ningependa kahawa, tafadhali." },
+    "s-ningependa-kusafiri": { "text": "Ningependa kusafiri." },
+    "s-ndoto-yangu": { "text": "Ndoto yangu ni kuwa daktari." },
+    "s-siku-moja": { "text": "Siku moja nitakuwa mwalimu." }
   },
   "phrases": [
     "Kesho nitakwenda Masaka.",
@@ -41,7 +59,7 @@
     "Siku moja nitazungumza {to} vizuri.",
     "Natumaini kumwona Kabaka."
   ],
-  "dialogues": { "u20s2l3": [{ "line": "Unapanga nini wikendi?" }] },
+  "dialogues": { "u20s2l3": [{ "line": "Unapanga nini wikendi?", "options": ["Nitamtembelea bibi.", "Jana nilienda Jinja.", "Simjui nyoka."] }] },
   "stories": {
     "weekend-plans": {
       "title": "Mipango ya wikendi",

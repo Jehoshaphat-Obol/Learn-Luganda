@@ -7,15 +7,21 @@
     "tujja": { "text": "we will", "alts": ["we’ll", "we are going to", "we are coming"] },
     "ajja": { "text": "he will", "alts": ["she will", "he’ll", "she’ll", "he is coming", "she is coming"] },
     "awamu": { "text": "together", "alts": ["with each other"] },
-    "wiikendi": { "text": "weekend", "alts": ["the weekend"] },
+    "wiikendi": { "text": "weekend", "alts": ["the weekend", "at the weekend"] },
     "wiiki-ejja": { "text": "next week", "alts": ["the coming week"] },
     "omwaka-ogujja": { "text": "next year", "alts": ["the coming year"] },
     "okukyalira": { "text": "to visit", "alts": ["visit", "to go and see"] },
-    "ndigenda": { "text": "I will go", "alts": ["i’ll go", "i shall go"] },
+    "ndigenda": { "text": "I will go", "alts": ["i’ll go", "i shall go", "i am going to go"] },
     "ndyogera": { "text": "I will speak", "alts": ["i’ll speak", "i shall speak"] },
     "olunaku-lumu": { "text": "one day", "alts": ["someday", "some day"] },
     "nsuubira": { "text": "I hope", "alts": ["i expect", "i am hoping"] },
-    "oteekateeka-ki": { "text": "What are you planning?", "alts": ["what are your plans", "what do you plan", "what are you preparing"] }
+    "oteekateeka-ki": { "text": "What are you planning?", "alts": ["what are your plans", "what do you plan", "what are you preparing"] },
+    "utaenda": { "text": "you will go", "alts": ["will you go", "you’ll go"] },
+    "atakuja": { "text": "he will come", "alts": ["she will come", "he’ll come", "she’ll come"] },
+    "tutakutana": { "text": "We will meet", "alts": ["we’ll meet", "we are going to meet"] },
+    "nitarudi": { "text": "I will come back", "alts": ["i’ll come back", "i will return", "i’ll be back"] },
+    "mwezi-ujao": { "text": "next month", "alts": ["the coming month"] },
+    "ndoto": { "text": "dream", "alts": ["the dream", "a dream"] }
   },
   "sentences": {
     "s20-nja-kugenda-masaka": {
@@ -42,7 +48,19 @@
     "s20-oteekateeka-ki": {
       "text": "What are you planning for the weekend?",
       "alts": ["What are your plans for the weekend?", "What are you planning at the weekend?"]
-    }
+    },
+    "s-nisaidie-tafadhali": { "text": "Help me, please.", "alts": ["Please help me."] },
+    "s-kwanza-halafu": { "text": "First wash the dishes, then sweep.", "alts": ["First wash the dishes and then sweep."] },
+    "s-pamoja": { "text": "Let’s work together.", "alts": ["Let us work together."] },
+    "s-nitaenda-kazini": { "text": "Tomorrow I will go to work.", "alts": ["I’ll go to work tomorrow.", "Tomorrow I’ll go to work."] },
+    "s-bibi-atakuja": { "text": "Grandma will come on Saturday.", "alts": ["Grandmother will come on Saturday."] },
+    "s-tutakutana": { "text": "We will meet at two o’clock.", "alts": ["We’ll meet at two.", "We will meet at two in the afternoon.", "We’ll meet at 2."] },
+    "s-nitarudi": { "text": "I will come back next week.", "alts": ["I’ll be back next week.", "I will return next week."] },
+    "s-mwezi-ujao": { "text": "Next month I will travel.", "alts": ["I will travel next month."] },
+    "s-ningependa-kahawa": { "text": "I would like coffee, please.", "alts": ["I’d like coffee, please.", "I would like some coffee, please."] },
+    "s-ningependa-kusafiri": { "text": "I would like to travel.", "alts": ["I’d like to travel."] },
+    "s-ndoto-yangu": { "text": "My dream is to be a doctor.", "alts": ["My dream is to become a doctor."] },
+    "s-siku-moja": { "text": "One day I will be a teacher.", "alts": ["Someday I will be a teacher.", "One day I’ll be a teacher."] }
   },
   "phrases": [
     "Tomorrow I will go to Masaka.",

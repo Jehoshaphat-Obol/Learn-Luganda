@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u19",
+  "notes": {
+    "fua": "Only for washing clothes: Fua nguo.",
+    "tayari": "Also “ready”: Uko tayari? (Are you ready?)",
+    "sijala": "With bado: Bado sijala (I haven’t eaten yet)."
+  },
+  "guidebook": {
+    "intro": "Swahili has two everyday ways to talk about the past: -me- for what has just happened or is done, and -li- for what happened then.",
+    "tips": [
+      {
+        "id": "me-perfect",
+        "title": "Done: -me-",
+        "body": [
+          "**-me-** says something is done and still matters now: **nimekula** (I’ve eaten), **nimemaliza** (I’ve finished), **nimechoka** (I’m tired, literally “I have got tired”).",
+          "Its negative is **-ja-**: **sijala** (I haven’t eaten), usually with **bado**: **Bado sijala** (not yet)."
+        ]
+      },
+      {
+        "id": "li-everyone",
+        "title": "The past for everyone",
+        "body": [
+          "The **-li-** past takes the same person prefixes as the present: **nilienda** (I went), **ulienda** (you went), **alienda** (she went), **tulienda** (we went), **mlienda** (you all went), **walienda** (they went).",
+          "Short verbs like **-la** (eat) keep **ku-** only in the present: **ninakula** but **nilikula**."
+        ],
+        "table": [["Who", "Went"], ["mimi", "nilienda"], ["wewe", "ulienda"], ["yeye", "alienda"], ["sisi", "tulienda"], ["wao", "walienda"]],
+        "targetColumns": [0, 1]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Umekula?",
+        "body": [
+          "“Have you eaten?” is a caring question, and in many homes it’s close to a greeting. If you say **Bado**, expect a plate to appear."
+        ]
+      },
+      {
+        "title": "Stone Town",
+        "body": [
+          "Zanzibar’s old town, **Mji Mkongwe**, is a UNESCO World Heritage Site: a maze of narrow streets, carved doors and old merchant houses where Swahili, Arab, Persian, Indian and European histories meet."
+        ]
+      }
+    ]
+  }
+}

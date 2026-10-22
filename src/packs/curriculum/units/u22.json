@@ -18,7 +18,14 @@
     "okuzina",
     "ennyimba",
     "omuzannyo",
-    "omweso"
+    "omweso",
+    "muda",
+    "kuangalia",
+    "mashabiki",
+    "tumeshinda",
+    "tumefungwa",
+    "karata",
+    "bao"
   ],
   "sentences": [
     "s22-nnyumirwa-okusoma",
@@ -32,7 +39,22 @@
     "s22-okuyimba",
     "s22-ennyimba-za-luganda",
     "s22-omuzannyo",
-    "s22-omweso"
+    "s22-omweso",
+    "s-sina-muda",
+    "s-kuogelea",
+    "s-neema-kuimba",
+    "s-kuangalia-mpira",
+    "s-mpira-wa-miguu",
+    "s-timu-hodari",
+    "s-goli",
+    "s-mchezo-gani",
+    "s-mashabiki-wengi",
+    "s-tumeshinda",
+    "s-tumefungwa-leo",
+    "s-wimbo-wako",
+    "s-nyimbo-bongo",
+    "s-tucheze-karata",
+    "s-babu-bao"
   ],
   "phrases": 6,
   "skills": [
@@ -66,6 +88,29 @@
         { "id": "u22s3l1", "newWords": ["okuyimba", "okuzina"], "sentences": ["s22-okuyimba"] },
         { "id": "u22s3l2", "newWords": ["ennyimba"], "sentences": ["s22-ennyimba-za-luganda", "s22-okuyimba"] },
         { "id": "u22s3l3", "newWords": ["omuzannyo", "omweso"], "sentences": ["s22-omuzannyo", "s22-omweso"] }
+      ]
+    },
+    {
+      "id": "u22s4",
+      "icon": "music",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u22s4l1",
+          "newWords": ["muda", "kuangalia"],
+          "sentences": ["s-sina-muda", "s-kuogelea", "s-neema-kuimba", "s-kuangalia-mpira"]
+        },
+        {
+          "id": "u22s4l2",
+          "newWords": ["mashabiki", "tumeshinda", "tumefungwa"],
+          "sentences": ["s-mashabiki-wengi", "s-tumeshinda", "s-tumefungwa-leo"]
+        },
+        {
+          "id": "u22s4l3",
+          "newWords": ["karata", "bao"],
+          "sentences": ["s-wimbo-wako", "s-nyimbo-bongo", "s-tucheze-karata", "s-babu-bao"]
+        },
+        { "id": "u22s4l4", "newWords": [], "sentences": ["s-mpira-wa-miguu", "s-timu-hodari", "s-goli", "s-mchezo-gani"] }
       ]
     }
   ],
