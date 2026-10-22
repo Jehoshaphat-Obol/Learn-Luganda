@@ -1,0 +1,263 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u17",
+  "title": "Saying no",
+  "description": "Say what you don’t want or like, what isn’t true, and what you didn’t or won’t do.",
+  "color": "lilac",
+  "character": "neema",
+  "words": [
+    { "id": "sitaki", "target": "sitaki", "base": "I don’t want", "altBase": ["i do not want"] },
+    { "id": "hutaki", "target": "hutaki", "base": "you don’t want", "altBase": ["you do not want", "don’t you want"] },
+    {
+      "id": "hataki",
+      "target": "hataki",
+      "base": "he doesn’t want",
+      "altBase": ["she doesn’t want", "he does not want", "she does not want"]
+    },
+    { "id": "hatutaki", "target": "hatutaki", "base": "we don’t want", "altBase": ["we do not want"] },
+    { "id": "hawataki", "target": "hawataki", "base": "they don’t want", "altBase": ["they do not want"] },
+    { "id": "sipendi", "target": "sipendi", "base": "I don’t like", "altBase": ["i do not like", "i don’t love"] },
+    {
+      "id": "si",
+      "target": "si",
+      "base": "is not",
+      "altBase": ["am not", "are not", "not", "isn’t", "it’s not"],
+      "notes": "The negative of ni: Mimi si mwalimu (I’m not a teacher)."
+    },
+    { "id": "kweli", "target": "kweli", "base": "true", "altBase": ["truth", "really", "the truth"] },
+    { "id": "labda", "target": "labda", "base": "maybe", "altBase": ["perhaps", "possibly"] },
+    {
+      "id": "bado",
+      "target": "bado",
+      "base": "not yet",
+      "altBase": ["still", "yet"],
+      "notes": "On its own, “not yet”. Before a verb, “still”: Bado ninasoma."
+    },
+    { "id": "hata-kidogo", "target": "hata kidogo", "base": "not at all", "altBase": ["at all", "not even a little"] },
+    { "id": "kamwe", "target": "kamwe", "base": "never", "altBase": ["ever", "not ever"] },
+    { "id": "sikuenda", "target": "sikuenda", "base": "I didn’t go", "altBase": ["i did not go"] },
+    { "id": "sikula", "target": "sikula", "base": "I didn’t eat", "altBase": ["i did not eat"] },
+    { "id": "sitaenda", "target": "sitaenda", "base": "I won’t go", "altBase": ["i will not go", "i’m not going"] }
+  ],
+  "sentences": [
+    {
+      "id": "s-sitaki-chai",
+      "target": "Sitaki chai, asante.",
+      "base": "I don’t want tea, thanks.",
+      "altBase": ["I don’t want tea, thank you.", "I do not want tea, thanks."]
+    },
+    { "id": "s-hutaki-kahawa", "target": "Hutaki kahawa?", "base": "Don’t you want coffee?", "altBase": ["You don’t want coffee?"] },
+    {
+      "id": "s-neema-hataki",
+      "target": "Neema hataki samaki.",
+      "base": "Neema doesn’t want fish.",
+      "altBase": ["Neema does not want fish."]
+    },
+    {
+      "id": "s-hatutaki-chakula",
+      "target": "Hatutaki chakula sasa.",
+      "base": "We don’t want food now.",
+      "altBase": ["We do not want food now.", "We don’t want any food now."]
+    },
+    {
+      "id": "s-hawataki-kulala",
+      "target": "Watoto hawataki kulala.",
+      "base": "The children don’t want to sleep.",
+      "altBase": ["The kids don’t want to sleep.", "Children don’t want to sleep."]
+    },
+    {
+      "id": "s-sipendi-baridi",
+      "target": "Sipendi baridi.",
+      "base": "I don’t like the cold.",
+      "altBase": ["I don’t like cold.", "I do not like the cold."]
+    },
+    { "id": "s-si-kweli", "target": "Si kweli!", "base": "It’s not true!", "altBase": ["That’s not true!", "It isn’t true!", "Not true!"] },
+    { "id": "s-ni-kweli", "target": "Ni kweli.", "base": "It’s true.", "altBase": ["That’s true.", "It is true."] },
+    { "id": "s-mimi-si-mwalimu", "target": "Mimi si mwalimu.", "base": "I’m not a teacher.", "altBase": ["I am not a teacher."] },
+    { "id": "s-labda-kesho", "target": "Labda kesho.", "base": "Maybe tomorrow.", "altBase": ["Perhaps tomorrow."] },
+    { "id": "s-bado", "target": "Bado ninasoma.", "base": "I’m still studying.", "altBase": ["I am still studying.", "I’m still reading."] },
+    { "id": "s-hata-kidogo", "target": "Sipendi hata kidogo!", "base": "I don’t like it at all!", "altBase": ["I don’t like it one bit!"] },
+    { "id": "s-kamwe", "target": "Sitaenda kamwe!", "base": "I will never go!", "altBase": ["I’ll never go!", "I won’t ever go!"] },
+    {
+      "id": "s-sikuenda-shuleni",
+      "target": "Jana sikuenda shuleni.",
+      "base": "Yesterday I didn’t go to school.",
+      "altBase": ["I didn’t go to school yesterday."]
+    },
+    {
+      "id": "s-sikula-asubuhi",
+      "target": "Sikula asubuhi.",
+      "base": "I didn’t eat in the morning.",
+      "altBase": ["I didn’t eat this morning.", "I did not eat in the morning."]
+    },
+    {
+      "id": "s-sitaenda-kazini",
+      "target": "Kesho sitaenda kazini.",
+      "base": "Tomorrow I won’t go to work.",
+      "altBase": ["I won’t go to work tomorrow.", "Tomorrow I will not go to work."]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u17s1",
+      "title": "I don’t want",
+      "icon": "cross",
+      "tip": "negatives",
+      "lessons": [
+        { "id": "u17s1l1", "newWords": ["sitaki", "hutaki", "hataki"], "sentences": ["s-sitaki-chai", "s-hutaki-kahawa", "s-neema-hataki"] },
+        {
+          "id": "u17s1l2",
+          "newWords": ["hatutaki", "hawataki", "sipendi"],
+          "sentences": ["s-hatutaki-chakula", "s-hawataki-kulala", "s-sipendi-baridi"],
+          "dialogues": [
+            {
+              "speaker": "baraka",
+              "target": "Unataka chai?",
+              "base": "Do you want tea?",
+              "options": ["Hapana, sitaki chai, asante.", "Si kweli!", "Jana sikuenda."],
+              "answer": "Hapana, sitaki chai, asante."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u17s2",
+      "title": "Not true, not yet",
+      "icon": "info",
+      "tip": "si-not",
+      "lessons": [
+        {
+          "id": "u17s2l1",
+          "newWords": ["si", "kweli", "labda"],
+          "sentences": ["s-si-kweli", "s-ni-kweli", "s-mimi-si-mwalimu", "s-labda-kesho"]
+        },
+        {
+          "id": "u17s2l2",
+          "newWords": ["bado", "hata-kidogo"],
+          "sentences": ["s-bado", "s-hata-kidogo", "s-si-kweli"],
+          "dialogues": [
+            {
+              "speaker": "neema",
+              "target": "Umemaliza kazi ya nyumbani?",
+              "base": "Have you finished your homework?",
+              "options": ["Bado. Ninasoma sasa.", "Sipendi baridi.", "Mamba ni hatari!"],
+              "answer": "Bado. Ninasoma sasa."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u17s3",
+      "title": "Didn’t and won’t",
+      "icon": "clock",
+      "tip": "past-future-negative",
+      "lessons": [
+        {
+          "id": "u17s3l1",
+          "newWords": ["sikuenda", "sikula", "sitaenda", "kamwe"],
+          "sentences": ["s-sikuenda-shuleni", "s-sikula-asubuhi", "s-sitaenda-kazini", "s-kamwe"],
+          "dialogues": [
+            {
+              "speaker": "amani",
+              "target": "Ulienda kazini jana?",
+              "base": "Did you go to work yesterday?",
+              "options": ["Hapana, sikuenda. Nilikuwa mgonjwa.", "Ninavaa koti.", "Kazi nzuri!"],
+              "answer": "Hapana, sikuenda. Nilikuwa mgonjwa."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Every tense has a negative, and most start with h- or si-. Learn to turn down a cup of tea politely, and to say what didn’t happen.",
+    "phrases": [
+      { "target": "Sitaki chai, asante.", "base": "I don’t want tea, thanks." },
+      { "target": "Si kweli!", "base": "It’s not true!" },
+      { "target": "Mimi si mwalimu.", "base": "I’m not a teacher." },
+      { "target": "Bado.", "base": "Not yet." },
+      { "target": "Labda kesho.", "base": "Maybe tomorrow." },
+      { "target": "Jana sikuenda shuleni.", "base": "Yesterday I didn’t go to school." }
+    ],
+    "tips": [
+      {
+        "id": "negatives",
+        "title": "Saying “don’t”",
+        "body": [
+          "The negative of the present drops **-na-**, puts a negative prefix in front and ends the verb in **-i**: **ninataka** (I want) becomes **sitaki** (I don’t want).",
+          "The prefixes are **si-** (I), **hu-** (you), **ha-** (he or she), **hatu-** (we), **ham-** (you all) and **hawa-** (they)."
+        ],
+        "table": [
+          ["Want", "Don’t want"],
+          ["ninataka", "sitaki"],
+          ["unataka", "hutaki"],
+          ["anataka", "hataki"],
+          ["tunataka", "hatutaki"],
+          ["wanataka", "hawataki"]
+        ],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "si-not",
+        "title": "“Is not”: si",
+        "body": [
+          "**Ni** (is, am, are) has a short negative: **si**. **Mimi si mwalimu** (I’m not a teacher), **Si kweli** (it’s not true), **Si mbaya** (not bad).",
+          "**Bado** on its own answers “not yet”. **Labda** (maybe) and **hata kidogo** (not at all) soften or strengthen an answer."
+        ]
+      },
+      {
+        "id": "past-future-negative",
+        "title": "Didn’t and won’t",
+        "body": [
+          "For the past, the negative uses **-ku-** instead of **-li-**: **nilienda** (I went) becomes **sikuenda** (I didn’t go), **nilikula** becomes **sikula**.",
+          "For the future, keep **-ta-** and use the negative prefix: **nitaenda** (I will go) becomes **sitaenda** (I won’t go), **hatutaenda** (we won’t go)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Saying no softly",
+        "body": [
+          "A flat **hapana** can sound abrupt to a host. People often decline with **Asante** and a smile, or put it off with **labda** (maybe) or **nitaona** (I’ll see). Hosts may offer three times, so a gentle refusal is expected."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-no-thanks",
+      "title": "No, thank you",
+      "unlockAfter": "u17s3l1",
+      "cast": ["bibi", "emma"],
+      "summary": "Emma visits Bibi, who will not take no for an answer.",
+      "steps": [
+        { "line": { "speaker": "bibi", "target": "Karibu, Emma! Kaa. Unataka chai?", "base": "Welcome, Emma! Sit down. Do you want tea?" } },
+        {
+          "line": { "speaker": "emma", "target": "Asante, bibi, lakini sitaki chai sasa.", "base": "Thank you, Grandma, but I don’t want tea now." },
+          "gloss": { "lakini": "but" }
+        },
+        { "question": "What does Emma not want?", "options": ["Tea", "Mandazi", "Water"], "answer": 0 },
+        {
+          "line": { "speaker": "bibi", "target": "Hutaki chai? Basi, kula mandazi!", "base": "You don’t want tea? Then have a mandazi!" },
+          "gloss": { "Basi": "then, so", "mandazi": "sweet fried bread" }
+        },
+        {
+          "line": { "speaker": "emma", "target": "Bibi, nimeshiba kabisa. Nilikula sana.", "base": "Grandma, I’m completely full. I ate a lot." },
+          "gloss": { "nimeshiba": "I’m full" }
+        },
+        {
+          "line": { "speaker": "bibi", "target": "Si kweli! Hukula kitu!", "base": "That’s not true! You didn’t eat anything!" },
+          "gloss": { "Hukula": "you didn’t eat", "kitu": "anything, a thing" }
+        },
+        { "question": "What does Bibi think?", "options": ["Emma didn’t eat anything", "Emma ate too much", "Emma is sick"], "answer": 0 },
+        {
+          "line": { "speaker": "emma", "target": "Sawa, sawa. Mandazi moja tu!", "base": "Okay, okay. Just one mandazi!" },
+          "gloss": { "tu": "only, just" }
+        },
+        { "question": "How does Emma say “I don’t want”?", "options": ["sitaki", "sipendi", "sina"], "answer": 0, "optionsLang": "target" }
+      ]
+    }
+  ]
+}

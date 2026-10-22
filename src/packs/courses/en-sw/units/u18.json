@@ -1,0 +1,236 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u18",
+  "title": "Asking questions",
+  "description": "Ask what, why, how and how many, ask someone’s age, and ask about words.",
+  "color": "butter",
+  "character": "emma",
+  "words": [
+    { "id": "nini", "target": "nini", "base": "what", "altBase": ["what thing"], "notes": "Usually after the verb: Unataka nini?" },
+    { "id": "ninaitwa", "target": "Ninaitwa", "base": "I’m called", "altBase": ["i am called", "my name is"] },
+    { "id": "miaka", "target": "miaka", "base": "years", "altBase": ["years old", "the years"], "notes": "One: mwaka." },
+    { "id": "mingapi", "target": "mingapi", "base": "how many", "altBase": ["how old"], "notes": "Ngapi with mi- nouns: miaka mingapi?" },
+    { "id": "ngapi", "target": "ngapi", "base": "how many", "altBase": ["how much"], "notes": "For n- nouns: shilingi ngapi? saa ngapi?" },
+    {
+      "id": "wangapi",
+      "target": "wangapi",
+      "base": "how many (people)",
+      "altBase": ["how many"],
+      "notes": "For people and animals: watoto wangapi?"
+    },
+    {
+      "id": "vipi",
+      "target": "vipi",
+      "base": "how",
+      "altBase": ["how about", "what about"],
+      "notes": "Also a casual greeting: Vipi? (How’s it going?)"
+    },
+    { "id": "kwa-nini", "target": "kwa nini", "base": "why", "altBase": ["what for"], "notes": "Literally “for what”." },
+    { "id": "kwa-sababu", "target": "kwa sababu", "base": "because", "altBase": ["since"] },
+    { "id": "unasemaje", "target": "Unasemaje", "base": "How do you say", "altBase": ["how do you say it", "what do you say"] },
+    { "id": "neno", "target": "neno", "base": "word", "altBase": ["the word", "a word"], "notes": "Plural: maneno." },
+    { "id": "maana", "target": "maana", "base": "meaning", "altBase": ["the meaning", "means", "sense"] }
+  ],
+  "sentences": [
+    { "id": "s-unataka-nini", "target": "Unataka nini?", "base": "What do you want?" },
+    { "id": "s-unapenda-nini", "target": "Unapenda nini?", "base": "What do you like?" },
+    {
+      "id": "s-ninaitwa-amani",
+      "target": "Ninaitwa Amani.",
+      "base": "I’m called Amani.",
+      "altBase": ["My name is Amani.", "I am called Amani."]
+    },
+    { "id": "s-je-una-watoto", "target": "Je, una watoto?", "base": "Do you have children?", "altBase": ["Have you got children?"] },
+    { "id": "s-je-ni-kweli", "target": "Je, ni kweli?", "base": "Is it true?", "altBase": ["Is that true?", "Really?"] },
+    { "id": "s-miaka-mingapi", "target": "Una miaka mingapi?", "base": "How old are you?" },
+    {
+      "id": "s-miaka-ishirini",
+      "target": "Nina miaka ishirini.",
+      "base": "I’m twenty years old.",
+      "altBase": ["I am twenty years old.", "I’m twenty.", "I am twenty."]
+    },
+    { "id": "s-shilingi-ngapi", "target": "Shilingi ngapi?", "base": "How many shillings?", "altBase": ["How much?", "How much is it?"] },
+    {
+      "id": "s-watoto-wangapi",
+      "target": "Una watoto wangapi?",
+      "base": "How many children do you have?",
+      "altBase": ["How many kids do you have?"]
+    },
+    { "id": "s-habari-vipi", "target": "Habari vipi?", "base": "How are things?", "altBase": ["How’s it going?", "How are you?"] },
+    { "id": "s-kwa-nini", "target": "Kwa nini hutaki chai?", "base": "Why don’t you want tea?", "altBase": ["Why do you not want tea?"] },
+    {
+      "id": "s-kwa-sababu",
+      "target": "Kwa sababu sipendi chai.",
+      "base": "Because I don’t like tea.",
+      "altBase": ["Because I do not like tea."]
+    },
+    {
+      "id": "s-unasemaje",
+      "target": "Unasemaje kwa Kiswahili?",
+      "base": "How do you say it in Swahili?",
+      "altBase": ["How do you say that in Swahili?"]
+    },
+    { "id": "s-neno-gani", "target": "Neno gani?", "base": "Which word?", "altBase": ["What word?"] },
+    {
+      "id": "s-ina-maana-gani",
+      "target": "Ina maana gani?",
+      "base": "What does it mean?",
+      "altBase": ["What does that mean?", "What is the meaning?"]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u18s1",
+      "title": "Who and what",
+      "icon": "profile",
+      "tip": "question-words",
+      "lessons": [
+        {
+          "id": "u18s1l1",
+          "newWords": ["nini", "ninaitwa"],
+          "sentences": ["s-unataka-nini", "s-unapenda-nini", "s-ninaitwa-amani", "s-je-una-watoto", "s-je-ni-kweli"]
+        },
+        {
+          "id": "u18s1l2",
+          "newWords": ["miaka", "mingapi"],
+          "sentences": ["s-miaka-mingapi", "s-miaka-ishirini"],
+          "dialogues": [
+            {
+              "speaker": "emma",
+              "target": "Una miaka mingapi?",
+              "base": "How old are you?",
+              "options": ["Nina miaka ishirini.", "Ninaitwa Amani.", "Kwa sababu nina njaa."],
+              "answer": "Nina miaka ishirini."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u18s2",
+      "title": "How and how many",
+      "icon": "target",
+      "lessons": [
+        {
+          "id": "u18s2l1",
+          "newWords": ["ngapi", "wangapi", "vipi"],
+          "sentences": ["s-shilingi-ngapi", "s-watoto-wangapi", "s-habari-vipi"]
+        }
+      ]
+    },
+    {
+      "id": "u18s3",
+      "title": "Why, and words",
+      "icon": "info",
+      "tip": "kwa-nini",
+      "lessons": [
+        { "id": "u18s3l1", "newWords": ["kwa-nini", "kwa-sababu"], "sentences": ["s-kwa-nini", "s-kwa-sababu", "s-je-ni-kweli"] },
+        {
+          "id": "u18s3l2",
+          "newWords": ["unasemaje", "neno", "maana"],
+          "sentences": ["s-unasemaje", "s-neno-gani", "s-ina-maana-gani"],
+          "dialogues": [
+            {
+              "speaker": "emma",
+              "target": "Unasemaje “goodbye” kwa Kiswahili?",
+              "base": "How do you say “goodbye” in Swahili?",
+              "options": ["Kwaheri.", "Karibu.", "Pole."],
+              "answer": "Kwaheri."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Questions in Swahili keep normal word order: the question word simply sits where the answer would go. Je at the start turns a sentence into a yes-or-no question.",
+    "phrases": [
+      { "target": "Unataka nini?", "base": "What do you want?" },
+      { "target": "Una miaka mingapi?", "base": "How old are you?" },
+      { "target": "Kwa nini?", "base": "Why?" },
+      { "target": "Kwa sababu…", "base": "Because…" },
+      { "target": "Unasemaje kwa Kiswahili?", "base": "How do you say it in Swahili?" },
+      { "target": "Ina maana gani?", "base": "What does it mean?" }
+    ],
+    "tips": [
+      {
+        "id": "question-words",
+        "title": "Question words stay put",
+        "body": [
+          "Swahili doesn’t move the question word to the front. It goes where the answer goes: **Unataka nini?** (you want what?) → **Nataka chai**. **Unaenda wapi?** → **Ninaenda sokoni**.",
+          "For a yes-or-no question, just raise your voice at the end, or start with **Je**: **Je, una watoto?** (do you have children?)."
+        ]
+      },
+      {
+        "id": "kwa-nini",
+        "title": "Why and because",
+        "body": [
+          "**Kwa nini** is literally “for what”. Answer with **kwa sababu** (“for the reason”): **Kwa nini hutaki chai? Kwa sababu sipendi chai.**",
+          "“How many” agrees with its noun: **shilingi ngapi**, **watoto wangapi**, **miaka mingapi**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Asking someone’s age",
+        "body": [
+          "Asking **Una miaka mingapi?** is ordinary between young people. With elders, it’s better to ask about their children and grandchildren than about their age."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-school-interview",
+      "title": "The interview",
+      "unlockAfter": "u18s3l2",
+      "cast": ["neema", "emma"],
+      "summary": "Neema interviews Emma for a school project.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "neema",
+            "target": "Emma, nina maswali kwa ajili ya shule. Sawa?",
+            "base": "Emma, I have some questions for school. Okay?"
+          },
+          "gloss": { "kwa ajili ya": "for" }
+        },
+        { "line": { "speaker": "emma", "target": "Sawa! Uliza.", "base": "Okay! Ask away." }, "gloss": { "Uliza": "ask" } },
+        {
+          "line": { "speaker": "neema", "target": "Unatoka wapi, na una miaka mingapi?", "base": "Where are you from, and how old are you?" }
+        },
+        {
+          "line": { "speaker": "emma", "target": "Ninatoka Kanada. Nina miaka ishirini na nne.", "base": "I come from Canada. I’m twenty-four." }
+        },
+        { "question": "How old is Emma?", "options": ["24", "20", "42"], "answer": 0 },
+        { "line": { "speaker": "neema", "target": "Kwa nini unajifunza Kiswahili?", "base": "Why are you learning Swahili?" } },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Kwa sababu ninapenda Afrika Mashariki, na marafiki zangu wanaongea Kiswahili.",
+            "base": "Because I love East Africa, and my friends speak Swahili."
+          },
+          "gloss": { "zangu": "my (with many n- nouns)", "wanaongea": "they speak" }
+        },
+        {
+          "question": "Why is Emma learning Swahili?",
+          "options": ["She loves East Africa and her friends speak it", "For her job", "For an exam"],
+          "answer": 0
+        },
+        {
+          "line": {
+            "speaker": "neema",
+            "target": "Swali la mwisho: “hakuna matata” ina maana gani?",
+            "base": "Last question: what does “hakuna matata” mean?"
+          },
+          "gloss": { "mwisho": "last, end" }
+        },
+        {
+          "line": { "speaker": "emma", "target": "Ina maana “hakuna shida”!", "base": "It means “no problem”!" },
+          "gloss": { "shida": "problem, trouble" }
+        },
+        { "question": "How does Neema ask “why”?", "options": ["Kwa nini", "Lini", "Wapi"], "answer": 0, "optionsLang": "target" }
+      ]
+    }
+  ]
+}
