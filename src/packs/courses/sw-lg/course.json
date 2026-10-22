@@ -240,6 +240,22 @@
         "u23",
         "u24"
       ]
+    },
+    {
+      "id": "s4",
+      "title": "Jamii na utamaduni",
+      "level": "Kati",
+      "description": "Koo na alama zao, ufalme, kilimo, sherehe, muziki, imani, biashara na mazingira.",
+      "units": [
+        "u25",
+        "u26",
+        "u27",
+        "u28",
+        "u29",
+        "u30",
+        "u31",
+        "u32"
+      ]
     }
   ]
 }

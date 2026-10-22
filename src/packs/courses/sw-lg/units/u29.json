@@ -1,0 +1,565 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u29",
+  "title": "Muziki na densi",
+  "description": "Ngoma, nyimbo na densi, na kueleza watu kwa wanachofanya.",
+  "color": "lilac",
+  "character": "amara",
+  "words": [
+    {
+      "id": "engoma",
+      "target": "engoma",
+      "base": "ngoma",
+      "altBase": [
+        "ngoma nyingi",
+        "dumbaki"
+      ]
+    },
+    {
+      "id": "okukuba",
+      "target": "okukuba",
+      "base": "kupiga",
+      "altBase": [
+        "kucheza",
+        "kugonga",
+        "kupiga ngoma"
+      ],
+      "notes": "Okukuba engoma: kupiga ngoma."
+    },
+    {
+      "id": "endingidi",
+      "target": "endingidi",
+      "base": "zeze",
+      "altBase": [
+        "fidla",
+        "endingidi"
+      ]
+    },
+    {
+      "id": "amadinda",
+      "target": "amadinda",
+      "base": "marimba",
+      "altBase": [
+        "amadinda",
+        "ilimba"
+      ]
+    },
+    {
+      "id": "ennanga",
+      "target": "ennanga",
+      "base": "kinubi",
+      "altBase": [
+        "zeze ya nyuzi",
+        "enanga"
+      ]
+    },
+    {
+      "id": "oluyimba",
+      "target": "oluyimba",
+      "base": "wimbo",
+      "altBase": [
+        "nyimbo"
+      ]
+    },
+    {
+      "id": "omuyimbi",
+      "target": "omuyimbi",
+      "base": "mwimbaji",
+      "altBase": [
+        "mwanamuziki",
+        "msanii"
+      ]
+    },
+    {
+      "id": "amazina",
+      "target": "amazina",
+      "base": "ngoma ya kucheza",
+      "altBase": [
+        "densi",
+        "dansi",
+        "uchezaji",
+        "mchezo"
+      ]
+    },
+    {
+      "id": "bakisimba",
+      "target": "Bakisimba",
+      "base": "Bakisimba",
+      "altBase": [
+        "ngoma ya bakisimba",
+        "ngoma ya kifalme"
+      ],
+      "notes": "Ngoma ya Kiganda inayojulikana zaidi."
+    },
+    {
+      "id": "abayimba",
+      "target": "abayimba",
+      "base": "wanaoimba",
+      "altBase": [
+        "wanaimba",
+        "ambao wanaimba",
+        "waimbaji"
+      ],
+      "notes": "Kirejeshi: abantu abayimba, watu wanaoimba."
+    },
+    {
+      "id": "abazina",
+      "target": "abazina",
+      "base": "wanaocheza",
+      "altBase": [
+        "wanacheza",
+        "ambao wanacheza",
+        "wachezaji"
+      ]
+    },
+    {
+      "id": "akuba",
+      "target": "akuba",
+      "base": "anayepiga",
+      "altBase": [
+        "anapiga",
+        "ambaye anapiga",
+        "mpiga"
+      ]
+    },
+    {
+      "id": "kinyuma",
+      "target": "kinyuma",
+      "base": "inafurahisha",
+      "altBase": [
+        "ni raha",
+        "ni burudani",
+        "inapendeza",
+        "furaha"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s29-kuba-engoma",
+      "target": "Kuba engoma!",
+      "base": "Piga ngoma!",
+      "altBase": [
+        "Ipige ngoma!",
+        "Gonga ngoma!"
+      ]
+    },
+    {
+      "id": "s29-njagala-okukuba-engoma",
+      "target": "Njagala okukuba engoma.",
+      "base": "Ninataka kupiga ngoma.",
+      "altBase": [
+        "Nataka kupiga ngoma.",
+        "Ninapenda kupiga ngoma."
+      ]
+    },
+    {
+      "id": "s29-endingidi",
+      "target": "Endingidi n’amadinda.",
+      "base": "Zeze na marimba.",
+      "altTarget": [
+        "Endingidi namadinda."
+      ],
+      "altBase": [
+        "Endingidi na amadinda."
+      ]
+    },
+    {
+      "id": "s29-ennanga",
+      "target": "Ennanga nnungi nnyo.",
+      "base": "Kinubi ni kizuri sana.",
+      "altBase": [
+        "Kinubi kinapendeza sana.",
+        "Kinubi kinalia vizuri sana."
+      ]
+    },
+    {
+      "id": "s29-oluyimba-lwe",
+      "target": "Oluyimba luno lulungi.",
+      "base": "Wimbo huu ni mzuri.",
+      "altBase": [
+        "Wimbo huu unapendeza."
+      ]
+    },
+    {
+      "id": "s29-omuyimbi",
+      "target": "Omuyimbi ayimba bulungi.",
+      "base": "Mwimbaji anaimba vizuri.",
+      "altBase": [
+        "Mwimbaji huimba vizuri."
+      ]
+    },
+    {
+      "id": "s29-amazina-kinyuma",
+      "target": "Amazina gano ganyuma!",
+      "base": "Ngoma hii inafurahisha!",
+      "altBase": [
+        "Ngoma hizi zinafurahisha!",
+        "Densi hii inafurahisha!"
+      ]
+    },
+    {
+      "id": "s29-bakisimba",
+      "target": "Tuzina Bakisimba.",
+      "base": "Tunacheza Bakisimba.",
+      "altBase": [
+        "Tunacheza ngoma ya Bakisimba."
+      ]
+    },
+    {
+      "id": "s29-abantu-abayimba",
+      "target": "Abantu abayimba bangi.",
+      "base": "Watu wanaoimba ni wengi.",
+      "altBase": [
+        "Kuna watu wengi wanaoimba.",
+        "Watu wengi wanaimba."
+      ]
+    },
+    {
+      "id": "s29-abaana-abazina",
+      "target": "Abaana abazina basanyuse.",
+      "base": "Watoto wanaocheza wana furaha.",
+      "altBase": [
+        "Watoto wanaocheza wamefurahi."
+      ]
+    },
+    {
+      "id": "s29-omusajja-akuba",
+      "target": "Omusajja akuba engoma ye taata.",
+      "base": "Mwanamume anayepiga ngoma ni baba.",
+      "altBase": [
+        "Mwanamume anayepiga ngoma ni baba yangu.",
+        "Mtu anayepiga ngoma ni baba."
+      ]
+    },
+    {
+      "id": "s29-kinyuma",
+      "target": "Kinyuma nnyo!",
+      "base": "Inafurahisha sana!",
+      "altBase": [
+        "Ni raha sana!",
+        "Ni burudani kubwa!"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u29s1",
+      "title": "Ngoma",
+      "icon": "speaker",
+      "lessons": [
+        {
+          "id": "u29s1l1",
+          "newWords": [
+            "engoma",
+            "okukuba"
+          ],
+          "sentences": [
+            "s29-kuba-engoma",
+            "s29-njagala-okukuba-engoma"
+          ]
+        },
+        {
+          "id": "u29s1l2",
+          "newWords": [
+            "endingidi",
+            "amadinda"
+          ],
+          "sentences": [
+            "s29-endingidi"
+          ]
+        },
+        {
+          "id": "u29s1l3",
+          "newWords": [
+            "ennanga"
+          ],
+          "sentences": [
+            "s29-ennanga",
+            "s29-endingidi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u29s2",
+      "title": "Nyimbo na densi",
+      "icon": "star",
+      "lessons": [
+        {
+          "id": "u29s2l1",
+          "newWords": [
+            "oluyimba",
+            "omuyimbi"
+          ],
+          "sentences": [
+            "s29-oluyimba-lwe",
+            "s29-omuyimbi"
+          ]
+        },
+        {
+          "id": "u29s2l2",
+          "newWords": [
+            "amazina",
+            "kinyuma"
+          ],
+          "sentences": [
+            "s29-amazina-kinyuma",
+            "s29-kinyuma"
+          ]
+        },
+        {
+          "id": "u29s2l3",
+          "newWords": [
+            "bakisimba"
+          ],
+          "sentences": [
+            "s29-bakisimba",
+            "s29-amazina-kinyuma"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u29s3",
+      "title": "Nani anafanya nini",
+      "icon": "profile",
+      "tip": "relatives",
+      "lessons": [
+        {
+          "id": "u29s3l1",
+          "newWords": [
+            "abayimba",
+            "abazina"
+          ],
+          "sentences": [
+            "s29-abantu-abayimba",
+            "s29-abaana-abazina"
+          ]
+        },
+        {
+          "id": "u29s3l2",
+          "newWords": [
+            "akuba"
+          ],
+          "sentences": [
+            "s29-omusajja-akuba"
+          ]
+        },
+        {
+          "id": "u29s3l3",
+          "newWords": [],
+          "sentences": [
+            "s29-abantu-abayimba",
+            "s29-omusajja-akuba",
+            "s29-kinyuma"
+          ],
+          "dialogues": [
+            {
+              "speaker": "amara",
+              "target": "Omusajja akuba engoma y’ani?",
+              "base": "Mwanamume anayepiga ngoma ni nani?",
+              "options": [
+                "Ye taata wange!",
+                "Engoma nnene.",
+                "Mwebale okujja."
+              ],
+              "answer": "Ye taata wange!"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Muziki wa Kiganda umejengwa juu ya ngoma, marimba na vinubi, na nyimbo hubeba historia, sifa na ucheshi. Kipengele hiki pia kinaonyesha jinsi ya kusema “anaye…”, “wanao…”.",
+    "phrases": [
+      {
+        "target": "Kuba engoma!",
+        "base": "Piga ngoma!"
+      },
+      {
+        "target": "Oluyimba luno lulungi.",
+        "base": "Wimbo huu ni mzuri."
+      },
+      {
+        "target": "Omuyimbi ayimba bulungi.",
+        "base": "Mwimbaji anaimba vizuri."
+      },
+      {
+        "target": "Tuzina Bakisimba.",
+        "base": "Tunacheza Bakisimba."
+      },
+      {
+        "target": "Abaana abazina basanyuse.",
+        "base": "Watoto wanaocheza wana furaha."
+      },
+      {
+        "target": "Kinyuma nnyo!",
+        "base": "Inafurahisha sana!"
+      }
+    ],
+    "tips": [
+      {
+        "id": "relatives",
+        "title": "Virejeshi: rudisha irabu ya mwanzo",
+        "body": [
+          "Kiswahili huweka **-o-** ndani ya kitenzi (**wanaimba** → **wanaoimba**). Kiganda badala yake huongeza irabu ya mwanzo ya nomino mbele ya kitenzi: **abantu bayimba** ni “watu wanaimba”, lakini **abantu abayimba** ni “watu wanaoimba”. **Ekintu kigwa** ni “kitu kinaanguka”; **ekintu ekigwa** ni “kitu kinachoanguka”.",
+          "Kwa mtu mmoja (nomino za **omu-**) maandishi ni **a-** kwa yote mawili, na toni pekee ndiyo hubadilika: **omusajja akuba engoma** inaweza kumaanisha “mwanamume anapiga ngoma” au “mwanamume anayepiga ngoma”."
+        ],
+        "table": [
+          [
+            "Nomino",
+            "Kinafanya",
+            "Kinachofanya"
+          ],
+          [
+            "abantu (watu)",
+            "bayimba (wanaimba)",
+            "abayimba (wanaoimba)"
+          ],
+          [
+            "ekintu (kitu)",
+            "kigwa (kinaanguka)",
+            "ekigwa (kinachoanguka)"
+          ],
+          [
+            "ente (ng’ombe)",
+            "erya (anakula)",
+            "erya (anayekula)"
+          ],
+          [
+            "ebintu (vitu)",
+            "bigwa (vinaanguka)",
+            "ebigwa (vinavyoanguka)"
+          ]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Ngoma za kifalme",
+        "body": [
+          "Zamani ngoma zilibeba ujumbe kati ya vijiji na kutangaza ujio wa Kabaka. Ngoma za kifalme, **Mujaguzo**, hupigwa wakati wa kutawazwa na sherehe kubwa za kifalme, na ilisemekana Kabaka “anakula Buganda” alipokalia kiti cha enzi kwa sauti yake."
+        ]
+      },
+      {
+        "title": "Bakisimba",
+        "body": [
+          "**Bakisimba** ni ngoma ya Kiganda inayojulikana zaidi, inayochezwa hasa kwa kiuno kwa mdundo wa ngoma na amadinda. Jina lake linatokana na maneno yanayosemekana kusemwa pombe ya kwanza ya ndizi ilipotengenezwa: “walipanda mgomba”."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "drum-lesson",
+      "title": "Somo la ngoma",
+      "unlockAfter": "u29s3l3",
+      "cast": [
+        "amara",
+        "mukasa"
+      ],
+      "summary": "Amara anajifunza kupiga ngoma kwa ajili ya tamasha la shule.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "Ssebo, njagala okukuba engoma ku mukolo gw’essomero.",
+            "base": "Mwalimu, ninataka kupiga ngoma kwenye tamasha la shule."
+          }
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "Kirungi! Kwata engoma eno.",
+            "base": "Vizuri! Shika ngoma hii."
+          },
+          "gloss": {
+            "Kwata": "shika"
+          }
+        },
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "Ennene oba entono?",
+            "base": "Kubwa au ndogo?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "Entono. Wuliriza: bum, bum, ka-bum.",
+            "base": "Ndogo. Sikiliza: bum, bum, ka-bum."
+          },
+          "gloss": {
+            "Wuliriza": "sikiliza"
+          }
+        },
+        {
+          "question": "Amara anapiga ngoma ipi?",
+          "options": [
+            "Kubwa",
+            "Ndogo",
+            "Hakuna ngoma"
+          ],
+          "answer": 1
+        },
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "Bum, bum, ka-bum! Kinyuma nnyo!",
+            "base": "Bum, bum, ka-bum! Inafurahisha sana!"
+          }
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "Abaana abazina bajja kuzina Bakisimba.",
+            "base": "Watoto wanaocheza watacheza Bakisimba."
+          }
+        },
+        {
+          "question": "Wachezaji watacheza nini?",
+          "options": [
+            "Bakisimba",
+            "Mpira wa miguu",
+            "Omweso"
+          ],
+          "answer": 0
+        },
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "Ate ani ajja kuyimba?",
+            "base": "Na nani ataimba?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "Nakato! Ye muyimbi omulungi.",
+            "base": "Nakato! Ni mwimbaji mzuri."
+          }
+        },
+        {
+          "question": "Unasemaje “watoto wanaocheza”?",
+          "options": [
+            "abaana abazina",
+            "abaana bazina",
+            "abaana bazannya"
+          ],
+          "answer": 0,
+          "optionsLang": "target"
+        },
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "Nsanyuse nnyo. Weebale, ssebo!",
+            "base": "Nimefurahi sana. Asante, mwalimu!"
+          }
+        }
+      ]
+    }
+  ]
+}
