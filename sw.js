@@ -1,5 +1,5 @@
 /* Learn Luganda service worker (generated at build time). */
-const VERSION = '689ba2847150';
+const VERSION = '8f9293406f08';
 const CACHE = `learn-luganda-${VERSION}`;
 const FONTS = 'learn-luganda-fonts';
 // Written by the page (src/reminders/reminders.js): the reminder plan and the sent log.
@@ -8,6 +8,7 @@ const PRECACHE = [
   "./",
   "ads.txt",
   "assets/course-CNf6sPzL.js",
+  "assets/course-CUoQfg7X.js",
   "assets/course-D87n5eHe.js",
   "assets/illustrations-Ct7VAUfj.css",
   "assets/illustrations-DtpbPOmb.css",
@@ -15,9 +16,10 @@ const PRECACHE = [
   "assets/illustrations-zkF5YppP.js",
   "assets/lg-Cl8RM6_x.js",
   "assets/main-Cfgh9sg-.css",
-  "assets/main-PpGcz2gs.js",
+  "assets/main-DKrIJ4fp.js",
   "assets/sw-BmJ5ih9h.js",
   "assets/u1-GiE9xdew.js",
+  "assets/u1-JhZZwgoz.js",
   "assets/u1-kGcjFqOY.js",
   "assets/u10-BE7_dolO.js",
   "assets/u11-CSOudtpm.js",
@@ -31,6 +33,7 @@ const PRECACHE = [
   "assets/u19-D1-n4qdZ.js",
   "assets/u2-Bm66tJzi.js",
   "assets/u2-CHbMmr9Y.js",
+  "assets/u2-wkoTOkZq.js",
   "assets/u20-DUXQLv_X.js",
   "assets/u21-CrrdwHWL.js",
   "assets/u22-YADlVEsE.js",
@@ -42,6 +45,7 @@ const PRECACHE = [
   "assets/u28-DK4ER20Q.js",
   "assets/u29-B2N0LIY2.js",
   "assets/u3-0h1FOcFY.js",
+  "assets/u3-530PcLx-.js",
   "assets/u3-D9Z6fxoF.js",
   "assets/u30-wbd8QAZd.js",
   "assets/u31-BEoqASFQ.js",
@@ -55,15 +59,20 @@ const PRECACHE = [
   "assets/u39-DHwQcyAk.js",
   "assets/u4-6rmVVz8R.js",
   "assets/u4-Bdd9wEVp.js",
+  "assets/u4-Ce_M0-XH.js",
   "assets/u40-QJRUoGQR.js",
   "assets/u5-BeRSipKv.js",
   "assets/u5-CQB8TdD6.js",
+  "assets/u5-ccHt1gdU.js",
+  "assets/u6-7epv8qgv.js",
   "assets/u6-BqslFedL.js",
   "assets/u6-lNkO8Cr5.js",
   "assets/u7-B01WHk-3.js",
   "assets/u7-Ckwv0ZuZ.js",
+  "assets/u7-XEwDlELw.js",
   "assets/u8-94rUOrkK.js",
   "assets/u8-B8hoOw_M.js",
+  "assets/u8-Bf1HvzZB.js",
   "assets/u9-DD2wU7qb.js",
   "audio/CREDITS.md",
   "audio/music/amadinda-loop.mp3",
