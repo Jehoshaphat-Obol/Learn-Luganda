@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u14",
+  "notes": {
+    "omulimi": "A farmer.",
+    "omusuubuzi": "A trader, ou a businessman, a businesswoman.",
+    "omuvuzi": "A driver : I am a driver.",
+    "omupoliisi": "A police officer.",
+    "okola-mulimu-ki": "What do you do?",
+    "omusaala": "A salary ; pour l’argent gagné chaque jour, wages.",
+    "bosi": "The boss."
+  },
+  "tips": { "u14s1": "a-farmer", "u14s2": "what-do-you-do" },
+  "guidebook": {
+    "intro": "Parle des métiers. Contrairement au français, l’anglais met « a » devant le métier : I am a farmer.",
+    "tips": [
+      {
+        "id": "a-farmer",
+        "title": "« I am a farmer »",
+        "body": [
+          "En français, on dit **je suis agriculteur** sans article. En anglais, il faut **a** : **I am a farmer. My father is a driver.** Devant une voyelle, **an** : **She is an engineer.**",
+          "Les métiers anglais n’ont presque jamais de féminin : **a nurse, a teacher, a driver** pour un homme comme pour une femme."
+        ]
+      },
+      {
+        "id": "what-do-you-do",
+        "title": "« What do you do? »",
+        "body": [
+          "Pour demander le métier de quelqu’un : **What do you do?** ou **What is your job?** Réponse : **I am a trader. I work in an office. I work for a big company.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Le travail informel",
+        "body": [
+          "Beaucoup d’Ougandais ont plusieurs activités : un emploi, un petit commerce et un jardin au village. On dit volontiers **I do business**."
+        ]
+      }
+    ]
+  }
+}

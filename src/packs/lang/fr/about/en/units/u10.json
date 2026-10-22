@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u10",
+  "notes": {
+    "empale": "Trousers, toujours au pluriel.",
+    "engatto": "Shoes ; une chaussure, a shoe.",
+    "eno": "This pour une chose proche.",
+    "zange": "My : my shoes.",
+    "ngitwala": "I’ll take it.",
+    "nnaaba": "I wash, ou I have a wash.",
+    "yambula": "Take off : take off your shoes."
+  },
+  "tips": { "u10s1": "wear-put-on", "u10s3": "this-these" },
+  "guidebook": {
+    "intro": "Parle de vêtements et fais des achats. L’anglais a deux mots pour « ce » : this (près) et that (loin).",
+    "tips": [
+      {
+        "id": "this-these",
+        "title": "This, that, these, those",
+        "body": [
+          "**This** (ce, cette, ici) et **these** (ces, ici) ; **that** (ce, cette, là-bas) et **those** (ces, là-bas). **This shirt, these shoes, that hat.**",
+          "**Trousers** (pantalon) est toujours au pluriel en anglais : **These trousers are big.**"
+        ]
+      },
+      {
+        "id": "wear-put-on",
+        "title": "Wear, put on, take off",
+        "body": [
+          "**Wear** veut dire porter : **I am wearing a gomesi.** **Put on** veut dire mettre : **Put on a sweater.** **Take off** veut dire enlever : **Take off your shoes.**",
+          "Pour acheter : **I’ll take it** (je le prends), et pour essayer : **Try it on.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Gomesi et kanzu",
+        "body": [
+          "Aux grandes occasions en Ouganda, les femmes portent la **gomesi**, longue robe aux épaules relevées, et les hommes la **kanzu**, longue tunique blanche, souvent avec une veste."
+        ]
+      }
+    ]
+  }
+}

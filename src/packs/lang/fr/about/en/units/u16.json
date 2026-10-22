@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u16",
+  "notes": {
+    "ttakisi": "A taxi : en Ouganda, un minibus partagé.",
+    "mmotoka": "A car : by car.",
+    "mpola": "Slowly.",
+    "mangu": "Quickly, ou fast.",
+    "ntuuse": "I have arrived.",
+    "tugende": "Let’s go!",
+    "olugendo-olulungi": "Have a good trip!",
+    "nitasafiri": "I will travel."
+  },
+  "tips": { "u16s1": "by-bus", "u16s4": "will" },
+  "guidebook": {
+    "intro": "Voyage en taxi, en bus et en avion. Le futur anglais se fait avec « will », et les moyens de transport avec « by ».",
+    "tips": [
+      {
+        "id": "will",
+        "title": "Le futur avec « will »",
+        "body": [
+          "Mets **will** devant le verbe, pour toutes les personnes : **I will travel tomorrow. The train will arrive at six.** À l’oral : **I’ll, we’ll**.",
+          "Pour un projet décidé : **I am going to travel.**"
+        ]
+      },
+      {
+        "id": "by-bus",
+        "title": "« By bus », « by car »",
+        "body": [
+          "En français, **en bus, en voiture, à moto**. En anglais, toujours **by** : **by bus, by car, by plane, by motorbike**. Mais **on foot** (à pied).",
+          "Pour dire que tu es arrivé : **I have arrived** ou **I arrived**. Pas d’accord : un homme et une femme disent la même chose."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Les taxis de Kampala",
+        "body": [
+          "À Kampala, **a taxi** est un minibus partagé qui part quand il est plein ; une voiture privée avec chauffeur, c’est **a special hire**."
+        ]
+      }
+    ]
+  }
+}

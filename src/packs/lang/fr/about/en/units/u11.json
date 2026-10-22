@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u11",
+  "notes": {
+    "nzuukuka": "I wake up.",
+    "ngolokoka": "I get up.",
+    "akola": "She works, he works : avec -s.",
+    "bakola": "They work : sans -s.",
+    "ekyenkya": "Breakfast : I have breakfast.",
+    "nneebaka": "I sleep, ou I go to bed.",
+    "ndaba": "I watch TV."
+  },
+  "tips": { "u11s1": "wake-up", "u11s2": "he-works" },
+  "guidebook": {
+    "intro": "Raconte ta journée. Au présent anglais, une seule forme change : il, elle (he, she) prend un -s.",
+    "tips": [
+      {
+        "id": "he-works",
+        "title": "« He works » : le -s de la troisième personne",
+        "body": [
+          "Le présent anglais est presque toujours pareil : **I work, you work, we work, they work**. Seuls **he** et **she** ajoutent **-s** : **She works at the hospital.**",
+          "Attention : **have** devient **has**, **do** devient **does**, **go** devient **goes**."
+        ]
+      },
+      {
+        "id": "wake-up",
+        "title": "Wake up, get up",
+        "body": [
+          "Les verbes pronominaux français deviennent souvent des verbes à particule : **I wake up** (je me réveille), **I get up** (je me lève), **I go to bed** (je me couche). Pas besoin de « me ».",
+          "Les repas se « prennent » avec **have** : **I have breakfast, I have lunch, I have dinner.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "La journée commence tôt",
+        "body": [
+          "En Ouganda, beaucoup se lèvent avant le soleil : il faut aller au travail en taxi ou à boda-boda avant les embouteillages de Kampala."
+        ]
+      }
+    ]
+  }
+}

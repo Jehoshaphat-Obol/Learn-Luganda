@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u12",
+  "notes": {
+    "enkuba": "Feminine: la pluie. It’s raining: il pleut.",
+    "omusana": "Le soleil. It’s sunny: il y a du soleil, or il fait beau.",
+    "empewo": "Le froid; it’s cold, il fait froid; I’m cold, j’ai froid.",
+    "bwokya": "Il fait chaud for the weather.",
+    "obudde-bulungi": "Il fait beau: literally “it makes beautiful”.",
+    "ekiwempe": "Un parapluie: “for rain”.",
+    "upepo": "Le vent: il y a du vent.",
+    "ekyeya": "La saison sèche: sèche is the feminine of sec.",
+    "laddu": "Un éclair; also the name of a famous cake."
+  },
+  "tips": { "u12s1": "il-fait", "u12s2": "saisons", "u12s3": "avoir-chaud" },
+  "guidebook": {
+    "intro": "Talk about the weather and the seasons. French weather starts with “il”: it rains, it makes good weather.",
+    "tips": [
+      {
+        "id": "il-fait",
+        "title": "Il fait beau, il pleut",
+        "body": [
+          "Most weather uses **il fait**, literally “it makes”: **Il fait beau** (it’s nice), **Il fait chaud** (it’s hot), **Il fait froid** (it’s cold), **Il fait frais** (it’s cool).",
+          "Some use their own verb: **Il pleut** (it’s raining), **Il tonne** (it’s thundering). Others use **il y a**: **Il y a du vent, il y a du soleil, il y a des nuages.**"
+        ]
+      },
+      {
+        "id": "avoir-chaud",
+        "title": "J’ai chaud or il fait chaud?",
+        "body": [
+          "For the weather, **il fait chaud**. For how you feel, **avoir**: **J’ai chaud** (I’m hot), **J’ai froid** (I’m cold), like **J’ai faim**.",
+          "Never say “je suis chaud”: it means something quite different!"
+        ]
+      },
+      {
+        "id": "saisons",
+        "title": "Seasons",
+        "body": [
+          "In East and Central Africa, people talk about **la saison des pluies** (rainy season) and **la saison sèche** (dry season). Use **à** or **pendant**: **À la saison des pluies, il pleut beaucoup.**",
+          "The four European seasons are **le printemps, l’été, l’automne, l’hiver**: **au printemps**, but **en été, en automne, en hiver**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Talking about the weather",
+        "body": [
+          "As in English, the weather is the safest small talk: **Il fait chaud aujourd’hui, hein !** In Kinshasa or Abidjan, the rain can stop a whole city, and people say **la pluie nous a bloqués**."
+        ]
+      }
+    ]
+  }
+}

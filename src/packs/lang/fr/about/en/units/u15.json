@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u15",
+  "notes": {
+    "musome": "Read : la même forme pour un élève ou toute la classe.",
+    "olungereza": "English, avec une majuscule.",
+    "okubala": "Maths, sans article.",
+    "otegeera": "Do you understand?",
+    "ddamu": "Repeat, ou Say it again.",
+    "omulimu-gwawaka": "Homework : jamais au pluriel en anglais."
+  },
+  "tips": { "u15s3": "do-questions", "u15s4": "how-do-you-say" },
+  "guidebook": {
+    "intro": "Suis les cours en classe. En anglais, les questions se forment souvent avec « do ».",
+    "tips": [
+      {
+        "id": "do-questions",
+        "title": "Les questions avec « do »",
+        "body": [
+          "Pour poser une question, mets **do** devant le sujet : **Do you understand?** (tu comprends ?), **Do you have a pen?** Avec he ou she : **does** : **Does she speak English?**",
+          "Avec **be**, on inverse simplement : **Are you a student? Is it difficult?**"
+        ]
+      },
+      {
+        "id": "how-do-you-say",
+        "title": "« How do you say…? »",
+        "body": [
+          "Deux phrases utiles : **How do you say … in English?** (comment dit-on … en anglais ?) et **What does that mean?** (qu’est-ce que ça veut dire ?).",
+          "Les matières n’ont pas d’article : **I like maths. I study English.** Les noms de langues prennent une majuscule : **English, Luganda, French**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "L’école en anglais",
+        "body": [
+          "En Ouganda, l’anglais devient la langue des cours à partir de la cinquième année de primaire. Les élèves passent le **PLE** à la fin du primaire."
+        ]
+      }
+    ]
+  }
+}
