@@ -6,7 +6,8 @@
 import '../styles/lesson.css';
 import '../styles/stories.css';
 import { speak, speakButton } from '../audio/speech.js';
-import { castMember, course, langAttr, languageName } from '../content/course.js';
+import { castMember, course, langAttr } from '../content/course.js';
+import { courseLanguage } from '../content/names.js';
 import { store } from '../state/store.js';
 import { storyKey, storyList, isStoryUnlocked, isStoryDone } from '../state/stories.js';
 import { finishLesson } from '../state/lessons.js';
@@ -65,7 +66,7 @@ export function storiesView({ root }) {
       <header class="page__header">
         <p class="eyebrow">${escapeHtml(t('stories.eyebrow'))}</p>
         <h1>${tHtml('stories.title')}</h1>
-        <p class="muted">${escapeHtml(t('stories.lead', { language: languageName('base') }))}</p>
+        <p class="muted">${escapeHtml(t('stories.lead', { language: courseLanguage('base') }))}</p>
       </header>
       ${course.units
         .map((u) => {

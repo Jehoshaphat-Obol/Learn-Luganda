@@ -12,13 +12,13 @@
  *   course      the chosen course id
  */
 import regions from '../packs/regions.json';
-import { detectUiLanguage, t, UI_LANGUAGES } from '../i18n/index.js';
+import { detectUiLanguage, languageLabel, t, UI_LANGUAGES } from '../i18n/index.js';
 import { LANGUAGES, languageInfo } from '../i18n/languages.js';
 import { baseLanguages, coursesFrom, coursesTo, deviceTimeZone, suggestLanguage } from '../i18n/catalog.js';
 import { COURSES, changeCourse, changeUiLanguage } from '../app/languages.js';
 import { escapeHtml } from '../ui/components.js';
 
-const nameOf = (code) => languageInfo(code).name;
+const nameOf = languageLabel;
 const nativeOf = (code) => languageInfo(code).nativeName;
 
 /** The learner's likely language, worked out once per visit. */

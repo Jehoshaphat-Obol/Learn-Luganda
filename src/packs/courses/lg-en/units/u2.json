@@ -1,0 +1,573 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u2",
+  "title": "Abantu n’ebintu",
+  "description": "Ab’omu maka, ebintu bya buli lunaku n’ebikolwa byo ebisooka.",
+  "color": "ink",
+  "character": "jjajja",
+  "words": [
+    {
+      "id": "maama",
+      "target": "mother",
+      "base": "maama",
+      "altTarget": ["mom", "mum", "mama"]
+    },
+    {
+      "id": "taata",
+      "target": "father",
+      "base": "taata",
+      "altTarget": ["dad", "papa"]
+    },
+    {
+      "id": "jjajja",
+      "target": "grandparent",
+      "base": "jjajja",
+      "altTarget": ["grandmother", "grandfather", "grandma", "grandpa"]
+    },
+    {
+      "id": "omwana",
+      "target": "child",
+      "base": "omwana",
+      "altTarget": ["a child", "the child", "kid"]
+    },
+    {
+      "id": "abaana",
+      "target": "children",
+      "base": "abaana",
+      "altTarget": ["the children", "kids"],
+      "notes": "Omu “child”, bangi “children”."
+    },
+    {
+      "id": "omusajja",
+      "target": "man",
+      "base": "omusajja",
+      "altTarget": ["a man", "the man"]
+    },
+    {
+      "id": "abasajja",
+      "target": "men",
+      "base": "abasajja",
+      "altTarget": ["the men"],
+      "notes": "Omu “man”, bangi “men”. Tegwongerako -s."
+    },
+    {
+      "id": "omukazi",
+      "target": "woman",
+      "base": "omukazi",
+      "altTarget": ["a woman", "the woman"]
+    },
+    {
+      "id": "abakazi",
+      "target": "women",
+      "base": "abakazi",
+      "altTarget": ["the women"],
+      "notes": "Omu “woman”, bangi “women”."
+    },
+    {
+      "id": "omuntu",
+      "target": "person",
+      "base": "omuntu",
+      "altTarget": ["a person", "the person"]
+    },
+    {
+      "id": "abantu",
+      "target": "people",
+      "base": "abantu",
+      "altTarget": ["the people"],
+      "notes": "Omu “person”, bangi “people”."
+    },
+    {
+      "id": "abayizi",
+      "target": "students",
+      "base": "abayizi",
+      "altTarget": ["the students", "learners"]
+    },
+    {
+      "id": "omusomesa",
+      "target": "teacher",
+      "base": "omusomesa",
+      "altTarget": ["a teacher", "the teacher"]
+    },
+    {
+      "id": "abasomesa",
+      "target": "teachers",
+      "base": "abasomesa",
+      "altTarget": ["the teachers"]
+    },
+    {
+      "id": "ekitabo",
+      "target": "book",
+      "base": "ekitabo",
+      "altTarget": ["a book", "the book"]
+    },
+    {
+      "id": "ebitabo",
+      "target": "books",
+      "base": "ebitabo",
+      "altTarget": ["the books"],
+      "notes": "Ebisinga mu Lungereza byongerako -s nga bingi: book, books."
+    },
+    {
+      "id": "ekikopo",
+      "target": "cup",
+      "base": "ekikopo",
+      "altTarget": ["a cup", "the cup"]
+    },
+    {
+      "id": "ebikopo",
+      "target": "cups",
+      "base": "ebikopo",
+      "altTarget": ["the cups"]
+    },
+    {
+      "id": "ekintu",
+      "target": "thing",
+      "base": "ekintu",
+      "altTarget": ["a thing", "the thing"]
+    },
+    {
+      "id": "ebintu",
+      "target": "things",
+      "base": "ebintu",
+      "altTarget": ["the things"]
+    },
+    {
+      "id": "ekitanda",
+      "target": "bed",
+      "base": "ekitanda",
+      "altTarget": ["a bed", "the bed"]
+    },
+    {
+      "id": "ebitanda",
+      "target": "beds",
+      "base": "ebitanda",
+      "altTarget": ["the beds"]
+    },
+    {
+      "id": "amazzi",
+      "target": "water",
+      "base": "amazzi",
+      "altTarget": ["the water"]
+    },
+    {
+      "id": "emmere",
+      "target": "food",
+      "base": "emmere",
+      "altTarget": ["the food"]
+    },
+    {
+      "id": "caayi",
+      "target": "tea",
+      "base": "caayi",
+      "altTarget": ["the tea"]
+    },
+    {
+      "id": "oluganda",
+      "target": "Luganda",
+      "base": "Oluganda"
+    },
+    {
+      "id": "njagala",
+      "target": "I want",
+      "base": "Njagala",
+      "altTarget": ["i like", "i love"]
+    },
+    {
+      "id": "ndya",
+      "target": "I eat",
+      "base": "Ndya",
+      "altTarget": ["i am eating", "i’m eating"]
+    },
+    {
+      "id": "nnywa",
+      "target": "I drink",
+      "base": "Nnywa",
+      "altTarget": ["i am drinking", "i’m drinking"]
+    },
+    {
+      "id": "nsoma",
+      "target": "I read",
+      "base": "Nsoma",
+      "altTarget": ["i am reading", "i’m reading", "i study"]
+    },
+    {
+      "id": "njiga",
+      "target": "I learn",
+      "base": "Njiga",
+      "altTarget": ["i am learning", "i’m learning"]
+    },
+    {
+      "id": "oyagala-ki",
+      "target": "What do you want?",
+      "base": "Oyagala ki?",
+      "altTarget": ["what would you like"]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s-maama-wange",
+      "target": "My mother.",
+      "base": "Maama wange.",
+      "altTarget": ["My mom.", "My mum."]
+    },
+    {
+      "id": "s-taata-wange",
+      "target": "My father.",
+      "base": "Taata wange.",
+      "altTarget": ["My dad."]
+    },
+    {
+      "id": "s-jjajja-wange",
+      "target": "My grandparent.",
+      "base": "Jjajja wange.",
+      "altTarget": [
+        "My grandmother.",
+        "My grandfather.",
+        "My grandma.",
+        "My grandpa."
+      ]
+    },
+    {
+      "id": "s-omwana-wange",
+      "target": "My child.",
+      "base": "Omwana wange."
+    },
+    {
+      "id": "s-omusajja-omukazi",
+      "target": "A man and a woman.",
+      "base": "Omusajja n’omukazi.",
+      "altTarget": ["The man and the woman."]
+    },
+    {
+      "id": "s-abaana-abayizi",
+      "target": "The children are students.",
+      "base": "Abaana bayizi.",
+      "altTarget": ["Children are students."]
+    },
+    {
+      "id": "s-omusomesa-wange",
+      "target": "My teacher.",
+      "base": "Omusomesa wange."
+    },
+    {
+      "id": "s-ekitabo-kyange",
+      "target": "My book.",
+      "base": "Ekitabo kyange."
+    },
+    {
+      "id": "s-ebitabo-byange",
+      "target": "My books.",
+      "base": "Ebitabo byange."
+    },
+    {
+      "id": "s-njagala-amazzi",
+      "target": "I want water.",
+      "base": "Njagala amazzi.",
+      "altTarget": ["I would like water.", "I want some water."]
+    },
+    {
+      "id": "s-njagala-emmere",
+      "target": "I want food.",
+      "base": "Njagala emmere.",
+      "altTarget": ["I would like food.", "I want some food."]
+    },
+    {
+      "id": "s-nnywa-caayi",
+      "target": "I drink tea.",
+      "base": "Nnywa caayi.",
+      "altTarget": ["I am drinking tea.", "I’m drinking tea."]
+    },
+    {
+      "id": "s-ndya-emmere",
+      "target": "I eat food.",
+      "base": "Ndya emmere.",
+      "altTarget": ["I am eating food.", "I’m eating food.", "I am eating."]
+    },
+    {
+      "id": "s-nsoma-ekitabo",
+      "target": "I read a book.",
+      "base": "Nsoma ekitabo.",
+      "altTarget": [
+        "I am reading a book.",
+        "I’m reading a book.",
+        "I read the book."
+      ]
+    },
+    {
+      "id": "s-njiga-oluganda",
+      "target": "I am learning Luganda.",
+      "base": "Njiga Oluganda.",
+      "altTarget": ["I’m learning Luganda.", "I learn Luganda."]
+    },
+    {
+      "id": "s-oyagala-ki",
+      "target": "What do you want?",
+      "base": "Oyagala ki?",
+      "altTarget": ["What would you like?"]
+    },
+    {
+      "id": "s-njagala-ekikopo",
+      "target": "I want a cup.",
+      "base": "Njagala ekikopo.",
+      "altTarget": ["I want the cup."]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u2s1",
+      "title": "Ab’omu maka",
+      "icon": "heart",
+      "tip": "my-your",
+      "lessons": [
+        {
+          "id": "u2s1l1",
+          "newWords": ["maama", "taata", "jjajja", "omwana"],
+          "sentences": [
+            "s-maama-wange",
+            "s-taata-wange",
+            "s-jjajja-wange",
+            "s-omwana-wange"
+          ]
+        },
+        {
+          "id": "u2s1l2",
+          "newWords": ["abaana", "omusajja", "omukazi", "abasajja", "abakazi"],
+          "sentences": [
+            "s-omusajja-omukazi",
+            "s-omwana-wange",
+            "s-maama-wange"
+          ],
+          "dialogues": [
+            {
+              "speaker": "jjajja",
+              "target": "Who is this?",
+              "base": "Ono ani?",
+              "options": ["My mother.", "I want water.", "My books."],
+              "answer": "My mother."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2s2",
+      "title": "Abantu n’ebintu",
+      "icon": "book",
+      "tip": "plurals",
+      "lessons": [
+        {
+          "id": "u2s2l1",
+          "newWords": ["omuntu", "abantu", "abayizi", "omusomesa", "abasomesa"],
+          "sentences": ["s-abaana-abayizi", "s-omusomesa-wange"]
+        },
+        {
+          "id": "u2s2l2",
+          "newWords": ["ekitabo", "ebitabo", "ekikopo", "ebikopo"],
+          "sentences": ["s-ekitabo-kyange", "s-ebitabo-byange"]
+        },
+        {
+          "id": "u2s2l3",
+          "newWords": ["ekintu", "ebintu", "ekitanda", "ebitanda"],
+          "sentences": [
+            "s-ekitabo-kyange",
+            "s-ebitabo-byange",
+            "s-omusomesa-wange"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u2s3",
+      "title": "Ebikolwa ebisooka",
+      "icon": "bolt",
+      "tip": "a-the",
+      "lessons": [
+        {
+          "id": "u2s3l1",
+          "newWords": ["njagala", "amazzi", "emmere", "oyagala-ki"],
+          "sentences": ["s-njagala-amazzi", "s-njagala-emmere", "s-oyagala-ki"]
+        },
+        {
+          "id": "u2s3l2",
+          "newWords": ["ndya", "nnywa", "caayi"],
+          "sentences": ["s-nnywa-caayi", "s-ndya-emmere", "s-njagala-amazzi"]
+        },
+        {
+          "id": "u2s3l3",
+          "newWords": ["nsoma", "njiga", "oluganda"],
+          "sentences": [
+            "s-nsoma-ekitabo",
+            "s-njiga-oluganda",
+            "s-njagala-ekikopo"
+          ],
+          "dialogues": [
+            {
+              "speaker": "nakato",
+              "target": "What do you want?",
+              "base": "Oyagala ki?",
+              "options": ["I want tea.", "I am Nakato.", "Good morning."],
+              "answer": "I want tea."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Ekitundu kino kikuyigiriza ab’omu maka, ebintu bya buli lunaku n’ebikolwa ebisooka nga **I want**, **I eat** ne **I drink**.",
+    "phrases": [
+      {
+        "target": "My mother.",
+        "base": "Maama wange."
+      },
+      {
+        "target": "My child.",
+        "base": "Omwana wange."
+      },
+      {
+        "target": "The children are students.",
+        "base": "Abaana bayizi."
+      },
+      {
+        "target": "My book.",
+        "base": "Ekitabo kyange."
+      },
+      {
+        "target": "My books.",
+        "base": "Ebitabo byange."
+      },
+      {
+        "target": "What do you want?",
+        "base": "Oyagala ki?"
+      },
+      {
+        "target": "I want water.",
+        "base": "Njagala amazzi."
+      },
+      {
+        "target": "I drink tea.",
+        "base": "Nnywa caayi."
+      },
+      {
+        "target": "I am learning Luganda.",
+        "base": "Njiga Oluganda."
+      }
+    ],
+    "tips": [
+      {
+        "id": "my-your",
+        "title": "“My” tekikyuka",
+        "body": [
+          "Mu Luganda ekigambo “wange” kikyuka okusinziira ku linnya: maama **wange**, ekitabo **kyange**, ebitabo **byange**. Mu Lungereza **my** kye kimu bulijjo: **my mother**, **my book**, **my books**.",
+          "Era **my** kijja **mu maaso** g’erinnya, si mabega: “Maama wange” = **My mother**."
+        ]
+      },
+      {
+        "id": "plurals",
+        "title": "Okufuula ebingi",
+        "body": [
+          "Mu Luganda entandikwa y’erinnya ekyuka: **ekitabo**, **ebitabo**. Mu Lungereza ebisinga byongerako **-s** ku nkomerero: **book**, **books**; **cup**, **cups**.",
+          "Ebimu tebigoberera nkola, era byetaaga okukwatibwa mu mutwe:"
+        ],
+        "table": [
+          ["Omu", "Bangi", "Luganda"],
+          ["man", "men", "omusajja, abasajja"],
+          ["woman", "women", "omukazi, abakazi"],
+          ["child", "children", "omwana, abaana"],
+          ["person", "people", "omuntu, abantu"]
+        ]
+      },
+      {
+        "id": "a-the",
+        "title": "“A” ne “the”",
+        "body": [
+          "Oluganda terulina bigambo bino. Mu Lungereza **a** kiteekebwa mu maaso g’ekintu ekimu ekitamanyiddwa: **a book** (ekitabo kimu). **The** kiteekebwa ku kintu ekimanyiddwa: **the book** (ekitabo ekyo).",
+          "Ebintu ebitabalika, nga **water**, **food** ne **tea**, tebiteekebwako **a**: **I want water.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Jjajja",
+        "body": [
+          "Mu Lungereza **grandmother** ye jjajja omukazi, ate **grandfather** jjajja omusajja. Abaana batera okugamba **Grandma** ne **Grandpa**. Mu Uganda, era bangi bagamba “Jjajja” nga boogera Olungereza."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "market-matooke",
+      "title": "Matooke mu katale",
+      "unlockAfter": "u2s3l1",
+      "cast": ["emma", "mukasa"],
+      "summary": "Emma agula matooke ow’eky’eggulo.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "How are you, sir?",
+            "base": "Oli otya, ssebo?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "I’m fine, madam. What do you want?",
+            "base": "Gyendi, nnyabo. Oyagala ki?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "I want matooke.",
+            "base": "Njagala matooke."
+          }
+        },
+        {
+          "question": "Emma ayagala ki?",
+          "options": ["Caayi", "Matooke", "Ekitabo"],
+          "answer": 1
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "Okay. Five thousand shillings.",
+            "base": "Kale. Ssente nkumi ttaano."
+          }
+        },
+        {
+          "question": "Matooke ssente mmeka?",
+          "options": ["Nkumi bbiri", "Nkumi ttaano", "Omutwalo"],
+          "answer": 1
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Okay. I want water too.",
+            "base": "Kale. Njagala n’amazzi."
+          }
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "Here is the water. Thank you very much, madam!",
+            "base": "Gano amazzi. Weebale nnyo, nnyabo!"
+          }
+        },
+        {
+          "question": "Emma agula ki ekirala?",
+          "options": ["Amazzi", "Caayi", "Emmere ya Jjajja"],
+          "answer": 0
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Thank you, sir. Goodbye!",
+            "base": "Weebale, ssebo. Weraba!"
+          }
+        }
+      ]
+    }
+  ]
+}

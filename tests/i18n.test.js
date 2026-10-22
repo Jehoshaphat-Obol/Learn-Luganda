@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
 import { deepFreeze } from '../src/i18n/freeze.js';
 import { detectLanguage, flatten, format, lookup, placeholders } from '../src/i18n/format.js';
-import { DEFAULT_LANGUAGE, UI_LANGUAGES, currentLanguage, detectUiLanguage, onLanguageChange, setLanguage, t, tList, useUiPack } from '../src/i18n/index.js';
+import { DEFAULT_LANGUAGE, UI_LANGUAGES, currentLanguage, detectUiLanguage, languageLabel, onLanguageChange, setLanguage, t, tList, useUiPack } from '../src/i18n/index.js';
 import { LANGUAGES, languageInfo } from '../src/i18n/languages.js';
 import { LIST_GROUPS, validateUiPack } from '../src/i18n/validate.js';
 import en from '../src/packs/ui/en.json';
@@ -149,6 +149,8 @@ describe('UI pack validation', () => {
     expect(detectUiLanguage(['lg-UG', 'en'])).toBe('lg');
     expect(await setLanguage('lg')).toBe('lg');
     expect(t('nav.learn')).toBe('Yiga');
+    expect(languageLabel('en')).toBe('Olungereza');
+    expect(languageLabel('zz')).toBe('zz');
     expect(document.documentElement.lang).toBe('lg');
     await setLanguage('en');
   });

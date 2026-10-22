@@ -972,6 +972,31 @@
     "sounds": {
       "playful": "Eby’essanyu",
       "soft": "Ebigonvu"
+    },
+    "languageNames": {
+      "en": "Olungereza",
+      "lg": "Oluganda",
+      "sw": "Oluswayiri",
+      "nyn": "Olunyankole",
+      "rw": "Olunyarwanda",
+      "ha": "Oluhausa",
+      "yo": "Oluyoruba",
+      "ig": "Oluigbo",
+      "tw": "Olutwi",
+      "wo": "Oluwolof",
+      "am": "Oluamhariki",
+      "om": "Oluoromo",
+      "ln": "Olulingala",
+      "zu": "Oluzulu",
+      "xh": "Oluxhosa",
+      "st": "Olusotho",
+      "sn": "Olushona",
+      "ny": "Olucheewa",
+      "mg": "Olumalagase",
+      "af": "Oluafrikaana",
+      "fr": "Olufalansa",
+      "pt": "Olupotugiizi",
+      "ar": "Oluwarabu"
     }
   }
 }

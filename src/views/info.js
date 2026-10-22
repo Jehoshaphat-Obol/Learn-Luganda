@@ -4,7 +4,8 @@
  * from the UI pack (`pages.*`), with the course's language filled in.
  */
 import { SITE, siteLinks } from '../app/site.js';
-import { course, languageName } from '../content/course.js';
+import { course } from '../content/course.js';
+import { courseLanguage } from '../content/names.js';
 import { t, tHtml } from '../i18n/index.js';
 import { escapeHtml } from '../ui/components.js';
 
@@ -15,7 +16,7 @@ export const UPDATED = new Date(2026, 9, 21);
 export const updated = () => t('pages.updated', { date: UPDATED.toLocaleDateString(document.documentElement.lang || 'en', { day: 'numeric', month: 'long', year: 'numeric' }) });
 
 /** Values every page's text can use. */
-export const pageParams = () => ({ app: t('app.name'), language: languageName('target'), repo: SITE.repoUrl, issues: SITE.issuesUrl, description: course.pack?.meta?.description ?? '' });
+export const pageParams = () => ({ app: t('app.name'), language: courseLanguage('target'), repo: SITE.repoUrl, issues: SITE.issuesUrl, description: course.pack?.meta?.description ?? '' });
 
 /** A heading and paragraph from `pages.<page>.<key>Title` and `.<key>`. */
 export const part = (page, key, params = pageParams()) => `<h2>${escapeHtml(t(`pages.${page}.${key}Title`))}</h2><p>${tHtml(`pages.${page}.${key}`, params)}</p>`;

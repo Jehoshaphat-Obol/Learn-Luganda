@@ -2,19 +2,42 @@ import { expect, test } from '@playwright/test';
 import { openWith, readState, savedState } from './helpers.js';
 
 test.describe('in Kampala', () => {
-  test.use({ timezoneId: 'Africa/Kampala' });
+  test.use({ timezoneId: 'Africa/Kampala', locale: 'en-UG' });
 
-  test('the crane guesses Luganda and picks the course on one tap', async ({ page }) => {
+  test('the crane guesses English and asks whether you speak it or want to learn it', async ({ page }) => {
     await page.goto('./#/onboarding');
-    await expect(page.locator('.onb-langs__hello.is-guess')).toHaveText('Oli otya');
-    await expect(page.locator('[data-nav="next"]')).toBeDisabled();
-    await page.getByRole('radio', { name: /Teach me Luganda/ }).click();
-    await expect(page.getByRole('radio', { name: /In English/ })).toHaveAttribute('aria-checked', 'true');
+    await expect(page.locator('.onb-langs__hello.is-guess')).toHaveText('Hello');
+    await expect(page.getByRole('radio', { name: /Teach me English/ })).toBeVisible();
+    await page.getByRole('radio', { name: /I speak English/ }).click();
+    await expect(page.getByRole('radio', { name: /Luganda, taught in English/ })).toHaveAttribute('aria-checked', 'true');
     await page.locator('[data-nav="next"]').click();
     await expect(page.getByRole('button', { name: /Let’s go/ })).toBeVisible();
     const s = await readState(page);
     expect(s.settings).toMatchObject({ course: 'en-lg', uiLang: null });
-    expect(s.onboarding.answers).toMatchObject({ langAnswer: 'learn', learn: 'lg', course: 'en-lg' });
+    expect(s.onboarding.answers).toMatchObject({ langAnswer: 'speak', speak: 'en', course: 'en-lg' });
+  });
+
+  test('learning English is taught in Luganda, and the whole app switches to Luganda', async ({ page }) => {
+    await page.goto('./#/onboarding');
+    await page.getByRole('radio', { name: /Teach me English/ }).click();
+    await expect(page.getByRole('radio', { name: /In Luganda/ })).toHaveAttribute('aria-checked', 'true');
+    await page.locator('[data-nav="next"]').click();
+    await expect(page.locator('html')).toHaveAttribute('lang', 'lg');
+    await expect(page.getByRole('button', { name: 'Tugende' })).toBeVisible();
+    await expect.poll(async () => (await readState(page)).settings.course).toBe('lg-en');
+    const s = await readState(page);
+    expect(s.settings.uiLang).toBe('lg');
+    expect(s.onboarding.answers).toMatchObject({ langAnswer: 'learn', learn: 'en', course: 'lg-en' });
+  });
+});
+
+test.describe('in Kampala, with a Luganda browser', () => {
+  test.use({ timezoneId: 'Africa/Kampala', locale: 'lg-UG' });
+
+  test('the crane greets in Luganda and the page is already in Luganda', async ({ page }) => {
+    await page.goto('./#/onboarding');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'lg');
+    await expect(page.locator('.onb-langs__hello.is-guess')).toHaveText('Oli otya');
   });
 });
 
@@ -35,7 +58,8 @@ test('“something else” opens the full picker', async ({ page }) => {
   await page.goto('./#/onboarding');
   await page.getByRole('button', { name: 'Something else' }).click();
   await expect(page.getByRole('group', { name: 'I speak' })).toBeVisible();
-  await page.getByRole('radio', { name: 'Luganda', exact: true }).click();
+  await page.getByRole('group', { name: 'I speak' }).getByRole('radio', { name: 'English', exact: true }).click();
+  await page.getByRole('group', { name: 'I want to learn' }).getByRole('radio', { name: 'Luganda', exact: true }).click();
   await page.locator('[data-nav="next"]').click();
   expect((await readState(page)).settings.course).toBe('en-lg');
 });

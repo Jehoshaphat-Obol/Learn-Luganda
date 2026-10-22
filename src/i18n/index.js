@@ -94,6 +94,14 @@ export function tList(key, params) {
   return (list.length ? list : group(ENGLISH.strings)).map((v) => format(v, params, active.meta.code));
 }
 
+/**
+ * A language's name in the interface language ("Olungereza" in Luganda),
+ * from the pack's `languageNames`, else the registry's English name.
+ */
+export function languageLabel(code) {
+  return lookup(active.strings, `languageNames.${code}`) ?? lookup(ENGLISH.strings, `languageNames.${code}`) ?? languageInfo(code).name;
+}
+
 /** Like `t`, as safe HTML with the pack's **bold**, _italic_ and [links](#/path). */
 export const tHtml = (key, params) => rich(t(key, params));
 
