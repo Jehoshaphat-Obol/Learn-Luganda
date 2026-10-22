@@ -13,7 +13,8 @@ import { avatar } from '../ui/avatar.js';
 import { icon } from '../ui/icons.js';
 import { trackPixel } from '../marketing/pixel.js';
 import { applyLanguages, languageScreen, onGuessReply } from './language-picker.js';
-import { course, languageName } from '../content/course.js';
+import { course } from '../content/course.js';
+import { courseLanguage } from '../content/names.js';
 import { t, tHtml } from '../i18n/index.js';
 
 // Labels are UI pack keys under onboarding.motivation / onboarding.level.
@@ -29,7 +30,7 @@ const MOTIVATIONS = [
 const LEVELS = ['new', 'some'];
 
 /** Values onboarding text can use: the course's language, greeting and place. */
-const params = () => ({ language: languageName('target'), hello: course.landing?.hello ?? '', thanks: course.landing?.thanks ?? '', place: course.landing?.place ?? '', mascot: MASCOT_NAME });
+const params = () => ({ language: courseLanguage('target'), hello: course.landing?.hello ?? '', thanks: course.landing?.thanks ?? '', place: course.landing?.place ?? '', mascot: MASCOT_NAME });
 const say = (key, extra) => escapeHtml(t(key, { ...params(), ...extra }));
 
 const STEPS = ['languages', 'welcome', 'motivation', 'goal', 'level', 'avatar', 'ready'];

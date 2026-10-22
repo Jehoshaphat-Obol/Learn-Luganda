@@ -900,6 +900,31 @@
     "sounds": {
       "playful": "Playful",
       "soft": "Soft"
+    },
+    "languageNames": {
+      "en": "English",
+      "lg": "Luganda",
+      "sw": "Swahili",
+      "nyn": "Runyankore",
+      "rw": "Kinyarwanda",
+      "ha": "Hausa",
+      "yo": "Yoruba",
+      "ig": "Igbo",
+      "tw": "Twi",
+      "wo": "Wolof",
+      "am": "Amharic",
+      "om": "Oromo",
+      "ln": "Lingala",
+      "zu": "Zulu",
+      "xh": "Xhosa",
+      "st": "Sesotho",
+      "sn": "Shona",
+      "ny": "Chichewa",
+      "mg": "Malagasy",
+      "af": "Afrikaans",
+      "fr": "French",
+      "pt": "Portuguese",
+      "ar": "Arabic"
     }
   }
 }

@@ -3,7 +3,8 @@
  * tile to send it back. "Use keyboard" swaps the bank for a text box (and
  * stays that way for the rest of the visit).
  */
-import { langAttr, languageName } from '../../content/course.js';
+import { langAttr } from '../../content/course.js';
+import { courseLanguage } from '../../content/names.js';
 import { escapeHtml } from '../../ui/components.js';
 import { checkTyped, isAccepted } from '../answers.js';
 import { speakButton } from '../../audio/speech.js';
@@ -26,7 +27,7 @@ export function renderTranslate(ex, el, api) {
         ${ex.bank.map((t, i) => `<button class="tile" type="button" data-tile="${i}"${langAttr(ex.lang)}>${escapeHtml(t)}</button>`).join('')}
       </div>
       <label class="visually-hidden" for="ex-translate-input">${escapeHtml(t('lesson.yourAnswer'))}</label>
-      <textarea id="ex-translate-input" class="input ex-type__input" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" hidden${langAttr(ex.lang)} placeholder="${escapeHtml(t('lesson.typeIn', { language: languageName(ex.lang) }))}"></textarea>
+      <textarea id="ex-translate-input" class="input ex-type__input" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" hidden${langAttr(ex.lang)} placeholder="${escapeHtml(t('lesson.typeIn', { language: courseLanguage(ex.lang) }))}"></textarea>
       <button class="btn btn--ghost btn--sm ex-translate__mode" type="button" data-mode>${escapeHtml(t('lesson.keyboard'))}</button>
     </div>`;
 

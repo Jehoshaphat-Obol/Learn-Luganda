@@ -13,7 +13,7 @@ import { barChart } from '../ui/barchart.js';
 import { profileStats } from '../state/stats.js';
 import { dailyGoal, xpHistory } from '../state/xp.js';
 import { fromDayKey } from '../state/dates.js';
-import { languageName } from '../content/course.js';
+import { courseLanguage } from '../content/names.js';
 import { currentLanguage, t } from '../i18n/index.js';
 
 export function achievementList(state) {
@@ -58,7 +58,7 @@ export function profileView({ root }) {
         ${avatar(p.avatar, { size: 96, label: p.name })}
         <div class="profile-head__text">
           <h1><strong>${escapeHtml(p.name)}</strong></h1>
-          <p class="muted">${escapeHtml(t('profile.since', { language: languageName('target'), date: new Date(p.joinedAt).toLocaleDateString(locale, { month: 'long', year: 'numeric' }) }))}</p>
+          <p class="muted">${escapeHtml(t('profile.since', { language: courseLanguage('target'), date: new Date(p.joinedAt).toLocaleDateString(locale, { month: 'long', year: 'numeric' }) }))}</p>
         </div>
         ${button({ label: t('profile.edit'), variant: 'secondary', href: '#/settings?section=profile', attrs: `aria-label="${escapeHtml(t('profile.editLabel'))}"` })}
       </header>

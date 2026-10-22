@@ -19,10 +19,11 @@ import { endAdBreak } from '../ads/breaks.js';
 import { POLICY } from '../ads/policy.js';
 import { siteLinks } from '../app/site.js';
 import { COURSES, changeCourse, changeUiLanguage, loadSaved } from '../app/languages.js';
-import { currentLanguage, detectUiLanguage, t, tHtml, UI_LANGUAGES } from '../i18n/index.js';
+import { currentLanguage, detectUiLanguage, languageLabel, t, tHtml, UI_LANGUAGES } from '../i18n/index.js';
 import { languageInfo } from '../i18n/languages.js';
 import { canSynthesize, speak, stopSpeech } from '../audio/speech.js';
-import { course, languageName } from '../content/course.js';
+import { course } from '../content/course.js';
+import { courseLanguage } from '../content/names.js';
 
 function download(filename, text) {
   const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
@@ -45,7 +46,7 @@ function toggle(key, label, hint, checked, disabled = false) {
 
 function remindersRows(r) {
   const hours = [...Array(14).keys()].map((i) => i + 8);
-  const hint = [t('reminders.settings.hint', { language: languageName('target') }), backgroundSupported() ? '' : t('reminders.settings.limited')].filter(Boolean).join(' ');
+  const hint = [t('reminders.settings.hint', { language: courseLanguage('target') }), backgroundSupported() ? '' : t('reminders.settings.limited')].filter(Boolean).join(' ');
   return `${toggle('reminder', t('reminders.settings.label'), hint, r.on)}
     <label class="switch-row" ${r.on ? '' : 'hidden'} data-hour-row>
       <span class="switch-row__text"><strong>${say('reminders.settings.time')}</strong></span>
@@ -90,7 +91,7 @@ function profileSection(p) {
 
 function speechRows(settings) {
   const on = settings.speech !== false;
-  const hint = canSynthesize() ? t('settings.speech.hint') : t('settings.speech.hintNoVoice', { language: languageInfo(course.to).name });
+  const hint = canSynthesize() ? t('settings.speech.hint') : t('settings.speech.hintNoVoice', { language: languageLabel(course.to) });
   return `${toggle('speech', t('settings.speech.label'), hint, on)}
     <div data-speech-slow${on ? '' : ' hidden'}>${toggle('speechSlow', t('settings.speech.slow'), t('settings.speech.slowHint'), Boolean(settings.speechSlow))}</div>`;
 }
@@ -103,7 +104,7 @@ function languagesSection(settings) {
     ...UI_LANGUAGES.map((code) => option(code, name(code), settings.uiLang === code)),
   ];
   const courses = COURSES.map((p) =>
-    option(p.id, t('picker.course', { target: languageInfo(p.to).name, base: languageInfo(p.from).name }), p.id === settings.course),
+    option(p.id, t('picker.course', { target: languageLabel(p.to), base: languageLabel(p.from) }), p.id === settings.course),
   );
   return `<section class="settings-group" id="languages">
     <h2>${escapeHtml(t('settings.languages.title'))}</h2>
@@ -223,7 +224,7 @@ export function settingsView({ root, query, navigate }) {
     if (e.target.matches('[data-course]')) {
       const to = COURSES.find((p) => p.id === e.target.value)?.to;
       await changeCourse(e.target.value);
-      toast(t('settings.languages.switched', { target: languageInfo(to).name }));
+      toast(t('settings.languages.switched', { target: languageLabel(to) }));
       return;
     }
     if (e.target.matches('[data-pack]')) {

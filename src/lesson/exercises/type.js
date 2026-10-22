@@ -1,5 +1,6 @@
 /* Type the translation. Near misses pass with a "watch the spelling" note. */
-import { langAttr, languageName } from '../../content/course.js';
+import { langAttr } from '../../content/course.js';
+import { courseLanguage } from '../../content/names.js';
 import { escapeHtml } from '../../ui/components.js';
 import { checkTyped } from '../answers.js';
 import { speakButton } from '../../audio/speech.js';
@@ -12,7 +13,7 @@ export function renderType(ex, el, api) {
       ${promptHtml(ex)}
       <div class="ex-translate__source"><p class="speech speech--left"${langAttr(ex.sourceLang)}>${escapeHtml(ex.source)}${ex.sourceLang === 'target' ? speakButton(ex.source, { audio: ex.audio }) : ''}</p></div>
       <label class="visually-hidden" for="ex-type-input">${escapeHtml(t('lesson.yourAnswer'))}</label>
-      <textarea id="ex-type-input" class="input ex-type__input" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false"${langAttr(ex.lang)} placeholder="${escapeHtml(t('lesson.typeIn', { language: languageName(ex.lang) }))}"></textarea>
+      <textarea id="ex-type-input" class="input ex-type__input" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false"${langAttr(ex.lang)} placeholder="${escapeHtml(t('lesson.typeIn', { language: courseLanguage(ex.lang) }))}"></textarea>
     </div>`;
   const input = el.querySelector('textarea');
   input.addEventListener('input', () => api.setReady(input.value.trim().length > 0));

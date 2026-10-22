@@ -3,7 +3,8 @@
  * and reachable from the end of the path. Sends unfinished learners back.
  */
 import '../styles/lesson.css';
-import { course, courseStats, languageName } from '../content/course.js';
+import { course, courseStats } from '../content/course.js';
+import { courseLanguage } from '../content/names.js';
 import { store } from '../state/store.js';
 import { isCourseComplete, learnedWordIds } from '../state/progress.js';
 import { mascot, randomPose } from '../illustrations/index.js';
@@ -31,7 +32,7 @@ export function completeView({ root, navigate }) {
         <li><span>${icon('bolt', { size: 16 })} ${escapeHtml(t('complete.xp'))}</span><span>${state.xp.total}</span></li>
         <li><span>${icon('flame', { size: 16 })} ${escapeHtml(t('complete.longest'))}</span><span>${escapeHtml(t('complete.days', { count: state.streak.longest }))}</span></li>
       </ul>
-      <p class="muted">${escapeHtml(t('complete.outro', { language: languageName('target'), thanks: course.phrases.thanks }))}</p>
+      <p class="muted">${escapeHtml(t('complete.outro', { language: courseLanguage('target'), thanks: course.phrases.thanks }))}</p>
       ${button({ label: t('complete.keep'), href: '#/practice', size: 'lg' })}
       ${button({ label: t('ui.backToPath'), href: '#/learn', variant: 'ghost' })}
     </section>`;

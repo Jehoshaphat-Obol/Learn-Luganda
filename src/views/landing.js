@@ -18,7 +18,8 @@ import { pick, sample, shuffle } from '../illustrations/random.js';
 import { button, escapeHtml } from '../ui/components.js';
 import { icon } from '../ui/icons.js';
 import { reducedMotion } from '../ui/motion.js';
-import { castMember, course, courseStats, langAttr, languageName } from '../content/course.js';
+import { castMember, course, courseStats, langAttr } from '../content/course.js';
+import { courseLanguage } from '../content/names.js';
 import { t, tHtml } from '../i18n/index.js';
 import { rich } from '../i18n/rich.js';
 import { brandMark } from '../app/brand-mark.js';
@@ -51,7 +52,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
     const returning = hasProgress();
     // What the course says about its language; the rest is the UI pack's.
     const copy = course.landing;
-    const language = languageName('target');
+    const language = courseLanguage('target');
     const primaryCta = returning
       ? button({ label: t('landing.cta.continueLearning'), size: 'lg', href: '#/learn' })
       : button({ label: t('landing.cta.start'), size: 'lg', href: '#/onboarding' });
