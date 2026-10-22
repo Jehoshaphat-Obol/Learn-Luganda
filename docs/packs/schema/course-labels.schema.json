@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jehoshaphat-obol.github.io/Learn-Luganda/schema/course-labels.schema.json",
+  "title": "Course pack: headings in another interface language",
+  "description": "src/packs/courses/<from>-<to>/labels/<ui>.json. Section, unit and skill headings for learners who read the app in <ui>. Every entry is optional; anything left out keeps the course's own text.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "sections": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "title": { "$ref": "#/$defs/text" },
+          "level": { "$ref": "#/$defs/text" },
+          "description": { "$ref": "#/$defs/text" }
+        }
+      }
+    },
+    "units": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "title": { "$ref": "#/$defs/text" },
+          "description": { "$ref": "#/$defs/text" }
+        }
+      }
+    },
+    "skills": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/text" }
+    }
+  },
+  "$defs": {
+    "text": { "type": "string", "minLength": 1 }
+  }
+}

@@ -4,7 +4,7 @@
 // Scripts run with `--root <dir>` read packs from another folder laid out
 // like src/packs (ui/ and courses/), such as the example in
 // docs/packs/example. The language registry always comes from src/packs.
-import { readFileSync, readdirSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { buildFromPack, useCourse } from '../src/content/course.js';
@@ -18,7 +18,7 @@ const readJson = (path, base = packRoot) => JSON.parse(readFileSync(new URL(path
 export const courseIds = () => readdirSync(new URL('courses/', packRoot)).sort();
 export const readLanguages = () => readJson('languages.json', app).languages;
 
-/** The raw files of course pack `id`: `{ meta, units: { [unitId]: unit } }`. */
+/** The raw files of course pack `id`: `{ meta, units: { [unitId]: unit }, labels: { [ui]: labels } }`. */
 export function readPack(id) {
   const meta = readJson(`courses/${id}/course.json`);
   const units = {};
@@ -26,13 +26,19 @@ export function readPack(id) {
     const unit = readJson(`courses/${id}/units/${file}`);
     units[unit.id] = unit;
   }
-  return { meta, units };
+  const labels = {};
+  const labelDir = new URL(`courses/${id}/labels/`, packRoot);
+  if (existsSync(labelDir)) for (const file of readdirSync(labelDir).filter((f) => f.endsWith('.json'))) labels[file.replace(/\.json$/, '')] = readJson(`courses/${id}/labels/${file}`);
+  return { meta, units, labels };
 }
 
-/** Builds course pack `id`; with `activate`, also makes it the active course. */
-export function loadPack(id = 'en-lg', { activate = true } = {}) {
-  const { meta, units } = readPack(id);
+/**
+ * Builds course pack `id`, with its headings in interface language `ui`
+ * when it has labels for it; with `activate`, also makes it the active course.
+ */
+export function loadPack(id = 'en-lg', { activate = true, ui = null } = {}) {
+  const { meta, units, labels } = readPack(id);
   const name = (code) => readLanguages().find((l) => l.code === code)?.name ?? code;
-  const course = buildFromPack(meta, units, { from: name(meta.from), to: name(meta.to) });
+  const course = buildFromPack(meta, units, { from: name(meta.from), to: name(meta.to) }, labels[ui]);
   return activate ? useCourse(course) : course;
 }

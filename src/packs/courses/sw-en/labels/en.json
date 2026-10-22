@@ -1,0 +1,70 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-labels.schema.json",
+  "sections": {
+    "s1": {
+      "title": "Foundations",
+      "level": "Beginner",
+      "description": "Greetings, family, food, numbers and time, around town, at home, your day and health."
+    }
+  },
+  "units": {
+    "u1": {
+      "title": "Greetings",
+      "description": "Greet people, introduce yourself and count to ten."
+    },
+    "u2": {
+      "title": "Family and friends",
+      "description": "Talk about your family, say what you have and describe people."
+    },
+    "u3": {
+      "title": "Food and the market",
+      "description": "Name foods, say you’re hungry or thirsty, and buy at the market."
+    },
+    "u4": {
+      "title": "Numbers and time",
+      "description": "Count to a thousand, tell the time in English and talk about today and tomorrow."
+    },
+    "u5": {
+      "title": "Getting around town",
+      "description": "Ask where places are, give directions and travel by matatu or boda boda."
+    },
+    "u6": {
+      "title": "At home",
+      "description": "Describe your home, say what there is and isn’t, and name colours."
+    },
+    "u7": {
+      "title": "My day",
+      "description": "Name the days of the week, describe your routine and talk about the weather."
+    },
+    "u8": {
+      "title": "Body and health",
+      "description": "Name parts of the body, say what hurts, see a doctor and wish someone good health."
+    }
+  },
+  "skills": {
+    "u1s1": "First greetings",
+    "u1s2": "Introducing yourself",
+    "u1s3": "Numbers 1–10",
+    "u2s1": "My family",
+    "u2s2": "Have and haven’t",
+    "u2s3": "People",
+    "u3s1": "Drinks",
+    "u3s2": "Food",
+    "u3s3": "At the market",
+    "u4s1": "Numbers to 100",
+    "u4s2": "Telling the time",
+    "u4s3": "Today and tomorrow",
+    "u5s1": "Where is it?",
+    "u5s2": "Directions",
+    "u5s3": "On the move",
+    "u6s1": "Rooms",
+    "u6s2": "There is, there isn’t",
+    "u6s3": "Colours",
+    "u7s1": "Days of the week",
+    "u7s2": "My routine",
+    "u7s3": "Weather",
+    "u8s1": "The body",
+    "u8s2": "What hurts?",
+    "u8s3": "Kind words"
+  }
+}

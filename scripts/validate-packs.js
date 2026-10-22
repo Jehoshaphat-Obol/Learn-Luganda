@@ -2,7 +2,8 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { Ajv2020 } from 'ajv/dist/2020.js';
 import { validateUiPack } from '../src/i18n/validate.js';
-import { packRoot } from './load-pack.js';
+import { checkLabels } from '../src/content/labels.js';
+import { packRoot, readPack } from './load-pack.js';
 
 const root = new URL('../', import.meta.url);
 // Paths under the packs being checked (src/packs, or --root <dir>).
@@ -54,6 +55,16 @@ for (const id of courseDirs) {
     const unit = readJson(packPath(`courses/${id}/units/${file}`));
     errors.push(...schemaErrors('docs/packs/schema/course-unit.schema.json', unit, `courses/${id}/units/${file}`));
     if (`${unit.id}.json` !== file) errors.push(`courses/${id}/units/${file}: id "${unit.id}" doesn't match the file name`);
+  }
+  const pack = readPack(id);
+  for (const [ui, labels] of Object.entries(pack.labels)) {
+    const where = `courses/${id}/labels/${ui}.json`;
+    errors.push(...schemaErrors('docs/packs/schema/course-labels.schema.json', labels, where));
+    if (!uiFiles.includes(`${ui}.json`)) errors.push(`${where}: there is no ${ui} interface pack`);
+    if (ui === meta.from) errors.push(`${where}: the course is already written in ${ui}`);
+    const result = checkLabels(labels, pack);
+    errors.push(...result.errors.map((e) => `${where}: ${e}`));
+    if (result.missing.length) notes.push(`${where}: ${result.missing.length} heading(s) fall back to the course's own text`);
   }
 }
 

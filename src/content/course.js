@@ -11,6 +11,7 @@
  */
 import { deepFreeze } from '../i18n/freeze.js';
 import { upgradePack } from './format.js';
+import { applyLabels } from './labels.js';
 import { DEFAULT_SETTINGS, mergeSettings } from './settings.js';
 import { CAST } from '../illustrations/characters.js';
 
@@ -118,10 +119,11 @@ export function buildCourse(rawUnits, rawSections = [{ id: 's1', title: 'Course'
 
 /**
  * Builds a course from a pack. `unitFiles` maps unit id to the parsed unit
- * file; units appear in the order the sections list them.
+ * file; units appear in the order the sections list them. `labels` puts the
+ * path's headings in the interface language (./labels.js).
  */
-export function buildFromPack(rawMeta, rawUnits, names) {
-  const { meta, units: unitFiles } = upgradePack({ meta: rawMeta, units: rawUnits });
+export function buildFromPack(rawMeta, rawUnits, names, labels) {
+  const { meta, units: unitFiles } = applyLabels(upgradePack({ meta: rawMeta, units: rawUnits }), labels);
   const units = meta.sections.flatMap((s) => s.units).map((id) => unitFiles[id]).filter(Boolean);
   return buildCourse(units, meta.sections, { ...meta, names: names ?? { from: meta.from, to: meta.to } });
 }
