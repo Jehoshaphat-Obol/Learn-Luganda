@@ -310,5 +310,45 @@
     "u40s1": "Wakayima",
     "u40s2": "Kintu ne Nnambi",
     "u40s3": "Eky’okuyiga"
+  },
+  "description": "Oluganda lwe lulimi lwa Buganda wakati mu Uganda, era lwogerwa abantu bukadde na bukadde mu Kampala n’okumpi nayo.",
+  "cast": {
+    "nakato": "Omukulembeze wo, omuyizi wa yunivasite e Kampala",
+    "mukasa": "Omusomesa omugumiikiriza okuva e Masaka",
+    "jjajja": "Jjajja ayagala ennyo engero",
+    "ssali": "Omuvuzi wa bodaboda amanyi buli kkubo",
+    "amara": "Omuyizi wa siniya ayagala ennyimba",
+    "emma": "Omugenyi ayiga Oluganda nga tannaba kutambula"
+  },
+  "landing": {
+    "word": "okuyiga — ekikolwa: okufuna amagezi amapya",
+    "why": {
+      "title": "Olulimi lw’**enguudo za Kampala.**",
+      "text": "Oluganda lwogerwa abantu bukadde na bukadde wakati mu Uganda, era lwe lulimi olusinga okwogerwa mu Kampala. Luyige oyogere n’ab’omu maka, ofune emikwano mu katale, era owulire ng’oli waka ku lugendo lwo oluddako.",
+      "cards": [
+        {
+          "title": "Eri ab’omu maka",
+          "text": "Ddayo eri bajjajja era oyigirize abaana olulimi."
+        },
+        {
+          "title": "Eri abatambuze",
+          "text": "Lamusa, sala ebbeeyi era otambule n’obwesige."
+        },
+        {
+          "title": "Eri abaagala okumanya",
+          "text": "Zuula ebika by’amannya, amaloboozi n’engero."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Kiki ekitegeeza “thank you” mu Lungereza?",
+      "explain": "_Weebale_ kye kitegeeza “thank you”."
+    },
+    "start": {
+      "caption": "tandika — ekikolwa: okusooka"
+    },
+    "farewell": "Weebale nnyo.",
+    "audience": "Abatandika okuva ku ntandikwa, ab’omu maka ababeera ebweru abaagala okuddayo eri olulimi, n’abagenyi abajja mu Uganda abaagala ebisingawo ku “oli otya”.",
+    "first": "Okulamusa, okweyanjula n’ennamba, oluvannyuma ab’omu maka, emmere, akatale, obudde, ebifo n’ebirala, ekitundu ku kitundu."
   }
 }

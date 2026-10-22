@@ -301,5 +301,57 @@
     "u40s1": "Sungura wakayima",
     "u40s2": "Abunuwasi",
     "u40s3": "Eky’okuyiga"
+  },
+  "description": "Olungereza lwe lulimi lw’essomero, olw’emirimu n’olw’obusuubuzi mu Buvanjuba bwa Afirika, era lwogerwa mu nsi yonna.",
+  "cast": {
+    "amani": "Omukulembeze wo, omuyizi wa yunivasite e Dar es Salaam",
+    "baraka": "Alina akadduuka ka caayi ne capati e Mombasa",
+    "bibi": "Jjajja e Zanzibar addamu buli kimu n’olugero",
+    "juma": "Omuvuzi wa matatu e Nairobi amanyi buli siteegi",
+    "neema": "Omuyizi wa siniya e Arusha ayagala bongo flava",
+    "emma": "Omugenyi okuva ebweru ayogera Olungereza"
+  },
+  "landing": {
+    "word": "learn — okuyiga",
+    "words": [
+      "Oli otya",
+      "Gyendi",
+      "Weebale",
+      "Tukwaniriza",
+      "Mukwano",
+      "Amazzi",
+      "Emmere",
+      "Weeraba",
+      "Ye",
+      "Nedda"
+    ],
+    "why": {
+      "title": "Olulimi lw’**essomero n’omulimu.**",
+      "text": "Olungereza lukozesebwa mu masomero, mu ofiisi, mu kkooti ne ku yintaneti mu Buvanjuba bwa Afirika bwonna. Luyige osobole okusoma, okufuna omulimu, n’okwogera n’abantu okuva mu nsi yonna.",
+      "cards": [
+        {
+          "title": "Ku ssomero",
+          "text": "Tegeera abasomesa n’ebitabo, era oyitire waggulu mu bigezo."
+        },
+        {
+          "title": "Ku mulimu",
+          "text": "Wandiika, yogera era okole n’abantu ab’enjawulo n’obwesige."
+        },
+        {
+          "title": "Mu nsi yonna",
+          "text": "Yogera n’abagenyi, otambule era osome ku yintaneti."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Kiki ekitegeeza “weebale” mu Lungereza?",
+      "explain": "_Thank you_ kitegeeza weebale."
+    },
+    "start": {
+      "caption": "let’s go — tugende"
+    },
+    "farewell": "Thank you very much — weebale nnyo.",
+    "audience": "Aboogera Oluswayiri abaagala okuyiga Olungereza okuva ku ntandikwa: abayizi, abakozi, n’abazadde abaagala okuyamba abaana baabwe ku ssomero.",
+    "first": "Okulamusa, okweyanjula n’ennamba, oluvannyuma ab’omu maka, emmere, akatale, essaawa, ekibuga, awaka n’obulamu, ekitundu ku kitundu."
   }
 }

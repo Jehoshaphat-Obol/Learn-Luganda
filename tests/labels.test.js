@@ -22,6 +22,44 @@ describe('course labels', () => {
     expect(pack.units.u1.title).toBe('Greetings');
   });
 
+  it('lays translated landing copy, cast roles and description over the pack', () => {
+    const meta = {
+      ...pack.meta,
+      to: 'lg',
+      description: 'Luganda is…',
+      cast: { nakato: { name: 'Nakato', role: 'Your guide' } },
+      landing: {
+        hello: 'Oli otya?',
+        words: [['Weebale', 'Thank you'], ['Kale', 'Okay']],
+        why: { title: 'Why', text: 'Because.', cards: [{ title: 'For families', text: 'Reconnect.' }] },
+        sample: { prompt: 'Which one?', options: ['Weebale'], answer: 'Weebale', explain: 'It means thanks.' },
+      },
+    };
+    const labels = {
+      description: 'Kiganda ni…',
+      cast: { nakato: 'Kiongozi wako' },
+      landing: { words: ['Asante'], why: { title: 'Kwa nini', cards: [{ title: 'Kwa familia' }] }, sample: { prompt: 'Lipi?' } },
+    };
+    const out = applyLabels({ meta, units: pack.units }, labels).meta;
+    expect(out.description).toBe('Kiganda ni…');
+    expect(out.cast.nakato).toEqual({ name: 'Nakato', role: 'Kiongozi wako' });
+    expect(out.landing.words).toEqual([['Weebale', 'Asante'], ['Kale', 'Okay']]);
+    expect(out.landing.why).toEqual({ title: 'Kwa nini', text: 'Because.', cards: [{ title: 'Kwa familia', text: 'Reconnect.' }] });
+    expect(out.landing.sample).toMatchObject({ prompt: 'Lipi?', options: ['Weebale'], answer: 'Weebale', explain: 'It means thanks.' });
+    expect(out.landing.hello).toBe('Oli otya?');
+    expect(meta.landing.words[0][1]).toBe('Thank you');
+
+    const { missing } = checkLabels(labels, { meta, units: pack.units }, 'sw');
+    expect(missing.filter((m) => !/^(sections|units|skills)/.test(m))).toEqual([
+      'landing.why.text',
+      'landing.sample.explain',
+      'landing.words.1',
+      'landing.why.cards.0.text',
+    ]);
+    // Readers of the target language need no meanings for the ticker's words.
+    expect(checkLabels(labels, { meta, units: pack.units }, 'lg').missing).not.toContain('landing.words.1');
+  });
+
   it('without labels, returns the pack as it is', () => {
     expect(applyLabels(pack, null)).toBe(pack);
   });
@@ -35,7 +73,7 @@ describe('course labels', () => {
   it.each(Object.keys(labelFiles))('%s names only real sections, units and skills', (path) => {
     const dir = dirOf(path);
     const units = Object.fromEntries(Object.entries(unitFiles).filter(([p]) => dirOf(p) === dir).map(([, u]) => [u.id, u]));
-    expect(checkLabels(labelFiles[path], { meta: metas[`${dir}/course.json`], units }).errors).toEqual([]);
+    expect(checkLabels(labelFiles[path], { meta: metas[`${dir}/course.json`], units }, path.split('/').at(-1).replace('.json', '')).errors).toEqual([]);
   });
 
   describe('loading a course in another interface language', () => {

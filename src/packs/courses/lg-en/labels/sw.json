@@ -310,5 +310,57 @@
     "u40s1": "Wakayima sungura",
     "u40s2": "Kintu na Nnambi",
     "u40s3": "Funzo"
+  },
+  "description": "Kiingereza ni lugha rasmi ya Uganda: shuleni, ofisini na kwenye habari, na huzungumzwa katika nchi nyingi.",
+  "cast": {
+    "nakato": "Kiongozi wako, mwanafunzi wa chuo kikuu Kampala",
+    "mukasa": "Mwalimu mvumilivu kutoka Masaka",
+    "jjajja": "Bibi anayependa methali",
+    "ssali": "Dereva wa bodaboda anayejua kila barabara",
+    "amara": "Mwanafunzi wa sekondari anayependa muziki",
+    "emma": "Mgeni kutoka nje anayezungumza Kiingereza"
+  },
+  "landing": {
+    "word": "learn — kujifunza",
+    "words": [
+      "Habari",
+      "Nzuri",
+      "Asante",
+      "Sawa",
+      "Rafiki",
+      "Maji",
+      "Chakula",
+      "Bwana",
+      "Mama",
+      "Karibu"
+    ],
+    "why": {
+      "title": "Lugha ya **shule na kazi.**",
+      "text": "Kiingereza ni lugha rasmi ya Uganda. Hutumika shuleni, mahakamani, ofisini na mtandaoni. Jifunze ili usome, upate kazi, na uzungumze na watu wa dunia nzima.",
+      "cards": [
+        {
+          "title": "Shuleni",
+          "text": "Elewa walimu na vitabu, na ufaulu mitihani."
+        },
+        {
+          "title": "Kazini",
+          "text": "Andika, zungumza na fanya kazi na watu tofauti kwa kujiamini."
+        },
+        {
+          "title": "Duniani",
+          "text": "Ongea na wageni, safiri na usome mtandaoni."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Lipi maana yake “weebale”?",
+      "explain": "_Thank you_ maana yake weebale (asante)."
+    },
+    "start": {
+      "caption": "let’s go — twende"
+    },
+    "farewell": "Thank you very much — weebale nnyo (asante sana).",
+    "audience": "Wazungumzaji wa Kiganda wanaotaka kujifunza Kiingereza tangu mwanzo: wanafunzi, wafanyakazi, na wazazi wanaotaka kuwasaidia watoto wao shuleni.",
+    "first": "Salamu, kujitambulisha na namba, kisha familia, chakula, sokoni, wakati, mahali, nyumbani na afya, sehemu kwa sehemu."
   }
 }
