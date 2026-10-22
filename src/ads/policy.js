@@ -7,7 +7,9 @@
  * is to edit this file and deploy. `tests/ads-policy.test.js` checks each
  * level stays within safe bounds, so a bad edit fails CI.
  *
- * Rules, applied in this order:
+ * The rules themselves, and the order they run in, live in `rules.js`;
+ * this file only sets their numbers.
+ *
  *   placements      where ads may appear and which ad type each uses.
  *                   Lessons, practice, checkpoints and stories being read
  *                   never have a placement, so they never show ads.
@@ -22,6 +24,10 @@
  *   adBreak         free, temporary pauses the learner can take: `hours`
  *                   long, `perWeek` in any 7 days, and `streakHours` long
  *                   instead once their streak reaches `streakDays`.
+ *   rewarded        opt-in "watch an ad, earn gems": `gems` per ad watched
+ *                   to the end, at most `perDay` a day, `cooldownMinutes`
+ *                   apart, offered once `graceSessions` are done. After one,
+ *                   no sponsored cards for `quietMinutes`.
  */
 
 /** Ad types, matching the AdSense units in `config.js`. */
@@ -40,6 +46,7 @@ const PRESETS = {
     everyNthSession: Infinity,
     minAccuracy: 1,
     adBreak: { hours: 0, perWeek: 0, streakDays: Infinity, streakHours: 0 },
+    rewarded: { gems: 0, perDay: 0, cooldownMinutes: Infinity, graceSessions: Infinity, quietMinutes: 0 },
   },
   gentle: {
     impact: 'About 3 ads a day at most; never in the first 5 lessons; complete-screen ads after every 4th session.',
@@ -50,6 +57,7 @@ const PRESETS = {
     everyNthSession: 4,
     minAccuracy: 0.8,
     adBreak: { hours: 24, perWeek: 3, streakDays: 7, streakHours: 48 },
+    rewarded: { gems: 3, perDay: 5, cooldownMinutes: 3, graceSessions: 1, quietMinutes: 30 },
   },
   balanced: {
     impact: 'Up to 6 ads a day, at least 8 minutes apart; complete-screen ads after every 3rd session.',
@@ -60,6 +68,7 @@ const PRESETS = {
     everyNthSession: 3,
     minAccuracy: 0.6,
     adBreak: { hours: 12, perWeek: 2, streakDays: 7, streakHours: 24 },
+    rewarded: { gems: 3, perDay: 5, cooldownMinutes: 3, graceSessions: 1, quietMinutes: 20 },
   },
   generous: {
     impact: 'Up to 10 ads a day, at least 4 minutes apart; complete-screen ads after every 2nd session.',
@@ -70,6 +79,7 @@ const PRESETS = {
     everyNthSession: 2,
     minAccuracy: 0.5,
     adBreak: { hours: 6, perWeek: 2, streakDays: 7, streakHours: 12 },
+    rewarded: { gems: 3, perDay: 6, cooldownMinutes: 2, graceSessions: 1, quietMinutes: 10 },
   },
 };
 

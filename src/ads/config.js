@@ -9,6 +9,11 @@
  * `inFeed` is an In-feed (native) unit: create it under Ads › By ad unit ›
  * In-feed and copy its layout key too. `display` is a responsive display
  * unit.
+ *
+ * `rewarded` is the "watch an ad, earn gems" unit. AdSense has no rewarded
+ * format, so it comes from Google Ad Manager: create a Rewarded ad unit
+ * there and set its path (e.g. /1234567/learn-luganda-rewarded) here or as
+ * VITE_GAM_REWARDED_UNIT. Empty = the offer stays hidden.
  */
 const env = import.meta.env ?? {};
 
@@ -18,4 +23,5 @@ export const ADS = Object.freeze({
     inFeed: Object.freeze({ slot: env.VITE_ADSENSE_SLOT_IN_FEED ?? '', format: 'fluid', layoutKey: env.VITE_ADSENSE_LAYOUT_KEY ?? '' }),
     display: Object.freeze({ slot: env.VITE_ADSENSE_SLOT_DISPLAY ?? '', format: 'auto' }),
   }),
+  rewarded: Object.freeze({ unit: env.VITE_GAM_REWARDED_UNIT ?? '' }),
 });

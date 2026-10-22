@@ -46,9 +46,47 @@ from the site, what's already done, and what the owner has to do.
    `VITE_ADSENSE_LAYOUT_KEY`, `VITE_ADSENSE_SLOT_DISPLAY`. Ads appear on the
    next deploy.
 
+8. **Optional: rewarded ads ("watch an ad, earn gems").** AdSense has no
+   rewarded format, and its policies forbid rewarding people for viewing
+   ordinary ads; only Google's rewarded inventory may carry a reward. On
+   the web that comes from **Google Ad Manager** (free to join, and it can
+   use your AdSense demand). In Ad Manager:
+   - create an ad unit, any size, and note its path
+     (`/<network code>/<unit name>`);
+   - traffic it as **Rewarded** (Delivery › Line items, Ad Exchange
+     line item, 1x1 creative, "Rewarded" inventory format), with the
+     reward amount set to the gems in `policy.js` (3 by default);
+   - make sure *Block non-instream video ads* is off;
+   - add the Ad Manager line to `ads.txt` alongside the AdSense one.
+
+   Then set `rewarded.unit` in `src/ads/config.js`, or the build variable
+   `VITE_GAM_REWARDED_UNIT`. The "Watch an ad, earn gems" card appears on
+   the Gems screen on the next deploy. The app grants gems only on GPT's
+   `rewardedSlotGranted` event, so nobody earns gems for a normal ad or an
+   ad they closed early. GPT only serves rewarded ads to mobile-friendly
+   pages (the app already has the viewport tag); where it won't, the
+   learner is told there is no ad right now.
+
+## The rule engine
+
+Whether an ad shows is decided in one place, `src/ads/rules.js`: an ordered
+list of named rules. They run in order and the first that says no wins;
+`decideAd()` (sponsored cards) and `rewardedNow()` (rewarded ads) return
+`{ show, rule }`, so every "no ad" names its reason. The numbers come from
+`policy.js`; `rules.js` holds none of its own. To add a rule, add an entry
+to the list with an `id` and a `blocks(context, policy)` test, and its
+number to each preset in `policy.js`.
+
+Sponsored cards: `configured` › `online` › `placement` › `adBreak` ›
+`grace` › `afterRewarded` › `dailyCap` › `cooldown` › `everyNthSession` ›
+`minAccuracy`.
+
+Rewarded ads: `configured` › `online` › `enabled` › `grace` › `dailyCap` ›
+`cooldown`. Ad breaks don't block these: the learner asks for them.
+
 ## Tuning how much ads affect learning
 
-All the rules live in `src/ads/policy.js`. They are frozen when the app
+All the numbers live in `src/ads/policy.js`. They are frozen when the app
 loads, so no setting, saved data or browser console can change them; the
 only way is to edit the file and deploy. A test (`tests/ads-policy.test.js`)
 fails CI if a level drifts outside safe bounds.
@@ -68,6 +106,11 @@ Change the one line `const LEVEL = 'gentle';` to pick a level:
 | Ad break length (free pause) | – | 24 h | 12 h | 6 h |
 | Ad break with a 7+ day streak | – | 48 h | 24 h | 12 h |
 | Ad breaks per rolling week | 0 | 3 | 2 | 2 |
+| Gems per rewarded ad | – | 3 | 3 | 3 |
+| Rewarded ads per day | 0 | 5 | 5 | 6 |
+| Minutes between rewarded ads | – | 3 | 3 | 2 |
+| Sessions before rewarded ads are offered | – | 1 | 1 | 1 |
+| No sponsored cards for this long after a rewarded ad | – | 30 min | 20 min | 10 min |
 
 Learners take an ad break from the "Ad break" button on any ad card or in
 Settings › Ads and privacy. The crane offers it in a short, playful note

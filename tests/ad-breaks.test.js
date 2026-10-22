@@ -1,7 +1,9 @@
 import { beforeEach, describe, expect, it } from 'vitest';
 import { adBreakStatus, adBreakUntil, endAdBreak, takeAdBreak } from '../src/ads/breaks.js';
 import { buildPolicy } from '../src/ads/policy.js';
-import { allowAd } from '../src/ads/ads.js';
+import { decideAd } from '../src/ads/ads.js';
+
+const config = { client: 'ca-pub-1234567890123456', units: { inFeed: { slot: '1111111111', format: 'fluid' } }, rewarded: { unit: '' } };
 
 const HOUR = 3_600_000;
 const DAY = 24 * HOUR;
@@ -15,8 +17,8 @@ describe('ad breaks', () => {
     expect(takeAdBreak({ now: T0, policy })).toBe(T0 + DAY);
     expect(adBreakUntil(T0 + DAY - 1)).toBe(T0 + DAY);
     expect(adBreakUntil(T0 + DAY)).toBe(0);
-    expect(allowAd('path', { sessions: 50 }, { policy, log: { shown: 0, last: 0 }, now: T0 + HOUR })).toBe(false);
-    expect(allowAd('path', { sessions: 50 }, { policy, log: { shown: 0, last: 0 }, now: T0 + DAY })).toBe(true);
+    expect(decideAd('path', { sessions: 50 }, { policy, config, log: { shown: 0, last: 0 }, now: T0 + HOUR }).rule).toBe('adBreak');
+    expect(decideAd('path', { sessions: 50 }, { policy, config, log: { shown: 0, last: 0 }, now: T0 + DAY }).show).toBe(true);
     expect(takeAdBreak({ streak: 7, now: T0 + 2 * DAY, policy })).toBe(T0 + 4 * DAY);
   });
 
