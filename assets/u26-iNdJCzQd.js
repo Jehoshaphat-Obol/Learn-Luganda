@@ -1,1 +1,0 @@
-var e={$schema:`../../../../../../../docs/packs/schema/about-unit.schema.json`,id:`u26`,notes:{abunuwasi:`The trickster of Swahili tales.`,kabaka:`Plural: wafalme.`}};export{e as default};
