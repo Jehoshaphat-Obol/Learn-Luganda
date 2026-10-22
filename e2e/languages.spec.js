@@ -105,7 +105,11 @@ test('search narrows the full picker, and flags stay small', async ({ page }) =>
   await expect(learn.getByRole('radio', { name: 'Swahili', exact: true })).toBeVisible();
   await expect(speak.getByRole('radio')).toHaveCount(1);
 
+  await expect(page.locator('[data-legend="speak"]')).toHaveText('Ninaongea · I speak');
+  await expect(page.locator('[data-legend="learn"] [lang="sw"]')).toHaveText('Nataka kujifunza');
+
   await search.fill('klingon');
+  await expect(page.locator('[data-legend="speak"]')).toHaveText('I speak');
   await expect(learn.getByText('No language matches your search.')).toBeVisible();
   await expect(speak.getByText('No language matches your search.')).toBeVisible();
 

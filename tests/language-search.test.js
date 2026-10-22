@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { LANGUAGES } from '../src/i18n/languages.js';
-import { foldText, languageSearchText, matchesSearch } from '../src/i18n/search.js';
+import { foldText, languageSearchText, matchesSearch, searchedLanguage } from '../src/i18n/search.js';
 import { flagUrl, languageFlag } from '../src/ui/flags.js';
 
 describe('finding a language by typing', () => {
@@ -28,6 +28,34 @@ describe('finding a language by typing', () => {
     expect(find('isi zulu')).toEqual(['zu']);
     expect(find('')).toHaveLength(LANGUAGES.length);
     expect(find('klingon')).toEqual([]);
+  });
+});
+
+describe('the language a search points at', () => {
+  const find = (q, labelOf) => searchedLanguage(q, LANGUAGES, labelOf);
+
+  it('picks the only language whose name starts with the search', () => {
+    expect(find('swa')).toBe('sw');
+    expect(find('kiswa')).toBe('sw');
+    expect(find('franç')).toBe('fr');
+  });
+
+  it('prefers an exact name or code, and gives up when it is unclear or too short', () => {
+    expect(find('en')).toBe('en');
+    expect(find('s')).toBeNull();
+    expect(find('isi')).toBeNull(); // isiZulu or isiXhosa
+    expect(find('klingon')).toBeNull();
+  });
+
+  it('knows names in the interface language', () => {
+    expect(find('kiingereza', (c) => (c === 'en' ? 'Kiingereza' : ''))).toBe('en');
+  });
+
+  it('has “I speak” and “I want to learn” for every language with a course or interface', () => {
+    for (const code of ['en', 'lg', 'sw', 'fr']) {
+      const l = LANGUAGES.find((x) => x.code === code);
+      expect(l.speak && l.learn).toBeTruthy();
+    }
   });
 });
 
