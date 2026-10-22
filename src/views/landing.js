@@ -58,7 +58,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
       : button({ label: t('landing.cta.start'), size: 'lg', href: '#/onboarding' });
     const secondaryCta = returning
       ? ''
-      : button({ label: t('landing.cta.import'), variant: 'secondary', size: 'lg', href: '#/settings?import=1' });
+      : `<a class="hero__link" href="#/settings?import=1">${escapeHtml(t('landing.cta.import'))}</a>`;
     const target = langAttr('target');
 
     // A different order, faces and places on every visit.
@@ -85,7 +85,8 @@ export function createLandingView({ hasProgress = () => false } = {}) {
             <p class="eyebrow">${escapeHtml(t('landing.hero.eyebrow'))}</p>
             <h1>${tHtml('landing.hero.title', { language })}</h1>
             <p class="hero__lead">${tHtml('landing.hero.lead', { hello: copy.hello })}</p>
-            <div class="hero__ctas">${primaryCta}${installButton('hero__install', { size: 'lg' })}${secondaryCta}</div>
+            <div class="hero__ctas">${primaryCta}${installButton('hero__install', { size: 'lg' })}</div>
+            ${secondaryCta}
             ${copy.word ? `<p class="caption"${target}>${escapeHtml(copy.word)}</p>` : ''}
           </div>
           <div class="hero__art">${heroScene()}</div>
