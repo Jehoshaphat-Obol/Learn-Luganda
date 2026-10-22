@@ -1,0 +1,10 @@
+{
+  "threshold": 0.95,
+  "languages": {
+    "en": { "target": 1, "base": 1 },
+    "fr": { "target": 0, "base": 0.088 },
+    "lg": { "target": 1, "base": 1 },
+    "sw": { "target": 0.958, "base": 1 }
+  },
+  "about": { "en": { "en": 0, "lg": 1 }, "fr": { "en": 0, "lg": 0 }, "lg": { "en": 1, "lg": 0 }, "sw": { "en": 0, "lg": 1 } }
+}

@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u16",
+  "notes": {
+    "ttakisi": "Basi dogo la pamoja linalofuata njia maalum, kama matatu ya Kenya au daladala ya Tanzania.",
+    "siteegi": "Mahali teksi na bodaboda zinaposubiri.",
+    "egenda": "Kwa majina ya n-: ttakisi egenda, teksi inakwenda.",
+    "ennyonyi": "Ndege ya angani, si ndege ya kuruka porini! Ndege mnyama ni ekinyonyi."
+  },
+  "tips": { "u16s1": "taxis", "u16s3": "from-to" },
+  "glosses": { "taxi-to-jinja": { "4": { "eri": "kule" }, "9": { "zokka": "tu" } } },
+  "guidebook": {
+    "intro": "Kusafiri Uganda kunamaanisha teksi za pamoja, mabasi ya safari ndefu na bodaboda. Kujua maneno machache hurahisisha kila safari.",
+    "tips": [
+      {
+        "id": "taxis",
+        "title": "Teksi, kituo na stendi",
+        "body": [
+          "**Ttakisi** ni basi dogo la pamoja (kama matatu au daladala) linalofuata njia maalum kutoka **paaka** (stendi ya teksi). Njiani husimama kwenye **siteegi** (kituo). Mwambie kondakta **Yimirira wano** (simama hapa) unapotaka kushuka."
+        ]
+      },
+      {
+        "id": "from-to",
+        "title": "Kutoka … hadi …",
+        "body": [
+          "Tumia **okuva** (kutoka) na **okutuuka** (hadi, kufika) kwa safari: **Okuva e Kampala okutuuka e Jinja**. Angalia: **okuva** ni kama Kiswahili **kuvuka/kutoka**, na **okutuuka** ni kama **kufika**; zote mbili ni vitenzi vya ku-.",
+          "Kabla ya jina la mji, Kiganda mara nyingi huongeza **e**: **e Kampala**, **e Masaka**. Hufanya kazi kama “huko” au kiambishi **-ni** cha Kiswahili kwa mahali."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Kufika salama",
+        "body": [
+          "Mtu akifika kutoka safarini, watu husema **Kulika olugendo** (pole na safari). Msafiri hujibu **Weebale**. Kupiga simu kusema **Ntuuse** (nimefika) ni jambo la upendo."
+        ]
+      }
+    ]
+  }
+}

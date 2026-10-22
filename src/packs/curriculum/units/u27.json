@@ -1,0 +1,71 @@
+{
+  "$schema": "../../../../docs/packs/schema/curriculum-unit.schema.json",
+  "id": "u27",
+  "color": "sage",
+  "character": "jjajja",
+  "words": [
+    "olusuku",
+    "enkumbi",
+    "ndima",
+    "ensigo",
+    "okusiga",
+    "kasooli",
+    "ebinyeebwa",
+    "emmwanyi",
+    "amakungula",
+    "okukungula",
+    "ndimira",
+    "nfumbira",
+    "ntundira",
+    "mpandiikira"
+  ],
+  "sentences": [
+    "s27-olusuku-lwange",
+    "s27-ndima-n-enkumbi",
+    "s27-okusiga-ensigo",
+    "s27-kasooli",
+    "s27-ebinyeebwa",
+    "s27-emmwanyi",
+    "s27-amakungula",
+    "s27-okukungula",
+    "s27-ndimira-jjajja",
+    "s27-nfumbira-abaana",
+    "s27-ntundira-mu-katale",
+    "s27-mpandiikira-maama"
+  ],
+  "phrases": 6,
+  "skills": [
+    {
+      "id": "u27s1",
+      "icon": "home",
+      "lessons": [
+        { "id": "u27s1l1", "newWords": ["olusuku", "enkumbi", "ndima"], "sentences": ["s27-olusuku-lwange", "s27-ndima-n-enkumbi"] },
+        { "id": "u27s1l2", "newWords": ["ensigo", "okusiga"], "sentences": ["s27-okusiga-ensigo"] },
+        { "id": "u27s1l3", "newWords": [], "sentences": ["s27-olusuku-lwange", "s27-okusiga-ensigo", "s27-ndima-n-enkumbi"] }
+      ]
+    },
+    {
+      "id": "u27s2",
+      "icon": "star",
+      "lessons": [
+        { "id": "u27s2l1", "newWords": ["kasooli", "ebinyeebwa"], "sentences": ["s27-kasooli", "s27-ebinyeebwa"] },
+        { "id": "u27s2l2", "newWords": ["emmwanyi"], "sentences": ["s27-emmwanyi", "s27-ebinyeebwa"] },
+        { "id": "u27s2l3", "newWords": ["amakungula", "okukungula"], "sentences": ["s27-amakungula", "s27-okukungula"] }
+      ]
+    },
+    {
+      "id": "u27s3",
+      "icon": "heart",
+      "lessons": [
+        { "id": "u27s3l1", "newWords": ["ndimira", "nfumbira"], "sentences": ["s27-ndimira-jjajja", "s27-nfumbira-abaana"] },
+        { "id": "u27s3l2", "newWords": ["ntundira", "mpandiikira"], "sentences": ["s27-ntundira-mu-katale", "s27-mpandiikira-maama"] },
+        {
+          "id": "u27s3l3",
+          "newWords": [],
+          "sentences": ["s27-ndimira-jjajja", "s27-amakungula", "s27-nfumbira-abaana"],
+          "dialogues": [{ "speaker": "jjajja", "answer": 0 }]
+        }
+      ]
+    }
+  ]
+}

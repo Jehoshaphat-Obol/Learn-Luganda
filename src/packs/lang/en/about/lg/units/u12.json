@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u12",
+  "notes": {
+    "obudde": "Also means “time” or “the time of day”.",
+    "etonnya": "Used for rain: enkuba etonnya, it’s raining.",
+    "gwaka": "For omusana: omusana gwaka, the sun is shining.",
+    "empewo": "Means both wind and cold air.",
+    "eggulu": "Also thunder: eggulu libwatuka, it thunders.",
+    "ttoggo": "The long rains, around March to May.",
+    "bwokya": "For obudde: obudde bwokya, the weather is hot.",
+    "bunnyogovu": "For obudde: obudde bunnyogovu, the weather is cool.",
+    "nnyo-nnyo": "Doubling nnyo makes it stronger."
+  },
+  "tips": { "u12s1": "weather-verbs", "u12s2": "seasons" },
+  "glosses": {
+    "rainy-day": { "1": { "Laba": "look", "ejja": "is coming" }, "3": { "Naye": "but" }, "4": { "Wuliriza": "listen" }, "8": { "Nange": "me too" } }
+  },
+  "guidebook": {
+    "intro": "Uganda sits on the equator, so the year is shaped by rain rather than by summer and winter.",
+    "tips": [
+      {
+        "id": "weather-verbs",
+        "title": "The weather does things",
+        "body": [
+          "Weather words are nouns that act: the rain falls (**enkuba etonnya**), the sun burns (**omusana gwaka**). Each verb agrees with its noun: **e-** for enkuba, **gu-** for omusana, **bu-** for obudde.",
+          "**Obudde** means both weather and time. **Obudde bulungi** is “the weather is good”."
+        ]
+      },
+      {
+        "id": "seasons",
+        "title": "Wet and dry",
+        "body": [
+          "**Ttoggo** is the long rainy season, around March to May. **Ekyeya** is the dry season, when it is hot and dusty. There is a second, shorter rainy season later in the year."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Rain stops everything",
+        "body": [
+          "Heavy rain in Kampala can stop traffic and meetings, and nobody minds waiting it out. “The rain held me up” is a perfectly good reason to be late."
+        ]
+      }
+    ]
+  }
+}

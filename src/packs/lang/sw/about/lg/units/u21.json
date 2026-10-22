@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u21",
+  "notes": {
+    "bambi": "Huruma: husemwa jambo baya linapompata mtu, sawa na “pole” ya Kiswahili.",
+    "nsonyiwa": "Kuomba msamaha kwa jambo ulilofanya, kama “samahani”."
+  },
+  "tips": { "u21s1": "feeling-verbs", "u21s3": "sorry" },
+  "guidebook": {
+    "intro": "Hisia nyingi katika Kiganda ni vitenzi katika hali timilifu: “umechoka”, kwa hiyo uko na uchovu. Ni sawa kabisa na Kiswahili **nimechoka, nimefurahi, nimekasirika**. Ndiyo maana zinafanana na maumbo ya wakati uliopita ya Sehemu ya 19.",
+    "tips": [
+      {
+        "id": "feeling-verbs",
+        "title": "Hisia ni hali",
+        "body": [
+          "**Nkooye** hutoka **-koowa** (choka), **nsanyuse** hutoka **-sanyuka** (furahi), **ntidde** hutoka **-tya** (ogopa). Mwisho wa hali timilifu husema mabadiliko yametokea na bado ni kweli, kama **-me-** ya Kiswahili: nkooye = nimechoka.",
+          "Badilisha kiambishi cha nafsi kama kawaida: **okooye** (umechoka), **akooye** (amechoka), **tukooye** (tumechoka)."
+        ],
+        "table": [
+          ["Kitenzi", "Mimi …", "Kiswahili"],
+          ["-sanyuka", "nsanyuse", "nimefurahi"],
+          ["-nakuwala", "nnakuwadde", "nimehuzunika"],
+          ["-koowa", "nkooye", "nimechoka"],
+          ["-tya", "ntidde", "nimeogopa"],
+          ["-nyiiga", "nnyiize", "nimekasirika"]
+        ]
+      },
+      {
+        "id": "sorry",
+        "title": "Pole na samahani",
+        "body": [
+          "**Bambi** huonyesha huruma, kama **pole**: mtu ni mgonjwa, amechoka au amepata bahati mbaya, na unamhurumia. **Nsonyiwa** (nisamehe) ni kuomba msamaha kwa jambo ulilofanya, kama **samahani**. Kusema **Nsonyiwa** mtu anapoanguka kungesikika kama ni kosa lako."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Kuuliza habari za wote",
+        "body": [
+          "Mazungumzo mara nyingi hujumuisha habari za familia nzima, kama Kiswahili “habari za nyumbani?”: **Maama wo ali atya?** (mama yako hajambo?), **Abaana bali batya?** (watoto hawajambo?). Kuchukua muda kuuliza huonyesha kujali kwa kweli."
+        ]
+      }
+    ]
+  }
+}

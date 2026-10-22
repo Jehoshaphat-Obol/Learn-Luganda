@@ -64,6 +64,11 @@
               "ltr",
               "rtl"
             ]
+          },
+          "pivot": {
+            "type": "string",
+            "pattern": "^[a-z]{2,3}$",
+            "description": "Another language most of its speakers read, for course notes (lang/<pivot>/about/<to>/) when none are written in this one. English is tried last anyway."
           }
         }
       }

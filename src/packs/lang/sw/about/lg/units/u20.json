@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u20",
+  "notes": {
+    "nja": "nja + kitenzi cha ku-: nja kugenda, nitakwenda. Kama -ta- ya Kiswahili.",
+    "kugenda": "Umbo la ku- baada ya nja: nja kugenda.",
+    "ndigenda": "Wakati ujao wa mbali: siku moja, si karibuni."
+  },
+  "tips": { "u20s1": "near-future", "u20s3": "far-future" },
+  "glosses": { "weekend-plans": { "5": { "nnyanja": "ziwa" } } },
+  "guidebook": {
+    "intro": "Kuzungumza kuhusu wakati ujao hukuwezesha kupanga mipango, kuahidi na kuota ndoto. Kiganda kina wakati ujao wa karibu na wa mbali, wakati Kiswahili kina **-ta-** moja tu.",
+    "tips": [
+      {
+        "id": "near-future",
+        "title": "Karibuni: ja + ku-",
+        "body": [
+          "Wakati ujao wa karibu hutumia **-jja** (kuja) pamoja na umbo la **ku-**, kama Kiswahili cha mazungumzo “ninakuja kufanya”: **nja kugenda** (nitakwenda), **ojja kugenda** (utakwenda), **ajja kugenda** (atakwenda), **tujja kugenda** (tutakwenda), **bajja kugenda** (watakwenda).",
+          "**o-** ya kitenzi-jina hudondoka: **okulya** huwa **kulya** baada ya **nja**, kama Kiswahili **kula**."
+        ]
+      },
+      {
+        "id": "far-future",
+        "title": "Siku moja: li-",
+        "body": [
+          "Kwa wakati ujao wa mbali au usio na uhakika, ongeza **-li-**: **ndigenda** (nitakwenda, siku moja), **ndyogera** (nitazungumza). Iunganishe na **olunaku lumu** (siku moja). Tahadhari: **-li-** ya Kiswahili ni wakati uliopita, lakini **-li-** ya Kiganda ni wakati ujao!"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Mipango na “Katonda bw’anaayagala”",
+        "body": [
+          "Waganda wengi huongeza **Katonda bw’anaayagala** (Mungu akipenda) wanapozungumza kuhusu wakati ujao, kama “Inshallah” ya Kiswahili. Utaisikia mwishoni mwa mipango ya kila aina."
+        ]
+      }
+    ]
+  }
+}

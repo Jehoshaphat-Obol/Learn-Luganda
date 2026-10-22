@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u39",
+  "words": {
+    "okufukamira": { "text": "to kneel", "alts": ["kneeling", "kneel"] },
+    "abakadde": { "text": "elders", "alts": ["old people", "the elders"] },
+    "ekitiibwa": { "text": "respect", "alts": ["honour", "honor", "dignity"] },
+    "mwasuze": { "text": "Good morning (respectful)", "alts": ["how did you sleep", "good morning", "how did you all sleep"] },
+    "mwebale": { "text": "Thank you (respectful)", "alts": ["thank you", "thanks", "thank you all"] },
+    "mwattu": { "text": "please", "alts": ["kindly"] },
+    "webale-okujja": { "text": "Thanks for coming", "alts": ["thank you for coming", "welcome"] },
+    "omugenyi": { "text": "guest", "alts": ["visitor", "the guest", "a guest"] },
+    "olyeko": { "text": "Have some food", "alts": ["eat a little", "please eat", "have something to eat"] }
+  },
+  "sentences": {
+    "s39-bafukamira": {
+      "text": "Children kneel when they greet elders.",
+      "alts": ["Children kneel when greeting elders.", "The children kneel when they greet the elders."]
+    },
+    "s39-mwasuze-ssebo": { "text": "Good morning, sir.", "alts": ["How did you sleep, sir?", "Good morning, sir?"] },
+    "s39-mwebale-nnyabo": { "text": "Thank you very much, madam.", "alts": ["Thanks a lot, madam.", "Thank you so much, madam."] },
+    "s39-ekitiibwa": {
+      "text": "We must give elders respect.",
+      "alts": ["We have to respect elders.", "We must respect the elders.", "We have to give the elders respect."]
+    },
+    "s39-mwattu": { "text": "Please give me water.", "alts": ["Please give me some water.", "Give me water, please."] },
+    "s39-webale-okujja": {
+      "text": "Thanks for coming! We are happy to see you.",
+      "alts": ["Thank you for coming! We are happy to see you.", "Thanks for coming! We’re glad to see you."]
+    },
+    "s39-omugenyi": { "text": "The guest is the important one.", "alts": ["The guest comes first.", "The guest is the most important."] },
+    "s39-olyeko": { "text": "Sit down and have some food.", "alts": ["Sit and eat a little.", "Sit down, have something to eat."] },
+    "s39-yingira-otuule": { "text": "Come in and sit down.", "alts": ["Come in and sit.", "Come in and have a seat."] }
+  },
+  "phrases": [
+    "Good morning, sir.",
+    "Thank you very much, madam.",
+    "Please give me water.",
+    "Thanks for coming!",
+    "Come in and sit down.",
+    "Sit down and have some food."
+  ],
+  "dialogues": {
+    "u39s2l3": [{ "line": "My child, how did you sleep?", "options": ["I slept well, sir. And you?", "I agree with you.", "Hurry!"] }],
+    "u39s3l3": [
+      {
+        "line": "Thanks for coming! Sit down and have some food.",
+        "options": ["Thank you very much, sir.", "Thief! Catch him!", "I don’t agree."]
+      }
+    ]
+  }
+}

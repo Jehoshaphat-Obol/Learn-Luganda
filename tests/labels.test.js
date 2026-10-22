@@ -1,12 +1,11 @@
 import { afterAll, describe, expect, it } from 'vitest';
 import { applyLabels, checkLabels } from '../src/content/labels.js';
 import { course } from '../src/content/course.js';
-import { loadCourse } from '../src/content/load.js';
+import { COURSE_IDS, loadCourse } from '../src/content/load.js';
+import { readPack } from '../scripts/load-pack.js';
 
-const metas = import.meta.glob('../src/packs/courses/*/course.json', { eager: true, import: 'default' });
-const unitFiles = import.meta.glob('../src/packs/courses/*/units/*.json', { eager: true, import: 'default' });
-const labelFiles = import.meta.glob('../src/packs/courses/*/labels/*.json', { eager: true, import: 'default' });
-const dirOf = (path) => path.split('/').slice(0, 5).join('/');
+const packs = Object.fromEntries(COURSE_IDS.map((id) => [id, readPack(id)]));
+const LABELS = Object.entries(packs).flatMap(([id, p]) => Object.keys(p.labels).map((ui) => [id, ui]));
 
 const pack = {
   meta: { sections: [{ id: 's1', title: 'Foundations', level: 'Beginner', description: 'Basics.', units: ['u1'] }] },
@@ -70,10 +69,8 @@ describe('course labels', () => {
     expect(missing).toEqual(['sections.s1.title', 'sections.s1.level', 'sections.s1.description', 'units.u1.title', 'units.u1.description', 'skills.u1s2']);
   });
 
-  it.each(Object.keys(labelFiles))('%s names only real sections, units and skills', (path) => {
-    const dir = dirOf(path);
-    const units = Object.fromEntries(Object.entries(unitFiles).filter(([p]) => dirOf(p) === dir).map(([, u]) => [u.id, u]));
-    expect(checkLabels(labelFiles[path], { meta: metas[`${dir}/course.json`], units }, path.split('/').at(-1).replace('.json', '')).errors).toEqual([]);
+  it.each(LABELS)('%s labels in %s name only real sections, units and skills', (id, ui) => {
+    expect(checkLabels(packs[id].labels[ui], packs[id], ui).errors).toEqual([]);
   });
 
   describe('loading a course in another interface language', () => {

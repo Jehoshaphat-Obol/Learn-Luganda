@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u25",
+  "words": {
+    "ekika": { "text": "ukoo", "alts": ["kabila", "koo"] },
+    "ebika": { "text": "koo", "alts": ["koo nyingi", "makabila"] },
+    "omuziro": { "text": "mwiko wa ukoo", "alts": ["mwiko", "alama ya ukoo", "ishara ya ukoo"] },
+    "emiziro": { "text": "miiko ya koo", "alts": ["miiko", "alama za koo"] },
+    "kya": { "text": "cha" },
+    "gwa": { "text": "wa" },
+    "ffumbe": { "text": "fungo", "alts": ["ukoo wa fungo", "ukoo wa Ffumbe"] },
+    "lugave": { "text": "kakakuona", "alts": ["ukoo wa kakakuona", "ukoo wa Lugave"] },
+    "mmamba": { "text": "kamongo", "alts": ["ukoo wa kamongo", "ukoo wa Mmamba"] },
+    "ngeye": { "text": "mbega", "alts": ["tumbili mbega", "ukoo wa mbega", "ukoo wa Ngeye"] },
+    "ndi-wa": { "text": "Mimi ni wa", "alts": ["ni wa", "natoka ukoo wa"] },
+    "oli-wa-kika-ki": { "text": "Wewe ni wa ukoo gani?", "alts": ["ukoo wako ni upi", "unatoka ukoo gani", "wewe ni ukoo gani"] },
+    "tetulya": { "text": "hatuli", "alts": ["sisi hatuli"] },
+    "owooluganda": { "text": "ndugu", "alts": ["jamaa", "ndugu wa ukoo"] },
+    "jjajja-omutaka": { "text": "mkuu wa ukoo", "alts": ["kiongozi wa ukoo", "mzee wa ukoo", "chifu"] }
+  },
+  "sentences": {
+    "s25-ekika-kyange": { "text": "Ukoo wangu ni Ffumbe.", "alts": ["Ukoo wangu ni fungo."] },
+    "s25-ebika-bingi": { "text": "Buganda kuna koo nyingi.", "alts": ["Katika Buganda kuna koo nyingi.", "Kuna koo nyingi Buganda."] },
+    "s25-omuziro-gwange": { "text": "Mwiko wangu ni kakakuona.", "alts": ["Mwiko wa ukoo wangu ni kakakuona."] },
+    "s25-ekika-kya-mmamba": { "text": "Ukoo wa Mmamba ni mkubwa.", "alts": ["Ukoo wa kamongo ni mkubwa."] },
+    "s25-ndi-wa-lugave": { "text": "Mimi ni wa ukoo wa Lugave.", "alts": ["Mimi ni wa Lugave.", "Ninatoka ukoo wa Lugave."] },
+    "s25-oli-wa-kika-ki": { "text": "Wewe ni wa ukoo gani?", "alts": ["Ukoo wako ni upi?", "Unatoka ukoo gani?"] },
+    "s25-tetulya-mmamba": { "text": "Hatuli kamongo.", "alts": ["Sisi hatuli kamongo."] },
+    "s25-omuziro-gwa-ngeye": { "text": "Mwiko wa Ngeye ni mbega.", "alts": ["Mwiko wa ukoo wa Ngeye ni mbega."] },
+    "s25-tuli-booluganda": { "text": "Sisi ni ndugu.", "alts": ["Tu ndugu.", "Sisi ni jamaa.", "Tuko ukoo mmoja."] },
+    "s25-omutaka": { "text": "Mkuu wa ukoo anakuja.", "alts": ["Mzee wa ukoo anakuja.", "Kiongozi wa ukoo anakuja."] }
+  },
+  "phrases": [
+    "Wewe ni wa ukoo gani?",
+    "Mimi ni wa ukoo wa Lugave.",
+    "Ukoo wangu ni Ffumbe.",
+    "Mwiko wangu ni kakakuona.",
+    "Hatuli kamongo.",
+    "Sisi ni ndugu."
+  ],
+  "dialogues": { "u25s3l3": [{ "line": "Wewe ni wa ukoo gani, mwanangu?" }] }
+}

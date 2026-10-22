@@ -1,0 +1,79 @@
+{
+  "$schema": "../../../../docs/packs/schema/curriculum-unit.schema.json",
+  "id": "u19",
+  "color": "sage",
+  "character": "nakato",
+  "words": [
+    "ndidde",
+    "nnywedde",
+    "olidde",
+    "nkoze",
+    "nsomye",
+    "mmaze",
+    "nnagenda",
+    "nnalya",
+    "nnasoma",
+    "twagenda",
+    "yagenda",
+    "nnali",
+    "edda",
+    "wiiki-ewedde",
+    "omwaka-oguwedde",
+    "nkyali"
+  ],
+  "sentences": [
+    "s19-ndidde-matooke",
+    "s19-nnywedde-caayi",
+    "s19-olidde",
+    "s19-nkoze-nnyo",
+    "s19-nsomye-ekitabo",
+    "s19-mmaze",
+    "s19-jjo-nnagenda",
+    "s19-jjo-nnalya",
+    "s19-nnasoma",
+    "s19-twagenda-jinja",
+    "s19-yagenda-awaka",
+    "s19-edda-nnali",
+    "s19-omwaka-oguwedde",
+    "s19-nkyali-muyizi"
+  ],
+  "phrases": 6,
+  "skills": [
+    {
+      "id": "u19s1",
+      "icon": "check",
+      "lessons": [
+        {
+          "id": "u19s1l1",
+          "newWords": ["ndidde", "nnywedde", "olidde"],
+          "sentences": ["s19-ndidde-matooke", "s19-nnywedde-caayi", "s19-olidde"]
+        },
+        { "id": "u19s1l2", "newWords": ["nkoze", "nsomye"], "sentences": ["s19-nkoze-nnyo", "s19-nsomye-ekitabo"] },
+        { "id": "u19s1l3", "newWords": ["mmaze"], "sentences": ["s19-mmaze", "s19-olidde", "s19-nkoze-nnyo"] }
+      ]
+    },
+    {
+      "id": "u19s2",
+      "icon": "clock",
+      "lessons": [
+        { "id": "u19s2l1", "newWords": ["nnagenda", "nnalya"], "sentences": ["s19-jjo-nnagenda", "s19-jjo-nnalya"] },
+        { "id": "u19s2l2", "newWords": ["nnasoma", "twagenda"], "sentences": ["s19-nnasoma", "s19-twagenda-jinja"] },
+        { "id": "u19s2l3", "newWords": ["yagenda", "wiiki-ewedde"], "sentences": ["s19-yagenda-awaka", "s19-twagenda-jinja"] }
+      ]
+    },
+    {
+      "id": "u19s3",
+      "icon": "book",
+      "lessons": [
+        { "id": "u19s3l1", "newWords": ["nnali", "edda"], "sentences": ["s19-edda-nnali"] },
+        { "id": "u19s3l2", "newWords": ["omwaka-oguwedde", "nkyali"], "sentences": ["s19-omwaka-oguwedde", "s19-nkyali-muyizi"] },
+        {
+          "id": "u19s3l3",
+          "newWords": [],
+          "sentences": ["s19-jjo-nnagenda", "s19-mmaze", "s19-edda-nnali"],
+          "dialogues": [{ "speaker": "nakato", "answer": 0 }]
+        }
+      ]
+    }
+  ]
+}

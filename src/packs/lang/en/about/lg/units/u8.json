@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u8",
+  "notes": {
+    "gunnuma": "For mu-/gu- nouns: omutwe gunnuma, my head hurts.",
+    "lunnuma": "For lu- nouns: olubuto lunnuma, my stomach hurts.",
+    "omusujja": "Often used for malaria too.",
+    "s-amaaso-gange": "ma- class nouns take gange."
+  },
+  "tips": { "u8s2": "it-hurts" },
+  "glosses": { "doctor-visit": { "3": { "Olina": "you have" }, "5": { "lino": "this (for li- nouns)", "owummule": "and rest" } } },
+  "guidebook": {
+    "intro": "Knowing how to say what hurts is useful anywhere. These words also bring back the noun classes from Unit 2.",
+    "tips": [
+      {
+        "id": "it-hurts",
+        "title": "“It hurts me” agrees too",
+        "body": [
+          "The body part decides the start of the verb. **Omutwe** and **omukono** take **gu-**: **gunnuma**. **Olubuto** takes **lu-**: **lunnuma**. **Okugulu** (leg) takes **ku-**: **kunnuma**."
+        ],
+        "table": [
+          ["Body part", "It hurts me"],
+          ["omutwe (head)", "gunnuma"],
+          ["omukono (arm)", "gunnuma"],
+          ["olubuto (stomach)", "lunnuma"],
+          ["okugulu (leg)", "kunnuma"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Visiting the sick",
+        "body": [
+          "When someone is ill, friends and family visit, bring food and wish them **Wona mangu**. A short visit matters more than a long one."
+        ]
+      }
+    ]
+  }
+}

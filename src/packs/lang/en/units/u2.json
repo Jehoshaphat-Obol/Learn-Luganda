@@ -1,0 +1,94 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u2",
+  "words": {
+    "maama": { "text": "mother", "alts": ["mom", "mum", "mama"] },
+    "taata": { "text": "father", "alts": ["dad", "papa"] },
+    "jjajja": { "text": "grandparent", "alts": ["grandmother", "grandfather", "grandma", "grandpa"] },
+    "wange": { "text": "my" },
+    "omwana": { "text": "child", "alts": ["a child", "the child", "kid"] },
+    "abaana": { "text": "children", "alts": ["the children", "kids"] },
+    "omusajja": { "text": "man", "alts": ["a man", "the man"] },
+    "abasajja": { "text": "men", "alts": ["the men"] },
+    "omukazi": { "text": "woman", "alts": ["a woman", "the woman"] },
+    "abakazi": { "text": "women", "alts": ["the women"] },
+    "omuntu": { "text": "person", "alts": ["a person", "the person"] },
+    "abantu": { "text": "people", "alts": ["the people"] },
+    "omuyizi": { "text": "student", "alts": ["a student", "the student", "learner"] },
+    "abayizi": { "text": "students", "alts": ["the students", "learners"] },
+    "omusomesa": { "text": "teacher", "alts": ["a teacher", "the teacher"] },
+    "abasomesa": { "text": "teachers", "alts": ["the teachers"] },
+    "ekitabo": { "text": "book", "alts": ["a book", "the book"] },
+    "ebitabo": { "text": "books", "alts": ["the books"] },
+    "ekikopo": { "text": "cup", "alts": ["a cup", "the cup"] },
+    "ebikopo": { "text": "cups", "alts": ["the cups"] },
+    "ekintu": { "text": "thing", "alts": ["a thing", "the thing"] },
+    "ebintu": { "text": "things", "alts": ["the things"] },
+    "ekitanda": { "text": "bed", "alts": ["a bed", "the bed"] },
+    "ebitanda": { "text": "beds", "alts": ["the beds"] },
+    "amazzi": { "text": "water", "alts": ["the water"] },
+    "emmere": { "text": "food", "alts": ["the food"] },
+    "caayi": { "text": "tea", "alts": ["the tea"] },
+    "oluganda": { "text": "Luganda" },
+    "njagala": { "text": "I want", "alts": ["i like", "i love"] },
+    "ndya": { "text": "I eat", "alts": ["i am eating", "i’m eating"] },
+    "nnywa": { "text": "I drink", "alts": ["i am drinking", "i’m drinking"] },
+    "nsoma": { "text": "I read", "alts": ["i am reading", "i’m reading", "i study"] },
+    "njiga": { "text": "I learn", "alts": ["i am learning", "i’m learning"] },
+    "oyagala-ki": { "text": "What do you want?", "alts": ["what would you like"] }
+  },
+  "sentences": {
+    "s-maama-wange": { "text": "My mother.", "alts": ["My mom.", "My mum."] },
+    "s-taata-wange": { "text": "My father.", "alts": ["My dad."] },
+    "s-jjajja-wange": { "text": "My grandparent.", "alts": ["My grandmother.", "My grandfather.", "My grandma.", "My grandpa."] },
+    "s-omwana-wange": { "text": "My child." },
+    "s-omusajja-omukazi": { "text": "A man and a woman.", "alts": ["The man and the woman."] },
+    "s-abaana-abayizi": { "text": "The children are students.", "alts": ["Children are students."] },
+    "s-omusomesa-wange": { "text": "My teacher." },
+    "s-ekitabo-kyange": { "text": "My book." },
+    "s-ebitabo-byange": { "text": "My books." },
+    "s-njagala-amazzi": { "text": "I want water.", "alts": ["I would like water.", "I want some water."] },
+    "s-njagala-emmere": { "text": "I want food.", "alts": ["I would like food.", "I want some food."] },
+    "s-nnywa-caayi": { "text": "I drink tea.", "alts": ["I am drinking tea.", "I’m drinking tea."] },
+    "s-ndya-emmere": { "text": "I eat food.", "alts": ["I am eating food.", "I’m eating food.", "I am eating."] },
+    "s-nsoma-ekitabo": { "text": "I read a book.", "alts": ["I am reading a book.", "I’m reading a book.", "I read the book."] },
+    "s-njiga-oluganda": { "text": "I am learning Luganda.", "alts": ["I’m learning Luganda.", "I learn Luganda."] },
+    "s-oyagala-ki": { "text": "What do you want?", "alts": ["What would you like?"] },
+    "s-njagala-ekikopo": { "text": "I want a cup.", "alts": ["I want the cup."] }
+  },
+  "phrases": [
+    "My mother.",
+    "My child.",
+    "The children are students.",
+    "My book.",
+    "My books.",
+    "What do you want?",
+    "I want water.",
+    "I drink tea.",
+    "I am learning Luganda."
+  ],
+  "dialogues": {
+    "u2s1l2": [{ "line": "Who is this?", "options": ["My mother.", "I want water.", "My books."] }],
+    "u2s3l3": [{ "line": "What do you want?", "options": ["I want tea.", "I am Nakato.", "Good morning."] }]
+  },
+  "stories": {
+    "market-matooke": {
+      "title": "Matooke at the market",
+      "summary": "Emma buys matooke for dinner.",
+      "lines": [
+        "How are you, sir?",
+        "I’m fine, madam. What do you want?",
+        "I want matooke.",
+        "Okay. Five thousand shillings.",
+        "Okay. I want water too.",
+        "Here is the water. Thank you very much, madam!",
+        "Thank you, sir. Goodbye!"
+      ],
+      "questions": [
+        { "question": "What does Emma want?", "options": ["Tea", "Matooke", "A book"] },
+        { "question": "How much is the matooke?", "options": ["Two thousand", "Five thousand", "Ten thousand"] },
+        { "question": "What else does Emma buy?", "options": ["Water", "Tea", "Food for Jjajja"] }
+      ]
+    }
+  }
+}

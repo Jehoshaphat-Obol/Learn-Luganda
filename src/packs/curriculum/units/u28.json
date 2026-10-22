@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../../docs/packs/schema/curriculum-unit.schema.json",
+  "id": "u28",
+  "color": "blush",
+  "character": "nakato",
+  "words": [
+    "kwanjula",
+    "ssenga",
+    "omukolo",
+    "ekirabo",
+    "embaga",
+    "omugole",
+    "kulika",
+    "okujaguza",
+    "tujaguze",
+    "amazaalibwa",
+    "nkwagaliza",
+    "keeki",
+    "mwebale-okujja"
+  ],
+  "sentences": [
+    "s28-kwanjula-ku-lwamukaaga",
+    "s28-ssenga",
+    "s28-omukolo-mulungi",
+    "s28-ekirabo",
+    "s28-embaga",
+    "s28-kulika-omugole",
+    "s28-tujaguze",
+    "s28-amazaalibwa",
+    "s28-nkwagaliza",
+    "s28-keeki",
+    "s28-mwebale-okujja"
+  ],
+  "phrases": 6,
+  "skills": [
+    {
+      "id": "u28s1",
+      "icon": "heart",
+      "lessons": [
+        { "id": "u28s1l1", "newWords": ["kwanjula", "ssenga"], "sentences": ["s28-kwanjula-ku-lwamukaaga", "s28-ssenga"] },
+        { "id": "u28s1l2", "newWords": ["omukolo", "ekirabo"], "sentences": ["s28-omukolo-mulungi", "s28-ekirabo"] },
+        { "id": "u28s1l3", "newWords": ["mwebale-okujja"], "sentences": ["s28-mwebale-okujja", "s28-omukolo-mulungi"] }
+      ]
+    },
+    {
+      "id": "u28s2",
+      "icon": "star",
+      "lessons": [
+        { "id": "u28s2l1", "newWords": ["embaga", "omugole"], "sentences": ["s28-embaga", "s28-ssenga"] },
+        { "id": "u28s2l2", "newWords": ["kulika"], "sentences": ["s28-kulika-omugole"] },
+        { "id": "u28s2l3", "newWords": ["okujaguza", "tujaguze"], "sentences": ["s28-tujaguze", "s28-kulika-omugole"] }
+      ]
+    },
+    {
+      "id": "u28s3",
+      "icon": "gem",
+      "lessons": [
+        { "id": "u28s3l1", "newWords": ["amazaalibwa", "nkwagaliza"], "sentences": ["s28-amazaalibwa", "s28-nkwagaliza"] },
+        { "id": "u28s3l2", "newWords": ["keeki"], "sentences": ["s28-keeki", "s28-nkwagaliza"] },
+        {
+          "id": "u28s3l3",
+          "newWords": [],
+          "sentences": ["s28-amazaalibwa", "s28-tujaguze", "s28-ekirabo"],
+          "dialogues": [{ "speaker": "nakato", "answer": 0 }]
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": "the-kwanjula",
+      "unlockAfter": "u28s3l3",
+      "cast": ["nakato", "jjajja"],
+      "steps": [
+        { "speaker": "jjajja" },
+        { "speaker": "nakato" },
+        { "speaker": "jjajja" },
+        { "speaker": "nakato" },
+        { "answer": 1 },
+        { "speaker": "jjajja" },
+        { "speaker": "nakato" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "nakato" },
+        { "answer": 0, "optionsLang": "target" },
+        { "speaker": "jjajja" }
+      ]
+    }
+  ]
+}

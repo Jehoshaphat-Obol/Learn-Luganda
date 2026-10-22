@@ -1,0 +1,58 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u15",
+  "words": {
+    "ekibiina": { "text": "class", "alts": ["classroom", "the class", "group"] },
+    "ekkalaamu": { "text": "pen", "alts": ["pencil", "a pen", "the pen"] },
+    "olupapula": { "text": "paper", "alts": ["a sheet of paper", "page", "the paper"] },
+    "ekigambo": { "text": "word", "alts": ["a word", "the word"] },
+    "ebigambo": { "text": "words", "alts": ["the words"] },
+    "mpandiika": { "text": "I write", "alts": ["i am writing"] },
+    "musome": { "text": "Read (all of you)", "alts": ["read", "study", "everyone read"] },
+    "muwandiike": { "text": "Write (all of you)", "alts": ["write", "everyone write"] },
+    "muwulirize": { "text": "Listen (all of you)", "alts": ["listen", "everyone listen"] },
+    "olungereza": { "text": "English", "alts": ["the english language"] },
+    "okubala": { "text": "maths", "alts": ["math", "mathematics", "counting", "to count"] },
+    "ssaayansi": { "text": "science", "alts": ["the science"] },
+    "ebyafaayo": { "text": "history", "alts": ["the history"] },
+    "nnyagala-nnyo": { "text": "I really like", "alts": ["i love", "i like very much", "i like a lot"] },
+    "ekibuuzo": { "text": "question", "alts": ["a question", "the question"] },
+    "ntegeera": { "text": "I understand", "alts": ["i get it", "understood"] },
+    "otegeera": { "text": "Do you understand?", "alts": ["you understand", "do you get it"] },
+    "ddamu": { "text": "Repeat", "alts": ["again", "say it again", "answer"] },
+    "omulimu-gwawaka": { "text": "homework", "alts": ["home work", "the homework"] },
+    "ekigezo": { "text": "exam", "alts": ["test", "an exam", "the exam"] }
+  },
+  "sentences": {
+    "s15-ekibiina-kyaffe": { "text": "Our class is big.", "alts": ["Our classroom is big."] },
+    "s15-mpa-ekkalaamu": { "text": "Give me a pen, madam.", "alts": ["Give me the pen, madam.", "Pass me a pen, madam."] },
+    "s15-mpandiika-ebigambo": { "text": "I write the words on paper.", "alts": ["I am writing the words on paper.", "I write words on the paper."] },
+    "s15-musome-ekitabo": { "text": "Read the book, everyone.", "alts": ["Read the book.", "Everyone read the book."] },
+    "s15-muwandiike-erinnya": { "text": "Write your names, everyone.", "alts": ["Write your name.", "Everyone write your name."] },
+    "s15-muwulirize": { "text": "Listen to the teacher, everyone.", "alts": ["Listen to the teacher.", "Everyone listen to the teacher."] },
+    "s15-nsoma-olungereza": { "text": "I study English and Luganda.", "alts": ["I learn English and Luganda.", "I read English and Luganda."] },
+    "s15-nnyagala-nnyo-okubala": { "text": "I really like maths.", "alts": ["I love maths.", "I love math.", "I really like math."] },
+    "s15-ssaayansi-nzibu": { "text": "Science is hard.", "alts": ["Science is difficult."] },
+    "s15-nnina-ekibuuzo": { "text": "I have a question." },
+    "s15-otegeera": { "text": "Do you understand? Yes, I understand.", "alts": ["Do you understand? Yes, I do."] },
+    "s15-ddamu-mpola": { "text": "Repeat slowly, sir.", "alts": ["Say it again slowly, sir.", "Repeat it slowly, sir."] },
+    "s15-omulimu-gwawaka": { "text": "I am doing homework.", "alts": ["I do my homework.", "I am doing my homework.", "I do homework."] },
+    "s15-ekigezo-enkya": { "text": "The exam is tomorrow.", "alts": ["The test is tomorrow."] }
+  },
+  "phrases": [
+    "Read the book, everyone.",
+    "Listen to the teacher, everyone.",
+    "I have a question.",
+    "Do you understand?",
+    "Repeat slowly, sir.",
+    "I really like maths."
+  ],
+  "dialogues": {
+    "u15s3l3": [
+      {
+        "line": "Write these words, everyone. Do you understand?",
+        "options": ["No. Repeat slowly, sir.", "The cows eat grass.", "I bathe in the morning."]
+      }
+    ]
+  }
+}

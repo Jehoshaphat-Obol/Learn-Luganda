@@ -3,7 +3,7 @@
 Attach `docs/packs/README.md`, `docs/packs/schema/course-unit.schema.json`,
 the course's `course.json`, the unit plan from the outline, the previous
 unit file (for words already taught), and, as an example of depth,
-`src/packs/courses/en-lg/units/u1.json`. Save the result as
+`src/packs/courses/en-sw/units/u1.json`. Save the result as
 `src/packs/courses/{{from}}-{{to}}/units/{{unit id}}.json`.
 
 ---

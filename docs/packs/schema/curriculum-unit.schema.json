@@ -1,0 +1,198 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jehoshaphat-obol.github.io/Learn-Luganda/schema/curriculum-unit.schema.json",
+  "title": "Shared catalog: a unit of the curriculum",
+  "description": "src/packs/curriculum/units/uN.json. The unit's skeleton: word and sentence ids in teaching order, skills and lessons, dialogue and story steps. No text: each language's text is in src/packs/lang/<code>/units/uN.json under the same ids.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "words",
+    "sentences",
+    "skills"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "color": {
+      "type": "string"
+    },
+    "character": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "words": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]*$"
+      }
+    },
+    "sentences": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9][a-z0-9-]*$"
+      }
+    },
+    "phrases": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "How many guidebook phrases the unit has."
+    },
+    "skills": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "lessons"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "icon": {
+            "type": "string"
+          },
+          "lessons": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "newWords"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9][a-z0-9-]*$"
+                },
+                "newWords": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9-]*$"
+                  }
+                },
+                "sentences": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9][a-z0-9-]*$"
+                  }
+                },
+                "dialogues": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "speaker",
+                      "answer"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "speaker": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9][a-z0-9-]*$"
+                      },
+                      "answer": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "description": "Index of the right reply in each language's options."
+                      }
+                    }
+                  }
+                },
+                "settings": {
+                  "$ref": "settings.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "stories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "unlockAfter",
+          "cast",
+          "steps"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "unlockAfter": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "cast": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            }
+          },
+          "steps": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "required": [
+                    "speaker"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "speaker": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9][a-z0-9-]*$"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "required": [
+                    "answer"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "answer": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "optionsLang": {
+                      "const": "target",
+                      "description": "The options test the language being learned. Otherwise they're in the learner's language when it has them, and in the target language when not."
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "settings": {
+      "$ref": "settings.schema.json"
+    }
+  }
+}

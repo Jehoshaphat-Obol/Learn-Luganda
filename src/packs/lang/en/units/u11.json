@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u11",
+  "words": {
+    "nzuukuka": { "text": "I wake up", "alts": ["i awake", "i am waking up"] },
+    "ngolokoka": { "text": "I get up", "alts": ["i get out of bed", "i rise"] },
+    "ekyenkya": { "text": "breakfast", "alts": ["the breakfast"] },
+    "buli-lunaku": { "text": "every day", "alts": ["daily", "each day"] },
+    "omulimu": { "text": "work", "alts": ["job", "the work", "the job"] },
+    "nkola": { "text": "I work", "alts": ["i do", "i am working"] },
+    "akola": { "text": "he works", "alts": ["she works", "he/she works", "works", "he is working", "she is working"] },
+    "tukola": { "text": "we work", "alts": ["we are working", "we do"] },
+    "bakola": { "text": "they work", "alts": ["they are working", "they do"] },
+    "ekyemisana": { "text": "lunch", "alts": ["the lunch", "midday meal"] },
+    "nfumba": { "text": "I cook", "alts": ["i am cooking"] },
+    "njoza": { "text": "I wash", "alts": ["i clean", "i am washing", "i do the washing"] },
+    "okusoma": { "text": "to read", "alts": ["to study", "reading", "studying"] },
+    "okuzannya": { "text": "to play", "alts": ["playing"] },
+    "bazannya": { "text": "they play", "alts": ["they are playing"] },
+    "oluvannyuma": { "text": "afterwards", "alts": ["then", "later", "after that"] },
+    "ekyeggulo": { "text": "dinner", "alts": ["supper", "the evening meal", "the dinner"] },
+    "ndaba": { "text": "I watch", "alts": ["i see", "i am watching", "i look at"] },
+    "ttivvi": { "text": "TV", "alts": ["television", "the tv"] },
+    "nneebaka": { "text": "I sleep", "alts": ["i go to bed", "i go to sleep", "i am sleeping"] },
+    "bulijjo": { "text": "always", "alts": ["usually", "every time"] }
+  },
+  "sentences": {
+    "s-nzuukuka-ku-makya": { "text": "I wake up in the morning.", "alts": ["I wake up early."] },
+    "s-ngolokoka-ssaawa-emu": { "text": "I get up at seven o’clock.", "alts": ["I get up at seven.", "I get up at 7."] },
+    "s-ndya-ekyenkya": { "text": "I eat breakfast.", "alts": ["I have breakfast.", "I am eating breakfast."] },
+    "s-nkola-buli-lunaku": { "text": "I work every day.", "alts": ["I work daily."] },
+    "s-nnenda-ku-mulimu": { "text": "I am going to work.", "alts": ["I go to work.", "I’m going to work."] },
+    "s-maama-akola-mu-ddwaliro": {
+      "text": "Mother works in a hospital.",
+      "alts": ["Mum works in the hospital.", "Mother works at the hospital.", "My mother works in a hospital."]
+    },
+    "s-tukola-awaka": { "text": "We work at home.", "alts": ["We work from home."] },
+    "s-bakola-mu-kibuga": { "text": "They work in town.", "alts": ["They work in the city."] },
+    "s-nfumba-ekyemisana": { "text": "I cook lunch.", "alts": ["I am cooking lunch.", "I make lunch."] },
+    "s-njoza-engoye": { "text": "I wash clothes.", "alts": ["I wash the clothes.", "I do the laundry."] },
+    "s-njagala-okusoma": { "text": "I want to read.", "alts": ["I want to study.", "I like to read.", "I like reading."] },
+    "s-abaana-bazannya": { "text": "The children are playing.", "alts": ["The children play.", "Children play."] },
+    "s-oluvannyuma-nsoma": { "text": "Afterwards I study.", "alts": ["Then I study.", "Later I read.", "Afterwards I read.", "Then I read."] },
+    "s-ndya-ekyeggulo": { "text": "I eat dinner at night.", "alts": ["I eat supper at night.", "I have dinner at night."] },
+    "s-ndaba-ttivvi": { "text": "I watch TV in the afternoon.", "alts": ["I watch television in the afternoon.", "I watch TV in the evening."] },
+    "s-nneebaka-ssaawa-ssatu": { "text": "I sleep at nine at night.", "alts": ["I go to bed at nine at night.", "I sleep at 9 pm.", "I go to bed at 9 pm."] },
+    "s-bulijjo-nnywa-caayi": { "text": "I always drink tea.", "alts": ["I usually drink tea."] }
+  },
+  "phrases": [
+    "I wake up in the morning.",
+    "I eat breakfast.",
+    "I am going to work.",
+    "Mother works in a hospital.",
+    "The children are playing.",
+    "Afterwards I study.",
+    "I sleep at nine at night."
+  ],
+  "dialogues": {
+    "u11s3l3": [{ "line": "What do you do in the morning?", "options": ["I wake up and eat breakfast.", "I sleep at night.", "My shirt."] }]
+  }
+}

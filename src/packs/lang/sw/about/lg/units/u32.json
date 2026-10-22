@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u32",
+  "notes": { "okusimba": "Kwa miti na migomba. Mbegu hutumia okusiga." },
+  "tips": { "u32s1": "locatives" },
+  "glosses": {
+    "source-of-nile": { "2": { "gava": "yanatoka" }, "5": { "waggulu": "juu" }, "7": { "lubalama": "ufukweni" }, "9": { "Tukung’aanye": "tukusanye" } }
+  },
+  "guidebook": {
+    "intro": "Uganda ni ya kijani, yenye mvua na maji mengi: Ziwa Viktoria, chanzo cha Mto Naili, misitu na vilima. Vielezi vya mahali vinakuambia vitu viko wapi.",
+    "tips": [
+      {
+        "id": "locatives",
+        "title": "mu, ku na e",
+        "body": [
+          "**mu** maana yake “ndani”: **mu kibira** (msituni, ndani ya msitu). **ku** maana yake “juu ya, kwenye”: **ku lusozi** (kilimani). **e** hutangulia majina ya mahali: **e Jinja**, **e Kampala**.",
+          "Baada ya **mu** na **ku**, nomino hudondosha irabu yake ya kwanza: **ekibira** inakuwa **mu kibira**, **olusozi** inakuwa **ku lusozi**. Kiswahili kina ngeli zile zile za mahali (**mu-**, **ku-**, **pa-**) lakini kwa kawaida huongeza **-ni** mwishoni: **msituni**, **kilimani**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Vilima saba",
+        "body": [
+          "Kwa jadi ilisemekana Kampala imesimama juu ya vilima saba, kati yake **Mengo** (ikulu ya Kabaka), **Rubaga**, **Namirembe** na **Kibuli**. Jiji limeenea zamani juu ya vilima vingi zaidi."
+        ]
+      },
+      {
+        "title": "Kiyira",
+        "body": [
+          "Mto Naili, **Kiyira** kwa Kiganda, unatoka Ziwa Viktoria huko Jinja na kutiririka kaskazini hadi Bahari ya Mediterania. Ziwa hili hili ni Nyanza ya Mwanza na Kisumu. Kuvuka maporomoko kwa mashua karibu na Jinja ni maarufu."
+        ]
+      }
+    ]
+  }
+}

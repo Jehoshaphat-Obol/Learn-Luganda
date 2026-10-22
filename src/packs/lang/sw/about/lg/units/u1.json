@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u1",
+  "notes": {
+    "oli-otya": "Salamu ya kawaida kwa mtu mmoja.",
+    "gyendi": "Jibu la kawaida kwa Oli otya?",
+    "ssebo": "Njia ya heshima ya kumwita mwanamume, kama “bwana” au “mzee”.",
+    "nnyabo": "Njia ya heshima ya kumwita mwanamke, kama “mama” au “bibi”.",
+    "wasuze-otya": "Maana yake halisi ni “ulilalaje?”, husemwa kwa mtu mmoja asubuhi.",
+    "osiibye-otya": "Maana yake halisi ni “umeshindaje?”",
+    "gyebale-ko": "Salamu kwa mtu anayefanya kazi.",
+    "weraba": "Kwa mtu mmoja.",
+    "ggwe": "Mtu mmoja.",
+    "lyange": "Hukubaliana na erinnya: erinnya lyange, jina langu. Kama Kiswahili jina → langu.",
+    "lyo": "Hukubaliana na erinnya: erinnya lyo, jina lako."
+  },
+  "glosses": {
+    "new-friend": { "8": { "Nange": "mimi pia, nami" } },
+    "morning-jjajja": { "4": { "Gyebale ko": "husemwa kwa mtu aliye na shughuli au anayefanya kazi" } }
+  },
+  "guidebook": {
+    "intro": "Salamu ndizo moyo wa mazungumzo Buganda. Hakuna anayeuliza njia au kununua embe kabla ya kusalimia kwanza. Kama Waswahili, Waganda hawaanzi jambo bila salamu.",
+    "tips": [
+      {
+        "id": "time-of-day",
+        "title": "Salamu hufuata saa",
+        "body": [
+          "Mpaka karibu saa sita mchana, uliza **Wasuze otya?**, maana yake halisi “ulilalaje?”, kama Kiswahili “umeamkaje?”. Jibu **Nsuze bulungi** (nimelala salama) au **Bulungi** tu.",
+          "Baadaye mchana, tumia **Osiibye otya?**, “umeshindaje?”. **Oli otya?** (habari yako?) inafaa wakati wowote."
+        ]
+      },
+      {
+        "id": "one-or-many",
+        "title": "Mtu mmoja au wengi",
+        "body": [
+          "Salamu hubadilika ukiongea na kundi, kama Kiswahili **hujambo → hamjambo**. Maumbo ya umoja katika sehemu hii huanza na **w-** au **o-**; maumbo ya wingi huanza na **mw-** au **mu-** (linganisha Kiswahili **u-** na **m-**: umelala / mmelala)."
+        ],
+        "table": [
+          ["Mtu mmoja", "Watu wengi", "Kiswahili"],
+          ["Wasuze otya?", "Mwasuze mutya?", "Habari za asubuhi"],
+          ["Weebale", "Mwebale", "Asante / Asanteni"],
+          ["Weraba", "Mweraba", "Kwaheri / Kwaherini"]
+        ]
+      },
+      {
+        "id": "long-sounds",
+        "title": "Herufi mbili ni sauti ndefu",
+        "body": [
+          "Irabu mbili (**aa**, **ee**, **ii**) hutamkwa kwa muda mrefu kidogo, na konsonanti mbili (**nn**, **ss**, **bb**, **kk**) hutamkwa kwa nguvu zaidi. Urefu hubadilisha maana, kwa hiyo sema **Weebale** na **ee** ndefu, na **kkumi** (kumi) na **kk** yenye nguvu. Kiswahili hakina tofauti hii, kwa hiyo sikiliza kwa makini.",
+          "Kiganda huandikwa kama kinavyotamkwa, kama Kiswahili: kila herufi hutamkwa, na irabu tano **a e i o u** zinasikika karibu sawa na za Kiswahili."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Chukua muda kusalimia",
+        "body": [
+          "Salamu ni mazungumzo mafupi, si neno moja. Watu huuliza kuhusu afya yako, usiku wako na kazi yako kabla ya kuingia kwenye shughuli. Kuharakisha kunaweza kuonekana kama ukosefu wa adabu."
+        ]
+      },
+      {
+        "title": "Ssebo na nnyabo",
+        "body": [
+          "Ongeza **ssebo** (bwana) au **nnyabo** (mama) ili kuonyesha heshima kwa aliye mkubwa kuliko wewe au usiyemfahamu, kama Kiswahili “shikamoo” kwa wazee. Katika mazingira ya jadi, watu hupiga magoti kuwasalimia wazee kama ishara ya heshima."
+        ]
+      },
+      {
+        "title": "Gyebale ko",
+        "body": [
+          "Mwambie **Gyebale ko** yeyote anayefanya kazi: mwenye duka, mkulima, rafiki anayepika. Ni kama “pole na kazi”. Jibu la kawaida ni **Weebale** au **Kale**."
+        ]
+      }
+    ]
+  }
+}

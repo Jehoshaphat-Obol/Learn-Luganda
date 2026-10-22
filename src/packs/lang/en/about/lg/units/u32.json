@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u32",
+  "notes": { "okusimba": "For trees and bananas. Seeds use okusiga." },
+  "tips": { "u32s1": "locatives" },
+  "glosses": {
+    "source-of-nile": { "2": { "gava": "come from" }, "5": { "waggulu": "above" }, "7": { "lubalama": "shore" }, "9": { "Tukung’aanye": "let’s collect" } }
+  },
+  "guidebook": {
+    "intro": "Uganda is green, wet and full of water: Lake Victoria, the source of the Nile, forests and hills. Locatives tell you where things are.",
+    "tips": [
+      {
+        "id": "locatives",
+        "title": "mu, ku and e",
+        "body": [
+          "**mu** means “in, inside”: **mu kibira** (in the forest). **ku** means “on, at”: **ku lusozi** (on the hill). **e** goes before place names: **e Jinja**, **e Kampala**.",
+          "After **mu** and **ku**, the noun drops its first vowel: **ekibira** becomes **mu kibira**, **olusozi** becomes **ku lusozi**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Seven hills",
+        "body": [
+          "Kampala was traditionally said to stand on seven hills, among them **Mengo** (the Kabaka’s palace), **Rubaga**, **Namirembe** and **Kibuli**. The city has long since spread over many more."
+        ]
+      },
+      {
+        "title": "Kiyira",
+        "body": [
+          "The Nile, **Kiyira** in Luganda, leaves Lake Victoria at Jinja and flows north to the Mediterranean. Rafting the rapids near Jinja is famous."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u19",
+  "tips": { "u19s1": "have-eaten", "u19s2": "went", "u19s3": "was" },
+  "guidebook": {
+    "intro": "Yogera ku bye wakoze leero, jjo n’edda.",
+    "tips": [
+      {
+        "id": "have-eaten",
+        "title": "Leero: “I have eaten”",
+        "body": [
+          "Ekintu ky’omaze okukola, gamba **I have** n’ekikolwa ekikyuse: **I have eaten. I have finished. I have read the book.** Okubuuza: **Have you eaten?** — **Yes, I have.**"
+        ]
+      },
+      {
+        "id": "went",
+        "title": "Jjo n’edda: “I went”",
+        "body": [
+          "Ku byayita (jjo, wiiki ewedde) ebikolwa bingi byongerwako **-ed**: **work → worked**, **study → studied**. Naye ebimu bikyuka ddala, era bino olina okubikwata."
+        ],
+        "table": [["Leero", "Jjo"], ["go", "went"], ["eat", "ate"], ["drink", "drank"], ["read", "read"], ["work", "worked"]]
+      },
+      {
+        "id": "was",
+        "title": "“I was”",
+        "body": [
+          "**Nnali** kiba **I was**. Ku bangi: **we were**, **they were**. **Long ago I was a student. Last year I was in Masaka.**",
+          "**I am still** kitegeeza nkyali: **I am still a student.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "“Olidde?”",
+        "body": [
+          "Mu Uganda **Olidde?** kitera okuba ngeri ya kulamusa n’okufaayo. Mu Lungereza **Have you eaten?** kiba kibuuzo kya ddala, era kitera okutegeeza nti oyita omuntu okulya naawe."
+        ]
+      }
+    ]
+  }
+}

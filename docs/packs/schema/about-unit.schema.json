@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jehoshaphat-obol.github.io/Learn-Luganda/schema/about-unit.schema.json",
+  "title": "Shared catalog: unit notes about a language",
+  "description": "src/packs/lang/<from>/about/<to>/units/uN.json. Optional notes about <to> written in <from> for one unit: word and sentence notes, the guidebook (its phrases come from the lang packs) and story glosses.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "notes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      },
+      "description": "By word or sentence id."
+    },
+    "tips": {
+      "type": "object",
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "description": "The guidebook tip each skill links to, by skill id."
+    },
+    "guidebook": {
+      "type": "object",
+      "required": [
+        "intro",
+        "tips"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "intro": {
+          "type": "string"
+        },
+        "tips": {
+          "$ref": "course-unit.schema.json#/properties/guidebook/properties/tips"
+        },
+        "culture": {
+          "$ref": "course-unit.schema.json#/properties/guidebook/properties/culture"
+        }
+      }
+    },
+    "glosses": {
+      "type": "object",
+      "description": "By story id, then step index: target words with their meanings.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

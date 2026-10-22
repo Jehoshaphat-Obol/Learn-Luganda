@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u2",
+  "notes": {
+    "wange": "Hukubaliana na majina ya watu (ngeli ya mu-/ba-, umoja): maama wange, mama yangu. Kama Kiswahili mtoto wangu.",
+    "oluganda": "Lugha yenyewe. Mganda huzungumza Oluganda, kama Mswahili huzungumza Kiswahili.",
+    "s-ekitabo-kyange": "Majina ya ngeli ya ki- huchukua kyange, kama Kiswahili kitabu changu.",
+    "s-ebitabo-byange": "Majina ya ngeli ya bi- huchukua byange, kama Kiswahili vitabu vyangu."
+  },
+  "tips": { "u2s2": "noun-classes" },
+  "glosses": {
+    "market-matooke": {
+      "2": { "matooke": "ndizi za kupika, chakula kikuu cha Waganda" },
+      "4": { "Ssente": "pesa", "nkumi": "elfu" },
+      "7": { "Gano": "haya hapa" }
+    }
+  },
+  "guidebook": {
+    "intro": "Sehemu hii inaleta watu, vitu na vitenzi vyako vya kwanza, na pamoja navyo wazo linaloendesha sarufi ya Kiganda: ngeli za majina. Habari njema: Kiswahili kina ngeli pia, kwa hiyo wazo hili unalijua tayari.",
+    "tips": [
+      {
+        "id": "noun-classes",
+        "title": "Ngeli za majina",
+        "body": [
+          "Kila jina la Kiganda liko katika ngeli, inayoonyeshwa na kiambishi chake, kama Kiswahili. Ngeli huja kwa jozi za umoja na wingi. Watu kwa kawaida huchukua **omu-** katika umoja na **aba-** katika wingi (Kiswahili **m-/wa-**: mtu, watu); vitu vingi huchukua **eki-** na **ebi-** (Kiswahili **ki-/vi-**: kitabu, vitabu).",
+          "Maneno yanayoambatana na jina hubadilika ili kukubaliana na ngeli yake, sawa na Kiswahili. “-angu” ni **wange** kwa mtu mmoja, **bange** kwa watu, **kyange** kwa kitu cha **eki-** na **byange** kwa vitu vya **ebi-** (linganisha wangu, wangu, changu, vyangu). Uliona mfano mwingine katika Sehemu ya 1: **erinnya lyange**, jina langu."
+        ],
+        "table": [
+          ["Umoja", "Wingi", "-angu"],
+          ["omuntu (mtu)", "abantu (watu)", "wange / bange"],
+          ["omukazi (mwanamke)", "abakazi (wanawake)", "wange / bange"],
+          ["ekitabo (kitabu)", "ebitabo (vitabu)", "kyange / byange"],
+          ["ekikopo (kikombe)", "ebikopo (vikombe)", "kyange / byange"]
+        ]
+      },
+      {
+        "id": "initial-vowel",
+        "title": "Irabu ya mwanzo huja na kuondoka",
+        "body": [
+          "Majina mengi huanza na irabu: **o**muyizi, **e**kitabo, **a**baana. Kiswahili hakina irabu hii (mwanafunzi, kitabu, watoto). Irabu hii hudondoka mahali fulani, kwa mfano baada ya “mimi ni”: **Ndi muyizi** (mimi ni mwanafunzi), au jina linapoeleza kitu: **Abaana bayizi** (watoto ni wanafunzi).",
+          "Maneno ya familia kama **maama**, **taata** na **jjajja** hayana kiambishi na hayabadiliki, kama Kiswahili mama, baba na bibi."
+        ]
+      },
+      {
+        "id": "verb-prefixes",
+        "title": "Nani anatenda: n- na o-",
+        "body": [
+          "Vitenzi huonyesha nani anatenda kwa kiambishi, kama Kiswahili. **n-** maana yake “mimi” (Kiswahili **ni-**) na **o-** maana yake “wewe” (Kiswahili **u-**). Shina la kitenzi halibadiliki. Kiganda hakina kiambishi cha wakati kama **-na-** kwa wakati huu: **nsoma** ni “ninasoma” au “nasoma”."
+        ],
+        "table": [
+          ["Mimi", "Wewe", "Kiswahili"],
+          ["njagala", "oyagala", "ninataka / unataka"],
+          ["nsoma", "osoma", "ninasoma / unasoma"],
+          ["njiga", "oyiga", "ninajifunza / unajifunza"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Familia ni pana",
+        "body": [
+          "Maneno ya ukoo yanahusu watu wengi, kama ilivyo kwa jamii nyingi za Kiafrika. Ndugu wa kiume wa baba yako pia ni **taata**, na dada wa mama yako pia ni **maama**. Dada wa baba yako ni **ssenga** (shangazi) na kaka wa mama yako ni **kojja** (mjomba).",
+          "**Jjajja** maana yake bibi au babu, na ni njia ya upendo na heshima ya kumwita mzee yeyote."
+        ]
+      },
+      {
+        "title": "Oluganda, Muganda, Buganda",
+        "body": [
+          "Mzizi mmoja huzaa maneno mengi, kama Kiswahili, Mswahili na Uswahilini: **Oluganda** ni lugha, **Muganda** ni mtu mmoja wa watu wa Baganda, na **Buganda** ni ufalme wao katikati mwa Uganda."
+        ]
+      }
+    ]
+  }
+}

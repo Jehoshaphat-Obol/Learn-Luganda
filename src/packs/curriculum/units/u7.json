@@ -1,0 +1,88 @@
+{
+  "$schema": "../../../../docs/packs/schema/curriculum-unit.schema.json",
+  "id": "u7",
+  "color": "blush",
+  "character": "jjajja",
+  "words": [
+    "ennyumba",
+    "ekisenge",
+    "effumbiro",
+    "oluggi",
+    "eddirisa",
+    "entebe",
+    "emmeeza",
+    "ettaala",
+    "kkodi",
+    "yingira",
+    "tuula",
+    "wansi",
+    "tusanyuse",
+    "ggalawo",
+    "ggulawo",
+    "ndeetera",
+    "mpa",
+    "ssaako"
+  ],
+  "sentences": [
+    "s-ennyumba-yange",
+    "s-ekisenge-kyange",
+    "s-maama-mu-ffumbiro",
+    "s-kkodi-yingira",
+    "s-tuula-wansi",
+    "s-tuula-ku-ntebe",
+    "s-tusanyuse-okukulaba",
+    "s-ggalawo-oluggi",
+    "s-ggulawo-eddirisa",
+    "s-ndeetera-amazzi",
+    "s-mpa-ekikopo",
+    "s-ssaako-ettaala"
+  ],
+  "phrases": 6,
+  "skills": [
+    {
+      "id": "u7s1",
+      "icon": "home",
+      "lessons": [
+        {
+          "id": "u7s1l1",
+          "newWords": ["ennyumba", "ekisenge", "effumbiro"],
+          "sentences": ["s-ennyumba-yange", "s-ekisenge-kyange", "s-maama-mu-ffumbiro"]
+        },
+        {
+          "id": "u7s1l2",
+          "newWords": ["oluggi", "eddirisa", "entebe", "emmeeza", "ettaala"],
+          "sentences": ["s-ennyumba-yange", "s-ekisenge-kyange"]
+        }
+      ]
+    },
+    {
+      "id": "u7s2",
+      "icon": "heart",
+      "lessons": [
+        {
+          "id": "u7s2l1",
+          "newWords": ["kkodi", "yingira", "tuula", "wansi"],
+          "sentences": ["s-kkodi-yingira", "s-tuula-wansi", "s-tuula-ku-ntebe"]
+        },
+        {
+          "id": "u7s2l2",
+          "newWords": ["tusanyuse"],
+          "sentences": ["s-tusanyuse-okukulaba", "s-kkodi-yingira", "s-tuula-ku-ntebe"],
+          "dialogues": [{ "speaker": "jjajja", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u7s3",
+      "icon": "bolt",
+      "lessons": [
+        {
+          "id": "u7s3l1",
+          "newWords": ["ggalawo", "ggulawo", "ssaako"],
+          "sentences": ["s-ggalawo-oluggi", "s-ggulawo-eddirisa", "s-ssaako-ettaala"]
+        },
+        { "id": "u7s3l2", "newWords": ["ndeetera", "mpa"], "sentences": ["s-ndeetera-amazzi", "s-mpa-ekikopo", "s-ggalawo-oluggi"] }
+      ]
+    }
+  ]
+}

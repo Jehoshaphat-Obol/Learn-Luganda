@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u17",
+  "words": {
+    "saagala": { "text": "Sitaki", "alts": ["sipendi"] },
+    "sirya": { "text": "Sili", "alts": ["mimi sili"] },
+    "sinywa": { "text": "Sinywi", "alts": ["mimi sinywi"] },
+    "sigenda": { "text": "Siendi", "alts": ["sikwendi", "sitaenda"] },
+    "mmanyi": { "text": "Ninajua", "alts": ["najua", "nafahamu"] },
+    "simanyi": { "text": "Sijui", "alts": ["sifahamu"] },
+    "sitegeera": { "text": "Sielewi", "alts": ["sijaelewa", "sifahamu"] },
+    "sirina": { "text": "Sina", "alts": ["sinayo"] },
+    "tewali": { "text": "Hakuna", "alts": ["hapana", "hamna"] },
+    "tetulina": { "text": "hatuna", "alts": ["sisi hatuna"] },
+    "si-kyange": { "text": "si changu", "alts": ["sicho changu", "si yangu"] },
+    "kati": { "text": "sasa", "alts": ["sasa hivi", "hivi sasa"] },
+    "naye": { "text": "lakini", "alts": ["ila", "bali"] },
+    "toyagala": { "text": "hutaki", "alts": ["wewe hutaki", "hupendi"] },
+    "tagenda": { "text": "haendi", "alts": ["yeye haendi", "hatakwenda"] },
+    "togenda": { "text": "Usiende", "alts": ["usiondoke"] },
+    "totya": { "text": "Usiogope", "alts": ["usihofu", "usijali"] }
+  },
+  "sentences": {
+    "s17-saagala-kaawa": { "text": "Sitaki kahawa.", "alts": ["Sipendi kahawa."] },
+    "s17-sirya-nnyama": { "text": "Sili nyama." },
+    "s17-sinywa-amata": { "text": "Sinywi maziwa." },
+    "s17-sigenda-leero": { "text": "Siendi leo.", "alts": ["Leo siendi.", "Sitaenda leo."] },
+    "s17-mmanyi": { "text": "Ndiyo, ninajua.", "alts": ["Ndiyo, najua.", "Ndio, ninajua."] },
+    "s17-simanyi-ssebo": { "text": "Sijui, bwana.", "alts": ["Sijui, mzee."] },
+    "s17-sitegeera": { "text": "Sielewi. Rudia.", "alts": ["Sielewi. Sema tena.", "Sijaelewa. Rudia."] },
+    "s17-sirina-ssente": { "text": "Sina pesa.", "alts": ["Sina hela.", "Sina fedha."] },
+    "s17-tewali-mazzi": { "text": "Hakuna maji.", "alts": ["Hamna maji."] },
+    "s17-tetulina-sukaali": { "text": "Hatuna sukari." },
+    "s17-kino-si-kyange": { "text": "Hiki si changu." },
+    "s17-si-kati": { "text": "Si sasa, lakini kesho.", "alts": ["Si sasa ila kesho.", "Sasa hapana, lakini kesho."] },
+    "s17-toyagala-caayi": { "text": "Hutaki chai?", "alts": ["Wewe hutaki chai?"] },
+    "s17-tagenda": { "text": "Nakato haendi shule leo.", "alts": ["Nakato haendi shuleni leo.", "Leo Nakato haendi shule."] },
+    "s17-togenda": { "text": "Usiende! Mvua inanyesha.", "alts": ["Usiende! Kunanyesha."] },
+    "s17-totya": { "text": "Usiogope, mbwa ni mdogo.", "alts": ["Usijali, mbwa ni mdogo."] }
+  },
+  "phrases": ["Sitaki kahawa.", "Sili nyama.", "Sijui, bwana.", "Sielewi. Rudia.", "Sina pesa.", "Hakuna maji.", "Usiogope!"],
+  "dialogues": { "u17s2l3": [{ "line": "Unataka kahawa?" }], "u17s3l3": [{ "line": "Hospitali iko wapi?" }] }
+}

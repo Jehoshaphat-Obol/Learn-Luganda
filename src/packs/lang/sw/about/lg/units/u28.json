@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u28",
+  "notes": { "kwanjula": "Bibi harusi anapomtambulisha bwana harusi kwa familia yake.", "mwebale-okujja": "Kwa watu kadhaa." },
+  "tips": { "u28s1": "kwanjula", "u28s3": "wishes" },
+  "glosses": {
+    "the-kwanjula": { "0": { "oyambadde": "umevaa" }, "6": { "Abagenyi": "wageni" }, "9": { "obulamu": "maisha" }, "11": { "mwenna": "nyote" } }
+  },
+  "guidebook": {
+    "intro": "Sherehe za Waganda ni kubwa, za rangi nyingi na ndefu. Kwanjula, ambapo wachumba wanatambulishwa kwa familia ya bibi harusi, ni mojawapo ya muhimu zaidi.",
+    "tips": [
+      {
+        "id": "kwanjula",
+        "title": "Kwanjula",
+        "body": [
+          "Katika **kwanjula**, familia ya bwana harusi hutembelea nyumbani kwa bibi harusi na zawadi nyingi. Msemaji huzungumza kwa niaba ya kila upande, na **ssenga** (shangazi) wa bibi harusi ana nafasi kuu, akimwongoza na kumtambulisha bwana harusi. Ni kama sherehe ya kujitambulisha na kutoa mahari katika jamii nyingi za Afrika Mashariki.",
+          "Wanawake huvaa **gomesi** na wanaume **kkanzu** (Kipengele 10). Siku huishia kwa chakula, muziki na ngoma."
+        ]
+      },
+      {
+        "id": "wishes",
+        "title": "Kumtakia mtu mema",
+        "body": [
+          "**Nkwagaliza** maana yake “ninakutakia”: ongeza unachotaka: **Nkwagaliza amazaalibwa amalungi** (siku njema ya kuzaliwa). Kwa kikundi, sema **Mbaagaliza** (ninawatakia). **Kulika** humpongeza mtu kwa jambo alilofanya: harusi, mtoto mchanga, safari. Ni kama **hongera** ya Kiswahili.",
+          "Angalia kiambishi cha mtendwa: **n-ku-agaliza** (nina-ku-takia) na **m-ba-agaliza** (nina-wa-takia), kama Kiswahili **ni-na-ku-takia** na **ni-na-wa-takia**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Kila mtu anachangia",
+        "body": [
+          "Harusi mara nyingi hulipiwa kwa pamoja: marafiki na ndugu hufanya vikao vya maandalizi na kuahidi michango. Kualikwa kwenye kikao kunamaanisha uko karibu na familia, sawa na vikao vya harusi Tanzania na Kenya."
+        ]
+      }
+    ]
+  }
+}

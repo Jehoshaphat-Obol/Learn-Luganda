@@ -2,7 +2,7 @@
 
 Attach `docs/packs/README.md`, `docs/packs/schema/course.schema.json`,
 `docs/packs/schema/settings.schema.json`, `src/content/settings.js` and, as an
-example, `src/packs/courses/en-lg/course.json`. Save the result as
+example, `src/packs/courses/en-sw/course.json`. Save the result as
 `src/packs/courses/{{from}}-{{to}}/course.json`.
 
 ---

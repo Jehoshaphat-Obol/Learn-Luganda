@@ -5,9 +5,17 @@ new pack files, not code changes:
 
 - **UI packs** hold the interface: menus, buttons, lesson prompts, rewards,
   settings, the landing page. One file per language the app can be used in.
-- **Course packs** hold a course: what the learner already reads (the
-  _base_ or "from" language) paired with what they learn (the _target_ or
-  "to" language). English → Luganda is `en-lg`.
+- **The shared catalog** holds courses as one structure every language
+  fills: a curriculum (units, lessons, word and sentence ids) plus one
+  **lang pack** per language with that language's text. Any two languages
+  with lang packs make a course, `<from>-<to>`, composed when it loads, so
+  50 languages need 50 lang packs, not 50 × 49 courses. English → Luganda
+  (`en-lg`), Swahili → Luganda (`sw-lg`) and Luganda → English (`lg-en`)
+  are composed this way.
+- **Course packs** hold a hand-built course: what the learner already reads
+  (the _base_ or "from" language) paired with what they learn (the _target_
+  or "to" language). `en-sw` and `sw-en` are still built this way until
+  they join the catalog.
 
 Packs are read-only at runtime (they are deep-frozen when loaded). The
 learner's progress is stored separately, by id, so a pack can be improved
@@ -20,8 +28,21 @@ src/packs/
   ui/
     en.json                 English interface (complete; the fallback for every other pack)
     sw.json                 another interface language (may be partial)
+  curriculum/
+    course.json             sections, cast, version and migrations shared by every language
+    units/u1.json           a unit's skeleton: word and sentence ids, skills, lessons,
+                            dialogue and story steps (no text)
+  lang/
+    coverage.json           how much each lang pack fills (`npm run coverage`)
+    en/
+      course.json           English as a course's language: title, headings, cast roles;
+                            as the language learned: cheers, phrases, settings
+      units/u1.json         the unit's text in English, by the curriculum's ids
+      about/lg/             optional notes about Luganda written in English:
+        course.json         description, landing copy
+        units/u1.json       word notes, guidebook, story glosses
   courses/
-    en-lg/
+    en-sw/                  a hand-built course
       course.json           the course: languages, settings, cast, sections, landing copy
       units/
         u1.json             one self-contained unit: words, sentences, lessons,
@@ -96,6 +117,57 @@ uses it.
 The app finds new UI packs by itself: a file in `src/packs/ui/` is a
 language the interface can switch to, and it is chosen automatically when
 the browser prefers it.
+
+## The shared catalog
+
+Every language fills the same curriculum. A course `<from>-<to>` takes
+its target text (what the learner learns) from `lang/<to>/` and its base
+text (meanings, headings, story titles, questions) from `lang/<from>/`.
+`src/content/compose.js` turns them into the same shape as a hand-built
+course pack, so everything after it works the same way.
+
+- **`curriculum/`** has no text. Unit files list word and sentence ids in
+  teaching order, skills and lessons, dialogues (speaker, and the index of
+  the right reply) and story steps (speaker for a line; answer index and
+  `optionsLang` for a question).
+- **`lang/<code>/course.json`** frames a course in `<code>`: `courseTitle`
+  (`"{to} for English speakers"`), `sections`, `units`, `skills` and `cast`
+  headings (the same shape as [course labels](#headings-in-other-interface-languages)),
+  and, for courses that teach `<code>`, `cheers`, `phrases` and `settings`.
+  `languageNames` says how `<code>` names languages.
+- **`lang/<code>/units/uN.json`** has the lesson text in `<code>` by id:
+  `words` and `sentences` (`text`, `alts`), `phrases` (guidebook phrases in
+  order), `dialogues` (each line, and the replies to choose from when the
+  dialogue teaches `<code>`), and `stories` (title, summary, lines,
+  questions).
+- **`lang/<from>/about/<to>/`** is the only text written for a pair, and
+  it's optional: the description and landing copy, word notes, the
+  guidebook's intro, tips and culture notes, and story glosses, all about
+  `<to>` written in `<from>`. Without them a course uses the notes in the
+  base language's `pivot` (from `languages.json`), then English.
+
+One text per language has to work on both sides of a course, so:
+
+- A trailing hint in a word, like **Read (all of you)**, shows when the
+  word is the meaning and is left out when it's the answer.
+- `{to}` and `{from}` stand for the course's languages, named the text's
+  own way: `"Do you speak {to}?"` in English, `"Oyogera {to}?"` in Luganda.
+  `{to.mu}` picks another form of a name (`"mu {to.mu}"` → "mu Luganda").
+- Words whose answer repeats an earlier word's are left out of a course,
+  since they'd be two questions with one answer.
+- Accepted answers (`alts`) serve both directions.
+
+A pair is offered when its target language covers at least 95% of the text a
+course needs to teach it, its base language 95% of what a course needs to be
+taught in it, and there are notes about the target (its own, the pivot's or
+English). `npm run coverage` writes `lang/coverage.json`, and
+`npm run validate` fails when it's out of date. Headings in other interface
+languages come from that language's `lang/<ui>/course.json` and its notes,
+so a language with only headings (like `lang/fr`) still labels every course.
+
+`scripts/split-course.js` built the catalog from the hand-built en-lg, sw-lg
+and lg-en packs (#185), and `tests/compose.test.js` checks the composed
+courses against them.
 
 ## Course packs
 
@@ -247,6 +319,10 @@ point at ids the pack has.
 Adding new words, lessons or units needs no migration.
 
 ## Adding a course
+
+With the shared catalog, adding a language means writing `lang/<code>/`:
+every course to and from the languages already there follows. Until the
+authoring guide covers it (#86), build hand-made packs as below.
 
 1. Add both languages to `languages.json` if they are missing.
 2. Copy `docs/packs/example/courses/en-sw/` to

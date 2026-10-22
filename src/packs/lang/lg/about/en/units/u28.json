@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u28",
+  "tips": { "u28s1": "explain", "u28s3": "happy" },
+  "guidebook": {
+    "intro": "Yogera ku mikolo: okwanjula, embaga n’amazaalibwa, era owe abantu emikisa mu Lungereza.",
+    "tips": [
+      {
+        "id": "explain",
+        "title": "Okunnyonnyola omukolo",
+        "body": [
+          "Okunnyonnyola ekintu ky’obuwangwa, kozesa **is**: **The kwanjula is an introduction ceremony.** **The ssenga is the father’s sister.**",
+          "Mu Lungereza **aunt** kye kimu ku ssenga ne ku bakyala abalala: okwawula, gamba **my father’s sister**."
+        ]
+      },
+      {
+        "id": "happy",
+        "title": "Okwagaliza abantu",
+        "body": ["**Happy birthday!** **Congratulations!** **I wish you a happy marriage.** Ng’omukolo guwedde: **Thank you for coming!**"]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Buli muntu ayamba",
+        "body": [
+          "Mu Uganda emikolo gikolebwa n’obuyambi bw’abantu bangi. Mu Lungereza: **Everyone contributes to the wedding.** Ku nkiiko z’embaga abantu bagamba **I pledge fifty thousand.**"
+        ]
+      }
+    ]
+  }
+}

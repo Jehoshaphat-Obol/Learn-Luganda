@@ -1,0 +1,59 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u3",
+  "notes": {
+    "matooke": "Ndizi mbichi za kuchemsha kwa mvuke, chakula kikuu cha Waganda.",
+    "enva": "Kinacholiwa pamoja na chakula kikuu: maharagwe, nyama, mchuzi wa karanga. Kama Kiswahili kitoweo.",
+    "enjala": "Nnina enjala: nina njaa. Sawasawa kabisa na Kiswahili!",
+    "ennyonta": "Nnina ennyonta: nina kiu."
+  },
+  "tips": { "u3s1": "staples" },
+  "guidebook": {
+    "intro": "Chakula ndicho kitovu cha ukarimu wa Waganda. Mlo ni chakula kikuu pamoja na mchuzi, na mgeni hukaribishwa kula kila mara.",
+    "tips": [
+      {
+        "id": "staples",
+        "title": "Chakula kikuu na mchuzi",
+        "body": [
+          "Mlo wa Kiganda huunganisha **emmere** (chakula kikuu: **matooke**, **lumonde**, **muwogo** au **omuceere**) na **enva**, mchuzi au kitoweo: maharagwe, nyama, samaki au mchuzi wa karanga. Ni kama ugali na mboga.",
+          "Neno **emmere** maana yake “chakula” kwa ujumla na pia chakula kikuu kilicho sahanini. Mara nyingi watu husema hawajala kama hawajala matooke, kama wengine wanavyosema kwa ugali!"
+        ]
+      },
+      {
+        "id": "nnina",
+        "title": "“Nina” kwa hisia",
+        "body": [
+          "Hapa Kiganda na Kiswahili vinakubaliana kabisa: **Nnina enjala** ni “nina njaa”. Muundo huohuo unatoa **Nnina ennyonta** (nina kiu), na katika Sehemu ya 8 **Nnina ssennyiga** (nina mafua).",
+          "**Nnina** ni **n-** (mimi) + **-li na** (kuwa na), kama Kiswahili **ni-** + **na**."
+        ]
+      },
+      {
+        "id": "i-and-you",
+        "title": "Vitenzi tena: n- na o-",
+        "body": [
+          "Viambishi vya Sehemu ya 2 hufanya kazi na kila kitenzi. Angalia mabadiliko ya sauti: kabla ya **g** n- hubaki (**ngula**, ninanunua), na kabla ya **t** pia (**ntunda**, ninauza). Kiswahili huweka **ni-** kamili (ninanunua), Kiganda huweka **n-** peke yake."
+        ],
+        "table": [
+          ["Mimi", "Wewe", "Kiswahili"],
+          ["ngula", "ogula", "ninanunua / unanunua"],
+          ["ntunda", "otunda", "ninauza / unauza"],
+          ["nnywa", "onywa", "ninakunywa / unakunywa"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Sokoni",
+        "body": [
+          "Kila mji una **akatale**, soko la wazi lenye shughuli nyingi. Wauzaji huwaita wapita njia, na ni kawaida kumsalimia muuzaji kabla ya kuuliza bei. Ukinunua kwa muuzaji yuleyule kila wiki, unapata bei nzuri na rafiki."
+        ]
+      },
+      {
+        "title": "Kula, kula!",
+        "body": [
+          "Kukataa chakula kunaweza kuonekana kama ukosefu wa adabu, kwa hiyo chukua kidogo hata kama umeshakula. Chakula kikiwa kitamu, sema **Kiwooma nnyo!**"
+        ]
+      }
+    ]
+  }
+}

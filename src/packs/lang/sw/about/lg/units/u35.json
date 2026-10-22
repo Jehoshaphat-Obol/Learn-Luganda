@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u35",
+  "tips": { "u35s1": "story-openings", "u35s2": "narrative-ne" },
+  "glosses": { "amaras-story": { "0": { "ngerera": "nisimulie" }, "1": { "omulenzi": "mvulana" }, "2": { "okunoonya": "kutafuta", "enku": "kuni" } } },
+  "guidebook": {
+    "intro": "Kusimulia hadithi kando ya moto, **okugera enfumo**, kumebeba hekima ya Waganda kwa vizazi. Hadithi zina maneno yake ya kufungua, kuunganisha na kufunga, kama **Paukwa! Pakawa!** ya Kiswahili.",
+    "tips": [
+      {
+        "id": "story-openings",
+        "title": "Kufungua hadithi",
+        "body": [
+          "Anza na **Olwatuuka** (ilitokea) au **Olwatuuka olwali olumu** (ilitokea siku moja), kisha eleza mandhari kwa **Waaliwo** (palikuwa na): **Waaliwo omusajja omu** (palikuwa na mwanamume mmoja). **Waaliwo** ni kama Kiswahili **palikuwa**, kwa ngeli ya mahali."
+        ]
+      },
+      {
+        "id": "narrative-ne",
+        "title": "Kisha: ne-",
+        "body": [
+          "Katika hadithi, kila tukio jipya ni kitenzi chenye **ne-** mbele: **n’agenda** (akaenda), **n’alaba** (akaona), **n’agamba** (akasema). Hufanya kazi kama **-ka-** ya Kiswahili, ikiunganisha matukio moja baada ya jingine.",
+          "Tumia **Awo** (kisha, basi) kusogeza hadithi mbele, na **Ekyavaamu** (mwishowe) kuimaliza."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Hadithi za usiku",
+        "body": [
+          "Hadithi zilisimuliwa jioni baada ya chakula cha usiku, mara nyingi na babu na bibi. Nyingi zinamhusu **Wakayima** sungura, mjanja mwenye hila, kama Sungura wa hadithi za Kiswahili. Utakutana naye katika Kipengele 40."
+        ]
+      }
+    ]
+  }
+}

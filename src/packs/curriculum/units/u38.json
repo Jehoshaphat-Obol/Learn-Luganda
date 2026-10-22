@@ -1,0 +1,89 @@
+{
+  "$schema": "../../../../docs/packs/schema/curriculum-unit.schema.json",
+  "id": "u38",
+  "color": "vermillion",
+  "character": "ssali",
+  "words": [
+    "nnyamba",
+    "yanguwa",
+    "omubbi",
+    "poliisi",
+    "ebbiddwa",
+    "akabenje",
+    "alumiziddwa",
+    "omusaayi",
+    "ambulensi",
+    "linda",
+    "tewali-kizibu",
+    "ndi-bulungi"
+  ],
+  "sentences": [
+    "s38-nnyamba",
+    "s38-omuliro",
+    "s38-omubbi",
+    "s38-kubira-poliisi",
+    "s38-essimu-ebbiddwa",
+    "s38-akabenje",
+    "s38-alumiziddwa",
+    "s38-ambulensi",
+    "s38-linda-wano",
+    "s38-oli-bulungi",
+    "s38-tewali-kizibu"
+  ],
+  "phrases": 6,
+  "skills": [
+    {
+      "id": "u38s1",
+      "icon": "bolt",
+      "lessons": [
+        { "id": "u38s1l1", "newWords": ["nnyamba", "yanguwa"], "sentences": ["s38-nnyamba", "s38-omuliro"] },
+        { "id": "u38s1l2", "newWords": ["omubbi", "poliisi"], "sentences": ["s38-omubbi", "s38-kubira-poliisi"] },
+        { "id": "u38s1l3", "newWords": ["ebbiddwa"], "sentences": ["s38-essimu-ebbiddwa", "s38-kubira-poliisi"] }
+      ]
+    },
+    {
+      "id": "u38s2",
+      "icon": "plus",
+      "lessons": [
+        { "id": "u38s2l1", "newWords": ["akabenje", "alumiziddwa"], "sentences": ["s38-akabenje", "s38-alumiziddwa"] },
+        { "id": "u38s2l2", "newWords": ["omusaayi", "ambulensi"], "sentences": ["s38-ambulensi", "s38-alumiziddwa"] },
+        { "id": "u38s2l3", "newWords": ["linda"], "sentences": ["s38-linda-wano", "s38-akabenje"] }
+      ]
+    },
+    {
+      "id": "u38s3",
+      "icon": "heart",
+      "lessons": [
+        { "id": "u38s3l1", "newWords": ["ndi-bulungi"], "sentences": ["s38-oli-bulungi"] },
+        { "id": "u38s3l2", "newWords": ["tewali-kizibu"], "sentences": ["s38-tewali-kizibu", "s38-oli-bulungi"] },
+        {
+          "id": "u38s3l3",
+          "newWords": [],
+          "sentences": ["s38-essimu-ebbiddwa", "s38-ambulensi", "s38-nnyamba"],
+          "dialogues": [{ "speaker": "ssali", "answer": 0 }]
+        }
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": "stolen-phone",
+      "unlockAfter": "u38s3l3",
+      "cast": ["nakato", "ssali"],
+      "steps": [
+        { "speaker": "nakato" },
+        { "speaker": "ssali" },
+        { "speaker": "nakato" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "speaker": "nakato" },
+        { "speaker": "ssali" },
+        { "answer": 1 },
+        { "speaker": "ssali" },
+        { "speaker": "nakato" },
+        { "answer": 0, "optionsLang": "target" },
+        { "speaker": "ssali" }
+      ]
+    }
+  ]
+}

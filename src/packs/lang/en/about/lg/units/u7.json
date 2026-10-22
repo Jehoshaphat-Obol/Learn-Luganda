@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u7",
+  "notes": {
+    "kkodi": "Called out at a door instead of knocking.",
+    "s-ennyumba-yange": "n- class nouns take yange.",
+    "s-maama-mu-ffumbiro": "ali = he or she is (somewhere)"
+  },
+  "tips": { "u7s2": "visiting", "u7s3": "commands" },
+  "guidebook": {
+    "intro": "Visiting someone’s home is a big part of social life. You will hear and use these words from the moment you arrive.",
+    "tips": [
+      {
+        "id": "visiting",
+        "title": "Arriving at a home",
+        "body": [
+          "Instead of knocking, call **Kkodi!** at the door. The host answers **Yingira** (come in) and offers a seat: **Tuula**. Then come the long greetings from Unit 1."
+        ]
+      },
+      {
+        "id": "commands",
+        "title": "Asking and telling",
+        "body": [
+          "A command is just the verb stem: **Tuula** (sit), **Yingira** (come in), **Genda** (go). Add **m-** or **n-** for “me”: **Mpa** (give me), **Ndeetera** (bring me), **Ntwala** (take me).",
+          "Ending a request with a polite word like **ssebo** or **nnyabo**, or starting with **Bambi** (please, kindly), makes it gentle."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Never visit empty-handed",
+        "body": [
+          "Guests often bring sugar, bread, soap or fruit. Hosts offer tea or food, and a guest is walked part of the way home when they leave."
+        ]
+      }
+    ]
+  }
+}

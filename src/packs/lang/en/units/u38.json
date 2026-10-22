@@ -1,0 +1,72 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u38",
+  "words": {
+    "nnyamba": { "text": "Help me!", "alts": ["help", "help!"] },
+    "yanguwa": { "text": "Hurry!", "alts": ["hurry up", "quickly", "be quick"] },
+    "omubbi": { "text": "thief", "alts": ["robber", "a thief", "the thief"] },
+    "poliisi": { "text": "police", "alts": ["the police"] },
+    "ebbiddwa": { "text": "has been stolen", "alts": ["was stolen", "is stolen", "stolen"] },
+    "akabenje": { "text": "accident", "alts": ["an accident", "the accident", "crash"] },
+    "alumiziddwa": { "text": "is injured", "alts": ["has been hurt", "is hurt", "injured", "was injured"] },
+    "omusaayi": { "text": "blood", "alts": ["the blood", "bleeding"] },
+    "ambulensi": { "text": "ambulance", "alts": ["the ambulance", "an ambulance"] },
+    "linda": { "text": "Wait", "alts": ["wait here", "hold on"] },
+    "tewali-kizibu": { "text": "No problem", "alts": ["there is no problem", "it’s fine", "no worries"] },
+    "ndi-bulungi": { "text": "I’m okay", "alts": ["i am fine", "i’m fine", "i am okay", "i am ok", "i’m ok"] }
+  },
+  "sentences": {
+    "s38-nnyamba": { "text": "Help me! Help me!", "alts": ["Help! Help!"] },
+    "s38-omuliro": { "text": "Fire! Hurry!", "alts": ["Fire! Hurry up!", "Fire! Quick!"] },
+    "s38-omubbi": { "text": "Thief! Catch him!", "alts": ["Thief! Catch her!", "A thief! Catch him!"] },
+    "s38-kubira-poliisi": { "text": "Call the police!", "alts": ["Phone the police!", "Ring the police!"] },
+    "s38-essimu-ebbiddwa": { "text": "My phone has been stolen.", "alts": ["My phone was stolen.", "Someone stole my phone."] },
+    "s38-akabenje": { "text": "There is an accident on the road.", "alts": ["There’s been an accident on the road.", "There’s an accident on the road."] },
+    "s38-alumiziddwa": {
+      "text": "The man is injured. He is bleeding.",
+      "alts": ["The man is hurt. He is bleeding.", "The man has been injured. He has blood."]
+    },
+    "s38-ambulensi": { "text": "Let’s call an ambulance quickly!", "alts": ["Let us call an ambulance quickly!", "Call an ambulance fast!"] },
+    "s38-linda-wano": { "text": "Sit here and wait.", "alts": ["Sit here, wait.", "Sit here and hold on."] },
+    "s38-oli-bulungi": { "text": "Are you okay? Yes, I’m okay.", "alts": ["Are you alright? Yes, I am fine.", "Are you ok? Yes, I am ok."] },
+    "s38-tewali-kizibu": { "text": "Thank you very much! No problem.", "alts": ["Thanks a lot! No problem."] }
+  },
+  "phrases": [
+    "Help me! Help me!",
+    "Call the police!",
+    "My phone has been stolen.",
+    "The man is injured.",
+    "Let’s call an ambulance quickly!",
+    "Are you okay?"
+  ],
+  "dialogues": {
+    "u38s3l3": [
+      {
+        "line": "There’s an accident! A man is injured.",
+        "options": ["Let’s call an ambulance quickly!", "I agree with you.", "No problem."]
+      }
+    ]
+  },
+  "stories": {
+    "stolen-phone": {
+      "title": "The stolen phone",
+      "summary": "Nakato’s phone is snatched at the market, and Ssali helps her.",
+      "lines": [
+        "Thief! Thief! Help me!",
+        "Nakato! What happened?",
+        "My phone has been stolen! A man ran off that way.",
+        "Are you okay? Are you hurt?",
+        "No, I’m okay. But I’m very scared.",
+        "Sit here and wait. I will call the police.",
+        "The police say that they are coming quickly.",
+        "Thank you very much, Ssali.",
+        "No problem. That’s what friends are for!"
+      ],
+      "questions": [
+        { "question": "What happened to Nakato?", "options": ["Her phone was stolen", "She was in an accident", "She lost her bag"] },
+        { "question": "What does Ssali do?", "options": ["He chases the thief", "He calls the police", "He calls an ambulance"] },
+        { "question": "How does Ssali answer “Weebale nnyo”?", "options": ["No problem.", "Hurry!", "Help me!"] }
+      ]
+    }
+  }
+}

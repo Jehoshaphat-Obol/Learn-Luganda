@@ -1,0 +1,74 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u40",
+  "words": {
+    "wakayima": { "text": "the hare", "alts": ["hare", "mr hare"] },
+    "omugezi": { "text": "clever", "alts": ["wise", "smart", "a wise person"] },
+    "yalimba": { "text": "tricked", "alts": ["lied to", "deceived", "he tricked", "she tricked"] },
+    "akakodyo": { "text": "trick", "alts": ["a trick", "the trick", "plan"] },
+    "kintu": { "text": "Kintu" },
+    "nnambi": { "text": "Nnambi", "alts": ["nambi"] },
+    "walumbe": { "text": "Death", "alts": ["walumbe"] },
+    "yeerabira": { "text": "forgot", "alts": ["she forgot", "he forgot"] },
+    "obulo": { "text": "millet", "alts": ["the millet"] },
+    "etuyigiriza": { "text": "it teaches us", "alts": ["teaches us"] }
+  },
+  "sentences": {
+    "s40-wakayima-mugezi": { "text": "The hare was very clever.", "alts": ["Hare was very clever.", "The hare was very wise."] },
+    "s40-yalimba-enjovu": { "text": "The hare tricked the elephant.", "alts": ["Hare tricked the elephant.", "The hare deceived the elephant."] },
+    "s40-akakodyo": { "text": "He had a trick.", "alts": ["He had a plan.", "She had a trick."] },
+    "s40-kintu-eyasooka": { "text": "Kintu was the first person.", "alts": ["Kintu is the first person.", "Kintu was the first man."] },
+    "s40-kintu-nnambi": {
+      "text": "Kintu married Nnambi, the daughter of Ggulu.",
+      "alts": ["Kintu married Nnambi, Ggulu’s daughter.", "Kintu married Nambi, the daughter of Ggulu."]
+    },
+    "s40-yeerabira-obulo": {
+      "text": "Nnambi forgot the chicken’s millet.",
+      "alts": ["Nnambi forgot the millet for the chicken.", "Nambi forgot the chicken’s millet."]
+    },
+    "s40-walumbe": { "text": "And Death followed them.", "alts": ["Death followed them.", "Then Death followed them."] },
+    "s40-etuyigiriza-ki": { "text": "What does this story teach us?", "alts": ["What does this folktale teach us?", "What is the lesson of this story?"] },
+    "s40-etuyigiriza-nti": {
+      "text": "It teaches us that wisdom beats strength.",
+      "alts": ["It teaches us that cleverness beats strength.", "It teaches that wisdom is better than strength."]
+    }
+  },
+  "phrases": [
+    "The hare was very clever.",
+    "The hare tricked the elephant.",
+    "Kintu was the first person.",
+    "Nnambi forgot the chicken’s millet.",
+    "What does this story teach us?",
+    "It teaches us that wisdom beats strength."
+  ],
+  "dialogues": {
+    "u40s3l3": [
+      {
+        "line": "The hare tricked the elephant. What does this story teach us?",
+        "options": ["It teaches us that wisdom beats strength.", "Good morning, how did you sleep?", "Call the police!"]
+      }
+    ]
+  },
+  "stories": {
+    "kintu-and-nnambi": {
+      "title": "Kintu and Nnambi",
+      "summary": "Jjajja tells Emma the legend of how death came to the earth.",
+      "lines": [
+        "Grandma, I hear there is a story about Kintu. Tell me!",
+        "Well. Once upon a time, Kintu was the first person. He lived alone with his cow.",
+        "Then Nnambi, the daughter of Ggulu, loved him. Kintu married her.",
+        "Ggulu said: “Go quickly, so that Death does not follow you.”",
+        "But on the way, Nnambi forgot the chicken’s millet. She went back.",
+        "Death followed them to the earth. Since then, people die.",
+        "Oh! What does this story teach us?",
+        "It teaches us that we should listen to elders.",
+        "Thank you very much, Grandma!"
+      ],
+      "questions": [
+        { "question": "Who was Nnambi?", "options": ["Ggulu’s daughter", "Kintu’s sister", "A clever hare"] },
+        { "question": "Why did Nnambi go back?", "options": ["For her cow", "For the chicken’s millet", "To see Walumbe"] },
+        { "question": "What lesson does Jjajja give?", "options": ["Listen to elders", "Wisdom beats strength", "Hurry home"] }
+      ]
+    }
+  }
+}

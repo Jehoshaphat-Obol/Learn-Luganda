@@ -9,18 +9,15 @@
 import { afterAll, describe, expect, it } from 'vitest';
 import { LANDING_TEXT, checkLabels } from '../src/content/labels.js';
 import { COURSE_IDS, loadCourse } from '../src/content/load.js';
+import { readPack } from '../scripts/load-pack.js';
 import { UI_LANGUAGES, setLanguage } from '../src/i18n/index.js';
 import { plain } from '../src/i18n/rich.js';
 import { createLandingView } from '../src/views/landing.js';
 import { aboutView } from '../src/views/info.js';
 
-const metas = import.meta.glob('../src/packs/courses/*/course.json', { eager: true, import: 'default' });
-const unitFiles = import.meta.glob('../src/packs/courses/*/units/*.json', { eager: true, import: 'default' });
-const labelFiles = import.meta.glob('../src/packs/courses/*/labels/*.json', { eager: true, import: 'default' });
-
-const metaOf = (id) => metas[`../src/packs/courses/${id}/course.json`];
-const unitsOf = (id) =>
-  Object.fromEntries(Object.entries(unitFiles).filter(([p]) => p.startsWith(`../src/packs/courses/${id}/units/`)).map(([, u]) => [u.id, u]));
+// Raw packs, hand-built or composed from the shared catalog.
+const packs = Object.fromEntries(COURSE_IDS.map((id) => [id, readPack(id)]));
+const metaOf = (id) => packs[id].meta;
 const get = (obj, path) => path.split('.').reduce((o, k) => o?.[k], obj);
 
 /** Every course with each interface language it isn't written in. */
@@ -55,9 +52,9 @@ describe('landing copy in every interface language', () => {
   });
 
   it.each(PAIRS)('%s has landing, cast and description labels for %s', (id, ui) => {
-    const labels = labelFiles[`../src/packs/courses/${id}/labels/${ui}.json`];
-    expect(labels, `courses/${id}/labels/${ui}.json is missing`).toBeTruthy();
-    const { missing } = checkLabels(labels, { meta: metaOf(id), units: unitsOf(id) }, ui);
+    const labels = packs[id].labels[ui];
+    expect(labels, `${id} has no labels for ${ui}`).toBeTruthy();
+    const { missing } = checkLabels(labels, packs[id], ui);
     expect(missing.filter((m) => /^(landing|cast|description)\b/.test(m))).toEqual([]);
   });
 
