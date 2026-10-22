@@ -1,0 +1,101 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u12",
+  "words": {
+    "obudde": { "text": "temps", "alts": ["le temps", "la météo", "heure"] },
+    "enkuba": { "text": "pluie", "alts": ["la pluie"] },
+    "etonnya": { "text": "tombe", "alts": ["il pleut", "elle tombe", "qui tombe"] },
+    "omusana": { "text": "soleil", "alts": ["le soleil", "du soleil"] },
+    "gwaka": { "text": "brille", "alts": ["il brille", "brûle"] },
+    "ebire": { "text": "nuages", "alts": ["les nuages", "nuage", "nuageux"] },
+    "empewo": { "text": "froid", "alts": ["vent", "le froid", "le vent", "fraîcheur"] },
+    "eggulu": { "text": "ciel", "alts": ["le ciel", "tonnerre", "le tonnerre"] },
+    "laddu": { "text": "éclair", "alts": ["l’éclair", "la foudre", "foudre", "éclairs"] },
+    "ekyeya": { "text": "saison sèche", "alts": ["la saison sèche", "sécheresse", "saison chaude", "été"] },
+    "ttoggo": { "text": "saison des pluies", "alts": ["la saison des pluies", "grandes pluies", "les grandes pluies"] },
+    "bwokya": { "text": "il fait chaud", "alts": ["chaud", "c’est chaud", "fait chaud"] },
+    "bunnyogovu": { "text": "il fait frais", "alts": ["frais", "froid", "il fait froid", "fait frais"] },
+    "mpulira": { "text": "je sens", "alts": ["j’entends", "je me sens", "je ressens"] },
+    "ebbugumu": { "text": "chaleur", "alts": ["la chaleur", "chaud"] },
+    "nnyo-nnyo": { "text": "vraiment beaucoup", "alts": ["énormément", "très très", "tellement"] },
+    "obudde-bulungi": { "text": "Il fait beau", "alts": ["le temps est beau", "beau temps", "il fait bon"] },
+    "ekiwempe": { "text": "parapluie", "alts": ["un parapluie", "le parapluie"] },
+    "upepo": { "text": "vent", "alts": ["le vent", "brise"] },
+    "radi": { "text": "tonnerre", "alts": ["orage", "éclair", "le tonnerre"] },
+    "jua-kali": { "text": "soleil fort", "alts": ["soleil brûlant", "grand soleil", "le soleil brûlant"] },
+    "kavu": { "text": "sec", "alts": ["sèche"] },
+    "nyingi": { "text": "beaucoup de", "alts": ["beaucoup", "plein de", "de nombreux"] },
+    "msimu": { "text": "saison", "alts": ["la saison"] },
+    "vuli": { "text": "petites pluies", "alts": ["les petites pluies", "courtes pluies"] }
+  },
+  "sentences": {
+    "s-enkuba-etonnya": { "text": "Il pleut.", "alts": ["La pluie tombe."] },
+    "s-omusana-gwaka": { "text": "Le soleil brille.", "alts": ["Il fait soleil.", "Il y a du soleil."] },
+    "s-leero-obudde-bulungi": { "text": "Aujourd’hui, il fait beau.", "alts": ["Il fait beau aujourd’hui.", "Aujourd’hui le temps est beau."] },
+    "s-waliwo-ebire": { "text": "Il y a beaucoup de nuages.", "alts": ["C’est très nuageux.", "Le ciel est très nuageux."] },
+    "s-empewo-nnyingi": { "text": "Il y a beaucoup de vent.", "alts": ["Il fait très froid.", "Il y a du vent.", "Il fait très frais."] },
+    "s-eggulu-libwatuka": { "text": "Il tonne.", "alts": ["Le tonnerre gronde.", "Il y a du tonnerre."] },
+    "s-laddu-n-eggulu": { "text": "Des éclairs et du tonnerre.", "alts": ["Éclairs et tonnerre.", "La foudre et le tonnerre."] },
+    "s-ttoggo-enkuba-nnyingi": {
+      "text": "À la saison des pluies, il pleut beaucoup.",
+      "alts": ["Il y a beaucoup de pluie à la saison des pluies.", "Pendant la saison des pluies, il pleut beaucoup."]
+    },
+    "s-mu-kyeya-bwokya": {
+      "text": "À la saison sèche, il fait chaud.",
+      "alts": ["Il fait chaud pendant la saison sèche.", "Pendant la saison sèche, il fait chaud."]
+    },
+    "s-obudde-bunnyogovu": { "text": "Il fait frais aujourd’hui.", "alts": ["Aujourd’hui, il fait frais.", "Il fait froid aujourd’hui."] },
+    "s-mpulira-empewo": { "text": "J’ai froid.", "alts": ["Je sens le froid."] },
+    "s-mpulira-ebbugumu": { "text": "J’ai chaud.", "alts": ["Je sens la chaleur."] },
+    "s-obudde-bwokya-nnyo-nnyo": { "text": "Il fait vraiment très chaud !", "alts": ["Il fait très très chaud !", "Il fait très chaud !"] },
+    "s-twala-ekiwempe": { "text": "Prends un parapluie.", "alts": ["Prends le parapluie.", "Prenez un parapluie.", "Emporte un parapluie."] },
+    "s-hali-ya-hewa": { "text": "Il fait beau aujourd’hui.", "alts": ["Aujourd’hui, il fait beau.", "Le temps est beau aujourd’hui."] },
+    "s-kuna-jua": { "text": "Il y a du soleil aujourd’hui.", "alts": ["Il fait soleil aujourd’hui.", "Aujourd’hui, il y a du soleil."] },
+    "s-kuna-joto": { "text": "Il fait très chaud aujourd’hui.", "alts": ["Aujourd’hui, il fait très chaud."] },
+    "s-kuna-baridi": { "text": "Il fait froid la nuit.", "alts": ["La nuit, il fait froid."] },
+    "s-kuna-upepo": { "text": "Il y a du vent aujourd’hui.", "alts": ["Aujourd’hui, il y a du vent."] },
+    "s-kuna-mawingu": { "text": "C’est nuageux aujourd’hui.", "alts": ["Il y a des nuages aujourd’hui.", "Aujourd’hui, c’est nuageux."] },
+    "s-radi-usiku": { "text": "Il y a du tonnerre la nuit.", "alts": ["La nuit, il y a du tonnerre."] },
+    "s-jua-kali-leo": { "text": "Grand soleil aujourd’hui !", "alts": ["Le soleil est fort aujourd’hui !", "Le soleil tape aujourd’hui !"] },
+    "s-mvua-nyingi": { "text": "Beaucoup de pluie !", "alts": ["Tellement de pluie !", "Que de pluie !"] },
+    "s-kiangazi-kavu": { "text": "La saison sèche est sèche et chaude." },
+    "s-msimu-gani": { "text": "Quelle saison ?" },
+    "s-masika-mvua": {
+      "text": "Masika, ce sont les grandes pluies.",
+      "alts": ["Les grandes pluies, c’est masika.", "Masika est la saison des grandes pluies."]
+    },
+    "s-vuli-mvua-fupi": { "text": "Vuli, ce sont les petites pluies.", "alts": ["Les petites pluies, c’est vuli.", "Vuli est la saison des petites pluies."] }
+  },
+  "phrases": ["Il pleut.", "Le soleil brille.", "Aujourd’hui, il fait beau.", "J’ai froid.", "Il fait vraiment très chaud !", "Prends un parapluie."],
+  "dialogues": {
+    "u12s3l3": [
+      { "line": "Il pleut beaucoup !", "options": ["Prends un parapluie.", "Le soleil brille.", "Je prends le petit-déjeuner."] },
+      { "line": "J’ai froid. Et toi ?", "options": ["Moi aussi, j’ai froid.", "Le soleil brille.", "Mes chaussures."] }
+    ]
+  },
+  "stories": {
+    "rainy-day": {
+      "title": "Un après-midi pluvieux",
+      "summary": "Un orage retient {@amara} chez sa grand-mère.",
+      "lines": [
+        "Mamie, je rentre à la maison.",
+        "Non ! Regarde, il y a beaucoup de nuages. La pluie arrive.",
+        "Mais le soleil brille !",
+        "Écoute… il tonne.",
+        "Oh ! Il pleut vraiment très fort !",
+        "Assieds-toi ici. J’ai froid. Et toi ?",
+        "Moi aussi. Je veux du thé.",
+        "D’accord, buvons du thé. Ensuite, prends mon parapluie.",
+        "Merci beaucoup, Mamie !"
+      ],
+      "questions": [
+        { "question": "Pourquoi {@jjajja} dit-elle non ?", "options": ["Il est tard", "La pluie arrive", "{@amara} est malade"] },
+        { "question": "Quel temps fait-il maintenant ?", "options": ["Ensoleillé et chaud", "Il pleut très fort", "Frais et sec"] },
+        {
+          "question": "Qu’est-ce qu’{@amara} va emporter chez elle ?",
+          "options": ["Le parapluie de {@jjajja}", "Un pull", "De la nourriture"]
+        }
+      ]
+    }
+  }
+}
