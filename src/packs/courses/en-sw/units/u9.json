@@ -1,0 +1,333 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u9",
+  "title": "Describing things",
+  "description": "Say what things and people are like: good or bad, new, big or small, heavy or light.",
+  "color": "sky",
+  "character": "neema",
+  "words": [
+    {
+      "id": "mbaya",
+      "target": "mbaya",
+      "base": "bad",
+      "altBase": ["ugly", "not good"],
+      "notes": "With ki-: kibaya. With people: mbaya, wabaya."
+    },
+    { "id": "mpya", "target": "mpya", "base": "new", "altBase": ["brand new"], "notes": "With ki-: kipya; for many ki- things: vipya." },
+    {
+      "id": "safi",
+      "target": "safi",
+      "base": "clean",
+      "altBase": ["great", "nice", "cool"],
+      "notes": "Never changes its form. Also slang for “great!”: Safi!"
+    },
+    {
+      "id": "chafu",
+      "target": "chafu",
+      "base": "dirty",
+      "altBase": ["unclean"],
+      "notes": "With ki-: kichafu; for many ki- things: vichafu."
+    },
+    { "id": "kikombe", "target": "kikombe", "base": "cup", "altBase": ["the cup", "a cup", "mug"], "notes": "Plural: vikombe." },
+    { "id": "vikombe", "target": "vikombe", "base": "cups", "altBase": ["the cups", "mugs"] },
+    {
+      "id": "kizuri",
+      "target": "kizuri",
+      "base": "good",
+      "altBase": ["nice", "beautiful", "lovely"],
+      "notes": "Nzuri with a ki- noun: kikombe kizuri, chakula kizuri."
+    },
+    {
+      "id": "vizuri",
+      "target": "vizuri",
+      "base": "well",
+      "altBase": ["good", "nice", "nicely", "fine"],
+      "notes": "For many ki- things (vikombe vizuri), and on its own: “well”."
+    },
+    {
+      "id": "gani",
+      "target": "gani",
+      "base": "which",
+      "altBase": ["what", "what kind of", "what sort of"],
+      "notes": "Comes after the noun: kikombe gani? (which cup?)"
+    },
+    { "id": "kabisa", "target": "kabisa", "base": "completely", "altBase": ["totally", "absolutely", "really", "at all"] },
+    {
+      "id": "wazuri",
+      "target": "wazuri",
+      "base": "good (people)",
+      "altBase": ["good", "nice", "beautiful", "lovely"],
+      "notes": "Nzuri for many people: watu wazuri."
+    },
+    { "id": "kikubwa", "target": "kikubwa", "base": "big", "altBase": ["large"], "notes": "Kubwa with a ki- noun. Many: vikubwa." },
+    {
+      "id": "kidogo",
+      "target": "kidogo",
+      "base": "small",
+      "altBase": ["little", "a little", "a bit"],
+      "notes": "Dogo with a ki- noun. On its own it also means “a little”."
+    },
+    {
+      "id": "nzito",
+      "target": "nzito",
+      "base": "heavy",
+      "notes": "For n- nouns like meza. With ki-: kizito; with m- trees and loads: mzito."
+    },
+    { "id": "nyepesi", "target": "nyepesi", "base": "light", "altBase": ["not heavy", "easy"], "notes": "For n- nouns. With ki-: chepesi." },
+    {
+      "id": "mrembo",
+      "target": "mrembo",
+      "base": "beautiful",
+      "altBase": ["pretty", "lovely", "a beauty"],
+      "notes": "Usually about women and girls. Many: warembo."
+    },
+    {
+      "id": "hodari",
+      "target": "hodari",
+      "base": "clever",
+      "altBase": ["skilful", "capable", "brave", "hard-working", "good at it"],
+      "notes": "Never changes its form."
+    },
+    { "id": "mwembamba", "target": "mwembamba", "base": "thin", "altBase": ["slim", "slender"], "notes": "For a person. Many: wembamba." },
+    {
+      "id": "mpole",
+      "target": "mpole",
+      "base": "gentle",
+      "altBase": ["calm", "kind", "polite", "quiet"],
+      "notes": "A great compliment. Many: wapole."
+    },
+    {
+      "id": "mchangamfu",
+      "target": "mchangamfu",
+      "base": "cheerful",
+      "altBase": ["lively", "friendly", "happy"],
+      "notes": "Many: wachangamfu."
+    }
+  ],
+  "sentences": [
+    { "id": "s-nyumba-mpya", "target": "Nyumba yangu ni mpya.", "base": "My house is new.", "altBase": ["My home is new."] },
+    { "id": "s-meza-chafu", "target": "Meza ni chafu.", "base": "The table is dirty." },
+    { "id": "s-si-mbaya", "target": "Si mbaya.", "base": "Not bad.", "altBase": ["It’s not bad.", "It is not bad."] },
+    { "id": "s-kikombe-safi", "target": "Kikombe ni safi.", "base": "The cup is clean." },
+    {
+      "id": "s-chakula-kizuri",
+      "target": "Chakula ni kizuri sana!",
+      "base": "The food is very good!",
+      "altBase": ["The food is very nice!", "The food is great!"]
+    },
+    {
+      "id": "s-vikombe-vizuri",
+      "target": "Vikombe vizuri.",
+      "base": "Nice cups.",
+      "altBase": ["Good cups.", "Beautiful cups.", "Lovely cups."]
+    },
+    { "id": "s-kikombe-gani", "target": "Kikombe gani?", "base": "Which cup?", "altBase": ["What cup?"] },
+    {
+      "id": "s-mpya-kabisa",
+      "target": "Ni mpya kabisa!",
+      "base": "It’s brand new!",
+      "altBase": ["It is brand new!", "It’s completely new!", "It is completely new!"]
+    },
+    {
+      "id": "s-safi-kabisa",
+      "target": "Safi kabisa!",
+      "base": "Absolutely great!",
+      "altBase": ["Great!", "Really great!", "Totally clean!", "Excellent!"]
+    },
+    {
+      "id": "s-watoto-wazuri",
+      "target": "Watoto wazuri.",
+      "base": "Good children.",
+      "altBase": ["Lovely children.", "Beautiful children.", "Nice children."]
+    },
+    { "id": "s-kikombe-kikubwa", "target": "Kikombe kikubwa.", "base": "A big cup.", "altBase": ["The big cup.", "A large cup."] },
+    { "id": "s-vikombe-vidogo", "target": "Vikombe vidogo.", "base": "Small cups.", "altBase": ["Little cups.", "The small cups."] },
+    { "id": "s-meza-nzito", "target": "Meza ni nzito.", "base": "The table is heavy." },
+    { "id": "s-ni-nyepesi", "target": "Ni nyepesi sana.", "base": "It’s very light.", "altBase": ["It is very light."] },
+    { "id": "s-dada-mrembo", "target": "Dada yako ni mrembo.", "base": "Your sister is beautiful.", "altBase": ["Your sister is pretty."] },
+    {
+      "id": "s-mwalimu-hodari",
+      "target": "Mwalimu ni hodari sana.",
+      "base": "The teacher is very clever.",
+      "altBase": ["The teacher is very good.", "The teacher is very capable.", "The teacher is very skilful."]
+    },
+    { "id": "s-kaka-mwembamba", "target": "Kaka yangu ni mwembamba.", "base": "My brother is thin.", "altBase": ["My brother is slim."] },
+    {
+      "id": "s-bibi-mpole",
+      "target": "Bibi ni mpole sana.",
+      "base": "Grandma is very gentle.",
+      "altBase": ["Grandmother is very gentle.", "Grandma is very kind."]
+    },
+    {
+      "id": "s-neema-mchangamfu",
+      "target": "Neema ni mchangamfu.",
+      "base": "Neema is cheerful.",
+      "altBase": ["Neema is lively.", "Neema is friendly."]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u9s1",
+      "title": "Good, bad and new",
+      "icon": "star",
+      "tip": "adjective-agreement",
+      "lessons": [
+        { "id": "u9s1l1", "newWords": ["mbaya", "mpya", "safi", "chafu"], "sentences": ["s-nyumba-mpya", "s-meza-chafu", "s-si-mbaya"] },
+        {
+          "id": "u9s1l2",
+          "newWords": ["kikombe", "vikombe", "kizuri", "vizuri"],
+          "sentences": ["s-kikombe-safi", "s-chakula-kizuri", "s-vikombe-vizuri"]
+        },
+        {
+          "id": "u9s1l3",
+          "newWords": ["gani", "kabisa", "wazuri"],
+          "sentences": ["s-kikombe-gani", "s-mpya-kabisa", "s-safi-kabisa", "s-watoto-wazuri"],
+          "dialogues": [
+            {
+              "speaker": "baraka",
+              "target": "Chakula ni kizuri?",
+              "base": "Is the food good?",
+              "options": ["Ndiyo, kizuri sana!", "Kikombe kikubwa.", "Hapana, sina dada."],
+              "answer": "Ndiyo, kizuri sana!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u9s2",
+      "title": "Big and small",
+      "icon": "target",
+      "tip": "big-small",
+      "lessons": [
+        { "id": "u9s2l1", "newWords": ["kikubwa", "kidogo"], "sentences": ["s-kikombe-kikubwa", "s-vikombe-vidogo", "s-kikombe-gani"] },
+        {
+          "id": "u9s2l2",
+          "newWords": ["nzito", "nyepesi"],
+          "sentences": ["s-meza-nzito", "s-ni-nyepesi", "s-kikombe-kikubwa"],
+          "dialogues": [
+            {
+              "speaker": "emma",
+              "target": "Meza ni nzito?",
+              "base": "Is the table heavy?",
+              "options": ["Hapana, ni nyepesi.", "Ni mpya kabisa!", "Vikombe vidogo."],
+              "answer": "Hapana, ni nyepesi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u9s3",
+      "title": "Describing people",
+      "icon": "profile",
+      "lessons": [
+        {
+          "id": "u9s3l1",
+          "newWords": ["mrembo", "hodari", "mwembamba"],
+          "sentences": ["s-dada-mrembo", "s-mwalimu-hodari", "s-kaka-mwembamba"]
+        },
+        {
+          "id": "u9s3l2",
+          "newWords": ["mpole", "mchangamfu"],
+          "sentences": ["s-bibi-mpole", "s-neema-mchangamfu", "s-watoto-wazuri"],
+          "dialogues": [
+            {
+              "speaker": "neema",
+              "target": "Mwalimu wako ni mtu gani?",
+              "base": "What kind of person is your teacher?",
+              "options": ["Ni mpole na hodari.", "Ni nyekundu.", "Kikombe kidogo."],
+              "answer": "Ni mpole na hodari."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Describing words in Swahili come after the noun and take its prefix, so “good” is nzuri, kizuri, mzuri or wazuri depending on what you describe. This unit shows you how.",
+    "phrases": [
+      { "target": "Chakula ni kizuri sana!", "base": "The food is very good!" },
+      { "target": "Si mbaya.", "base": "Not bad." },
+      { "target": "Ni mpya kabisa!", "base": "It’s brand new!" },
+      { "target": "Kikombe gani?", "base": "Which cup?" },
+      { "target": "Meza ni nzito.", "base": "The table is heavy." },
+      { "target": "Bibi ni mpole sana.", "base": "Grandma is very gentle." }
+    ],
+    "tips": [
+      {
+        "id": "adjective-agreement",
+        "title": "Describing words agree",
+        "body": [
+          "A describing word goes after its noun and takes the noun’s prefix. You already know **mtu mzuri** and **watu wazuri**. With a ki- noun it becomes **kizuri**, and with vi- nouns **vizuri**. N- nouns like **nyumba** take **nzuri**.",
+          "Some words never change: **safi**, **hodari**, **ghali** and **rahisi** are the same with every noun."
+        ],
+        "table": [
+          ["Noun", "good", "new"],
+          ["mtoto", "mtoto mzuri", "mtoto mpya"],
+          ["watoto", "watoto wazuri", "watoto wapya"],
+          ["kikombe", "kikombe kizuri", "kikombe kipya"],
+          ["vikombe", "vikombe vizuri", "vikombe vipya"],
+          ["nyumba", "nyumba nzuri", "nyumba mpya"]
+        ],
+        "targetColumns": [0, 1, 2]
+      },
+      {
+        "id": "big-small",
+        "title": "Big and small in every class",
+        "body": [
+          "The roots are **-kubwa** (big) and **-dogo** (small): **kikombe kikubwa**, **vikombe vidogo**, **mtoto mdogo**.",
+          "With n- nouns, **-dogo** becomes **ndogo** and **-kubwa** stays **kubwa**: **nyumba ndogo**, **meza kubwa**. On its own, **kidogo** means “a little”: **Nipe kidogo** (give me a little)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Safi!",
+        "body": [
+          "Young people in Kenya and Tanzania say **Safi!** or **Safi sana!** for anything good: a goal, a new phone, a plan for the weekend. It literally means “clean”."
+        ]
+      },
+      {
+        "title": "Compliments about size",
+        "body": [
+          "In many East African homes, telling someone they look well-fed or have **put on weight** (umenenepa) is a kind remark that means they look healthy and prosperous. Being called **mwembamba** may come with an offer of more food."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-new-cups",
+      "title": "New cups",
+      "unlockAfter": "u9s2l2",
+      "cast": ["baraka", "neema"],
+      "summary": "Baraka shows Neema the new cups at his chai stall.",
+      "steps": [
+        {
+          "line": { "speaker": "baraka", "target": "Neema, angalia! Vikombe vipya.", "base": "Neema, look! New cups." },
+          "gloss": { "angalia": "look" }
+        },
+        { "line": { "speaker": "neema", "target": "Vizuri sana! Ni vikubwa.", "base": "Very nice! They’re big." } },
+        { "question": "What has Baraka got?", "options": ["New cups", "New chairs", "A new house"], "answer": 0 },
+        { "line": { "speaker": "baraka", "target": "Ndiyo, na ni vyepesi sana.", "base": "Yes, and they’re very light." } },
+        {
+          "line": { "speaker": "neema", "target": "Na kikombe hiki? Ni kichafu!", "base": "And this cup? It’s dirty!" },
+          "gloss": { "hiki": "this" }
+        },
+        { "question": "What is wrong with one cup?", "options": ["It is dirty", "It is heavy", "It is small"], "answer": 0 },
+        {
+          "line": { "speaker": "baraka", "target": "Samahani! Ni kikombe changu cha zamani.", "base": "Sorry! It’s my old cup." },
+          "gloss": { "changu": "my (with ki- nouns)", "cha zamani": "old, from before" }
+        },
+        { "line": { "speaker": "neema", "target": "Hakuna matata. Chai ni nzuri kabisa!", "base": "No worries. The tea is really good!" } },
+        {
+          "question": "How does Neema say “very nice”?",
+          "options": ["Vizuri sana", "Safi kabisa", "Si mbaya"],
+          "answer": 0,
+          "optionsLang": "target"
+        }
+      ]
+    }
+  ]
+}

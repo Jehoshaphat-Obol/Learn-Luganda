@@ -16,11 +16,35 @@
     { "id": "sabini", "target": "sabini", "base": "seventy", "altBase": ["70"] },
     { "id": "themanini", "target": "themanini", "base": "eighty", "altBase": ["80"] },
     { "id": "tisini", "target": "tisini", "base": "ninety", "altBase": ["90"] },
-    { "id": "mia", "target": "mia", "base": "hundred", "altBase": ["100", "one hundred", "a hundred"], "notes": "Mia moja, one hundred; mia mbili, two hundred." },
-    { "id": "elfu", "target": "elfu", "base": "thousand", "altBase": ["1000", "one thousand", "a thousand"], "notes": "Elfu moja, one thousand." },
-    { "id": "saa", "target": "saa", "base": "hour", "altBase": ["o’clock", "time", "clock", "watch"], "notes": "Saa means hour, clock, watch and “o’clock”." },
+    {
+      "id": "mia",
+      "target": "mia",
+      "base": "hundred",
+      "altBase": ["100", "one hundred", "a hundred"],
+      "notes": "Mia moja, one hundred; mia mbili, two hundred."
+    },
+    {
+      "id": "elfu",
+      "target": "elfu",
+      "base": "thousand",
+      "altBase": ["1000", "one thousand", "a thousand"],
+      "notes": "Elfu moja, one thousand."
+    },
+    {
+      "id": "saa",
+      "target": "saa",
+      "base": "hour",
+      "altBase": ["o’clock", "time", "clock", "watch"],
+      "notes": "Saa means hour, clock, watch and “o’clock”."
+    },
     { "id": "saa-ngapi", "target": "Saa ngapi?", "base": "What time is it?", "altBase": ["what’s the time", "what time"] },
-    { "id": "na-nusu", "target": "na nusu", "base": "and a half", "altBase": ["thirty", "half past"], "notes": "Saa tatu na nusu, half past nine (in the morning)." },
+    {
+      "id": "na-nusu",
+      "target": "na nusu",
+      "base": "and a half",
+      "altBase": ["thirty", "half past"],
+      "notes": "Saa tatu na nusu, half past nine (in the morning)."
+    },
     { "id": "asubuhi", "target": "asubuhi", "base": "morning", "altBase": ["in the morning"] },
     { "id": "mchana", "target": "mchana", "base": "afternoon", "altBase": ["daytime", "in the afternoon"] },
     { "id": "jioni", "target": "jioni", "base": "evening", "altBase": ["in the evening"] },
@@ -31,25 +55,66 @@
     { "id": "jana", "target": "jana", "base": "yesterday" },
     { "id": "siku", "target": "siku", "base": "day", "altBase": ["days"] },
     { "id": "wiki", "target": "wiki", "base": "week", "altBase": ["weeks"] },
-    { "id": "pole-pole", "target": "pole pole", "base": "slowly", "altBase": ["slowly slowly", "take it easy"], "notes": "Also a way of life: no rush." },
+    {
+      "id": "pole-pole",
+      "target": "pole pole",
+      "base": "slowly",
+      "altBase": ["slowly slowly", "take it easy"],
+      "notes": "Also a way of life: no rush."
+    },
     { "id": "haraka", "target": "haraka", "base": "quickly", "altBase": ["fast", "hurry", "in a hurry"] }
   ],
   "sentences": [
     { "id": "s-shilingi-ishirini", "target": "Shilingi ishirini.", "base": "Twenty shillings.", "altBase": ["20 shillings."] },
     { "id": "s-shilingi-hamsini", "target": "Shilingi hamsini.", "base": "Fifty shillings.", "altBase": ["50 shillings."] },
     { "id": "s-shilingi-mia-tano", "target": "Shilingi mia tano.", "base": "Five hundred shillings.", "altBase": ["500 shillings."] },
-    { "id": "s-shilingi-elfu-moja", "target": "Shilingi elfu moja.", "base": "One thousand shillings.", "altBase": ["A thousand shillings.", "1000 shillings.", "1,000 shillings."] },
+    {
+      "id": "s-shilingi-elfu-moja",
+      "target": "Shilingi elfu moja.",
+      "base": "One thousand shillings.",
+      "altBase": ["A thousand shillings.", "1000 shillings.", "1,000 shillings."]
+    },
     { "id": "s-shilingi-kumi-na-mbili", "target": "Shilingi kumi na mbili.", "base": "Twelve shillings.", "altBase": ["12 shillings."] },
     { "id": "s-saa-ngapi-sasa", "target": "Ni saa ngapi sasa?", "base": "What time is it now?", "altBase": ["What’s the time now?"] },
-    { "id": "s-saa-moja-asubuhi", "target": "Saa moja asubuhi.", "base": "Seven in the morning.", "altBase": ["7 in the morning.", "7 a.m.", "7am", "Seven a.m."] },
-    { "id": "s-saa-tatu-na-nusu", "target": "Saa tatu na nusu.", "base": "Half past nine.", "altBase": ["Nine thirty.", "9:30.", "Half past nine in the morning."] },
-    { "id": "s-saa-sita-mchana", "target": "Saa sita mchana.", "base": "Twelve noon.", "altBase": ["Midday.", "Noon.", "12 noon.", "Twelve o’clock midday."] },
-    { "id": "s-saa-mbili-usiku", "target": "Saa mbili usiku.", "base": "Eight at night.", "altBase": ["8 at night.", "8 p.m.", "8pm", "Eight p.m."] },
+    {
+      "id": "s-saa-moja-asubuhi",
+      "target": "Saa moja asubuhi.",
+      "base": "Seven in the morning.",
+      "altBase": ["7 in the morning.", "7 a.m.", "7am", "Seven a.m."]
+    },
+    {
+      "id": "s-saa-tatu-na-nusu",
+      "target": "Saa tatu na nusu.",
+      "base": "Half past nine.",
+      "altBase": ["Nine thirty.", "9:30.", "Half past nine in the morning."]
+    },
+    {
+      "id": "s-saa-sita-mchana",
+      "target": "Saa sita mchana.",
+      "base": "Twelve noon.",
+      "altBase": ["Midday.", "Noon.", "12 noon.", "Twelve o’clock midday."]
+    },
+    {
+      "id": "s-saa-mbili-usiku",
+      "target": "Saa mbili usiku.",
+      "base": "Eight at night.",
+      "altBase": ["8 at night.", "8 p.m.", "8pm", "Eight p.m."]
+    },
     { "id": "s-leo-na-kesho", "target": "Leo na kesho.", "base": "Today and tomorrow.", "altBase": ["Today and tomorrow!"] },
-    { "id": "s-tutaonana-kesho", "target": "Tutaonana kesho.", "base": "See you tomorrow.", "altBase": ["We will see each other tomorrow."] },
+    {
+      "id": "s-tutaonana-kesho",
+      "target": "Tutaonana kesho.",
+      "base": "See you tomorrow.",
+      "altBase": ["We will see each other tomorrow."]
+    },
     { "id": "s-jana-jioni", "target": "Jana jioni.", "base": "Yesterday evening.", "altBase": ["Last evening.", "Last night."] },
     { "id": "s-siku-saba", "target": "Wiki ni siku saba.", "base": "A week is seven days.", "altBase": ["A week has seven days."] },
-    { "id": "s-pole-pole", "target": "Pole pole, tafadhali.", "base": "Slowly, please.", "altBase": ["Slow down, please.", "Slowly please."] },
+    {
+      "id": "s-pole-pole",
+      "target": "Pole pole, tafadhali.",
+      "base": "Slowly, please.",
+      "altBase": ["Slow down, please.", "Slowly please."]
+    },
     { "id": "s-haraka", "target": "Haraka, haraka!", "base": "Quickly, quickly!", "altBase": ["Hurry, hurry!", "Fast, fast!"] }
   ],
   "skills": [
@@ -59,14 +124,24 @@
       "icon": "target",
       "tip": "tens",
       "lessons": [
-        { "id": "u4s1l1", "newWords": ["kumi-na-moja", "kumi-na-mbili", "ishirini", "thelathini"], "sentences": ["s-shilingi-ishirini", "s-shilingi-kumi-na-mbili"] },
+        {
+          "id": "u4s1l1",
+          "newWords": ["kumi-na-moja", "kumi-na-mbili", "ishirini", "thelathini"],
+          "sentences": ["s-shilingi-ishirini", "s-shilingi-kumi-na-mbili"]
+        },
         { "id": "u4s1l2", "newWords": ["arobaini", "hamsini", "sitini", "sabini"], "sentences": ["s-shilingi-hamsini"] },
         {
           "id": "u4s1l3",
           "newWords": ["themanini", "tisini", "mia", "elfu"],
           "sentences": ["s-shilingi-mia-tano", "s-shilingi-elfu-moja"],
           "dialogues": [
-            { "speaker": "juma", "target": "Nauli ni shilingi hamsini.", "base": "The fare is fifty shillings.", "options": ["Ndiyo, asante.", "Saa ngapi?", "Nina kiu."], "answer": "Ndiyo, asante." }
+            {
+              "speaker": "juma",
+              "target": "Nauli ni shilingi hamsini.",
+              "base": "The fare is fifty shillings.",
+              "options": ["Ndiyo, asante.", "Saa ngapi?", "Nina kiu."],
+              "answer": "Ndiyo, asante."
+            }
           ]
         }
       ]
@@ -83,7 +158,13 @@
           "newWords": ["na-nusu", "mchana", "jioni", "usiku"],
           "sentences": ["s-saa-tatu-na-nusu", "s-saa-sita-mchana", "s-saa-mbili-usiku"],
           "dialogues": [
-            { "speaker": "emma", "target": "Ni saa ngapi sasa?", "base": "What time is it now?", "options": ["Saa tatu na nusu.", "Shilingi kumi.", "Nina njaa."], "answer": "Saa tatu na nusu." }
+            {
+              "speaker": "emma",
+              "target": "Ni saa ngapi sasa?",
+              "base": "What time is it now?",
+              "options": ["Saa tatu na nusu.", "Shilingi kumi.", "Nina njaa."],
+              "answer": "Saa tatu na nusu."
+            }
           ]
         }
       ]
@@ -93,13 +174,23 @@
       "title": "Today and tomorrow",
       "icon": "star",
       "lessons": [
-        { "id": "u4s3l1", "newWords": ["leo", "kesho", "jana", "siku", "wiki"], "sentences": ["s-leo-na-kesho", "s-tutaonana-kesho", "s-jana-jioni", "s-siku-saba"] },
+        {
+          "id": "u4s3l1",
+          "newWords": ["leo", "kesho", "jana", "siku", "wiki"],
+          "sentences": ["s-leo-na-kesho", "s-tutaonana-kesho", "s-jana-jioni", "s-siku-saba"]
+        },
         {
           "id": "u4s3l2",
           "newWords": ["pole-pole", "haraka"],
           "sentences": ["s-pole-pole", "s-haraka", "s-tutaonana-kesho"],
           "dialogues": [
-            { "speaker": "bibi", "target": "Haraka haraka haina baraka.", "base": "Hurry, hurry has no blessing.", "options": ["Ndiyo, bibi. Pole pole.", "Haraka, haraka!", "Shilingi elfu moja."], "answer": "Ndiyo, bibi. Pole pole." }
+            {
+              "speaker": "bibi",
+              "target": "Haraka haraka haina baraka.",
+              "base": "Hurry, hurry has no blessing.",
+              "options": ["Ndiyo, bibi. Pole pole.", "Haraka, haraka!", "Shilingi elfu moja."],
+              "answer": "Ndiyo, bibi. Pole pole."
+            }
           ]
         }
       ]
@@ -161,16 +252,39 @@
       "cast": ["emma", "juma"],
       "summary": "Emma learns about Swahili time at the matatu stage in Nairobi.",
       "steps": [
-        { "line": { "speaker": "emma", "target": "Habari, Juma! Matatu ni saa ngapi?", "base": "Hi, Juma! What time is the matatu?" }, "gloss": { "matatu": "minibus taxi" } },
-        { "line": { "speaker": "juma", "target": "Saa mbili asubuhi.", "base": "Eight in the morning." }, "gloss": { "Saa mbili": "the second hour after sunrise: 8 o’clock" } },
-        { "line": { "speaker": "emma", "target": "Saa mbili? Si saa nane?", "base": "Saa mbili? Not two o’clock?" }, "gloss": { "Si": "not", "saa nane": "the eighth hour: 2 o’clock" } },
-        { "line": { "speaker": "juma", "target": "Hapana! Saa mbili asubuhi, saa moja baada ya saa moja.", "base": "No! The second hour of the morning, one hour after seven." }, "gloss": { "baada ya": "after" } },
+        {
+          "line": { "speaker": "emma", "target": "Habari, Juma! Matatu ni saa ngapi?", "base": "Hi, Juma! What time is the matatu?" },
+          "gloss": { "matatu": "minibus taxi" }
+        },
+        {
+          "line": { "speaker": "juma", "target": "Saa mbili asubuhi.", "base": "Eight in the morning." },
+          "gloss": { "Saa mbili": "the second hour after sunrise: 8 o’clock" }
+        },
+        {
+          "line": { "speaker": "emma", "target": "Saa mbili? Si saa nane?", "base": "Saa mbili? Not two o’clock?" },
+          "gloss": { "Si": "not", "saa nane": "the eighth hour: 2 o’clock" }
+        },
+        {
+          "line": {
+            "speaker": "juma",
+            "target": "Hapana! Saa mbili asubuhi, saa moja baada ya saa moja.",
+            "base": "No! The second hour of the morning, one hour after seven."
+          },
+          "gloss": { "baada ya": "after" }
+        },
         { "question": "When does the matatu leave, by the clock?", "options": ["2:00 a.m.", "8:00 a.m.", "2:00 p.m."], "answer": 1 },
         { "line": { "speaker": "emma", "target": "Na sasa ni saa ngapi?", "base": "And what time is it now?" } },
         { "line": { "speaker": "juma", "target": "Sasa ni saa moja na nusu. Pole pole!", "base": "Now it’s half past seven. No rush!" } },
         { "question": "How long does Emma have to wait?", "options": ["Half an hour", "Two hours", "Six hours"], "answer": 0 },
-        { "line": { "speaker": "emma", "target": "Asante sana, Juma. Tutaonana kesho!", "base": "Thank you very much, Juma. See you tomorrow!" } },
-        { "question": "How does Emma say “see you tomorrow”?", "options": ["Tutaonana kesho", "Leo na kesho", "Saa ngapi"], "answer": 0, "optionsLang": "target" }
+        {
+          "line": { "speaker": "emma", "target": "Asante sana, Juma. Tutaonana kesho!", "base": "Thank you very much, Juma. See you tomorrow!" }
+        },
+        {
+          "question": "How does Emma say “see you tomorrow”?",
+          "options": ["Tutaonana kesho", "Leo na kesho", "Saa ngapi"],
+          "answer": 0,
+          "optionsLang": "target"
+        }
       ]
     }
   ]
