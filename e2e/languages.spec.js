@@ -131,4 +131,18 @@ test.describe('with a Swahili browser', () => {
     await page.locator('[data-ui-lang]').selectOption('en');
     await expect(page.getByRole('heading', { name: 'Languages' })).toBeVisible();
   });
+
+  test('a Swahili speaker is offered English, taught in Swahili', async ({ page }) => {
+    await page.goto('./#/onboarding');
+    await page.getByRole('radio', { name: /Ninaongea Kiswahili/ }).click();
+    await expect(page.getByRole('radio', { name: /Kiingereza, kwa kutumia Kiswahili/ })).toHaveAttribute('aria-checked', 'true');
+  });
+
+  test('the English path and first lesson open in Swahili', async ({ page }) => {
+    await openWith(page, savedState({ settings: { course: 'sw-en' } }), '#/learn');
+    await expect(page.getByText('Salamu').first()).toBeVisible();
+    await page.goto('./#/lesson/u1s1l1?seed=1');
+    await expect(page.getByRole('progressbar').first()).toBeVisible();
+    await expect(page.getByText(/How are you\?|Fine|Thank you|Welcome|very much/).first()).toBeVisible();
+  });
 });

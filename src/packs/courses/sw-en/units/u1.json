@@ -1,0 +1,335 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u1",
+  "title": "Salamu",
+  "description": "Salimia, jitambulishe na hesabu hadi kumi.",
+  "color": "vermillion",
+  "character": "amani",
+  "words": [
+    {
+      "id": "habari",
+      "target": "How are you?",
+      "base": "Habari?",
+      "altTarget": ["what news", "hello", "how are things"],
+      "notes": "Kiingereza husalimia kwa “Hello” au “How are you?”."
+    },
+    {
+      "id": "nzuri",
+      "target": "Fine",
+      "base": "Nzuri",
+      "altTarget": ["good", "well", "i’m fine", "i am fine"],
+      "notes": "Jibu la kawaida: “I’m fine, thank you.”"
+    },
+    { "id": "asante", "target": "Thank you", "base": "Asante", "altTarget": ["thanks"] },
+    { "id": "sana", "target": "very much", "base": "sana", "altTarget": ["very", "a lot", "so much"] },
+    { "id": "karibu", "target": "Welcome", "base": "Karibu", "altTarget": ["you’re welcome", "come in"] },
+    { "id": "jambo", "target": "Hello", "base": "Jambo", "altTarget": ["hi"] },
+    { "id": "mambo", "target": "What’s up?", "base": "Mambo?", "altTarget": ["whats up", "how’s it going", "hi"] },
+    { "id": "poa", "target": "Cool", "base": "Poa", "altTarget": ["fine", "good", "great"] },
+    { "id": "ndiyo", "target": "Yes", "base": "Ndiyo" },
+    { "id": "hapana", "target": "No", "base": "Hapana" },
+    { "id": "habari-za-asubuhi", "target": "Good morning", "base": "Habari za asubuhi?", "altTarget": ["how is the morning", "morning"] },
+    { "id": "habari-za-mchana", "target": "Good afternoon", "base": "Habari za mchana?", "altTarget": ["how is the afternoon"] },
+    { "id": "kwaheri", "target": "Goodbye", "base": "Kwaheri", "altTarget": ["bye"] },
+    {
+      "id": "tutaonana",
+      "target": "See you later",
+      "base": "Tutaonana",
+      "altTarget": ["see you", "we will see each other", "see you soon"]
+    },
+    { "id": "mimi", "target": "I", "base": "Mimi", "altTarget": ["me"], "notes": "“I” huandikwa kwa herufi kubwa kila mara." },
+    { "id": "wewe", "target": "You", "base": "Wewe", "notes": "“You” ni sawa kwa mtu mmoja au watu wengi." },
+    { "id": "jina", "target": "name", "base": "jina", "notes": "My name is Amani: jina langu ni Amani." },
+    { "id": "langu", "target": "my", "base": "langu", "notes": "“My” huja kabla ya jina: my name." },
+    { "id": "lako", "target": "your", "base": "lako" },
+    { "id": "nani", "target": "who", "base": "nani", "altTarget": ["what"] },
+    { "id": "ninaishi", "target": "I live", "base": "Ninaishi", "altTarget": ["i stay"] },
+    { "id": "unatoka-wapi", "target": "Where are you from?", "base": "Unatoka wapi?", "altTarget": ["where do you come from"] },
+    { "id": "ninatoka", "target": "I come from", "base": "Ninatoka", "altTarget": ["i am from", "i’m from"] },
+    {
+      "id": "ni",
+      "target": "is",
+      "base": "ni",
+      "altTarget": ["am", "are"],
+      "notes": "I am, you are, she is: Kiingereza kina maneno matatu kwa “ni”."
+    },
+    { "id": "mwanafunzi", "target": "student", "base": "mwanafunzi", "altTarget": ["a student", "learner", "pupil"] },
+    {
+      "id": "nimefurahi-kukuona",
+      "target": "Nice to meet you",
+      "base": "Nimefurahi kukuona",
+      "altTarget": ["i am happy to see you", "i’m happy to see you", "pleased to meet you", "glad to see you"]
+    },
+    { "id": "moja", "target": "one", "base": "moja", "altTarget": ["1"] },
+    { "id": "mbili", "target": "two", "base": "mbili", "altTarget": ["2"] },
+    { "id": "tatu", "target": "three", "base": "tatu", "altTarget": ["3"] },
+    { "id": "nne", "target": "four", "base": "nne", "altTarget": ["4"] },
+    { "id": "tano", "target": "five", "base": "tano", "altTarget": ["5"] },
+    { "id": "sita", "target": "six", "base": "sita", "altTarget": ["6"] },
+    { "id": "saba", "target": "seven", "base": "saba", "altTarget": ["7"] },
+    { "id": "nane", "target": "eight", "base": "nane", "altTarget": ["8"] },
+    { "id": "tisa", "target": "nine", "base": "tisa", "altTarget": ["9"] },
+    { "id": "kumi", "target": "ten", "base": "kumi", "altTarget": ["10"] }
+  ],
+  "sentences": [
+    { "id": "s-habari-yako", "target": "How are you?", "base": "Habari yako?", "altTarget": ["How are you doing?", "What is your news?"] },
+    {
+      "id": "s-nzuri-asante",
+      "target": "Fine, thank you.",
+      "base": "Nzuri, asante.",
+      "altTarget": ["I’m fine, thank you.", "I am fine, thank you.", "Fine, thanks.", "Good, thank you."]
+    },
+    {
+      "id": "s-asante-sana",
+      "target": "Thank you very much.",
+      "base": "Asante sana.",
+      "altTarget": ["Thanks a lot.", "Thank you so much.", "Thanks very much."]
+    },
+    {
+      "id": "s-karibu-sana",
+      "target": "You’re very welcome!",
+      "base": "Karibu sana!",
+      "altTarget": ["Very welcome!", "You are very welcome!", "Welcome!"]
+    },
+    { "id": "s-mambo-poa", "target": "What’s up? Cool!", "base": "Mambo? Poa!", "altTarget": ["What’s up? Fine!", "How’s it going? Cool!"] },
+    { "id": "s-ndiyo-asante", "target": "Yes, thank you.", "base": "Ndiyo, asante.", "altTarget": ["Yes, thanks."] },
+    { "id": "s-hapana-asante", "target": "No, thank you.", "base": "Hapana, asante.", "altTarget": ["No, thanks."] },
+    {
+      "id": "s-habari-za-asubuhi-baraka",
+      "target": "Good morning, Baraka.",
+      "base": "Habari za asubuhi, Baraka?",
+      "altTarget": ["Good morning, Baraka?"]
+    },
+    {
+      "id": "s-kwaheri-tutaonana",
+      "target": "Goodbye, see you later.",
+      "base": "Kwaheri, tutaonana.",
+      "altTarget": ["Bye, see you later.", "Goodbye, see you soon."]
+    },
+    { "id": "s-jina-langu-amani", "target": "My name is Amani.", "base": "Jina langu ni Amani.", "altTarget": ["My name’s Amani."] },
+    { "id": "s-jina-lako-nani", "target": "What is your name?", "base": "Jina lako nani?", "altTarget": ["What’s your name?"] },
+    { "id": "s-wewe-ni-nani", "target": "Who are you?", "base": "Wewe ni nani?" },
+    { "id": "s-mimi-ni-emma", "target": "I am Emma.", "base": "Mimi ni Emma.", "altTarget": ["I’m Emma.", "My name is Emma."] },
+    { "id": "s-ninaishi-mombasa", "target": "I live in Mombasa.", "base": "Ninaishi Mombasa.", "altTarget": ["I stay in Mombasa."] },
+    {
+      "id": "s-ninatoka-arusha",
+      "target": "I come from Arusha.",
+      "base": "Ninatoka Arusha.",
+      "altTarget": ["I am from Arusha.", "I’m from Arusha."]
+    },
+    { "id": "s-mimi-ni-mwanafunzi", "target": "I am a student.", "base": "Mimi ni mwanafunzi.", "altTarget": ["I’m a student."] },
+    {
+      "id": "s-nimefurahi-kukuona",
+      "target": "Nice to meet you, Juma.",
+      "base": "Nimefurahi kukuona, Juma.",
+      "altTarget": ["Pleased to meet you, Juma.", "I am happy to see you, Juma.", "I’m happy to see you, Juma."]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u1s1",
+      "title": "Salamu za kwanza",
+      "icon": "star",
+      "tip": "greetings-time",
+      "lessons": [
+        {
+          "id": "u1s1l1",
+          "newWords": ["habari", "nzuri", "asante", "sana", "karibu"],
+          "sentences": ["s-nzuri-asante", "s-asante-sana", "s-karibu-sana"]
+        },
+        {
+          "id": "u1s1l2",
+          "newWords": ["jambo", "mambo", "poa", "ndiyo", "hapana"],
+          "sentences": ["s-mambo-poa", "s-ndiyo-asante", "s-hapana-asante", "s-habari-yako"],
+          "dialogues": [{ "speaker": "neema", "target": "What’s up?", "base": "Mambo?", "options": ["Cool!", "Goodbye.", "No."], "answer": "Cool!" }]
+        },
+        {
+          "id": "u1s1l3",
+          "newWords": ["habari-za-asubuhi", "habari-za-mchana"],
+          "sentences": ["s-habari-za-asubuhi-baraka", "s-nzuri-asante"],
+          "dialogues": [
+            {
+              "speaker": "bibi",
+              "target": "Good morning, my grandchild!",
+              "base": "Habari za asubuhi, mjukuu wangu?",
+              "options": ["Good morning, Grandma.", "Cool!", "Goodbye, Grandma."],
+              "answer": "Good morning, Grandma."
+            }
+          ]
+        },
+        {
+          "id": "u1s1l4",
+          "newWords": ["kwaheri", "tutaonana"],
+          "sentences": ["s-kwaheri-tutaonana", "s-asante-sana", "s-karibu-sana"],
+          "dialogues": [
+            {
+              "speaker": "juma",
+              "target": "Okay, goodbye!",
+              "base": "Haya, kwaheri!",
+              "options": ["Goodbye, see you later.", "Good morning?", "Fine."],
+              "answer": "Goodbye, see you later."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u1s2",
+      "title": "Kujitambulisha",
+      "icon": "profile",
+      "tip": "i-am-you-are",
+      "lessons": [
+        {
+          "id": "u1s2l1",
+          "newWords": ["mimi", "wewe", "jina", "langu", "lako", "nani"],
+          "sentences": ["s-jina-langu-amani", "s-jina-lako-nani", "s-wewe-ni-nani"]
+        },
+        {
+          "id": "u1s2l2",
+          "newWords": ["ninaishi", "unatoka-wapi", "ninatoka", "ni"],
+          "sentences": ["s-ninaishi-mombasa", "s-ninatoka-arusha", "s-mimi-ni-emma"]
+        },
+        {
+          "id": "u1s2l3",
+          "newWords": ["mwanafunzi", "nimefurahi-kukuona"],
+          "sentences": ["s-mimi-ni-mwanafunzi", "s-nimefurahi-kukuona", "s-jina-lako-nani", "s-ninaishi-mombasa"],
+          "dialogues": [
+            {
+              "speaker": "baraka",
+              "target": "What is your name?",
+              "base": "Jina lako nani?",
+              "options": ["My name is Emma.", "I live in Mombasa.", "Thank you."],
+              "answer": "My name is Emma."
+            },
+            {
+              "speaker": "amani",
+              "target": "I am Amani. Where are you from?",
+              "base": "Mimi ni Amani. Unatoka wapi?",
+              "options": ["I come from Arusha.", "I am a student.", "Thank you very much."],
+              "answer": "I come from Arusha."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u1s3",
+      "title": "Namba 1–10",
+      "icon": "target",
+      "lessons": [
+        { "id": "u1s3l1", "newWords": ["moja", "mbili", "tatu", "nne", "tano"], "sentences": [] },
+        { "id": "u1s3l2", "newWords": ["sita", "saba", "nane", "tisa", "kumi"], "sentences": [] }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Kiingereza husalimia kwa ufupi: “Hello”, “Good morning”, “How are you?”, na jibu “I’m fine, thank you.” Sehemu hii inakufundisha kusalimia, kujitambulisha na kuhesabu hadi kumi.",
+    "phrases": [
+      { "target": "How are you? (literally “news?”)", "base": "Habari?" },
+      { "target": "Fine, thank you.", "base": "Nzuri, asante." },
+      { "target": "What’s up? Cool! (between friends)", "base": "Mambo? Poa!" },
+      { "target": "What is your name?", "base": "Jina lako nani?" },
+      { "target": "My name is Amani.", "base": "Jina langu ni Amani." },
+      { "target": "I come from Arusha.", "base": "Ninatoka Arusha." },
+      { "target": "You’re very welcome!", "base": "Karibu sana!" },
+      { "target": "Goodbye, see you later.", "base": "Kwaheri, tutaonana." }
+    ],
+    "tips": [
+      {
+        "id": "greetings-time",
+        "title": "Salamu hufuata saa",
+        "body": [
+          "Hadi saa sita mchana sema **Good morning**. Kuanzia mchana hadi jioni, **Good afternoon**. Jioni na usiku, **Good evening**.",
+          "**How are you?** inafaa wakati wowote, kama **Habari?** Jibu la kawaida ni **I’m fine, thank you.** Kwaheri ni **Goodbye**; usiku unaweza kusema **Good night**."
+        ]
+      },
+      {
+        "id": "i-am-you-are",
+        "title": "“I am”, “you are”",
+        "body": [
+          "Kiswahili huunganisha mtu na kitenzi: **ni**, **mimi ni**. Kiingereza kina maneno mawili: **I am** (mimi ni), **you are** (wewe ni), **he is** / **she is** (yeye ni).",
+          "**I** huandikwa kwa herufi kubwa kila mara. Watu husema kwa ufupi: **I’m**, **you’re**, **she’s**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Kiingereza Afrika Mashariki",
+        "body": [
+          "Kiingereza ni lugha rasmi Kenya, Uganda na Tanzania (pamoja na Kiswahili). Hutumika shuleni, mahakamani, kwenye biashara na mtandaoni, na huwaunganisha watu wenye lugha tofauti."
+        ]
+      },
+      {
+        "title": "Salamu fupi",
+        "body": [
+          "Wazungumzaji wa Kiingereza mara nyingi husalimia kwa maneno machache: **Hi!** au **Hello!** Si ukosefu wa adabu; ndivyo wanavyofanya. Hakuna neno kama **Shikamoo**: heshima huonyeshwa kwa **sir** au **madam**."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-new-friend",
+      "title": "Rafiki mpya",
+      "unlockAfter": "u1s2l2",
+      "cast": ["amani", "emma"],
+      "summary": "Emma anakutana na Amani kwenye kivuko cha Kigamboni.",
+      "steps": [
+        { "line": { "speaker": "amani", "target": "Hello! How are you?", "base": "Jambo! Habari?" } },
+        { "line": { "speaker": "emma", "target": "Fine, thank you. How are you?", "base": "Nzuri, asante. Habari yako?" } },
+        { "line": { "speaker": "amani", "target": "Very well. What is your name?", "base": "Nzuri sana. Jina lako nani?" } },
+        { "question": "Amani aliuliza nini?", "options": ["Jina la Emma", "Mahali Emma anapoishi", "Kama Emma ana njaa"], "answer": 0 },
+        { "line": { "speaker": "emma", "target": "My name is Emma. Who are you?", "base": "Jina langu ni Emma. Wewe ni nani?" } },
+        { "line": { "speaker": "amani", "target": "I am Amani. Where are you from, Emma?", "base": "Mimi ni Amani. Unatoka wapi, Emma?" } },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "I come from Arusha. I live in Dar es Salaam.",
+            "base": "Ninatoka Arusha. Ninaishi Dar es Salaam."
+          }
+        },
+        { "question": "Emma anaishi wapi?", "options": ["Arusha", "Dar es Salaam", "Mombasa"], "answer": 1 },
+        { "line": { "speaker": "amani", "target": "Me too! Nice to meet you.", "base": "Mimi pia! Nimefurahi kukuona." } },
+        {
+          "question": "Amani anasemaje “nimefurahi kukuona”?",
+          "options": ["Thank you very much", "Nice to meet you", "See you later"],
+          "answer": 1,
+          "optionsLang": "target"
+        },
+        {
+          "line": { "speaker": "emma", "target": "Thank you very much. Goodbye, see you later!", "base": "Asante sana. Kwaheri, tutaonana!" }
+        }
+      ]
+    },
+    {
+      "id": "sw-morning-bibi",
+      "title": "Habari za asubuhi, Bibi",
+      "unlockAfter": "u1s1l4",
+      "cast": ["neema", "bibi"],
+      "summary": "Neema anamsalimia bibi yake Stone Town kabla ya shule, kwa Kiingereza.",
+      "steps": [
+        { "line": { "speaker": "neema", "target": "Good morning, Grandma.", "base": "Habari za asubuhi, bibi." } },
+        {
+          "line": {
+            "speaker": "bibi",
+            "target": "Good morning, my grandchild. How are you?",
+            "base": "Habari za asubuhi, mjukuu wangu. Habari yako?"
+          },
+          "gloss": { "grandchild": "mjukuu" }
+        },
+        { "question": "Ni wakati gani wa siku?", "options": ["Asubuhi", "Mchana", "Usiku"], "answer": 0 },
+        { "line": { "speaker": "neema", "target": "I’m fine, Grandma. Thank you.", "base": "Nzuri, bibi. Asante." } },
+        {
+          "question": "Neema anasemaje “asante”?",
+          "options": ["Thank you", "Goodbye", "Good morning"],
+          "answer": 0,
+          "optionsLang": "target"
+        },
+        { "line": { "speaker": "bibi", "target": "Okay. Slowly, slowly!", "base": "Haya. Pole pole!" }, "gloss": { "slowly": "pole pole" } },
+        { "line": { "speaker": "neema", "target": "Yes, Grandma. Goodbye!", "base": "Ndiyo, bibi. Kwaheri!" } },
+        { "question": "Je, Neema anafika au anaondoka?", "options": ["Anafika", "Anaondoka"], "answer": 1 },
+        { "line": { "speaker": "bibi", "target": "Goodbye. See you later.", "base": "Kwaheri. Tutaonana." } }
+      ]
+    }
+  ]
+}
