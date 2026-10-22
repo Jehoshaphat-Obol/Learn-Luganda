@@ -15,6 +15,16 @@
       "title": "Mazungumzo",
       "level": "Kabla ya kati",
       "description": "Kataa, uliza maswali, zungumza kuhusu yaliyopita na yajayo, hisia, burudani, simu na upishi."
+    },
+    "s4": {
+      "title": "Jamii na utamaduni",
+      "level": "Kati",
+      "description": "Pwani ya Waswahili, kijiji na kilimo, sherehe, muziki, imani, biashara, mazingira na jamii."
+    },
+    "s5": {
+      "title": "Mzungumzaji hodari",
+      "level": "Juu ya kati",
+      "description": "Linganisha, waza, simulia hadithi, tumia methali, fuatilia habari, kabili dharura, onyesha heshima na furahia hadithi za jadi."
     }
   },
   "units": {
@@ -113,6 +123,70 @@
     "u24": {
       "title": "Upishi",
       "description": "Pika katika jiko la Kiswahili: kata, kaanga, chemsha na tia viungo kwenye sufuria ya pilau, kisha mle pamoja."
+    },
+    "u25": {
+      "title": "Pwani ya Waswahili",
+      "description": "Bandari, majahazi na miaka elfu ya biashara: pwani ambako Kiswahili kilizaliwa."
+    },
+    "u26": {
+      "title": "Kijiji na kilimo",
+      "description": "Maisha ya kijijini: kupanda, mavuno na kufanyiana mambo."
+    },
+    "u27": {
+      "title": "Sherehe",
+      "description": "Sikukuu, harusi na zawadi, na watu waliokuja, wakala na kucheza."
+    },
+    "u28": {
+      "title": "Muziki na ngoma",
+      "description": "Taarab, bongo flava na ngoma, na majina ya watu wanaotengeneza muziki."
+    },
+    "u29": {
+      "title": "Imani na baraka",
+      "description": "Nyumba za ibada, sala, kufunga na baraka watu wanazopeana."
+    },
+    "u30": {
+      "title": "Biashara",
+      "description": "Endesha biashara ndogo: wateja, faida na hasara, akiba, na kuwafundisha wengine kazi."
+    },
+    "u31": {
+      "title": "Mazingira",
+      "description": "Milima, maziwa, misitu na mito, na kutunza ardhi."
+    },
+    "u32": {
+      "title": "Jamii",
+      "description": "Mikutano, viongozi na kushirikiana: harambee."
+    },
+    "u33": {
+      "title": "Kulinganisha",
+      "description": "Sema kipi ni kikubwa zaidi, bora zaidi, bora kuliko vyote, sawa au tofauti."
+    },
+    "u34": {
+      "title": "Kama na wakati",
+      "description": "Zungumza kuhusu kinachotokea wakati fulani, ambacho kingetokea, na unachotamani."
+    },
+    "u35": {
+      "title": "Kusimulia hadithi",
+      "description": "Anza hadithi kwa njia ya Kiswahili, iendeleze na uimalize."
+    },
+    "u36": {
+      "title": "Methali",
+      "description": "Jifunze methali maarufu za Kiswahili, maana zake na wakati wa kuzitumia."
+    },
+    "u37": {
+      "title": "Habari na maoni",
+      "description": "Fuatilia habari, sema unachofikiri, na ukubali au ukatae kwa adabu."
+    },
+    "u38": {
+      "title": "Dharura",
+      "description": "Omba msaada, eleza kilichotokea na mtulize mtu."
+    },
+    "u39": {
+      "title": "Heshima na adabu",
+      "description": "Tembelea nyumba ya mtu, omba kwa adabu na onyesha heshima kwa njia ya Kiswahili."
+    },
+    "u40": {
+      "title": "Hadithi za jadi",
+      "description": "Mfahamu Sungura na Abunuwasi mjanja, na upate funzo katika hadithi."
     }
   },
   "skills": {
@@ -187,6 +261,45 @@
     "u23s3": "Kukutana",
     "u24s1": "Jikoni",
     "u24s2": "Kupika pilau",
-    "u24s3": "Kushiriki mlo"
+    "u24s3": "Kushiriki mlo",
+    "u25s1": "Bahari na visiwa",
+    "u25s2": "Biashara",
+    "u25s3": "Miji ya kale",
+    "u26s1": "Kijiji",
+    "u26s2": "Kupanda na mavuno",
+    "u26s3": "Kumfanyia mtu",
+    "u27s1": "Sikukuu",
+    "u27s2": "Harusi",
+    "u27s3": "Waliokuja",
+    "u28s1": "Wanaotengeneza muziki",
+    "u28s2": "Kupiga na kusikiliza",
+    "u29s1": "Mahali na sala",
+    "u29s2": "Kuzaliwa na kuitwa",
+    "u30s1": "Duka dogo",
+    "u30s2": "Kuwafanya wengine",
+    "u31s1": "Milima na maji",
+    "u31s2": "Kutunza ardhi",
+    "u32s1": "Mikutano na viongozi",
+    "u32s2": "Kushirikiana",
+    "u33s1": "Kubwa zaidi, ndogo zaidi",
+    "u33s2": "Sawa na tofauti",
+    "u34s1": "Wakati…",
+    "u34s2": "Kama…",
+    "u35s1": "Hapo zamani za kale",
+    "u35s2": "Kisha",
+    "u36s1": "Methali za kila siku",
+    "u36s2": "Methali kuhusu watu",
+    "u37s1": "Vichwa vya habari",
+    "u37s2": "Kutoa maoni",
+    "u37s3": "Kukubali na kukataa",
+    "u38s1": "Msaada!",
+    "u38s2": "Ajali",
+    "u38s3": "Baada ya hatari",
+    "u39s1": "Kuwasalimia wazee",
+    "u39s2": "Maneno ya adabu",
+    "u39s3": "Kuwa mgeni",
+    "u40s1": "Sungura",
+    "u40s2": "Abunuwasi",
+    "u40s3": "Funzo"
   }
 }
