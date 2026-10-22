@@ -1,0 +1,244 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u25",
+  "title": "The Swahili coast",
+  "description": "Ports, dhows and a thousand years of trade: the coast where Swahili was born.",
+  "color": "sage",
+  "character": "bibi",
+  "words": [
+    { "id": "pwani", "target": "pwani", "base": "coast", "altBase": ["the coast", "shore", "beach", "seaside"] },
+    {
+      "id": "bahari",
+      "target": "bahari",
+      "base": "sea",
+      "altBase": ["ocean", "the sea", "the ocean"],
+      "notes": "Baharini: at sea, by the sea."
+    },
+    { "id": "kisiwa", "target": "kisiwa", "base": "island", "altBase": ["the island"], "notes": "Plural: visiwa." },
+    {
+      "id": "jahazi",
+      "target": "jahazi",
+      "base": "dhow",
+      "altBase": ["sailing ship", "the dhow"],
+      "notes": "A large wooden sailing boat. Plural: majahazi."
+    },
+    {
+      "id": "kaskazi",
+      "target": "kaskazi",
+      "base": "north-east monsoon",
+      "altBase": ["monsoon", "the north wind", "north"],
+      "notes": "The wind that once brought traders from Arabia and India. Also “north”."
+    },
+    { "id": "historia", "target": "historia", "base": "history", "altBase": ["the history"] },
+    { "id": "karne", "target": "karne", "base": "century", "altBase": ["centuries", "the century"] },
+    { "id": "biashara", "target": "biashara", "base": "trade", "altBase": ["business", "commerce"] },
+    { "id": "wafanyabiashara", "target": "wafanyabiashara", "base": "traders", "altBase": ["merchants", "businesspeople", "businessmen"] },
+    { "id": "lugha", "target": "lugha", "base": "language", "altBase": ["languages", "the language"] },
+    {
+      "id": "kutoka-kiarabu",
+      "target": "kutoka Kiarabu",
+      "base": "from Arabic",
+      "altBase": ["from the arabic language"],
+      "notes": "Many Swahili words come from Arabic: kitabu, saa, dunia."
+    },
+    {
+      "id": "wenye",
+      "target": "wenye",
+      "base": "with",
+      "altBase": ["having", "who have", "which have"],
+      "notes": "For people: watu wenye pesa. For an n- noun: yenye. For a town (mji): wenye."
+    },
+    { "id": "maarufu", "target": "maarufu", "base": "famous", "altBase": ["well-known", "popular"], "notes": "Never changes its form." },
+    { "id": "mji-wa-kale", "target": "mji wa kale", "base": "old town", "altBase": ["ancient town", "historic town"] }
+  ],
+  "sentences": [
+    {
+      "id": "s-pwani-nzuri",
+      "target": "Pwani ni nzuri sana.",
+      "base": "The coast is very beautiful.",
+      "altBase": ["The coast is very nice."]
+    },
+    { "id": "s-bahari-kubwa", "target": "Bahari ni kubwa!", "base": "The sea is big!", "altBase": ["The ocean is big!"] },
+    { "id": "s-kisiwa-cha-zanzibar", "target": "Zanzibar ni kisiwa.", "base": "Zanzibar is an island." },
+    { "id": "s-jahazi-baharini", "target": "Jahazi liko baharini.", "base": "The dhow is at sea.", "altBase": ["The dhow is on the sea."] },
+    {
+      "id": "s-kaskazi",
+      "target": "Kaskazi ilileta majahazi.",
+      "base": "The monsoon brought the dhows.",
+      "altBase": ["The north-east monsoon brought the dhows."]
+    },
+    { "id": "s-historia-ndefu", "target": "Pwani ina historia ndefu.", "base": "The coast has a long history." },
+    {
+      "id": "s-karne-nyingi",
+      "target": "Karne nyingi zilizopita.",
+      "base": "Many centuries ago.",
+      "altBase": ["Many centuries in the past."]
+    },
+    {
+      "id": "s-biashara-ya-bahari",
+      "target": "Biashara ya bahari ilikuwa kubwa.",
+      "base": "Sea trade was big.",
+      "altBase": ["The sea trade was big.", "Trade by sea was big."]
+    },
+    {
+      "id": "s-wafanyabiashara-walifika",
+      "target": "Wafanyabiashara walifika kutoka Arabia na India.",
+      "base": "Traders came from Arabia and India.",
+      "altBase": ["Traders arrived from Arabia and India.", "Merchants came from Arabia and India."]
+    },
+    { "id": "s-lugha-ya-pwani", "target": "Kiswahili ni lugha ya pwani.", "base": "Swahili is the language of the coast." },
+    { "id": "s-maneno-kiarabu", "target": "Neno “kitabu” ni kutoka Kiarabu.", "base": "The word “kitabu” is from Arabic." },
+    {
+      "id": "s-mji-wenye-historia",
+      "target": "Lamu ni mji wenye historia.",
+      "base": "Lamu is a town with history.",
+      "altBase": ["Lamu is a historic town."]
+    },
+    {
+      "id": "s-maarufu",
+      "target": "Mji wa kale wa Kilwa ni maarufu.",
+      "base": "The old town of Kilwa is famous.",
+      "altBase": ["Kilwa’s old town is famous."]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u25s1",
+      "title": "Sea and islands",
+      "icon": "flame",
+      "lessons": [
+        {
+          "id": "u25s1l1",
+          "newWords": ["pwani", "bahari", "kisiwa"],
+          "sentences": ["s-pwani-nzuri", "s-bahari-kubwa", "s-kisiwa-cha-zanzibar"]
+        },
+        { "id": "u25s1l2", "newWords": ["jahazi", "kaskazi"], "sentences": ["s-jahazi-baharini", "s-kaskazi", "s-bahari-kubwa"] }
+      ]
+    },
+    {
+      "id": "u25s2",
+      "title": "Trade",
+      "icon": "shop",
+      "tip": "past-agreement",
+      "lessons": [
+        {
+          "id": "u25s2l1",
+          "newWords": ["historia", "karne", "biashara"],
+          "sentences": ["s-historia-ndefu", "s-karne-nyingi", "s-biashara-ya-bahari"]
+        },
+        {
+          "id": "u25s2l2",
+          "newWords": ["wafanyabiashara", "lugha", "kutoka-kiarabu"],
+          "sentences": ["s-wafanyabiashara-walifika", "s-lugha-ya-pwani", "s-maneno-kiarabu"],
+          "dialogues": [
+            {
+              "speaker": "bibi",
+              "target": "Kiswahili kilitoka wapi?",
+              "base": "Where did Swahili come from?",
+              "options": ["Kutoka pwani ya Afrika Mashariki.", "Kutoka Kanada.", "Jahazi liko baharini."],
+              "answer": "Kutoka pwani ya Afrika Mashariki."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u25s3",
+      "title": "Old towns",
+      "icon": "home",
+      "tip": "enye",
+      "lessons": [
+        {
+          "id": "u25s3l1",
+          "newWords": ["wenye", "maarufu", "mji-wa-kale"],
+          "sentences": ["s-mji-wenye-historia", "s-maarufu", "s-historia-ndefu"],
+          "dialogues": [
+            {
+              "speaker": "emma",
+              "target": "Lamu ni mji wa aina gani?",
+              "base": "What kind of town is Lamu?",
+              "options": ["Ni mji wa kale wenye historia.", "Ni kisiwa cha India.", "Sina salio."],
+              "answer": "Ni mji wa kale wenye historia."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Swahili grew in the trading towns of the East African coast, from Mogadishu to Sofala, where African, Arab, Persian and Indian worlds met.",
+    "phrases": [
+      { "target": "Pwani ina historia ndefu.", "base": "The coast has a long history." },
+      { "target": "Kiswahili ni lugha ya pwani.", "base": "Swahili is the language of the coast." },
+      { "target": "Wafanyabiashara walifika kutoka Arabia na India.", "base": "Traders came from Arabia and India." },
+      { "target": "Lamu ni mji wenye historia.", "base": "Lamu is a town with history." }
+    ],
+    "tips": [
+      {
+        "id": "past-agreement",
+        "title": "Things in the past",
+        "body": [
+          "The past **-li-** takes the noun’s own prefix in front: **biashara ilikuwa kubwa** (trade was big), **kitabu kilikuwa** (the book was), **majahazi yalifika** (the dhows arrived).",
+          "People use **a-** and **wa-**: **wafanyabiashara walifika** (the traders arrived)."
+        ]
+      },
+      {
+        "id": "enye",
+        "title": "-enye: with, having",
+        "body": [
+          "**-enye** means “having” or “with”, and agrees with its noun: **mji wenye historia** (a town with history), **watu wenye pesa** (people with money), **nyumba yenye vyumba vitatu** (a house with three rooms)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "A Bantu language with many borrowings",
+        "body": [
+          "Swahili is a Bantu language, a cousin of Luganda and Kikuyu, but its traders borrowed freely: **kitabu** and **saa** from Arabic, **chai** from Persian and Hindi, **meza** from Portuguese, **baiskeli** from English."
+        ]
+      },
+      {
+        "title": "The dhow",
+        "body": [
+          "Wooden **majahazi** still sail between Zanzibar, Lamu and the mainland. For centuries they followed the monsoon: south with the **kaskazi**, home again with the **kusi**."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-dhow-story",
+      "title": "The dhow",
+      "unlockAfter": "u25s3l1",
+      "cast": ["bibi", "emma"],
+      "summary": "On the beach in Stone Town, Bibi tells Emma how her grandfather sailed with the monsoon.",
+      "steps": [
+        {
+          "line": { "speaker": "emma", "target": "Bibi, jahazi lile ni zuri sana!", "base": "Grandma, that dhow is so beautiful!" },
+          "gloss": { "lile": "that (over there)" }
+        },
+        {
+          "line": { "speaker": "bibi", "target": "Babu yangu alikuwa nahodha wa jahazi.", "base": "My grandfather was the captain of a dhow." },
+          "gloss": { "nahodha": "captain" }
+        },
+        { "question": "What was Bibi’s grandfather?", "options": ["A dhow captain", "A teacher", "A farmer"], "answer": 0 },
+        { "line": { "speaker": "emma", "target": "Kweli? Alisafiri wapi?", "base": "Really? Where did he sail?" } },
+        {
+          "line": {
+            "speaker": "bibi",
+            "target": "Na kaskazi, alienda Oman na India. Na kusi, alirudi Zanzibar.",
+            "base": "With the north-east monsoon he went to Oman and India. With the south wind he came home to Zanzibar."
+          },
+          "gloss": { "kusi": "the south-west monsoon" }
+        },
+        { "question": "Which places did he sail to?", "options": ["Oman and India", "Kenya and Uganda", "Europe"], "answer": 0 },
+        { "line": { "speaker": "emma", "target": "Alibeba nini?", "base": "What did he carry?" }, "gloss": { "Alibeba": "he carried" } },
+        {
+          "line": { "speaker": "bibi", "target": "Karafuu, nguo na hadithi nyingi!", "base": "Cloves, cloth and lots of stories!" },
+          "gloss": { "Karafuu": "cloves", "hadithi": "stories" }
+        },
+        { "question": "How does Bibi say “dhow”?", "options": ["jahazi", "bahari", "kisiwa"], "answer": 0, "optionsLang": "target" }
+      ]
+    }
+  ]
+}

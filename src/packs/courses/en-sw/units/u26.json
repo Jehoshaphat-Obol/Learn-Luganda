@@ -1,0 +1,220 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u26",
+  "title": "Village and farming",
+  "description": "Life in the village: planting, the harvest and doing things for each other.",
+  "color": "blush",
+  "character": "baraka",
+  "words": [
+    {
+      "id": "kijiji",
+      "target": "kijiji",
+      "base": "village",
+      "altBase": ["the village"],
+      "notes": "Plural: vijiji. Kijijini: in the village."
+    },
+    { "id": "kulima", "target": "kulima", "base": "to farm", "altBase": ["farming", "to dig", "to cultivate"] },
+    { "id": "mahindi", "target": "mahindi", "base": "maize", "altBase": ["corn"] },
+    { "id": "mpunga", "target": "mpunga", "base": "rice plants", "altBase": ["rice", "paddy"] },
+    { "id": "mbegu", "target": "mbegu", "base": "seeds", "altBase": ["seed", "the seeds"] },
+    {
+      "id": "kupanda",
+      "target": "kupanda",
+      "base": "to plant",
+      "altBase": ["planting", "to sow", "to climb"],
+      "notes": "Also “to climb” or “to get on”: kupanda basi."
+    },
+    { "id": "mavuno", "target": "mavuno", "base": "harvest", "altBase": ["the harvest", "crop"] },
+    { "id": "jembe", "target": "jembe", "base": "hoe", "altBase": ["the hoe"], "notes": "Plural: majembe." },
+    { "id": "maji-ya-mvua", "target": "maji ya mvua", "base": "rainwater", "altBase": ["rain water"] },
+    {
+      "id": "nimlimie",
+      "target": "nimlimie",
+      "base": "farm for him",
+      "altBase": ["farm for her", "dig for him"],
+      "notes": "From -lima + -i-: farm for someone."
+    },
+    { "id": "ninakupikia", "target": "ninakupikia", "base": "I’m cooking for you", "altBase": ["i am cooking for you", "i cook for you"] },
+    { "id": "niletee", "target": "Niletee", "base": "Bring me", "altBase": ["bring it to me", "bring for me"] },
+    {
+      "id": "jirani",
+      "target": "jirani",
+      "base": "neighbour",
+      "altBase": ["neighbor", "neighbours", "the neighbour"],
+      "notes": "Plural: majirani."
+    }
+  ],
+  "sentences": [
+    { "id": "s-kijijini", "target": "Ninaishi kijijini.", "base": "I live in the village.", "altBase": ["I live in a village."] },
+    { "id": "s-kulima-mahindi", "target": "Tunalima mahindi.", "base": "We grow maize.", "altBase": ["We farm maize.", "We grow corn."] },
+    {
+      "id": "s-mpunga",
+      "target": "Mpunga unapenda maji mengi.",
+      "base": "Rice plants like a lot of water.",
+      "altBase": ["Rice likes a lot of water."]
+    },
+    {
+      "id": "s-kupanda-mbegu",
+      "target": "Leo tutapanda mbegu.",
+      "base": "Today we will plant seeds.",
+      "altBase": ["We’ll plant seeds today."]
+    },
+    { "id": "s-mavuno-mazuri", "target": "Mavuno ni mazuri mwaka huu.", "base": "The harvest is good this year." },
+    { "id": "s-jembe", "target": "Chukua jembe.", "base": "Take the hoe.", "altBase": ["Take a hoe."] },
+    { "id": "s-maji-ya-mvua", "target": "Tunahifadhi maji ya mvua.", "base": "We store rainwater.", "altBase": ["We keep rainwater."] },
+    {
+      "id": "s-nimlimie",
+      "target": "Nitamlimia bibi shamba.",
+      "base": "I will farm Grandma’s field for her.",
+      "altBase": ["I’ll farm the field for Grandma."]
+    },
+    {
+      "id": "s-ninakupikia",
+      "target": "Ninakupikia ugali.",
+      "base": "I’m cooking ugali for you.",
+      "altBase": ["I am cooking ugali for you."]
+    },
+    {
+      "id": "s-niletee-maji",
+      "target": "Niletee maji, tafadhali.",
+      "base": "Bring me water, please.",
+      "altBase": ["Please bring me water."]
+    },
+    { "id": "s-jirani", "target": "Jirani yangu ni mkulima.", "base": "My neighbour is a farmer.", "altBase": ["My neighbor is a farmer."] }
+  ],
+  "skills": [
+    {
+      "id": "u26s1",
+      "title": "The village",
+      "icon": "home",
+      "lessons": [
+        {
+          "id": "u26s1l1",
+          "newWords": ["kijiji", "kulima", "mahindi", "jirani"],
+          "sentences": ["s-kijijini", "s-kulima-mahindi", "s-jirani"]
+        },
+        { "id": "u26s1l2", "newWords": ["mpunga", "jembe", "maji-ya-mvua"], "sentences": ["s-mpunga", "s-jembe", "s-maji-ya-mvua"] }
+      ]
+    },
+    {
+      "id": "u26s2",
+      "title": "Planting and harvest",
+      "icon": "star",
+      "lessons": [
+        {
+          "id": "u26s2l1",
+          "newWords": ["mbegu", "kupanda", "mavuno"],
+          "sentences": ["s-kupanda-mbegu", "s-mavuno-mazuri", "s-kulima-mahindi"],
+          "dialogues": [
+            {
+              "speaker": "baraka",
+              "target": "Mtapanda lini?",
+              "base": "When will you all plant?",
+              "options": ["Tutapanda mvua ikianza.", "Niletee maji.", "Ni kisiwa."],
+              "answer": "Tutapanda mvua ikianza."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u26s3",
+      "title": "Doing it for someone",
+      "icon": "heart",
+      "tip": "applicative",
+      "lessons": [
+        {
+          "id": "u26s3l1",
+          "newWords": ["nimlimie", "ninakupikia", "niletee"],
+          "sentences": ["s-nimlimie", "s-ninakupikia", "s-niletee-maji"],
+          "dialogues": [
+            {
+              "speaker": "bibi",
+              "target": "Niletee jembe, mjukuu wangu.",
+              "base": "Bring me the hoe, my grandchild.",
+              "options": ["Sawa, bibi. Hili hapa.", "Mavuno ni mazuri.", "Tumeshinda!"],
+              "answer": "Sawa, bibi. Hili hapa."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Most East Africans have a shamba or family in the village. Farming follows the rains, and neighbours help each other.",
+    "phrases": [
+      { "target": "Ninaishi kijijini.", "base": "I live in the village." },
+      { "target": "Tunalima mahindi.", "base": "We grow maize." },
+      { "target": "Mavuno ni mazuri mwaka huu.", "base": "The harvest is good this year." },
+      { "target": "Niletee maji, tafadhali.", "base": "Bring me water, please." },
+      { "target": "Ninakupikia ugali.", "base": "I’m cooking ugali for you." }
+    ],
+    "tips": [
+      {
+        "id": "applicative",
+        "title": "Doing it for someone: -i-, -e-",
+        "body": [
+          "Add **-i-** or **-e-** before the last **-a** and the verb is done for or to someone: **-lima** (farm) → **-limia** (farm for), **-pika** → **-pikia** (cook for), **-leta** → **-letea** (bring to).",
+          "With a person inside the verb: **ninakupikia** (I’m cooking for you), **niletee** (bring me), **nitamlimia** (I’ll farm for him or her)."
+        ],
+        "table": [["Verb", "For someone"], ["-lima", "-limia"], ["-pika", "-pikia"], ["-leta", "-letea"], ["-andika", "-andikia"]],
+        "targetColumns": [0, 1]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Ugali and maize",
+        "body": [
+          "Maize came from the Americas, but **ugali**, a stiff porridge of maize flour, is now the everyday staple of Kenya and Tanzania. A meal without it can feel like no meal at all."
+        ]
+      },
+      {
+        "title": "Working together",
+        "body": ["At planting and harvest, neighbours often work each other’s fields in turn, with food and drink provided by the host family."]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-planting-day",
+      "title": "Planting day",
+      "unlockAfter": "u26s3l1",
+      "cast": ["baraka", "juma"],
+      "summary": "Juma helps Baraka plant maize at his family’s shamba.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "baraka",
+            "target": "Juma, asante kwa kuja! Leo tunapanda mahindi.",
+            "base": "Juma, thanks for coming! Today we’re planting maize."
+          },
+          "gloss": { "kuja": "coming" }
+        },
+        {
+          "line": {
+            "speaker": "juma",
+            "target": "Hakuna shida. Mvua ilinyesha jana, ardhi ni nzuri.",
+            "base": "No problem. It rained yesterday, the soil is good."
+          },
+          "gloss": { "ardhi": "soil, land" }
+        },
+        { "question": "Why is it a good day to plant?", "options": ["It rained yesterday", "It is sunny", "It is Sunday"], "answer": 0 },
+        {
+          "line": { "speaker": "baraka", "target": "Chukua jembe, nami nitaleta mbegu.", "base": "Take a hoe, and I’ll bring the seeds." },
+          "gloss": { "nami": "and I" }
+        },
+        {
+          "line": { "speaker": "juma", "target": "Mke wako ametupikia nini?", "base": "What has your wife cooked for us?" },
+          "gloss": { "Mke": "wife", "ametupikia": "has cooked for us" }
+        },
+        {
+          "line": { "speaker": "baraka", "target": "Ugali na maharage! Tutakula baada ya kazi.", "base": "Ugali and beans! We’ll eat after work." },
+          "gloss": { "baada ya": "after" }
+        },
+        { "question": "When will they eat?", "options": ["After work", "Before work", "Tomorrow"], "answer": 0 },
+        { "line": { "speaker": "juma", "target": "Safi! Haba na haba…", "base": "Great! Little by little…" } },
+        { "question": "How does Baraka say “seeds”?", "options": ["mbegu", "mahindi", "jembe"], "answer": 0, "optionsLang": "target" }
+      ]
+    }
+  ]
+}
