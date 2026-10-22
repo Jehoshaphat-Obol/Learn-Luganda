@@ -115,6 +115,11 @@
         "label": "Ennyimba ez’emabega",
         "hint": "Amadinda amagonvu ku miko egy’awaka. Mu masomo ne mu ngero kisirifu."
       },
+      "weather": {
+        "label": "Embeera y’obudde ku ngaali",
+        "hint": "Laga embeera y’obudde ey’ewammwe mu kabonero. W’oli mu bufunze (nga km 10) kikozesebwa okubuuza Open-Meteo omulundi gumu buli ssaawa; tewali kirala kigabanyizibwa.",
+        "denied": "Okumanya w’oli kuggaddwa ku mukutu guno, n’olwekyo ngaali tasobola kulaga mbeera ya budde."
+      },
       "haptics": {
         "label": "Okukankana",
         "unsupported": "Ekyuma kino oba browser eno tesobola kukankana (iPhone ne kompyuta ezisinga tebikikkiriza).",
@@ -435,6 +440,8 @@
         "meta": "Manya ebisingawo mu [ebikwata ku byama bya Meta](https://www.facebook.com/privacy/policy).",
         "fontsTitle": "Ennukuta",
         "fonts": "Ebiwandiiko bikozesa ennukuta eziva mu Google Fonts, kale browser yo ezisaba okuva eri Google omulundi ogusooka bw’okyalira. Oluvannyuma ziterekebwa ku kyuma kyo.",
+        "weatherTitle": "Embeera y’obudde",
+        "weather": "Bw’oteekako _Embeera y’obudde ku ngaali_ mu [Entegeka](#/settings), browser yo ekubuuza w’oli omulundi gumu. Kirongoosebwa okutuuka nga km 10, kikuumibwa ku kyuma kino, era kiweerezebwa eri [Open-Meteo](https://open-meteo.com) omulundi gumu gwokka buli ssaawa okumanya embeera y’obudde ey’ewammwe. Open-Meteo teyetaaga akawunti era tekozesa cookies. Kiba kiggaddwa okutuusa ng’okiteeseeko.",
         "childrenTitle": "Abaana",
         "children": "Tetukuŋŋaanya mu bugenderevu bikwata ku muntu yenna. Olw’okuba ebirango bisobola okukukwatako bw’okkiriza wokka, abazadde basobola okulonda _Ebirango ebya bulijjo byokka_ ku bayizi abato.",
         "changesTitle": "Enkyukakyuka",
@@ -1005,6 +1012,31 @@
       "happy": "Awaka ku {app}. Ekiruubirirwa kya leero kituukiddwako!",
       "sleepy": "Awaka ku {app}. Ennaku zo ez’omuddiriŋŋanwa zirindiridde essomo lya leero.",
       "celebrating": "Awaka ku {app}. Leero otuuse ku kkubo eddene!"
+    },
+    "brandScene": {
+      "phase": {
+        "dawn": "Makya.",
+        "day": "Emisana.",
+        "dusk": "Akawungeezi.",
+        "night": "Ekiro."
+      },
+      "weather": {
+        "cloudy": "Waliwo ebire.",
+        "fog": "Waliwo olufu.",
+        "rain": "Enkuba etonnya.",
+        "snow": "Omuzira gugwa.",
+        "storm": "Waliwo kibuyaga."
+      },
+      "holiday": {
+        "newYear": "Omwaka Omuggya Omulungi!",
+        "valentine": "Olunaku lwa Valentine olulungi!",
+        "womensDay": "Olunaku lw’Abakazi olulungi!",
+        "easter": "Amazuukira amalungi!",
+        "martyrsDay": "Olunaku lw’Abajulizi ba Uganda.",
+        "heroesDay": "Olunaku lw’Abazira.",
+        "independence": "Olunaku lw’Okwefuga olulungi, Uganda!",
+        "christmas": "Ssekukkulu ennungi!"
+      }
     },
     "sounds": {
       "playful": "Eby’essanyu",

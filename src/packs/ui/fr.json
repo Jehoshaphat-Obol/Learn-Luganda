@@ -106,6 +106,11 @@
         "label": "Musique de fond",
         "hint": "Une douce boucle d’amadinda sur les écrans d’accueil. Les leçons et les histoires restent silencieuses."
       },
+      "weather": {
+        "label": "La météo sur la grue",
+        "hint": "Affiche la météo locale dans le logo. Ta position approximative (environ 10 km) sert à interroger Open-Meteo une fois par heure ; rien d’autre n’est partagé.",
+        "denied": "La localisation est désactivée pour ce site, la grue ne peut donc pas afficher la météo."
+      },
       "haptics": {
         "label": "Vibrations",
         "unsupported": "Cet appareil ou ce navigateur ne peut pas vibrer (les iPhone et la plupart des ordinateurs ne le permettent pas).",
@@ -423,6 +428,8 @@
         "meta": "Pour en savoir plus, lis la [politique de confidentialité de Meta](https://www.facebook.com/privacy/policy).",
         "fontsTitle": "Polices",
         "fonts": "Le texte utilise des polices fournies par Google Fonts : ton navigateur les demande donc à Google lors de ta première visite. Ensuite, elles sont gardées en cache sur ton appareil.",
+        "weatherTitle": "Météo",
+        "weather": "Si tu actives _La météo sur la grue_ dans les [Paramètres](#/settings), ton navigateur demande ta position une fois. Elle est arrondie à environ 10 km, gardée sur cet appareil et envoyée à [Open-Meteo](https://open-meteo.com) au plus une fois par heure pour connaître la météo locale. Open-Meteo ne demande pas de compte et ne dépose pas de cookies. C’est désactivé tant que tu ne l’actives pas.",
         "childrenTitle": "Enfants",
         "children": "Nous ne collectons sciemment aucune information personnelle, de qui que ce soit. Comme les publicités ne sont personnalisées qu’avec ton accord, les parents peuvent choisir _Publicités simples_ pour les plus jeunes.",
         "changesTitle": "Modifications",
@@ -937,6 +944,31 @@
       "happy": "Accueil de {app}. L’objectif du jour est atteint !",
       "sleepy": "Accueil de {app}. Ta série attend la leçon du jour.",
       "celebrating": "Accueil de {app}. Étape de série aujourd’hui !"
+    },
+    "brandScene": {
+      "phase": {
+        "dawn": "Aube.",
+        "day": "Journée.",
+        "dusk": "Soir.",
+        "night": "Nuit."
+      },
+      "weather": {
+        "cloudy": "Nuageux dehors.",
+        "fog": "Brouillard dehors.",
+        "rain": "Il pleut dehors.",
+        "snow": "Il neige dehors.",
+        "storm": "Orage dehors."
+      },
+      "holiday": {
+        "newYear": "Bonne année !",
+        "valentine": "Joyeuse Saint-Valentin !",
+        "womensDay": "Bonne journée des femmes !",
+        "easter": "Joyeuses Pâques !",
+        "martyrsDay": "Journée des martyrs de l’Ouganda.",
+        "heroesDay": "Journée des héros.",
+        "independence": "Joyeuse fête de l’indépendance, Ouganda !",
+        "christmas": "Joyeux Noël !"
+      }
     },
     "sounds": {
       "playful": "Joueur",

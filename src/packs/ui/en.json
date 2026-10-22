@@ -105,6 +105,11 @@
         "label": "Background music",
         "hint": "A quiet amadinda loop on the home screens. Lessons and stories stay quiet."
       },
+      "weather": {
+        "label": "Weather on the crane",
+        "hint": "Show your local weather in the logo. Your rough location (about 10 km) is used to ask Open-Meteo once an hour; nothing else is shared.",
+        "denied": "Location is off for this site, so the crane can’t show the weather."
+      },
       "haptics": {
         "label": "Vibration",
         "unsupported": "This device or browser can’t vibrate (iPhones and most computers don’t allow it).",
@@ -422,6 +427,8 @@
         "meta": "Learn more in [Meta’s privacy policy](https://www.facebook.com/privacy/policy).",
         "fontsTitle": "Fonts",
         "fonts": "Text is set in fonts served by Google Fonts, so your browser requests them from Google the first time you visit. After that they’re cached on your device.",
+        "weatherTitle": "Weather",
+        "weather": "If you turn on _Weather on the crane_ in [Settings](#/settings), your browser asks for your location once. It is rounded to about 10 km, kept on this device, and sent to [Open-Meteo](https://open-meteo.com) at most once an hour to get the local weather. Open-Meteo needs no account and sets no cookies. It’s off unless you turn it on.",
         "childrenTitle": "Children",
         "children": "We don’t knowingly collect personal information from anyone. Because ads may be personalised only with your consent, parents can choose _Basic ads only_ for younger learners.",
         "changesTitle": "Changes",
@@ -933,6 +940,31 @@
       "happy": "{app} home. Today’s goal is done!",
       "sleepy": "{app} home. Your streak is waiting for today’s lesson.",
       "celebrating": "{app} home. Streak milestone today!"
+    },
+    "brandScene": {
+      "phase": {
+        "dawn": "Dawn.",
+        "day": "Daytime.",
+        "dusk": "Evening.",
+        "night": "Night."
+      },
+      "weather": {
+        "cloudy": "Cloudy outside.",
+        "fog": "Foggy outside.",
+        "rain": "Raining outside.",
+        "snow": "Snowing outside.",
+        "storm": "Stormy outside."
+      },
+      "holiday": {
+        "newYear": "Happy New Year!",
+        "valentine": "Happy Valentine’s Day!",
+        "womensDay": "Happy Women’s Day!",
+        "easter": "Happy Easter!",
+        "martyrsDay": "Uganda Martyrs Day.",
+        "heroesDay": "Heroes Day.",
+        "independence": "Happy Independence Day, Uganda!",
+        "christmas": "Merry Christmas!"
+      }
     },
     "sounds": {
       "playful": "Playful",

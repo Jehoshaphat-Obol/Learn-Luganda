@@ -1,7 +1,8 @@
 /*
  * The crane logo's mood follows today's progress, like Duolingo's app icon,
  * but only ever nudges kindly: it celebrates and naps, it never sulks.
- * The mood shows in the app's logo and the browser-tab icon.
+ * The mood shows in the app's logo and the browser-tab icon, together with
+ * the scene around the crane (time of day, holiday, weather: brand-scene.js).
  */
 import { dailyGoal } from '../state/xp.js';
 import { MILESTONES, streakStatus } from '../state/streak.js';
@@ -23,18 +24,27 @@ export function brandMood(s, now = new Date()) {
 
 export const moodLabel = (mood) => t(`mood.${MOODS.includes(mood) ? mood : 'idle'}`, { app: t('app.name') });
 
+/** The logo's label: the mood, then the holiday and the sky, if any. */
+export function brandLabel(mood, scene = {}) {
+  const parts = [moodLabel(mood)];
+  if (scene.holiday) parts.push(t(`brandScene.holiday.${scene.holiday}`));
+  if (scene.phase) parts.push(t(scene.weather && scene.weather !== 'clear' ? `brandScene.weather.${scene.weather}` : `brandScene.phase.${scene.phase}`));
+  return parts.join(' ');
+}
+
 let shown = 'idle';
 
-/** Redraws the app's crane marks and the tab icon when the mood changes. */
-export function applyBrandMood(mood, doc = document) {
+/** Redraws the app's crane marks and the tab icon when the mood or scene changes. */
+export function applyBrandMood(mood, doc = document, scene = {}) {
+  const key = [mood, scene.phase, scene.weather, scene.holiday].filter(Boolean).join(' ');
   doc.querySelectorAll('[data-brand]').forEach((el) => {
-    if (el.dataset.mood === mood) return;
-    el.dataset.mood = mood;
-    el.innerHTML = brandMark(mood);
-    (el.closest('a') ?? el).setAttribute('aria-label', moodLabel(mood));
+    if (el.dataset.mood === key) return;
+    el.dataset.mood = key;
+    el.innerHTML = brandMark(mood, scene);
+    (el.closest('a') ?? el).setAttribute('aria-label', brandLabel(mood, scene));
   });
-  if (mood === shown) return;
-  shown = mood;
+  if (key === shown) return;
+  shown = key;
   const link = doc.querySelector('link[rel="icon"]');
-  if (link) link.href = mood === 'idle' ? './favicon.svg' : `data:image/svg+xml,${encodeURIComponent(faviconSvg(mood))}`;
+  if (link) link.href = key === 'idle' ? './favicon.svg' : `data:image/svg+xml,${encodeURIComponent(faviconSvg(mood, scene))}`;
 }

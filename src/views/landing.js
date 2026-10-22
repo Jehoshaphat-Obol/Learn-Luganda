@@ -70,7 +70,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
     root.innerHTML = `
       <div class="landing">
         <header class="landing__header">
-          <a class="landing__brand" href="#/" aria-label="${escapeHtml(t('app.home'))}">${brandMark()}<span>${escapeHtml(t('app.shortName'))}</span></a>
+          <a class="landing__brand" href="#/" aria-label="${escapeHtml(t('app.home'))}"><span class="nav__mark" data-brand data-mood="idle">${brandMark()}</span><span>${escapeHtml(t('app.shortName'))}</span></a>
           <nav class="landing__links" aria-label="${escapeHtml(t('landing.nav.label'))}">
             <a href="#how">${escapeHtml(t('landing.nav.how'))}</a>
             <a href="#cast">${escapeHtml(t('landing.nav.cast'))}</a>
