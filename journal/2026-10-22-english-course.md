@@ -35,3 +35,11 @@
 ## Section 4 (units 25–32)
 - 8 units, 72 lessons, 108 words, 4 stories. Dropped `gwa` (u25), `ntunza` (u31), `okusimba` (u32); `emmwanyi` teaches "coffee beans" so it doesn't repeat `kaawa`. "I teach the children Luganda" became English.
 - The topics are Ganda culture, so the guidebooks teach how to explain it in English: "I belong to the Lugave clan", "of" and 's, capitals for titles (the Kabaka), "The kwanjula is an introduction ceremony", aunt vs ssenga, play the drum, "who" for people, to church / to the mosque, holiday greetings and replies, any/some, teach/feed for the -is- verbs, in/on/at, Let’s; Ugandan "garden" vs British "garden".
+
+## Section 5 (units 33–40)
+- 8 units, 72 lessons, 80 words, 4 stories. Dropped `bwe` (u34), `olwali-olumu` (u35), `nti` (u37), `mwasuze`, `mwebale` (u39). The u36 dialogue "Luganda is hard" became English.
+- Guidebooks: -er than / the -est / better, best; when (no "will" after it), if I had … I would, I would like; once upon a time, story pasts (went, saw, said), the moral; English proverbs that match Ganda ones; says that, I think, I agree; emergencies (112/999), has been stolen, No problem; respect through words (sir, Mr, please, would you) since English has one "you" and no kneeling; telling Kintu and Nnambi in English.
+
+## lg-en is full length
+- 5 sections, 40 units, 341 lessons (same as en-lg), 654 words, 21 stories. Every English word target is unique across the course.
+- Next: native-speaker review of the English and the Luganda; then the course can leave `draft`.
