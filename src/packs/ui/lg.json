@@ -924,6 +924,30 @@
       }
     },
     "ads": {
+      "rewarded": {
+        "title": "Laba ekirango, ofune amayinja",
+        "description": "Laba ekirango ekimpi okutuusa ku nkomerero ofune amayinja {gems}. Ebirango bikuuma amasomo nga ga bwereere.",
+        "button": "Laba",
+        "label": "Laba ekirango ofune amayinja {gems}",
+        "left": "{left} ku {perDay} bisigaddewo leero",
+        "earnRule": "Laba ekirango (okutuuka ku {perDay} buli lunaku)",
+        "finding": "Tunoonya ekirango…",
+        "ready": {
+          "title": "Ekirango kyo kiwedde okuteekebwateekebwa",
+          "body": "Nze {mascot}. Kiraba okutuusa ku nkomerero nkuteekere amayinja {gems} mu nsawo yo. Bw’okiggalawo nga tekinnaggwa, amayinja gabuuka nakyo.",
+          "yes": "Laba ekirango",
+          "no": "Si kati"
+        },
+        "earned": "+{gems} amayinja! Weebale okukuuma amasomo nga ga bwereere.",
+        "closed": "Ekirango kiggaddwawo nga tekinnaggwa, n’olwekyo tewali mayinja omulundi guno.",
+        "why": {
+          "grace": "Sooka oyige katono, olyoke odde ofune amayinja.",
+          "dailyCap": "Ebyo byonna {perDay} ebya leero. Ebirala enkya!",
+          "cooldown": "Wummulamu. Ekirango ekiddako kijja kuba kyetegefu ku ssaawa {time}.",
+          "offline": "Toli ku mutimbagano. Ebirango byetaaga omutimbagano.",
+          "unavailable": "Tewali kirango kati. Gezaako oluvannyuma."
+        }
+      },
       "sponsored": "Kirango",
       "about": "Ebikwata ku birango",
       "cardButton": "Wummula ebirango",

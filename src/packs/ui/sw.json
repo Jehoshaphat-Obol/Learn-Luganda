@@ -884,6 +884,30 @@
       }
     },
     "ads": {
+      "rewarded": {
+        "title": "Tazama tangazo, upate vito",
+        "description": "Tazama tangazo fupi hadi mwisho upate vito {gems}. Matangazo hufanya masomo yawe bure.",
+        "button": "Tazama",
+        "label": "Tazama tangazo upate vito {gems}",
+        "left": "{left} kati ya {perDay} yamebaki leo",
+        "earnRule": "Tazama tangazo (hadi {perDay} kwa siku)",
+        "finding": "Tunatafuta tangazo…",
+        "ready": {
+          "title": "Tangazo lako liko tayari",
+          "body": "Ni mimi {mascot}. Litazame hadi mwisho nami nitakuwekea vito {gems} mfukoni. Ukilifunga mapema, vito vinaruka nalo.",
+          "yes": "Tazama tangazo",
+          "no": "Si sasa"
+        },
+        "earned": "+{gems} vito! Asante kwa kuweka masomo bure.",
+        "closed": "Tangazo lilifungwa mapema, kwa hiyo hakuna vito safari hii.",
+        "why": {
+          "grace": "Jifunze kidogo kwanza, kisha urudi upate vito.",
+          "dailyCap": "Hayo ndiyo yote {perDay} ya leo. Mengine kesho!",
+          "cooldown": "Pumzika kidogo. Tangazo linalofuata litakuwa tayari saa {time}.",
+          "offline": "Huko mtandaoni. Matangazo yanahitaji mtandao.",
+          "unavailable": "Hakuna tangazo kwa sasa. Jaribu tena baadaye."
+        }
+      },
       "sponsored": "Udhamini",
       "about": "Kuhusu matangazo",
       "cardButton": "Pumziko la matangazo",

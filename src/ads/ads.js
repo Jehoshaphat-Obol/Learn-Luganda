@@ -13,6 +13,9 @@ import { POLICY } from './policy.js';
 import { adLog, recordAdShown } from './log.js';
 import { adConsent, setAdConsent } from './consent.js';
 import { adBreakStatus, adBreakUntil, takeAdBreak } from './breaks.js';
+import { PLACEMENT_RULES, REWARDED_RULES, decide } from './rules.js';
+import { playRewardedAd, recordRewarded, rewardedConfigured, rewardedLog } from './rewarded.js';
+import { play } from '../ui/sound.js';
 import { t, tHtml, currentLanguage } from '../i18n/index.js';
 import { store } from '../state/store.js';
 import { streakStatus } from '../state/streak.js';
@@ -37,32 +40,42 @@ const online = () => typeof navigator === 'undefined' || navigator.onLine !== fa
 const sessionsDone = () => Object.values(store.get().lessons ?? {}).reduce((n, l) => n + (l.completions || 0), 0);
 
 /**
- * Applies the ad policy. `context.sessions` is the number of finished
+ * Decides whether a sponsored card may show in `placement`, by running the
+ * rules in `rules.js`. `context.sessions` is the number of finished
  * sessions; `context.accuracy` the accuracy of the one just finished (for
- * the complete placement). Returns false whenever any rule says no,
- * including while the learner is on an ad break.
+ * the complete placement). Returns `{ show, rule }`, where `rule` names the
+ * rule that said no.
  */
-export function allowAd(placement, context = {}, { policy = POLICY, log = adLog(), now = Date.now(), breakUntil = adBreakUntil(now) } = {}) {
-  const rule = policy.placements[placement];
-  if (!rule?.enabled) return false;
-  if (breakUntil > now) return false;
-  const sessions = context.sessions ?? sessionsDone();
-  if (sessions < policy.graceSessions) return false;
-  if (log.shown >= policy.maxPerDay) return false;
-  if (log.last && now - log.last < policy.cooldownMinutes * 60_000) return false;
-  if (placement === 'complete') {
-    if (sessions % policy.everyNthSession !== 0) return false;
-    if ((context.accuracy ?? 1) < policy.minAccuracy) return false;
-  }
-  return true;
+export function decideAd(
+  placement,
+  context = {},
+  { config = ADS, policy = POLICY, log = adLog(), now = Date.now(), breakUntil = adBreakUntil(now), rewardedLast = rewardedLog(now).last } = {},
+) {
+  const type = policy.placements[placement]?.type;
+  return decide(
+    PLACEMENT_RULES,
+    {
+      placement,
+      configured: Boolean(type) && adsConfigured(type, config),
+      online: online(),
+      sessions: context.sessions ?? sessionsDone(),
+      accuracy: context.accuracy,
+      breakUntil,
+      log,
+      rewardedLast,
+      now,
+    },
+    policy,
+  );
 }
+
+/** True when `decideAd` says the card may show. */
+export const allowAd = (placement, context, deps) => decideAd(placement, context, deps).show;
 
 /** The HTML for one ad card, or '' when the policy, config or network says no. */
 export function adSlot(placement, context = {}, { config = ADS, policy = POLICY, log, now } = {}) {
-  const type = policy.placements[placement]?.type;
-  if (!type || !adsConfigured(type, config) || !online()) return '';
-  if (!allowAd(placement, context, { policy, log, now })) return '';
-  const u = config.units[type];
+  if (!allowAd(placement, context, { config, policy, log, now })) return '';
+  const u = config.units[policy.placements[placement].type];
   const layout = u.format === 'fluid' && u.layoutKey ? ` data-ad-layout-key="${escapeHtml(u.layoutKey)}"` : '';
   const format = u.format === 'fluid' && !u.layoutKey ? 'auto' : u.format;
   return `<aside class="ad-card ad-card--${placement}" data-ad aria-label="${escapeHtml(t('ads.sponsored'))}">
@@ -235,6 +248,80 @@ export async function offerAdBreak({ policy = POLICY } = {}) {
   }
   return until;
 }
+
+/**
+ * Where the learner stands on rewarded ads: whether one can be watched now
+ * (`show`, and the `rule` that says no otherwise), the gems per ad, how many
+ * are left today and when the next is possible.
+ */
+export function rewardedNow({ config = ADS, policy = POLICY, now = Date.now(), log = rewardedLog(now), sessions = sessionsDone() } = {}) {
+  const rule = policy.rewarded;
+  const decision = decide(REWARDED_RULES, { configured: rewardedConfigured(config), online: online(), sessions, rewarded: log, now }, policy);
+  return {
+    ...decision,
+    gems: rule.gems,
+    perDay: rule.perDay,
+    left: Math.max(0, rule.perDay - log.count),
+    nextAt: decision.rule === 'cooldown' ? log.last + rule.cooldownMinutes * 60_000 : 0,
+  };
+}
+
+/** Pays the gems for a rewarded ad, if today's cap still has room. */
+export function grantRewardedGems({ policy = POLICY, now = Date.now() } = {}) {
+  if (rewardedLog(now).count >= policy.rewarded.perDay) return 0;
+  recordRewarded(now);
+  store.update((s) => {
+    s.gems += policy.rewarded.gems;
+  });
+  return policy.rewarded.gems;
+}
+
+const REWARDED_REASONS = { grace: 'grace', dailyCap: 'dailyCap', cooldown: 'cooldown', online: 'offline' };
+
+/**
+ * The learner asked to watch an ad for gems. Asks for ad consent first if
+ * they haven't chosen, finds an ad, lets them confirm, and pays out only
+ * once Google says the ad was watched. Resolves with the gems earned.
+ */
+export async function offerRewardedAd({ policy = POLICY } = {}) {
+  const status = rewardedNow({ policy });
+  if (!status.show) {
+    const why = REWARDED_REASONS[status.rule] ?? 'unavailable';
+    toast(t(`ads.rewarded.why.${why}`, { perDay: status.perDay, time: timeOfDay(status.nextAt) }));
+    return 0;
+  }
+  if (!adConsent()) await askForConsent();
+  toast(t('ads.rewarded.finding'));
+  let earned = 0;
+  const result = await playRewardedAd({
+    personalised: adConsent() === 'granted',
+    confirm: async () =>
+      (await openModal({
+        title: t('ads.rewarded.ready.title'),
+        art: mascot({ pose: 'happy' }),
+        body: `<p>${escapeHtml(t('ads.rewarded.ready.body', { mascot: MASCOT_NAME, gems: status.gems }))}</p>`,
+        actions: [
+          { label: t('ads.rewarded.ready.no'), value: 'no', variant: 'secondary' },
+          { label: t('ads.rewarded.ready.yes', { gems: status.gems }), value: 'yes' },
+        ],
+      })) === 'yes',
+    onGranted: () => {
+      earned = grantRewardedGems({ policy });
+    },
+  });
+  if (earned) {
+    play('reward');
+    toast(t('ads.rewarded.earned', { gems: earned }), { variant: 'success' });
+  } else if (result === 'closed') {
+    toast(t('ads.rewarded.closed'));
+  } else if (result !== 'declined') {
+    toast(t('ads.rewarded.why.unavailable'));
+  }
+  return earned;
+}
+
+const timeOfDay = (time) => (time ? new Date(time).toLocaleTimeString(currentLanguage(), { hour: 'numeric', minute: '2-digit' }) : '');
+export { timeOfDay as rewardedTime };
 
 if (typeof window !== 'undefined') {
   // Going offline mid-visit: take any ad cards away rather than leave holes.

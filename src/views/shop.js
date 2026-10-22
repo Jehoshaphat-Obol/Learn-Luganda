@@ -1,4 +1,4 @@
-/* Gems: earned only by learning, spent on streak freezes, heart refills and avatar frames. */
+/* Gems: earned by learning (and, if the learner chooses, by watching an ad), spent on streak freezes, heart refills and avatar frames. */
 import '../styles/shop.css';
 import { store } from '../state/store.js';
 import { SHOP_ITEMS, buy, canBuy, earnRules } from '../state/shop.js';
@@ -10,6 +10,8 @@ import { icon } from '../ui/icons.js';
 import { avatar } from '../ui/avatar.js';
 import { play } from '../ui/sound.js';
 import { t, tHtml } from '../i18n/index.js';
+import { offerRewardedAd, rewardedNow, rewardedTime } from '../ads/ads.js';
+import { rewardedConfigured } from '../ads/rewarded.js';
 
 function itemArt(item, state) {
   if (item.cosmetic) return avatar({ ...state.profile.avatar, frame: item.id }, { size: 56 });
@@ -24,6 +26,34 @@ function itemNote(item, state) {
   }
   if (item.cosmetic && state.inventory[item.id]) return t(state.profile.avatar.frame === item.id ? 'shop.equipped' : 'shop.reasons.owned');
   return '';
+}
+
+/** The opt-in "watch an ad, earn gems" card; '' until a rewarded unit is set up. */
+function rewardedItem() {
+  if (!rewardedConfigured()) return '';
+  const r = rewardedNow();
+  const note = r.show ? t('ads.rewarded.left', { left: r.left, perDay: r.perDay })
+    : r.rule === 'grace' ? t('ads.rewarded.why.grace')
+    : r.rule === 'cooldown' ? t('ads.rewarded.why.cooldown', { time: rewardedTime(r.nextAt) })
+    : r.rule === 'dailyCap' ? t('ads.rewarded.why.dailyCap', { perDay: r.perDay })
+    : r.rule === 'online' ? t('ads.rewarded.why.offline') : '';
+  return `<li class="shop-item shop-item--rewarded">
+    <span class="shop-item__icon shop-item__icon--rewarded">${icon('gem', { size: 30 })}</span>
+    <div class="shop-item__body">
+      <h2>${escapeHtml(t('ads.rewarded.title'))}</h2>
+      <p class="muted">${escapeHtml(t('ads.rewarded.description', { gems: r.gems }))}</p>
+      ${note ? `<p class="shop-item__note">${escapeHtml(note)}</p>` : ''}
+    </div>
+    <div class="shop-item__action">${button({ label: `+${r.gems}`, iconName: 'gem', variant: r.show ? 'blue' : 'secondary', attrs: `data-rewarded aria-label="${escapeHtml(t('ads.rewarded.label', { gems: r.gems }))}"` })}</div>
+  </li>`;
+}
+
+/** The earn rules, plus the rewarded ad when it's on. */
+function earnList() {
+  const rules = earnRules({ perTier: GEMS_PER_TIER });
+  if (!rewardedConfigured()) return rules;
+  const r = rewardedNow();
+  return r.perDay ? [...rules, { label: t('ads.rewarded.earnRule', { perDay: r.perDay }), gems: `+${r.gems}` }] : rules;
 }
 
 export function shopView({ root }) {
@@ -57,15 +87,24 @@ export function shopView({ root }) {
               <div class="shop-item__action">${action}</div>
             </li>`;
           }).join('')}
+          ${rewardedItem()}
         </ul>
         <section class="shop-rules" aria-labelledby="shop-rules-title">
           <h2 id="shop-rules-title">${escapeHtml(t('shop.rules'))}</h2>
-          <ul>${earnRules({ perTier: GEMS_PER_TIER }).map((r) => `<li><span>${escapeHtml(r.label)}</span><span class="shop-rules__gems">${icon('gem', { size: 14 })}${escapeHtml(r.gems)}</span></li>`).join('')}</ul>
+          <ul>${earnList().map((r) => `<li><span>${escapeHtml(r.label)}</span><span class="shop-rules__gems">${icon('gem', { size: 14 })}${escapeHtml(r.gems)}</span></li>`).join('')}</ul>
         </section>
       </div>`;
   }
 
-  root.addEventListener('click', (e) => {
+  root.addEventListener('click', async (e) => {
+    const watch = e.target.closest('[data-rewarded]');
+    if (watch) {
+      if (watch.disabled) return;
+      watch.disabled = true;
+      await offerRewardedAd();
+      if (root.isConnected) draw();
+      return;
+    }
     const buyBtn = e.target.closest('[data-buy]');
     if (buyBtn && !buyBtn.disabled) {
       const item = SHOP_ITEMS.find((i) => i.id === buyBtn.dataset.buy);

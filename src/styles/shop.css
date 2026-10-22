@@ -58,6 +58,7 @@
 
 .shop-item__icon--freeze { background: var(--color-bauhaus-blue); border-radius: var(--radius-md); }
 .shop-item__icon--refill { background: var(--color-error); }
+.shop-item__icon--rewarded { background: var(--color-bauhaus-yellow); color: var(--color-bauhaus-black); border-radius: 50% 50% var(--radius-md) var(--radius-md); }
 
 .shop-item__body {
   flex: 1;

@@ -855,6 +855,30 @@
       }
     },
     "ads": {
+      "rewarded": {
+        "title": "Watch an ad, earn gems",
+        "description": "Watch a short ad to the end and earn {gems} gems. Ads keep the lessons free.",
+        "button": "Watch",
+        "label": "Watch an ad to earn {gems} gems",
+        "left": "{left} of {perDay} left today",
+        "earnRule": "Watch an ad (up to {perDay} a day)",
+        "finding": "Finding an ad…",
+        "ready": {
+          "title": "Your ad is ready",
+          "body": "{mascot} here. Watch it to the end and I’ll drop {gems} gems in your pouch. Close it early and the gems fly off with it.",
+          "yes": "Watch the ad",
+          "no": "Not now"
+        },
+        "earned": "+{gems} gems! Thanks for keeping the lessons free.",
+        "closed": "The ad closed early, so no gems this time.",
+        "why": {
+          "grace": "Do a little learning first, then come back for gems.",
+          "dailyCap": "That’s all {perDay} for today. More tomorrow!",
+          "cooldown": "Catch your breath. The next ad is ready at {time}.",
+          "offline": "You’re offline. Ads need a connection.",
+          "unavailable": "No ad to show right now. Try again later."
+        }
+      },
       "sponsored": "Sponsored",
       "about": "About ads",
       "cardButton": "Ad break",
