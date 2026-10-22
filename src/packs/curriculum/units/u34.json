@@ -3,7 +3,23 @@
   "id": "u34",
   "color": "sage",
   "character": "nakato",
-  "words": ["bwe", "bwe-nzuukuka", "bw-etonnya", "singa", "nnandiguze", "nnandigenze", "nnandyagadde", "ka-tulabe", "katonda-bwanaayagala"],
+  "words": [
+    "bwe",
+    "bwe-nzuukuka",
+    "bw-etonnya",
+    "singa",
+    "nnandiguze",
+    "nnandigenze",
+    "nnandyagadde",
+    "ka-tulabe",
+    "katonda-bwanaayagala",
+    "ukifika",
+    "mvua-ikinyesha",
+    "nikipata",
+    "ningekuwa",
+    "laiti",
+    "tajiri"
+  ],
   "sentences": [
     "s34-bwe-nzuukuka",
     "s34-bwe-ntuuka",
@@ -13,7 +29,14 @@
     "s34-nnandyagadde-caayi",
     "s34-nnandyagadde-okugenda",
     "s34-ka-tulabe",
-    "s34-katonda-bwanaayagala"
+    "s34-katonda-bwanaayagala",
+    "s-ukifika",
+    "s-mvua-ikinyesha",
+    "s-nikipata-pesa",
+    "s-ningekuwa-tajiri",
+    "s-ningenunua",
+    "s-laiti",
+    "s-ikiwa"
   ],
   "phrases": 6,
   "skills": [
@@ -51,6 +74,23 @@
           "newWords": [],
           "sentences": ["s34-nnandyagadde-okugenda", "s34-katonda-bwanaayagala", "s34-singa-nnina-ssente"],
           "dialogues": [{ "speaker": "nakato", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u34s4",
+      "icon": "clock",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u34s4l1",
+          "newWords": ["ukifika", "mvua-ikinyesha", "nikipata"],
+          "sentences": ["s-ukifika", "s-mvua-ikinyesha", "s-nikipata-pesa"]
+        },
+        {
+          "id": "u34s4l2",
+          "newWords": ["ningekuwa", "tajiri", "laiti"],
+          "sentences": ["s-ningekuwa-tajiri", "s-ningenunua", "s-laiti", "s-ikiwa"]
         }
       ]
     }

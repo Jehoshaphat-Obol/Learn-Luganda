@@ -91,7 +91,7 @@
       "questions": [
         { "question": "Wanakubaliana bei gani?", "options": ["Elfu tano", "Elfu tatu", "Elfu moja"] },
         { "question": "Emma anasema wakate upande gani?", "options": ["Kushoto", "Kulia"] },
-        { "question": "Emma anamwambiaje Ssali asimame?" }
+        { "question": "Emma anamwambiaje Ssali asimame?", "options": ["Nenda moja kwa moja", "Simama hapa", "Pinda kushoto"] }
       ]
     }
   }

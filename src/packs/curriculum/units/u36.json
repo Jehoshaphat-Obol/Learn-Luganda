@@ -13,7 +13,14 @@
     "prov-akwata-mpola",
     "prov-agali-awamu",
     "prov-olugalo-olumu",
-    "prov-atannayitaayita"
+    "prov-atannayitaayita",
+    "haraka-haraka",
+    "pole-pole-ndio",
+    "haba-na-haba",
+    "asiyesikia",
+    "mgeni-siku-mbili",
+    "usipoziba-ufa",
+    "akili-ni-nywele"
   ],
   "sentences": [
     "s36-olugero-luno",
@@ -23,7 +30,16 @@
     "s36-kamu-kamu",
     "s36-akwata-mpola",
     "s36-agali-awamu",
-    "s36-olugalo-olumu"
+    "s36-olugalo-olumu",
+    "s-methali",
+    "s-maana-yake",
+    "s-haraka-haraka",
+    "s-pole-pole-ndio",
+    "s-haba",
+    "s-asiyesikia",
+    "s-mgeni",
+    "s-usipoziba",
+    "s-akili"
   ],
   "phrases": 6,
   "skills": [
@@ -57,6 +73,24 @@
           "sentences": ["s36-kamu-kamu", "s36-agali-awamu", "s36-kitegeeza-okwegatta"],
           "dialogues": [{ "speaker": "jjajja", "answer": 0 }]
         }
+      ]
+    },
+    {
+      "id": "u36s4",
+      "icon": "book",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u36s4l1",
+          "newWords": ["haraka-haraka", "pole-pole-ndio"],
+          "sentences": ["s-methali", "s-maana-yake", "s-haraka-haraka", "s-pole-pole-ndio"]
+        },
+        {
+          "id": "u36s4l2",
+          "newWords": ["haba-na-haba", "asiyesikia", "mgeni-siku-mbili"],
+          "sentences": ["s-haba", "s-asiyesikia", "s-mgeni"]
+        },
+        { "id": "u36s4l3", "newWords": ["usipoziba-ufa", "akili-ni-nywele"], "sentences": ["s-usipoziba", "s-akili"] }
       ]
     }
   ],

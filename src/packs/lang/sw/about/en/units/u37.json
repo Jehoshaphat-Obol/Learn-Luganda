@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u37",
+  "guidebook": {
+    "intro": "Jamii ina mizizi mirefu: majirani huchangia pamoja, mikutano ni mirefu na kila mtu ana sauti.",
+    "tips": [
+      {
+        "id": "vote-elect",
+        "title": "Vote na election",
+        "body": [
+          "**Kura** ni **vote**, na **kupiga kura** ni **to vote** (si “beat a vote”). **Uchaguzi** ni **election**: **There’s an election next year.**",
+          "**Serikali** ni **the government**. **Kiongozi** ni **leader**: **Our leader spoke at the meeting.**"
+        ]
+      },
+      {
+        "id": "each-other",
+        "title": "Each other",
+        "body": [
+          "**-ana** ya Kiswahili (**tunapendana**) ni **each other** kwa Kiingereza: **We love each other**, **They help each other**.",
+          "**Tusaidiane** ni **Let’s help each other!** Na **tutaonana** ni **we’ll see each other** au kwa kawaida **see you**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Fundraiser",
+        "body": ["Harambee kwa Kiingereza ni **a fundraiser**. Kuchangia ni **to contribute** au **to give**: **Everyone gave what they could.**"]
+      }
+    ]
+  }
+}

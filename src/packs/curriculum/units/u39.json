@@ -3,7 +3,22 @@
   "id": "u39",
   "color": "lilac",
   "character": "jjajja",
-  "words": ["okufukamira", "abakadde", "ekitiibwa", "mwasuze", "mwebale", "mwattu", "webale-okujja", "omugenyi", "olyeko"],
+  "words": [
+    "okufukamira",
+    "abakadde",
+    "ekitiibwa",
+    "mwasuze",
+    "mwebale",
+    "mwattu",
+    "webale-okujja",
+    "omugenyi",
+    "olyeko",
+    "adabu",
+    "hodi",
+    "mkono-wa-kulia",
+    "ukarimu",
+    "karibu-tena"
+  ],
   "sentences": [
     "s39-bafukamira",
     "s39-mwasuze-ssebo",
@@ -13,7 +28,13 @@
     "s39-webale-okujja",
     "s39-omugenyi",
     "s39-olyeko",
-    "s39-yingira-otuule"
+    "s39-yingira-otuule",
+    "s-heshima",
+    "s-adabu",
+    "s-hodi",
+    "s-mkono-kulia",
+    "s-ukarimu",
+    "s-karibu-tena"
   ],
   "phrases": 6,
   "skills": [
@@ -46,6 +67,18 @@
           "newWords": [],
           "sentences": ["s39-yingira-otuule", "s39-webale-okujja"],
           "dialogues": [{ "speaker": "jjajja", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u39s4",
+      "icon": "profile",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u39s4l1",
+          "newWords": ["adabu", "hodi", "mkono-wa-kulia", "ukarimu", "karibu-tena"],
+          "sentences": ["s-heshima", "s-adabu", "s-hodi", "s-mkono-kulia", "s-ukarimu", "s-karibu-tena"]
         }
       ]
     }

@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u38",
+  "guidebook": {
+    "intro": "Unatumaini hutayahitaji maneno haya, lakini kuyajua kutakutuliza jambo baya likitokea.",
+    "tips": [
+      {
+        "id": "there-has-been",
+        "title": "There’s been an accident",
+        "body": [
+          "**Kumetokea ajali** ni **There has been (There’s been) an accident.** **Kuna moto** ni **There’s a fire!**",
+          "Kwa yaliyompata mtu: **He’s hurt** (ameumia), **She’s been robbed** (ameibiwa). Kuomba msaada: **Help!** **Call the police!** **Call an ambulance!**"
+        ]
+      },
+      {
+        "id": "dont-be",
+        "title": "Don’t…!",
+        "body": [
+          "**Usi-…-e** ni **Don’t** + kitenzi: **Don’t run!** (usikimbie), **Don’t be afraid!** (usiogope). Ni ile ile kwa mtu mmoja au wengi.",
+          "**Tulia** ni **Calm down** au **Stay calm**. **You’re safe** ni uko salama."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Namba za dharura",
+        "body": [
+          "Namba ya dharura ni tofauti kila nchi: **999** Kenya na Uingereza, **112** Tanzania na Ulaya, **911** Marekani. Hifadhi namba za mahali ulipo."
+        ]
+      }
+    ]
+  }
+}

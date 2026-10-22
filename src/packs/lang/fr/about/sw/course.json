@@ -1,0 +1,49 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "description": "Le swahili est la langue commune de l’Afrique de l’Est, parlée par des dizaines de millions de personnes de Mombasa et Zanzibar à Kampala, Kigali et Goma.",
+  "landing": {
+    "hello": "Habari?",
+    "thanks": "Asante",
+    "place": "Afrique de l’Est",
+    "word": "kujifunza — v. apprendre",
+    "words": [
+      ["Habari?", "Comment vas-tu ?"],
+      ["Nzuri", "Bien"],
+      ["Asante", "Merci"],
+      ["Karibu", "Bienvenue"],
+      ["Rafiki", "Ami"],
+      ["Maji", "Eau"],
+      ["Chakula", "Nourriture"],
+      ["Pole pole", "Doucement"],
+      ["Hakuna shida", "Pas de problème"],
+      ["Kwaheri", "Au revoir"]
+    ],
+    "why": {
+      "title": "Une langue pour **toute l’Afrique de l’Est.**",
+      "text": "Le swahili est langue officielle au Kenya, en Tanzanie, en Ouganda et dans la Communauté d’Afrique de l’Est, et la langue de tous les jours de la côte de l’océan Indien jusqu’au Congo. Apprenez-le pour voyager, commercer, vous faire des amis et suivre la musique, du taarab au bongo flava.",
+      "cards": [
+        { "title": "Pour les voyageurs", "text": "Circulez de Mombasa à Mwanza, en matatu, en daladala ou en ferry." },
+        { "title": "Pour le travail", "text": "Parlez avec vos collègues et vos clients dans toute la région." },
+        { "title": "Pour les curieux", "text": "Découvrez les classes nominales, les proverbes et mille ans de poésie de la côte." }
+      ]
+    },
+    "sample": {
+      "prompt": "Lequel veut dire « merci » ?",
+      "options": ["Habari?", "Asante", "Hapana"],
+      "answer": "Asante",
+      "explain": "_Asante_ veut dire merci."
+    },
+    "start": { "word": "Tuanze!", "caption": "tuanze — commençons" },
+    "farewell": "Asante sana — merci beaucoup.",
+    "audience": "Les grands débutants, les voyageurs et bénévoles qui partent en Afrique de l’Est, et les familles qui font vivre le swahili à la maison.",
+    "first": "Salutations et respect, la famille, la nourriture et le marché, les nombres et l’heure, les lieux et les déplacements, la maison, les jours de la semaine et la santé, unité par unité."
+  },
+  "cast": {
+    "nakato": "Ta guide, étudiante à l’université à Dar es Salaam",
+    "mukasa": "Tient un stand de chai et de chapati à Mombasa",
+    "jjajja": "Une grand-mère de Zanzibar qui répond à tout par un proverbe",
+    "ssali": "Un chauffeur de matatu à Nairobi qui connaît tous les arrêts",
+    "amara": "Une lycéenne d’Arusha qui adore le bongo flava",
+    "emma": "Une visiteuse de l’étranger qui apprend le swahili comme toi"
+  }
+}

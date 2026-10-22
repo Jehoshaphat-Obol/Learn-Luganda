@@ -12,7 +12,13 @@
     "nagamba": { "text": "akasema", "alts": ["naye akasema", "kisha akasema"] },
     "ekyavaamu": { "text": "Mwishowe", "alts": ["hatimaye", "mwisho", "matokeo yake"] },
     "kale-nno": { "text": "Basi", "alts": ["haya basi", "sasa basi"] },
-    "enfumo-ewedde": { "text": "Hadithi yangu inaishia hapo", "alts": ["hadithi yangu imeishia hapo", "mwisho", "hadithi yangu imekwisha"] }
+    "enfumo-ewedde": { "text": "Hadithi yangu inaishia hapo", "alts": ["hadithi yangu imeishia hapo", "mwisho", "hadithi yangu imekwisha"] },
+    "ilinyesha": { "text": "ilinyesha" },
+    "ilikuwa": { "text": "Ilikuwa" },
+    "paukwa": { "text": "Paukwa!" },
+    "pakawa": { "text": "Pakawa!" },
+    "mwisho": { "text": "mwisho" },
+    "hadithi-imeishia": { "text": "Hadithi imeishia hapo" }
   },
   "sentences": {
     "s35-olwatuuka": { "text": "Hapo zamani za kale, siku moja…", "alts": ["Ilitokea siku moja…", "Hapo zamani za kale…"] },
@@ -23,7 +29,17 @@
     "s35-nagamba": { "text": "Akasema, “Usiogope!”", "alts": ["Naye akasema, “Usiogope!”", "Kisha akasema, “Usiogope!”"] },
     "s35-ekyavaamu": { "text": "Mwishowe, akarudi nyumbani.", "alts": ["Hatimaye, akarudi nyumbani.", "Mwishowe akarudi nyumbani."] },
     "s35-kale-nno": { "text": "Basi, sikiliza hadithi hii.", "alts": ["Haya basi, sikiliza hadithi hii.", "Basi, sikiliza ngano hii."] },
-    "s35-enfumo-ekomye": { "text": "Hadithi yangu inaishia hapo.", "alts": ["Hadithi yangu imeishia hapo.", "Hadithi yangu imekwisha."] }
+    "s35-enfumo-ekomye": { "text": "Hadithi yangu inaishia hapo.", "alts": ["Hadithi yangu imeishia hapo.", "Hadithi yangu imekwisha."] },
+    "s-jana-ilinyesha": { "text": "Jana mvua ilinyesha." },
+    "s-ilikuwa-baridi": { "text": "Ilikuwa baridi sana." },
+    "s-kulikuwa-na-upepo": { "text": "Kulikuwa na upepo." },
+    "s-paukwa": { "text": "Paukwa! Pakawa!" },
+    "s-hapo-zamani": { "text": "Hapo zamani za kale, palikuwa na sungura." },
+    "s-hadithi": { "text": "Bibi, tusimulie hadithi!" },
+    "s-akaenda": { "text": "Sungura akaenda mtoni." },
+    "s-akasema": { "text": "Akasema, “Habari zenu?”" },
+    "s-mwisho": { "text": "Mwisho, sungura akashinda." },
+    "s-imeishia": { "text": "Hadithi imeishia hapo." }
   },
   "phrases": [
     "Hapo zamani za kale, siku moja…",
@@ -33,7 +49,7 @@
     "Mwishowe, akarudi nyumbani.",
     "Hadithi yangu inaishia hapo."
   ],
-  "dialogues": { "u35s3l3": [{ "line": "Palikuwa na mwanamume. Kisha akaenda msituni…" }] },
+  "dialogues": { "u35s3l3": [{ "line": "Palikuwa na mwanamume. Kisha akaenda msituni…", "options": ["Akaona nini?", "Ningependa chai.", "Ni sawa."] }] },
   "stories": {
     "amaras-story": {
       "title": "Amara anasimulia hadithi",
@@ -52,7 +68,10 @@
       "questions": [
         { "question": "Kwa nini mvulana alienda msituni?", "options": ["Kutafuta kuni", "Kuwinda", "Kucheza mpira"] },
         { "question": "Mvulana alifanya nini alipomwona simba?", "options": ["Alikimbia", "Aliketi akaimba wimbo", "Alipanda mti"] },
-        { "question": "Amara anamalizaje hadithi?" }
+        {
+          "question": "Amara anamalizaje hadithi?",
+          "options": ["Hadithi yangu imeishia hapo.", "Hapo zamani za kale.", "Palikuwa na mwanamume."]
+        }
       ]
     }
   }

@@ -2,8 +2,11 @@
   "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
   "id": "u40",
   "words": {
-    "wakayima": { "text": "the hare", "alts": ["hare", "mr hare"] },
-    "omugezi": { "text": "clever", "alts": ["wise", "smart", "a wise person"] },
+    "wakayima": { "text": "the hare", "alts": ["hare", "mr hare", "rabbit"] },
+    "omugezi": {
+      "text": "clever",
+      "alts": ["wise", "smart", "a wise person", "skilful", "capable", "brave", "hard-working", "good at it", "cunning", "crafty"]
+    },
     "yalimba": { "text": "tricked", "alts": ["lied to", "deceived", "he tricked", "she tricked"] },
     "akakodyo": { "text": "trick", "alts": ["a trick", "the trick", "plan"] },
     "kintu": { "text": "Kintu" },
@@ -11,7 +14,12 @@
     "walumbe": { "text": "Death", "alts": ["walumbe"] },
     "yeerabira": { "text": "forgot", "alts": ["she forgot", "he forgot"] },
     "obulo": { "text": "millet", "alts": ["the millet"] },
-    "etuyigiriza": { "text": "it teaches us", "alts": ["teaches us"] }
+    "etuyigiriza": { "text": "it teaches us", "alts": ["teaches us"] },
+    "fisi": { "text": "hyena", "alts": ["the hyena"] },
+    "tamaa": { "text": "greed", "alts": ["greedy", "desire"] },
+    "alimdanganya": { "text": "he tricked him", "alts": ["she tricked him", "he tricked her", "he deceived him"] },
+    "busara": { "text": "wisdom", "alts": ["good sense", "wise"] },
+    "funzo": { "text": "lesson", "alts": ["moral", "the lesson"] }
   },
   "sentences": {
     "s40-wakayima-mugezi": { "text": "The hare was very clever.", "alts": ["Hare was very clever.", "The hare was very wise."] },
@@ -31,7 +39,14 @@
     "s40-etuyigiriza-nti": {
       "text": "It teaches us that wisdom beats strength.",
       "alts": ["It teaches us that cleverness beats strength.", "It teaches that wisdom is better than strength."]
-    }
+    },
+    "s-fisi": { "text": "The hyena is very greedy.", "alts": ["The hyena has a lot of greed."] },
+    "s-mjanja": { "text": "The hare is cleverer than the hyena.", "alts": ["The hare is more cunning than the hyena."] },
+    "s-tamaa": { "text": "Greed is bad." },
+    "s-alimdanganya": { "text": "The hare tricked the hyena.", "alts": ["The hare deceived the hyena."] },
+    "s-busara": { "text": "Grandma has a lot of wisdom.", "alts": ["Grandma is very wise."] },
+    "s-funzo": { "text": "What is the lesson of the story?", "alts": ["What is the moral of the story?"] },
+    "s-inatufundisha": { "text": "This story teaches us to help each other.", "alts": ["This story teaches us to help one another."] }
   },
   "phrases": [
     "The hare was very clever.",

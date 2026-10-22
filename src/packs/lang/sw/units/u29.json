@@ -77,7 +77,10 @@
       "questions": [
         { "question": "Amara anapiga ngoma ipi?", "options": ["Kubwa", "Ndogo", "Hakuna ngoma"] },
         { "question": "Wachezaji watacheza nini?", "options": ["Bakisimba", "Mpira wa miguu", "Omweso"] },
-        { "question": "Unasemaje “watoto wanaocheza”?" }
+        {
+          "question": "Unasemaje “watoto wanaocheza”?",
+          "options": ["watoto wanaocheza ngoma", "watoto wanacheza ngoma", "watoto wanacheza mpira"]
+        }
       ]
     }
   }

@@ -119,7 +119,7 @@
       "questions": [
         { "question": "Nakato aliuliza nini?", "options": ["Jina la Emma", "Emma anaishi wapi", "Kama Emma ana njaa"] },
         { "question": "Emma anatoka wapi?", "options": ["Kampala", "Masaka", "Maktaba"] },
-        { "question": "Nakato anasemaje “nimefurahi kukuona”?" }
+        { "question": "Nakato anasemaje “nimefurahi kukuona”?", "options": ["Asante sana", "Nimefurahi kukuona", "Tutaonana"] }
       ]
     },
     "morning-jjajja": {
@@ -135,7 +135,7 @@
       ],
       "questions": [
         { "question": "Ni wakati gani wa siku?", "options": ["Asubuhi", "Jioni", "Usiku"] },
-        { "question": "Amara anajibuje salamu ya Jjajja?" },
+        { "question": "Amara anajibuje salamu ya Jjajja?", "options": ["Hapana, bibi", "Nimelala salama", "Kwaheri"] },
         { "question": "Amara anaondoka au anafika?", "options": ["Anafika", "Anaondoka"] }
       ]
     }

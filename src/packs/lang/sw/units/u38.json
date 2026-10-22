@@ -13,7 +13,11 @@
     "ambulensi": { "text": "gari la wagonjwa", "alts": ["ambulensi", "ambulansi"] },
     "linda": { "text": "Subiri", "alts": ["ngoja", "subiri hapa", "ngoja kidogo"] },
     "tewali-kizibu": { "text": "Hakuna shida", "alts": ["hakuna tatizo", "si kitu", "bila shaka", "hamna shida"] },
-    "ndi-bulungi": { "text": "Niko sawa", "alts": ["niko salama", "sijambo", "niko poa", "niko mzima"] }
+    "ndi-bulungi": { "text": "Niko sawa", "alts": ["niko salama", "sijambo", "niko poa", "niko mzima"] },
+    "kumetokea": { "text": "kumetokea" },
+    "ameibiwa": { "text": "ameibiwa" },
+    "naomba": { "text": "naomba" },
+    "pole-kwa-kazi": { "text": "Pole kwa kazi" }
   },
   "sentences": {
     "s38-nnyamba": { "text": "Nisaidie! Nisaidie!", "alts": ["Msaada! Msaada!", "Saidia! Saidia!"] },
@@ -26,10 +30,21 @@
     "s38-ambulensi": { "text": "Tuite gari la wagonjwa haraka!", "alts": ["Tupigie gari la wagonjwa haraka!", "Ita ambulensi upesi!"] },
     "s38-linda-wano": { "text": "Kaa hapa usubiri.", "alts": ["Kaa hapa, subiri.", "Kaa hapa ungoje."] },
     "s38-oli-bulungi": { "text": "Uko sawa? Ndiyo, niko sawa.", "alts": ["Uko salama? Ndiyo, niko salama.", "Hujambo? Ndiyo, sijambo."] },
-    "s38-tewali-kizibu": { "text": "Asante sana! Hakuna shida.", "alts": ["Asante sana! Hakuna tatizo.", "Asante sana! Si kitu."] }
+    "s38-tewali-kizibu": { "text": "Asante sana! Hakuna shida.", "alts": ["Asante sana! Hakuna tatizo.", "Asante sana! Si kitu."] },
+    "s-ajali": { "text": "Kumetokea ajali barabarani!" },
+    "s-gari-wagonjwa": { "text": "Tunataka gari la wagonjwa haraka!" },
+    "s-damu": { "text": "Anatoka damu nyingi." },
+    "s-ameumia": { "text": "Mtoto ameumia mguu." },
+    "s-mwizi": { "text": "Mwizi! Mwizi!" },
+    "s-ameibiwa": { "text": "Ameibiwa simu yake." },
+    "s-naomba": { "text": "Naomba maji, tafadhali." },
+    "s-hamna-shida": { "text": "Hamna shida, rafiki yangu." },
+    "s-pole-kwa-kazi": { "text": "Pole kwa kazi, mama!" }
   },
   "phrases": ["Nisaidie! Nisaidie!", "Waite polisi!", "Simu yangu imeibiwa.", "Mwanamume ameumia.", "Tuite gari la wagonjwa haraka!", "Uko sawa?"],
-  "dialogues": { "u38s3l3": [{ "line": "Kuna ajali! Mwanamume ameumia." }] },
+  "dialogues": {
+    "u38s3l3": [{ "line": "Kuna ajali! Mwanamume ameumia.", "options": ["Tupigie gari la wagonjwa haraka!", "Nakubaliana nawe.", "Hamna shida."] }]
+  },
   "stories": {
     "stolen-phone": {
       "title": "Simu iliyoibiwa",
@@ -48,7 +63,7 @@
       "questions": [
         { "question": "Nini kilimtokea Nakato?", "options": ["Simu yake iliibiwa", "Alipata ajali", "Alipoteza mkoba wake"] },
         { "question": "Ssali anafanya nini?", "options": ["Anamkimbiza mwizi", "Anawaita polisi", "Anaita gari la wagonjwa"] },
-        { "question": "Ssali anajibuje “Weebale nnyo”?" }
+        { "question": "Ssali anajibuje “Weebale nnyo”?", "options": ["Hamna shida.", "Haraka!", "Nisaidie!"] }
       ]
     }
   }

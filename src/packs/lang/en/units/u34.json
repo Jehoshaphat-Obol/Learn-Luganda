@@ -5,12 +5,18 @@
     "bwe": { "text": "when", "alts": ["if", "whenever"] },
     "bwe-nzuukuka": { "text": "when I wake up", "alts": ["whenever i wake up", "if i wake up"] },
     "bw-etonnya": { "text": "when it rains", "alts": ["if it rains", "whenever it rains"] },
-    "singa": { "text": "if", "alts": ["if only", "suppose"] },
+    "singa": { "text": "if", "alts": ["if only", "suppose", "in case", "provided that"] },
     "nnandiguze": { "text": "I would buy", "alts": ["i would have bought", "i’d buy"] },
     "nnandigenze": { "text": "I would go", "alts": ["i would have gone", "i’d go"] },
     "nnandyagadde": { "text": "I would like", "alts": ["i’d like", "i would love", "i would want"] },
     "ka-tulabe": { "text": "Let’s see", "alts": ["let us see", "we’ll see"] },
-    "katonda-bwanaayagala": { "text": "God willing", "alts": ["if god wills", "if god wants"] }
+    "katonda-bwanaayagala": { "text": "God willing", "alts": ["if god wills", "if god wants"] },
+    "ukifika": { "text": "when you arrive", "alts": ["if you arrive", "when you get there"] },
+    "mvua-ikinyesha": { "text": "if it rains", "alts": ["when it rains"] },
+    "nikipata": { "text": "if I get", "alts": ["when i get", "if i find"] },
+    "ningekuwa": { "text": "if I were", "alts": ["i would be", "i’d be"] },
+    "laiti": { "text": "if only", "alts": ["i wish"] },
+    "tajiri": { "text": "rich", "alts": ["wealthy", "a rich person"] }
   },
   "sentences": {
     "s34-bwe-nzuukuka": { "text": "When I wake up, I drink tea.", "alts": ["When I wake up I drink tea.", "Whenever I wake up, I drink tea."] },
@@ -24,7 +30,14 @@
     "s34-nnandyagadde-caayi": { "text": "I would like tea, please.", "alts": ["I’d like tea, please.", "I would like some tea, please."] },
     "s34-nnandyagadde-okugenda": { "text": "I would like to go to Jinja.", "alts": ["I’d like to go to Jinja.", "I would love to go to Jinja."] },
     "s34-ka-tulabe": { "text": "Let’s see tomorrow.", "alts": ["We’ll see tomorrow.", "Let us see tomorrow."] },
-    "s34-katonda-bwanaayagala": { "text": "I will come, God willing.", "alts": ["I’ll come, God willing."] }
+    "s34-katonda-bwanaayagala": { "text": "I will come, God willing.", "alts": ["I’ll come, God willing."] },
+    "s-ukifika": { "text": "When you arrive, call me.", "alts": ["If you arrive, call me.", "When you get there, call me."] },
+    "s-mvua-ikinyesha": { "text": "If it rains, we will stay at home.", "alts": ["When it rains, we’ll stay home."] },
+    "s-nikipata-pesa": { "text": "If I get money, I will travel.", "alts": ["When I get money, I’ll travel."] },
+    "s-ningekuwa-tajiri": { "text": "If I were rich, I would buy a car.", "alts": ["If I was rich, I’d buy a car."] },
+    "s-ningenunua": { "text": "I would buy a big house.", "alts": ["I’d buy a big house."] },
+    "s-laiti": { "text": "If only I had time!", "alts": ["I wish I had time!"] },
+    "s-ikiwa": { "text": "If you have a question, ask.", "alts": ["If you’ve got a question, ask."] }
   },
   "phrases": [
     "When I wake up, I drink tea.",

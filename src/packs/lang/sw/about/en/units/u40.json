@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u40",
+  "guidebook": {
+    "intro": "Somo la mwisho linarudi kando ya moto: hadithi za wajanja ambazo kila mtoto anazijua, na mafunzo yaliyofichwa ndani yake.",
+    "tips": [
+      {
+        "id": "reported-said",
+        "title": "He said, “…”",
+        "body": [
+          "Kusimulia maneno ya mtu: **The king said to Abunuwasi, “Bring me milk!”** Alama za kunukuu (**“ ”**) huzunguka maneno yenyewe.",
+          "Bila nukuu, wakati hurudi nyuma: **He said that he was tired.** (Alisema kwamba amechoka.)"
+        ]
+      },
+      {
+        "id": "moral",
+        "title": "The moral of the story",
+        "body": [
+          "**Funzo** la hadithi ni **the moral** au **the lesson**: **The moral of the story is: greed is bad.**",
+          "**It teaches us that…** (inatufundisha kwamba…): **It teaches us that wisdom beats strength.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Wajanja duniani",
+        "body": [
+          "Kila utamaduni una mjanja wake: **Sungura** Afrika Mashariki, **Anansi** buibui wa Ghana, na **Br’er Rabbit** wa Marekani, aliyetokana na hadithi za Kiafrika."
+        ]
+      }
+    ]
+  }
+}

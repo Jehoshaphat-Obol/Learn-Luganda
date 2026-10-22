@@ -77,7 +77,7 @@
       "questions": [
         { "question": "Nakato alikwenda wapi wikendi iliyopita?", "options": ["Jinja", "Masaka", "Entebbe"] },
         { "question": "Mpango wa Ssali ni upi?", "options": ["Kwenda ziwani", "Kumtembelea mama yake", "Kusoma nyumbani"] },
-        { "question": "Ssali anasemaje “Tutakwenda”?" }
+        { "question": "Ssali anasemaje “Tutakwenda”?", "options": ["Tutaenda", "Tulienda", "Usiende"] }
       ]
     }
   }

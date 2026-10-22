@@ -78,7 +78,7 @@
       "questions": [
         { "question": "Maji ya Naili yanatoka wapi?", "options": ["Ziwa Viktoria", "Msituni", "Mvua peke yake"] },
         { "question": "Ssali anaona nini ufukweni?", "options": ["Takataka", "Simba", "Mashua"] },
-        { "question": "Emma anasemaje “Tulinde ardhi yetu”?" }
+        { "question": "Emma anasemaje “Tulinde ardhi yetu”?", "options": ["Tutunze ardhi yetu", "Usitupe takataka", "Tupande miti"] }
       ]
     }
   }

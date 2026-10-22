@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u35",
+  "notes": {
+    "ilinyesha": "Mvua ilinyesha: the rain fell.",
+    "paukwa": "The storyteller’s call. The listeners answer: Pakawa!",
+    "pakawa": "The listeners’ answer to Paukwa.",
+    "nagenda": "The -ka- tense: “and then”."
+  },
+  "guidebook": {
+    "intro": "Swahili stories begin with a call and answer, Paukwa! Pakawa!, and roll on with the -ka- tense: and then… and then…",
+    "tips": [
+      {
+        "id": "ka-narrative",
+        "title": "And then: -ka-",
+        "body": [
+          "Storytellers start in the **-li-** past and then switch to **-ka-** for each next event: **Sungura alienda mtoni, akakutana na mamba, akasema…** (the hare went to the river, and met a crocodile, and said…).",
+          "**Palikuwa na** means “there was (at a place)”, the classic opening: **Hapo zamani za kale, palikuwa na…**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Paukwa! Pakawa!",
+        "body": [
+          "The storyteller calls **Paukwa!** and the children answer **Pakawa!** Many stories end with a song, and the teller may finish: **Hadithi yangu imeishia hapo** (my story ends here)."
+        ]
+      }
+    ]
+  }
+}

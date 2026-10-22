@@ -13,7 +13,22 @@
     "ndowooza": { "text": "nadhani", "alts": ["ninadhani", "nafikiri", "ninafikiri", "naona"] },
     "endowooza": { "text": "maoni", "alts": ["wazo", "rai", "mtazamo"] },
     "nzikiriza": { "text": "ninakubali", "alts": ["nakubali", "nakubaliana nawe", "ninakubaliana"] },
-    "sikkiriza": { "text": "sikubali", "alts": ["sikubaliani", "sikubaliani nawe"] }
+    "sikkiriza": { "text": "sikubali", "alts": ["sikubaliani", "sikubaliani nawe"] },
+    "jamii": { "text": "jamii" },
+    "kiongozi": { "text": "kiongozi" },
+    "serikali": { "text": "serikali" },
+    "uchaguzi": { "text": "uchaguzi" },
+    "kura": { "text": "kura" },
+    "harambee": { "text": "harambee" },
+    "tusaidiane": { "text": "Tusaidiane" },
+    "tunapendana": { "text": "tunapendana" },
+    "gazeti": { "text": "gazeti" },
+    "taarifa-ya-habari": { "text": "taarifa ya habari" },
+    "tukio": { "text": "tukio" },
+    "tatizo": { "text": "tatizo" },
+    "suluhisho": { "text": "suluhisho" },
+    "kwa-maoni-yangu": { "text": "kwa maoni yangu" },
+    "muhimu": { "text": "muhimu" }
   },
   "sentences": {
     "s37-owulidde-amawulire": { "text": "Umesikia habari?", "alts": ["Ulisikia habari?", "Je, umesikia habari?"] },
@@ -28,7 +43,27 @@
     "s37-ndowooza-nti": { "text": "Nadhani kwamba ni vizuri.", "alts": ["Nadhani ni vizuri.", "Ninafikiri ni vizuri."] },
     "s37-endowooza-yo": { "text": "Maoni yako ni yapi?", "alts": ["Unafikiri nini?", "Una maoni gani?"] },
     "s37-nzikiriza": { "text": "Ninakubaliana nawe.", "alts": ["Nakubaliana nawe.", "Nakubali."] },
-    "s37-sikkiriza": { "text": "Sikubali. Nadhani si vizuri.", "alts": ["Sikubaliani nawe. Nadhani si vizuri.", "Sikubali. Nafikiri si vizuri."] }
+    "s37-sikkiriza": { "text": "Sikubali. Nadhani si vizuri.", "alts": ["Sikubaliani nawe. Nadhani si vizuri.", "Sikubali. Nafikiri si vizuri."] },
+    "s-jamii": { "text": "Jamii yetu ni kubwa." },
+    "s-mkutano": { "text": "Kuna mkutano kesho jioni." },
+    "s-kiongozi": { "text": "Kiongozi wetu ni mwanamke hodari." },
+    "s-serikali": { "text": "Serikali itajenga shule mpya." },
+    "s-uchaguzi": { "text": "Uchaguzi utakuwa mwaka ujao." },
+    "s-kura": { "text": "Nitapiga kura." },
+    "s-harambee": { "text": "Tuna harambee kwa ajili ya hospitali." },
+    "s-tusaidiane": { "text": "Tusaidiane!" },
+    "s-tunapendana": { "text": "Katika familia yetu tunapendana." },
+    "s-gazeti": { "text": "Baba anasoma gazeti kila asubuhi." },
+    "s-redio": { "text": "Nilisikia habari redioni." },
+    "s-taarifa": { "text": "Taarifa ya habari ni saa mbili usiku." },
+    "s-tukio": { "text": "Tukio lilitokea mjini jana." },
+    "s-tatizo": { "text": "Tatizo kubwa ni maji." },
+    "s-suluhisho": { "text": "Tunataka suluhisho." },
+    "s-maoni": { "text": "Maoni yako ni nini?" },
+    "s-nadhani": { "text": "Nadhani mvua itanyesha leo." },
+    "s-kwa-maoni-yangu": { "text": "Kwa maoni yangu, shule ni muhimu sana." },
+    "s-nakubali": { "text": "Nakubali, ni kweli." },
+    "s-sikubaliani": { "text": "Samahani, sikubaliani na wewe." }
   },
   "phrases": [
     "Umesikia habari?",
@@ -38,5 +73,8 @@
     "Maoni yako ni yapi?",
     "Ninakubaliana nawe."
   ],
-  "dialogues": { "u37s2l3": [{ "line": "Umesikia habari?" }], "u37s3l3": [{ "line": "Nadhani tupande miti kijijini. Maoni yako ni yapi?" }] }
+  "dialogues": {
+    "u37s2l3": [{ "line": "Umesikia habari?", "options": ["Ndiyo! Wanasema barabara mpya imekamilika.", "Ningependa chai.", "Hapo zamani za kale."] }],
+    "u37s3l3": [{ "line": "Nadhani tupande miti kijijini. Maoni yako ni yapi?", "options": ["Nakubaliana nawe!", "Umesikia redioni?", "Nimeshiba."] }]
+  }
 }

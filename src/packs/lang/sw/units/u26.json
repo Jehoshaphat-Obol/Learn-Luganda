@@ -66,7 +66,7 @@
       "questions": [
         { "question": "Kabaka wangapi wamezikwa Kasubi?", "options": ["Wawili", "Wanne", "Kumi na wanane"] },
         { "question": "Lukiiko hukutana wapi?", "options": ["Bulange", "Kasubi", "Sokoni"] },
-        { "question": "Unajibuje “Kabaka awangaale!”?" }
+        { "question": "Unajibuje “Kabaka awangaale!”?", "options": ["Aishi milele!", "Kwaheri!", "Hongera!"] }
       ]
     }
   }

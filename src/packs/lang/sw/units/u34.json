@@ -10,7 +10,13 @@
     "nnandigenze": { "text": "ningeenda", "alts": ["ningalienda", "ningekwenda"] },
     "nnandyagadde": { "text": "ningependa", "alts": ["ningetaka", "ningefurahi"] },
     "ka-tulabe": { "text": "Tutaona", "alts": ["tuone", "hebu tuone"] },
-    "katonda-bwanaayagala": { "text": "Mungu akipenda", "alts": ["Inshallah", "Mungu akijalia", "Insha Allah"] }
+    "katonda-bwanaayagala": { "text": "Mungu akipenda", "alts": ["Inshallah", "Mungu akijalia", "Insha Allah"] },
+    "ukifika": { "text": "ukifika" },
+    "mvua-ikinyesha": { "text": "mvua ikinyesha" },
+    "nikipata": { "text": "nikipata" },
+    "ningekuwa": { "text": "ningekuwa" },
+    "laiti": { "text": "laiti" },
+    "tajiri": { "text": "tajiri" }
   },
   "sentences": {
     "s34-bwe-nzuukuka": {
@@ -27,7 +33,14 @@
     "s34-nnandyagadde-caayi": { "text": "Ningependa chai, tafadhali.", "alts": ["Ningependa chai tafadhali.", "Ningependa kupata chai, tafadhali."] },
     "s34-nnandyagadde-okugenda": { "text": "Ningependa kwenda Jinja.", "alts": ["Ningependa kuenda Jinja.", "Ningefurahi kwenda Jinja."] },
     "s34-ka-tulabe": { "text": "Tutaona kesho.", "alts": ["Tuone kesho.", "Kesho tutaona."] },
-    "s34-katonda-bwanaayagala": { "text": "Nitakuja, Mungu akipenda.", "alts": ["Nitakuja, Inshallah.", "Mungu akipenda, nitakuja."] }
+    "s34-katonda-bwanaayagala": { "text": "Nitakuja, Mungu akipenda.", "alts": ["Nitakuja, Inshallah.", "Mungu akipenda, nitakuja."] },
+    "s-ukifika": { "text": "Ukifika, nipigie simu." },
+    "s-mvua-ikinyesha": { "text": "Mvua ikinyesha, tutakaa nyumbani." },
+    "s-nikipata-pesa": { "text": "Nikipata pesa, nitasafiri." },
+    "s-ningekuwa-tajiri": { "text": "Ningekuwa tajiri, ningenunua gari." },
+    "s-ningenunua": { "text": "Ningenunua nyumba kubwa." },
+    "s-laiti": { "text": "Laiti ningekuwa na muda!" },
+    "s-ikiwa": { "text": "Ikiwa una swali, uliza." }
   },
   "phrases": [
     "Ninapoamka, ninakunywa chai.",
@@ -37,5 +50,13 @@
     "Tutaona kesho.",
     "Nitakuja, Mungu akipenda."
   ],
-  "dialogues": { "u34s2l3": [{ "line": "Kama ungekuwa na pesa nyingi, ungenunua nini?" }], "u34s3l3": [{ "line": "Utakuja kwenye sherehe kesho?" }] }
+  "dialogues": {
+    "u34s2l3": [
+      {
+        "line": "Kama ungekuwa na pesa nyingi, ungenunua nini?",
+        "options": ["Ningenunua nyumba kubwa.", "Ninapoamka, ninakunywa chai.", "Tuone msitu."]
+      }
+    ],
+    "u34s3l3": [{ "line": "Utakuja kwenye sherehe kesho?", "options": ["Nitakuja, Mungu akipenda.", "Ningenunua gari.", "Anafanana na mama yake."] }]
+  }
 }

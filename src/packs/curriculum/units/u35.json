@@ -3,7 +3,25 @@
   "id": "u35",
   "color": "blush",
   "character": "amara",
-  "words": ["enfumo", "olwatuuka", "olwali-olumu", "waaliwo", "awo", "nagenda", "nalaba", "nagamba", "ekyavaamu", "kale-nno", "enfumo-ewedde"],
+  "words": [
+    "enfumo",
+    "olwatuuka",
+    "olwali-olumu",
+    "waaliwo",
+    "awo",
+    "nagenda",
+    "nalaba",
+    "nagamba",
+    "ekyavaamu",
+    "kale-nno",
+    "enfumo-ewedde",
+    "ilinyesha",
+    "ilikuwa",
+    "paukwa",
+    "pakawa",
+    "mwisho",
+    "hadithi-imeishia"
+  ],
   "sentences": [
     "s35-olwatuuka",
     "s35-waaliwo-omusajja",
@@ -13,7 +31,17 @@
     "s35-nagamba",
     "s35-ekyavaamu",
     "s35-kale-nno",
-    "s35-enfumo-ekomye"
+    "s35-enfumo-ekomye",
+    "s-jana-ilinyesha",
+    "s-ilikuwa-baridi",
+    "s-kulikuwa-na-upepo",
+    "s-paukwa",
+    "s-hapo-zamani",
+    "s-hadithi",
+    "s-akaenda",
+    "s-akasema",
+    "s-mwisho",
+    "s-imeishia"
   ],
   "phrases": 6,
   "skills": [
@@ -46,6 +74,23 @@
           "newWords": [],
           "sentences": ["s35-olwatuuka", "s35-nagenda-mu-kibira", "s35-nalaba-empologoma", "s35-enfumo-ekomye"],
           "dialogues": [{ "speaker": "amara", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u35s4",
+      "icon": "star",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u35s4l1",
+          "newWords": ["ilinyesha", "ilikuwa", "paukwa", "pakawa"],
+          "sentences": ["s-jana-ilinyesha", "s-ilikuwa-baridi", "s-kulikuwa-na-upepo", "s-paukwa"]
+        },
+        {
+          "id": "u35s4l2",
+          "newWords": ["mwisho", "hadithi-imeishia"],
+          "sentences": ["s-hadithi", "s-akaenda", "s-akasema", "s-mwisho", "s-imeishia", "s-hapo-zamani"]
         }
       ]
     }

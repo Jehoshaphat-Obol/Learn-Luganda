@@ -15,7 +15,13 @@
     "kye-kimu",
     "enjawulo",
     "afaanana",
-    "nga"
+    "nga",
+    "zaidi",
+    "kuliko-wote",
+    "sawa-na",
+    "bora",
+    "kidogo-zaidi",
+    "mali"
   ],
   "sentences": [
     "s33-enjovu-okusinga-ente",
@@ -28,7 +34,15 @@
     "s33-kye-kimu",
     "s33-si-kye-kimu",
     "s33-enjawulo",
-    "s33-afaanana-maama-we"
+    "s33-afaanana-maama-we",
+    "s-kuliko",
+    "s-zaidi",
+    "s-kuliko-wote",
+    "s-sawa-na",
+    "s-tofauti",
+    "s-kama",
+    "s-bora",
+    "s-kidogo-zaidi"
   ],
   "phrases": 6,
   "skills": [
@@ -62,6 +76,19 @@
         { "id": "u33s3l1", "newWords": ["kye-kimu"], "sentences": ["s33-kye-kimu", "s33-si-kye-kimu"] },
         { "id": "u33s3l2", "newWords": ["enjawulo"], "sentences": ["s33-enjawulo", "s33-si-kye-kimu"] },
         { "id": "u33s3l3", "newWords": ["afaanana", "nga"], "sentences": ["s33-afaanana-maama-we", "s33-kye-kimu"] }
+      ]
+    },
+    {
+      "id": "u33s4",
+      "icon": "up",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u33s4l1",
+          "newWords": ["zaidi", "kidogo-zaidi", "kuliko-wote"],
+          "sentences": ["s-kuliko", "s-zaidi", "s-kidogo-zaidi", "s-kuliko-wote"]
+        },
+        { "id": "u33s4l2", "newWords": ["sawa-na", "bora", "mali"], "sentences": ["s-sawa-na", "s-tofauti", "s-kama", "s-bora"] }
       ]
     }
   ]

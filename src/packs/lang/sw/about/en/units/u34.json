@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u34",
+  "guidebook": {
+    "intro": "Kiswahili huweka “kama” ndani ya kitenzi (**-ki-**, **-nge-**). Kiingereza hutumia **if** na **when** pamoja na mpangilio maalum wa nyakati.",
+    "tips": [
+      {
+        "id": "first-conditional",
+        "title": "If + sasa, will",
+        "body": [
+          "**-ki-** ni **if** au **when**. Upande wa **if** hutumia wakati uliopo, upande mwingine **will**: **If it rains, we will stay home.** (Mvua ikinyesha, tutakaa nyumbani.)",
+          "Usiseme “if it will rain”. **Ukifika, nipigie** ni **When you arrive, call me.**"
+        ]
+      },
+      {
+        "id": "second-conditional",
+        "title": "If I were…, I would…",
+        "body": [
+          "Kwa jambo la kufikirika (**-nge-**), Kiingereza hutumia wakati uliopita baada ya **if** na **would** upande mwingine: **If I were rich, I would buy a car.**",
+          "Na **be**, tumia **were** kwa kila mtu: **If I were you…** **Laiti** ni **If only…** au **I wish…**: **I wish I had time!**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "God willing",
+        "body": ["**Mungu akipenda** kwa Kiingereza ni **God willing** au **hopefully**: **See you tomorrow, hopefully!**"]
+      }
+    ]
+  }
+}
