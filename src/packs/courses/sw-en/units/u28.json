@@ -1,0 +1,170 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u28",
+  "title": "Muziki na ngoma",
+  "description": "Taarab, bongo flava na ngoma, na majina ya watu wanaotengeneza muziki.",
+  "color": "vermillion",
+  "character": "neema",
+  "words": [
+    { "id": "mwimbaji", "target": "singer", "base": "mwimbaji", "altTarget": ["the singer"] },
+    { "id": "mchezaji", "target": "player", "base": "mchezaji", "altTarget": ["dancer", "the player"] },
+    { "id": "mpiga-ngoma", "target": "drummer", "base": "mpiga ngoma", "altTarget": ["the drummer"] },
+    { "id": "bendi", "target": "band", "base": "bendi", "altTarget": ["the band"] },
+    { "id": "gitaa", "target": "guitar", "base": "gitaa", "altTarget": ["the guitar"] },
+    { "id": "sauti", "target": "voice", "base": "sauti", "altTarget": ["sound", "noise", "the voice"] },
+    { "id": "tamasha", "target": "concert", "base": "tamasha", "altTarget": ["show", "festival", "the concert"] },
+    {
+      "id": "kupiga",
+      "target": "to play (an instrument)",
+      "base": "kupiga",
+      "altTarget": ["play", "to hit", "to beat"],
+      "notes": "Kwa ala za muziki: play the guitar, play the drums."
+    },
+    { "id": "kusikiliza", "target": "to listen", "base": "kusikiliza", "altTarget": ["listening", "listen"] }
+  ],
+  "sentences": [
+    {
+      "id": "s-mwimbaji",
+      "target": "The singer has a beautiful voice.",
+      "base": "Mwimbaji ana sauti nzuri.",
+      "altTarget": ["The singer has a nice voice.", "The singer has a good voice."]
+    },
+    {
+      "id": "s-mchezaji",
+      "target": "Neema is a skilful dancer.",
+      "base": "Neema ni mchezaji hodari.",
+      "altTarget": ["Neema is a good dancer.", "Neema is a great dancer."]
+    },
+    { "id": "s-mpiga-ngoma", "target": "The drummer is my grandfather.", "base": "Mpiga ngoma ni babu yangu." },
+    {
+      "id": "s-bendi",
+      "target": "The band will play music tonight.",
+      "base": "Bendi itapiga muziki usiku.",
+      "altTarget": ["The band will play at night."]
+    },
+    { "id": "s-taarab", "target": "Grandma loves taarab.", "base": "Bibi anapenda taarab.", "altTarget": ["Grandma likes taarab."] },
+    {
+      "id": "s-kupiga-gitaa",
+      "target": "I’m learning to play the guitar.",
+      "base": "Ninajifunza kupiga gitaa.",
+      "altTarget": ["I am learning to play guitar."]
+    },
+    {
+      "id": "s-tamasha",
+      "target": "There’s a concert on Saturday.",
+      "base": "Kuna tamasha Jumamosi.",
+      "altTarget": ["There is a concert on Saturday."]
+    },
+    {
+      "id": "s-kusikiliza",
+      "target": "I like listening to music.",
+      "base": "Ninapenda kusikiliza muziki.",
+      "altTarget": ["I like to listen to music.", "I love listening to music."]
+    },
+    { "id": "s-sauti", "target": "The sound is very loud!", "base": "Sauti ni kubwa sana!", "altTarget": ["It’s very loud!"] }
+  ],
+  "skills": [
+    {
+      "id": "u28s1",
+      "title": "Wanaotengeneza muziki",
+      "icon": "music",
+      "tip": "er-doers",
+      "lessons": [
+        {
+          "id": "u28s1l1",
+          "newWords": ["mwimbaji", "mchezaji", "mpiga-ngoma", "sauti"],
+          "sentences": ["s-mwimbaji", "s-mchezaji", "s-mpiga-ngoma", "s-sauti"]
+        },
+        { "id": "u28s1l2", "newWords": ["bendi"], "sentences": ["s-bendi", "s-taarab", "s-mwimbaji"] }
+      ]
+    },
+    {
+      "id": "u28s2",
+      "title": "Kupiga na kusikiliza",
+      "icon": "speaker",
+      "tip": "listen-to",
+      "lessons": [
+        {
+          "id": "u28s2l1",
+          "newWords": ["kupiga", "gitaa", "kusikiliza", "tamasha"],
+          "sentences": ["s-kupiga-gitaa", "s-kusikiliza", "s-tamasha"],
+          "dialogues": [
+            {
+              "speaker": "juma",
+              "target": "What music do you like?",
+              "base": "Unapenda muziki gani?",
+              "options": ["I like listening to bongo flava.", "The drummer is Grandpa.", "There’s a neighbour."],
+              "answer": "I like listening to bongo flava."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Kutoka taarab hadi bongo flava, muziki uko kila mahali. Jifunze jinsi Kiingereza kinavyounda majina ya “mtendaji”.",
+    "phrases": [
+      { "target": "I like listening to music.", "base": "Ninapenda kusikiliza muziki." },
+      { "target": "The singer has a beautiful voice.", "base": "Mwimbaji ana sauti nzuri." },
+      { "target": "I’m learning to play the guitar.", "base": "Ninajifunza kupiga gitaa." },
+      { "target": "There’s a concert on Saturday.", "base": "Kuna tamasha Jumamosi." }
+    ],
+    "tips": [
+      {
+        "id": "er-doers",
+        "title": "Mtendaji: -er",
+        "body": [
+          "Kiswahili huongeza **m-…-ji** (**mwimbaji**). Kiingereza mara nyingi huongeza **-er** kwenye kitenzi: **sing → singer**, **play → player**, **drum → drummer**, **teach → teacher**.",
+          "Wengi huongeza **-s**: **singers**, **players**. Mengine ni tofauti: **cook** (mpishi) ni kitenzi na nomino pia."
+        ]
+      },
+      {
+        "id": "listen-to",
+        "title": "Listen to, play the",
+        "body": [
+          "**Kusikiliza** huhitaji **to**: **I listen to music** (ninasikiliza muziki), si “I listen music”.",
+          "Kwa ala za muziki, tumia **play the**: **play the guitar** (piga gitaa), **play the drums** (piga ngoma)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Concert",
+        "body": [
+          "**Tamasha** ni **concert** au **show**. Mwisho wa wimbo mzuri, watu hupiga kelele **Encore!** au **One more!** kuomba wimbo mwingine."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-concert-night",
+      "title": "Usiku wa tamasha",
+      "unlockAfter": "u28s2l1",
+      "cast": ["neema", "juma"],
+      "summary": "Neema na Juma wanaenda kwenye tamasha Nairobi.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "juma",
+            "target": "Neema, have you heard? There’s a big concert tonight.",
+            "base": "Neema, umesikia? Kuna tamasha kubwa leo usiku."
+          }
+        },
+        {
+          "line": { "speaker": "neema", "target": "Yes! My favourite singer will sing.", "base": "Ndiyo! Mwimbaji ninayempenda zaidi ataimba." }
+        },
+        { "question": "Nani ataimba?", "options": ["Mwimbaji anayempenda Neema", "Juma", "Bibi"], "answer": 0 },
+        {
+          "line": { "speaker": "juma", "target": "And the band will play taarab music too.", "base": "Na bendi itapiga muziki wa taarab pia." }
+        },
+        { "line": { "speaker": "neema", "target": "Let’s go dancing!", "base": "Twende tukacheze!" } },
+        { "question": "Bendi itapiga nini pia?", "options": ["Taarab", "Rock", "Hakuna"], "answer": 0 },
+        {
+          "line": { "speaker": "juma", "target": "It’s so loud… but it’s totally great!", "base": "Sauti ni kubwa sana… lakini ni safi kabisa!" }
+        },
+        { "question": "Neema anasemaje “mwimbaji”?", "options": ["singer", "player", "band"], "answer": 0, "optionsLang": "target" }
+      ]
+    }
+  ]
+}

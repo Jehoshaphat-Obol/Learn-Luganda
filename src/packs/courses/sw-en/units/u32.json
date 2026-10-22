@@ -1,0 +1,155 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u32",
+  "title": "Jamii",
+  "description": "Mikutano, viongozi na kushirikiana: harambee.",
+  "color": "sage",
+  "character": "amani",
+  "words": [
+    { "id": "jamii", "target": "community", "base": "jamii", "altTarget": ["society", "the community"] },
+    { "id": "mkutano", "target": "meeting", "base": "mkutano", "altTarget": ["the meeting", "conference"] },
+    { "id": "kiongozi", "target": "leader", "base": "kiongozi", "altTarget": ["the leader"] },
+    { "id": "serikali", "target": "government", "base": "serikali", "altTarget": ["the government"] },
+    { "id": "uchaguzi", "target": "election", "base": "uchaguzi", "altTarget": ["elections", "the election"] },
+    { "id": "kura", "target": "vote", "base": "kura", "altTarget": ["votes", "ballot"] },
+    {
+      "id": "tusaidiane",
+      "target": "Let’s help each other",
+      "base": "Tusaidiane",
+      "altTarget": ["let us help one another", "let’s help one another"]
+    },
+    { "id": "tunapendana", "target": "we love each other", "base": "tunapendana", "altTarget": ["we love one another"] }
+  ],
+  "sentences": [
+    { "id": "s-jamii", "target": "Our community is big.", "base": "Jamii yetu ni kubwa." },
+    {
+      "id": "s-mkutano",
+      "target": "There is a meeting tomorrow evening.",
+      "base": "Kuna mkutano kesho jioni.",
+      "altTarget": ["There’s a meeting tomorrow evening."]
+    },
+    {
+      "id": "s-kiongozi",
+      "target": "Our leader is a capable woman.",
+      "base": "Kiongozi wetu ni mwanamke hodari.",
+      "altTarget": ["Our leader is a skilful woman."]
+    },
+    { "id": "s-serikali", "target": "The government will build a new school.", "base": "Serikali itajenga shule mpya." },
+    { "id": "s-uchaguzi", "target": "The election will be next year.", "base": "Uchaguzi utakuwa mwaka ujao." },
+    { "id": "s-kura", "target": "I will vote.", "base": "Nitapiga kura.", "altTarget": ["I’ll vote."] },
+    {
+      "id": "s-harambee",
+      "target": "We are having a harambee for the hospital.",
+      "base": "Tuna harambee kwa ajili ya hospitali.",
+      "altTarget": ["We have a fundraiser for the hospital."]
+    },
+    { "id": "s-tusaidiane", "target": "Let’s help each other!", "base": "Tusaidiane!", "altTarget": ["Let us help one another!"] },
+    { "id": "s-tunapendana", "target": "In our family we love each other.", "base": "Katika familia yetu tunapendana." }
+  ],
+  "skills": [
+    {
+      "id": "u32s1",
+      "title": "Mikutano na viongozi",
+      "icon": "profile",
+      "tip": "vote-elect",
+      "lessons": [
+        { "id": "u32s1l1", "newWords": ["jamii", "mkutano", "kiongozi"], "sentences": ["s-jamii", "s-mkutano", "s-kiongozi"] },
+        { "id": "u32s1l2", "newWords": ["serikali", "uchaguzi", "kura"], "sentences": ["s-serikali", "s-uchaguzi", "s-kura"] }
+      ]
+    },
+    {
+      "id": "u32s2",
+      "title": "Kushirikiana",
+      "icon": "heart",
+      "tip": "each-other",
+      "lessons": [
+        {
+          "id": "u32s2l1",
+          "newWords": ["tusaidiane", "tunapendana"],
+          "sentences": ["s-harambee", "s-tusaidiane", "s-tunapendana"],
+          "dialogues": [
+            {
+              "speaker": "amani",
+              "target": "Will you contribute to the harambee?",
+              "base": "Utachangia harambee?",
+              "options": ["Yes, I’ll give a thousand shillings.", "I’ll play the guitar.", "The mountain is high."],
+              "answer": "Yes, I’ll give a thousand shillings."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Jamii ina mizizi mirefu: majirani huchangia pamoja, mikutano ni mirefu na kila mtu ana sauti.",
+    "phrases": [
+      { "target": "There is a meeting tomorrow.", "base": "Kuna mkutano kesho." },
+      { "target": "I will vote.", "base": "Nitapiga kura." },
+      { "target": "Let’s help each other!", "base": "Tusaidiane!" }
+    ],
+    "tips": [
+      {
+        "id": "vote-elect",
+        "title": "Vote na election",
+        "body": [
+          "**Kura** ni **vote**, na **kupiga kura** ni **to vote** (si “beat a vote”). **Uchaguzi** ni **election**: **There’s an election next year.**",
+          "**Serikali** ni **the government**. **Kiongozi** ni **leader**: **Our leader spoke at the meeting.**"
+        ]
+      },
+      {
+        "id": "each-other",
+        "title": "Each other",
+        "body": [
+          "**-ana** ya Kiswahili (**tunapendana**) ni **each other** kwa Kiingereza: **We love each other**, **They help each other**.",
+          "**Tusaidiane** ni **Let’s help each other!** Na **tutaonana** ni **we’ll see each other** au kwa kawaida **see you**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Fundraiser",
+        "body": ["Harambee kwa Kiingereza ni **a fundraiser**. Kuchangia ni **to contribute** au **to give**: **Everyone gave what they could.**"]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-harambee",
+      "title": "Harambee",
+      "unlockAfter": "u32s2l1",
+      "cast": ["amani", "neema"],
+      "summary": "Amani na Neema wanaenda kwenye harambee ya ada ya shule ya mtoto wa jirani.",
+      "steps": [
+        {
+          "line": { "speaker": "neema", "target": "Amani, why are there so many people here?", "base": "Amani, kwa nini kuna watu wengi hapa?" }
+        },
+        {
+          "line": {
+            "speaker": "amani",
+            "target": "It’s a harambee. The neighbour’s child has got a place at university.",
+            "base": "Ni harambee. Mtoto wa jirani amepata nafasi chuo kikuu."
+          }
+        },
+        {
+          "question": "Harambee ni ya nini?",
+          "options": ["Nafasi ya chuo kikuu ya mtoto wa jirani", "Harusi", "Barabara mpya"],
+          "answer": 0
+        },
+        {
+          "line": { "speaker": "neema", "target": "Great! I’ll give two thousand shillings.", "base": "Vizuri! Mimi nitatoa shilingi elfu mbili." }
+        },
+        {
+          "line": { "speaker": "amani", "target": "Thank you. One finger can’t crush a louse.", "base": "Asante. Kidole kimoja hakivunji chawa." }
+        },
+        { "question": "Methali ya Amani ina maana gani?", "options": ["Tunahitajiana", "Vidole ni vidogo", "Nawa mikono"], "answer": 0 },
+        { "line": { "speaker": "neema", "target": "True. Let’s help each other!", "base": "Kweli. Tusaidiane!" } },
+        {
+          "question": "Neema anasemaje “tusaidiane”?",
+          "options": ["Let’s help each other", "We love each other", "Let’s go"],
+          "answer": 0,
+          "optionsLang": "target"
+        }
+      ]
+    }
+  ]
+}
