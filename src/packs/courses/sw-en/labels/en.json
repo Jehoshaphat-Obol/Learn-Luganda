@@ -20,6 +20,11 @@
       "title": "Community and culture",
       "level": "Intermediate",
       "description": "The Swahili coast, village life, celebrations, music, faith, business, nature and community."
+    },
+    "s5": {
+      "title": "Confident speaker",
+      "level": "Upper intermediate",
+      "description": "Compare, imagine, tell stories, use proverbs, follow the news, handle emergencies, show respect and enjoy folktales."
     }
   },
   "units": {
@@ -150,6 +155,38 @@
     "u32": {
       "title": "Community",
       "description": "Meetings, leaders and pulling together: harambee."
+    },
+    "u33": {
+      "title": "Comparing",
+      "description": "Say what is bigger, better, the best, the same or different."
+    },
+    "u34": {
+      "title": "If and when",
+      "description": "Talk about what happens when, what would happen if, and what you wish."
+    },
+    "u35": {
+      "title": "Telling stories",
+      "description": "Open a story the Swahili way, keep it moving and bring it to an end."
+    },
+    "u36": {
+      "title": "Proverbs",
+      "description": "Learn well-known Swahili proverbs, what they mean and when to use them."
+    },
+    "u37": {
+      "title": "News and opinions",
+      "description": "Follow the news, say what you think, and agree or disagree politely."
+    },
+    "u38": {
+      "title": "Emergencies",
+      "description": "Call for help, explain what happened and calm someone down."
+    },
+    "u39": {
+      "title": "Respect and etiquette",
+      "description": "Visit someone’s home, ask politely and show respect the Swahili way."
+    },
+    "u40": {
+      "title": "Folktales",
+      "description": "Meet Sungura the hare and Abunuwasi the trickster, and find the lesson in a story."
     }
   },
   "skills": {
@@ -243,6 +280,26 @@
     "u31s1": "Mountains and water",
     "u31s2": "Caring for the land",
     "u32s1": "Meetings and leaders",
-    "u32s2": "Pulling together"
+    "u32s2": "Pulling together",
+    "u33s1": "Bigger and smaller",
+    "u33s2": "Same and different",
+    "u34s1": "When…",
+    "u34s2": "If…",
+    "u35s1": "Once upon a time",
+    "u35s2": "And then",
+    "u36s1": "Everyday proverbs",
+    "u36s2": "Proverbs about people",
+    "u37s1": "Headlines",
+    "u37s2": "Giving opinions",
+    "u37s3": "Agree and disagree",
+    "u38s1": "Help!",
+    "u38s2": "Accidents",
+    "u38s3": "After the danger",
+    "u39s1": "Greeting elders",
+    "u39s2": "Polite words",
+    "u39s3": "Being a guest",
+    "u40s1": "Sungura the hare",
+    "u40s2": "Abunuwasi",
+    "u40s3": "The lesson"
   }
 }

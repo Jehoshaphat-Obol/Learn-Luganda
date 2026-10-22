@@ -8,7 +8,7 @@
   "status": "draft",
   "title": "Kiingereza kwa wazungumzaji wa Kiswahili",
   "description": "Kiingereza ni lugha ya shule, kazi na biashara Afrika Mashariki, na huzungumzwa duniani kote.",
-  "notes": "Drafted by Claude (AI) from the en-sw course: the English and the Swahili both need a native-speaker review (see journal/2026-10-22-english-for-swahili.md). Sections 1–4 (units 1–32) so far; Section 5 follows in #147.",
+  "notes": "Drafted by Claude (AI) from the en-sw course: the English and the Swahili both need a native-speaker review (see journal/2026-10-22-english-for-swahili.md). All 5 sections (40 units), #126 and #147.",
   "cheers": ["Great job!", "Well done!", "Excellent!"],
   "phrases": { "congrats": "Congratulations", "thanks": "Thank you!" },
   "landing": {
@@ -115,6 +115,13 @@
       "level": "Kati",
       "description": "Pwani ya Waswahili, kijiji na kilimo, sherehe, muziki, imani, biashara, mazingira na jamii.",
       "units": ["u25", "u26", "u27", "u28", "u29", "u30", "u31", "u32"]
+    },
+    {
+      "id": "s5",
+      "title": "Mzungumzaji hodari",
+      "level": "Juu ya kati",
+      "description": "Linganisha, waza, simulia hadithi, tumia methali, fuatilia habari, kabili dharura, onyesha heshima na furahia hadithi za jadi.",
+      "units": ["u33", "u34", "u35", "u36", "u37", "u38", "u39", "u40"]
     }
   ]
 }
