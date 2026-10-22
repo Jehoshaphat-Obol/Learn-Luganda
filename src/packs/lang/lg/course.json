@@ -9,7 +9,8 @@
     "en": { "name": "Olungereza", "mu": "Lungereza" },
     "lg": { "name": "Oluganda", "mu": "Luganda" },
     "sw": { "name": "Oluswayiri", "mu": "Luswayiri" },
-    "fr": { "name": "Olufalansa", "mu": "Lufalansa" }
+    "fr": { "name": "Olufalansa", "mu": "Lufalansa" },
+    "nyn": { "name": "Olunyankole", "mu": "Lunyankole" }
   },
   "cheers": ["Kale!", "Bulungi nnyo!"],
   "phrases": { "congrats": "Wayita bulungi", "thanks": "Weebale nnyo!" },

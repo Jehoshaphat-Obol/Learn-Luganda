@@ -1,0 +1,118 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u10",
+  "words": {
+    "engoye": { "text": "emyenda" },
+    "essaati": { "text": "eshaati" },
+    "empale": { "text": "empare" },
+    "ekiteeteeyi": { "text": "ekiteeteeyi" },
+    "engatto": { "text": "ebiraato" },
+    "enkoofiira": { "text": "enkofiira" },
+    "ekkooti": { "text": "ekooti" },
+    "essweta": { "text": "esweta" },
+    "gomesi": { "text": "omushanana", "alts": ["gomesi"] },
+    "kkanzu": { "text": "ekanzu", "alts": ["kanzu"] },
+    "yange": { "text": "yangye" },
+    "zange": { "text": "byangye" },
+    "nnyambala": { "text": "Ninjwara" },
+    "yambala": { "text": "Jwara" },
+    "yambula": { "text": "Juura" },
+    "nnaaba": { "text": "Ninyoga" },
+    "naaba": { "text": "Yoga" },
+    "eno": { "text": "egi" },
+    "nnene": { "text": "mpango" },
+    "ntono": { "text": "nkye" },
+    "ngitwala": { "text": "Ningitwara" },
+    "nnungi": { "text": "nungi" },
+    "sketi": { "text": "sikaati" },
+    "kanga": { "text": "kanga", "alts": ["ekitambi"] },
+    "nimevaa": { "text": "Njwaire" },
+    "kiatu": { "text": "ekiraato" },
+    "soksi": { "text": "esokisi" },
+    "ninavaa": { "text": "Ninjwara hati" },
+    "ndefu": { "text": "ndaingwa" },
+    "fupi": { "text": "ngufu" },
+    "kununua": { "text": "kugura" },
+    "saizi": { "text": "saizi" },
+    "inanifaa": { "text": "Nikimpika" },
+    "jaribu": { "text": "Geragyeza" },
+    "kioo": { "text": "endorerwamu" }
+  },
+  "sentences": {
+    "s-essaati-yange": { "text": "Eshaati yangye." },
+    "s-empale-yange": { "text": "Empare yangye." },
+    "s-engatto-zange": { "text": "Ebiraato byangye." },
+    "s-engoye-zange": { "text": "Emyenda yangye." },
+    "s-ekiteeteeyi-kyange": { "text": "Ekiteeteeyi kyangye." },
+    "s-enkoofiira-yange": { "text": "Enkofiira yangye." },
+    "s-nnyambala-gomesi": { "text": "Ninjwara omushanana." },
+    "s-taata-ayambala-kkanzu": { "text": "Taata naajwara ekanzu." },
+    "s-yambala-essweta": { "text": "Jwara esweta." },
+    "s-yambula-engatto": { "text": "Juura ebiraato." },
+    "s-nnaaba-ku-makya": { "text": "Ninyoga nyenkyakare." },
+    "s-essaati-eno-ssente-mmeka": { "text": "Eshaati egi ni esente zingahi?" },
+    "s-empale-eno-nnene": { "text": "Empare egi ni mpango." },
+    "s-essaati-eno-ntono": { "text": "Eshaati egi ni nkye." },
+    "s-essaati-nnungi": { "text": "Eshaati egi ni nungi." },
+    "s-kale-ngitwala": { "text": "Kare, ningitwara." },
+    "s-nimevaa-shati": { "text": "Njwaire eshaati nyera." },
+    "s-kofia-iko-wapi": { "text": "Enkofiira yangye eri nkahi?" },
+    "s-nguo-ghali": { "text": "Emyenda neeguma munonga." },
+    "s-kanga-mpya": { "text": "Kanga yangye ni mpyaka." },
+    "s-nimevaa-gauni": { "text": "Njwaire ekiteeteeyi n'enkofiira." },
+    "s-viatu-vichafu": { "text": "Ebiraato byangye biine oburofa." },
+    "s-soksi-nyeusi": { "text": "Esokisi nyiragura." },
+    "s-ninavaa-suruali": { "text": "Ninjwara empare." },
+    "s-vaa-koti": { "text": "Jwara ekooti, hariho obutiti." },
+    "s-vua-viatu": { "text": "Juura ebiraato, ninkushaba." },
+    "s-suruali-ndefu": { "text": "Empare ni ndaingwa munonga." },
+    "s-sketi-fupi": { "text": "Sikaati ni ngufu." },
+    "s-kununua-viatu": { "text": "Ninyenda kugura ebiraato." },
+    "s-saizi-gani": { "text": "Saizi ki?" },
+    "s-inanifaa-vizuri": { "text": "Nikimpika gye." },
+    "s-jaribu": { "text": "Geragyeza, ninkushaba!" },
+    "s-kioo-kiko-wapi": { "text": "Endorerwamu eri nkahi?" }
+  },
+  "phrases": [
+    "Eshaati yangye.",
+    "Ebiraato byangye.",
+    "Ninjwara omushanana.",
+    "Jwara esweta.",
+    "Juura ebiraato.",
+    "Eshaati egi ni esente zingahi?",
+    "Kare, ningitwara."
+  ],
+  "dialogues": {
+    "u10s3l3": [
+      { "line": "Eshaati egi ni omutwaro gumwe.", "options": ["Neeguma! Kyendeezeho.", "Ninyoga nyenkyakare.", "Ebiraato byangye."] },
+      { "line": "Kare, enkumi mushanju.", "options": ["Kare, ningitwara.", "Juura ebiraato.", "Ndi mugufu."] }
+    ]
+  },
+  "stories": {
+    "new-gomesi": {
+      "title": "Omushanana gw'obugyenyi",
+      "summary": "{@nakato} naagura eky'okujwara aha kwanjura kwa mwene wabo.",
+      "lines": [
+        "Webale kukora, nyabo! Noyenda ki?",
+        "Ninyenda omushanana. Hariho okwanjura aha Orwamukaaga.",
+        "Omushanana ogu ni gwa kakobe. Ni murungi munonga!",
+        "Ngaaha, ninyenda ogutukura.",
+        "Kare. Ogutukura nigwo ogu. Geragyeza!",
+        "Ogu ni mukye. Hariho ohango?",
+        "Ego, ogu ni muhango. Emitwaro etaano.",
+        "Nigugura munonga! Kyendeezeho.",
+        "Kare, emitwaro ena.",
+        "Kare, ningutwara. Webale munonga!"
+      ],
+      "questions": [
+        { "question": "Okwanjura kuri ryari?", "options": ["Aha Orwokubanza", "Aha Orwamukaaga", "Erizooba"] },
+        { "question": "{@nakato} naayenda rangi ki?", "options": ["Kakobe", "Kitukura", "Kyera"] },
+        { "question": "Omushanana ogutukura guine buzibu ki?", "options": ["Ni mukye munonga", "Nigugura munonga", "Ni mukuru"] },
+        {
+          "question": "{@nakato} naagamba ata “Kare, ningitwara”?",
+          "options": ["Kare, ningitwara.", "Juura ebiraato.", "Nimpurira obutiti."]
+        }
+      ]
+    }
+  }
+}

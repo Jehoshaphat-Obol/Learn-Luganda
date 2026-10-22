@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u23",
+  "words": {
+    "essimu": { "text": "esimu" },
+    "halo": { "text": "Haloo", "alts": ["Halo"] },
+    "ani-ayogera": { "text": "N'oha orikugamba?" },
+    "nkukubira": { "text": "ninkuteerera" },
+    "nkubira": { "text": "Nteerera" },
+    "mmukubira": { "text": "ninmuteerera" },
+    "sikuwulira": { "text": "Tindikukuhurira" },
+    "obubaka": { "text": "obutumwa" },
+    "mpeereza": { "text": "Ntumira" },
+    "nnamba": { "text": "namba" },
+    "tusisinkane": { "text": "Tubugane" },
+    "nkulinze": { "text": "Ninkurindiire" },
+    "ndi-mu-kkubo": { "text": "Ndi omu muhanda" },
+    "piga-simu": { "text": "kuteera esimu" },
+    "nitakupigia": { "text": "Ninza kukuteerera" },
+    "tuma": { "text": "Tuma" },
+    "mtandao": { "text": "netiweeki" },
+    "betri": { "text": "baatire" },
+    "salio": { "text": "eataimu" }
+  },
+  "sentences": {
+    "s23-halo": { "text": "Haloo? N'oha orikugamba?" },
+    "s23-nze-nakato-ayogera": { "text": "Ninyowe {@nakato} orikugamba." },
+    "s23-nja-kukukubira": { "text": "Ninza kukuteerera esimu nyenkya." },
+    "s23-nkubira-ekiro": { "text": "Nteerera esimu ekiro." },
+    "s23-mmukubira": { "text": "Ninmuteerera esimu buri izooba." },
+    "s23-sikuwulira": { "text": "Tindikukuhurira gye. Garukamu." },
+    "s23-mpeereza-obubaka": { "text": "Ntumira obutumwa." },
+    "s23-mpa-nnamba": { "text": "Mpa namba yaawe." },
+    "s23-tusisinkane": { "text": "Tubugane shaaha ina." },
+    "s23-nkulinze": { "text": "Ninkurindiire aha siteegi." },
+    "s23-ndi-mu-kkubo": { "text": "Ndi omu muhanda, ninyija!" },
+    "s-simu-iko-wapi": { "text": "Esimu yangye eri nkahi?" },
+    "s-haloo-nani": { "text": "Haloo? N'oha?" },
+    "s-piga-simu": { "text": "Teera esimu nyenkya." },
+    "s-nipigie-jioni": { "text": "Nteerera orweigoro." },
+    "s-subiri-kidogo": { "text": "Rindaho kakye." },
+    "s-tuma-ujumbe": { "text": "Tuma obutumwa." },
+    "s-namba-yako": { "text": "Namba yaawe n'eha?" },
+    "s-hakuna-mtandao": { "text": "Hanu tihariho netiweeki." },
+    "s-sina-betri": { "text": "Baatire yangye yaahwa." },
+    "s-sina-salio": { "text": "Tinyine eataimu." }
+  },
+  "phrases": [
+    "Haloo? N'oha orikugamba?",
+    "Ninyowe {@nakato} orikugamba.",
+    "Ninza kukuteerera esimu nyenkya.",
+    "Tindikukuhurira gye.",
+    "Ntumira obutumwa.",
+    "Tubugane shaaha ina.",
+    "Ndi omu muhanda, ninyija!"
+  ],
+  "dialogues": {
+    "u23s2l3": [{ "line": "Haloo? N'oha orikugamba?", "options": ["Ninyowe {@ssali}. Ori ota, {@nakato}?", "Ndi omu muhanda.", "Tinyine sente."] }],
+    "u23s3l3": [{ "line": "Ori nkahi? Ninkurindiire!", "options": ["Nsaasira, ndi omu muhanda. Ninyija!", "Tubugane nyomwabazyo.", "Mpa ekaramu."] }]
+  },
+  "stories": {}
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u6",
+  "words": {
+    "ekibuga": { "text": "orurembo", "alts": ["tauni"] },
+    "ekyalo": { "text": "ekyaro" },
+    "essomero": { "text": "eishomero" },
+    "eddwaliro": { "text": "eirwariro" },
+    "edduuka": { "text": "edduuka", "alts": ["eduuka"] },
+    "ekkanisa": { "text": "ekanisa" },
+    "omuzigiti": { "text": "omusigiti" },
+    "awaka": { "text": "omuka", "alts": ["eka"] },
+    "ngenda": { "text": "Ningyenda" },
+    "ogenda-wa": { "text": "Noogyenda nkahi?", "alts": ["Oragyenda nkahi?"] },
+    "liri-wa": { "text": "riri nkahi?" },
+    "ku-ddyo": { "text": "aha bulyo" },
+    "ku-kkono": { "text": "aha bumoso" },
+    "butereevu": { "text": "omu maisho", "alts": ["mu maisho"] },
+    "kyuka": { "text": "Hindukira" },
+    "genda": { "text": "Genda" },
+    "yimirira": { "text": "Yemerera" },
+    "wano": { "text": "hanu" },
+    "kumpi": { "text": "haihi" },
+    "wala": { "text": "hare" },
+    "ntwala": { "text": "Ntwara" },
+    "pale": { "text": "hariya" },
+    "karibu-na": { "text": "haihi na" },
+    "shuleni": { "text": "aha ishomero" },
+    "kazini": { "text": "aha murimo" },
+    "barabara": { "text": "omuhanda" },
+    "matatu": { "text": "kamunye", "alts": ["takisi"] },
+    "boda-boda": { "text": "boda boda", "alts": ["bodaboda"] },
+    "nauli": { "text": "esente z'orugyendo" },
+    "jirani": { "text": "omutaahi" }
+  },
+  "sentences": {
+    "s-mbeera-mu-kibuga": { "text": "Ntuura omu rurembo." },
+    "s-jjajja-ku-kyalo": { "text": "Nyakuru atuura omu kyaro." },
+    "s-ngenda-ku-ssomero": { "text": "Ningyenda aha ishomero." },
+    "s-ngenda-awaka": { "text": "Ningyenda omuka.", "alts": ["Ningyenda eka."] },
+    "s-ngenda-ku-dduuka": { "text": "Ningyenda aha dduuka." },
+    "s-ogenda-wa": { "text": "Noogyenda nkahi?" },
+    "s-eddwaliro-liri-wa": { "text": "Eirwariro riri nkahi?" },
+    "s-essomero-liri-wa": { "text": "Eishomero riri nkahi?" },
+    "s-kyuka-ku-ddyo": { "text": "Hindukira aha bulyo." },
+    "s-kyuka-ku-kkono": { "text": "Hindukira aha bumoso." },
+    "s-genda-butereevu": { "text": "Genda omu maisho." },
+    "s-yimirira-wano": { "text": "Yemerera hanu." },
+    "s-kiri-kumpi": { "text": "Kiri haihi." },
+    "s-kiri-wala": { "text": "Kiri hare." },
+    "s-ntwala-mu-kibuga": { "text": "Ntwara omu rurembo." },
+    "s-benki-iko-wapi": { "text": "Banka eri nkahi?" },
+    "s-duka-iko-hapa": { "text": "Edduuka riri hanu." },
+    "s-msikiti-uko-pale": { "text": "Omusigiti guri hariya." },
+    "s-karibu-na-benki": { "text": "Kiri haihi na banka." },
+    "s-ni-mbali": { "text": "Kiri hare munonga?" },
+    "s-simama-hapa": { "text": "Yemerera hanu, ninkushaba." },
+    "s-ninaenda-mjini": { "text": "Ningyenda omu rurembo omu takisi." },
+    "s-nauli-ni-bei-gani": { "text": "Esente z'orugyendo ni zingahi?" },
+    "s-boda-boda-haraka": { "text": "Boda boda niyihuta." },
+    "s-sawa-asante": { "text": "Kare, webale." },
+    "s-kijijini": { "text": "Ntuura omu kyaro." },
+    "s-kulima-mahindi": { "text": "Nituhinga ebicooli." },
+    "s-jirani": { "text": "Omutaahi wangye n'omuhingi." }
+  },
+  "phrases": [
+    "Noogyenda nkahi?",
+    "Ningyenda omuka.",
+    "Eirwariro riri nkahi?",
+    "Hindukira aha bulyo.",
+    "Genda omu maisho.",
+    "Yemerera hanu.",
+    "Ntwara omu rurembo."
+  ],
+  "dialogues": { "u6s3l2": [{ "line": "Noogyenda nkahi, nyabo?", "options": ["Ntwara omu rurembo.", "Nikinuura munonga!", "Shaaha ina."] }] },
+  "stories": {
+    "boda-ride": {
+      "title": "Orugyendo aha boda boda",
+      "summary": "{@emma} naatwarwa boda boda omu rurembo.",
+      "lines": [
+        "Noogyenda nkahi, nyabo?",
+        "Ntwara omu rurembo. Ni zingahi?",
+        "Enkumi itaano.",
+        "Nikiguma munonga! Kyendeezeho.",
+        "Kare, enkumi ishatu.",
+        "Nyoreka omuhanda.",
+        "Genda omu maisho, hindukira aha bulyo.",
+        "Yemerera hanu. Webale munonga, sebo!",
+        "Kare, nyabo. Ogumeho!"
+      ],
+      "questions": [
+        { "question": "Baikirizana esente zingahi?", "options": ["Enkumi itaano", "Enkumi ishatu", "Rukumi"] },
+        { "question": "{@emma} naagamba ngu bahindukire ruhande ki?", "options": ["Aha bumoso", "Aha bulyo"] },
+        {
+          "question": "{@emma} naagamba ata {@ssali} ngu ayemerere?",
+          "options": ["Genda omu maisho", "Yemerera hanu", "Hindukira aha bumoso"]
+        }
+      ]
+    }
+  }
+}

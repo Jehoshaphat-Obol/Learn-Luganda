@@ -1,0 +1,50 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u27",
+  "words": {
+    "olusuku": { "text": "orutookye" },
+    "enkumbi": { "text": "enfuka" },
+    "ndima": { "text": "Ninhinga" },
+    "ensigo": { "text": "embibo" },
+    "okusiga": { "text": "kubiba" },
+    "kasooli": { "text": "ebicooli" },
+    "ebinyeebwa": { "text": "ebinyobwa" },
+    "emmwanyi": { "text": "omwani" },
+    "amakungula": { "text": "amasharuro" },
+    "okukungula": { "text": "kusharura" },
+    "ndimira": { "text": "Ninhingira" },
+    "nfumbira": { "text": "Ninteekyera" },
+    "ntundira": { "text": "Ningurisiza" },
+    "mpandiikira": { "text": "Ninhandiikira" },
+    "mpunga": { "text": "emiti y'omuceri" },
+    "maji-ya-mvua": { "text": "amaizi g'enjura" }
+  },
+  "sentences": {
+    "s27-olusuku-lwange": { "text": "Orutookye rwangye ni ruhango." },
+    "s27-ndima-n-enkumbi": { "text": "Ninhinga n'enfuka nyenkyakare." },
+    "s27-okusiga-ensigo": { "text": "Nitubiba embibo omu itumba." },
+    "s27-kasooli": { "text": "Ebicooli bikuzire gye." },
+    "s27-ebinyeebwa": { "text": "Ningurisa ebinyobwa n'ebicooli." },
+    "s27-emmwanyi": { "text": "Omwani gwa Buganda ni murungi munonga." },
+    "s27-amakungula": { "text": "Amasharuro gaahika!" },
+    "s27-okukungula": { "text": "Nyenkya nituza kusharura ebinyobwa." },
+    "s27-ndimira-jjajja": { "text": "Ninhingira nyakuru orutookye." },
+    "s27-nfumbira-abaana": { "text": "Ninteekyera abaana ebyokurya." },
+    "s27-ntundira-mu-katale": { "text": "Ningurisiza omwani omu katare." },
+    "s27-mpandiikira-maama": { "text": "Ninhandiikira maama obutumwa." },
+    "s-mpunga": { "text": "Emiti y'omuceri neekunda amaizi maingi." },
+    "s-kupanda-mbegu": { "text": "Erizooba nituza kubiba embibo." },
+    "s-mavuno-mazuri": { "text": "Amasharuro ni marungi omwaka ogu." },
+    "s-jembe": { "text": "Twara enfuka." },
+    "s-maji-ya-mvua": { "text": "Nitubiika amaizi g'enjura." }
+  },
+  "phrases": [
+    "Ninhinga n'enfuka nyenkyakare.",
+    "Nitubiba embibo omu itumba.",
+    "Amasharuro gaahika!",
+    "Ninhingira nyakuru orutookye.",
+    "Ninteekyera abaana ebyokurya.",
+    "Ninhandiikira maama obutumwa."
+  ],
+  "dialogues": { "u27s3l3": [{ "line": "Webale kukora! Nookora ki?", "options": ["Ninhingira nyakuru orutookye.", "Ndi wa Lugave.", "Kabaka arame!"] }] }
+}

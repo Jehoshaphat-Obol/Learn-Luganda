@@ -1,6 +1,12 @@
 {
   "threshold": 0.95,
-  "languages": { "en": { "target": 1, "base": 1 }, "fr": { "target": 1, "base": 1 }, "lg": { "target": 1, "base": 1 }, "sw": { "target": 1, "base": 1 } },
+  "languages": {
+    "en": { "target": 1, "base": 1 },
+    "fr": { "target": 1, "base": 1 },
+    "lg": { "target": 1, "base": 1 },
+    "nyn": { "target": 0.758, "base": 0.775 },
+    "sw": { "target": 1, "base": 1 }
+  },
   "about": {
     "en": { "en": 0, "fr": 1, "lg": 1, "sw": 1 },
     "fr": { "en": 1, "fr": 0, "lg": 0, "sw": 0 },

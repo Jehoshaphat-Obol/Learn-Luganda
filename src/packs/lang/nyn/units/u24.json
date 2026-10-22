@@ -1,0 +1,85 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u24",
+  "words": {
+    "okufumba": { "text": "kuteeka" },
+    "entamu": { "text": "enyungu" },
+    "omuliro": { "text": "omuriro" },
+    "amafuta": { "text": "amajuta" },
+    "obutungulu": { "text": "obutungulu" },
+    "ennyaanya": { "text": "enyaanya" },
+    "sooka": { "text": "Banza" },
+    "sala": { "text": "Shara" },
+    "teeka": { "text": "Ta" },
+    "gattako": { "text": "Yongyeramu" },
+    "okusiika": { "text": "kukaranga" },
+    "endagala": { "text": "ebikoora" },
+    "okusiba": { "text": "kuzinga" },
+    "tulye": { "text": "Turye" },
+    "nkkuse": { "text": "Naiguta" },
+    "webale-okufumba": { "text": "Webale kuteeka" },
+    "chemsha": { "text": "Cumba" },
+    "kaanga": { "text": "Karanga" },
+    "kitunguu": { "text": "akatungulu" },
+    "changanya": { "text": "Tabura" }
+  },
+  "sentences": {
+    "s24-njagala-okufumba": { "text": "Ninyenda kuteeka ebyokurya." },
+    "s24-teeka-entamu": { "text": "Ta enyungu aha muriro." },
+    "s24-gattako-amafuta": { "text": "Yongyeramu amajuta." },
+    "s24-sooka-sala": { "text": "Banza oshare obutungulu." },
+    "s24-oluvannyuma-ennyaanya": { "text": "Bwanyima yongyeramu enyaanya." },
+    "s24-gattako-omunnyo": { "text": "Yongyeramu omwonyo kakye." },
+    "s24-okusiika": { "text": "Karanga obutungulu omu majuta." },
+    "s24-okusiba": { "text": "Nituzinga ebitookye omu bikoora." },
+    "s24-tulye": { "text": "Ebyokurya byahwa. Turye!" },
+    "s24-mpa-ku-mmere": { "text": "Mpaho ebyokurya, nyabo." },
+    "s24-nkkuse": { "text": "Naiguta, webale munonga." },
+    "s24-webale-okufumba": { "text": "Webale kuteeka, Nyakuru!" },
+    "s-kupika": { "text": "Ninkunda kuteeka." },
+    "s-mafuta-moto": { "text": "Amajuta nigotsya munonga." },
+    "s-kata-kitunguu": { "text": "Shara akatungulu." },
+    "s-chemsha-maji": { "text": "Cumba amaizi." },
+    "s-kaanga-vitunguu": { "text": "Karanga obutungulu." },
+    "s-changanya-pamoja": { "text": "Tabura hamwe." }
+  },
+  "phrases": [
+    "Ta enyungu aha muriro.",
+    "Banza oshare obutungulu.",
+    "Bwanyima yongyeramu enyaanya.",
+    "Nituzinga ebitookye omu bikoora.",
+    "Ebyokurya byahwa. Turye!",
+    "Naiguta, webale munonga.",
+    "Webale kuteeka!"
+  ],
+  "dialogues": {
+    "u24s3l3": [
+      {
+        "line": "Noyenda ebyokurya ebindi?",
+        "options": ["Ngaaha, naiguta. Webale kuteeka!", "Banza oshare obutungulu.", "Ninkurindiire aha siteegi."]
+      }
+    ]
+  },
+  "stories": {
+    "cooking-luwombo": {
+      "title": "Kuteeka na {@jjajja}",
+      "summary": "{@amara} naayega kuteeka luwombo y'enkoko.",
+      "lines": [
+        "Erizooba nituza kuteeka luwombo y'enkoko.",
+        "Kare! Nkore ki?",
+        "Banza oshare obutungulu n'enyaanya.",
+        "Naaheza! Bwanyima?",
+        "Ta enkoko n'enva omu bikoora, kandi obizinge gye.",
+        "Bwanyima nitura enyungu aha muriro, shaaha ibiri.",
+        "Shaaha ibiri? Nyine enjara munonga!",
+        "Haha! Ebyokurya byahwa. Turye!",
+        "Nibinuura munonga! Webale kuteeka, Nyakuru."
+      ],
+      "questions": [
+        { "question": "{@amara} naabanza kukora ki?", "options": ["Kushara obutungulu n'enyaanya", "Kwatsya omuriro", "Kwoza enyungu"] },
+        { "question": "Luwombo neeteekwa obwire bungahi?", "options": ["Edakiika ikumi", "Shaaha ibiri", "Ekiro kyona"] },
+        { "question": "{@amara} naagamba ki yaaheza kurya?", "options": ["Webale kuteeka", "Banza oshare", "Ninkurindiire"] }
+      ]
+    }
+  }
+}
