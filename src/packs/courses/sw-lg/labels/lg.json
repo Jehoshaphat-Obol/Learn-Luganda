@@ -310,5 +310,45 @@
     "u40s1": "Wakayima",
     "u40s2": "Kintu ne Nnambi",
     "u40s3": "Eky’okuyiga"
+  },
+  "description": "Oluganda lwe lulimi lwa Buganda wakati mu Uganda, era lwogerwa abantu bukadde na bukadde mu Kampala n’okumpi nayo.",
+  "cast": {
+    "nakato": "Omukulembeze wo, omuyizi wa yunivasite e Kampala",
+    "mukasa": "Omusomesa omugumiikiriza okuva e Masaka",
+    "jjajja": "Jjajja ayagala ennyo engero",
+    "ssali": "Omuvuzi wa bodaboda amanyi buli kkubo",
+    "amara": "Omuyizi wa siniya ayagala ennyimba",
+    "emma": "Omugenyi ayiga Oluganda nga tannaba kutambula"
+  },
+  "landing": {
+    "word": "okuyiga — ekikolwa: okufuna amagezi amapya",
+    "why": {
+      "title": "Olulimi lw’**enguudo za Kampala.**",
+      "text": "Oluganda lwogerwa abantu bukadde na bukadde wakati mu Uganda, era lwe lusinga okuwulirwa mu Kampala. Lulimi lwa Bantu nga Oluswayiri, kale ojja kulabamu ebika by’amannya n’obusooka by’omanyi dda.",
+      "cards": [
+        {
+          "title": "Eri abasuubuzi",
+          "text": "Lamusa, sala ebbeeyi era osuubule mu katale n’obwesige."
+        },
+        {
+          "title": "Eri abatambuze",
+          "text": "Tambula mu Kampala, weebagale bodaboda era ofune emikwano."
+        },
+        {
+          "title": "Eri abaagala okumanya",
+          "text": "Geraageranya Oluganda n’Oluswayiri: ebika by’amannya, ebikolwa n’engero."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Kiki ekitegeeza “asante” eky’Oluswayiri?",
+      "explain": "_Weebale_ kye kitegeeza “asante” mu Luswayiri."
+    },
+    "start": {
+      "caption": "tandika — ekikolwa: okusooka"
+    },
+    "farewell": "Weebale nnyo.",
+    "audience": "Aboogera Oluswayiri abatandika Oluganda: abasuubuzi, abayizi n’abatambuze abagenda mu Uganda, n’ab’omu maka abaagala okuddayo eri olulimi.",
+    "first": "Okulamusa, okweyanjula n’ennamba, oluvannyuma ab’omu maka, emmere, akatale, obudde, ebifo, awaka n’obulamu, ekitundu ku kitundu."
   }
 }

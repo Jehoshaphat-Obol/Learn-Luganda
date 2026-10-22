@@ -310,5 +310,57 @@
     "u40s1": "Wakayima the hare",
     "u40s2": "Kintu and Nnambi",
     "u40s3": "The lesson"
+  },
+  "description": "Luganda is the language of Buganda in central Uganda, spoken by millions in and around Kampala.",
+  "cast": {
+    "nakato": "Your guide, a university student in Kampala",
+    "mukasa": "A patient teacher from Masaka",
+    "jjajja": "A grandmother who loves proverbs",
+    "ssali": "A boda boda rider who knows every road",
+    "amara": "A secondary school student who loves music",
+    "emma": "A visitor learning Luganda before her trip"
+  },
+  "landing": {
+    "word": "okuyiga — v. to learn",
+    "words": [
+      "How are you?",
+      "I’m fine",
+      "Thank you",
+      "Okay",
+      "Friend",
+      "Water",
+      "Food",
+      "Sir",
+      "Madam",
+      "Welcome"
+    ],
+    "why": {
+      "title": "The language of **Kampala’s streets.**",
+      "text": "Luganda is spoken by millions of people across central Uganda and is the language you hear most in Kampala. It is a Bantu language like Swahili, so you will spot noun classes and prefixes you already know.",
+      "cards": [
+        {
+          "title": "For business",
+          "text": "Greet, bargain and trade at the market with confidence."
+        },
+        {
+          "title": "For travellers",
+          "text": "Get around Kampala, ride a boda boda and make friends."
+        },
+        {
+          "title": "For the curious",
+          "text": "Compare Luganda with Swahili: noun classes, verbs and proverbs."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Which one means “thank you”?",
+      "explain": "_Weebale_ means thank you."
+    },
+    "start": {
+      "caption": "tandika — v. start, begin"
+    },
+    "farewell": "Weebale nnyo — thank you very much.",
+    "audience": "Swahili speakers starting Luganda: traders, students and travellers heading to Uganda, and families who want to reconnect with the language.",
+    "first": "Greetings, introductions and numbers, then family, food, the market, time, places, the home and health, unit by unit."
   }
 }

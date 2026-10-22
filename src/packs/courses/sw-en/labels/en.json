@@ -301,5 +301,45 @@
     "u40s1": "Sungura the hare",
     "u40s2": "Abunuwasi",
     "u40s3": "The lesson"
+  },
+  "description": "English is the language of school, work and business in East Africa, and it is spoken all over the world.",
+  "cast": {
+    "amani": "Your guide, a university student in Dar es Salaam",
+    "baraka": "Runs a chai and chapati stall in Mombasa",
+    "bibi": "A grandmother in Zanzibar who answers everything with a proverb",
+    "juma": "A matatu driver in Nairobi who knows every stage",
+    "neema": "A secondary school student in Arusha who loves bongo flava",
+    "emma": "A visitor from abroad who speaks English"
+  },
+  "landing": {
+    "word": "learn — to get new knowledge or skills",
+    "why": {
+      "title": "The language of **school and work.**",
+      "text": "English is used in schools, offices, courts and online all over East Africa. Learn it to study, find work, and talk with people from all over the world.",
+      "cards": [
+        {
+          "title": "At school",
+          "text": "Understand teachers and books, and pass your exams."
+        },
+        {
+          "title": "At work",
+          "text": "Write, speak and work with all kinds of people with confidence."
+        },
+        {
+          "title": "Around the world",
+          "text": "Talk with visitors, travel and read online."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "What is “asante” in English?",
+      "explain": "_Thank you_ is asante."
+    },
+    "start": {
+      "caption": "let’s go — come on, let’s start"
+    },
+    "farewell": "Thank you very much.",
+    "audience": "Swahili speakers who want to learn English from the start: students, workers, and parents who want to help their children at school.",
+    "first": "Greetings, introductions and numbers, then family, food, the market, time, town, the home and health, unit by unit."
   }
 }

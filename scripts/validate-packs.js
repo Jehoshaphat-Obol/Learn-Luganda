@@ -62,9 +62,9 @@ for (const id of courseDirs) {
     errors.push(...schemaErrors('docs/packs/schema/course-labels.schema.json', labels, where));
     if (!uiFiles.includes(`${ui}.json`)) errors.push(`${where}: there is no ${ui} interface pack`);
     if (ui === meta.from) errors.push(`${where}: the course is already written in ${ui}`);
-    const result = checkLabels(labels, pack);
+    const result = checkLabels(labels, pack, ui);
     errors.push(...result.errors.map((e) => `${where}: ${e}`));
-    if (result.missing.length) notes.push(`${where}: ${result.missing.length} heading(s) fall back to the course's own text`);
+    if (result.missing.length) notes.push(`${where}: ${result.missing.length} label(s) fall back to the course's own text`);
   }
 }
 
