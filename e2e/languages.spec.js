@@ -103,10 +103,11 @@ test('search narrows the full picker, and flags stay small', async ({ page }) =>
   await search.fill('kiswa');
   await expect(learn.getByRole('radio')).toHaveCount(1);
   await expect(learn.getByRole('radio', { name: 'Swahili', exact: true })).toBeVisible();
-  await expect(speak.getByText('No language matches your search.')).toBeVisible();
+  await expect(speak.getByRole('radio')).toHaveCount(1);
 
   await search.fill('klingon');
   await expect(learn.getByText('No language matches your search.')).toBeVisible();
+  await expect(speak.getByText('No language matches your search.')).toBeVisible();
 
   await search.fill('swa');
   await learn.getByRole('radio', { name: 'Swahili', exact: true }).click();
