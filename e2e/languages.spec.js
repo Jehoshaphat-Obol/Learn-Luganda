@@ -86,6 +86,35 @@ test('“something else” opens the full picker', async ({ page }) => {
   expect((await readState(page)).settings.course).toBe('en-lg');
 });
 
+test('search narrows the full picker, and flags stay small', async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 800 });
+  await page.goto('./#/onboarding');
+  await page.getByRole('button', { name: 'Something else' }).click();
+  const speak = page.getByRole('group', { name: 'I speak' });
+  const learn = page.getByRole('group', { name: 'I want to learn' });
+  await expect(learn.getByRole('radio')).toHaveCount(2);
+
+  const flag = learn.getByRole('radio', { name: 'Swahili', exact: true }).locator('img.flag');
+  const box = await flag.boundingBox();
+  expect(box.height).toBeLessThanOrEqual(20);
+  expect(box.width).toBeLessThanOrEqual(26);
+
+  const search = page.getByRole('searchbox', { name: 'Search languages' });
+  await search.fill('kiswa');
+  await expect(learn.getByRole('radio')).toHaveCount(1);
+  await expect(learn.getByRole('radio', { name: 'Swahili', exact: true })).toBeVisible();
+  await expect(speak.getByText('No language matches your search.')).toBeVisible();
+
+  await search.fill('klingon');
+  await expect(learn.getByText('No language matches your search.')).toBeVisible();
+
+  await search.fill('swa');
+  await learn.getByRole('radio', { name: 'Swahili', exact: true }).click();
+  await expect(page.getByRole('searchbox', { name: 'Search languages' })).toHaveValue('swa');
+  await page.locator('[data-nav="next"]').click();
+  expect((await readState(page)).onboarding.answers.course).toBe('en-sw');
+});
+
 test('Settings shows the languages and the course', async ({ page }) => {
   await openWith(page, savedState(), '#/settings');
   await expect(page.getByRole('heading', { name: 'Languages' })).toBeVisible();
