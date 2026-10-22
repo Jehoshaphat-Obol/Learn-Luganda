@@ -1,0 +1,457 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u25",
+  "title": "Koo na alama zao",
+  "description": "Jifunze kuhusu koo za Buganda, alama zao na kusema wewe ni nani.",
+  "color": "ink",
+  "character": "jjajja",
+  "words": [
+    {
+      "id": "ekika",
+      "target": "ekika",
+      "base": "ukoo",
+      "altBase": [
+        "kabila",
+        "koo"
+      ]
+    },
+    {
+      "id": "ebika",
+      "target": "ebika",
+      "base": "koo",
+      "altBase": [
+        "koo nyingi",
+        "makabila"
+      ]
+    },
+    {
+      "id": "omuziro",
+      "target": "omuziro",
+      "base": "mwiko wa ukoo",
+      "altBase": [
+        "mwiko",
+        "alama ya ukoo",
+        "ishara ya ukoo"
+      ]
+    },
+    {
+      "id": "emiziro",
+      "target": "emiziro",
+      "base": "miiko ya koo",
+      "altBase": [
+        "miiko",
+        "alama za koo"
+      ]
+    },
+    {
+      "id": "kya",
+      "target": "kya",
+      "base": "cha",
+      "notes": "Kwa nomino za eki-: ekika kya Ffumbe, ukoo wa fungo. Kama Kiswahili kitabu cha Juma."
+    },
+    {
+      "id": "gwa",
+      "target": "gwa",
+      "base": "wa",
+      "notes": "Kwa nomino za omu- (vitu): omuziro gwa…, mwiko wa… Kama Kiswahili mti wa…"
+    },
+    {
+      "id": "ffumbe",
+      "target": "Ffumbe",
+      "base": "fungo",
+      "altBase": [
+        "ukoo wa fungo",
+        "ukoo wa Ffumbe"
+      ],
+      "notes": "Ukoo na mwiko wake."
+    },
+    {
+      "id": "lugave",
+      "target": "Lugave",
+      "base": "kakakuona",
+      "altBase": [
+        "ukoo wa kakakuona",
+        "ukoo wa Lugave"
+      ],
+      "notes": "Ukoo na mwiko wake."
+    },
+    {
+      "id": "mmamba",
+      "target": "Mmamba",
+      "base": "kamongo",
+      "altBase": [
+        "ukoo wa kamongo",
+        "ukoo wa Mmamba"
+      ],
+      "notes": "Mojawapo ya koo kubwa zaidi."
+    },
+    {
+      "id": "ngeye",
+      "target": "Ngeye",
+      "base": "mbega",
+      "altBase": [
+        "tumbili mbega",
+        "ukoo wa mbega",
+        "ukoo wa Ngeye"
+      ]
+    },
+    {
+      "id": "ndi-wa",
+      "target": "Ndi wa",
+      "base": "Mimi ni wa",
+      "altBase": [
+        "ni wa",
+        "natoka ukoo wa"
+      ],
+      "notes": "Ndi wa Lugave: mimi ni wa ukoo wa Lugave."
+    },
+    {
+      "id": "oli-wa-kika-ki",
+      "target": "Oli wa kika ki?",
+      "base": "Wewe ni wa ukoo gani?",
+      "altBase": [
+        "ukoo wako ni upi",
+        "unatoka ukoo gani",
+        "wewe ni ukoo gani"
+      ]
+    },
+    {
+      "id": "tetulya",
+      "target": "tetulya",
+      "base": "hatuli",
+      "altBase": [
+        "sisi hatuli"
+      ]
+    },
+    {
+      "id": "owooluganda",
+      "target": "owooluganda",
+      "base": "ndugu",
+      "altBase": [
+        "jamaa",
+        "ndugu wa ukoo"
+      ]
+    },
+    {
+      "id": "jjajja-omutaka",
+      "target": "omutaka",
+      "base": "mkuu wa ukoo",
+      "altBase": [
+        "kiongozi wa ukoo",
+        "mzee wa ukoo",
+        "chifu"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s25-ekika-kyange",
+      "target": "Ekika kyange Ffumbe.",
+      "base": "Ukoo wangu ni Ffumbe.",
+      "altBase": [
+        "Ukoo wangu ni fungo."
+      ]
+    },
+    {
+      "id": "s25-ebika-bingi",
+      "target": "Mu Buganda mulimu ebika bingi.",
+      "base": "Buganda kuna koo nyingi.",
+      "altBase": [
+        "Katika Buganda kuna koo nyingi.",
+        "Kuna koo nyingi Buganda."
+      ]
+    },
+    {
+      "id": "s25-omuziro-gwange",
+      "target": "Omuziro gwange lugave.",
+      "base": "Mwiko wangu ni kakakuona.",
+      "altBase": [
+        "Mwiko wa ukoo wangu ni kakakuona."
+      ]
+    },
+    {
+      "id": "s25-ekika-kya-mmamba",
+      "target": "Ekika kya Mmamba kinene.",
+      "base": "Ukoo wa Mmamba ni mkubwa.",
+      "altBase": [
+        "Ukoo wa kamongo ni mkubwa."
+      ]
+    },
+    {
+      "id": "s25-ndi-wa-lugave",
+      "target": "Ndi wa Lugave.",
+      "base": "Mimi ni wa ukoo wa Lugave.",
+      "altBase": [
+        "Mimi ni wa Lugave.",
+        "Ninatoka ukoo wa Lugave."
+      ]
+    },
+    {
+      "id": "s25-oli-wa-kika-ki",
+      "target": "Oli wa kika ki?",
+      "base": "Wewe ni wa ukoo gani?",
+      "altBase": [
+        "Ukoo wako ni upi?",
+        "Unatoka ukoo gani?"
+      ]
+    },
+    {
+      "id": "s25-tetulya-mmamba",
+      "target": "Tetulya mmamba.",
+      "base": "Hatuli kamongo.",
+      "altBase": [
+        "Sisi hatuli kamongo."
+      ]
+    },
+    {
+      "id": "s25-omuziro-gwa-ngeye",
+      "target": "Omuziro gwa Ngeye ngeye.",
+      "base": "Mwiko wa Ngeye ni mbega.",
+      "altBase": [
+        "Mwiko wa ukoo wa Ngeye ni mbega."
+      ]
+    },
+    {
+      "id": "s25-tuli-booluganda",
+      "target": "Tuli booluganda.",
+      "base": "Sisi ni ndugu.",
+      "altBase": [
+        "Tu ndugu.",
+        "Sisi ni jamaa.",
+        "Tuko ukoo mmoja."
+      ]
+    },
+    {
+      "id": "s25-omutaka",
+      "target": "Omutaka w’ekika ajja.",
+      "base": "Mkuu wa ukoo anakuja.",
+      "altTarget": [
+        "Omutaka wekika ajja."
+      ],
+      "altBase": [
+        "Mzee wa ukoo anakuja.",
+        "Kiongozi wa ukoo anakuja."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u25s1",
+      "title": "Ebika",
+      "icon": "trophy",
+      "tip": "clans",
+      "lessons": [
+        {
+          "id": "u25s1l1",
+          "newWords": [
+            "ekika",
+            "ebika"
+          ],
+          "sentences": [
+            "s25-ebika-bingi"
+          ]
+        },
+        {
+          "id": "u25s1l2",
+          "newWords": [
+            "ffumbe",
+            "kya"
+          ],
+          "sentences": [
+            "s25-ekika-kyange",
+            "s25-ekika-kya-mmamba"
+          ]
+        },
+        {
+          "id": "u25s1l3",
+          "newWords": [
+            "mmamba",
+            "tetulya"
+          ],
+          "sentences": [
+            "s25-tetulya-mmamba",
+            "s25-ekika-kya-mmamba"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u25s2",
+      "title": "Alama za koo",
+      "icon": "star",
+      "tip": "of",
+      "lessons": [
+        {
+          "id": "u25s2l1",
+          "newWords": [
+            "omuziro",
+            "emiziro"
+          ],
+          "sentences": [
+            "s25-omuziro-gwange"
+          ]
+        },
+        {
+          "id": "u25s2l2",
+          "newWords": [
+            "lugave",
+            "gwa"
+          ],
+          "sentences": [
+            "s25-omuziro-gwange",
+            "s25-omuziro-gwa-ngeye"
+          ]
+        },
+        {
+          "id": "u25s2l3",
+          "newWords": [
+            "ngeye"
+          ],
+          "sentences": [
+            "s25-omuziro-gwa-ngeye",
+            "s25-tetulya-mmamba"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u25s3",
+      "title": "Majina na koo",
+      "icon": "profile",
+      "lessons": [
+        {
+          "id": "u25s3l1",
+          "newWords": [
+            "ndi-wa",
+            "oli-wa-kika-ki"
+          ],
+          "sentences": [
+            "s25-ndi-wa-lugave",
+            "s25-oli-wa-kika-ki"
+          ]
+        },
+        {
+          "id": "u25s3l2",
+          "newWords": [
+            "owooluganda"
+          ],
+          "sentences": [
+            "s25-tuli-booluganda",
+            "s25-ndi-wa-lugave"
+          ]
+        },
+        {
+          "id": "u25s3l3",
+          "newWords": [
+            "jjajja-omutaka"
+          ],
+          "sentences": [
+            "s25-omutaka",
+            "s25-oli-wa-kika-ki"
+          ],
+          "dialogues": [
+            {
+              "speaker": "jjajja",
+              "target": "Oli wa kika ki, mwana wange?",
+              "base": "Wewe ni wa ukoo gani, mwanangu?",
+              "options": [
+                "Ndi wa Lugave, Jjajja.",
+                "Nkooye nnyo.",
+                "Gattako omunnyo."
+              ],
+              "answer": "Ndi wa Lugave, Jjajja."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Kila Mganda ni wa ukoo fulani, unaorithiwa kutoka kwa baba. Koo huathiri majina, ndoa, sherehe na hata vyakula ambavyo watu hula.",
+    "phrases": [
+      {
+        "target": "Oli wa kika ki?",
+        "base": "Wewe ni wa ukoo gani?"
+      },
+      {
+        "target": "Ndi wa Lugave.",
+        "base": "Mimi ni wa ukoo wa Lugave."
+      },
+      {
+        "target": "Ekika kyange Ffumbe.",
+        "base": "Ukoo wangu ni Ffumbe."
+      },
+      {
+        "target": "Omuziro gwange lugave.",
+        "base": "Mwiko wangu ni kakakuona."
+      },
+      {
+        "target": "Tetulya mmamba.",
+        "base": "Hatuli kamongo."
+      },
+      {
+        "target": "Tuli booluganda.",
+        "base": "Sisi ni ndugu."
+      }
+    ],
+    "tips": [
+      {
+        "id": "clans",
+        "title": "Ukoo na mwiko",
+        "body": [
+          "Ukoo, **ekika**, ni familia kubwa inayojihesabu kutoka kwa babu mmoja. Kila ukoo una mwiko wake mkuu, **omuziro**, kwa kawaida mnyama au mmea, na koo nyingi zimepewa jina lake: mwiko wa ukoo wa **Ffumbe** ni fungo, wa **Lugave** ni kakakuona.",
+          "Wanaukoo huheshimu mwiko wao na hawauli. Watu wa ukoo mmoja huhesabiwa kuwa ndugu, **abooluganda**, na kwa desturi hawaoani."
+        ]
+      },
+      {
+        "id": "of",
+        "title": "“-a” hufuata nomino ya kwanza",
+        "body": [
+          "Kama Kiswahili **-a** (wa, cha, ya, za), Kiganda hutumia **-a** pamoja na kiambishi cha ngeli ya kitu kinachomilikiwa: **ekika kya Mmamba** (ukoo wa Mmamba), **omuziro gwa Ngeye** (mwiko wa Ngeye), **essaati ya Nakato** (shati la Nakato), **omwana wa Mukasa** (mtoto wa Mukasa).",
+          "Linganisha: **ebitabo bya Amara** ni kama **vitabu vya Amara**. Ngeli ya eki-/ebi- ya Kiganda inalingana na ki-/vi- ya Kiswahili: **kya** ↔ **cha**, **bya** ↔ **vya**."
+        ],
+        "table": [
+          [
+            "Nomino",
+            "-a",
+            "Mfano"
+          ],
+          [
+            "omwana (mtoto)",
+            "wa",
+            "omwana wa Mukasa"
+          ],
+          [
+            "ekika (ukoo)",
+            "kya",
+            "ekika kya Ffumbe"
+          ],
+          [
+            "omuziro (mwiko)",
+            "gwa",
+            "omuziro gwa Ngeye"
+          ],
+          [
+            "essaati (shati)",
+            "ya",
+            "essaati ya Nakato"
+          ],
+          [
+            "ebitabo (vitabu)",
+            "bya",
+            "ebitabo bya Amara"
+          ]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Majina ya koo",
+        "body": [
+          "Majina mengi ya Kiganda ni ya ukoo fulani, kwa hiyo jina linaweza kuwaambia watu ukoo wako kabla hujausema. Buganda ina koo zaidi ya hamsini, kila moja ikiongozwa na mkuu wa ukoo, **omutaka**. Ni kama majina ya ukoo kwa Wachagga au Wakikuyu."
+        ]
+      }
+    ]
+  },
+  "stories": []
+}

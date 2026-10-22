@@ -1,0 +1,432 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u31",
+  "title": "Biashara",
+  "description": "Endesha duka dogo, hudumia wateja, weka akiba na wafundishe wengine.",
+  "color": "butter",
+  "character": "ssali",
+  "words": [
+    {
+      "id": "bizinensi",
+      "target": "bizinensi",
+      "base": "biashara",
+      "altBase": [
+        "shughuli",
+        "kazi ya biashara"
+      ]
+    },
+    {
+      "id": "omuguzi",
+      "target": "omuguzi",
+      "base": "mteja",
+      "altBase": [
+        "mnunuzi"
+      ]
+    },
+    {
+      "id": "abaguzi",
+      "target": "abaguzi",
+      "base": "wateja",
+      "altBase": [
+        "wanunuzi"
+      ]
+    },
+    {
+      "id": "amagoba",
+      "target": "amagoba",
+      "base": "faida",
+      "altBase": [
+        "pato",
+        "mapato"
+      ]
+    },
+    {
+      "id": "nfunye",
+      "target": "Nfunye",
+      "base": "nimepata",
+      "altBase": [
+        "nimejipatia",
+        "nilipata",
+        "nimepokea"
+      ]
+    },
+    {
+      "id": "okutereka",
+      "target": "okutereka",
+      "base": "kuweka akiba",
+      "altBase": [
+        "kuhifadhi",
+        "kudunduliza",
+        "kuweka"
+      ]
+    },
+    {
+      "id": "bbanka",
+      "target": "bbanka",
+      "base": "benki",
+      "altBase": [
+        "banki"
+      ]
+    },
+    {
+      "id": "ebbanja",
+      "target": "ebbanja",
+      "base": "deni",
+      "altBase": [
+        "mkopo",
+        "madeni"
+      ]
+    },
+    {
+      "id": "okwewola",
+      "target": "okwewola",
+      "base": "kukopa",
+      "altBase": [
+        "kuchukua mkopo",
+        "kukopa pesa"
+      ]
+    },
+    {
+      "id": "nsomesa",
+      "target": "Nsomesa",
+      "base": "ninafundisha",
+      "altBase": [
+        "nafundisha",
+        "ninasomesha",
+        "nasomesha"
+      ],
+      "notes": "-soma (soma) + -es-: kumfanya mtu asome. Kama Kiswahili soma → somesha."
+    },
+    {
+      "id": "ndisa",
+      "target": "Ndisa",
+      "base": "ninalisha",
+      "altBase": [
+        "nalisha",
+        "ninawalisha"
+      ],
+      "notes": "-lya (kula) + -is-: kumfanya mtu ale. Kama Kiswahili la → lisha."
+    },
+    {
+      "id": "nnywesa",
+      "target": "Nnywesa",
+      "base": "ninanywesha",
+      "altBase": [
+        "nanywesha",
+        "ninawapa maji",
+        "ninanyweshea"
+      ],
+      "notes": "-nywa (kunywa) + -es-. Kama Kiswahili nywa → nywesha."
+    },
+    {
+      "id": "ntunza",
+      "target": "Ntunza",
+      "base": "ninauza",
+      "altBase": [
+        "nauza",
+        "ninafanya biashara"
+      ],
+      "notes": "Hutumika mara nyingi kwa kuuza kama biashara."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s31-nnina-bizinensi",
+      "target": "Nnina bizinensi entono.",
+      "base": "Nina biashara ndogo.",
+      "altBase": [
+        "Ninamiliki biashara ndogo."
+      ]
+    },
+    {
+      "id": "s31-ntunza-engoye",
+      "target": "Ntunza engoye mu katale.",
+      "base": "Ninauza nguo sokoni.",
+      "altBase": [
+        "Nauza nguo sokoni."
+      ]
+    },
+    {
+      "id": "s31-omuguzi",
+      "target": "Omuguzi ajja!",
+      "base": "Mteja anakuja!",
+      "altBase": [
+        "Mnunuzi anakuja!"
+      ]
+    },
+    {
+      "id": "s31-abaguzi-bangi",
+      "target": "Leero abaguzi bangi.",
+      "base": "Leo kuna wateja wengi.",
+      "altBase": [
+        "Kuna wateja wengi leo.",
+        "Leo wateja ni wengi."
+      ]
+    },
+    {
+      "id": "s31-nfunye-amagoba",
+      "target": "Nfunye amagoba mangi.",
+      "base": "Nimepata faida kubwa.",
+      "altBase": [
+        "Nimepata faida nyingi."
+      ]
+    },
+    {
+      "id": "s31-ntereka-ssente",
+      "target": "Ntereka ssente mu bbanka.",
+      "base": "Ninaweka akiba benki.",
+      "altBase": [
+        "Ninaweka pesa benki.",
+        "Ninahifadhi pesa benki.",
+        "Naweka akiba benki."
+      ]
+    },
+    {
+      "id": "s31-ebbanja",
+      "target": "Sirina bbanja.",
+      "base": "Sina deni lolote.",
+      "altBase": [
+        "Sina deni.",
+        "Sina mkopo wowote."
+      ]
+    },
+    {
+      "id": "s31-okwewola",
+      "target": "Njagala okwewola ssente.",
+      "base": "Ninataka kukopa pesa.",
+      "altBase": [
+        "Nataka kukopa pesa.",
+        "Ningependa kukopa pesa."
+      ]
+    },
+    {
+      "id": "s31-nsomesa-abaana",
+      "target": "Nsomesa abaana Oluganda.",
+      "base": "Ninawafundisha watoto Kiganda.",
+      "altBase": [
+        "Nawafundisha watoto Kiganda.",
+        "Ninawasomesha watoto Kiganda."
+      ]
+    },
+    {
+      "id": "s31-ndisa-abaana",
+      "target": "Ndisa abaana ku makya.",
+      "base": "Ninawalisha watoto asubuhi.",
+      "altBase": [
+        "Nawalisha watoto asubuhi.",
+        "Ninawalisha watoto kila asubuhi."
+      ]
+    },
+    {
+      "id": "s31-nnywesa-ente",
+      "target": "Nnywesa ente amazzi.",
+      "base": "Ninawanywesha ng’ombe maji.",
+      "altBase": [
+        "Ninawapa ng’ombe maji.",
+        "Nawanywesha ng’ombe maji."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u31s1",
+      "title": "Duka dogo",
+      "icon": "shop",
+      "lessons": [
+        {
+          "id": "u31s1l1",
+          "newWords": [
+            "bizinensi",
+            "ntunza"
+          ],
+          "sentences": [
+            "s31-nnina-bizinensi",
+            "s31-ntunza-engoye"
+          ]
+        },
+        {
+          "id": "u31s1l2",
+          "newWords": [
+            "omuguzi",
+            "abaguzi"
+          ],
+          "sentences": [
+            "s31-omuguzi",
+            "s31-abaguzi-bangi"
+          ]
+        },
+        {
+          "id": "u31s1l3",
+          "newWords": [],
+          "sentences": [
+            "s31-ntunza-engoye",
+            "s31-abaguzi-bangi"
+          ],
+          "dialogues": [
+            {
+              "speaker": "ssali",
+              "target": "Gyebale ko! Bizinensi egenda etya?",
+              "base": "Pole na kazi! Biashara inaendaje?",
+              "options": [
+                "Bulungi. Leero abaguzi bangi.",
+                "Amiina.",
+                "Kuba engoma!"
+              ],
+              "answer": "Bulungi. Leero abaguzi bangi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u31s2",
+      "title": "Mambo ya pesa",
+      "icon": "gem",
+      "lessons": [
+        {
+          "id": "u31s2l1",
+          "newWords": [
+            "amagoba",
+            "nfunye"
+          ],
+          "sentences": [
+            "s31-nfunye-amagoba"
+          ]
+        },
+        {
+          "id": "u31s2l2",
+          "newWords": [
+            "okutereka",
+            "bbanka"
+          ],
+          "sentences": [
+            "s31-ntereka-ssente"
+          ]
+        },
+        {
+          "id": "u31s2l3",
+          "newWords": [
+            "ebbanja",
+            "okwewola"
+          ],
+          "sentences": [
+            "s31-ebbanja",
+            "s31-okwewola"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u31s3",
+      "title": "Kuwafanya wengine wafanye",
+      "icon": "bolt",
+      "tip": "causative",
+      "lessons": [
+        {
+          "id": "u31s3l1",
+          "newWords": [
+            "nsomesa"
+          ],
+          "sentences": [
+            "s31-nsomesa-abaana"
+          ]
+        },
+        {
+          "id": "u31s3l2",
+          "newWords": [
+            "ndisa",
+            "nnywesa"
+          ],
+          "sentences": [
+            "s31-ndisa-abaana",
+            "s31-nnywesa-ente"
+          ]
+        },
+        {
+          "id": "u31s3l3",
+          "newWords": [],
+          "sentences": [
+            "s31-nsomesa-abaana",
+            "s31-nnywesa-ente",
+            "s31-nfunye-amagoba"
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Biashara ndogo ndizo zinazoendesha Uganda: vibanda sokoni, vioski, mafundi cherehani na bodaboda. Kipengele hiki kinaongeza vitenzi vya kumfanya mtu mwingine atende jambo.",
+    "phrases": [
+      {
+        "target": "Nnina bizinensi entono.",
+        "base": "Nina biashara ndogo."
+      },
+      {
+        "target": "Leero abaguzi bangi.",
+        "base": "Leo kuna wateja wengi."
+      },
+      {
+        "target": "Nfunye amagoba mangi.",
+        "base": "Nimepata faida kubwa."
+      },
+      {
+        "target": "Ntereka ssente mu bbanka.",
+        "base": "Ninaweka akiba benki."
+      },
+      {
+        "target": "Nsomesa abaana Oluganda.",
+        "base": "Ninawafundisha watoto Kiganda."
+      },
+      {
+        "target": "Nnywesa ente amazzi.",
+        "base": "Ninawanywesha ng’ombe maji."
+      }
+    ],
+    "tips": [
+      {
+        "id": "causative",
+        "title": "Kusababisha: -is- / -es-",
+        "body": [
+          "Hii ni kauli ya kutendesha, kama **-ish-/-esh-** ya Kiswahili. Ongeza **-is-** au **-es-** kabla ya irabu ya mwisho kumaanisha “mfanye mtu atende” au “msaidie mtu atende”: **-soma** (soma) inakuwa **-somesa** (somesha, fundisha), **-lya** (kula) inakuwa **-lisa** (lisha), **-nywa** (kunywa) inakuwa **-nywesa** (nywesha).",
+          "Tayari unalijua moja: **omusomesa** (mwalimu) ni kama Kiswahili **msomeshaji**, “anayewafanya watu wasome”."
+        ],
+        "table": [
+          [
+            "Kitenzi",
+            "Kutendesha",
+            "Kiswahili"
+          ],
+          [
+            "-soma",
+            "-somesa",
+            "somesha, fundisha"
+          ],
+          [
+            "-lya",
+            "-lisa",
+            "lisha"
+          ],
+          [
+            "-nywa",
+            "-nywesa",
+            "nywesha"
+          ],
+          [
+            "-tunda",
+            "-tunza",
+            "uza (kama biashara)"
+          ]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Vikundi vya akiba",
+        "body": [
+          "Watu wengi huweka akiba katika vikundi, kama **chama** au **upatu**: wanachama huchangia kila wiki na kupokezana kupata mfuko. Vikundi hivi pia huwakopesha wanachama, kwa hiyo deni (**ebbanja**) ni la marafiki, si la benki."
+        ]
+      }
+    ]
+  },
+  "stories": []
+}

@@ -1,0 +1,455 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u27",
+  "title": "Kijiji na kilimo",
+  "description": "Fanya kazi shambani, taja mazao na vuna.",
+  "color": "sage",
+  "character": "jjajja",
+  "words": [
+    {
+      "id": "olusuku",
+      "target": "olusuku",
+      "base": "shamba la migomba",
+      "altBase": [
+        "shamba la ndizi",
+        "shamba",
+        "migomba"
+      ]
+    },
+    {
+      "id": "enkumbi",
+      "target": "enkumbi",
+      "base": "jembe",
+      "altBase": [
+        "jembe la mkono"
+      ]
+    },
+    {
+      "id": "ndima",
+      "target": "Ndima",
+      "base": "ninalima",
+      "altBase": [
+        "nalima",
+        "ninakulima",
+        "ninachimba"
+      ]
+    },
+    {
+      "id": "ensigo",
+      "target": "ensigo",
+      "base": "mbegu",
+      "altBase": [
+        "mbegu za kupanda"
+      ]
+    },
+    {
+      "id": "okusiga",
+      "target": "okusiga",
+      "base": "kupanda",
+      "altBase": [
+        "kupanda mbegu",
+        "upanzi"
+      ]
+    },
+    {
+      "id": "kasooli",
+      "target": "kasooli",
+      "base": "mahindi",
+      "altBase": [
+        "mhindi",
+        "gunzi"
+      ]
+    },
+    {
+      "id": "ebinyeebwa",
+      "target": "ebinyeebwa",
+      "base": "karanga",
+      "altBase": [
+        "njugu",
+        "njugu karanga"
+      ]
+    },
+    {
+      "id": "emmwanyi",
+      "target": "emmwanyi",
+      "base": "kahawa",
+      "altBase": [
+        "mibuni",
+        "buni",
+        "miche ya kahawa"
+      ],
+      "notes": "Zao lenyewe. Kikombe cha kahawa ni kaawa."
+    },
+    {
+      "id": "amakungula",
+      "target": "amakungula",
+      "base": "mavuno",
+      "altBase": [
+        "msimu wa mavuno",
+        "wakati wa mavuno"
+      ]
+    },
+    {
+      "id": "okukungula",
+      "target": "okukungula",
+      "base": "kuvuna",
+      "altBase": [
+        "kuvuna mazao"
+      ]
+    },
+    {
+      "id": "ndimira",
+      "target": "Ndimira",
+      "base": "ninalimia",
+      "altBase": [
+        "nalimia",
+        "ninamlimia"
+      ],
+      "notes": "Ndima + -ir-: kwa ajili ya mtu au mahali. Kama Kiswahili lima → limia."
+    },
+    {
+      "id": "nfumbira",
+      "target": "Nfumbira",
+      "base": "ninapikia",
+      "altBase": [
+        "napikia",
+        "ninawapikia"
+      ]
+    },
+    {
+      "id": "ntundira",
+      "target": "Ntundira",
+      "base": "ninauzia",
+      "altBase": [
+        "nauzia",
+        "ninauza katika"
+      ]
+    },
+    {
+      "id": "mpandiikira",
+      "target": "Mpandiikira",
+      "base": "ninaandikia",
+      "altBase": [
+        "naandikia",
+        "ninamwandikia"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s27-olusuku-lwange",
+      "target": "Olusuku lwange lunene.",
+      "base": "Shamba langu la migomba ni kubwa.",
+      "altBase": [
+        "Shamba langu ni kubwa.",
+        "Shamba langu la ndizi ni kubwa."
+      ]
+    },
+    {
+      "id": "s27-ndima-n-enkumbi",
+      "target": "Ndima n’enkumbi ku makya.",
+      "base": "Ninalima kwa jembe asubuhi.",
+      "altTarget": [
+        "Ndima nenkumbi ku makya."
+      ],
+      "altBase": [
+        "Nalima kwa jembe asubuhi.",
+        "Asubuhi ninalima kwa jembe."
+      ]
+    },
+    {
+      "id": "s27-okusiga-ensigo",
+      "target": "Tusiga ensigo mu ttoggo.",
+      "base": "Tunapanda mbegu wakati wa mvua.",
+      "altBase": [
+        "Tunapanda mbegu msimu wa mvua.",
+        "Tunapanda mbegu masika."
+      ]
+    },
+    {
+      "id": "s27-kasooli",
+      "target": "Kasooli akuze bulungi.",
+      "base": "Mahindi yamekua vizuri.",
+      "altBase": [
+        "Mahindi yamestawi vizuri."
+      ]
+    },
+    {
+      "id": "s27-ebinyeebwa",
+      "target": "Ntunda ebinyeebwa ne kasooli.",
+      "base": "Ninauza karanga na mahindi.",
+      "altBase": [
+        "Nauza karanga na mahindi.",
+        "Ninauza njugu na mahindi."
+      ]
+    },
+    {
+      "id": "s27-emmwanyi",
+      "target": "Emmwanyi ya Buganda nnungi nnyo.",
+      "base": "Kahawa ya Buganda ni nzuri sana.",
+      "altBase": [
+        "Kahawa ya Buganda ni bora sana."
+      ]
+    },
+    {
+      "id": "s27-amakungula",
+      "target": "Amakungula gatuuse!",
+      "base": "Mavuno yamefika!",
+      "altBase": [
+        "Wakati wa mavuno umefika!",
+        "Mavuno yamewadia!"
+      ]
+    },
+    {
+      "id": "s27-okukungula",
+      "target": "Enkya tujja kukungula ebinyeebwa.",
+      "base": "Kesho tutavuna karanga.",
+      "altBase": [
+        "Tutavuna karanga kesho.",
+        "Kesho tutavuna njugu."
+      ]
+    },
+    {
+      "id": "s27-ndimira-jjajja",
+      "target": "Ndimira jjajja olusuku.",
+      "base": "Ninamlimia bibi shamba.",
+      "altBase": [
+        "Ninamlimia babu shamba.",
+        "Ninamlimia bibi shamba la migomba.",
+        "Ninalimia bibi shamba."
+      ]
+    },
+    {
+      "id": "s27-nfumbira-abaana",
+      "target": "Nfumbira abaana emmere.",
+      "base": "Ninawapikia watoto chakula.",
+      "altBase": [
+        "Nawapikia watoto chakula.",
+        "Ninawapikia watoto."
+      ]
+    },
+    {
+      "id": "s27-ntundira-mu-katale",
+      "target": "Ntundira emmwanyi mu katale.",
+      "base": "Ninauzia kahawa sokoni.",
+      "altBase": [
+        "Nauza kahawa sokoni.",
+        "Ninauza kahawa sokoni."
+      ]
+    },
+    {
+      "id": "s27-mpandiikira-maama",
+      "target": "Mpandiikira maama obubaka.",
+      "base": "Ninamwandikia mama ujumbe.",
+      "altBase": [
+        "Namwandikia mama ujumbe.",
+        "Ninamwandikia mama yangu ujumbe."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u27s1",
+      "title": "Shamba",
+      "icon": "home",
+      "lessons": [
+        {
+          "id": "u27s1l1",
+          "newWords": [
+            "olusuku",
+            "enkumbi",
+            "ndima"
+          ],
+          "sentences": [
+            "s27-olusuku-lwange",
+            "s27-ndima-n-enkumbi"
+          ]
+        },
+        {
+          "id": "u27s1l2",
+          "newWords": [
+            "ensigo",
+            "okusiga"
+          ],
+          "sentences": [
+            "s27-okusiga-ensigo"
+          ]
+        },
+        {
+          "id": "u27s1l3",
+          "newWords": [],
+          "sentences": [
+            "s27-olusuku-lwange",
+            "s27-okusiga-ensigo",
+            "s27-ndima-n-enkumbi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u27s2",
+      "title": "Mazao",
+      "icon": "star",
+      "lessons": [
+        {
+          "id": "u27s2l1",
+          "newWords": [
+            "kasooli",
+            "ebinyeebwa"
+          ],
+          "sentences": [
+            "s27-kasooli",
+            "s27-ebinyeebwa"
+          ]
+        },
+        {
+          "id": "u27s2l2",
+          "newWords": [
+            "emmwanyi"
+          ],
+          "sentences": [
+            "s27-emmwanyi",
+            "s27-ebinyeebwa"
+          ]
+        },
+        {
+          "id": "u27s2l3",
+          "newWords": [
+            "amakungula",
+            "okukungula"
+          ],
+          "sentences": [
+            "s27-amakungula",
+            "s27-okukungula"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u27s3",
+      "title": "Kumfanyia mtu",
+      "icon": "heart",
+      "tip": "applicative",
+      "lessons": [
+        {
+          "id": "u27s3l1",
+          "newWords": [
+            "ndimira",
+            "nfumbira"
+          ],
+          "sentences": [
+            "s27-ndimira-jjajja",
+            "s27-nfumbira-abaana"
+          ]
+        },
+        {
+          "id": "u27s3l2",
+          "newWords": [
+            "ntundira",
+            "mpandiikira"
+          ],
+          "sentences": [
+            "s27-ntundira-mu-katale",
+            "s27-mpandiikira-maama"
+          ]
+        },
+        {
+          "id": "u27s3l3",
+          "newWords": [],
+          "sentences": [
+            "s27-ndimira-jjajja",
+            "s27-amakungula",
+            "s27-nfumbira-abaana"
+          ],
+          "dialogues": [
+            {
+              "speaker": "jjajja",
+              "target": "Gyebale ko! Okola ki?",
+              "base": "Pole na kazi! Unafanya nini?",
+              "options": [
+                "Ndimira jjajja olusuku.",
+                "Ndi wa Lugave.",
+                "Kabaka awangaale!"
+              ],
+              "answer": "Ndimira jjajja olusuku."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Waganda wengi wana mizizi katika shamba la kijijini, ambapo matooke, kahawa na karanga hukua pamoja.",
+    "phrases": [
+      {
+        "target": "Ndima n’enkumbi ku makya.",
+        "base": "Ninalima kwa jembe asubuhi."
+      },
+      {
+        "target": "Tusiga ensigo mu ttoggo.",
+        "base": "Tunapanda mbegu wakati wa mvua."
+      },
+      {
+        "target": "Amakungula gatuuse!",
+        "base": "Mavuno yamefika!"
+      },
+      {
+        "target": "Ndimira jjajja olusuku.",
+        "base": "Ninamlimia bibi shamba."
+      },
+      {
+        "target": "Nfumbira abaana emmere.",
+        "base": "Ninawapikia watoto chakula."
+      },
+      {
+        "target": "Mpandiikira maama obubaka.",
+        "base": "Ninamwandikia mama ujumbe."
+      }
+    ],
+    "tips": [
+      {
+        "id": "applicative",
+        "title": "Kwa ajili ya mtu: -ir- / -er-",
+        "body": [
+          "Hii ni kauli ya kutendea, sawa kabisa na Kiswahili. Ongeza **-ir-** au **-er-** kabla ya irabu ya mwisho kusema “kwa ajili ya”, “kwa” au “katika”: **-lima** (lima) inakuwa **-limira** (limia), **-fumba** inakuwa **-fumbira** (pikia), **-tunda** inakuwa **-tundira** (uzia).",
+          "Vitenzi vyenye **e** au **o** kwenye shina kwa kawaida huchukua **-er-**: **-kola** inakuwa **-kolera** (fanyia kazi), kama **Nkolera kampuni** ya Kipengele 14. Kiswahili hufuata kanuni hiyo hiyo: **soma → somea**, **chora → chorea**."
+        ],
+        "table": [
+          [
+            "Kitenzi",
+            "Kutendea"
+          ],
+          [
+            "-lima (lima)",
+            "-limira (limia)"
+          ],
+          [
+            "-fumba (pika)",
+            "-fumbira (pikia)"
+          ],
+          [
+            "-tunda (uza)",
+            "-tundira (uzia)"
+          ],
+          [
+            "-kola (fanya kazi)",
+            "-kolera (fanyia kazi)"
+          ],
+          [
+            "-wandiika (andika)",
+            "-wandiikira (andikia)"
+          ]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Shamba la migomba",
+        "body": [
+          "**Olusuku** (shamba la migomba) ni kitovu cha boma la Kiganda. Matooke hukua mwaka mzima, na olusuku lililotunzwa vizuri lilikuwa ishara ya kaya bora, kama vile vihamba vya migomba na kahawa kwa Wachagga na Wahaya."
+        ]
+      }
+    ]
+  },
+  "stories": []
+}

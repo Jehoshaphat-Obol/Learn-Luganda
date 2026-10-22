@@ -1,0 +1,552 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u32",
+  "title": "Mazingira",
+  "description": "Maziwa, mito, misitu na milima, na kutunza ardhi.",
+  "color": "sky",
+  "character": "emma",
+  "words": [
+    {
+      "id": "ennyanja",
+      "target": "ennyanja",
+      "base": "ziwa",
+      "altBase": [
+        "bahari",
+        "ziwa kubwa"
+      ]
+    },
+    {
+      "id": "nnalubaale",
+      "target": "Nnalubaale",
+      "base": "Ziwa Viktoria",
+      "altBase": [
+        "Ziwa Nyanza",
+        "Nnalubaale",
+        "Viktoria"
+      ]
+    },
+    {
+      "id": "omugga",
+      "target": "omugga",
+      "base": "mto",
+      "altBase": [
+        "kijito"
+      ]
+    },
+    {
+      "id": "kiyira",
+      "target": "Kiyira",
+      "base": "Mto Naili",
+      "altBase": [
+        "Naili",
+        "Nile",
+        "Mto Nile"
+      ]
+    },
+    {
+      "id": "ekibira",
+      "target": "ekibira",
+      "base": "msitu",
+      "altBase": [
+        "pori",
+        "mwitu"
+      ]
+    },
+    {
+      "id": "omuti",
+      "target": "omuti",
+      "base": "mti",
+      "altBase": [
+        "mti mmoja"
+      ]
+    },
+    {
+      "id": "emiti",
+      "target": "emiti",
+      "base": "miti",
+      "altBase": [
+        "miti mingi"
+      ]
+    },
+    {
+      "id": "olusozi",
+      "target": "olusozi",
+      "base": "kilima",
+      "altBase": [
+        "mlima"
+      ]
+    },
+    {
+      "id": "ensozi",
+      "target": "ensozi",
+      "base": "vilima",
+      "altBase": [
+        "milima"
+      ]
+    },
+    {
+      "id": "ebimuli",
+      "target": "ebimuli",
+      "base": "maua",
+      "altBase": [
+        "ua"
+      ]
+    },
+    {
+      "id": "ettaka",
+      "target": "ettaka",
+      "base": "ardhi",
+      "altBase": [
+        "udongo",
+        "nchi",
+        "mchanga"
+      ]
+    },
+    {
+      "id": "okusimba",
+      "target": "okusimba",
+      "base": "kupanda",
+      "altBase": [
+        "kupanda miti"
+      ],
+      "notes": "Kwa miti na migomba. Mbegu hutumia okusiga."
+    },
+    {
+      "id": "okukuuma",
+      "target": "okukuuma",
+      "base": "kulinda",
+      "altBase": [
+        "kutunza",
+        "kuhifadhi"
+      ]
+    },
+    {
+      "id": "kasasiro",
+      "target": "kasasiro",
+      "base": "takataka",
+      "altBase": [
+        "uchafu",
+        "taka",
+        "takataka nyingi"
+      ]
+    },
+    {
+      "id": "tosuula",
+      "target": "Tosuula",
+      "base": "Usitupe",
+      "altBase": [
+        "msitupe",
+        "usimwage",
+        "usitupe hapa"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s32-ennyanja-nnene",
+      "target": "Nnalubaale ye nnyanja ennene.",
+      "base": "Ziwa Viktoria ni ziwa kubwa.",
+      "altBase": [
+        "Ziwa Nyanza ni ziwa kubwa.",
+        "Nnalubaale ni ziwa kubwa."
+      ]
+    },
+    {
+      "id": "s32-ebyennyanja",
+      "target": "Ebyennyanja biva mu nnyanja.",
+      "base": "Samaki hutoka ziwani.",
+      "altBase": [
+        "Samaki wanatoka ziwani."
+      ]
+    },
+    {
+      "id": "s32-omugga-kiyira",
+      "target": "Kiyira gwe mugga omuwanvu.",
+      "base": "Naili ni mto mrefu.",
+      "altBase": [
+        "Mto Naili ni mto mrefu.",
+        "Mto Nile ni mrefu."
+      ]
+    },
+    {
+      "id": "s32-kiyira-jinja",
+      "target": "Kiyira gutandikira e Jinja.",
+      "base": "Naili inaanzia Jinja.",
+      "altBase": [
+        "Mto Naili unaanzia Jinja.",
+        "Naili inaanza Jinja."
+      ]
+    },
+    {
+      "id": "s32-ekibira",
+      "target": "Enkima ziri mu kibira.",
+      "base": "Tumbili wako msituni.",
+      "altBase": [
+        "Nyani wako msituni.",
+        "Tumbili wamo msituni."
+      ]
+    },
+    {
+      "id": "s32-omuti-omunene",
+      "target": "Omuti guno munene nnyo.",
+      "base": "Mti huu ni mkubwa sana.",
+      "altBase": [
+        "Mti huu ni mkubwa mno."
+      ]
+    },
+    {
+      "id": "s32-ensozi-musanvu",
+      "target": "Kampala erina ensozi musanvu.",
+      "base": "Kampala ina vilima saba.",
+      "altBase": [
+        "Kampala ina vilima 7.",
+        "Kampala ina milima saba."
+      ]
+    },
+    {
+      "id": "s32-ku-lusozi",
+      "target": "Ennyumba yange eri ku lusozi.",
+      "base": "Nyumba yangu iko kilimani.",
+      "altBase": [
+        "Nyumba yangu iko juu ya kilima.",
+        "Nyumba yangu iko mlimani."
+      ]
+    },
+    {
+      "id": "s32-ebimuli",
+      "target": "Ebimuli birungi nnyo.",
+      "base": "Maua ni mazuri sana.",
+      "altBase": [
+        "Maua yanapendeza sana."
+      ]
+    },
+    {
+      "id": "s32-tusimbe-emiti",
+      "target": "Tusimbe emiti!",
+      "base": "Tupande miti!",
+      "altBase": [
+        "Haya tupande miti!"
+      ]
+    },
+    {
+      "id": "s32-tukuume-ettaka",
+      "target": "Tukuume ettaka lyaffe.",
+      "base": "Tulinde ardhi yetu.",
+      "altBase": [
+        "Tutunze ardhi yetu.",
+        "Tuilinde ardhi yetu."
+      ]
+    },
+    {
+      "id": "s32-tosuula-kasasiro",
+      "target": "Tosuula kasasiro wano!",
+      "base": "Usitupe takataka hapa!",
+      "altBase": [
+        "Msitupe takataka hapa!",
+        "Usitupe taka hapa!"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u32s1",
+      "title": "Maziwa na mito",
+      "icon": "target",
+      "tip": "locatives",
+      "lessons": [
+        {
+          "id": "u32s1l1",
+          "newWords": [
+            "ennyanja",
+            "nnalubaale"
+          ],
+          "sentences": [
+            "s32-ennyanja-nnene",
+            "s32-ebyennyanja"
+          ]
+        },
+        {
+          "id": "u32s1l2",
+          "newWords": [
+            "omugga",
+            "kiyira"
+          ],
+          "sentences": [
+            "s32-omugga-kiyira",
+            "s32-kiyira-jinja"
+          ]
+        },
+        {
+          "id": "u32s1l3",
+          "newWords": [],
+          "sentences": [
+            "s32-kiyira-jinja",
+            "s32-ennyanja-nnene",
+            "s32-ebyennyanja"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u32s2",
+      "title": "Misitu na milima",
+      "icon": "star",
+      "lessons": [
+        {
+          "id": "u32s2l1",
+          "newWords": [
+            "ekibira",
+            "omuti",
+            "emiti"
+          ],
+          "sentences": [
+            "s32-ekibira",
+            "s32-omuti-omunene"
+          ]
+        },
+        {
+          "id": "u32s2l2",
+          "newWords": [
+            "olusozi",
+            "ensozi"
+          ],
+          "sentences": [
+            "s32-ensozi-musanvu",
+            "s32-ku-lusozi"
+          ]
+        },
+        {
+          "id": "u32s2l3",
+          "newWords": [
+            "ebimuli"
+          ],
+          "sentences": [
+            "s32-ebimuli",
+            "s32-ku-lusozi"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u32s3",
+      "title": "Kutunza ardhi",
+      "icon": "heart",
+      "lessons": [
+        {
+          "id": "u32s3l1",
+          "newWords": [
+            "ettaka",
+            "okusimba"
+          ],
+          "sentences": [
+            "s32-tusimbe-emiti"
+          ]
+        },
+        {
+          "id": "u32s3l2",
+          "newWords": [
+            "okukuuma"
+          ],
+          "sentences": [
+            "s32-tukuume-ettaka",
+            "s32-tusimbe-emiti"
+          ]
+        },
+        {
+          "id": "u32s3l3",
+          "newWords": [
+            "kasasiro",
+            "tosuula"
+          ],
+          "sentences": [
+            "s32-tosuula-kasasiro",
+            "s32-tukuume-ettaka"
+          ],
+          "dialogues": [
+            {
+              "speaker": "emma",
+              "target": "Tukole ki okukuuma ettaka?",
+              "base": "Tufanye nini kulinda ardhi?",
+              "options": [
+                "Tusimbe emiti, tosuula kasasiro.",
+                "Kabaka awangaale!",
+                "Nnywesa ente amazzi."
+              ],
+              "answer": "Tusimbe emiti, tosuula kasasiro."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Uganda ni ya kijani, yenye mvua na maji mengi: Ziwa Viktoria, chanzo cha Mto Naili, misitu na vilima. Vielezi vya mahali vinakuambia vitu viko wapi.",
+    "phrases": [
+      {
+        "target": "Nnalubaale ye nnyanja ennene.",
+        "base": "Ziwa Viktoria ni ziwa kubwa."
+      },
+      {
+        "target": "Kiyira gutandikira e Jinja.",
+        "base": "Naili inaanzia Jinja."
+      },
+      {
+        "target": "Enkima ziri mu kibira.",
+        "base": "Tumbili wako msituni."
+      },
+      {
+        "target": "Kampala erina ensozi musanvu.",
+        "base": "Kampala ina vilima saba."
+      },
+      {
+        "target": "Tusimbe emiti!",
+        "base": "Tupande miti!"
+      },
+      {
+        "target": "Tosuula kasasiro wano!",
+        "base": "Usitupe takataka hapa!"
+      }
+    ],
+    "tips": [
+      {
+        "id": "locatives",
+        "title": "mu, ku na e",
+        "body": [
+          "**mu** maana yake “ndani”: **mu kibira** (msituni, ndani ya msitu). **ku** maana yake “juu ya, kwenye”: **ku lusozi** (kilimani). **e** hutangulia majina ya mahali: **e Jinja**, **e Kampala**.",
+          "Baada ya **mu** na **ku**, nomino hudondosha irabu yake ya kwanza: **ekibira** inakuwa **mu kibira**, **olusozi** inakuwa **ku lusozi**. Kiswahili kina ngeli zile zile za mahali (**mu-**, **ku-**, **pa-**) lakini kwa kawaida huongeza **-ni** mwishoni: **msituni**, **kilimani**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Vilima saba",
+        "body": [
+          "Kwa jadi ilisemekana Kampala imesimama juu ya vilima saba, kati yake **Mengo** (ikulu ya Kabaka), **Rubaga**, **Namirembe** na **Kibuli**. Jiji limeenea zamani juu ya vilima vingi zaidi."
+        ]
+      },
+      {
+        "title": "Kiyira",
+        "body": [
+          "Mto Naili, **Kiyira** kwa Kiganda, unatoka Ziwa Viktoria huko Jinja na kutiririka kaskazini hadi Bahari ya Mediterania. Ziwa hili hili ni Nyanza ya Mwanza na Kisumu. Kuvuka maporomoko kwa mashua karibu na Jinja ni maarufu."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "source-of-nile",
+      "title": "Chanzo cha Mto Naili",
+      "unlockAfter": "u32s3l3",
+      "cast": [
+        "emma",
+        "ssali"
+      ],
+      "summary": "Ssali anampeleka Emma kuona mahali Mto Naili unapoanzia.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "ssali",
+            "target": "Tutuuse e Jinja! Laba, Kiyira.",
+            "base": "Tumefika Jinja! Tazama, Mto Naili."
+          }
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Wa Kiyira w’atandikira?",
+            "base": "Naili inaanzia wapi?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "ssali",
+            "target": "Wano! Amazzi gava mu Nnalubaale.",
+            "base": "Hapa! Maji yanatoka Ziwa Viktoria."
+          },
+          "gloss": {
+            "gava": "yanatoka"
+          }
+        },
+        {
+          "question": "Maji ya Naili yanatoka wapi?",
+          "options": [
+            "Ziwa Viktoria",
+            "Msituni",
+            "Mvua peke yake"
+          ],
+          "answer": 0
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Ekinyonyi ekyo kiki?",
+            "base": "Ndege yule ni nini?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "ssali",
+            "target": "Ekyo ngaali! Ebuuka waggulu w’omugga.",
+            "base": "Huyo ni korongo taji! Anaruka juu ya mto."
+          },
+          "gloss": {
+            "waggulu": "juu"
+          }
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Ebimuli n’emiti birungi nnyo wano.",
+            "base": "Maua na miti ni mizuri sana hapa."
+          }
+        },
+        {
+          "line": {
+            "speaker": "ssali",
+            "target": "Yee. Naye laba, kasasiro ku lubalama.",
+            "base": "Ndiyo. Lakini tazama, takataka ufukweni."
+          },
+          "gloss": {
+            "lubalama": "ufukweni"
+          }
+        },
+        {
+          "question": "Ssali anaona nini ufukweni?",
+          "options": [
+            "Takataka",
+            "Simba",
+            "Mashua"
+          ],
+          "answer": 0
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Tukuume ettaka lyaffe! Tukung’aanye kasasiro.",
+            "base": "Tulinde ardhi yetu! Tuokote takataka."
+          },
+          "gloss": {
+            "Tukung’aanye": "tukusanye"
+          }
+        },
+        {
+          "question": "Emma anasemaje “Tulinde ardhi yetu”?",
+          "options": [
+            "Tukuume ettaka lyaffe",
+            "Tosuula kasasiro",
+            "Tusimbe emiti"
+          ],
+          "answer": 0,
+          "optionsLang": "target"
+        },
+        {
+          "line": {
+            "speaker": "ssali",
+            "target": "Kirungi nnyo, Emma!",
+            "base": "Vizuri sana, Emma!"
+          }
+        }
+      ]
+    }
+  ]
+}
