@@ -27,3 +27,7 @@
 ## Section 2 (units 9–16)
 - 8 units, 72 lessons, 150 words, 4 stories. Dropped words whose English repeats another word: kirungi, balungi, mukadde, munene, bawanvu (u9), yange, zange, eno, nnene, ntono, yambala (u10), nnyo-nnyo (u12). `mulungi` teaches "beautiful"; the class commands teach "Read", "Write", "Listen".
 - Guidebooks in Luganda about English: adjectives before the noun and unchanged, is/are, old/young/new; "my" never changes, this/these, plural trousers; present simple for routines and he/she -s; "It is raining"; plurals with -s and sheep; there is/are; "I am a farmer" with a/an and -er jobs; one command for everyone, capital letters for languages; does/goes, from…to, by taxi.
+
+## Section 3 (units 17–24)
+- 8 units, 72 lessons, 121 words, 4 stories. Dropped `kugenda` (u20) and `awangudde` (u22). `flip-course.js` gained `replace` (whole strings), used to make the "learning Luganda" sentences in u18 and u20 about English; Emma’s story in u18 still has her learning Luganda from Jjajja.
+- Guidebooks: don’t/doesn’t/isn’t, there is no; the question word goes first, "What is this called in English?"; "I have eaten" vs "I went" with irregular pasts, I was; will, going to, one day, "God willing"; "I am happy" (feelings are adjectives in English), worried about, two kinds of sorry; enjoy + -ing, has won; me/you/him after the verb, phone phrases, "beep"; kitchen commands, first/then.
