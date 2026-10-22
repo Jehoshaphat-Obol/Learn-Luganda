@@ -13,6 +13,22 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Luganda" />
     <script>
+      // Apply the saved colour theme before first paint so dark mode never
+      // flashes light. Keep in step with src/ui/theme.js.
+      (function () {
+        try {
+          var pref = (JSON.parse(localStorage.getItem('learn-luganda')) || {}).settings || {};
+          pref = pref.theme;
+          var dark = pref === 'dark' || (pref === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+          document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+          if (dark) {
+            document.querySelector('meta[name="theme-color"]').setAttribute('content', '#181614');
+            document.querySelector('meta[name="color-scheme"]').setAttribute('content', 'dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script>
       // Chrome can offer installing before the app's code has loaded; keep that offer for src/app/pwa.js.
       addEventListener('beforeinstallprompt', function (e) {
         e.preventDefault();
@@ -25,10 +41,10 @@
       href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;500;700&family=Inter:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="./assets/main-DS-F60Zb.js"></script>
-    <link rel="modulepreload" crossorigin href="./assets/illustrations-zkF5YppP.js">
-    <link rel="stylesheet" crossorigin href="./assets/illustrations-DtpbPOmb.css">
-    <link rel="stylesheet" crossorigin href="./assets/main-BG_tNULU.css">
+    <script type="module" crossorigin src="./assets/main-DwPFuBh9.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/illustrations-C49vSPFp.js">
+    <link rel="stylesheet" crossorigin href="./assets/illustrations-C5RIP_Bi.css">
+    <link rel="stylesheet" crossorigin href="./assets/main-CUPoYcRc.css">
   </head>
   <body>
     <div id="app"></div>
