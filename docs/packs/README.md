@@ -9,13 +9,11 @@ new pack files, not code changes:
   fills: a curriculum (units, lessons, word and sentence ids) plus one
   **lang pack** per language with that language's text. Any two languages
   with lang packs make a course, `<from>-<to>`, composed when it loads, so
-  50 languages need 50 lang packs, not 50 × 49 courses. English → Luganda
-  (`en-lg`), Swahili → Luganda (`sw-lg`) and Luganda → English (`lg-en`)
-  are composed this way.
-- **Course packs** hold a hand-built course: what the learner already reads
-  (the _base_ or "from" language) paired with what they learn (the _target_
-  or "to" language). `en-sw` and `sw-en` are still built this way until
-  they join the catalog.
+  50 languages need 50 lang packs, not 50 × 49 courses. Every course in
+  the app is composed this way.
+- **Course packs** (`courses/<from>-<to>/`) hold a hand-built course. The
+  loader still reads them, but none are left: never write a new one, write
+  a lang pack instead ([Adding a language](#adding-a-language)).
 
 Packs are read-only at runtime (they are deep-frozen when loaded). The
 learner's progress is stored separately, by id, so a pack can be improved
@@ -41,12 +39,7 @@ src/packs/
       about/lg/             optional notes about Luganda written in English:
         course.json         description, landing copy
         units/u1.json       word notes, guidebook, story glosses
-  courses/
-    en-sw/                  a hand-built course
-      course.json           the course: languages, settings, cast, sections, landing copy
-      units/
-        u1.json             one self-contained unit: words, sentences, lessons,
-        u2.json             guidebook and stories
+  courses/                  legacy hand-built courses (none left; see docs/packs/example)
 docs/packs/
   schema/                   JSON Schemas for every file above
   example/                  a tiny UI pack and course pack that pass validation
@@ -207,7 +200,8 @@ with `--write`, then `npm run coverage`.
 
 ## Course packs
 
-A course lives in `src/packs/courses/<from>-<to>/`. The folder name, the
+The composed courses have this shape too, and the settings, pronunciation
+and migration rules below apply to them. A hand-built course lives in `src/packs/courses/<from>-<to>/`. The folder name, the
 `id` and `from`/`to` must agree, and both codes must be in the registry.
 
 ### course.json
@@ -354,33 +348,53 @@ point at ids the pack has.
 
 Adding new words, lessons or units needs no migration.
 
-## Adding a course
+## Adding a language
 
-With the shared catalog, adding a language means writing `lang/<code>/`:
-every course to and from the languages already there follows. Until the
-authoring guide covers it (#86), build hand-made packs as below.
+Adding a language means writing `lang/<code>/`; every course to and from
+the languages already there follows. Never build a pair course by hand.
 
-1. Add both languages to `languages.json` if they are missing.
-2. Copy `docs/packs/example/courses/en-sw/` to
-   `src/packs/courses/<from>-<to>/` and change the ids, languages and
-   content.
-3. Write units one at a time. The [prompt templates](prompts/) help draft
-   them with an AI.
-4. Run `npm run validate` until it passes, then `npm test`.
-5. Keep `status: "draft"` and a note in `notes` until a fluent speaker has
-   reviewed it.
+1. Add the language to `languages.json` (and `regions.json`) if it's
+   missing.
+2. Write `lang/<code>/course.json`: the course title, `languageNames`, the
+   section, unit, skill and cast headings, `culture` (the cast's local
+   names and places), `cheers`, `phrases` and `settings`. Copy the shape of
+   `lang/fr/course.json` ([prompt](prompts/lang-course.md)).
+3. Translate the units one section at a time (u1–u8, u9–u16, …). Dump a
+   unit from a language you read, translate each line, build it back:
 
-The app finds new course packs by itself. Each pack is a separate download,
-so learners only fetch the course they take.
+   ```sh
+   node scripts/lang-flat.js dump en u4 > drafts/u4.txt   # translate the text after each tab
+   node scripts/lang-flat.js build <code> drafts/u4.txt   # → src/packs/lang/<code>/units/u4.json
+   ```
+
+   Each line is `KEY<TAB>text[<TAB>alt | alt]`; keep the keys, the
+   `{placeholders}` and the `{@culture}` slots, and give as many accepted
+   answers as are natural. `build` refuses a draft with a missing or
+   unknown line, so nothing is dropped by accident (a story may be left
+   out whole: those tagged with another `culture` are optional)
+   ([prompt](prompts/lang-unit.md)).
+4. Write notes about the language for the courses that teach it:
+   `lang/en/about/<code>/` (description, landing copy, word notes,
+   guidebook tips and culture, story glosses, in English). Other base
+   languages fall back to them through their `pivot` until they have their
+   own ([prompt](prompts/about-notes.md)).
+5. `npm run coverage`, `npm run validate`, `npm test`. A pair shows up in
+   the picker once both sides pass 95%.
+6. Keep `status: "draft"` and say who drafted it in `notes` until a fluent
+   speaker has reviewed it. An interface in the language (`ui/<code>.json`)
+   is a separate, optional step.
+
+The app finds new lang packs by itself, and each composed course is a
+separate download.
 
 ## Drafting with an AI
 
 The [prompts](prompts/) folder has templates for:
 
-- [a UI pack](prompts/ui-pack.md), translated from `en.json`;
-- [a course outline](prompts/course-outline.md): `course.json` with sections,
-  cast, settings and landing copy;
-- [one unit](prompts/course-unit.md), written to that outline.
+- [a lang pack's course.json](prompts/lang-course.md): headings, cast and culture;
+- [one unit](prompts/lang-unit.md), translated line by line with `scripts/lang-flat.js`;
+- [notes about a language](prompts/about-notes.md) for the courses that teach it;
+- [a UI pack](prompts/ui-pack.md), translated from `en.json`.
 
 The rules every draft follows:
 
