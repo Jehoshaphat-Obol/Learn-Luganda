@@ -2,7 +2,7 @@
 
 ## What happened
 - sw-lg Section 2, "Maisha ya kila siku" (Elementary), units 9–16: 72 lessons, 162 words, 4 stories. sw-lg is now at 16/40 units (125 lessons, 360 words, 9 stories).
-- Units: Rangi na maumbo, Nguo, Siku yangu, Hali ya hewa, Wanyama, Kazi, Shuleni, Usafiri (titles from en-lg’s Swahili labels).
+- Units: Rangi na maelezo, Nguo, Siku yangu, Hali ya hewa na majira, Wanyama, Kazi na ajira, Shule, Usafiri (titles from en-lg’s Swahili labels).
 - Same method as Section 1 (`handoff/sw-lg/rebase.py` + `sw9.txt`…`sw16.txt` in the project files). New Swahili tips about Luganda:
   - adjectives agree like Swahili (-lungi ≈ -zuri: mulungi / balungi / kirungi ≈ mzuri / wazuri / kizuri); colour nouns use kya/ya ≈ cha/ya
   - the n- class is the Swahili N class: essaati yange / engatto zange ≈ nguo yangu / nguo zangu; eno ≈ hii; nkitwala / ngitwala ≈ nitakichukua / nitaichukua
