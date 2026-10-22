@@ -12,6 +12,8 @@ const CONTENT_SCREENS = ['#/guidebook/u29', '#/story/source-of-nile', '#/guidebo
 
 test('the landing page has no accessibility violations', async ({ page }) => {
   await page.goto('./');
+  // The landing page renders after the course loads; check it, not the empty shell.
+  await expect(page.locator('main h1')).toBeVisible();
   await page.addScriptTag({ path: axePath });
   const violations = await page.evaluate(async () => (await window.axe.run()).violations.map((v) => v.id));
   expect(violations).toEqual([]);
