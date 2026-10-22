@@ -370,7 +370,8 @@ the languages already there follows. Never build a pair course by hand.
    Each line is `KEY<TAB>text[<TAB>alt | alt]`; keep the keys, the
    `{placeholders}` and the `{@culture}` slots, and give as many accepted
    answers as are natural. `build` refuses a draft with a missing or
-   unknown line, so nothing is dropped by accident
+   unknown line, so nothing is dropped by accident (a story may be left
+   out whole: those tagged with another `culture` are optional)
    ([prompt](prompts/lang-unit.md)).
 4. Write notes about the language for the courses that teach it:
    `lang/en/about/<code>/` (description, landing copy, word notes,

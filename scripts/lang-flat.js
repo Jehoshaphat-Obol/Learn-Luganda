@@ -16,6 +16,8 @@
  * Options and accepted answers are ` | `-separated. Blank lines and lines
  * starting with # are ignored. Every key of the reference unit is needed and
  * no other key is allowed, so a draft can't silently drop or invent text.
+ * The one exception is a whole story: leave out all of its lines to skip it
+ * (stories tagged with another culture are only told in that culture's courses).
  */
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { basename, dirname, join } from 'node:path';
@@ -101,6 +103,8 @@ export function build(text, ref, { typography } = {}) {
   if (ref.stories) {
     unit.stories = {};
     for (const [id, st] of Object.entries(ref.stories)) {
+      // A story is optional: one tagged with another culture can be left out whole.
+      if (![...rows.keys()].some((k) => k.startsWith(`T ${id} `))) continue;
       const s = {};
       for (const f of ['title', 'summary']) if (f in st) s[f] = get(`T ${id} ${f}`)[0];
       if (st.lines) s.lines = st.lines.map((_, i) => get(`T ${id} L${i}`)[0]);

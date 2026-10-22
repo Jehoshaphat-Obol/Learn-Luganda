@@ -32,6 +32,14 @@ describe('build', () => {
     expect(() => build([...lines, 'W not-a-word\tx'].join('\n'), ref)).toThrow(/unknown keys/);
   });
 
+  it('skips a story left out whole, but not half a story', () => {
+    const story = Object.keys(ref.stories)[0];
+    const without = lines.filter((l) => !l.startsWith(`T ${story} `));
+    expect(build(without.join('\n'), ref).stories[story]).toBeUndefined();
+    const half = lines.filter((l) => !l.startsWith(`T ${story} L0`));
+    expect(() => build(half.join('\n'), ref)).toThrow(/missing/);
+  });
+
   it('applies French typography when asked', () => {
     const fixed = build(lines.map((l, i) => (i === 0 ? `${l.split('\t')[0]}\tC'est vrai ?` : l)).join('\n'), ref, { typography: 'fr' });
     expect(Object.values(fixed.words)[0].text).toBe('C’est vrai ?');
