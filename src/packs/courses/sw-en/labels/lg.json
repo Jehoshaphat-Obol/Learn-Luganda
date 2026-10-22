@@ -5,6 +5,11 @@
       "title": "Omusingi",
       "level": "Abatandika",
       "description": "Okulamusa, ab’omu maka, emmere, ennamba n’essaawa, mu kibuga, awaka, olunaku lwo n’obulamu."
+    },
+    "s2": {
+      "title": "Obulamu bwa buli lunaku",
+      "level": "Abeeyongerayo",
+      "description": "Nnyonnyola ebintu, yambala, yamba awaka, ebiseera by’omwaka, ebisolo, emirimu, essomero n’entambula."
     }
   },
   "units": {
@@ -39,6 +44,38 @@
     "u8": {
       "title": "Omubiri n’obulamu",
       "description": "Manya ebitundu by’omubiri, gamba ekikuluma, laba omusawo era oyagalize omuntu obulamu obulungi."
+    },
+    "u9": {
+      "title": "Okunnyonnyola ebintu",
+      "description": "Gamba ebintu n’abantu bwe bali: birungi oba bibi, bipya, binene oba bitono, bizito oba byangu."
+    },
+    "u10": {
+      "title": "Engoye",
+      "description": "Manya engoye zo, yambala okusinziira ku budde era ogule ekipya."
+    },
+    "u11": {
+      "title": "Okuyamba awaka",
+      "description": "Saba era osabibwe: jjangu, tuula, leeta, longoosa, naaza era oyambe mu mirimu gy’awaka."
+    },
+    "u12": {
+      "title": "Obudde n’ebiseera by’omwaka",
+      "description": "Yogera ku mpewo n’ebire, ekiseera ky’enkuba n’eky’omusana, n’obudde bwe bwali jjo."
+    },
+    "u13": {
+      "title": "Ebisolo",
+      "description": "Ebisolo by’omu ffaamu, eby’awaka n’ebisolo by’omu nsiko."
+    },
+    "u14": {
+      "title": "Emirimu",
+      "description": "Gamba ky’okola, buuza abalala ku mirimu gyabwe era oyogere ku musaala n’oluwummula."
+    },
+    "u15": {
+      "title": "Essomero",
+      "description": "Ekibiina, amasomo, ebibuuzo, ebigezo n’omulimu gw’awaka."
+    },
+    "u16": {
+      "title": "Entambula",
+      "description": "Gula tikiti, kwata eggaali y’omukka oba ennyonyi, era ogambe by’onookola."
     }
   },
   "skills": {
@@ -65,6 +102,30 @@
     "u7s3": "Obudde",
     "u8s1": "Omubiri",
     "u8s2": "Kiki ekikuluma?",
-    "u8s3": "Ebigambo eby’ekisa"
+    "u8s3": "Ebigambo eby’ekisa",
+    "u9s1": "Ebirungi, ebibi n’ebipya",
+    "u9s2": "Ekinene n’ekitono",
+    "u9s3": "Okunnyonnyola abantu",
+    "u10s1": "Bye nnyambala",
+    "u10s2": "Okwambala",
+    "u10s3": "Okugula engoye",
+    "u11s1": "Jjangu otuule",
+    "u11s2": "Okulongoosa",
+    "u11s3": "Okuyamba",
+    "u12s1": "Enjuba, empewo n’ebire",
+    "u12s2": "Ebiseera by’omwaka",
+    "u12s3": "Jjo",
+    "u13s1": "Eby’omu ffaamu",
+    "u13s2": "Eby’omu nsiko",
+    "u13s3": "Mu ppaaka",
+    "u14s1": "Emirimu",
+    "u14s2": "Ku mulimu",
+    "u14s3": "Okwefunira obulamu",
+    "u15s1": "Mu kibiina",
+    "u15s2": "Amasomo",
+    "u15s3": "Ebibuuzo n’omulimu gw’awaka",
+    "u16s1": "Tikiti n’ebifo eby’okusimbuliramu",
+    "u16s2": "Nja kutambula",
+    "u16s3": "Ku luguudo"
   }
 }

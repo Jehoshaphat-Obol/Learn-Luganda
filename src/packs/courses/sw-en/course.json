@@ -94,6 +94,13 @@
       "level": "Wanaoanza",
       "description": "Salamu, familia, chakula, namba na saa, mjini, nyumbani, siku yako na afya.",
       "units": ["u1", "u2", "u3", "u4", "u5", "u6", "u7", "u8"]
+    },
+    {
+      "id": "s2",
+      "title": "Maisha ya kila siku",
+      "level": "Ngazi ya awali",
+      "description": "Eleza vitu, vaa nguo, saidia nyumbani, hali ya hewa, wanyama, kazi, shule na usafiri.",
+      "units": ["u9", "u10", "u11", "u12", "u13", "u14", "u15", "u16"]
     }
   ]
 }

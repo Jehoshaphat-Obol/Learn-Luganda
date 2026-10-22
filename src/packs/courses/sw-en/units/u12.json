@@ -1,0 +1,238 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u12",
+  "title": "Hali ya hewa na majira",
+  "description": "Zungumza kuhusu upepo, mawingu na jua, majira ya mvua, na hali ya hewa ya jana.",
+  "color": "sage",
+  "character": "juma",
+  "words": [
+    { "id": "upepo", "target": "wind", "base": "upepo", "altTarget": ["the wind", "breeze"] },
+    { "id": "mawingu", "target": "clouds", "base": "mawingu", "altTarget": ["the clouds", "cloudy"] },
+    { "id": "radi", "target": "thunder", "base": "radi", "altTarget": ["lightning", "thunderstorm"] },
+    { "id": "jua-kali", "target": "strong sun", "base": "jua kali", "altTarget": ["hot sun", "harsh sun", "the hot sun"] },
+    { "id": "kavu", "target": "dry", "base": "kavu" },
+    { "id": "nyingi", "target": "a lot of", "base": "nyingi", "altTarget": ["much", "many", "lots of", "plenty of"] },
+    { "id": "msimu", "target": "season", "base": "msimu", "altTarget": ["the season"] },
+    { "id": "masika", "target": "long rains", "base": "masika", "altTarget": ["the long rains", "rainy season"] },
+    { "id": "vuli", "target": "short rains", "base": "vuli", "altTarget": ["the short rains"] },
+    { "id": "kiangazi", "target": "dry season", "base": "kiangazi", "altTarget": ["the dry season", "hot season", "summer"] },
+    { "id": "mwezi", "target": "month", "base": "mwezi", "altTarget": ["moon", "the month", "the moon"] },
+    { "id": "mwaka", "target": "year", "base": "mwaka", "altTarget": ["the year"] },
+    { "id": "ilinyesha", "target": "it rained", "base": "ilinyesha", "altTarget": ["rained", "was raining"] },
+    { "id": "ilikuwa", "target": "It was", "base": "Ilikuwa", "altTarget": ["it used to be"] },
+    { "id": "kulikuwa-na", "target": "There was", "base": "Kulikuwa na", "altTarget": ["there were"] },
+    { "id": "nilikuwa", "target": "I was", "base": "Nilikuwa", "altTarget": ["i used to be"] },
+    { "id": "zamani", "target": "long ago", "base": "zamani", "altTarget": ["in the past", "a long time ago", "old times", "before"] }
+  ],
+  "sentences": [
+    {
+      "id": "s-kuna-upepo",
+      "target": "It’s windy today.",
+      "base": "Kuna upepo leo.",
+      "altTarget": ["There is wind today.", "It is windy today."]
+    },
+    {
+      "id": "s-kuna-mawingu",
+      "target": "It’s cloudy today.",
+      "base": "Leo kuna mawingu.",
+      "altTarget": ["Today there are clouds.", "It is cloudy today."]
+    },
+    { "id": "s-radi-usiku", "target": "There is thunder at night.", "base": "Kuna radi usiku.", "altTarget": ["There’s thunder at night."] },
+    {
+      "id": "s-jua-kali-leo",
+      "target": "Strong sun today!",
+      "base": "Jua kali leo!",
+      "altTarget": ["The sun is strong today!", "The sun is hot today!"]
+    },
+    { "id": "s-mvua-nyingi", "target": "Lots of rain!", "base": "Mvua nyingi!", "altTarget": ["A lot of rain!", "So much rain!"] },
+    { "id": "s-kiangazi-kavu", "target": "The dry season is dry and hot.", "base": "Kiangazi ni kavu na joto." },
+    { "id": "s-msimu-gani", "target": "Which season?", "base": "Msimu gani?", "altTarget": ["What season?"] },
+    {
+      "id": "s-masika-mvua",
+      "target": "Masika is the long rains.",
+      "base": "Masika ni mvua ndefu.",
+      "altTarget": ["Masika are the long rains.", "The long rains are masika."]
+    },
+    {
+      "id": "s-vuli-mvua-fupi",
+      "target": "Vuli is the short rains.",
+      "base": "Vuli ni mvua fupi.",
+      "altTarget": ["Vuli are the short rains.", "The short rains are vuli."]
+    },
+    {
+      "id": "s-kila-mwezi",
+      "target": "Every month I go to Mombasa.",
+      "base": "Kila mwezi ninaenda Mombasa.",
+      "altTarget": ["I go to Mombasa every month."]
+    },
+    {
+      "id": "s-kila-mwaka",
+      "target": "The long rains come every year.",
+      "base": "Masika yanakuja kila mwaka.",
+      "altTarget": ["The long rains come each year."]
+    },
+    { "id": "s-jana-ilinyesha", "target": "Yesterday it rained.", "base": "Jana mvua ilinyesha.", "altTarget": ["It rained yesterday."] },
+    { "id": "s-ilikuwa-baridi", "target": "It was very cold.", "base": "Ilikuwa baridi sana." },
+    { "id": "s-kulikuwa-na-upepo", "target": "It was windy.", "base": "Kulikuwa na upepo.", "altTarget": ["There was wind."] },
+    {
+      "id": "s-nilikuwa-nyumbani",
+      "target": "Yesterday I was at home.",
+      "base": "Jana nilikuwa nyumbani.",
+      "altTarget": ["I was at home yesterday."]
+    },
+    { "id": "s-zamani-sana", "target": "It was a very long time ago.", "base": "Ilikuwa zamani sana.", "altTarget": ["It was long ago."] }
+  ],
+  "skills": [
+    {
+      "id": "u12s1",
+      "title": "Jua, upepo na mawingu",
+      "icon": "flame",
+      "tip": "its-windy",
+      "lessons": [
+        {
+          "id": "u12s1l1",
+          "newWords": ["upepo", "mawingu", "radi", "jua-kali"],
+          "sentences": ["s-kuna-upepo", "s-kuna-mawingu", "s-radi-usiku", "s-jua-kali-leo"]
+        },
+        {
+          "id": "u12s1l2",
+          "newWords": ["kavu", "nyingi"],
+          "sentences": ["s-mvua-nyingi", "s-jua-kali-leo", "s-kuna-mawingu"],
+          "dialogues": [
+            {
+              "speaker": "juma",
+              "target": "Is there rain today?",
+              "base": "Leo kuna mvua?",
+              "options": ["No, there’s strong sun.", "It was a long time ago.", "I’m wearing a hat."],
+              "answer": "No, there’s strong sun."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u12s2",
+      "title": "Majira",
+      "icon": "clock",
+      "lessons": [
+        {
+          "id": "u12s2l1",
+          "newWords": ["msimu", "masika", "vuli", "kiangazi"],
+          "sentences": ["s-msimu-gani", "s-masika-mvua", "s-vuli-mvua-fupi", "s-kiangazi-kavu"]
+        },
+        {
+          "id": "u12s2l2",
+          "newWords": ["mwezi", "mwaka"],
+          "sentences": ["s-kila-mwezi", "s-kila-mwaka", "s-msimu-gani"],
+          "dialogues": [
+            {
+              "speaker": "emma",
+              "target": "Is it cold in Nairobi?",
+              "base": "Kuna baridi Nairobi?",
+              "options": ["Yes, it’s cold at night.", "Every month.", "Sweep outside."],
+              "answer": "Yes, it’s cold at night."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u12s3",
+      "title": "Jana",
+      "icon": "star",
+      "tip": "was-were",
+      "lessons": [
+        {
+          "id": "u12s3l1",
+          "newWords": ["ilinyesha", "ilikuwa", "kulikuwa-na"],
+          "sentences": ["s-jana-ilinyesha", "s-ilikuwa-baridi", "s-kulikuwa-na-upepo"]
+        },
+        {
+          "id": "u12s3l2",
+          "newWords": ["nilikuwa", "zamani"],
+          "sentences": ["s-nilikuwa-nyumbani", "s-zamani-sana", "s-jana-ilinyesha"],
+          "dialogues": [
+            {
+              "speaker": "amani",
+              "target": "How was yesterday?",
+              "base": "Jana ilikuwaje?",
+              "options": ["It was cold, and it rained.", "Bring water.", "What size?"],
+              "answer": "It was cold, and it rained."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Hali ya hewa kwa Kiingereza huanza na “It”, na jana huanza na “was”.",
+    "phrases": [
+      { "target": "It’s windy today.", "base": "Kuna upepo leo." },
+      { "target": "Strong sun today!", "base": "Jua kali leo!" },
+      { "target": "Which season?", "base": "Msimu gani?" },
+      { "target": "Yesterday it rained.", "base": "Jana mvua ilinyesha." },
+      { "target": "It was very cold.", "base": "Ilikuwa baridi sana." },
+      { "target": "Yesterday I was at home.", "base": "Jana nilikuwa nyumbani." }
+    ],
+    "tips": [
+      {
+        "id": "its-windy",
+        "title": "“It’s windy”",
+        "body": [
+          "Kiingereza huanza hali ya hewa kwa **It**: **It’s windy** (kuna upepo), **It’s cloudy** (kuna mawingu), **It’s sunny** (kuna jua).",
+          "Nomino nyingi huwa hali kwa kuongeza **-y**: **wind → windy**, **cloud → cloudy**, **sun → sunny**."
+        ]
+      },
+      {
+        "id": "was-were",
+        "title": "Jana: was na were",
+        "body": [
+          "Wakati uliopita wa **is/am** ni **was**: **It was cold.** (Kulikuwa na baridi.) **I was at home.** (Nilikuwa nyumbani.)",
+          "Kwa **you, we, they** tumia **were**: **We were at school.** Vitenzi vingi huongeza **-ed**: **rain → rained**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Masika na vuli",
+        "body": ["Kiingereza hakina majina ya masika na vuli. Sema **the long rains** na **the short rains**, na **the dry season** kwa kiangazi."]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-long-rains",
+      "title": "Masika",
+      "unlockAfter": "u12s3l2",
+      "cast": ["juma", "emma"],
+      "summary": "Juma na Emma wanaona mawingu ya masika yakija.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "juma",
+            "target": "Emma, look at the clouds! The long rains are here.",
+            "base": "Emma, angalia mawingu! Masika yamefika."
+          }
+        },
+        { "line": { "speaker": "emma", "target": "Yesterday it rained a lot too.", "base": "Jana pia mvua ilinyesha sana." } },
+        {
+          "question": "Jana hali ya hewa ilikuwaje?",
+          "options": ["Mvua ilinyesha sana", "Kulikuwa na jua", "Kulikuwa na upepo"],
+          "answer": 0
+        },
+        {
+          "line": { "speaker": "juma", "target": "Yes. The dry season was long this year.", "base": "Ndiyo. Kiangazi kilikuwa kirefu mwaka huu." }
+        },
+        { "question": "Nini kilikuwa kirefu mwaka huu?", "options": ["Kiangazi", "Masika", "Usiku"], "answer": 0 },
+        { "line": { "speaker": "emma", "target": "Thunder! Let’s go inside.", "base": "Kuna radi! Twende ndani." } },
+        { "line": { "speaker": "juma", "target": "Okay. Rain is a blessing for farmers.", "base": "Sawa. Mvua ni baraka kwa wakulima." } },
+        {
+          "question": "Emma anasemaje “kuna radi”?",
+          "options": ["There’s thunder", "It’s windy", "It’s cloudy"],
+          "answer": 0,
+          "optionsLang": "target"
+        }
+      ]
+    }
+  ]
+}
