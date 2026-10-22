@@ -8,6 +8,11 @@
  * so there the button shows the Share → Add to Home Screen steps instead.
  * Every install button is hidden once the app runs installed.
  *
+ * Chrome stops offering once the app is installed on the device, so a tap in
+ * the browser would only show steps. getInstalledRelatedApps() (Android
+ * Chrome, via `related_applications` in the manifest) tells us it's already
+ * there, and the buttons say "App installed" instead.
+ *
  * Buttons are plain markup with `data-install`; one document click handler
  * (initInstall) serves them all, and syncInstall() updates them when the
  * browser's offer arrives late or the app gets installed.
@@ -17,8 +22,10 @@ import { icon } from '../ui/icons.js';
 import { mascot } from '../illustrations/index.js';
 import { t } from '../i18n/index.js';
 
-let installPrompt = null;
+// index.html keeps an offer that came before this module loaded.
+let installPrompt = window.__installPrompt ?? null;
 let installed = false;
+let onDevice = false;
 
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
@@ -44,12 +51,14 @@ export function isIos(nav = navigator) {
 /**
  * - `installed`: running as the installed app, nothing to offer.
  * - `prompt`: the browser offered to install (Chrome, Edge, Android).
+ * - `onDevice`: open in the browser, but already installed on this device.
  * - `ios`: Safari on iPhone or iPad, installed by hand from the Share sheet.
  * - `manual`: anything else; the browser menu may have an install item.
  */
 export function installState() {
   if (installed || isStandalone()) return 'installed';
   if (installPrompt) return 'prompt';
+  if (onDevice) return 'onDevice';
   if (isIos()) return 'ios';
   return 'manual';
 }
@@ -78,6 +87,7 @@ export async function promptInstall() {
 const steps = (keys) => `<ol class="install-steps">${keys.map((k) => `<li>${escapeHtml(t(k))}</li>`).join('')}</ol>`;
 
 function instructions(state) {
+  if (state === 'onDevice') return `<p>${escapeHtml(t('install.onDeviceText'))}</p>`;
   if (state === 'ios') return steps(['install.iosStep1', 'install.iosStep2', 'install.iosStep3']);
   return `${steps(['install.manualStep1', 'install.manualStep2'])}<p class="muted">${escapeHtml(t('install.manualNote'))} ${escapeHtml(t('install.already'))}</p>`;
 }
@@ -88,7 +98,7 @@ export async function installApp() {
   if (state === 'installed') return true;
   if (state === 'prompt') return promptInstall();
   await openModal({
-    title: t('install.title'),
+    title: t(state === 'onDevice' ? 'install.onDeviceTitle' : 'install.title'),
     body: instructions(state),
     art: mascot({ pose: 'happy' }),
     actions: [{ label: t('install.ok'), value: 'ok' }],
@@ -98,9 +108,17 @@ export async function installApp() {
 
 /** A vermillion-edged button (compact for headers, `lg` for the hero); hidden once installed. */
 export function installButton(className = '', { size = 'md' } = {}) {
-  const label = escapeHtml(t('install.label'));
-  return `<button class="btn btn--secondary${size === 'lg' ? ' btn--lg' : ''} install-btn ${className}" type="button" data-install aria-label="${label}" title="${label}"${offerInstall() ? '' : ' hidden'}>
-    ${icon('install', { size: 20 })}<span class="install-btn__label">${label}</span><span class="install-btn__short" aria-hidden="true">${escapeHtml(t('install.short'))}</span></button>`;
+  const label = escapeHtml(installLabel());
+  return `<button class="btn btn--secondary${size === 'lg' ? ' btn--lg' : ''} install-btn ${className}" type="button" data-install aria-label="${label}" title="${label}"${offerInstall() ? '' : ' hidden'}>${installButtonInner()}</button>`;
+}
+
+const installLabel = () => t(installState() === 'onDevice' ? 'install.onDeviceLabel' : 'install.label');
+
+function installButtonInner() {
+  const there = installState() === 'onDevice';
+  const label = escapeHtml(t(there ? 'install.onDeviceLabel' : 'install.label'));
+  const short = escapeHtml(t(there ? 'install.onDeviceShort' : 'install.short'));
+  return `${icon(there ? 'check' : 'install', { size: 20 })}<span class="install-btn__label">${label}</span><span class="install-btn__short" aria-hidden="true">${short}</span>`;
 }
 
 const CARD_KEY = 'learn-luganda-install-card';
@@ -116,7 +134,7 @@ function cardSnoozed(now = Date.now()) {
 
 /** "Get the app" card for the Learn page; "Not now" hides it for two weeks. */
 export function installCard() {
-  if (!offerInstall() || cardSnoozed()) return '';
+  if (['installed', 'onDevice'].includes(installState()) || cardSnoozed()) return '';
   return `<section class="card install-card" data-install-card aria-labelledby="install-card-title">
     <span class="install-card__icon">${icon('install', { size: 30 })}</span>
     <div class="install-card__text">
@@ -146,11 +164,14 @@ export function syncInstall(root = document) {
   const show = offerInstall();
   root.querySelectorAll('.install-btn[data-install]').forEach((el) => {
     el.hidden = !show;
+    el.innerHTML = installButtonInner();
+    el.setAttribute('aria-label', installLabel());
+    el.title = installLabel();
   });
   root.querySelectorAll('[data-install-section]').forEach((el) => {
     el.innerHTML = installSection();
   });
-  if (!show) root.querySelectorAll('[data-install-card]').forEach((el) => el.remove());
+  if (!installCard() && !cardSnoozed()) root.querySelectorAll('[data-install-card]').forEach((el) => el.remove());
 }
 
 export function initInstall() {
@@ -166,6 +187,13 @@ export function initInstall() {
     }
   });
   window.matchMedia?.('(display-mode: standalone)').addEventListener?.('change', () => syncInstall());
+  navigator
+    .getInstalledRelatedApps?.()
+    .then((apps) => {
+      onDevice = apps.length > 0;
+      if (onDevice) syncInstall();
+    })
+    .catch(() => {});
 }
 
 export function registerServiceWorker() {

@@ -95,7 +95,35 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3);
+  margin-bottom: var(--space-3);
+}
+
+/* Get started leads; Install app follows; importing progress is a quiet link. */
+.hero__install.install-btn {
+  --btn-fg: var(--color-text);
+  --btn-shadow: var(--color-border);
+  border-color: var(--color-border);
+}
+
+.hero__install .icon {
+  color: var(--color-primary);
+}
+
+.hero__link {
+  display: inline-block;
   margin-bottom: var(--space-4);
+  color: var(--color-text-muted);
+  font-weight: var(--weight-medium);
+}
+
+.hero__link:hover {
+  color: var(--color-text);
+}
+
+@media (max-width: 559px) {
+  .hero__ctas .btn {
+    width: 100%;
+  }
 }
 
 .hero__copy {

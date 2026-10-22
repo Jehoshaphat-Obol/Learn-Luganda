@@ -92,6 +92,34 @@ test('the landing page offers Install in the header and the hero', async ({ page
   await expect(page.getByRole('dialog')).toContainText('Install app or Add to Home screen');
 });
 
+test('an install offer that comes before the app has loaded is kept', async ({ page }) => {
+  await page.addInitScript(() => {
+    document.addEventListener('readystatechange', () => {
+      if (document.readyState !== 'interactive') return;
+      const e = new Event('beforeinstallprompt', { cancelable: true });
+      e.prompt = () => (window.prompted = true);
+      e.userChoice = Promise.resolve({ outcome: 'accepted' });
+      window.dispatchEvent(e);
+    });
+  });
+  await page.goto('./');
+  await page.locator('.hero [data-install]').click();
+  await expect.poll(() => page.evaluate(() => window.prompted)).toBe(true);
+  await expect(page.getByRole('dialog')).toHaveCount(0);
+});
+
+test('when the app is already on the device, Install says so instead', async ({ page }) => {
+  await page.addInitScript(() => {
+    navigator.getInstalledRelatedApps = () => Promise.resolve([{ platform: 'webapp' }]);
+  });
+  await openWith(page, savedState(), '#/learn');
+  const install = page.locator('.topbar [data-install]');
+  await expect(install).toHaveAttribute('aria-label', 'App installed');
+  await expect(page.locator('[data-install-card]')).toHaveCount(0);
+  await install.click();
+  await expect(page.getByRole('dialog')).toContainText('Open it from your home screen');
+});
+
 test('"Not now" hides the Get the app card', async ({ page }) => {
   await openWith(page, savedState(), '#/learn');
   await page.locator('[data-install-later]').click();
