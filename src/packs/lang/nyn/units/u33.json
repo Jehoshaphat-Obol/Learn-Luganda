@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u33",
+  "words": {
+    "okusinga": { "text": "kukira" },
+    "asinga": { "text": "naakira" },
+    "kisinga": { "text": "nikikira" },
+    "obuwanvu": { "text": "oburaingwa" },
+    "obunene": { "text": "obuhango" },
+    "obulungi": { "text": "oburungi" },
+    "ekisinga": { "text": "ekirikukira" },
+    "okusinga-byonna": { "text": "kukira byona" },
+    "kye-kimu": { "text": "ni kimwe" },
+    "enjawulo": { "text": "enyawukano" },
+    "afaanana": { "text": "naashushana na" },
+    "nga": { "text": "nka" },
+    "zaidi": { "text": "kukiraho" },
+    "kuliko-wote": { "text": "kukira bona" },
+    "sawa-na": { "text": "ni kimwe na" },
+    "bora": { "text": "nikikiraho" },
+    "kidogo-zaidi": { "text": "kikye kukiraho" },
+    "mali": { "text": "obugaiga" }
+  },
+  "sentences": {
+    "s33-enjovu-okusinga-ente": { "text": "Enjojo ni mpango kukira ente." },
+    "s33-kampala-okusinga-masaka": { "text": "{@city} ni mpango kukira {@hometown}." },
+    "s33-ani-asinga-obuwanvu": { "text": "N'oha orikukira oburaingwa?" },
+    "s33-ssali-asinga": { "text": "{@ssali} niwe orikukira oburaingwa." },
+    "s33-kisinga-obunene": { "text": "Ekitabo eki nikikira obuhango." },
+    "s33-ekisinga-obulungi": { "text": "Eki nikyo ekirikukira oburungi." },
+    "s33-njagala-matooke-okusinga-byonna": { "text": "Ninkunda ebitookye kukira byona." },
+    "s33-kye-kimu": { "text": "Ebi byombi ni kimwe." },
+    "s33-si-kye-kimu": { "text": "Ti kimwe!" },
+    "s33-enjawulo": { "text": "Enyawukano eri nkahi?" },
+    "s33-afaanana-maama-we": { "text": "Naashushana na maama we." },
+    "s-kuliko": { "text": "Enjojo ni mpango kukira entare." },
+    "s-zaidi": { "text": "{@amara} ni muraingwa kukiraho." },
+    "s-kuliko-wote": { "text": "Kilimanjaro nikyo kirikukira byona oburaingwa." },
+    "s-sawa-na": { "text": "Ekikopo kyangye ni kimwe n'ekyawe." },
+    "s-tofauti": { "text": "Oruswahili n'Orungyereza nibyawukana." },
+    "s-kama": { "text": "Naashongora nk'ekinyonyi." },
+    "s-bora": { "text": "Amagara nigakira obugaiga." },
+    "s-kidogo-zaidi": { "text": "Erizooba enjura ni nkye kukiraho." }
+  },
+  "phrases": [
+    "Enjojo ni mpango kukira ente.",
+    "N'oha orikukira oburaingwa?",
+    "Eki nikyo ekirikukira oburungi.",
+    "Ninkunda ebitookye kukira byona.",
+    "Ti kimwe!",
+    "Naashushana na maama we."
+  ],
+  "dialogues": {
+    "u33s2l3": [{ "line": "Nookunda ki kukira byona?", "options": ["Ninkunda ebyeshongoro kukira byona.", "Ti kimwe.", "Enjojo ni mpango."] }]
+  },
+  "stories": {}
+}

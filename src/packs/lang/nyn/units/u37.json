@@ -1,0 +1,88 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u37",
+  "words": {
+    "amawulire": { "text": "amakuru" },
+    "owulidde": { "text": "Wahurira" },
+    "leediyo": { "text": "radiyo" },
+    "nti": { "text": "ngu" },
+    "agamba": { "text": "naagira" },
+    "bagamba": { "text": "nibagira" },
+    "olukiiko": { "text": "enteerane" },
+    "ssentebe": { "text": "sentebe" },
+    "ndowooza": { "text": "Nimbona" },
+    "endowooza": { "text": "ekitekateeko" },
+    "nzikiriza": { "text": "Naikiriza" },
+    "sikkiriza": { "text": "Tindikwikiriza" },
+    "jamii": { "text": "ekitundu" },
+    "kiongozi": { "text": "omwebembezi" },
+    "serikali": { "text": "gavumenti" },
+    "uchaguzi": { "text": "okutoora" },
+    "kura": { "text": "akaruru" },
+    "harambee": { "text": "okusorooza" },
+    "tusaidiane": { "text": "Tuhwerane" },
+    "tunapendana": { "text": "nitukundana" },
+    "gazeti": { "text": "orupapura rw'amakuru" },
+    "taarifa-ya-habari": { "text": "amakuru ga radiyo" },
+    "tukio": { "text": "ekyabaireho" },
+    "tatizo": { "text": "ekizibu" },
+    "suluhisho": { "text": "ekirikumaraho ekizibu" },
+    "kwa-maoni-yangu": { "text": "omu kitekateeko kyangye" },
+    "muhimu": { "text": "ni kikuru" }
+  },
+  "sentences": {
+    "s37-owulidde-amawulire": { "text": "Wahurira amakuru?" },
+    "s37-ku-leediyo": { "text": "Nkagahurira aha radiyo." },
+    "s37-agamba-nti": { "text": "Naagira ngu enjura neeija." },
+    "s37-bagamba-nti": { "text": "Nibagira ngu omuhanda omuhyaka gwahwa." },
+    "s37-olukiiko": { "text": "Enteerane eri aha Orwamukaaga." },
+    "s37-ssentebe": { "text": "Sentebe naagamba omu nteerane." },
+    "s37-ndowooza-nti": { "text": "Nimbona ngu ni kirungi." },
+    "s37-endowooza-yo": { "text": "Ekitekateeko kyawe ni ki?" },
+    "s37-nzikiriza": { "text": "Naikiriza ebi orikugamba." },
+    "s37-sikkiriza": { "text": "Tindikwikiriza. Nimbona ngu ti kirungi." },
+    "s-jamii": { "text": "Ekitundu kyaitu ni kihango." },
+    "s-mkutano": { "text": "Hariho enteerane nyenkya orweigoro." },
+    "s-kiongozi": { "text": "Omwebembezi waitu n'omukazi omukugu." },
+    "s-serikali": { "text": "Gavumenti neeza kwombeka eishomero ehyaka." },
+    "s-uchaguzi": { "text": "Okutoora kuryaba omwaka ogurikwija." },
+    "s-kura": { "text": "Ndiiteeka akaruru." },
+    "s-harambee": { "text": "Nitusorooza esente z'eirwariro." },
+    "s-tusaidiane": { "text": "Tuhwerane!" },
+    "s-tunapendana": { "text": "Omu ka yaitu nitukundana." },
+    "s-gazeti": { "text": "Taata naasoma orupapura rw'amakuru buri nyenkyakare." },
+    "s-redio": { "text": "Nkahurira amakuru aha radiyo." },
+    "s-taarifa": { "text": "Amakuru gari shaaha ibiri z'ekiro." },
+    "s-tukio": { "text": "Ekyabaireho kikabaho omu rurembo nyomwabazyo." },
+    "s-tatizo": { "text": "Ekizibu ekihango n'amaizi." },
+    "s-suluhisho": { "text": "Nitwenda ekirikumaraho ekizibu." },
+    "s-maoni": { "text": "Ekitekateeko kyawe n'eki?" },
+    "s-nadhani": { "text": "Nimbona ngu enjura neeza kugwa erizooba." },
+    "s-kwa-maoni-yangu": { "text": "Omu kitekateeko kyangye, eishomero ni rikuru munonga." },
+    "s-nakubali": { "text": "Naikiriza, ni mazima." },
+    "s-sikubaliani": { "text": "Mbabarira, tindikwikiriza ebi orikugamba." }
+  },
+  "phrases": [
+    "Wahurira amakuru?",
+    "Naagira ngu enjura neeija.",
+    "Nibagira ngu omuhanda omuhyaka gwahwa.",
+    "Nimbona ngu ni kirungi.",
+    "Ekitekateeko kyawe ni ki?",
+    "Naikiriza ebi orikugamba."
+  ],
+  "dialogues": {
+    "u37s2l3": [
+      {
+        "line": "Wahurira amakuru?",
+        "options": ["Ego! Nibagira ngu omuhanda omuhyaka gwahwa.", "Nakunda caai.", "Kare na kare, ekiro kimwe…"]
+      }
+    ],
+    "u37s3l3": [
+      {
+        "line": "Nimbona ngu tutere emiti omu kyaro. Ekitekateeko kyawe ni ki?",
+        "options": ["Naikiriza ebi orikugamba!", "Wahurira aha radiyo?", "Naiguta."]
+      }
+    ]
+  },
+  "stories": {}
+}

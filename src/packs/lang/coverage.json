@@ -4,7 +4,7 @@
     "en": { "target": 1, "base": 1 },
     "fr": { "target": 1, "base": 1 },
     "lg": { "target": 1, "base": 1 },
-    "nyn": { "target": 0.758, "base": 0.775 },
+    "nyn": { "target": 1, "base": 1 },
     "sw": { "target": 1, "base": 1 }
   },
   "about": {
