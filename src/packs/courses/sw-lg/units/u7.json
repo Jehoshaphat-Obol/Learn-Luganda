@@ -1,0 +1,402 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u7",
+  "title": "Nyumbani",
+  "description": "Vyumba na samani, kukaribisha wageni na kuomba vitu.",
+  "color": "blush",
+  "character": "jjajja",
+  "words": [
+    {
+      "id": "ennyumba",
+      "target": "ennyumba",
+      "base": "nyumba",
+      "altBase": [
+        "nyumbani",
+        "makazi"
+      ]
+    },
+    {
+      "id": "ekisenge",
+      "target": "ekisenge",
+      "base": "chumba",
+      "altBase": [
+        "chumbani"
+      ]
+    },
+    {
+      "id": "effumbiro",
+      "target": "effumbiro",
+      "base": "jiko",
+      "altBase": [
+        "jikoni"
+      ]
+    },
+    {
+      "id": "oluggi",
+      "target": "oluggi",
+      "base": "mlango"
+    },
+    {
+      "id": "eddirisa",
+      "target": "eddirisa",
+      "base": "dirisha"
+    },
+    {
+      "id": "entebe",
+      "target": "entebe",
+      "base": "kiti"
+    },
+    {
+      "id": "emmeeza",
+      "target": "emmeeza",
+      "base": "meza"
+    },
+    {
+      "id": "ettaala",
+      "target": "ettaala",
+      "base": "taa"
+    },
+    {
+      "id": "kkodi",
+      "target": "Kkodi!",
+      "base": "Hodi!",
+      "altBase": [
+        "hodi hodi"
+      ],
+      "notes": "Huitwa mlangoni badala ya kugonga, kama Kiswahili “Hodi!”."
+    },
+    {
+      "id": "yingira",
+      "target": "Yingira",
+      "base": "Karibu ndani",
+      "altBase": [
+        "karibu",
+        "ingia",
+        "pita ndani"
+      ]
+    },
+    {
+      "id": "tuula",
+      "target": "Tuula",
+      "base": "Kaa",
+      "altBase": [
+        "keti",
+        "kaa chini",
+        "karibu kiti"
+      ]
+    },
+    {
+      "id": "wansi",
+      "target": "wansi",
+      "base": "chini",
+      "altBase": [
+        "sakafuni"
+      ]
+    },
+    {
+      "id": "tusanyuse",
+      "target": "Tusanyuse",
+      "base": "Tumefurahi",
+      "altBase": [
+        "tunafurahi",
+        "tumefurahi sana"
+      ]
+    },
+    {
+      "id": "ggalawo",
+      "target": "Ggalawo",
+      "base": "Funga"
+    },
+    {
+      "id": "ggulawo",
+      "target": "Ggulawo",
+      "base": "Fungua"
+    },
+    {
+      "id": "ndeetera",
+      "target": "Ndeetera",
+      "base": "Niletee",
+      "altBase": [
+        "nilete",
+        "niletee tafadhali"
+      ]
+    },
+    {
+      "id": "mpa",
+      "target": "Mpa",
+      "base": "Nipe",
+      "altBase": [
+        "nipatie",
+        "nipe tafadhali"
+      ]
+    },
+    {
+      "id": "ssaako",
+      "target": "Ssaako",
+      "base": "Washa",
+      "altBase": [
+        "washa taa"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s-ennyumba-yange",
+      "target": "Ennyumba yange.",
+      "base": "Nyumba yangu.",
+      "notes": "Majina ya ngeli ya n- huchukua yange, kama Kiswahili nyumba yangu."
+    },
+    {
+      "id": "s-ekisenge-kyange",
+      "target": "Ekisenge kyange.",
+      "base": "Chumba changu."
+    },
+    {
+      "id": "s-maama-mu-ffumbiro",
+      "target": "Maama ali mu ffumbiro.",
+      "base": "Mama yuko jikoni.",
+      "altBase": [
+        "Mama yangu yuko jikoni.",
+        "Mama yupo jikoni."
+      ],
+      "notes": "ali = yuko (mahali fulani). Linganisha a- ya Kiswahili."
+    },
+    {
+      "id": "s-kkodi-yingira",
+      "target": "Kkodi! Yingira!",
+      "base": "Hodi! Karibu ndani!",
+      "altBase": [
+        "Hodi! Karibu!",
+        "Hodi! Ingia!"
+      ]
+    },
+    {
+      "id": "s-tuula-wansi",
+      "target": "Tuula wansi.",
+      "base": "Kaa chini.",
+      "altBase": [
+        "Keti chini.",
+        "Kaa."
+      ]
+    },
+    {
+      "id": "s-tuula-ku-ntebe",
+      "target": "Tuula ku ntebe.",
+      "base": "Kaa kitini.",
+      "altBase": [
+        "Keti kitini.",
+        "Kaa kwenye kiti."
+      ]
+    },
+    {
+      "id": "s-tusanyuse-okukulaba",
+      "target": "Tusanyuse okukulaba.",
+      "base": "Tumefurahi kukuona.",
+      "altBase": [
+        "Tunafurahi kukuona.",
+        "Tumefurahi sana kukuona."
+      ]
+    },
+    {
+      "id": "s-ggalawo-oluggi",
+      "target": "Ggalawo oluggi.",
+      "base": "Funga mlango."
+    },
+    {
+      "id": "s-ggulawo-eddirisa",
+      "target": "Ggulawo eddirisa.",
+      "base": "Fungua dirisha."
+    },
+    {
+      "id": "s-ndeetera-amazzi",
+      "target": "Ndeetera amazzi.",
+      "base": "Niletee maji.",
+      "altBase": [
+        "Niletee maji tafadhali."
+      ]
+    },
+    {
+      "id": "s-mpa-ekikopo",
+      "target": "Mpa ekikopo.",
+      "base": "Nipe kikombe.",
+      "altBase": [
+        "Nipatie kikombe."
+      ]
+    },
+    {
+      "id": "s-ssaako-ettaala",
+      "target": "Ssaako ettaala.",
+      "base": "Washa taa."
+    }
+  ],
+  "skills": [
+    {
+      "id": "u7s1",
+      "title": "Vyumba",
+      "icon": "home",
+      "lessons": [
+        {
+          "id": "u7s1l1",
+          "newWords": [
+            "ennyumba",
+            "ekisenge",
+            "effumbiro"
+          ],
+          "sentences": [
+            "s-ennyumba-yange",
+            "s-ekisenge-kyange",
+            "s-maama-mu-ffumbiro"
+          ]
+        },
+        {
+          "id": "u7s1l2",
+          "newWords": [
+            "oluggi",
+            "eddirisa",
+            "entebe",
+            "emmeeza",
+            "ettaala"
+          ],
+          "sentences": [
+            "s-ennyumba-yange",
+            "s-ekisenge-kyange"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u7s2",
+      "title": "Kukaribisha wageni",
+      "icon": "heart",
+      "tip": "visiting",
+      "lessons": [
+        {
+          "id": "u7s2l1",
+          "newWords": [
+            "kkodi",
+            "yingira",
+            "tuula",
+            "wansi"
+          ],
+          "sentences": [
+            "s-kkodi-yingira",
+            "s-tuula-wansi",
+            "s-tuula-ku-ntebe"
+          ]
+        },
+        {
+          "id": "u7s2l2",
+          "newWords": [
+            "tusanyuse"
+          ],
+          "sentences": [
+            "s-tusanyuse-okukulaba",
+            "s-kkodi-yingira",
+            "s-tuula-ku-ntebe"
+          ],
+          "dialogues": [
+            {
+              "speaker": "jjajja",
+              "target": "Kkodi!",
+              "base": "Hodi!",
+              "options": [
+                "Yingira! Tusanyuse okukulaba.",
+                "Ggalawo oluggi.",
+                "Ssaawa mmeka?"
+              ],
+              "answer": "Yingira! Tusanyuse okukulaba."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u7s3",
+      "title": "Ndani ya nyumba",
+      "icon": "bolt",
+      "tip": "commands",
+      "lessons": [
+        {
+          "id": "u7s3l1",
+          "newWords": [
+            "ggalawo",
+            "ggulawo",
+            "ssaako"
+          ],
+          "sentences": [
+            "s-ggalawo-oluggi",
+            "s-ggulawo-eddirisa",
+            "s-ssaako-ettaala"
+          ]
+        },
+        {
+          "id": "u7s3l2",
+          "newWords": [
+            "ndeetera",
+            "mpa"
+          ],
+          "sentences": [
+            "s-ndeetera-amazzi",
+            "s-mpa-ekikopo",
+            "s-ggalawo-oluggi"
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Kumtembelea mtu nyumbani ni sehemu kubwa ya maisha ya kijamii. Utasikia na kutumia maneno haya tangu unapofika.",
+    "phrases": [
+      {
+        "target": "Kkodi!",
+        "base": "Hodi!"
+      },
+      {
+        "target": "Yingira!",
+        "base": "Karibu ndani!"
+      },
+      {
+        "target": "Tuula wansi.",
+        "base": "Kaa chini."
+      },
+      {
+        "target": "Tusanyuse okukulaba.",
+        "base": "Tumefurahi kukuona."
+      },
+      {
+        "target": "Ggalawo oluggi.",
+        "base": "Funga mlango."
+      },
+      {
+        "target": "Ndeetera amazzi.",
+        "base": "Niletee maji."
+      }
+    ],
+    "tips": [
+      {
+        "id": "visiting",
+        "title": "Kufika nyumbani kwa mtu",
+        "body": [
+          "Badala ya kugonga, ita **Kkodi!** mlangoni, kama **Hodi!** ya Kiswahili (wenyeji hujibu “Karibu!”). Mwenyeji hujibu **Yingira** (ingia) na kukupa kiti: **Tuula** (kaa). Kisha zinafuata salamu ndefu za Sehemu ya 1."
+        ]
+      },
+      {
+        "id": "commands",
+        "title": "Kuomba na kuamuru",
+        "body": [
+          "Amri ni shina la kitenzi tu, kama Kiswahili (kaa, nenda): **Tuula** (kaa), **Yingira** (ingia), **Genda** (nenda). Ongeza **m-** au **n-** kwa “mimi”, kama Kiswahili **ni-**: **Mpa** (nipe), **Ndeetera** (niletee), **Ntwala** (nipeleke).",
+          "Kumalizia ombi kwa neno la heshima kama **ssebo** au **nnyabo**, au kuanza na **Bambi** (tafadhali, kwa upole), hulifanya kuwa la upole."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Usitembelee mikono mitupu",
+        "body": [
+          "Wageni mara nyingi huleta sukari, mkate, sabuni au matunda. Wenyeji hutoa chai au chakula, na mgeni husindikizwa sehemu ya njia anaporudi nyumbani."
+        ]
+      }
+    ]
+  },
+  "stories": []
+}

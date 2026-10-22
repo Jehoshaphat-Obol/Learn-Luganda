@@ -1,0 +1,1020 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u1",
+  "title": "Salamu",
+  "description": "Salimia, jitambulishe na hesabu hadi kumi.",
+  "color": "vermillion",
+  "character": "nakato",
+  "words": [
+    {
+      "id": "oli-otya",
+      "target": "Oli otya?",
+      "base": "Habari yako?",
+      "altBase": [
+        "u hali gani",
+        "hujambo",
+        "habari",
+        "mambo"
+      ],
+      "notes": "Salamu ya kawaida kwa mtu mmoja."
+    },
+    {
+      "id": "gyendi",
+      "target": "Gyendi",
+      "base": "Nzuri",
+      "altBase": [
+        "salama",
+        "njema",
+        "sijambo",
+        "niko salama",
+        "niko poa"
+      ],
+      "notes": "Jibu la kawaida kwa Oli otya?"
+    },
+    {
+      "id": "bulungi",
+      "target": "Bulungi",
+      "base": "Vizuri",
+      "altBase": [
+        "nzuri",
+        "sawa",
+        "safi"
+      ]
+    },
+    {
+      "id": "weebale",
+      "target": "Weebale",
+      "base": "Asante",
+      "altBase": [
+        "ahsante"
+      ]
+    },
+    {
+      "id": "nnyo",
+      "target": "nnyo",
+      "base": "sana",
+      "altBase": [
+        "mno"
+      ]
+    },
+    {
+      "id": "kale",
+      "target": "Kale",
+      "base": "Sawa",
+      "altBase": [
+        "haya",
+        "sawasawa"
+      ]
+    },
+    {
+      "id": "ssebo",
+      "target": "ssebo",
+      "base": "bwana",
+      "notes": "Njia ya heshima ya kumwita mwanamume, kama “bwana” au “mzee”.",
+      "altBase": [
+        "mzee",
+        "bwana mkubwa"
+      ]
+    },
+    {
+      "id": "nnyabo",
+      "target": "nnyabo",
+      "base": "mama",
+      "altBase": [
+        "bibi"
+      ],
+      "notes": "Njia ya heshima ya kumwita mwanamke, kama “mama” au “bibi”."
+    },
+    {
+      "id": "yee",
+      "target": "Yee",
+      "base": "Ndiyo",
+      "altBase": [
+        "ndio"
+      ]
+    },
+    {
+      "id": "nedda",
+      "target": "Nedda",
+      "base": "Hapana",
+      "altBase": [
+        "la"
+      ]
+    },
+    {
+      "id": "wasuze-otya",
+      "target": "Wasuze otya?",
+      "base": "Habari za asubuhi",
+      "altBase": [
+        "umeamkaje",
+        "ulilalaje",
+        "habari ya asubuhi",
+        "asubuhi njema"
+      ],
+      "notes": "Maana yake halisi ni “ulilalaje?”, husemwa kwa mtu mmoja asubuhi."
+    },
+    {
+      "id": "nsuze-bulungi",
+      "target": "Nsuze bulungi",
+      "base": "Nimelala salama",
+      "altBase": [
+        "nimelala vizuri",
+        "nimeamka salama",
+        "salama"
+      ]
+    },
+    {
+      "id": "osiibye-otya",
+      "target": "Osiibye otya?",
+      "base": "Habari za mchana",
+      "altBase": [
+        "habari za jioni",
+        "umeshindaje",
+        "umeshindaje leo",
+        "habari ya mchana"
+      ],
+      "notes": "Maana yake halisi ni “umeshindaje?”"
+    },
+    {
+      "id": "gyebale-ko",
+      "target": "Gyebale ko",
+      "base": "Pole na kazi",
+      "altBase": [
+        "pole kwa kazi",
+        "hongera kwa kazi",
+        "kazi nzuri"
+      ],
+      "notes": "Salamu kwa mtu anayefanya kazi."
+    },
+    {
+      "id": "weraba",
+      "target": "Weraba",
+      "base": "Kwaheri",
+      "altBase": [
+        "kwa heri",
+        "baibai"
+      ],
+      "notes": "Kwa mtu mmoja."
+    },
+    {
+      "id": "tunaalabagana",
+      "target": "Tunaalabagana",
+      "base": "Tutaonana",
+      "altBase": [
+        "tutaonana baadaye",
+        "tutaonana tena",
+        "baadaye"
+      ]
+    },
+    {
+      "id": "nze",
+      "target": "Nze",
+      "base": "Mimi",
+      "altBase": [
+        "mimi ni"
+      ]
+    },
+    {
+      "id": "ggwe",
+      "target": "Ggwe",
+      "base": "Wewe",
+      "notes": "Mtu mmoja."
+    },
+    {
+      "id": "erinnya",
+      "target": "erinnya",
+      "base": "jina"
+    },
+    {
+      "id": "lyange",
+      "target": "lyange",
+      "base": "langu",
+      "notes": "Hukubaliana na erinnya: erinnya lyange, jina langu. Kama Kiswahili jina → langu."
+    },
+    {
+      "id": "lyo",
+      "target": "lyo",
+      "base": "lako",
+      "notes": "Hukubaliana na erinnya: erinnya lyo, jina lako."
+    },
+    {
+      "id": "ani",
+      "target": "ani",
+      "base": "nani",
+      "altBase": [
+        "gani"
+      ]
+    },
+    {
+      "id": "mbeera",
+      "target": "Mbeera",
+      "base": "Ninaishi",
+      "altBase": [
+        "naishi",
+        "ninakaa",
+        "nakaa"
+      ]
+    },
+    {
+      "id": "ova-wa",
+      "target": "Ova wa?",
+      "base": "Unatoka wapi?",
+      "altBase": [
+        "watoka wapi",
+        "wewe ni wa wapi",
+        "unatokea wapi"
+      ]
+    },
+    {
+      "id": "nva",
+      "target": "Nva",
+      "base": "Ninatoka",
+      "altBase": [
+        "natoka",
+        "mimi ni wa",
+        "ninatokea"
+      ]
+    },
+    {
+      "id": "ndi",
+      "target": "Ndi",
+      "base": "Mimi ni",
+      "altBase": [
+        "ni",
+        "niko"
+      ]
+    },
+    {
+      "id": "muyizi",
+      "target": "muyizi",
+      "base": "mwanafunzi"
+    },
+    {
+      "id": "nsanyuse-okukulaba",
+      "target": "Nsanyuse okukulaba",
+      "base": "Nimefurahi kukuona",
+      "altBase": [
+        "nafurahi kukuona",
+        "nimefurahi kukutana nawe",
+        "nimefurahi kukufahamu",
+        "furaha kukuona"
+      ]
+    },
+    {
+      "id": "emu",
+      "target": "emu",
+      "base": "moja",
+      "altBase": [
+        "1"
+      ]
+    },
+    {
+      "id": "bbiri",
+      "target": "bbiri",
+      "base": "mbili",
+      "altBase": [
+        "2"
+      ]
+    },
+    {
+      "id": "ssatu",
+      "target": "ssatu",
+      "base": "tatu",
+      "altBase": [
+        "3"
+      ]
+    },
+    {
+      "id": "nnya",
+      "target": "nnya",
+      "base": "nne",
+      "altBase": [
+        "4"
+      ]
+    },
+    {
+      "id": "ttaano",
+      "target": "ttaano",
+      "base": "tano",
+      "altBase": [
+        "5"
+      ]
+    },
+    {
+      "id": "mukaaga",
+      "target": "mukaaga",
+      "base": "sita",
+      "altBase": [
+        "6"
+      ]
+    },
+    {
+      "id": "musanvu",
+      "target": "musanvu",
+      "base": "saba",
+      "altBase": [
+        "7"
+      ]
+    },
+    {
+      "id": "munaana",
+      "target": "munaana",
+      "base": "nane",
+      "altBase": [
+        "8"
+      ]
+    },
+    {
+      "id": "mwenda",
+      "target": "mwenda",
+      "base": "tisa",
+      "altBase": [
+        "9"
+      ]
+    },
+    {
+      "id": "kkumi",
+      "target": "kkumi",
+      "base": "kumi",
+      "altBase": [
+        "10"
+      ]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s-oli-otya-ssebo",
+      "target": "Oli otya, ssebo?",
+      "base": "Habari yako, bwana?",
+      "altBase": [
+        "Hujambo, bwana?",
+        "U hali gani, bwana?",
+        "Habari, mzee?"
+      ]
+    },
+    {
+      "id": "s-oli-otya-nnyabo",
+      "target": "Oli otya, nnyabo?",
+      "base": "Habari yako, mama?",
+      "altBase": [
+        "Hujambo, mama?",
+        "U hali gani, mama?",
+        "Habari, bibi?"
+      ]
+    },
+    {
+      "id": "s-gyendi-weebale",
+      "target": "Gyendi, weebale.",
+      "base": "Nzuri, asante.",
+      "altBase": [
+        "Salama, asante.",
+        "Sijambo, asante.",
+        "Njema, asante.",
+        "Nzuri, ahsante."
+      ]
+    },
+    {
+      "id": "s-weebale-nnyo",
+      "target": "Weebale nnyo.",
+      "base": "Asante sana.",
+      "altBase": [
+        "Ahsante sana.",
+        "Asante mno."
+      ]
+    },
+    {
+      "id": "s-yee-ssebo",
+      "target": "Yee, ssebo.",
+      "base": "Ndiyo, bwana.",
+      "altBase": [
+        "Ndio, bwana.",
+        "Ndiyo, mzee."
+      ]
+    },
+    {
+      "id": "s-nedda-nnyabo",
+      "target": "Nedda, nnyabo.",
+      "base": "Hapana, mama.",
+      "altBase": [
+        "Hapana, bibi."
+      ]
+    },
+    {
+      "id": "s-wasuze-otya-nnyabo",
+      "target": "Wasuze otya, nnyabo?",
+      "base": "Habari za asubuhi, mama.",
+      "altBase": [
+        "Umeamkaje, mama?",
+        "Ulilalaje, mama?",
+        "Habari ya asubuhi, mama."
+      ]
+    },
+    {
+      "id": "s-nsuze-bulungi",
+      "target": "Nsuze bulungi, weebale.",
+      "base": "Nimelala salama, asante.",
+      "altBase": [
+        "Nimelala vizuri, asante.",
+        "Nimeamka salama, asante."
+      ]
+    },
+    {
+      "id": "s-osiibye-otya-ssebo",
+      "target": "Osiibye otya, ssebo?",
+      "base": "Habari za mchana, bwana.",
+      "altBase": [
+        "Habari za jioni, bwana.",
+        "Umeshindaje, bwana?"
+      ]
+    },
+    {
+      "id": "s-gyebale-ko-ssebo",
+      "target": "Gyebale ko, ssebo.",
+      "base": "Pole na kazi, bwana.",
+      "altBase": [
+        "Pole kwa kazi, bwana.",
+        "Hongera kwa kazi, bwana."
+      ]
+    },
+    {
+      "id": "s-kale-weraba",
+      "target": "Kale, weraba.",
+      "base": "Sawa, kwaheri.",
+      "altBase": [
+        "Haya, kwaheri.",
+        "Sawasawa, kwaheri."
+      ]
+    },
+    {
+      "id": "s-weraba-tunaalabagana",
+      "target": "Weraba, tunaalabagana.",
+      "base": "Kwaheri, tutaonana.",
+      "altBase": [
+        "Kwaheri, tutaonana baadaye.",
+        "Kwaheri, tutaonana tena."
+      ]
+    },
+    {
+      "id": "s-nze-nakato",
+      "target": "Nze Nakato.",
+      "base": "Mimi ni Nakato.",
+      "altBase": [
+        "Naitwa Nakato.",
+        "Jina langu ni Nakato."
+      ]
+    },
+    {
+      "id": "s-erinnya-lyo-ani",
+      "target": "Erinnya lyo ani?",
+      "base": "Jina lako ni nani?",
+      "altBase": [
+        "Unaitwa nani?",
+        "Jina lako nani?"
+      ]
+    },
+    {
+      "id": "s-erinnya-lyange-mukasa",
+      "target": "Erinnya lyange Mukasa.",
+      "base": "Jina langu ni Mukasa.",
+      "altBase": [
+        "Naitwa Mukasa.",
+        "Ninaitwa Mukasa."
+      ]
+    },
+    {
+      "id": "s-ggwe-ani",
+      "target": "Ggwe ani?",
+      "base": "Wewe ni nani?"
+    },
+    {
+      "id": "s-mbeera-kampala",
+      "target": "Mbeera Kampala.",
+      "base": "Ninaishi Kampala.",
+      "altBase": [
+        "Naishi Kampala.",
+        "Ninakaa Kampala."
+      ]
+    },
+    {
+      "id": "s-nva-masaka",
+      "target": "Nva Masaka.",
+      "base": "Ninatoka Masaka.",
+      "altBase": [
+        "Natoka Masaka.",
+        "Mimi ni wa Masaka."
+      ]
+    },
+    {
+      "id": "s-ndi-muyizi",
+      "target": "Ndi muyizi.",
+      "base": "Mimi ni mwanafunzi.",
+      "altBase": [
+        "Ni mwanafunzi."
+      ]
+    },
+    {
+      "id": "s-nsanyuse-okukulaba",
+      "target": "Nsanyuse okukulaba, Ssali.",
+      "base": "Nimefurahi kukuona, Ssali.",
+      "altBase": [
+        "Nafurahi kukuona, Ssali.",
+        "Nimefurahi kukutana nawe, Ssali."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u1s1",
+      "title": "Salamu za kwanza",
+      "icon": "star",
+      "lessons": [
+        {
+          "id": "u1s1l1",
+          "newWords": [
+            "oli-otya",
+            "gyendi",
+            "weebale",
+            "ssebo",
+            "nnyabo"
+          ],
+          "sentences": [
+            "s-oli-otya-ssebo",
+            "s-oli-otya-nnyabo",
+            "s-gyendi-weebale"
+          ]
+        },
+        {
+          "id": "u1s1l2",
+          "newWords": [
+            "yee",
+            "nedda",
+            "nnyo",
+            "kale",
+            "bulungi"
+          ],
+          "sentences": [
+            "s-weebale-nnyo",
+            "s-yee-ssebo",
+            "s-nedda-nnyabo",
+            "s-gyendi-weebale"
+          ]
+        },
+        {
+          "id": "u1s1l3",
+          "newWords": [
+            "wasuze-otya",
+            "nsuze-bulungi",
+            "osiibye-otya",
+            "gyebale-ko"
+          ],
+          "sentences": [
+            "s-wasuze-otya-nnyabo",
+            "s-nsuze-bulungi",
+            "s-osiibye-otya-ssebo",
+            "s-gyebale-ko-ssebo"
+          ],
+          "dialogues": [
+            {
+              "speaker": "jjajja",
+              "target": "Wasuze otya, mwana wange?",
+              "base": "Habari za asubuhi, mwanangu.",
+              "options": [
+                "Nsuze bulungi, nnyabo.",
+                "Weraba, nnyabo.",
+                "Nedda, ssebo."
+              ],
+              "answer": "Nsuze bulungi, nnyabo."
+            }
+          ]
+        },
+        {
+          "id": "u1s1l4",
+          "newWords": [
+            "weraba",
+            "tunaalabagana"
+          ],
+          "sentences": [
+            "s-kale-weraba",
+            "s-weraba-tunaalabagana",
+            "s-weebale-nnyo",
+            "s-gyebale-ko-ssebo"
+          ],
+          "dialogues": [
+            {
+              "speaker": "ssali",
+              "target": "Kale, weraba!",
+              "base": "Sawa, kwaheri!",
+              "options": [
+                "Weraba, tunaalabagana.",
+                "Wasuze otya?",
+                "Gyendi."
+              ],
+              "answer": "Weraba, tunaalabagana."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u1s2",
+      "title": "Kujitambulisha",
+      "icon": "profile",
+      "lessons": [
+        {
+          "id": "u1s2l1",
+          "newWords": [
+            "nze",
+            "ggwe",
+            "erinnya",
+            "lyange",
+            "lyo",
+            "ani"
+          ],
+          "sentences": [
+            "s-nze-nakato",
+            "s-erinnya-lyo-ani",
+            "s-erinnya-lyange-mukasa",
+            "s-ggwe-ani"
+          ]
+        },
+        {
+          "id": "u1s2l2",
+          "newWords": [
+            "mbeera",
+            "ova-wa",
+            "nva"
+          ],
+          "sentences": [
+            "s-mbeera-kampala",
+            "s-nva-masaka",
+            "s-nze-nakato"
+          ]
+        },
+        {
+          "id": "u1s2l3",
+          "newWords": [
+            "ndi",
+            "muyizi",
+            "nsanyuse-okukulaba"
+          ],
+          "sentences": [
+            "s-ndi-muyizi",
+            "s-nsanyuse-okukulaba",
+            "s-erinnya-lyo-ani",
+            "s-mbeera-kampala"
+          ],
+          "dialogues": [
+            {
+              "speaker": "mukasa",
+              "target": "Erinnya lyo ani?",
+              "base": "Jina lako ni nani?",
+              "options": [
+                "Nze Amara.",
+                "Mbeera Kampala.",
+                "Gyebale ko."
+              ],
+              "answer": "Nze Amara."
+            },
+            {
+              "speaker": "emma",
+              "target": "Nze Emma. Ova wa?",
+              "base": "Mimi ni Emma. Unatoka wapi?",
+              "options": [
+                "Nva Masaka.",
+                "Ndi muyizi.",
+                "Weebale nnyo."
+              ],
+              "answer": "Nva Masaka."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u1s3",
+      "title": "Namba 1–10",
+      "icon": "target",
+      "lessons": [
+        {
+          "id": "u1s3l1",
+          "newWords": [
+            "emu",
+            "bbiri",
+            "ssatu",
+            "nnya",
+            "ttaano"
+          ],
+          "sentences": []
+        },
+        {
+          "id": "u1s3l2",
+          "newWords": [
+            "mukaaga",
+            "musanvu",
+            "munaana",
+            "mwenda",
+            "kkumi"
+          ],
+          "sentences": []
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Salamu ndizo moyo wa mazungumzo Buganda. Hakuna anayeuliza njia au kununua embe kabla ya kusalimia kwanza. Kama Waswahili, Waganda hawaanzi jambo bila salamu.",
+    "phrases": [
+      {
+        "target": "Oli otya?",
+        "base": "Habari yako?"
+      },
+      {
+        "target": "Gyendi, weebale.",
+        "base": "Nzuri, asante."
+      },
+      {
+        "target": "Wasuze otya?",
+        "base": "Habari za asubuhi (ulilalaje?)"
+      },
+      {
+        "target": "Nsuze bulungi.",
+        "base": "Nimelala salama."
+      },
+      {
+        "target": "Osiibye otya?",
+        "base": "Habari za mchana (umeshindaje?)"
+      },
+      {
+        "target": "Gyebale ko!",
+        "base": "Pole na kazi! (kwa mtu anayefanya kazi)"
+      },
+      {
+        "target": "Erinnya lyo ani?",
+        "base": "Jina lako ni nani?"
+      },
+      {
+        "target": "Nze Nakato.",
+        "base": "Mimi ni Nakato."
+      },
+      {
+        "target": "Nva Masaka.",
+        "base": "Ninatoka Masaka."
+      },
+      {
+        "target": "Weraba, tunaalabagana.",
+        "base": "Kwaheri, tutaonana."
+      }
+    ],
+    "tips": [
+      {
+        "id": "time-of-day",
+        "title": "Salamu hufuata saa",
+        "body": [
+          "Mpaka karibu saa sita mchana, uliza **Wasuze otya?**, maana yake halisi “ulilalaje?”, kama Kiswahili “umeamkaje?”. Jibu **Nsuze bulungi** (nimelala salama) au **Bulungi** tu.",
+          "Baadaye mchana, tumia **Osiibye otya?**, “umeshindaje?”. **Oli otya?** (habari yako?) inafaa wakati wowote."
+        ]
+      },
+      {
+        "id": "one-or-many",
+        "title": "Mtu mmoja au wengi",
+        "body": [
+          "Salamu hubadilika ukiongea na kundi, kama Kiswahili **hujambo → hamjambo**. Maumbo ya umoja katika sehemu hii huanza na **w-** au **o-**; maumbo ya wingi huanza na **mw-** au **mu-** (linganisha Kiswahili **u-** na **m-**: umelala / mmelala)."
+        ],
+        "table": [
+          [
+            "Mtu mmoja",
+            "Watu wengi",
+            "Kiswahili"
+          ],
+          [
+            "Wasuze otya?",
+            "Mwasuze mutya?",
+            "Habari za asubuhi"
+          ],
+          [
+            "Weebale",
+            "Mwebale",
+            "Asante / Asanteni"
+          ],
+          [
+            "Weraba",
+            "Mweraba",
+            "Kwaheri / Kwaherini"
+          ]
+        ]
+      },
+      {
+        "id": "long-sounds",
+        "title": "Herufi mbili ni sauti ndefu",
+        "body": [
+          "Irabu mbili (**aa**, **ee**, **ii**) hutamkwa kwa muda mrefu kidogo, na konsonanti mbili (**nn**, **ss**, **bb**, **kk**) hutamkwa kwa nguvu zaidi. Urefu hubadilisha maana, kwa hiyo sema **Weebale** na **ee** ndefu, na **kkumi** (kumi) na **kk** yenye nguvu. Kiswahili hakina tofauti hii, kwa hiyo sikiliza kwa makini.",
+          "Kiganda huandikwa kama kinavyotamkwa, kama Kiswahili: kila herufi hutamkwa, na irabu tano **a e i o u** zinasikika karibu sawa na za Kiswahili."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Chukua muda kusalimia",
+        "body": [
+          "Salamu ni mazungumzo mafupi, si neno moja. Watu huuliza kuhusu afya yako, usiku wako na kazi yako kabla ya kuingia kwenye shughuli. Kuharakisha kunaweza kuonekana kama ukosefu wa adabu."
+        ]
+      },
+      {
+        "title": "Ssebo na nnyabo",
+        "body": [
+          "Ongeza **ssebo** (bwana) au **nnyabo** (mama) ili kuonyesha heshima kwa aliye mkubwa kuliko wewe au usiyemfahamu, kama Kiswahili “shikamoo” kwa wazee. Katika mazingira ya jadi, watu hupiga magoti kuwasalimia wazee kama ishara ya heshima."
+        ]
+      },
+      {
+        "title": "Gyebale ko",
+        "body": [
+          "Mwambie **Gyebale ko** yeyote anayefanya kazi: mwenye duka, mkulima, rafiki anayepika. Ni kama “pole na kazi”. Jibu la kawaida ni **Weebale** au **Kale**."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "new-friend",
+      "title": "Rafiki mpya",
+      "unlockAfter": "u1s2l1",
+      "cast": [
+        "nakato",
+        "emma"
+      ],
+      "summary": "Emma anakutana na Nakato nje ya maktaba.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "nakato",
+            "target": "Oli otya?",
+            "base": "Habari yako?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Gyendi, weebale. Ggwe oli otya?",
+            "base": "Nzuri, asante. Wewe je, habari yako?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "nakato",
+            "target": "Bulungi. Erinnya lyo ani?",
+            "base": "Vizuri. Jina lako ni nani?"
+          }
+        },
+        {
+          "question": "Nakato aliuliza nini?",
+          "options": [
+            "Jina la Emma",
+            "Emma anaishi wapi",
+            "Kama Emma ana njaa"
+          ],
+          "answer": 0
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Nze Emma. Ggwe ani?",
+            "base": "Mimi ni Emma. Wewe ni nani?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "nakato",
+            "target": "Nze Nakato. Ova wa, Emma?",
+            "base": "Mimi ni Nakato. Unatoka wapi, Emma?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Nva Masaka. Ndi muyizi.",
+            "base": "Ninatoka Masaka. Mimi ni mwanafunzi."
+          }
+        },
+        {
+          "question": "Emma anatoka wapi?",
+          "options": [
+            "Kampala",
+            "Masaka",
+            "Maktaba"
+          ],
+          "answer": 1
+        },
+        {
+          "line": {
+            "speaker": "nakato",
+            "target": "Nange ndi muyizi! Nsanyuse okukulaba.",
+            "base": "Mimi pia ni mwanafunzi! Nimefurahi kukuona."
+          },
+          "gloss": {
+            "Nange": "mimi pia, nami"
+          }
+        },
+        {
+          "question": "Nakato anasemaje “nimefurahi kukuona”?",
+          "options": [
+            "Weebale nnyo",
+            "Nsanyuse okukulaba",
+            "Tunaalabagana"
+          ],
+          "answer": 1,
+          "optionsLang": "target"
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Weebale nnyo. Tunaalabagana!",
+            "base": "Asante sana. Tutaonana!"
+          }
+        }
+      ]
+    },
+    {
+      "id": "morning-jjajja",
+      "title": "Habari za asubuhi, Jjajja",
+      "unlockAfter": "u1s1l4",
+      "cast": [
+        "amara",
+        "jjajja"
+      ],
+      "summary": "Amara anamsalimia bibi yake kabla ya kwenda shule.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "Wasuze otya, Jjajja?",
+            "base": "Habari za asubuhi, Bibi."
+          }
+        },
+        {
+          "line": {
+            "speaker": "jjajja",
+            "target": "Nsuze bulungi, mwana wange. Ggwe wasuze otya?",
+            "base": "Nimelala salama, mwanangu. Wewe umelalaje?"
+          }
+        },
+        {
+          "question": "Ni wakati gani wa siku?",
+          "options": [
+            "Asubuhi",
+            "Jioni",
+            "Usiku"
+          ],
+          "answer": 0
+        },
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "Nsuze bulungi, Jjajja.",
+            "base": "Nimelala salama, Bibi."
+          }
+        },
+        {
+          "line": {
+            "speaker": "jjajja",
+            "target": "Kale. Gyebale ko!",
+            "base": "Sawa. Pole na kazi!"
+          },
+          "gloss": {
+            "Gyebale ko": "husemwa kwa mtu aliye na shughuli au anayefanya kazi"
+          }
+        },
+        {
+          "question": "Amara anajibuje salamu ya Jjajja?",
+          "options": [
+            "Nedda, nnyabo",
+            "Nsuze bulungi",
+            "Weraba"
+          ],
+          "answer": 1,
+          "optionsLang": "target"
+        },
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "Weebale, Jjajja. Kale, weraba!",
+            "base": "Asante, Bibi. Sawa, kwaheri!"
+          }
+        },
+        {
+          "line": {
+            "speaker": "jjajja",
+            "target": "Weraba, mwana wange. Tunaalabagana.",
+            "base": "Kwaheri, mwanangu. Tutaonana."
+          }
+        },
+        {
+          "question": "Amara anaondoka au anafika?",
+          "options": [
+            "Anafika",
+            "Anaondoka"
+          ],
+          "answer": 1
+        }
+      ]
+    }
+  ]
+}
