@@ -16,7 +16,18 @@
     "oli-wa-kika-ki": { "text": "Oli wa kika ki?" },
     "tetulya": { "text": "tetulya" },
     "owooluganda": { "text": "owooluganda" },
-    "jjajja-omutaka": { "text": "omutaka" }
+    "jjajja-omutaka": { "text": "omutaka" },
+    "pwani": { "text": "olubalama" },
+    "bahari": { "text": "ennyanja ennene" },
+    "kisiwa": { "text": "ekizinga" },
+    "jahazi": { "text": "eryato ery'amatanga" },
+    "kaskazi": { "text": "empewo ey'obukiikakkono" },
+    "wafanyabiashara": { "text": "abasuubuzi" },
+    "lugha": { "text": "olulimi" },
+    "kutoka-kiarabu": { "text": "okuva mu Luwarabu" },
+    "wenye": { "text": "erina" },
+    "maarufu": { "text": "ekimanyiddwa" },
+    "mji-wa-kale": { "text": "ekibuga eky'edda" }
   },
   "sentences": {
     "s25-ekika-kyange": { "text": "Ekika kyange Ffumbe." },
@@ -28,7 +39,17 @@
     "s25-tetulya-mmamba": { "text": "Tetulya mmamba." },
     "s25-omuziro-gwa-ngeye": { "text": "Omuziro gwa Ngeye ngeye." },
     "s25-tuli-booluganda": { "text": "Tuli booluganda." },
-    "s25-omutaka": { "text": "Omutaka w’ekika ajja.", "alts": ["Omutaka wekika ajja."] }
+    "s25-omutaka": { "text": "Omutaka w’ekika ajja.", "alts": ["Omutaka wekika ajja."] },
+    "s-pwani-nzuri": { "text": "Olubalama lulungi nnyo." },
+    "s-bahari-kubwa": { "text": "Ennyanja ennene ngazi!" },
+    "s-kisiwa-cha-zanzibar": { "text": "Zanzibar kizinga." },
+    "s-jahazi-baharini": { "text": "Eryato ery'amatanga liri ku nnyanja." },
+    "s-kaskazi": { "text": "Empewo ey'obukiikakkono yaleeta amaato." },
+    "s-wafanyabiashara-walifika": { "text": "Abasuubuzi bajja okuva e Buwarabu ne Buyindi." },
+    "s-lugha-ya-pwani": { "text": "Oluswayiri lwe lulimi lw'oku lubalama." },
+    "s-maneno-kiarabu": { "text": "Ekigambo “kitabu” kiva mu Luwarabu." },
+    "s-mji-wenye-historia": { "text": "Lamu kibuga ekirina ebyafaayo." },
+    "s-maarufu": { "text": "Ekibuga eky'edda ekya Kilwa kimanyiddwa nnyo." }
   },
   "phrases": ["Oli wa kika ki?", "Ndi wa Lugave.", "Ekika kyange Ffumbe.", "Omuziro gwange lugave.", "Tetulya mmamba.", "Tuli booluganda."],
   "dialogues": { "u25s3l3": [{ "line": "Oli wa kika ki, mwana wange?", "options": ["Ndi wa Lugave, Jjajja.", "Nkooye nnyo.", "Gattako omunnyo."] }] }

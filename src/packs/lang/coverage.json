@@ -2,9 +2,9 @@
   "threshold": 0.95,
   "languages": {
     "en": { "target": 1, "base": 1 },
-    "fr": { "target": 0, "base": 0.078 },
+    "fr": { "target": 0, "base": 0.077 },
     "lg": { "target": 1, "base": 1 },
-    "sw": { "target": 0.985, "base": 1 }
+    "sw": { "target": 0.989, "base": 1 }
   },
-  "about": { "en": { "en": 0, "lg": 1, "sw": 0.6 }, "fr": { "en": 0, "lg": 0 }, "lg": { "en": 1, "lg": 0 }, "sw": { "en": 0.6, "lg": 1 } }
+  "about": { "en": { "en": 0, "lg": 1, "sw": 0.775 }, "fr": { "en": 0, "lg": 0 }, "lg": { "en": 1, "lg": 0 }, "sw": { "en": 0.775, "lg": 1 } }
 }

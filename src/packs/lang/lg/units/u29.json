@@ -14,7 +14,16 @@
     "abayimba": { "text": "abayimba" },
     "abazina": { "text": "abazina" },
     "akuba": { "text": "akuba" },
-    "kinyuma": { "text": "kinyuma" }
+    "kinyuma": { "text": "kinyuma" },
+    "mazoezi": { "text": "okwegezaamu" },
+    "mchezaji": { "text": "omuzannyi" },
+    "mpiga-ngoma": { "text": "omukubi w'engoma" },
+    "bendi": { "text": "bbandi" },
+    "taarab": { "text": "taarab" },
+    "gitaa": { "text": "ggita" },
+    "sauti": { "text": "eddoboozi" },
+    "tamasha": { "text": "ekivvulu" },
+    "kusikiliza": { "text": "okuwuliriza" }
   },
   "sentences": {
     "s29-kuba-engoma": { "text": "Kuba engoma!" },
@@ -28,7 +37,18 @@
     "s29-abantu-abayimba": { "text": "Abantu abayimba bangi." },
     "s29-abaana-abazina": { "text": "Abaana abazina basanyuse." },
     "s29-omusajja-akuba": { "text": "Omusajja akuba engoma ye taata." },
-    "s29-kinyuma": { "text": "Kinyuma nnyo!" }
+    "s29-kinyuma": { "text": "Kinyuma nnyo!" },
+    "s-wanacheza-ngoma": { "text": "Bazina." },
+    "s-mazoezi-kila-siku": { "text": "Nneegezaamu buli lunaku." },
+    "s-mwimbaji": { "text": "Omuyimbi alina eddoboozi eddungi." },
+    "s-mchezaji": { "text": "Neema muzinyi mukugu." },
+    "s-mpiga-ngoma": { "text": "Omukubi w'engoma ye jjajja wange." },
+    "s-bendi": { "text": "Bbandi ejja kukuba ennyimba ekiro." },
+    "s-taarab": { "text": "Jjajja ayagala nnyo taarab." },
+    "s-kupiga-gitaa": { "text": "Njiga okukuba ggita." },
+    "s-tamasha": { "text": "Waliwo ekivvulu ku Lwomukaaga." },
+    "s-kusikiliza": { "text": "Nsiima okuwuliriza omuziki." },
+    "s-sauti": { "text": "Eddoboozi lingi nnyo!" }
   },
   "phrases": ["Kuba engoma!", "Oluyimba luno lulungi.", "Omuyimbi ayimba bulungi.", "Tuzina Bakisimba.", "Abaana abazina basanyuse.", "Kinyuma nnyo!"],
   "dialogues": { "u29s3l3": [{ "line": "Omusajja akuba engoma y’ani?", "options": ["Ye taata wange!", "Engoma nnene.", "Mwebale okujja."] }] },

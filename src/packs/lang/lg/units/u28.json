@@ -14,7 +14,15 @@
     "amazaalibwa": { "text": "amazaalibwa" },
     "nkwagaliza": { "text": "Nkwagaliza" },
     "keeki": { "text": "keeki" },
-    "mwebale-okujja": { "text": "Mwebale okujja" }
+    "mwebale-okujja": { "text": "Mwebale okujja" },
+    "mpango": { "text": "enteekateeka" },
+    "wageni": { "text": "abagenyi" },
+    "kualika": { "text": "okuyita" },
+    "bwana-harusi": { "text": "omugole omusajja" },
+    "aliyekuja": { "text": "eyajja" },
+    "waliokuja": { "text": "abajja" },
+    "sikukuu-njema": { "text": "Ennaku enkulu ennungi!" },
+    "heri-ya-mwaka-mpya": { "text": "Omwaka omuggya omulungi!" }
   },
   "sentences": {
     "s28-kwanjula-ku-lwamukaaga": { "text": "Kwanjula eri ku Lwamukaaga." },
@@ -27,7 +35,20 @@
     "s28-amazaalibwa": { "text": "Leero mazaalibwa gange." },
     "s28-nkwagaliza": { "text": "Nkwagaliza amazaalibwa amalungi!" },
     "s28-keeki": { "text": "Keeki eno nnungi nnyo." },
-    "s28-mwebale-okujja": { "text": "Mwebale okujja!" }
+    "s28-mwebale-okujja": { "text": "Mwebale okujja!" },
+    "s-utaenda-wapi": { "text": "Oligenda wa ku wiikendi?" },
+    "s-mpango-gani": { "text": "Enteekateeka yo y'eruwa?" },
+    "s-sherehe-jumamosi": { "text": "Waliwo akabaga ku Lwomukaaga." },
+    "s-harusi": { "text": "Embaga eriba omwezi ogujja." },
+    "s-zawadi": { "text": "Kino kirabo kyo." },
+    "s-wageni-wengi": { "text": "Abagenyi bangi bajja." },
+    "s-kualika": { "text": "Nkuyise ku mbaga." },
+    "s-bibi-harusi": { "text": "Omugole mulungi nnyo." },
+    "s-bwana-harusi": { "text": "Omugole omusajja ayambadde kkanzu." },
+    "s-aliyekuja": { "text": "Omuntu eyajja ye muganda wange." },
+    "s-waliokuja": { "text": "Abagenyi abajja baasanyuka." },
+    "s-sikukuu-njema": { "text": "Ennaku enkulu ennungi, jjajja!" },
+    "s-mwaka-mpya": { "text": "Omwaka omuggya omulungi, mukwano!" }
   },
   "phrases": [
     "Kwanjula eri ku Lwamukaaga.",

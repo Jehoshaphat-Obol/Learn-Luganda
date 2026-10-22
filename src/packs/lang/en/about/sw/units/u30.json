@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u30",
+  "notes": {
+    "okusiiba": "Also “to close” or “to tie”.",
+    "alizaliwa": "The passive: -zaa (give birth) → -zaliwa (be born).",
+    "anaitwa": "From -ita (call) → -itwa (be called)."
+  },
+  "guidebook": {
+    "intro": "Christians, Muslims and followers of other faiths live side by side in East Africa, and blessings are part of everyday speech.",
+    "tips": [
+      {
+        "id": "passive",
+        "title": "Being done to: -wa",
+        "body": [
+          "Put **-w-** before the last **-a** and the verb becomes passive: **-ita** (call) → **-itwa** (be called), **-penda** → **-pendwa** (be loved), **-funga** → **-fungwa** (be closed, be beaten).",
+          "Some change a little more: **-zaa** (give birth) → **-zaliwa** (be born). **Alizaliwa** means “he or she was born”."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Blessings everywhere",
+        "body": [
+          "People say **Mungu akubariki** (God bless you), **Mungu akipenda** (God willing) and **Asante Mungu** (thank God) in everyday talk. During **Ramadhani**, many coastal towns go quiet by day and come alive after sunset."
+        ]
+      }
+    ]
+  }
+}

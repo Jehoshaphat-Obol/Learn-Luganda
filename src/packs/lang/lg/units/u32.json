@@ -16,7 +16,11 @@
     "okusimba": { "text": "okusimba" },
     "okukuuma": { "text": "okukuuma" },
     "kasasiro": { "text": "kasasiro" },
-    "tosuula": { "text": "Tosuula" }
+    "tosuula": { "text": "Tosuula" },
+    "mlima": { "text": "olusozi oluwanvu" },
+    "mazingira": { "text": "obutonde bw'ensi" },
+    "tutunze": { "text": "tukuume" },
+    "kupanda-miti": { "text": "okusimba emiti" }
   },
   "sentences": {
     "s32-ennyanja-nnene": { "text": "Nnalubaale ye nnyanja ennene." },
@@ -30,7 +34,15 @@
     "s32-ebimuli": { "text": "Ebimuli birungi nnyo." },
     "s32-tusimbe-emiti": { "text": "Tusimbe emiti!" },
     "s32-tukuume-ettaka": { "text": "Tukuume ettaka lyaffe." },
-    "s32-tosuula-kasasiro": { "text": "Tosuula kasasiro wano!" }
+    "s32-tosuula-kasasiro": { "text": "Tosuula kasasiro wano!" },
+    "s-kilimanjaro": { "text": "Kilimanjaro lwe lusozi olusinga obuwanvu mu Afrika." },
+    "s-ziwa-victoria": { "text": "Nnalubaale nnene nnyo." },
+    "s-mto-nile": { "text": "Kiyira kitandikira mu Uganda." },
+    "s-msitu": { "text": "Ekibira kirimu emiti mingi." },
+    "s-maua": { "text": "Ebimuli birungi." },
+    "s-ardhi": { "text": "Ettaka kikalu." },
+    "s-tutunze": { "text": "Tukuume obutonde bw'ensi bwaffe." },
+    "s-kupanda-miti": { "text": "Essomero lisimba emiti buli mwaka." }
   },
   "phrases": [
     "Nnalubaale ye nnyanja ennene.",

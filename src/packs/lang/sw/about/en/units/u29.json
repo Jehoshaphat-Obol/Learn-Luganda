@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u29",
+  "notes": { "okukuba": "Kwa ala za muziki: play the guitar, play the drums." },
+  "guidebook": {
+    "intro": "Kutoka taarab hadi bongo flava, muziki uko kila mahali. Jifunze jinsi Kiingereza kinavyounda majina ya “mtendaji”.",
+    "tips": [
+      {
+        "id": "er-doers",
+        "title": "Mtendaji: -er",
+        "body": [
+          "Kiswahili huongeza **m-…-ji** (**mwimbaji**). Kiingereza mara nyingi huongeza **-er** kwenye kitenzi: **sing → singer**, **play → player**, **drum → drummer**, **teach → teacher**.",
+          "Wengi huongeza **-s**: **singers**, **players**. Mengine ni tofauti: **cook** (mpishi) ni kitenzi na nomino pia."
+        ]
+      },
+      {
+        "id": "listen-to",
+        "title": "Listen to, play the",
+        "body": [
+          "**Kusikiliza** huhitaji **to**: **I listen to music** (ninasikiliza muziki), si “I listen music”.",
+          "Kwa ala za muziki, tumia **play the**: **play the guitar** (piga gitaa), **play the drums** (piga ngoma)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Concert",
+        "body": [
+          "**Tamasha** ni **concert** au **show**. Mwisho wa wimbo mzuri, watu hupiga kelele **Encore!** au **One more!** kuomba wimbo mwingine."
+        ]
+      }
+    ]
+  }
+}

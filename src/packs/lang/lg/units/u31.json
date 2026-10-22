@@ -14,7 +14,15 @@
     "nsomesa": { "text": "Nsomesa" },
     "ndisa": { "text": "Ndisa" },
     "nnywesa": { "text": "Nnywesa" },
-    "ntunza": { "text": "Ntunza" }
+    "ntunza": { "text": "Ntunza" },
+    "kuuza": { "text": "okutunda" },
+    "bidhaa": { "text": "ebyamaguzi" },
+    "hasara": { "text": "okufiirwa" },
+    "akiba": { "text": "ebitereke" },
+    "mkopo": { "text": "looni" },
+    "fundisha": { "text": "Somesa" },
+    "onyesha": { "text": "Laga" },
+    "rudisha": { "text": "Zzaayo" }
   },
   "sentences": {
     "s31-nnina-bizinensi": { "text": "Nnina bizinensi entono." },
@@ -27,7 +35,16 @@
     "s31-okwewola": { "text": "Njagala okwewola ssente." },
     "s31-nsomesa-abaana": { "text": "Nsomesa abaana {to}." },
     "s31-ndisa-abaana": { "text": "Ndisa abaana ku makya." },
-    "s31-nnywesa-ente": { "text": "Nnywesa ente amazzi." }
+    "s31-nnywesa-ente": { "text": "Nnywesa ente amazzi." },
+    "s-kuuza": { "text": "Ntunda caayi ne capati." },
+    "s-bidhaa": { "text": "Ebyamaguzi birungi era bya layisi." },
+    "s-faida": { "text": "Omwezi guno tufunye amagoba." },
+    "s-hasara": { "text": "Enkuba yaleeta okufiirwa." },
+    "s-akiba": { "text": "Nterekayo ssente buli wiiki." },
+    "s-mkopo": { "text": "Nneetaaga looni entono." },
+    "s-fundisha": { "text": "Nsomesa bizinensi, mwattu." },
+    "s-onyesha": { "text": "Ndaga ebyamaguzi byo." },
+    "s-rudisha": { "text": "Zzaayo ssente zange!" }
   },
   "phrases": [
     "Nnina bizinensi entono.",

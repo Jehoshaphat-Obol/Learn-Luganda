@@ -16,7 +16,16 @@
     "abayimba",
     "abazina",
     "akuba",
-    "kinyuma"
+    "kinyuma",
+    "mazoezi",
+    "mchezaji",
+    "mpiga-ngoma",
+    "bendi",
+    "taarab",
+    "gitaa",
+    "sauti",
+    "tamasha",
+    "kusikiliza"
   ],
   "sentences": [
     "s29-kuba-engoma",
@@ -30,7 +39,18 @@
     "s29-abantu-abayimba",
     "s29-abaana-abazina",
     "s29-omusajja-akuba",
-    "s29-kinyuma"
+    "s29-kinyuma",
+    "s-wanacheza-ngoma",
+    "s-mazoezi-kila-siku",
+    "s-mwimbaji",
+    "s-mchezaji",
+    "s-mpiga-ngoma",
+    "s-bendi",
+    "s-taarab",
+    "s-kupiga-gitaa",
+    "s-tamasha",
+    "s-kusikiliza",
+    "s-sauti"
   ],
   "phrases": 6,
   "skills": [
@@ -64,6 +84,20 @@
           "sentences": ["s29-abantu-abayimba", "s29-omusajja-akuba", "s29-kinyuma"],
           "dialogues": [{ "speaker": "amara", "answer": 0 }]
         }
+      ]
+    },
+    {
+      "id": "u29s4",
+      "icon": "music",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u29s4l1",
+          "newWords": ["mazoezi", "mchezaji", "mpiga-ngoma", "sauti"],
+          "sentences": ["s-wanacheza-ngoma", "s-mazoezi-kila-siku", "s-mwimbaji", "s-mchezaji"]
+        },
+        { "id": "u29s4l2", "newWords": ["bendi", "taarab"], "sentences": ["s-mpiga-ngoma", "s-sauti", "s-bendi", "s-taarab"] },
+        { "id": "u29s4l3", "newWords": ["gitaa", "tamasha", "kusikiliza"], "sentences": ["s-kupiga-gitaa", "s-tamasha", "s-kusikiliza"] }
       ]
     }
   ],

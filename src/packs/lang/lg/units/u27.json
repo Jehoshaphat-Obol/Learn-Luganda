@@ -15,7 +15,9 @@
     "ndimira": { "text": "Ndimira" },
     "nfumbira": { "text": "Nfumbira" },
     "ntundira": { "text": "Ntundira" },
-    "mpandiikira": { "text": "Mpandiikira" }
+    "mpandiikira": { "text": "Mpandiikira" },
+    "mpunga": { "text": "emiceere" },
+    "maji-ya-mvua": { "text": "amazzi g'enkuba" }
   },
   "sentences": {
     "s27-olusuku-lwange": { "text": "Olusuku lwange lunene." },
@@ -29,7 +31,12 @@
     "s27-ndimira-jjajja": { "text": "Ndimira jjajja olusuku." },
     "s27-nfumbira-abaana": { "text": "Nfumbira abaana emmere." },
     "s27-ntundira-mu-katale": { "text": "Ntundira emmwanyi mu katale." },
-    "s27-mpandiikira-maama": { "text": "Mpandiikira maama obubaka." }
+    "s27-mpandiikira-maama": { "text": "Mpandiikira maama obubaka." },
+    "s-mpunga": { "text": "Emiceere gyagala amazzi mangi." },
+    "s-kupanda-mbegu": { "text": "Leero tujja kusiga ensigo." },
+    "s-mavuno-mazuri": { "text": "Amakungula malungi omwaka guno." },
+    "s-jembe": { "text": "Twala enkumbi." },
+    "s-maji-ya-mvua": { "text": "Tutereka amazzi g'enkuba." }
   },
   "phrases": [
     "Ndima n’enkumbi ku makya.",

@@ -14,7 +14,16 @@
     "abayimba": { "text": "wanaoimba", "alts": ["wanaimba", "ambao wanaimba", "waimbaji"] },
     "abazina": { "text": "wanaocheza", "alts": ["wanacheza", "ambao wanacheza", "wachezaji"] },
     "akuba": { "text": "anayepiga", "alts": ["anapiga", "ambaye anapiga", "mpiga"] },
-    "kinyuma": { "text": "inafurahisha", "alts": ["ni raha", "ni burudani", "inapendeza", "furaha"] }
+    "kinyuma": { "text": "inafurahisha", "alts": ["ni raha", "ni burudani", "inapendeza", "furaha"] },
+    "mazoezi": { "text": "mazoezi" },
+    "mchezaji": { "text": "mchezaji" },
+    "mpiga-ngoma": { "text": "mpiga ngoma" },
+    "bendi": { "text": "bendi" },
+    "taarab": { "text": "taarab" },
+    "gitaa": { "text": "gitaa" },
+    "sauti": { "text": "sauti" },
+    "tamasha": { "text": "tamasha" },
+    "kusikiliza": { "text": "kusikiliza" }
   },
   "sentences": {
     "s29-kuba-engoma": { "text": "Piga ngoma!", "alts": ["Ipige ngoma!", "Gonga ngoma!"] },
@@ -28,7 +37,18 @@
     "s29-abantu-abayimba": { "text": "Watu wanaoimba ni wengi.", "alts": ["Kuna watu wengi wanaoimba.", "Watu wengi wanaimba."] },
     "s29-abaana-abazina": { "text": "Watoto wanaocheza wana furaha.", "alts": ["Watoto wanaocheza wamefurahi."] },
     "s29-omusajja-akuba": { "text": "Mwanamume anayepiga ngoma ni baba.", "alts": ["Mwanamume anayepiga ngoma ni baba yangu.", "Mtu anayepiga ngoma ni baba."] },
-    "s29-kinyuma": { "text": "Inafurahisha sana!", "alts": ["Ni raha sana!", "Ni burudani kubwa!"] }
+    "s29-kinyuma": { "text": "Inafurahisha sana!", "alts": ["Ni raha sana!", "Ni burudani kubwa!"] },
+    "s-wanacheza-ngoma": { "text": "Wanacheza ngoma." },
+    "s-mazoezi-kila-siku": { "text": "Nina mazoezi kila siku." },
+    "s-mwimbaji": { "text": "Mwimbaji ana sauti nzuri." },
+    "s-mchezaji": { "text": "Neema ni mchezaji hodari." },
+    "s-mpiga-ngoma": { "text": "Mpiga ngoma ni babu yangu." },
+    "s-bendi": { "text": "Bendi itapiga muziki usiku." },
+    "s-taarab": { "text": "Bibi anapenda taarab." },
+    "s-kupiga-gitaa": { "text": "Ninajifunza kupiga gitaa." },
+    "s-tamasha": { "text": "Kuna tamasha Jumamosi." },
+    "s-kusikiliza": { "text": "Ninapenda kusikiliza muziki." },
+    "s-sauti": { "text": "Sauti ni kubwa sana!" }
   },
   "phrases": [
     "Piga ngoma!",
@@ -38,7 +58,7 @@
     "Watoto wanaocheza wana furaha.",
     "Inafurahisha sana!"
   ],
-  "dialogues": { "u29s3l3": [{ "line": "Mwanamume anayepiga ngoma ni nani?" }] },
+  "dialogues": { "u29s3l3": [{ "line": "Mwanamume anayepiga ngoma ni nani?", "options": ["Ni baba yangu!", "Ngoma ni kubwa.", "Asanteni kwa kuja."] }] },
   "stories": {
     "drum-lesson": {
       "title": "Somo la ngoma",

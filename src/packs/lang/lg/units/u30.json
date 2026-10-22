@@ -15,7 +15,13 @@
     "abajulizi": { "text": "Abajulizi" },
     "omukisa": { "text": "omukisa" },
     "akuwe": { "text": "akuwe" },
-    "omwaka-omuggya": { "text": "omwaka omuggya" }
+    "omwaka-omuggya": { "text": "omwaka omuggya" },
+    "sikukuu": { "text": "olunaku olukulu" },
+    "dini": { "text": "eddiini" },
+    "ramadhani": { "text": "Lamadaani" },
+    "alizaliwa": { "text": "yazaalibwa" },
+    "anaitwa": { "text": "ayitibwa" },
+    "mungu-akubariki": { "text": "Katonda akuwe omukisa" }
   },
   "sentences": {
     "s30-tusaba-katonda": { "text": "Tusaba Katonda buli lunaku." },
@@ -30,7 +36,18 @@
     "s30-okusiiba": { "text": "Mu Ramadaani tusiiba." },
     "s30-abajulizi": { "text": "Olunaku lw’Abajulizi luli ku 3 Ssebaaseka.", "alts": ["Olunaku lwAbajulizi luli ku 3 Ssebaaseka."] },
     "s30-katonda-akuwe-omukisa": { "text": "Katonda akuwe omukisa!" },
-    "s30-amiina": { "text": "Amiina." }
+    "s30-amiina": { "text": "Amiina." },
+    "s-sikukuu-kesho": { "text": "Enkya lunaku lukulu." },
+    "s-idi": { "text": "Tujja kujaguza Iddi wamu." },
+    "s-krismasi": { "text": "Ku Ssekukkulu tugenda mu kyalo." },
+    "s-dini": { "text": "Mu Buvanjuba bwa Afrika mulimu eddiini nnyingi." },
+    "s-kusali-msikitini": { "text": "Jjajja asinziza mu muzigiti." },
+    "s-kusali-kanisani": { "text": "Ku Ssande tusabira mu kkanisa." },
+    "s-ramadhani": { "text": "Mu Lamadaani, abantu basiiba." },
+    "s-baraka": { "text": "Enkuba mukisa." },
+    "s-alizaliwa": { "text": "Jjajja yazaalibwa e Zanzibar." },
+    "s-anaitwa": { "text": "Omwana ayitibwa Amani." },
+    "s-akubariki": { "text": "Katonda akuwe omukisa, mwana wange." }
   },
   "phrases": [
     "Ku Ssabbiiti ŋŋenda mu kkanisa.",

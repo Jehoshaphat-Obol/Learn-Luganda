@@ -4,8 +4,8 @@
   "words": {
     "kwanjula": { "text": "introduction ceremony", "alts": ["introduction", "the kwanjula"] },
     "ssenga": { "text": "paternal aunt", "alts": ["aunt", "auntie", "father’s sister"] },
-    "omukolo": { "text": "ceremony", "alts": ["function", "event", "party"] },
-    "ekirabo": { "text": "gift", "alts": ["present", "a gift", "the gift"] },
+    "omukolo": { "text": "ceremony", "alts": ["function", "event", "party", "celebration", "the party", "festival"] },
+    "ekirabo": { "text": "gift", "alts": ["present", "a gift", "the gift", "gifts", "presents"] },
     "embaga": { "text": "wedding", "alts": ["the wedding", "a wedding"] },
     "omugole": { "text": "bride", "alts": ["groom", "the bride", "bridegroom", "newlywed"] },
     "kulika": { "text": "Congratulations!", "alts": ["well done", "congrats"] },
@@ -14,7 +14,15 @@
     "amazaalibwa": { "text": "birthday", "alts": ["the birthday", "birth"] },
     "nkwagaliza": { "text": "I wish you", "alts": ["i want for you"] },
     "keeki": { "text": "cake", "alts": ["the cake", "a cake"] },
-    "mwebale-okujja": { "text": "Thank you for coming", "alts": ["thanks for coming", "thank you all for coming"] }
+    "mwebale-okujja": { "text": "Thank you for coming", "alts": ["thanks for coming", "thank you all for coming"] },
+    "mpango": { "text": "plan", "alts": ["the plan", "a plan"] },
+    "wageni": { "text": "guests", "alts": ["visitors", "strangers"] },
+    "kualika": { "text": "to invite", "alts": ["invite", "inviting"] },
+    "bwana-harusi": { "text": "groom", "alts": ["bridegroom", "the groom"] },
+    "aliyekuja": { "text": "who came", "alts": ["that came", "who has come"] },
+    "waliokuja": { "text": "who came (many)", "alts": ["who came", "those who came"] },
+    "sikukuu-njema": { "text": "Happy holidays!", "alts": ["happy holiday", "merry christmas", "eid mubarak", "have a good holiday"] },
+    "heri-ya-mwaka-mpya": { "text": "Happy New Year!", "alts": ["happy new year"] }
   },
   "sentences": {
     "s28-kwanjula-ku-lwamukaaga": { "text": "The introduction is on Saturday.", "alts": ["The kwanjula is on Saturday."] },
@@ -27,7 +35,20 @@
     "s28-amazaalibwa": { "text": "Today is my birthday.", "alts": ["It’s my birthday today.", "It is my birthday today."] },
     "s28-nkwagaliza": { "text": "Happy birthday!", "alts": ["I wish you a happy birthday!", "I wish you a good birthday!"] },
     "s28-keeki": { "text": "This cake is very nice.", "alts": ["This cake is very good.", "This cake is delicious."] },
-    "s28-mwebale-okujja": { "text": "Thank you for coming!", "alts": ["Thanks for coming, everyone!", "Thank you all for coming!"] }
+    "s28-mwebale-okujja": { "text": "Thank you for coming!", "alts": ["Thanks for coming, everyone!", "Thank you all for coming!"] },
+    "s-utaenda-wapi": { "text": "Where will you go at the weekend?", "alts": ["Where are you going at the weekend?", "Where will you go this weekend?"] },
+    "s-mpango-gani": { "text": "What’s your plan?", "alts": ["What plan do you have?", "What are your plans?"] },
+    "s-sherehe-jumamosi": { "text": "There’s a party on Saturday.", "alts": ["There is a party on Saturday."] },
+    "s-harusi": { "text": "The wedding will be next month.", "alts": ["The wedding is next month."] },
+    "s-zawadi": { "text": "This is your gift.", "alts": ["This is your present.", "This is a gift for you."] },
+    "s-wageni-wengi": { "text": "Many guests came.", "alts": ["Lots of guests came."] },
+    "s-kualika": { "text": "I’ve invited you to the wedding.", "alts": ["I have invited you to the wedding."] },
+    "s-bibi-harusi": { "text": "The bride is very beautiful." },
+    "s-bwana-harusi": { "text": "The groom is wearing a kanzu.", "alts": ["The groom has put on a kanzu."] },
+    "s-aliyekuja": { "text": "The person who came is my brother.", "alts": ["The man who came is my brother."] },
+    "s-waliokuja": { "text": "The guests who came were happy." },
+    "s-sikukuu-njema": { "text": "Happy holidays, Grandma!", "alts": ["Happy holiday, Grandma!"] },
+    "s-mwaka-mpya": { "text": "Happy New Year, friend!", "alts": ["Happy New Year, my friend!"] }
   },
   "phrases": [
     "The introduction is on Saturday.",

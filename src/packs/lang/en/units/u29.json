@@ -2,8 +2,8 @@
   "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
   "id": "u29",
   "words": {
-    "engoma": { "text": "drum", "alts": ["drums", "the drum"] },
-    "okukuba": { "text": "to beat", "alts": ["to play", "to hit", "to strike", "beating"] },
+    "engoma": { "text": "drum", "alts": ["drums", "the drum", "dance", "drumming"] },
+    "okukuba": { "text": "to beat", "alts": ["to play", "to hit", "to strike", "beating", "play"] },
     "endingidi": { "text": "tube fiddle", "alts": ["fiddle", "the endingidi"] },
     "amadinda": { "text": "xylophone", "alts": ["the xylophone", "amadinda"] },
     "ennanga": { "text": "harp", "alts": ["the harp", "bow harp"] },
@@ -14,7 +14,16 @@
     "abayimba": { "text": "who sing", "alts": ["that sing", "singing", "who are singing"] },
     "abazina": { "text": "who dance", "alts": ["that dance", "dancing", "who are dancing"] },
     "akuba": { "text": "who plays", "alts": ["plays", "who beats", "beats", "who is playing"] },
-    "kinyuma": { "text": "it’s fun", "alts": ["it is fun", "it’s enjoyable", "it is enjoyable", "fun", "enjoyable"] }
+    "kinyuma": { "text": "it’s fun", "alts": ["it is fun", "it’s enjoyable", "it is enjoyable", "fun", "enjoyable"] },
+    "mazoezi": { "text": "practice", "alts": ["training", "exercise", "exercises"] },
+    "mchezaji": { "text": "player", "alts": ["dancer", "the player"] },
+    "mpiga-ngoma": { "text": "drummer", "alts": ["the drummer"] },
+    "bendi": { "text": "band", "alts": ["the band"] },
+    "taarab": { "text": "taarab", "alts": ["taarab music"] },
+    "gitaa": { "text": "guitar", "alts": ["the guitar"] },
+    "sauti": { "text": "voice", "alts": ["sound", "noise", "the voice"] },
+    "tamasha": { "text": "concert", "alts": ["show", "festival", "the concert"] },
+    "kusikiliza": { "text": "to listen", "alts": ["listening", "listen"] }
   },
   "sentences": {
     "s29-kuba-engoma": { "text": "Play the drum!", "alts": ["Beat the drum!"] },
@@ -31,7 +40,18 @@
       "text": "The man who plays the drum is father.",
       "alts": ["The man playing the drum is father.", "The man who plays the drum is my father.", "The man playing the drum is dad."]
     },
-    "s29-kinyuma": { "text": "It’s great fun!", "alts": ["It is very enjoyable!", "It’s very fun!", "It is a lot of fun!"] }
+    "s29-kinyuma": { "text": "It’s great fun!", "alts": ["It is very enjoyable!", "It’s very fun!", "It is a lot of fun!"] },
+    "s-wanacheza-ngoma": { "text": "They are dancing.", "alts": ["They’re dancing.", "They are drumming.", "They’re playing the drums."] },
+    "s-mazoezi-kila-siku": { "text": "I have practice every day.", "alts": ["I train every day.", "I have training every day."] },
+    "s-mwimbaji": { "text": "The singer has a beautiful voice.", "alts": ["The singer has a nice voice.", "The singer has a good voice."] },
+    "s-mchezaji": { "text": "Neema is a skilful dancer.", "alts": ["Neema is a good dancer.", "Neema is a great dancer."] },
+    "s-mpiga-ngoma": { "text": "The drummer is my grandfather." },
+    "s-bendi": { "text": "The band will play music tonight.", "alts": ["The band will play at night."] },
+    "s-taarab": { "text": "Grandma loves taarab.", "alts": ["Grandma likes taarab."] },
+    "s-kupiga-gitaa": { "text": "I’m learning to play the guitar.", "alts": ["I am learning to play guitar."] },
+    "s-tamasha": { "text": "There’s a concert on Saturday.", "alts": ["There is a concert on Saturday."] },
+    "s-kusikiliza": { "text": "I like listening to music.", "alts": ["I like to listen to music.", "I love listening to music."] },
+    "s-sauti": { "text": "The sound is very loud!", "alts": ["It’s very loud!"] }
   },
   "phrases": [
     "Play the drum!",
