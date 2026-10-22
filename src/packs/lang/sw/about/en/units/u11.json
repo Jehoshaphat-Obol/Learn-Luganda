@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u11",
+  "notes": { "ninapenda": "Baada ya “I like” tumia -ing: I like playing." },
+  "guidebook": {
+    "intro": "Kazi za nyumbani: amri fupi, kusafisha na kuomba msaada.",
+    "tips": [
+      {
+        "id": "commands",
+        "title": "Amri: kitenzi tu",
+        "body": [
+          "Amri ya Kiingereza ni kitenzi chenyewe: **Come!** (njoo), **Sit down!** (kaa), **Bring water.** (leta maji). Ni ile ile kwa mtu mmoja au wengi.",
+          "Kukataza, weka **Don’t** mbele: **Don’t sit there!** (usikae hapo)."
+        ]
+      },
+      {
+        "id": "polite-asking",
+        "title": "Kuomba kwa adabu",
+        "body": [
+          "Amri peke yake inaweza kusikika kali. Ongeza **please**: **Close the door, please.**",
+          "Kwa adabu zaidi, uliza: **Can you help me?** au **Could you open the window?**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Asante kwa kazi",
+        "body": ["Kazi ikiisha, Kiingereza husifu: **Good job!** au **Well done!** Na mtu akikushukuru, jibu: **You’re welcome!** (karibu)."]
+      }
+    ]
+  }
+}

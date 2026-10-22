@@ -23,7 +23,20 @@
     "nnene": { "text": "kubwa", "alts": ["kubwa mno", "kubwa sana"] },
     "ntono": { "text": "ndogo", "alts": ["ndogo mno", "ndogo sana"] },
     "ngitwala": { "text": "Nitaichukua", "alts": ["nitachukua", "nitainunua", "naichukua"] },
-    "nnungi": { "text": "nzuri", "alts": ["maridadi", "safi"] }
+    "nnungi": { "text": "nzuri", "alts": ["maridadi", "safi"] },
+    "sketi": { "text": "sketi" },
+    "kanga": { "text": "kanga" },
+    "nimevaa": { "text": "Nimevaa" },
+    "kiatu": { "text": "kiatu" },
+    "soksi": { "text": "soksi" },
+    "ninavaa": { "text": "Ninavaa" },
+    "ndefu": { "text": "ndefu" },
+    "fupi": { "text": "fupi" },
+    "kununua": { "text": "kununua" },
+    "saizi": { "text": "saizi" },
+    "inanifaa": { "text": "Inanifaa" },
+    "jaribu": { "text": "Jaribu" },
+    "kioo": { "text": "kioo" }
   },
   "sentences": {
     "s-essaati-yange": { "text": "Shati langu.", "alts": ["Shati yangu."] },
@@ -41,10 +54,32 @@
     "s-empale-eno-nnene": { "text": "Suruali hii ni kubwa.", "alts": ["Suruali hii ni kubwa mno."] },
     "s-essaati-eno-ntono": { "text": "Shati hili ni dogo.", "alts": ["Shati hii ni ndogo.", "Shati hili ni dogo mno."] },
     "s-essaati-nnungi": { "text": "Shati hili ni zuri.", "alts": ["Shati hii ni nzuri.", "Shati hili ni maridadi."] },
-    "s-kale-ngitwala": { "text": "Sawa, nitaichukua.", "alts": ["Haya, nitaichukua.", "Sawa, nitachukua."] }
+    "s-kale-ngitwala": { "text": "Sawa, nitaichukua.", "alts": ["Haya, nitaichukua.", "Sawa, nitachukua."] },
+    "s-nimevaa-shati": { "text": "Nimevaa shati jeupe." },
+    "s-kofia-iko-wapi": { "text": "Kofia yangu iko wapi?" },
+    "s-nguo-ghali": { "text": "Nguo ni ghali sana." },
+    "s-kanga-mpya": { "text": "Kanga yangu ni mpya." },
+    "s-nimevaa-gauni": { "text": "Nimevaa gauni na kofia." },
+    "s-viatu-vichafu": { "text": "Viatu vyangu ni vichafu." },
+    "s-soksi-nyeusi": { "text": "Soksi nyeusi." },
+    "s-ninavaa-suruali": { "text": "Ninavaa suruali." },
+    "s-vaa-koti": { "text": "Vaa koti, kuna baridi." },
+    "s-vua-viatu": { "text": "Vua viatu, tafadhali." },
+    "s-suruali-ndefu": { "text": "Suruali ni ndefu sana." },
+    "s-sketi-fupi": { "text": "Sketi ni fupi." },
+    "s-kununua-viatu": { "text": "Nataka kununua viatu." },
+    "s-saizi-gani": { "text": "Saizi gani?" },
+    "s-inanifaa-vizuri": { "text": "Inanifaa vizuri." },
+    "s-jaribu": { "text": "Jaribu, tafadhali!" },
+    "s-kioo-kiko-wapi": { "text": "Kioo kiko wapi?" }
   },
   "phrases": ["Shati langu.", "Viatu vyangu.", "Ninavaa gomesi.", "Vaa sweta.", "Vua viatu vyako.", "Shati hili ni bei gani?", "Sawa, nitaichukua."],
-  "dialogues": { "u10s3l3": [{ "line": "Shati hili ni elfu kumi." }, { "line": "Sawa, elfu saba." }] },
+  "dialogues": {
+    "u10s3l3": [
+      { "line": "Shati hili ni elfu kumi.", "options": ["Ni ghali! Punguza kidogo.", "Ninaoga asubuhi.", "Viatu vyangu."] },
+      { "line": "Sawa, elfu saba.", "options": ["Sawa, nitachukua.", "Vua viatu.", "Mimi ni mfupi."] }
+    ]
+  },
   "stories": {
     "new-gomesi": {
       "title": "Gomesi ya sherehe",

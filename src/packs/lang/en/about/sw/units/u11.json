@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u11",
+  "notes": {
+    "nkola": "Literally “I do work”.",
+    "okuzannya": "Kucheza mpira, to play football; kucheza muziki, to dance.",
+    "vyombo": "Pots, plates and cups together. One: chombo."
+  },
+  "guidebook": {
+    "intro": "Everyone helps at home. Learn the short commands you’ll hear every day, and how to ask for help politely.",
+    "tips": [
+      {
+        "id": "commands",
+        "title": "Commands: just the verb",
+        "body": [
+          "To tell one person to do something, use the bare verb: **Leta!** (bring!), **Funga!** (close!), **Osha!** (wash!).",
+          "To several people, add **-ni**: **Fungeni mlango** (close the door, all of you). A few common ones are irregular: **Njoo** (come) becomes **Njooni**, and **Kaa** (sit) becomes **Kaeni**."
+        ]
+      },
+      {
+        "id": "polite-asking",
+        "title": "Asking nicely: nisaidie",
+        "body": [
+          "**Nisaidie** means “help me”. It is a softer form of the verb, ending in **-e**, that Swahili uses for wishes and polite requests: **ni-** (me) + **saidi(a)** + **-e**.",
+          "The same form gives “let’s”: **Tufanye kazi pamoja** (let’s work together), **Tusafishe** (let’s clean). With **tafadhali** it is always polite."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Children help",
+        "body": [
+          "From a young age, children fetch water, sweep the compound and wash dishes. Saying **Kazi nzuri!** or **Asante kwa msaada** to a child who helps is warmly received."
+        ]
+      }
+    ]
+  }
+}

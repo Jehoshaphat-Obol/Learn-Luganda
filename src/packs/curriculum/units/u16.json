@@ -20,7 +20,16 @@
     "ntuuse",
     "ennyonyi",
     "tugende",
-    "olugendo-olulungi"
+    "olugendo-olulungi",
+    "tiketi",
+    "treni",
+    "uwanja-wa-ndege",
+    "kusafiri",
+    "nitasafiri",
+    "tutaondoka",
+    "itafika",
+    "mzigo",
+    "nimechelewa"
   ],
   "sentences": [
     "s16-ttakisi-egenda-wa",
@@ -35,7 +44,18 @@
     "s16-olugendo-luwanvu",
     "s16-ntuuse",
     "s16-ennyonyi-ebuuka",
-    "s16-olugendo-olulungi"
+    "s16-olugendo-olulungi",
+    "s-pole-pole",
+    "s-haraka",
+    "s-tiketi-bei",
+    "s-kituo-cha-basi",
+    "s-safari-ndefu",
+    "s-twende-kituoni",
+    "s-uwanja-wa-ndege",
+    "s-nitasafiri-kesho",
+    "s-treni-itafika",
+    "s-mzigo-mzito",
+    "s-nimechelewa"
   ],
   "phrases": 6,
   "skills": [
@@ -73,6 +93,20 @@
         { "id": "u16s3l1", "newWords": ["olugendo", "okuva", "okutuuka"], "sentences": ["s16-okuva-kampala", "s16-olugendo-luwanvu"] },
         { "id": "u16s3l2", "newWords": ["ntuuse"], "sentences": ["s16-ntuuse", "s16-okuva-kampala"] },
         { "id": "u16s3l3", "newWords": ["olugendo-olulungi"], "sentences": ["s16-olugendo-olulungi", "s16-ntuuse", "s16-olugendo-luwanvu"] }
+      ]
+    },
+    {
+      "id": "u16s4",
+      "icon": "star",
+      "since": 2,
+      "lessons": [
+        { "id": "u16s4l1", "newWords": ["tiketi", "treni"], "sentences": ["s-pole-pole", "s-haraka", "s-tiketi-bei", "s-kituo-cha-basi"] },
+        {
+          "id": "u16s4l2",
+          "newWords": ["uwanja-wa-ndege", "kusafiri", "nitasafiri", "tutaondoka", "itafika"],
+          "sentences": ["s-safari-ndefu", "s-twende-kituoni", "s-uwanja-wa-ndege", "s-nitasafiri-kesho"]
+        },
+        { "id": "u16s4l3", "newWords": ["mzigo", "nimechelewa"], "sentences": ["s-treni-itafika", "s-mzigo-mzito", "s-nimechelewa"] }
       ]
     }
   ],

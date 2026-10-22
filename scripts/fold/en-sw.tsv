@@ -230,3 +230,236 @@ sw	dialogue	u5s3l2.0	Saa kumi. | Shilingi elfu mbili. | Jumatatu.	Ni saa ngapi? 
 sw	dialogue	u6s3l2.0	Ninaenda mjini. | Ni kitamu sana! | Saa kumi.	Unakwenda wapi, mama? :: Ntwala mu kibuga. | Kiwooma nnyo! | Ssaawa nnya. (answer 1)
 sw	dialogue	u7s2l2.0	Karibu! Tumefurahi kukuona. | Funga mlango. | Ni saa ngapi?	Hodi! :: Yingira! Tusanyuse okukulaba. | Ggalawo oluggi. | Ssaawa mmeka? (answer 1)
 sw	dialogue	u8s3l2.0	Ni mgonjwa. Kichwa kinauma. | Pinda kulia. | Ninauza machungwa.	Habari yako? :: Ndi mulwadde. Omutwe gunnuma. | Kyuka ku ddyo. | Ntunda emicungwa. (answer 1)
+lg	sentence	s-baba-yako-mrefu	Taata wo muwanvu.	Your father is tall. = Baba yako ni mrefu.
+lg	sentence	s-mtoto-mfupi	Omwana mumpi.	The child is short. = Mtoto ni mfupi.
+lg	sentence	s-mtu-mzuri	Jjajja muntu mulungi.	Grandmother is a good person. = Bibi ni mtu mzuri.
+lg	sentence	s-mwalimu-wake	Omusomesa we mulungi.	Her teacher is good. = Mwalimu wake ni mzuri.
+lg	sentence	s-pole-pole	Mpola mpola, mwattu.	Slowly, please. = Pole pole, tafadhali.
+lg	sentence	s-haraka	Mangu, mangu!	Quickly, quickly! = Haraka, haraka!
+lg	word	hakuna-matata	Teweeraliikirira	No worries = Hakuna matata
+lg	sentence	s-hakuna-maji	Leero tewali mazzi.	There is no water today. = Hakuna maji leo.
+lg	sentence	s-hakuna-matata	Teweeraliikirira!	No worries! = Hakuna matata!
+lg	sentence	s-mlango-mwekundu	Oluggi lumyufu.	The door is red. = Mlango ni mwekundu.
+lg	sentence	s-rangi-gani	Kya langi ki?	What colour is it? = Ni rangi gani?
+lg	sentence	s-nyumba-nyeupe	Ennyumba enjeru.	A white house. = Nyumba nyeupe.
+lg	sentence	s-rangi-ya-kijani	Langi y'eddirisa kiragala.	The window’s colour is green. = Rangi ya dirisha ni kijani.
+lg	word	ninapenda	Nnyumirwa	I like = Ninapenda
+lg	word	muziki	ennyimba	music = muziki
+lg	sentence	s-ninaamka-saa-kumi-na-mbili	Nzuukuka ssaawa kkumi na bbiri.	I wake up at six. = Ninaamka saa kumi na mbili.
+lg	sentence	s-ninasoma-jioni	Nsoma akawungeezi.	I study in the evening. = Ninasoma jioni.
+lg	sentence	s-ninapika-wali	Nfumba omuceere n'ebijanjaalo.	I cook rice and beans. = Ninapika wali na maharage.
+lg	sentence	s-ninalala-usiku	Nneebaka ssaawa nnya ez'ekiro.	I go to bed at ten at night. = Ninalala saa nne usiku.
+lg	sentence	s-ninapenda-kucheza-mpira	Nnyumirwa okuzannya omupiira.	I like playing football. = Ninapenda kucheza mpira.
+lg	sentence	s-ninapenda-muziki	Nnyumirwa ennyimba.	I like music. = Ninapenda muziki.
+lg	sentence	s-hali-ya-hewa	Obudde bulungi leero.	The weather is nice today. = Hali ya hewa ni nzuri leo.
+lg	sentence	s-kuna-jua	Leero omusana gwaka.	It’s sunny today. = Kuna jua leo.
+lg	sentence	s-kuna-joto	Leero ebbugumu lingi nnyo.	It’s very hot today. = Kuna joto sana leo.
+lg	sentence	s-kuna-baridi	Ekiro wabaawo empewo.	It’s cold at night. = Kuna baridi usiku.
+lg	word	safi	kiyonjo	clean = safi
+lg	word	chafu	kicaafu	dirty = chafu
+lg	word	gani	kiriwa	which = gani
+lg	word	kabisa	ddala	completely = kabisa
+lg	word	nzito	kizito	heavy = nzito
+lg	word	nyepesi	kyangu	light = nyepesi
+lg	word	mwembamba	mugonvu	thin = mwembamba
+lg	word	mpole	muteefu	gentle = mpole
+lg	word	mchangamfu	musanyufu	cheerful = mchangamfu
+lg	sentence	s-nyumba-mpya	Ennyumba yange mpya.	My house is new. = Nyumba yangu ni mpya.
+lg	sentence	s-meza-chafu	Emmeeza ncaafu.	The table is dirty. = Meza ni chafu.
+lg	sentence	s-si-mbaya	Si bubi.	Not bad. = Si mbaya.
+lg	sentence	s-kikombe-gani	Ekikopo kiriwa?	Which cup? = Kikombe gani?
+lg	sentence	s-mpya-kabisa	Kiggya ddala!	It’s brand new! = Ni mpya kabisa!
+lg	sentence	s-safi-kabisa	Kirungi ddala!	Absolutely great! = Safi kabisa!
+lg	sentence	s-watoto-wazuri	Abaana abalungi.	Good children. = Watoto wazuri.
+lg	sentence	s-kikombe-kikubwa	Ekikopo ekinene.	A big cup. = Kikombe kikubwa.
+lg	sentence	s-vikombe-vidogo	Ebikopo ebitono.	Small cups. = Vikombe vidogo.
+lg	sentence	s-meza-nzito	Emmeeza nzito.	The table is heavy. = Meza ni nzito.
+lg	sentence	s-ni-nyepesi	Kyangu nnyo.	It’s very light. = Ni nyepesi sana.
+lg	sentence	s-dada-mrembo	Mwannyoko mulungi.	Your sister is beautiful. = Dada yako ni mrembo.
+lg	sentence	s-mwalimu-hodari	Omusomesa mugezi nnyo.	The teacher is very clever. = Mwalimu ni hodari sana.
+lg	sentence	s-kaka-mwembamba	Muganda wange mugonvu.	My brother is thin. = Kaka yangu ni mwembamba.
+lg	sentence	s-bibi-mpole	Jjajja muteefu nnyo.	Grandma is very gentle. = Bibi ni mpole sana.
+lg	sentence	s-neema-mchangamfu	Neema musanyufu.	Neema is cheerful. = Neema ni mchangamfu.
+lg	word	sketi	sikaati	skirt = sketi
+lg	word	kanga	leesu	kanga = kanga
+lg	word	nimevaa	Nnyambadde	I’m wearing = Nimevaa
+lg	word	kiatu	engatto emu	shoe = kiatu
+lg	word	soksi	sokisi	socks = soksi
+lg	word	ninavaa	Nnyambala kati	I’m putting on = Ninavaa
+lg	word	ndefu	mpanvu	long = ndefu
+lg	word	fupi	nnyimpi	short = fupi
+lg	word	kununua	okugula	to buy = kununua
+lg	word	saizi	sayizi	size = saizi
+lg	word	inanifaa	Kinnyingira	It fits me = Inanifaa
+lg	word	jaribu	Gezaako	Try = Jaribu
+lg	word	kioo	endabirwamu	mirror = kioo
+lg	sentence	s-nimevaa-shati	Nnyambadde essaati enjeru.	I’m wearing a white shirt. = Nimevaa shati jeupe.
+lg	sentence	s-kofia-iko-wapi	Enkoofiira yange eri ludda wa?	Where is my hat? = Kofia yangu iko wapi?
+lg	sentence	s-nguo-ghali	Engoye za bbeeyi nnyo.	The clothes are very expensive. = Nguo ni ghali sana.
+lg	sentence	s-kanga-mpya	Leesu yange mpya.	My kanga is new. = Kanga yangu ni mpya.
+lg	sentence	s-nimevaa-gauni	Nnyambadde ekiteeteeyi n'enkoofiira.	I’m wearing a dress and a hat. = Nimevaa gauni na kofia.
+lg	sentence	s-viatu-vichafu	Engatto zange ncaafu.	My shoes are dirty. = Viatu vyangu ni vichafu.
+lg	sentence	s-soksi-nyeusi	Sokisi enzirugavu.	Black socks. = Soksi nyeusi.
+lg	sentence	s-ninavaa-suruali	Nnyambala empale.	I’m putting on trousers. = Ninavaa suruali.
+lg	sentence	s-vaa-koti	Yambala ekkooti, waliwo empewo.	Put on a coat, it’s cold. = Vaa koti, kuna baridi.
+lg	sentence	s-vua-viatu	Yambula engatto, mwattu.	Take off your shoes, please. = Vua viatu, tafadhali.
+lg	sentence	s-suruali-ndefu	Empale mpanvu nnyo.	The trousers are too long. = Suruali ni ndefu sana.
+lg	sentence	s-sketi-fupi	Sikaati nnyimpi.	The skirt is short. = Sketi ni fupi.
+lg	sentence	s-kununua-viatu	Njagala okugula engatto.	I want to buy shoes. = Nataka kununua viatu.
+lg	sentence	s-saizi-gani	Sayizi ki?	What size? = Saizi gani?
+lg	sentence	s-inanifaa-vizuri	Kinnyingira bulungi.	It fits me well. = Inanifaa vizuri.
+lg	sentence	s-jaribu	Gezaako, mwattu!	Try it on, please! = Jaribu, tafadhali!
+lg	sentence	s-kioo-kiko-wapi	Endabirwamu eri ludda wa?	Where is the mirror? = Kioo kiko wapi?
+lg	word	safisha	Longoosa	Clean = Safisha
+lg	word	fagia	Yera	Sweep = Fagia
+lg	word	osha	Yoza	Wash = Osha
+lg	word	vyombo	ebibya	dishes = vyombo
+lg	word	msaada	obuyambi	help = msaada
+lg	word	kazi-nzuri	Okoze bulungi!	Good job! = Kazi nzuri!
+lg	sentence	s-safisha-chumba	Longoosa ekisenge.	Clean the room. = Safisha chumba.
+lg	sentence	s-fagia-nje	Yera ebweru.	Sweep outside. = Fagia nje.
+lg	sentence	s-osha-vyombo-tafadhali	Yoza ebibya, mwattu.	Wash the dishes, please. = Osha vyombo, tafadhali.
+lg	sentence	s-asante-msaada	Weebale obuyambi!	Thanks for the help! = Asante kwa msaada!
+lg	sentence	s-kazi-nzuri	Okoze bulungi, Neema!	Good job, Neema! = Kazi nzuri, Neema!
+lg	word	upepo	embuyaga	wind = upepo
+lg	word	radi	okubwatuka	thunder = radi
+lg	word	jua-kali	omusana omungi	strong sun = jua kali
+lg	word	kavu	kikalu	dry = kavu
+lg	word	nyingi	nnyingi	a lot of = nyingi
+lg	word	msimu	ekiseera	season = msimu
+lg	word	vuli	ddumbi	short rains = vuli
+lg	sentence	s-kuna-upepo	Leero waliwo embuyaga.	It’s windy today. = Kuna upepo leo.
+lg	sentence	s-kuna-mawingu	Leero waliwo ebire.	It’s cloudy today. = Leo kuna mawingu.
+lg	sentence	s-radi-usiku	Eggulu libwatuka ekiro.	There is thunder at night. = Kuna radi usiku.
+lg	sentence	s-jua-kali-leo	Omusana mungi leero!	Strong sun today! = Jua kali leo!
+lg	sentence	s-mvua-nyingi	Enkuba nnyingi!	Lots of rain! = Mvua nyingi!
+lg	sentence	s-kiangazi-kavu	Ekyeya kikalu era kyokya.	The dry season is dry and hot. = Kiangazi ni kavu na joto.
+lg	sentence	s-msimu-gani	Kiseera ki?	Which season? = Msimu gani?
+lg	sentence	s-masika-mvua	Ttoggo ye nkuba empanvu.	Masika is the long rains. = Masika ni mvua ndefu.
+lg	sentence	s-vuli-mvua-fupi	Ddumbi ye nkuba ennyimpi.	Vuli is the short rains. = Vuli ni mvua fupi.
+lg	word	pundamilia	entulege	zebra = pundamilia
+lg	word	mamba	ggoonya	crocodile = mamba
+lg	word	mkali	mukambwe	fierce = mkali
+lg	word	hatari	obulabe	danger = hatari
+lg	word	nyani	enkobe	baboon = nyani
+lg	word	wengi	bangi	many = wengi
+lg	word	mbuga	ppaaka y'ebisolo	national park = mbuga
+lg	sentence	s-nina-ngombe	Nnina ente ssatu.	I have three cows. = Nina ng’ombe watatu.
+lg	sentence	s-mbuzi-mdogo	Embuzi ntono.	The goat is small. = Mbuzi ni mdogo.
+lg	sentence	s-wanyama-wengi	Mu ppaaka mulimu ebisolo bingi.	There are many animals in the park. = Kuna wanyama wengi mbugani.
+lg	sentence	s-shambani-kondoo	Mu ffaamu mulimu endiga.	There are sheep on the farm. = Shambani kuna kondoo.
+lg	sentence	s-mbwa-wangu	Embwa yange nnungi.	My dog is lovely. = Mbwa wangu ni mzuri.
+lg	sentence	s-paka-jikoni	Kkapa eri mu ffumbiro.	The cat is in the kitchen. = Paka yuko jikoni.
+lg	sentence	s-simba-mkali	Empologoma nkambwe!	The lion is fierce! = Simba ni mkali!
+lg	sentence	s-tembo-wawili	Enjovu bbiri n'entugga emu.	Two elephants and one giraffe. = Tembo wawili na twiga mmoja.
+lg	sentence	s-mamba-hatari	Ggoonya za bulabe!	Crocodiles are dangerous! = Mamba ni hatari!
+lg	sentence	s-ndege-wengi	Ebinyonyi bingi!	Lots of birds! = Ndege wengi!
+lg	sentence	s-nyani-mtini	Enkobe ziri waggulu ku muti.	The baboons are up the tree. = Nyani wako juu ya mti.
+lg	word	fundi	omukugu	craftsman = fundi
+lg	word	muuguzi	nnaasi	nurse = muuguzi
+lg	word	anafanya	akolera	he works = anafanya
+lg	word	tunafanya	tukolera	we work = tunafanya
+lg	word	wanafanya	bakolera	they work = wanafanya
+lg	word	bosi	bbosi	boss = bosi
+lg	sentence	s-baba-dereva	Taata wange muvuzi wa mmotoka.	My father is a driver. = Baba yangu ni dereva.
+lg	sentence	s-mpishi-anapika	Omufumbi afumba omuceere.	The cook is cooking rice. = Mpishi anapika wali.
+lg	sentence	s-dada-muuguzi	Mwannyinaze nnaasi.	My sister is a nurse. = Dada yangu ni muuguzi.
+lg	sentence	s-fundi-yuko-wapi	Omukugu ali ludda wa?	Where is the mechanic? = Fundi yuko wapi?
+lg	sentence	s-askari-nje	Omupoliisi ali bweru.	The police officer is outside. = Askari yuko nje.
+lg	sentence	s-mfanyabiashara-duka	Omusuubuzi alina edduuka.	The businessperson has a shop. = Mfanyabiashara ana duka.
+lg	sentence	s-juma-anafanya	Juma akolera Nairobi.	Juma works in Nairobi. = Juma anafanya kazi Nairobi.
+lg	sentence	s-tunafanya-pamoja	Tukolera wamu.	We work together. = Tunafanya kazi pamoja.
+lg	sentence	s-wanafanya-ofisini	Bakolera mu ofiisi.	They work in the office. = Wanafanya kazi ofisini.
+lg	sentence	s-kampuni-kubwa	Kampuni nnene.	The company is big. = Kampuni ni kubwa.
+lg	sentence	s-bosi-mpole	Bbosi wange muteefu.	My boss is kind. = Bosi wangu ni mpole.
+lg	word	daftari	akatabo	exercise book = daftari
+lg	word	ubao	olubaawo	board = ubao
+lg	word	somo	essomo	lesson = somo
+lg	word	masomo	amasomo	lessons = masomo
+lg	word	maswali	ebibuuzo	questions = maswali
+lg	word	jibu	eky'okuddamu	answer = jibu
+lg	word	andika	Wandiika	Write = Andika
+lg	word	soma	Soma	Read = Soma
+lg	sentence	s-kalamu-nyeusi	Ekkalaamu yange nzirugavu.	My pen is black. = Kalamu yangu ni nyeusi.
+lg	sentence	s-mwalimu-ubaoni	Omusomesa awandiika ku lubaawo.	The teacher is writing on the board. = Mwalimu anaandika ubaoni.
+lg	sentence	s-somo-hesabu	Essomo lya leero kubala.	Today’s lesson is maths. = Somo la leo ni hesabu.
+lg	sentence	s-napenda-sayansi	Nnyumirwa ssaayansi.	I like science. = Ninapenda sayansi.
+lg	sentence	s-masomo-mengi	Amasomo mangi!	There are a lot of subjects! = Masomo ni mengi!
+lg	sentence	s-una-swali	Olina ekibuuzo?	Do you have a question? = Una swali?
+lg	sentence	s-jibu-ni-nini	Eky'okuddamu kye kiruwa?	What is the answer? = Jibu ni nini?
+lg	sentence	s-kesho-mtihani	Enkya tulina ekigezo.	Tomorrow we have an exam. = Kesho tuna mtihani.
+lg	sentence	s-kazi-nyumbani-nyingi	Omulimu gw'awaka mungi!	There’s a lot of homework! = Kazi ya nyumbani ni nyingi!
+lg	sentence	s-andika-jina	Wandiika erinnya lyo.	Write your name. = Andika jina lako.
+lg	sentence	s-soma-kitabu	Soma ekitabo.	Read the book. = Soma kitabu.
+lg	word	tiketi	tikiti	ticket = tiketi
+lg	word	treni	eggaali y'omukka	train = treni
+lg	word	uwanja-wa-ndege	ekisaawe ky'ennyonyi	airport = uwanja wa ndege
+lg	word	kusafiri	okutambula	to travel = kusafiri
+lg	word	nitasafiri	Nnaatambula	I will travel = Nitasafiri
+lg	word	tutaondoka	Tunaasimbula	We will leave = Tutaondoka
+lg	word	itafika	eneetuuka	it will arrive = itafika
+lg	word	mzigo	omugugu	luggage = mzigo
+lg	word	nimechelewa	Ndudde	I’m late = Nimechelewa
+lg	sentence	s-tiketi-bei	Tikiti ssente mmeka?	How much is the ticket? = Tiketi ni bei gani?
+lg	sentence	s-kituo-cha-basi	Siteegi ya bbaasi eri ludda wa?	Where is the bus stop? = Kituo cha basi kiko wapi?
+lg	sentence	s-safari-ndefu	Olugendo lw'e Dar es Salaam luwanvu.	The journey to Dar es Salaam is long. = Safari ya Dar es Salaam ni ndefu.
+lg	sentence	s-twende-kituoni	Tugende ku siteegi.	Let’s go to the station. = Twende kituoni.
+lg	sentence	s-uwanja-wa-ndege	Ekisaawe ky'ennyonyi kiri wala.	The airport is far. = Uwanja wa ndege uko mbali.
+lg	sentence	s-nitasafiri-kesho	Nnaatambula enkya.	I will travel tomorrow. = Nitasafiri kesho.
+lg	sentence	s-treni-itafika	Eggaali y'omukka eneetuuka ssaawa mmeka?	What time will the train arrive? = Treni itafika saa ngapi?
+lg	sentence	s-mzigo-mzito	Omugugu gwo muzito!	Your luggage is heavy! = Mzigo wako ni mzito!
+lg	sentence	s-nimechelewa	Ndudde! Nsonyiwa.	I’m late! Sorry. = Nimechelewa! Samahani.
+lg	word	unasemaje	Oyogera otya	How do you say = Unasemaje
+lg	sentence	s-unasemaje	Kino okyogera otya mu {to.mu}?	How do you say it in Swahili? = Unasemaje kwa Kiswahili?
+lg	sentence	s-neno-gani	Kigambo ki?	Which word? = Neno gani?
+lg	sentence	s-ina-maana-gani	Kitegeeza ki?	What does it mean? = Ina maana gani?
+lg	sentence	s-tukutane-sokoni	Tusisinkane mu katale.	Let’s meet at the market. = Tukutane sokoni.
+lg	sentence	s-tukutane-saa-ngapi	Tusisinkane ssaawa mmeka?	What time shall we meet? = Tukutane saa ngapi?
+lg	sentence	s-tutaonana-baadaye	Tunaalabagana oluvannyuma.	See you later. = Tutaonana baadaye.
+lg	word	karne	ekyasa	century = karne
+lg	sentence	s-historia-ndefu	Olubalama lw'ennyanja lulina ebyafaayo bingi.	The coast has a long history. = Pwani ina historia ndefu.
+lg	sentence	s-karne-nyingi	Ebyasa bingi emabega.	Many centuries ago. = Karne nyingi zilizopita.
+lg	sentence	s-biashara-ya-bahari	Obusuubuzi bw'oku nnyanja bwali bunene.	Sea trade was big. = Biashara ya bahari ilikuwa kubwa.
+fr	skill	u9s4	Encore des descriptions	
+fr	skill	u10s4	Chaussures et tailles	
+fr	skill	u11s4	Tâches ménagères	
+fr	skill	u12s4	Vent et orages	
+fr	skill	u13s4	En safari	
+fr	skill	u14s4	À l'entreprise	
+fr	skill	u15s4	Mots et sens	
+fr	skill	u16s4	Trains et avions	
+lg	skill	u9s4	Okunnyonnyola okulala	
+lg	skill	u10s4	Engatto ne sayizi	
+lg	skill	u11s4	Emirimu gy'awaka	
+lg	skill	u12s4	Embuyaga n'okubwatuka	
+lg	skill	u13s4	Mu ppaaka y'ebisolo	
+lg	skill	u14s4	Ku kampuni	
+lg	skill	u15s4	Ebigambo n'amakulu	
+lg	skill	u16s4	Eggaali y'omukka n'ennyonyi	
+en	skill	u9s4	More descriptions	
+en	skill	u10s4	Shoes and sizes	
+en	skill	u11s4	Chores	
+en	skill	u12s4	Wind and storms	
+en	skill	u13s4	On safari	
+en	skill	u14s4	At the company	
+en	skill	u15s4	Words and meanings	
+en	skill	u16s4	Trains and planes	
+sw	skill	u9s4	Maelezo zaidi	
+sw	skill	u10s4	Viatu na saizi	
+sw	skill	u11s4	Kazi za nyumbani	
+sw	skill	u12s4	Upepo na radi	
+sw	skill	u13s4	Mbugani	
+sw	skill	u14s4	Kampunini	
+sw	skill	u15s4	Maneno na maana	
+sw	skill	u16s4	Treni na ndege	
+sw	dialogue	u9s2l3.0	Nyeusi. | Mrefu. | Nina njaa.	Kitabu chako ni cha rangi gani? :: Kiddugavu. | Muwanvu. | Nnina enjala. (answer 1)
+sw	dialogue	u9s3l3.0	Hapana, ni mfupi. | Ndiyo, ni nyekundu. | Kitabu ni kipya.	Baba yako ni mrefu? :: Nedda, mumpi. | Yee, kimyufu. | Ekitabo kiggya. (answer 1)
+sw	dialogue	u10s3l3.0	Ni ghali! Punguza kidogo. | Ninaoga asubuhi. | Viatu vyangu.	Shati hili ni elfu kumi. :: Ya bbeeyi! Kendeezaako. | Nnaaba ku makya. | Engatto zange. (answer 1)
+sw	dialogue	u10s3l3.1	Sawa, nitachukua. | Vua viatu. | Mimi ni mfupi.	Sawa, elfu saba. :: Kale, ngitwala. | Yambula engatto. | Ndi mumpi. (answer 1)
+sw	dialogue	u11s3l3.0	Ninaamka, ninakula kifungua kinywa. | Ninalala usiku. | Shati langu.	Unafanya nini asubuhi? :: Nzuukuka, ndya ekyenkya. | Nneebaka ekiro. | Essaati yange. (answer 1)
+sw	dialogue	u12s3l3.0	Chukua mwavuli. | Jua linawaka. | Ninakula kifungua kinywa.	Mvua inanyesha sana! :: Twala ekiwempe. | Omusana gwaka. | Ndya ekyenkya. (answer 1)
+sw	dialogue	u12s3l3.1	Mimi pia ninahisi baridi. | Jua linawaka. | Viatu vyangu.	Ninahisi baridi. Na wewe? :: Nange mpulira empewo. | Omusana gwaka. | Engatto zange. (answer 1)
+sw	dialogue	u13s3l3.0	Ndiyo, nina mbwa. | Tembo ni mkubwa sana. | Ninaogopa nyoka!	Una mnyama nyumbani? :: Yee, nnina embwa. | Enjovu nnene nnyo. | Ntya omusota! (answer 1)
+sw	dialogue	u14s2l3.0	Mimi ni mwalimu. | Ng'ombe wanakula nyasi. | Ninahisi baridi.	Unafanya kazi gani? :: Ndi musomesa. | Ente zirya omuddo. | Mpulira empewo. (answer 1)
+sw	dialogue	u15s3l3.0	Hapana. Rudia polepole, bwana. | Ng'ombe wanakula nyasi. | Ninaoga asubuhi.	Andikeni maneno haya. Mnaelewa? :: Nedda. Ddamu mpola, ssebo. | Ente zirya omuddo. | Nnaaba ku makya. (answer 1)
+sw	dialogue	u16s1l3.0	Ninaenda Entebbe. Teksi hii inaenda Entebbe? | Ninaogopa nyoka! | Nina swali.	Unakwenda wapi? :: Ŋŋenda Entebbe. Ttakisi eno egenda Entebbe? | Ntya omusota! | Nnina ekibuuzo. (answer 1)

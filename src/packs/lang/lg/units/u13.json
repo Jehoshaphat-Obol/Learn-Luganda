@@ -23,7 +23,15 @@
     "ekinyonyi": { "text": "ekinyonyi" },
     "ebinyonyi": { "text": "ebinyonyi" },
     "engaali": { "text": "engaali" },
-    "ebuuka": { "text": "ebuuka" }
+    "ebuuka": { "text": "ebuuka" },
+    "hakuna-matata": { "text": "Teweeraliikirira" },
+    "pundamilia": { "text": "entulege" },
+    "mamba": { "text": "ggoonya" },
+    "mkali": { "text": "mukambwe" },
+    "hatari": { "text": "obulabe" },
+    "nyani": { "text": "enkobe" },
+    "wengi": { "text": "bangi" },
+    "mbuga": { "text": "ppaaka y'ebisolo" }
   },
   "sentences": {
     "s13-ente-zirya-omuddo": { "text": "Ente zirya omuddo." },
@@ -39,7 +47,20 @@
     "s13-nnina-embwa": { "text": "Nnina embwa." },
     "s13-kkapa-yange": { "text": "Kkapa yange nnungi." },
     "s13-ekinyonyi-kiri-wano": { "text": "Ekinyonyi kiri wano." },
-    "s13-engaali-ebuuka": { "text": "Engaali ebuuka." }
+    "s13-engaali-ebuuka": { "text": "Engaali ebuuka." },
+    "s-hakuna-maji": { "text": "Leero tewali mazzi." },
+    "s-hakuna-matata": { "text": "Teweeraliikirira!" },
+    "s-nina-ngombe": { "text": "Nnina ente ssatu." },
+    "s-mbuzi-mdogo": { "text": "Embuzi ntono." },
+    "s-wanyama-wengi": { "text": "Mu ppaaka mulimu ebisolo bingi." },
+    "s-shambani-kondoo": { "text": "Mu ffaamu mulimu endiga." },
+    "s-mbwa-wangu": { "text": "Embwa yange nnungi." },
+    "s-paka-jikoni": { "text": "Kkapa eri mu ffumbiro." },
+    "s-simba-mkali": { "text": "Empologoma nkambwe!" },
+    "s-tembo-wawili": { "text": "Enjovu bbiri n'entugga emu." },
+    "s-mamba-hatari": { "text": "Ggoonya za bulabe!" },
+    "s-ndege-wengi": { "text": "Ebinyonyi bingi!" },
+    "s-nyani-mtini": { "text": "Enkobe ziri waggulu ku muti." }
   },
   "phrases": ["Waliwo ebisolo bingi.", "Nnina embuzi bbiri.", "Ente zirya omuddo.", "Enjovu nnene nnyo.", "Ntya omusota!", "Engaali ebuuka."],
   "dialogues": { "u13s3l3": [{ "line": "Olina ekisolo awaka?", "options": ["Yee, nnina embwa.", "Enjovu nnene nnyo.", "Ntya omusota!"] }] },

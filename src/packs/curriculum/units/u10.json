@@ -25,7 +25,20 @@
     "nnene",
     "ntono",
     "ngitwala",
-    "nnungi"
+    "nnungi",
+    "sketi",
+    "kanga",
+    "nimevaa",
+    "kiatu",
+    "soksi",
+    "ninavaa",
+    "ndefu",
+    "fupi",
+    "kununua",
+    "saizi",
+    "inanifaa",
+    "jaribu",
+    "kioo"
   ],
   "sentences": [
     "s-essaati-yange",
@@ -43,7 +56,24 @@
     "s-empale-eno-nnene",
     "s-essaati-eno-ntono",
     "s-essaati-nnungi",
-    "s-kale-ngitwala"
+    "s-kale-ngitwala",
+    "s-nimevaa-shati",
+    "s-kofia-iko-wapi",
+    "s-nguo-ghali",
+    "s-kanga-mpya",
+    "s-nimevaa-gauni",
+    "s-viatu-vichafu",
+    "s-soksi-nyeusi",
+    "s-ninavaa-suruali",
+    "s-vaa-koti",
+    "s-vua-viatu",
+    "s-suruali-ndefu",
+    "s-sketi-fupi",
+    "s-kununua-viatu",
+    "s-saizi-gani",
+    "s-inanifaa-vizuri",
+    "s-jaribu",
+    "s-kioo-kiko-wapi"
   ],
   "phrases": 7,
   "skills": [
@@ -80,6 +110,29 @@
           "newWords": ["ngitwala"],
           "sentences": ["s-kale-ngitwala", "s-essaati-eno-ssente-mmeka", "s-essaati-nnungi"],
           "dialogues": [{ "speaker": "ssali", "answer": 0 }, { "speaker": "ssali", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u10s4",
+      "icon": "profile",
+      "since": 2,
+      "lessons": [
+        { "id": "u10s4l1", "newWords": ["sketi", "kanga", "nimevaa"], "sentences": ["s-nimevaa-shati", "s-kanga-mpya", "s-nimevaa-gauni"] },
+        {
+          "id": "u10s4l2",
+          "newWords": ["kiatu", "soksi", "ninavaa"],
+          "sentences": ["s-viatu-vichafu", "s-soksi-nyeusi", "s-ninavaa-suruali", "s-vaa-koti"]
+        },
+        {
+          "id": "u10s4l3",
+          "newWords": ["ndefu", "fupi", "kununua", "saizi", "inanifaa"],
+          "sentences": ["s-vua-viatu", "s-suruali-ndefu", "s-sketi-fupi", "s-kununua-viatu"]
+        },
+        {
+          "id": "u10s4l4",
+          "newWords": ["jaribu", "kioo"],
+          "sentences": ["s-saizi-gani", "s-inanifaa-vizuri", "s-jaribu", "s-kioo-kiko-wapi", "s-kofia-iko-wapi", "s-nguo-ghali"]
         }
       ]
     }
