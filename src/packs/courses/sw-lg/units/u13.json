@@ -1,0 +1,614 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u13",
+  "title": "Wanyama",
+  "description": "Wanyama wa shambani, wanyama pori, wanyama vipenzi na korongo wa Uganda.",
+  "color": "blush",
+  "character": "emma",
+  "words": [
+    {
+      "id": "ekisolo",
+      "target": "ekisolo",
+      "base": "mnyama"
+    },
+    {
+      "id": "ebisolo",
+      "target": "ebisolo",
+      "base": "wanyama"
+    },
+    {
+      "id": "ente",
+      "target": "ente",
+      "base": "ng’ombe",
+      "altBase": [
+        "ngombe"
+      ],
+      "notes": "Mmoja au wengi: majina ya n- mara nyingi yanaonekana sawa katika wingi, kama Kiswahili ng’ombe."
+    },
+    {
+      "id": "embuzi",
+      "target": "embuzi",
+      "base": "mbuzi"
+    },
+    {
+      "id": "endiga",
+      "target": "endiga",
+      "base": "kondoo"
+    },
+    {
+      "id": "embizzi",
+      "target": "embizzi",
+      "base": "nguruwe"
+    },
+    {
+      "id": "omuddo",
+      "target": "omuddo",
+      "base": "nyasi",
+      "altBase": [
+        "majani"
+      ]
+    },
+    {
+      "id": "zirya",
+      "target": "zirya",
+      "base": "wanakula",
+      "altBase": [
+        "wala",
+        "zinakula"
+      ],
+      "notes": "Kwa wanyama wa n-: ente zirya, ng’ombe wanakula."
+    },
+    {
+      "id": "waliwo",
+      "target": "waliwo",
+      "base": "kuna",
+      "altBase": [
+        "pana",
+        "kuna na"
+      ]
+    },
+    {
+      "id": "empologoma",
+      "target": "empologoma",
+      "base": "simba"
+    },
+    {
+      "id": "enjovu",
+      "target": "enjovu",
+      "base": "tembo",
+      "altBase": [
+        "ndovu"
+      ]
+    },
+    {
+      "id": "envubu",
+      "target": "envubu",
+      "base": "kiboko",
+      "altBase": [
+        "viboko"
+      ]
+    },
+    {
+      "id": "enkima",
+      "target": "enkima",
+      "base": "tumbili",
+      "altBase": [
+        "nyani",
+        "kima"
+      ]
+    },
+    {
+      "id": "entugga",
+      "target": "entugga",
+      "base": "twiga"
+    },
+    {
+      "id": "omusota",
+      "target": "omusota",
+      "base": "nyoka"
+    },
+    {
+      "id": "ntya",
+      "target": "Ntya",
+      "base": "Ninaogopa",
+      "altBase": [
+        "naogopa",
+        "ninamwogopa"
+      ]
+    },
+    {
+      "id": "embwa",
+      "target": "embwa",
+      "base": "mbwa"
+    },
+    {
+      "id": "kkapa",
+      "target": "kkapa",
+      "base": "paka"
+    },
+    {
+      "id": "ekinyonyi",
+      "target": "ekinyonyi",
+      "base": "ndege"
+    },
+    {
+      "id": "ebinyonyi",
+      "target": "ebinyonyi",
+      "base": "ndege wengi",
+      "altBase": [
+        "ndege"
+      ]
+    },
+    {
+      "id": "engaali",
+      "target": "engaali",
+      "base": "korongo",
+      "altBase": [
+        "korongo taji",
+        "korongo mwenye taji",
+        "ndege wa taifa"
+      ],
+      "notes": "Ndege wa taifa wa Uganda, aliye kwenye bendera."
+    },
+    {
+      "id": "ebuuka",
+      "target": "ebuuka",
+      "base": "anaruka",
+      "altBase": [
+        "inaruka",
+        "anapaa",
+        "yaruka"
+      ],
+      "notes": "Kwa majina ya n-. Okubuuka, kuruka (kwa mabawa)."
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s13-ente-zirya-omuddo",
+      "target": "Ente zirya omuddo.",
+      "base": "Ng’ombe wanakula nyasi.",
+      "altBase": [
+        "Ng’ombe hula nyasi.",
+        "Ngombe wanakula nyasi.",
+        "Ng’ombe wanakula majani."
+      ]
+    },
+    {
+      "id": "s13-nnina-embuzi-bbiri",
+      "target": "Nnina embuzi bbiri.",
+      "base": "Nina mbuzi wawili.",
+      "altBase": [
+        "Nina mbuzi mbili."
+      ]
+    },
+    {
+      "id": "s13-ebisolo-bingi",
+      "target": "Waliwo ebisolo bingi.",
+      "base": "Kuna wanyama wengi."
+    },
+    {
+      "id": "s13-endiga-n-embizzi",
+      "target": "Endiga n’embizzi.",
+      "base": "Kondoo na nguruwe.",
+      "altTarget": [
+        "Endiga nembizzi."
+      ]
+    },
+    {
+      "id": "s13-waliwo-empologoma",
+      "target": "Waliwo empologoma?",
+      "base": "Kuna simba?",
+      "altBase": [
+        "Kuna simba hapa?"
+      ]
+    },
+    {
+      "id": "s13-enjovu-nnene",
+      "target": "Enjovu nnene nnyo.",
+      "base": "Tembo ni mkubwa sana.",
+      "altBase": [
+        "Ndovu ni mkubwa sana."
+      ]
+    },
+    {
+      "id": "s13-envubu-mu-mazzi",
+      "target": "Envubu eri mu mazzi.",
+      "base": "Kiboko yuko majini.",
+      "altBase": [
+        "Kiboko yupo majini.",
+        "Kiboko yuko ndani ya maji."
+      ]
+    },
+    {
+      "id": "s13-enkima-ntono",
+      "target": "Enkima ntono.",
+      "base": "Tumbili ni mdogo.",
+      "altBase": [
+        "Nyani ni mdogo."
+      ]
+    },
+    {
+      "id": "s13-entugga-mpanvu",
+      "target": "Entugga mpanvu.",
+      "base": "Twiga ni mrefu."
+    },
+    {
+      "id": "s13-ntya-omusota",
+      "target": "Ntya omusota!",
+      "base": "Ninaogopa nyoka!",
+      "altBase": [
+        "Naogopa nyoka!",
+        "Ninamwogopa nyoka!"
+      ]
+    },
+    {
+      "id": "s13-nnina-embwa",
+      "target": "Nnina embwa.",
+      "base": "Nina mbwa."
+    },
+    {
+      "id": "s13-kkapa-yange",
+      "target": "Kkapa yange nnungi.",
+      "base": "Paka wangu ni mzuri.",
+      "altBase": [
+        "Paka yangu ni nzuri."
+      ]
+    },
+    {
+      "id": "s13-ekinyonyi-kiri-wano",
+      "target": "Ekinyonyi kiri wano.",
+      "base": "Ndege yuko hapa.",
+      "altBase": [
+        "Ndege yupo hapa.",
+        "Ndege iko hapa."
+      ]
+    },
+    {
+      "id": "s13-engaali-ebuuka",
+      "target": "Engaali ebuuka.",
+      "base": "Korongo anaruka.",
+      "altBase": [
+        "Korongo anapaa.",
+        "Korongo taji anaruka."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u13s1",
+      "title": "Wanyama wa shambani",
+      "icon": "home",
+      "tip": "same-plural",
+      "lessons": [
+        {
+          "id": "u13s1l1",
+          "newWords": [
+            "ekisolo",
+            "ebisolo",
+            "ente",
+            "embuzi"
+          ],
+          "sentences": [
+            "s13-nnina-embuzi-bbiri"
+          ]
+        },
+        {
+          "id": "u13s1l2",
+          "newWords": [
+            "endiga",
+            "embizzi",
+            "waliwo"
+          ],
+          "sentences": [
+            "s13-endiga-n-embizzi",
+            "s13-ebisolo-bingi"
+          ]
+        },
+        {
+          "id": "u13s1l3",
+          "newWords": [
+            "omuddo",
+            "zirya"
+          ],
+          "sentences": [
+            "s13-ente-zirya-omuddo",
+            "s13-nnina-embuzi-bbiri"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u13s2",
+      "title": "Wanyama pori",
+      "icon": "trophy",
+      "lessons": [
+        {
+          "id": "u13s2l1",
+          "newWords": [
+            "empologoma",
+            "enjovu",
+            "envubu"
+          ],
+          "sentences": [
+            "s13-waliwo-empologoma",
+            "s13-enjovu-nnene",
+            "s13-envubu-mu-mazzi"
+          ]
+        },
+        {
+          "id": "u13s2l2",
+          "newWords": [
+            "enkima",
+            "entugga"
+          ],
+          "sentences": [
+            "s13-enkima-ntono",
+            "s13-entugga-mpanvu"
+          ]
+        },
+        {
+          "id": "u13s2l3",
+          "newWords": [
+            "omusota",
+            "ntya"
+          ],
+          "sentences": [
+            "s13-ntya-omusota",
+            "s13-waliwo-empologoma"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u13s3",
+      "title": "Wanyama vipenzi na ndege",
+      "icon": "heart",
+      "lessons": [
+        {
+          "id": "u13s3l1",
+          "newWords": [
+            "embwa",
+            "kkapa"
+          ],
+          "sentences": [
+            "s13-nnina-embwa",
+            "s13-kkapa-yange"
+          ]
+        },
+        {
+          "id": "u13s3l2",
+          "newWords": [
+            "ekinyonyi",
+            "ebinyonyi"
+          ],
+          "sentences": [
+            "s13-ekinyonyi-kiri-wano"
+          ]
+        },
+        {
+          "id": "u13s3l3",
+          "newWords": [
+            "engaali",
+            "ebuuka"
+          ],
+          "sentences": [
+            "s13-engaali-ebuuka",
+            "s13-ekinyonyi-kiri-wano"
+          ],
+          "dialogues": [
+            {
+              "speaker": "emma",
+              "target": "Olina ekisolo awaka?",
+              "base": "Una mnyama nyumbani?",
+              "options": [
+                "Yee, nnina embwa.",
+                "Enjovu nnene nnyo.",
+                "Ntya omusota!"
+              ],
+              "answer": "Yee, nnina embwa."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Majina mengi ya wanyama ni ya ngeli ya n-, kama Kiswahili (mbuzi, ng’ombe, simba), kwa hiyo makubaliano uliyojifunza kwa nguo yanafanya kazi kwa wanyama pia.",
+    "phrases": [
+      {
+        "target": "Waliwo ebisolo bingi.",
+        "base": "Kuna wanyama wengi."
+      },
+      {
+        "target": "Nnina embuzi bbiri.",
+        "base": "Nina mbuzi wawili."
+      },
+      {
+        "target": "Ente zirya omuddo.",
+        "base": "Ng’ombe wanakula nyasi."
+      },
+      {
+        "target": "Enjovu nnene nnyo.",
+        "base": "Tembo ni mkubwa sana."
+      },
+      {
+        "target": "Ntya omusota!",
+        "base": "Ninaogopa nyoka!"
+      },
+      {
+        "target": "Engaali ebuuka.",
+        "base": "Korongo anaruka."
+      }
+    ],
+    "tips": [
+      {
+        "id": "same-plural",
+        "title": "Ng’ombe mmoja, ng’ombe wengi",
+        "body": [
+          "Majina mengi ya n- ni sawa katika umoja na wingi, kama Kiswahili: **ente** ni ng’ombe mmoja au kundi. Maneno yanayozunguka jina hukuambia ipi. **Ente erya** ni “ng’ombe anakula”, **ente zirya** ni “ng’ombe wanakula”. Angalia: Kiganda hutumia **e-/zi-** (kama Kiswahili i-/zi- kwa vitu), si a-/wa- kama Kiswahili kwa wanyama.",
+          "**Waliwo** maana yake “kuna”, kwa jina lolote: **Waliwo empologoma?** (Kuna simba?). Linganisha **wa-** na **pa-** ya Kiswahili “pana”."
+        ],
+        "table": [
+          [
+            "",
+            "Mmoja",
+            "Wengi"
+          ],
+          [
+            "anakula",
+            "ente erya",
+            "ente zirya"
+          ],
+          [
+            "yuko hapa / wako hapa",
+            "embwa eri wano",
+            "embwa ziri wano"
+          ],
+          [
+            "-angu",
+            "embuzi yange",
+            "embuzi zange"
+          ]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Korongo",
+        "body": [
+          "Korongo mwenye taji, **engaali**, yuko kwenye bendera na nembo ya taifa ya Uganda. Huishi na mwenzi mmoja maisha yote na hucheza dansi kumvutia, ndiyo maana ni alama ya taifa. (Pia ndiye aliyemhamasisha kiongozi wetu wa programu.)"
+        ]
+      },
+      {
+        "title": "Ng’ombe ni mali",
+        "body": [
+          "Ng’ombe kwa muda mrefu wamekuwa ishara ya mali na hadhi, kama ilivyo kwa jamii nyingi za Afrika Mashariki. Wanaonekana kwenye mahari, methali na alama nyingi za koo utakazokutana nazo katika Sehemu ya 4."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "village-farm",
+      "title": "Shambani kwa Jjajja",
+      "unlockAfter": "u13s3l3",
+      "cast": [
+        "emma",
+        "jjajja"
+      ],
+      "summary": "Emma anatembelea kijijini na kukutana na wanyama.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "jjajja",
+            "target": "Tusanyuse okukulaba, Emma! Yingira.",
+            "base": "Tumefurahi kukuona, Emma! Karibu ndani."
+          }
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Weebale, Jjajja. Ebisolo biri wa?",
+            "base": "Asante, Bibi. Wanyama wako wapi?"
+          },
+          "gloss": {
+            "biri": "wako (kwa majina ya ebi-)"
+          }
+        },
+        {
+          "line": {
+            "speaker": "jjajja",
+            "target": "Laba! Ente zirya omuddo.",
+            "base": "Tazama! Ng’ombe wanakula nyasi."
+          },
+          "gloss": {
+            "Laba": "tazama"
+          }
+        },
+        {
+          "question": "Ng’ombe wanafanya nini?",
+          "options": [
+            "Wanalala",
+            "Wanakula nyasi",
+            "Wanakunywa maji"
+          ],
+          "answer": 1
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Ente mmeka?",
+            "base": "Ng’ombe wangapi?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "jjajja",
+            "target": "Ente ttaano n’embuzi kkumi.",
+            "base": "Ng’ombe watano na mbuzi kumi."
+          }
+        },
+        {
+          "question": "Jjajja ana mbuzi wangapi?",
+          "options": [
+            "Watano",
+            "Wawili",
+            "Kumi"
+          ],
+          "answer": 2
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Ayi! Omusota!",
+            "base": "Lo! Nyoka!"
+          }
+        },
+        {
+          "line": {
+            "speaker": "jjajja",
+            "target": "Nedda, mwana wange. Ogwo muguwa.",
+            "base": "Hapana, mwanangu. Hiyo ni kamba."
+          },
+          "gloss": {
+            "Ogwo": "huo, hiyo (kwa majina ya mu-)",
+            "muguwa": "kamba"
+          }
+        },
+        {
+          "question": "Emma aliona nini kwa kweli?",
+          "options": [
+            "Kamba",
+            "Nyoka",
+            "Mbwa"
+          ],
+          "answer": 0
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Haha! Ntya omusota nnyo.",
+            "base": "Haha! Ninaogopa nyoka sana."
+          }
+        },
+        {
+          "line": {
+            "speaker": "jjajja",
+            "target": "Laba waggulu: engaali ebuuka!",
+            "base": "Tazama juu: korongo anaruka!"
+          },
+          "gloss": {
+            "waggulu": "juu"
+          }
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Nnungi nnyo!",
+            "base": "Ni mzuri sana!"
+          }
+        }
+      ]
+    }
+  ]
+}
