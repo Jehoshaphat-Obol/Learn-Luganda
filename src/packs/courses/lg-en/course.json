@@ -152,6 +152,13 @@
       "level": "Abeeyongerayo",
       "description": "Nnyonnyola ebintu, yambala, yogera ku lunaku lwo, obudde, ebisolo, emirimu, essomero n’entambula.",
       "units": ["u9", "u10", "u11", "u12", "u13", "u14", "u15", "u16"]
+    },
+    {
+      "id": "s3",
+      "title": "Emboozi",
+      "level": "Ab’omu makkati abasooka",
+      "description": "Gaana, buuza ebibuuzo, yogera ku byayita n’ebijja, enneewulira, eby’okwesanyusaamu, essimu n’okufumba.",
+      "units": ["u17", "u18", "u19", "u20", "u21", "u22", "u23", "u24"]
     }
   ]
 }

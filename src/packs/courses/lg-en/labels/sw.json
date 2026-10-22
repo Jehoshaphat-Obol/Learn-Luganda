@@ -10,6 +10,11 @@
       "title": "Maisha ya kila siku",
       "level": "Ngazi ya awali",
       "description": "Eleza vitu, vaa nguo, zungumza kuhusu siku yako, hali ya hewa, wanyama, kazi, shule na usafiri."
+    },
+    "s3": {
+      "title": "Mazungumzo",
+      "level": "Kabla ya kati",
+      "description": "Kataa, uliza maswali, zungumza kuhusu yaliyopita na yajayo, hisia, burudani, simu na upishi."
     }
   },
   "units": {
@@ -76,6 +81,38 @@
     "u16": {
       "title": "Usafiri",
       "description": "Panda teksi au basi na panga safari kote Uganda."
+    },
+    "u17": {
+      "title": "Kukataa",
+      "description": "Sema usichotaka, usicho nacho na usichojua."
+    },
+    "u18": {
+      "title": "Kuuliza maswali",
+      "description": "Uliza nani, nini, wapi, lini na kwa nini, na uliza kuhusu maneno."
+    },
+    "u19": {
+      "title": "Nilichofanya",
+      "description": "Sema ulichofanya leo, jana na zamani."
+    },
+    "u20": {
+      "title": "Mipango",
+      "description": "Zungumza kuhusu kesho, wikendi na ndoto zako."
+    },
+    "u21": {
+      "title": "Hisia",
+      "description": "Sema unavyojisikia na uonyeshe kuwajali wengine."
+    },
+    "u22": {
+      "title": "Burudani na michezo",
+      "description": "Zungumza kuhusu muda wa mapumziko, mpira wa miguu, muziki na michezo."
+    },
+    "u23": {
+      "title": "Kwenye simu",
+      "description": "Piga simu, tuma ujumbe na panga kukutana."
+    },
+    "u24": {
+      "title": "Upishi",
+      "description": "Fuata mapishi, pika matoke kwa majani ya ndizi na ushiriki mlo."
     }
   },
   "skills": {
@@ -126,6 +163,30 @@
     "u15s3": "Maswali na kazi ya nyumbani",
     "u16s1": "Teksi na basi",
     "u16s2": "Boda boda na gari",
-    "u16s3": "Safari"
+    "u16s3": "Safari",
+    "u17s1": "Sitaki…",
+    "u17s2": "Sina",
+    "u17s3": "Wewe, wao na hapana!",
+    "u18s1": "Nani na nini",
+    "u18s2": "Wapi na lini",
+    "u18s3": "Kwa nini na vipi",
+    "u19s1": "Leo hadi sasa",
+    "u19s2": "Jana",
+    "u19s3": "Zamani",
+    "u20s1": "Kesho",
+    "u20s2": "Wikendi hii",
+    "u20s3": "Siku moja",
+    "u21s1": "Furaha na huzuni",
+    "u21s2": "Uchovu na wasiwasi",
+    "u21s3": "Kuonyesha kujali",
+    "u22s1": "Muda wa mapumziko",
+    "u22s2": "Mpira wa miguu",
+    "u22s3": "Muziki na michezo",
+    "u23s1": "Kupiga simu",
+    "u23s2": "Ujumbe",
+    "u23s3": "Kukutana",
+    "u24s1": "Jikoni",
+    "u24s2": "Kupika matoke",
+    "u24s3": "Kushiriki mlo"
   }
 }

@@ -16,6 +16,7 @@
 //   "tips": { "u9s2": "tip-id" },             // skill -> new guidebook tip (null removes)
 //   "options": { "old option": "new option" },// dialogue options the lookup misses
 //   "guidebook": { "intro", "tips", "culture" }, // phrases are flipped automatically
+//   "replace": { "old text": "new text" },   // whole strings, anywhere in the unit
 //   "stories": { "story-id": { "title", "summary", "questions": ["...", { "question", "options" }] } }
 //   // a question without options keeps them in the new target language
 // }
@@ -176,6 +177,23 @@ const unit = {
   guidebook,
   ...(stories.length ? { stories } : {})
 };
+
+const swap = overlay.replace || {};
+const used = new Set();
+const walk = (v) => {
+  if (typeof v === 'string') {
+    if (v in swap) {
+      used.add(v);
+      return swap[v];
+    }
+    return v;
+  }
+  if (Array.isArray(v)) return v.map(walk);
+  if (v && typeof v === 'object') return Object.fromEntries(Object.entries(v).map(([k, x]) => [k, walk(x)]));
+  return v;
+};
+Object.assign(unit, walk(unit));
+for (const k of Object.keys(swap)) if (!used.has(k)) problems.push(`replace text not found: “${k}”`);
 
 if (problems.length) {
   console.error(`${unitId}:\n  ${problems.join('\n  ')}`);
