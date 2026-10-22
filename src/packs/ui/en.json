@@ -62,6 +62,10 @@
         "none": "No language matches your search."
       }
     },
+    "languageSwitch": {
+      "button": "Language: {language}. Change the app language",
+      "title": "Choose your language"
+    },
     "settings": {
       "languages": {
         "title": "Languages",

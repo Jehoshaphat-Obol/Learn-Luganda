@@ -36,6 +36,9 @@ export const PATHS = {
   clock: '<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="M12 7 V12 L15.5 14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>',
   target: '<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="1.8"/>',
   search: '<circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2.4"/><path d="M15.5 15.5 L20.5 20.5" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>',
+  // The 文A "translate" mark that phones, browsers and Wikipedia use for
+  // "change language", so it reads without knowing any English.
+  translate: '<path d="M7 2.5 V5 M2.5 6 H11.5 M9.5 6 Q8 11 3 13.5 M4.5 6 Q6.5 11 11 13.5 M12 21 L16.5 10 L21 21 M13.6 17 H19.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>',
 };
 
 export const ICON_NAMES = Object.keys(PATHS);

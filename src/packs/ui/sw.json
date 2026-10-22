@@ -88,6 +88,10 @@
         "none": "Hakuna lugha inayolingana na utafutaji wako."
       }
     },
+    "languageSwitch": {
+      "button": "Lugha: {language}. Badilisha lugha ya programu",
+      "title": "Chagua lugha yako"
+    },
     "settings": {
       "languages": {
         "title": "Lugha",

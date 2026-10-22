@@ -868,3 +868,100 @@
   box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-text) 14%, transparent);
   object-fit: cover;
 }
+
+/* Interface-language switcher: the 文A mark and the language in its own name */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 40px;
+  padding: var(--space-2) var(--space-3);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font: inherit;
+  font-size: var(--text-sm);
+  font-weight: var(--weight-bold);
+  cursor: pointer;
+}
+
+.lang-switch:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.lang-switch .icon {
+  flex: none;
+  color: var(--color-primary);
+}
+
+.lang-switch--compact {
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+}
+
+.lang-sheet .modal__actions:empty {
+  display: none;
+}
+
+.lang-sheet .modal__body {
+  display: grid;
+  gap: var(--space-3);
+  text-align: start;
+}
+
+.lang-sheet__options {
+  display: grid;
+  gap: var(--space-2);
+}
+
+.lang-sheet__option {
+  justify-content: space-between;
+}
+
+.lang-sheet__option[hidden] {
+  display: none;
+}
+
+.lang-sheet__option span {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+.lang-sheet__auto {
+  vertical-align: -0.2em;
+  margin-inline-end: 0.5em;
+  color: var(--color-primary);
+}
+
+.lang-sheet__search {
+  position: relative;
+}
+
+.lang-sheet__search .icon {
+  position: absolute;
+  inset-inline-start: var(--space-3);
+  top: 50%;
+  translate: 0 -50%;
+  color: var(--color-text-muted);
+  pointer-events: none;
+}
+
+.lang-sheet__search .input {
+  width: 100%;
+  padding-inline-start: calc(var(--space-3) + 26px);
+}
+
+.lang-sheet__none {
+  margin: 0;
+  font-size: var(--text-sm);
+}
+
+.settings-lang-icon {
+  vertical-align: -0.2em;
+  margin-inline-end: var(--space-2);
+  color: var(--color-primary);
+}

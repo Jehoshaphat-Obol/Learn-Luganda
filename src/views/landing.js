@@ -25,6 +25,7 @@ import { rich } from '../i18n/rich.js';
 import { brandMark } from '../app/brand-mark.js';
 import { siteLinks } from '../app/site.js';
 import { installButton } from '../app/pwa.js';
+import { bindLanguageSwitcher, languageSwitcher } from '../ui/language-switcher.js';
 
 const STEPS = [
   { id: 'lessons', icon: 'bolt' },
@@ -75,6 +76,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
             <a href="#faq">${escapeHtml(t('landing.nav.faq'))}</a>
           </nav>
           <div class="landing__actions">
+            ${languageSwitcher()}
             ${installButton('landing__install')}
             ${button({ label: t(returning ? 'landing.cta.continue' : 'landing.cta.start'), href: returning ? '#/learn' : '#/onboarding' })}
           </div>
@@ -199,6 +201,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
         </footer>
       </div>`;
 
+    bindLanguageSwitcher(root);
     root.addEventListener('click', (e) => {
       const link = e.target.closest('a[href^="#"]:not([href^="#/"])');
       if (link) {

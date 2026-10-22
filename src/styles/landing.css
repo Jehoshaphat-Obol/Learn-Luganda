@@ -560,3 +560,16 @@
 .landing__footer .site-links {
   justify-content: center;
 }
+
+/* On the narrowest phones the 文A mark alone stands for the switcher. */
+@media (max-width: 380px) {
+  .landing__header .lang-switch__name {
+    display: none;
+  }
+
+  .landing__header .lang-switch {
+    width: 40px;
+    padding: 0;
+    justify-content: center;
+  }
+}
