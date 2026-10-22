@@ -72,6 +72,10 @@
         "none": "Tewali lulimi lukwatagana n’ky’onoonya."
       }
     },
+    "languageSwitch": {
+      "button": "Olulimi: {language}. Kyusa olulimi lwa app",
+      "title": "Londa olulimi lwo"
+    },
     "settings": {
       "languages": {
         "title": "Ennimi",

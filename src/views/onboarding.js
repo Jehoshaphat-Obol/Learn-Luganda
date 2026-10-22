@@ -12,6 +12,7 @@ import { button, escapeHtml, progressBar, speech } from '../ui/components.js';
 import { avatar } from '../ui/avatar.js';
 import { icon } from '../ui/icons.js';
 import { trackPixel } from '../marketing/pixel.js';
+import { bindLanguageSwitcher, languageSwitcher } from '../ui/language-switcher.js';
 import { applyLanguages, filterLanguages, languageScreen, onGuessReply } from './language-picker.js';
 import { course } from '../content/course.js';
 import { courseLanguage } from '../content/names.js';
@@ -144,6 +145,7 @@ export function onboardingView({ root, navigate }) {
         <header class="onb__top">
           ${i > 0 ? `<button class="icon-btn" type="button" data-nav="back" aria-label="${escapeHtml(t('onboarding.back'))}">${icon('back')}</button>` : `<a class="icon-btn" href="#/" aria-label="${escapeHtml(t('onboarding.close'))}">${icon('close')}</a>`}
           ${progressBar(i / (STEPS.length - 1), { label: t('onboarding.progress') })}
+          ${languageSwitcher({ compact: true })}
         </header>
         <section class="onb__main onb__main--${step}">
           <div class="talk onb__talk">
@@ -187,6 +189,7 @@ export function onboardingView({ root, navigate }) {
     render();
   }
 
+  bindLanguageSwitcher(root);
   root.addEventListener('click', (e) => {
     const reply = e.target.closest('[data-lang-reply]');
     if (reply) {

@@ -9,6 +9,7 @@ import { AVATAR_COLORS, DAILY_GOALS, saveProfile } from '../state/profile.js';
 import { button, escapeHtml, openModal, toast } from '../ui/components.js';
 import { avatarIds, characterInfo, mascot } from '../illustrations/index.js';
 import { avatar } from '../ui/avatar.js';
+import { icon } from '../ui/icons.js';
 import { refreshTopBar } from '../app/shell.js';
 import { installSection } from '../app/pwa.js';
 import { backgroundSupported, remindersSupported, setReminderHour, setReminders } from '../reminders/reminders.js';
@@ -110,7 +111,7 @@ function languagesSection(settings) {
     <h2>${escapeHtml(t('settings.languages.title'))}</h2>
     <div>
       <label class="switch-row">
-        <span class="switch-row__text"><strong>${escapeHtml(t('settings.languages.ui'))}</strong><small>${escapeHtml(t('settings.languages.uiHint'))}</small></span>
+        <span class="switch-row__text"><strong>${icon('translate', { size: 18, className: 'settings-lang-icon' })}${escapeHtml(t('settings.languages.ui'))}</strong><small>${escapeHtml(t('settings.languages.uiHint'))}</small></span>
         <select class="input settings-hour" data-ui-lang>${ui.join('')}</select>
       </label>
       <label class="switch-row">
