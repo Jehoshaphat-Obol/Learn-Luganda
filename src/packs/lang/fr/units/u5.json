@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u5",
+  "words": {
+    "leero": { "text": "aujourd’hui" },
+    "enkya": { "text": "demain" },
+    "jjo": { "text": "hier" },
+    "olunaku": { "text": "jour", "alts": ["le jour", "un jour", "journée", "jours"] },
+    "wiiki": { "text": "semaine", "alts": ["la semaine", "une semaine", "semaines"] },
+    "omwezi": { "text": "mois", "alts": ["le mois", "lune", "la lune"] },
+    "omwaka": { "text": "année", "alts": ["an", "l’année", "un an", "une année"] },
+    "makya": { "text": "le matin", "alts": ["matin", "ce matin", "du matin"] },
+    "olweggulo": { "text": "l’après-midi", "alts": ["après-midi", "dans l’après-midi", "le soir", "en fin de journée"] },
+    "ekiro": { "text": "la nuit", "alts": ["nuit", "le soir", "de nuit"] },
+    "bbalaza": { "text": "lundi" },
+    "lwakubiri": { "text": "mardi" },
+    "lwakusatu": { "text": "mercredi" },
+    "lwakuna": { "text": "jeudi" },
+    "lwakutaano": { "text": "vendredi" },
+    "lwamukaaga": { "text": "samedi" },
+    "ssabbiiti": { "text": "dimanche" },
+    "essaawa": { "text": "heure", "alts": ["l’heure", "montre", "horloge"] },
+    "ssaawa-mmeka": { "text": "Quelle heure est-il ?", "alts": ["il est quelle heure", "quelle heure", "quelle heure il est"] },
+    "ssaawa-emu": { "text": "sept heures", "alts": ["7 h", "7h", "7 heures", "sept"] },
+    "ssaawa-nnya": { "text": "dix heures", "alts": ["10 h", "10h", "10 heures", "dix"] },
+    "ssaawa-mukaaga": { "text": "midi", "alts": ["minuit", "douze heures", "12 h", "12h"] },
+    "na-nusu": { "text": "et demie", "alts": ["trente", "et demi"] },
+    "jioni": { "text": "soir", "alts": ["le soir", "en soirée"] }
+  },
+  "sentences": {
+    "s-nsoma-leero": { "text": "J’étudie aujourd’hui.", "alts": ["Aujourd’hui, j’étudie."] },
+    "s-tunaalabagana-enkya": { "text": "À demain.", "alts": ["On se voit demain."] },
+    "s-buli-lunaku": { "text": "J’apprends le luganda tous les jours.", "alts": ["J’apprends le luganda chaque jour."] },
+    "s-nnywa-caayi-ku-makya": { "text": "Je bois du thé le matin." },
+    "s-ndya-olweggulo": { "text": "Je mange du matooke l’après-midi.", "alts": ["Je mange du matooke le soir."] },
+    "s-nsoma-ekiro": { "text": "Je lis un livre la nuit.", "alts": ["Je lis un livre le soir."] },
+    "s-ku-bbalaza": { "text": "J’étudie le lundi.", "alts": ["J’étudie lundi."] },
+    "s-ku-lwakutaano": { "text": "À vendredi.", "alts": ["On se voit vendredi."] },
+    "s-ssaawa-mmeka": { "text": "Quelle heure est-il ?", "alts": ["Il est quelle heure ?"] },
+    "s-ssaawa-nnya": { "text": "Il est dix heures.", "alts": ["Dix heures."] },
+    "s-ssaawa-emu-ku-makya": { "text": "Sept heures du matin.", "alts": ["7 heures du matin.", "7 h du matin."] },
+    "s-saa-ngapi-sasa": { "text": "Quelle heure est-il maintenant ?", "alts": ["Il est quelle heure maintenant ?"] },
+    "s-saa-tatu-na-nusu": { "text": "Neuf heures et demie.", "alts": ["9 h 30.", "9h30.", "Neuf heures trente."] },
+    "s-saa-sita-mchana": { "text": "Midi.", "alts": ["Douze heures.", "12 h."] },
+    "s-saa-mbili-usiku": { "text": "Huit heures du soir.", "alts": ["20 heures.", "20 h.", "Vingt heures."] },
+    "s-leo-na-kesho": { "text": "Aujourd’hui et demain." },
+    "s-jana-jioni": { "text": "Hier soir." },
+    "s-siku-saba": { "text": "Une semaine a sept jours.", "alts": ["Une semaine, c’est sept jours."] },
+    "s-leo-ni-jumatatu": { "text": "Aujourd’hui, c’est lundi.", "alts": ["Aujourd’hui c’est lundi.", "Nous sommes lundi."] },
+    "s-kesho-ni-jumanne": { "text": "Demain, c’est mardi.", "alts": ["Demain c’est mardi."] },
+    "s-jumamosi-na-jumapili": { "text": "Samedi et dimanche." },
+    "s-kila-mwezi": { "text": "Chaque mois, je vais à {@getaway}.", "alts": ["Je vais à {@getaway} chaque mois.", "Je vais à {@getaway} tous les mois."] },
+    "s-kila-mwaka": {
+      "text": "Les grandes pluies arrivent chaque année.",
+      "alts": ["Les longues pluies arrivent chaque année.", "Les grandes pluies viennent tous les ans."]
+    }
+  },
+  "phrases": ["Aujourd’hui", "Demain", "À demain.", "J’étudie le lundi.", "Quelle heure est-il ?", "Il est dix heures."],
+  "dialogues": { "u5s3l2": [{ "line": "Quelle heure est-il ?", "options": ["Il est dix heures.", "Deux mille shillings.", "Le lundi."] }] },
+  "stories": {
+    "sw-matatu-time": {
+      "title": "À quelle heure il part ?",
+      "summary": "Emma découvre l’heure swahilie à la station de matatu de Nairobi.",
+      "lines": [
+        "Salut, Juma ! À quelle heure part le matatu ?",
+        "À huit heures du matin.",
+        "Saa mbili ? Pas deux heures ?",
+        "Non ! La deuxième heure du matin, une heure après sept heures.",
+        "Et quelle heure est-il maintenant ?",
+        "Il est sept heures et demie. Pas de panique !",
+        "Merci beaucoup, Juma. À demain !"
+      ],
+      "questions": [
+        { "question": "À quelle heure part le matatu, à la montre ?", "options": ["2 h du matin", "8 h du matin", "14 h"] },
+        { "question": "Combien de temps Emma doit-elle attendre ?", "options": ["Une demi-heure", "Deux heures", "Six heures"] },
+        { "question": "Comment Emma dit-elle « à demain » ?" }
+      ]
+    },
+    "sw-english-time": {
+      "lines": [
+        "Emma, quelle heure est-il maintenant ?",
+        "Il est sept heures et demie.",
+        "Le matatu part à huit heures du matin.",
+        "Huit heures ? D’accord. Doucement, doucement !",
+        "Merci, Emma. À demain !"
+      ],
+      "questions": [{}, {}, { "options": ["À demain", "Aujourd’hui et demain", "Quelle heure est-il ?"] }]
+    }
+  }
+}

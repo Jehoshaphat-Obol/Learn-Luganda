@@ -3,7 +3,8 @@
   "formatVersion": 2,
   "code": "fr",
   "status": "draft",
-  "notes": "Drafted by Claude (AI): needs a native-speaker review. Split from the en-lg, sw-lg and lg-en courses by scripts/split-course.js (#185).",
+  "notes": "Drafted by Claude (AI): needs a native-speaker review. Headings split by scripts/split-course.js (#185); lesson text added in #144.",
+  "courseTitle": "{to} pour les francophones",
   "languageNames": { "en": "anglais", "lg": "luganda", "sw": "swahili", "fr": "français" },
   "sections": {
     "s1": {
@@ -223,7 +224,7 @@
     "u35s1": "Il était une fois",
     "u35s2": "Et puis",
     "u35s3": "La fin",
-    "u35s4": "Paukwa ! Pakawa !",
+    "u35s4": "Paukwa ! Pakawa !",
     "u36s1": "Proverbes du quotidien",
     "u36s2": "Proverbes sur les gens",
     "u36s3": "Utiliser les proverbes",
@@ -252,5 +253,12 @@
     "ssali": "Un conducteur de boda boda qui connaît toutes les routes",
     "amara": "Une lycéenne qui adore la musique",
     "emma": "Une visiteuse qui apprend le luganda avant son voyage"
-  }
+  },
+  "culture": {
+    "cast": { "nakato": "Camille", "mukasa": "Julien", "jjajja": { "name": "Mamie Jeanne", "short": "Mamie" }, "ssali": "Karim", "amara": "Léa" },
+    "places": { "city": "Paris", "hometown": "Lyon", "town": "Marseille", "getaway": "Nice", "island": "Belle-Île", "nearby": "Versailles" }
+  },
+  "cheers": ["Bravo !", "Super !", "Très bien !"],
+  "phrases": { "congrats": "Félicitations", "thanks": "Merci beaucoup !" },
+  "settings": { "lesson": { "listen": { "count": 3, "synthesized": true } } }
 }
