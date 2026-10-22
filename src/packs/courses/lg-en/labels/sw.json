@@ -5,6 +5,11 @@
       "title": "Misingi",
       "level": "Wanaoanza",
       "description": "Salamu, watu, chakula, namba, wakati, mahali, nyumbani na afya."
+    },
+    "s2": {
+      "title": "Maisha ya kila siku",
+      "level": "Ngazi ya awali",
+      "description": "Eleza vitu, vaa nguo, zungumza kuhusu siku yako, hali ya hewa, wanyama, kazi, shule na usafiri."
     }
   },
   "units": {
@@ -39,6 +44,38 @@
     "u8": {
       "title": "Afya na mwili",
       "description": "Taja sehemu za mwili, sema kinachouma na mwone daktari."
+    },
+    "u9": {
+      "title": "Rangi na maelezo",
+      "description": "Taja rangi na eleza vitu na watu."
+    },
+    "u10": {
+      "title": "Nguo",
+      "description": "Taja nguo zako, vaa na nunua kitu kipya."
+    },
+    "u11": {
+      "title": "Siku yangu",
+      "description": "Zungumza kuhusu ratiba yako kuanzia asubuhi hadi usiku."
+    },
+    "u12": {
+      "title": "Hali ya hewa na majira",
+      "description": "Zungumza kuhusu jua na mvua, majira na kuhisi joto au baridi."
+    },
+    "u13": {
+      "title": "Wanyama",
+      "description": "Wanyama wa shambani, wanyama pori, wanyama vipenzi na korongo wa Uganda."
+    },
+    "u14": {
+      "title": "Kazi na ajira",
+      "description": "Sema unachofanya, uliza kuhusu kazi na zungumza kuhusu mshahara."
+    },
+    "u15": {
+      "title": "Shule",
+      "description": "Darasa, masomo, maswali na kazi ya nyumbani."
+    },
+    "u16": {
+      "title": "Usafiri",
+      "description": "Panda teksi au basi na panga safari kote Uganda."
     }
   },
   "skills": {
@@ -65,6 +102,30 @@
     "u7s3": "Ndani ya nyumba",
     "u8s1": "Mwili",
     "u8s2": "Kujisikia vibaya",
-    "u8s3": "Kwa daktari"
+    "u8s3": "Kwa daktari",
+    "u9s1": "Rangi",
+    "u9s2": "Kubwa na ndogo",
+    "u9s3": "Kueleza watu",
+    "u10s1": "Ninachovaa",
+    "u10s2": "Kuvaa",
+    "u10s3": "Kununua nguo",
+    "u11s1": "Kuamka",
+    "u11s2": "Kazini na nyumbani",
+    "u11s3": "Jioni",
+    "u12s1": "Jua na mvua",
+    "u12s2": "Majira",
+    "u12s3": "Joto na baridi",
+    "u13s1": "Wanyama wa shambani",
+    "u13s2": "Wanyama pori",
+    "u13s3": "Wanyama vipenzi na ndege",
+    "u14s1": "Kazi",
+    "u14s2": "Kazini",
+    "u14s3": "Kujipatia riziki",
+    "u15s1": "Darasani",
+    "u15s2": "Masomo",
+    "u15s3": "Maswali na kazi ya nyumbani",
+    "u16s1": "Teksi na basi",
+    "u16s2": "Boda boda na gari",
+    "u16s3": "Safari"
   }
 }

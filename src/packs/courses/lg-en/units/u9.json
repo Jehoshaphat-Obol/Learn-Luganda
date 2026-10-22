@@ -1,0 +1,437 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u9",
+  "title": "Langi n’okunnyonnyola",
+  "description": "Manya langi era onnyonnyole ebintu n’abantu.",
+  "color": "sky",
+  "character": "amara",
+  "words": [
+    {
+      "id": "langi",
+      "target": "colour",
+      "base": "langi",
+      "altTarget": ["color", "the colour"]
+    },
+    {
+      "id": "kimyufu",
+      "target": "red",
+      "base": "kimyufu",
+      "altTarget": ["it is red", "it’s red"]
+    },
+    {
+      "id": "kiddugavu",
+      "target": "black",
+      "base": "kiddugavu",
+      "altTarget": ["it is black", "it’s black", "dark"]
+    },
+    {
+      "id": "kyeru",
+      "target": "white",
+      "base": "kyeru",
+      "altTarget": ["it is white", "it’s white"]
+    },
+    {
+      "id": "kiragala",
+      "target": "green",
+      "base": "kiragala"
+    },
+    {
+      "id": "kyenvu",
+      "target": "yellow",
+      "base": "kyenvu",
+      "altTarget": ["it is yellow", "it’s yellow"]
+    },
+    {
+      "id": "bbulu",
+      "target": "blue",
+      "base": "bbulu"
+    },
+    {
+      "id": "kitaka",
+      "target": "brown",
+      "base": "kitaka"
+    },
+    {
+      "id": "kakobe",
+      "target": "purple",
+      "base": "kakobe"
+    },
+    {
+      "id": "kinene",
+      "target": "big",
+      "base": "kinene",
+      "altTarget": ["large", "it is big", "it’s big"]
+    },
+    {
+      "id": "kitono",
+      "target": "small",
+      "base": "kitono",
+      "altTarget": ["little", "it is small", "it’s small"]
+    },
+    {
+      "id": "kiggya",
+      "target": "new",
+      "base": "kiggya",
+      "altTarget": ["it is new", "it’s new"]
+    },
+    {
+      "id": "kikadde",
+      "target": "old",
+      "base": "kikadde",
+      "altTarget": ["it is old", "it’s old"]
+    },
+    {
+      "id": "kibi",
+      "target": "bad",
+      "base": "kibi",
+      "altTarget": ["it is bad", "it’s bad", "ugly"]
+    },
+    {
+      "id": "mulungi",
+      "target": "beautiful",
+      "base": "mulungi",
+      "altTarget": ["pretty", "handsome", "good-looking", "good"]
+    },
+    {
+      "id": "muwanvu",
+      "target": "tall",
+      "base": "muwanvu",
+      "altTarget": ["long"]
+    },
+    {
+      "id": "mumpi",
+      "target": "short",
+      "base": "mumpi"
+    },
+    {
+      "id": "muto",
+      "target": "young",
+      "base": "muto"
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s-ekikopo-kimyufu",
+      "target": "The cup is red.",
+      "base": "Ekikopo kimyufu.",
+      "altTarget": ["The cup’s red."]
+    },
+    {
+      "id": "s-ekitabo-kiddugavu",
+      "target": "The book is black.",
+      "base": "Ekitabo kiddugavu.",
+      "altTarget": ["The book’s black."]
+    },
+    {
+      "id": "s-ekitanda-kyeru",
+      "target": "The bed is white.",
+      "base": "Ekitanda kyeru.",
+      "altTarget": ["The bed’s white."]
+    },
+    {
+      "id": "s-langi-ki",
+      "target": "Which colour?",
+      "base": "Langi ki?",
+      "altTarget": [
+        "What colour?",
+        "What colour is it?",
+        "Which color?",
+        "What color?"
+      ]
+    },
+    {
+      "id": "s-ekitabo-kya-kiragala",
+      "target": "The book is green.",
+      "base": "Ekitabo kya kiragala.",
+      "altTarget": ["It is a green book."]
+    },
+    {
+      "id": "s-ekikopo-kya-bbulu",
+      "target": "The cup is blue.",
+      "base": "Ekikopo kya bbulu.",
+      "altTarget": ["It is a blue cup."]
+    },
+    {
+      "id": "s-emmeeza-ya-kitaka",
+      "target": "The table is brown.",
+      "base": "Emmeeza ya kitaka.",
+      "altTarget": ["It is a brown table."]
+    },
+    {
+      "id": "s-njagala-ekikopo-ekimyufu",
+      "target": "I want the red cup.",
+      "base": "Njagala ekikopo ekimyufu.",
+      "altTarget": ["I want a red cup."]
+    },
+    {
+      "id": "s-ekibuga-kinene",
+      "target": "The town is big.",
+      "base": "Ekibuga kinene.",
+      "altTarget": ["The city is big.", "The town is large."]
+    },
+    {
+      "id": "s-ekikopo-kitono",
+      "target": "The cup is small.",
+      "base": "Ekikopo kitono.",
+      "altTarget": ["The cup is little."]
+    },
+    {
+      "id": "s-ekitabo-kiggya",
+      "target": "The book is new.",
+      "base": "Ekitabo kiggya.",
+      "altTarget": ["The book’s new."]
+    },
+    {
+      "id": "s-ekitanda-kikadde",
+      "target": "The bed is old.",
+      "base": "Ekitanda kikadde.",
+      "altTarget": ["The bed’s old."]
+    },
+    {
+      "id": "s-kirungi-nnyo",
+      "target": "It’s very good!",
+      "base": "Kirungi nnyo!",
+      "altTarget": ["It is very good!", "Very good!", "Very nice!"]
+    },
+    {
+      "id": "s-kino-kibi",
+      "target": "This is bad.",
+      "base": "Kino kibi.",
+      "altTarget": ["This one is bad."]
+    },
+    {
+      "id": "s-omukazi-mulungi",
+      "target": "The woman is beautiful.",
+      "base": "Omukazi mulungi.",
+      "altTarget": ["The woman is good.", "The woman is kind."]
+    },
+    {
+      "id": "s-omusajja-muwanvu",
+      "target": "The man is tall.",
+      "base": "Omusajja muwanvu."
+    },
+    {
+      "id": "s-ndi-mumpi",
+      "target": "I am short.",
+      "base": "Ndi mumpi.",
+      "altTarget": ["I’m short."]
+    },
+    {
+      "id": "s-omwana-muto",
+      "target": "The child is young.",
+      "base": "Omwana muto.",
+      "altTarget": ["The child is small."]
+    },
+    {
+      "id": "s-jjajja-mukadde",
+      "target": "Grandparent is old.",
+      "base": "Jjajja mukadde.",
+      "altTarget": [
+        "Grandma is old.",
+        "Grandpa is old.",
+        "The grandparent is old."
+      ]
+    },
+    {
+      "id": "s-abaana-balungi",
+      "target": "The children are good.",
+      "base": "Abaana balungi.",
+      "altTarget": ["The children are kind.", "The children are beautiful."]
+    },
+    {
+      "id": "s-abasomesa-bawanvu",
+      "target": "The teachers are tall.",
+      "base": "Abasomesa bawanvu."
+    }
+  ],
+  "skills": [
+    {
+      "id": "u9s1",
+      "title": "Langi",
+      "icon": "star",
+      "tip": "colours",
+      "lessons": [
+        {
+          "id": "u9s1l1",
+          "newWords": ["langi", "kimyufu", "kiddugavu", "kyeru"],
+          "sentences": [
+            "s-ekikopo-kimyufu",
+            "s-ekitabo-kiddugavu",
+            "s-langi-ki"
+          ]
+        },
+        {
+          "id": "u9s1l2",
+          "newWords": ["kiragala", "kyenvu", "bbulu"],
+          "sentences": [
+            "s-ekitabo-kya-kiragala",
+            "s-ekikopo-kya-bbulu",
+            "s-ekitanda-kyeru"
+          ]
+        },
+        {
+          "id": "u9s1l3",
+          "newWords": ["kitaka", "kakobe"],
+          "sentences": [
+            "s-emmeeza-ya-kitaka",
+            "s-njagala-ekikopo-ekimyufu",
+            "s-langi-ki"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u9s2",
+      "title": "Ekinene n’ekitono",
+      "icon": "target",
+      "tip": "is-red",
+      "lessons": [
+        {
+          "id": "u9s2l1",
+          "newWords": ["kinene", "kitono"],
+          "sentences": ["s-ekibuga-kinene", "s-ekikopo-kitono"]
+        },
+        {
+          "id": "u9s2l2",
+          "newWords": ["kiggya", "kikadde"],
+          "sentences": ["s-ekitabo-kiggya", "s-ekitanda-kikadde"]
+        },
+        {
+          "id": "u9s2l3",
+          "newWords": ["kibi"],
+          "sentences": [
+            "s-kirungi-nnyo",
+            "s-kino-kibi",
+            "s-njagala-ekikopo-ekimyufu"
+          ],
+          "dialogues": [
+            {
+              "speaker": "amara",
+              "target": "What colour is your book?",
+              "base": "Ekitabo kyo kya langi ki?",
+              "options": ["Black.", "Tall.", "I am hungry."],
+              "answer": "Black."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u9s3",
+      "title": "Okunnyonnyola abantu",
+      "icon": "profile",
+      "tip": "people",
+      "lessons": [
+        {
+          "id": "u9s3l1",
+          "newWords": ["mulungi", "muwanvu", "mumpi"],
+          "sentences": [
+            "s-omukazi-mulungi",
+            "s-omusajja-muwanvu",
+            "s-ndi-mumpi"
+          ]
+        },
+        {
+          "id": "u9s3l2",
+          "newWords": ["muto"],
+          "sentences": ["s-omwana-muto", "s-jjajja-mukadde"]
+        },
+        {
+          "id": "u9s3l3",
+          "newWords": [],
+          "sentences": [
+            "s-abaana-balungi",
+            "s-abasomesa-bawanvu",
+            "s-omukazi-mulungi"
+          ],
+          "dialogues": [
+            {
+              "speaker": "amara",
+              "target": "Is your father tall?",
+              "base": "Taata wo muwanvu?",
+              "options": [
+                "No, he is short.",
+                "Yes, it is red.",
+                "The book is new."
+              ],
+              "answer": "No, he is short."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Mu Lungereza ebigambo ebinnyonnyola tebikyuka. Mu Luganda ogamba ekikopo ekimyufu, omuntu omuwanvu, abantu abawanvu. Mu Lungereza ekigambo kye kimu buli kiseera: a red cup, a tall man, tall men.",
+    "phrases": [
+      {
+        "target": "Which colour?",
+        "base": "Langi ki?"
+      },
+      {
+        "target": "The cup is red.",
+        "base": "Ekikopo kimyufu."
+      },
+      {
+        "target": "The book is green.",
+        "base": "Ekitabo kya kiragala."
+      },
+      {
+        "target": "I want the red cup.",
+        "base": "Njagala ekikopo ekimyufu."
+      },
+      {
+        "target": "It’s very good!",
+        "base": "Kirungi nnyo!"
+      },
+      {
+        "target": "The woman is beautiful.",
+        "base": "Omukazi mulungi."
+      },
+      {
+        "target": "The children are good.",
+        "base": "Abaana balungi."
+      }
+    ],
+    "tips": [
+      {
+        "id": "colours",
+        "title": "Langi zijja mu maaso",
+        "body": [
+          "Mu Luganda langi ejja oluvannyuma lw’ekintu: **ekikopo ekimyufu**. Mu Lungereza ejja mu maaso: **the red cup**, **a black book**, **a white bed**.",
+          "Okubuuza langi, gamba **What colour is it?** oba **Which colour?**"
+        ],
+        "table": [
+          ["Oluganda", "Olungereza"],
+          ["ekikopo ekimyufu", "the red cup"],
+          ["ekitabo ekiddugavu", "the black book"],
+          ["emmeeza eya kitaka", "the brown table"]
+        ]
+      },
+      {
+        "id": "is-red",
+        "title": "“The cup is red”",
+        "body": [
+          "Okugamba nti ekintu kiri bwe kityo, kozesa **is** ku kintu kimu ne **are** ku bingi: **The cup is red.** **The cups are red.**",
+          "Ekigambo ekinnyonnyola tekyongerwako **-s**: **big cups**, si “bigs cups”."
+        ]
+      },
+      {
+        "id": "people",
+        "title": "Abantu n’ebintu",
+        "body": [
+          "Mu Luganda **omukadde** ne **ekikadde** bya njawulo. Mu Lungereza byombi biba **old**: **an old man**, **an old bed**. Ne **young** kozesa ku bantu, **new** ku bintu: **a young child**, **a new book**.",
+          "**Tall** ne **short** bikozesebwa ku bantu: **The man is tall. I am short.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "“Old” mu Lungereza",
+        "body": [
+          "Mu Luganda okuyita omuntu **omukadde** kiba kitiibwa. Mu Lungereza okugamba omuntu nti **old** kiyinza okumunyiiza. Kozesa **older** oba **elderly**: **an elderly woman**."
+        ]
+      }
+    ]
+  }
+}
