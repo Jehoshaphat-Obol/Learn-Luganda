@@ -1,0 +1,305 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u25",
+  "title": "Ebika n’emiziro",
+  "description": "Manya ebika bya Buganda, emiziro gyabyo n’okugamba ggwe ani.",
+  "color": "ink",
+  "character": "jjajja",
+  "words": [
+    {
+      "id": "ekika",
+      "target": "clan",
+      "base": "ekika",
+      "altTarget": ["the clan", "a clan"]
+    },
+    {
+      "id": "ebika",
+      "target": "clans",
+      "base": "ebika",
+      "altTarget": ["the clans"]
+    },
+    {
+      "id": "omuziro",
+      "target": "totem",
+      "base": "omuziro",
+      "altTarget": ["the totem", "a totem"]
+    },
+    {
+      "id": "emiziro",
+      "target": "totems",
+      "base": "emiziro",
+      "altTarget": ["the totems"]
+    },
+    {
+      "id": "kya",
+      "target": "of",
+      "base": "kya"
+    },
+    {
+      "id": "ffumbe",
+      "target": "civet cat",
+      "base": "Ffumbe",
+      "altTarget": ["civet", "the civet cat clan", "ffumbe clan"]
+    },
+    {
+      "id": "lugave",
+      "target": "pangolin",
+      "base": "Lugave",
+      "altTarget": ["the pangolin clan", "lugave clan"]
+    },
+    {
+      "id": "mmamba",
+      "target": "lungfish",
+      "base": "Mmamba",
+      "altTarget": ["the lungfish clan", "mmamba clan"]
+    },
+    {
+      "id": "ngeye",
+      "target": "colobus monkey",
+      "base": "Ngeye",
+      "altTarget": ["colobus", "the colobus monkey clan", "ngeye clan"]
+    },
+    {
+      "id": "ndi-wa",
+      "target": "I am of",
+      "base": "Ndi wa",
+      "altTarget": ["i belong to", "i’m of", "i am from"]
+    },
+    {
+      "id": "oli-wa-kika-ki",
+      "target": "Which clan are you?",
+      "base": "Oli wa kika ki?",
+      "altTarget": [
+        "what is your clan",
+        "which clan are you from",
+        "what clan are you"
+      ]
+    },
+    {
+      "id": "tetulya",
+      "target": "we don’t eat",
+      "base": "tetulya",
+      "altTarget": ["we do not eat"]
+    },
+    {
+      "id": "owooluganda",
+      "target": "relative",
+      "base": "owooluganda",
+      "altTarget": ["brother", "sister", "sibling", "kin", "family member"]
+    },
+    {
+      "id": "jjajja-omutaka",
+      "target": "clan head",
+      "base": "omutaka",
+      "altTarget": ["clan elder", "clan leader", "chief"]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s25-ekika-kyange",
+      "target": "My clan is Ffumbe.",
+      "base": "Ekika kyange Ffumbe.",
+      "altTarget": ["My clan is the civet cat."]
+    },
+    {
+      "id": "s25-ebika-bingi",
+      "target": "In Buganda there are many clans.",
+      "base": "Mu Buganda mulimu ebika bingi.",
+      "altTarget": ["There are many clans in Buganda."]
+    },
+    {
+      "id": "s25-omuziro-gwange",
+      "target": "My totem is the pangolin.",
+      "base": "Omuziro gwange lugave.",
+      "altTarget": ["My totem is pangolin."]
+    },
+    {
+      "id": "s25-ekika-kya-mmamba",
+      "target": "The Mmamba clan is big.",
+      "base": "Ekika kya Mmamba kinene.",
+      "altTarget": ["The lungfish clan is big.", "The Mmamba clan is large."]
+    },
+    {
+      "id": "s25-ndi-wa-lugave",
+      "target": "I am of the Lugave clan.",
+      "base": "Ndi wa Lugave.",
+      "altTarget": [
+        "I belong to the Lugave clan.",
+        "I’m Lugave.",
+        "I am Lugave."
+      ]
+    },
+    {
+      "id": "s25-oli-wa-kika-ki",
+      "target": "Which clan are you?",
+      "base": "Oli wa kika ki?",
+      "altTarget": ["What is your clan?", "Which clan are you from?"]
+    },
+    {
+      "id": "s25-tetulya-mmamba",
+      "target": "We don’t eat lungfish.",
+      "base": "Tetulya mmamba.",
+      "altTarget": ["We do not eat lungfish."]
+    },
+    {
+      "id": "s25-omuziro-gwa-ngeye",
+      "target": "The totem of Ngeye is the colobus monkey.",
+      "base": "Omuziro gwa Ngeye ngeye.",
+      "altTarget": ["The Ngeye clan’s totem is the colobus monkey."]
+    },
+    {
+      "id": "s25-tuli-booluganda",
+      "target": "We are relatives.",
+      "base": "Tuli booluganda.",
+      "altTarget": [
+        "We are family.",
+        "We are related.",
+        "We are brothers.",
+        "We are sisters."
+      ]
+    },
+    {
+      "id": "s25-omutaka",
+      "target": "The clan head is coming.",
+      "base": "Omutaka w’ekika ajja.",
+      "altTarget": ["The clan elder is coming.", "The clan head will come."],
+      "altBase": ["Omutaka wekika ajja."]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u25s1",
+      "title": "Ebika",
+      "icon": "trophy",
+      "tip": "clan",
+      "lessons": [
+        {
+          "id": "u25s1l1",
+          "newWords": ["ekika", "ebika"],
+          "sentences": ["s25-ebika-bingi"]
+        },
+        {
+          "id": "u25s1l2",
+          "newWords": ["ffumbe", "kya"],
+          "sentences": ["s25-ekika-kyange", "s25-ekika-kya-mmamba"]
+        },
+        {
+          "id": "u25s1l3",
+          "newWords": ["mmamba", "tetulya"],
+          "sentences": ["s25-tetulya-mmamba", "s25-ekika-kya-mmamba"]
+        }
+      ]
+    },
+    {
+      "id": "u25s2",
+      "title": "Emiziro",
+      "icon": "star",
+      "tip": "of",
+      "lessons": [
+        {
+          "id": "u25s2l1",
+          "newWords": ["omuziro", "emiziro"],
+          "sentences": ["s25-omuziro-gwange"]
+        },
+        {
+          "id": "u25s2l2",
+          "newWords": ["lugave"],
+          "sentences": ["s25-omuziro-gwange", "s25-omuziro-gwa-ngeye"]
+        },
+        {
+          "id": "u25s2l3",
+          "newWords": ["ngeye"],
+          "sentences": ["s25-omuziro-gwa-ngeye", "s25-tetulya-mmamba"]
+        }
+      ]
+    },
+    {
+      "id": "u25s3",
+      "title": "Amannya n’ebika",
+      "icon": "profile",
+      "lessons": [
+        {
+          "id": "u25s3l1",
+          "newWords": ["ndi-wa", "oli-wa-kika-ki"],
+          "sentences": ["s25-ndi-wa-lugave", "s25-oli-wa-kika-ki"]
+        },
+        {
+          "id": "u25s3l2",
+          "newWords": ["owooluganda"],
+          "sentences": ["s25-tuli-booluganda", "s25-ndi-wa-lugave"]
+        },
+        {
+          "id": "u25s3l3",
+          "newWords": ["jjajja-omutaka"],
+          "sentences": ["s25-omutaka", "s25-oli-wa-kika-ki"],
+          "dialogues": [
+            {
+              "speaker": "jjajja",
+              "target": "Which clan are you, my child?",
+              "base": "Oli wa kika ki, mwana wange?",
+              "options": [
+                "I am of the Lugave clan, Grandma.",
+                "I am very tired.",
+                "Add salt."
+              ],
+              "answer": "I am of the Lugave clan, Grandma."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Nnyonnyola ekika kyo n’omuziro gwo mu Lungereza, ng’oyogera n’abagenyi oba ku ssomero.",
+    "phrases": [
+      {
+        "target": "Which clan are you?",
+        "base": "Oli wa kika ki?"
+      },
+      {
+        "target": "I am of the Lugave clan.",
+        "base": "Ndi wa Lugave."
+      },
+      {
+        "target": "My clan is Ffumbe.",
+        "base": "Ekika kyange Ffumbe."
+      },
+      {
+        "target": "My totem is the pangolin.",
+        "base": "Omuziro gwange lugave."
+      },
+      {
+        "target": "We don’t eat lungfish.",
+        "base": "Tetulya mmamba."
+      },
+      {
+        "target": "We are relatives.",
+        "base": "Tuli booluganda."
+      }
+    ],
+    "tips": [
+      {
+        "id": "clan",
+        "title": "Ekika kyo",
+        "body": [
+          "**Ekika** kiba **clan**, **omuziro** kiba **totem**. Okugamba ekika kyo: **My clan is Ffumbe.** oba **I belong to the Lugave clan.** Okubuuza: **Which clan are you?** oba **What is your clan?**"
+        ]
+      },
+      {
+        "id": "of",
+        "title": "“Of” tekikyuka",
+        "body": [
+          "Mu Luganda “-a” kikyuka: **ekika kya**, **omuziro gwa**. Mu Lungereza bulijjo **of**: **the totem of Ngeye**. Era osobola okukozesa **’s**: **Ngeye’s totem**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Okunnyonnyola ebika",
+        "body": [
+          "Abagenyi batera okubuuza ku bika. Sentensi ennyangu: **In Buganda every person belongs to a clan. Each clan has a totem, and we don’t eat our totem.**"
+        ]
+      }
+    ]
+  }
+}

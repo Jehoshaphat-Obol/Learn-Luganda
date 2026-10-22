@@ -31,3 +31,7 @@
 ## Section 3 (units 17–24)
 - 8 units, 72 lessons, 121 words, 4 stories. Dropped `kugenda` (u20) and `awangudde` (u22). `flip-course.js` gained `replace` (whole strings), used to make the "learning Luganda" sentences in u18 and u20 about English; Emma’s story in u18 still has her learning Luganda from Jjajja.
 - Guidebooks: don’t/doesn’t/isn’t, there is no; the question word goes first, "What is this called in English?"; "I have eaten" vs "I went" with irregular pasts, I was; will, going to, one day, "God willing"; "I am happy" (feelings are adjectives in English), worried about, two kinds of sorry; enjoy + -ing, has won; me/you/him after the verb, phone phrases, "beep"; kitchen commands, first/then.
+
+## Section 4 (units 25–32)
+- 8 units, 72 lessons, 108 words, 4 stories. Dropped `gwa` (u25), `ntunza` (u31), `okusimba` (u32); `emmwanyi` teaches "coffee beans" so it doesn't repeat `kaawa`. "I teach the children Luganda" became English.
+- The topics are Ganda culture, so the guidebooks teach how to explain it in English: "I belong to the Lugave clan", "of" and 's, capitals for titles (the Kabaka), "The kwanjula is an introduction ceremony", aunt vs ssenga, play the drum, "who" for people, to church / to the mosque, holiday greetings and replies, any/some, teach/feed for the -is- verbs, in/on/at, Let’s; Ugandan "garden" vs British "garden".

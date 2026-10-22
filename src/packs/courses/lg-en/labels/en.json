@@ -15,6 +15,11 @@
       "title": "Conversations",
       "level": "Pre-intermediate",
       "description": "Say no, ask questions, talk about the past and the future, feelings, hobbies, phone calls and cooking."
+    },
+    "s4": {
+      "title": "Community and culture",
+      "level": "Intermediate",
+      "description": "Clans and totems, the kingdom, farming, celebrations, music, faith, business and nature."
     }
   },
   "units": {
@@ -113,6 +118,38 @@
     "u24": {
       "title": "Cooking",
       "description": "Follow a recipe, cook matooke in banana leaves and share a meal."
+    },
+    "u25": {
+      "title": "Clans and totems",
+      "description": "Learn about Buganda’s clans, their totems and saying who you are."
+    },
+    "u26": {
+      "title": "The kingdom",
+      "description": "The Kabaka, his government and the historic places of Buganda."
+    },
+    "u27": {
+      "title": "Village and farming",
+      "description": "Work the garden, name the crops and bring in the harvest."
+    },
+    "u28": {
+      "title": "Celebrations",
+      "description": "The kwanjula, weddings, birthdays and wishing people well."
+    },
+    "u29": {
+      "title": "Music and dance",
+      "description": "Drums, songs and dances, and describing people by what they do."
+    },
+    "u30": {
+      "title": "Faith and holidays",
+      "description": "Places of worship, Christmas, Eid, Martyrs Day and blessings."
+    },
+    "u31": {
+      "title": "Business",
+      "description": "Run a small shop, serve customers, save money and teach others."
+    },
+    "u32": {
+      "title": "Nature",
+      "description": "Lakes, rivers, forests and hills, and caring for the land."
     }
   },
   "skills": {
@@ -187,6 +224,30 @@
     "u23s3": "Meeting up",
     "u24s1": "In the kitchen",
     "u24s2": "Making matooke",
-    "u24s3": "Sharing a meal"
+    "u24s3": "Sharing a meal",
+    "u25s1": "Ebika",
+    "u25s2": "Totems",
+    "u25s3": "Names and clans",
+    "u26s1": "The Kabaka",
+    "u26s2": "Places of Buganda",
+    "u26s3": "History",
+    "u27s1": "The garden",
+    "u27s2": "Crops",
+    "u27s3": "Doing it for someone",
+    "u28s1": "Kwanjula",
+    "u28s2": "Weddings",
+    "u28s3": "Birthdays",
+    "u29s1": "Drums",
+    "u29s2": "Songs and dances",
+    "u29s3": "Who does what",
+    "u30s1": "Church and mosque",
+    "u30s2": "Holidays",
+    "u30s3": "Blessings",
+    "u31s1": "A small shop",
+    "u31s2": "Money matters",
+    "u31s3": "Making others do",
+    "u32s1": "Lakes and rivers",
+    "u32s2": "Forests and hills",
+    "u32s3": "Caring for the land"
   }
 }

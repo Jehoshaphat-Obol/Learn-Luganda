@@ -159,6 +159,13 @@
       "level": "Ab’omu makkati abasooka",
       "description": "Gaana, buuza ebibuuzo, yogera ku byayita n’ebijja, enneewulira, eby’okwesanyusaamu, essimu n’okufumba.",
       "units": ["u17", "u18", "u19", "u20", "u21", "u22", "u23", "u24"]
+    },
+    {
+      "id": "s4",
+      "title": "Ekitundu n’obuwangwa",
+      "level": "Ab’omu makkati",
+      "description": "Ebika n’emiziro, obwakabaka, okulima, emikolo, ennyimba, eddiini, bizinensi n’obutonde.",
+      "units": ["u25", "u26", "u27", "u28", "u29", "u30", "u31", "u32"]
     }
   ]
 }
