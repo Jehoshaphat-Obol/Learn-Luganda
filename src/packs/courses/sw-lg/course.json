@@ -208,6 +208,22 @@
         "u7",
         "u8"
       ]
+    },
+    {
+      "id": "s2",
+      "title": "Maisha ya kila siku",
+      "level": "Ngazi ya awali",
+      "description": "Eleza vitu, vaa nguo, zungumza kuhusu siku yako, hali ya hewa, wanyama, kazi, shule na usafiri.",
+      "units": [
+        "u9",
+        "u10",
+        "u11",
+        "u12",
+        "u13",
+        "u14",
+        "u15",
+        "u16"
+      ]
     }
   ]
 }

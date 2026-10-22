@@ -5,6 +5,11 @@
       "title": "Omusingi",
       "level": "Abatandika",
       "description": "Okulamusa, abantu, emmere, ennamba, obudde, ebifo, awaka n’obulamu."
+    },
+    "s2": {
+      "title": "Obulamu bwa buli lunaku",
+      "level": "Abeeyongerayo",
+      "description": "Nnyonnyola ebintu, yambala, yogera ku lunaku lwo, obudde, ebisolo, emirimu, essomero n’entambula."
     }
   },
   "units": {
@@ -39,6 +44,38 @@
     "u8": {
       "title": "Obulamu n’omubiri",
       "description": "Manya ebitundu by’omubiri, gamba ekikuluma era olabe omusawo."
+    },
+    "u9": {
+      "title": "Langi n’okunnyonnyola",
+      "description": "Manya langi era onnyonnyole ebintu n’abantu."
+    },
+    "u10": {
+      "title": "Engoye",
+      "description": "Manya engoye zo, yambala era ogule ekipya."
+    },
+    "u11": {
+      "title": "Olunaku lwange",
+      "description": "Yogera ku by’okola buli lunaku okuva ku makya okutuuka ekiro."
+    },
+    "u12": {
+      "title": "Obudde n’ebiseera by’omwaka",
+      "description": "Yogera ku njuba n’enkuba, ebiseera by’omwaka n’okuwulira ebbugumu oba empewo."
+    },
+    "u13": {
+      "title": "Ebisolo",
+      "description": "Ebisolo by’omu ffaamu, eby’omu nsiko, eby’awaka n’engaali ya Uganda."
+    },
+    "u14": {
+      "title": "Emirimu",
+      "description": "Gamba ky’okola, buuza ku mirimu era oyogere ku musaala."
+    },
+    "u15": {
+      "title": "Essomero",
+      "description": "Ekibiina, amasomo, ebibuuzo n’omulimu gw’awaka."
+    },
+    "u16": {
+      "title": "Entambula",
+      "description": "Kwata takisi oba bbaasi era otegeke olugendo mu Uganda."
     }
   },
   "skills": {
@@ -65,6 +102,30 @@
     "u7s3": "Mu nnyumba",
     "u8s1": "Omubiri",
     "u8s2": "Okuwulira obubi",
-    "u8s3": "Ew’omusawo"
+    "u8s3": "Ew’omusawo",
+    "u9s1": "Langi",
+    "u9s2": "Ekinene n’ekitono",
+    "u9s3": "Okunnyonnyola abantu",
+    "u10s1": "Bye nnyambala",
+    "u10s2": "Okwambala",
+    "u10s3": "Okugula engoye",
+    "u11s1": "Okuzuukuka",
+    "u11s2": "Ku mulimu n’awaka",
+    "u11s3": "Akawungeezi",
+    "u12s1": "Enjuba n’enkuba",
+    "u12s2": "Ebiseera by’omwaka",
+    "u12s3": "Ebbugumu n’empewo",
+    "u13s1": "Eby’omu ffaamu",
+    "u13s2": "Eby’omu nsiko",
+    "u13s3": "Eby’awaka n’ebinyonyi",
+    "u14s1": "Emirimu",
+    "u14s2": "Ku mulimu",
+    "u14s3": "Okwefunira obulamu",
+    "u15s1": "Mu kibiina",
+    "u15s2": "Amasomo",
+    "u15s3": "Ebibuuzo n’omulimu gw’awaka",
+    "u16s1": "Takisi ne bbaasi",
+    "u16s2": "Boda boda n’emmotoka",
+    "u16s3": "Olugendo"
   }
 }
