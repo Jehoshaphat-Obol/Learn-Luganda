@@ -265,3 +265,9 @@
 .onb__options [hidden] {
   display: none;
 }
+
+/* The app-language heading beside one in the searched language. */
+.onb-langs__legend-ui {
+  color: var(--color-text-muted);
+  font-weight: var(--weight-regular);
+}

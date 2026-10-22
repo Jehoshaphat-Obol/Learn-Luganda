@@ -23,7 +23,7 @@ import { DEFAULT_COURSE } from '../content/load.js';
 import { escapeHtml } from '../ui/components.js';
 import { languageFlag } from '../ui/flags.js';
 import { icon } from '../ui/icons.js';
-import { languageSearchText, matchesSearch } from '../i18n/search.js';
+import { languageSearchText, matchesSearch, searchedLanguage } from '../i18n/search.js';
 
 const nameOf = languageLabel;
 const nativeOf = (code) => languageInfo(code).nativeName;
@@ -127,6 +127,19 @@ const noMatches = (shown) => `<p class="onb-langs__none" data-search-none role="
 const anyMatch = (codes) => !query || codes.some((code) => matchesSearch(languageSearchText(code, nameOf(code)), query));
 
 /**
+ * A heading for the full picker (`kind` is 'speak' or 'learn'). While the
+ * search points at one language, the heading is in that language too:
+ * "Ninaongea · I speak".
+ */
+function legend(kind, query) {
+  const local = t(`picker.pick.${kind}`);
+  const code = searchedLanguage(query, LANGUAGES, nameOf);
+  const info = code ? languageInfo(code) : null;
+  if (!info?.[kind] || info[kind] === local) return escapeHtml(local);
+  return `<span lang="${code}" dir="${info.dir}">${escapeHtml(info[kind])}</span> <span class="onb-langs__legend-ui">· ${escapeHtml(local)}</span>`;
+}
+
+/**
  * Narrows the drawn lists to the languages matching `text`, without a redraw
  * (so the caret stays put). Remembered for the next redraw too.
  */
@@ -144,6 +157,7 @@ export function filterLanguages(root, text) {
     const none = group.parentElement.querySelector('[data-search-none]');
     if (none) none.hidden = shown > 0;
   }
+  for (const el of root.querySelectorAll('[data-legend]')) el.innerHTML = legend(el.dataset.legend, text);
 }
 
 /** The screen for the onboarding view: `{ pose, say, body, ready }`. */
@@ -198,14 +212,14 @@ export function languageScreen(answers) {
     say: escapeHtml(t('picker.pick.say')),
     body: `${head}${searchBox()}
       <fieldset class="onb__fieldset">
-        <legend>${escapeHtml(t('picker.pick.speak'))}</legend>
+        <legend data-legend="speak">${legend('speak', query)}</legend>
         <div class="onb__options onb__options--grid" role="radiogroup" aria-label="${escapeHtml(t('picker.pick.speak'))}">
           ${flow.bases.map((code) => choice(`data-pick="speak" data-value="${code}"`, escapeHtml(nativeOf(code)), nativeOf(code) === nameOf(code) ? '' : escapeHtml(nameOf(code)), code === flow.speak, { lang: code, search: true })).join('')}
         </div>
         ${noMatches(!anyMatch(flow.bases))}
       </fieldset>
       <fieldset class="onb__fieldset">
-        <legend>${escapeHtml(t('picker.pick.learn'))}</legend>
+        <legend data-legend="learn">${legend('learn', query)}</legend>
         <div class="onb__options" role="radiogroup" aria-label="${escapeHtml(t('picker.pick.learn'))}">
           ${flow.options.map((p) => courseChoice(p, flow, escapeHtml(nameOf(p.to)), p.to, true)).join('')}
         </div>

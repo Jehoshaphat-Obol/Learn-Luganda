@@ -29,3 +29,18 @@ export function matchesSearch(text, query) {
     .split(' ')
     .every((word) => text.includes(word));
 }
+
+/**
+ * The one language a search clearly points at, or null: an exact name or
+ * code wins, otherwise the only language with a name starting with it.
+ * `labelOf(code)` gives its name in the interface language.
+ */
+export function searchedLanguage(query, languages, labelOf = () => '') {
+  const q = foldText(query);
+  if (q.length < 2) return null;
+  const names = (l) => [l.code, l.name, l.nativeName, labelOf(l.code)].map(foldText);
+  const exact = languages.find((l) => names(l).includes(q));
+  if (exact) return exact.code;
+  const starts = languages.filter((l) => names(l).some((n) => n.split(' ').some((w) => w.startsWith(q)) || n.startsWith(q)));
+  return starts.length === 1 ? starts[0].code : null;
+}

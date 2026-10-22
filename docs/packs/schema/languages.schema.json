@@ -49,6 +49,16 @@
             "pattern": "^[a-z]{2}$",
             "description": "ISO 3166-1 alpha-2 code (lowercase) of the country whose flag is shown beside the language's name. Leave out when no one country fits."
           },
+          "speak": {
+            "type": "string",
+            "minLength": 1,
+            "description": "“I speak” in the language itself: the picker heading while someone searches for this language."
+          },
+          "learn": {
+            "type": "string",
+            "minLength": 1,
+            "description": "“I want to learn” in the language itself."
+          },
           "dir": {
             "enum": [
               "ltr",
