@@ -1,0 +1,291 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u34",
+  "title": "Bwe… ne singa…",
+  "description": "Yogera ku bibaawo bwe…, ebyandibaddewo singa…, ne by’oyagala.",
+  "color": "sage",
+  "character": "nakato",
+  "words": [
+    {
+      "id": "bwe-nzuukuka",
+      "target": "when I wake up",
+      "base": "bwe nzuukuka",
+      "altTarget": ["whenever i wake up", "if i wake up"]
+    },
+    {
+      "id": "bw-etonnya",
+      "target": "when it rains",
+      "base": "bw’etonnya",
+      "altTarget": ["if it rains", "whenever it rains"],
+      "altBase": ["bwetonnya"]
+    },
+    {
+      "id": "singa",
+      "target": "if",
+      "base": "singa",
+      "altTarget": ["if only", "suppose"]
+    },
+    {
+      "id": "nnandiguze",
+      "target": "I would buy",
+      "base": "nnandiguze",
+      "altTarget": ["i would have bought", "i’d buy"]
+    },
+    {
+      "id": "nnandigenze",
+      "target": "I would go",
+      "base": "nnandigenze",
+      "altTarget": ["i would have gone", "i’d go"]
+    },
+    {
+      "id": "nnandyagadde",
+      "target": "I would like",
+      "base": "Nnandyagadde",
+      "altTarget": ["i’d like", "i would love", "i would want"]
+    },
+    {
+      "id": "ka-tulabe",
+      "target": "Let’s see",
+      "base": "Ka tulabe",
+      "altTarget": ["let us see", "we’ll see"]
+    },
+    {
+      "id": "katonda-bwanaayagala",
+      "target": "God willing",
+      "base": "Katonda bw’anaayagala",
+      "altTarget": ["if god wills", "if god wants"],
+      "altBase": ["Katonda bwanaayagala"]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s34-bwe-nzuukuka",
+      "target": "When I wake up, I drink tea.",
+      "base": "Bwe nzuukuka, nnywa caayi.",
+      "altTarget": [
+        "When I wake up I drink tea.",
+        "Whenever I wake up, I drink tea."
+      ]
+    },
+    {
+      "id": "s34-bwe-ntuuka",
+      "target": "When I arrive, I will call you.",
+      "base": "Bwe ntuuka, nja kukukubira.",
+      "altTarget": [
+        "When I arrive I will call you.",
+        "When I get there, I’ll call you."
+      ]
+    },
+    {
+      "id": "s34-enkuba-bwetonnya",
+      "target": "When it rains, I don’t go.",
+      "base": "Enkuba bw’etonnya, sigenda.",
+      "altTarget": ["If it rains, I don’t go.", "When it rains I do not go."],
+      "altBase": ["Enkuba bwetonnya, sigenda."]
+    },
+    {
+      "id": "s34-singa-nnina-ssente",
+      "target": "If I had money, I would buy a car.",
+      "base": "Singa nnali nnina ssente, nnandiguze mmotoka.",
+      "altTarget": [
+        "If I had money I would buy a car.",
+        "If I had money, I’d buy a car."
+      ]
+    },
+    {
+      "id": "s34-singa-tewali-nkuba",
+      "target": "If there were no rain, I would go.",
+      "base": "Singa tewaali nkuba, nnandigenze.",
+      "altTarget": [
+        "If it weren’t raining, I would go.",
+        "If there was no rain, I would have gone."
+      ]
+    },
+    {
+      "id": "s34-nnandyagadde-caayi",
+      "target": "I would like tea, please.",
+      "base": "Nnandyagadde caayi, nsaba.",
+      "altTarget": ["I’d like tea, please.", "I would like some tea, please."]
+    },
+    {
+      "id": "s34-nnandyagadde-okugenda",
+      "target": "I would like to go to Jinja.",
+      "base": "Nnandyagadde okugenda e Jinja.",
+      "altTarget": ["I’d like to go to Jinja.", "I would love to go to Jinja."]
+    },
+    {
+      "id": "s34-ka-tulabe",
+      "target": "Let’s see tomorrow.",
+      "base": "Ka tulabe enkya.",
+      "altTarget": ["We’ll see tomorrow.", "Let us see tomorrow."]
+    },
+    {
+      "id": "s34-katonda-bwanaayagala",
+      "target": "I will come, God willing.",
+      "base": "Nja kujja, Katonda bw’anaayagala.",
+      "altTarget": ["I’ll come, God willing."],
+      "altBase": ["Nja kujja, Katonda bwanaayagala."]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u34s1",
+      "title": "Bwe…",
+      "icon": "clock",
+      "tip": "when",
+      "lessons": [
+        {
+          "id": "u34s1l1",
+          "newWords": ["bwe-nzuukuka"],
+          "sentences": ["s34-bwe-nzuukuka", "s34-bwe-ntuuka"]
+        },
+        {
+          "id": "u34s1l2",
+          "newWords": ["bw-etonnya"],
+          "sentences": ["s34-enkuba-bwetonnya", "s34-bwe-nzuukuka"]
+        },
+        {
+          "id": "u34s1l3",
+          "newWords": [],
+          "sentences": ["s34-bwe-ntuuka", "s34-enkuba-bwetonnya"]
+        }
+      ]
+    },
+    {
+      "id": "u34s2",
+      "title": "Singa…",
+      "icon": "star",
+      "tip": "if-would",
+      "lessons": [
+        {
+          "id": "u34s2l1",
+          "newWords": ["singa", "nnandiguze"],
+          "sentences": ["s34-singa-nnina-ssente"]
+        },
+        {
+          "id": "u34s2l2",
+          "newWords": ["nnandigenze"],
+          "sentences": ["s34-singa-tewali-nkuba", "s34-singa-nnina-ssente"]
+        },
+        {
+          "id": "u34s2l3",
+          "newWords": [],
+          "sentences": ["s34-singa-tewali-nkuba", "s34-enkuba-bwetonnya"],
+          "dialogues": [
+            {
+              "speaker": "nakato",
+              "target": "If you had a lot of money, what would you buy?",
+              "base": "Singa wali olina ssente nnyingi, wandiguze ki?",
+              "options": [
+                "I would buy a big house.",
+                "When I wake up, I drink tea.",
+                "Let’s see the forest."
+              ],
+              "answer": "I would buy a big house."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u34s3",
+      "title": "By’oyagala",
+      "icon": "heart",
+      "tip": "would-like",
+      "lessons": [
+        {
+          "id": "u34s3l1",
+          "newWords": ["nnandyagadde"],
+          "sentences": ["s34-nnandyagadde-caayi", "s34-nnandyagadde-okugenda"]
+        },
+        {
+          "id": "u34s3l2",
+          "newWords": ["ka-tulabe", "katonda-bwanaayagala"],
+          "sentences": ["s34-ka-tulabe", "s34-katonda-bwanaayagala"]
+        },
+        {
+          "id": "u34s3l3",
+          "newWords": [],
+          "sentences": [
+            "s34-nnandyagadde-okugenda",
+            "s34-katonda-bwanaayagala",
+            "s34-singa-nnina-ssente"
+          ],
+          "dialogues": [
+            {
+              "speaker": "nakato",
+              "target": "Are you coming to the ceremony tomorrow?",
+              "base": "Ojja ku mukolo enkya?",
+              "options": [
+                "I will come, God willing.",
+                "I would buy a car.",
+                "She looks like her mother."
+              ],
+              "answer": "I will come, God willing."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Kozesa **when** ne **if**, era osabe mu bukkakkamu ne **I would like**.",
+    "phrases": [
+      {
+        "target": "When I wake up, I drink tea.",
+        "base": "Bwe nzuukuka, nnywa caayi."
+      },
+      {
+        "target": "When it rains, I don’t go.",
+        "base": "Enkuba bw’etonnya, sigenda."
+      },
+      {
+        "target": "If I had money, I would buy a car.",
+        "base": "Singa nnali nnina ssente, nnandiguze mmotoka."
+      },
+      {
+        "target": "I would like tea, please.",
+        "base": "Nnandyagadde caayi, nsaba."
+      },
+      {
+        "target": "Let’s see tomorrow.",
+        "base": "Ka tulabe enkya."
+      },
+      {
+        "target": "I will come, God willing.",
+        "base": "Nja kujja, Katonda bw’anaayagala."
+      }
+    ],
+    "tips": [
+      {
+        "id": "when",
+        "title": "When …",
+        "body": [
+          "**Bwe** (si nga kibuuzo) kiba **when**: **When I wake up, I drink tea.** Ku biseera ebijja, oluvannyuma lwa **when** tokozesa **will**: **When I arrive, I will call you**, si “when I will arrive”."
+        ]
+      },
+      {
+        "id": "if-would",
+        "title": "If I had …, I would …",
+        "body": [
+          "**Singa** n’**-andi-** biba **if** ne **would**: **If I had money, I would buy a car.** Oluvannyuma lwa **if** ekikolwa kiba mu byayita: **had**, **were**."
+        ]
+      },
+      {
+        "id": "would-like",
+        "title": "“I would like”",
+        "body": [
+          "**I would like** (oba **I’d like**) kiba kisaba kya kitiibwa okusinga **I want**: **I would like tea, please. I would like to go to Jinja.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "“Ka tulabe”",
+        "body": [
+          "**Ka tulabe** kitera okutegeeza “oboolyawo”. Mu Lungereza kiba **Let’s see** oba **We’ll see**, era nakyo kiyinza okuba nga “nedda” mu bukkakkamu."
+        ]
+      }
+    ]
+  }
+}

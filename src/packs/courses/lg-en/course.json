@@ -8,7 +8,7 @@
   "status": "draft",
   "title": "Olungereza eri aboogera Oluganda",
   "description": "Olungereza lwe lulimi lw’eggwanga mu Uganda: mu masomero, mu ofiisi ne mu mawulire, era lwogerwa mu nsi nnyingi.",
-  "notes": "Drafted by Claude from the en-lg course: the English and the Luganda both need a native-speaker review. Sections follow the en-lg outline; units are built with scripts/flip-course.js plus hand-written Luganda.",
+  "notes": "Drafted by Claude from the en-lg course: the English and the Luganda both need a native-speaker review. All 40 units follow the en-lg outline, built with scripts/flip-course.js plus hand-written Luganda.",
   "cheers": ["Great job!", "Well done!"],
   "phrases": {
     "congrats": "Congratulations",
@@ -166,6 +166,13 @@
       "level": "Ab’omu makkati",
       "description": "Ebika n’emiziro, obwakabaka, okulima, emikolo, ennyimba, eddiini, bizinensi n’obutonde.",
       "units": ["u25", "u26", "u27", "u28", "u29", "u30", "u31", "u32"]
+    },
+    {
+      "id": "s5",
+      "title": "Omwogezi omukugu",
+      "level": "Abali waggulu",
+      "description": "Geraageranya, teebereza, nnyumya emboozi, kozesa engero, goberera amawulire, kola ku bigwa bitalaze era olage ekitiibwa.",
+      "units": ["u33", "u34", "u35", "u36", "u37", "u38", "u39", "u40"]
     }
   ]
 }

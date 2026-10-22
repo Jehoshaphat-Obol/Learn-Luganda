@@ -1,0 +1,314 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u37",
+  "title": "Amawulire n’ekitundu",
+  "description": "Goberera amawulire, yogera mu lukiiko era owe endowooza yo.",
+  "color": "sky",
+  "character": "mukasa",
+  "words": [
+    {
+      "id": "amawulire",
+      "target": "news",
+      "base": "amawulire",
+      "altTarget": ["the news"]
+    },
+    {
+      "id": "owulidde",
+      "target": "Have you heard",
+      "base": "Owulidde",
+      "altTarget": ["did you hear", "you have heard"]
+    },
+    {
+      "id": "leediyo",
+      "target": "radio",
+      "base": "leediyo",
+      "altTarget": ["the radio"]
+    },
+    {
+      "id": "agamba",
+      "target": "he says",
+      "base": "agamba",
+      "altTarget": ["she says", "he/she says", "says"]
+    },
+    {
+      "id": "bagamba",
+      "target": "they say",
+      "base": "bagamba",
+      "altTarget": ["people say"]
+    },
+    {
+      "id": "olukiiko",
+      "target": "meeting",
+      "base": "olukiiko",
+      "altTarget": ["council", "the meeting", "assembly"]
+    },
+    {
+      "id": "ssentebe",
+      "target": "chairperson",
+      "base": "ssentebe",
+      "altTarget": ["chairman", "chair", "the chairperson"]
+    },
+    {
+      "id": "ndowooza",
+      "target": "I think",
+      "base": "Ndowooza",
+      "altTarget": ["i believe", "i suppose"]
+    },
+    {
+      "id": "endowooza",
+      "target": "opinion",
+      "base": "endowooza",
+      "altTarget": ["idea", "view", "thought", "the opinion"]
+    },
+    {
+      "id": "nzikiriza",
+      "target": "I agree",
+      "base": "Nzikiriza",
+      "altTarget": ["i accept", "i believe"]
+    },
+    {
+      "id": "sikkiriza",
+      "target": "I don’t agree",
+      "base": "Sikkiriza",
+      "altTarget": ["i disagree", "i do not agree", "i don’t accept"]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s37-owulidde-amawulire",
+      "target": "Have you heard the news?",
+      "base": "Owulidde amawulire?",
+      "altTarget": ["Did you hear the news?"]
+    },
+    {
+      "id": "s37-ku-leediyo",
+      "target": "I heard it on the radio.",
+      "base": "Mpulidde ku leediyo.",
+      "altTarget": ["I have heard it on the radio.", "I heard on the radio."]
+    },
+    {
+      "id": "s37-agamba-nti",
+      "target": "He says that rain is coming.",
+      "base": "Agamba nti enkuba ejja.",
+      "altTarget": [
+        "She says that rain is coming.",
+        "He says rain is coming.",
+        "She says the rain is coming."
+      ]
+    },
+    {
+      "id": "s37-bagamba-nti",
+      "target": "They say that the new road is finished.",
+      "base": "Bagamba nti ekkubo eriggya liwedde.",
+      "altTarget": [
+        "People say the new road is finished.",
+        "They say the new road is complete."
+      ]
+    },
+    {
+      "id": "s37-olukiiko",
+      "target": "The meeting is on Saturday.",
+      "base": "Olukiiko luli ku Lwamukaaga."
+    },
+    {
+      "id": "s37-ssentebe",
+      "target": "The chairperson speaks at the meeting.",
+      "base": "Ssentebe ayogera mu lukiiko.",
+      "altTarget": [
+        "The chairman is speaking at the meeting.",
+        "The chairperson is speaking in the meeting."
+      ]
+    },
+    {
+      "id": "s37-ndowooza-nti",
+      "target": "I think that it is good.",
+      "base": "Ndowooza nti kirungi.",
+      "altTarget": ["I think it is good.", "I think it’s good."]
+    },
+    {
+      "id": "s37-endowooza-yo",
+      "target": "What is your opinion?",
+      "base": "Endowooza yo ki?",
+      "altTarget": ["What do you think?", "What’s your opinion?"]
+    },
+    {
+      "id": "s37-nzikiriza",
+      "target": "I agree with you.",
+      "base": "Nzikiriza naawe."
+    },
+    {
+      "id": "s37-sikkiriza",
+      "target": "I don’t agree. I think it isn’t good.",
+      "base": "Sikkiriza. Ndowooza nti si kirungi.",
+      "altTarget": [
+        "I disagree. I think it’s not good.",
+        "I do not agree. I think that it is not good."
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u37s1",
+      "title": "Emitwe gy’amawulire",
+      "icon": "speaker",
+      "tip": "have-you-heard",
+      "lessons": [
+        {
+          "id": "u37s1l1",
+          "newWords": ["amawulire", "owulidde", "leediyo"],
+          "sentences": ["s37-owulidde-amawulire", "s37-ku-leediyo"]
+        },
+        {
+          "id": "u37s1l2",
+          "newWords": ["agamba"],
+          "sentences": ["s37-agamba-nti"]
+        },
+        {
+          "id": "u37s1l3",
+          "newWords": ["bagamba"],
+          "sentences": ["s37-bagamba-nti", "s37-agamba-nti"]
+        }
+      ]
+    },
+    {
+      "id": "u37s2",
+      "title": "Enkiiko",
+      "icon": "profile",
+      "tip": "says-that",
+      "lessons": [
+        {
+          "id": "u37s2l1",
+          "newWords": ["olukiiko", "ssentebe"],
+          "sentences": ["s37-olukiiko", "s37-ssentebe"]
+        },
+        {
+          "id": "u37s2l2",
+          "newWords": [],
+          "sentences": [
+            "s37-ssentebe",
+            "s37-bagamba-nti",
+            "s37-owulidde-amawulire"
+          ]
+        },
+        {
+          "id": "u37s2l3",
+          "newWords": [],
+          "sentences": ["s37-olukiiko", "s37-agamba-nti"],
+          "dialogues": [
+            {
+              "speaker": "mukasa",
+              "target": "Have you heard the news?",
+              "base": "Owulidde amawulire?",
+              "options": [
+                "Yes! They say that the new road is finished.",
+                "I would like tea.",
+                "Once upon a time, one day…"
+              ],
+              "answer": "Yes! They say that the new road is finished."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u37s3",
+      "title": "Okuwa endowooza",
+      "icon": "info",
+      "tip": "i-think",
+      "lessons": [
+        {
+          "id": "u37s3l1",
+          "newWords": ["ndowooza", "endowooza"],
+          "sentences": ["s37-ndowooza-nti", "s37-endowooza-yo"]
+        },
+        {
+          "id": "u37s3l2",
+          "newWords": ["nzikiriza", "sikkiriza"],
+          "sentences": ["s37-nzikiriza", "s37-sikkiriza"]
+        },
+        {
+          "id": "u37s3l3",
+          "newWords": [],
+          "sentences": [
+            "s37-endowooza-yo",
+            "s37-nzikiriza",
+            "s37-ndowooza-nti"
+          ],
+          "dialogues": [
+            {
+              "speaker": "mukasa",
+              "target": "I think we should plant trees in the village. What is your opinion?",
+              "base": "Ndowooza nti tusimbe emiti ku kyalo. Endowooza yo ki?",
+              "options": [
+                "I agree with you!",
+                "Have you heard it on the radio?",
+                "I am full."
+              ],
+              "answer": "I agree with you!"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Goberera amawulire, yogera mu lukiiko, era owe endowooza yo mu Lungereza.",
+    "phrases": [
+      {
+        "target": "Have you heard the news?",
+        "base": "Owulidde amawulire?"
+      },
+      {
+        "target": "He says that rain is coming.",
+        "base": "Agamba nti enkuba ejja."
+      },
+      {
+        "target": "They say that the new road is finished.",
+        "base": "Bagamba nti ekkubo eriggya liwedde."
+      },
+      {
+        "target": "I think that it is good.",
+        "base": "Ndowooza nti kirungi."
+      },
+      {
+        "target": "What is your opinion?",
+        "base": "Endowooza yo ki?"
+      },
+      {
+        "target": "I agree with you.",
+        "base": "Nzikiriza naawe."
+      }
+    ],
+    "tips": [
+      {
+        "id": "have-you-heard",
+        "title": "Have you heard?",
+        "body": [
+          "**Owulidde amawulire?** kiba **Have you heard the news?** Okuddamu: **Yes, I heard it on the radio.** (**hear → heard**)."
+        ]
+      },
+      {
+        "id": "says-that",
+        "title": "He says that …",
+        "body": [
+          "**Agamba nti** kiba **he says that**: **He says that rain is coming.** **They say that the new road is finished.** Abantu batera okuleka **that**: **They say the road is finished.**"
+        ]
+      },
+      {
+        "id": "i-think",
+        "title": "Endowooza",
+        "body": [
+          "**I think that it is good.** **I agree with you.** **I don’t agree.** Okubuuza endowooza: **What is your opinion?** oba **What do you think?**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Leediyo",
+        "body": [
+          "Mu Uganda abantu bangi bawulira amawulire ku leediyo era bakubira essimu ku pulogulaamu. Mu Lungereza: **a talk show**, **a caller**, **the presenter**."
+        ]
+      }
+    ]
+  }
+}
