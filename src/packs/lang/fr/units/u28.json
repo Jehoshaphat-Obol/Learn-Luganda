@@ -1,0 +1,131 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u28",
+  "words": {
+    "kwanjula": { "text": "cérémonie de présentation", "alts": ["présentation", "introduction", "le kwanjula", "kwanjula"] },
+    "ssenga": { "text": "tante paternelle", "alts": ["tante", "tata", "sœur du père"] },
+    "omukolo": { "text": "cérémonie", "alts": ["fête", "événement", "célébration", "la fête", "festival"] },
+    "ekirabo": { "text": "cadeau", "alts": ["présent", "un cadeau", "le cadeau", "cadeaux"] },
+    "embaga": { "text": "mariage", "alts": ["le mariage", "noces"] },
+    "omugole": { "text": "mariée", "alts": ["marié", "la mariée", "le marié", "jeune mariée"] },
+    "kulika": { "text": "Félicitations !", "alts": ["bravo", "toutes mes félicitations"] },
+    "okujaguza": { "text": "célébrer", "alts": ["fêter", "se réjouir"] },
+    "tujaguze": { "text": "Faisons la fête !", "alts": ["célébrons", "fêtons ça", "on fait la fête"] },
+    "amazaalibwa": { "text": "anniversaire", "alts": ["l’anniversaire", "naissance"] },
+    "nkwagaliza": { "text": "je te souhaite", "alts": ["je vous souhaite"] },
+    "keeki": { "text": "gâteau", "alts": ["le gâteau", "un gâteau"] },
+    "mwebale-okujja": { "text": "Merci d’être venus", "alts": ["merci d’être venu", "merci d’être venue", "merci à tous d’être venus"] },
+    "mpango": { "text": "projet", "alts": ["plan", "le projet", "programme"] },
+    "wageni": { "text": "invités", "alts": ["visiteurs", "hôtes", "étrangers", "les invités"] },
+    "kualika": { "text": "inviter" },
+    "bwana-harusi": { "text": "marié", "alts": ["le marié", "jeune marié"] },
+    "aliyekuja": { "text": "qui est venu", "alts": ["qui est venue"] },
+    "waliokuja": { "text": "qui sont venus", "alts": ["ceux qui sont venus", "qui sont venues"] },
+    "sikukuu-njema": { "text": "Bonnes fêtes !", "alts": ["bonne fête", "joyeux Noël", "Aïd Moubarak", "joyeuses fêtes"] },
+    "heri-ya-mwaka-mpya": { "text": "Bonne année !", "alts": ["bonne et heureuse année"] }
+  },
+  "sentences": {
+    "s28-kwanjula-ku-lwamukaaga": { "text": "La présentation a lieu samedi.", "alts": ["Le kwanjula a lieu samedi.", "La présentation est samedi."] },
+    "s28-ssenga": { "text": "La tante aide la mariée.", "alts": ["La tante paternelle aide la mariée.", "La ssenga aide la mariée."] },
+    "s28-omukolo-mulungi": { "text": "La cérémonie est très belle !", "alts": ["La fête est très réussie !", "La cérémonie est vraiment belle !"] },
+    "s28-ekirabo": { "text": "J’ai apporté un cadeau." },
+    "s28-embaga": { "text": "Le mariage aura lieu à l’église.", "alts": ["Le mariage sera à l’église."] },
+    "s28-kulika-omugole": { "text": "Félicitations à la mariée !", "alts": ["Félicitations, la mariée !", "Félicitations au marié !"] },
+    "s28-tujaguze": { "text": "Faisons la fête ensemble !", "alts": ["Célébrons ensemble !", "Fêtons ça ensemble !"] },
+    "s28-amazaalibwa": { "text": "Aujourd’hui, c’est mon anniversaire.", "alts": ["C’est mon anniversaire aujourd’hui."] },
+    "s28-nkwagaliza": { "text": "Joyeux anniversaire !", "alts": ["Je te souhaite un joyeux anniversaire !", "Bon anniversaire !"] },
+    "s28-keeki": { "text": "Ce gâteau est très bon.", "alts": ["Ce gâteau est délicieux."] },
+    "s28-mwebale-okujja": { "text": "Merci d’être venus !", "alts": ["Merci à tous d’être venus !", "Merci d’être venu !"] },
+    "s-utaenda-wapi": { "text": "Où iras-tu ce week-end ?", "alts": ["Tu vas où ce week-end ?", "Où vas-tu aller ce week-end ?"] },
+    "s-mpango-gani": { "text": "C’est quoi, ton projet ?", "alts": ["Quels sont tes projets ?", "Tu as quoi de prévu ?"] },
+    "s-sherehe-jumamosi": { "text": "Il y a une fête samedi." },
+    "s-harusi": { "text": "Le mariage aura lieu le mois prochain.", "alts": ["Le mariage est le mois prochain."] },
+    "s-zawadi": { "text": "Voici ton cadeau.", "alts": ["C’est ton cadeau.", "Voici un cadeau pour toi."] },
+    "s-wageni-wengi": { "text": "Beaucoup d’invités sont venus.", "alts": ["Plein d’invités sont venus."] },
+    "s-kualika": { "text": "Je t’ai invité au mariage.", "alts": ["Je t’ai invitée au mariage.", "Je vous ai invités au mariage."] },
+    "s-bibi-harusi": { "text": "La mariée est très belle." },
+    "s-bwana-harusi": { "text": "Le marié porte une kanzu.", "alts": ["Le marié a mis une kanzu."] },
+    "s-aliyekuja": {
+      "text": "La personne qui est venue est mon frère.",
+      "alts": ["L’homme qui est venu est mon frère.", "Celui qui est venu, c’est mon frère."]
+    },
+    "s-waliokuja": { "text": "Les invités qui sont venus étaient contents.", "alts": ["Les invités venus étaient heureux."] },
+    "s-sikukuu-njema": { "text": "Bonnes fêtes, Mamie !", "alts": ["Bonne fête, Mamie !", "Joyeuses fêtes, Mamie !"] },
+    "s-mwaka-mpya": { "text": "Bonne année, mon ami !", "alts": ["Bonne année, mon amie !", "Bonne année, l’ami !"] }
+  },
+  "phrases": [
+    "La présentation a lieu samedi.",
+    "J’ai apporté un cadeau.",
+    "Félicitations à la mariée !",
+    "Faisons la fête ensemble !",
+    "Joyeux anniversaire !",
+    "Merci d’être venus !"
+  ],
+  "dialogues": {
+    "u28s3l3": [
+      {
+        "line": "Aujourd’hui, c’est mon anniversaire !",
+        "options": ["Joyeux anniversaire !", "Je suis vraiment désolé !", "Je suis en route."]
+      }
+    ]
+  },
+  "stories": {
+    "the-kwanjula": {
+      "title": "La présentation",
+      "summary": "{@nakato} se prépare pour le kwanjula de sa cousine avec {@jjajja}.",
+      "lines": [
+        "{@nakato}, tu as mis ta gomesi ?",
+        "Oui, Mamie. Elle est jolie ?",
+        "Très jolie ! Où est le cadeau ?",
+        "Il est là. Du sucre et du sel.",
+        "Bien. La tante aide la mariée.",
+        "Il y a tellement d’invités !",
+        "Oui. Aujourd’hui, on fait la fête.",
+        "Félicitations à la mariée ! Je te souhaite une belle vie !",
+        "Faisons la fête ! Merci à tous d’être venus !"
+      ],
+      "questions": [
+        { "question": "Quel cadeau {@nakato} apporte-t-elle ?", "options": ["Un gâteau", "Du sucre et du sel", "Une houe"] },
+        { "question": "Qui aide la mariée lors d’un kwanjula ?", "options": ["La ssenga", "Le Kabaka", "L’enseignant"] },
+        { "question": "Comment {@nakato} dit-elle « je te souhaite » ?", "options": ["Je te souhaite", "Je t’aime", "Je t’attends"] }
+      ]
+    },
+    "sw-good-news": {
+      "title": "Une bonne nouvelle",
+      "summary": "Neema court à la maison annoncer ses résultats d’examen à Bibi.",
+      "lines": [
+        "Mamie ! Mamie ! J’ai une bonne nouvelle !",
+        "Quelle nouvelle, ma petite-fille ?",
+        "J’ai réussi l’examen de maths !",
+        "Félicitations ! Je suis tellement contente.",
+        "Hier, j’étais vraiment inquiète.",
+        "Ne t’inquiète plus. Petit à petit, l’oiseau fait son nid."
+      ],
+      "questions": [
+        {
+          "question": "Quelle est la nouvelle de Neema ?",
+          "options": ["Elle a réussi son examen de maths", "Elle se marie", "Elle a un nouveau travail"]
+        },
+        { "question": "Comment Neema se sentait-elle hier ?", "options": ["Inquiète", "En colère", "Contente"] },
+        { "question": "Comment Bibi dit-elle « félicitations » ?", "options": ["Félicitations", "Désolée", "Ne t’inquiète pas"] }
+      ]
+    },
+    "sw-eid-visit": {
+      "title": "L’Aïd chez Bibi",
+      "summary": "Neema emmène Emma chez Bibi pour l’Aïd.",
+      "lines": [
+        "Mamie, Aïd Moubarak ! Voici Emma.",
+        "Bienvenue, Emma ! Bonne fête.",
+        "Merci, Mamie. Voici un cadeau pour toi.",
+        "Ah, des dattes ! Merci beaucoup. Tous les invités qui sont venus aujourd’hui veulent du pilau !",
+        "Et moi, je vais leur apporter du thé.",
+        "Bien. Que l’invité vienne, pour que l’hôte prospère."
+      ],
+      "questions": [
+        { "question": "Qu’apporte Emma ?", "options": ["Un cadeau", "Un gâteau", "Un kanga"] },
+        { "question": "Qu’est-ce qu’Emma a offert à Bibi ?", "options": ["Des dattes", "Des clous de girofle", "Du thé"] },
+        { "question": "Comment Bibi dit-elle « bonne fête » ?", "options": ["Bonne fête", "Bonne année", "Bon voyage"] }
+      ]
+    }
+  }
+}

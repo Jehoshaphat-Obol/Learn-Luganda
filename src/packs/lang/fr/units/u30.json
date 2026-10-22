@@ -1,0 +1,85 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u30",
+  "words": {
+    "katonda": { "text": "Dieu", "alts": ["le Seigneur", "le bon Dieu"] },
+    "okusaba": { "text": "prier", "alts": ["demander", "la prière"] },
+    "nsaba": { "text": "je prie", "alts": ["je demande", "s’il vous plaît", "s’il te plaît"] },
+    "bbayibuli": { "text": "Bible", "alts": ["la Bible"] },
+    "kulaani": { "text": "Coran", "alts": ["le Coran"] },
+    "amiina": { "text": "Amen" },
+    "ssekukkulu": { "text": "Noël", "alts": ["la Noël"] },
+    "paasika": { "text": "Pâques" },
+    "iddi": { "text": "Aïd", "alts": ["l’Aïd", "Aïd el-Fitr"] },
+    "okusiiba": { "text": "jeûner", "alts": ["le jeûne", "fermer", "attacher"] },
+    "abajulizi": { "text": "Martyrs", "alts": ["les martyrs", "les Martyrs de l’Ouganda"] },
+    "omukisa": { "text": "bénédiction", "alts": ["chance", "une bénédiction", "grâce", "bénédictions"] },
+    "akuwe": { "text": "qu’il te donne", "alts": ["qu’il vous donne", "que Dieu te donne"] },
+    "omwaka-omuggya": { "text": "nouvel an", "alts": ["le nouvel an", "nouvelle année"] },
+    "sikukuu": { "text": "fête", "alts": ["jour férié", "fête religieuse", "les fêtes"] },
+    "dini": { "text": "religion", "alts": ["foi", "la religion"] },
+    "ramadhani": { "text": "Ramadan", "alts": ["le ramadan"] },
+    "alizaliwa": { "text": "il est né", "alts": ["elle est née", "est né", "est née"] },
+    "anaitwa": { "text": "il s’appelle", "alts": ["elle s’appelle", "s’appelle"] },
+    "mungu-akubariki": { "text": "Que Dieu te bénisse", "alts": ["Dieu te bénisse", "que Dieu vous bénisse"] }
+  },
+  "sentences": {
+    "s30-tusaba-katonda": { "text": "Nous prions Dieu tous les jours.", "alts": ["Nous prions tous les jours.", "On prie Dieu chaque jour."] },
+    "s30-ssabbiiti-ekkanisa": { "text": "Le dimanche, je vais à l’église.", "alts": ["Je vais à l’église le dimanche.", "Dimanche, je vais à l’église."] },
+    "s30-lwakutaano-omuzigiti": { "text": "Le vendredi, il va à la mosquée.", "alts": ["Le vendredi, elle va à la mosquée.", "Vendredi, il va à la mosquée."] },
+    "s30-nsaba-amazzi": { "text": "Je peux avoir de l’eau, madame ?", "alts": ["De l’eau, s’il vous plaît, madame.", "Puis-je avoir de l’eau, madame ?"] },
+    "s30-bbayibuli-kulaani": { "text": "La Bible et le Coran." },
+    "s30-ssekukkulu-ennungi": { "text": "Joyeux Noël !" },
+    "s30-omwaka-omuggya": { "text": "Bonne année !" },
+    "s30-paasika": { "text": "Joyeuses Pâques !" },
+    "s30-iddi": { "text": "Bonne fête de l’Aïd !", "alts": ["Aïd Moubarak !"] },
+    "s30-okusiiba": { "text": "Pendant le ramadan, nous jeûnons.", "alts": ["Nous jeûnons pendant le ramadan.", "Pendant le ramadan, on jeûne."] },
+    "s30-abajulizi": {
+      "text": "La Journée des Martyrs a lieu le 3 juin.",
+      "alts": ["La Journée des Martyrs, c’est le 3 juin.", "La fête des Martyrs est le trois juin."]
+    },
+    "s30-katonda-akuwe-omukisa": { "text": "Que Dieu te bénisse !", "alts": ["Dieu te bénisse !", "Que Dieu vous bénisse !"] },
+    "s30-amiina": { "text": "Amen." },
+    "s-sikukuu-kesho": { "text": "Demain, c’est férié.", "alts": ["Demain est un jour férié.", "Demain, c’est jour de fête."] },
+    "s-idi": { "text": "Nous fêterons l’Aïd ensemble.", "alts": ["On fêtera l’Aïd ensemble."] },
+    "s-krismasi": { "text": "À Noël, nous allons au village.", "alts": ["Pour Noël, on va au village."] },
+    "s-dini": { "text": "Il y a beaucoup de religions en Afrique de l’Est." },
+    "s-kusali-msikitini": { "text": "Grand-père prie à la mosquée.", "alts": ["Papi prie à la mosquée."] },
+    "s-kusali-kanisani": { "text": "Le dimanche, nous prions à l’église.", "alts": ["Le dimanche, on prie à l’église."] },
+    "s-ramadhani": { "text": "Pendant le ramadan, les gens jeûnent." },
+    "s-baraka": { "text": "La pluie est une bénédiction." },
+    "s-alizaliwa": { "text": "Mamie est née à {@island}." },
+    "s-anaitwa": { "text": "L’enfant s’appelle {@nakato}." },
+    "s-akubariki": { "text": "Que Dieu te bénisse, mon enfant.", "alts": ["Dieu te bénisse, mon enfant."] }
+  },
+  "phrases": [
+    "Le dimanche, je vais à l’église.",
+    "Le vendredi, il va à la mosquée.",
+    "Joyeux Noël !",
+    "Bonne fête de l’Aïd !",
+    "Bonne année !",
+    "Que Dieu te bénisse !"
+  ],
+  "dialogues": {
+    "u30s3l3": [{ "line": "Joyeux Noël !", "options": ["Toi aussi, joyeux Noël !", "Je n’ai plus faim.", "Je ne comprends pas le foot."] }]
+  },
+  "stories": {
+    "sw-ramadan-evening": {
+      "title": "Un soir de ramadan",
+      "summary": "Emma rejoint Bibi pour rompre le jeûne au coucher du soleil.",
+      "lines": [
+        "Mamie, tu as jeûné aujourd’hui ?",
+        "Oui, depuis l’aube. Quand le soleil se couchera, nous mangerons ensemble.",
+        "Qu’est-ce qu’on va manger ?",
+        "Des dattes, de la bouillie et des samoussas. Tu es la bienvenue.",
+        "Merci, Mamie. Que Dieu te bénisse.",
+        "Amen, mon enfant."
+      ],
+      "questions": [
+        { "question": "Quand vont-elles manger ?", "options": ["Au coucher du soleil", "À l’aube", "À midi"] },
+        { "question": "Que vont-elles manger d’abord ?", "options": ["Des dattes, de la bouillie et des samoussas", "De l’ugali", "Rien"] },
+        { "question": "Comment Emma dit-elle « que Dieu te bénisse » ?", "options": ["Que Dieu te bénisse", "Si Dieu le veut", "Amen"] }
+      ]
+    }
+  }
+}
