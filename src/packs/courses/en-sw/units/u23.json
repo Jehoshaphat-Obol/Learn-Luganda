@@ -1,0 +1,228 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u23",
+  "title": "On the phone",
+  "description": "Make calls, send messages, sort out airtime and arrange to meet.",
+  "color": "sky",
+  "character": "amani",
+  "words": [
+    { "id": "simu", "target": "simu", "base": "phone", "altBase": ["telephone", "the phone", "call", "mobile"] },
+    { "id": "haloo", "target": "Haloo", "base": "Hello", "altBase": ["hello?", "hallo"], "notes": "Only on the phone." },
+    { "id": "piga-simu", "target": "piga simu", "base": "make a call", "altBase": ["call", "phone", "ring"] },
+    { "id": "nipigie", "target": "Nipigie", "base": "Call me", "altBase": ["ring me", "phone me"] },
+    {
+      "id": "nitakupigia",
+      "target": "Nitakupigia",
+      "base": "I’ll call you",
+      "altBase": ["i will call you", "i’ll phone you", "i’ll ring you"]
+    },
+    { "id": "subiri", "target": "Subiri", "base": "Wait", "altBase": ["hold on", "wait a moment", "hang on"] },
+    { "id": "ujumbe", "target": "ujumbe", "base": "message", "altBase": ["text", "the message", "sms"] },
+    { "id": "tuma", "target": "Tuma", "base": "Send", "altBase": ["send it"] },
+    { "id": "namba", "target": "namba", "base": "number", "altBase": ["phone number", "the number"] },
+    { "id": "mtandao", "target": "mtandao", "base": "network", "altBase": ["internet", "signal", "the network"] },
+    { "id": "betri", "target": "betri", "base": "battery", "altBase": ["the battery"] },
+    { "id": "salio", "target": "salio", "base": "airtime", "altBase": ["balance", "credit", "the balance"] },
+    { "id": "tukutane", "target": "Tukutane", "base": "Let’s meet", "altBase": ["let us meet", "shall we meet"] },
+    { "id": "baadaye", "target": "baadaye", "base": "later", "altBase": ["afterwards", "later on"] }
+  ],
+  "sentences": [
+    { "id": "s-simu-iko-wapi", "target": "Simu yangu iko wapi?", "base": "Where is my phone?", "altBase": ["Where’s my phone?"] },
+    {
+      "id": "s-haloo-nani",
+      "target": "Haloo? Ni nani?",
+      "base": "Hello? Who is it?",
+      "altBase": ["Hello? Who is this?", "Hello? Who’s speaking?"]
+    },
+    { "id": "s-piga-simu", "target": "Piga simu kesho.", "base": "Call tomorrow.", "altBase": ["Make a call tomorrow.", "Phone tomorrow."] },
+    {
+      "id": "s-nipigie-jioni",
+      "target": "Nipigie jioni.",
+      "base": "Call me in the evening.",
+      "altBase": ["Ring me in the evening.", "Call me this evening."]
+    },
+    { "id": "s-nitakupigia", "target": "Nitakupigia kesho.", "base": "I’ll call you tomorrow.", "altBase": ["I will call you tomorrow."] },
+    {
+      "id": "s-subiri-kidogo",
+      "target": "Subiri kidogo.",
+      "base": "Wait a little.",
+      "altBase": ["Wait a moment.", "Hold on a moment.", "Hang on a bit."]
+    },
+    { "id": "s-tuma-ujumbe", "target": "Tuma ujumbe.", "base": "Send a message.", "altBase": ["Send a text.", "Send the message."] },
+    {
+      "id": "s-namba-yako",
+      "target": "Namba yako ni ngapi?",
+      "base": "What’s your number?",
+      "altBase": ["What is your number?", "What’s your phone number?"]
+    },
+    {
+      "id": "s-hakuna-mtandao",
+      "target": "Hakuna mtandao hapa.",
+      "base": "There’s no network here.",
+      "altBase": ["There is no network here.", "There’s no signal here."]
+    },
+    {
+      "id": "s-sina-betri",
+      "target": "Sina betri.",
+      "base": "My battery is dead.",
+      "altBase": ["I have no battery.", "I’m out of battery."]
+    },
+    {
+      "id": "s-sina-salio",
+      "target": "Sina salio.",
+      "base": "I don’t have any airtime.",
+      "altBase": ["I have no airtime.", "I have no credit.", "I’ve got no balance."]
+    },
+    {
+      "id": "s-tukutane-sokoni",
+      "target": "Tukutane sokoni.",
+      "base": "Let’s meet at the market.",
+      "altBase": ["Let us meet at the market."]
+    },
+    {
+      "id": "s-tukutane-saa-ngapi",
+      "target": "Tukutane saa ngapi?",
+      "base": "What time shall we meet?",
+      "altBase": ["When shall we meet?"]
+    },
+    { "id": "s-tutaonana-baadaye", "target": "Tutaonana baadaye.", "base": "See you later.", "altBase": ["We’ll see each other later."] }
+  ],
+  "skills": [
+    {
+      "id": "u23s1",
+      "title": "Calling",
+      "icon": "speaker",
+      "tip": "object-markers",
+      "lessons": [
+        { "id": "u23s1l1", "newWords": ["simu", "haloo", "piga-simu"], "sentences": ["s-simu-iko-wapi", "s-haloo-nani", "s-piga-simu"] },
+        {
+          "id": "u23s1l2",
+          "newWords": ["nipigie", "nitakupigia", "subiri"],
+          "sentences": ["s-nipigie-jioni", "s-nitakupigia", "s-subiri-kidogo"],
+          "dialogues": [
+            {
+              "speaker": "amani",
+              "target": "Haloo? Unaweza kuongea sasa?",
+              "base": "Hello? Can you talk now?",
+              "options": ["Subiri kidogo, tafadhali.", "Tumefungwa leo.", "Nina miaka ishirini."],
+              "answer": "Subiri kidogo, tafadhali."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u23s2",
+      "title": "Messages",
+      "icon": "stories",
+      "lessons": [
+        { "id": "u23s2l1", "newWords": ["ujumbe", "tuma", "namba"], "sentences": ["s-tuma-ujumbe", "s-namba-yako"] },
+        { "id": "u23s2l2", "newWords": ["mtandao", "betri", "salio"], "sentences": ["s-hakuna-mtandao", "s-sina-betri", "s-sina-salio"] }
+      ]
+    },
+    {
+      "id": "u23s3",
+      "title": "Meeting up",
+      "icon": "target",
+      "lessons": [
+        {
+          "id": "u23s3l1",
+          "newWords": ["tukutane", "baadaye"],
+          "sentences": ["s-tukutane-sokoni", "s-tukutane-saa-ngapi", "s-tutaonana-baadaye"],
+          "dialogues": [
+            {
+              "speaker": "neema",
+              "target": "Tukutane wapi?",
+              "base": "Where shall we meet?",
+              "options": ["Tukutane sokoni saa nane.", "Sina betri.", "Haloo?"],
+              "answer": "Tukutane sokoni saa nane."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Phones run daily life in East Africa, from calls and messages to paying for things. Here’s what you need for a call.",
+    "phrases": [
+      { "target": "Haloo? Ni nani?", "base": "Hello? Who is it?" },
+      { "target": "Nipigie jioni.", "base": "Call me in the evening." },
+      { "target": "Nitakupigia kesho.", "base": "I’ll call you tomorrow." },
+      { "target": "Subiri kidogo.", "base": "Wait a little." },
+      { "target": "Hakuna mtandao hapa.", "base": "There’s no network here." },
+      { "target": "Tukutane saa ngapi?", "base": "What time shall we meet?" }
+    ],
+    "tips": [
+      {
+        "id": "object-markers",
+        "title": "Me and you inside the verb",
+        "body": [
+          "Swahili puts “me”, “you” and “him/her” inside the verb, just before the stem: **-ni-** (me), **-ku-** (you), **-m-** (him or her).",
+          "So **nitakupigia** is ni-ta-**ku**-pigia, “I will call you”, and **nipigie** is “call me”. **Nitampigia** means “I’ll call him” or “her”."
+        ],
+        "table": [
+          ["Verb", "Meaning"],
+          ["nitakupigia", "I’ll call you"],
+          ["nitampigia", "I’ll call him/her"],
+          ["nipigie", "call me"],
+          ["nakupenda", "I love you"]
+        ],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "M-Pesa",
+        "body": [
+          "Mobile money began in Kenya in 2007 with **M-Pesa** (pesa means money). People pay rent, school fees and market stalls by phone, and **Nitakutumia pesa** (I’ll send you money) is an everyday sentence."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-bad-network",
+      "title": "Bad network",
+      "unlockAfter": "u23s3l1",
+      "cast": ["amani", "emma"],
+      "summary": "Amani tries to arrange a meeting with Emma over a poor line.",
+      "steps": [
+        {
+          "line": { "speaker": "amani", "target": "Haloo? Emma? Unanisikia?", "base": "Hello? Emma? Can you hear me?" },
+          "gloss": { "Unanisikia": "can you hear me" }
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Ndiyo, kidogo… Hakuna mtandao mzuri hapa.",
+            "base": "Yes, a little… There’s no good network here."
+          }
+        },
+        { "question": "What is the problem?", "options": ["The network is bad", "Emma is sick", "Amani has no phone"], "answer": 0 },
+        {
+          "line": {
+            "speaker": "amani",
+            "target": "Tukutane kesho saa tatu, kituo cha basi.",
+            "base": "Let’s meet tomorrow at nine, at the bus stop."
+          }
+        },
+        { "line": { "speaker": "emma", "target": "Saa ngapi? Rudia, tafadhali!", "base": "What time? Say it again, please!" } },
+        {
+          "line": { "speaker": "amani", "target": "Saa tatu! Nitakutumia ujumbe.", "base": "At nine! I’ll send you a message." },
+          "gloss": { "Nitakutumia": "I will send you" }
+        },
+        { "question": "Where will they meet?", "options": ["At the bus stop", "At the market", "At school"], "answer": 0 },
+        {
+          "line": { "speaker": "emma", "target": "Sawa. Betri yangu inaisha. Kwaheri!", "base": "Okay. My battery is running out. Bye!" },
+          "gloss": { "inaisha": "is running out" }
+        },
+        {
+          "question": "How does Amani say “let’s meet”?",
+          "options": ["Tukutane", "Tutaonana", "Twende"],
+          "answer": 0,
+          "optionsLang": "target"
+        }
+      ]
+    }
+  ]
+}
