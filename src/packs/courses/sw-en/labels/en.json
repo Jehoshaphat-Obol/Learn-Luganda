@@ -15,6 +15,11 @@
       "title": "Conversations",
       "level": "Pre-intermediate",
       "description": "Say no, ask questions, talk about the past and the future, feelings, hobbies, phone calls and cooking."
+    },
+    "s4": {
+      "title": "Community and culture",
+      "level": "Intermediate",
+      "description": "The Swahili coast, village life, celebrations, music, faith, business, nature and community."
     }
   },
   "units": {
@@ -113,6 +118,38 @@
     "u24": {
       "title": "Cooking",
       "description": "Cook in a Swahili kitchen: cut, fry, boil and season a pot of pilau, then share the meal."
+    },
+    "u25": {
+      "title": "The Swahili coast",
+      "description": "Ports, dhows and a thousand years of trade: the coast where Swahili was born."
+    },
+    "u26": {
+      "title": "Village and farming",
+      "description": "Life in the village: planting, the harvest and doing things for each other."
+    },
+    "u27": {
+      "title": "Celebrations",
+      "description": "Holidays, weddings and gifts, and the people who came, ate and danced."
+    },
+    "u28": {
+      "title": "Music and dance",
+      "description": "Taarab, bongo flava and the drum, and the words for the people who make music."
+    },
+    "u29": {
+      "title": "Faith and blessings",
+      "description": "Places of worship, prayer, fasting and the blessings people give each other."
+    },
+    "u30": {
+      "title": "Business",
+      "description": "Run a small business: customers, profit and loss, savings, and teaching others the trade."
+    },
+    "u31": {
+      "title": "Nature",
+      "description": "Mountains, lakes, forests and rivers, and looking after the land."
+    },
+    "u32": {
+      "title": "Community",
+      "description": "Meetings, leaders and pulling together: harambee."
     }
   },
   "skills": {
@@ -187,6 +224,25 @@
     "u23s3": "Meeting up",
     "u24s1": "In the kitchen",
     "u24s2": "Making pilau",
-    "u24s3": "Sharing a meal"
+    "u24s3": "Sharing a meal",
+    "u25s1": "Sea and islands",
+    "u25s2": "Trade",
+    "u25s3": "Old towns",
+    "u26s1": "The village",
+    "u26s2": "Planting and harvest",
+    "u26s3": "Doing it for someone",
+    "u27s1": "Holidays",
+    "u27s2": "Weddings",
+    "u27s3": "Who came",
+    "u28s1": "Who makes music",
+    "u28s2": "Playing and listening",
+    "u29s1": "Places and prayer",
+    "u29s2": "Born and called",
+    "u30s1": "A small shop",
+    "u30s2": "Making others do",
+    "u31s1": "Mountains and water",
+    "u31s2": "Caring for the land",
+    "u32s1": "Meetings and leaders",
+    "u32s2": "Pulling together"
   }
 }
