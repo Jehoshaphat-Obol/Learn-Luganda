@@ -3,7 +3,9 @@
  * the current language in its own name, so someone who reads no English can
  * still tell what it does. It opens a sheet listing every UI pack, each in
  * its own name with its small flag, plus "Automatic". Long lists get the
- * same search the language picker uses.
+ * same search the language picker uses. While the language is Automatic
+ * the pill says "Language" in every language in turn (./cycle.js); once
+ * one is picked it shows that one's name.
  *
  *   languageSwitcher()          the button's HTML
  *   bindLanguageSwitcher(root)  opens the sheet from any button inside root,
@@ -17,6 +19,7 @@ import { store } from '../state/store.js';
 import { escapeHtml, openModal } from './components.js';
 import { languageFlag } from './flags.js';
 import { icon } from './icons.js';
+import { cycleText, cyclePlaceholder, cycling } from './cycle.js';
 
 /** Lists at least this long get a search box. */
 export const SEARCH_FROM = 7;
@@ -31,7 +34,7 @@ export function languageSwitcher({ compact = false, className = '' } = {}) {
   const code = currentLanguage();
   const label = escapeHtml(t('languageSwitch.button', { language: nativeOf(code) }));
   return `<button class="lang-switch${compact ? ' lang-switch--compact' : ''} ${className}" type="button" data-lang-switch aria-haspopup="dialog" aria-label="${label}" title="${label}">
-    ${icon('translate', { size: 20 })}${compact ? '' : `<span class="lang-switch__name" lang="${code}">${escapeHtml(nativeOf(code))}</span>`}
+    ${icon('translate', { size: 20 })}${compact ? '' : `<span class="lang-switch__name">${cycling() ? cycleText('languageSwitch.short') : `<span lang="${code}">${escapeHtml(nativeOf(code))}</span>`}</span>`}
   </button>`;
 }
 
@@ -56,7 +59,6 @@ export function switcherOptions(saved = store.get().settings.uiLang ?? null) {
 
 function sheetBody(options) {
   const search = options.length >= SEARCH_FROM;
-  const label = escapeHtml(t('picker.search.label'));
   const items = options.map((o) => {
     const text = o.lang ? ` data-search="${escapeHtml(languageSearchText(o.lang, o.detail))}"` : '';
     const lang = o.lang ? ` lang="${o.lang}" dir="${languageInfo(o.lang).dir}"` : '';
@@ -64,7 +66,7 @@ function sheetBody(options) {
       <strong${lang}>${o.lang ? languageFlag(o.lang) : icon('translate', { size: 18, className: 'lang-sheet__auto' })}${escapeHtml(o.name)}</strong>${o.detail ? `<span>${escapeHtml(o.detail)}</span>` : ''}
     </button>`;
   });
-  return `${search ? `<div class="lang-sheet__search">${icon('search', { size: 18 })}<input class="input" type="search" data-lang-sheet-search aria-label="${label}" placeholder="${label}" autocomplete="off" spellcheck="false"></div>` : ''}
+  return `${search ? `<div class="lang-sheet__search">${icon('search', { size: 18 })}<input class="input" type="search" data-lang-sheet-search ${cyclePlaceholder('picker.search.label')} autocomplete="off" spellcheck="false"></div>` : ''}
     <div class="lang-sheet__options" role="radiogroup" aria-label="${escapeHtml(t('languageSwitch.title'))}">${items.join('')}</div>
     ${search ? `<p class="lang-sheet__none" data-lang-sheet-none role="status" hidden>${escapeHtml(t('picker.search.none'))}</p>` : ''}`;
 }

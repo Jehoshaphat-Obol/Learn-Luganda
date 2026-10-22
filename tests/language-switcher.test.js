@@ -3,6 +3,7 @@ import { currentLanguage, setLanguage, UI_LANGUAGES } from '../src/i18n/index.js
 import { store } from '../src/state/store.js';
 import { filterSheet, languageSwitcher, openLanguageSheet, switcherOptions } from '../src/ui/language-switcher.js';
 import { ICON_NAMES } from '../src/ui/icons.js';
+import { stop } from '../src/ui/cycle.js';
 
 const nextTick = () => new Promise((r) => setTimeout(r, 0));
 
@@ -15,14 +16,25 @@ afterEach(async () => {
 });
 
 describe('language switcher', () => {
-  it('shows the translate mark and the current language in its own name', async () => {
+  it('shows the translate mark and, once picked, the language in its own name', async () => {
     expect(ICON_NAMES).toContain('translate');
+    store.update((s) => {
+      s.settings.uiLang = 'lg';
+    });
     await setLanguage('lg');
     document.body.innerHTML = languageSwitcher();
     const btn = document.querySelector('[data-lang-switch]');
     expect(btn.querySelector('svg.icon')).not.toBeNull();
     expect(btn.textContent.trim()).toBe('Luganda');
     expect(btn.getAttribute('aria-label')).toContain('Olulimi');
+  });
+
+  it('says "Language" in every language while on Automatic', () => {
+    document.body.innerHTML = languageSwitcher();
+    const items = [...document.querySelectorAll('[data-lang-switch] .cycle__item')];
+    expect(items.map((i) => i.textContent)).toEqual(['Language', 'Olulimi', 'Lugha']);
+    expect(items.filter((i) => !i.hasAttribute('aria-hidden'))).toHaveLength(1);
+    stop();
   });
 
   it('keeps the name in the label when compact', () => {

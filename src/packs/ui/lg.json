@@ -73,6 +73,7 @@
       }
     },
     "languageSwitch": {
+      "short": "Olulimi",
       "button": "Olulimi: {language}. Kyusa olulimi lwa app",
       "title": "Londa olulimi lwo"
     },
@@ -246,7 +247,7 @@
       "hero": {
         "eyebrow": "Bwereere · Mu bitundutundu · Kya ssanyu",
         "title": "Engeri ey’essanyu ey’**okuyiga {language}.**",
-        "lead": "Amasomo amampi agafaanana ng’emizannyo, agakutwala okuva ku _{hello}_ okutuuka ku kunyumya okwa ddala, olunaku ku lunaku."
+        "lead": "Amasomo amampi agakutwala okuva ku _{hello}_ okutuuka ku kunyumya okwa ddala."
       },
       "ticker": "Ebigambo eby’okulabirako",
       "why": {
@@ -257,15 +258,15 @@
         "title": "Okuyiga okuwulira **ng’omuzannyo.**",
         "lessons": {
           "title": "Amasomo amampi",
-          "text": "Amasomo ag’eddakiika ttaano nga galimu ebifaananyi, ebigambo by’okulonda, okuwuliriza n’emizannyo gy’okugatta."
+          "text": "Amasomo ag’eddakiika ttaano nga galimu ebifaananyi n’emizannyo."
         },
         "streaks": {
           "title": "Ennaku ez’omuddiriŋŋanwa",
-          "text": "Yegezaamu katono buli lunaku. Ennaku zo ez’omuddiriŋŋanwa n’ekiruubirirwa kya buli lunaku bikukomyawo."
+          "text": "Yegezaamu katono buli lunaku."
         },
         "hearts": {
           "title": "Emitima",
-          "text": "Ensobi ekutwalako omutima, kale buli kyokuddamu kikulu. Bw’ogiggwaako, okwejjukanya amangu ebigambo by’oyize edda kugizzaawo. Tolina kulekera awo kuyiga."
+          "text": "Ensobi ekutwalako omutima. Okwejjukanya amangu kugizzaawo."
         },
         "review": {
           "title": "Okwejjukanya okw’ebbanga",
@@ -280,9 +281,9 @@
       },
       "showcase": {
         "streakTitle": "Kuuma **ennaku zo ez’omuddiriŋŋanwa**",
-        "streakText": "Tuuka ku kiruubirirwa kyo ekya buli lunaku ennaku zo zeeyongere. Olina emirimu mingi leero? Ekikuuma ennaku kikuyamba.",
+        "streakText": "Olina emirimu mingi leero? Ekikuuma ennaku kikuyamba.",
         "xpTitle": "Funa **XP** oggulewo ebituukiddwako",
-        "xpText": "Buli ssomo likuwa XP. Tuuka ku mitendera oggulewo obubonero n’amayinja. Amayinja tegatundibwa: buli limu oliweebwa ng’oyize."
+        "xpText": "Buli ssomo likuwa XP, obubonero n’amayinja."
       },
       "cast": {
         "eyebrow": "Sisinkana abantu",
@@ -297,11 +298,11 @@
         "title": "Kirungi **okumanya.**",
         "free": {
           "q": "Kya bwereere?",
-          "a": "Yee. Amasomo ga bwereere era tewali akawunti. Ebirango ebitono ebiraga bulungi nti birango bye biyamba kiryoke kibeere bwe kityo."
+          "a": "Yee, era tewali akawunti."
         },
         "saved": {
           "q": "Enkulaakulana yange eterekebwa wa?",
-          "a": "Mu browser yo ku kyuma kino. Osobola okugiggyayo mu fayiro n’ogiyingiza ku kyuma ekirala okuva mu Entegeka."
+          "a": "Mu browser yo ku kyuma kino."
         },
         "who": {
           "q": "Kya ani?",
@@ -313,7 +314,7 @@
         },
         "length": {
           "q": "Omusomo guwanvu kwenkana wa?",
-          "a": "Ebitundu {units} mu {sections}: amasomo {lessons} n’ebigambo {words}, okuva ku kulamusa okusooka okutuuka ku kunyumya okwa ddala. Omanyiiko? Kola ekigezo ky’omutendera obuuke mu maaso."
+          "a": "Ebitundu {units} mu {sections}: amasomo {lessons} n’ebigambo {words}. Omanyiiko? Kola ekigezo ky’omutendera obuuke mu maaso."
         },
         "sections": {
           "one": "omutendera {count}",
@@ -321,14 +322,14 @@
         },
         "install": {
           "q": "Nsobola okugiteeka nga app?",
-          "a": "Yee. Nyiga Teeka app waggulu ku muko, oba ku iPhone nyiga Share oluvannyuma Add to Home Screen. Bw’emala okuteekebwako, amasomo gakola nga tolina yintaneti."
+          "a": "Yee. Nyiga Teeka app, oba ku iPhone nyiga Share oluvannyuma Add to Home Screen."
         }
       },
       "final": {
         "title": "Weetegese? **{start}**"
       },
       "footer": {
-        "made": "Yakolebwa n’obwegendereza eri abayiga {language}. Enkulaakulana yo esigala ku kyuma kyo."
+        "made": "Yakolebwa n’obwegendereza eri abayiga {language}."
       }
     },
     "onboarding": {

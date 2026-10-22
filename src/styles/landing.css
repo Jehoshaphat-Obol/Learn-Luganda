@@ -561,6 +561,18 @@
   justify-content: center;
 }
 
+/* On phones the bird alone stands for the brand, leaving room for the
+   language pill and Get started in their longest wording. */
+@media (max-width: 479px) {
+  .landing__header {
+    gap: var(--space-3);
+  }
+
+  .landing__header > .landing__brand span {
+    display: none;
+  }
+}
+
 /* On the narrowest phones the 文A mark alone stands for the switcher. */
 @media (max-width: 380px) {
   .landing__header .lang-switch__name {

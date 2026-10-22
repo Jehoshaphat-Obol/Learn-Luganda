@@ -98,6 +98,8 @@ const INLINE = new Set(['STRONG', 'EM', 'A', 'B', 'I']);
 function texts(root) {
   const copy = root.cloneNode(true);
   copy.querySelectorAll('svg, style, script').forEach((n) => n.remove());
+  // Labels that cycle through every language (src/ui/cycle.js) hide the others.
+  copy.querySelectorAll('.cycle__item[aria-hidden="true"]').forEach((n) => n.remove());
   const attrs = [...copy.querySelectorAll('[aria-label], [title], [placeholder], [alt]')].flatMap((el) =>
     ['aria-label', 'title', 'placeholder', 'alt'].map((a) => el.getAttribute(a)).filter(Boolean),
   );

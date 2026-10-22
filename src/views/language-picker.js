@@ -23,6 +23,7 @@ import { DEFAULT_COURSE } from '../content/load.js';
 import { escapeHtml } from '../ui/components.js';
 import { languageFlag } from '../ui/flags.js';
 import { icon } from '../ui/icons.js';
+import { cyclePlaceholder } from '../ui/cycle.js';
 import { languageSearchText, matchesSearch, searchedLanguage } from '../i18n/search.js';
 
 const nameOf = languageLabel;
@@ -115,10 +116,9 @@ const courseChoice = (p, flow, label, lang, search) =>
 
 /** The search box over the language lists. */
 function searchBox() {
-  const label = escapeHtml(t('picker.search.label'));
   return `<div class="onb-langs__search">
     ${icon('search', { size: 18 })}
-    <input class="input" id="onb-lang-search" type="search" data-lang-search aria-label="${label}" placeholder="${label}" value="${escapeHtml(query)}" autocomplete="off" spellcheck="false" enterkeyhint="search">
+    <input class="input" id="onb-lang-search" type="search" data-lang-search ${cyclePlaceholder('picker.search.label')} value="${escapeHtml(query)}" autocomplete="off" spellcheck="false" enterkeyhint="search">
   </div>`;
 }
 
