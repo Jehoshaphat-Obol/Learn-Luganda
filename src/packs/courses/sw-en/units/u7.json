@@ -1,0 +1,262 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u7",
+  "title": "Siku yangu",
+  "description": "Taja siku za wiki, eleza ratiba yako na zungumza kuhusu hali ya hewa.",
+  "color": "butter",
+  "character": "amani",
+  "words": [
+    { "id": "jumatatu", "target": "Monday", "base": "Jumatatu", "notes": "Siku za wiki huandikwa kwa herufi kubwa." },
+    { "id": "jumanne", "target": "Tuesday", "base": "Jumanne" },
+    { "id": "jumatano", "target": "Wednesday", "base": "Jumatano" },
+    { "id": "alhamisi", "target": "Thursday", "base": "Alhamisi" },
+    { "id": "ijumaa", "target": "Friday", "base": "Ijumaa" },
+    { "id": "jumamosi", "target": "Saturday", "base": "Jumamosi" },
+    { "id": "jumapili", "target": "Sunday", "base": "Jumapili" },
+    { "id": "kila-siku", "target": "every day", "base": "kila siku", "altTarget": ["daily", "each day"] },
+    { "id": "ninaamka", "target": "I wake up", "base": "Ninaamka", "altTarget": ["i get up", "i am waking up"] },
+    { "id": "ninaoga", "target": "I wash", "base": "Ninaoga", "altTarget": ["i bathe", "i shower", "i take a bath", "i take a shower"] },
+    { "id": "ninafanya-kazi", "target": "I work", "base": "Ninafanya kazi", "altTarget": ["i am working", "i’m working"] },
+    { "id": "ninasoma", "target": "I study", "base": "Ninasoma", "altTarget": ["i read", "i am studying", "i am reading"] },
+    { "id": "ninapika", "target": "I cook", "base": "Ninapika", "altTarget": ["i am cooking", "i’m cooking"] },
+    { "id": "ninalala", "target": "I sleep", "base": "Ninalala", "altTarget": ["i go to bed", "i am sleeping"] },
+    {
+      "id": "ninapenda",
+      "target": "I like",
+      "base": "Ninapenda",
+      "altTarget": ["i love"],
+      "notes": "Baada ya “I like” tumia -ing: I like playing."
+    },
+    { "id": "kucheza", "target": "to play", "base": "kucheza", "altTarget": ["playing", "to dance", "dancing"] },
+    { "id": "mpira", "target": "football", "base": "mpira", "altTarget": ["ball", "soccer"] },
+    { "id": "muziki", "target": "music", "base": "muziki" },
+    { "id": "hali-ya-hewa", "target": "weather", "base": "hali ya hewa", "altTarget": ["the weather"] },
+    { "id": "mvua", "target": "rain", "base": "mvua", "altTarget": ["the rain"] },
+    { "id": "jua", "target": "sun", "base": "jua", "altTarget": ["the sun", "sunshine"] },
+    { "id": "joto", "target": "heat", "base": "joto", "altTarget": ["hot", "warm", "warmth"] },
+    { "id": "baridi", "target": "cold", "base": "baridi", "altTarget": ["the cold"], "notes": "It’s cold: kuna baridi." }
+  ],
+  "sentences": [
+    {
+      "id": "s-leo-ni-jumatatu",
+      "target": "Today is Monday.",
+      "base": "Leo ni Jumatatu.",
+      "altTarget": ["It’s Monday today.", "It is Monday today."]
+    },
+    { "id": "s-kesho-ni-jumanne", "target": "Tomorrow is Tuesday.", "base": "Kesho ni Jumanne." },
+    { "id": "s-jana-ilikuwa-jumapili", "target": "See you on Friday.", "base": "Tutaonana Ijumaa.", "altTarget": ["See you Friday."] },
+    { "id": "s-jumamosi-na-jumapili", "target": "Saturday and Sunday.", "base": "Jumamosi na Jumapili." },
+    {
+      "id": "s-ninaamka-saa-kumi-na-mbili",
+      "target": "I wake up at six.",
+      "base": "Ninaamka saa kumi na mbili.",
+      "altTarget": ["I get up at six.", "I wake up at 6.", "I wake up at six o’clock."]
+    },
+    {
+      "id": "s-ninaoga-asubuhi",
+      "target": "I wash in the morning.",
+      "base": "Ninaoga asubuhi.",
+      "altTarget": ["I shower in the morning.", "I bathe in the morning.", "I take a shower in the morning."]
+    },
+    {
+      "id": "s-ninafanya-kazi-kila-siku",
+      "target": "I work every day.",
+      "base": "Ninafanya kazi kila siku.",
+      "altTarget": ["I work daily."]
+    },
+    { "id": "s-ninasoma-jioni", "target": "I study in the evening.", "base": "Ninasoma jioni.", "altTarget": ["I read in the evening."] },
+    {
+      "id": "s-ninapika-wali",
+      "target": "I cook rice and beans.",
+      "base": "Ninapika wali na maharage.",
+      "altTarget": ["I am cooking rice and beans.", "I’m cooking rice and beans."]
+    },
+    {
+      "id": "s-ninalala-usiku",
+      "target": "I go to bed at ten at night.",
+      "base": "Ninalala saa nne usiku.",
+      "altTarget": ["I sleep at ten at night.", "I go to bed at 10 p.m.", "I sleep at 10 p.m."]
+    },
+    {
+      "id": "s-ninapenda-kucheza-mpira",
+      "target": "I like playing football.",
+      "base": "Ninapenda kucheza mpira.",
+      "altTarget": ["I like to play football.", "I love playing football.", "I like playing soccer."]
+    },
+    { "id": "s-ninapenda-muziki", "target": "I like music.", "base": "Ninapenda muziki.", "altTarget": ["I love music."] },
+    {
+      "id": "s-hali-ya-hewa",
+      "target": "The weather is nice today.",
+      "base": "Hali ya hewa ni nzuri leo.",
+      "altTarget": ["The weather is good today.", "It’s nice weather today."]
+    },
+    {
+      "id": "s-mvua-inanyesha",
+      "target": "It’s raining.",
+      "base": "Mvua inanyesha.",
+      "altTarget": ["It is raining.", "The rain is falling."]
+    },
+    {
+      "id": "s-kuna-jua",
+      "target": "It’s sunny today.",
+      "base": "Kuna jua leo.",
+      "altTarget": ["It is sunny today.", "There is sun today."]
+    },
+    { "id": "s-kuna-joto", "target": "It’s very hot today.", "base": "Kuna joto sana leo.", "altTarget": ["It is very hot today."] },
+    { "id": "s-kuna-baridi", "target": "It’s cold at night.", "base": "Kuna baridi usiku.", "altTarget": ["It is cold at night."] }
+  ],
+  "skills": [
+    {
+      "id": "u7s1",
+      "title": "Siku za wiki",
+      "icon": "clock",
+      "tip": "days-capitals",
+      "lessons": [
+        {
+          "id": "u7s1l1",
+          "newWords": ["jumatatu", "jumanne", "jumatano", "alhamisi"],
+          "sentences": ["s-leo-ni-jumatatu", "s-kesho-ni-jumanne"]
+        },
+        {
+          "id": "u7s1l2",
+          "newWords": ["ijumaa", "jumamosi", "jumapili", "kila-siku"],
+          "sentences": ["s-jana-ilikuwa-jumapili", "s-jumamosi-na-jumapili"]
+        }
+      ]
+    },
+    {
+      "id": "u7s2",
+      "title": "Ratiba yangu",
+      "icon": "star",
+      "tip": "routine-verbs",
+      "lessons": [
+        {
+          "id": "u7s2l1",
+          "newWords": ["ninaamka", "ninaoga", "ninafanya-kazi"],
+          "sentences": ["s-ninaamka-saa-kumi-na-mbili", "s-ninaoga-asubuhi", "s-ninafanya-kazi-kila-siku"]
+        },
+        {
+          "id": "u7s2l2",
+          "newWords": ["ninasoma", "ninapika", "ninalala"],
+          "sentences": ["s-ninasoma-jioni", "s-ninapika-wali", "s-ninalala-usiku"]
+        },
+        {
+          "id": "u7s2l3",
+          "newWords": ["ninapenda", "kucheza", "mpira", "muziki"],
+          "sentences": ["s-ninapenda-kucheza-mpira", "s-ninapenda-muziki", "s-ninafanya-kazi-kila-siku"],
+          "dialogues": [
+            {
+              "speaker": "neema",
+              "target": "What do you like?",
+              "base": "Unapenda nini?",
+              "options": ["I like music!", "Today is Monday.", "It’s raining."],
+              "answer": "I like music!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u7s3",
+      "title": "Hali ya hewa",
+      "icon": "flame",
+      "tip": "weather-it",
+      "lessons": [
+        {
+          "id": "u7s3l1",
+          "newWords": ["hali-ya-hewa", "jua", "joto", "baridi"],
+          "sentences": ["s-hali-ya-hewa", "s-kuna-joto", "s-kuna-baridi"]
+        },
+        {
+          "id": "u7s3l2",
+          "newWords": ["mvua"],
+          "sentences": ["s-mvua-inanyesha", "s-kuna-jua", "s-hali-ya-hewa"],
+          "dialogues": [
+            {
+              "speaker": "juma",
+              "target": "How is the weather today?",
+              "base": "Hali ya hewa ikoje leo?",
+              "options": ["It’s raining.", "I cook rice.", "Saturday and Sunday."],
+              "answer": "It’s raining."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Siku za wiki, ratiba yako, unachopenda, na hali ya hewa.",
+    "phrases": [
+      { "target": "Today is Monday.", "base": "Leo ni Jumatatu." },
+      { "target": "I wake up at six (the twelfth hour).", "base": "Ninaamka saa kumi na mbili." },
+      { "target": "I work every day.", "base": "Ninafanya kazi kila siku." },
+      { "target": "I like playing football.", "base": "Ninapenda kucheza mpira." },
+      { "target": "It’s raining.", "base": "Mvua inanyesha." },
+      { "target": "It’s very hot today.", "base": "Kuna joto sana leo." }
+    ],
+    "tips": [
+      {
+        "id": "days-capitals",
+        "title": "Siku huanza kwa herufi kubwa",
+        "body": [
+          "Siku za wiki huandikwa kwa herufi kubwa: **Monday**, **Tuesday**, **Wednesday**, **Thursday**, **Friday**, **Saturday**, **Sunday**.",
+          "Tumia **on**: **on Monday** (Jumatatu). Wiki ya Kiingereza mara nyingi huanza **Monday**, kama Kiswahili, ingawa kalenda nyingine huanza **Sunday**."
+        ]
+      },
+      {
+        "id": "routine-verbs",
+        "title": "Ratiba: “I wake up”, “she wakes up”",
+        "body": [
+          "Kwa mambo ya kila siku tumia kitenzi cha kawaida: **I wake up at six.** **I go to work.**",
+          "Kwa yeye ongeza **-s**: **she works**, **he goes**, **she likes**. Baada ya **like** tumia **-ing**: **I like playing football.**"
+        ]
+      },
+      {
+        "id": "weather-it",
+        "title": "Hali ya hewa huanza na “it”",
+        "body": [
+          "Kiingereza huhitaji kiima, hata kwa mvua: **It’s raining.** (Mvua inanyesha.) **It’s hot.** (Kuna joto.) **It’s cold.** (Kuna baridi.)",
+          "Kuuliza: **How is the weather today?** (Hali ya hewa ikoje leo?)"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Wikendi",
+        "body": ["Jumamosi na Jumapili kwa pamoja huitwa **the weekend**. Ijumaa jioni watu husema **Have a nice weekend!** (Wikendi njema!)"]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-busy-week",
+      "title": "Wiki yenye shughuli nyingi",
+      "unlockAfter": "u7s2l3",
+      "cast": ["amani", "neema"],
+      "summary": "Amani na Neema wanatafuta siku ya kukutana.",
+      "steps": [
+        { "line": { "speaker": "amani", "target": "Neema, shall we meet on Monday?", "base": "Neema, tutaonana Jumatatu?" } },
+        { "line": { "speaker": "neema", "target": "No, on Monday I’m studying.", "base": "Hapana, Jumatatu ninasoma." } },
+        { "line": { "speaker": "amani", "target": "And Wednesday?", "base": "Na Jumatano?" } },
+        { "line": { "speaker": "neema", "target": "On Wednesday I’m playing football.", "base": "Jumatano ninacheza mpira." } },
+        { "question": "Neema anafanya nini Jumatano?", "options": ["Anasoma", "Anacheza mpira", "Anapika"], "answer": 1 },
+        {
+          "line": {
+            "speaker": "amani",
+            "target": "I work every day, but not on Saturday.",
+            "base": "Ninafanya kazi kila siku, lakini si Jumamosi."
+          }
+        },
+        { "question": "Amani yuko huru siku gani?", "options": ["Jumatatu", "Jumatano", "Jumamosi"], "answer": 2 },
+        {
+          "line": {
+            "speaker": "neema",
+            "target": "Okay! See you Saturday. I love music, let’s go dancing!",
+            "base": "Sawa! Tutaonana Jumamosi. Ninapenda muziki, twende tukacheze!"
+          }
+        },
+        { "question": "Neema anasemaje Jumamosi?", "options": ["Sunday", "Saturday", "Monday"], "answer": 1, "optionsLang": "target" }
+      ]
+    }
+  ]
+}
