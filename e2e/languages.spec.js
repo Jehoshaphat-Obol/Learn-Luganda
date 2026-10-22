@@ -192,10 +192,11 @@ test.describe('with a Swahili browser', () => {
     await expect(page.locator('html')).toHaveAttribute('lang', 'lg');
   });
 
-  test('a Swahili speaker is offered English, taught in Swahili', async ({ page }) => {
+  test('a Swahili speaker is offered English and Luganda, taught in Swahili', async ({ page }) => {
     await page.goto('./#/onboarding');
     await page.getByRole('radio', { name: /Ninaongea Kiswahili/ }).click();
-    await expect(page.getByRole('radio', { name: /Kiingereza, kwa kutumia Kiswahili/ })).toHaveAttribute('aria-checked', 'true');
+    await expect(page.getByRole('radio', { name: /Kiingereza, kwa kutumia Kiswahili/ })).toBeVisible();
+    await expect(page.getByRole('radio', { name: /Kiganda, kwa kutumia Kiswahili/ })).toBeVisible();
   });
 
   test('the English path and first lesson open in Swahili', async ({ page }) => {
@@ -204,5 +205,21 @@ test.describe('with a Swahili browser', () => {
     await page.goto('./#/lesson/u1s1l1?seed=1');
     await expect(page.getByRole('progressbar').first()).toBeVisible();
     await expect(page.getByText(/How are you\?|Fine|Thank you|Welcome|very much/).first()).toBeVisible();
+  });
+  test('a Swahili speaker can pick Luganda, taught in Swahili', async ({ page }) => {
+    await page.goto('./#/onboarding');
+    await page.getByRole('radio', { name: /Ninaongea Kiswahili/ }).click();
+    const luganda = page.getByRole('radio', { name: /Kiganda, kwa kutumia Kiswahili/ });
+    await luganda.click();
+    await expect(luganda).toHaveAttribute('aria-checked', 'true');
+  });
+
+  test('the Luganda path and first lesson open in Swahili', async ({ page }) => {
+    await openWith(page, savedState({ settings: { course: 'sw-lg' } }), '#/learn');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'sw');
+    await expect(page.getByRole('heading', { name: 'Salamu', exact: true })).toBeVisible();
+    await page.goto('./#/lesson/u1s1l1?seed=1');
+    await expect(page.getByRole('progressbar').first()).toBeVisible();
+    await expect(page.getByText(/Habari yako|Nzuri|Asante|bwana|mama|Oli otya|Gyendi|Weebale/).first()).toBeVisible();
   });
 });
