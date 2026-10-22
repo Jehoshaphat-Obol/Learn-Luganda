@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u32",
+  "notes": {
+    "ennyanja": "A lake.",
+    "nnalubaale": "Lake Victoria.",
+    "omugga": "A river.",
+    "kiyira": "The Nile.",
+    "ekibira": "A forest.",
+    "omuti": "A tree.",
+    "olusozi": "A hill.",
+    "okusimba": "To plant.",
+    "tosuula": "Don’t throw…",
+    "kasasiro": "Rubbish ; en Amérique, trash.",
+    "mlima": "A mountain."
+  },
+  "tips": { "u32s3": "lets", "u32s4": "superlative-en" },
+  "guidebook": {
+    "intro": "Lacs, rivières, forêts et collines. En anglais, « let’s » propose une action, et le superlatif se fait en -est.",
+    "tips": [
+      {
+        "id": "lets",
+        "title": "« Let’s plant trees! »",
+        "body": ["**Let’s** + verbe : **Let’s plant trees! Let’s protect our land!** Pour une interdiction : **Don’t throw rubbish here!**"]
+      },
+      {
+        "id": "superlative-en",
+        "title": "« The highest mountain »",
+        "body": [
+          "Les adjectifs courts prennent **-est** : **high → the highest, big → the biggest, long → the longest**. Les longs prennent **most** : **the most beautiful**.",
+          "Après le superlatif, **in** : **the highest mountain in Africa**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "La source du Nil",
+        "body": ["Le Nil sort du lac Victoria à Jinja, en Ouganda. On l’appelle **the source of the Nile**, et c’est un haut lieu du rafting."]
+      }
+    ]
+  }
+}

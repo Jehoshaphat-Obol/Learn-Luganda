@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u27",
+  "notes": {
+    "olusuku": "Une bananeraie: a banana plantation.",
+    "enkumbi": "Une houe; to dig with a hoe, bêcher.",
+    "ndima": "Je cultive.",
+    "ensigo": "Des graines: seeds.",
+    "kasooli": "Le maïs: the ï means the a and i are said separately.",
+    "ebinyeebwa": "Les arachides; also les cacahuètes for roasted peanuts.",
+    "emmwanyi": "Le café: both the plant and the drink.",
+    "ndimira": "Je cultive pour… : French adds pour.",
+    "nfumbira": "Je cuisine pour…, or je fais à manger pour…",
+    "mpandiikira": "J’écris à…: à for the person."
+  },
+  "tips": { "u27s1": "farm-verbs", "u27s3": "pour" },
+  "guidebook": {
+    "intro": "Work the garden, plant crops and bring in the harvest. You’ll also learn to say who you do something for.",
+    "tips": [
+      {
+        "id": "pour",
+        "title": "Pour: doing it for someone",
+        "body": [
+          "Luganda changes the verb to say who benefits; French adds **pour**: **Je cultive le jardin pour grand-parent. Je fais à manger pour les enfants.**",
+          "Giving, selling and writing take **à**: **Je vends du café au marché. J’écris un message à maman.** With a pronoun, **lui** (to him/her) goes before the verb: **Je lui écris.**"
+        ]
+      },
+      {
+        "id": "farm-verbs",
+        "title": "Semer, récolter, planter",
+        "body": [
+          "**Semer** (to sow) changes its **e** to **è** when the ending is silent: **je sème**, but **nous semons**. **Récolter** (to harvest) and **planter** (to plant) are regular.",
+          "The future: **Demain, nous récolterons les arachides.** The near future: **Nous allons semer des graines.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Cocoa and coffee",
+        "body": [
+          "Côte d’Ivoire is the world’s largest producer of **cacao**, and coffee is grown from Cameroon to Burundi. On family farms, **la récolte** is a time when everyone helps, children included."
+        ]
+      }
+    ]
+  }
+}

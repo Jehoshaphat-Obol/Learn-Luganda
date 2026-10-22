@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u26",
+  "notes": {
+    "kabaka": "Le Kabaka; the French word for king is le roi.",
+    "nnaabagereka": "La reine.",
+    "ssaabasajja": "Sa Majesté: feminine, even for a king.",
+    "awangaale": "Vive… ! a fixed formula.",
+    "katikkiro": "Le Premier ministre, with a capital P.",
+    "lukiiko": "Le parlement.",
+    "olubiri": "Le palais.",
+    "amasiro": "Les tombeaux royaux.",
+    "essaza": "Un comté.",
+    "edda-ennyo": "Il y a très longtemps, or in tales, Il était une fois."
+  },
+  "tips": { "u26s1": "titles", "u26s3": "passe-simple", "u26s4": "imparfait-2" },
+  "guidebook": {
+    "intro": "Meet the Kabaka and the history of Buganda. History books in French use a past tense you’ll only read, not say.",
+    "tips": [
+      {
+        "id": "passe-simple",
+        "title": "Kintu fut le premier Kabaka",
+        "body": [
+          "Written history and tales use the **passé simple**: **Kintu fut le premier Kabaka** (Kintu was the first Kabaka), **Le roi appela Abunuwasi** (the king called Abunuwasi). In speech, people use the passé composé instead: **Le roi a appelé Abunuwasi.**",
+          "You only need to recognise it. The **il** forms end in **-a** (for -er verbs), **-it** or **-ut**: **il parla, il partit, il fut**."
+        ]
+      },
+      {
+        "id": "titles",
+        "title": "Titles and kings",
+        "body": [
+          "Titles are lower case in French: **le roi, la reine, le Premier ministre**. **Sa Majesté** (His/Her Majesty) uses **sa** because **majesté** is feminine, even for a king.",
+          "**Vive le roi !** (long live the king!) is a fixed old form; for several, **Vivent les mariés !**"
+        ]
+      },
+      {
+        "id": "imparfait-2",
+        "title": "Abunuwasi était très malin",
+        "body": [
+          "Describing someone in the past uses the imperfect: **Abunuwasi était très malin** (was very clever), **Le royaume était grand.** Events use the passé composé or, in books, the passé simple."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Kingdoms in the francophone world",
+        "body": [
+          "Traditional kings still matter in many francophone countries: the **Mogho Naba** of the Mossi in Burkina Faso, the sultans of northern Cameroon, and the **rois** of Benin’s old kingdoms."
+        ]
+      }
+    ]
+  }
+}

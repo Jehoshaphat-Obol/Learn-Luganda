@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u29",
+  "notes": {
+    "engoma": "A drum : play the drum.",
+    "oluyimba": "A song.",
+    "omuyimbi": "A singer.",
+    "amazina": "A dance.",
+    "abayimba": "Who sing.",
+    "abazina": "Who dance.",
+    "kinyuma": "It’s fun!",
+    "bendi": "A band.",
+    "tamasha": "A concert."
+  },
+  "tips": { "u29s2": "er-nouns", "u29s3": "who-2" },
+  "guidebook": {
+    "intro": "Tambours, chants et danses. En anglais, on décrit les gens avec « who » et des noms en -er.",
+    "tips": [
+      {
+        "id": "er-nouns",
+        "title": "Singer, dancer, drummer",
+        "body": [
+          "On ajoute **-er** au verbe pour la personne : **sing → singer, dance → dancer, drum → drummer**. Pas de féminin : **She is a singer.**",
+          "Instruments avec **the** : **I play the drums, I play the guitar.**"
+        ]
+      },
+      {
+        "id": "who-2",
+        "title": "« The people who sing »",
+        "body": ["**Who** relie la description : **The people who sing are many. The man who plays the drum is dad.**"]
+      }
+    ],
+    "culture": [
+      {
+        "title": "La musique ganda",
+        "body": [
+          "Le **bakisimba** est la danse royale du Buganda, accompagnée de tambours, de la vièle **endingidi** et du xylophone **amadinda**."
+        ]
+      }
+    ]
+  }
+}
