@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u32",
+  "notes": {
+    "ennyanja": "Un lac; beware: la mer is the sea.",
+    "nnalubaale": "Le lac Victoria.",
+    "omugga": "Une rivière; a big river reaching the sea is un fleuve.",
+    "kiyira": "Le Nil: un fleuve.",
+    "ekibira": "La forêt.",
+    "omuti": "Un arbre, des arbres.",
+    "olusozi": "Une colline.",
+    "okusimba": "Planter.",
+    "okukuuma": "Protéger: protégeons, with an e to keep the g soft.",
+    "tosuula": "Ne jette pas…",
+    "mlima": "Une montagne.",
+    "mazingira": "L’environnement."
+  },
+  "tips": { "u32s3": "plantons", "u32s4": "superlative" },
+  "guidebook": {
+    "intro": "Lakes, rivers, forests and hills, and caring for the land. French uses “let’s” forms and superlatives for nature’s records.",
+    "tips": [
+      {
+        "id": "plantons",
+        "title": "Plantons des arbres !",
+        "body": [
+          "For “let’s”, use the **nous** form without **nous**: **Plantons des arbres ! Protégeons notre terre !** The negative: **Ne jetons pas de déchets.**",
+          "To one person: **Ne jette pas de déchets ici !**"
+        ]
+      },
+      {
+        "id": "superlative",
+        "title": "La plus haute montagne",
+        "body": [
+          "“The most” or “the -est” is **le plus** / **la plus** + adjective: **la plus haute montagne d’Afrique** (the highest mountain in Africa), **le plus grand lac**. “In” after a superlative is **de**: **d’Afrique**.",
+          "**Le fleuve** is a river that flows into the sea, like the Nile; **la rivière** flows into another river or a lake."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "The Congo rainforest",
+        "body": [
+          "The Congo Basin holds the world’s second-largest rainforest, **la forêt du bassin du Congo**, home to gorillas, bonobos and okapis. Protecting it is a big topic in the francophone news."
+        ]
+      }
+    ]
+  }
+}

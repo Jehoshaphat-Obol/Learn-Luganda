@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u30",
+  "notes": {
+    "katonda": "God.",
+    "okusaba": "To pray.",
+    "ssekukkulu": "Christmas : Merry Christmas!",
+    "paasika": "Easter.",
+    "iddi": "Eid : Eid Mubarak!",
+    "okusiiba": "To fast.",
+    "abajulizi": "The Martyrs.",
+    "omukisa": "A blessing.",
+    "alizaliwa": "He was born, she was born.",
+    "mungu-akubariki": "May God bless you!"
+  },
+  "tips": { "u30s2": "holiday-greetings", "u30s4": "born" },
+  "guidebook": {
+    "intro": "Parle de foi et de fêtes religieuses. Chaque fête a sa formule en anglais.",
+    "tips": [
+      {
+        "id": "holiday-greetings",
+        "title": "Les vœux de fête",
+        "body": [
+          "**Merry Christmas!**, **Happy Easter!**, **Eid Mubarak!** Un jour férié : **a public holiday**. **During** (pendant) : **During Ramadan, we fast.**",
+          "**May God bless you!** (que Dieu te bénisse !)"
+        ]
+      },
+      {
+        "id": "born",
+        "title": "« I was born »",
+        "body": [
+          "Naître se dit au passé avec **be** : **I was born in Kampala. Grandma was born in Zanzibar.** Le nom : **Her name is Nakato** ou **She is called Nakato.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "La Journée des Martyrs",
+        "body": ["Le 3 juin, des milliers de pèlerins marchent jusqu’à Namugongo pour **Martyrs’ Day**, en mémoire des martyrs de l’Ouganda."]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u27",
+  "notes": {
+    "olusuku": "A banana garden, ou a plantation.",
+    "enkumbi": "A hoe.",
+    "ndima": "I dig, ou I farm.",
+    "kasooli": "Maize ; en Amérique, corn.",
+    "ebinyeebwa": "Groundnuts, ou peanuts.",
+    "amakungula": "The harvest.",
+    "ndimira": "I dig for…",
+    "nfumbira": "I cook for…",
+    "ntundira": "I sell to…"
+  },
+  "tips": { "u27s1": "farm-words", "u27s3": "for-someone" },
+  "guidebook": {
+    "intro": "Travaille au jardin et rentre la récolte. En anglais, « for » indique pour qui tu fais quelque chose.",
+    "tips": [
+      {
+        "id": "for-someone",
+        "title": "« For » et « to »",
+        "body": [
+          "**For** : pour qui tu fais quelque chose : **I dig the garden for my grandmother. I cook for the children.**",
+          "**To** : à qui tu donnes, vends ou écris : **I write a message to mum. I sell coffee to traders.** Ou sans to, la personne d’abord : **I write mum a message.**"
+        ]
+      },
+      {
+        "id": "farm-words",
+        "title": "Au jardin",
+        "body": [
+          "**Dig** (bêcher), **plant** (planter), **sow** (semer), **harvest** (récolter). **We are going to plant seeds today. Tomorrow we will harvest the groundnuts.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Le café ougandais",
+        "body": [
+          "L’Ouganda est l’un des grands producteurs de café d’Afrique. Beaucoup de familles ont quelques caféiers derrière la maison, à côté du **matooke**."
+        ]
+      }
+    ]
+  }
+}

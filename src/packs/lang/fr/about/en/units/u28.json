@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u28",
+  "notes": {
+    "kwanjula": "The introduction ceremony.",
+    "ssenga": "Paternal aunt ; en Ouganda, on garde souvent le mot Ssenga.",
+    "ekirabo": "A gift, ou a present.",
+    "embaga": "A wedding.",
+    "omugole": "The bride ; le marié : the groom.",
+    "kulika": "Congratulations!",
+    "amazaalibwa": "A birthday.",
+    "mwebale-okujja": "Thank you for coming!",
+    "aliyekuja": "Who came."
+  },
+  "tips": { "u28s1": "happy", "u28s3": "who-relative" },
+  "guidebook": {
+    "intro": "Célèbre présentations, mariages et anniversaires. L’anglais a « happy » pour presque toutes les fêtes.",
+    "tips": [
+      {
+        "id": "happy",
+        "title": "« Happy birthday! »",
+        "body": [
+          "**Happy birthday!**, **Happy New Year!**, **Happy holidays!** Mais **Merry Christmas!** et **Congratulations!** (félicitations).",
+          "**I wish you** + nom : **I wish you a happy birthday.**"
+        ]
+      },
+      {
+        "id": "who-relative",
+        "title": "« The person who came »",
+        "body": [
+          "**Who** pour une personne : **The person who came is my brother.** **That** ou **which** pour une chose : **the gift that I brought**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Le kwanjula",
+        "body": [
+          "Le **kwanjula** est la cérémonie où la fiancée présente son futur mari à sa famille. En anglais ougandais, on dit **introduction ceremony** ou simplement **the introduction**."
+        ]
+      }
+    ]
+  }
+}

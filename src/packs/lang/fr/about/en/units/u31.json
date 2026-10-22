@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u31",
+  "notes": {
+    "omuguzi": "A customer.",
+    "amagoba": "Profit.",
+    "okutereka": "To save.",
+    "ebbanja": "A debt.",
+    "okwewola": "To borrow.",
+    "nsomesa": "I teach.",
+    "ndisa": "I feed.",
+    "nnywesa": "I water ; pour des animaux.",
+    "mkopo": "A loan.",
+    "rudisha": "Give back, ou pay back."
+  },
+  "tips": { "u31s2": "borrow-lend", "u31s3": "feed-water" },
+  "guidebook": {
+    "intro": "Tiens un petit commerce. L’anglais a des verbes simples là où le français dit « faire boire ».",
+    "tips": [
+      {
+        "id": "feed-water",
+        "title": "Feed, water, teach",
+        "body": [
+          "Là où le français dit **faire manger** ou **faire boire**, l’anglais a souvent un verbe : **I feed the children** (je nourris), **I water the cows** (je fais boire). **I teach English** (j’enseigne l’anglais).",
+          "Pour faire faire quelque chose à quelqu’un : **make** + personne + verbe : **She makes me laugh.**"
+        ]
+      },
+      {
+        "id": "borrow-lend",
+        "title": "Borrow, lend, pay back",
+        "body": [
+          "**Borrow** (emprunter) et **lend** (prêter) : **I want to borrow money. Can you lend me a thousand shillings?** **Pay back** (rembourser).",
+          "**I need** (j’ai besoin de) : **I need a small loan.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Les groupes d’épargne",
+        "body": ["En Ouganda, beaucoup épargnent dans un **SACCO** ou un groupe de village : chacun cotise et peut emprunter au groupe."]
+      }
+    ]
+  }
+}
