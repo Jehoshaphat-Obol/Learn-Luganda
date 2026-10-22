@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u18",
+  "notes": {
+    "kiki": "What is it?",
+    "oyo": "Who is it?",
+    "ddi": "When ; when are you coming?",
+    "lwaki": "Why : réponse avec because.",
+    "oyogera": "Do you speak…?",
+    "katono": "A little.",
+    "miaka": "Years : I am twenty years old, ou I am twenty.",
+    "mingapi": "How many pour ce qui se compte, how much pour le reste."
+  },
+  "tips": { "u18s1": "wh-questions", "u18s4": "how-old" },
+  "guidebook": {
+    "intro": "Pose des questions : qui, quoi, où, quand, pourquoi, comment. En anglais, le mot interrogatif vient toujours en premier.",
+    "tips": [
+      {
+        "id": "wh-questions",
+        "title": "Les mots interrogatifs",
+        "body": [
+          "**Who** (qui), **what** (quoi), **where** (où), **when** (quand), **why** (pourquoi), **how** (comment), **how much / how many** (combien). Ils se placent au début : **Where is my book?**",
+          "Avec un autre verbe que be, ajoute **do** : **What do you want? Where do you live? When do you come?**"
+        ]
+      },
+      {
+        "id": "how-old",
+        "title": "« How old are you? »",
+        "body": [
+          "L’âge se dit avec **be** : **How old are you?** (quel âge as-tu ?) **I am twenty** (j’ai vingt ans). Pas de « years » obligatoire.",
+          "**Because** répond à **why** : **Why are you learning English? Because I want to talk with people.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Poser des questions",
+        "body": [
+          "En Ouganda, demander **Where do you stay?** (où habites-tu ?) ou **Are you married?** fait partie de la conversation normale, même avec quelqu’un qu’on vient de rencontrer."
+        ]
+      }
+    ]
+  }
+}

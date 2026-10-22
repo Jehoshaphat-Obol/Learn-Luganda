@@ -2,8 +2,8 @@
   "threshold": 0.95,
   "languages": { "en": { "target": 1, "base": 1 }, "fr": { "target": 1, "base": 1 }, "lg": { "target": 1, "base": 1 }, "sw": { "target": 1, "base": 1 } },
   "about": {
-    "en": { "en": 0, "fr": 0.4, "lg": 1, "sw": 1 },
-    "fr": { "en": 0.4, "fr": 0, "lg": 0, "sw": 0 },
+    "en": { "en": 0, "fr": 0.6, "lg": 1, "sw": 1 },
+    "fr": { "en": 0.6, "fr": 0, "lg": 0, "sw": 0 },
     "lg": { "en": 1, "fr": 0, "lg": 0, "sw": 0 },
     "sw": { "en": 1, "fr": 0, "lg": 1, "sw": 0 }
   }

@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u21",
+  "notes": {
+    "nsanyuse": "I am happy.",
+    "nnakuwadde": "I am sad.",
+    "nkooye": "I am tired.",
+    "ntidde": "I am scared.",
+    "nnyiize": "I am angry.",
+    "bambi": "Sorry.",
+    "nkusubwa": "I miss you : l’ordre est inversé par rapport au français.",
+    "usijali": "Don’t worry.",
+    "bahati-njema": "Good luck!"
+  },
+  "tips": { "u21s1": "i-am-happy", "u21s3": "i-miss-you" },
+  "guidebook": {
+    "intro": "Dis ce que tu ressens. En anglais, les adjectifs de sentiment ne s’accordent pas, et « tu me manques » se dit à l’envers.",
+    "tips": [
+      {
+        "id": "i-am-happy",
+        "title": "« I am happy »",
+        "body": [
+          "Les sentiments se disent avec **be** : **I am happy, I am sad, I am tired, I am worried, I am angry**. Pas d’accord : un homme et une femme disent la même chose.",
+          "La peur aussi : **I am scared** ou **I am afraid** (j’ai peur)."
+        ]
+      },
+      {
+        "id": "i-miss-you",
+        "title": "« I miss you »",
+        "body": [
+          "Le français dit **tu me manques** ; l’anglais part de celui qui ressent : **I miss you**. **I love you, mum.**",
+          "**Sorry** pour s’excuser, **Excuse me** pour attirer l’attention. **Don’t worry** (ne t’inquiète pas)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "« Sorry »",
+        "body": [
+          "En Ouganda, **sorry** sert aussi à compatir : on le dit à quelqu’un qui trébuche ou qui est malade, même si on n’y est pour rien."
+        ]
+      }
+    ]
+  }
+}

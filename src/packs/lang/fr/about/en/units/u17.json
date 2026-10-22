@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u17",
+  "notes": {
+    "saagala": "I don’t want.",
+    "sirya": "I don’t eat.",
+    "simanyi": "I don’t know.",
+    "sitegeera": "I don’t understand.",
+    "tewali": "There is no…, ou there isn’t any.",
+    "togenda": "Don’t go!",
+    "totya": "Don’t be afraid!",
+    "bado": "Not yet.",
+    "kamwe": "Never."
+  },
+  "tips": { "u17s1": "dont", "u17s4": "never" },
+  "guidebook": {
+    "intro": "Dis non de toutes les manières. En anglais, la négation passe par « don’t » et « not ».",
+    "tips": [
+      {
+        "id": "dont",
+        "title": "« I don’t »",
+        "body": [
+          "Avec la plupart des verbes, mets **don’t** (do not) devant : **I don’t want coffee. I don’t eat meat.** Avec he ou she : **doesn’t** : **Nakato doesn’t want fish.**",
+          "Avec **be**, mets simplement **not** après : **I am not a teacher. It is not true.** À l’oral : **I’m not, it isn’t**."
+        ]
+      },
+      {
+        "id": "never",
+        "title": "Never, not yet, no more",
+        "body": [
+          "**Never** (jamais) : **I will never go.** **Not yet** (pas encore) : **I haven’t eaten yet.** **Not at all** (pas du tout).",
+          "Pour un ordre négatif : **Don’t go!** **Don’t be afraid!** C’est la même forme pour tu et vous."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Un non poli",
+        "body": ["En Ouganda, on évite souvent un « no » trop direct. **Maybe tomorrow** ou **I will see** veulent souvent dire non."]
+      }
+    ]
+  }
+}

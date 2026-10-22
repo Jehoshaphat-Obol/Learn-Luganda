@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u20",
+  "notes": {
+    "nja": "Je vais + verb: je vais manger.",
+    "tujja": "Nous allons: nous allons étudier.",
+    "ajja": "Il va, or in the simple future, il viendra (he’ll come).",
+    "wiikendi": "Le week-end: ce week-end, this weekend.",
+    "wiiki-ejja": "La semaine prochaine.",
+    "okukyalira": "Rendre visite à quelqu’un; visiter for a place.",
+    "ndigenda": "J’irai: future of aller.",
+    "nsuubira": "J’espère.",
+    "olunaku-lumu": "Un jour.",
+    "ndoto": "Le rêve; mon rêve, c’est de…"
+  },
+  "tips": { "u20s1": "futur-proche", "u20s3": "futur-simple", "u20s4": "je-voudrais" },
+  "guidebook": {
+    "intro": "Talk about tomorrow, the weekend and your dreams. French has a near future with aller and a simple future with endings.",
+    "tips": [
+      {
+        "id": "futur-proche",
+        "title": "Je vais manger: the near future",
+        "body": [
+          "**Aller** + verb is the everyday future: **Je vais manger. Nous allons étudier ensemble.** The forms of aller: **je vais, tu vas, il va, nous allons, vous allez, ils vont**."
+        ]
+      },
+      {
+        "id": "futur-simple",
+        "title": "J’irai, je serai: the simple future",
+        "body": [
+          "For plans further away, the future tense: **J’irai à Kampala. Un jour, je parlerai bien français.** The endings are always **-ai, -as, -a, -ons, -ez, -ont**.",
+          "Some verbs have irregular stems: **aller → ir-** (j’irai), **être → ser-** (je serai), **avoir → aur-** (j’aurai), **venir → viendr-** (il viendra), **faire → fer-** (je ferai)."
+        ]
+      },
+      {
+        "id": "je-voudrais",
+        "title": "Je voudrais, j’aimerais",
+        "body": [
+          "To ask politely or say what you’d like, use the conditional: **Je voudrais du café, s’il te plaît** (I’d like coffee). **J’aimerais voyager** (I’d love to travel).",
+          "To hope: **J’espère** + verb: **J’espère voir le Kabaka.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Si Dieu le veut",
+        "body": [
+          "Many French speakers in Africa add **Si Dieu le veut** or **Inch’Allah** to their plans, like **Katonda bw’anaayagala** in Luganda."
+        ]
+      }
+    ]
+  }
+}

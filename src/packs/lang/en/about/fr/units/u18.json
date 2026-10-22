@@ -1,0 +1,60 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u18",
+  "notes": {
+    "kiki": "Qu’est-ce que c’est ? “What is it?”",
+    "oyo": "Qui est-ce ? or C’est qui ?",
+    "ddi": "Quand: Tu viens quand ?",
+    "lwaki": "Pourquoi; the answer starts with parce que.",
+    "kubanga": "Parce que; before a vowel, parce qu’.",
+    "okwogera": "Parler: je parle, tu parles.",
+    "oyogera": "Tu parles français ? Just raise your voice.",
+    "kitya": "Comment: Comment ça va ?",
+    "miaka": "Ans, with avoir: j’ai vingt ans.",
+    "mingapi": "Combien de, with no article."
+  },
+  "tips": { "u18s1": "question-words", "u18s3": "parce-que", "u18s4": "quel-age" },
+  "guidebook": {
+    "intro": "Ask who, what, where, when, why and how. French question words can go at the start or, in casual speech, at the end.",
+    "tips": [
+      {
+        "id": "question-words",
+        "title": "Question words",
+        "body": [
+          "**Qui** (who), **quoi** / **qu’est-ce que** (what), **où** (where), **quand** (when), **pourquoi** (why), **comment** (how), **combien** (how much, how many).",
+          "In casual speech they often go at the end: **Tu vas où ?** **Tu viens quand ?** In careful speech, at the start with **est-ce que**: **Quand est-ce que tu viens ?**"
+        ],
+        "table": [
+          ["Casual", "Careful", "English"],
+          ["Tu vas où ?", "Où vas-tu ?", "Where are you going?"],
+          ["Tu fais quoi ?", "Qu’est-ce que tu fais ?", "What are you doing?"],
+          ["C’est qui ?", "Qui est-ce ?", "Who is it?"]
+        ],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "parce-que",
+        "title": "Pourquoi? Parce que…",
+        "body": [
+          "Answer **pourquoi** with **parce que**: **Pourquoi apprends-tu le français ? Parce que je veux parler avec les gens.** Before a vowel: **parce qu’il pleut**."
+        ]
+      },
+      {
+        "id": "quel-age",
+        "title": "Quel âge as-tu ?",
+        "body": [
+          "Age uses **avoir**: **Quel âge as-tu ?** (what age do you have?) **J’ai vingt ans.** Don’t forget **ans** (years).",
+          "**Combien de** + noun, with no article: **Combien d’enfants as-tu ? Combien de shillings ?**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Asking about family",
+        "body": [
+          "Questions like **Tu as des enfants ?** or **Tu es marié ?** are friendly small talk in much of francophone Africa, even with people you’ve just met."
+        ]
+      }
+    ]
+  }
+}

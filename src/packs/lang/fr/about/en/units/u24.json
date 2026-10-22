@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u24",
+  "notes": {
+    "okufumba": "Cook ; to cook.",
+    "entamu": "A pot.",
+    "amafuta": "Oil : add some oil.",
+    "obutungulu": "Onions.",
+    "sooka": "First.",
+    "gattako": "Add.",
+    "tulye": "Let’s eat!",
+    "nkkuse": "I’m full.",
+    "webale-okufumba": "Thank you for cooking!"
+  },
+  "tips": { "u24s1": "some-oil", "u24s4": "first-then" },
+  "guidebook": {
+    "intro": "Cuisine un repas étape par étape. Les recettes anglaises utilisent l’impératif et « first, then, finally ».",
+    "tips": [
+      {
+        "id": "first-then",
+        "title": "First, then, finally",
+        "body": [
+          "**First** (d’abord), **then** ou **next** (ensuite), **finally** (enfin) : **First, cut the onions. Then add the tomatoes.**",
+          "L’impératif est le verbe seul : **cut, add, put, mix, boil, fry**."
+        ]
+      },
+      {
+        "id": "some-oil",
+        "title": "« Some » et « a little »",
+        "body": [
+          "**Some** remplace souvent du, de la : **Add some oil.** **A little** (un peu de) : **a little salt**. **A lot of** (beaucoup de) : **a lot of oil**.",
+          "Pour dire que tu n’as plus faim : **I’m full, thank you.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Le luwombo",
+        "body": ["Le **luwombo** est un plat de fête ganda : viande ou arachides cuites à l’étouffée dans des feuilles de bananier."]
+      }
+    ]
+  }
+}
