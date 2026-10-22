@@ -256,6 +256,22 @@
         "u31",
         "u32"
       ]
+    },
+    {
+      "id": "s5",
+      "title": "Mzungumzaji hodari",
+      "level": "Juu ya kati",
+      "description": "Linganisha, waza, simulia hadithi, tumia methali, fuatilia habari, kabili dharura na onyesha heshima.",
+      "units": [
+        "u33",
+        "u34",
+        "u35",
+        "u36",
+        "u37",
+        "u38",
+        "u39",
+        "u40"
+      ]
     }
   ]
 }
