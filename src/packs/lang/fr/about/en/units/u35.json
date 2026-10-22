@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u35",
+  "notes": {
+    "enfumo": "A story, ou a folktale.",
+    "olwatuuka": "Once upon a time…",
+    "waaliwo": "There was.",
+    "awo": "So, ou then.",
+    "nagenda": "And he went.",
+    "nalaba": "And he saw.",
+    "nagamba": "And he said.",
+    "ekyavaamu": "In the end.",
+    "mwisho": "The end."
+  },
+  "tips": { "u35s1": "once-upon", "u35s2": "and-then" },
+  "guidebook": {
+    "intro": "Raconte une histoire. Les contes anglais commencent par « Once upon a time » et utilisent le passé simple anglais.",
+    "tips": [
+      {
+        "id": "once-upon",
+        "title": "« Once upon a time »",
+        "body": [
+          "**Once upon a time** (il était une fois). **There was** (il y avait) pour une chose, **there were** pour plusieurs : **There was a man. There were three brothers.**",
+          "Les événements au passé : **He went to the forest. He saw a lion. He said…**"
+        ]
+      },
+      {
+        "id": "and-then",
+        "title": "« And then »",
+        "body": [
+          "**Then** ou **and then** (et puis), **so** (alors), **finally** ou **in the end** (finalement). Les contes finissent par **The end**.",
+          "Les guillemets anglais : **He said, “Don’t be afraid!”**, sans espace."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Les contes au coin du feu",
+        "body": ["Au Buganda, les grands-parents racontaient les contes le soir, autour du feu, et chaque conte se terminait par une morale."]
+      }
+    ]
+  }
+}

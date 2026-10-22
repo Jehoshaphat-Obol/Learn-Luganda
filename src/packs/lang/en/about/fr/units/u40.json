@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u40",
+  "notes": {
+    "wakayima": "Le lièvre: the hare.",
+    "omugezi": "Malin, maligne: clever, cunning.",
+    "yalimba": "A dupé: passé composé of duper.",
+    "akakodyo": "Une ruse.",
+    "walumbe": "La Mort, with a capital as a character.",
+    "yeerabira": "A oublié, or in tales, oublia.",
+    "obulo": "Le millet.",
+    "etuyigiriza": "Elle nous apprend: histoire is feminine.",
+    "fisi": "L’hyène: the h is silent but blocks elision in careful speech: la hyène.",
+    "tamaa": "L’avidité.",
+    "busara": "La sagesse.",
+    "funzo": "La leçon, or la morale."
+  },
+  "tips": { "u40s1": "ps-reading", "u40s3": "morale" },
+  "guidebook": {
+    "intro": "Meet Wakayima the hare and Kintu, and draw the moral of a story. French tales use the passé simple and end with a moral.",
+    "tips": [
+      {
+        "id": "morale",
+        "title": "La morale de l’histoire",
+        "body": [
+          "Ask **Que nous apprend cette histoire ?** (what does this story teach us?) and answer **Elle nous apprend que…** or **La morale de l’histoire, c’est que…**",
+          "**L’emporter sur** means to win over: **La sagesse l’emporte sur la force** (wisdom beats strength)."
+        ]
+      },
+      {
+        "id": "ps-reading",
+        "title": "Reading tales: fut, épousa, oublia",
+        "body": [
+          "Written tales use the passé simple: **Kintu fut le premier homme. Kintu épousa Nnambi. Nnambi oublia le millet.** Spoken retellings use the passé composé: **Le lièvre a dupé l’hyène.**",
+          "Background description stays in the imperfect: **Le lièvre était très malin.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Leuk-le-Lièvre",
+        "body": [
+          "**Leuk-le-Lièvre**, the clever hare of Senegalese tales collected by Léopold Sédar Senghor and Abdoulaye Sadji, outwits **Bouki l’hyène** in story after story, just like Wakayima."
+        ]
+      }
+    ]
+  }
+}

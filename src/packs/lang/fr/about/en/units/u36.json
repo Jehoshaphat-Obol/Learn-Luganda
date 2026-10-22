@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u36",
+  "notes": {
+    "olugero": "A proverb.",
+    "amakulu": "The meaning.",
+    "kitegeeza": "It means that…",
+    "nga-bwe-bagamba": "As they say.",
+    "prov-akwata-mpola": "En anglais : Slow and steady wins the race.",
+    "prov-agali-awamu": "En anglais : Unity is strength.",
+    "haba-na-haba": "En anglais : Little by little."
+  },
+  "tips": { "u36s1": "proverbs-en" },
+  "guidebook": {
+    "intro": "Apprends des proverbes ganda et swahilis. L’anglais a souvent un proverbe proche.",
+    "tips": [
+      {
+        "id": "proverbs-en",
+        "title": "Des proverbes cousins",
+        "body": [
+          "Certains proverbes ont un équivalent anglais : **Slow and steady wins the race** (qui va lentement va loin), **Unity is strength** (l’union fait la force), **Little by little** (petit à petit).",
+          "Pour introduire un proverbe : **As they say…** Pour l’expliquer : **It means that…**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Les proverbes ganda",
+        "body": ["En Luganda, les proverbes, **engero**, servent à conseiller sans blesser. Les anciens les citent pour clore une discussion."]
+      }
+    ]
+  }
+}
