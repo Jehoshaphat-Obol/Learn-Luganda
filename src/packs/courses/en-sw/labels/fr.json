@@ -1,5 +1,57 @@
 {
   "$schema": "../../../../../docs/packs/schema/course-labels.schema.json",
+  "description": "Le swahili est la langue commune de l’Afrique de l’Est, parlée par des dizaines de millions de personnes, de Mombasa et Zanzibar jusqu’à Kampala, Kigali et Goma.",
+  "cast": {
+    "amani": "Ton guide, étudiant à l’université à Dar es Salaam",
+    "baraka": "Tient un stand de chai et de chapati à Mombasa",
+    "bibi": "Une grand-mère de Zanzibar qui répond à tout par un proverbe",
+    "juma": "Un chauffeur de matatu à Nairobi qui connaît tous les arrêts",
+    "neema": "Une lycéenne d’Arusha qui adore le bongo flava",
+    "emma": "Une bénévole venue de l’étranger, qui apprend le swahili comme toi"
+  },
+  "landing": {
+    "word": "kujifunza — v. apprendre",
+    "words": [
+      "Comment ça va ?",
+      "Bien",
+      "Merci",
+      "Bienvenue",
+      "Ami",
+      "Eau",
+      "Nourriture",
+      "Doucement",
+      "Pas de problème",
+      "Au revoir"
+    ],
+    "why": {
+      "title": "Une langue pour **toute l’Afrique de l’Est.**",
+      "text": "Le swahili est une langue officielle du Kenya, de la Tanzanie, de l’Ouganda et de la Communauté d’Afrique de l’Est, et la langue de tous les jours de la côte de l’océan Indien jusqu’au Congo. Apprends-le pour voyager, commercer, te faire des amis et suivre la musique, du taarab au bongo flava.",
+      "cards": [
+        {
+          "title": "Pour les voyageurs",
+          "text": "Te déplacer de Mombasa à Mwanza, en matatu, en daladala ou en ferry."
+        },
+        {
+          "title": "Pour le travail",
+          "text": "Parler avec tes collègues et tes clients dans toute la région."
+        },
+        {
+          "title": "Pour les curieux",
+          "text": "Découvrir les classes nominales, les proverbes et mille ans de poésie côtière."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Lequel veut dire « merci » ?",
+      "explain": "_Asante_ veut dire merci."
+    },
+    "start": {
+      "caption": "tuanze — commençons"
+    },
+    "farewell": "Asante sana — merci beaucoup.",
+    "audience": "Les grands débutants, les voyageurs et bénévoles en route pour l’Afrique de l’Est, et les familles qui font vivre le swahili à la maison.",
+    "first": "Salutations et respect, la famille, la nourriture et le marché, les nombres et l’heure, les lieux et les déplacements, la maison, les jours de la semaine et ta santé, unité par unité."
+  },
   "sections": {
     "s1": {
       "title": "Les bases",

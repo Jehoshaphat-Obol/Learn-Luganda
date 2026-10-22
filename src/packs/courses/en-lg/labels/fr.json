@@ -1,5 +1,57 @@
 {
   "$schema": "../../../../../docs/packs/schema/course-labels.schema.json",
+  "description": "Le luganda est la langue du Buganda, au centre de l’Ouganda, parlée par des millions de personnes à Kampala et dans ses environs.",
+  "cast": {
+    "nakato": "Ta guide, étudiante à l’université à Kampala",
+    "mukasa": "Un professeur patient de Masaka",
+    "jjajja": "Une grand-mère qui adore les proverbes",
+    "ssali": "Un conducteur de boda boda qui connaît toutes les routes",
+    "amara": "Une lycéenne qui adore la musique",
+    "emma": "Une visiteuse qui apprend le luganda avant son voyage"
+  },
+  "landing": {
+    "word": "okuyiga — v. apprendre",
+    "words": [
+      "Comment vas-tu ?",
+      "Je vais bien",
+      "Merci",
+      "D’accord",
+      "Ami",
+      "Eau",
+      "Nourriture",
+      "Monsieur",
+      "Madame",
+      "Bienvenue"
+    ],
+    "why": {
+      "title": "La langue des **rues de Kampala.**",
+      "text": "Le luganda est parlé par des millions de personnes dans le centre de l’Ouganda, et c’est la langue qu’on entend le plus à Kampala. Apprends-le pour parler avec ta famille, te faire des amis au marché ou te sentir chez toi lors de ton prochain voyage.",
+      "cards": [
+        {
+          "title": "Pour la famille",
+          "text": "Renouer avec les grands-parents et transmettre la langue."
+        },
+        {
+          "title": "Pour les voyageurs",
+          "text": "Saluer, marchander et te déplacer en confiance."
+        },
+        {
+          "title": "Pour les curieux",
+          "text": "Découvrir les classes nominales, les tons et les proverbes."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Lequel veut dire « merci » ?",
+      "explain": "_Weebale_ veut dire merci."
+    },
+    "start": {
+      "caption": "tandika — v. commencer"
+    },
+    "farewell": "Weebale nnyo — merci beaucoup.",
+    "audience": "Les grands débutants, les familles de la diaspora qui renouent avec la langue, et les visiteurs de l’Ouganda qui veulent aller plus loin que « bonjour ».",
+    "first": "Salutations, présentations et nombres, puis la famille, la nourriture, le marché, l’heure, les lieux et plus encore, section par section."
+  },
   "sections": {
     "s1": {
       "title": "Les bases",

@@ -1,5 +1,57 @@
 {
   "$schema": "../../../../../docs/packs/schema/course-labels.schema.json",
+  "description": "Le luganda est la langue du Buganda, au centre de l’Ouganda, parlée par des millions de personnes à Kampala et dans ses environs.",
+  "cast": {
+    "nakato": "Ta guide, étudiante à l’université à Kampala",
+    "mukasa": "Un professeur patient de Masaka",
+    "jjajja": "Une grand-mère qui adore les proverbes",
+    "ssali": "Un conducteur de boda boda qui connaît toutes les routes",
+    "amara": "Une lycéenne qui adore la musique",
+    "emma": "Une visiteuse qui apprend le luganda avant son voyage"
+  },
+  "landing": {
+    "word": "okuyiga — v. apprendre",
+    "words": [
+      "Comment vas-tu ?",
+      "Je vais bien",
+      "Merci",
+      "D’accord",
+      "Ami",
+      "Eau",
+      "Nourriture",
+      "Monsieur",
+      "Madame",
+      "Bienvenue"
+    ],
+    "why": {
+      "title": "La langue des **rues de Kampala.**",
+      "text": "Le luganda est parlé par des millions de personnes dans le centre de l’Ouganda, et c’est la langue qu’on entend le plus à Kampala. C’est une langue bantoue comme le swahili : tu y reconnaîtras des classes nominales et des préfixes que tu connais déjà.",
+      "cards": [
+        {
+          "title": "Pour le commerce",
+          "text": "Saluer, marchander et commercer au marché en confiance."
+        },
+        {
+          "title": "Pour les voyageurs",
+          "text": "Te déplacer dans Kampala, prendre un boda boda et te faire des amis."
+        },
+        {
+          "title": "Pour les curieux",
+          "text": "Comparer le luganda au swahili : classes nominales, verbes et proverbes."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Lequel veut dire « merci » ?",
+      "explain": "_Weebale_ veut dire merci."
+    },
+    "start": {
+      "caption": "tandika — v. commencer"
+    },
+    "farewell": "Weebale nnyo — merci beaucoup.",
+    "audience": "Les swahiliphones qui commencent le luganda : commerçants, étudiants et voyageurs en route pour l’Ouganda, et les familles qui veulent renouer avec la langue.",
+    "first": "Salutations, présentations et nombres, puis la famille, la nourriture, le marché, l’heure, les lieux, la maison et la santé, unité par unité."
+  },
   "sections": {
     "s1": {
       "title": "Les bases",

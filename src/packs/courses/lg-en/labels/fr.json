@@ -1,5 +1,57 @@
 {
   "$schema": "../../../../../docs/packs/schema/course-labels.schema.json",
+  "description": "L’anglais est la langue officielle de l’Ouganda : à l’école, au bureau et dans les actualités, et il est parlé dans de nombreux pays.",
+  "cast": {
+    "nakato": "Ta guide, étudiante à l’université à Kampala",
+    "mukasa": "Un professeur patient de Masaka",
+    "jjajja": "Une grand-mère qui adore les proverbes",
+    "ssali": "Un conducteur de boda boda qui connaît toutes les routes",
+    "amara": "Une lycéenne qui adore la musique",
+    "emma": "Une visiteuse étrangère qui parle anglais"
+  },
+  "landing": {
+    "word": "learn — acquérir de nouvelles connaissances ou compétences",
+    "words": [
+      "Bonjour",
+      "Je vais bien",
+      "Merci",
+      "D’accord",
+      "Ami",
+      "Eau",
+      "Nourriture",
+      "Monsieur",
+      "Madame",
+      "Bienvenue"
+    ],
+    "why": {
+      "title": "La langue de **l’école et du travail.**",
+      "text": "L’anglais est la langue officielle de l’Ouganda. On l’utilise à l’école, dans les tribunaux, dans les bureaux et en ligne. Apprends-le pour étudier, trouver du travail et parler avec des gens du monde entier.",
+      "cards": [
+        {
+          "title": "À l’école",
+          "text": "Comprendre les enseignants et les livres, et réussir tes examens."
+        },
+        {
+          "title": "Au travail",
+          "text": "Écrire, parler et travailler avec toutes sortes de gens, en confiance."
+        },
+        {
+          "title": "Partout dans le monde",
+          "text": "Parler avec des visiteurs, voyager et lire en ligne."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Lequel veut dire « weebale » ?",
+      "explain": "_Thank you_ veut dire weebale."
+    },
+    "start": {
+      "caption": "let’s go — allez, on commence"
+    },
+    "farewell": "Merci beaucoup.",
+    "audience": "Les locuteurs du luganda qui veulent apprendre l’anglais depuis le début : élèves, travailleurs, et parents qui veulent aider leurs enfants à l’école.",
+    "first": "Salutations, présentations et nombres, puis la famille, la nourriture, le marché, l’heure, les lieux, la maison et la santé, unité par unité."
+  },
   "sections": {
     "s1": {
       "title": "Les bases",
