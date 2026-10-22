@@ -12,7 +12,7 @@ import { button, escapeHtml, progressBar, speech } from '../ui/components.js';
 import { avatar } from '../ui/avatar.js';
 import { icon } from '../ui/icons.js';
 import { trackPixel } from '../marketing/pixel.js';
-import { applyLanguages, languageScreen, onGuessReply } from './language-picker.js';
+import { applyLanguages, filterLanguages, languageScreen, onGuessReply } from './language-picker.js';
 import { course } from '../content/course.js';
 import { courseLanguage } from '../content/names.js';
 import { t, tHtml } from '../i18n/index.js';
@@ -214,6 +214,10 @@ export function onboardingView({ root, navigate }) {
   });
 
   root.addEventListener('input', (e) => {
+    if (e.target.matches('[data-lang-search]')) {
+      filterLanguages(root, e.target.value);
+      return;
+    }
     if (e.target.id !== 'onb-name') return;
     const name = e.target.value;
     // Save without re-rendering so the caret stays put; just toggle the button.

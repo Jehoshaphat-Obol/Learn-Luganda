@@ -56,6 +56,10 @@
         "say": "No problem! Tell me which languages are yours.",
         "speak": "I speak",
         "learn": "I want to learn"
+      },
+      "search": {
+        "label": "Search languages",
+        "none": "No language matches your search."
       }
     },
     "settings": {

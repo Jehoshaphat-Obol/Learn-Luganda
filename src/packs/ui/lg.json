@@ -66,6 +66,10 @@
         "say": "Tewali buzibu! Mbuulira ennimi zo.",
         "speak": "Njogera",
         "learn": "Njagala okuyiga"
+      },
+      "search": {
+        "label": "Noonya olulimi",
+        "none": "Tewali lulimi lukwatagana n’ky’onoonya."
       }
     },
     "settings": {
