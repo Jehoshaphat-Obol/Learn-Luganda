@@ -66,10 +66,10 @@
   "dialogues": { "u13s3l3": [{ "line": "Una mnyama nyumbani?", "options": ["Ndiyo, nina mbwa.", "Tembo ni mkubwa sana.", "Ninaogopa nyoka!"] }] },
   "stories": {
     "village-farm": {
-      "title": "Shambani kwa Jjajja",
-      "summary": "Emma anatembelea kijijini na kukutana na wanyama.",
+      "title": "Shambani kwa {@jjajja}",
+      "summary": "{@emma} anatembelea kijijini na kukutana na wanyama.",
       "lines": [
-        "Tumefurahi kukuona, Emma! Karibu ndani.",
+        "Tumefurahi kukuona, {@emma}! Karibu ndani.",
         "Asante, Bibi. Wanyama wako wapi?",
         "Tazama! Ng’ombe wanakula nyasi.",
         "Ng’ombe wangapi?",
@@ -82,8 +82,8 @@
       ],
       "questions": [
         { "question": "Ng’ombe wanafanya nini?", "options": ["Wanalala", "Wanakula nyasi", "Wanakunywa maji"] },
-        { "question": "Jjajja ana mbuzi wangapi?", "options": ["Watano", "Wawili", "Kumi"] },
-        { "question": "Emma aliona nini kwa kweli?", "options": ["Kamba", "Nyoka", "Mbwa"] }
+        { "question": "{@jjajja} ana mbuzi wangapi?", "options": ["Watano", "Wawili", "Kumi"] },
+        { "question": "{@emma} aliona nini kwa kweli?", "options": ["Kamba", "Nyoka", "Mbwa"] }
       ]
     }
   }

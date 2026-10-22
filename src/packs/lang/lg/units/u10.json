@@ -104,12 +104,12 @@
       ],
       "questions": [
         { "question": "Okwanjula kuli ddi?" },
-        { "question": "Nakato ayagala langi ki?" },
+        { "question": "{@nakato} ayagala langi ki?" },
         { "question": "Gomesi emmyufu erina buzibu ki?" },
         { "options": ["Kale, ngitwala.", "Yambula engatto.", "Mpulira empewo."], "question": "Mu Lungereza ogamba otya “Kale, ngitwala”?" }
       ],
       "title": "Gomesi ey’omukolo",
-      "summary": "Nakato agula ekyokwambala ku kwanjula kwa muganda we."
+      "summary": "{@nakato} agula ekyokwambala ku kwanjula kwa muganda we."
     }
   }
 }

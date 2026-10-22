@@ -28,7 +28,7 @@
       "alts": ["If it weren’t raining, I would go.", "If there was no rain, I would have gone."]
     },
     "s34-nnandyagadde-caayi": { "text": "I would like tea, please.", "alts": ["I’d like tea, please.", "I would like some tea, please."] },
-    "s34-nnandyagadde-okugenda": { "text": "I would like to go to Jinja.", "alts": ["I’d like to go to Jinja.", "I would love to go to Jinja."] },
+    "s34-nnandyagadde-okugenda": { "text": "I would like to go to {@getaway}.", "alts": ["I’d like to go to {@getaway}.", "I would love to go to {@getaway}."] },
     "s34-ka-tulabe": { "text": "Let’s see tomorrow.", "alts": ["We’ll see tomorrow.", "Let us see tomorrow."] },
     "s34-katonda-bwanaayagala": { "text": "I will come, God willing.", "alts": ["I’ll come, God willing."] },
     "s-ukifika": { "text": "When you arrive, call me.", "alts": ["If you arrive, call me.", "When you get there, call me."] },

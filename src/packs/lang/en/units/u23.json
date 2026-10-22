@@ -24,7 +24,7 @@
   },
   "sentences": {
     "s23-halo": { "text": "Hello? Who is speaking?", "alts": ["Hello? Who’s speaking?", "Hello? Who is this?"] },
-    "s23-nze-nakato-ayogera": { "text": "It’s Nakato speaking.", "alts": ["This is Nakato speaking.", "Nakato speaking.", "It is Nakato speaking."] },
+    "s23-nze-nakato-ayogera": { "text": "It’s {@nakato} speaking.", "alts": ["This is {@nakato} speaking.", "{@nakato} speaking.", "It is {@nakato} speaking."] },
     "s23-nja-kukukubira": { "text": "I will call you tomorrow.", "alts": ["I’ll call you tomorrow.", "I will phone you tomorrow."] },
     "s23-nkubira-ekiro": { "text": "Call me at night.", "alts": ["Call me tonight.", "Phone me in the evening."] },
     "s23-mmukubira": { "text": "I call her every day.", "alts": ["I call him every day.", "I phone her every day."] },
@@ -47,7 +47,7 @@
   },
   "phrases": [
     "Hello? Who is speaking?",
-    "It’s Nakato speaking.",
+    "It’s {@nakato} speaking.",
     "I will call you tomorrow.",
     "I can’t hear you well.",
     "Send me a message.",
@@ -55,7 +55,7 @@
     "I’m on the way, I’m coming!"
   ],
   "dialogues": {
-    "u23s2l3": [{ "line": "Hello? Who is speaking?", "options": ["It’s Ssali. How are you, Nakato?", "I’m on the way.", "I don’t have money."] }],
+    "u23s2l3": [{ "line": "Hello? Who is speaking?", "options": ["It’s {@ssali}. How are you, {@nakato}?", "I’m on the way.", "I don’t have money."] }],
     "u23s3l3": [
       {
         "line": "Where are you? I’m waiting for you!",

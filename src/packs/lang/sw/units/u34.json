@@ -31,7 +31,7 @@
     },
     "s34-singa-tewali-nkuba": { "text": "Kama mvua isingenyesha, ningeenda.", "alts": ["Kama kusingekuwa na mvua, ningeenda.", "Mvua isingenyesha, ningeenda."] },
     "s34-nnandyagadde-caayi": { "text": "Ningependa chai, tafadhali.", "alts": ["Ningependa chai tafadhali.", "Ningependa kupata chai, tafadhali."] },
-    "s34-nnandyagadde-okugenda": { "text": "Ningependa kwenda Jinja.", "alts": ["Ningependa kuenda Jinja.", "Ningefurahi kwenda Jinja."] },
+    "s34-nnandyagadde-okugenda": { "text": "Ningependa kwenda {@getaway}.", "alts": ["Ningependa kuenda {@getaway}.", "Ningefurahi kwenda {@getaway}."] },
     "s34-ka-tulabe": { "text": "Tutaona kesho.", "alts": ["Tuone kesho.", "Kesho tutaona."] },
     "s34-katonda-bwanaayagala": { "text": "Nitakuja, Mungu akipenda.", "alts": ["Nitakuja, Inshallah.", "Mungu akipenda, nitakuja."] },
     "s-ukifika": { "text": "Ukifika, nipigie simu." },

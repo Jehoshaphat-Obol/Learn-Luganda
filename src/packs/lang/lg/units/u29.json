@@ -41,7 +41,7 @@
     "s-wanacheza-ngoma": { "text": "Bazina." },
     "s-mazoezi-kila-siku": { "text": "Nneegezaamu buli lunaku." },
     "s-mwimbaji": { "text": "Omuyimbi alina eddoboozi eddungi." },
-    "s-mchezaji": { "text": "Neema muzinyi mukugu." },
+    "s-mchezaji": { "text": "{@amara} muzinyi mukugu." },
     "s-mpiga-ngoma": { "text": "Omukubi w'engoma ye jjajja wange." },
     "s-bendi": { "text": "Bbandi ejja kukuba ennyimba ekiro." },
     "s-taarab": { "text": "Jjajja ayagala nnyo taarab." },
@@ -62,16 +62,16 @@
         "Bum, bum, ka-bum! Kinyuma nnyo!",
         "Abaana abazina bajja kuzina Bakisimba.",
         "Ate ani ajja kuyimba?",
-        "Nakato! Ye muyimbi omulungi.",
+        "{@nakato}! Ye muyimbi omulungi.",
         "Nsanyuse nnyo. Weebale, ssebo!"
       ],
       "questions": [
-        { "question": "Amara akuba ngoma ki?" },
+        { "question": "{@amara} akuba ngoma ki?" },
         { "question": "Abazinyi banaazina ki?" },
         { "options": ["abaana abazina", "abaana bazina", "abaana bazannya"], "question": "Mu Lungereza ogamba otya “abaana abazina”?" }
       ],
       "title": "Okuyiga okukuba engoma",
-      "summary": "Amara ayiga okukuba engoma olw’ekivvulu ky’essomero."
+      "summary": "{@amara} ayiga okukuba engoma olw’ekivvulu ky’essomero."
     }
   }
 }

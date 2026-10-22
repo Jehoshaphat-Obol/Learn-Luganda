@@ -55,7 +55,7 @@
   "stories": {
     "amaras-story": {
       "lines": [
-        "Amara, ngerera enfumo!",
+        "{@amara}, ngerera enfumo!",
         "Kale nno. Olwatuuka olwali olumu, waaliwo omulenzi omu.",
         "Awo n’agenda mu kibira okunoonya enku.",
         "N’alaba ki?",
@@ -70,11 +70,11 @@
         { "question": "Omulenzi yakola ki bwe yalaba empologoma?" },
         {
           "options": ["Enfumo yange ekomye awo.", "Olwatuuka olwali olumu.", "Waaliwo omusajja."],
-          "question": "Amara amaliriza atya olufumo mu Lungereza?"
+          "question": "{@amara} amaliriza atya olufumo mu Lungereza?"
         }
       ],
-      "title": "Amara anyumya olufumo",
-      "summary": "Amara anyumiza Emma olufumo lw’omulenzi n’empologoma."
+      "title": "{@amara} anyumya olufumo",
+      "summary": "{@amara} anyumiza {@emma} olufumo lw’omulenzi n’empologoma."
     }
   }
 }

@@ -61,7 +61,7 @@
   "stories": {
     "kintu-and-nnambi": {
       "title": "Kintu na Nnambi",
-      "summary": "Jjajja anamsimulia Emma hekaya ya jinsi kifo kilivyokuja duniani.",
+      "summary": "{@jjajja} anamsimulia {@emma} hekaya ya jinsi kifo kilivyokuja duniani.",
       "lines": [
         "Bibi, nasikia kuna hadithi kuhusu Kintu. Nisimulie!",
         "Basi. Hapo zamani za kale, Kintu alikuwa mtu wa kwanza. Aliishi peke yake na ng’ombe wake.",
@@ -79,7 +79,7 @@
           "question": "Kwa nini Nnambi alirudi?",
           "options": ["Kwa ajili ya ng’ombe wake", "Kwa ajili ya mtama wa kuku", "Kumwona Walumbe"]
         },
-        { "question": "Jjajja anatoa funzo gani?", "options": ["Wasikilize wazee", "Busara hushinda nguvu", "Rudi nyumbani haraka"] }
+        { "question": "{@jjajja} anatoa funzo gani?", "options": ["Wasikilize wazee", "Busara hushinda nguvu", "Rudi nyumbani haraka"] }
       ]
     }
   }

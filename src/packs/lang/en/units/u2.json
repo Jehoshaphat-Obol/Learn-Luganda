@@ -90,7 +90,7 @@
     "s-darasa-kubwa": { "text": "The classroom is big.", "alts": ["The class is big."] },
     "s-najifunza-kiingereza": { "text": "I’m learning English.", "alts": ["I am learning English.", "I learn English."] },
     "s-unapenda-nini": { "text": "What do you like?" },
-    "s-ninaitwa-amani": { "text": "I’m called Amani.", "alts": ["My name is Amani.", "I am called Amani."] },
+    "s-ninaitwa-amani": { "text": "I’m called {@nakato}.", "alts": ["My name is {@nakato}.", "I am called {@nakato}."] },
     "s-je-una-watoto": { "text": "Do you have children?", "alts": ["Have you got children?"] },
     "s-je-ni-kweli": { "text": "Is it true?", "alts": ["Is that true?", "Really?"] }
   },
@@ -107,12 +107,12 @@
   ],
   "dialogues": {
     "u2s1l2": [{ "line": "Who is this?", "options": ["My mother.", "I want water.", "My books."] }],
-    "u2s3l3": [{ "line": "What do you want?", "options": ["I want tea.", "I am Nakato.", "Good morning."] }]
+    "u2s3l3": [{ "line": "What do you want?", "options": ["I want tea.", "I am {@nakato}.", "Good morning."] }]
   },
   "stories": {
     "market-matooke": {
       "title": "Matooke at the market",
-      "summary": "Emma buys matooke for dinner.",
+      "summary": "{@emma} buys matooke for dinner.",
       "lines": [
         "How are you, sir?",
         "I’m fine, madam. What do you want?",
@@ -123,9 +123,9 @@
         "Thank you, sir. Goodbye!"
       ],
       "questions": [
-        { "question": "What does Emma want?", "options": ["Tea", "Matooke", "A book"] },
+        { "question": "What does {@emma} want?", "options": ["Tea", "Matooke", "A book"] },
         { "question": "How much is the matooke?", "options": ["Two thousand", "Five thousand", "Ten thousand"] },
-        { "question": "What else does Emma buy?", "options": ["Water", "Tea", "Food for Jjajja"] }
+        { "question": "What else does {@emma} buy?", "options": ["Water", "Tea", "Food for {@jjajja}"] }
       ]
     }
   }

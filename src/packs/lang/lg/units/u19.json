@@ -39,10 +39,10 @@
     "s19-jjo-nnagenda": { "text": "Jjo nnagenda mu kibuga." },
     "s19-jjo-nnalya": { "text": "Jjo nnalya ennyama." },
     "s19-nnasoma": { "text": "Nnasoma Olungereza ku ssomero." },
-    "s19-twagenda-jinja": { "text": "Wiiki ewedde twagenda e Jinja." },
+    "s19-twagenda-jinja": { "text": "Wiiki ewedde twagenda e {@getaway}." },
     "s19-yagenda-awaka": { "text": "Maama yagenda awaka." },
     "s19-edda-nnali": { "text": "Edda nnali muyizi." },
-    "s19-omwaka-oguwedde": { "text": "Omwaka oguwedde nnali mu Masaka." },
+    "s19-omwaka-oguwedde": { "text": "Omwaka oguwedde nnali mu {@hometown}." },
     "s19-nkyali-muyizi": { "text": "Nkyali muyizi." },
     "s-osha-vyombo": { "text": "Yoza ebibya kaakati!" },
     "s-fua-nguo": { "text": "Yoza engoye leero." },
@@ -56,19 +56,19 @@
     "s-nilikula-wali": { "text": "Nnalya omuceere n'ebijanjaalo." },
     "s-ulifanya-nini": { "text": "Wakola ki jjo?" },
     "s-nilifanya-kazi": { "text": "Nnakola omulimu gw'awaka." },
-    "s-neema-alienda": { "text": "Neema yagenda ku ssomero." },
-    "s-tulienda-mombasa": { "text": "Twagenda e Mombasa mu bbaasi." },
+    "s-neema-alienda": { "text": "{@amara} yagenda ku ssomero." },
+    "s-tulienda-mombasa": { "text": "Twagenda e {@getaway} mu bbaasi." },
     "s-walifika-jana": { "text": "Abaana baatuuka jjo." },
     "s-juzi-nilinunua": { "text": "Jjuuzi nnagula engatto." },
     "s-niliona-tembo": { "text": "Wiiki ewedde nnalaba enjovu!" },
-    "s-mwaka-jana-zanzibar": { "text": "Omwaka oguwedde twagenda e Zanzibar." }
+    "s-mwaka-jana-zanzibar": { "text": "Omwaka oguwedde twagenda e {@island}." }
   },
   "phrases": [
     "Olidde? Yee, ndidde.",
     "Leero nkoze nnyo.",
     "Mmaze omulimu gwange.",
     "Jjo nnagenda mu kibuga.",
-    "Wiiki ewedde twagenda e Jinja.",
+    "Wiiki ewedde twagenda e {@getaway}.",
     "Edda nnali muyizi."
   ],
   "dialogues": { "u19s3l3": [{ "line": "Jjo wakola ki?", "options": ["Nnagenda mu kibuga.", "Nja kugenda enkya.", "Sirya nnyama."] }] }

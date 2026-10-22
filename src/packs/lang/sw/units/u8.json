@@ -59,9 +59,9 @@
   "stories": {
     "doctor-visit": {
       "title": "Zahanati",
-      "summary": "Amara hajisikii vizuri na anamwona mhudumu wa afya.",
+      "summary": "{@amara} hajisikii vizuri na anamwona mhudumu wa afya.",
       "lines": [
-        "Habari yako, Amara?",
+        "Habari yako, {@amara}?",
         "Mimi ni mgonjwa. Kichwa kinaniuma.",
         "Una homa?",
         "Ndiyo, nina homa.",
@@ -71,7 +71,7 @@
       ],
       "questions": [
         { "question": "Nini kinamuuma?", "options": ["Tumbo lake", "Kichwa chake", "Mguu wake"] },
-        { "question": "Mukasa anampa Amara nini?", "options": ["Dawa", "Chai", "Matooke"] }
+        { "question": "{@mukasa} anampa {@amara} nini?", "options": ["Dawa", "Chai", "Matooke"] }
       ]
     }
   }

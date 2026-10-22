@@ -46,7 +46,7 @@
   "stories": {
     "kasubi-visit": {
       "lines": [
-        "Emma, gano ge Masiro g’e Kasubi.",
+        "{@emma}, gano ge Masiro g’e Kasubi.",
         "Ennyumba nnene nnyo! Ani aziikiddwa wano?",
         "Bakabaka bana.",
         "Ate Kabaka wa kati ali wa?",
@@ -64,7 +64,7 @@
         { "options": ["Awangaale!", "Weraba!", "Kulika!"], "question": "Omuntu bw’agamba “Long live the Kabaka!”, oddamu otya?" }
       ],
       "title": "Okukyalira Kasubi",
-      "summary": "Mukasa alaga Emma amasiro era amubuulira ku bwakabaka."
+      "summary": "{@mukasa} alaga {@emma} amasiro era amubuulira ku bwakabaka."
     }
   }
 }

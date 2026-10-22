@@ -234,12 +234,16 @@
     "u40s4": "Sungura na fisi"
   },
   "cast": {
-    "nakato": "Kiongozi wako, mwanafunzi wa chuo kikuu Kampala",
-    "mukasa": "Mwalimu mvumilivu kutoka Masaka",
+    "nakato": "Kiongozi wako, mwanafunzi wa chuo kikuu {@city}",
+    "mukasa": "Mwalimu mvumilivu kutoka {@hometown}",
     "jjajja": "Bibi anayependa methali",
     "ssali": "Dereva wa bodaboda anayejua kila barabara",
     "amara": "Mwanafunzi wa sekondari anayependa muziki",
     "emma": "Mgeni anayejifunza Kiganda kabla ya safari yake"
+  },
+  "culture": {
+    "cast": { "nakato": "Amani", "mukasa": "Baraka", "jjajja": { "name": "Bibi Mwanaisha", "short": "Bibi" }, "ssali": "Juma", "amara": "Neema" },
+    "places": { "city": "Dar es Salaam", "hometown": "Tanga", "town": "Arusha", "getaway": "Mombasa", "island": "Zanzibar", "nearby": "Bagamoyo" }
   },
   "cheers": ["Safi!", "Hongera!", "Vizuri sana!"],
   "phrases": { "congrats": "Hongera", "thanks": "Asante sana!" },

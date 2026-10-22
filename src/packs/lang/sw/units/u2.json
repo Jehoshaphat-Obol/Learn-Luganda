@@ -90,7 +90,7 @@
     "s-darasa-kubwa": { "text": "Darasa ni kubwa." },
     "s-najifunza-kiingereza": { "text": "Ninajifunza Kiingereza." },
     "s-unapenda-nini": { "text": "Unapenda nini?" },
-    "s-ninaitwa-amani": { "text": "Ninaitwa Amani." },
+    "s-ninaitwa-amani": { "text": "Ninaitwa {@nakato}." },
     "s-je-una-watoto": { "text": "Je, una watoto?" },
     "s-je-ni-kweli": { "text": "Je, ni kweli?" }
   },
@@ -107,12 +107,12 @@
   ],
   "dialogues": {
     "u2s1l2": [{ "line": "Huyu ni nani?", "options": ["Mama yangu.", "Nataka maji.", "Vitabu vyangu."] }],
-    "u2s3l3": [{ "line": "Unataka nini?", "options": ["Nataka chai.", "Mimi ni Nakato.", "Habari za asubuhi?"] }]
+    "u2s3l3": [{ "line": "Unataka nini?", "options": ["Nataka chai.", "Mimi ni {@nakato}.", "Habari za asubuhi?"] }]
   },
   "stories": {
     "market-matooke": {
       "title": "Matooke sokoni",
-      "summary": "Emma ananunua matooke kwa ajili ya chakula cha jioni.",
+      "summary": "{@emma} ananunua matooke kwa ajili ya chakula cha jioni.",
       "lines": [
         "Habari yako, bwana?",
         "Nzuri, mama. Unataka nini?",
@@ -123,9 +123,9 @@
         "Asante, bwana. Kwaheri!"
       ],
       "questions": [
-        { "question": "Emma anataka nini?", "options": ["Chai", "Matooke", "Kitabu"] },
+        { "question": "{@emma} anataka nini?", "options": ["Chai", "Matooke", "Kitabu"] },
         { "question": "Matooke ni bei gani?", "options": ["Elfu mbili", "Elfu tano", "Elfu kumi"] },
-        { "question": "Emma ananunua nini kingine?", "options": ["Maji", "Chai", "Chakula cha Jjajja"] }
+        { "question": "{@emma} ananunua nini kingine?", "options": ["Maji", "Chai", "Chakula cha {@jjajja}"] }
       ]
     }
   }

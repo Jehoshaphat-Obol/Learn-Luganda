@@ -62,7 +62,7 @@
   "stories": {
     "the-kwanjula": {
       "lines": [
-        "Nakato, oyambadde gomesi yo?",
+        "{@nakato}, oyambadde gomesi yo?",
         "Yee, Jjajja. Nnungi?",
         "Nnungi nnyo! Ekirabo kiri wa?",
         "Kiri wano. Sukaali n’omunnyo.",
@@ -73,12 +73,12 @@
         "Tujaguze! Mwebale okujja mwenna!"
       ],
       "questions": [
-        { "question": "Nakato atwala kirabo ki?" },
+        { "question": "{@nakato} atwala kirabo ki?" },
         { "question": "Ani ayamba omugole ku kwanjula?" },
         { "options": ["Nkwagaliza", "Nkwagala", "Nkulinze"], "question": "Mu Lungereza ogamba otya “Nkwagaliza”?" }
       ],
       "title": "Okwanjula",
-      "summary": "Nakato ne Jjajja beeteekateeka okugenda ku kwanjula kwa muganda we."
+      "summary": "{@nakato} ne {@jjajja} beeteekateeka okugenda ku kwanjula kwa muganda we."
     }
   }
 }

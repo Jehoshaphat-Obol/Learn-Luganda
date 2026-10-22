@@ -24,7 +24,7 @@
   },
   "sentences": {
     "s23-halo": { "text": "Halo? Ani ayogera?" },
-    "s23-nze-nakato-ayogera": { "text": "Nze Nakato ayogera." },
+    "s23-nze-nakato-ayogera": { "text": "Nze {@nakato} ayogera." },
     "s23-nja-kukukubira": { "text": "Nja kukukubira essimu enkya." },
     "s23-nkubira-ekiro": { "text": "Nkubira essimu ekiro." },
     "s23-mmukubira": { "text": "Mmukubira essimu buli lunaku." },
@@ -47,7 +47,7 @@
   },
   "phrases": [
     "Halo? Ani ayogera?",
-    "Nze Nakato ayogera.",
+    "Nze {@nakato} ayogera.",
     "Nja kukukubira essimu enkya.",
     "Sikuwulira bulungi.",
     "Mpeereza obubaka.",
@@ -55,7 +55,7 @@
     "Ndi mu kkubo, nzija!"
   ],
   "dialogues": {
-    "u23s2l3": [{ "line": "Halo? Ani ayogera?", "options": ["Nze Ssali. Oli otya, Nakato?", "Ndi mu kkubo.", "Sirina ssente."] }],
+    "u23s2l3": [{ "line": "Halo? Ani ayogera?", "options": ["Nze {@ssali}. Oli otya, {@nakato}?", "Ndi mu kkubo.", "Sirina ssente."] }],
     "u23s3l3": [{ "line": "Oli wa? Nkulinze!", "options": ["Nsonyiwa, ndi mu kkubo. Nzija!", "Tusisinkane jjo.", "Mpa ekkalaamu."] }]
   }
 }

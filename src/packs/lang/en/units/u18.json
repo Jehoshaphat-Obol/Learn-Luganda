@@ -44,8 +44,8 @@
     "s-tutaondoka-mapema": { "text": "We will leave early.", "alts": ["We’ll leave early."] },
     "s-utasafiri-lini": { "text": "When will you travel?", "alts": ["When are you travelling?", "When will you go?"] },
     "s-kesho-kutwa-mombasa": {
-      "text": "The day after tomorrow I will go to Mombasa.",
-      "alts": ["I’ll go to Mombasa the day after tomorrow.", "The day after tomorrow I’m going to Mombasa."]
+      "text": "The day after tomorrow I will go to {@getaway}.",
+      "alts": ["I’ll go to {@getaway} the day after tomorrow.", "The day after tomorrow I’m going to {@getaway}."]
     },
     "s-miaka-mingapi": { "text": "How old are you?" },
     "s-miaka-ishirini": { "text": "I’m twenty years old.", "alts": ["I am twenty years old.", "I’m twenty.", "I am twenty."] },
@@ -76,7 +76,7 @@
   "stories": {
     "what-is-this": {
       "title": "What is this called?",
-      "summary": "Emma asks Jjajja the names of things in her kitchen.",
+      "summary": "{@emma} asks {@jjajja} the names of things in her kitchen.",
       "lines": [
         "Grandma, what is this called in Luganda?",
         "That is a basket.",
@@ -90,8 +90,11 @@
         "No, I speak a little."
       ],
       "questions": [
-        { "question": "What is Emma doing?", "options": ["Asking the names of things", "Cooking dinner", "Buying a basket"] },
-        { "question": "Why is Emma learning Luganda?", "options": ["For school", "To talk with Jjajja", "To buy things at the market"] }
+        { "question": "What is {@emma} doing?", "options": ["Asking the names of things", "Cooking dinner", "Buying a basket"] },
+        {
+          "question": "Why is {@emma} learning Luganda?",
+          "options": ["For school", "To talk with {@jjajja}", "To buy things at the market"]
+        }
       ]
     }
   }

@@ -85,22 +85,22 @@
   },
   "stories": {
     "jjajjas-advice": {
-      "title": "Jjajja’s advice",
-      "summary": "Ssali is impatient with his new business, and Jjajja answers with proverbs.",
+      "title": "{@jjajja}’s advice",
+      "summary": "{@ssali} is impatient with his new business, and {@jjajja} answers with proverbs.",
       "lines": [
         "Grandma, my business isn’t doing well. There are few customers.",
         "Don’t worry, my child. Slow and steady goes far.",
         "What does it mean?",
         "It means: be patient. Little by little makes a bundle.",
         "But I work alone. I’m tired.",
-        "One finger can’t kill a louse! Work with Nakato.",
+        "One finger can’t kill a louse! Work with {@nakato}.",
         "Good idea. Teeth together bite the meat!",
         "Haha! Now you speak like a grandparent!"
       ],
       "questions": [
-        { "question": "What is Jjajja’s advice?", "options": ["Be patient", "Close the shop", "Move to Jinja"] },
+        { "question": "What is {@jjajja}’s advice?", "options": ["Be patient", "Close the shop", "Move to {@getaway}"] },
         {
-          "question": "Which proverb tells Ssali to work with others?",
+          "question": "Which proverb tells {@ssali} to work with others?",
           "options": ["One finger can’t kill a louse.", "Slow and steady goes far.", "Little by little makes a bundle."]
         }
       ]

@@ -69,22 +69,22 @@
   "stories": {
     "stolen-phone": {
       "title": "The stolen phone",
-      "summary": "Nakato’s phone is snatched at the market, and Ssali helps her.",
+      "summary": "{@nakato}’s phone is snatched at the market, and {@ssali} helps her.",
       "lines": [
         "Thief! Thief! Help me!",
-        "Nakato! What happened?",
+        "{@nakato}! What happened?",
         "My phone has been stolen! A man ran off that way.",
         "Are you okay? Are you hurt?",
         "No, I’m okay. But I’m very scared.",
         "Sit here and wait. I will call the police.",
         "The police say that they are coming quickly.",
-        "Thank you very much, Ssali.",
+        "Thank you very much, {@ssali}.",
         "No problem. That’s what friends are for!"
       ],
       "questions": [
-        { "question": "What happened to Nakato?", "options": ["Her phone was stolen", "She was in an accident", "She lost her bag"] },
-        { "question": "What does Ssali do?", "options": ["He chases the thief", "He calls the police", "He calls an ambulance"] },
-        { "question": "How does Ssali answer “Weebale nnyo”?", "options": ["No problem.", "Hurry!", "Help me!"] }
+        { "question": "What happened to {@nakato}?", "options": ["Her phone was stolen", "She was in an accident", "She lost her bag"] },
+        { "question": "What does {@ssali} do?", "options": ["He chases the thief", "He calls the police", "He calls an ambulance"] },
+        { "question": "How does {@ssali} answer “Weebale nnyo”?", "options": ["No problem.", "Hurry!", "Help me!"] }
       ]
     }
   }

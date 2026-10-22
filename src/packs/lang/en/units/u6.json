@@ -76,7 +76,7 @@
   "stories": {
     "boda-ride": {
       "title": "A boda boda ride",
-      "summary": "Emma takes a boda boda into town.",
+      "summary": "{@emma} takes a boda boda into town.",
       "lines": [
         "Where are you going, madam?",
         "Take me to town. How much?",
@@ -90,8 +90,8 @@
       ],
       "questions": [
         { "question": "What price do they agree on?", "options": ["Five thousand", "Three thousand", "One thousand"] },
-        { "question": "Which way does Emma say to turn?", "options": ["Left", "Right"] },
-        { "question": "How does Emma ask Ssali to stop?", "options": ["Go straight", "Stop here", "Turn left"] }
+        { "question": "Which way does {@emma} say to turn?", "options": ["Left", "Right"] },
+        { "question": "How does {@emma} ask {@ssali} to stop?", "options": ["Go straight", "Stop here", "Turn left"] }
       ]
     }
   }

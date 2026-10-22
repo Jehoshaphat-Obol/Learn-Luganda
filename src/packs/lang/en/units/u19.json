@@ -39,10 +39,10 @@
     "s19-jjo-nnagenda": { "text": "Yesterday I went to town.", "alts": ["I went to town yesterday.", "Yesterday I went into town."] },
     "s19-jjo-nnalya": { "text": "Yesterday I ate meat.", "alts": ["I ate meat yesterday."] },
     "s19-nnasoma": { "text": "I studied English at school.", "alts": ["I learned English at school.", "I learnt English at school."] },
-    "s19-twagenda-jinja": { "text": "Last week we went to Jinja.", "alts": ["We went to Jinja last week."] },
+    "s19-twagenda-jinja": { "text": "Last week we went to {@getaway}.", "alts": ["We went to {@getaway} last week."] },
     "s19-yagenda-awaka": { "text": "Mother went home.", "alts": ["Mum went home.", "My mother went home."] },
     "s19-edda-nnali": { "text": "Long ago I was a student.", "alts": ["I used to be a student.", "In the past I was a student."] },
-    "s19-omwaka-oguwedde": { "text": "Last year I was in Masaka.", "alts": ["I was in Masaka last year."] },
+    "s19-omwaka-oguwedde": { "text": "Last year I was in {@hometown}.", "alts": ["I was in {@hometown} last year."] },
     "s19-nkyali-muyizi": { "text": "I am still a student.", "alts": ["I’m still a student."] },
     "s-osha-vyombo": { "text": "Wash the dishes right now!", "alts": ["Wash the dishes now!"] },
     "s-fua-nguo": { "text": "Wash the clothes today.", "alts": ["Do the laundry today."] },
@@ -56,19 +56,19 @@
     "s-nilikula-wali": { "text": "I ate rice and beans." },
     "s-ulifanya-nini": { "text": "What did you do yesterday?" },
     "s-nilifanya-kazi": { "text": "I did homework.", "alts": ["I did my homework.", "I did the housework."] },
-    "s-neema-alienda": { "text": "Neema went to school." },
-    "s-tulienda-mombasa": { "text": "We went to Mombasa by bus." },
+    "s-neema-alienda": { "text": "{@amara} went to school." },
+    "s-tulienda-mombasa": { "text": "We went to {@getaway} by bus." },
     "s-walifika-jana": { "text": "The children arrived yesterday.", "alts": ["The kids arrived yesterday."] },
     "s-juzi-nilinunua": { "text": "The day before yesterday I bought shoes.", "alts": ["I bought shoes the day before yesterday."] },
     "s-niliona-tembo": { "text": "Last week I saw an elephant!", "alts": ["I saw an elephant last week!"] },
-    "s-mwaka-jana-zanzibar": { "text": "Last year we went to Zanzibar.", "alts": ["We went to Zanzibar last year."] }
+    "s-mwaka-jana-zanzibar": { "text": "Last year we went to {@island}.", "alts": ["We went to {@island} last year."] }
   },
   "phrases": [
     "Have you eaten? Yes, I have.",
     "Today I have worked hard.",
     "I have finished my work.",
     "Yesterday I went to town.",
-    "Last week we went to Jinja.",
+    "Last week we went to {@getaway}.",
     "Long ago I was a student."
   ],
   "dialogues": { "u19s3l3": [{ "line": "What did you do yesterday?", "options": ["I went to town.", "I will go tomorrow.", "I don’t eat meat."] }] }

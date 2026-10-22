@@ -109,8 +109,12 @@ if (catalog) {
 
 // Labels for composed courses come from each language's lang pack.
 const composed = composedCourseIds().filter((id) => !legacyIds().includes(id));
+const slotsLeft = (value) => (typeof value === 'string' ? value.match(/\{@[^}]*\}/g) ?? [] : value && typeof value === 'object' ? Object.values(value).flatMap(slotsLeft) : []);
 for (const id of composed) {
   const pack = readPack(id);
+  // Every culture slot ({@nakato}, {@city}) needs a curriculum default.
+  const unknown = [...new Set(slotsLeft([pack.meta, pack.units, pack.labels]))];
+  if (unknown.length) errors.push(`${id}: unknown culture slot(s) ${unknown.join(', ')}: add them to the curriculum's cast or places`);
   for (const [ui, labels] of Object.entries(pack.labels)) {
     if (!uiFiles.includes(`${ui}.json`)) continue;
     const result = checkLabels(labels, pack, ui);

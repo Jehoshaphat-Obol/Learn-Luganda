@@ -76,7 +76,7 @@
   "stories": {
     "boda-ride": {
       "title": "Safari ya bodaboda",
-      "summary": "Emma anapanda bodaboda kwenda mjini.",
+      "summary": "{@emma} anapanda bodaboda kwenda mjini.",
       "lines": [
         "Unakwenda wapi, mama?",
         "Nipeleke mjini. Bei gani?",
@@ -90,8 +90,8 @@
       ],
       "questions": [
         { "question": "Wanakubaliana bei gani?", "options": ["Elfu tano", "Elfu tatu", "Elfu moja"] },
-        { "question": "Emma anasema wakate upande gani?", "options": ["Kushoto", "Kulia"] },
-        { "question": "Emma anamwambiaje Ssali asimame?", "options": ["Nenda moja kwa moja", "Simama hapa", "Pinda kushoto"] }
+        { "question": "{@emma} anasema wakate upande gani?", "options": ["Kushoto", "Kulia"] },
+        { "question": "{@emma} anamwambiaje {@ssali} asimame?", "options": ["Nenda moja kwa moja", "Simama hapa", "Pinda kushoto"] }
       ]
     }
   }

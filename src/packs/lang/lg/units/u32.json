@@ -46,9 +46,9 @@
   },
   "phrases": [
     "Nnalubaale ye nnyanja ennene.",
-    "Kiyira gutandikira e Jinja.",
+    "Kiyira gutandikira e {@getaway}.",
     "Enkima ziri mu kibira.",
-    "Kampala erina ensozi musanvu.",
+    "{@city} erina ensozi musanvu.",
     "Tusimbe emiti!",
     "Tosuula kasasiro wano!"
   ],
@@ -58,7 +58,7 @@
   "stories": {
     "source-of-nile": {
       "lines": [
-        "Tutuuse e Jinja! Laba, Kiyira.",
+        "Tutuuse e {@getaway}! Laba, Kiyira.",
         "Wa Kiyira w’atandikira?",
         "Wano! Amazzi gava mu Nnalubaale.",
         "Ekinyonyi ekyo kiki?",
@@ -66,18 +66,18 @@
         "Ebimuli n’emiti birungi nnyo wano.",
         "Yee. Naye laba, kasasiro ku lubalama.",
         "Tukuume ettaka lyaffe! Tukung’aanye kasasiro.",
-        "Kirungi nnyo, Emma!"
+        "Kirungi nnyo, {@emma}!"
       ],
       "questions": [
         { "question": "Amazzi ga Kiyira gava wa?" },
-        { "question": "Ssali alaba ki ku lubalama?" },
+        { "question": "{@ssali} alaba ki ku lubalama?" },
         {
           "options": ["Tukuume ettaka lyaffe", "Tosuula kasasiro", "Tusimbe emiti"],
           "question": "Mu Lungereza ogamba otya “Tukuume ettaka lyaffe”?"
         }
       ],
       "title": "Ensibuko ya Kiyira",
-      "summary": "Ssali atwala Emma okulaba Kiyira w’atandikira."
+      "summary": "{@ssali} atwala {@emma} okulaba Kiyira w’atandikira."
     }
   }
 }

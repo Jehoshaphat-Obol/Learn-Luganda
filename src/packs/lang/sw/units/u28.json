@@ -62,9 +62,9 @@
   "stories": {
     "the-kwanjula": {
       "title": "Utambulisho",
-      "summary": "Nakato anajiandaa kwa kwanjula ya binamu yake pamoja na Jjajja.",
+      "summary": "{@nakato} anajiandaa kwa kwanjula ya binamu yake pamoja na {@jjajja}.",
       "lines": [
-        "Nakato, umevaa gomesi yako?",
+        "{@nakato}, umevaa gomesi yako?",
         "Ndiyo, Bibi. Ni nzuri?",
         "Nzuri sana! Zawadi iko wapi?",
         "Iko hapa. Sukari na chumvi.",
@@ -75,9 +75,9 @@
         "Tusherehekee! Asanteni nyote kwa kuja!"
       ],
       "questions": [
-        { "question": "Nakato analeta zawadi gani?", "options": ["Keki", "Sukari na chumvi", "Jembe"] },
+        { "question": "{@nakato} analeta zawadi gani?", "options": ["Keki", "Sukari na chumvi", "Jembe"] },
         { "question": "Nani anamsaidia bibi harusi katika kwanjula?", "options": ["Ssenga", "Kabaka", "Mwalimu"] },
-        { "question": "Nakato anasemaje “ninakutakia”?", "options": ["Nakutakia", "Nakupenda", "Ninakusubiri"] }
+        { "question": "{@nakato} anasemaje “ninakutakia”?", "options": ["Nakutakia", "Nakupenda", "Ninakusubiri"] }
       ]
     }
   }

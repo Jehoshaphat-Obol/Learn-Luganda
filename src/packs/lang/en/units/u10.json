@@ -97,7 +97,7 @@
   "stories": {
     "new-gomesi": {
       "title": "A gomesi for the party",
-      "summary": "Nakato shops for something to wear to her cousin’s introduction.",
+      "summary": "{@nakato} shops for something to wear to her cousin’s introduction.",
       "lines": [
         "Hello, madam! What would you like?",
         "I want a gomesi. There is an introduction on Saturday.",
@@ -112,10 +112,10 @@
       ],
       "questions": [
         { "question": "When is the introduction?", "options": ["On Monday", "On Saturday", "Today"] },
-        { "question": "Which colour does Nakato want?", "options": ["Purple", "Red", "White"] },
+        { "question": "Which colour does {@nakato} want?", "options": ["Purple", "Red", "White"] },
         { "question": "What is wrong with the red gomesi?", "options": ["It is too small", "It is too expensive", "It is old"] },
         {
-          "question": "How does Nakato say “Okay, I’ll take it”?",
+          "question": "How does {@nakato} say “Okay, I’ll take it”?",
           "options": ["Okay, I’ll take it.", "Take off your shoes.", "I feel cold."]
         }
       ]

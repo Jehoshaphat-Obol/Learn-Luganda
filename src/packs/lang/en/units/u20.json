@@ -25,12 +25,12 @@
   },
   "sentences": {
     "s20-nja-kugenda-masaka": {
-      "text": "Tomorrow I will go to Masaka.",
-      "alts": ["I will go to Masaka tomorrow.", "Tomorrow I’m going to Masaka.", "I’m going to Masaka tomorrow."]
+      "text": "Tomorrow I will go to {@hometown}.",
+      "alts": ["I will go to {@hometown} tomorrow.", "Tomorrow I’m going to {@hometown}.", "I’m going to {@hometown} tomorrow."]
     },
     "s20-nja-kulya": { "text": "I will eat matooke.", "alts": ["I’ll eat matooke.", "I am going to eat matooke."] },
     "s20-tujja-kusoma": { "text": "We will study together.", "alts": ["We’ll study together.", "We are going to study together."] },
-    "s20-ajja-kujja": { "text": "Nakato will come tomorrow.", "alts": ["Nakato is coming tomorrow."] },
+    "s20-ajja-kujja": { "text": "{@nakato} will come tomorrow.", "alts": ["{@nakato} is coming tomorrow."] },
     "s20-wiikendi": {
       "text": "At the weekend I will visit my grandparent.",
       "alts": [
@@ -40,7 +40,10 @@
         "At the weekend I’ll visit grandma."
       ]
     },
-    "s20-wiiki-ejja": { "text": "Next week we will go to Jinja.", "alts": ["We will go to Jinja next week.", "Next week we’re going to Jinja."] },
+    "s20-wiiki-ejja": {
+      "text": "Next week we will go to {@getaway}.",
+      "alts": ["We will go to {@getaway} next week.", "Next week we’re going to {@getaway}."]
+    },
     "s20-omwaka-ogujja": { "text": "Next year I will study science.", "alts": ["I will study science next year."] },
     "s20-olunaku-lumu-ndigenda": { "text": "One day I will go to Buganda.", "alts": ["Someday I will go to Buganda.", "One day I’ll go to Buganda."] },
     "s20-ndyogera-oluganda": { "text": "One day I will speak {to} well.", "alts": ["Someday I will speak {to} well.", "One day I’ll speak {to} well."] },
@@ -63,7 +66,7 @@
     "s-siku-moja": { "text": "One day I will be a teacher.", "alts": ["Someday I will be a teacher.", "One day I’ll be a teacher."] }
   },
   "phrases": [
-    "Tomorrow I will go to Masaka.",
+    "Tomorrow I will go to {@hometown}.",
     "We will study together.",
     "What are you planning for the weekend?",
     "At the weekend I will visit my grandparent.",
@@ -74,28 +77,28 @@
     "u20s2l3": [
       {
         "line": "What are you planning for the weekend?",
-        "options": ["I will visit my grandparent.", "Yesterday I went to Jinja.", "I don’t know the snake."]
+        "options": ["I will visit my grandparent.", "Yesterday I went to {@getaway}.", "I don’t know the snake."]
       }
     ]
   },
   "stories": {
     "weekend-plans": {
       "title": "Weekend plans",
-      "summary": "Ssali and Nakato talk about last weekend and the next one.",
+      "summary": "{@ssali} and {@nakato} talk about last weekend and the next one.",
       "lines": [
-        "Nakato! What did you do last weekend?",
-        "I went to Masaka to visit my mother.",
+        "{@nakato}! What did you do last weekend?",
+        "I went to {@hometown} to visit my mother.",
         "Nice! And this weekend?",
         "I don’t know. What are you planning?",
-        "I’m going to the lake in Entebbe. Are you coming?",
+        "I’m going to the lake in {@nearby}. Are you coming?",
         "Yes! But I don’t have much money.",
         "Don’t worry. We’ll go in my car.",
         "Thank you very much! See you on Saturday."
       ],
       "questions": [
-        { "question": "Where did Nakato go last weekend?", "options": ["Jinja", "Masaka", "Entebbe"] },
-        { "question": "What is Ssali’s plan?", "options": ["Going to the lake", "Visiting his mother", "Studying at home"] },
-        { "question": "How does Ssali say “We will go”?", "options": ["We will go", "We went", "Don’t go"] }
+        { "question": "Where did {@nakato} go last weekend?", "options": ["{@getaway}", "{@hometown}", "{@nearby}"] },
+        { "question": "What is {@ssali}’s plan?", "options": ["Going to the lake", "Visiting his mother", "Studying at home"] },
+        { "question": "How does {@ssali} say “We will go”?", "options": ["We will go", "We went", "Don’t go"] }
       ]
     }
   }

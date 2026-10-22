@@ -72,22 +72,22 @@
   },
   "stories": {
     "jjajjas-advice": {
-      "title": "Ushauri wa Jjajja",
-      "summary": "Ssali hana subira na biashara yake mpya, na Jjajja anamjibu kwa methali.",
+      "title": "Ushauri wa {@jjajja}",
+      "summary": "{@ssali} hana subira na biashara yake mpya, na {@jjajja} anamjibu kwa methali.",
       "lines": [
         "Bibi, biashara yangu haiendi vizuri. Wateja ni wachache.",
         "Usijali, mwanangu. Polepole ndio mwendo.",
         "Inamaanisha nini?",
         "Inamaanisha: kuwa na subira. Haba na haba hujaza kibaba.",
         "Lakini ninafanya kazi peke yangu. Nimechoka.",
-        "Kidole kimoja hakivunji chawa! Fanya kazi na Nakato.",
+        "Kidole kimoja hakivunji chawa! Fanya kazi na {@nakato}.",
         "Wazo zuri. Meno yaliyo pamoja huuma nyama!",
         "Haha! Sasa unaongea kama bibi!"
       ],
       "questions": [
-        { "question": "Ushauri wa Jjajja ni upi?", "options": ["Kuwa na subira", "Funga duka", "Hamia Jinja"] },
+        { "question": "Ushauri wa {@jjajja} ni upi?", "options": ["Kuwa na subira", "Funga duka", "Hamia {@getaway}"] },
         {
-          "question": "Methali gani inamwambia Ssali afanye kazi na wengine?",
+          "question": "Methali gani inamwambia {@ssali} afanye kazi na wengine?",
           "options": ["Kidole kimoja hakivunji chawa", "Pole pole ndio mwendo", "Haba na haba hujaza kibaba"]
         }
       ]

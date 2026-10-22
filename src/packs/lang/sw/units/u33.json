@@ -23,9 +23,9 @@
   },
   "sentences": {
     "s33-enjovu-okusinga-ente": { "text": "Tembo ni mkubwa kuliko ng’ombe.", "alts": ["Tembo ni mkubwa zaidi ya ng’ombe.", "Ndovu ni mkubwa kuliko ng’ombe."] },
-    "s33-kampala-okusinga-masaka": { "text": "Kampala ni kubwa kuliko Masaka.", "alts": ["Kampala ni kubwa zaidi ya Masaka."] },
+    "s33-kampala-okusinga-masaka": { "text": "{@city} ni kubwa kuliko {@hometown}.", "alts": ["{@city} ni kubwa zaidi ya {@hometown}."] },
     "s33-ani-asinga-obuwanvu": { "text": "Nani ni mrefu kuliko wote?", "alts": ["Nani ni mrefu zaidi?", "Nani anawashinda wote kwa urefu?"] },
-    "s33-ssali-asinga": { "text": "Ssali ni mrefu kuliko wote.", "alts": ["Ssali ni mrefu zaidi.", "Ssali anawashinda wote kwa urefu."] },
+    "s33-ssali-asinga": { "text": "{@ssali} ni mrefu kuliko wote.", "alts": ["{@ssali} ni mrefu zaidi.", "{@ssali} anawashinda wote kwa urefu."] },
     "s33-kisinga-obunene": {
       "text": "Kitabu hiki ni kikubwa kuliko vyote.",
       "alts": ["Kitabu hiki ni kikubwa zaidi.", "Kitabu hiki ndicho kikubwa kuliko vyote."]
@@ -37,7 +37,7 @@
     "s33-enjawulo": { "text": "Tofauti iko wapi?", "alts": ["Tofauti ni nini?", "Kuna tofauti gani?"] },
     "s33-afaanana-maama-we": { "text": "Anafanana na mama yake.", "alts": ["Anamfanana mama yake.", "Amefanana na mama yake."] },
     "s-kuliko": { "text": "Tembo ni mkubwa kuliko simba." },
-    "s-zaidi": { "text": "Neema ni mrefu zaidi." },
+    "s-zaidi": { "text": "{@amara} ni mrefu zaidi." },
     "s-kuliko-wote": { "text": "Kilimanjaro ni mlima mrefu kuliko yote." },
     "s-sawa-na": { "text": "Kikombe changu ni sawa na chako." },
     "s-tofauti": { "text": "Kiswahili na Kiingereza ni tofauti." },

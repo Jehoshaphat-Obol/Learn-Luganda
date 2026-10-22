@@ -83,7 +83,7 @@
     },
     "s-kaka-mwembamba": { "text": "My brother is thin.", "alts": ["My brother is slim."] },
     "s-bibi-mpole": { "text": "Grandma is very gentle.", "alts": ["Grandmother is very gentle.", "Grandma is very kind."] },
-    "s-neema-mchangamfu": { "text": "Neema is cheerful.", "alts": ["Neema is lively.", "Neema is friendly."] }
+    "s-neema-mchangamfu": { "text": "{@amara} is cheerful.", "alts": ["{@amara} is lively.", "{@amara} is friendly."] }
   },
   "phrases": [
     "Which colour?",

@@ -80,11 +80,11 @@
       ],
       "questions": [
         { "question": "Basalawo ssente mmeka?", "options": ["Nkumi ttaano", "Nkumi ssatu", "Lukumi"] },
-        { "question": "Emma agamba bakyuke ludda wa?", "options": ["Ku kkono", "Ku ddyo"] },
-        { "options": ["Genda butereevu", "Yimirira wano", "Kyuka ku kkono"], "question": "Emma agamba atya Ssali ayimirire?" }
+        { "question": "{@emma} agamba bakyuke ludda wa?", "options": ["Ku kkono", "Ku ddyo"] },
+        { "options": ["Genda butereevu", "Yimirira wano", "Kyuka ku kkono"], "question": "{@emma} agamba atya {@ssali} ayimirire?" }
       ],
       "title": "Okulinya bodaboda",
-      "summary": "Emma alinya bodaboda okugenda mu kibuga."
+      "summary": "{@emma} alinya bodaboda okugenda mu kibuga."
     }
   }
 }

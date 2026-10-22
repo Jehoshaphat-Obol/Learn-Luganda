@@ -61,26 +61,26 @@
     "s-gyebale-ko-ssebo": { "text": "Pole na kazi, bwana.", "alts": ["Pole kwa kazi, bwana.", "Hongera kwa kazi, bwana."] },
     "s-kale-weraba": { "text": "Sawa, kwaheri.", "alts": ["Haya, kwaheri.", "Sawasawa, kwaheri."] },
     "s-weraba-tunaalabagana": { "text": "Kwaheri, tutaonana.", "alts": ["Kwaheri, tutaonana baadaye.", "Kwaheri, tutaonana tena."] },
-    "s-nze-nakato": { "text": "Mimi ni Nakato.", "alts": ["Naitwa Nakato.", "Jina langu ni Nakato."] },
+    "s-nze-nakato": { "text": "Mimi ni {@nakato}.", "alts": ["Naitwa {@nakato}.", "Jina langu ni {@nakato}."] },
     "s-erinnya-lyo-ani": { "text": "Jina lako ni nani?", "alts": ["Unaitwa nani?", "Jina lako nani?"] },
-    "s-erinnya-lyange-mukasa": { "text": "Jina langu ni Mukasa.", "alts": ["Naitwa Mukasa.", "Ninaitwa Mukasa."] },
+    "s-erinnya-lyange-mukasa": { "text": "Jina langu ni {@mukasa}.", "alts": ["Naitwa {@mukasa}.", "Ninaitwa {@mukasa}."] },
     "s-ggwe-ani": { "text": "Wewe ni nani?" },
-    "s-mbeera-kampala": { "text": "Ninaishi Kampala.", "alts": ["Naishi Kampala.", "Ninakaa Kampala."] },
-    "s-nva-masaka": { "text": "Ninatoka Masaka.", "alts": ["Natoka Masaka.", "Mimi ni wa Masaka."] },
+    "s-mbeera-kampala": { "text": "Ninaishi {@city}.", "alts": ["Naishi {@city}.", "Ninakaa {@city}."] },
+    "s-nva-masaka": { "text": "Ninatoka {@hometown}.", "alts": ["Natoka {@hometown}.", "Mimi ni wa {@hometown}."] },
     "s-ndi-muyizi": { "text": "Mimi ni mwanafunzi.", "alts": ["Ni mwanafunzi."] },
-    "s-nsanyuse-okukulaba": { "text": "Nimefurahi kukuona, Ssali.", "alts": ["Nafurahi kukuona, Ssali.", "Nimefurahi kukutana nawe, Ssali."] },
+    "s-nsanyuse-okukulaba": { "text": "Nimefurahi kukuona, {@ssali}.", "alts": ["Nafurahi kukuona, {@ssali}.", "Nimefurahi kukutana nawe, {@ssali}."] },
     "s-habari-yako": { "text": "Habari yako?" },
     "s-karibu-sana": { "text": "Karibu sana!" },
     "s-mambo-poa": { "text": "Mambo? Poa!" },
     "s-shikamoo-bibi": { "text": "Shikamoo, bibi." },
     "s-ndiyo-asante": { "text": "Ndiyo, asante." },
     "s-hapana-asante": { "text": "Hapana, asante." },
-    "s-habari-za-asubuhi-baraka": { "text": "Habari za asubuhi, Baraka?" },
-    "s-jina-langu-amani": { "text": "Jina langu ni Amani." },
-    "s-mimi-ni-emma": { "text": "Mimi ni Emma." },
-    "s-ninaishi-mombasa": { "text": "Ninaishi Mombasa." },
-    "s-ninatoka-arusha": { "text": "Ninatoka Arusha." },
-    "s-nimefurahi-kukuona": { "text": "Nimefurahi kukuona, Juma." }
+    "s-habari-za-asubuhi-baraka": { "text": "Habari za asubuhi, {@mukasa}?" },
+    "s-jina-langu-amani": { "text": "Jina langu ni {@nakato}." },
+    "s-mimi-ni-emma": { "text": "Mimi ni {@emma}." },
+    "s-ninaishi-mombasa": { "text": "Ninaishi {@getaway}." },
+    "s-ninatoka-arusha": { "text": "Ninatoka {@town}." },
+    "s-nimefurahi-kukuona": { "text": "Nimefurahi kukuona, {@ssali}." }
   },
   "phrases": [
     "Habari yako?",
@@ -90,41 +90,41 @@
     "Habari za mchana (umeshindaje?)",
     "Pole na kazi! (kwa mtu anayefanya kazi)",
     "Jina lako ni nani?",
-    "Mimi ni Nakato.",
-    "Ninatoka Masaka.",
+    "Mimi ni {@nakato}.",
+    "Ninatoka {@hometown}.",
     "Kwaheri, tutaonana."
   ],
   "dialogues": {
     "u1s1l3": [{ "line": "Habari za asubuhi, mwanangu.", "options": ["Nimelala salama, mama.", "Kwaheri, mama.", "Hapana, bwana."] }],
     "u1s1l4": [{ "line": "Sawa, kwaheri!", "options": ["Kwaheri, tutaonana.", "Habari za asubuhi?", "Nzuri."] }],
     "u1s2l3": [
-      { "line": "Jina lako ni nani?", "options": ["Mimi ni Amara.", "Ninaishi Kampala.", "Pole na kazi."] },
-      { "line": "Mimi ni Emma. Unatoka wapi?", "options": ["Ninatoka Masaka.", "Mimi ni mwanafunzi.", "Asante sana."] }
+      { "line": "Jina lako ni nani?", "options": ["Mimi ni {@amara}.", "Ninaishi {@city}.", "Pole na kazi."] },
+      { "line": "Mimi ni {@emma}. Unatoka wapi?", "options": ["Ninatoka {@hometown}.", "Mimi ni mwanafunzi.", "Asante sana."] }
     ]
   },
   "stories": {
     "new-friend": {
       "title": "Rafiki mpya",
-      "summary": "Emma anakutana na Nakato nje ya maktaba.",
+      "summary": "{@emma} anakutana na {@nakato} nje ya maktaba.",
       "lines": [
         "Habari yako?",
         "Nzuri, asante. Wewe je, habari yako?",
         "Vizuri. Jina lako ni nani?",
-        "Mimi ni Emma. Wewe ni nani?",
-        "Mimi ni Nakato. Unatoka wapi, Emma?",
-        "Ninatoka Masaka. Mimi ni mwanafunzi.",
+        "Mimi ni {@emma}. Wewe ni nani?",
+        "Mimi ni {@nakato}. Unatoka wapi, {@emma}?",
+        "Ninatoka {@hometown}. Mimi ni mwanafunzi.",
         "Mimi pia ni mwanafunzi! Nimefurahi kukuona.",
         "Asante sana. Tutaonana!"
       ],
       "questions": [
-        { "question": "Nakato aliuliza nini?", "options": ["Jina la Emma", "Emma anaishi wapi", "Kama Emma ana njaa"] },
-        { "question": "Emma anatoka wapi?", "options": ["Kampala", "Masaka", "Maktaba"] },
-        { "question": "Nakato anasemaje “nimefurahi kukuona”?", "options": ["Asante sana", "Nimefurahi kukuona", "Tutaonana"] }
+        { "question": "{@nakato} aliuliza nini?", "options": ["Jina la {@emma}", "{@emma} anaishi wapi", "Kama {@emma} ana njaa"] },
+        { "question": "{@emma} anatoka wapi?", "options": ["{@city}", "{@hometown}", "Maktaba"] },
+        { "question": "{@nakato} anasemaje “nimefurahi kukuona”?", "options": ["Asante sana", "Nimefurahi kukuona", "Tutaonana"] }
       ]
     },
     "morning-jjajja": {
-      "title": "Habari za asubuhi, Jjajja",
-      "summary": "Amara anamsalimia bibi yake kabla ya kwenda shule.",
+      "title": "Habari za asubuhi, {@jjajja}",
+      "summary": "{@amara} anamsalimia bibi yake kabla ya kwenda shule.",
       "lines": [
         "Habari za asubuhi, Bibi.",
         "Nimelala salama, mwanangu. Wewe umelalaje?",
@@ -135,8 +135,8 @@
       ],
       "questions": [
         { "question": "Ni wakati gani wa siku?", "options": ["Asubuhi", "Jioni", "Usiku"] },
-        { "question": "Amara anajibuje salamu ya Jjajja?", "options": ["Hapana, bibi", "Nimelala salama", "Kwaheri"] },
-        { "question": "Amara anaondoka au anafika?", "options": ["Anafika", "Anaondoka"] }
+        { "question": "{@amara} anajibuje salamu ya {@jjajja}?", "options": ["Hapana, bibi", "Nimelala salama", "Kwaheri"] },
+        { "question": "{@amara} anaondoka au anafika?", "options": ["Anafika", "Anaondoka"] }
       ]
     }
   }

@@ -73,7 +73,7 @@
   "stories": {
     "rainy-day": {
       "title": "A rainy afternoon",
-      "summary": "A storm keeps Amara at her grandmother’s house.",
+      "summary": "A storm keeps {@amara} at her grandmother’s house.",
       "lines": [
         "Grandma, I am going home.",
         "No! Look, there are lots of clouds. Rain is coming.",
@@ -86,9 +86,9 @@
         "Thank you very much, Grandma!"
       ],
       "questions": [
-        { "question": "Why does Jjajja say no?", "options": ["It is late", "Rain is coming", "Amara is sick"] },
+        { "question": "Why does {@jjajja} say no?", "options": ["It is late", "Rain is coming", "{@amara} is sick"] },
         { "question": "What is the weather like now?", "options": ["Sunny and hot", "Raining very hard", "Cool and dry"] },
-        { "question": "What will Amara take home?", "options": ["Jjajja’s umbrella", "A sweater", "Some food"] }
+        { "question": "What will {@amara} take home?", "options": ["{@jjajja}’s umbrella", "A sweater", "Some food"] }
       ]
     }
   }

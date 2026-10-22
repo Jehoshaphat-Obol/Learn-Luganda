@@ -50,8 +50,8 @@
     "s17-si-kati": { "text": "Not now, but tomorrow.", "alts": ["Not now but tomorrow."] },
     "s17-toyagala-caayi": { "text": "Don’t you want tea?", "alts": ["You don’t want tea?", "Do you not want tea?"] },
     "s17-tagenda": {
-      "text": "Nakato isn’t going to school today.",
-      "alts": ["Nakato is not going to school today.", "Nakato doesn’t go to school today."]
+      "text": "{@nakato} isn’t going to school today.",
+      "alts": ["{@nakato} is not going to school today.", "{@nakato} doesn’t go to school today."]
     },
     "s17-togenda": { "text": "Don’t go! It’s raining.", "alts": ["Do not go! It is raining.", "Don’t go! It is raining."] },
     "s17-totya": { "text": "Don’t be afraid, the dog is small.", "alts": ["Don’t worry, the dog is small.", "Do not be afraid, the dog is small."] },
@@ -62,7 +62,7 @@
     "s-sijui": { "text": "I don’t know the answer.", "alts": ["I do not know the answer."] },
     "s-sitaki-chai": { "text": "I don’t want tea, thanks.", "alts": ["I don’t want tea, thank you.", "I do not want tea, thanks."] },
     "s-hutaki-kahawa": { "text": "Don’t you want coffee?", "alts": ["You don’t want coffee?"] },
-    "s-neema-hataki": { "text": "Neema doesn’t want fish.", "alts": ["Neema does not want fish."] },
+    "s-neema-hataki": { "text": "{@amara} doesn’t want fish.", "alts": ["{@amara} does not want fish."] },
     "s-hatutaki-chakula": { "text": "We don’t want food now.", "alts": ["We do not want food now.", "We don’t want any food now."] },
     "s-hawataki-kulala": { "text": "The children don’t want to sleep.", "alts": ["The kids don’t want to sleep.", "Children don’t want to sleep."] },
     "s-sipendi-baridi": { "text": "I don’t like the cold.", "alts": ["I don’t like cold.", "I do not like the cold."] },

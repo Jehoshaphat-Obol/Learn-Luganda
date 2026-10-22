@@ -49,7 +49,7 @@
     "s-leo-ni-jumatatu": { "text": "Today is Monday.", "alts": ["It’s Monday today.", "It is Monday today."] },
     "s-kesho-ni-jumanne": { "text": "Tomorrow is Tuesday." },
     "s-jumamosi-na-jumapili": { "text": "Saturday and Sunday." },
-    "s-kila-mwezi": { "text": "Every month I go to Mombasa.", "alts": ["I go to Mombasa every month."] },
+    "s-kila-mwezi": { "text": "Every month I go to {@getaway}.", "alts": ["I go to {@getaway} every month."] },
     "s-kila-mwaka": { "text": "The long rains come every year.", "alts": ["The long rains come each year."] }
   },
   "phrases": ["Today", "Tomorrow", "See you tomorrow.", "I study on Monday.", "What time is it?", "It’s ten o’clock."],

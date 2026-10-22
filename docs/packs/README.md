@@ -153,6 +153,15 @@ One text per language has to work on both sides of a course, so:
 - `{to}` and `{from}` stand for the course's languages, named the text's
   own way: `"Do you speak {to}?"` in English, `"Oyogera {to}?"` in Luganda.
   `{to.mu}` picks another form of a name (`"mu {to.mu}"` → "mu Luganda").
+- Culture slots: write the cast's names and everyday places as `{@nakato}`,
+  `{@jjajja}` (`{@jjajja.name}` for the full name), `{@city}`,
+  `{@hometown}`, `{@town}`, `{@getaway}`, `{@island}` and `{@nearby}`. A
+  course fills them from its target language's `culture` in
+  lang/<code>/course.json (else its base language's, else the curriculum's
+  `cast` and `places`, which are Luganda's), so Swahili learners meet Amani
+  in Dar es Salaam and Luganda learners meet Nakato in Kampala. A language
+  only lists the slots it changes. Facts about one real place ("The Nile
+  starts at Jinja") keep the name as it is.
 - Words whose answer repeats an earlier word's are left out of a course,
   since they'd be two questions with one answer. Words from older skills
   win: a skill added later carries `since` (the curriculum version that

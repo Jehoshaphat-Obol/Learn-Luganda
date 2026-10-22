@@ -76,6 +76,47 @@
     "cast": {
       "$ref": "course-labels.schema.json#/properties/cast"
     },
+    "culture": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "The cast names and places courses teaching this language use, in place of the curriculum's (see cultureOf in src/content/compose.js). A course takes the culture of its target language, else of its base language. Fill only the slots that change.",
+      "properties": {
+        "cast": {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "additionalProperties": {
+            "oneOf": [
+              {
+                "type": "string",
+                "minLength": 1
+              },
+              {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "short": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              }
+            ]
+          }
+        },
+        "places": {
+          "$ref": "curriculum.schema.json#/properties/places"
+        }
+      }
+    },
     "cheers": {
       "$ref": "course.schema.json#/properties/cheers"
     },

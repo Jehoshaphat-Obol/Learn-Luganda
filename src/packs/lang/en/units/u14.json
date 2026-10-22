@@ -35,7 +35,7 @@
       "alts": ["The farmers farm in the garden.", "Farmers dig in the garden.", "The farmers work in the field."]
     },
     "s14-maama-musuubuzi": { "text": "Mother is a trader.", "alts": ["Mum is a trader.", "My mother is a trader.", "Mother is a businesswoman."] },
-    "s14-ssali-muvuzi": { "text": "Ssali is a driver.", "alts": ["Ssali is a rider."] },
+    "s14-ssali-muvuzi": { "text": "{@ssali} is a driver.", "alts": ["{@ssali} is a rider."] },
     "s14-omufumbi-afumba": { "text": "The cook cooks food.", "alts": ["The cook is cooking food.", "The chef cooks food."] },
     "s14-omuzimbi-azimba": { "text": "The builder builds a house.", "alts": ["The builder is building a house."] },
     "s14-omupoliisi-ali-wano": { "text": "The police officer is here.", "alts": ["The policeman is here.", "The policewoman is here."] },
@@ -55,7 +55,7 @@
       "text": "The businessperson has a shop.",
       "alts": ["The trader has a shop.", "The businesswoman has a shop.", "The businessman has a shop."]
     },
-    "s-juma-anafanya": { "text": "Juma works in Nairobi.", "alts": ["Juma is working in Nairobi."] },
+    "s-juma-anafanya": { "text": "{@ssali} works in Nairobi.", "alts": ["{@ssali} is working in Nairobi."] },
     "s-tunafanya-pamoja": { "text": "We work together.", "alts": ["We are working together."] },
     "s-wanafanya-ofisini": { "text": "They work in the office.", "alts": ["They work at the office.", "They are working in the office."] },
     "s-kampuni-kubwa": { "text": "The company is big.", "alts": ["The company is large."] },

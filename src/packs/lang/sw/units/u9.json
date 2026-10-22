@@ -80,7 +80,7 @@
     "s-mwalimu-hodari": { "text": "Mwalimu ni hodari sana." },
     "s-kaka-mwembamba": { "text": "Kaka yangu ni mwembamba." },
     "s-bibi-mpole": { "text": "Bibi ni mpole sana." },
-    "s-neema-mchangamfu": { "text": "Neema ni mchangamfu." }
+    "s-neema-mchangamfu": { "text": "{@amara} ni mchangamfu." }
   },
   "phrases": [
     "Rangi gani?",
