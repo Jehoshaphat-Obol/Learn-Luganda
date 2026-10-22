@@ -1,5 +1,5 @@
 /* Learn Luganda service worker (generated at build time). */
-const VERSION = '949b0634b15b';
+const VERSION = 'd9cb11e17c50';
 const CACHE = `learn-luganda-${VERSION}`;
 const FONTS = 'learn-luganda-fonts';
 // Written by the page (src/reminders/reminders.js): the reminder plan and the sent log.
@@ -31,7 +31,7 @@ const PRECACHE = [
   "assets/illustrations-zkF5YppP.js",
   "assets/lg-BTHN9XOo.js",
   "assets/main-8EaD6wmS.css",
-  "assets/main-y2D3r7JT.js",
+  "assets/main-DyQcD0hR.js",
   "assets/pt-DZ2ADgIR.svg",
   "assets/sw-BS9YUUMG.js",
   "assets/u1-B-Kp8kP4.js",
@@ -49,6 +49,7 @@ const PRECACHE = [
   "assets/u10-BYnQi1cV.js",
   "assets/u10-CaVm1p1e.js",
   "assets/u10-Cx53gr5b.js",
+  "assets/u10-D2MT0OS4.js",
   "assets/u10-D3YyoRKX.js",
   "assets/u10-DB3atyvb.js",
   "assets/u10-DPbRGcux.js",
@@ -60,9 +61,11 @@ const PRECACHE = [
   "assets/u11-Cg-AbHcy.js",
   "assets/u11-Cw2HzaAi.js",
   "assets/u11-DI3weBpm.js",
+  "assets/u11-DuSg8K3B.js",
   "assets/u11-Dztw7TqS.js",
   "assets/u11-k5_Pqqn2.js",
   "assets/u12-AwYTmMAK.js",
+  "assets/u12-BL_hbdQh.js",
   "assets/u12-BrCy_wf0.js",
   "assets/u12-CBPVr_-V.js",
   "assets/u12-CakKlLSb.js",
@@ -72,6 +75,7 @@ const PRECACHE = [
   "assets/u12-DDiunJDu.js",
   "assets/u12-JOqdt8eA.js",
   "assets/u13-BJB4_DvH.js",
+  "assets/u13-CKCMuUYz.js",
   "assets/u13-CRND2WbM.js",
   "assets/u13-CeZOFGSA.js",
   "assets/u13-CwZVmppA.js",
@@ -83,6 +87,7 @@ const PRECACHE = [
   "assets/u14-9zimgJJh.js",
   "assets/u14-BR7tkOhg.js",
   "assets/u14-C4Leavnx.js",
+  "assets/u14-C7c4SH2b.js",
   "assets/u14-CYRgnHAO.js",
   "assets/u14-CgG1cDiF.js",
   "assets/u14-Cz1smeUn.js",
@@ -90,6 +95,7 @@ const PRECACHE = [
   "assets/u14-DjwGgqvd.js",
   "assets/u14-qE7fGQbe.js",
   "assets/u15-0LjbRDCr.js",
+  "assets/u15-B4sqVzxl.js",
   "assets/u15-B7d-MMbr.js",
   "assets/u15-B8jvwne2.js",
   "assets/u15-BdYNyPax.js",
@@ -102,6 +108,7 @@ const PRECACHE = [
   "assets/u16-B2EM2YXe.js",
   "assets/u16-BJH-Y2R7.js",
   "assets/u16-BZQLRl-Z.js",
+  "assets/u16-BjXtKM8e.js",
   "assets/u16-C_TCCjwU.js",
   "assets/u16-DVcgA2E7.js",
   "assets/u16-DoBV1uO9.js",
@@ -399,6 +406,7 @@ const PRECACHE = [
   "assets/u9-CEpZW-7P.js",
   "assets/u9-CXmDMIVn.js",
   "assets/u9-ClHHz4bi.js",
+  "assets/u9-CloM_g_F.js",
   "assets/u9-CtjrAp7v.js",
   "assets/u9-jAzncUSO.js",
   "assets/u9-tSjKjvrm.js",
