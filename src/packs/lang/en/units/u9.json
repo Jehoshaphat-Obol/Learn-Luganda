@@ -97,5 +97,41 @@
   "dialogues": {
     "u9s2l3": [{ "line": "What colour is your book?", "options": ["Black.", "Tall.", "I am hungry."] }],
     "u9s3l3": [{ "line": "Is your father tall?", "options": ["No, he is short.", "Yes, it is red.", "The book is new."] }]
+  },
+  "stories": {
+    "sw-mzee-at-the-stall": {
+      "title": "Mzee at the stall",
+      "summary": "Amani stops at Baraka’s chai stall and asks about his family.",
+      "lines": [
+        "Good afternoon, Baraka?",
+        "Fine, welcome! Do you have a friend with you today?",
+        "No. And your children?",
+        "My children are well. I have three children.",
+        "One child is a student, and one is a teacher!",
+        "Congratulations, sir!",
+        "Thank you. Have some tea!"
+      ],
+      "questions": [
+        { "question": "How many children does Baraka have?", "options": ["Two", "Three", "Five"] },
+        { "question": "What does one of Baraka’s children do?", "options": ["Drives a matatu", "Teaches", "Sells chai"] }
+      ]
+    },
+    "sw-new-cups": {
+      "title": "New cups",
+      "summary": "Baraka shows Neema the new cups at his chai stall.",
+      "lines": [
+        "Neema, look! New cups.",
+        "Very nice! They’re big.",
+        "Yes, and they’re very light.",
+        "And this cup? It’s dirty!",
+        "Sorry! It’s my old cup.",
+        "No worries. The tea is really good!"
+      ],
+      "questions": [
+        { "question": "What has Baraka got?", "options": ["New cups", "New chairs", "A new house"] },
+        { "question": "What is wrong with one cup?", "options": ["It is dirty", "It is heavy", "It is small"] },
+        { "question": "How does Neema say “very nice”?", "options": ["Very nice", "Very light", "Not bad"] }
+      ]
+    }
   }
 }

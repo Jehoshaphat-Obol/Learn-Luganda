@@ -103,5 +103,24 @@
         }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-bad-network",
+      "unlockAfter": "u23s3l1",
+      "cast": ["nakato", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "nakato" },
+        { "speaker": "emma" },
+        { "answer": 0 },
+        { "speaker": "nakato" },
+        { "speaker": "emma" },
+        { "speaker": "nakato" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    }
   ]
 }

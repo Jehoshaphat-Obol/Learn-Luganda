@@ -69,5 +69,27 @@
     "I work for a big company.",
     "I get a salary every month."
   ],
-  "dialogues": { "u14s2l3": [{ "line": "What work do you do?", "options": ["I am a teacher.", "The cows eat grass.", "I feel cold."] }] }
+  "dialogues": { "u14s2l3": [{ "line": "What work do you do?", "options": ["I am a teacher.", "The cows eat grass.", "I feel cold."] }] },
+  "stories": {
+    "sw-dream-job": {
+      "title": "A dream job",
+      "summary": "Neema tells Bibi what she wants to be, and Bibi remembers her own working life.",
+      "lines": [
+        "Neema, what work do you want to do?",
+        "I want to be a doctor, Grandma.",
+        "Good! Your grandfather was a farmer.",
+        "And you, Grandma?",
+        "I was a teacher for thirty years.",
+        "Any work is good. Whoever wants what’s under the bed must bend down."
+      ],
+      "questions": [
+        { "question": "What does Neema want to be?", "options": ["A doctor", "A driver", "A cook"] },
+        { "question": "What was Bibi’s job?", "options": ["Teacher", "Nurse", "Farmer"] },
+        {
+          "question": "What does Bibi’s proverb mean?",
+          "options": ["To get something, you must work for it", "Beds are low", "Work is bad"]
+        }
+      ]
+    }
+  }
 }

@@ -50,5 +50,16 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-exam-day": { "3": { "tena": "again" }, "6": { "kwenye": "in, on" } },
+    "sw-no-thanks": {
+      "1": { "lakini": "but" },
+      "3": { "Basi": "then, so", "mandazi": "sweet fried bread" },
+      "4": { "nimeshiba": "I’m full" },
+      "5": { "Hukula": "you didn’t eat", "kitu": "anything, a thing" },
+      "7": { "tu": "only, just" }
+    },
+    "sw-the-accident": { "1": { "imeanguka": "it has fallen" }, "4": { "naye": "with him" } }
   }
 }

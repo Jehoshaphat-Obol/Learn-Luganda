@@ -99,6 +99,24 @@
         { "question": "How many goats does {@jjajja} have?", "options": ["Five", "Two", "Ten"] },
         { "question": "What did {@emma} really see?", "options": ["A rope", "A snake", "A dog"] }
       ]
+    },
+    "sw-safari": {
+      "title": "On safari",
+      "summary": "Juma drives Emma through the national park.",
+      "lines": [
+        "Welcome to the park, Emma! Look left.",
+        "A giraffe! It’s so tall!",
+        "And over there, under the tree, there are two lions.",
+        "Are lions dangerous?",
+        "Yes, they’re fierce. Let’s stay in the car.",
+        "Okay! I really love animals."
+      ],
+      "questions": [
+        { "question": "What does Emma see first?", "options": ["A giraffe", "A lion", "A hippo"] },
+        { "question": "How many lions are there?", "options": ["Two", "One", "Three"] },
+        { "question": "Where should they stay?", "options": ["In the car", "Near the lions", "In the water"] },
+        { "question": "How does Emma say “animals”?", "options": ["animals", "animal", "many"] }
+      ]
     }
   }
 }

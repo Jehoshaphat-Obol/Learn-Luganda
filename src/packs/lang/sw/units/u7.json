@@ -66,5 +66,42 @@
     "s-niletee-maji": { "text": "Niletee maji, tafadhali." }
   },
   "phrases": ["Hodi!", "Karibu ndani!", "Kaa chini.", "Tumefurahi kukuona.", "Funga mlango.", "Niletee maji."],
-  "dialogues": { "u7s2l2": [{ "line": "Hodi!", "options": ["Karibu! Tumefurahi kukuona.", "Funga mlango.", "Ni saa ngapi?"] }] }
+  "dialogues": { "u7s2l2": [{ "line": "Hodi!", "options": ["Karibu! Tumefurahi kukuona.", "Funga mlango.", "Ni saa ngapi?"] }] },
+  "stories": {
+    "sw-neemas-house": {
+      "title": "Nyumbani kwa Neema",
+      "summary": "Emma anaitembelea familia ya Neema, Arusha.",
+      "lines": [
+        "Karibu ndani, Emma!",
+        "Asante! Nyumba yako ni kubwa!",
+        "Hapana, ni ndogo. Kuna vyumba vitatu.",
+        "Mama yako yuko wapi?",
+        "Mama yuko jikoni. Watoto wako nje.",
+        "Samahani, hakuna maji?",
+        "Kuna maji jikoni. Hakuna matata!"
+      ],
+      "questions": [
+        { "question": "Kuna vyumba vingapi?", "options": ["Viwili", "Vitatu", "Vitano"] },
+        { "question": "Mama yake Neema yuko wapi?", "options": ["Nje", "Jikoni", "Mjini"] },
+        { "question": "Neema anasemaje “hakuna matata”?", "options": ["Hakuna matata", "Karibu ndani", "Kuna maji"] }
+      ]
+    },
+    "sw-planting-day": {
+      "title": "Siku ya kupanda",
+      "summary": "Juma anamsaidia Baraka kupanda mahindi shambani kwa familia yake.",
+      "lines": [
+        "Juma, asante kwa kuja! Leo tunapanda mahindi.",
+        "Hakuna shida. Mvua ilinyesha jana, ardhi ni nzuri.",
+        "Chukua jembe, nami nitaleta mbegu.",
+        "Mke wako ametupikia nini?",
+        "Ugali na maharage! Tutakula baada ya kazi.",
+        "Safi! Haba na haba…"
+      ],
+      "questions": [
+        { "question": "Kwa nini ni siku nzuri ya kupanda?", "options": ["Mvua ilinyesha jana", "Kuna jua", "Ni Jumapili"] },
+        { "question": "Watakula lini?", "options": ["Baada ya kazi", "Kabla ya kazi", "Kesho"] },
+        { "question": "Baraka anasemaje “mbegu”?", "options": ["mbegu", "mahindi", "jembe"] }
+      ]
+    }
+  }
 }

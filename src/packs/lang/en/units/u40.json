@@ -84,6 +84,28 @@
         { "question": "Why did Nnambi go back?", "options": ["For her cow", "For the chicken’s millet", "To see Walumbe"] },
         { "question": "What lesson does {@jjajja} give?", "options": ["Listen to elders", "Wisdom beats strength", "Hurry home"] }
       ]
+    },
+    "sw-abunuwasi-and-the-king": {
+      "title": "Abunuwasi and the king",
+      "summary": "Bibi tells Neema how Abunuwasi answered an impossible order from the king.",
+      "lines": [
+        "Story!",
+        "Tell us!",
+        "One day, the king said to Abunuwasi, “Bring me milk from a bull!”",
+        "Abunuwasi came late. He said, “Sorry, my father is giving birth.”",
+        "The king laughed, “A man can’t give birth!”",
+        "Abunuwasi said, “And a bull can’t give milk!”",
+        "Abunuwasi is cleverer than the king!",
+        "That’s the end of the story."
+      ],
+      "questions": [
+        { "question": "What did the king ask for?", "options": ["Milk from a bull", "A new house", "A story"] },
+        {
+          "question": "Why was Abunuwasi’s answer clever?",
+          "options": ["It showed the king’s order was impossible", "He brought the milk", "He ran away"]
+        },
+        { "question": "How does Bibi end the story?", "options": ["That’s the end of the story.", "Story!", "May I come in?"] }
+      ]
     }
   }
 }

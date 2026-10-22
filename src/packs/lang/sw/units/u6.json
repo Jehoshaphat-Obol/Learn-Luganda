@@ -93,6 +93,40 @@
         { "question": "{@emma} anasema wakate upande gani?", "options": ["Kushoto", "Kulia"] },
         { "question": "{@emma} anamwambiaje {@ssali} asimame?", "options": ["Nenda moja kwa moja", "Simama hapa", "Pinda kushoto"] }
       ]
+    },
+    "sw-lost-in-town": {
+      "title": "Benki iko wapi?",
+      "summary": "Emma anatafuta benki Dar es Salaam na Amani anamwelekeza.",
+      "lines": [
+        "Amani, benki iko wapi?",
+        "Si mbali. Iko karibu na msikiti.",
+        "Nenda moja kwa moja, kisha geuka kulia.",
+        "Moja kwa moja, kisha kulia. Sawa!",
+        "Benki iko kushoto, karibu na duka.",
+        "Asante sana!"
+      ],
+      "questions": [
+        { "question": "Benki iko wapi?", "options": ["Karibu na msikiti", "Karibu na hospitali", "Mbali"] },
+        { "question": "Emma anageuka upande gani?", "options": ["Kushoto", "Kulia"] },
+        { "question": "Amani anasemaje “moja kwa moja”?", "options": ["Moja kwa moja", "Pole pole", "Karibu na"] }
+      ]
+    },
+    "sw-boda-ride": {
+      "title": "Safari ya kwenda mjini",
+      "summary": "Neema anasimamisha boda boda ya Juma.",
+      "lines": [
+        "Habari, dada! Unaenda wapi?",
+        "Ninaenda mjini. Nauli ni bei gani?",
+        "Shilingi elfu moja.",
+        "Ni ghali! Punguza bei.",
+        "Haya, mia nane. Twende!",
+        "Simama hapa, tafadhali. Asante!"
+      ],
+      "questions": [
+        { "question": "Neema anaenda wapi?", "options": ["Nyumbani", "Shuleni", "Mjini"] },
+        { "question": "Nauli ya mwisho ni ngapi?", "options": ["Shilingi 800", "Shilingi 1,000", "Shilingi 500"] },
+        { "question": "Neema anasema nini ili ashuke?", "options": ["Simama hapa", "Unaenda wapi", "Geuka kushoto"] }
+      ]
     }
   }
 }

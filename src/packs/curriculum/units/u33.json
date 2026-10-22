@@ -91,5 +91,23 @@
         { "id": "u33s4l2", "newWords": ["sawa-na", "bora", "mali"], "sentences": ["s-sawa-na", "s-tofauti", "s-kama", "s-bora"] }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-who-is-faster",
+      "unlockAfter": "u33s4l2",
+      "cast": ["amara", "nakato"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "amara" },
+        { "speaker": "nakato" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "speaker": "nakato" },
+        { "speaker": "amara" },
+        { "answer": 0 },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    }
   ]
 }

@@ -130,6 +130,23 @@
         { "answer": 0, "optionsLang": "target" },
         { "speaker": "nakato" }
       ]
+    },
+    {
+      "id": "sw-train-to-mombasa",
+      "unlockAfter": "u16s4l3",
+      "cast": ["emma", "ssali"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "emma" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "speaker": "emma" },
+        { "speaker": "ssali" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "speaker": "emma" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
     }
   ]
 }

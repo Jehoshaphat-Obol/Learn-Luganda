@@ -59,5 +59,46 @@
         "options": ["Thank you very much, sir.", "Thief! Catch him!", "I don’t agree."]
       }
     ]
+  },
+  "stories": {
+    "sw-mango-deal": {
+      "title": "A good price for mangoes",
+      "summary": "Amani bargains for mangoes at Kariakoo market, with Juma’s help.",
+      "lines": [
+        "How much is a mango?",
+        "One hundred shillings.",
+        "That’s very expensive! Lower the price, please.",
+        "Okay, eighty shillings.",
+        "Fine. Give me five mangoes.",
+        "Thank you very much! The mangoes are sweet."
+      ],
+      "questions": [
+        { "question": "What does Amani think of the price?", "options": ["It’s cheap", "It’s expensive", "It’s fair"] },
+        { "question": "How many mangoes does Amani buy?", "options": ["Three", "Five", "Ten"] },
+        { "question": "Which word did Amani use to ask for a lower price?", "options": ["Give me", "Lower the price", "Welcome"] }
+      ]
+    },
+    "sw-visiting-bibi": {
+      "title": "Visiting Bibi",
+      "summary": "Emma visits Bibi’s home and remembers her manners.",
+      "lines": [
+        "May I come in?",
+        "Come in, my child! Enter.",
+        "My respects, Grandma.",
+        "Thank you. Do you want tea?",
+        "Thank you. May I have some water first, please.",
+        "No problem. Now, eat with your right hand!",
+        "Thank you for your hospitality, Grandma.",
+        "Come again!"
+      ],
+      "questions": [
+        { "question": "How does Emma greet Bibi?", "options": ["Shikamoo", "Mambo", "Poa"] },
+        { "question": "Which hand should Emma eat with?", "options": ["The right hand", "The left hand", "Either hand"] },
+        {
+          "question": "How does Emma ask politely for water?",
+          "options": ["May I have some water, please?", "I want water.", "Give me water."]
+        }
+      ]
+    }
   }
 }

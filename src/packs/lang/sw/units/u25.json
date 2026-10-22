@@ -61,5 +61,24 @@
   ],
   "dialogues": {
     "u25s3l3": [{ "line": "Wewe ni wa ukoo gani, mwanangu?", "options": ["Mimi ni wa ukoo wa Lugave, babu.", "Nimechoka sana.", "Ongeza chumvi."] }]
+  },
+  "stories": {
+    "sw-dhow-story": {
+      "title": "Jahazi",
+      "summary": "Ufukweni Mji Mkongwe, Bibi anamweleza Emma jinsi babu yake alivyosafiri na upepo wa kaskazi.",
+      "lines": [
+        "Bibi, jahazi lile ni zuri sana!",
+        "Babu yangu alikuwa nahodha wa jahazi.",
+        "Kweli? Alisafiri wapi?",
+        "Na kaskazi, alienda Oman na India. Na kusi, alirudi Zanzibar.",
+        "Alibeba nini?",
+        "Karafuu, nguo na hadithi nyingi!"
+      ],
+      "questions": [
+        { "question": "Babu wa Bibi alikuwa nani?", "options": ["Nahodha wa jahazi", "Mwalimu", "Mkulima"] },
+        { "question": "Alisafiri kwenda wapi?", "options": ["Omani na India", "Kenya na Uganda", "Ulaya"] },
+        { "question": "Bibi anasemaje “jahazi”?", "options": ["jahazi", "bahari", "kisiwa"] }
+      ]
+    }
   }
 }

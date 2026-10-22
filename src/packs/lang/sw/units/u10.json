@@ -102,6 +102,25 @@
         { "question": "Gomesi nyekundu ina tatizo gani?", "options": ["Ni ndogo mno", "Ni ghali mno", "Ni kuukuu"] },
         { "question": "{@nakato} anasemaje “Sawa, nitaichukua”?", "options": ["Sawa, nitachukua.", "Vua viatu.", "Ninahisi baridi."] }
       ]
+    },
+    "sw-new-kanga": {
+      "title": "Kanga mpya",
+      "summary": "Emma anataka kununua kanga, na Neema anamsaidia kupunguza bei.",
+      "lines": [
+        "Emma, unataka kununua nini?",
+        "Nataka kanga nzuri.",
+        "Angalia hii! Ni nyekundu na njano.",
+        "Ni nzuri! Bei gani?",
+        "Shilingi elfu kumi.",
+        "Ni ghali! Punguza, tafadhali.",
+        "Sawa, elfu nane.",
+        "Vaa sasa! Inakufaa sana."
+      ],
+      "questions": [
+        { "question": "Kanga ina rangi gani?", "options": ["Nyekundu na njano", "Nyeusi na nyeupe", "Kijani na buluu"] },
+        { "question": "Bei ya mwisho ni ngapi?", "options": ["Shilingi 8,000", "Shilingi 10,000", "Shilingi 800"] },
+        { "question": "Neema anasemaje “ivae”?", "options": ["Vaa", "Vua", "Jaribu"] }
+      ]
     }
   }
 }

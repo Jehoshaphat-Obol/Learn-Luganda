@@ -74,5 +74,24 @@
     "Wiki iliyopita tulikwenda {@getaway}.",
     "Zamani nilikuwa mwanafunzi."
   ],
-  "dialogues": { "u19s3l3": [{ "line": "Ulifanya nini jana?", "options": ["Nilienda mjini.", "Nitaenda kesho.", "Sili nyama."] }] }
+  "dialogues": { "u19s3l3": [{ "line": "Ulifanya nini jana?", "options": ["Nilienda mjini.", "Nitaenda kesho.", "Sili nyama."] }] },
+  "stories": {
+    "sw-zanzibar-trip": {
+      "title": "Safari ya Zanzibar",
+      "summary": "Amani anamweleza Bibi kuhusu wikendi yake Zanzibar.",
+      "lines": [
+        "Amani! Ulienda wapi wikendi?",
+        "Nilienda Zanzibar kwa boti, bibi.",
+        "Vizuri! Ulifanya nini huko?",
+        "Tulitembea Mji Mkongwe, na tulikula samaki baharini.",
+        "Uliona nyumba yangu ya zamani?",
+        "Ndiyo! Mlango bado ni mzuri sana."
+      ],
+      "questions": [
+        { "question": "Amani alisafiri vipi?", "options": ["Kwa boti", "Kwa ndege", "Kwa basi"] },
+        { "question": "Walikula nini?", "options": ["Samaki", "Kuku", "Ugali"] },
+        { "question": "Amani anasemaje “nilienda”?", "options": ["Nilienda", "Nitaenda", "Ninaenda"] }
+      ]
+    }
+  }
 }

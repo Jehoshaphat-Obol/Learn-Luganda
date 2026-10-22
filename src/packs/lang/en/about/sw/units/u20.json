@@ -29,5 +29,13 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-saturday-chores": {
+      "0": { "Tusafishe": "let’s clean" },
+      "1": { "Nianze": "shall I start" },
+      "5": { "upepo": "wind" },
+      "8": { "Mikono mingi, kazi nyepesi": "a proverb: many hands make light work" }
+    }
   }
 }

@@ -30,5 +30,13 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-harambee": {
+      "1": { "nafasi": "place, chance", "chuo kikuu": "university" },
+      "3": { "nitatoa": "I will give" },
+      "4": { "Kidole kimoja hakivunji chawa": "a proverb: we need each other to succeed" }
+    },
+    "sw-morning-paper": { "5": { "italeta": "it will bring" }, "7": { "tuandike": "let’s write" } }
   }
 }

@@ -192,6 +192,14 @@
                 }
               ]
             }
+          },
+          "culture": {
+            "type": "string",
+            "description": "The culture (a language code, see cultureOf) the story belongs to: it is told only in courses of that culture, and only where both languages have its text. Untagged stories are told everywhere."
+          },
+          "teaches": {
+            "type": "string",
+            "description": "A language code: the story is told only in courses teaching it (one about greeting elders in Swahili, say)."
           }
         }
       }

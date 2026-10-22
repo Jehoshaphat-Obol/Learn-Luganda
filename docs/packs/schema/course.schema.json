@@ -271,6 +271,14 @@
                 }
               }
             }
+          },
+          "courses": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z]{2,3}-[a-z]{2,3}$"
+            },
+            "description": "Curriculum only: the composed courses this step applies to (say, ones that replaced a hand-built pack with other ids). Without it the step applies to every course."
           }
         }
       }

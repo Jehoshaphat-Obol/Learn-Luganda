@@ -81,6 +81,28 @@
         },
         { "question": "{@jjajja} anatoa funzo gani?", "options": ["Wasikilize wazee", "Busara hushinda nguvu", "Rudi nyumbani haraka"] }
       ]
+    },
+    "sw-abunuwasi-and-the-king": {
+      "title": "Abunuwasi na mfalme",
+      "summary": "Bibi anamsimulia Neema jinsi Abunuwasi alivyojibu amri isiyowezekana ya mfalme.",
+      "lines": [
+        "Paukwa!",
+        "Pakawa!",
+        "Siku moja, mfalme alimwambia Abunuwasi, “Niletee maziwa ya ng’ombe dume!”",
+        "Abunuwasi akachelewa. Akasema, “Samahani, baba yangu anajifungua.”",
+        "Mfalme akacheka, “Mwanamume hawezi kuzaa!”",
+        "Abunuwasi akasema, “Na ng’ombe dume hawezi kutoa maziwa!”",
+        "Abunuwasi ni mjanja kuliko mfalme!",
+        "Hadithi imeishia hapo."
+      ],
+      "questions": [
+        { "question": "Mfalme aliomba nini?", "options": ["Maziwa ya fahali", "Nyumba mpya", "Hadithi"] },
+        {
+          "question": "Kwa nini jibu la Abunuwasi lilikuwa la busara?",
+          "options": ["Lilionyesha amri ya mfalme haiwezekani", "Alileta maziwa", "Alikimbia"]
+        },
+        { "question": "Bibi anamalizaje hadithi?", "options": ["Hadithi imeishia hapo", "Paukwa", "Hodi"] }
+      ]
     }
   }
 }

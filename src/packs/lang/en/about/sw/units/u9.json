@@ -66,5 +66,9 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-mzee-at-the-stall": { "1": { "leo": "today" }, "2": { "je": "and…? (a question word)" }, "5": { "mmoja": "one (person)" } },
+    "sw-new-cups": { "0": { "angalia": "look" }, "4": { "hiki": "this" }, "6": { "changu": "my (with ki- nouns)", "cha zamani": "old, from before" } }
   }
 }

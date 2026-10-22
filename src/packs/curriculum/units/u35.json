@@ -114,6 +114,40 @@
         { "speaker": "amara" },
         { "answer": 0, "optionsLang": "target" }
       ]
+    },
+    {
+      "id": "sw-long-rains",
+      "unlockAfter": "u35s4l1",
+      "cast": ["ssali", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "ssali" },
+        { "speaker": "emma" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "ssali" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    },
+    {
+      "id": "sw-hare-and-crocodile",
+      "unlockAfter": "u35s4l2",
+      "cast": ["jjajja", "amara"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "jjajja" },
+        { "speaker": "amara" },
+        { "speaker": "jjajja" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "jjajja" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
     }
   ]
 }

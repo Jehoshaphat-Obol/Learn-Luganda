@@ -93,6 +93,40 @@
         { "question": "Which way does {@emma} say to turn?", "options": ["Left", "Right"] },
         { "question": "How does {@emma} ask {@ssali} to stop?", "options": ["Go straight", "Stop here", "Turn left"] }
       ]
+    },
+    "sw-lost-in-town": {
+      "title": "Which way to the bank?",
+      "summary": "Emma needs the bank in Dar es Salaam and Amani gives directions.",
+      "lines": [
+        "Amani, where is the bank?",
+        "It’s not far. It’s near the mosque.",
+        "Go straight on, then turn right.",
+        "Straight on, then right. Okay!",
+        "The bank is on the left, near the shop.",
+        "Thank you very much!"
+      ],
+      "questions": [
+        { "question": "Where is the bank?", "options": ["Near the mosque", "Near the hospital", "Far away"] },
+        { "question": "Which way does Emma turn?", "options": ["Left", "Right"] },
+        { "question": "How does Amani say “straight on”?", "options": ["Straight on", "Slowly", "Near"] }
+      ]
+    },
+    "sw-boda-ride": {
+      "title": "A ride into town",
+      "summary": "Neema flags down Juma, who is driving a boda boda today.",
+      "lines": [
+        "Hi, sister! Where are you going?",
+        "I’m going to town. How much is the fare?",
+        "One thousand shillings.",
+        "That’s expensive! Lower the price.",
+        "Okay, eight hundred. Let’s go!",
+        "Stop here, please. Thank you!"
+      ],
+      "questions": [
+        { "question": "Where is Neema going?", "options": ["Home", "To school", "To town"] },
+        { "question": "What is the final fare?", "options": ["800 shillings", "1,000 shillings", "500 shillings"] },
+        { "question": "What does Neema say to get off?", "options": ["Stop here", "Where are you going?", "Turn left"] }
+      ]
     }
   }
 }

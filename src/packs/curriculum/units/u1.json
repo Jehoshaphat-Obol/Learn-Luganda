@@ -197,6 +197,61 @@
         { "speaker": "jjajja" },
         { "answer": 1 }
       ]
+    },
+    {
+      "id": "sw-new-friend",
+      "unlockAfter": "u1s4l3",
+      "cast": ["nakato", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "nakato" },
+        { "speaker": "emma" },
+        { "speaker": "nakato" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "nakato" },
+        { "speaker": "emma" },
+        { "answer": 1 },
+        { "speaker": "nakato" },
+        { "answer": 1, "optionsLang": "target" },
+        { "speaker": "emma" }
+      ]
+    },
+    {
+      "id": "sw-shikamoo-bibi",
+      "unlockAfter": "u1s4l1",
+      "cast": ["amara", "jjajja"],
+      "culture": "sw",
+      "teaches": "sw",
+      "steps": [
+        { "speaker": "amara" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "answer": 1 },
+        { "speaker": "jjajja" },
+        { "speaker": "amara" },
+        { "answer": 1, "optionsLang": "target" },
+        { "speaker": "jjajja" }
+      ]
+    },
+    {
+      "id": "sw-morning-bibi",
+      "unlockAfter": "u1s4l1",
+      "cast": ["amara", "jjajja"],
+      "culture": "sw",
+      "teaches": "en",
+      "steps": [
+        { "speaker": "amara" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "answer": 0, "optionsLang": "target" },
+        { "speaker": "jjajja" },
+        { "speaker": "amara" },
+        { "answer": 1 },
+        { "speaker": "jjajja" }
+      ]
     }
   ]
 }

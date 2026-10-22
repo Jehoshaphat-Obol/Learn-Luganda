@@ -53,5 +53,15 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-neemas-house": { "7": { "Samahani": "excuse me, sorry" } },
+    "sw-planting-day": {
+      "0": { "kuja": "coming" },
+      "1": { "ardhi": "soil, land" },
+      "3": { "nami": "and I" },
+      "4": { "Mke": "wife", "ametupikia": "has cooked for us" },
+      "5": { "baada ya": "after" }
+    }
   }
 }

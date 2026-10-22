@@ -164,5 +164,41 @@
         { "id": "u9s4l6", "newWords": [], "sentences": ["s-bibi-mpole", "s-neema-mchangamfu", "s-kikombe-kikubwa", "s-vikombe-vidogo"] }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-mzee-at-the-stall",
+      "unlockAfter": "u9s4l1",
+      "cast": ["mukasa", "nakato"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "nakato" },
+        { "speaker": "mukasa" },
+        { "speaker": "nakato" },
+        { "speaker": "mukasa" },
+        { "answer": 1 },
+        { "speaker": "mukasa" },
+        { "answer": 1 },
+        { "speaker": "nakato" },
+        { "speaker": "mukasa" }
+      ]
+    },
+    {
+      "id": "sw-new-cups",
+      "unlockAfter": "u9s4l6",
+      "cast": ["mukasa", "amara"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "mukasa" },
+        { "speaker": "amara" },
+        { "answer": 0 },
+        { "speaker": "mukasa" },
+        { "speaker": "amara" },
+        { "answer": 0 },
+        { "speaker": "mukasa" },
+        { "speaker": "amara" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    }
   ]
 }

@@ -64,5 +64,24 @@
   ],
   "dialogues": {
     "u25s3l3": [{ "line": "Which clan are you, my child?", "options": ["I am of the Lugave clan, Grandma.", "I am very tired.", "Add salt."] }]
+  },
+  "stories": {
+    "sw-dhow-story": {
+      "title": "The dhow",
+      "summary": "On the beach in Stone Town, Bibi tells Emma how her grandfather sailed with the monsoon.",
+      "lines": [
+        "Grandma, that dhow is so beautiful!",
+        "My grandfather was the captain of a dhow.",
+        "Really? Where did he sail?",
+        "With the north-east monsoon he went to Oman and India. With the south wind he came home to Zanzibar.",
+        "What did he carry?",
+        "Cloves, cloth and lots of stories!"
+      ],
+      "questions": [
+        { "question": "What was Bibi’s grandfather?", "options": ["A dhow captain", "A teacher", "A farmer"] },
+        { "question": "Which places did he sail to?", "options": ["Oman and India", "Kenya and Uganda", "Europe"] },
+        { "question": "How does Bibi say “dhow”?", "options": ["dhow", "sea", "island"] }
+      ]
+    }
   }
 }

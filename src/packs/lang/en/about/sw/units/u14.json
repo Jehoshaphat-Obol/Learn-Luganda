@@ -49,5 +49,13 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-dream-job": {
+      "1": { "kuwa": "to be" },
+      "3": { "alikuwa": "he was" },
+      "5": { "miaka": "years" },
+      "7": { "Mtaka cha mvunguni sharti ainame": "a proverb: to get something, you must work for it" }
+    }
   }
 }

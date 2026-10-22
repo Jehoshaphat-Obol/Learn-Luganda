@@ -27,5 +27,19 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-long-rains": {
+      "0": { "yamefika": "have arrived" },
+      "1": { "pia": "also, too" },
+      "3": { "mwaka huu": "this year" },
+      "6": { "baraka": "blessing", "wakulima": "farmers" }
+    },
+    "sw-hare-and-crocodile": {
+      "2": { "mjanja": "clever, cunning" },
+      "3": { "kuvuka": "to cross" },
+      "5": { "Mfalme": "king", "kuhesabu": "to count" },
+      "6": { "mstari": "line", "akaruka": "and he jumped", "ng’ambo": "the other side" }
+    }
   }
 }

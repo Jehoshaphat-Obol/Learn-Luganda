@@ -45,5 +45,13 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-matatu-time": {
+      "0": { "matatu": "minibus taxi" },
+      "1": { "Saa mbili": "the second hour after sunrise: 8 o’clock" },
+      "2": { "Si": "not", "saa nane": "the eighth hour: 2 o’clock" },
+      "3": { "baada ya": "after" }
+    }
   }
 }

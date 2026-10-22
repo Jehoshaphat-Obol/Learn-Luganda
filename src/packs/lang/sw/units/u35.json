@@ -73,6 +73,40 @@
           "options": ["Hadithi yangu imeishia hapo.", "Hapo zamani za kale.", "Palikuwa na mwanamume."]
         }
       ]
+    },
+    "sw-long-rains": {
+      "title": "Masika",
+      "summary": "Juma na Emma wanaona mawingu ya masika yakija.",
+      "lines": [
+        "Emma, angalia mawingu! Masika yamefika.",
+        "Jana pia mvua ilinyesha sana.",
+        "Ndiyo. Kiangazi kilikuwa kirefu mwaka huu.",
+        "Kuna radi! Twende ndani.",
+        "Sawa. Mvua ni baraka kwa wakulima."
+      ],
+      "questions": [
+        { "question": "Jana hali ya hewa ilikuwaje?", "options": ["Mvua ilinyesha sana", "Kulikuwa na jua", "Kulikuwa na upepo"] },
+        { "question": "Nini kilikuwa kirefu mwaka huu?", "options": ["Kiangazi", "Masika", "Usiku"] },
+        { "question": "Emma anasemaje “kuna radi”?", "options": ["Kuna radi", "Kuna upepo", "Kuna mawingu"] }
+      ]
+    },
+    "sw-hare-and-crocodile": {
+      "title": "Sungura na mamba",
+      "summary": "Bibi anamsimulia Neema jinsi sungura mjanja alivyomdanganya mamba.",
+      "lines": [
+        "Paukwa!",
+        "Pakawa!",
+        "Hapo zamani za kale, palikuwa na sungura mjanja.",
+        "Siku moja, sungura akataka kuvuka mto, lakini akaona mamba.",
+        "Sungura akasema, “Mfalme anataka kuhesabu mamba wote!”",
+        "Mamba wakapanga mstari, na sungura akaruka juu yao mpaka ng’ambo.",
+        "Sungura ni mjanja kweli!"
+      ],
+      "questions": [
+        { "question": "Sungura alitaka kufanya nini?", "options": ["Kuvuka mto", "Kumla mamba", "Kwenda nyumbani"] },
+        { "question": "Sungura alivukaje?", "options": ["Aliruka juu ya mamba", "Aliogelea", "Alipanda boti"] },
+        { "question": "Bibi anaanzaje hadithi?", "options": ["Paukwa!", "Pakawa!", "Mwisho!"] }
+      ]
     }
   }
 }

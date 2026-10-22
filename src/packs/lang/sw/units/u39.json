@@ -48,5 +48,43 @@
   "dialogues": {
     "u39s2l3": [{ "line": "Mwanangu, umeamkaje?", "options": ["Salama, bwana. Mmeamkaje?", "Nakubaliana nawe.", "Haraka!"] }],
     "u39s3l3": [{ "line": "Asanteni kwa kuja! Keti ule chakula.", "options": ["Asante sana, bwana.", "Mwizi! Mkamateni!", "Sikubali."] }]
+  },
+  "stories": {
+    "sw-mango-deal": {
+      "title": "Bei nzuri ya maembe",
+      "summary": "Amani anapatana bei ya maembe sokoni Kariakoo, kwa msaada wa Juma.",
+      "lines": [
+        "Embe ni bei gani?",
+        "Shilingi mia moja.",
+        "Ni ghali sana! Punguza bei, tafadhali.",
+        "Haya, shilingi themanini.",
+        "Sawa. Nipe maembe matano.",
+        "Asante sana! Maembe ni matamu."
+      ],
+      "questions": [
+        { "question": "Amani anafikiri nini kuhusu bei?", "options": ["Ni rahisi", "Ni ghali", "Ni sawa"] },
+        { "question": "Amani ananunua maembe mangapi?", "options": ["Matatu", "Matano", "Kumi"] },
+        { "question": "Amani anaombaje bei ipungue?", "options": ["Nipe", "Punguza", "Karibu"] }
+      ]
+    },
+    "sw-visiting-bibi": {
+      "title": "Kumtembelea Bibi",
+      "summary": "Emma anamtembelea Bibi nyumbani na anakumbuka adabu zake.",
+      "lines": [
+        "Hodi!",
+        "Karibu, mwanangu! Ingia.",
+        "Shikamoo, bibi.",
+        "Marahaba. Unataka chai?",
+        "Asante. Naomba maji kwanza, tafadhali.",
+        "Hamna shida. Haya, kula kwa mkono wa kulia!",
+        "Asante kwa ukarimu wako, bibi.",
+        "Karibu tena!"
+      ],
+      "questions": [
+        { "question": "Emma anamsalimiaje Bibi?", "options": ["Shikamoo", "Mambo", "Poa"] },
+        { "question": "Emma anapaswa kula kwa mkono gani?", "options": ["Mkono wa kulia", "Mkono wa kushoto", "Mkono wowote"] },
+        { "question": "Emma anaombaje maji kwa adabu?", "options": ["Naomba maji", "Nataka maji", "Nipe maji"] }
+      ]
+    }
   }
 }

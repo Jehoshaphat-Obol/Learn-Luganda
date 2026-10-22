@@ -83,6 +83,22 @@
           "options": ["Let’s protect our land", "Don’t throw rubbish", "Let’s plant trees"]
         }
       ]
+    },
+    "sw-kilimanjaro": {
+      "title": "Kilimanjaro",
+      "summary": "Juma drives Emma to Moshi, where Kilimanjaro appears through the clouds.",
+      "lines": [
+        "Juma, look! What’s that mountain?",
+        "It’s Kilimanjaro, the highest mountain in Africa.",
+        "There’s snow on top!",
+        "Yes, but every year there’s less. We must look after the environment.",
+        "I’ll plant a tree tomorrow!"
+      ],
+      "questions": [
+        { "question": "What is the mountain?", "options": ["Kilimanjaro", "Mount Kenya", "Mount Elgon"] },
+        { "question": "What is happening to the snow?", "options": ["There is less every year", "There is more every year", "It is new"] },
+        { "question": "How does Juma say “mountain”?", "options": ["mountain", "forest", "river"] }
+      ]
     }
   }
 }

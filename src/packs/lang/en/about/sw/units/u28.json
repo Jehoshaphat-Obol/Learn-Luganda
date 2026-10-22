@@ -36,5 +36,16 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-good-news": {
+      "2": { "Nimefaulu": "I passed" },
+      "7": { "tena": "again, any more", "Haba na haba hujaza kibaba": "a proverb: small efforts add up" }
+    },
+    "sw-eid-visit": {
+      "4": { "tende": "dates (fruit)", "wote": "all" },
+      "6": { "nitawaletea": "I will bring (to them)" },
+      "7": { "Mgeni aje, mwenyeji apone": "a proverb: guests bring blessings to their host" }
+    }
   }
 }

@@ -111,6 +111,43 @@
         { "speaker": "ssali" },
         { "speaker": "jjajja" }
       ]
+    },
+    {
+      "id": "sw-school-interview",
+      "unlockAfter": "u36s3l1",
+      "cast": ["amara", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "amara" },
+        { "speaker": "emma" },
+        { "speaker": "amara" },
+        { "speaker": "emma" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "speaker": "emma" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "speaker": "emma" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    },
+    {
+      "id": "sw-bibi-proverbs",
+      "unlockAfter": "u36s4l2",
+      "cast": ["jjajja", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
     }
   ]
 }

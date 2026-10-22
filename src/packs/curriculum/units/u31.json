@@ -99,5 +99,24 @@
         }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-baraka-business",
+      "unlockAfter": "u31s4l2",
+      "cast": ["mukasa", "ssali"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "ssali" },
+        { "speaker": "mukasa" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "speaker": "mukasa" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "speaker": "mukasa" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    }
   ]
 }

@@ -113,5 +113,24 @@
         { "id": "u14s4l3", "newWords": ["bosi"], "sentences": ["s-kampuni-kubwa", "s-bosi-mpole", "s-baba-dereva", "s-mpishi-anapika"] }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-dream-job",
+      "unlockAfter": "u14s3l1",
+      "cast": ["jjajja", "amara"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "jjajja" },
+        { "speaker": "amara" },
+        { "answer": 0 },
+        { "speaker": "jjajja" },
+        { "speaker": "amara" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "jjajja" },
+        { "answer": 0 }
+      ]
+    }
   ]
 }

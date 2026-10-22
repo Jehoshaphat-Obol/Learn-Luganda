@@ -53,5 +53,35 @@
     "s-kila-mwaka": { "text": "Masika yanakuja kila mwaka." }
   },
   "phrases": ["Leo", "Kesho", "Tutaonana kesho.", "Ninasoma Jumatatu.", "Ni saa ngapi?", "Ni saa nne."],
-  "dialogues": { "u5s3l2": [{ "line": "Ni saa ngapi?", "options": ["Saa kumi.", "Shilingi elfu mbili.", "Jumatatu."] }] }
+  "dialogues": { "u5s3l2": [{ "line": "Ni saa ngapi?", "options": ["Saa kumi.", "Shilingi elfu mbili.", "Jumatatu."] }] },
+  "stories": {
+    "sw-matatu-time": {
+      "lines": [
+        "Habari, Juma! Matatu ni saa ngapi?",
+        "Saa mbili asubuhi.",
+        "Saa mbili? Si saa nane?",
+        "Hapana! Saa mbili asubuhi, saa moja baada ya saa moja.",
+        "Na sasa ni saa ngapi?",
+        "Sasa ni saa moja na nusu. Pole pole!",
+        "Asante sana, Juma. Tutaonana kesho!"
+      ],
+      "questions": [{}, {}, { "options": ["Tutaonana kesho", "Leo na kesho", "Saa ngapi"] }]
+    },
+    "sw-english-time": {
+      "title": "Saa ya Kiingereza",
+      "summary": "Kwenye stendi ya matatu Nairobi, Juma anajifunza kusema saa kwa Kiingereza.",
+      "lines": [
+        "Emma, ni saa ngapi sasa?",
+        "Ni saa moja na nusu.",
+        "Matatu inaondoka saa mbili asubuhi.",
+        "Saa mbili? Sawa. Pole pole!",
+        "Asante, Emma. Tutaonana kesho!"
+      ],
+      "questions": [
+        { "question": "Kwa saa ya Kiswahili, ni saa ngapi?", "options": ["Saa moja na nusu", "Saa saba na nusu", "Saa tatu"] },
+        { "question": "Kwa saa ya Kiingereza, matatu inaondoka saa ngapi?", "options": ["2:00", "8:00", "7:30"] },
+        { "question": "Juma anasemaje “tutaonana kesho”?" }
+      ]
+    }
+  }
 }

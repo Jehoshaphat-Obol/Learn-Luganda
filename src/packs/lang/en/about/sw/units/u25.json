@@ -43,5 +43,14 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-dhow-story": {
+      "0": { "lile": "that (over there)" },
+      "1": { "nahodha": "captain" },
+      "4": { "kusi": "the south-west monsoon" },
+      "6": { "Alibeba": "he carried" },
+      "7": { "Karafuu": "cloves", "hadithi": "stories" }
+    }
   }
 }

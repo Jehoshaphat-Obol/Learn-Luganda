@@ -23,5 +23,12 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-abunuwasi-and-the-king": {
+      "2": { "alimwambia": "he said to him", "dume": "male" },
+      "4": { "akachelewa": "and he was late", "anajifungua": "is giving birth" },
+      "5": { "akacheka": "and he laughed", "hawezi": "cannot" }
+    }
   }
 }

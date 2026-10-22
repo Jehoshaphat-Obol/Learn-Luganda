@@ -73,6 +73,43 @@
         { "question": "What hurts?", "options": ["Her stomach", "Her head", "Her leg"] },
         { "question": "What does {@mukasa} give {@amara}?", "options": ["Medicine", "Tea", "Matooke"] }
       ]
+    },
+    "sw-at-the-clinic": {
+      "title": "At the clinic",
+      "summary": "Emma feels unwell and Amani takes her to the clinic.",
+      "lines": [
+        "Emma, how are you? What’s wrong?",
+        "I am sick. I have a fever, and my head hurts.",
+        "So sorry! Let’s go to the hospital.",
+        "Excuse me, where is the doctor?",
+        "The doctor says: medicine and rest for three days.",
+        "Get well soon, my friend."
+      ],
+      "questions": [
+        { "question": "What is wrong with Emma?", "options": ["Her leg hurts", "She has a fever and a headache", "She is hungry"] },
+        {
+          "question": "Why does Emma say samahani here?",
+          "options": ["To apologise for being late", "To get someone’s attention", "To show sympathy"]
+        },
+        { "question": "How long must Emma rest?", "options": ["One day", "Three days", "A week"] },
+        { "question": "How does Amani say “get well soon”?", "options": ["Good health", "Get well soon", "I’m better"] }
+      ]
+    },
+    "sw-bibi-remedy": {
+      "title": "Better again",
+      "summary": "A week later, Emma visits Bibi Mwanaisha, who has advice for everything.",
+      "lines": [
+        "Welcome, Emma! Were you sick?",
+        "Yes, grandmother. But now I’ve recovered.",
+        "Sorry to hear! Drink ginger tea every day.",
+        "Thank you, grandmother. I’m just a little tired.",
+        "Rest. Health is better than wealth.",
+        "Good health, grandmother!"
+      ],
+      "questions": [
+        { "question": "How is Emma now?", "options": ["Still sick", "Better", "Very tired"] },
+        { "question": "What does Bibi’s proverb say is better than wealth?", "options": ["Health", "Tea", "Family"] }
+      ]
     }
   }
 }

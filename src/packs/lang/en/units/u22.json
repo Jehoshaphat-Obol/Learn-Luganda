@@ -87,6 +87,40 @@
         { "question": "What just happened?", "options": ["A goal", "The game ended", "It started raining"] },
         { "question": "How does {@mukasa} say “our team has won”?", "options": ["Our team has won", "Who has won?", "I enjoy football"] }
       ]
+    },
+    "sw-busy-week": {
+      "title": "A busy week",
+      "summary": "Amani and Neema try to find a day to meet.",
+      "lines": [
+        "Neema, shall we meet on Monday?",
+        "No, on Monday I’m studying.",
+        "And Wednesday?",
+        "On Wednesday I’m playing football.",
+        "I work every day, but not on Saturday.",
+        "Okay! See you Saturday. I love music, let’s go dancing!"
+      ],
+      "questions": [
+        { "question": "What does Neema do on Wednesday?", "options": ["Studies", "Plays football", "Cooks"] },
+        { "question": "Which day is Amani free?", "options": ["Monday", "Wednesday", "Saturday"] },
+        { "question": "How does Neema say Saturday?", "options": ["Sunday", "Saturday", "Monday"] }
+      ]
+    },
+    "sw-big-match": {
+      "title": "The big match",
+      "summary": "Juma and Baraka watch a football match on the TV at Baraka’s stall.",
+      "lines": [
+        "Juma, welcome! The game has started.",
+        "My team will win today!",
+        "No way! My team is better.",
+        "Goal! Goal! We’ve scored!",
+        "Ah! Never mind, the game isn’t over yet.",
+        "Okay, but if we win, the tea is free!"
+      ],
+      "questions": [
+        { "question": "What does Juma think?", "options": ["His team will win", "His team will lose", "He has no team"] },
+        { "question": "What happened?", "options": ["Juma’s team scored", "Baraka’s team scored", "The TV broke"] },
+        { "question": "How does Juma shout “goal”?", "options": ["Goal!", "Team!", "Ball!"] }
+      ]
     }
   }
 }

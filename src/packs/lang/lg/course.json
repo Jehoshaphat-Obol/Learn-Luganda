@@ -11,7 +11,6 @@
     "sw": { "name": "Oluswayiri", "mu": "Luswayiri" },
     "fr": { "name": "Olufalansa", "mu": "Lufalansa" }
   },
-  "culture": {},
   "cheers": ["Kale!", "Bulungi nnyo!"],
   "phrases": { "congrats": "Wayita bulungi", "thanks": "Weebale nnyo!" },
   "settings": { "answers": { "equivalents": { "ŋ": "ng" } }, "speech": { "fallbacks": ["sw"] } },

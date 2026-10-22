@@ -94,5 +94,40 @@
         }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-wedding-plans",
+      "unlockAfter": "u34s3l1",
+      "cast": ["amara", "nakato"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "amara" },
+        { "speaker": "nakato" },
+        { "speaker": "amara" },
+        { "answer": 0 },
+        { "speaker": "nakato" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "speaker": "nakato" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    },
+    {
+      "id": "sw-if-i-were-rich",
+      "unlockAfter": "u34s4l2",
+      "cast": ["nakato", "ssali"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "ssali" },
+        { "speaker": "nakato" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "answer": 0 },
+        { "speaker": "nakato" },
+        { "speaker": "ssali" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    }
   ]
 }

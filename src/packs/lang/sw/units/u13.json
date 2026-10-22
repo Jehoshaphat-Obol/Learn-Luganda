@@ -85,6 +85,24 @@
         { "question": "{@jjajja} ana mbuzi wangapi?", "options": ["Watano", "Wawili", "Kumi"] },
         { "question": "{@emma} aliona nini kwa kweli?", "options": ["Kamba", "Nyoka", "Mbwa"] }
       ]
+    },
+    "sw-safari": {
+      "title": "Safarini",
+      "summary": "Juma anamtembeza Emma mbugani kuona wanyama.",
+      "lines": [
+        "Karibu mbugani, Emma! Angalia kushoto.",
+        "Twiga! Ni mrefu sana!",
+        "Na pale, chini ya mti, kuna simba wawili.",
+        "Simba ni hatari?",
+        "Ndiyo, ni wakali. Tukae ndani ya gari.",
+        "Sawa! Ninapenda wanyama sana."
+      ],
+      "questions": [
+        { "question": "Emma anaona nini kwanza?", "options": ["Twiga", "Simba", "Kiboko"] },
+        { "question": "Kuna simba wangapi?", "options": ["Wawili", "Mmoja", "Watatu"] },
+        { "question": "Wakae wapi?", "options": ["Ndani ya gari", "Karibu na simba", "Majini"] },
+        { "question": "Emma anasemaje “wanyama”?", "options": ["wanyama", "mnyama", "wengi"] }
+      ]
     }
   }
 }

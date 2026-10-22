@@ -59,7 +59,7 @@ test.describe('in Nairobi', () => {
     await expect(page.getByText('Greetings').first()).toBeVisible();
     await page.goto('./#/lesson/u1s1l1?seed=1');
     await expect(page.getByRole('progressbar', { name: 'Lesson progress' })).toBeVisible();
-    await expect(page.getByText(/Habari\?|Nzuri|Asante|Karibu|Sana/).first()).toBeVisible();
+    await expect(page.getByText(/Habari|Nzuri|Asante|Karibu|Sana/).first()).toBeVisible();
   });
 });
 

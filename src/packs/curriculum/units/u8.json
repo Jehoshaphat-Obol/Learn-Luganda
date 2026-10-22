@@ -130,6 +130,40 @@
         { "speaker": "amara" },
         { "speaker": "mukasa" }
       ]
+    },
+    {
+      "id": "sw-at-the-clinic",
+      "unlockAfter": "u8s4l3",
+      "cast": ["emma", "nakato"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "nakato" },
+        { "speaker": "emma" },
+        { "answer": 1 },
+        { "speaker": "nakato" },
+        { "speaker": "emma" },
+        { "answer": 1 },
+        { "speaker": "nakato" },
+        { "answer": 1 },
+        { "speaker": "nakato" },
+        { "answer": 1, "optionsLang": "target" }
+      ]
+    },
+    {
+      "id": "sw-bibi-remedy",
+      "unlockAfter": "u8s4l3",
+      "cast": ["emma", "jjajja"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "jjajja" },
+        { "speaker": "emma" },
+        { "answer": 1 },
+        { "speaker": "jjajja" },
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "emma" }
+      ]
     }
   ]
 }

@@ -80,6 +80,22 @@
         { "question": "{@ssali} anaona nini ufukweni?", "options": ["Takataka", "Simba", "Mashua"] },
         { "question": "{@emma} anasemaje “Tulinde ardhi yetu”?", "options": ["Tutunze ardhi yetu", "Usitupe takataka", "Tupande miti"] }
       ]
+    },
+    "sw-kilimanjaro": {
+      "title": "Kilimanjaro",
+      "summary": "Juma anamwendesha Emma hadi Moshi, ambako Kilimanjaro inaonekana kupitia mawingu.",
+      "lines": [
+        "Juma, angalia! Mlima ule ni nini?",
+        "Ni Kilimanjaro, mlima mrefu zaidi Afrika.",
+        "Kuna theluji juu!",
+        "Ndiyo, lakini kila mwaka kuna kidogo zaidi. Tunapaswa kutunza mazingira.",
+        "Nitapanda mti kesho!"
+      ],
+      "questions": [
+        { "question": "Mlima ni upi?", "options": ["Kilimanjaro", "Mlima Kenya", "Mlima Elgon"] },
+        { "question": "Nini kinatokea kwa theluji?", "options": ["Inapungua kila mwaka", "Inaongezeka kila mwaka", "Ni mpya"] },
+        { "question": "Juma anasemaje “mlima”?", "options": ["mlima", "msitu", "mto"] }
+      ]
     }
   }
 }

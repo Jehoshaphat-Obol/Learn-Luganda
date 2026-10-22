@@ -88,6 +88,40 @@
           "options": ["Timu yetu imeshinda", "Nani ameshinda?", "Ninafurahia mpira"]
         }
       ]
+    },
+    "sw-busy-week": {
+      "title": "Wiki yenye shughuli nyingi",
+      "summary": "Amani na Neema wanatafuta siku ya kukutana.",
+      "lines": [
+        "Neema, tutaonana Jumatatu?",
+        "Hapana, Jumatatu ninasoma.",
+        "Na Jumatano?",
+        "Jumatano ninacheza mpira.",
+        "Ninafanya kazi kila siku, lakini si Jumamosi.",
+        "Sawa! Tutaonana Jumamosi. Ninapenda muziki, twende tukacheze!"
+      ],
+      "questions": [
+        { "question": "Neema anafanya nini Jumatano?", "options": ["Anasoma", "Anacheza mpira", "Anapika"] },
+        { "question": "Amani yuko huru siku gani?", "options": ["Jumatatu", "Jumatano", "Jumamosi"] },
+        { "question": "Neema anasemaje Jumamosi?", "options": ["Jumapili", "Jumamosi", "Jumatatu"] }
+      ]
+    },
+    "sw-big-match": {
+      "title": "Mechi kubwa",
+      "summary": "Juma na Baraka wanaangalia mechi ya mpira kwenye TV kibandani kwa Baraka.",
+      "lines": [
+        "Juma, karibu! Mchezo umeanza.",
+        "Timu yangu itashinda leo!",
+        "Hapana! Timu yangu ni hodari zaidi.",
+        "Goli! Goli! Tumefunga!",
+        "Aah! Usijali, mchezo bado haujaisha.",
+        "Sawa, lakini kama tutashinda, chai ni bure!"
+      ],
+      "questions": [
+        { "question": "Juma anafikiri nini?", "options": ["Timu yake itashinda", "Timu yake itafungwa", "Hana timu"] },
+        { "question": "Nini kilitokea?", "options": ["Timu ya Juma ilifunga goli", "Timu ya Baraka ilifunga goli", "TV iliharibika"] },
+        { "question": "Juma anapigaje kelele “goli”?", "options": ["Goli!", "Timu!", "Mpira!"] }
+      ]
     }
   }
 }

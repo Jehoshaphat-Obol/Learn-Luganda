@@ -26,5 +26,12 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-ramadan-evening": {
+      "1": { "alfajiri": "dawn", "Jua likizama": "when the sun sets" },
+      "4": { "uji": "porridge", "sambusa": "samosas" },
+      "7": { "mwanangu": "my child" }
+    }
   }
 }

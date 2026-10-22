@@ -156,12 +156,13 @@ describe('composing', () => {
   });
 
   it('fills culture slots from the target language, else the base, else the curriculum', () => {
-    const cm = { cast: { nakato: { name: 'Nakato' }, jjajja: { name: 'Jjajja Nalwoga', short: 'Jjajja' } }, places: { city: 'Kampala', island: 'Ssese' } };
-    const sw = { culture: { cast: { jjajja: { name: 'Bibi Mwanaisha', short: 'Bibi' } }, places: { city: 'Dar es Salaam' } } };
+    const cm = { culture: 'lg', cast: { nakato: { name: 'Nakato' }, jjajja: { name: 'Jjajja Nalwoga', short: 'Jjajja' } }, places: { city: 'Kampala', island: 'Ssese' } };
+    const sw = { code: 'sw', culture: { cast: { jjajja: { name: 'Bibi Mwanaisha', short: 'Bibi' } }, places: { city: 'Dar es Salaam' } } };
     const swahili = cultureOf(cm, {}, sw);
     expect(fillCulture('{@nakato} and {@jjajja} ({@jjajja.name}) live in {@city}, not {@island}.', swahili)).toBe('Nakato and Bibi (Bibi Mwanaisha) live in Dar es Salaam, not Ssese.');
     expect(cultureOf(cm, sw, {}).places.city).toBe('Dar es Salaam');
-    expect(cultureOf(cm, sw, { culture: {} }).places.city).toBe('Kampala');
+    expect(cultureOf(cm, sw, { code: 'lg' })).toMatchObject({ code: 'lg', places: { city: 'Kampala' } });
+    expect(cultureOf(cm, { code: 'en' }, sw).code).toBe('sw');
     expect(fillCulture('{@nobody}', swahili)).toBe('{@nobody}');
   });
 

@@ -53,5 +53,23 @@
     "Si sawa!",
     "Anafanana na mama yake."
   ],
-  "dialogues": { "u33s2l3": [{ "line": "Unapenda nini kuliko vyote?", "options": ["Ninapenda muziki kuliko vyote.", "Si sawa.", "Tembo ni mkubwa."] }] }
+  "dialogues": { "u33s2l3": [{ "line": "Unapenda nini kuliko vyote?", "options": ["Ninapenda muziki kuliko vyote.", "Si sawa.", "Tembo ni mkubwa."] }] },
+  "stories": {
+    "sw-who-is-faster": {
+      "title": "Nani ni mwepesi zaidi?",
+      "summary": "Neema na Amani wanabishana kuhusu nani anakimbia kwa kasi zaidi.",
+      "lines": [
+        "Amani, mimi ni mwepesi kuliko wewe!",
+        "Si kweli! Mimi ni mwepesi zaidi.",
+        "Basi, tukimbie mpaka mti ule.",
+        "Moja, mbili, tatu… twende!",
+        "Nimeshinda! Mimi ni mwepesi kuliko wote!"
+      ],
+      "questions": [
+        { "question": "Wanabishana kuhusu nini?", "options": ["Nani ana kasi zaidi", "Nani ni mrefu zaidi", "Nani ni mkubwa zaidi"] },
+        { "question": "Nani alishinda?", "options": ["Neema", "Amani", "Hakuna"] },
+        { "question": "Neema anasemaje “kuliko”?", "options": ["kuliko", "zaidi", "sawa na"] }
+      ]
+    }
+  }
 }

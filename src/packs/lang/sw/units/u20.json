@@ -79,6 +79,24 @@
         { "question": "Mpango wa {@ssali} ni upi?", "options": ["Kwenda ziwani", "Kumtembelea mama yake", "Kusoma nyumbani"] },
         { "question": "{@ssali} anasemaje “Tutakwenda”?", "options": ["Tutaenda", "Tulienda", "Usiende"] }
       ]
+    },
+    "sw-saturday-chores": {
+      "title": "Kazi za Jumamosi",
+      "summary": "Bibi na Neema wanasafisha nyumba siku ya Jumamosi.",
+      "lines": [
+        "Neema, leo ni Jumamosi. Tusafishe nyumba!",
+        "Sawa, bibi. Nianze wapi?",
+        "Kwanza osha vyombo, halafu fagia nje.",
+        "Nimemaliza vyombo! Na sasa?",
+        "Sasa fagia, na funga dirisha. Kuna upepo.",
+        "Kazi nzuri, bibi! Nyumba ni safi kabisa.",
+        "Asante kwa msaada. Mikono mingi, kazi nyepesi."
+      ],
+      "questions": [
+        { "question": "Neema anafanya nini kwanza?", "options": ["Anaosha vyombo", "Anafagia nje", "Anapika"] },
+        { "question": "Kwa nini Neema afunge dirisha?", "options": ["Kuna upepo", "Mvua inanyesha", "Ni giza"] },
+        { "question": "Methali ya Bibi inamaanisha nini?", "options": ["Mikono mingi hurahisisha kazi", "Kazi ni nzito", "Osha mikono"] }
+      ]
     }
   }
 }

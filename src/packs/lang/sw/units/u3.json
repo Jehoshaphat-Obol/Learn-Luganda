@@ -74,5 +74,24 @@
   "dialogues": {
     "u3s2l2": [{ "line": "Unataka nini, mwanangu?", "options": ["Nina njaa.", "Kwaheri.", "Ninauza machungwa."] }],
     "u3s3l2": [{ "line": "Unanunua nini, mama?", "options": ["Ninanunua nanasi.", "Nimelala salama.", "Mimi ni mwanafunzi."] }]
+  },
+  "stories": {
+    "sw-chai-stall": {
+      "title": "Chai kwa Baraka",
+      "summary": "Emma anapata kifungua kinywa kwenye kibanda cha Baraka, Mombasa.",
+      "lines": [
+        "Karibu, Emma! Habari za asubuhi?",
+        "Nzuri, Baraka. Nina njaa sana!",
+        "Unataka chapati na chai?",
+        "Ndiyo! Chai na maziwa na sukari, tafadhali.",
+        "Chakula ni kitamu sana!",
+        "Asante! Karibu tena."
+      ],
+      "questions": [
+        { "question": "Emma anajisikiaje?", "options": ["Ana kiu", "Ana njaa sana", "Amechoka"] },
+        { "question": "Emma anaweka nini kwenye chai?", "options": ["Maziwa na sukari", "Hakuna kitu", "Kahawa"] },
+        { "question": "Emma anasemaje chakula ni kitamu?", "options": ["Ni ghali", "Ni kitamu", "Ni rahisi"] }
+      ]
+    }
   }
 }

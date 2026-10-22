@@ -52,5 +52,15 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-at-the-clinic": { "3": { "Twende": "let’s go" }, "6": { "anasema": "says" } },
+    "sw-bibi-remedy": {
+      "0": { "Ulikuwa": "you were" },
+      "1": { "Lakini": "but" },
+      "3": { "Kunywa": "drink", "tangawizi": "ginger" },
+      "4": { "kidogo tu": "just a little" },
+      "5": { "bora kuliko mali": "better than wealth (a proverb)" }
+    }
   }
 }

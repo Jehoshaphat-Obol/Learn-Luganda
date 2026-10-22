@@ -138,6 +138,24 @@
         { "speaker": "jjajja" },
         { "speaker": "emma" }
       ]
+    },
+    {
+      "id": "sw-safari",
+      "unlockAfter": "u13s4l3",
+      "cast": ["ssali", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "ssali" },
+        { "speaker": "emma" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "ssali" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
     }
   ]
 }

@@ -138,5 +138,42 @@
         }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-neemas-house",
+      "unlockAfter": "u7s4l3",
+      "cast": ["amara", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "amara" },
+        { "speaker": "emma" },
+        { "speaker": "amara" },
+        { "answer": 1 },
+        { "speaker": "emma" },
+        { "speaker": "amara" },
+        { "answer": 1 },
+        { "speaker": "emma" },
+        { "speaker": "amara" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    },
+    {
+      "id": "sw-planting-day",
+      "unlockAfter": "u7s4l5",
+      "cast": ["mukasa", "ssali"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "mukasa" },
+        { "speaker": "ssali" },
+        { "answer": 0 },
+        { "speaker": "mukasa" },
+        { "speaker": "ssali" },
+        { "speaker": "mukasa" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    }
   ]
 }

@@ -54,5 +54,24 @@
     "Ninawafundisha watoto {to}.",
     "Ninawanywesha ng’ombe maji."
   ],
-  "dialogues": { "u31s1l3": [{ "line": "Pole na kazi! Biashara inaendaje?", "options": ["Vizuri. Leo wateja ni wengi.", "Amina.", "Piga ngoma!"] }] }
+  "dialogues": { "u31s1l3": [{ "line": "Pole na kazi! Biashara inaendaje?", "options": ["Vizuri. Leo wateja ni wengi.", "Amina.", "Piga ngoma!"] }] },
+  "stories": {
+    "sw-baraka-business": {
+      "title": "Biashara ya Baraka",
+      "summary": "Baraka anamweleza Juma jinsi kibanda chake cha chai kinavyoendelea.",
+      "lines": [
+        "Baraka, biashara inaendaje?",
+        "Mwezi huu tumepata faida nzuri. Wateja ni wengi!",
+        "Hongera! Na mwezi uliopita?",
+        "Mvua ilileta hasara kidogo. Lakini nina akiba kwenye chama.",
+        "Nifundishe biashara, rafiki!",
+        "Kwanza, nunua chai yangu!"
+      ],
+      "questions": [
+        { "question": "Biashara inaendaje?", "options": ["Vizuri, kuna faida", "Vibaya, kuna hasara", "Imefungwa"] },
+        { "question": "Akiba ya Baraka iko wapi?", "options": ["Kwenye chama chake", "Chini ya kitanda", "Benki"] },
+        { "question": "Juma anasemaje “nifundishe”?", "options": ["Nifundishe", "Nionyeshe", "Rudisha"] }
+      ]
+    }
+  }
 }

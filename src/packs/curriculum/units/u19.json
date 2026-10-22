@@ -130,5 +130,24 @@
         }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-zanzibar-trip",
+      "unlockAfter": "u19s4l4",
+      "cast": ["jjajja", "nakato"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "jjajja" },
+        { "speaker": "nakato" },
+        { "answer": 0 },
+        { "speaker": "jjajja" },
+        { "speaker": "nakato" },
+        { "answer": 0 },
+        { "speaker": "jjajja" },
+        { "speaker": "nakato" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    }
   ]
 }

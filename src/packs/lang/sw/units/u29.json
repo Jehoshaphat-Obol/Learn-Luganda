@@ -82,6 +82,22 @@
           "options": ["watoto wanaocheza ngoma", "watoto wanacheza ngoma", "watoto wanacheza mpira"]
         }
       ]
+    },
+    "sw-concert-night": {
+      "title": "Usiku wa tamasha",
+      "summary": "Neema na Juma wanaenda kwenye tamasha Nairobi.",
+      "lines": [
+        "Neema, umesikia? Kuna tamasha kubwa leo usiku.",
+        "Ndiyo! Mwimbaji ninayempenda zaidi ataimba.",
+        "Na bendi itapiga muziki wa taarab pia.",
+        "Twende tukacheze!",
+        "Sauti ni kubwa sana… lakini ni safi kabisa!"
+      ],
+      "questions": [
+        { "question": "Nani ataimba?", "options": ["Mwimbaji anayempenda Neema", "Juma", "Bibi"] },
+        { "question": "Bendi itapiga nini pia?", "options": ["Taarab", "Rock", "Hakuna"] },
+        { "question": "Neema anasemaje “mwimbaji”?", "options": ["mwimbaji", "mchezaji", "bendi"] }
+      ]
     }
   }
 }

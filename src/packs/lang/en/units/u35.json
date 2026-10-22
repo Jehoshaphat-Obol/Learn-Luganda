@@ -83,6 +83,40 @@
           "options": ["My story ends there.", "Once upon a time, one day…", "There was a man."]
         }
       ]
+    },
+    "sw-long-rains": {
+      "title": "The long rains",
+      "summary": "At the matatu stage, Juma and Emma watch the first big storm of the long rains.",
+      "lines": [
+        "Emma, look at the clouds! The long rains are here.",
+        "Yesterday it rained a lot too.",
+        "Yes. The dry season was long this year.",
+        "Thunder! Let’s go inside.",
+        "Okay. Rain is a blessing for farmers."
+      ],
+      "questions": [
+        { "question": "What was the weather like yesterday?", "options": ["It rained a lot", "It was sunny", "It was windy"] },
+        { "question": "What was long this year?", "options": ["The dry season", "The long rains", "The night"] },
+        { "question": "How does Emma say “there’s thunder”?", "options": ["There’s thunder", "It’s windy", "It’s cloudy"] }
+      ]
+    },
+    "sw-hare-and-crocodile": {
+      "title": "The hare and the crocodile",
+      "summary": "Bibi tells Neema how the clever hare tricked the crocodile.",
+      "lines": [
+        "Story!",
+        "Tell us!",
+        "Once upon a time, there was a clever hare.",
+        "One day, the hare wanted to cross the river, but he saw a crocodile.",
+        "The hare said, “The king wants to count all the crocodiles!”",
+        "The crocodiles lined up, and the hare jumped across their backs to the other side.",
+        "The hare really is clever!"
+      ],
+      "questions": [
+        { "question": "What did the hare want to do?", "options": ["Cross the river", "Eat the crocodile", "Go home"] },
+        { "question": "How did the hare cross?", "options": ["He jumped on the crocodiles", "He swam", "He took a boat"] },
+        { "question": "How does Bibi begin the story?", "options": ["Story!", "Tell us!", "The end!"] }
+      ]
     }
   }
 }

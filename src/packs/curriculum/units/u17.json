@@ -143,5 +143,74 @@
         }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-family-photo",
+      "unlockAfter": "u17s2l1",
+      "cast": ["emma", "amara"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "emma" },
+        { "speaker": "amara" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "amara" },
+        { "answer": 1 },
+        { "speaker": "amara" },
+        { "answer": 1, "optionsLang": "target" },
+        { "speaker": "emma" },
+        { "speaker": "amara" }
+      ]
+    },
+    {
+      "id": "sw-exam-day",
+      "unlockAfter": "u17s4l1",
+      "cast": ["emma", "amara"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "emma" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "speaker": "emma" },
+        { "speaker": "amara" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    },
+    {
+      "id": "sw-no-thanks",
+      "unlockAfter": "u17s4l5",
+      "cast": ["jjajja", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "jjajja" },
+        { "speaker": "emma" },
+        { "answer": 0 },
+        { "speaker": "jjajja" },
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    },
+    {
+      "id": "sw-the-accident",
+      "unlockAfter": "u17s4l5",
+      "cast": ["ssali", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "emma" },
+        { "speaker": "ssali" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "ssali" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    }
   ]
 }
