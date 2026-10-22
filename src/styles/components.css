@@ -854,3 +854,17 @@
     transform: scale(1.12);
   }
 }
+
+/* A small flag beside a language name: text height, softly rounded, with a
+   hairline edge so white stripes don't melt into the page. Decoration only. */
+.flag {
+  display: inline-block;
+  inline-size: auto;
+  block-size: 0.85em;
+  aspect-ratio: 4 / 3;
+  vertical-align: -0.05em;
+  margin-inline-end: 0.5em;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-text) 14%, transparent);
+  object-fit: cover;
+}

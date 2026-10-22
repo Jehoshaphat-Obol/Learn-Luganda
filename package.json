@@ -11,12 +11,14 @@
     "validate": "node scripts/validate-content.js && node scripts/validate-packs.js && npm run validate:example",
     "validate:example": "node scripts/validate-content.js --root docs/packs/example && node scripts/validate-packs.js --root docs/packs/example",
     "e2e": "playwright test",
-    "catalog": "node scripts/language-catalog.js"
+    "catalog": "node scripts/language-catalog.js",
+    "flags": "node scripts/flags.js"
   },
   "devDependencies": {
     "@playwright/test": "^1.56.1",
     "ajv": "^8.20.0",
     "axe-core": "^4.10.2",
+    "flag-icons": "^7.5.0",
     "jsdom": "^29.1.1",
     "vite": "^8.3.5",
     "vitest": "^5.0.5"

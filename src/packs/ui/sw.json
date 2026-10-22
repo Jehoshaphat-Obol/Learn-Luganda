@@ -82,6 +82,10 @@
         "say": "Hakuna shida! Niambie lugha zako ni zipi.",
         "speak": "Ninaongea",
         "learn": "Nataka kujifunza"
+      },
+      "search": {
+        "label": "Tafuta lugha",
+        "none": "Hakuna lugha inayolingana na utafutaji wako."
       }
     },
     "settings": {
