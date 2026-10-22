@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u22",
+  "notes": {
+    "nnyumirwa": "I enjoy, ou I like.",
+    "okudduka": "Running : I like running.",
+    "okuwuga": "Swimming.",
+    "omupiira": "Football ; en Amérique, soccer.",
+    "nzannya": "I play : sans article pour un sport.",
+    "ewangudde": "Won : past de win.",
+    "tumeshinda": "We won!",
+    "tumefungwa": "We lost."
+  },
+  "tips": { "u22s1": "like-ing", "u22s2": "play-football" },
+  "guidebook": {
+    "intro": "Parle de tes loisirs. En anglais, on « joue football » sans article, et on aime « faire » avec -ing.",
+    "tips": [
+      {
+        "id": "play-football",
+        "title": "« I play football »",
+        "body": [
+          "Pas d’article après **play** pour un sport : **I play football, we play cards**. Pour un instrument, avec **the** : **I play the drums.**"
+        ]
+      },
+      {
+        "id": "like-ing",
+        "title": "« I like swimming »",
+        "body": [
+          "Après **like**, **love** et **enjoy**, le verbe prend souvent **-ing** : **I like swimming. I love singing.** **I like to swim** est aussi correct.",
+          "**We won!** (on a gagné), **We lost** (on a perdu)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Les Cranes",
+        "body": ["L’équipe nationale de football de l’Ouganda s’appelle **the Cranes**, d’après la grue couronnée. Les supporters crient **Goal!**"]
+      }
+    ]
+  }
+}

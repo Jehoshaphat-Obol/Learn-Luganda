@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u19",
+  "notes": {
+    "ndidde": "J’ai mangé: avoir + mangé.",
+    "nnywedde": "J’ai bu: the past of boire.",
+    "nsomye": "J’ai lu: the past of lire.",
+    "mmaze": "J’ai fini.",
+    "nnagenda": "Je suis allé: aller uses être. A woman writes allée.",
+    "twagenda": "Nous sommes allés.",
+    "yagenda": "Il est allé; elle est allée.",
+    "nnali": "J’étais: the imperfect of être.",
+    "tayari": "Déjà: j’ai déjà mangé.",
+    "sijala": "Je n’ai pas mangé, or je n’ai pas encore mangé.",
+    "nilifanya": "J’ai fait: the past of faire."
+  },
+  "tips": { "u19s1": "passe-compose", "u19s2": "etre-past", "u19s3": "imparfait" },
+  "guidebook": {
+    "intro": "Talk about what you did. French’s everyday past tense uses “have” or “be” plus a past form of the verb.",
+    "tips": [
+      {
+        "id": "passe-compose",
+        "title": "J’ai mangé: the passé composé",
+        "body": [
+          "Most verbs make the past with **avoir** + past participle: **J’ai mangé** (I ate), **J’ai travaillé** (I worked). **-er** verbs end in **-é**. Common irregular ones: **bu** (drunk), **lu** (read), **fini** (finished), **fait** (done), **vu** (seen).",
+          "The negative wraps **avoir**: **Je n’ai pas mangé.** “Already” and “not yet” sit after it: **J’ai déjà mangé. Je n’ai pas encore mangé.**"
+        ],
+        "table": [
+          ["Verb", "Past", "English"],
+          ["manger", "j’ai mangé", "I ate"],
+          ["boire", "j’ai bu", "I drank"],
+          ["faire", "j’ai fait", "I did"],
+          ["voir", "j’ai vu", "I saw"]
+        ],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "etre-past",
+        "title": "Je suis allé: verbs with être",
+        "body": [
+          "Verbs of coming and going use **être**: **Je suis allé** (I went), **Il est venu**, **Ils sont arrivés**, **Elle est rentrée**. The past form agrees with the subject: **Amara est allée, nous sommes allés.**"
+        ]
+      },
+      {
+        "id": "imparfait",
+        "title": "J’étais: how things were",
+        "body": [
+          "For how things were, use the imperfect: **J’étais étudiant** (I was a student), **C’était il y a longtemps** (it was long ago).",
+          "**Il y a** + time means “ago”: **il y a deux jours** (two days ago)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Hier, avant-hier",
+        "body": [
+          "**Hier** (yesterday), **avant-hier** (the day before yesterday), **la semaine dernière** (last week), **l’année dernière** (last year). In much of francophone Africa you’ll also hear **l’année passée**."
+        ]
+      }
+    ]
+  }
+}

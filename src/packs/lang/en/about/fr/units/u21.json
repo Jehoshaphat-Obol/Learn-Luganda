@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u21",
+  "notes": {
+    "nsanyuse": "Content, contente for a woman.",
+    "nkooye": "Fatigué, fatiguée.",
+    "ntidde": "J’ai peur: avoir, not être.",
+    "nneeraliikirira": "Inquiet, inquiète.",
+    "nnyiize": "Je suis en colère.",
+    "bambi": "Désolé, désolée.",
+    "nsonyiwa": "Pardonne-moi to a friend, pardonnez-moi to anyone else.",
+    "nkusubwa": "Tu me manques: the person missed is the subject.",
+    "usijali": "Ne t’inquiète pas.",
+    "bahati-njema": "Bonne chance !"
+  },
+  "tips": { "u21s1": "feelings-agree", "u21s3": "tu-me-manques", "u21s4": "pardon" },
+  "guidebook": {
+    "intro": "Say how you feel and show you care. Feelings in French agree with whoever feels them.",
+    "tips": [
+      {
+        "id": "feelings-agree",
+        "title": "Je suis content, je suis contente",
+        "body": [
+          "Most feelings use **être** + adjective, which agrees with you: **Je suis content** (a man), **Je suis contente** (a woman). Same with **fatigué(e), surpris(e), désolé(e)**. **Triste** doesn’t change.",
+          "Some use **avoir**: **J’ai peur** (I’m scared). Anger: **Je suis en colère** (I’m angry)."
+        ],
+        "table": [
+          ["Man", "Woman", "English"],
+          ["content", "contente", "happy"],
+          ["fatigué", "fatiguée", "tired"],
+          ["inquiet", "inquiète", "worried"],
+          ["heureux", "heureuse", "happy"]
+        ],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "tu-me-manques",
+        "title": "Tu me manques: “you are missing to me”",
+        "body": [
+          "French turns “I miss you” around: **Tu me manques**, literally “you are lacking to me”. **Je t’aime** means both “I love you” and, with family, “I love you dearly”: **Je t’aime, maman.**"
+        ]
+      },
+      {
+        "id": "pardon",
+        "title": "Désolé, pardon, excusez-moi",
+        "body": [
+          "**Désolé(e)** means sorry. **Pardon** is for small things, like bumping into someone. **Excusez-moi** gets attention or apologises politely.",
+          "For comfort: **Ne pleure pas** (don’t cry), **Ne t’inquiète pas** (don’t worry)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Showing care",
+        "body": [
+          "When someone is ill or grieving, people visit and say **Courage !** It’s also what you say to someone working hard or facing a tough day."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u20",
+  "notes": {
+    "nja": "I am going to…",
+    "tujja": "We are going to…",
+    "ndigenda": "I will go.",
+    "ndyogera": "I will speak.",
+    "wiiki-ejja": "Next week.",
+    "omwaka-ogujja": "Next year.",
+    "nsuubira": "I hope.",
+    "okukyalira": "Visit : I will visit my grandmother."
+  },
+  "tips": { "u20s1": "going-to-will", "u20s4": "would-like" },
+  "guidebook": {
+    "intro": "Parle de tes projets. L’anglais a « going to » pour ce qui est décidé et « will » pour le reste.",
+    "tips": [
+      {
+        "id": "going-to-will",
+        "title": "« Going to » et « will »",
+        "body": [
+          "**I am going to** + verbe, comme le futur proche français : **I am going to eat matooke.** **Will** + verbe pour l’avenir plus lointain ou une promesse : **One day I will speak English well.**",
+          "**Next** remplace prochain : **next week, next year**. **This weekend** : ce week-end."
+        ]
+      },
+      {
+        "id": "would-like",
+        "title": "« I would like »",
+        "body": [
+          "Pour demander poliment : **I would like coffee, please** (je voudrais du café). À l’oral : **I’d like**.",
+          "**I hope to** + verbe : **I hope to see the Kabaka.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "« God willing »",
+        "body": ["Beaucoup d’Ougandais ajoutent **God willing** à leurs projets : **I will see you tomorrow, God willing.**"]
+      }
+    ]
+  }
+}
