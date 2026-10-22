@@ -72,3 +72,17 @@ test('old saved progress follows the course pack, and ids it lacks are archived'
   expect(s.words['no-such-word']).toBeUndefined();
   expect(s.archive.words['no-such-word']).toEqual(stray);
 });
+
+test.describe('with a Swahili browser', () => {
+  test.use({ locale: 'sw-KE' });
+
+  test('the interface is in Swahili, and English is one tap away', async ({ page }) => {
+    await page.goto('./');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'sw');
+    await expect(page.getByRole('link', { name: 'Anza sasa' }).first()).toBeVisible();
+    await openWith(page, savedState(), '#/settings');
+    await expect(page.getByRole('heading', { name: 'Lugha', exact: true })).toBeVisible();
+    await page.locator('[data-ui-lang]').selectOption('en');
+    await expect(page.getByRole('heading', { name: 'Languages' })).toBeVisible();
+  });
+});
