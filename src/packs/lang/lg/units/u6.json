@@ -1,0 +1,68 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u6",
+  "words": {
+    "ekibuga": { "text": "ekibuga" },
+    "ekyalo": { "text": "ekyalo" },
+    "essomero": { "text": "essomero" },
+    "eddwaliro": { "text": "eddwaliro" },
+    "edduuka": { "text": "edduuka" },
+    "ekkanisa": { "text": "ekkanisa" },
+    "omuzigiti": { "text": "omuzigiti" },
+    "awaka": { "text": "awaka" },
+    "ngenda": { "text": "Ŋŋenda", "alts": ["Ngenda", "Nnenda"] },
+    "ogenda-wa": { "text": "Ogenda wa?" },
+    "liri-wa": { "text": "liri wa?" },
+    "ku-ddyo": { "text": "ku ddyo" },
+    "ku-kkono": { "text": "ku kkono" },
+    "butereevu": { "text": "butereevu" },
+    "kyuka": { "text": "Kyuka" },
+    "genda": { "text": "Genda" },
+    "yimirira": { "text": "Yimirira" },
+    "wano": { "text": "wano" },
+    "kumpi": { "text": "kumpi" },
+    "wala": { "text": "wala" },
+    "ntwala": { "text": "Ntwala" }
+  },
+  "sentences": {
+    "s-mbeera-mu-kibuga": { "text": "Mbeera mu kibuga." },
+    "s-jjajja-ku-kyalo": { "text": "Jjajja abeera ku kyalo." },
+    "s-ngenda-ku-ssomero": { "text": "Ŋŋenda ku ssomero.", "alts": ["Ngenda ku ssomero."] },
+    "s-ngenda-awaka": { "text": "Ŋŋenda awaka.", "alts": ["Ngenda awaka."] },
+    "s-ngenda-ku-dduuka": { "text": "Ŋŋenda ku dduuka.", "alts": ["Ngenda ku dduuka."] },
+    "s-ogenda-wa": { "text": "Ogenda wa?" },
+    "s-eddwaliro-liri-wa": { "text": "Eddwaliro liri wa?" },
+    "s-essomero-liri-wa": { "text": "Essomero liri wa?" },
+    "s-kyuka-ku-ddyo": { "text": "Kyuka ku ddyo." },
+    "s-kyuka-ku-kkono": { "text": "Kyuka ku kkono." },
+    "s-genda-butereevu": { "text": "Genda butereevu." },
+    "s-yimirira-wano": { "text": "Yimirira wano." },
+    "s-kiri-kumpi": { "text": "Kiri kumpi." },
+    "s-kiri-wala": { "text": "Kiri wala." },
+    "s-ntwala-mu-kibuga": { "text": "Ntwala mu kibuga." }
+  },
+  "phrases": ["Ogenda wa?", "Ŋŋenda awaka.", "Eddwaliro liri wa?", "Kyuka ku ddyo.", "Genda butereevu.", "Yimirira wano.", "Ntwala mu kibuga."],
+  "dialogues": { "u6s3l2": [{ "line": "Ogenda wa, nnyabo?", "options": ["Ntwala mu kibuga.", "Kiwooma nnyo!", "Ssaawa nnya."] }] },
+  "stories": {
+    "boda-ride": {
+      "lines": [
+        "Ogenda wa, nnyabo?",
+        "Ntwala mu kibuga. Ssente mmeka?",
+        "Nkumi ttaano.",
+        "Kya bbeeyi nnyo! Kendeezaako.",
+        "Kale, nkumi ssatu.",
+        "Ndaga ekkubo.",
+        "Genda butereevu, kyuka ku ddyo.",
+        "Yimirira wano. Weebale nnyo, ssebo!",
+        "Kale, nnyabo. Weraba!"
+      ],
+      "questions": [
+        { "question": "Basalawo ssente mmeka?", "options": ["Nkumi ttaano", "Nkumi ssatu", "Lukumi"] },
+        { "question": "Emma agamba bakyuke ludda wa?", "options": ["Ku kkono", "Ku ddyo"] },
+        { "options": ["Genda butereevu", "Yimirira wano", "Kyuka ku kkono"], "question": "Emma agamba atya Ssali ayimirire?" }
+      ],
+      "title": "Okulinya bodaboda",
+      "summary": "Emma alinya bodaboda okugenda mu kibuga."
+    }
+  }
+}

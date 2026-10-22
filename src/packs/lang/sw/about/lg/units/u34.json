@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u34",
+  "notes": {
+    "bwe": "Kwa hali halisi: Bwe nzuukuka… Ninapoamka… Kama Kiswahili -po- au “wakati”.",
+    "bw-etonnya": "Enkuba bw’etonnya.",
+    "singa": "Kwa hali za kufikirika."
+  },
+  "tips": { "u34s1": "bwe", "u34s2": "singa" },
+  "guidebook": {
+    "intro": "Hali halisi huchukua **bwe** (-po-, wakati, ikiwa). Za kufikirika huchukua **singa** (kama) na hali ya masharti **-andi-** (-nge-).",
+    "tips": [
+      {
+        "id": "bwe",
+        "title": "Wakati: bwe",
+        "body": [
+          "Weka **bwe** kabla ya kitenzi kwa “wakati” au “kila”: **Bwe nzuukuka** (ninapoamka), **Bwe ntuuka** (nikifika). Kiswahili huweka **-po-** au **-ki-** ndani ya kitenzi; Kiganda huweka neno **bwe** mbele. Pamoja na nomino, huja baada ya nomino na kuungana na kitenzi: **Enkuba bw’etonnya** (mvua inaponyesha)."
+        ]
+      },
+      {
+        "id": "singa",
+        "title": "Kama: singa na -andi-",
+        "body": [
+          "Kwa mambo yasiyo kweli, anza na **singa** (kama) na weka matokeo katika hali ya masharti kwa **-andi-**, kama **-nge-** ya Kiswahili: **nnandiguze** (ningenunua), **nnandigenze** (ningeenda), **wandiguze** (ungenunua).",
+          "**Nnandyagadde** (ningependa) ndiyo njia ya adabu zaidi ya kuomba kitu: **Nnandyagadde caayi** (ningependa chai), sawa kabisa na Kiswahili."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Mungu akipenda",
+        "body": [
+          "Ulikutana na **Katonda bw’anaayagala** katika Kipengele 20. Kihalisi ni “Mungu atakapotaka”, imejengwa kwa **bwe**, na hufuata karibu kila ahadi kuhusu siku zijazo, kama **Mungu akipenda** au **Inshallah** Afrika Mashariki."
+        ]
+      }
+    ]
+  }
+}

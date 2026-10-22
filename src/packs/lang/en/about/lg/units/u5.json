@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u5",
+  "notes": {
+    "enkya": "Enkya is also “morning”. Context tells you which.",
+    "jjo": "Jjo can also mean the day after tomorrow, or the day before yesterday; context decides.",
+    "ssaawa-emu": "Ugandan time starts at 7: “hour one” is 7 o’clock.",
+    "s-buli-lunaku": "buli = every"
+  },
+  "tips": { "u5s2": "days", "u5s3": "ugandan-time" },
+  "guidebook": {
+    "intro": "Time words are short and useful. The big surprise is the clock: Ugandan time starts counting at sunrise.",
+    "tips": [
+      {
+        "id": "days",
+        "title": "Days of the week",
+        "body": [
+          "Monday is **Bbalaza** and Sunday **Ssabbiiti**. Tuesday to Saturday count up from Monday: **Lwakubiri** (day two), **Lwakusatu** (three), **Lwakuna** (four), **Lwakutaano** (five), **Lwamukaaga** (six). Use **ku** for “on”: **ku Lwakutaano**, on Friday."
+        ]
+      },
+      {
+        "id": "ugandan-time",
+        "title": "Ugandan time",
+        "body": [
+          "The Luganda clock starts at 7 am, around sunrise. **Ssaawa emu** (hour one) is 7 o’clock, **ssaawa bbiri** is 8, and **ssaawa nnya** is 10. Noon and midnight are **ssaawa mukaaga**.",
+          "Quick trick: add six to the English time (or subtract six) to get the Luganda hour. Add **ku makya** (morning), **olweggulo** (afternoon) or **ekiro** (night) to be clear."
+        ],
+        "table": [["Luganda", "Clock"], ["ssaawa emu", "7:00"], ["ssaawa nnya", "10:00"], ["ssaawa mukaaga", "12:00"], ["ssaawa kkumi", "4:00 pm"]]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Two kinds of jjo",
+        "body": [
+          "**Jjo** means yesterday, but it can also point to the day after tomorrow or the day before yesterday. Listen for the verb tense, or ask to be sure."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jehoshaphat-obol.github.io/Learn-Luganda/schema/lang-unit.schema.json",
+  "title": "Shared catalog: a unit in one language",
+  "description": "src/packs/lang/<code>/units/uN.json. The unit's lesson text in <code>, keyed by the curriculum's ids. The same file serves courses that teach <code> and courses taught in it. `{to}` and `{from}` name the course's languages.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "words": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "text"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "description": "In a word, a trailing “(…)” is a hint shown only when the word is the meaning: it's left out when the word is being learned."
+          },
+          "alts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Other accepted answers."
+          },
+          "audio": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sentences": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "text"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "description": "In a word, a trailing “(…)” is a hint shown only when the word is the meaning: it's left out when the word is being learned."
+          },
+          "alts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Other accepted answers."
+          },
+          "audio": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "phrases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Guidebook phrases, in the curriculum's order."
+    },
+    "dialogues": {
+      "type": "object",
+      "description": "By lesson id, in the curriculum's order.",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "line": {
+              "type": "string"
+            },
+            "options": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Replies to choose from, when the dialogue teaches this language."
+            }
+          }
+        }
+      }
+    },
+    "stories": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "lines": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "The story's lines in order."
+          },
+          "questions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "question": {
+                  "type": "string"
+                },
+                "options": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

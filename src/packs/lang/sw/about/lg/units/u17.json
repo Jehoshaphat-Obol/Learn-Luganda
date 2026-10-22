@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u17",
+  "notes": {
+    "saagala": "si- + yagala, kama Kiswahili si- + taka.",
+    "si-kyange": "Kwa vitu vya eki-. si = si, sawa na Kiswahili!",
+    "s17-sinywa-amata": "Baada ya kitenzi hasi, jina kwa kawaida hudondosha irabu yake ya kwanza."
+  },
+  "tips": { "u17s1": "negatives" },
+  "guidebook": {
+    "intro": "Kukataa kwa adabu ni hatua kubwa kuelekea mazungumzo halisi. Kiganda hukifanya kitenzi kuwa hasi kwa kiambishi kidogo, kama Kiswahili, na hata kiambishi cha kwanza ni kilekile: **si-**.",
+    "tips": [
+      {
+        "id": "negatives",
+        "title": "si-, to-, ta-",
+        "body": [
+          "Weka **si-** mbele kwa “mimi si-”, sawa kabisa na Kiswahili: **simanyi** (sijui), **sirina** (sina), **sigenda** (siendi). Kitenzi kikianza na irabu, sauti huungana: **si + yagala** huwa **saagala** (sitaki).",
+          "Kwa “wewe hu-” tumia **to-** (**toyagala**, hutaki), kwa “yeye ha-” tumia **ta-** (**tagenda**, haendi), na kwa “sisi hatu-” tumia **tetu-** (**tetulina**, hatuna). Linganisha **ta-** na **ha-** ya Kiswahili. Amri yenye **to-** maana yake “usi-!”: **Togenda!** (usiende!), **Totya!** (usiogope!).",
+          "Baada ya kitenzi hasi, jina kwa kawaida hudondosha irabu yake ya kwanza: **Sinywa mata** (si *amata*), **Tewali mazzi** (hakuna maji)."
+        ],
+        "table": [
+          ["", "Ndiyo", "Hapana"],
+          ["mimi", "njagala", "saagala (sitaki)"],
+          ["wewe", "oyagala", "toyagala (hutaki)"],
+          ["yeye", "ayagala", "tayagala (hataki)"],
+          ["sisi", "twagala", "tetwagala (hatutaki)"],
+          ["kuna", "waliwo", "tewali (hakuna)"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Hapana ya upole",
+        "body": [
+          "**Nedda** (hapana) peke yake inaweza kuonekana kali. Watu hulainisha kukataa kwa shukrani na sababu: **Weebale, naye saagala kaawa** (asante, lakini sitaki kahawa). Kukataa chakula kabisa kunaweza kuonekana si kirafiki, kwa hiyo kuchukua kidogo ni wema."
+        ]
+      }
+    ]
+  }
+}

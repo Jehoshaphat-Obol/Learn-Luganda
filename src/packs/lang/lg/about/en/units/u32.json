@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u32",
+  "tips": { "u32s1": "in-on-at", "u32s3": "lets" },
+  "guidebook": {
+    "intro": "Yogera ku nnyanja, emigga, ebibira n’ensozi, n’okukuuma ensi yaffe.",
+    "tips": [
+      {
+        "id": "in-on-at",
+        "title": "In, on, at",
+        "body": [
+          "**Mu** kitera okuba **in**: **in the forest**, **in the lake**. **Ku** kitera okuba **on**: **on the hill**. Ku bifo: **in Jinja** oba **at Jinja**.",
+          "**From** kiraga gye kiva: **Fish come from the lake.**"
+        ]
+      },
+      {
+        "id": "lets",
+        "title": "“Let’s …”",
+        "body": [
+          "Mu Luganda **tu-** ku ntandikwa n’**-e** ku nkomerero: **tusimbe**, **tukuume**. Mu Lungereza **Let’s**: **Let’s plant trees! Let’s protect our land.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Ensozi omusanvu",
+        "body": [
+          "**Kampala was built on seven hills**: Mengo, Kasubi, Kibuli, Namirembe, Lubaga, Nsambya ne Kampala yennyini. Ate e Jinja: **the source of the Nile**."
+        ]
+      }
+    ]
+  }
+}

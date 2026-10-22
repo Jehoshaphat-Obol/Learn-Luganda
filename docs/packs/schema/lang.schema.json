@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jehoshaphat-obol.github.io/Learn-Luganda/schema/lang.schema.json",
+  "title": "Shared catalog: a language",
+  "description": "src/packs/lang/<code>/course.json. Everything in <code> that frames a course, whichever side of it <code> is on. As the learner's language: the course title and the path's headings (sections, units, skills, cast roles, in the same shape as course labels). As the language learned: cheers, set phrases and settings. Lesson text is in units/uN.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "formatVersion",
+    "code"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "formatVersion": {
+      "const": 2
+    },
+    "code": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}$"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "reviewed"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "courseTitle": {
+      "type": "string",
+      "minLength": 1,
+      "description": "The course title in this language; {to} is the language learned."
+    },
+    "languageNames": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z]{2,3}$"
+      },
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "type": "object",
+            "required": [
+              "name"
+            ],
+            "additionalProperties": {
+              "type": "string"
+            },
+            "properties": {
+              "name": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        ]
+      },
+      "description": "How this language names languages, for {to} and {from} in text. An object gives other forms: {to.mu} picks `mu`."
+    },
+    "sections": {
+      "$ref": "course-labels.schema.json#/properties/sections"
+    },
+    "units": {
+      "$ref": "course-labels.schema.json#/properties/units"
+    },
+    "skills": {
+      "$ref": "course-labels.schema.json#/properties/skills"
+    },
+    "cast": {
+      "$ref": "course-labels.schema.json#/properties/cast"
+    },
+    "cheers": {
+      "$ref": "course.schema.json#/properties/cheers"
+    },
+    "phrases": {
+      "$ref": "course.schema.json#/properties/phrases"
+    },
+    "settings": {
+      "$ref": "settings.schema.json"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u4",
+  "words": {
+    "kkumi-na-emu": { "text": "kumi na moja", "alts": ["11"] },
+    "kkumi-na-bbiri": { "text": "kumi na mbili", "alts": ["12"] },
+    "kkumi-na-ttaano": { "text": "kumi na tano", "alts": ["15"] },
+    "abiri": { "text": "ishirini", "alts": ["20"] },
+    "asatu": { "text": "thelathini", "alts": ["30"] },
+    "ataano": { "text": "hamsini", "alts": ["50"] },
+    "kikumi": { "text": "mia moja", "alts": ["mia", "100"] },
+    "bikumi-bibiri": { "text": "mia mbili", "alts": ["200"] },
+    "bikumi-bitaano": { "text": "mia tano", "alts": ["500"] },
+    "lukumi": { "text": "elfu moja", "alts": ["elfu", "1000", "1,000"] },
+    "nkumi-bbiri": { "text": "elfu mbili", "alts": ["2000", "2,000"] },
+    "nkumi-ttaano": { "text": "elfu tano", "alts": ["5000", "5,000"] },
+    "omutwalo": { "text": "elfu kumi", "alts": ["10000", "10,000"] },
+    "ssente": { "text": "pesa", "alts": ["fedha", "hela"] },
+    "ssiringi": { "text": "shilingi" },
+    "mmeka": { "text": "kiasi gani", "alts": ["ngapi", "bei gani"] },
+    "kino": { "text": "hiki", "alts": ["kitu hiki"] },
+    "bbeeyi": { "text": "bei", "alts": ["gharama"] },
+    "kya-bbeeyi": { "text": "ghali", "alts": ["ni ghali", "ghali sana"] },
+    "kya-buseere": { "text": "rahisi", "alts": ["ni rahisi", "bei nafuu", "nafuu"] },
+    "kendeezaako": { "text": "Punguza bei kidogo", "alts": ["punguza kidogo", "punguza bei", "nipunguzie"] },
+    "kale-nkitwala-w": { "text": "Sawa, nitachukua", "alts": ["haya, nitachukua", "sawa, nitanunua", "sawa, nakichukua"] }
+  },
+  "sentences": {
+    "s-ebitabo-kkumi-na-bbiri": { "text": "Vitabu kumi na viwili.", "alts": ["Vitabu 12."] },
+    "s-abaana-abiri": { "text": "Watoto ishirini.", "alts": ["Watoto 20."] },
+    "s-ssiringi-kikumi": { "text": "Shilingi mia moja.", "alts": ["Shilingi 100.", "Shilingi mia."] },
+    "s-ssiringi-bikumi-bitaano": { "text": "Shilingi mia tano.", "alts": ["Shilingi 500."] },
+    "s-ssiringi-lukumi": { "text": "Shilingi elfu moja.", "alts": ["Shilingi 1000.", "Shilingi elfu."] },
+    "s-ssente-nkumi-ttaano": { "text": "Shilingi elfu tano.", "alts": ["Shilingi 5000.", "Elfu tano."] },
+    "s-omutwalo-gumu": { "text": "Elfu kumi.", "alts": ["10,000.", "Shilingi elfu kumi."] },
+    "s-ssente-mmeka": { "text": "Pesa kiasi gani?", "alts": ["Ni pesa ngapi?", "Ni bei gani?", "Shilingi ngapi?"] },
+    "s-kino-ssente-mmeka": { "text": "Hiki ni bei gani?", "alts": ["Hiki ni shilingi ngapi?", "Bei ya hiki ni gani?"] },
+    "s-kya-bbeeyi-nnyo": { "text": "Ni ghali sana!", "alts": ["Ghali sana!"] },
+    "s-kendeezaako-ssebo": { "text": "Punguza bei kidogo, bwana.", "alts": ["Punguza kidogo, bwana.", "Nipunguzie bei, bwana."] },
+    "s-kale-nkitwala": { "text": "Sawa, nitachukua.", "alts": ["Haya, nitachukua.", "Sawa, nitanunua."] }
+  },
+  "phrases": [
+    "Pesa kiasi gani?",
+    "Hiki ni bei gani?",
+    "Shilingi elfu moja.",
+    "Shilingi elfu tano.",
+    "Ni ghali sana!",
+    "Punguza bei kidogo, bwana.",
+    "Sawa, nitachukua."
+  ],
+  "dialogues": { "u4s3l2": [{ "line": "Shilingi elfu tano." }] }
+}

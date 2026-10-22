@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u36",
+  "notes": {
+    "prov-kamu-kamu": "Small steps add up. Like learning a language!",
+    "prov-akwata-mpola": "Patience wins.",
+    "prov-agali-awamu": "Unity is strength.",
+    "prov-olugalo-olumu": "You need others to get things done.",
+    "prov-atannayitaayita": "Travel and you’ll see the world is wider."
+  },
+  "tips": { "u36s1": "engero", "u36s3": "using-proverbs" },
+  "glosses": { "jjajjas-advice": { "3": { "gumiikiriza": "be patient" }, "5": { "nzekka": "alone, by myself" } } },
+  "guidebook": {
+    "intro": "Proverbs, **engero**, are the spice of Ganda speech. Elders use them to advise, to settle arguments and to make a point gracefully.",
+    "tips": [
+      {
+        "id": "engero",
+        "title": "Reading a proverb",
+        "body": [
+          "Proverbs use images from daily life: bundles of sticks, teeth, fingers, cooking. Their meaning is never literal. **Kamu kamu gwe muganda** is about patience: a bundle of firewood is gathered one stick at a time.",
+          "**Agali awamu ge galuma ennyama** and **Olugalo olumu terutta nda** both praise working together."
+        ]
+      },
+      {
+        "id": "using-proverbs",
+        "title": "Bringing one in",
+        "body": [
+          "Introduce a proverb with **Nga bwe bagamba** (as they say). To ask about one you hear, say **Olugero luno lutegeeza ki?** (What does this proverb mean?). Using a proverb well will impress any Muganda."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Proverbs at ceremonies",
+        "body": ["At a kwanjula or a clan meeting, spokespeople compete with proverbs. A well-placed proverb can win the crowd and settle a point."]
+      }
+    ]
+  }
+}

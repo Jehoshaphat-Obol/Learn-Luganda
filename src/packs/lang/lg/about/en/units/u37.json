@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u37",
+  "tips": { "u37s1": "have-you-heard", "u37s2": "says-that", "u37s3": "i-think" },
+  "guidebook": {
+    "intro": "Goberera amawulire, yogera mu lukiiko, era owe endowooza yo mu Lungereza.",
+    "tips": [
+      {
+        "id": "have-you-heard",
+        "title": "Have you heard?",
+        "body": ["**Owulidde amawulire?** kiba **Have you heard the news?** Okuddamu: **Yes, I heard it on the radio.** (**hear → heard**)."]
+      },
+      {
+        "id": "says-that",
+        "title": "He says that …",
+        "body": [
+          "**Agamba nti** kiba **he says that**: **He says that rain is coming.** **They say that the new road is finished.** Abantu batera okuleka **that**: **They say the road is finished.**"
+        ]
+      },
+      {
+        "id": "i-think",
+        "title": "Endowooza",
+        "body": [
+          "**I think that it is good.** **I agree with you.** **I don’t agree.** Okubuuza endowooza: **What is your opinion?** oba **What do you think?**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Leediyo",
+        "body": [
+          "Mu Uganda abantu bangi bawulira amawulire ku leediyo era bakubira essimu ku pulogulaamu. Mu Lungereza: **a talk show**, **a caller**, **the presenter**."
+        ]
+      }
+    ]
+  }
+}

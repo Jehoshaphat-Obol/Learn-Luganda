@@ -1,0 +1,71 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u24",
+  "words": {
+    "okufumba": { "text": "kupika", "alts": ["upishi"] },
+    "entamu": { "text": "sufuria", "alts": ["chungu", "nyungu"] },
+    "omuliro": { "text": "moto", "alts": ["jiko", "meko"] },
+    "amafuta": { "text": "mafuta", "alts": ["mafuta ya kupikia"] },
+    "obutungulu": { "text": "vitunguu", "alts": ["kitunguu"] },
+    "ennyaanya": { "text": "nyanya", "alts": ["tungule"] },
+    "sooka": { "text": "Kwanza", "alts": ["anza na", "kwanza kabisa"] },
+    "sala": { "text": "Kata", "alts": ["katakata", "chanja"] },
+    "teeka": { "text": "Weka", "alts": ["tia"] },
+    "gattako": { "text": "Ongeza", "alts": ["ongeza kidogo", "tia kidogo"] },
+    "okusiika": { "text": "kukaanga", "alts": ["kukaanga kwa mafuta"] },
+    "endagala": { "text": "majani ya mgomba", "alts": ["jani la mgomba", "majani ya ndizi", "majani"] },
+    "okusiba": { "text": "kufunga", "alts": ["kufunika", "kuzungushia"] },
+    "tulye": { "text": "Tule", "alts": ["haya tule", "karibu tule"] },
+    "nkkuse": { "text": "Nimeshiba", "alts": ["nimetosheka", "nimeshiba sana"] },
+    "webale-okufumba": { "text": "Asante kwa kupika", "alts": ["asante kwa chakula", "asante kwa mapishi"] }
+  },
+  "sentences": {
+    "s24-njagala-okufumba": { "text": "Ninataka kupika chakula.", "alts": ["Nataka kupika chakula.", "Ninapenda kupika chakula."] },
+    "s24-teeka-entamu": { "text": "Weka sufuria motoni.", "alts": ["Weka sufuria jikoni.", "Tia sufuria motoni."] },
+    "s24-gattako-amafuta": { "text": "Ongeza mafuta.", "alts": ["Tia mafuta."] },
+    "s24-sooka-sala": { "text": "Kwanza kata vitunguu.", "alts": ["Kwanza katakata vitunguu."] },
+    "s24-oluvannyuma-ennyaanya": { "text": "Kisha ongeza nyanya.", "alts": ["Halafu ongeza nyanya.", "Baadaye ongeza nyanya."] },
+    "s24-gattako-omunnyo": { "text": "Ongeza chumvi kidogo.", "alts": ["Tia chumvi kidogo."] },
+    "s24-okusiika": { "text": "Kaanga vitunguu kwa mafuta.", "alts": ["Kaanga vitunguu katika mafuta."] },
+    "s24-okusiba": {
+      "text": "Tunafunga matooke kwa majani ya mgomba.",
+      "alts": ["Tunafunga matooke katika majani ya mgomba.", "Tunafunga matooke kwa majani ya ndizi."]
+    },
+    "s24-tulye": { "text": "Chakula kiko tayari. Tule!", "alts": ["Chakula kimeiva. Tule!", "Chakula kiko tayari. Karibu tule!"] },
+    "s24-mpa-ku-mmere": { "text": "Nipe chakula kidogo, mama.", "alts": ["Nipatie chakula kidogo, mama."] },
+    "s24-nkkuse": { "text": "Nimeshiba, asante sana.", "alts": ["Nimetosheka, asante sana."] },
+    "s24-webale-okufumba": { "text": "Asante kwa kupika, Bibi!", "alts": ["Asante kwa chakula, Bibi!"] }
+  },
+  "phrases": [
+    "Weka sufuria motoni.",
+    "Kwanza kata vitunguu.",
+    "Kisha ongeza nyanya.",
+    "Tunafunga matooke kwa majani ya mgomba.",
+    "Chakula kiko tayari. Tule!",
+    "Nimeshiba, asante sana.",
+    "Asante kwa kupika!"
+  ],
+  "dialogues": { "u24s3l3": [{ "line": "Unataka chakula zaidi?" }] },
+  "stories": {
+    "cooking-luwombo": {
+      "title": "Kupika na Jjajja",
+      "summary": "Amara anajifunza kupika luwombo ya kuku.",
+      "lines": [
+        "Leo tutapika luwombo ya kuku.",
+        "Sawa! Nifanye nini?",
+        "Kwanza kata vitunguu na nyanya.",
+        "Nimemaliza! Sasa nini?",
+        "Weka kuku na mchuzi ndani ya majani ya mgomba, na uyafunge vizuri.",
+        "Kisha tunaweka sufuria motoni, kwa saa mbili.",
+        "Saa mbili? Nina njaa sana!",
+        "Haha! Chakula kiko tayari. Tule!",
+        "Ni kitamu sana! Asante kwa kupika, Bibi."
+      ],
+      "questions": [
+        { "question": "Amara anafanya nini kwanza?", "options": ["Anakata vitunguu na nyanya", "Anawasha moto", "Anaosha sufuria"] },
+        { "question": "Luwombo inapikwa kwa muda gani?", "options": ["Dakika kumi", "Saa mbili", "Usiku mzima"] },
+        { "question": "Amara anasema nini baada ya mlo?" }
+      ]
+    }
+  }
+}

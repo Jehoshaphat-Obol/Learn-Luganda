@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "description": "Oluganda lwe lulimi lwa Buganda wakati mu Uganda, era lwogerwa abantu bukadde na bukadde mu Kampala n’okumpi nayo.",
+  "landing": {
+    "hello": "Oli otya?",
+    "thanks": "Weebale",
+    "place": "Uganda",
+    "word": "okuyiga — ekikolwa: okufuna amagezi amapya",
+    "words": [
+      ["Oli otya?", "How are you?"],
+      ["Gyendi", "I’m fine"],
+      ["Weebale", "Thank you"],
+      ["Kale", "Okay"],
+      ["Mukwano", "Friend"],
+      ["Amazzi", "Water"],
+      ["Emmere", "Food"],
+      ["Ssebo", "Sir"],
+      ["Nnyabo", "Madam"],
+      ["Webale kujja", "Welcome"]
+    ],
+    "why": {
+      "title": "Olulimi lw’**enguudo za Kampala.**",
+      "text": "Oluganda lwogerwa abantu bukadde na bukadde wakati mu Uganda, era lwe lulimi olusinga okwogerwa mu Kampala. Luyige oyogere n’ab’omu maka, ofune emikwano mu katale, era owulire ng’oli waka ku lugendo lwo oluddako.",
+      "cards": [
+        { "title": "Eri ab’omu maka", "text": "Ddayo eri bajjajja era oyigirize abaana olulimi." },
+        { "title": "Eri abatambuze", "text": "Lamusa, sala ebbeeyi era otambule n’obwesige." },
+        { "title": "Eri abaagala okumanya", "text": "Zuula ebika by’amannya, amaloboozi n’engero." }
+      ]
+    },
+    "sample": {
+      "prompt": "Kiki ekitegeeza “thank you” mu Lungereza?",
+      "options": ["Oli otya?", "Weebale", "Nedda"],
+      "answer": "Weebale",
+      "explain": "_Weebale_ kye kitegeeza “thank you”."
+    },
+    "start": { "word": "Tandika!", "caption": "tandika — ekikolwa: okusooka" },
+    "farewell": "Weebale nnyo.",
+    "audience": "Abatandika okuva ku ntandikwa, ab’omu maka ababeera ebweru abaagala okuddayo eri olulimi, n’abagenyi abajja mu Uganda abaagala ebisingawo ku “oli otya”.",
+    "first": "Okulamusa, okweyanjula n’ennamba, oluvannyuma ab’omu maka, emmere, akatale, obudde, ebifo n’ebirala, ekitundu ku kitundu."
+  }
+}

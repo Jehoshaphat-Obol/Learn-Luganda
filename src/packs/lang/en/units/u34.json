@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u34",
+  "words": {
+    "bwe": { "text": "when", "alts": ["if", "whenever"] },
+    "bwe-nzuukuka": { "text": "when I wake up", "alts": ["whenever i wake up", "if i wake up"] },
+    "bw-etonnya": { "text": "when it rains", "alts": ["if it rains", "whenever it rains"] },
+    "singa": { "text": "if", "alts": ["if only", "suppose"] },
+    "nnandiguze": { "text": "I would buy", "alts": ["i would have bought", "i’d buy"] },
+    "nnandigenze": { "text": "I would go", "alts": ["i would have gone", "i’d go"] },
+    "nnandyagadde": { "text": "I would like", "alts": ["i’d like", "i would love", "i would want"] },
+    "ka-tulabe": { "text": "Let’s see", "alts": ["let us see", "we’ll see"] },
+    "katonda-bwanaayagala": { "text": "God willing", "alts": ["if god wills", "if god wants"] }
+  },
+  "sentences": {
+    "s34-bwe-nzuukuka": { "text": "When I wake up, I drink tea.", "alts": ["When I wake up I drink tea.", "Whenever I wake up, I drink tea."] },
+    "s34-bwe-ntuuka": { "text": "When I arrive, I will call you.", "alts": ["When I arrive I will call you.", "When I get there, I’ll call you."] },
+    "s34-enkuba-bwetonnya": { "text": "When it rains, I don’t go.", "alts": ["If it rains, I don’t go.", "When it rains I do not go."] },
+    "s34-singa-nnina-ssente": { "text": "If I had money, I would buy a car.", "alts": ["If I had money I would buy a car.", "If I had money, I’d buy a car."] },
+    "s34-singa-tewali-nkuba": {
+      "text": "If there were no rain, I would go.",
+      "alts": ["If it weren’t raining, I would go.", "If there was no rain, I would have gone."]
+    },
+    "s34-nnandyagadde-caayi": { "text": "I would like tea, please.", "alts": ["I’d like tea, please.", "I would like some tea, please."] },
+    "s34-nnandyagadde-okugenda": { "text": "I would like to go to Jinja.", "alts": ["I’d like to go to Jinja.", "I would love to go to Jinja."] },
+    "s34-ka-tulabe": { "text": "Let’s see tomorrow.", "alts": ["We’ll see tomorrow.", "Let us see tomorrow."] },
+    "s34-katonda-bwanaayagala": { "text": "I will come, God willing.", "alts": ["I’ll come, God willing."] }
+  },
+  "phrases": [
+    "When I wake up, I drink tea.",
+    "When it rains, I don’t go.",
+    "If I had money, I would buy a car.",
+    "I would like tea, please.",
+    "Let’s see tomorrow.",
+    "I will come, God willing."
+  ],
+  "dialogues": {
+    "u34s2l3": [
+      {
+        "line": "If you had a lot of money, what would you buy?",
+        "options": ["I would buy a big house.", "When I wake up, I drink tea.", "Let’s see the forest."]
+      }
+    ],
+    "u34s3l3": [
+      {
+        "line": "Are you coming to the ceremony tomorrow?",
+        "options": ["I will come, God willing.", "I would buy a car.", "She looks like her mother."]
+      }
+    ]
+  }
+}

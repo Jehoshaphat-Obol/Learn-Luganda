@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u13",
+  "notes": {
+    "ente": "Mmoja au wengi: majina ya n- mara nyingi yanaonekana sawa katika wingi, kama Kiswahili ng’ombe.",
+    "zirya": "Kwa wanyama wa n-: ente zirya, ng’ombe wanakula.",
+    "engaali": "Ndege wa taifa wa Uganda, aliye kwenye bendera.",
+    "ebuuka": "Kwa majina ya n-. Okubuuka, kuruka (kwa mabawa)."
+  },
+  "tips": { "u13s1": "same-plural" },
+  "glosses": {
+    "village-farm": {
+      "1": { "biri": "wako (kwa majina ya ebi-)" },
+      "2": { "Laba": "tazama" },
+      "8": { "Ogwo": "huo, hiyo (kwa majina ya mu-)", "muguwa": "kamba" },
+      "11": { "waggulu": "juu" }
+    }
+  },
+  "guidebook": {
+    "intro": "Majina mengi ya wanyama ni ya ngeli ya n-, kama Kiswahili (mbuzi, ng’ombe, simba), kwa hiyo makubaliano uliyojifunza kwa nguo yanafanya kazi kwa wanyama pia.",
+    "tips": [
+      {
+        "id": "same-plural",
+        "title": "Ng’ombe mmoja, ng’ombe wengi",
+        "body": [
+          "Majina mengi ya n- ni sawa katika umoja na wingi, kama Kiswahili: **ente** ni ng’ombe mmoja au kundi. Maneno yanayozunguka jina hukuambia ipi. **Ente erya** ni “ng’ombe anakula”, **ente zirya** ni “ng’ombe wanakula”. Angalia: Kiganda hutumia **e-/zi-** (kama Kiswahili i-/zi- kwa vitu), si a-/wa- kama Kiswahili kwa wanyama.",
+          "**Waliwo** maana yake “kuna”, kwa jina lolote: **Waliwo empologoma?** (Kuna simba?). Linganisha **wa-** na **pa-** ya Kiswahili “pana”."
+        ],
+        "table": [
+          ["", "Mmoja", "Wengi"],
+          ["anakula", "ente erya", "ente zirya"],
+          ["yuko hapa / wako hapa", "embwa eri wano", "embwa ziri wano"],
+          ["-angu", "embuzi yange", "embuzi zange"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Korongo",
+        "body": [
+          "Korongo mwenye taji, **engaali**, yuko kwenye bendera na nembo ya taifa ya Uganda. Huishi na mwenzi mmoja maisha yote na hucheza dansi kumvutia, ndiyo maana ni alama ya taifa. (Pia ndiye aliyemhamasisha kiongozi wetu wa programu.)"
+        ]
+      },
+      {
+        "title": "Ng’ombe ni mali",
+        "body": [
+          "Ng’ombe kwa muda mrefu wamekuwa ishara ya mali na hadhi, kama ilivyo kwa jamii nyingi za Afrika Mashariki. Wanaonekana kwenye mahari, methali na alama nyingi za koo utakazokutana nazo katika Sehemu ya 4."
+        ]
+      }
+    ]
+  }
+}

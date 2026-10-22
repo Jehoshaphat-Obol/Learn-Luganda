@@ -1,0 +1,121 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u1",
+  "words": {
+    "oli-otya": { "text": "Habari yako?", "alts": ["u hali gani", "hujambo", "habari", "mambo"] },
+    "gyendi": { "text": "Nzuri", "alts": ["salama", "njema", "sijambo", "niko salama", "niko poa"] },
+    "bulungi": { "text": "Vizuri", "alts": ["nzuri", "sawa", "safi"] },
+    "weebale": { "text": "Asante", "alts": ["ahsante"] },
+    "nnyo": { "text": "sana", "alts": ["mno"] },
+    "kale": { "text": "Sawa", "alts": ["haya", "sawasawa"] },
+    "ssebo": { "text": "bwana", "alts": ["mzee", "bwana mkubwa"] },
+    "nnyabo": { "text": "mama", "alts": ["bibi"] },
+    "yee": { "text": "Ndiyo", "alts": ["ndio"] },
+    "nedda": { "text": "Hapana", "alts": ["la"] },
+    "wasuze-otya": { "text": "Habari za asubuhi", "alts": ["umeamkaje", "ulilalaje", "habari ya asubuhi", "asubuhi njema"] },
+    "nsuze-bulungi": { "text": "Nimelala salama", "alts": ["nimelala vizuri", "nimeamka salama", "salama"] },
+    "osiibye-otya": { "text": "Habari za mchana", "alts": ["habari za jioni", "umeshindaje", "umeshindaje leo", "habari ya mchana"] },
+    "gyebale-ko": { "text": "Pole na kazi", "alts": ["pole kwa kazi", "hongera kwa kazi", "kazi nzuri"] },
+    "weraba": { "text": "Kwaheri", "alts": ["kwa heri", "baibai"] },
+    "tunaalabagana": { "text": "Tutaonana", "alts": ["tutaonana baadaye", "tutaonana tena", "baadaye"] },
+    "nze": { "text": "Mimi", "alts": ["mimi ni"] },
+    "ggwe": { "text": "Wewe" },
+    "erinnya": { "text": "jina" },
+    "lyange": { "text": "langu" },
+    "lyo": { "text": "lako" },
+    "ani": { "text": "nani", "alts": ["gani"] },
+    "mbeera": { "text": "Ninaishi", "alts": ["naishi", "ninakaa", "nakaa"] },
+    "ova-wa": { "text": "Unatoka wapi?", "alts": ["watoka wapi", "wewe ni wa wapi", "unatokea wapi"] },
+    "nva": { "text": "Ninatoka", "alts": ["natoka", "mimi ni wa", "ninatokea"] },
+    "ndi": { "text": "Mimi ni", "alts": ["ni", "niko"] },
+    "muyizi": { "text": "mwanafunzi" },
+    "nsanyuse-okukulaba": { "text": "Nimefurahi kukuona", "alts": ["nafurahi kukuona", "nimefurahi kukutana nawe", "nimefurahi kukufahamu", "furaha kukuona"] },
+    "emu": { "text": "moja", "alts": ["1"] },
+    "bbiri": { "text": "mbili", "alts": ["2"] },
+    "ssatu": { "text": "tatu", "alts": ["3"] },
+    "nnya": { "text": "nne", "alts": ["4"] },
+    "ttaano": { "text": "tano", "alts": ["5"] },
+    "mukaaga": { "text": "sita", "alts": ["6"] },
+    "musanvu": { "text": "saba", "alts": ["7"] },
+    "munaana": { "text": "nane", "alts": ["8"] },
+    "mwenda": { "text": "tisa", "alts": ["9"] },
+    "kkumi": { "text": "kumi", "alts": ["10"] }
+  },
+  "sentences": {
+    "s-oli-otya-ssebo": { "text": "Habari yako, bwana?", "alts": ["Hujambo, bwana?", "U hali gani, bwana?", "Habari, mzee?"] },
+    "s-oli-otya-nnyabo": { "text": "Habari yako, mama?", "alts": ["Hujambo, mama?", "U hali gani, mama?", "Habari, bibi?"] },
+    "s-gyendi-weebale": { "text": "Nzuri, asante.", "alts": ["Salama, asante.", "Sijambo, asante.", "Njema, asante.", "Nzuri, ahsante."] },
+    "s-weebale-nnyo": { "text": "Asante sana.", "alts": ["Ahsante sana.", "Asante mno."] },
+    "s-yee-ssebo": { "text": "Ndiyo, bwana.", "alts": ["Ndio, bwana.", "Ndiyo, mzee."] },
+    "s-nedda-nnyabo": { "text": "Hapana, mama.", "alts": ["Hapana, bibi."] },
+    "s-wasuze-otya-nnyabo": { "text": "Habari za asubuhi, mama.", "alts": ["Umeamkaje, mama?", "Ulilalaje, mama?", "Habari ya asubuhi, mama."] },
+    "s-nsuze-bulungi": { "text": "Nimelala salama, asante.", "alts": ["Nimelala vizuri, asante.", "Nimeamka salama, asante."] },
+    "s-osiibye-otya-ssebo": { "text": "Habari za mchana, bwana.", "alts": ["Habari za jioni, bwana.", "Umeshindaje, bwana?"] },
+    "s-gyebale-ko-ssebo": { "text": "Pole na kazi, bwana.", "alts": ["Pole kwa kazi, bwana.", "Hongera kwa kazi, bwana."] },
+    "s-kale-weraba": { "text": "Sawa, kwaheri.", "alts": ["Haya, kwaheri.", "Sawasawa, kwaheri."] },
+    "s-weraba-tunaalabagana": { "text": "Kwaheri, tutaonana.", "alts": ["Kwaheri, tutaonana baadaye.", "Kwaheri, tutaonana tena."] },
+    "s-nze-nakato": { "text": "Mimi ni Nakato.", "alts": ["Naitwa Nakato.", "Jina langu ni Nakato."] },
+    "s-erinnya-lyo-ani": { "text": "Jina lako ni nani?", "alts": ["Unaitwa nani?", "Jina lako nani?"] },
+    "s-erinnya-lyange-mukasa": { "text": "Jina langu ni Mukasa.", "alts": ["Naitwa Mukasa.", "Ninaitwa Mukasa."] },
+    "s-ggwe-ani": { "text": "Wewe ni nani?" },
+    "s-mbeera-kampala": { "text": "Ninaishi Kampala.", "alts": ["Naishi Kampala.", "Ninakaa Kampala."] },
+    "s-nva-masaka": { "text": "Ninatoka Masaka.", "alts": ["Natoka Masaka.", "Mimi ni wa Masaka."] },
+    "s-ndi-muyizi": { "text": "Mimi ni mwanafunzi.", "alts": ["Ni mwanafunzi."] },
+    "s-nsanyuse-okukulaba": { "text": "Nimefurahi kukuona, Ssali.", "alts": ["Nafurahi kukuona, Ssali.", "Nimefurahi kukutana nawe, Ssali."] }
+  },
+  "phrases": [
+    "Habari yako?",
+    "Nzuri, asante.",
+    "Habari za asubuhi (ulilalaje?)",
+    "Nimelala salama.",
+    "Habari za mchana (umeshindaje?)",
+    "Pole na kazi! (kwa mtu anayefanya kazi)",
+    "Jina lako ni nani?",
+    "Mimi ni Nakato.",
+    "Ninatoka Masaka.",
+    "Kwaheri, tutaonana."
+  ],
+  "dialogues": {
+    "u1s1l3": [{ "line": "Habari za asubuhi, mwanangu." }],
+    "u1s1l4": [{ "line": "Sawa, kwaheri!" }],
+    "u1s2l3": [{ "line": "Jina lako ni nani?" }, { "line": "Mimi ni Emma. Unatoka wapi?" }]
+  },
+  "stories": {
+    "new-friend": {
+      "title": "Rafiki mpya",
+      "summary": "Emma anakutana na Nakato nje ya maktaba.",
+      "lines": [
+        "Habari yako?",
+        "Nzuri, asante. Wewe je, habari yako?",
+        "Vizuri. Jina lako ni nani?",
+        "Mimi ni Emma. Wewe ni nani?",
+        "Mimi ni Nakato. Unatoka wapi, Emma?",
+        "Ninatoka Masaka. Mimi ni mwanafunzi.",
+        "Mimi pia ni mwanafunzi! Nimefurahi kukuona.",
+        "Asante sana. Tutaonana!"
+      ],
+      "questions": [
+        { "question": "Nakato aliuliza nini?", "options": ["Jina la Emma", "Emma anaishi wapi", "Kama Emma ana njaa"] },
+        { "question": "Emma anatoka wapi?", "options": ["Kampala", "Masaka", "Maktaba"] },
+        { "question": "Nakato anasemaje “nimefurahi kukuona”?" }
+      ]
+    },
+    "morning-jjajja": {
+      "title": "Habari za asubuhi, Jjajja",
+      "summary": "Amara anamsalimia bibi yake kabla ya kwenda shule.",
+      "lines": [
+        "Habari za asubuhi, Bibi.",
+        "Nimelala salama, mwanangu. Wewe umelalaje?",
+        "Nimelala salama, Bibi.",
+        "Sawa. Pole na kazi!",
+        "Asante, Bibi. Sawa, kwaheri!",
+        "Kwaheri, mwanangu. Tutaonana."
+      ],
+      "questions": [
+        { "question": "Ni wakati gani wa siku?", "options": ["Asubuhi", "Jioni", "Usiku"] },
+        { "question": "Amara anajibuje salamu ya Jjajja?" },
+        { "question": "Amara anaondoka au anafika?", "options": ["Anafika", "Anaondoka"] }
+      ]
+    }
+  }
+}

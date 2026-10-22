@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u3",
+  "notes": {
+    "matooke": "Mu Lungereza lwa Uganda abantu era bagamba “matooke”.",
+    "nnina": "“I have”. Naye enjala n’ennyonta bya njawulo: “I am hungry”, “I am thirsty”.",
+    "enjala": "Mu Lungereza ogamba “I am hungry”, si “I have hunger”."
+  },
+  "tips": { "u3s2": "hungry", "u3s3": "now-or-always" },
+  "guidebook": {
+    "intro": "Emmere n’akatale: manya emmere eya bulijjo mu Lungereza, gamba nti olumwa enjala oba ennyonta, era ogule n’okutunda.",
+    "tips": [
+      {
+        "id": "hungry",
+        "title": "“I am hungry”",
+        "body": [
+          "Mu Luganda ogamba **Nnina enjala**, kwe kugamba “nnina” enjala. Mu Lungereza tegamba bw’otyo: ogamba **I am hungry** ne **I am thirsty**.",
+          "Kino kikola ne ku birala bingi: **I am sick**, **I am happy**."
+        ]
+      },
+      {
+        "id": "now-or-always",
+        "title": "“I eat” oba “I am eating”",
+        "body": [
+          "Mu Luganda **Ndya** kiyinza okutegeeza nti olya kati oba nti olya bulijjo. Mu Lungereza bya njawulo:",
+          "**I eat matooke** = ndya matooke (bulijjo). **I am eating matooke** = ndya matooke kati kati. Mu katale, **I am buying** kitegeeza nti ogula kati."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Ebigambo bya Uganda mu Lungereza",
+        "body": [
+          "Mu Uganda, Olungereza lukozesa ebigambo by’emmere eby’ewaka: **matooke**, **posho**, **rolex** (chapati ne magi). Abagenyi babiyiga mangu, kale tobitya."
+        ]
+      }
+    ]
+  }
+}

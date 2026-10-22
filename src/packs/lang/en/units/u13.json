@@ -1,0 +1,83 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u13",
+  "words": {
+    "ekisolo": { "text": "animal", "alts": ["an animal", "the animal"] },
+    "ebisolo": { "text": "animals", "alts": ["the animals"] },
+    "ente": { "text": "cow", "alts": ["cows", "cattle", "the cow"] },
+    "embuzi": { "text": "goat", "alts": ["goats", "the goat"] },
+    "endiga": { "text": "sheep", "alts": ["the sheep"] },
+    "embizzi": { "text": "pig", "alts": ["pigs", "the pig"] },
+    "omuddo": { "text": "grass", "alts": ["the grass"] },
+    "zirya": { "text": "they eat", "alts": ["eat", "they are eating"] },
+    "waliwo": { "text": "there is", "alts": ["there are", "there’s"] },
+    "empologoma": { "text": "lion", "alts": ["lions", "the lion"] },
+    "enjovu": { "text": "elephant", "alts": ["elephants", "the elephant"] },
+    "envubu": { "text": "hippo", "alts": ["hippopotamus", "hippos", "the hippo"] },
+    "enkima": { "text": "monkey", "alts": ["monkeys", "the monkey"] },
+    "entugga": { "text": "giraffe", "alts": ["giraffes", "the giraffe"] },
+    "omusota": { "text": "snake", "alts": ["the snake", "a snake"] },
+    "ntya": { "text": "I fear", "alts": ["i am afraid of", "i’m scared of", "i am scared of", "i fear"] },
+    "embwa": { "text": "dog", "alts": ["dogs", "the dog"] },
+    "kkapa": { "text": "cat", "alts": ["cats", "the cat"] },
+    "ekinyonyi": { "text": "bird", "alts": ["a bird", "the bird"] },
+    "ebinyonyi": { "text": "birds", "alts": ["the birds"] },
+    "engaali": { "text": "crested crane", "alts": ["crane", "the crested crane", "grey crowned crane"] },
+    "ebuuka": { "text": "it flies", "alts": ["flies", "is flying"] }
+  },
+  "sentences": {
+    "s13-ente-zirya-omuddo": { "text": "The cows eat grass.", "alts": ["Cows eat grass.", "The cows are eating grass."] },
+    "s13-nnina-embuzi-bbiri": { "text": "I have two goats." },
+    "s13-ebisolo-bingi": { "text": "There are many animals.", "alts": ["There are lots of animals."] },
+    "s13-endiga-n-embizzi": { "text": "Sheep and pigs.", "alts": ["The sheep and the pigs.", "A sheep and a pig."] },
+    "s13-waliwo-empologoma": { "text": "Is there a lion?", "alts": ["Are there lions?", "Is there a lion here?"] },
+    "s13-enjovu-nnene": { "text": "The elephant is very big.", "alts": ["Elephants are very big.", "The elephant is huge."] },
+    "s13-envubu-mu-mazzi": { "text": "The hippo is in the water." },
+    "s13-enkima-ntono": { "text": "The monkey is small.", "alts": ["Monkeys are small."] },
+    "s13-entugga-mpanvu": { "text": "The giraffe is tall.", "alts": ["Giraffes are tall."] },
+    "s13-ntya-omusota": { "text": "I’m afraid of the snake!", "alts": ["I am afraid of snakes!", "I fear the snake!", "I am scared of the snake!"] },
+    "s13-nnina-embwa": { "text": "I have a dog." },
+    "s13-kkapa-yange": { "text": "My cat is nice.", "alts": ["My cat is beautiful.", "My cat is good."] },
+    "s13-ekinyonyi-kiri-wano": { "text": "The bird is here." },
+    "s13-engaali-ebuuka": { "text": "The crested crane is flying.", "alts": ["The crane flies.", "The crane is flying.", "The crested crane flies."] }
+  },
+  "phrases": [
+    "There are many animals.",
+    "I have two goats.",
+    "The cows eat grass.",
+    "The elephant is very big.",
+    "I’m afraid of the snake!",
+    "The crested crane is flying."
+  ],
+  "dialogues": {
+    "u13s3l3": [
+      {
+        "line": "Do you have an animal at home?",
+        "options": ["Yes, I have a dog.", "The elephant is very big.", "I’m afraid of the snake!"]
+      }
+    ]
+  },
+  "stories": {
+    "village-farm": {
+      "title": "At Jjajja’s farm",
+      "summary": "Emma visits the village and meets the animals.",
+      "lines": [
+        "We are happy to see you, Emma! Come in.",
+        "Thank you, Grandma. Where are the animals?",
+        "Look! The cows are eating grass.",
+        "How many cows?",
+        "Five cows and ten goats.",
+        "Oh! A snake!",
+        "No, my child. That is a rope.",
+        "Haha! I’m really afraid of snakes.",
+        "Look up: a crested crane is flying!",
+        "It’s so beautiful!"
+      ],
+      "questions": [
+        { "question": "What are the cows doing?", "options": ["Sleeping", "Eating grass", "Drinking water"] },
+        { "question": "How many goats does Jjajja have?", "options": ["Five", "Two", "Ten"] },
+        { "question": "What did Emma really see?", "options": ["A rope", "A snake", "A dog"] }
+      ]
+    }
+  }
+}

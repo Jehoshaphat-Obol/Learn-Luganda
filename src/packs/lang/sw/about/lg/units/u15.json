@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u15",
+  "notes": {
+    "mpandiika": "n- + wandiika huwa mpandiika.",
+    "musome": "Amri kwa kundi: mu- … -e, kama Kiswahili msome / someni.",
+    "olungereza": "Lugha yenyewe. Kama Oluganda.",
+    "ddamu": "Pia maana yake “jibu”."
+  },
+  "tips": { "u15s2": "class-commands" },
+  "guidebook": {
+    "intro": "Msamiati wa shule umejaa amri. Walimu huongea na darasa zima, kwa hiyo utasikia amri za wingi siku nzima.",
+    "tips": [
+      {
+        "id": "class-commands",
+        "title": "Amri kwa kundi",
+        "body": [
+          "Kwa mtu mmoja, amri ni kitenzi tupu: **Soma** (soma), **Wandiika** (andika). Kwa kundi, ongeza **mu-** mbele na ubadilishe **-a** ya mwisho kuwa **-e**: **Musome**, **Muwandiike**, **Muwulirize**. Ni sawa na Kiswahili **msome, mwandike, msikilize**.",
+          "Mwisho huohuo wa **-e** hutoa “tu-”: **Tusome** (tusome), sawa kabisa na Kiswahili! Utakutana nao tena katika **Tugende** (twende)."
+        ],
+        "table": [
+          ["Mtu mmoja", "Wote", "Tu-"],
+          ["Soma", "Musome", "Tusome"],
+          ["Wandiika", "Muwandiike", "Tuwandiike"],
+          ["Wuliriza", "Muwulirize", "Tuwulirize"]
+        ]
+      },
+      {
+        "id": "n-sound-changes",
+        "title": "n- hubadilisha sauti inayofuata",
+        "body": [
+          "**n-** (mimi) ikikutana na **w**, huwa **mp**: **wandiika** inatoa **mpandiika** (ninaandika). Na **l** au **r** huwa **nd**: **laba** inatoa **ndaba** (ninaona). Kiswahili kina mabadiliko kama haya katika ngeli ya N (**-refu → ndefu**). Umeyaona katika **mpulira** na **mpa** pia."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Lugha shuleni",
+        "body": [
+          "Uganda ina lugha zaidi ya arobaini. Shule hufundisha kwa Kiingereza, na nyingi katikati mwa Uganda hufundisha Kiganda pia. Kiswahili ni lugha ya taifa ya pili ya Uganda na kinafundishwa shuleni zaidi na zaidi. Ni kawaida kukua ukizungumza lugha tatu."
+        ]
+      }
+    ]
+  }
+}

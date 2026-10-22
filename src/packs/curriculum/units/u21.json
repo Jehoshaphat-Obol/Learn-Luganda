@@ -1,0 +1,79 @@
+{
+  "$schema": "../../../../docs/packs/schema/curriculum-unit.schema.json",
+  "id": "u21",
+  "color": "vermillion",
+  "character": "amara",
+  "words": [
+    "nsanyuse",
+    "nnakuwadde",
+    "oli-bulungi",
+    "nneewuunya",
+    "nkooye",
+    "ntidde",
+    "nneeraliikirira",
+    "nnyiize",
+    "ali-atya",
+    "bambi",
+    "nsonyiwa",
+    "nkwagala",
+    "nkusubwa",
+    "mukwano-gwange",
+    "tokaaba"
+  ],
+  "sentences": [
+    "s21-nsanyuse-nnyo",
+    "s21-lwaki-onakuwadde",
+    "s21-oli-bulungi",
+    "s21-nneewuunya",
+    "s21-nkooye-nnyo",
+    "s21-ntidde",
+    "s21-nneeraliikirira",
+    "s21-nnyiize",
+    "s21-maama-ali-atya",
+    "s21-bambi",
+    "s21-nsonyiwa",
+    "s21-nkwagala-maama",
+    "s21-nkusubwa",
+    "s21-tokaaba"
+  ],
+  "phrases": 7,
+  "skills": [
+    {
+      "id": "u21s1",
+      "icon": "heart",
+      "lessons": [
+        { "id": "u21s1l1", "newWords": ["nsanyuse", "nnakuwadde"], "sentences": ["s21-nsanyuse-nnyo", "s21-lwaki-onakuwadde"] },
+        { "id": "u21s1l2", "newWords": ["oli-bulungi", "mukwano-gwange"], "sentences": ["s21-oli-bulungi"] },
+        { "id": "u21s1l3", "newWords": ["nneewuunya"], "sentences": ["s21-nneewuunya", "s21-nsanyuse-nnyo"] }
+      ]
+    },
+    {
+      "id": "u21s2",
+      "icon": "flame",
+      "lessons": [
+        { "id": "u21s2l1", "newWords": ["nkooye", "ntidde"], "sentences": ["s21-nkooye-nnyo", "s21-ntidde"] },
+        { "id": "u21s2l2", "newWords": ["nneeraliikirira", "nnyiize"], "sentences": ["s21-nneeraliikirira", "s21-nnyiize"] },
+        {
+          "id": "u21s2l3",
+          "newWords": ["ali-atya"],
+          "sentences": ["s21-maama-ali-atya", "s21-nkooye-nnyo"],
+          "dialogues": [{ "speaker": "amara", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u21s3",
+      "icon": "star",
+      "lessons": [
+        { "id": "u21s3l1", "newWords": ["bambi", "nsonyiwa"], "sentences": ["s21-bambi", "s21-nsonyiwa"] },
+        { "id": "u21s3l2", "newWords": ["nkwagala", "nkusubwa"], "sentences": ["s21-nkwagala-maama", "s21-nkusubwa"] },
+        {
+          "id": "u21s3l3",
+          "newWords": ["tokaaba"],
+          "sentences": ["s21-tokaaba", "s21-bambi"],
+          "dialogues": [{ "speaker": "amara", "answer": 0 }]
+        }
+      ]
+    }
+  ]
+}

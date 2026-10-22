@@ -12,7 +12,8 @@
     "validate:example": "node scripts/validate-content.js --root docs/packs/example && node scripts/validate-packs.js --root docs/packs/example",
     "e2e": "playwright test",
     "catalog": "node scripts/language-catalog.js",
-    "flags": "node scripts/flags.js"
+    "flags": "node scripts/flags.js",
+    "coverage": "node scripts/coverage.js"
   },
   "devDependencies": {
     "@playwright/test": "^1.56.1",

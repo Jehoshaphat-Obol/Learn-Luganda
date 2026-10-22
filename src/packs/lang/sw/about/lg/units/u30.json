@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u30",
+  "notes": { "nsaba": "Pia “ninaomba” kwa maana ya kuomba kitu: Nsaba amazzi, naomba maji. Kama Kiswahili, kitenzi kimoja kwa sala na ombi." },
+  "tips": { "u30s2": "holiday-greetings" },
+  "guidebook": {
+    "intro": "Waganda wengi ni Wakristo au Waislamu, na sikukuu za kidini husherehekewa na kila mtu. Baraka ni sehemu ya mazungumzo ya kila siku.",
+    "tips": [
+      {
+        "id": "holiday-greetings",
+        "title": "Salamu za sikukuu",
+        "body": [
+          "Salamu ya sikukuu ni jina la sikukuu pamoja na “-ema/-zuri”, ikifuata ngeli yake, kama Kiswahili **Krismasi njema**, **mwaka mpya mwema**: **Ssekukkulu ennungi**, **Paasika ennungi**, **Iddi ennungi**, **Omwaka omuggya omulungi**.",
+          "Jibu kwa **Naawe** (nawe pia) na salamu ile ile. **Nsaba** maana yake “ninasali” na pia “ninaomba”: **Nsaba amazzi** ni njia ya adabu ya kuomba maji, kama Kiswahili **naomba maji**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Siku ya Mashahidi",
+        "body": [
+          "Tarehe 3 Juni, mahujaji kutoka kote Afrika Mashariki hutembea hadi **Namugongo**, karibu na Kampala, kuwaenzi Mashahidi wa Uganda, Wakristo vijana waliouawa miaka ya 1880. Wengi kutoka Kenya na Tanzania hutembea kwa siku kadhaa kufika huko."
+        ]
+      },
+      {
+        "title": "Balubaale",
+        "body": [
+          "Kabla Ukristo na Uislamu kufika, Waganda waliheshimu mizimu iliyoitwa **balubaale**. Majina yao yanaishi katika maeneo: **Nnalubaale**, Ziwa Viktoria (Nyanza), ni “makao ya balubaale”."
+        ]
+      }
+    ]
+  }
+}

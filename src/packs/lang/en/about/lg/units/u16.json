@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u16",
+  "notes": {
+    "ttakisi": "A shared minibus that runs a fixed route.",
+    "siteegi": "Where taxis and boda bodas wait.",
+    "egenda": "For n- nouns: ttakisi egenda, the taxi goes.",
+    "ennyonyi": "Not a bird! A bird is ekinyonyi."
+  },
+  "tips": { "u16s1": "taxis", "u16s3": "from-to" },
+  "glosses": { "taxi-to-jinja": { "4": { "eri": "over there" }, "9": { "zokka": "only" } } },
+  "guidebook": {
+    "intro": "Travel in Uganda means shared taxis, long-distance buses and boda bodas. Knowing a few words makes every journey easier.",
+    "tips": [
+      {
+        "id": "taxis",
+        "title": "Taxi, stage and park",
+        "body": [
+          "A **ttakisi** is a shared minibus that runs a fixed route from a **paaka** (taxi park). Along the way it stops at a **siteegi** (stage). Tell the conductor **Yimirira wano** when you want to get off."
+        ]
+      },
+      {
+        "id": "from-to",
+        "title": "From … to …",
+        "body": [
+          "Use **okuva** (from) and **okutuuka** (until, up to) for a journey: **Okuva e Kampala okutuuka e Jinja**.",
+          "Before a town name, Luganda often adds **e**: **e Kampala**, **e Masaka**. It works like “at” or “to” for places."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Safe arrival",
+        "body": [
+          "When someone arrives from a journey, people say **Kulika olugendo** (well done for the journey). The traveller answers **Weebale**. Calling to say **Ntuuse** (I’ve arrived) is a kindness."
+        ]
+      }
+    ]
+  }
+}

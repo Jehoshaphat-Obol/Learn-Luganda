@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u9",
+  "tips": { "u9s1": "colours", "u9s2": "is-red", "u9s3": "people" },
+  "guidebook": {
+    "intro": "Mu Lungereza ebigambo ebinnyonnyola tebikyuka. Mu Luganda ogamba ekikopo ekimyufu, omuntu omuwanvu, abantu abawanvu. Mu Lungereza ekigambo kye kimu buli kiseera: a red cup, a tall man, tall men.",
+    "tips": [
+      {
+        "id": "colours",
+        "title": "Langi zijja mu maaso",
+        "body": [
+          "Mu Luganda langi ejja oluvannyuma lw’ekintu: **ekikopo ekimyufu**. Mu Lungereza ejja mu maaso: **the red cup**, **a black book**, **a white bed**.",
+          "Okubuuza langi, gamba **What colour is it?** oba **Which colour?**"
+        ],
+        "table": [
+          ["Oluganda", "Olungereza"],
+          ["ekikopo ekimyufu", "the red cup"],
+          ["ekitabo ekiddugavu", "the black book"],
+          ["emmeeza eya kitaka", "the brown table"]
+        ]
+      },
+      {
+        "id": "is-red",
+        "title": "“The cup is red”",
+        "body": [
+          "Okugamba nti ekintu kiri bwe kityo, kozesa **is** ku kintu kimu ne **are** ku bingi: **The cup is red.** **The cups are red.**",
+          "Ekigambo ekinnyonnyola tekyongerwako **-s**: **big cups**, si “bigs cups”."
+        ]
+      },
+      {
+        "id": "people",
+        "title": "Abantu n’ebintu",
+        "body": [
+          "Mu Luganda **omukadde** ne **ekikadde** bya njawulo. Mu Lungereza byombi biba **old**: **an old man**, **an old bed**. Ne **young** kozesa ku bantu, **new** ku bintu: **a young child**, **a new book**.",
+          "**Tall** ne **short** bikozesebwa ku bantu: **The man is tall. I am short.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "“Old” mu Lungereza",
+        "body": [
+          "Mu Luganda okuyita omuntu **omukadde** kiba kitiibwa. Mu Lungereza okugamba omuntu nti **old** kiyinza okumunyiiza. Kozesa **older** oba **elderly**: **an elderly woman**."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u38",
+  "words": {
+    "nnyamba": { "text": "Nisaidie!", "alts": ["saidia", "msaada"] },
+    "yanguwa": { "text": "Haraka!", "alts": ["upesi", "fanya haraka", "harakisha"] },
+    "omubbi": { "text": "mwizi", "alts": ["jambazi", "mwivi"] },
+    "poliisi": { "text": "polisi", "alts": ["askari"] },
+    "ebbiddwa": { "text": "imeibiwa", "alts": ["iliibiwa", "imeibwa"] },
+    "akabenje": { "text": "ajali", "alts": ["ajali ya barabarani"] },
+    "alumiziddwa": { "text": "ameumia", "alts": ["ameumizwa", "amejeruhiwa"] },
+    "omusaayi": { "text": "damu", "alts": ["kuvuja damu"] },
+    "ambulensi": { "text": "gari la wagonjwa", "alts": ["ambulensi", "ambulansi"] },
+    "linda": { "text": "Subiri", "alts": ["ngoja", "subiri hapa", "ngoja kidogo"] },
+    "tewali-kizibu": { "text": "Hakuna shida", "alts": ["hakuna tatizo", "si kitu", "bila shaka", "hamna shida"] },
+    "ndi-bulungi": { "text": "Niko sawa", "alts": ["niko salama", "sijambo", "niko poa", "niko mzima"] }
+  },
+  "sentences": {
+    "s38-nnyamba": { "text": "Nisaidie! Nisaidie!", "alts": ["Msaada! Msaada!", "Saidia! Saidia!"] },
+    "s38-omuliro": { "text": "Moto! Haraka!", "alts": ["Moto! Upesi!", "Moto! Fanyeni haraka!"] },
+    "s38-omubbi": { "text": "Mwizi! Mkamate!", "alts": ["Mwizi! Kamata!", "Mwizi! Mkamateni!"] },
+    "s38-kubira-poliisi": { "text": "Waite polisi!", "alts": ["Piga simu polisi!", "Ita polisi!"] },
+    "s38-essimu-ebbiddwa": { "text": "Simu yangu imeibiwa.", "alts": ["Simu yangu iliibiwa.", "Mtu ameiba simu yangu."] },
+    "s38-akabenje": { "text": "Kuna ajali barabarani.", "alts": ["Kumetokea ajali barabarani.", "Kuna ajali njiani."] },
+    "s38-alumiziddwa": { "text": "Mwanamume ameumia. Anavuja damu.", "alts": ["Mwanamume amejeruhiwa. Anatoka damu.", "Mtu ameumia. Anavuja damu."] },
+    "s38-ambulensi": { "text": "Tuite gari la wagonjwa haraka!", "alts": ["Tupigie gari la wagonjwa haraka!", "Ita ambulensi upesi!"] },
+    "s38-linda-wano": { "text": "Kaa hapa usubiri.", "alts": ["Kaa hapa, subiri.", "Kaa hapa ungoje."] },
+    "s38-oli-bulungi": { "text": "Uko sawa? Ndiyo, niko sawa.", "alts": ["Uko salama? Ndiyo, niko salama.", "Hujambo? Ndiyo, sijambo."] },
+    "s38-tewali-kizibu": { "text": "Asante sana! Hakuna shida.", "alts": ["Asante sana! Hakuna tatizo.", "Asante sana! Si kitu."] }
+  },
+  "phrases": ["Nisaidie! Nisaidie!", "Waite polisi!", "Simu yangu imeibiwa.", "Mwanamume ameumia.", "Tuite gari la wagonjwa haraka!", "Uko sawa?"],
+  "dialogues": { "u38s3l3": [{ "line": "Kuna ajali! Mwanamume ameumia." }] },
+  "stories": {
+    "stolen-phone": {
+      "title": "Simu iliyoibiwa",
+      "summary": "Simu ya Nakato inanyakuliwa sokoni, na Ssali anamsaidia.",
+      "lines": [
+        "Mwizi! Mwizi! Nisaidie!",
+        "Nakato! Nini kimetokea?",
+        "Simu yangu imeibiwa! Mwanamume amekimbia kule.",
+        "Uko sawa? Umeumia?",
+        "Hapana, niko sawa. Lakini nimeogopa sana.",
+        "Kaa hapa usubiri. Nitawaita polisi.",
+        "Polisi wanasema kwamba wanakuja haraka.",
+        "Asante sana, Ssali.",
+        "Hakuna shida. Marafiki ni wa nini!"
+      ],
+      "questions": [
+        { "question": "Nini kilimtokea Nakato?", "options": ["Simu yake iliibiwa", "Alipata ajali", "Alipoteza mkoba wake"] },
+        { "question": "Ssali anafanya nini?", "options": ["Anamkimbiza mwizi", "Anawaita polisi", "Anaita gari la wagonjwa"] },
+        { "question": "Ssali anajibuje “Weebale nnyo”?" }
+      ]
+    }
+  }
+}

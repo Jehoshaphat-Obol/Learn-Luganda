@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u40",
+  "notes": {
+    "wakayima": "Mjanja mwenye hila wa hadithi za Kiganda, kama Sungura wa hadithi za Kiswahili.",
+    "kintu": "Mtu wa kwanza katika hadithi ya uumbaji ya Waganda.",
+    "nnambi": "Mke wa Kintu, binti wa Ggulu (mbingu).",
+    "walumbe": "Kaka yake Nnambi: kifo, katika hadithi."
+  },
+  "tips": { "u40s1": "wakayima", "u40s2": "kintu-legend" },
+  "glosses": { "kintu-and-nnambi": { "1": { "yekka": "peke yake" }, "4": { "aleme": "ili asi-" }, "7": { "ku nsi": "duniani" } } },
+  "guidebook": {
+    "intro": "Hadithi za Kiganda (**enfumo**) husimuliwa jioni. Mbili maarufu zaidi ni hila za **Wakayima** sungura, na hekaya ya **Kintu**, mtu wa kwanza.",
+    "tips": [
+      {
+        "id": "wakayima",
+        "title": "Wakayima mjanja",
+        "body": [
+          "Sungura mdogo huwashinda wanyama wakubwa kwa ujanja: humdanganya tembo, simba na chui, sawa kabisa na Sungura wa hadithi za Kiswahili. Funzo kwa kawaida ni **obugezi businga amaanyi** (busara hushinda nguvu), ingawa wakati mwingine Wakayima hunaswa na uongo wake mwenyewe.",
+          "Angalia **businga**: ni **okusinga** (kushinda) wa Kipengele 33, ukifuata ngeli ya **obu-** ya **obugezi** (busara)."
+        ]
+      },
+      {
+        "id": "kintu-legend",
+        "title": "Kintu na Nnambi",
+        "body": [
+          "**Kintu** aliishi peke yake na ng’ombe wake hadi **Nnambi**, binti wa **Ggulu** (mbingu), alipoolewa naye. Ggulu aliwaambia waondoke haraka kabla kaka yake **Walumbe** (Kifo) hajawafuata.",
+          "Njiani, Nnambi alirudi kuchukua mtama aliokuwa amesahau kwa ajili ya kuku wake. **Walumbe** akamfuata, na ndiyo sababu kifo kilikuja duniani."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Kusimulia upya",
+        "body": [
+          "Msimuliaji mzuri hufungua kwa **Olwatuuka olwali olumu**, huwafanya wasikilizaji wajibu, na humaliza kwa funzo: **Enfumo eno etuyigiriza nti…** (hadithi hii inatufundisha kwamba…). Sasa nawe unaweza kusimulia moja. Hongera kwa kufika kipengele cha mwisho!"
+        ]
+      }
+    ]
+  }
+}

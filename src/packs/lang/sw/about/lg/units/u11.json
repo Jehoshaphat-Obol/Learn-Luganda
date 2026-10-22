@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u11",
+  "notes": {
+    "akola": "a- maana yake yeye, kama Kiswahili a-.",
+    "tukola": "tu- maana yake sisi, sawa kabisa na Kiswahili tu-.",
+    "bakola": "ba- maana yake wao (watu), kama Kiswahili wa-.",
+    "njoza": "Kwa kuosha vitu: vyombo, nguo.",
+    "okusoma": "Umbo la ku- ni kitenzi-jina, sawa na Kiswahili ku-.",
+    "s-nneebaka-ssaawa-ssatu": "Saa tatu usiku ni saa tatu za Kiganda pia: ssaawa ssatu ez’ekiro."
+  },
+  "tips": { "u11s2": "subject-prefixes" },
+  "guidebook": {
+    "intro": "Kwa vitenzi vichache na viambishi vya nafsi, unaweza kueleza siku nzima. Shina la kitenzi halibadiliki; mbele tu ndipo hubadilika, kama Kiswahili.",
+    "tips": [
+      {
+        "id": "subject-prefixes",
+        "title": "Nani anatenda",
+        "body": [
+          "Unajua **n-** (mimi) na **o-** (wewe). Ongeza **a-** (yeye), **tu-** (sisi), **mu-** (ninyi) na **ba-** (wao). Linganisha na Kiswahili **ni-, u-, a-, tu-, m-, wa-**: karibu sawa! Kama Kiswahili, Kiganda hakina neno tofauti la “he” na “she”.",
+          "Umbo la **ku-** ni kitenzi-jina, sawa na Kiswahili: **okusoma** (kusoma), **okukola** (kufanya kazi). Litumie baada ya **Njagala**: **Njagala okusoma**, ninataka kusoma. Hata shina **-soma** ni lilelile!"
+        ],
+        "table": [
+          ["Nafsi", "-kola (fanya kazi)", "-soma (soma)"],
+          ["mimi", "nkola", "nsoma"],
+          ["wewe", "okola", "osoma"],
+          ["yeye", "akola", "asoma"],
+          ["sisi", "tukola", "tusoma"],
+          ["ninyi", "mukola", "musoma"],
+          ["wao", "bakola", "basoma"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Milo mitatu",
+        "body": [
+          "**Ekyenkya** (kifungua kinywa) mara nyingi ni chai na mkate au kitafunwa, **ekyemisana** (chakula cha mchana) ni mlo mkuu kwa wengi, na **ekyeggulo** (chakula cha jioni) huliwa baada ya giza. Kila jina linatokana na wakati wa siku."
+        ]
+      }
+    ]
+  }
+}

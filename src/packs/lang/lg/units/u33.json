@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u33",
+  "words": {
+    "okusinga": { "text": "okusinga" },
+    "asinga": { "text": "asinga" },
+    "kisinga": { "text": "kisinga" },
+    "obuwanvu": { "text": "obuwanvu" },
+    "obunene": { "text": "obunene" },
+    "obulungi": { "text": "obulungi" },
+    "ekisinga": { "text": "ekisinga" },
+    "okusinga-byonna": { "text": "okusinga byonna" },
+    "kye-kimu": { "text": "kye kimu" },
+    "enjawulo": { "text": "enjawulo" },
+    "afaanana": { "text": "afaanana" },
+    "nga": { "text": "nga" }
+  },
+  "sentences": {
+    "s33-enjovu-okusinga-ente": { "text": "Enjovu nnene okusinga ente." },
+    "s33-kampala-okusinga-masaka": { "text": "Kampala nnene okusinga Masaka." },
+    "s33-ani-asinga-obuwanvu": { "text": "Ani asinga obuwanvu?" },
+    "s33-ssali-asinga": { "text": "Ssali y’asinga obuwanvu." },
+    "s33-kisinga-obunene": { "text": "Ekitabo kino kisinga obunene." },
+    "s33-ekisinga-obulungi": { "text": "Kino kye kisinga obulungi." },
+    "s33-njagala-matooke-okusinga-byonna": { "text": "Njagala matooke okusinga byonna." },
+    "s33-kye-kimu": { "text": "Bino byombi kye kimu." },
+    "s33-si-kye-kimu": { "text": "Si kye kimu!" },
+    "s33-enjawulo": { "text": "Enjawulo eri wa?" },
+    "s33-afaanana-maama-we": { "text": "Afaanana nga maama we." }
+  },
+  "phrases": [
+    "Enjovu nnene okusinga ente.",
+    "Ani asinga obuwanvu?",
+    "Kino kye kisinga obulungi.",
+    "Njagala matooke okusinga byonna.",
+    "Si kye kimu!",
+    "Afaanana nga maama we."
+  ],
+  "dialogues": {
+    "u33s2l3": [{ "line": "Oyagala ki okusinga byonna?", "options": ["Njagala ennyimba okusinga byonna.", "Si kye kimu.", "Enjovu nnene."] }]
+  }
+}

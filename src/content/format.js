@@ -8,10 +8,16 @@
  * To change the format: bump PACK_FORMAT, add `UPGRADES[n]` turning a
  * format n-1 pack ({ meta, units }) into format n, and update the schemas.
  */
-export const PACK_FORMAT = 1;
+export const PACK_FORMAT = 2;
 
-/** `UPGRADES[n]` turns a format n-1 pack into format n. */
-export const UPGRADES = {};
+/**
+ * `UPGRADES[n]` turns a format n-1 pack into format n.
+ *
+ * Format 2 (#185) adds the shared catalog (curriculum/ and lang/<code>/,
+ * see ./compose.js), which composes courses in this same shape, so a
+ * format 1 course pack needs no changes.
+ */
+export const UPGRADES = { 2: (pack) => pack };
 
 /** Brings `{ meta, units }` up to the current format, or throws. */
 export function upgradePack(pack, upgrades = UPGRADES, current = PACK_FORMAT) {

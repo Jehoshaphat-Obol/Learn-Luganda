@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u15",
+  "notes": {
+    "mpandiika": "n- + wandiika becomes mpandiika.",
+    "musome": "A command to a group: mu- … -e.",
+    "olungereza": "The language. Like Oluganda.",
+    "ddamu": "Also “answer”."
+  },
+  "tips": { "u15s2": "class-commands" },
+  "guidebook": {
+    "intro": "School vocabulary is full of commands. Teachers speak to the whole class, so you’ll hear plural commands all day.",
+    "tips": [
+      {
+        "id": "class-commands",
+        "title": "Commands to a group",
+        "body": [
+          "To one person, a command is the bare verb: **Soma** (read), **Wandiika** (write). To a group, add **mu-** in front and change the final **-a** to **-e**: **Musome**, **Muwandiike**, **Muwulirize**.",
+          "The same **-e** ending makes “let’s”: **Tusome** (let’s read). You’ll meet it again in **Tugende** (let’s go)."
+        ],
+        "table": [
+          ["One person", "Everyone", "Let’s"],
+          ["Soma", "Musome", "Tusome"],
+          ["Wandiika", "Muwandiike", "Tuwandiike"],
+          ["Wuliriza", "Muwulirize", "Tuwulirize"]
+        ]
+      },
+      {
+        "id": "n-sound-changes",
+        "title": "n- changes the sound after it",
+        "body": [
+          "When **n-** (I) meets **w**, it becomes **mp**: **wandiika** gives **mpandiika** (I write). With **l** or **r** it becomes **nd**: **laba** gives **ndaba** (I see). You have seen this in **mpulira** and **mpa** too."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Languages at school",
+        "body": [
+          "Uganda has over forty languages. Schools teach in English, and many in central Uganda also teach Luganda. It is common to grow up speaking three languages."
+        ]
+      }
+    ]
+  }
+}

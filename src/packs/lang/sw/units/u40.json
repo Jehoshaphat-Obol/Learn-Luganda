@@ -1,0 +1,67 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u40",
+  "words": {
+    "wakayima": { "text": "sungura", "alts": ["bwana sungura", "kitungule"] },
+    "omugezi": { "text": "mjanja", "alts": ["mwerevu", "mwenye busara", "hodari"] },
+    "yalimba": { "text": "alimdanganya", "alts": ["alidanganya", "alimhadaa", "alimlaghai"] },
+    "akakodyo": { "text": "hila", "alts": ["ujanja", "mpango", "werevu"] },
+    "kintu": { "text": "Kintu" },
+    "nnambi": { "text": "Nnambi", "alts": ["Nambi"] },
+    "walumbe": { "text": "Kifo", "alts": ["Walumbe", "mauti"] },
+    "yeerabira": { "text": "alisahau", "alts": ["amesahau"] },
+    "obulo": { "text": "mtama", "alts": ["ulezi", "wimbi"] },
+    "etuyigiriza": { "text": "inatufundisha", "alts": ["hutufundisha", "inatufunza"] }
+  },
+  "sentences": {
+    "s40-wakayima-mugezi": { "text": "Sungura alikuwa mjanja sana.", "alts": ["Sungura alikuwa mwerevu sana.", "Bwana Sungura alikuwa mjanja sana."] },
+    "s40-yalimba-enjovu": { "text": "Sungura alimdanganya tembo.", "alts": ["Sungura alimhadaa tembo.", "Sungura alimdanganya ndovu."] },
+    "s40-akakodyo": { "text": "Alikuwa na hila.", "alts": ["Alikuwa na mpango.", "Alikuwa na ujanja."] },
+    "s40-kintu-eyasooka": { "text": "Kintu alikuwa mtu wa kwanza.", "alts": ["Kintu ni mtu wa kwanza.", "Kintu alikuwa binadamu wa kwanza."] },
+    "s40-kintu-nnambi": {
+      "text": "Kintu alimwoa Nnambi, binti wa Ggulu.",
+      "alts": ["Kintu alimuoa Nnambi, binti wa Ggulu.", "Kintu alimwoa Nambi, binti wa Ggulu."]
+    },
+    "s40-yeerabira-obulo": { "text": "Nnambi alisahau mtama wa kuku.", "alts": ["Nambi alisahau mtama wa kuku.", "Nnambi alisahau mtama wa kuku wake."] },
+    "s40-walumbe": { "text": "Na Kifo kikawafuata.", "alts": ["Kifo kikawafuata.", "Kisha Kifo kikawafuata.", "Na Walumbe akawafuata."] },
+    "s40-etuyigiriza-ki": { "text": "Hadithi hii inatufundisha nini?", "alts": ["Hadithi hii inatufunza nini?", "Funzo la hadithi hii ni nini?"] },
+    "s40-etuyigiriza-nti": {
+      "text": "Inatufundisha kwamba busara hushinda nguvu.",
+      "alts": ["Inatufundisha kwamba akili hushinda nguvu.", "Inatufunza kwamba hekima ni bora kuliko nguvu."]
+    }
+  },
+  "phrases": [
+    "Sungura alikuwa mjanja sana.",
+    "Sungura alimdanganya tembo.",
+    "Kintu alikuwa mtu wa kwanza.",
+    "Nnambi alisahau mtama wa kuku.",
+    "Hadithi hii inatufundisha nini?",
+    "Inatufundisha kwamba busara hushinda nguvu."
+  ],
+  "dialogues": { "u40s3l3": [{ "line": "Sungura alimdanganya tembo. Hadithi hii inatufundisha nini?" }] },
+  "stories": {
+    "kintu-and-nnambi": {
+      "title": "Kintu na Nnambi",
+      "summary": "Jjajja anamsimulia Emma hekaya ya jinsi kifo kilivyokuja duniani.",
+      "lines": [
+        "Bibi, nasikia kuna hadithi kuhusu Kintu. Nisimulie!",
+        "Basi. Hapo zamani za kale, Kintu alikuwa mtu wa kwanza. Aliishi peke yake na ng’ombe wake.",
+        "Kisha Nnambi, binti wa Ggulu, akampenda. Kintu akamwoa.",
+        "Ggulu akasema: “Nendeni haraka, ili Kifo kisiwafuate.”",
+        "Lakini njiani, Nnambi alisahau mtama wa kuku. Akarudi.",
+        "Kifo kikawafuata hadi duniani. Tangu hapo, watu hufa.",
+        "Lo! Hadithi hii inatufundisha nini?",
+        "Inatufundisha kwamba tuwasikilize wazee.",
+        "Asante sana, Bibi!"
+      ],
+      "questions": [
+        { "question": "Nnambi alikuwa nani?", "options": ["Binti wa Ggulu", "Dada yake Kintu", "Sungura mjanja"] },
+        {
+          "question": "Kwa nini Nnambi alirudi?",
+          "options": ["Kwa ajili ya ng’ombe wake", "Kwa ajili ya mtama wa kuku", "Kumwona Walumbe"]
+        },
+        { "question": "Jjajja anatoa funzo gani?", "options": ["Wasikilize wazee", "Busara hushinda nguvu", "Rudi nyumbani haraka"] }
+      ]
+    }
+  }
+}

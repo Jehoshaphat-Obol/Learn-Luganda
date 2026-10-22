@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u39",
+  "notes": {
+    "mwasuze": "Plural “you”, used for one elder out of respect.",
+    "mwebale": "Plural “you”, used for one elder out of respect.",
+    "s39-omugenyi": "A saying: guests are honoured above everyone."
+  },
+  "tips": { "u39s1": "kneeling", "u39s2": "respect-plural" },
+  "guidebook": {
+    "intro": "Respect is at the heart of Ganda manners. Greet elders kneeling, and speak to one elder as if to many: **Mwasuze mutya?**",
+    "tips": [
+      {
+        "id": "kneeling",
+        "title": "Kneeling to greet",
+        "body": [
+          "Women and children traditionally **fukamira** (kneel) when they greet elders, parents-in-law or important guests, and stay low until the greeting ends. Men may bow or crouch. In town it is lighter, but at home and at ceremonies it matters."
+        ]
+      },
+      {
+        "id": "respect-plural",
+        "title": "The plural of respect",
+        "body": ["To one elder, use the plural “you” (**mu-**) instead of the singular (**o-** / **w-**). It is like French *vous*."],
+        "table": [
+          ["To a friend", "To an elder", "English"],
+          ["Wasuze otya?", "Mwasuze mutya?", "Good morning"],
+          ["Webale", "Mwebale", "Thank you"],
+          ["Ogenda wa?", "Mugenda wa?", "Where are you going?"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "The guest comes first",
+        "body": [
+          "**Omugenyi ye mukulu**: a guest is always offered a seat and something to eat or drink, even on a short visit. Saying no outright is impolite; taste a little and say **Mwebale**."
+        ]
+      }
+    ]
+  }
+}

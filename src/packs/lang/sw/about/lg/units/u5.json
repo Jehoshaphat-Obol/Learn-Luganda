@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u5",
+  "notes": {
+    "enkya": "Enkya pia maana yake “asubuhi”. Muktadha hukuambia ipi.",
+    "jjo": "Jjo linaweza pia kumaanisha kesho kutwa au juzi; muktadha huamua.",
+    "ssaawa-emu": "Saa za Kiganda huanza saa 1 asubuhi, sawa kabisa na saa za Kiswahili.",
+    "s-buli-lunaku": "buli = kila"
+  },
+  "tips": { "u5s2": "days", "u5s3": "ugandan-time" },
+  "guidebook": {
+    "intro": "Maneno ya wakati ni mafupi na yenye manufaa. Habari njema kwa wazungumzaji wa Kiswahili: saa za Kiganda huhesabiwa kama zako, tangu jua linapochomoza.",
+    "tips": [
+      {
+        "id": "days",
+        "title": "Siku za wiki",
+        "body": [
+          "Jumatatu ni **Bbalaza** na Jumapili ni **Ssabbiiti**. Jumanne hadi Jumamosi huhesabiwa kutoka Jumatatu: **Lwakubiri** (siku ya pili), **Lwakusatu** (ya tatu), **Lwakuna** (ya nne), **Lwakutaano** (ya tano), **Lwamukaaga** (ya sita). Kiswahili huhesabu kutoka Jumamosi badala yake. Tumia **ku** kwa “siku ya”: **ku Lwakutaano**, siku ya Ijumaa."
+        ]
+      },
+      {
+        "id": "ugandan-time",
+        "title": "Saa za Kiganda ni saa za Kiswahili",
+        "body": [
+          "Saa ya Kiganda huanza saa 1 asubuhi, kama ya Kiswahili. **Ssaawa emu** ni saa moja, **ssaawa bbiri** ni saa mbili, na **ssaawa nnya** ni saa nne. Mchana na usiku wa manane ni **ssaawa mukaaga**, saa sita.",
+          "Kwa hiyo hakuna hesabu ya kufanya: sema namba ileile ya Kiswahili kwa Kiganda. Ongeza **ku makya** (asubuhi), **olweggulo** (mchana) au **ekiro** (usiku) ili kuwa wazi."
+        ],
+        "table": [
+          ["Kiganda", "Kiswahili"],
+          ["ssaawa emu", "saa moja"],
+          ["ssaawa nnya", "saa nne"],
+          ["ssaawa mukaaga", "saa sita"],
+          ["ssaawa kkumi", "saa kumi jioni"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Aina mbili za jjo",
+        "body": [
+          "**Jjo** maana yake jana, lakini linaweza pia kumaanisha kesho kutwa au juzi. Sikiliza wakati wa kitenzi, au uliza ili kuhakikisha."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u40",
+  "tips": { "u40s1": "the-hare", "u40s2": "retelling", "u40s3": "teaches-us" },
+  "guidebook": {
+    "intro": "Nyumya enfumo za Buganda mu Lungereza: Wakayima, Kintu ne Nnambi, n’essomo lyazo.",
+    "tips": [
+      {
+        "id": "the-hare",
+        "title": "Wakayima",
+        "body": [
+          "Mu Lungereza Wakayima ayitibwa **the hare**. Enfumo zinyumizibwa mu byayita: **The hare was very clever. The hare tricked the elephant.** (**trick → tricked**)."
+        ]
+      },
+      {
+        "id": "retelling",
+        "title": "Okunnyonnyola abantu",
+        "body": [
+          "Omuntu omupya mu lufumo omunnyonnyola amangu: **Kintu married Nnambi, the daughter of Ggulu.** Era: **Walumbe (Death)**, **Ggulu, the king of the sky**."
+        ]
+      },
+      {
+        "id": "teaches-us",
+        "title": "Essomo ly’olufumo",
+        "body": ["**What does this story teach us?** — **It teaches us that wisdom beats strength.** Oba: **The moral of the story is …**"]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Okunyumya nate",
+        "body": [
+          "Bw’onyumiza mukwano gwo ow’ebweru olufumo lwa Buganda mu Lungereza, amannya gaabwe galeke nga bwe gali: **Kintu**, **Nnambi**, **Walumbe**. Gano ge gafuula olufumo olwaffe."
+        ]
+      }
+    ]
+  }
+}

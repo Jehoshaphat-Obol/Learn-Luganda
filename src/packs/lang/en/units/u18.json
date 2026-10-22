@@ -1,0 +1,79 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u18",
+  "words": {
+    "ki": { "text": "what", "alts": ["which"] },
+    "kiki": { "text": "what is it", "alts": ["what", "what is"] },
+    "ekyo": { "text": "that", "alts": ["that one", "that thing"] },
+    "oyo": { "text": "that person", "alts": ["that", "that one", "he", "she"] },
+    "wa": { "text": "where" },
+    "oli-wa": { "text": "Where are you?", "alts": ["where are you now"] },
+    "ddi": { "text": "when" },
+    "ojja": { "text": "you are coming", "alts": ["you come", "are you coming"] },
+    "lwaki": { "text": "why", "alts": ["for what reason"] },
+    "kubanga": { "text": "because", "alts": ["since", "as"] },
+    "oba": { "text": "or", "alts": ["whether", "maybe", "perhaps"] },
+    "okwogera": { "text": "to speak", "alts": ["speaking", "to talk", "talking"] },
+    "njogera": { "text": "I speak", "alts": ["i talk", "i am speaking"] },
+    "oyogera": { "text": "You speak", "alts": ["do you speak", "you talk", "you are speaking"] },
+    "katono": { "text": "a little", "alts": ["a bit", "little", "slightly"] },
+    "kiyitibwa": { "text": "it is called", "alts": ["is called", "it’s called"] },
+    "kitya": { "text": "how", "alts": ["what", "how is it"] }
+  },
+  "sentences": {
+    "s18-oyagala-ki": { "text": "What do you want today?" },
+    "s18-kino-kiki": { "text": "What is this?", "alts": ["What’s this?"] },
+    "s18-ekyo-kiki": { "text": "What is that?", "alts": ["What’s that?"] },
+    "s18-ani-oyo": { "text": "Who is that?", "alts": ["Who’s that?"] },
+    "s18-ekitabo-kiri-wa": { "text": "Where is my book?", "alts": ["Where’s my book?"] },
+    "s18-oli-wa": { "text": "Where are you now?" },
+    "s18-ojja-ddi": { "text": "When are you coming?", "alts": ["When will you come?", "When do you come?"] },
+    "s18-njija-enkya": { "text": "I am coming tomorrow.", "alts": ["I’m coming tomorrow.", "I will come tomorrow.", "I come tomorrow."] },
+    "s18-lwaki-osoma": { "text": "Why are you learning {to}?", "alts": ["Why do you study {to}?", "Why do you learn {to}?"] },
+    "s18-kubanga": { "text": "Because I want to speak with people.", "alts": ["Because I want to talk to people.", "Because I want to talk with people."] },
+    "s18-caayi-oba-kaawa": { "text": "Tea or coffee?" },
+    "s18-oyogera-oluganda": { "text": "Do you speak {to}?", "alts": ["You speak {to}?"] },
+    "s18-njogera-katono": { "text": "I speak a little.", "alts": ["I speak a bit."] },
+    "s18-kiyitibwa-kitya": { "text": "What is this called in {to}?", "alts": ["How do you say this in {to}?", "What’s this called in {to}?"] }
+  },
+  "phrases": [
+    "What is this?",
+    "Who is that?",
+    "Where are you now?",
+    "When are you coming?",
+    "Why are you learning {to}?",
+    "Do you speak {to}?",
+    "What is this called in {to}?"
+  ],
+  "dialogues": {
+    "u18s2l3": [{ "line": "Where are you now?", "options": ["I am at the taxi park. I am coming!", "I don’t know Luganda.", "What is this?"] }],
+    "u18s3l3": [
+      {
+        "line": "Why are you learning {to}?",
+        "options": ["Because I want to speak with my grandparent.", "Tea or coffee?", "When are you coming?"]
+      }
+    ]
+  },
+  "stories": {
+    "what-is-this": {
+      "title": "What is this called?",
+      "summary": "Emma asks Jjajja the names of things in her kitchen.",
+      "lines": [
+        "Grandma, what is this called in Luganda?",
+        "That is a basket.",
+        "Basket. And what is this?",
+        "This is a knife.",
+        "I don’t understand. Repeat slowly, Grandma.",
+        "A knife. This is a knife.",
+        "Why are you learning Luganda, my child?",
+        "Because I want to talk with you!",
+        "Oh, that’s very good! You speak well.",
+        "No, I speak a little."
+      ],
+      "questions": [
+        { "question": "What is Emma doing?", "options": ["Asking the names of things", "Cooking dinner", "Buying a basket"] },
+        { "question": "Why is Emma learning Luganda?", "options": ["For school", "To talk with Jjajja", "To buy things at the market"] }
+      ]
+    }
+  }
+}

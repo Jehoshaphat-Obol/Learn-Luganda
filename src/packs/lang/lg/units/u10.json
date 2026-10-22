@@ -1,0 +1,85 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u10",
+  "words": {
+    "engoye": { "text": "engoye" },
+    "essaati": { "text": "essaati" },
+    "empale": { "text": "empale" },
+    "ekiteeteeyi": { "text": "ekiteeteeyi" },
+    "engatto": { "text": "engatto" },
+    "enkoofiira": { "text": "enkoofiira" },
+    "ekkooti": { "text": "ekkooti" },
+    "essweta": { "text": "essweta" },
+    "gomesi": { "text": "gomesi" },
+    "kkanzu": { "text": "kkanzu" },
+    "yange": { "text": "yange" },
+    "zange": { "text": "zange" },
+    "nnyambala": { "text": "Nnyambala" },
+    "yambala": { "text": "Yambala" },
+    "yambula": { "text": "Yambula" },
+    "nnaaba": { "text": "Nnaaba" },
+    "naaba": { "text": "Naaba" },
+    "eno": { "text": "eno" },
+    "nnene": { "text": "nnene" },
+    "ntono": { "text": "ntono" },
+    "ngitwala": { "text": "Ngitwala" },
+    "nnungi": { "text": "nnungi" }
+  },
+  "sentences": {
+    "s-essaati-yange": { "text": "Essaati yange." },
+    "s-empale-yange": { "text": "Empale yange." },
+    "s-engatto-zange": { "text": "Engatto zange." },
+    "s-engoye-zange": { "text": "Engoye zange." },
+    "s-ekiteeteeyi-kyange": { "text": "Ekiteeteeyi kyange." },
+    "s-enkoofiira-yange": { "text": "Enkoofiira yange." },
+    "s-nnyambala-gomesi": { "text": "Nnyambala gomesi." },
+    "s-taata-ayambala-kkanzu": { "text": "Taata ayambala kkanzu." },
+    "s-yambala-essweta": { "text": "Yambala essweta." },
+    "s-yambula-engatto": { "text": "Yambula engatto." },
+    "s-nnaaba-ku-makya": { "text": "Nnaaba ku makya." },
+    "s-essaati-eno-ssente-mmeka": { "text": "Essaati eno ssente mmeka?" },
+    "s-empale-eno-nnene": { "text": "Empale eno nnene." },
+    "s-essaati-eno-ntono": { "text": "Essaati eno ntono." },
+    "s-essaati-nnungi": { "text": "Essaati eno nnungi." },
+    "s-kale-ngitwala": { "text": "Kale, ngitwala." }
+  },
+  "phrases": [
+    "Essaati yange.",
+    "Engatto zange.",
+    "Nnyambala gomesi.",
+    "Yambala essweta.",
+    "Yambula engatto.",
+    "Essaati eno ssente mmeka?",
+    "Kale, ngitwala."
+  ],
+  "dialogues": {
+    "u10s3l3": [
+      { "line": "Essaati eno omutwalo gumu.", "options": ["Ya bbeeyi! Kendeezaako.", "Nnaaba ku makya.", "Engatto zange."] },
+      { "line": "Kale, nkumi musanvu.", "options": ["Kale, ngitwala.", "Yambula engatto.", "Ndi mumpi."] }
+    ]
+  },
+  "stories": {
+    "new-gomesi": {
+      "lines": [
+        "Gyebale ko, nnyabo! Oyagala ki?",
+        "Njagala gomesi. Waliwo kwanjula ku Lwamukaaga.",
+        "Gomesi eno ya kakobe. Nnungi nnyo!",
+        "Nedda, njagala emmyufu.",
+        "Kale. Eno emmyufu. Yambala!",
+        "Eno ntono. Waliwo ennene?",
+        "Yee, eno nnene. Emitwalo etaano.",
+        "Ya bbeeyi nnyo! Kendeezaako.",
+        "Kale, emitwalo ena.",
+        "Kale, ngitwala. Weebale nnyo!"
+      ],
+      "questions": [
+        { "question": "Okwanjula kuli ddi?" },
+        { "question": "Nakato ayagala langi ki?" },
+        { "question": "Gomesi emmyufu erina buzibu ki?" },
+        { "options": ["Kale, ngitwala.", "Yambula engatto.", "Mpulira empewo."], "question": "Mu Lungereza ogamba otya “Kale, ngitwala”?" }
+      ],
+      "title": "Gomesi ey’omukolo",
+      "summary": "Nakato agula ekyokwambala ku kwanjula kwa muganda we."
+    }
+  }
+}

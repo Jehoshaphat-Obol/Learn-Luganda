@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u36",
+  "notes": {
+    "prov-kamu-kamu": "Kihalisi: kijiti kimoja kimoja hufanya mzigo wa kuni. Hatua ndogo hujumlika. Kama kujifunza lugha!",
+    "prov-akwata-mpola": "Kihalisi: anayekwenda polepole hufika mbali. Uvumilivu hushinda.",
+    "prov-agali-awamu": "Umoja ni nguvu.",
+    "prov-olugalo-olumu": "Unahitaji wengine ili mambo yafanyike.",
+    "prov-atannayitaayita": "Safiri nawe utaona dunia ni pana kuliko unavyodhani."
+  },
+  "tips": { "u36s1": "engero", "u36s3": "using-proverbs" },
+  "glosses": { "jjajjas-advice": { "3": { "gumiikiriza": "vumilia" }, "5": { "nzekka": "peke yangu" } } },
+  "guidebook": {
+    "intro": "Methali, **engero**, ni chumvi ya mazungumzo ya Kiganda, kama methali za Kiswahili. Wazee huzitumia kushauri, kumaliza mabishano na kusema jambo kwa ustadi.",
+    "tips": [
+      {
+        "id": "engero",
+        "title": "Kusoma methali",
+        "body": [
+          "Methali hutumia picha za maisha ya kila siku: mizigo ya kuni, meno, vidole, mapishi. Maana yake si ya moja kwa moja. **Kamu kamu gwe muganda** inahusu uvumilivu: mzigo wa kuni hukusanywa kijiti kimoja kimoja. Kiswahili husema **Haba na haba hujaza kibaba**.",
+          "**Agali awamu ge galuma ennyama** (meno yaliyo pamoja ndiyo huuma nyama) na **Olugalo olumu terutta nda** (kidole kimoja hakiui chawa) zote zinasifu kufanya kazi pamoja, kama **Umoja ni nguvu, utengano ni udhaifu**. Methali ya kidole na chawa ipo pia kwa Kiswahili."
+        ]
+      },
+      {
+        "id": "using-proverbs",
+        "title": "Kuitambulisha methali",
+        "body": [
+          "Tambulisha methali kwa **Nga bwe bagamba** (kama wasemavyo, kama wahenga walivyosema). Kuuliza kuhusu methali unayoisikia, sema **Olugero luno lutegeeza ki?** (Methali hii inamaanisha nini?). Kutumia methali vizuri kutamvutia Mganda yeyote."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Methali katika sherehe",
+        "body": [
+          "Katika kwanjula au kikao cha ukoo, wasemaji hushindana kwa methali. Methali iliyowekwa mahali pake inaweza kuwavutia watu na kumaliza hoja."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u26",
+  "notes": {
+    "kabaka": "Mfalme wa Buganda.",
+    "nnaabagereka": "Mke wa Kabaka.",
+    "ssaabasajja": "Cheo cha heshima cha Kabaka.",
+    "awangaale": "Kabaka awangaale! Kabaka aishi milele!",
+    "lukiiko": "Bunge la Buganda.",
+    "bulange": "Jengo ambamo Lukiiko hukutana, huko Mengo."
+  },
+  "tips": { "u26s1": "royal-words", "u26s3": "kintu" },
+  "glosses": {
+    "kasubi-visit": {
+      "0": { "gano": "haya (kwa nomino za ama-)" },
+      "1": { "aziikiddwa": "amezikwa" },
+      "5": { "Abeera": "anaishi" },
+      "7": { "eyo": "huko" }
+    }
+  },
+  "guidebook": {
+    "intro": "Buganda ni mojawapo ya falme kongwe zaidi Afrika Mashariki, na Kabaka bado yuko katikati ya utambulisho wa Waganda.",
+    "tips": [
+      {
+        "id": "royal-words",
+        "title": "Vyeo vya kifalme",
+        "body": [
+          "Mfalme ni **Kabaka**, pia huitwa **Ssaabasajja** (mkuu wa wanaume). Mke wake ni **Nnaabagereka**. **Katikkiro** (waziri mkuu) huongoza serikali ya Kabaka, na **Lukiiko** ni bunge la ufalme, linalokutana **Bulange**.",
+          "Jibu **Kabaka awangaale!** kwa **Awangaale!** Kitenzi **-wangaala** (kuishi muda mrefu) kina mwisho wa **-e** wa matakwa, kama Kiswahili **aishi**."
+        ]
+      },
+      {
+        "id": "kintu",
+        "title": "Kintu na mwanzo",
+        "body": [
+          "Katika mapokeo ya Waganda, **Kintu** alikuwa Kabaka wa kwanza na mtu wa kwanza, aliyemwoa **Nnambi**, binti wa mbinguni. Hadithi yao inaeleza jinsi kifo kilivyoingia duniani, na utaikuta tena katika hadithi za Kipengele 40."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Makaburi ya Kasubi",
+        "body": [
+          "**Amasiro g’e Kasubi** ni mahali walipozikwa Kabaka wanne, chini ya nyumba kubwa ya nyasi. Ni Eneo la Urithi wa Dunia la UNESCO, lililojengwa upya kwa mikono baada ya moto wa 2010. Kama falme za zamani za pwani na Bukoba, Buganda inahifadhi historia yake katika maeneo kama haya."
+        ]
+      }
+    ]
+  }
+}

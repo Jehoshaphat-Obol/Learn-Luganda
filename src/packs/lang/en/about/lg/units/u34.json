@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u34",
+  "notes": { "bwe": "For real situations: Bwe nzuukuka… When I wake up…", "bw-etonnya": "Enkuba bw’etonnya.", "singa": "For imagined situations." },
+  "tips": { "u34s1": "bwe", "u34s2": "singa" },
+  "guidebook": {
+    "intro": "Real situations take **bwe** (when, if). Imagined ones take **singa** (if) and the conditional **-andi-** (would).",
+    "tips": [
+      {
+        "id": "bwe",
+        "title": "When: bwe",
+        "body": [
+          "Put **bwe** before the verb for “when” or “whenever”: **Bwe nzuukuka** (when I wake up), **Bwe ntuuka** (when I arrive). With a noun, it goes after the noun and joins the verb: **Enkuba bw’etonnya** (when the rain falls)."
+        ]
+      },
+      {
+        "id": "singa",
+        "title": "If: singa and -andi-",
+        "body": [
+          "For things that aren’t true, start with **singa** and put the result in the conditional with **-andi-**: **nnandiguze** (I would buy), **nnandigenze** (I would go), **wandiguze** (you would buy).",
+          "**Nnandyagadde** (I would like) is the politest way to ask for something: **Nnandyagadde caayi**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "God willing",
+        "body": [
+          "You met **Katonda bw’anaayagala** in Unit 20. It literally means “if God wants”, built with **bwe**, and follows almost every promise about the future."
+        ]
+      }
+    ]
+  }
+}

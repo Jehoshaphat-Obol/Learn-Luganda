@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jehoshaphat-obol.github.io/Learn-Luganda/schema/curriculum.schema.json",
+  "title": "Shared catalog: the curriculum",
+  "description": "src/packs/curriculum/course.json. The one course structure every language fills (#185): sections, cast and the version that saved progress is kept in step with. Text lives in src/packs/lang/<code>/.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "formatVersion",
+    "version",
+    "sections"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "formatVersion": {
+      "const": 2
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "migrations": {
+      "$ref": "course.schema.json#/properties/migrations"
+    },
+    "cast": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "look"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "look": {
+            "$ref": "course.schema.json#/$defs/castMember/properties/look"
+          },
+          "voice": {
+            "$ref": "settings.schema.json#/$defs/voice"
+          }
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "units"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]*$"
+          },
+          "units": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "pattern": "^[a-z0-9][a-z0-9-]*$"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u16",
+  "words": {
+    "ttakisi": { "text": "ttakisi" },
+    "bbaasi": { "text": "bbaasi" },
+    "paaka": { "text": "paaka" },
+    "siteegi": { "text": "siteegi" },
+    "egenda": { "text": "egenda" },
+    "mmotoka": { "text": "mmotoka" },
+    "bodaboda": { "text": "bodaboda" },
+    "eggaali": { "text": "eggaali" },
+    "mpola": { "text": "mpola" },
+    "mangu": { "text": "mangu" },
+    "olugendo": { "text": "olugendo" },
+    "okuva": { "text": "okuva" },
+    "okutuuka": { "text": "okutuuka" },
+    "ntuuse": { "text": "Ntuuse" },
+    "ennyonyi": { "text": "ennyonyi" },
+    "tugende": { "text": "Tugende" },
+    "olugendo-olulungi": { "text": "Olugendo olulungi!" }
+  },
+  "sentences": {
+    "s16-ttakisi-egenda-wa": { "text": "Ttakisi eno egenda wa?" },
+    "s16-ttakisi-egenda-entebbe": { "text": "Ttakisi egenda Entebbe." },
+    "s16-bbaasi-eri-ku-paaka": { "text": "Bbaasi eri ku paaka." },
+    "s16-yimirira-ku-siteegi": { "text": "Yimirira ku siteegi." },
+    "s16-mmotoka-yange": { "text": "Mmotoka yange mpya." },
+    "s16-ntwala-ku-bodaboda": { "text": "Ŋŋenda ku bodaboda.", "alts": ["Ngenda ku bodaboda."] },
+    "s16-genda-mpola": { "text": "Genda mpola, ssebo!" },
+    "s16-tugende-mangu": { "text": "Tugende mangu!" },
+    "s16-okuva-kampala": { "text": "Okuva e Kampala okutuuka e Masaka." },
+    "s16-olugendo-luwanvu": { "text": "Olugendo luwanvu." },
+    "s16-ntuuse": { "text": "Ntuuse bulungi." },
+    "s16-ennyonyi-ebuuka": { "text": "Ennyonyi ebuuka." },
+    "s16-olugendo-olulungi": { "text": "Weraba! Olugendo olulungi!" }
+  },
+  "phrases": [
+    "Ttakisi eno egenda wa?",
+    "Yimirira ku siteegi.",
+    "Genda mpola, ssebo!",
+    "Okuva e Kampala okutuuka e Masaka.",
+    "Ntuuse bulungi.",
+    "Olugendo olulungi!"
+  ],
+  "dialogues": { "u16s1l3": [{ "line": "Ogenda wa?", "options": ["Ŋŋenda Entebbe. Ttakisi eno egenda Entebbe?", "Ntya omusota!", "Nnina ekibuuzo."] }] },
+  "stories": {
+    "taxi-to-jinja": {
+      "lines": [
+        "Ssebo, ttakisi eno egenda wa?",
+        "Egenda Mukono. Ggwe ogenda wa?",
+        "Ŋŋenda Jinja.",
+        "Ttakisi ya Jinja eri eri, ku siteegi.",
+        "Weebale nnyo! Ssente mmeka okutuuka e Jinja?",
+        "Omutwalo gumu.",
+        "Olugendo luwanvu?",
+        "Nedda, ssaawa bbiri zokka.",
+        "Kale. Tugende!",
+        "Maama, ntuuse bulungi e Jinja!"
+      ],
+      "questions": [
+        { "question": "Nakato ayagala kugenda wa?" },
+        { "question": "Okusasula kwa ssente mmeka?" },
+        {
+          "options": ["Ntuuse bulungi.", "Genda mpola.", "Yimirira wano."],
+          "question": "Nakato agamba atya maama we nti atuuse, mu Lungereza?"
+        }
+      ],
+      "title": "Ttakisi egenda e Jinja",
+      "summary": "Nakato afuna ttakisi entuufu era atuuka e Jinja."
+    }
+  }
+}

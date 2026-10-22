@@ -1,0 +1,64 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u37",
+  "words": {
+    "amawulire": { "text": "news", "alts": ["the news"] },
+    "owulidde": { "text": "Have you heard", "alts": ["did you hear", "you have heard"] },
+    "leediyo": { "text": "radio", "alts": ["the radio"] },
+    "nti": { "text": "that" },
+    "agamba": { "text": "he says", "alts": ["she says", "he/she says", "says"] },
+    "bagamba": { "text": "they say", "alts": ["people say"] },
+    "olukiiko": { "text": "meeting", "alts": ["council", "the meeting", "assembly"] },
+    "ssentebe": { "text": "chairperson", "alts": ["chairman", "chair", "the chairperson"] },
+    "ndowooza": { "text": "I think", "alts": ["i believe", "i suppose"] },
+    "endowooza": { "text": "opinion", "alts": ["idea", "view", "thought", "the opinion"] },
+    "nzikiriza": { "text": "I agree", "alts": ["i accept", "i believe"] },
+    "sikkiriza": { "text": "I don’t agree", "alts": ["i disagree", "i do not agree", "i don’t accept"] }
+  },
+  "sentences": {
+    "s37-owulidde-amawulire": { "text": "Have you heard the news?", "alts": ["Did you hear the news?"] },
+    "s37-ku-leediyo": { "text": "I heard it on the radio.", "alts": ["I have heard it on the radio.", "I heard on the radio."] },
+    "s37-agamba-nti": {
+      "text": "He says that rain is coming.",
+      "alts": ["She says that rain is coming.", "He says rain is coming.", "She says the rain is coming."]
+    },
+    "s37-bagamba-nti": {
+      "text": "They say that the new road is finished.",
+      "alts": ["People say the new road is finished.", "They say the new road is complete."]
+    },
+    "s37-olukiiko": { "text": "The meeting is on Saturday." },
+    "s37-ssentebe": {
+      "text": "The chairperson speaks at the meeting.",
+      "alts": ["The chairman is speaking at the meeting.", "The chairperson is speaking in the meeting."]
+    },
+    "s37-ndowooza-nti": { "text": "I think that it is good.", "alts": ["I think it is good.", "I think it’s good."] },
+    "s37-endowooza-yo": { "text": "What is your opinion?", "alts": ["What do you think?", "What’s your opinion?"] },
+    "s37-nzikiriza": { "text": "I agree with you." },
+    "s37-sikkiriza": {
+      "text": "I don’t agree. I think it isn’t good.",
+      "alts": ["I disagree. I think it’s not good.", "I do not agree. I think that it is not good."]
+    }
+  },
+  "phrases": [
+    "Have you heard the news?",
+    "He says that rain is coming.",
+    "They say that the new road is finished.",
+    "I think that it is good.",
+    "What is your opinion?",
+    "I agree with you."
+  ],
+  "dialogues": {
+    "u37s2l3": [
+      {
+        "line": "Have you heard the news?",
+        "options": ["Yes! They say that the new road is finished.", "I would like tea.", "Once upon a time, one day…"]
+      }
+    ],
+    "u37s3l3": [
+      {
+        "line": "I think we should plant trees in the village. What is your opinion?",
+        "options": ["I agree with you!", "Have you heard it on the radio?", "I am full."]
+      }
+    ]
+  }
+}

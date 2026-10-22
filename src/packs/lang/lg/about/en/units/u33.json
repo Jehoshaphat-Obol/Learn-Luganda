@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u33",
+  "tips": { "u33s1": "bigger-than", "u33s2": "the-best", "u33s3": "same" },
+  "guidebook": {
+    "intro": "Geraageranya abantu n’ebintu: ekinene okusinga, ekisinga byonna, kye kimu n’enjawulo.",
+    "tips": [
+      {
+        "id": "bigger-than",
+        "title": "Bigger than",
+        "body": [
+          "Mu Luganda **okusinga** kiraga okugeraageranya: **Enjovu nnene okusinga ente.** Mu Lungereza ekigambo ekimpi kyongerwako **-er** ne **than**: **An elephant is bigger than a cow.**",
+          "Ekigambo ekiwanvu kifuna **more**: **more beautiful than**."
+        ]
+      },
+      {
+        "id": "the-best",
+        "title": "The tallest, the best",
+        "body": ["Asinga bonna: **the** n’**-est**: **Ssali is the tallest. This book is the biggest.**"],
+        "table": [
+          ["", "Okusinga", "Asinga bonna"],
+          ["big", "bigger", "the biggest"],
+          ["tall", "taller", "the tallest"],
+          ["good", "better", "the best"],
+          ["bad", "worse", "the worst"]
+        ]
+      },
+      {
+        "id": "same",
+        "title": "The same, different",
+        "body": [
+          "**Kye kimu** kiba **the same**: **These two are the same.** Enjawulo: **different**: **It’s different.** Okufaanana: **She looks like her mother.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Okugeraageranya mu bukkakkamu",
+        "body": [
+          "Mu Lungereza okugamba nti omuntu omu asinga munne kiyinza okuwulikika obubi. Abantu batera okugamba **I prefer …** oba **I like this one more.**"
+        ]
+      }
+    ]
+  }
+}

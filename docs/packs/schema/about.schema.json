@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://jehoshaphat-obol.github.io/Learn-Luganda/schema/about.schema.json",
+  "title": "Shared catalog: notes about a language",
+  "description": "src/packs/lang/<from>/about/<to>/course.json. Optional text about <to> written in <from>: the course description, landing page copy, and cast roles that depend on the pair. Courses without notes use their base language's pivot or English notes.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "reviewed"
+      ]
+    },
+    "description": {
+      "type": "string"
+    },
+    "notes": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "landing": {
+      "$ref": "course.schema.json#/properties/landing"
+    },
+    "cast": {
+      "$ref": "course-labels.schema.json#/properties/cast"
+    }
+  }
+}

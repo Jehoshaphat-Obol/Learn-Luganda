@@ -1,0 +1,53 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u27",
+  "words": {
+    "olusuku": { "text": "banana garden", "alts": ["plantation", "banana plantation", "garden"] },
+    "enkumbi": { "text": "hoe", "alts": ["the hoe", "a hoe"] },
+    "ndima": { "text": "I dig", "alts": ["i farm", "i cultivate", "i am digging"] },
+    "ensigo": { "text": "seeds", "alts": ["seed", "the seeds"] },
+    "okusiga": { "text": "to plant", "alts": ["to sow", "planting", "sowing"] },
+    "kasooli": { "text": "maize", "alts": ["corn", "the maize"] },
+    "ebinyeebwa": { "text": "groundnuts", "alts": ["peanuts", "the groundnuts"] },
+    "emmwanyi": { "text": "coffee beans", "alts": ["coffee plants", "coffee"] },
+    "amakungula": { "text": "harvest", "alts": ["the harvest", "harvest time"] },
+    "okukungula": { "text": "to harvest", "alts": ["harvesting", "to reap"] },
+    "ndimira": { "text": "I dig for", "alts": ["i farm for", "i dig in"] },
+    "nfumbira": { "text": "I cook for", "alts": ["i am cooking for"] },
+    "ntundira": { "text": "I sell at", "alts": ["i sell for", "i sell in"] },
+    "mpandiikira": { "text": "I write to", "alts": ["i write for"] }
+  },
+  "sentences": {
+    "s27-olusuku-lwange": { "text": "My banana garden is big.", "alts": ["My plantation is big.", "My garden is big."] },
+    "s27-ndima-n-enkumbi": { "text": "I dig with a hoe in the morning.", "alts": ["I dig with the hoe in the morning.", "I farm with a hoe in the morning."] },
+    "s27-okusiga-ensigo": { "text": "We plant seeds in the rainy season.", "alts": ["We sow seeds in the rainy season."] },
+    "s27-kasooli": { "text": "The maize has grown well.", "alts": ["The maize grew well.", "The corn has grown well."] },
+    "s27-ebinyeebwa": { "text": "I sell groundnuts and maize.", "alts": ["I sell peanuts and maize.", "I sell groundnuts and corn."] },
+    "s27-emmwanyi": { "text": "Buganda’s coffee is very good.", "alts": ["The coffee of Buganda is very good."] },
+    "s27-amakungula": { "text": "The harvest has come!", "alts": ["Harvest time has come!", "The harvest is here!"] },
+    "s27-okukungula": { "text": "Tomorrow we will harvest the groundnuts.", "alts": ["We will harvest the groundnuts tomorrow."] },
+    "s27-ndimira-jjajja": {
+      "text": "I dig the garden for grandparent.",
+      "alts": ["I dig the banana garden for grandma.", "I dig the garden for my grandparent.", "I dig the garden for grandpa."]
+    },
+    "s27-nfumbira-abaana": { "text": "I cook food for the children.", "alts": ["I cook for the children."] },
+    "s27-ntundira-mu-katale": { "text": "I sell coffee at the market.", "alts": ["I sell the coffee at the market."] },
+    "s27-mpandiikira-maama": { "text": "I write a message to mother.", "alts": ["I write mum a message.", "I write a message to my mother."] }
+  },
+  "phrases": [
+    "I dig with a hoe in the morning.",
+    "We plant seeds in the rainy season.",
+    "The harvest has come!",
+    "I dig the garden for grandparent.",
+    "I cook food for the children.",
+    "I write a message to mother."
+  ],
+  "dialogues": {
+    "u27s3l3": [
+      {
+        "line": "Well done! What are you doing?",
+        "options": ["I dig the garden for my grandparent.", "I am of the Lugave clan.", "Long live the Kabaka!"]
+      }
+    ]
+  }
+}

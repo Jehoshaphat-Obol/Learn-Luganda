@@ -1,0 +1,70 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u16",
+  "words": {
+    "ttakisi": { "text": "teksi", "alts": ["matatu", "daladala", "basi dogo"] },
+    "bbaasi": { "text": "basi", "alts": ["bas"] },
+    "paaka": { "text": "stendi", "alts": ["stendi ya teksi", "kituo kikuu", "paaka"] },
+    "siteegi": { "text": "kituo", "alts": ["kituo cha basi", "steji"] },
+    "egenda": { "text": "inakwenda", "alts": ["inaenda", "yaenda"] },
+    "mmotoka": { "text": "gari", "alts": ["motokaa"] },
+    "bodaboda": { "text": "bodaboda", "alts": ["boda", "pikipiki", "boda boda"] },
+    "eggaali": { "text": "baiskeli", "alts": ["basikeli"] },
+    "mpola": { "text": "polepole", "alts": ["pole pole", "taratibu", "kwa uangalifu"] },
+    "mangu": { "text": "haraka", "alts": ["upesi", "mbio", "kwa haraka"] },
+    "olugendo": { "text": "safari", "alts": ["msafara"] },
+    "okuva": { "text": "kutoka", "alts": ["kuanzia", "toka"] },
+    "okutuuka": { "text": "kufika", "alts": ["hadi", "mpaka", "kufikia"] },
+    "ntuuse": { "text": "Nimefika", "alts": ["nimewasili", "niko hapa"] },
+    "ennyonyi": { "text": "ndege", "alts": ["eropleni", "ndege ya abiria"] },
+    "tugende": { "text": "Twende", "alts": ["haya twende", "tuende"] },
+    "olugendo-olulungi": { "text": "Safari njema!", "alts": ["safiri salama", "safari salama", "uende salama"] }
+  },
+  "sentences": {
+    "s16-ttakisi-egenda-wa": { "text": "Teksi hii inakwenda wapi?", "alts": ["Teksi hii inaenda wapi?", "Matatu hii inakwenda wapi?"] },
+    "s16-ttakisi-egenda-entebbe": { "text": "Teksi inakwenda Entebbe.", "alts": ["Teksi inaenda Entebbe."] },
+    "s16-bbaasi-eri-ku-paaka": { "text": "Basi liko stendi.", "alts": ["Basi liko stendini.", "Basi iko stendi."] },
+    "s16-yimirira-ku-siteegi": { "text": "Simama kituoni.", "alts": ["Simama kwenye kituo.", "Simamisha kituoni."] },
+    "s16-mmotoka-yange": { "text": "Gari langu ni jipya." },
+    "s16-ntwala-ku-bodaboda": { "text": "Ninakwenda kwa bodaboda.", "alts": ["Naenda kwa bodaboda.", "Ninaenda kwa bodaboda."] },
+    "s16-genda-mpola": { "text": "Nenda polepole, bwana!", "alts": ["Endesha polepole, bwana!", "Pole pole, bwana!"] },
+    "s16-tugende-mangu": { "text": "Twende haraka!", "alts": ["Twende upesi!", "Tuende haraka!"] },
+    "s16-okuva-kampala": { "text": "Kutoka Kampala hadi Masaka.", "alts": ["Kutoka Kampala mpaka Masaka."] },
+    "s16-olugendo-luwanvu": { "text": "Safari ni ndefu.", "alts": ["Ni safari ndefu."] },
+    "s16-ntuuse": { "text": "Nimefika salama.", "alts": ["Nimewasili salama.", "Nimefika salama salimini."] },
+    "s16-ennyonyi-ebuuka": { "text": "Ndege inaruka.", "alts": ["Ndege inapaa."] },
+    "s16-olugendo-olulungi": { "text": "Kwaheri! Safari njema!", "alts": ["Kwaheri! Safiri salama!", "Kwaheri! Safari salama!"] }
+  },
+  "phrases": [
+    "Teksi hii inakwenda wapi?",
+    "Simama kituoni.",
+    "Nenda polepole, bwana!",
+    "Kutoka Kampala hadi Masaka.",
+    "Nimefika salama.",
+    "Safari njema!"
+  ],
+  "dialogues": { "u16s1l3": [{ "line": "Unakwenda wapi?" }] },
+  "stories": {
+    "taxi-to-jinja": {
+      "title": "Teksi ya Jinja",
+      "summary": "Nakato anapata teksi sahihi na kufika Jinja.",
+      "lines": [
+        "Bwana, teksi hii inakwenda wapi?",
+        "Inakwenda Mukono. Wewe unakwenda wapi?",
+        "Ninakwenda Jinja.",
+        "Teksi ya Jinja iko kule, kituoni.",
+        "Asante sana! Ni bei gani hadi Jinja?",
+        "Elfu kumi.",
+        "Safari ni ndefu?",
+        "Hapana, saa mbili tu.",
+        "Sawa. Twende!",
+        "Mama, nimefika Jinja salama!"
+      ],
+      "questions": [
+        { "question": "Nakato anataka kwenda wapi?", "options": ["Mukono", "Jinja", "Masaka"] },
+        { "question": "Nauli ni kiasi gani?", "options": ["Elfu tano", "Elfu kumi", "Elfu moja"] },
+        { "question": "Nakato anamwambiaje mama yake kwamba amefika?" }
+      ]
+    }
+  }
+}

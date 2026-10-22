@@ -1,0 +1,50 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u21",
+  "words": {
+    "nsanyuse": { "text": "Nsanyuse" },
+    "nnakuwadde": { "text": "Nnakuwadde" },
+    "oli-bulungi": { "text": "Oli bulungi?" },
+    "nneewuunya": { "text": "Nneewuunya" },
+    "nkooye": { "text": "Nkooye" },
+    "ntidde": { "text": "Ntidde" },
+    "nneeraliikirira": { "text": "Nneeraliikirira" },
+    "nnyiize": { "text": "Nnyiize" },
+    "ali-atya": { "text": "Ali atya?" },
+    "bambi": { "text": "Bambi" },
+    "nsonyiwa": { "text": "Nsonyiwa" },
+    "nkwagala": { "text": "Nkwagala" },
+    "nkusubwa": { "text": "Nkusubwa" },
+    "mukwano-gwange": { "text": "mukwano gwange" },
+    "tokaaba": { "text": "Tokaaba" }
+  },
+  "sentences": {
+    "s21-nsanyuse-nnyo": { "text": "Nsanyuse nnyo leero!" },
+    "s21-lwaki-onakuwadde": { "text": "Lwaki onakuwadde?" },
+    "s21-oli-bulungi": { "text": "Oli bulungi, mukwano gwange?" },
+    "s21-nneewuunya": { "text": "Nneewuunya! Ojja leero?" },
+    "s21-nkooye-nnyo": { "text": "Nkooye nnyo. Nja kwebaka." },
+    "s21-ntidde": { "text": "Ntidde, eggulu libwatuka." },
+    "s21-nneeraliikirira": { "text": "Nneeraliikirira ekigezo." },
+    "s21-nnyiize": { "text": "Nnyiize kubanga ttakisi teyajja." },
+    "s21-maama-ali-atya": { "text": "Maama wo ali atya?" },
+    "s21-bambi": { "text": "Bambi! Wona mangu." },
+    "s21-nsonyiwa": { "text": "Nsonyiwa, nzize kikeerezi." },
+    "s21-nkwagala-maama": { "text": "Nkwagala nnyo, Maama." },
+    "s21-nkusubwa": { "text": "Nkusubwa, mukwano gwange." },
+    "s21-tokaaba": { "text": "Tokaaba, mwana wange." }
+  },
+  "phrases": [
+    "Nsanyuse nnyo leero!",
+    "Oli bulungi, mukwano gwange?",
+    "Nkooye nnyo.",
+    "Nneeraliikirira ekigezo.",
+    "Bambi! Wona mangu.",
+    "Nsonyiwa, nzize kikeerezi.",
+    "Nkusubwa."
+  ],
+  "dialogues": {
+    "u21s2l3": [{ "line": "Oli bulungi? Olabika okooye.", "options": ["Yee, nkooye nnyo. Nkoze nnyo leero.", "Nsanyuse okukulaba.", "Tokaaba."] }],
+    "u21s3l3": [{ "line": "Nnakuwadde. Jjajja mulwadde.", "options": ["Bambi! Nja kumukyalira.", "Nsanyuse nnyo!", "Nnyiize."] }]
+  }
+}

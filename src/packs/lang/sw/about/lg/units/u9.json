@@ -1,0 +1,86 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u9",
+  "notes": {
+    "kimyufu": "Kwa majina ya eki-, kama Kiswahili kikombe chekundu. Mzizi ni -myufu.",
+    "kiddugavu": "Kwa majina ya eki-. Mzizi ni -ddugavu.",
+    "kyeru": "Kwa majina ya eki-. Mzizi ni -eru.",
+    "kiragala": "Tumia na kya/ya, kama Kiswahili “cha kijani”: ekitabo kya kiragala.",
+    "kyenvu": "Kwa majina ya eki-. Mzizi ni -yenvu.",
+    "bbulu": "Kutoka Kiingereza, kama Kiswahili buluu. Tumia na kya/ya: kya bbulu.",
+    "kitaka": "Maana yake halisi “udongo”. Tumia na kya/ya: ya kitaka.",
+    "kakobe": "Tumia na kya/ya: kya kakobe.",
+    "kinene": "Kwa majina ya eki-, kama kikubwa. Mzizi ni -nene.",
+    "kitono": "Kwa majina ya eki-, kama kidogo. Mzizi ni -tono.",
+    "kiggya": "Kwa majina ya eki-, kama kipya. Mzizi ni -ggya.",
+    "kikadde": "Kwa majina ya eki-: vitu vya zamani. Mzizi ni -kadde.",
+    "kirungi": "Kwa majina ya eki-, kama kizuri. Mzizi ni -lungi.",
+    "kibi": "Kwa majina ya eki-, kama kibaya. Mzizi ni -bi.",
+    "mulungi": "Kwa mtu mmoja: omukazi mulungi, mwanamke mzuri.",
+    "muwanvu": "Kwa mtu mmoja.",
+    "mumpi": "Kwa mtu mmoja.",
+    "muto": "Kwa mtu mmoja: kijana, mchanga.",
+    "mukadde": "Kwa mtu mmoja. Ni neno la heshima, kama Kiswahili mzee.",
+    "munene": "Kwa mtu mmoja.",
+    "balungi": "Kwa watu (majina ya aba-), kama Kiswahili wa-.",
+    "bawanvu": "Kwa watu (majina ya aba-)."
+  },
+  "tips": { "u9s1": "colours", "u9s2": "agreement", "u9s3": "people-adjectives" },
+  "guidebook": {
+    "intro": "Maneno ya kueleza katika Kiganda hufuata jina na huvaa kiambishi cha ngeli yake, kama Kiswahili (kitabu kizuri, vitabu vizuri). Jifunze mzizi mara moja na unaweza kueleza chochote.",
+    "tips": [
+      {
+        "id": "colours",
+        "title": "Aina mbili za maneno ya rangi",
+        "body": [
+          "Rangi nyingine ni vivumishi vyenye mzizi unaochukua kiambishi cha jina, kama Kiswahili **-ekundu, -eusi, -eupe**: **-myufu** (-ekundu), **-ddugavu** (-eusi), **-eru** (-eupe) na **-yenvu** (njano). Na jina la **eki-** huwa **kimyufu**, **kiddugavu**, **kyeru**, **kyenvu** (linganisha chekundu, cheusi, cheupe).",
+          "Nyingine ni majina, kwa hiyo unasema “cha kijani”, sawa na Kiswahili: **kya kiragala**, **kya bbulu**, **kya kakobe**. **Kya** hubadilika na ngeli pia, kama cha/ya: **emmeeza ya kitaka** (meza ya kahawia)."
+        ],
+        "table": [
+          ["Rangi", "Jina la eki-"],
+          ["-ekundu", "ekikopo kimyufu"],
+          ["-eusi", "ekitabo kiddugavu"],
+          ["-eupe", "ekitanda kyeru"],
+          ["kijani", "ekitabo kya kiragala"],
+          ["buluu", "ekikopo kya bbulu"]
+        ]
+      },
+      {
+        "id": "agreement",
+        "title": "Kusema “ni” na “kilicho chekundu”",
+        "body": [
+          "Kusema kitu **ni** kikubwa, weka kivumishi baada ya jina bila irabu ya mwanzo: **Ekibuga kinene** (mji ni mkubwa). Hakuna neno la “ni” kama la Kiswahili.",
+          "Kukieleza ndani ya sentensi, baki na irabu ya mwanzo: **ekikopo ekimyufu** (kikombe chekundu). **Njagala ekikopo ekimyufu** maana yake “ninataka kikombe chekundu”."
+        ]
+      },
+      {
+        "id": "people-adjectives",
+        "title": "Kueleza watu",
+        "body": [
+          "Watu huchukua **mu-** kwa mtu mmoja na **ba-** kwa wengi, kama **omuntu** na **abantu**, na kama Kiswahili **m-/wa-** (mzuri, wazuri). Mizizi uliyotumia kwa vitu inafanya kazi hapa pia."
+        ],
+        "table": [
+          ["Mzizi", "Mtu mmoja", "Watu", "Vitu (eki-)"],
+          ["-lungi (-zuri)", "mulungi", "balungi", "kirungi"],
+          ["-wanvu (-refu)", "muwanvu", "bawanvu", "kiwanvu"],
+          ["-nene (-kubwa)", "munene", "banene", "kinene"],
+          ["-kadde (-zee)", "mukadde", "bakadde", "kikadde"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Mukadde ni sifa",
+        "body": [
+          "Kumwita mzee **mukadde** (mzee) ni heshima, si matusi, kama Kiswahili “mzee”. Umri huleta hadhi, na neno **abakadde** (wazee) hutumika kwa watu wakubwa wanaoheshimiwa katika familia au kijiji."
+        ]
+      },
+      {
+        "title": "Kirungi, neno la kila kitu",
+        "body": [
+          "**Kirungi** (ni kizuri) ni mojawapo ya maneno yenye manufaa zaidi: kukubali, kuridhia, kusema “sawa”. Ni kama “safi” au “poa”. **Kirungi nnyo!** ni “vizuri sana!”."
+        ]
+      }
+    ]
+  }
+}

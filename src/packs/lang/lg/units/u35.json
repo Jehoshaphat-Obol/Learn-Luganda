@@ -1,0 +1,64 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u35",
+  "words": {
+    "enfumo": { "text": "enfumo" },
+    "olwatuuka": { "text": "Olwatuuka" },
+    "olwali-olumu": { "text": "olwali olumu" },
+    "waaliwo": { "text": "waaliwo" },
+    "awo": { "text": "Awo" },
+    "nagenda": { "text": "n’agenda", "alts": ["nagenda"] },
+    "nalaba": { "text": "n’alaba", "alts": ["nalaba"] },
+    "nagamba": { "text": "n’agamba", "alts": ["nagamba"] },
+    "ekyavaamu": { "text": "Ekyavaamu" },
+    "kale-nno": { "text": "Kale nno" },
+    "enfumo-ewedde": { "text": "Enfumo yange ekomye awo" }
+  },
+  "sentences": {
+    "s35-olwatuuka": { "text": "Olwatuuka olwali olumu…" },
+    "s35-waaliwo-omusajja": { "text": "Waaliwo omusajja omu." },
+    "s35-waaliwo-omukazi": { "text": "Waaliwo omukazi n’omwana we.", "alts": ["Waaliwo omukazi nomwana we."] },
+    "s35-nagenda-mu-kibira": { "text": "Awo n’agenda mu kibira.", "alts": ["Awo nagenda mu kibira."] },
+    "s35-nalaba-empologoma": { "text": "N’alaba empologoma!", "alts": ["Nalaba empologoma!"] },
+    "s35-nagamba": { "text": "N’agamba nti, “Totya!”", "alts": ["Nagamba nti, “Totya!”"] },
+    "s35-ekyavaamu": { "text": "Ekyavaamu, n’addayo awaka.", "alts": ["Ekyavaamu, naddayo awaka."] },
+    "s35-kale-nno": { "text": "Kale nno, wuliriza enfumo eno." },
+    "s35-enfumo-ekomye": { "text": "Enfumo yange ekomye awo." }
+  },
+  "phrases": [
+    "Olwatuuka olwali olumu…",
+    "Waaliwo omusajja omu.",
+    "Awo n’agenda mu kibira.",
+    "N’alaba empologoma!",
+    "Ekyavaamu, n’addayo awaka.",
+    "Enfumo yange ekomye awo."
+  ],
+  "dialogues": {
+    "u35s3l3": [{ "line": "Waaliwo omusajja omu. Awo n’agenda mu kibira…", "options": ["N’alaba ki?", "Nnandyagadde caayi.", "Kye kimu."] }]
+  },
+  "stories": {
+    "amaras-story": {
+      "lines": [
+        "Amara, ngerera enfumo!",
+        "Kale nno. Olwatuuka olwali olumu, waaliwo omulenzi omu.",
+        "Awo n’agenda mu kibira okunoonya enku.",
+        "N’alaba ki?",
+        "N’alaba empologoma nnene nnyo!",
+        "Ayi! N’adduka?",
+        "Nedda. N’atuula wansi, n’ayimba oluyimba.",
+        "Empologoma n’ewuliriza, n’ewummula, n’egenda.",
+        "Ekyavaamu, omulenzi n’addayo awaka n’enku. Enfumo yange ekomye awo."
+      ],
+      "questions": [
+        { "question": "Lwaki omulenzi yagenda mu kibira?" },
+        { "question": "Omulenzi yakola ki bwe yalaba empologoma?" },
+        {
+          "options": ["Enfumo yange ekomye awo.", "Olwatuuka olwali olumu.", "Waaliwo omusajja."],
+          "question": "Amara amaliriza atya olufumo mu Lungereza?"
+        }
+      ],
+      "title": "Amara anyumya olufumo",
+      "summary": "Amara anyumiza Emma olufumo lw’omulenzi n’empologoma."
+    }
+  }
+}

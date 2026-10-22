@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u30",
+  "words": {
+    "katonda": { "text": "Mungu", "alts": ["Bwana", "Mola"] },
+    "okusaba": { "text": "kusali", "alts": ["kuomba", "kusali sala"] },
+    "nsaba": { "text": "ninaomba", "alts": ["naomba", "ninasali", "tafadhali"] },
+    "bbayibuli": { "text": "Biblia", "alts": ["Bibilia", "Injili"] },
+    "kulaani": { "text": "Kurani", "alts": ["Korani", "Kuruani", "Msahafu"] },
+    "amiina": { "text": "Amina", "alts": ["Amin"] },
+    "ssekukkulu": { "text": "Krismasi", "alts": ["Noeli", "sikukuu ya Krismasi"] },
+    "paasika": { "text": "Pasaka", "alts": ["sikukuu ya Pasaka"] },
+    "iddi": { "text": "Idi", "alts": ["Iddi", "Eid", "Idi el-Fitri"] },
+    "okusiiba": { "text": "kufunga", "alts": ["kufunga saumu", "kufunga mfungo"] },
+    "abajulizi": { "text": "Mashahidi", "alts": ["Mashahidi wa Uganda", "wafia dini"] },
+    "omukisa": { "text": "baraka", "alts": ["neema", "heri"] },
+    "akuwe": { "text": "akupe", "alts": ["Mungu akupe", "akujalie"] },
+    "omwaka-omuggya": { "text": "mwaka mpya" }
+  },
+  "sentences": {
+    "s30-tusaba-katonda": { "text": "Tunasali kwa Mungu kila siku.", "alts": ["Tunamwomba Mungu kila siku.", "Tunasali kila siku."] },
+    "s30-ssabbiiti-ekkanisa": { "text": "Jumapili ninaenda kanisani.", "alts": ["Jumapili naenda kanisani.", "Ninaenda kanisani Jumapili."] },
+    "s30-lwakutaano-omuzigiti": { "text": "Ijumaa anaenda msikitini.", "alts": ["Siku ya Ijumaa anaenda msikitini.", "Anaenda msikitini Ijumaa."] },
+    "s30-nsaba-amazzi": { "text": "Naomba maji, mama.", "alts": ["Ninaomba maji, mama.", "Tafadhali nipe maji, mama."] },
+    "s30-bbayibuli-kulaani": { "text": "Biblia na Kurani.", "alts": ["Bibilia na Korani."] },
+    "s30-ssekukkulu-ennungi": { "text": "Krismasi njema!", "alts": ["Heri ya Krismasi!", "Sikukuu njema ya Krismasi!"] },
+    "s30-omwaka-omuggya": { "text": "Heri ya mwaka mpya!", "alts": ["Mwaka mpya mwema!", "Mwaka mpya wa heri!"] },
+    "s30-paasika": { "text": "Pasaka njema!", "alts": ["Heri ya Pasaka!"] },
+    "s30-iddi": { "text": "Idi njema!", "alts": ["Idd Mubarak!", "Eid Mubarak!", "Sikukuu njema ya Idi!"] },
+    "s30-okusiiba": { "text": "Mwezi wa Ramadhani tunafunga.", "alts": ["Tunafunga wakati wa Ramadhani.", "Katika Ramadhani tunafunga."] },
+    "s30-abajulizi": { "text": "Siku ya Mashahidi ni tarehe 3 Juni.", "alts": ["Siku ya Mashahidi ni tarehe tatu Juni."] },
+    "s30-katonda-akuwe-omukisa": { "text": "Mungu akubariki!", "alts": ["Mungu akupe baraka!", "Mungu akujalie baraka!"] },
+    "s30-amiina": { "text": "Amina.", "alts": ["Amin."] }
+  },
+  "phrases": ["Jumapili ninaenda kanisani.", "Ijumaa anaenda msikitini.", "Krismasi njema!", "Idi njema!", "Heri ya mwaka mpya!", "Mungu akubariki!"],
+  "dialogues": { "u30s3l3": [{ "line": "Krismasi njema!" }] }
+}
