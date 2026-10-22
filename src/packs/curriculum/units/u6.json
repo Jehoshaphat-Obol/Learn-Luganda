@@ -150,6 +150,40 @@
         { "speaker": "ssali" },
         { "answer": 1, "optionsLang": "target" }
       ]
+    },
+    {
+      "id": "sw-lost-in-town",
+      "unlockAfter": "u6s4l2",
+      "cast": ["emma", "nakato"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "emma" },
+        { "speaker": "nakato" },
+        { "answer": 0 },
+        { "speaker": "nakato" },
+        { "answer": 1 },
+        { "speaker": "emma" },
+        { "speaker": "nakato" },
+        { "answer": 0, "optionsLang": "target" },
+        { "speaker": "emma" }
+      ]
+    },
+    {
+      "id": "sw-boda-ride",
+      "unlockAfter": "u6s4l3",
+      "cast": ["ssali", "amara"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "ssali" },
+        { "speaker": "amara" },
+        { "speaker": "ssali" },
+        { "answer": 2 },
+        { "speaker": "amara" },
+        { "speaker": "ssali" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
     }
   ]
 }

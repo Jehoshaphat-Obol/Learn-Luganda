@@ -80,6 +80,24 @@
         { "question": "How long does the luwombo cook?", "options": ["Ten minutes", "Two hours", "All night"] },
         { "question": "What does {@amara} say after the meal?", "options": ["Thanks for cooking", "First cut", "I’m waiting for you"] }
       ]
+    },
+    "sw-pilau-lesson": {
+      "title": "A pilau lesson",
+      "summary": "Baraka teaches Emma to cook pilau at his stall in Mombasa.",
+      "lines": [
+        "Emma, today I’ll teach you to cook pilau.",
+        "Great! What should I do first?",
+        "Cut the onions, then fry them in oil.",
+        "Okay. And the spices?",
+        "Add the pilau spices, meat and rice. Then water.",
+        "It smells really good!",
+        "Come and eat! Your pilau is tastier than mine!"
+      ],
+      "questions": [
+        { "question": "What does Emma do first?", "options": ["Cut the onions", "Boil water", "Add salt"] },
+        { "question": "What goes in with the spices?", "options": ["Meat and rice", "Sugar", "Milk"] },
+        { "question": "How does Baraka say “come and eat”?", "options": ["Come and eat!", "Cut the onions", "Add salt"] }
+      ]
     }
   }
 }

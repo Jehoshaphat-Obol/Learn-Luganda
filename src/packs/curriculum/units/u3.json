@@ -147,5 +147,24 @@
         { "id": "u3s4l4", "newWords": ["pilau", "karibu-chakula"], "sentences": ["s-pilipili-kali", "s-tunapika-pilau", "s-mchuzi-mtamu"] }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-chai-stall",
+      "unlockAfter": "u3s4l3",
+      "cast": ["mukasa", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "mukasa" },
+        { "speaker": "emma" },
+        { "answer": 1 },
+        { "speaker": "mukasa" },
+        { "speaker": "emma" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "answer": 1, "optionsLang": "target" },
+        { "speaker": "mukasa" }
+      ]
+    }
   ]
 }

@@ -53,5 +53,24 @@
     "s-akubariki": { "text": "God bless you, my child." }
   },
   "phrases": ["On Sunday I go to church.", "On Friday he goes to the mosque.", "Happy Christmas!", "Happy Eid!", "Happy New Year!", "God bless you!"],
-  "dialogues": { "u30s3l3": [{ "line": "Happy Christmas!", "options": ["You too, happy Christmas!", "I am full.", "I don’t understand football."] }] }
+  "dialogues": { "u30s3l3": [{ "line": "Happy Christmas!", "options": ["You too, happy Christmas!", "I am full.", "I don’t understand football."] }] },
+  "stories": {
+    "sw-ramadan-evening": {
+      "title": "A Ramadan evening",
+      "summary": "Emma joins Bibi to break the fast at sunset.",
+      "lines": [
+        "Grandma, have you fasted today?",
+        "Yes, since dawn. When the sun sets, we’ll eat together.",
+        "What will we eat?",
+        "Dates, porridge and samosas. You are very welcome.",
+        "Thank you, Grandma. God bless you.",
+        "Amen, my child."
+      ],
+      "questions": [
+        { "question": "When will they eat?", "options": ["When the sun sets", "At dawn", "At noon"] },
+        { "question": "What will they eat first?", "options": ["Dates, porridge and samosas", "Ugali", "Nothing"] },
+        { "question": "How does Emma say “God bless you”?", "options": ["God bless you", "God willing", "Amen"] }
+      ]
+    }
+  }
 }

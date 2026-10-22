@@ -21,5 +21,15 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-school-interview": {
+      "0": { "kwa ajili ya": "for" },
+      "1": { "Uliza": "ask" },
+      "6": { "zangu": "my (with many n- nouns)", "wanaongea": "they speak" },
+      "8": { "mwisho": "last, end" },
+      "9": { "shida": "problem, trouble" }
+    },
+    "sw-bibi-proverbs": { "3": { "utakosea": "you will make a mistake" }, "6": { "mwanafamilia": "family member" } }
   }
 }

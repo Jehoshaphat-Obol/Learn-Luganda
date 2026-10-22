@@ -24,6 +24,10 @@
     "migrations": {
       "$ref": "course.schema.json#/properties/migrations"
     },
+    "culture": {
+      "type": "string",
+      "description": "The language whose culture `cast` names and `places` are (lg). Courses teaching it use them as they are."
+    },
     "cast": {
       "type": "object",
       "propertyNames": {

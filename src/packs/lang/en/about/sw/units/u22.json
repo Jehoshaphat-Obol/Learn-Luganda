@@ -34,5 +34,15 @@
         "body": ["**Bongo flava** is Tanzanian pop: hip hop, R&B and taarab sung in Swahili. Its stars are famous all over Africa."]
       }
     ]
+  },
+  "glosses": {
+    "sw-busy-week": { "5": { "lakini": "but", "si": "not" }, "7": { "twende tukacheze": "let’s go and dance" } },
+    "sw-big-match": {
+      "0": { "umeanza": "has started" },
+      "2": { "zaidi": "more" },
+      "4": { "Tumefunga": "we have scored" },
+      "6": { "haujaisha": "it hasn’t ended" },
+      "7": { "kama": "if", "bure": "free" }
+    }
   }
 }

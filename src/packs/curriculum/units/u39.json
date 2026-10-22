@@ -82,5 +82,43 @@
         }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-mango-deal",
+      "unlockAfter": "u39s2l1",
+      "cast": ["nakato", "ssali"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "nakato" },
+        { "speaker": "ssali" },
+        { "speaker": "nakato" },
+        { "answer": 1 },
+        { "speaker": "ssali" },
+        { "speaker": "nakato" },
+        { "answer": 1 },
+        { "speaker": "ssali" },
+        { "answer": 1, "optionsLang": "target" }
+      ]
+    },
+    {
+      "id": "sw-visiting-bibi",
+      "unlockAfter": "u39s4l1",
+      "cast": ["emma", "jjajja"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    }
   ]
 }

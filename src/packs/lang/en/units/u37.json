@@ -98,5 +98,43 @@
         "options": ["I agree with you!", "Have you heard it on the radio?", "I am full."]
       }
     ]
+  },
+  "stories": {
+    "sw-harambee": {
+      "title": "The harambee",
+      "summary": "Amani and Neema go to a harambee for a neighbour’s school fees.",
+      "lines": [
+        "Amani, why are there so many people here?",
+        "It’s a harambee. The neighbour’s child has got a place at university.",
+        "Great! I’ll give two thousand shillings.",
+        "Thank you. One finger can’t crush a louse.",
+        "True. Let’s help each other!"
+      ],
+      "questions": [
+        { "question": "What is the harambee for?", "options": ["A neighbour’s child’s university place", "A wedding", "A new road"] },
+        { "question": "What does Amani’s proverb mean?", "options": ["We need each other", "Fingers are small", "Wash your hands"] },
+        {
+          "question": "How does Neema say “let’s help each other”?",
+          "options": ["Let’s help each other", "We love each other", "Let’s go"]
+        }
+      ]
+    },
+    "sw-morning-paper": {
+      "title": "The morning paper",
+      "summary": "Baraka and Juma read the paper over chai and don’t quite agree.",
+      "lines": [
+        "Juma, have you read today’s paper?",
+        "Not yet. What news is there?",
+        "The government will build a new road in our village.",
+        "In my opinion, water is more important than a road.",
+        "Sorry, I don’t agree. A road will bring business.",
+        "Then let’s write our opinions to the paper!"
+      ],
+      "questions": [
+        { "question": "What will the government build?", "options": ["A new road", "A new school", "A hospital"] },
+        { "question": "What does Juma think is more important?", "options": ["Water", "The road", "Business"] },
+        { "question": "How does Baraka say “I don’t agree”?", "options": ["I don’t agree", "I agree", "I think"] }
+      ]
+    }
   }
 }

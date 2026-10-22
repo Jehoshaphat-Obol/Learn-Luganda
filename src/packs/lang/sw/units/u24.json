@@ -83,6 +83,24 @@
         { "question": "Luwombo inapikwa kwa muda gani?", "options": ["Dakika kumi", "Saa mbili", "Usiku mzima"] },
         { "question": "{@amara} anasema nini baada ya mlo?", "options": ["Asante kwa kupika", "Kwanza kata", "Ninakusubiri"] }
       ]
+    },
+    "sw-pilau-lesson": {
+      "title": "Somo la pilau",
+      "summary": "Baraka anamfundisha Emma kupika pilau kibandani kwake Mombasa.",
+      "lines": [
+        "Emma, leo nitakufundisha kupika pilau.",
+        "Safi! Kwanza nifanye nini?",
+        "Kata vitunguu, halafu kaanga kwa mafuta.",
+        "Sawa. Na viungo?",
+        "Ongeza bizari ya pilau, nyama na mchele. Halafu maji.",
+        "Inanukia vizuri sana!",
+        "Karibu chakula! Pilau yako ni tamu kuliko yangu!"
+      ],
+      "questions": [
+        { "question": "Emma anafanya nini kwanza?", "options": ["Anakata vitunguu", "Anachemsha maji", "Anaongeza chumvi"] },
+        { "question": "Nini kinaingia pamoja na viungo?", "options": ["Nyama na mchele", "Sukari", "Maziwa"] },
+        { "question": "Baraka anasemaje “karibu chakula”?", "options": ["Karibu chakula", "Kata vitunguu", "Ongeza chumvi"] }
+      ]
     }
   }
 }

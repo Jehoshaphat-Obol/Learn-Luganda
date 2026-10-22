@@ -113,6 +113,22 @@
         { "answer": 0, "optionsLang": "target" },
         { "speaker": "ssali" }
       ]
+    },
+    {
+      "id": "sw-kilimanjaro",
+      "unlockAfter": "u32s4l2",
+      "cast": ["ssali", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "emma" },
+        { "speaker": "ssali" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "ssali" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
     }
   ]
 }

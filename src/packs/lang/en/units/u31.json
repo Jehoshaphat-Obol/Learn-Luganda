@@ -56,5 +56,24 @@
   ],
   "dialogues": {
     "u31s1l3": [{ "line": "Well done! How is business going?", "options": ["Good. Today there are many customers.", "Amen.", "Play the drum!"] }]
+  },
+  "stories": {
+    "sw-baraka-business": {
+      "title": "Baraka’s business",
+      "summary": "Baraka tells Juma how his chai stall is doing.",
+      "lines": [
+        "Baraka, how’s business?",
+        "This month we’ve made a good profit. There are lots of customers!",
+        "Congratulations! And last month?",
+        "The rain caused a small loss. But I have savings in my chama.",
+        "Teach me business, my friend!",
+        "First, buy my tea!"
+      ],
+      "questions": [
+        { "question": "How is business?", "options": ["Good, with a profit", "Bad, with a loss", "Closed"] },
+        { "question": "Where are Baraka’s savings?", "options": ["In his chama", "Under the bed", "At the bank"] },
+        { "question": "How does Juma say “teach me”?", "options": ["Teach me", "Show me", "Give back"] }
+      ]
+    }
   }
 }

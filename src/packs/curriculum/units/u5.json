@@ -107,5 +107,43 @@
         { "id": "u5s4l3", "newWords": [], "sentences": ["s-kesho-ni-jumanne", "s-jumamosi-na-jumapili", "s-kila-mwezi", "s-kila-mwaka"] }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-matatu-time",
+      "unlockAfter": "u5s4l1",
+      "cast": ["emma", "ssali"],
+      "culture": "sw",
+      "teaches": "sw",
+      "steps": [
+        { "speaker": "emma" },
+        { "speaker": "ssali" },
+        { "speaker": "emma" },
+        { "speaker": "ssali" },
+        { "answer": 1 },
+        { "speaker": "emma" },
+        { "speaker": "ssali" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    },
+    {
+      "id": "sw-english-time",
+      "unlockAfter": "u5s4l1",
+      "cast": ["ssali", "emma"],
+      "culture": "sw",
+      "teaches": "en",
+      "steps": [
+        { "speaker": "ssali" },
+        { "speaker": "emma" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "speaker": "emma" },
+        { "answer": 1 },
+        { "speaker": "ssali" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    }
   ]
 }

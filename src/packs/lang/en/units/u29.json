@@ -87,6 +87,22 @@
           "options": ["the children who dance", "the children dance", "the children play"]
         }
       ]
+    },
+    "sw-concert-night": {
+      "title": "Concert night",
+      "summary": "Neema and Juma go to a concert in Nairobi.",
+      "lines": [
+        "Neema, have you heard? There’s a big concert tonight.",
+        "Yes! My favourite singer will sing.",
+        "And the band will play taarab music too.",
+        "Let’s go dancing!",
+        "It’s so loud… but it’s totally great!"
+      ],
+      "questions": [
+        { "question": "Who will sing?", "options": ["Neema’s favourite singer", "Juma", "Bibi"] },
+        { "question": "What will the band also play?", "options": ["Taarab", "Rock", "Nothing"] },
+        { "question": "How does Neema say “singer”?", "options": ["singer", "player", "band"] }
+      ]
     }
   }
 }

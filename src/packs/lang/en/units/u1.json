@@ -150,6 +150,53 @@
         { "question": "How does {@amara} answer {@jjajja}’s greeting?", "options": ["No, madam", "I slept well", "Goodbye"] },
         { "question": "Is {@amara} leaving or arriving?", "options": ["Arriving", "Leaving"] }
       ]
+    },
+    "sw-new-friend": {
+      "title": "A new friend",
+      "summary": "Emma meets Amani on the ferry to Kigamboni.",
+      "lines": [
+        "Hello! How are you?",
+        "Fine, thank you. How are you?",
+        "Very well. What is your name?",
+        "My name is Emma. Who are you?",
+        "I am Amani. Where are you from, Emma?",
+        "I come from Arusha. I live in Dar es Salaam.",
+        "Me too! Nice to meet you.",
+        "Thank you very much. Goodbye, see you later!"
+      ],
+      "questions": [
+        { "question": "What did Amani ask?", "options": ["Emma’s name", "Where Emma lives", "If Emma is hungry"] },
+        { "question": "Where does Emma live?", "options": ["Arusha", "Dar es Salaam", "Mombasa"] },
+        { "question": "How does Amani say “nice to meet you”?", "options": ["Thank you very much", "Nice to meet you", "See you later"] }
+      ]
+    },
+    "sw-shikamoo-bibi": {
+      "title": "Shikamoo, Bibi",
+      "summary": "Neema greets her grandmother in Stone Town before school.",
+      "lines": [
+        "My respects, grandmother.",
+        "Thank you, my grandchild. Good morning?",
+        "Fine, grandmother. Thank you.",
+        "Okay. Hurry, hurry has no blessing!",
+        "Yes, grandmother. Goodbye!",
+        "Goodbye. See you later."
+      ],
+      "questions": [
+        { "question": "What time of day is it?", "options": ["Morning", "Afternoon", "Night"] },
+        { "question": "Who says Marahaba?", "options": ["Neema", "Bibi"] },
+        { "question": "How does Neema say goodbye?" }
+      ]
+    },
+    "sw-morning-bibi": {
+      "lines": [
+        "Good morning, Grandma.",
+        "Good morning, my grandchild. How are you?",
+        "I’m fine, Grandma. Thank you.",
+        "Okay. Slowly, slowly!",
+        "Yes, Grandma. Goodbye!",
+        "Goodbye. See you later."
+      ],
+      "questions": [{}, { "options": ["Thank you", "Goodbye", "Good morning"] }, {}]
     }
   }
 }

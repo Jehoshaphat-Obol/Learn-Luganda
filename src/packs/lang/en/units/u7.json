@@ -66,5 +66,42 @@
     "s-niletee-maji": { "text": "Bring me water, please.", "alts": ["Please bring me water."] }
   },
   "phrases": ["Knock knock!", "Come in!", "Sit down.", "We are happy to see you.", "Close the door.", "Bring me water."],
-  "dialogues": { "u7s2l2": [{ "line": "Knock knock!", "options": ["Come in! We are happy to see you.", "Close the door.", "What time is it?"] }] }
+  "dialogues": { "u7s2l2": [{ "line": "Knock knock!", "options": ["Come in! We are happy to see you.", "Close the door.", "What time is it?"] }] },
+  "stories": {
+    "sw-neemas-house": {
+      "title": "Neema’s house",
+      "summary": "Emma visits Neema’s family home in Arusha.",
+      "lines": [
+        "Come inside, Emma!",
+        "Thank you! Your house is big!",
+        "No, it’s small. There are three rooms.",
+        "Where is your mother?",
+        "Mum is in the kitchen. The children are outside.",
+        "Sorry, is there no water?",
+        "There’s water in the kitchen. No worries!"
+      ],
+      "questions": [
+        { "question": "How many rooms are there?", "options": ["Two", "Three", "Five"] },
+        { "question": "Where is Neema’s mother?", "options": ["Outside", "In the kitchen", "In town"] },
+        { "question": "How does Neema say “no worries”?", "options": ["No worries", "Come inside", "There is water"] }
+      ]
+    },
+    "sw-planting-day": {
+      "title": "Planting day",
+      "summary": "Juma helps Baraka plant maize at his family’s shamba.",
+      "lines": [
+        "Juma, thanks for coming! Today we’re planting maize.",
+        "No problem. It rained yesterday, the soil is good.",
+        "Take a hoe, and I’ll bring the seeds.",
+        "What has your wife cooked for us?",
+        "Ugali and beans! We’ll eat after work.",
+        "Great! Little by little…"
+      ],
+      "questions": [
+        { "question": "Why is it a good day to plant?", "options": ["It rained yesterday", "It is sunny", "It is Sunday"] },
+        { "question": "When will they eat?", "options": ["After work", "Before work", "Tomorrow"] },
+        { "question": "How does Baraka say “seeds”?", "options": ["seeds", "maize", "hoe"] }
+      ]
+    }
+  }
 }

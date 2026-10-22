@@ -105,6 +105,25 @@
         { "answer": 0 },
         { "speaker": "emma" }
       ]
+    },
+    {
+      "id": "sw-abunuwasi-and-the-king",
+      "unlockAfter": "u40s4l2",
+      "cast": ["jjajja", "amara"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "jjajja" },
+        { "speaker": "amara" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "jjajja" },
+        { "speaker": "jjajja" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "speaker": "jjajja" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
     }
   ]
 }

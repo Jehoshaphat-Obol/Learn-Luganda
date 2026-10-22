@@ -94,5 +94,41 @@
   "dialogues": {
     "u9s2l3": [{ "line": "Kitabu chako ni cha rangi gani?", "options": ["Nyeusi.", "Mrefu.", "Nina njaa."] }],
     "u9s3l3": [{ "line": "Baba yako ni mrefu?", "options": ["Hapana, ni mfupi.", "Ndiyo, ni nyekundu.", "Kitabu ni kipya."] }]
+  },
+  "stories": {
+    "sw-mzee-at-the-stall": {
+      "title": "Mzee kibandani",
+      "summary": "Amani anasimama kwenye kibanda cha chai cha Baraka na kuuliza kuhusu familia yake.",
+      "lines": [
+        "Habari za mchana, Baraka?",
+        "Nzuri, karibu! Una rafiki leo?",
+        "Hapana. Watoto wako je?",
+        "Watoto wangu ni wazuri. Nina watoto watatu.",
+        "Mtoto mmoja ni mwanafunzi, na mmoja ni mwalimu!",
+        "Hongera, mzee!",
+        "Asante. Karibu chai!"
+      ],
+      "questions": [
+        { "question": "Baraka ana watoto wangapi?", "options": ["Wawili", "Watatu", "Watano"] },
+        { "question": "Mtoto mmoja wa Baraka anafanya nini?", "options": ["Anaendesha matatu", "Anafundisha", "Anauza chai"] }
+      ]
+    },
+    "sw-new-cups": {
+      "title": "Vikombe vipya",
+      "summary": "Baraka ana vikombe vipya, lakini kimoja ni kichafu.",
+      "lines": [
+        "Neema, angalia! Vikombe vipya.",
+        "Vizuri sana! Ni vikubwa.",
+        "Ndiyo, na ni vyepesi sana.",
+        "Na kikombe hiki? Ni kichafu!",
+        "Samahani! Ni kikombe changu cha zamani.",
+        "Hakuna matata. Chai ni nzuri kabisa!"
+      ],
+      "questions": [
+        { "question": "Baraka ana nini?", "options": ["Vikombe vipya", "Viti vipya", "Nyumba mpya"] },
+        { "question": "Kikombe kimoja kina shida gani?", "options": ["Ni kichafu", "Ni kizito", "Ni kidogo"] },
+        { "question": "Neema anasemaje “vizuri sana”?", "options": ["Vizuri sana", "Safi kabisa", "Si mbaya"] }
+      ]
+    }
   }
 }

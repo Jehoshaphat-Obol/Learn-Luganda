@@ -57,5 +57,24 @@
   "dialogues": {
     "u23s2l3": [{ "line": "Halo? Ni nani anaongea?", "options": ["Ni mimi {@ssali}. Habari yako, {@nakato}?", "Niko njiani.", "Sina pesa."] }],
     "u23s3l3": [{ "line": "Uko wapi? Ninakusubiri!", "options": ["Samahani, niko njiani. Ninakuja!", "Tukutane kesho.", "Nipe kalamu."] }]
+  },
+  "stories": {
+    "sw-bad-network": {
+      "title": "Mtandao mbaya",
+      "summary": "Amani anajaribu kupanga kukutana na Emma kwenye simu isiyosikika vizuri.",
+      "lines": [
+        "Haloo? Emma? Unanisikia?",
+        "Ndiyo, kidogo… Hakuna mtandao mzuri hapa.",
+        "Tukutane kesho saa tatu, kituo cha basi.",
+        "Saa ngapi? Rudia, tafadhali!",
+        "Saa tatu! Nitakutumia ujumbe.",
+        "Sawa. Betri yangu inaisha. Kwaheri!"
+      ],
+      "questions": [
+        { "question": "Shida ni nini?", "options": ["Mtandao ni mbaya", "Emma ni mgonjwa", "Amani hana simu"] },
+        { "question": "Watakutana wapi?", "options": ["Kituo cha basi", "Sokoni", "Shuleni"] },
+        { "question": "Amani anasemaje “tukutane”?", "options": ["Tukutane", "Tutaonana", "Twende"] }
+      ]
+    }
   }
 }

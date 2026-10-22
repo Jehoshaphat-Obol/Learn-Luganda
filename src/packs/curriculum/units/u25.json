@@ -109,5 +109,24 @@
         }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-dhow-story",
+      "unlockAfter": "u25s4l3",
+      "cast": ["jjajja", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    }
   ]
 }

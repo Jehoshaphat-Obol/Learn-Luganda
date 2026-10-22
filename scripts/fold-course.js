@@ -5,7 +5,7 @@
 // pair's accepted answers and notes, or becomes a new concept, which grows
 // the curriculum for every language.
 //
-//   node scripts/fold-course.js [--course en-sw] [--units u1-u8] [--drafts <file>] [--since 2] [--write]
+//   node scripts/fold-course.js [--course en-sw] [--units u1-u8] [--drafts <file>] [--since 2] [--write] [--map <file>]
 //
 // New concepts go to the curriculum unit where most of the words their
 // source lesson shares with the curriculum already live, as an extra skill
@@ -165,7 +165,12 @@ for (const it of fresh) {
 }
 const folding = fresh.filter((it) => inRange(it.home));
 
-if (args.includes("--matches")) for (const it of items.filter((x) => x.match)) { const t = lang[from].units[where[it.match]][it.kind][it.match].text; if (norm(t) !== norm(it.text[from].text)) console.log(`  ${it.unit} ${it.text[to].text} = ${it.text[from].text} -> ${it.match} (${t})`); }
+// `--map <file>`: the pair's word and sentence ids with the curriculum ids
+// they matched, by source unit and lesson (scripts/retire-course.js reads it).
+const mapPath = opt('--map', null);
+if (mapPath) writeFileSync(mapPath, JSON.stringify(items.map((it) => ({ kind: it.kind, id: it.id, unit: it.unit, lesson: it.lesson, match: it.match ?? it.newId }))));
+
+if (args.includes('--matches')) for (const it of items.filter((x) => x.match)) { const t = lang[from].units[where[it.match]][it.kind][it.match].text; if (norm(t) !== norm(it.text[from].text)) console.log(`  ${it.unit} ${it.text[to].text} = ${it.text[from].text} -> ${it.match} (${t})`); }
 // Report.
 const count = (list, kind) => list.filter((x) => x.kind === kind).length;
 console.log(`${course}: ${count(items, 'words')} words, ${count(items, 'sentences')} sentences.`);

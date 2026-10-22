@@ -119,6 +119,25 @@
           "options": ["Okay, I’ll take it.", "Take off your shoes.", "I feel cold."]
         }
       ]
+    },
+    "sw-new-kanga": {
+      "title": "A new kanga",
+      "summary": "Neema helps Emma choose and buy a kanga at the market.",
+      "lines": [
+        "Emma, what do you want to buy?",
+        "I want a nice kanga.",
+        "Look at this one! It’s red and yellow.",
+        "It’s lovely! How much is it?",
+        "Ten thousand shillings.",
+        "That’s expensive! Lower it, please.",
+        "Okay, eight thousand.",
+        "Put it on now! It really suits you."
+      ],
+      "questions": [
+        { "question": "What colours is the kanga?", "options": ["Red and yellow", "Black and white", "Green and blue"] },
+        { "question": "What is the final price?", "options": ["8,000 shillings", "10,000 shillings", "800 shillings"] },
+        { "question": "How does Neema say “put it on”?", "options": ["Put it on", "Take it off", "Try it"] }
+      ]
     }
   }
 }

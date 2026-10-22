@@ -36,5 +36,15 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-pilau-lesson": {
+      "0": { "nitakufundisha": "I will teach you" },
+      "1": { "nifanye": "should I do" },
+      "4": { "viungo": "spices" },
+      "5": { "bizari ya pilau": "pilau spice mix", "mchele": "uncooked rice" },
+      "7": { "Inanukia": "it smells" },
+      "8": { "kuliko": "than" }
+    }
   }
 }

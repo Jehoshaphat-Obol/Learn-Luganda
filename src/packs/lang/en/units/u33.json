@@ -52,5 +52,23 @@
   ],
   "dialogues": {
     "u33s2l3": [{ "line": "What do you like most of all?", "options": ["I like songs most of all.", "It’s not the same.", "The elephant is big."] }]
+  },
+  "stories": {
+    "sw-who-is-faster": {
+      "title": "Who is faster?",
+      "summary": "Neema and Amani argue about who is the faster runner.",
+      "lines": [
+        "Amani, I’m faster than you!",
+        "Not true! I’m faster.",
+        "Then let’s race to that tree.",
+        "One, two, three… go!",
+        "I won! I’m the fastest of all!"
+      ],
+      "questions": [
+        { "question": "What are they arguing about?", "options": ["Who is faster", "Who is taller", "Who is older"] },
+        { "question": "Who won?", "options": ["Neema", "Amani", "Nobody"] },
+        { "question": "How does Neema say “than”?", "options": ["than", "more", "the same as"] }
+      ]
+    }
   }
 }

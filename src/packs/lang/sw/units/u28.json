@@ -79,6 +79,40 @@
         { "question": "Nani anamsaidia bibi harusi katika kwanjula?", "options": ["Ssenga", "Kabaka", "Mwalimu"] },
         { "question": "{@nakato} anasemaje “ninakutakia”?", "options": ["Nakutakia", "Nakupenda", "Ninakusubiri"] }
       ]
+    },
+    "sw-good-news": {
+      "title": "Habari njema",
+      "summary": "Neema anakimbia nyumbani kumweleza Bibi matokeo ya mtihani.",
+      "lines": [
+        "Bibi! Bibi! Nina habari njema!",
+        "Habari gani, mjukuu wangu?",
+        "Nimefaulu mtihani wa hesabu!",
+        "Hongera sana! Nimefurahi kabisa.",
+        "Jana nilikuwa na wasiwasi sana.",
+        "Usijali tena. Haba na haba hujaza kibaba."
+      ],
+      "questions": [
+        { "question": "Habari ya Neema ni ipi?", "options": ["Amefaulu mtihani wa hesabu", "Anaolewa", "Ana kazi mpya"] },
+        { "question": "Neema alijisikiaje jana?", "options": ["Alikuwa na wasiwasi", "Alikasirika", "Alikuwa na furaha"] },
+        { "question": "Bibi anasemaje “hongera”?", "options": ["Hongera", "Pole", "Usijali"] }
+      ]
+    },
+    "sw-eid-visit": {
+      "title": "Idi kwa Bibi",
+      "summary": "Neema anamleta Emma nyumbani kwa Bibi kwa sikukuu ya Idi.",
+      "lines": [
+        "Bibi, Idi mubarak! Huyu ni Emma.",
+        "Karibu, Emma! Sikukuu njema.",
+        "Asante, bibi. Hii ni zawadi yako.",
+        "Ah, tende! Asante sana. Wageni wote waliokuja leo wanataka pilau!",
+        "Na mimi nitawaletea chai.",
+        "Vizuri. Mgeni aje, mwenyeji apone."
+      ],
+      "questions": [
+        { "question": "Emma analeta nini?", "options": ["Zawadi", "Keki", "Kanga"] },
+        { "question": "Emma alimpa Bibi nini?", "options": ["Tende", "Karafuu", "Chai"] },
+        { "question": "Bibi anasemaje “sikukuu njema”?", "options": ["Sikukuu njema", "Heri ya mwaka mpya", "Safari njema"] }
+      ]
     }
   }
 }

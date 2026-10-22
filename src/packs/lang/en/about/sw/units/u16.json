@@ -39,5 +39,14 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-train-to-mombasa": {
+      "0": { "saa tatu": "the third hour: 9 o’clock" },
+      "2": { "Usijali": "don’t worry" },
+      "4": { "nitakusaidia": "I will help you" },
+      "6": { "Tumefika": "we have arrived" },
+      "7": { "Nitarudi": "I will come back", "wiki ijayo": "next week" }
+    }
   }
 }

@@ -97,5 +97,74 @@
       }
     ],
     "u17s3l3": [{ "line": "Where is the hospital?", "options": ["I don’t know, sir. Ask the police officer.", "I don’t eat meat.", "Don’t go!"] }]
+  },
+  "stories": {
+    "sw-family-photo": {
+      "title": "The family photo",
+      "summary": "Neema shows Emma a photo of her family.",
+      "lines": [
+        "Who is this?",
+        "This is my grandmother, and this is grandfather.",
+        "Your grandmother is lovely! Do you have a brother?",
+        "Yes, I have a brother. I don’t have a sister.",
+        "My brother is very tall!",
+        "Your family is lovely.",
+        "Thank you very much!"
+      ],
+      "questions": [
+        { "question": "Who is in the photo first?", "options": ["Neema’s grandmother", "Neema’s teacher", "Neema’s sister"] },
+        { "question": "Does Neema have a sister?", "options": ["Yes", "No"] },
+        { "question": "How does Neema say “I don’t have”?", "options": ["I have", "I don’t have", "You have"] }
+      ]
+    },
+    "sw-exam-day": {
+      "title": "Exam day",
+      "summary": "Emma, now a volunteer teacher, gives Neema’s class a maths exam.",
+      "lines": [
+        "Good morning, class! Today we have a maths exam.",
+        "Teacher, I don’t understand the third question.",
+        "Read it again, slowly.",
+        "Ah! The answer is twenty-five.",
+        "Very good! Write the answer in your exercise book."
+      ],
+      "questions": [
+        { "question": "What exam is it?", "options": ["Maths", "Science", "English"] },
+        { "question": "What is Neema’s answer?", "options": ["25", "15", "50"] },
+        { "question": "How does Neema say “I don’t understand”?", "options": ["I don’t understand", "I don’t know", "Repeat"] }
+      ]
+    },
+    "sw-no-thanks": {
+      "title": "No, thank you",
+      "summary": "Emma visits Bibi, who will not take no for an answer.",
+      "lines": [
+        "Welcome, Emma! Sit down. Do you want tea?",
+        "Thank you, Grandma, but I don’t want tea now.",
+        "You don’t want tea? Then have a mandazi!",
+        "Grandma, I’m completely full. I ate a lot.",
+        "That’s not true! You didn’t eat anything!",
+        "Okay, okay. Just one mandazi!"
+      ],
+      "questions": [
+        { "question": "What does Emma not want?", "options": ["Tea", "Mandazi", "Water"] },
+        { "question": "What does Bibi think?", "options": ["Emma didn’t eat anything", "Emma ate too much", "Emma is sick"] },
+        { "question": "How does Emma say “I don’t want”?", "options": ["I don’t want", "I don’t like", "I don’t have"] }
+      ]
+    },
+    "sw-the-accident": {
+      "title": "The accident",
+      "summary": "Juma and Emma see a boda boda fall and help the rider.",
+      "lines": [
+        "Juma! There’s been an accident!",
+        "A boda boda has fallen. The rider has hurt his leg.",
+        "He’s bleeding! Shall I call an ambulance?",
+        "Yes, call quickly. I’ll stay with him.",
+        "Friend, calm down. Don’t be afraid, help is coming."
+      ],
+      "questions": [
+        { "question": "Who is hurt?", "options": ["The boda boda rider", "Emma", "A child"] },
+        { "question": "What does Emma do?", "options": ["Calls an ambulance", "Calls the police", "Runs home"] },
+        { "question": "How does Juma say “don’t be afraid”?", "options": ["Don’t be afraid", "Calm down", "Safe"] }
+      ]
+    }
   }
 }

@@ -120,6 +120,22 @@
         { "answer": 0, "optionsLang": "target" },
         { "speaker": "amara" }
       ]
+    },
+    {
+      "id": "sw-concert-night",
+      "unlockAfter": "u29s4l3",
+      "cast": ["amara", "ssali"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "ssali" },
+        { "speaker": "amara" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "speaker": "amara" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
     }
   ]
 }

@@ -42,5 +42,13 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-zanzibar-trip": {
+      "0": { "wikendi": "weekend" },
+      "1": { "boti": "boat" },
+      "3": { "huko": "there" },
+      "4": { "Tulitembea": "we walked", "Mji Mkongwe": "Stone Town", "baharini": "by the sea" }
+    }
   }
 }

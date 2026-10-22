@@ -129,6 +129,24 @@
         { "answer": 0, "optionsLang": "target" },
         { "speaker": "nakato" }
       ]
+    },
+    {
+      "id": "sw-saturday-chores",
+      "unlockAfter": "u20s4l1",
+      "cast": ["jjajja", "amara"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "jjajja" },
+        { "speaker": "amara" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "speaker": "jjajja" },
+        { "answer": 0 }
+      ]
     }
   ]
 }

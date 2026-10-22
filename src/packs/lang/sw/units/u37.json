@@ -76,5 +76,40 @@
   "dialogues": {
     "u37s2l3": [{ "line": "Umesikia habari?", "options": ["Ndiyo! Wanasema barabara mpya imekamilika.", "Ningependa chai.", "Hapo zamani za kale."] }],
     "u37s3l3": [{ "line": "Nadhani tupande miti kijijini. Maoni yako ni yapi?", "options": ["Nakubaliana nawe!", "Umesikia redioni?", "Nimeshiba."] }]
+  },
+  "stories": {
+    "sw-harambee": {
+      "title": "Harambee",
+      "summary": "Amani na Neema wanaenda kwenye harambee ya ada ya shule ya mtoto wa jirani.",
+      "lines": [
+        "Amani, kwa nini kuna watu wengi hapa?",
+        "Ni harambee. Mtoto wa jirani amepata nafasi chuo kikuu.",
+        "Vizuri! Mimi nitatoa shilingi elfu mbili.",
+        "Asante. Kidole kimoja hakivunji chawa.",
+        "Kweli. Tusaidiane!"
+      ],
+      "questions": [
+        { "question": "Harambee ni ya nini?", "options": ["Nafasi ya chuo kikuu ya mtoto wa jirani", "Harusi", "Barabara mpya"] },
+        { "question": "Methali ya Amani ina maana gani?", "options": ["Tunahitajiana", "Vidole ni vidogo", "Nawa mikono"] },
+        { "question": "Neema anasemaje “tusaidiane”?", "options": ["Tusaidiane", "Tunapendana", "Harambee"] }
+      ]
+    },
+    "sw-morning-paper": {
+      "title": "Gazeti la asubuhi",
+      "summary": "Baraka na Juma wanasoma gazeti wakinywa chai, na hawakubaliani kabisa.",
+      "lines": [
+        "Juma, umesoma gazeti la leo?",
+        "Bado. Kuna habari gani?",
+        "Serikali itajenga barabara mpya kijijini kwetu.",
+        "Kwa maoni yangu, maji ni muhimu kuliko barabara.",
+        "Samahani, sikubaliani. Barabara italeta biashara.",
+        "Basi, tuandike maoni yetu kwa gazeti!"
+      ],
+      "questions": [
+        { "question": "Serikali itajenga nini?", "options": ["Barabara mpya", "Shule mpya", "Hospitali"] },
+        { "question": "Juma anafikiri nini ni muhimu zaidi?", "options": ["Maji", "Barabara", "Biashara"] },
+        { "question": "Baraka anasemaje “sikubaliani”?", "options": ["sikubaliani", "nakubali", "nadhani"] }
+      ]
+    }
   }
 }

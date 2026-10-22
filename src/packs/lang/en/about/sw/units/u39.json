@@ -23,5 +23,9 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-mango-deal": { "1": { "mia moja": "one hundred" }, "4": { "themanini": "eighty" }, "5": { "Sawa": "fine, okay", "maembe matano": "five mangoes" } },
+    "sw-visiting-bibi": { "1": { "mwanangu": "my child", "Ingia": "come in, enter" }, "6": { "Haya": "all right, now" } }
   }
 }

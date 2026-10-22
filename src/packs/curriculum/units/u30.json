@@ -98,5 +98,24 @@
         }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-ramadan-evening",
+      "unlockAfter": "u30s4l2",
+      "cast": ["jjajja", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "jjajja" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    }
   ]
 }

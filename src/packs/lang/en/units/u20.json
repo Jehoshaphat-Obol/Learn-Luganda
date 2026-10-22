@@ -100,6 +100,24 @@
         { "question": "What is {@ssali}’s plan?", "options": ["Going to the lake", "Visiting his mother", "Studying at home"] },
         { "question": "How does {@ssali} say “We will go”?", "options": ["We will go", "We went", "Don’t go"] }
       ]
+    },
+    "sw-saturday-chores": {
+      "title": "Saturday chores",
+      "summary": "Bibi and Neema clean the house together on a Saturday morning.",
+      "lines": [
+        "Neema, today is Saturday. Let’s clean the house!",
+        "Okay, Grandma. Where shall I start?",
+        "First wash the dishes, then sweep outside.",
+        "I’ve finished the dishes! And now?",
+        "Now sweep, and close the window. It’s windy.",
+        "Good job, Grandma! The house is completely clean.",
+        "Thanks for the help. Many hands, light work."
+      ],
+      "questions": [
+        { "question": "What does Neema do first?", "options": ["Wash the dishes", "Sweep outside", "Cook"] },
+        { "question": "Why should Neema close the window?", "options": ["It’s windy", "It’s raining", "It’s dark"] },
+        { "question": "What does Bibi’s proverb mean?", "options": ["Many hands make light work", "Work is heavy", "Wash your hands"] }
+      ]
     }
   }
 }

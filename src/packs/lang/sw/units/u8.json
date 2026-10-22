@@ -73,6 +73,43 @@
         { "question": "Nini kinamuuma?", "options": ["Tumbo lake", "Kichwa chake", "Mguu wake"] },
         { "question": "{@mukasa} anampa {@amara} nini?", "options": ["Dawa", "Chai", "Matooke"] }
       ]
+    },
+    "sw-at-the-clinic": {
+      "title": "Kliniki",
+      "summary": "Emma anajisikia vibaya na Amani anampeleka kliniki.",
+      "lines": [
+        "Emma, habari? Una nini?",
+        "Mimi ni mgonjwa. Nina homa, na kichwa kinauma.",
+        "Pole sana! Twende hospitali.",
+        "Samahani, daktari yuko wapi?",
+        "Daktari anasema: dawa na pumzika siku tatu.",
+        "Ugua pole, rafiki yangu."
+      ],
+      "questions": [
+        { "question": "Emma ana shida gani?", "options": ["Mguu unauma", "Ana homa na kichwa kinauma", "Ana njaa"] },
+        {
+          "question": "Kwa nini Emma anasema “excuse me” hapa?",
+          "options": ["Kuomba msamaha kwa kuchelewa", "Kumwita mtu", "Kuonyesha huruma"]
+        },
+        { "question": "Emma lazima apumzike muda gani?", "options": ["Siku moja", "Siku tatu", "Wiki moja"] },
+        { "question": "Amani anasemaje “ugua pole”?", "options": ["Afya njema", "Ugua pole", "Nimepona"] }
+      ]
+    },
+    "sw-bibi-remedy": {
+      "title": "Amepona",
+      "summary": "Wiki moja baadaye, Emma anamtembelea Bibi Mwanaisha, mwenye ushauri kwa kila kitu.",
+      "lines": [
+        "Karibu, Emma! Ulikuwa mgonjwa?",
+        "Ndiyo, bibi. Lakini sasa nimepona.",
+        "Pole! Kunywa chai ya tangawizi kila siku.",
+        "Asante, bibi. Nimechoka kidogo tu.",
+        "Pumzika. Afya ni bora kuliko mali.",
+        "Afya njema, bibi!"
+      ],
+      "questions": [
+        { "question": "Emma yukoje sasa?", "options": ["Bado mgonjwa", "Amepona", "Amechoka sana"] },
+        { "question": "Methali ya Bibi inasema nini ni bora kuliko mali?", "options": ["Afya", "Chai", "Familia"] }
+      ]
     }
   }
 }

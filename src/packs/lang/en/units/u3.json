@@ -82,5 +82,27 @@
   "dialogues": {
     "u3s2l2": [{ "line": "What do you want, my child?", "options": ["I am hungry.", "Goodbye.", "I sell oranges."] }],
     "u3s3l2": [{ "line": "What are you buying, madam?", "options": ["I am buying a pineapple.", "I slept well.", "I am a student."] }]
+  },
+  "stories": {
+    "sw-chai-stall": {
+      "title": "Chai at Baraka’s",
+      "summary": "Emma has breakfast at Baraka’s stall in Mombasa.",
+      "lines": [
+        "Welcome, Emma! Good morning?",
+        "Fine, Baraka. I am very hungry!",
+        "Do you want chapati and tea?",
+        "Yes! Tea with milk and sugar, please.",
+        "The food is very tasty!",
+        "Thank you! Come again."
+      ],
+      "questions": [
+        { "question": "How is Emma feeling?", "options": ["Thirsty", "Very hungry", "Tired"] },
+        { "question": "What does Emma put in her tea?", "options": ["Milk and sugar", "Nothing", "Coffee"] },
+        {
+          "question": "How does Emma say the food is tasty?",
+          "options": ["It’s very expensive!", "The food is very tasty!", "It’s cheap!"]
+        }
+      ]
+    }
   }
 }

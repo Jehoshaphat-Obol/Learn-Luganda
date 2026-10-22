@@ -53,5 +53,35 @@
     "s-kila-mwaka": { "text": "The long rains come every year.", "alts": ["The long rains come each year."] }
   },
   "phrases": ["Today", "Tomorrow", "See you tomorrow.", "I study on Monday.", "What time is it?", "It’s ten o’clock."],
-  "dialogues": { "u5s3l2": [{ "line": "What time is it?", "options": ["It’s ten o’clock.", "Two thousand shillings.", "On Monday."] }] }
+  "dialogues": { "u5s3l2": [{ "line": "What time is it?", "options": ["It’s ten o’clock.", "Two thousand shillings.", "On Monday."] }] },
+  "stories": {
+    "sw-matatu-time": {
+      "title": "What time does it leave?",
+      "summary": "Emma learns about Swahili time at the matatu stage in Nairobi.",
+      "lines": [
+        "Hi, Juma! What time is the matatu?",
+        "Eight in the morning.",
+        "Saa mbili? Not two o’clock?",
+        "No! The second hour of the morning, one hour after seven.",
+        "And what time is it now?",
+        "Now it’s half past seven. No rush!",
+        "Thank you very much, Juma. See you tomorrow!"
+      ],
+      "questions": [
+        { "question": "When does the matatu leave, by the clock?", "options": ["2:00 a.m.", "8:00 a.m.", "2:00 p.m."] },
+        { "question": "How long does Emma have to wait?", "options": ["Half an hour", "Two hours", "Six hours"] },
+        { "question": "How does Emma say “see you tomorrow”?" }
+      ]
+    },
+    "sw-english-time": {
+      "lines": [
+        "Emma, what time is it now?",
+        "It’s seven thirty.",
+        "The matatu leaves at eight in the morning.",
+        "Eight o’clock? Okay. Slowly, slowly!",
+        "Thank you, Emma. See you tomorrow!"
+      ],
+      "questions": [{}, {}, { "options": ["See you tomorrow", "Today and tomorrow", "What time is it?"] }]
+    }
+  }
 }

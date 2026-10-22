@@ -78,5 +78,74 @@
   "dialogues": {
     "u17s2l3": [{ "line": "Unataka kahawa?", "options": ["Hapana, sitaki kahawa. Ninakunywa chai.", "Simjui nyoka.", "Hiki si changu."] }],
     "u17s3l3": [{ "line": "Hospitali iko wapi?", "options": ["Sijui, bwana. Muulize polisi.", "Sili nyama.", "Usiende!"] }]
+  },
+  "stories": {
+    "sw-family-photo": {
+      "title": "Picha ya familia",
+      "summary": "Neema anamwonyesha Emma picha ya familia yake.",
+      "lines": [
+        "Huyu ni nani?",
+        "Huyu ni bibi yangu, na huyu ni babu.",
+        "Bibi yako ni mzuri! Una kaka?",
+        "Ndiyo, nina kaka. Sina dada.",
+        "Kaka yangu ni mrefu sana!",
+        "Familia yako ni nzuri.",
+        "Asante sana!"
+      ],
+      "questions": [
+        { "question": "Nani yuko kwenye picha kwanza?", "options": ["Bibi yake Neema", "Mwalimu wa Neema", "Dada yake Neema"] },
+        { "question": "Je, Neema ana dada?", "options": ["Ndiyo", "Hapana"] },
+        { "question": "Neema anasemaje “sina”?", "options": ["Nina", "Sina", "Una"] }
+      ]
+    },
+    "sw-exam-day": {
+      "title": "Siku ya mtihani",
+      "summary": "Mwalimu Emma anatoa mtihani wa hesabu, na Neema ana swali.",
+      "lines": [
+        "Habari za asubuhi, darasa! Leo tuna mtihani wa hesabu.",
+        "Mwalimu, sielewi swali la tatu.",
+        "Soma tena, pole pole.",
+        "Ah! Jibu ni ishirini na tano.",
+        "Vizuri sana! Andika jibu kwenye daftari."
+      ],
+      "questions": [
+        { "question": "Ni mtihani wa nini?", "options": ["Hesabu", "Sayansi", "Kiingereza"] },
+        { "question": "Jibu la Neema ni lipi?", "options": ["25", "15", "50"] },
+        { "question": "Neema anasemaje “sielewi”?", "options": ["Sielewi", "Sijui", "Rudia"] }
+      ]
+    },
+    "sw-no-thanks": {
+      "title": "Hapana, asante",
+      "summary": "Emma anamtembelea Bibi, ambaye hakubali jibu la “hapana”.",
+      "lines": [
+        "Karibu, Emma! Kaa. Unataka chai?",
+        "Asante, bibi, lakini sitaki chai sasa.",
+        "Hutaki chai? Basi, kula mandazi!",
+        "Bibi, nimeshiba kabisa. Nilikula sana.",
+        "Si kweli! Hukula kitu!",
+        "Sawa, sawa. Mandazi moja tu!"
+      ],
+      "questions": [
+        { "question": "Emma hataki nini?", "options": ["Chai", "Andazi", "Maji"] },
+        { "question": "Bibi anafikiri nini?", "options": ["Emma hakula chochote", "Emma alikula sana", "Emma ni mgonjwa"] },
+        { "question": "Emma anasemaje “sitaki”?", "options": ["sitaki", "sipendi", "sina"] }
+      ]
+    },
+    "sw-the-accident": {
+      "title": "Ajali",
+      "summary": "Juma na Emma wanaona boda boda ikianguka na wanamsaidia dereva.",
+      "lines": [
+        "Juma! Kumetokea ajali!",
+        "Boda boda imeanguka. Dereva ameumia mguu.",
+        "Anatoka damu! Nipigie gari la wagonjwa?",
+        "Ndiyo, piga simu haraka. Mimi nitakaa naye.",
+        "Rafiki, tulia. Usiogope, msaada unakuja."
+      ],
+      "questions": [
+        { "question": "Nani ameumia?", "options": ["Dereva wa boda boda", "Emma", "Mtoto"] },
+        { "question": "Emma anafanya nini?", "options": ["Anapiga simu ya gari la wagonjwa", "Anapiga simu polisi", "Anakimbia nyumbani"] },
+        { "question": "Juma anasemaje “usiogope”?", "options": ["Usiogope", "Tulia", "Salama"] }
+      ]
+    }
   }
 }

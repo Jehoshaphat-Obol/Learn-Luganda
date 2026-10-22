@@ -112,6 +112,24 @@
         { "speaker": "amara" },
         { "answer": 0, "optionsLang": "target" }
       ]
+    },
+    {
+      "id": "sw-pilau-lesson",
+      "unlockAfter": "u24s1l3",
+      "cast": ["mukasa", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "mukasa" },
+        { "speaker": "emma" },
+        { "speaker": "mukasa" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "mukasa" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "mukasa" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
     }
   ]
 }

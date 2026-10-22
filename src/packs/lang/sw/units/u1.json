@@ -138,6 +138,53 @@
         { "question": "{@amara} anajibuje salamu ya {@jjajja}?", "options": ["Hapana, bibi", "Nimelala salama", "Kwaheri"] },
         { "question": "{@amara} anaondoka au anafika?", "options": ["Anafika", "Anaondoka"] }
       ]
+    },
+    "sw-new-friend": {
+      "title": "Rafiki mpya",
+      "summary": "Emma anakutana na Amani kwenye kivuko cha Kigamboni.",
+      "lines": [
+        "Jambo! Habari?",
+        "Nzuri, asante. Habari yako?",
+        "Nzuri sana. Jina lako nani?",
+        "Jina langu ni Emma. Wewe ni nani?",
+        "Mimi ni Amani. Unatoka wapi, Emma?",
+        "Ninatoka Arusha. Ninaishi Dar es Salaam.",
+        "Mimi pia! Nimefurahi kukuona.",
+        "Asante sana. Kwaheri, tutaonana!"
+      ],
+      "questions": [
+        { "question": "Amani aliuliza nini?", "options": ["Jina la Emma", "Mahali Emma anapoishi", "Kama Emma ana njaa"] },
+        { "question": "Emma anaishi wapi?", "options": ["Arusha", "Dar es Salaam", "Mombasa"] },
+        { "question": "Amani anasemaje “nimefurahi kukuona”?", "options": ["Asante sana", "Nimefurahi kukuona", "Tutaonana"] }
+      ]
+    },
+    "sw-shikamoo-bibi": {
+      "lines": [
+        "Shikamoo, bibi.",
+        "Marahaba, mjukuu wangu. Habari za asubuhi?",
+        "Nzuri, bibi. Asante.",
+        "Haya. Haraka haraka haina baraka!",
+        "Ndiyo, bibi. Kwaheri!",
+        "Kwaheri. Tutaonana."
+      ],
+      "questions": [{}, {}, { "options": ["Shikamoo", "Kwaheri", "Karibu"] }]
+    },
+    "sw-morning-bibi": {
+      "title": "Habari za asubuhi, Bibi",
+      "summary": "Neema anamsalimia bibi yake Stone Town kabla ya shule, kwa Kiingereza.",
+      "lines": [
+        "Habari za asubuhi, bibi.",
+        "Habari za asubuhi, mjukuu wangu. Habari yako?",
+        "Nzuri, bibi. Asante.",
+        "Haya. Pole pole!",
+        "Ndiyo, bibi. Kwaheri!",
+        "Kwaheri. Tutaonana."
+      ],
+      "questions": [
+        { "question": "Ni wakati gani wa siku?", "options": ["Asubuhi", "Mchana", "Usiku"] },
+        { "question": "Neema anasemaje “asante”?" },
+        { "question": "Je, Neema anafika au anaondoka?", "options": ["Anafika", "Anaondoka"] }
+      ]
     }
   }
 }

@@ -90,6 +90,23 @@
           "options": ["Nimefika salama.", "Nenda polepole.", "Simama hapa."]
         }
       ]
+    },
+    "sw-train-to-mombasa": {
+      "title": "Treni ya Mombasa",
+      "summary": "Juma anamsaidia Emma na mzigo wake kituoni.",
+      "lines": [
+        "Juma, treni itaondoka saa tatu.",
+        "Usijali, tutafika mapema. Twende!",
+        "Mzigo wangu ni mzito sana!",
+        "Nipe, nitakusaidia.",
+        "Tumefika kituoni. Safari njema, Emma!",
+        "Asante sana, Juma! Nitarudi wiki ijayo."
+      ],
+      "questions": [
+        { "question": "Treni inaondoka saa ngapi?", "options": ["Saa tatu asubuhi", "Saa tisa usiku", "Saa tisa mchana"] },
+        { "question": "Juma anafanya nini?", "options": ["Anamsaidia na mzigo", "Ananunua tiketi", "Anaendesha treni"] },
+        { "question": "Juma anasemaje “safari njema”?", "options": ["Safari njema", "Twende", "Pole pole"] }
+      ]
     }
   }
 }

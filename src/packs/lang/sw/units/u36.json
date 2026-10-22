@@ -91,6 +91,49 @@
           "options": ["Kidole kimoja hakivunji chawa", "Pole pole ndio mwendo", "Haba na haba hujaza kibaba"]
         }
       ]
+    },
+    "sw-school-interview": {
+      "title": "Mahojiano",
+      "summary": "Neema anamhoji Emma kwa ajili ya kazi ya shule.",
+      "lines": [
+        "Emma, nina maswali kwa ajili ya shule. Sawa?",
+        "Sawa! Uliza.",
+        "Unatoka wapi, na una miaka mingapi?",
+        "Ninatoka Kanada. Nina miaka ishirini na nne.",
+        "Kwa nini unajifunza Kiswahili?",
+        "Kwa sababu ninapenda Afrika Mashariki, na marafiki zangu wanaongea Kiswahili.",
+        "Swali la mwisho: “hakuna matata” ina maana gani?",
+        "Ina maana “hakuna shida”!"
+      ],
+      "questions": [
+        { "question": "Emma ana miaka mingapi?", "options": ["24", "20", "42"] },
+        {
+          "question": "Kwa nini Emma anajifunza Kiswahili?",
+          "options": ["Anapenda Afrika Mashariki na marafiki zake wanakizungumza", "Kwa ajili ya kazi yake", "Kwa ajili ya mtihani"]
+        },
+        { "question": "Neema anasemaje “kwa nini”?", "options": ["Kwa nini", "Lini", "Wapi"] }
+      ]
+    },
+    "sw-bibi-proverbs": {
+      "title": "Methali za Bibi",
+      "summary": "Emma anamwomba Bibi aeleze methali anazotumia kila mara.",
+      "lines": [
+        "Bibi, unasema methali kila siku! Nifundishe.",
+        "Sawa. “Haraka haraka haina baraka.”",
+        "Maana yake ni nini?",
+        "Ukifanya kitu haraka sana, utakosea.",
+        "Na “mgeni siku mbili”?",
+        "Siku ya tatu, mgeni ni mwanafamilia. Anasaidia kazi!",
+        "Leo ni siku yangu ya tatu… nipe jembe!"
+      ],
+      "questions": [
+        { "question": "Methali inaonya dhidi ya nini?", "options": ["Haraka", "Kuchelewa", "Kula sana"] },
+        {
+          "question": "Mgeni anakuwaje siku ya tatu?",
+          "options": ["Anakuwa mwanafamilia na anasaidia", "Lazima aondoke", "Anapata zawadi"]
+        },
+        { "question": "Emma anauliza maana vipi?", "options": ["Maana yake ni nini?", "Methali gani?", "Uko wapi?"] }
+      ]
     }
   }
 }

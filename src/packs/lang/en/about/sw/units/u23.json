@@ -30,5 +30,8 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-bad-network": { "0": { "Unanisikia": "can you hear me" }, "5": { "Nitakutumia": "I will send you" }, "7": { "inaisha": "is running out" } }
   }
 }

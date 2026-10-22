@@ -71,5 +71,24 @@
     "Last week we went to {@getaway}.",
     "Long ago I was a student."
   ],
-  "dialogues": { "u19s3l3": [{ "line": "What did you do yesterday?", "options": ["I went to town.", "I will go tomorrow.", "I don’t eat meat."] }] }
+  "dialogues": { "u19s3l3": [{ "line": "What did you do yesterday?", "options": ["I went to town.", "I will go tomorrow.", "I don’t eat meat."] }] },
+  "stories": {
+    "sw-zanzibar-trip": {
+      "title": "A trip to Zanzibar",
+      "summary": "Amani tells Bibi about her weekend in Zanzibar.",
+      "lines": [
+        "Amani! Where did you go at the weekend?",
+        "I went to Zanzibar by boat, Grandma.",
+        "Lovely! What did you do there?",
+        "We walked around Stone Town, and we ate fish by the sea.",
+        "Did you see my old house?",
+        "Yes! The door is still very beautiful."
+      ],
+      "questions": [
+        { "question": "How did Amani travel?", "options": ["By boat", "By plane", "By bus"] },
+        { "question": "What did they eat?", "options": ["Fish", "Chicken", "Ugali"] },
+        { "question": "How does Amani say “I went”?", "options": ["I went", "I will go", "I go"] }
+      ]
+    }
+  }
 }

@@ -50,5 +50,24 @@
     "s-akubariki": { "text": "Mungu akubariki, mwanangu." }
   },
   "phrases": ["Jumapili ninaenda kanisani.", "Ijumaa anaenda msikitini.", "Krismasi njema!", "Idi njema!", "Heri ya mwaka mpya!", "Mungu akubariki!"],
-  "dialogues": { "u30s3l3": [{ "line": "Krismasi njema!", "options": ["Na wewe, Krismasi njema!", "Nimeshiba.", "Sielewi mpira."] }] }
+  "dialogues": { "u30s3l3": [{ "line": "Krismasi njema!", "options": ["Na wewe, Krismasi njema!", "Nimeshiba.", "Sielewi mpira."] }] },
+  "stories": {
+    "sw-ramadan-evening": {
+      "title": "Jioni ya Ramadhani",
+      "summary": "Emma anaungana na Bibi kufuturu jua linapozama.",
+      "lines": [
+        "Bibi, umefunga leo?",
+        "Ndiyo, tangu alfajiri. Jua likizama, tutakula pamoja.",
+        "Tutakula nini?",
+        "Tende, uji na sambusa. Karibu sana.",
+        "Asante, bibi. Mungu akubariki.",
+        "Amina, mwanangu."
+      ],
+      "questions": [
+        { "question": "Watakula lini?", "options": ["Jua likizama", "Alfajiri", "Mchana"] },
+        { "question": "Watakula nini kwanza?", "options": ["Tende, uji na sambusa", "Ugali", "Hakuna"] },
+        { "question": "Emma anasemaje “Mungu akubariki”?", "options": ["Mungu akubariki", "Mungu akipenda", "Amina"] }
+      ]
+    }
+  }
 }

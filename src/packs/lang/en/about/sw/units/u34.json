@@ -30,5 +30,14 @@
         ]
       }
     ]
+  },
+  "glosses": {
+    "sw-wedding-plans": { "0": { "ataolewa": "she will be married" }, "1": { "Hongera": "congratulations" }, "6": { "usiku mzima": "all night" } },
+    "sw-if-i-were-rich": {
+      "0": { "ungefanya": "you would do" },
+      "1": { "Ningejenga": "I would build", "kwetu": "our (home)" },
+      "5": { "lifti": "lift, ride" },
+      "6": { "Ukilipa": "if you pay" }
+    }
   }
 }

@@ -79,6 +79,40 @@
         { "question": "Who helps the bride at a kwanjula?", "options": ["The ssenga", "The Kabaka", "The teacher"] },
         { "question": "How does {@nakato} say “I wish you”?", "options": ["I wish you", "I love you", "I’m waiting for you"] }
       ]
+    },
+    "sw-good-news": {
+      "title": "Good news",
+      "summary": "Neema runs home to tell Bibi her exam results.",
+      "lines": [
+        "Grandma! Grandma! I have good news!",
+        "What news, my grandchild?",
+        "I passed the maths exam!",
+        "Congratulations! I’m so glad.",
+        "Yesterday I was really worried.",
+        "Don’t worry any more. Little by little fills the measure."
+      ],
+      "questions": [
+        { "question": "What is Neema’s news?", "options": ["She passed her maths exam", "She is getting married", "She has a new job"] },
+        { "question": "How did Neema feel yesterday?", "options": ["Worried", "Angry", "Happy"] },
+        { "question": "How does Bibi say “congratulations”?", "options": ["Congratulations", "Sorry", "Don’t worry"] }
+      ]
+    },
+    "sw-eid-visit": {
+      "title": "Eid at Bibi’s",
+      "summary": "Neema brings Emma to Bibi’s house for Eid.",
+      "lines": [
+        "Grandma, Eid Mubarak! This is Emma.",
+        "Welcome, Emma! Happy holiday.",
+        "Thank you, Grandma. This is a gift for you.",
+        "Ah, dates! Thank you very much. All the guests who came today want pilau!",
+        "And I’ll bring them tea.",
+        "Good. Let the guest come, so the host may prosper."
+      ],
+      "questions": [
+        { "question": "What does Emma bring?", "options": ["A gift", "A cake", "A kanga"] },
+        { "question": "What did Emma give Bibi?", "options": ["Dates", "Cloves", "Tea"] },
+        { "question": "How does Bibi say “happy holiday”?", "options": ["Happy holiday", "Happy New Year", "Have a good trip"] }
+      ]
     }
   }
 }

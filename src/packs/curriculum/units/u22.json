@@ -132,6 +132,40 @@
         { "speaker": "mukasa" },
         { "answer": 0, "optionsLang": "target" }
       ]
+    },
+    {
+      "id": "sw-busy-week",
+      "unlockAfter": "u22s2l1",
+      "cast": ["nakato", "amara"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "nakato" },
+        { "speaker": "amara" },
+        { "speaker": "nakato" },
+        { "speaker": "amara" },
+        { "answer": 1 },
+        { "speaker": "nakato" },
+        { "answer": 2 },
+        { "speaker": "amara" },
+        { "answer": 1, "optionsLang": "target" }
+      ]
+    },
+    {
+      "id": "sw-big-match",
+      "unlockAfter": "u22s4l2",
+      "cast": ["mukasa", "ssali"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "mukasa" },
+        { "speaker": "ssali" },
+        { "speaker": "mukasa" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "answer": 0 },
+        { "speaker": "mukasa" },
+        { "speaker": "ssali" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
     }
   ]
 }

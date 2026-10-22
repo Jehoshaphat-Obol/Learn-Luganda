@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u26",
+  "guidebook": {
+    "intro": "Kuzungumza kuhusu wafalme na falme kwa Kiingereza: maneno ya Kabaka wa Buganda, ikulu yake na bunge lake, **Lukiiko**.",
+    "tips": [
+      {
+        "id": "the-king",
+        "title": "The: mfalme mmoja tunayemjua",
+        "body": [
+          "Kiswahili hakina **the**, lakini Kiingereza kinakihitaji kwa kitu kimoja tunachokijua: **the king** (mfalme), **the palace** (ikulu), **the kingdom of Buganda** (ufalme wa Buganda).",
+          "Majina ya watu hayana **the**: **Kabaka Mutebi**, si ~~the Kabaka Mutebi~~. Lakini cheo peke yake kinayo: **the Kabaka lives in Mengo.**"
+        ]
+      },
+      {
+        "id": "present-simple-rule",
+        "title": "Mambo ya kawaida: meets, sits",
+        "body": [
+          "Kama **hu-** ya Kiswahili, Kiingereza husema jambo la kawaida kwa wakati uliopo, na **-s** kwa yeye/kitu kimoja: **Parliament sits at Bulange** (bunge hukaa Bulange)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Falme za Uganda",
+        "body": [
+          "Uganda ina falme za kitamaduni kama Buganda, Bunyoro na Toro. Wafalme hawatawali nchi, lakini wanaheshimiwa sana, na kwa Kiingereza huitwa **kings** au kwa vyeo vyao, kama **the Kabaka**."
+        ]
+      }
+    ]
+  }
+}

@@ -158,6 +158,25 @@
         { "answer": 0, "optionsLang": "target" },
         { "speaker": "nakato" }
       ]
+    },
+    {
+      "id": "sw-new-kanga",
+      "unlockAfter": "u10s4l4",
+      "cast": ["amara", "emma", "mukasa"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "amara" },
+        { "speaker": "emma" },
+        { "speaker": "amara" },
+        { "answer": 0 },
+        { "speaker": "emma" },
+        { "speaker": "mukasa" },
+        { "speaker": "emma" },
+        { "speaker": "mukasa" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
     }
   ]
 }

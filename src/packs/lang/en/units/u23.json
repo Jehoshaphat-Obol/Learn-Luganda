@@ -62,5 +62,24 @@
         "options": ["Sorry, I’m on the way. I’m coming!", "Let’s meet yesterday.", "Give me a pen."]
       }
     ]
+  },
+  "stories": {
+    "sw-bad-network": {
+      "title": "Bad network",
+      "summary": "Amani tries to arrange a meeting with Emma over a poor line.",
+      "lines": [
+        "Hello? Emma? Can you hear me?",
+        "Yes, a little… There’s no good network here.",
+        "Let’s meet tomorrow at nine, at the bus stop.",
+        "What time? Say it again, please!",
+        "At nine! I’ll send you a message.",
+        "Okay. My battery is running out. Bye!"
+      ],
+      "questions": [
+        { "question": "What is the problem?", "options": ["The network is bad", "Emma is sick", "Amani has no phone"] },
+        { "question": "Where will they meet?", "options": ["At the bus stop", "At the market", "At school"] },
+        { "question": "How does Amani say “let’s meet”?", "options": ["Let’s meet", "See you", "Let’s go"] }
+      ]
+    }
   }
 }

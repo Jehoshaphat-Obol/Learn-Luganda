@@ -127,5 +127,40 @@
         }
       ]
     }
+  ],
+  "stories": [
+    {
+      "id": "sw-harambee",
+      "unlockAfter": "u37s4l3",
+      "cast": ["nakato", "amara"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "amara" },
+        { "speaker": "nakato" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "speaker": "nakato" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    },
+    {
+      "id": "sw-morning-paper",
+      "unlockAfter": "u37s4l5",
+      "cast": ["mukasa", "ssali"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "mukasa" },
+        { "speaker": "ssali" },
+        { "speaker": "mukasa" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "speaker": "mukasa" },
+        { "answer": 0 },
+        { "speaker": "ssali" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    }
   ]
 }

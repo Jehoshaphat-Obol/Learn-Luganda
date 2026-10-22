@@ -162,6 +162,14 @@ One text per language has to work on both sides of a course, so:
   in Dar es Salaam and Luganda learners meet Nakato in Kampala. A language
   only lists the slots it changes. Facts about one real place ("The Nile
   starts at Jinja") keep the name as it is.
+- A curriculum story tagged `culture` (a language code) is told only in
+  courses of that culture, and only where both languages have its text;
+  one tagged `teaches` only in courses teaching that language. That's how
+  the Swahili stories from the retired en-sw/sw-en packs live on.
+- A curriculum migration step with `courses: ["en-sw"]` applies only to
+  those courses. `node scripts/retire-course.js --course <from>-<to>` writes
+  such steps (and folds the pair's stories) when a hand-built pair is
+  replaced by its composed course, after `scripts/fold-course.js`.
 - Words whose answer repeats an earlier word's are left out of a course,
   since they'd be two questions with one answer. Words from older skills
   win: a skill added later carries `since` (the curriculum version that

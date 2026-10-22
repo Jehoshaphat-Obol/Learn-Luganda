@@ -95,6 +95,23 @@
           "options": ["I have arrived safely.", "Go slowly.", "Stop here."]
         }
       ]
+    },
+    "sw-train-to-mombasa": {
+      "title": "The train to Mombasa",
+      "summary": "Juma drives Emma to Nairobi’s station for the train to Mombasa.",
+      "lines": [
+        "Juma, the train will leave at nine.",
+        "Don’t worry, we’ll get there early. Let’s go!",
+        "My luggage is very heavy!",
+        "Give it to me, I’ll help you.",
+        "Here we are at the station. Have a good trip, Emma!",
+        "Thank you very much, Juma! I’ll be back next week."
+      ],
+      "questions": [
+        { "question": "When does the train leave?", "options": ["9 a.m.", "3 a.m.", "3 p.m."] },
+        { "question": "What does Juma do?", "options": ["He helps with the luggage", "He buys a ticket", "He drives the train"] },
+        { "question": "How does Juma say “have a good trip”?", "options": ["Have a good trip", "Let’s go", "Slowly"] }
+      ]
     }
   }
 }

@@ -69,19 +69,22 @@ export function fillNames(text, names, codes) {
  * The cast names and places for a course from `from` to `to` (lang pack
  * metas): the `culture` of the target language, else of the base language
  * (English has none, so English for Swahili speakers keeps the Swahili
- * cast), over the curriculum's defaults. The defaults are Luganda's, so
- * lang/lg has an empty culture. Returns `{ cast, places }`, cast
- * as `{ id: { name, short } }`.
+ * cast), over the curriculum's defaults, which are the culture of the
+ * curriculum's `culture` language (Luganda). Returns `{ code, cast, places }`:
+ * `code` names the culture (stories tagged with another one are left out),
+ * cast is `{ id: { name, short } }`.
  */
 export function cultureOf(curriculumMeta, from, to) {
-  const own = to?.culture ?? from?.culture ?? {};
+  const has = (l) => Boolean(l && (l.culture || l.code === curriculumMeta.culture));
+  const lang = has(to) ? to : has(from) ? from : null;
+  const own = lang?.culture ?? {};
   const person = (c) => (typeof c === 'string' ? { name: c } : c ?? {});
   const cast = {};
   for (const [id, c] of Object.entries(curriculumMeta.cast ?? {})) {
     const mine = own.cast?.[id];
     cast[id] = mine ? person(mine) : { name: c.name, short: c.short };
   }
-  return { cast, places: { ...curriculumMeta.places, ...own.places } };
+  return { code: lang?.code ?? curriculumMeta.culture ?? null, cast, places: { ...curriculumMeta.places, ...own.places } };
 }
 
 /** `text` with its culture slots (`{@id}`, `{@id.name}`) filled from `culture`. */
@@ -200,7 +203,10 @@ export function composePack({ curriculum, from, to, about = { meta: null, units:
     const phrases = Array.from({ length: cu.phrases ?? 0 }, (_, i) => ({ target: asTarget(target(tu.phrases?.[i] ?? '')), base: base(fu.phrases?.[i] ?? '') })).filter((p) => p.target && p.base);
     const gb = au.guidebook;
     const guidebook = gb ? clean({ intro: fill(gb.intro), phrases, tips: gb.tips, culture: gb.culture }) : undefined;
-    const stories = (cu.stories ?? []).map((st) => {
+    // A story tagged with a culture is told only in courses of that culture,
+    // and one tagged `teaches` only in courses teaching that language.
+    const told = (st) => (!st.culture || (st.culture === culture.code && tu.stories?.[st.id] && fu.stories?.[st.id])) && (!st.teaches || st.teaches === codes.to);
+    const stories = (cu.stories ?? []).filter(told).map((st) => {
       const t = tu.stories?.[st.id] ?? {};
       const b = fu.stories?.[st.id] ?? {};
       let line = 0;
@@ -239,7 +245,7 @@ export function composePack({ curriculum, from, to, about = { meta: null, units:
     formatVersion: CATALOG_FORMAT,
     id: `${codes.from}-${codes.to}`,
     version: cm.version,
-    migrations: list(cm.migrations),
+    migrations: list((cm.migrations ?? []).filter((m) => !m.courses || m.courses.includes(`${codes.from}-${codes.to}`)).map(({ courses, ...m }) => m)),
     from: codes.from,
     to: codes.to,
     status: am.status ?? 'draft',
@@ -321,7 +327,8 @@ export function coverage(curriculum, lang) {
         });
       }
     }
-    for (const st of cu.stories ?? []) {
+    // Culture stories are extras: a language needn't tell them all.
+    for (const st of (cu.stories ?? []).filter((x) => !x.culture)) {
       const s = u.stories?.[st.id] ?? {};
       count(['base'], s.title && s.summary);
       let line = 0;

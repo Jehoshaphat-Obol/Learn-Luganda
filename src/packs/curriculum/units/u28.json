@@ -128,6 +128,40 @@
         { "answer": 0, "optionsLang": "target" },
         { "speaker": "jjajja" }
       ]
+    },
+    {
+      "id": "sw-good-news",
+      "unlockAfter": "u28s2l2",
+      "cast": ["amara", "jjajja"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "amara" },
+        { "speaker": "jjajja" },
+        { "speaker": "amara" },
+        { "answer": 0 },
+        { "speaker": "jjajja" },
+        { "speaker": "amara" },
+        { "answer": 0 },
+        { "speaker": "jjajja" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
+    },
+    {
+      "id": "sw-eid-visit",
+      "unlockAfter": "u28s4l3",
+      "cast": ["amara", "jjajja", "emma"],
+      "culture": "sw",
+      "steps": [
+        { "speaker": "amara" },
+        { "speaker": "jjajja" },
+        { "speaker": "emma" },
+        { "answer": 0 },
+        { "speaker": "jjajja" },
+        { "answer": 0 },
+        { "speaker": "amara" },
+        { "speaker": "jjajja" },
+        { "answer": 0, "optionsLang": "target" }
+      ]
     }
   ]
 }
