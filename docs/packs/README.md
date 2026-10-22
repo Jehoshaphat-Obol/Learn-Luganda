@@ -170,6 +170,28 @@ rate, `hints` for choosing among voices). With neither, no button is shown.
 Recordings must be free to use: record them yourself or use openly
 licensed ones, and credit them in `public/audio/CREDITS.md`.
 
+### Headings in other interface languages
+
+A course is written in the language it's taught in, but a learner can read
+the app in any interface language. Optional files in
+`courses/<id>/labels/<ui>.json` translate the path's headings for learners
+who read the app in `<ui>`: section titles, levels and descriptions, unit
+titles and descriptions, and skill titles, keyed by id
+([schema](schema/course-labels.schema.json)). Anything left out keeps the
+course's own text, and `npm run validate` says how many headings fall back.
+Lessons, guidebooks and stories stay in the course's language.
+
+```json
+{
+  "sections": { "s1": { "title": "Misingi", "level": "Wanaoanza", "description": "…" } },
+  "units": { "u1": { "title": "Salamu", "description": "…" } },
+  "skills": { "u1s1": "Salamu za kwanza" }
+}
+```
+
+When you add units or skills to a course, add their headings to its labels
+files too.
+
 ### Versions and migrations
 
 Learners' progress is stored by id: words they know, lessons they finished,

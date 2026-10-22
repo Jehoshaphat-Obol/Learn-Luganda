@@ -37,25 +37,29 @@ export async function startLanguages(onChange) {
  */
 export async function loadSaved() {
   const { course } = store.get().settings;
-  const [, loaded] = await Promise.all([setLanguage(uiLanguage()), loadCourse(course)]);
+  const ui = uiLanguage();
+  const [, loaded] = await Promise.all([setLanguage(ui), loadCourse(course, ui)]);
   // A saved course that's no longer shipped: park its progress, don't mix it in.
   store.update((s) => syncCourse(loaded.id === course ? s : switchCourse(s, loaded.id), loaded));
 }
 
-/** Changes the interface language (`null` goes back to automatic). */
+/** Changes the interface language (`null` goes back to automatic), course headings included. */
 export async function changeUiLanguage(code) {
   store.update((s) => {
     s.settings.uiLang = code;
   });
-  await setLanguage(uiLanguage());
+  const ui = uiLanguage();
+  await Promise.all([setLanguage(ui), loadCourse(store.get().settings.course, ui)]);
   redraw();
 }
 
 /** Switches to course `id`, keeping each course's progress separate. */
 export async function changeCourse(id) {
-  if (store.get().settings.course === id) return;
-  const loaded = await loadCourse(id);
+  const state = store.get();
+  if (state.settings.course === id) return;
+  // On Automatic, the interface follows the new course's language.
+  const ui = uiLanguage({ ...state, settings: { ...state.settings, course: id } });
+  const [, loaded] = await Promise.all([setLanguage(ui), loadCourse(id, ui)]);
   store.update((s) => syncCourse(switchCourse(s, loaded.id), loaded));
-  await setLanguage(uiLanguage());
   redraw();
 }

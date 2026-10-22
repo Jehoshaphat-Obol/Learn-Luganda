@@ -1,0 +1,70 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-labels.schema.json",
+  "sections": {
+    "s1": {
+      "title": "Misingi",
+      "level": "Wanaoanza",
+      "description": "Salamu, watu, chakula, namba, wakati, mahali, nyumbani na afya."
+    }
+  },
+  "units": {
+    "u1": {
+      "title": "Salamu",
+      "description": "Salimia, jitambulishe na hesabu hadi kumi."
+    },
+    "u2": {
+      "title": "Watu na vitu",
+      "description": "Familia, vitu vya kila siku na vitenzi vyako vya kwanza."
+    },
+    "u3": {
+      "title": "Chakula na sokoni",
+      "description": "Taja vyakula vikuu, sema una njaa na nunua sokoni."
+    },
+    "u4": {
+      "title": "Namba na pesa",
+      "description": "Hesabu hadi maelfu na ulipe kwa shilingi."
+    },
+    "u5": {
+      "title": "Wakati na siku",
+      "description": "Zungumza kuhusu leo, siku za wiki na saa."
+    },
+    "u6": {
+      "title": "Mahali na maelekezo",
+      "description": "Taja mahali mjini, sema unakokwenda na toa maelekezo."
+    },
+    "u7": {
+      "title": "Nyumbani",
+      "description": "Vyumba na samani, kukaribisha wageni na kuomba vitu."
+    },
+    "u8": {
+      "title": "Afya na mwili",
+      "description": "Taja sehemu za mwili, sema kinachouma na mwone daktari."
+    }
+  },
+  "skills": {
+    "u1s1": "Salamu za kwanza",
+    "u1s2": "Kujitambulisha",
+    "u1s3": "Namba 1–10",
+    "u2s1": "Familia",
+    "u2s2": "Watu na vitu",
+    "u2s3": "Vitenzi vya kwanza",
+    "u3s1": "Vyakula vikuu",
+    "u3s2": "Kula na kunywa",
+    "u3s3": "Sokoni",
+    "u4s1": "Namba 11–100",
+    "u4s2": "Shilingi",
+    "u4s3": "Kupatana bei",
+    "u5s1": "Leo na kesho",
+    "u5s2": "Siku za wiki",
+    "u5s3": "Kusema saa",
+    "u6s1": "Mjini",
+    "u6s2": "Kwenda mahali",
+    "u6s3": "Maelekezo",
+    "u7s1": "Vyumba",
+    "u7s2": "Kukaribisha wageni",
+    "u7s3": "Ndani ya nyumba",
+    "u8s1": "Mwili",
+    "u8s2": "Kujisikia vibaya",
+    "u8s3": "Kwa daktari"
+  }
+}

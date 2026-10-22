@@ -173,6 +173,18 @@ test.describe('with a Swahili browser', () => {
     expect((await readState(page)).settings.uiLang).toBe('sw');
   });
 
+  test('the path headings follow the interface language', async ({ page }) => {
+    await openWith(page, savedState({ settings: { course: 'en-lg', uiLang: 'sw' } }), '#/learn');
+    await expect(page.getByRole('heading', { name: 'Misingi' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Salamu', exact: true })).toBeVisible();
+    await page.goto('./#/settings');
+    await page.locator('[data-ui-lang]').selectOption('lg');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'lg');
+    await page.goto('./#/learn');
+    await expect(page.getByRole('heading', { name: 'Omusingi' })).toBeVisible();
+    await expect(page.getByRole('heading', { name: 'Okulamusa', exact: true })).toBeVisible();
+  });
+
   test('on Automatic, switching to a course taught in Luganda switches the app too', async ({ page }) => {
     await openWith(page, savedState({ settings: { course: 'en-lg' } }), '#/settings');
     await expect(page.locator('html')).toHaveAttribute('lang', 'en');
