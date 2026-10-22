@@ -170,7 +170,11 @@
       "short": "Teeka",
       "cardTitle": "Funa app",
       "cardText": "Teeka Learn Luganda ofune amasomo n’okunyiga okumu okuva ku ssirini yo eya waka, ne bw’oba tolina yintaneti.",
-      "notNow": "Si kati"
+      "notNow": "Si kati",
+      "onDeviceLabel": "App eteekeddwako",
+      "onDeviceShort": "Eteekeddwako",
+      "onDeviceTitle": "Eri dda ku ssimu eno",
+      "onDeviceText": "Learn Luganda eteekeddwa ku ssimu eno. Gigguleko okuva ku ssimu yo oba mu lukalala lwa app. Okugiteeka omulundi omulala, sooka ogiggyeewo, oluvannyuma okomewo onyige Teeka app."
     },
     "titles": {
       "onboarding": "Tandika",
