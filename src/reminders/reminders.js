@@ -15,7 +15,8 @@ import { addRewardStep } from '../views/rewards.js';
 import { button, escapeHtml, speech } from '../ui/components.js';
 import { mascot } from '../illustrations/index.js';
 import { dueSlot, markSent, plan, shouldOfferReminders } from './rules.js';
-import { course, languageName } from '../content/course.js';
+import { course } from '../content/course.js';
+import { courseLanguage } from '../content/names.js';
 import { t } from '../i18n/index.js';
 
 /** A sample reminder title from the course, like “Weebale — Thank you”. */
@@ -127,7 +128,7 @@ addRewardStep(() => {
     html: `
       <div class="complete__art complete__art--small reminder-offer__art" aria-hidden="true">${speech(escapeHtml(course.phrases.thanks), { tail: 'right' })}${mascot({ pose: 'happy' })}</div>
       <h1>${say('title')}</h1>
-      <p class="complete__sub muted" data-offer-text>${say('body', { language: languageName('target'), example: exampleSnippet() })}</p>
+      <p class="complete__sub muted" data-offer-text>${say('body', { language: courseLanguage('target'), example: exampleSnippet() })}</p>
       <div class="reminder-offer__yes">${button({ label: t('reminders.consent.yes'), variant: 'secondary', size: 'lg', block: true, attrs: 'data-offer-yes' })}</div>
       <p class="muted reminder-offer__later" data-offer-later>${say('later')}</p>`,
     after(root) {

@@ -165,7 +165,12 @@
       "manualStep1": "Ggulawo menu ya browser yo (⋮ oba ⋯).",
       "manualStep2": "Londa Install app oba Add to Home screen.",
       "manualNote": "Browser ezimu, nga Firefox ku kompyuta, tezisobola kuteeka web app. Chrome, Edge ne Safari zisobola.",
-      "ok": "Ntegedde"
+      "ok": "Ntegedde",
+      "already": "Wagiteeka dda? Ggulawo Learn Luganda okuva ku ssirini yo eya waka oba mu lukalala lwa apps.",
+      "short": "Teeka",
+      "cardTitle": "Funa app",
+      "cardText": "Teeka Learn Luganda ofune amasomo n’okunyiga okumu okuva ku ssirini yo eya waka, ne bw’oba tolina yintaneti.",
+      "notNow": "Si kati"
     },
     "titles": {
       "onboarding": "Tandika",
@@ -967,6 +972,31 @@
     "sounds": {
       "playful": "Eby’essanyu",
       "soft": "Ebigonvu"
+    },
+    "languageNames": {
+      "en": "Olungereza",
+      "lg": "Oluganda",
+      "sw": "Oluswayiri",
+      "nyn": "Olunyankole",
+      "rw": "Olunyarwanda",
+      "ha": "Oluhausa",
+      "yo": "Oluyoruba",
+      "ig": "Oluigbo",
+      "tw": "Olutwi",
+      "wo": "Oluwolof",
+      "am": "Oluamhariki",
+      "om": "Oluoromo",
+      "ln": "Olulingala",
+      "zu": "Oluzulu",
+      "xh": "Oluxhosa",
+      "st": "Olusotho",
+      "sn": "Olushona",
+      "ny": "Olucheewa",
+      "mg": "Olumalagase",
+      "af": "Oluafrikaana",
+      "fr": "Olufalansa",
+      "pt": "Olupotugiizi",
+      "ar": "Oluwarabu"
     }
   }
 }

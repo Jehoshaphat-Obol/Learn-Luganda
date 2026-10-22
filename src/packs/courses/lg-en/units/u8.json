@@ -1,0 +1,380 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u8",
+  "title": "Obulamu n’omubiri",
+  "description": "Manya ebitundu by’omubiri, gamba ekikuluma era olabe omusawo.",
+  "color": "vermillion",
+  "character": "mukasa",
+  "words": [
+    {
+      "id": "omutwe",
+      "target": "head",
+      "base": "omutwe",
+      "altTarget": ["the head"]
+    },
+    {
+      "id": "eriiso",
+      "target": "eye",
+      "base": "eriiso",
+      "altTarget": ["the eye"]
+    },
+    {
+      "id": "amaaso",
+      "target": "eyes",
+      "base": "amaaso",
+      "altTarget": ["the eyes"]
+    },
+    {
+      "id": "okutu",
+      "target": "ear",
+      "base": "okutu",
+      "altTarget": ["the ear"]
+    },
+    {
+      "id": "ennyindo",
+      "target": "nose",
+      "base": "ennyindo",
+      "altTarget": ["the nose"]
+    },
+    {
+      "id": "akamwa",
+      "target": "mouth",
+      "base": "akamwa",
+      "altTarget": ["the mouth"]
+    },
+    {
+      "id": "omukono",
+      "target": "arm",
+      "base": "omukono",
+      "altTarget": ["the arm"]
+    },
+    {
+      "id": "okugulu",
+      "target": "leg",
+      "base": "okugulu",
+      "altTarget": ["the leg"]
+    },
+    {
+      "id": "olubuto",
+      "target": "stomach",
+      "base": "olubuto",
+      "altTarget": ["belly", "tummy", "the stomach"]
+    },
+    {
+      "id": "gunnuma",
+      "target": "it hurts me",
+      "base": "gunnuma",
+      "altTarget": ["hurts", "it hurts", "is aching"],
+      "notes": "“It hurts me”. Ku mutwe ogamba “My head hurts” oba “I have a headache”."
+    },
+    {
+      "id": "ndi-mulwadde",
+      "target": "I am sick",
+      "base": "Ndi mulwadde",
+      "altTarget": ["i’m sick", "i am ill", "i’m ill", "i am unwell"]
+    },
+    {
+      "id": "ssennyiga",
+      "target": "flu",
+      "base": "ssennyiga",
+      "altTarget": ["a cold", "cold", "the flu"]
+    },
+    {
+      "id": "omusujja",
+      "target": "fever",
+      "base": "omusujja",
+      "altTarget": ["a fever"]
+    },
+    {
+      "id": "omusawo",
+      "target": "doctor",
+      "base": "omusawo",
+      "altTarget": ["the doctor"]
+    },
+    {
+      "id": "eddagala",
+      "target": "medicine",
+      "base": "eddagala",
+      "altTarget": ["the medicine", "medication", "drugs"]
+    },
+    {
+      "id": "wona-mangu",
+      "target": "Get well soon!",
+      "base": "Wona mangu!",
+      "altTarget": ["get better soon", "get well quickly"]
+    },
+    {
+      "id": "wummula",
+      "target": "Rest",
+      "base": "Wummula",
+      "altTarget": ["take a rest"]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s-omutwe-gunnuma",
+      "target": "My head hurts.",
+      "base": "Omutwe gunnuma.",
+      "altTarget": ["I have a headache.", "My head is aching."]
+    },
+    {
+      "id": "s-olubuto-lunnuma",
+      "target": "My stomach hurts.",
+      "base": "Olubuto lunnuma.",
+      "altTarget": ["I have a stomach ache.", "My stomach is aching."]
+    },
+    {
+      "id": "s-omukono-gunnuma",
+      "target": "My arm hurts.",
+      "base": "Omukono gunnuma.",
+      "altTarget": ["My hand hurts."]
+    },
+    {
+      "id": "s-amaaso-gange",
+      "target": "My eyes.",
+      "base": "Amaaso gange."
+    },
+    {
+      "id": "s-ndi-mulwadde",
+      "target": "I am sick.",
+      "base": "Ndi mulwadde.",
+      "altTarget": ["I’m sick.", "I am ill."]
+    },
+    {
+      "id": "s-nnina-ssennyiga",
+      "target": "I have the flu.",
+      "base": "Nnina ssennyiga.",
+      "altTarget": ["I have a cold.", "I have flu."]
+    },
+    {
+      "id": "s-nnina-omusujja",
+      "target": "I have a fever.",
+      "base": "Nnina omusujja.",
+      "altTarget": ["I have malaria."]
+    },
+    {
+      "id": "s-ngenda-eri-omusawo",
+      "target": "I am going to the hospital.",
+      "base": "Ŋŋenda mu ddwaliro.",
+      "altTarget": ["I’m going to the hospital.", "I am going to hospital."],
+      "altBase": ["Ngenda mu ddwaliro."]
+    },
+    {
+      "id": "s-omusawo-wange",
+      "target": "My doctor.",
+      "base": "Omusawo wange."
+    },
+    {
+      "id": "s-nnywa-eddagala",
+      "target": "I take medicine.",
+      "base": "Nnywa eddagala.",
+      "altTarget": ["I am taking medicine.", "I drink medicine."]
+    },
+    {
+      "id": "s-wummula-wona-mangu",
+      "target": "Rest. Get well soon!",
+      "base": "Wummula. Wona mangu!",
+      "altTarget": ["Rest. Get better soon!"]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u8s1",
+      "title": "Omubiri",
+      "icon": "profile",
+      "lessons": [
+        {
+          "id": "u8s1l1",
+          "newWords": ["omutwe", "eriiso", "amaaso", "okutu", "ennyindo"],
+          "sentences": ["s-amaaso-gange"]
+        },
+        {
+          "id": "u8s1l2",
+          "newWords": ["akamwa", "omukono", "okugulu", "olubuto"],
+          "sentences": ["s-amaaso-gange"]
+        }
+      ]
+    },
+    {
+      "id": "u8s2",
+      "title": "Okuwulira obubi",
+      "icon": "heart",
+      "tip": "my-head-hurts",
+      "lessons": [
+        {
+          "id": "u8s2l1",
+          "newWords": ["gunnuma"],
+          "sentences": [
+            "s-omutwe-gunnuma",
+            "s-olubuto-lunnuma",
+            "s-omukono-gunnuma"
+          ]
+        },
+        {
+          "id": "u8s2l2",
+          "newWords": ["ndi-mulwadde", "ssennyiga", "omusujja"],
+          "sentences": [
+            "s-ndi-mulwadde",
+            "s-nnina-ssennyiga",
+            "s-nnina-omusujja"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u8s3",
+      "title": "Ew’omusawo",
+      "icon": "plus",
+      "lessons": [
+        {
+          "id": "u8s3l1",
+          "newWords": ["omusawo", "eddagala"],
+          "sentences": [
+            "s-ngenda-eri-omusawo",
+            "s-omusawo-wange",
+            "s-nnywa-eddagala"
+          ]
+        },
+        {
+          "id": "u8s3l2",
+          "newWords": ["wona-mangu", "wummula"],
+          "sentences": [
+            "s-wummula-wona-mangu",
+            "s-nnywa-eddagala",
+            "s-omutwe-gunnuma"
+          ],
+          "dialogues": [
+            {
+              "speaker": "mukasa",
+              "target": "How are you?",
+              "base": "Oli otya?",
+              "options": [
+                "I am sick. My head hurts.",
+                "Turn right.",
+                "I sell oranges."
+              ],
+              "answer": "I am sick. My head hurts."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Manya ebitundu by’omubiri, gamba ekikuluma, era oyogere n’omusawo mu Lungereza.",
+    "phrases": [
+      {
+        "target": "I am sick.",
+        "base": "Ndi mulwadde."
+      },
+      {
+        "target": "My head hurts.",
+        "base": "Omutwe gunnuma."
+      },
+      {
+        "target": "My stomach hurts.",
+        "base": "Olubuto lunnuma."
+      },
+      {
+        "target": "I have a fever.",
+        "base": "Nnina omusujja."
+      },
+      {
+        "target": "I am going to the hospital.",
+        "base": "Ŋŋenda mu ddwaliro."
+      },
+      {
+        "target": "Get well soon!",
+        "base": "Wona mangu!"
+      }
+    ],
+    "tips": [
+      {
+        "id": "my-head-hurts",
+        "title": "“My head hurts”",
+        "body": [
+          "Mu Luganda ogamba **Omutwe gunnuma**. Mu Lungereza oteekamu **my**: **My head hurts.** **My stomach hurts.**",
+          "Era osobola okugamba **I have a headache** oba **I have a stomach ache**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Mu ddwaliro",
+        "body": [
+          "Abasawo mu Uganda batera okwogera Olungereza. Ebigambo bino bikuyamba: **I am sick**, **I have a fever**, **It hurts here**. Bw’otategeera, gamba **Please say it again slowly.**"
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "doctor-visit",
+      "title": "Mu ddwaliro",
+      "unlockAfter": "u8s3l2",
+      "cast": ["amara", "mukasa"],
+      "summary": "Amara tawulira bulungi era alaba omusawo.",
+      "steps": [
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "How are you, Amara?",
+            "base": "Oli otya, Amara?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "I am sick. My head hurts.",
+            "base": "Ndi mulwadde. Omutwe gunnuma."
+          }
+        },
+        {
+          "question": "Kiki ekimuluma?",
+          "options": ["Olubuto", "Omutwe", "Okugulu"],
+          "answer": 1
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "Do you have a fever?",
+            "base": "Olina omusujja?"
+          }
+        },
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "Yes, I have a fever.",
+            "base": "Yee, nnina omusujja."
+          }
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "Take this medicine and rest.",
+            "base": "Nywa eddagala lino, owummule."
+          }
+        },
+        {
+          "question": "Mukasa awa Amara ki?",
+          "options": ["Eddagala", "Caayi", "Matooke"],
+          "answer": 0
+        },
+        {
+          "line": {
+            "speaker": "amara",
+            "target": "Thank you very much, doctor.",
+            "base": "Weebale nnyo, musawo."
+          }
+        },
+        {
+          "line": {
+            "speaker": "mukasa",
+            "target": "Okay. Get well soon!",
+            "base": "Kale. Wona mangu!"
+          }
+        }
+      ]
+    }
+  ]
+}

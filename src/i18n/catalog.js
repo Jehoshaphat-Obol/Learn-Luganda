@@ -26,12 +26,17 @@ export function deviceTimeZone() {
   }
 }
 
-/** Languages likely for this learner, most likely first: the region's, then the browser's. */
+/**
+ * Languages likely for this learner, most likely first: browser languages
+ * that are spoken in the region (an English browser in Uganda points to
+ * English), then the region's other languages, then the browser's.
+ */
 export function likelyLanguages({ timeZone, preferred = [], regions }) {
   const country = regions.timeZones[timeZone] ?? null;
   const fromRegion = country ? (regions.countries[country] ?? []) : [];
   const fromBrowser = preferred.map((tag) => String(tag).toLowerCase().split('-')[0]);
-  return { country, languages: [...new Set([...fromRegion, ...fromBrowser])] };
+  const spokenHere = fromBrowser.filter((code) => fromRegion.includes(code));
+  return { country, languages: [...new Set([...spokenHere, ...fromRegion, ...fromBrowser])] };
 }
 
 /**

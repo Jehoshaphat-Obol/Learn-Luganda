@@ -27,7 +27,9 @@ describe('catalogue', () => {
 
 describe('the first guess', () => {
   it('maps a time zone to the languages used there, then the browser’s', () => {
-    expect(likelyLanguages({ timeZone: 'Asia/Dubai', preferred: ['en-GB'], regions })).toEqual({ country: 'AE', languages: ['ar', 'en'] });
+    expect(likelyLanguages({ timeZone: 'Asia/Dubai', preferred: ['en-GB'], regions })).toEqual({ country: 'AE', languages: ['en', 'ar'] });
+    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: ['en-US'], regions }).languages).toEqual(['en', 'lg', 'sw', 'nyn']);
+    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: [], regions }).languages).toEqual(['lg', 'en', 'sw', 'nyn']);
     expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: ['fr'], regions }).languages).toEqual(['lg', 'en', 'sw', 'nyn', 'fr']);
     expect(likelyLanguages({ timeZone: 'Mars/Olympus', preferred: ['sw-KE'], regions })).toEqual({ country: null, languages: ['sw'] });
   });
@@ -42,6 +44,12 @@ describe('the first guess', () => {
     expect(suggestLanguage({ timeZone: 'Asia/Dubai', preferred: [], regions, pairs: shipped })).toMatchObject({ code: 'en', canSpeak: true, canLearn: false });
     expect(suggestLanguage({ timeZone: 'Africa/Kampala', preferred: [], regions, pairs: shipped })).toMatchObject({ code: 'lg', canLearn: true });
     expect(suggestLanguage({ timeZone: null, preferred: ['de'], regions, pairs: shipped })).toBeNull();
+  });
+
+  it('asks about English both ways in Uganda once English is taught from Luganda', () => {
+    const both = pairsOf(['en-lg', 'lg-en']);
+    expect(suggestLanguage({ timeZone: 'Africa/Kampala', preferred: ['en-GB'], regions, pairs: both })).toEqual({ code: 'en', country: 'UG', canLearn: true, canSpeak: true });
+    expect(suggestLanguage({ timeZone: 'Africa/Kampala', preferred: ['lg'], regions, pairs: both })).toEqual({ code: 'lg', country: 'UG', canLearn: true, canSpeak: true });
   });
 });
 
