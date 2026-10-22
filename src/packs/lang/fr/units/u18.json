@@ -1,0 +1,106 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u18",
+  "words": {
+    "ki": { "text": "quoi", "alts": ["que", "quel", "quelle", "qu’est-ce que"] },
+    "kiki": { "text": "qu’est-ce que c’est", "alts": ["c’est quoi", "quoi", "qu’est-ce"] },
+    "ekyo": { "text": "ça", "alts": ["cela", "celui-là", "celle-là", "cette chose"] },
+    "oyo": { "text": "cette personne", "alts": ["celui-là", "celle-là", "il", "elle"] },
+    "wa": { "text": "où", "alts": ["où est"] },
+    "oli-wa": { "text": "Où es-tu ?", "alts": ["t’es où", "où êtes-vous", "où es-tu maintenant"] },
+    "ddi": { "text": "quand", "alts": ["à quelle heure"] },
+    "ojja": { "text": "tu viens", "alts": ["tu arrives", "est-ce que tu viens"] },
+    "lwaki": { "text": "pourquoi", "alts": ["pour quelle raison"] },
+    "kubanga": { "text": "parce que", "alts": ["car", "puisque"] },
+    "oba": { "text": "ou", "alts": ["ou bien", "peut-être", "si"] },
+    "okwogera": { "text": "parler", "alts": ["la parole"] },
+    "njogera": { "text": "je parle" },
+    "oyogera": { "text": "Tu parles", "alts": ["est-ce que tu parles", "vous parlez", "tu parles ?"] },
+    "katono": { "text": "un peu", "alts": ["un petit peu", "légèrement"] },
+    "kiyitibwa": { "text": "ça s’appelle", "alts": ["il s’appelle", "elle s’appelle", "s’appelle"] },
+    "kitya": { "text": "comment", "alts": ["quoi", "et", "qu’en est-il de"] },
+    "kesho-kutwa": { "text": "après-demain" },
+    "mapema": { "text": "tôt", "alts": ["de bonne heure", "en avance"] },
+    "miaka": { "text": "ans", "alts": ["années", "les années"] },
+    "mingapi": { "text": "combien", "alts": ["quel âge", "combien de"] },
+    "ngapi": { "text": "combien", "alts": ["combien de"] },
+    "wangapi": { "text": "combien (de personnes)", "alts": ["combien", "combien de"] }
+  },
+  "sentences": {
+    "s18-oyagala-ki": { "text": "Qu’est-ce que tu veux aujourd’hui ?", "alts": ["Que veux-tu aujourd’hui ?", "Tu veux quoi aujourd’hui ?"] },
+    "s18-kino-kiki": { "text": "Qu’est-ce que c’est ?", "alts": ["C’est quoi ?", "Qu’est-ce que c’est, ça ?"] },
+    "s18-ekyo-kiki": { "text": "Qu’est-ce que c’est, ça ?", "alts": ["C’est quoi, ça ?", "Qu’est-ce que c’est là-bas ?"] },
+    "s18-ani-oyo": { "text": "Qui est-ce ?", "alts": ["C’est qui ?", "Qui est-ce, là ?"] },
+    "s18-ekitabo-kiri-wa": { "text": "Où est mon livre ?" },
+    "s18-oli-wa": { "text": "Où es-tu maintenant ?", "alts": ["T’es où maintenant ?", "Où êtes-vous maintenant ?"] },
+    "s18-ojja-ddi": { "text": "Quand est-ce que tu viens ?", "alts": ["Quand viens-tu ?", "Tu viens quand ?", "Quand viendras-tu ?"] },
+    "s18-njija-enkya": { "text": "Je viens demain.", "alts": ["Je viendrai demain.", "J’arrive demain."] },
+    "s18-lwaki-osoma": { "text": "Pourquoi apprends-tu le {to} ?", "alts": ["Pourquoi tu apprends le {to} ?", "Pourquoi étudies-tu le {to} ?"] },
+    "s18-kubanga": { "text": "Parce que je veux parler avec les gens.", "alts": ["Parce que je veux parler aux gens."] },
+    "s18-caayi-oba-kaawa": { "text": "Thé ou café ?", "alts": ["Du thé ou du café ?"] },
+    "s18-oyogera-oluganda": { "text": "Tu parles {to} ?", "alts": ["Est-ce que tu parles {to} ?", "Parles-tu {to} ?", "Vous parlez {to} ?"] },
+    "s18-njogera-katono": { "text": "Je parle un peu.", "alts": ["Je parle un petit peu."] },
+    "s18-kiyitibwa-kitya": { "text": "Comment ça s’appelle en {to} ?", "alts": ["Comment dit-on ça en {to} ?", "Comment on dit ça en {to} ?"] },
+    "s-tutaondoka-mapema": { "text": "Nous partirons tôt.", "alts": ["On partira tôt.", "Nous allons partir tôt."] },
+    "s-utasafiri-lini": { "text": "Quand voyageras-tu ?", "alts": ["Tu pars quand ?", "Quand vas-tu voyager ?"] },
+    "s-kesho-kutwa-mombasa": { "text": "Après-demain, j’irai à {@getaway}.", "alts": ["J’irai à {@getaway} après-demain.", "Après-demain, je vais à {@getaway}."] },
+    "s-miaka-mingapi": { "text": "Quel âge as-tu ?", "alts": ["Tu as quel âge ?", "Quel âge avez-vous ?"] },
+    "s-miaka-ishirini": { "text": "J’ai vingt ans.", "alts": ["J’ai 20 ans."] },
+    "s-shilingi-ngapi": { "text": "Combien de shillings ?", "alts": ["Combien ?", "C’est combien ?"] },
+    "s-watoto-wangapi": { "text": "Combien d’enfants as-tu ?", "alts": ["Tu as combien d’enfants ?", "Combien d’enfants avez-vous ?"] },
+    "s-habari-vipi": { "text": "Comment ça va ?", "alts": ["Ça va ?", "Comment vas-tu ?"] },
+    "s-kwa-nini": { "text": "Pourquoi tu ne veux pas de thé ?", "alts": ["Pourquoi ne veux-tu pas de thé ?"] },
+    "s-kwa-sababu": { "text": "Parce que je n’aime pas le thé." }
+  },
+  "phrases": [
+    "Qu’est-ce que c’est ?",
+    "Qui est-ce ?",
+    "Où es-tu maintenant ?",
+    "Quand est-ce que tu viens ?",
+    "Pourquoi apprends-tu le {to} ?",
+    "Tu parles {to} ?",
+    "Comment ça s’appelle en {to} ?"
+  ],
+  "dialogues": {
+    "u18s2l3": [
+      {
+        "line": "Où es-tu maintenant ?",
+        "options": ["Je suis à la gare routière. J’arrive !", "Je ne connais pas le luganda.", "Qu’est-ce que c’est ?"]
+      }
+    ],
+    "u18s3l3": [
+      {
+        "line": "Pourquoi apprends-tu le {to} ?",
+        "options": ["Parce que je veux parler avec mon grand-parent.", "Thé ou café ?", "Quand est-ce que tu viens ?"]
+      }
+    ]
+  },
+  "stories": {
+    "what-is-this": {
+      "title": "Comment ça s’appelle ?",
+      "summary": "{@emma} demande à {@jjajja} le nom des objets de sa cuisine.",
+      "lines": [
+        "Mamie, comment ça s’appelle en luganda ?",
+        "Ça, c’est un panier.",
+        "Panier. Et ça, qu’est-ce que c’est ?",
+        "Ça, c’est un couteau.",
+        "Je ne comprends pas. Répète lentement, Mamie.",
+        "Un couteau. C’est un couteau.",
+        "Pourquoi apprends-tu le luganda, mon enfant ?",
+        "Parce que je veux parler avec toi !",
+        "Oh, c’est très bien ! Tu parles bien.",
+        "Non, je parle un peu."
+      ],
+      "questions": [
+        {
+          "question": "Que fait {@emma} ?",
+          "options": ["Elle demande le nom des objets", "Elle prépare le dîner", "Elle achète un panier"]
+        },
+        {
+          "question": "Pourquoi {@emma} apprend-elle le luganda ?",
+          "options": ["Pour l’école", "Pour parler avec {@jjajja}", "Pour faire ses courses au marché"]
+        }
+      ]
+    }
+  }
+}
