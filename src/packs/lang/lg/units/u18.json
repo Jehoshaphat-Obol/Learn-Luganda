@@ -18,7 +18,13 @@
     "oyogera": { "text": "Oyogera" },
     "katono": { "text": "katono" },
     "kiyitibwa": { "text": "kiyitibwa" },
-    "kitya": { "text": "kitya" }
+    "kitya": { "text": "kitya" },
+    "kesho-kutwa": { "text": "oluvannyuma lw'enkya" },
+    "mapema": { "text": "nga bukyali" },
+    "miaka": { "text": "emyaka" },
+    "mingapi": { "text": "emeka" },
+    "ngapi": { "text": "mmeka" },
+    "wangapi": { "text": "bameka" }
   },
   "sentences": {
     "s18-oyagala-ki": { "text": "Oyagala ki leero?" },
@@ -34,7 +40,17 @@
     "s18-caayi-oba-kaawa": { "text": "Caayi oba kaawa?" },
     "s18-oyogera-oluganda": { "text": "Oyogera {to}?" },
     "s18-njogera-katono": { "text": "Njogera katono." },
-    "s18-kiyitibwa-kitya": { "text": "Kino kiyitibwa kitya mu {to.mu}?" }
+    "s18-kiyitibwa-kitya": { "text": "Kino kiyitibwa kitya mu {to.mu}?" },
+    "s-tutaondoka-mapema": { "text": "Tunaasimbula nga bukyali." },
+    "s-utasafiri-lini": { "text": "Olitambula ddi?" },
+    "s-kesho-kutwa-mombasa": { "text": "Oluvannyuma lw'enkya ndigenda e Mombasa." },
+    "s-miaka-mingapi": { "text": "Olina emyaka emeka?" },
+    "s-miaka-ishirini": { "text": "Nnina emyaka abiri." },
+    "s-shilingi-ngapi": { "text": "Siringi mmeka?" },
+    "s-watoto-wangapi": { "text": "Olina abaana bameka?" },
+    "s-habari-vipi": { "text": "Ebintu bitambula bitya?" },
+    "s-kwa-nini": { "text": "Lwaki toyagala caayi?" },
+    "s-kwa-sababu": { "text": "Kubanga sisiima caayi." }
   },
   "phrases": ["Kino kiki?", "Ani oyo?", "Oli wa kati?", "Ojja ddi?", "Lwaki osoma {to}?", "Oyogera {to}?", "Kino kiyitibwa kitya mu {to.mu}?"],
   "dialogues": {

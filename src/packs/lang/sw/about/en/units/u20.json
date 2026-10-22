@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u20",
+  "guidebook": {
+    "intro": "Panga kesho, wikendi na miaka ijayo kwa **will** na **going to**, na omba kwa adabu kwa **I would like**.",
+    "tips": [
+      {
+        "id": "will-going-to",
+        "title": "Will na going to",
+        "body": [
+          "**Will** ni sawa na **-ta-**: **I will go**. Kwa mpango ulioamuliwa tayari, Kiingereza husema mara nyingi **going to**: **I’m going to travel on Friday.**",
+          "Maneno ya wakati ujao: **tomorrow** (kesho), **next week** (wiki ijayo), **next month** (mwezi ujao). Kumbuka: wiki iliyopita ni **last week**."
+        ]
+      },
+      {
+        "id": "would-like",
+        "title": "I would like",
+        "body": [
+          "**-nge-** ya **ningependa** ni **would**: **I would like (I’d like) coffee.** Ni adabu zaidi kuliko **I want coffee**.",
+          "Kuuliza: **Would you like tea?** (Ungependa chai?) Jibu: **Yes, please** au **No, thank you**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Mialiko",
+        "body": ["Mwaliko wa harusi au sherehe huitwa **invitation**. Kujibu: **I’d love to come!** au **Sorry, I can’t make it.**"]
+      }
+    ]
+  }
+}

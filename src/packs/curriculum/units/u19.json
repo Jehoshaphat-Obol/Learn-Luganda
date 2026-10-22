@@ -19,7 +19,17 @@
     "edda",
     "wiiki-ewedde",
     "omwaka-oguwedde",
-    "nkyali"
+    "nkyali",
+    "fua",
+    "sasa-hivi",
+    "tayari",
+    "sijala",
+    "nilifanya",
+    "ulifanya",
+    "walifika",
+    "juzi",
+    "nilinunua",
+    "niliona"
   ],
   "sentences": [
     "s19-ndidde-matooke",
@@ -35,7 +45,25 @@
     "s19-yagenda-awaka",
     "s19-edda-nnali",
     "s19-omwaka-oguwedde",
-    "s19-nkyali-muyizi"
+    "s19-nkyali-muyizi",
+    "s-osha-vyombo",
+    "s-fua-nguo",
+    "s-nimemaliza",
+    "s-nilikuwa-nyumbani",
+    "s-zamani-sana",
+    "s-nimekula-asante",
+    "s-tayari-nimekula",
+    "s-bado-sijala",
+    "s-nilienda-sokoni",
+    "s-nilikula-wali",
+    "s-ulifanya-nini",
+    "s-nilifanya-kazi",
+    "s-neema-alienda",
+    "s-tulienda-mombasa",
+    "s-walifika-jana",
+    "s-juzi-nilinunua",
+    "s-niliona-tembo",
+    "s-mwaka-jana-zanzibar"
   ],
   "phrases": 6,
   "skills": [
@@ -72,6 +100,33 @@
           "newWords": [],
           "sentences": ["s19-jjo-nnagenda", "s19-mmaze", "s19-edda-nnali"],
           "dialogues": [{ "speaker": "nakato", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u19s4",
+      "icon": "star",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u19s4l1",
+          "newWords": ["fua", "sasa-hivi"],
+          "sentences": ["s-osha-vyombo", "s-fua-nguo", "s-nimemaliza", "s-nilikuwa-nyumbani"]
+        },
+        {
+          "id": "u19s4l2",
+          "newWords": ["tayari", "sijala"],
+          "sentences": ["s-zamani-sana", "s-nimekula-asante", "s-tayari-nimekula", "s-bado-sijala"]
+        },
+        {
+          "id": "u19s4l3",
+          "newWords": ["nilifanya", "ulifanya"],
+          "sentences": ["s-nilienda-sokoni", "s-nilikula-wali", "s-ulifanya-nini", "s-nilifanya-kazi"]
+        },
+        {
+          "id": "u19s4l4",
+          "newWords": ["walifika", "juzi", "nilinunua", "niliona"],
+          "sentences": ["s-neema-alienda", "s-tulienda-mombasa", "s-walifika-jana", "s-juzi-nilinunua", "s-niliona-tembo", "s-mwaka-jana-zanzibar"]
         }
       ]
     }

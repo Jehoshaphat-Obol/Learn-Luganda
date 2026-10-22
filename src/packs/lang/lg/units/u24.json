@@ -17,7 +17,11 @@
     "okusiba": { "text": "okusiba" },
     "tulye": { "text": "Tulye" },
     "nkkuse": { "text": "Nkkuse" },
-    "webale-okufumba": { "text": "Webale okufumba" }
+    "webale-okufumba": { "text": "Webale okufumba" },
+    "chemsha": { "text": "Bugumya" },
+    "kaanga": { "text": "Siika" },
+    "kitunguu": { "text": "akatungulu" },
+    "changanya": { "text": "Tabula" }
   },
   "sentences": {
     "s24-njagala-okufumba": { "text": "Njagala okufumba emmere." },
@@ -31,7 +35,13 @@
     "s24-tulye": { "text": "Emmere eyidde. Tulye!" },
     "s24-mpa-ku-mmere": { "text": "Mpa ku mmere, nnyabo." },
     "s24-nkkuse": { "text": "Nkkuse, weebale nnyo." },
-    "s24-webale-okufumba": { "text": "Webale okufumba, Jjajja!" }
+    "s24-webale-okufumba": { "text": "Webale okufumba, Jjajja!" },
+    "s-kupika": { "text": "Nsiima okufumba." },
+    "s-mafuta-moto": { "text": "Amafuta gookya nnyo." },
+    "s-kata-kitunguu": { "text": "Sala akatungulu." },
+    "s-chemsha-maji": { "text": "Bugumya amazzi." },
+    "s-kaanga-vitunguu": { "text": "Siika obutungulu." },
+    "s-changanya-pamoja": { "text": "Tabula wamu." }
   },
   "phrases": [
     "Teeka entamu ku muliro.",

@@ -16,7 +16,14 @@
     "okuzina": { "text": "kucheza densi", "alts": ["kucheza ngoma", "kunengua", "kudansi"] },
     "ennyimba": { "text": "nyimbo", "alts": ["muziki", "wimbo"] },
     "omuzannyo": { "text": "mchezo", "alts": ["michezo", "gemu"] },
-    "omweso": { "text": "omweso", "alts": ["bao", "mchezo wa bao"] }
+    "omweso": { "text": "omweso", "alts": ["bao", "mchezo wa bao"] },
+    "muda": { "text": "muda" },
+    "kuangalia": { "text": "kuangalia" },
+    "mashabiki": { "text": "mashabiki" },
+    "tumeshinda": { "text": "Tumeshinda" },
+    "tumefungwa": { "text": "Tumefungwa" },
+    "karata": { "text": "karata" },
+    "bao": { "text": "bao" }
   },
   "sentences": {
     "s22-nnyumirwa-okusoma": { "text": "Ninafurahia kusoma vitabu.", "alts": ["Ninapenda kusoma vitabu.", "Nafurahia kusoma vitabu."] },
@@ -33,7 +40,22 @@
     "s22-okuyimba": { "text": "Ninafurahia kuimba na kucheza densi.", "alts": ["Ninapenda kuimba na kucheza.", "Nafurahia kuimba na kucheza ngoma."] },
     "s22-ennyimba-za-luganda": { "text": "Ninapenda nyimbo za Kiganda.", "alts": ["Napenda nyimbo za Kiganda.", "Ninapenda muziki wa Kiganda."] },
     "s22-omuzannyo": { "text": "Mchezo unaanza saa kumi.", "alts": ["Mechi inaanza saa kumi.", "Mchezo unaanza saa kumi jioni."] },
-    "s22-omweso": { "text": "Babu anacheza omweso.", "alts": ["Bibi anacheza omweso.", "Babu anacheza bao."] }
+    "s22-omweso": { "text": "Babu anacheza omweso.", "alts": ["Bibi anacheza omweso.", "Babu anacheza bao."] },
+    "s-sina-muda": { "text": "Sina muda leo." },
+    "s-kuogelea": { "text": "Ninapenda kuogelea." },
+    "s-neema-kuimba": { "text": "Neema anapenda kuimba." },
+    "s-kuangalia-mpira": { "text": "Ninapenda kuangalia mpira." },
+    "s-mpira-wa-miguu": { "text": "Ninapenda mpira wa miguu." },
+    "s-timu-hodari": { "text": "Timu yangu ni hodari." },
+    "s-goli": { "text": "Goli! Goli!" },
+    "s-mchezo-gani": { "text": "Mchezo gani?" },
+    "s-mashabiki-wengi": { "text": "Mashabiki wengi!" },
+    "s-tumeshinda": { "text": "Tumeshinda!" },
+    "s-tumefungwa-leo": { "text": "Tumefungwa leo." },
+    "s-wimbo-wako": { "text": "Ninapenda wimbo wako." },
+    "s-nyimbo-bongo": { "text": "Nyimbo za bongo flava." },
+    "s-tucheze-karata": { "text": "Tucheze karata!" },
+    "s-babu-bao": { "text": "Babu anacheza bao." }
   },
   "phrases": [
     "Ninafurahia kusoma vitabu.",
@@ -43,7 +65,7 @@
     "Ninafurahia kuimba na kucheza densi.",
     "Ninapenda nyimbo za Kiganda."
   ],
-  "dialogues": { "u22s1l3": [{ "line": "Unafurahia nini?" }] },
+  "dialogues": { "u22s1l3": [{ "line": "Unafurahia nini?", "options": ["Ninafurahia kukimbia na kuogelea.", "Nimechoka sana.", "Sijui bao."] }] },
   "stories": {
     "match-day": {
       "title": "Siku ya mechi",

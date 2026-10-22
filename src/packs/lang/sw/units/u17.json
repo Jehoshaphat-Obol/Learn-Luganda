@@ -18,7 +18,22 @@
     "toyagala": { "text": "hutaki", "alts": ["wewe hutaki", "hupendi"] },
     "tagenda": { "text": "haendi", "alts": ["yeye haendi", "hatakwenda"] },
     "togenda": { "text": "Usiende", "alts": ["usiondoke"] },
-    "totya": { "text": "Usiogope", "alts": ["usihofu", "usijali"] }
+    "totya": { "text": "Usiogope", "alts": ["usihofu", "usijali"] },
+    "hataki": { "text": "hataki" },
+    "hatutaki": { "text": "hatutaki" },
+    "hawataki": { "text": "hawataki" },
+    "sipendi": { "text": "sipendi" },
+    "si": { "text": "si" },
+    "kweli": { "text": "kweli" },
+    "labda": { "text": "labda" },
+    "bado": { "text": "bado" },
+    "hata-kidogo": { "text": "hata kidogo" },
+    "kamwe": { "text": "kamwe" },
+    "sikuenda": { "text": "sikuenda" },
+    "sikula": { "text": "sikula" },
+    "sitaenda": { "text": "sitaenda" },
+    "salama": { "text": "salama" },
+    "tulia": { "text": "Tulia" }
   },
   "sentences": {
     "s17-saagala-kaawa": { "text": "Sitaki kahawa.", "alts": ["Sipendi kahawa."] },
@@ -36,8 +51,32 @@
     "s17-toyagala-caayi": { "text": "Hutaki chai?", "alts": ["Wewe hutaki chai?"] },
     "s17-tagenda": { "text": "Nakato haendi shule leo.", "alts": ["Nakato haendi shuleni leo.", "Leo Nakato haendi shule."] },
     "s17-togenda": { "text": "Usiende! Mvua inanyesha.", "alts": ["Usiende! Kunanyesha."] },
-    "s17-totya": { "text": "Usiogope, mbwa ni mdogo.", "alts": ["Usijali, mbwa ni mdogo."] }
+    "s17-totya": { "text": "Usiogope, mbwa ni mdogo.", "alts": ["Usijali, mbwa ni mdogo."] },
+    "s-sielewi-rudia": { "text": "Sielewi. Rudia, tafadhali." },
+    "s-sijui": { "text": "Sijui jibu." },
+    "s-sitaki-chai": { "text": "Sitaki chai, asante." },
+    "s-hutaki-kahawa": { "text": "Hutaki kahawa?" },
+    "s-neema-hataki": { "text": "Neema hataki samaki." },
+    "s-hatutaki-chakula": { "text": "Hatutaki chakula sasa." },
+    "s-hawataki-kulala": { "text": "Watoto hawataki kulala." },
+    "s-sipendi-baridi": { "text": "Sipendi baridi." },
+    "s-si-kweli": { "text": "Si kweli!" },
+    "s-ni-kweli": { "text": "Ni kweli." },
+    "s-mimi-si-mwalimu": { "text": "Mimi si mwalimu." },
+    "s-labda-kesho": { "text": "Labda kesho." },
+    "s-bado": { "text": "Bado ninasoma." },
+    "s-hata-kidogo": { "text": "Sipendi hata kidogo!" },
+    "s-kamwe": { "text": "Sitaenda kamwe!" },
+    "s-sikuenda-shuleni": { "text": "Jana sikuenda shuleni." },
+    "s-sikula-asubuhi": { "text": "Sikula asubuhi." },
+    "s-sitaenda-kazini": { "text": "Kesho sitaenda kazini." },
+    "s-salama": { "text": "Sasa uko salama." },
+    "s-tulia": { "text": "Tulia, msaada unakuja." },
+    "s-usiogope": { "text": "Usiogope, niko hapa." }
   },
   "phrases": ["Sitaki kahawa.", "Sili nyama.", "Sijui, bwana.", "Sielewi. Rudia.", "Sina pesa.", "Hakuna maji.", "Usiogope!"],
-  "dialogues": { "u17s2l3": [{ "line": "Unataka kahawa?" }], "u17s3l3": [{ "line": "Hospitali iko wapi?" }] }
+  "dialogues": {
+    "u17s2l3": [{ "line": "Unataka kahawa?", "options": ["Hapana, sitaki kahawa. Ninakunywa chai.", "Simjui nyoka.", "Hiki si changu."] }],
+    "u17s3l3": [{ "line": "Hospitali iko wapi?", "options": ["Sijui, bwana. Muulize polisi.", "Sili nyama.", "Usiende!"] }]
+  }
 }

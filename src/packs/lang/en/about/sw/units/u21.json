@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u21",
+  "notes": {
+    "bambi": "Sympathy, not apology: said when someone is ill, tired or has had bad luck. Reply: Asante, or Nimeshapoa.",
+    "samahani": "An apology, or to get someone’s attention.",
+    "huzuni": "Nina huzuni: I’m sad.",
+    "hasira": "Ana hasira: he or she is angry.",
+    "wasiwasi": "Nina wasiwasi: I’m worried."
+  },
+  "guidebook": {
+    "intro": "Some feelings are things you have (nina furaha, “I have happiness”), others are things that have happened to you (nimechoka, “I have got tired”).",
+    "tips": [
+      {
+        "id": "feelings",
+        "title": "Having a feeling",
+        "body": [
+          "Many feelings are nouns you **have**: **nina furaha** (I’m happy, “I have joy”), **nina huzuni** (I’m sad), **nina wasiwasi** (I’m worried), **ana hasira** (she’s angry).",
+          "Others are **-me-** verbs, for a state you have got into: **nimefurahi** (I’m glad), **nimekasirika** (I’m angry), **nimechoka** (I’m tired), **nimeshangaa** (I’m surprised)."
+        ]
+      },
+      {
+        "id": "short-na",
+        "title": "Short forms: na-",
+        "body": [
+          "In everyday speech, **nina-** often shrinks to **na-**: **ninaogopa** becomes **naogopa** (I’m afraid), **ninakupenda** becomes **nakupenda** (I love you). You already know **nataka**.",
+          "The **-ku-** in **nakupenda** means “you”: na-**ku**-penda, I-you-love."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Pole and hongera",
+        "body": [
+          "**Pole** is said for any misfortune, from a stubbed toe to a death in the family, and **hongera** for any good news: a new baby, a new job, a passed exam. Both are said often and warmly."
+        ]
+      }
+    ]
+  }
+}

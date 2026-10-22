@@ -20,7 +20,22 @@
     "toyagala",
     "tagenda",
     "togenda",
-    "totya"
+    "totya",
+    "hataki",
+    "hatutaki",
+    "hawataki",
+    "sipendi",
+    "si",
+    "kweli",
+    "labda",
+    "bado",
+    "hata-kidogo",
+    "kamwe",
+    "sikuenda",
+    "sikula",
+    "sitaenda",
+    "salama",
+    "tulia"
   ],
   "sentences": [
     "s17-saagala-kaawa",
@@ -38,7 +53,28 @@
     "s17-toyagala-caayi",
     "s17-tagenda",
     "s17-togenda",
-    "s17-totya"
+    "s17-totya",
+    "s-sielewi-rudia",
+    "s-sijui",
+    "s-sitaki-chai",
+    "s-hutaki-kahawa",
+    "s-neema-hataki",
+    "s-hatutaki-chakula",
+    "s-hawataki-kulala",
+    "s-sipendi-baridi",
+    "s-si-kweli",
+    "s-ni-kweli",
+    "s-mimi-si-mwalimu",
+    "s-labda-kesho",
+    "s-bado",
+    "s-hata-kidogo",
+    "s-kamwe",
+    "s-sikuenda-shuleni",
+    "s-sikula-asubuhi",
+    "s-sitaenda-kazini",
+    "s-salama",
+    "s-tulia",
+    "s-usiogope"
   ],
   "phrases": 7,
   "skills": [
@@ -80,6 +116,30 @@
           "newWords": [],
           "sentences": ["s17-sitegeera", "s17-tewali-mazzi", "s17-toyagala-caayi", "s17-totya"],
           "dialogues": [{ "speaker": "mukasa", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u17s4",
+      "icon": "info",
+      "since": 2,
+      "lessons": [
+        { "id": "u17s4l1", "newWords": ["hataki"], "sentences": ["s-sielewi-rudia", "s-sijui", "s-sitaki-chai", "s-hutaki-kahawa"] },
+        {
+          "id": "u17s4l2",
+          "newWords": ["hatutaki", "hawataki", "sipendi"],
+          "sentences": ["s-neema-hataki", "s-hatutaki-chakula", "s-hawataki-kulala", "s-sipendi-baridi"]
+        },
+        {
+          "id": "u17s4l3",
+          "newWords": ["si", "kweli", "labda"],
+          "sentences": ["s-si-kweli", "s-ni-kweli", "s-mimi-si-mwalimu", "s-labda-kesho"]
+        },
+        { "id": "u17s4l4", "newWords": ["bado", "hata-kidogo", "kamwe", "sikuenda", "sikula"], "sentences": ["s-bado", "s-hata-kidogo"] },
+        {
+          "id": "u17s4l5",
+          "newWords": ["sitaenda", "salama", "tulia"],
+          "sentences": ["s-kamwe", "s-sikuenda-shuleni", "s-sikula-asubuhi", "s-sitaenda-kazini", "s-salama", "s-tulia", "s-usiogope"]
         }
       ]
     }

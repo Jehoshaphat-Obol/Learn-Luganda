@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u18",
+  "notes": { "miaka": "Umri: “I’m twenty years old.”", "wangapi": "Kwa watu: “How many people?”" },
+  "guidebook": {
+    "intro": "Kiswahili huacha neno la swali mahali jibu lilipo. Kiingereza huliweka **mwanzoni** mwa sentensi.",
+    "tips": [
+      {
+        "id": "wh-first",
+        "title": "Neno la swali kwanza",
+        "body": [
+          "**Unataka nini?** kwa Kiingereza ni **What do you want?** Neno la swali (**what, where, who, how**) huja kwanza, kisha **do/does**, kisha mtu.",
+          "Kwa swali la ndiyo au hapana, anza na **Do** au **Are**: **Do you have children?** (Una watoto?) **Are you tired?** (Umechoka?)"
+        ]
+      },
+      {
+        "id": "why-because",
+        "title": "Why na because",
+        "body": [
+          "**Kwa nini** ni **why**, na jibu huanza na **because** (kwa sababu): **Why don’t you want tea? Because I don’t like tea.**",
+          "**How many** hutumika kwa vitu vinavyohesabika: **How many children?** Umri huulizwa kwa **How old**: **How old are you?** (Una miaka mingapi?)"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Kuuliza umri",
+        "body": [
+          "Katika nchi nyingi zinazozungumza Kiingereza, kumwuliza mtu mzima **How old are you?** si adabu, hasa kwa mtu usiyemjua. Kwa watoto ni sawa."
+        ]
+      }
+    ]
+  }
+}

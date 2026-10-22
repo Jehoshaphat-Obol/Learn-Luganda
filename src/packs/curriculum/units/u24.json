@@ -19,7 +19,11 @@
     "okusiba",
     "tulye",
     "nkkuse",
-    "webale-okufumba"
+    "webale-okufumba",
+    "chemsha",
+    "kaanga",
+    "kitunguu",
+    "changanya"
   ],
   "sentences": [
     "s24-njagala-okufumba",
@@ -33,7 +37,13 @@
     "s24-tulye",
     "s24-mpa-ku-mmere",
     "s24-nkkuse",
-    "s24-webale-okufumba"
+    "s24-webale-okufumba",
+    "s-kupika",
+    "s-mafuta-moto",
+    "s-kata-kitunguu",
+    "s-chemsha-maji",
+    "s-kaanga-vitunguu",
+    "s-changanya-pamoja"
   ],
   "phrases": 7,
   "skills": [
@@ -67,6 +77,19 @@
           "sentences": ["s24-webale-okufumba", "s24-tulye"],
           "dialogues": [{ "speaker": "jjajja", "answer": 0 }]
         }
+      ]
+    },
+    {
+      "id": "u24s4",
+      "icon": "star",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u24s4l1",
+          "newWords": ["chemsha", "kaanga", "kitunguu"],
+          "sentences": ["s-kata-kitunguu", "s-chemsha-maji", "s-kaanga-vitunguu"]
+        },
+        { "id": "u24s4l2", "newWords": ["changanya"], "sentences": ["s-changanya-pamoja", "s-kupika", "s-mafuta-moto"] }
       ]
     }
   ],

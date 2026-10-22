@@ -18,7 +18,13 @@
     "oyogera": { "text": "Unazungumza", "alts": ["waongea", "unaongea", "wazungumza"] },
     "katono": { "text": "kidogo", "alts": ["kiasi"] },
     "kiyitibwa": { "text": "kinaitwa", "alts": ["huitwa", "kinaitwaje"] },
-    "kitya": { "text": "vipi", "alts": ["-je", "namna gani"] }
+    "kitya": { "text": "vipi", "alts": ["-je", "namna gani"] },
+    "kesho-kutwa": { "text": "kesho kutwa" },
+    "mapema": { "text": "mapema" },
+    "miaka": { "text": "miaka" },
+    "mingapi": { "text": "mingapi" },
+    "ngapi": { "text": "ngapi" },
+    "wangapi": { "text": "wangapi" }
   },
   "sentences": {
     "s18-oyagala-ki": { "text": "Unataka nini leo?", "alts": ["Leo unataka nini?"] },
@@ -37,7 +43,17 @@
     "s18-caayi-oba-kaawa": { "text": "Chai au kahawa?", "alts": ["Chai ama kahawa?"] },
     "s18-oyogera-oluganda": { "text": "Unazungumza {to}?", "alts": ["Unaongea {to}?", "Wazungumza {to}?"] },
     "s18-njogera-katono": { "text": "Ninazungumza kidogo.", "alts": ["Nazungumza kidogo.", "Ninaongea kidogo."] },
-    "s18-kiyitibwa-kitya": { "text": "Hiki kinaitwaje kwa {to}?", "alts": ["Hiki kinaitwa nini kwa {to}?", "Unasemaje hiki kwa {to}?"] }
+    "s18-kiyitibwa-kitya": { "text": "Hiki kinaitwaje kwa {to}?", "alts": ["Hiki kinaitwa nini kwa {to}?", "Unasemaje hiki kwa {to}?"] },
+    "s-tutaondoka-mapema": { "text": "Tutaondoka mapema." },
+    "s-utasafiri-lini": { "text": "Utasafiri lini?" },
+    "s-kesho-kutwa-mombasa": { "text": "Kesho kutwa nitaenda Mombasa." },
+    "s-miaka-mingapi": { "text": "Una miaka mingapi?" },
+    "s-miaka-ishirini": { "text": "Nina miaka ishirini." },
+    "s-shilingi-ngapi": { "text": "Shilingi ngapi?" },
+    "s-watoto-wangapi": { "text": "Una watoto wangapi?" },
+    "s-habari-vipi": { "text": "Habari vipi?" },
+    "s-kwa-nini": { "text": "Kwa nini hutaki chai?" },
+    "s-kwa-sababu": { "text": "Kwa sababu sipendi chai." }
   },
   "phrases": [
     "Hiki ni nini?",
@@ -48,7 +64,10 @@
     "Unazungumza {to}?",
     "Hiki kinaitwaje kwa {to}?"
   ],
-  "dialogues": { "u18s2l3": [{ "line": "Uko wapi sasa?" }], "u18s3l3": [{ "line": "Kwa nini unajifunza {to}?" }] },
+  "dialogues": {
+    "u18s2l3": [{ "line": "Uko wapi sasa?", "options": ["Niko stendi. Ninakuja!", "Sijui Kiganda.", "Hiki ni nini?"] }],
+    "u18s3l3": [{ "line": "Kwa nini unajifunza {to}?", "options": ["Kwa sababu nataka kuongea na bibi yangu.", "Chai au kahawa?", "Unakuja lini?"] }]
+  },
   "stories": {
     "what-is-this": {
       "title": "Hiki kinaitwaje?",

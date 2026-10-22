@@ -16,7 +16,17 @@
     "nkwagala": { "text": "Nakupenda", "alts": ["ninakupenda"] },
     "nkusubwa": { "text": "Nimekukumbuka", "alts": ["nakukumbuka", "ninakukumbuka", "nimekumisi"] },
     "mukwano-gwange": { "text": "rafiki yangu", "alts": ["rafiki", "rafiki mpendwa"] },
-    "tokaaba": { "text": "Usilie", "alts": ["acha kulia", "nyamaza"] }
+    "tokaaba": { "text": "Usilie", "alts": ["acha kulia", "nyamaza"] },
+    "samahani": { "text": "Samahani" },
+    "furaha": { "text": "furaha" },
+    "nina-furaha": { "text": "Nina furaha" },
+    "huzuni": { "text": "huzuni" },
+    "hasira": { "text": "hasira" },
+    "naogopa": { "text": "Naogopa" },
+    "wasiwasi": { "text": "wasiwasi" },
+    "kuhusu": { "text": "kuhusu" },
+    "usijali": { "text": "Usijali" },
+    "bahati-njema": { "text": "Bahati njema" }
   },
   "sentences": {
     "s21-nsanyuse-nnyo": { "text": "Leo nimefurahi sana!", "alts": ["Nimefurahi sana leo!", "Leo nina furaha sana!"] },
@@ -32,7 +42,22 @@
     "s21-nsonyiwa": { "text": "Nisamehe, nimechelewa.", "alts": ["Samahani, nimechelewa.", "Unisamehe, nimechelewa."] },
     "s21-nkwagala-maama": { "text": "Nakupenda sana, Mama.", "alts": ["Ninakupenda sana, Mama."] },
     "s21-nkusubwa": { "text": "Nimekukumbuka, rafiki yangu.", "alts": ["Nakukumbuka, rafiki yangu."] },
-    "s21-tokaaba": { "text": "Usilie, mwanangu.", "alts": ["Usilie, mtoto wangu."] }
+    "s21-tokaaba": { "text": "Usilie, mwanangu.", "alts": ["Usilie, mtoto wangu."] },
+    "s-pole-sana": { "text": "Pole sana!" },
+    "s-samahani-daktari": { "text": "Samahani, daktari." },
+    "s-nimechoka-sana": { "text": "Nimechoka sana." },
+    "s-nina-furaha": { "text": "Nina furaha leo!" },
+    "s-siku-ya-furaha": { "text": "Ni siku ya furaha." },
+    "s-nina-huzuni": { "text": "Nina huzuni." },
+    "s-nimefurahi-sana": { "text": "Nimefurahi sana!" },
+    "s-nimeshangaa": { "text": "Nimeshangaa kabisa!" },
+    "s-bosi-hasira": { "text": "Bosi ana hasira." },
+    "s-nimekasirika": { "text": "Nimekasirika sana!" },
+    "s-naogopa-mbwa": { "text": "Naogopa mbwa." },
+    "s-usijali": { "text": "Usijali, hakuna matata." },
+    "s-nakupenda-bibi": { "text": "Nakupenda, bibi." },
+    "s-hongera-mtihani": { "text": "Hongera kwa mtihani!" },
+    "s-bahati-njema": { "text": "Bahati njema kesho!" }
   },
   "phrases": [
     "Leo nimefurahi sana!",
@@ -43,5 +68,13 @@
     "Nisamehe, nimechelewa.",
     "Nimekukumbuka."
   ],
-  "dialogues": { "u21s2l3": [{ "line": "Uko sawa? Unaonekana umechoka." }], "u21s3l3": [{ "line": "Nina huzuni. Bibi ni mgonjwa." }] }
+  "dialogues": {
+    "u21s2l3": [
+      {
+        "line": "Uko sawa? Unaonekana umechoka.",
+        "options": ["Ndiyo, nimechoka sana. Nimefanya kazi sana leo.", "Nimefurahi kukuona.", "Usilie."]
+      }
+    ],
+    "u21s3l3": [{ "line": "Nina huzuni. Bibi ni mgonjwa.", "options": ["Pole sana! Nitamtembelea.", "Nimefurahi sana!", "Nimekasirika."] }]
+  }
 }

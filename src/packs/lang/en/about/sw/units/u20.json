@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u20",
+  "guidebook": {
+    "intro": "Make plans for tomorrow, the weekend and the years ahead, and order politely with ningependa.",
+    "tips": [
+      {
+        "id": "ta-everyone",
+        "title": "The future for everyone",
+        "body": [
+          "**-ta-** works with every person: **nitaenda** (I will go), **utaenda** (you will go), **atakuja** (she will come), **tutakutana** (we will meet), **watarudi** (they will come back).",
+          "Short verbs keep **ku-** in the future: **nitakula** (I will eat), **atakuja** (she will come)."
+        ]
+      },
+      {
+        "id": "would-like",
+        "title": "Would: -nge-",
+        "body": [
+          "**-nge-** means “would”: **ningependa** (I would like), **ungependa?** (would you like?). It is the polite way to ask for something.",
+          "**Ningependa kahawa** is softer than **Nataka kahawa** (I want coffee), and is what you’ll hear in a hotel or office."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Mungu akipenda",
+        "body": [
+          "Plans are often finished with **Mungu akipenda** or **Inshallah** (“if God wills”): **Tutaonana kesho, Mungu akipenda.** It is said by Christians and Muslims alike."
+        ]
+      }
+    ]
+  }
+}

@@ -17,7 +17,11 @@
     "okusiba": { "text": "kufunga", "alts": ["kufunika", "kuzungushia"] },
     "tulye": { "text": "Tule", "alts": ["haya tule", "karibu tule"] },
     "nkkuse": { "text": "Nimeshiba", "alts": ["nimetosheka", "nimeshiba sana"] },
-    "webale-okufumba": { "text": "Asante kwa kupika", "alts": ["asante kwa chakula", "asante kwa mapishi"] }
+    "webale-okufumba": { "text": "Asante kwa kupika", "alts": ["asante kwa chakula", "asante kwa mapishi"] },
+    "chemsha": { "text": "Chemsha" },
+    "kaanga": { "text": "Kaanga" },
+    "kitunguu": { "text": "kitunguu" },
+    "changanya": { "text": "Changanya" }
   },
   "sentences": {
     "s24-njagala-okufumba": { "text": "Ninataka kupika chakula.", "alts": ["Nataka kupika chakula.", "Ninapenda kupika chakula."] },
@@ -34,7 +38,13 @@
     "s24-tulye": { "text": "Chakula kiko tayari. Tule!", "alts": ["Chakula kimeiva. Tule!", "Chakula kiko tayari. Karibu tule!"] },
     "s24-mpa-ku-mmere": { "text": "Nipe chakula kidogo, mama.", "alts": ["Nipatie chakula kidogo, mama."] },
     "s24-nkkuse": { "text": "Nimeshiba, asante sana.", "alts": ["Nimetosheka, asante sana."] },
-    "s24-webale-okufumba": { "text": "Asante kwa kupika, Bibi!", "alts": ["Asante kwa chakula, Bibi!"] }
+    "s24-webale-okufumba": { "text": "Asante kwa kupika, Bibi!", "alts": ["Asante kwa chakula, Bibi!"] },
+    "s-kupika": { "text": "Ninapenda kupika." },
+    "s-mafuta-moto": { "text": "Mafuta ni moto sana." },
+    "s-kata-kitunguu": { "text": "Kata kitunguu." },
+    "s-chemsha-maji": { "text": "Chemsha maji." },
+    "s-kaanga-vitunguu": { "text": "Kaanga vitunguu." },
+    "s-changanya-pamoja": { "text": "Changanya pamoja." }
   },
   "phrases": [
     "Weka sufuria motoni.",
@@ -45,7 +55,14 @@
     "Nimeshiba, asante sana.",
     "Asante kwa kupika!"
   ],
-  "dialogues": { "u24s3l3": [{ "line": "Unataka chakula zaidi?" }] },
+  "dialogues": {
+    "u24s3l3": [
+      {
+        "line": "Unataka chakula zaidi?",
+        "options": ["Hapana, nimeshiba. Asante kwa kupika!", "Kwanza kata vitunguu.", "Ninakusubiri stendi."]
+      }
+    ]
+  },
   "stories": {
     "cooking-luwombo": {
       "title": "Kupika na Jjajja",

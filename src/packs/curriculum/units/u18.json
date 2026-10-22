@@ -20,7 +20,13 @@
     "oyogera",
     "katono",
     "kiyitibwa",
-    "kitya"
+    "kitya",
+    "kesho-kutwa",
+    "mapema",
+    "miaka",
+    "mingapi",
+    "ngapi",
+    "wangapi"
   ],
   "sentences": [
     "s18-oyagala-ki",
@@ -36,7 +42,17 @@
     "s18-caayi-oba-kaawa",
     "s18-oyogera-oluganda",
     "s18-njogera-katono",
-    "s18-kiyitibwa-kitya"
+    "s18-kiyitibwa-kitya",
+    "s-tutaondoka-mapema",
+    "s-utasafiri-lini",
+    "s-kesho-kutwa-mombasa",
+    "s-miaka-mingapi",
+    "s-miaka-ishirini",
+    "s-shilingi-ngapi",
+    "s-watoto-wangapi",
+    "s-habari-vipi",
+    "s-kwa-nini",
+    "s-kwa-sababu"
   ],
   "phrases": 7,
   "skills": [
@@ -78,6 +94,23 @@
           "newWords": ["kiyitibwa", "kitya"],
           "sentences": ["s18-kiyitibwa-kitya", "s18-kino-kiki"],
           "dialogues": [{ "speaker": "emma", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u18s4",
+      "icon": "clock",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u18s4l1",
+          "newWords": ["kesho-kutwa", "mapema", "miaka", "mingapi"],
+          "sentences": ["s-tutaondoka-mapema", "s-utasafiri-lini", "s-kesho-kutwa-mombasa", "s-miaka-mingapi"]
+        },
+        {
+          "id": "u18s4l2",
+          "newWords": ["ngapi", "wangapi"],
+          "sentences": ["s-miaka-ishirini", "s-shilingi-ngapi", "s-watoto-wangapi", "s-habari-vipi", "s-kwa-nini", "s-kwa-sababu"]
         }
       ]
     }

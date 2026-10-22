@@ -16,7 +16,17 @@
     "nkwagala": { "text": "Nkwagala" },
     "nkusubwa": { "text": "Nkusubwa" },
     "mukwano-gwange": { "text": "mukwano gwange" },
-    "tokaaba": { "text": "Tokaaba" }
+    "tokaaba": { "text": "Tokaaba" },
+    "samahani": { "text": "Kambuuze" },
+    "furaha": { "text": "essanyu" },
+    "nina-furaha": { "text": "Ndi musanyufu" },
+    "huzuni": { "text": "ennaku" },
+    "hasira": { "text": "obusungu" },
+    "naogopa": { "text": "Nnina okutya" },
+    "wasiwasi": { "text": "okweraliikirira" },
+    "kuhusu": { "text": "ebikwata ku" },
+    "usijali": { "text": "Teweeraliikirira" },
+    "bahati-njema": { "text": "Kila kirungi" }
   },
   "sentences": {
     "s21-nsanyuse-nnyo": { "text": "Nsanyuse nnyo leero!" },
@@ -32,7 +42,22 @@
     "s21-nsonyiwa": { "text": "Nsonyiwa, nzize kikeerezi." },
     "s21-nkwagala-maama": { "text": "Nkwagala nnyo, Maama." },
     "s21-nkusubwa": { "text": "Nkusubwa, mukwano gwange." },
-    "s21-tokaaba": { "text": "Tokaaba, mwana wange." }
+    "s21-tokaaba": { "text": "Tokaaba, mwana wange." },
+    "s-pole-sana": { "text": "Bambi nnyo!" },
+    "s-samahani-daktari": { "text": "Kambuuze, omusawo." },
+    "s-nimechoka-sana": { "text": "Nkooye nnyo." },
+    "s-nina-furaha": { "text": "Ndi musanyufu leero!" },
+    "s-siku-ya-furaha": { "text": "Lunaku lwa ssanyu." },
+    "s-nina-huzuni": { "text": "Nnina ennaku." },
+    "s-nimefurahi-sana": { "text": "Nsanyuse nnyo nnyo!" },
+    "s-nimeshangaa": { "text": "Nneewuunyizza ddala!" },
+    "s-bosi-hasira": { "text": "Bbosi alina obusungu." },
+    "s-nimekasirika": { "text": "Nnyiize nnyo!" },
+    "s-naogopa-mbwa": { "text": "Ntya embwa." },
+    "s-usijali": { "text": "Teweeraliikirira, tewali buzibu." },
+    "s-nakupenda-bibi": { "text": "Nkwagala, jjajja." },
+    "s-hongera-mtihani": { "text": "Kulikayo ku kigezo!" },
+    "s-bahati-njema": { "text": "Kila kirungi enkya!" }
   },
   "phrases": [
     "Nsanyuse nnyo leero!",
