@@ -18,7 +18,16 @@
     "ntuuse": { "text": "Nimefika", "alts": ["nimewasili", "niko hapa"] },
     "ennyonyi": { "text": "ndege", "alts": ["eropleni", "ndege ya abiria"] },
     "tugende": { "text": "Twende", "alts": ["haya twende", "tuende"] },
-    "olugendo-olulungi": { "text": "Safari njema!", "alts": ["safiri salama", "safari salama", "uende salama"] }
+    "olugendo-olulungi": { "text": "Safari njema!", "alts": ["safiri salama", "safari salama", "uende salama"] },
+    "tiketi": { "text": "tiketi" },
+    "treni": { "text": "treni" },
+    "uwanja-wa-ndege": { "text": "uwanja wa ndege" },
+    "kusafiri": { "text": "kusafiri" },
+    "nitasafiri": { "text": "Nitasafiri" },
+    "tutaondoka": { "text": "Tutaondoka" },
+    "itafika": { "text": "itafika" },
+    "mzigo": { "text": "mzigo" },
+    "nimechelewa": { "text": "Nimechelewa" }
   },
   "sentences": {
     "s16-ttakisi-egenda-wa": { "text": "Teksi hii inakwenda wapi?", "alts": ["Teksi hii inaenda wapi?", "Matatu hii inakwenda wapi?"] },
@@ -33,7 +42,18 @@
     "s16-olugendo-luwanvu": { "text": "Safari ni ndefu.", "alts": ["Ni safari ndefu."] },
     "s16-ntuuse": { "text": "Nimefika salama.", "alts": ["Nimewasili salama.", "Nimefika salama salimini."] },
     "s16-ennyonyi-ebuuka": { "text": "Ndege inaruka.", "alts": ["Ndege inapaa."] },
-    "s16-olugendo-olulungi": { "text": "Kwaheri! Safari njema!", "alts": ["Kwaheri! Safiri salama!", "Kwaheri! Safari salama!"] }
+    "s16-olugendo-olulungi": { "text": "Kwaheri! Safari njema!", "alts": ["Kwaheri! Safiri salama!", "Kwaheri! Safari salama!"] },
+    "s-pole-pole": { "text": "Pole pole, tafadhali." },
+    "s-haraka": { "text": "Haraka, haraka!" },
+    "s-tiketi-bei": { "text": "Tiketi ni bei gani?" },
+    "s-kituo-cha-basi": { "text": "Kituo cha basi kiko wapi?" },
+    "s-safari-ndefu": { "text": "Safari ya Dar es Salaam ni ndefu." },
+    "s-twende-kituoni": { "text": "Twende kituoni." },
+    "s-uwanja-wa-ndege": { "text": "Uwanja wa ndege uko mbali." },
+    "s-nitasafiri-kesho": { "text": "Nitasafiri kesho." },
+    "s-treni-itafika": { "text": "Treni itafika saa ngapi?" },
+    "s-mzigo-mzito": { "text": "Mzigo wako ni mzito!" },
+    "s-nimechelewa": { "text": "Nimechelewa! Samahani." }
   },
   "phrases": [
     "Teksi hii inakwenda wapi?",
@@ -43,7 +63,9 @@
     "Nimefika salama.",
     "Safari njema!"
   ],
-  "dialogues": { "u16s1l3": [{ "line": "Unakwenda wapi?" }] },
+  "dialogues": {
+    "u16s1l3": [{ "line": "Unakwenda wapi?", "options": ["Ninaenda Entebbe. Teksi hii inaenda Entebbe?", "Ninaogopa nyoka!", "Nina swali."] }]
+  },
   "stories": {
     "taxi-to-jinja": {
       "title": "Teksi ya Jinja",

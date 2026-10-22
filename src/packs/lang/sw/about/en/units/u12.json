@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u12",
+  "notes": { "empewo": "It’s cold: kuna baridi." },
+  "guidebook": {
+    "intro": "Hali ya hewa kwa Kiingereza huanza na “It”, na jana huanza na “was”.",
+    "tips": [
+      {
+        "id": "its-windy",
+        "title": "“It’s windy”",
+        "body": [
+          "Kiingereza huanza hali ya hewa kwa **It**: **It’s windy** (kuna upepo), **It’s cloudy** (kuna mawingu), **It’s sunny** (kuna jua).",
+          "Nomino nyingi huwa hali kwa kuongeza **-y**: **wind → windy**, **cloud → cloudy**, **sun → sunny**."
+        ]
+      },
+      {
+        "id": "was-were",
+        "title": "Jana: was na were",
+        "body": [
+          "Wakati uliopita wa **is/am** ni **was**: **It was cold.** (Kulikuwa na baridi.) **I was at home.** (Nilikuwa nyumbani.)",
+          "Kwa **you, we, they** tumia **were**: **We were at school.** Vitenzi vingi huongeza **-ed**: **rain → rained**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Masika na vuli",
+        "body": ["Kiingereza hakina majina ya masika na vuli. Sema **the long rains** na **the short rains**, na **the dry season** kwa kiangazi."]
+      }
+    ]
+  }
+}

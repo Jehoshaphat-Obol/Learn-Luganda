@@ -20,10 +20,18 @@
     "ntya": { "text": "I fear", "alts": ["i am afraid of", "i’m scared of", "i am scared of", "i fear"] },
     "embwa": { "text": "dog", "alts": ["dogs", "the dog"] },
     "kkapa": { "text": "cat", "alts": ["cats", "the cat"] },
-    "ekinyonyi": { "text": "bird", "alts": ["a bird", "the bird"] },
+    "ekinyonyi": { "text": "bird", "alts": ["a bird", "the bird", "birds", "plane", "aeroplane"] },
     "ebinyonyi": { "text": "birds", "alts": ["the birds"] },
     "engaali": { "text": "crested crane", "alts": ["crane", "the crested crane", "grey crowned crane"] },
-    "ebuuka": { "text": "it flies", "alts": ["flies", "is flying"] }
+    "ebuuka": { "text": "it flies", "alts": ["flies", "is flying"] },
+    "hakuna-matata": { "text": "No worries", "alts": ["no problem", "no problems", "there are no problems"] },
+    "pundamilia": { "text": "zebra", "alts": ["zebras", "the zebra"] },
+    "mamba": { "text": "crocodile", "alts": ["crocodiles", "the crocodile"] },
+    "mkali": { "text": "fierce", "alts": ["dangerous", "strict", "wild", "sharp"] },
+    "hatari": { "text": "danger", "alts": ["dangerous", "the danger"] },
+    "nyani": { "text": "baboon", "alts": ["monkey", "baboons", "the baboon"] },
+    "wengi": { "text": "many", "alts": ["a lot of", "lots of", "plenty of"] },
+    "mbuga": { "text": "national park", "alts": ["park", "game park", "savanna", "the park"] }
   },
   "sentences": {
     "s13-ente-zirya-omuddo": { "text": "The cows eat grass.", "alts": ["Cows eat grass.", "The cows are eating grass."] },
@@ -39,7 +47,20 @@
     "s13-nnina-embwa": { "text": "I have a dog." },
     "s13-kkapa-yange": { "text": "My cat is nice.", "alts": ["My cat is beautiful.", "My cat is good."] },
     "s13-ekinyonyi-kiri-wano": { "text": "The bird is here." },
-    "s13-engaali-ebuuka": { "text": "The crested crane is flying.", "alts": ["The crane flies.", "The crane is flying.", "The crested crane flies."] }
+    "s13-engaali-ebuuka": { "text": "The crested crane is flying.", "alts": ["The crane flies.", "The crane is flying.", "The crested crane flies."] },
+    "s-hakuna-maji": { "text": "There is no water today.", "alts": ["There isn’t any water today.", "There’s no water today."] },
+    "s-hakuna-matata": { "text": "No worries!", "alts": ["No problem!", "No problems!"] },
+    "s-nina-ngombe": { "text": "I have three cows.", "alts": ["I’ve got three cows."] },
+    "s-mbuzi-mdogo": { "text": "The goat is small.", "alts": ["The goat is little."] },
+    "s-wanyama-wengi": { "text": "There are many animals in the park.", "alts": ["There are lots of animals in the park."] },
+    "s-shambani-kondoo": { "text": "There are sheep on the farm.", "alts": ["There is a sheep on the farm."] },
+    "s-mbwa-wangu": { "text": "My dog is lovely.", "alts": ["My dog is good.", "My dog is nice.", "My dog is beautiful."] },
+    "s-paka-jikoni": { "text": "The cat is in the kitchen." },
+    "s-simba-mkali": { "text": "The lion is fierce!", "alts": ["Lions are fierce!", "The lion is dangerous!"] },
+    "s-tembo-wawili": { "text": "Two elephants and one giraffe.", "alts": ["Two elephants and a giraffe."] },
+    "s-mamba-hatari": { "text": "Crocodiles are dangerous!", "alts": ["The crocodile is dangerous!"] },
+    "s-ndege-wengi": { "text": "Lots of birds!", "alts": ["Many birds!", "So many birds!"] },
+    "s-nyani-mtini": { "text": "The baboons are up the tree.", "alts": ["The baboons are in the tree.", "The monkeys are up the tree."] }
   },
   "phrases": [
     "There are many animals.",

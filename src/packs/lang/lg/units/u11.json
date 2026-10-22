@@ -22,7 +22,15 @@
     "ndaba": { "text": "Ndaba" },
     "ttivvi": { "text": "ttivvi" },
     "nneebaka": { "text": "Nneebaka" },
-    "bulijjo": { "text": "bulijjo" }
+    "bulijjo": { "text": "bulijjo" },
+    "ninapenda": { "text": "Nsiima" },
+    "muziki": { "text": "omuziki" },
+    "safisha": { "text": "Longoosa" },
+    "fagia": { "text": "Yera" },
+    "osha": { "text": "Yoza" },
+    "vyombo": { "text": "ebibya" },
+    "msaada": { "text": "obuyambi" },
+    "kazi-nzuri": { "text": "Okoze bulungi!" }
   },
   "sentences": {
     "s-nzuukuka-ku-makya": { "text": "Nzuukuka ku makya." },
@@ -41,7 +49,21 @@
     "s-ndya-ekyeggulo": { "text": "Ndya ekyeggulo ekiro." },
     "s-ndaba-ttivvi": { "text": "Ndaba ttivvi olweggulo." },
     "s-nneebaka-ssaawa-ssatu": { "text": "Nneebaka ssaawa ssatu ekiro." },
-    "s-bulijjo-nnywa-caayi": { "text": "Bulijjo nnywa caayi." }
+    "s-bulijjo-nnywa-caayi": { "text": "Bulijjo nnywa caayi." },
+    "s-ninaamka-saa-kumi-na-mbili": { "text": "Nzuukuka ssaawa kkumi na bbiri." },
+    "s-ninasoma-jioni": { "text": "Nsoma akawungeezi." },
+    "s-ninapika-wali": { "text": "Nfumba omuceere n'ebijanjaalo." },
+    "s-ninalala-usiku": { "text": "Nneebaka ssaawa nnya ez'ekiro." },
+    "s-ninapenda-kucheza-mpira": { "text": "Nsiima okuzannya omupiira." },
+    "s-ninapenda-muziki": { "text": "Nsiima omuziki." },
+    "s-safisha-chumba": { "text": "Longoosa ekisenge." },
+    "s-fagia-nje": { "text": "Yera ebweru." },
+    "s-osha-vyombo-tafadhali": { "text": "Yoza ebibya, mwattu." },
+    "s-asante-msaada": { "text": "Weebale obuyambi!" },
+    "s-kazi-nzuri": { "text": "Okoze bulungi, Neema!" },
+    "s-tukutane-sokoni": { "text": "Tusisinkane mu katale." },
+    "s-tukutane-saa-ngapi": { "text": "Tusisinkane ssaawa mmeka?" },
+    "s-tutaonana-baadaye": { "text": "Tunaalabagana oluvannyuma." }
   },
   "phrases": [
     "Nzuukuka ku makya.",

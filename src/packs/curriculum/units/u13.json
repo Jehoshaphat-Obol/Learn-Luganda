@@ -25,7 +25,15 @@
     "ekinyonyi",
     "ebinyonyi",
     "engaali",
-    "ebuuka"
+    "ebuuka",
+    "hakuna-matata",
+    "pundamilia",
+    "mamba",
+    "mkali",
+    "hatari",
+    "nyani",
+    "wengi",
+    "mbuga"
   ],
   "sentences": [
     "s13-ente-zirya-omuddo",
@@ -41,7 +49,20 @@
     "s13-nnina-embwa",
     "s13-kkapa-yange",
     "s13-ekinyonyi-kiri-wano",
-    "s13-engaali-ebuuka"
+    "s13-engaali-ebuuka",
+    "s-hakuna-maji",
+    "s-hakuna-matata",
+    "s-nina-ngombe",
+    "s-mbuzi-mdogo",
+    "s-wanyama-wengi",
+    "s-shambani-kondoo",
+    "s-mbwa-wangu",
+    "s-paka-jikoni",
+    "s-simba-mkali",
+    "s-tembo-wawili",
+    "s-mamba-hatari",
+    "s-ndege-wengi",
+    "s-nyani-mtini"
   ],
   "phrases": 6,
   "skills": [
@@ -79,6 +100,21 @@
           "sentences": ["s13-engaali-ebuuka", "s13-ekinyonyi-kiri-wano"],
           "dialogues": [{ "speaker": "emma", "answer": 0 }]
         }
+      ]
+    },
+    {
+      "id": "u13s4",
+      "icon": "info",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u13s4l1",
+          "newWords": ["hakuna-matata", "pundamilia"],
+          "sentences": ["s-hakuna-maji", "s-hakuna-matata", "s-simba-mkali", "s-tembo-wawili"]
+        },
+        { "id": "u13s4l2", "newWords": ["mamba", "mkali", "hatari", "nyani", "wengi"], "sentences": ["s-mamba-hatari"] },
+        { "id": "u13s4l3", "newWords": ["mbuga"], "sentences": ["s-wanyama-wengi", "s-ndege-wengi", "s-nyani-mtini", "s-nina-ngombe"] },
+        { "id": "u13s4l4", "newWords": [], "sentences": ["s-mbuzi-mdogo", "s-shambani-kondoo", "s-mbwa-wangu", "s-paka-jikoni"] }
       ]
     }
   ],

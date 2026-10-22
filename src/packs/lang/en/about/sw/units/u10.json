@@ -1,0 +1,50 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u10",
+  "notes": {
+    "nnene": "For n-class nouns like nyumba. With ki-: kikubwa; with people: mkubwa.",
+    "ntono": "With ki-: kidogo; with people: mdogo.",
+    "engoye": "One word for a single piece and for many.",
+    "essaati": "Plural: mashati.",
+    "kanga": "A printed cotton cloth with a saying along its edge.",
+    "kiatu": "Plural: viatu.",
+    "ndefu": "For n- nouns like suruali. For a person: mrefu.",
+    "fupi": "For n- nouns. For a person: mfupi.",
+    "kioo": "Also “glass”. Plural: vioo."
+  },
+  "guidebook": {
+    "intro": "From kanga to shoes: name what you wear, get dressed for the weather and try something on at the market.",
+    "tips": [
+      {
+        "id": "nimevaa",
+        "title": "Nimevaa: I have put on",
+        "body": [
+          "For clothes, Swahili says what you **have put on**: **Nimevaa koti** means “I’m wearing a coat” (literally “I have put on a coat”). The **-me-** in the middle marks something done that is still true now.",
+          "**Ninavaa** (with **-na-**) is the action itself: “I’m putting it on”. You’ll meet more **-me-** words: **nimechoka** (I’m tired), **nimepona** (I’ve got better)."
+        ]
+      },
+      {
+        "id": "vaa-vua",
+        "title": "Put on, take off",
+        "body": [
+          "Swahili makes opposites by changing the end of a verb: **vaa** (put on) and **vua** (take off), **funga** (close) and **fungua** (open).",
+          "A bare verb is a command to one person: **Vaa!** (put it on!), **Vua viatu!** (take your shoes off!). Add **tafadhali** to be polite."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Kanga sayings",
+        "body": [
+          "Every kanga carries a saying along its edge, called **jina** (its name). Women choose a kanga to send a message: a proverb, a blessing, or a gentle dig at a neighbour."
+        ]
+      },
+      {
+        "title": "Shoes off",
+        "body": [
+          "In many homes, and always in mosques, people take off their shoes at the door. If your host is barefoot inside, do the same: **Vua viatu** is a request you will often hear."
+        ]
+      }
+    ]
+  }
+}

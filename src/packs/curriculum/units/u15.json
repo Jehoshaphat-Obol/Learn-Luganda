@@ -23,7 +23,17 @@
     "otegeera",
     "ddamu",
     "omulimu-gwawaka",
-    "ekigezo"
+    "ekigezo",
+    "daftari",
+    "ubao",
+    "somo",
+    "masomo",
+    "maswali",
+    "jibu",
+    "andika",
+    "soma",
+    "unasemaje",
+    "karne"
   ],
   "sentences": [
     "s15-ekibiina-kyaffe",
@@ -39,7 +49,24 @@
     "s15-otegeera",
     "s15-ddamu-mpola",
     "s15-omulimu-gwawaka",
-    "s15-ekigezo-enkya"
+    "s15-ekigezo-enkya",
+    "s-kalamu-nyeusi",
+    "s-mwalimu-ubaoni",
+    "s-somo-hesabu",
+    "s-napenda-sayansi",
+    "s-masomo-mengi",
+    "s-una-swali",
+    "s-jibu-ni-nini",
+    "s-kesho-mtihani",
+    "s-kazi-nyumbani-nyingi",
+    "s-andika-jina",
+    "s-soma-kitabu",
+    "s-unasemaje",
+    "s-neno-gani",
+    "s-ina-maana-gani",
+    "s-historia-ndefu",
+    "s-karne-nyingi",
+    "s-biashara-ya-bahari"
   ],
   "phrases": 6,
   "skills": [
@@ -76,6 +103,33 @@
           "newWords": ["omulimu-gwawaka", "ekigezo"],
           "sentences": ["s15-omulimu-gwawaka", "s15-ekigezo-enkya"],
           "dialogues": [{ "speaker": "mukasa", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u15s4",
+      "icon": "book",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u15s4l1",
+          "newWords": ["daftari", "ubao", "somo", "masomo"],
+          "sentences": ["s-kalamu-nyeusi", "s-mwalimu-ubaoni", "s-somo-hesabu", "s-napenda-sayansi"]
+        },
+        {
+          "id": "u15s4l2",
+          "newWords": ["maswali", "jibu"],
+          "sentences": ["s-masomo-mengi", "s-una-swali", "s-jibu-ni-nini", "s-kesho-mtihani"]
+        },
+        {
+          "id": "u15s4l3",
+          "newWords": ["andika", "soma", "unasemaje"],
+          "sentences": ["s-kazi-nyumbani-nyingi", "s-andika-jina", "s-soma-kitabu", "s-unasemaje"]
+        },
+        {
+          "id": "u15s4l4",
+          "newWords": ["karne"],
+          "sentences": ["s-neno-gani", "s-ina-maana-gani", "s-historia-ndefu", "s-karne-nyingi", "s-biashara-ya-bahari"]
         }
       ]
     }

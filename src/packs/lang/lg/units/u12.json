@@ -19,7 +19,14 @@
     "ebbugumu": { "text": "ebbugumu" },
     "nnyo-nnyo": { "text": "nnyo nnyo" },
     "obudde-bulungi": { "text": "Obudde bulungi" },
-    "ekiwempe": { "text": "ekiwempe" }
+    "ekiwempe": { "text": "ekiwempe" },
+    "upepo": { "text": "embuyaga" },
+    "radi": { "text": "okubwatuka" },
+    "jua-kali": { "text": "omusana omungi" },
+    "kavu": { "text": "kikalu" },
+    "nyingi": { "text": "nnyingi" },
+    "msimu": { "text": "ekiseera" },
+    "vuli": { "text": "ddumbi" }
   },
   "sentences": {
     "s-enkuba-etonnya": { "text": "Enkuba etonnya." },
@@ -35,7 +42,20 @@
     "s-mpulira-empewo": { "text": "Mpulira empewo." },
     "s-mpulira-ebbugumu": { "text": "Mpulira ebbugumu." },
     "s-obudde-bwokya-nnyo-nnyo": { "text": "Obudde bwokya nnyo nnyo!" },
-    "s-twala-ekiwempe": { "text": "Twala ekiwempe." }
+    "s-twala-ekiwempe": { "text": "Twala ekiwempe." },
+    "s-hali-ya-hewa": { "text": "Obudde bulungi leero." },
+    "s-kuna-jua": { "text": "Leero omusana gwaka." },
+    "s-kuna-joto": { "text": "Leero ebbugumu lingi nnyo." },
+    "s-kuna-baridi": { "text": "Ekiro wabaawo empewo." },
+    "s-kuna-upepo": { "text": "Leero waliwo embuyaga." },
+    "s-kuna-mawingu": { "text": "Leero waliwo ebire." },
+    "s-radi-usiku": { "text": "Eggulu libwatuka ekiro." },
+    "s-jua-kali-leo": { "text": "Omusana mungi leero!" },
+    "s-mvua-nyingi": { "text": "Enkuba nnyingi!" },
+    "s-kiangazi-kavu": { "text": "Ekyeya kikalu era kyokya." },
+    "s-msimu-gani": { "text": "Kiseera ki?" },
+    "s-masika-mvua": { "text": "Ttoggo ye nkuba empanvu." },
+    "s-vuli-mvua-fupi": { "text": "Ddumbi ye nkuba ennyimpi." }
   },
   "phrases": ["Enkuba etonnya.", "Omusana gwaka.", "Leero obudde bulungi.", "Mpulira empewo.", "Obudde bwokya nnyo nnyo!", "Twala ekiwempe."],
   "dialogues": {

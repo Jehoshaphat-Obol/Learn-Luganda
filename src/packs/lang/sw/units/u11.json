@@ -22,7 +22,15 @@
     "ndaba": { "text": "Ninatazama", "alts": ["natazama", "ninaangalia", "naangalia"] },
     "ttivvi": { "text": "televisheni", "alts": ["runinga", "TV", "tivii"] },
     "nneebaka": { "text": "Ninalala", "alts": ["nalala", "ninakwenda kulala"] },
-    "bulijjo": { "text": "siku zote", "alts": ["kila mara", "daima", "kwa kawaida"] }
+    "bulijjo": { "text": "siku zote", "alts": ["kila mara", "daima", "kwa kawaida"] },
+    "ninapenda": { "text": "Ninapenda" },
+    "muziki": { "text": "muziki" },
+    "safisha": { "text": "Safisha" },
+    "fagia": { "text": "Fagia" },
+    "osha": { "text": "Osha" },
+    "vyombo": { "text": "vyombo" },
+    "msaada": { "text": "msaada" },
+    "kazi-nzuri": { "text": "Kazi nzuri!" }
   },
   "sentences": {
     "s-nzuukuka-ku-makya": { "text": "Ninaamka asubuhi.", "alts": ["Naamka asubuhi."] },
@@ -44,7 +52,21 @@
       "alts": ["Natazama televisheni mchana.", "Ninaangalia runinga mchana.", "Ninatazama TV mchana."]
     },
     "s-nneebaka-ssaawa-ssatu": { "text": "Ninalala saa tatu usiku.", "alts": ["Nalala saa tatu usiku.", "Ninalala saa 3 usiku."] },
-    "s-bulijjo-nnywa-caayi": { "text": "Siku zote ninakunywa chai.", "alts": ["Kila mara ninakunywa chai.", "Ninakunywa chai siku zote."] }
+    "s-bulijjo-nnywa-caayi": { "text": "Siku zote ninakunywa chai.", "alts": ["Kila mara ninakunywa chai.", "Ninakunywa chai siku zote."] },
+    "s-ninaamka-saa-kumi-na-mbili": { "text": "Ninaamka saa kumi na mbili." },
+    "s-ninasoma-jioni": { "text": "Ninasoma jioni." },
+    "s-ninapika-wali": { "text": "Ninapika wali na maharage." },
+    "s-ninalala-usiku": { "text": "Ninalala saa nne usiku." },
+    "s-ninapenda-kucheza-mpira": { "text": "Ninapenda kucheza mpira." },
+    "s-ninapenda-muziki": { "text": "Ninapenda muziki." },
+    "s-safisha-chumba": { "text": "Safisha chumba." },
+    "s-fagia-nje": { "text": "Fagia nje." },
+    "s-osha-vyombo-tafadhali": { "text": "Osha vyombo, tafadhali." },
+    "s-asante-msaada": { "text": "Asante kwa msaada!" },
+    "s-kazi-nzuri": { "text": "Kazi nzuri, Neema!" },
+    "s-tukutane-sokoni": { "text": "Tukutane sokoni." },
+    "s-tukutane-saa-ngapi": { "text": "Tukutane saa ngapi?" },
+    "s-tutaonana-baadaye": { "text": "Tutaonana baadaye." }
   },
   "phrases": [
     "Ninaamka asubuhi.",
@@ -55,5 +77,7 @@
     "Baadaye ninasoma.",
     "Ninalala saa tatu usiku."
   ],
-  "dialogues": { "u11s3l3": [{ "line": "Unafanya nini asubuhi?" }] }
+  "dialogues": {
+    "u11s3l3": [{ "line": "Unafanya nini asubuhi?", "options": ["Ninaamka, ninakula kifungua kinywa.", "Ninalala usiku.", "Shati langu."] }]
+  }
 }

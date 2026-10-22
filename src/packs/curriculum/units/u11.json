@@ -24,7 +24,15 @@
     "ndaba",
     "ttivvi",
     "nneebaka",
-    "bulijjo"
+    "bulijjo",
+    "ninapenda",
+    "muziki",
+    "safisha",
+    "fagia",
+    "osha",
+    "vyombo",
+    "msaada",
+    "kazi-nzuri"
   ],
   "sentences": [
     "s-nzuukuka-ku-makya",
@@ -43,7 +51,21 @@
     "s-ndya-ekyeggulo",
     "s-ndaba-ttivvi",
     "s-nneebaka-ssaawa-ssatu",
-    "s-bulijjo-nnywa-caayi"
+    "s-bulijjo-nnywa-caayi",
+    "s-ninaamka-saa-kumi-na-mbili",
+    "s-ninasoma-jioni",
+    "s-ninapika-wali",
+    "s-ninalala-usiku",
+    "s-ninapenda-kucheza-mpira",
+    "s-ninapenda-muziki",
+    "s-safisha-chumba",
+    "s-fagia-nje",
+    "s-osha-vyombo-tafadhali",
+    "s-asante-msaada",
+    "s-kazi-nzuri",
+    "s-tukutane-sokoni",
+    "s-tukutane-saa-ngapi",
+    "s-tutaonana-baadaye"
   ],
   "phrases": 7,
   "skills": [
@@ -80,6 +102,28 @@
           "newWords": ["nneebaka"],
           "sentences": ["s-nneebaka-ssaawa-ssatu", "s-ndya-ekyeggulo", "s-nzuukuka-ku-makya"],
           "dialogues": [{ "speaker": "ssali", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u11s4",
+      "icon": "star",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u11s4l1",
+          "newWords": ["ninapenda", "muziki"],
+          "sentences": ["s-ninapenda-kucheza-mpira", "s-ninapenda-muziki", "s-ninaamka-saa-kumi-na-mbili", "s-ninasoma-jioni"]
+        },
+        {
+          "id": "u11s4l2",
+          "newWords": ["safisha", "fagia", "osha", "vyombo"],
+          "sentences": ["s-ninapika-wali", "s-ninalala-usiku", "s-safisha-chumba", "s-fagia-nje"]
+        },
+        {
+          "id": "u11s4l3",
+          "newWords": ["msaada", "kazi-nzuri"],
+          "sentences": ["s-osha-vyombo-tafadhali", "s-asante-msaada", "s-kazi-nzuri", "s-tukutane-sokoni", "s-tukutane-saa-ngapi", "s-tutaonana-baadaye"]
         }
       ]
     }

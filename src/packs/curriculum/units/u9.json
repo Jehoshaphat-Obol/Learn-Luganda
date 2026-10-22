@@ -26,7 +26,16 @@
     "mukadde",
     "munene",
     "balungi",
-    "bawanvu"
+    "bawanvu",
+    "safi",
+    "chafu",
+    "gani",
+    "kabisa",
+    "nzito",
+    "nyepesi",
+    "mwembamba",
+    "mpole",
+    "mchangamfu"
   ],
   "sentences": [
     "s-ekikopo-kimyufu",
@@ -49,7 +58,31 @@
     "s-omwana-muto",
     "s-jjajja-mukadde",
     "s-abaana-balungi",
-    "s-abasomesa-bawanvu"
+    "s-abasomesa-bawanvu",
+    "s-baba-yako-mrefu",
+    "s-mtoto-mfupi",
+    "s-mtu-mzuri",
+    "s-mwalimu-wake",
+    "s-mlango-mwekundu",
+    "s-rangi-gani",
+    "s-nyumba-nyeupe",
+    "s-rangi-ya-kijani",
+    "s-nyumba-mpya",
+    "s-meza-chafu",
+    "s-si-mbaya",
+    "s-kikombe-gani",
+    "s-mpya-kabisa",
+    "s-safi-kabisa",
+    "s-watoto-wazuri",
+    "s-kikombe-kikubwa",
+    "s-vikombe-vidogo",
+    "s-meza-nzito",
+    "s-ni-nyepesi",
+    "s-dada-mrembo",
+    "s-mwalimu-hodari",
+    "s-kaka-mwembamba",
+    "s-bibi-mpole",
+    "s-neema-mchangamfu"
   ],
   "phrases": 7,
   "skills": [
@@ -104,6 +137,31 @@
           "sentences": ["s-abaana-balungi", "s-abasomesa-bawanvu", "s-omukazi-mulungi"],
           "dialogues": [{ "speaker": "amara", "answer": 0 }]
         }
+      ]
+    },
+    {
+      "id": "u9s4",
+      "icon": "profile",
+      "since": 2,
+      "lessons": [
+        { "id": "u9s4l1", "newWords": [], "sentences": ["s-baba-yako-mrefu", "s-mtoto-mfupi", "s-mtu-mzuri", "s-mwalimu-wake"] },
+        {
+          "id": "u9s4l2",
+          "newWords": ["safi", "chafu"],
+          "sentences": ["s-mlango-mwekundu", "s-rangi-gani", "s-nyumba-nyeupe", "s-rangi-ya-kijani"]
+        },
+        { "id": "u9s4l3", "newWords": ["gani", "kabisa"], "sentences": ["s-nyumba-mpya", "s-meza-chafu", "s-si-mbaya", "s-kikombe-gani"] },
+        {
+          "id": "u9s4l4",
+          "newWords": ["nzito", "nyepesi"],
+          "sentences": ["s-mpya-kabisa", "s-safi-kabisa", "s-watoto-wazuri", "s-meza-nzito"]
+        },
+        {
+          "id": "u9s4l5",
+          "newWords": ["mwembamba", "mpole", "mchangamfu"],
+          "sentences": ["s-ni-nyepesi", "s-dada-mrembo", "s-mwalimu-hodari", "s-kaka-mwembamba"]
+        },
+        { "id": "u9s4l6", "newWords": [], "sentences": ["s-bibi-mpole", "s-neema-mchangamfu", "s-kikombe-kikubwa", "s-vikombe-vidogo"] }
       ]
     }
   ]

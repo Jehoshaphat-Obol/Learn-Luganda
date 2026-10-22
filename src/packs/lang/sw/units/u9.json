@@ -24,7 +24,16 @@
     "mukadde": { "text": "mzee", "alts": ["mkongwe"] },
     "munene": { "text": "mkubwa", "alts": ["mnene"] },
     "balungi": { "text": "wazuri", "alts": ["warembo", "wema", "wakarimu"] },
-    "bawanvu": { "text": "warefu" }
+    "bawanvu": { "text": "warefu" },
+    "safi": { "text": "safi" },
+    "chafu": { "text": "chafu" },
+    "gani": { "text": "gani" },
+    "kabisa": { "text": "kabisa" },
+    "nzito": { "text": "nzito" },
+    "nyepesi": { "text": "nyepesi" },
+    "mwembamba": { "text": "mwembamba" },
+    "mpole": { "text": "mpole" },
+    "mchangamfu": { "text": "mchangamfu" }
   },
   "sentences": {
     "s-ekikopo-kimyufu": { "text": "Kikombe ni chekundu.", "alts": ["Kikombe chekundu."] },
@@ -47,7 +56,31 @@
     "s-omwana-muto": { "text": "Mtoto ni mdogo.", "alts": ["Mtoto ni mchanga."] },
     "s-jjajja-mukadde": { "text": "Bibi ni mzee.", "alts": ["Babu ni mzee."] },
     "s-abaana-balungi": { "text": "Watoto ni wazuri.", "alts": ["Watoto ni wema.", "Watoto ni warembo."] },
-    "s-abasomesa-bawanvu": { "text": "Walimu ni warefu." }
+    "s-abasomesa-bawanvu": { "text": "Walimu ni warefu." },
+    "s-baba-yako-mrefu": { "text": "Baba yako ni mrefu." },
+    "s-mtoto-mfupi": { "text": "Mtoto ni mfupi." },
+    "s-mtu-mzuri": { "text": "Bibi ni mtu mzuri." },
+    "s-mwalimu-wake": { "text": "Mwalimu wake ni mzuri." },
+    "s-mlango-mwekundu": { "text": "Mlango ni mwekundu." },
+    "s-rangi-gani": { "text": "Ni rangi gani?" },
+    "s-nyumba-nyeupe": { "text": "Nyumba nyeupe." },
+    "s-rangi-ya-kijani": { "text": "Rangi ya dirisha ni kijani." },
+    "s-nyumba-mpya": { "text": "Nyumba yangu ni mpya." },
+    "s-meza-chafu": { "text": "Meza ni chafu." },
+    "s-si-mbaya": { "text": "Si mbaya." },
+    "s-kikombe-gani": { "text": "Kikombe gani?" },
+    "s-mpya-kabisa": { "text": "Ni mpya kabisa!" },
+    "s-safi-kabisa": { "text": "Safi kabisa!" },
+    "s-watoto-wazuri": { "text": "Watoto wazuri." },
+    "s-kikombe-kikubwa": { "text": "Kikombe kikubwa." },
+    "s-vikombe-vidogo": { "text": "Vikombe vidogo." },
+    "s-meza-nzito": { "text": "Meza ni nzito." },
+    "s-ni-nyepesi": { "text": "Ni nyepesi sana." },
+    "s-dada-mrembo": { "text": "Dada yako ni mrembo." },
+    "s-mwalimu-hodari": { "text": "Mwalimu ni hodari sana." },
+    "s-kaka-mwembamba": { "text": "Kaka yangu ni mwembamba." },
+    "s-bibi-mpole": { "text": "Bibi ni mpole sana." },
+    "s-neema-mchangamfu": { "text": "Neema ni mchangamfu." }
   },
   "phrases": [
     "Rangi gani?",
@@ -58,5 +91,8 @@
     "Mwanamke ni mzuri.",
     "Watoto ni wazuri."
   ],
-  "dialogues": { "u9s2l3": [{ "line": "Kitabu chako ni cha rangi gani?" }], "u9s3l3": [{ "line": "Baba yako ni mrefu?" }] }
+  "dialogues": {
+    "u9s2l3": [{ "line": "Kitabu chako ni cha rangi gani?", "options": ["Nyeusi.", "Mrefu.", "Nina njaa."] }],
+    "u9s3l3": [{ "line": "Baba yako ni mrefu?", "options": ["Hapana, ni mfupi.", "Ndiyo, ni nyekundu.", "Kitabu ni kipya."] }]
+  }
 }

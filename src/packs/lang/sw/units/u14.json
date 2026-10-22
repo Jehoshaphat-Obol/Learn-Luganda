@@ -20,7 +20,13 @@
     "nfuna": { "text": "Ninapata", "alts": ["napata", "ninapokea"] },
     "nkolera": { "text": "Ninafanyia kazi", "alts": ["nafanyia kazi"] },
     "kampuni": { "text": "kampuni", "alts": ["shirika"] },
-    "nkola-nnyo": { "text": "Ninafanya kazi kwa bidii", "alts": ["nafanya kazi kwa bidii", "ninafanya kazi sana"] }
+    "nkola-nnyo": { "text": "Ninafanya kazi kwa bidii", "alts": ["nafanya kazi kwa bidii", "ninafanya kazi sana"] },
+    "fundi": { "text": "fundi" },
+    "muuguzi": { "text": "muuguzi" },
+    "anafanya": { "text": "anafanya" },
+    "tunafanya": { "text": "tunafanya" },
+    "wanafanya": { "text": "wanafanya" },
+    "bosi": { "text": "bosi" }
   },
   "sentences": {
     "s14-ndi-mulimi": { "text": "Mimi ni mkulima.", "alts": ["Ni mkulima."] },
@@ -36,7 +42,18 @@
     "s14-nfuna-omusaala": { "text": "Ninapata mshahara kila mwezi.", "alts": ["Napata mshahara kila mwezi.", "Ninalipwa kila mwezi."] },
     "s14-abakozi-bangi": { "text": "Kampuni ina wafanyakazi wengi.", "alts": ["Shirika lina wafanyakazi wengi."] },
     "s14-nkolera-kampuni": { "text": "Ninafanyia kazi kampuni kubwa.", "alts": ["Nafanyia kazi kampuni kubwa.", "Ninafanya kazi katika kampuni kubwa."] },
-    "s14-nkola-nnyo": { "text": "Ninafanya kazi kwa bidii kila siku.", "alts": ["Nafanya kazi kwa bidii kila siku."] }
+    "s14-nkola-nnyo": { "text": "Ninafanya kazi kwa bidii kila siku.", "alts": ["Nafanya kazi kwa bidii kila siku."] },
+    "s-baba-dereva": { "text": "Baba yangu ni dereva." },
+    "s-mpishi-anapika": { "text": "Mpishi anapika wali." },
+    "s-dada-muuguzi": { "text": "Dada yangu ni muuguzi." },
+    "s-fundi-yuko-wapi": { "text": "Fundi yuko wapi?" },
+    "s-askari-nje": { "text": "Askari yuko nje." },
+    "s-mfanyabiashara-duka": { "text": "Mfanyabiashara ana duka." },
+    "s-juma-anafanya": { "text": "Juma anafanya kazi Nairobi." },
+    "s-tunafanya-pamoja": { "text": "Tunafanya kazi pamoja." },
+    "s-wanafanya-ofisini": { "text": "Wanafanya kazi ofisini." },
+    "s-kampuni-kubwa": { "text": "Kampuni ni kubwa." },
+    "s-bosi-mpole": { "text": "Bosi wangu ni mpole." }
   },
   "phrases": [
     "Unafanya kazi gani?",
@@ -46,5 +63,5 @@
     "Ninafanyia kazi kampuni kubwa.",
     "Ninapata mshahara kila mwezi."
   ],
-  "dialogues": { "u14s2l3": [{ "line": "Unafanya kazi gani?" }] }
+  "dialogues": { "u14s2l3": [{ "line": "Unafanya kazi gani?", "options": ["Mimi ni mwalimu.", "Ng'ombe wanakula nyasi.", "Ninahisi baridi."] }] }
 }

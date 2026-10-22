@@ -18,7 +18,16 @@
     "ntuuse": { "text": "Ntuuse" },
     "ennyonyi": { "text": "ennyonyi" },
     "tugende": { "text": "Tugende" },
-    "olugendo-olulungi": { "text": "Olugendo olulungi!" }
+    "olugendo-olulungi": { "text": "Olugendo olulungi!" },
+    "tiketi": { "text": "tikiti" },
+    "treni": { "text": "eggaali y'omukka" },
+    "uwanja-wa-ndege": { "text": "ekisaawe ky'ennyonyi" },
+    "kusafiri": { "text": "okutambula" },
+    "nitasafiri": { "text": "Nnaatambula" },
+    "tutaondoka": { "text": "Tunaasimbula" },
+    "itafika": { "text": "eneetuuka" },
+    "mzigo": { "text": "omugugu" },
+    "nimechelewa": { "text": "Ndudde" }
   },
   "sentences": {
     "s16-ttakisi-egenda-wa": { "text": "Ttakisi eno egenda wa?" },
@@ -33,7 +42,18 @@
     "s16-olugendo-luwanvu": { "text": "Olugendo luwanvu." },
     "s16-ntuuse": { "text": "Ntuuse bulungi." },
     "s16-ennyonyi-ebuuka": { "text": "Ennyonyi ebuuka." },
-    "s16-olugendo-olulungi": { "text": "Weraba! Olugendo olulungi!" }
+    "s16-olugendo-olulungi": { "text": "Weraba! Olugendo olulungi!" },
+    "s-pole-pole": { "text": "Mpola mpola, mwattu." },
+    "s-haraka": { "text": "Mangu, mangu!" },
+    "s-tiketi-bei": { "text": "Tikiti ssente mmeka?" },
+    "s-kituo-cha-basi": { "text": "Siteegi ya bbaasi eri ludda wa?" },
+    "s-safari-ndefu": { "text": "Olugendo lw'e Dar es Salaam luwanvu." },
+    "s-twende-kituoni": { "text": "Tugende ku siteegi." },
+    "s-uwanja-wa-ndege": { "text": "Ekisaawe ky'ennyonyi kiri wala." },
+    "s-nitasafiri-kesho": { "text": "Nnaatambula enkya." },
+    "s-treni-itafika": { "text": "Eggaali y'omukka eneetuuka ssaawa mmeka?" },
+    "s-mzigo-mzito": { "text": "Omugugu gwo muzito!" },
+    "s-nimechelewa": { "text": "Ndudde! Nsonyiwa." }
   },
   "phrases": [
     "Ttakisi eno egenda wa?",

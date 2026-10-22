@@ -21,7 +21,14 @@
     "ebbugumu",
     "nnyo-nnyo",
     "obudde-bulungi",
-    "ekiwempe"
+    "ekiwempe",
+    "upepo",
+    "radi",
+    "jua-kali",
+    "kavu",
+    "nyingi",
+    "msimu",
+    "vuli"
   ],
   "sentences": [
     "s-enkuba-etonnya",
@@ -37,7 +44,20 @@
     "s-mpulira-empewo",
     "s-mpulira-ebbugumu",
     "s-obudde-bwokya-nnyo-nnyo",
-    "s-twala-ekiwempe"
+    "s-twala-ekiwempe",
+    "s-hali-ya-hewa",
+    "s-kuna-jua",
+    "s-kuna-joto",
+    "s-kuna-baridi",
+    "s-kuna-upepo",
+    "s-kuna-mawingu",
+    "s-radi-usiku",
+    "s-jua-kali-leo",
+    "s-mvua-nyingi",
+    "s-kiangazi-kavu",
+    "s-msimu-gani",
+    "s-masika-mvua",
+    "s-vuli-mvua-fupi"
   ],
   "phrases": 6,
   "skills": [
@@ -74,6 +94,28 @@
           "newWords": [],
           "sentences": ["s-omusana-gwaka", "s-obudde-bunnyogovu", "s-mpulira-ebbugumu"],
           "dialogues": [{ "speaker": "jjajja", "answer": 0 }, { "speaker": "jjajja", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u12s4",
+      "icon": "flame",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u12s4l1",
+          "newWords": ["upepo", "radi", "jua-kali"],
+          "sentences": ["s-hali-ya-hewa", "s-kuna-joto", "s-kuna-baridi", "s-kuna-jua"]
+        },
+        {
+          "id": "u12s4l2",
+          "newWords": ["kavu", "nyingi"],
+          "sentences": ["s-kuna-upepo", "s-kuna-mawingu", "s-radi-usiku", "s-jua-kali-leo"]
+        },
+        {
+          "id": "u12s4l3",
+          "newWords": ["msimu", "vuli"],
+          "sentences": ["s-mvua-nyingi", "s-kiangazi-kavu", "s-msimu-gani", "s-masika-mvua", "s-vuli-mvua-fupi"]
         }
       ]
     }

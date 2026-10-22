@@ -23,7 +23,15 @@
     "ekinyonyi": { "text": "ndege" },
     "ebinyonyi": { "text": "ndege wengi", "alts": ["ndege"] },
     "engaali": { "text": "korongo", "alts": ["korongo taji", "korongo mwenye taji", "ndege wa taifa"] },
-    "ebuuka": { "text": "anaruka", "alts": ["inaruka", "anapaa", "yaruka"] }
+    "ebuuka": { "text": "anaruka", "alts": ["inaruka", "anapaa", "yaruka"] },
+    "hakuna-matata": { "text": "Hakuna matata" },
+    "pundamilia": { "text": "pundamilia" },
+    "mamba": { "text": "mamba" },
+    "mkali": { "text": "mkali" },
+    "hatari": { "text": "hatari" },
+    "nyani": { "text": "nyani" },
+    "wengi": { "text": "wengi" },
+    "mbuga": { "text": "mbuga" }
   },
   "sentences": {
     "s13-ente-zirya-omuddo": { "text": "Ng’ombe wanakula nyasi.", "alts": ["Ng’ombe hula nyasi.", "Ngombe wanakula nyasi.", "Ng’ombe wanakula majani."] },
@@ -39,10 +47,23 @@
     "s13-nnina-embwa": { "text": "Nina mbwa." },
     "s13-kkapa-yange": { "text": "Paka wangu ni mzuri.", "alts": ["Paka yangu ni nzuri."] },
     "s13-ekinyonyi-kiri-wano": { "text": "Ndege yuko hapa.", "alts": ["Ndege yupo hapa.", "Ndege iko hapa."] },
-    "s13-engaali-ebuuka": { "text": "Korongo anaruka.", "alts": ["Korongo anapaa.", "Korongo taji anaruka."] }
+    "s13-engaali-ebuuka": { "text": "Korongo anaruka.", "alts": ["Korongo anapaa.", "Korongo taji anaruka."] },
+    "s-hakuna-maji": { "text": "Hakuna maji leo." },
+    "s-hakuna-matata": { "text": "Hakuna matata!" },
+    "s-nina-ngombe": { "text": "Nina ng’ombe watatu." },
+    "s-mbuzi-mdogo": { "text": "Mbuzi ni mdogo." },
+    "s-wanyama-wengi": { "text": "Kuna wanyama wengi mbugani." },
+    "s-shambani-kondoo": { "text": "Shambani kuna kondoo." },
+    "s-mbwa-wangu": { "text": "Mbwa wangu ni mzuri." },
+    "s-paka-jikoni": { "text": "Paka yuko jikoni." },
+    "s-simba-mkali": { "text": "Simba ni mkali!" },
+    "s-tembo-wawili": { "text": "Tembo wawili na twiga mmoja." },
+    "s-mamba-hatari": { "text": "Mamba ni hatari!" },
+    "s-ndege-wengi": { "text": "Ndege wengi!" },
+    "s-nyani-mtini": { "text": "Nyani wako juu ya mti." }
   },
   "phrases": ["Kuna wanyama wengi.", "Nina mbuzi wawili.", "Ng’ombe wanakula nyasi.", "Tembo ni mkubwa sana.", "Ninaogopa nyoka!", "Korongo anaruka."],
-  "dialogues": { "u13s3l3": [{ "line": "Una mnyama nyumbani?" }] },
+  "dialogues": { "u13s3l3": [{ "line": "Una mnyama nyumbani?", "options": ["Ndiyo, nina mbwa.", "Tembo ni mkubwa sana.", "Ninaogopa nyoka!"] }] },
   "stories": {
     "village-farm": {
       "title": "Shambani kwa Jjajja",

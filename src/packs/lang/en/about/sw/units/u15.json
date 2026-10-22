@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u15",
+  "notes": {
+    "ekibiina": "Plural: madarasa.",
+    "ubao": "Ubaoni: on the board.",
+    "somo": "Plural: masomo.",
+    "olungereza": "The ki- prefix names a language: Kiswahili, Kiingereza, Kifaransa.",
+    "ekibuuzo": "Plural: maswali.",
+    "jibu": "Plural: majibu. As a verb: Jibu! (answer!)",
+    "ekigezo": "Plural: mitihani.",
+    "soma": "Also “study”: ninasoma means both.",
+    "ekigambo": "Plural: maneno."
+  },
+  "guidebook": {
+    "intro": "Swahili is the language of primary school in Tanzania and is taught across Kenya and Uganda. Here are the words for the classroom, and for asking when you’re lost.",
+    "tips": [
+      {
+        "id": "of-agrees",
+        "title": "“Of” agrees too",
+        "body": [
+          "“Of” is **-a** with the noun’s own prefix in front: **somo la hesabu** (a maths lesson), **kitabu cha Neema** (Neema’s book), **kalamu ya Emma** (Emma’s pen), **masomo ya leo** (today’s lessons).",
+          "You’ll see the same prefixes in “my”: **kitabu changu**, **kalamu yangu**, **somo langu**."
+        ],
+        "table": [
+          ["Noun", "of", "my"],
+          ["kitabu", "kitabu cha", "kitabu changu"],
+          ["vitabu", "vitabu vya", "vitabu vyangu"],
+          ["kalamu", "kalamu ya", "kalamu yangu"],
+          ["somo", "somo la", "somo langu"]
+        ],
+        "targetColumns": [0, 1, 2]
+      },
+      {
+        "id": "si-negative",
+        "title": "I don’t: si-",
+        "body": [
+          "To say “I don’t”, swap **nina-** for **si-** and change the last **-a** of the verb to **-i**: **ninaelewa** (I understand) becomes **sielewi** (I don’t understand), **ninajua** (I know) becomes **sijui** (I don’t know).",
+          "You already know one: **sina** (I don’t have). Both **Sielewi** and **Sijui** are worth knowing by heart."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Mwalimu",
+        "body": [
+          "Teachers are deeply respected. Pupils often stand to greet a teacher entering the room with **Shikamoo, mwalimu!** or a chorus of **Habari za asubuhi, mwalimu!**"
+        ]
+      }
+    ]
+  }
+}

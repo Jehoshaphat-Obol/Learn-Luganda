@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u14",
+  "guidebook": {
+    "intro": "Kazi na mahali pa kazi. Kiingereza kina sheria mbili ndogo za kukumbuka: “a” mbele ya kazi, na “-s” baada ya he/she.",
+    "tips": [
+      {
+        "id": "a-job",
+        "title": "“I am a farmer”",
+        "body": [
+          "Kiswahili husema **Mimi ni mkulima**. Kiingereza huongeza **a**: **I am a farmer.** **She is a nurse.**",
+          "Kabla ya sauti ya irabu tumia **an**: **an engineer**, **an office**."
+        ]
+      },
+      {
+        "id": "he-works",
+        "title": "He works, she works",
+        "body": [
+          "Kwa **he, she, it**, kitenzi cha sasa huongeza **-s**: **I work → he works**, **we work → she works**.",
+          "Kuuliza kazi ya mtu: **What do you do?** au **What is your job?**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Jua kali",
+        "body": [
+          "Mafundi wanaofanya kazi nje juani huitwa **jua kali** Kenya. Kwa Kiingereza, mafundi ni **mechanic** (wa magari), **carpenter** (seremala) au **tailor** (fundi cherehani)."
+        ]
+      }
+    ]
+  }
+}
