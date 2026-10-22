@@ -151,7 +151,11 @@
   border-radius: var(--radius-lg);
   background: var(--unit-bg);
   color: var(--unit-fg);
-  box-shadow: 0 4px 0 rgb(0 0 0 / 0.15);
+  /* The second shadow fills the gap under the top bar, so the path doesn't
+     peek out above the banner while it's stuck. */
+  box-shadow:
+    0 4px 0 rgb(0 0 0 / 0.15),
+    0 calc(-2 * var(--space-2)) 0 var(--space-1) var(--color-bg);
 }
 
 .unit__eyebrow {
@@ -167,8 +171,22 @@
   font-weight: var(--weight-bold);
 }
 
+@media (max-width: 480px) {
+  .unit__banner {
+    padding: var(--space-3) var(--space-4);
+  }
+
+  .unit__banner h3 {
+    font-size: var(--text-lg);
+  }
+}
+
+/* Below the banner, not in it: the stuck banner stays a slim bar on phones. */
 .unit__desc {
-  margin: var(--space-1) 0 0;
+  max-width: 44ch;
+  margin: var(--space-4) auto 0;
+  color: var(--color-text-muted);
+  text-align: center;
 }
 
 .unit__guide {
@@ -330,8 +348,9 @@
   transform: translateX(var(--x));
 }
 
+/* Room for the Start bubble, so it clears the skill title above it. */
 .node-wrap:has(.node__bubble) {
-  margin-top: var(--space-8);
+  margin-top: var(--space-12);
 }
 
 .node {

@@ -80,11 +80,11 @@ function unitSection(state, unit, current, due) {
         <div>
           <p class="unit__eyebrow">${escapeHtml(t('learn.unit', { number: unit.index + 1 }))}</p>
           <h3 id="unit-${unit.id}">${escapeHtml(unit.title)}</h3>
-          <p class="unit__desc">${escapeHtml(unit.description)}</p>
         </div>
         <a class="unit__guide" href="#/guidebook/${unit.id}" aria-label="${escapeHtml(t('learn.guidebookLabel', { unit: unit.title }))}">${icon('book', { size: 22 })}<span>${escapeHtml(t('learn.guidebook'))}</span></a>
         <div class="unit__meter" role="progressbar" aria-valuemin="0" aria-valuemax="${prog.total}" aria-valuenow="${prog.done}" aria-label="${escapeHtml(t('learn.unitMeter', { unit: unit.title, done: prog.done, total: prog.total }))}"><span style="width:${(prog.done / prog.total) * 100}%"></span></div>
       </header>
+      <p class="unit__desc">${escapeHtml(unit.description)}</p>
       <div class="unit__body">
         <div class="unit__cast" aria-hidden="true">${cast.map((look) => `<div class="unit__character">${portrait(look, { expression: prog.complete ? pick(['happy', 'wink']) : pick(['neutral', 'neutral', 'happy', 'surprised']) })}</div>`).join('')}<div class="unit__prop">${prop(pick(PROP_IDS))}</div></div>
         <ol class="skills">${skills}</ol>
