@@ -25,7 +25,9 @@
     "ssaawa-mmeka",
     "ssaawa-emu",
     "ssaawa-nnya",
-    "ssaawa-mukaaga"
+    "ssaawa-mukaaga",
+    "na-nusu",
+    "jioni"
   ],
   "sentences": [
     "s-nsoma-leero",
@@ -38,7 +40,19 @@
     "s-ku-lwakutaano",
     "s-ssaawa-mmeka",
     "s-ssaawa-nnya",
-    "s-ssaawa-emu-ku-makya"
+    "s-ssaawa-emu-ku-makya",
+    "s-saa-ngapi-sasa",
+    "s-saa-tatu-na-nusu",
+    "s-saa-sita-mchana",
+    "s-saa-mbili-usiku",
+    "s-leo-na-kesho",
+    "s-jana-jioni",
+    "s-siku-saba",
+    "s-leo-ni-jumatatu",
+    "s-kesho-ni-jumanne",
+    "s-jumamosi-na-jumapili",
+    "s-kila-mwezi",
+    "s-kila-mwaka"
   ],
   "phrases": 6,
   "skills": [
@@ -77,6 +91,20 @@
           "sentences": ["s-ssaawa-nnya", "s-ssaawa-mmeka", "s-nnywa-caayi-ku-makya"],
           "dialogues": [{ "speaker": "amara", "answer": 0 }]
         }
+      ]
+    },
+    {
+      "id": "u5s4",
+      "icon": "clock",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u5s4l1",
+          "newWords": ["na-nusu", "jioni"],
+          "sentences": ["s-saa-tatu-na-nusu", "s-saa-sita-mchana", "s-saa-mbili-usiku", "s-saa-ngapi-sasa"]
+        },
+        { "id": "u5s4l2", "newWords": [], "sentences": ["s-leo-na-kesho", "s-jana-jioni", "s-siku-saba", "s-leo-ni-jumatatu"] },
+        { "id": "u5s4l3", "newWords": [], "sentences": ["s-kesho-ni-jumanne", "s-jumamosi-na-jumapili", "s-kila-mwezi", "s-kila-mwaka"] }
       ]
     }
   ]

@@ -21,7 +21,15 @@
     "omusawo",
     "eddagala",
     "wona-mangu",
-    "wummula"
+    "wummula",
+    "mwili",
+    "jino",
+    "mgonjwa",
+    "ninaumwa",
+    "inauma",
+    "nimepona",
+    "afya",
+    "njema"
   ],
   "sentences": [
     "s-omutwe-gunnuma",
@@ -34,7 +42,19 @@
     "s-ngenda-eri-omusawo",
     "s-omusawo-wange",
     "s-nnywa-eddagala",
-    "s-wummula-wona-mangu"
+    "s-wummula-wona-mangu",
+    "s-kichwa-kinauma",
+    "s-ninaumwa-na-tumbo",
+    "s-mguu-inauma",
+    "s-jino-linauma",
+    "s-macho-mazuri",
+    "s-osha-mikono",
+    "s-daktari-yuko-wapi",
+    "s-nataka-dawa",
+    "s-pumzika-leo",
+    "s-nimepona-asante",
+    "s-ugua-pole",
+    "s-afya-njema"
   ],
   "phrases": 6,
   "skills": [
@@ -73,6 +93,24 @@
           "sentences": ["s-wummula-wona-mangu", "s-nnywa-eddagala", "s-omutwe-gunnuma"],
           "dialogues": [{ "speaker": "mukasa", "answer": 0 }]
         }
+      ]
+    },
+    {
+      "id": "u8s4",
+      "icon": "profile",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u8s4l1",
+          "newWords": ["mwili", "jino", "mgonjwa", "ninaumwa", "inauma"],
+          "sentences": ["s-osha-mikono", "s-macho-mazuri", "s-kichwa-kinauma", "s-ninaumwa-na-tumbo"]
+        },
+        {
+          "id": "u8s4l2",
+          "newWords": ["nimepona", "afya", "njema"],
+          "sentences": ["s-mguu-inauma", "s-jino-linauma", "s-nimepona-asante", "s-ugua-pole"]
+        },
+        { "id": "u8s4l3", "newWords": [], "sentences": ["s-afya-njema", "s-daktari-yuko-wapi", "s-nataka-dawa", "s-pumzika-leo"] }
       ]
     }
   ],

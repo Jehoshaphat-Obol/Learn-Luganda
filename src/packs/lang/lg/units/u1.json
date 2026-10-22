@@ -39,7 +39,14 @@
     "musanvu": { "text": "musanvu" },
     "munaana": { "text": "munaana" },
     "mwenda": { "text": "mwenda" },
-    "kkumi": { "text": "kkumi" }
+    "kkumi": { "text": "kkumi" },
+    "karibu": { "text": "Tukusanyukidde" },
+    "jambo": { "text": "Nkulamusizza" },
+    "mambo": { "text": "Ki kati?" },
+    "poa": { "text": "Kiri bulungi" },
+    "shikamoo": { "text": "Nkulamusizza n'ekitiibwa" },
+    "marahaba": { "text": "Weebale, mwana wange" },
+    "ni": { "text": "ndi" }
   },
   "sentences": {
     "s-oli-otya-ssebo": { "text": "Oli otya, ssebo?" },
@@ -61,7 +68,19 @@
     "s-mbeera-kampala": { "text": "Mbeera Kampala." },
     "s-nva-masaka": { "text": "Nva Masaka." },
     "s-ndi-muyizi": { "text": "Ndi muyizi." },
-    "s-nsanyuse-okukulaba": { "text": "Nsanyuse okukulaba, Ssali." }
+    "s-nsanyuse-okukulaba": { "text": "Nsanyuse okukulaba, Ssali." },
+    "s-habari-yako": { "text": "Oli otya?" },
+    "s-karibu-sana": { "text": "Tukusanyukidde nnyo!" },
+    "s-mambo-poa": { "text": "Ki kati? Kiri bulungi!" },
+    "s-shikamoo-bibi": { "text": "Nkulamusizza n'ekitiibwa, jjajja." },
+    "s-ndiyo-asante": { "text": "Yee, weebale." },
+    "s-hapana-asante": { "text": "Nedda, weebale." },
+    "s-habari-za-asubuhi-baraka": { "text": "Wasuze otya, Baraka?" },
+    "s-jina-langu-amani": { "text": "Erinnya lyange Amani." },
+    "s-mimi-ni-emma": { "text": "Nze Emma." },
+    "s-ninaishi-mombasa": { "text": "Mbeera Mombasa." },
+    "s-ninatoka-arusha": { "text": "Nva Arusha." },
+    "s-nimefurahi-kukuona": { "text": "Nsanyuse okukulaba, Juma." }
   },
   "phrases": [
     "Oli otya?",

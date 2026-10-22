@@ -63,6 +63,11 @@
           "icon": {
             "type": "string"
           },
+          "since": {
+            "type": "integer",
+            "minimum": 1,
+            "description": "The curriculum version that added this skill (1 when left out). When two words have the same answer in a course, the one from the older skill is kept, so new concepts never push out ones learners already have."
+          },
           "lessons": {
             "type": "array",
             "minItems": 1,

@@ -93,14 +93,31 @@ export function composePack({ curriculum, from, to, about = { meta: null, units:
   const target = (text) => fillNames(text, to.meta.languageNames, codes);
   const fill = (text) => fillNames(text, about.meta?.languageNames ?? from.meta.languageNames, codes);
   const alts = (item, f) => list((item?.alts ?? []).map(f));
-  const seen = new Set();
-  const dropped = new Set();
   const cm = curriculum.meta;
+  const order = cm.sections.flatMap((s) => s.units).filter((id) => curriculum.units[id]);
+
+  // Words whose answer repeats another's are left out. Words from skills an
+  // older curriculum version had come first, so a concept added later
+  // never pushes out one learners already have.
+  const dropped = new Set();
+  const seen = new Set();
+  const candidates = order.flatMap((id) => {
+    const cu = curriculum.units[id];
+    const since = {};
+    for (const sk of cu.skills) for (const l of sk.lessons) for (const w of l.newWords) since[w] ??= sk.since ?? 1;
+    return cu.words.map((wid) => ({ id, wid, since: since[wid] ?? 1 }));
+  });
+  for (const { id, wid } of candidates.sort((a, b) => a.since - b.since)) {
+    const t = to.units[id]?.words?.[wid];
+    if (!t || !from.units[id]?.words?.[wid]) continue;
+    const key = normal(asTarget(target(t.text)));
+    if (seen.has(key)) dropped.add(wid);
+    else seen.add(key);
+  }
 
   const units = {};
-  for (const id of cm.sections.flatMap((s) => s.units)) {
+  for (const id of order) {
     const cu = curriculum.units[id];
-    if (!cu) continue;
     const fu = from.units[id] ?? {};
     const tu = to.units[id] ?? {};
     const au = about.units[id] ?? {};
@@ -121,15 +138,8 @@ export function composePack({ curriculum, from, to, about = { meta: null, units:
     };
     const words = [];
     for (const wid of cu.words) {
-      const w = item('words', wid);
-      if (!w) continue;
-      const key = normal(w.target);
-      if (seen.has(key)) {
-        dropped.add(wid);
-        continue;
-      }
-      seen.add(key);
-      words.push(w);
+      const w = !dropped.has(wid) && item('words', wid);
+      if (w) words.push(w);
     }
     const sentences = cu.sentences.map((sid) => item('sentences', sid)).filter(Boolean);
     const skills = cu.skills.map((sk) => {

@@ -2,19 +2,19 @@
   "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
   "id": "u1",
   "words": {
-    "oli-otya": { "text": "How are you?", "alts": ["how are you doing", "hello"] },
-    "gyendi": { "text": "I’m fine", "alts": ["i am fine", "fine", "i am well", "i’m well"] },
-    "bulungi": { "text": "Good", "alts": ["fine", "well", "okay"] },
+    "oli-otya": { "text": "How are you?", "alts": ["how are you doing", "hello", "what news", "how are things"] },
+    "gyendi": { "text": "I’m fine", "alts": ["i am fine", "fine", "i am well", "i’m well", "good", "well"] },
+    "bulungi": { "text": "Good", "alts": ["fine", "well", "okay", "nice", "nicely"] },
     "weebale": { "text": "Thank you", "alts": ["thanks", "thank you"] },
     "nnyo": { "text": "very much", "alts": ["very", "a lot", "so much"] },
-    "kale": { "text": "Okay", "alts": ["ok", "alright", "all right"] },
+    "kale": { "text": "Okay", "alts": ["ok", "alright", "all right", "fine", "same"] },
     "ssebo": { "text": "sir" },
     "nnyabo": { "text": "madam", "alts": ["ma’am", "maam"] },
     "yee": { "text": "Yes" },
     "nedda": { "text": "No" },
-    "wasuze-otya": { "text": "Good morning", "alts": ["how did you sleep", "morning"] },
+    "wasuze-otya": { "text": "Good morning", "alts": ["how did you sleep", "morning", "how is the morning"] },
     "nsuze-bulungi": { "text": "I slept well", "alts": ["slept well"] },
-    "osiibye-otya": { "text": "Good afternoon", "alts": ["good evening", "how was your day", "how has your day been"] },
+    "osiibye-otya": { "text": "Good afternoon", "alts": ["good evening", "how was your day", "how has your day been", "how is the afternoon"] },
     "gyebale-ko": { "text": "Well done", "alts": ["thank you for your work", "good work"] },
     "weraba": { "text": "Goodbye", "alts": ["bye"] },
     "tunaalabagana": { "text": "See you later", "alts": ["see you", "we will see each other", "see you soon"] },
@@ -28,7 +28,7 @@
     "ova-wa": { "text": "Where are you from?", "alts": ["where do you come from"] },
     "nva": { "text": "I come from", "alts": ["i am from", "i’m from"] },
     "ndi": { "text": "I am", "alts": ["i’m"] },
-    "muyizi": { "text": "student", "alts": ["learner", "a student"] },
+    "muyizi": { "text": "student", "alts": ["learner", "a student", "pupil"] },
     "nsanyuse-okukulaba": { "text": "Nice to meet you", "alts": ["i am happy to see you", "i’m happy to see you", "pleased to meet you", "glad to see you"] },
     "emu": { "text": "one", "alts": ["1"] },
     "bbiri": { "text": "two", "alts": ["2"] },
@@ -39,12 +39,22 @@
     "musanvu": { "text": "seven", "alts": ["7"] },
     "munaana": { "text": "eight", "alts": ["8"] },
     "mwenda": { "text": "nine", "alts": ["9"] },
-    "kkumi": { "text": "ten", "alts": ["10"] }
+    "kkumi": { "text": "ten", "alts": ["10"] },
+    "karibu": { "text": "Welcome", "alts": ["you’re welcome", "come in"] },
+    "jambo": { "text": "Hello", "alts": ["hi"] },
+    "mambo": { "text": "What’s up?", "alts": ["whats up", "how’s it going", "hi"] },
+    "poa": { "text": "Cool", "alts": ["fine", "good", "great"] },
+    "shikamoo": { "text": "My respects", "alts": ["hello", "greetings"] },
+    "marahaba": { "text": "Thank you, I accept", "alts": ["i accept", "thank you"] },
+    "ni": { "text": "am", "alts": ["is", "are", "am"] }
   },
   "sentences": {
     "s-oli-otya-ssebo": { "text": "How are you, sir?", "alts": ["Hello, sir"] },
     "s-oli-otya-nnyabo": { "text": "How are you, madam?", "alts": ["How are you, ma’am?"] },
-    "s-gyendi-weebale": { "text": "I’m fine, thank you.", "alts": ["I am fine, thank you.", "I’m fine, thanks.", "I am fine, thanks.", "Fine, thank you."] },
+    "s-gyendi-weebale": {
+      "text": "I’m fine, thank you.",
+      "alts": ["I am fine, thank you.", "I’m fine, thanks.", "I am fine, thanks.", "Fine, thank you.", "Fine, thanks.", "Good, thank you."]
+    },
     "s-weebale-nnyo": { "text": "Thank you very much.", "alts": ["Thanks a lot.", "Thank you so much.", "Thanks very much."] },
     "s-yee-ssebo": { "text": "Yes, sir." },
     "s-nedda-nnyabo": { "text": "No, madam.", "alts": ["No, ma’am."] },
@@ -64,6 +74,21 @@
     "s-nsanyuse-okukulaba": {
       "text": "Nice to meet you, Ssali.",
       "alts": ["Pleased to meet you, Ssali.", "I am happy to see you, Ssali.", "I’m happy to see you, Ssali."]
+    },
+    "s-habari-yako": { "text": "How are you?", "alts": ["How are you doing?", "What is your news?"] },
+    "s-karibu-sana": { "text": "You’re very welcome!", "alts": ["Very welcome!", "You are very welcome!", "Welcome!"] },
+    "s-mambo-poa": { "text": "What’s up? Cool!", "alts": ["What’s up? Fine!", "How’s it going? Cool!"] },
+    "s-shikamoo-bibi": { "text": "My respects, grandmother.", "alts": ["My respects, grandma.", "Hello, grandmother."] },
+    "s-ndiyo-asante": { "text": "Yes, thank you.", "alts": ["Yes, thanks."] },
+    "s-hapana-asante": { "text": "No, thank you.", "alts": ["No, thanks."] },
+    "s-habari-za-asubuhi-baraka": { "text": "Good morning, Baraka.", "alts": ["Good morning, Baraka?"] },
+    "s-jina-langu-amani": { "text": "My name is Amani.", "alts": ["My name’s Amani."] },
+    "s-mimi-ni-emma": { "text": "I am Emma.", "alts": ["I’m Emma.", "My name is Emma."] },
+    "s-ninaishi-mombasa": { "text": "I live in Mombasa.", "alts": ["I stay in Mombasa."] },
+    "s-ninatoka-arusha": { "text": "I come from Arusha.", "alts": ["I am from Arusha.", "I’m from Arusha."] },
+    "s-nimefurahi-kukuona": {
+      "text": "Nice to meet you, Juma.",
+      "alts": ["Pleased to meet you, Juma.", "I am happy to see you, Juma.", "I’m happy to see you, Juma."]
     }
   },
   "phrases": [

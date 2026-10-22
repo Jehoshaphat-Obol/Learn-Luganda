@@ -37,7 +37,21 @@
     "nnywa",
     "nsoma",
     "njiga",
-    "oyagala-ki"
+    "oyagala-ki",
+    "kaka",
+    "dada",
+    "bibi",
+    "babu",
+    "mjukuu",
+    "familia",
+    "rafiki",
+    "wako",
+    "wake",
+    "huyu",
+    "mzee",
+    "kijana",
+    "ugali",
+    "ninaitwa"
   ],
   "sentences": [
     "s-maama-wange",
@@ -56,7 +70,31 @@
     "s-nsoma-ekitabo",
     "s-njiga-oluganda",
     "s-oyagala-ki",
-    "s-njagala-ekikopo"
+    "s-njagala-ekikopo",
+    "s-mama-yangu",
+    "s-baba-wangu-mwalimu",
+    "s-kaka-na-dada",
+    "s-bibi-na-babu",
+    "s-rafiki-wangu",
+    "s-mjukuu-wangu",
+    "s-una-watoto",
+    "s-nina-watoto-watatu",
+    "s-familia-yangu",
+    "s-mzee-na-kijana",
+    "s-watu-wazuri",
+    "s-nataka-chai",
+    "s-ninakula-ugali",
+    "s-wali-na-maharage",
+    "s-kikombe-safi",
+    "s-chakula-kizuri",
+    "s-vikombe-vizuri",
+    "s-vitabu-vitatu",
+    "s-darasa-kubwa",
+    "s-najifunza-kiingereza",
+    "s-unapenda-nini",
+    "s-ninaitwa-amani",
+    "s-je-una-watoto",
+    "s-je-ni-kweli"
   ],
   "phrases": 9,
   "skills": [
@@ -109,6 +147,43 @@
           "newWords": ["nsoma", "njiga", "oluganda"],
           "sentences": ["s-nsoma-ekitabo", "s-njiga-oluganda", "s-njagala-ekikopo"],
           "dialogues": [{ "speaker": "nakato", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u2s4",
+      "icon": "home",
+      "since": 2,
+      "lessons": [
+        { "id": "u2s4l1", "newWords": ["kaka", "dada", "bibi", "babu", "mjukuu"], "sentences": ["s-kaka-na-dada"] },
+        {
+          "id": "u2s4l2",
+          "newWords": ["familia", "rafiki"],
+          "sentences": ["s-bibi-na-babu", "s-rafiki-wangu", "s-una-watoto", "s-nina-watoto-watatu"]
+        },
+        {
+          "id": "u2s4l3",
+          "newWords": ["wako", "wake", "huyu"],
+          "sentences": ["s-mama-yangu", "s-baba-wangu-mwalimu", "s-mjukuu-wangu", "s-familia-yangu"]
+        },
+        {
+          "id": "u2s4l4",
+          "newWords": ["mzee", "kijana", "ugali"],
+          "sentences": ["s-mzee-na-kijana", "s-watu-wazuri", "s-ninakula-ugali", "s-wali-na-maharage"]
+        },
+        { "id": "u2s4l5", "newWords": [], "sentences": ["s-nataka-chai", "s-kikombe-safi", "s-chakula-kizuri", "s-vikombe-vizuri"] },
+        {
+          "id": "u2s4l6",
+          "newWords": ["ninaitwa"],
+          "sentences": [
+            "s-vitabu-vitatu",
+            "s-darasa-kubwa",
+            "s-najifunza-kiingereza",
+            "s-unapenda-nini",
+            "s-ninaitwa-amani",
+            "s-je-una-watoto",
+            "s-je-ni-kweli"
+          ]
         }
       ]
     }

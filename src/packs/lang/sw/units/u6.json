@@ -22,7 +22,16 @@
     "wano": { "text": "hapa" },
     "kumpi": { "text": "karibu", "alts": ["si mbali"] },
     "wala": { "text": "mbali", "alts": ["mbali sana"] },
-    "ntwala": { "text": "Nipeleke", "alts": ["nifikishe"] }
+    "ntwala": { "text": "Nipeleke", "alts": ["nifikishe"] },
+    "pale": { "text": "pale" },
+    "karibu-na": { "text": "karibu na" },
+    "shuleni": { "text": "shuleni" },
+    "kazini": { "text": "kazini" },
+    "barabara": { "text": "barabara" },
+    "matatu": { "text": "matatu" },
+    "boda-boda": { "text": "boda boda" },
+    "nauli": { "text": "nauli" },
+    "jirani": { "text": "jirani" }
   },
   "sentences": {
     "s-mbeera-mu-kibuga": { "text": "Ninaishi mjini.", "alts": ["Naishi mjini.", "Ninakaa mjini."] },
@@ -39,7 +48,20 @@
     "s-yimirira-wano": { "text": "Simama hapa.", "alts": ["Simamisha hapa."] },
     "s-kiri-kumpi": { "text": "Ni karibu.", "alts": ["Iko karibu."] },
     "s-kiri-wala": { "text": "Ni mbali.", "alts": ["Iko mbali."] },
-    "s-ntwala-mu-kibuga": { "text": "Nipeleke mjini.", "alts": ["Nipeleke mji."] }
+    "s-ntwala-mu-kibuga": { "text": "Nipeleke mjini.", "alts": ["Nipeleke mji."] },
+    "s-benki-iko-wapi": { "text": "Benki iko wapi?" },
+    "s-duka-iko-hapa": { "text": "Duka iko hapa." },
+    "s-msikiti-uko-pale": { "text": "Msikiti iko pale." },
+    "s-karibu-na-benki": { "text": "Iko karibu na benki." },
+    "s-ni-mbali": { "text": "Ni mbali sana?" },
+    "s-simama-hapa": { "text": "Simama hapa, tafadhali." },
+    "s-ninaenda-mjini": { "text": "Ninaenda mjini kwa matatu." },
+    "s-nauli-ni-bei-gani": { "text": "Nauli ni bei gani?" },
+    "s-boda-boda-haraka": { "text": "Boda boda ni haraka." },
+    "s-sawa-asante": { "text": "Sawa, asante." },
+    "s-kijijini": { "text": "Ninaishi kijijini." },
+    "s-kulima-mahindi": { "text": "Tunalima mahindi." },
+    "s-jirani": { "text": "Jirani yangu ni mkulima." }
   },
   "phrases": [
     "Unakwenda wapi?",
@@ -50,7 +72,7 @@
     "Simama hapa.",
     "Nipeleke mjini."
   ],
-  "dialogues": { "u6s3l2": [{ "line": "Unakwenda wapi, mama?" }] },
+  "dialogues": { "u6s3l2": [{ "line": "Unakwenda wapi, mama?", "options": ["Ninaenda mjini.", "Ni kitamu sana!", "Saa kumi."] }] },
   "stories": {
     "boda-ride": {
       "title": "Safari ya bodaboda",

@@ -28,7 +28,17 @@
     "ntunda",
     "emicungwa",
     "ennanaasi",
-    "amenvu"
+    "amenvu",
+    "una",
+    "ana",
+    "chapati",
+    "ndizi",
+    "embe",
+    "kitamu",
+    "sokoni",
+    "pilipili",
+    "pilau",
+    "karibu-chakula"
   ],
   "sentences": [
     "s-ndya-matooke",
@@ -46,7 +56,21 @@
     "s-ngula-matooke",
     "s-ntunda-emicungwa",
     "s-ngula-ennanaasi",
-    "s-njagala-amenvu"
+    "s-njagala-amenvu",
+    "s-nina-kaka-mmoja",
+    "s-sina-dada",
+    "s-ana-rafiki",
+    "s-chai-na-maziwa",
+    "s-kahawa-na-sukari",
+    "s-ninakula-samaki",
+    "s-chakula-kitamu",
+    "s-chapati-na-chai",
+    "s-nataka-machungwa",
+    "s-chai-sokoni",
+    "s-nyanya-tatu",
+    "s-pilipili-kali",
+    "s-tunapika-pilau",
+    "s-mchuzi-mtamu"
   ],
   "phrases": 7,
   "skills": [
@@ -98,6 +122,29 @@
           "sentences": ["s-ngula-ennanaasi", "s-njagala-amenvu", "s-ntunda-emicungwa"],
           "dialogues": [{ "speaker": "mukasa", "answer": 0 }]
         }
+      ]
+    },
+    {
+      "id": "u3s4",
+      "icon": "heart",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u3s4l1",
+          "newWords": ["una", "ana", "chapati"],
+          "sentences": ["s-nina-kaka-mmoja", "s-sina-dada", "s-ana-rafiki", "s-ninakula-samaki"]
+        },
+        {
+          "id": "u3s4l2",
+          "newWords": ["ndizi", "embe", "sokoni"],
+          "sentences": ["s-chapati-na-chai", "s-nataka-machungwa", "s-chai-sokoni"]
+        },
+        {
+          "id": "u3s4l3",
+          "newWords": ["kitamu", "pilipili"],
+          "sentences": ["s-chakula-kitamu", "s-chai-na-maziwa", "s-kahawa-na-sukari", "s-nyanya-tatu"]
+        },
+        { "id": "u3s4l4", "newWords": ["pilau", "karibu-chakula"], "sentences": ["s-pilipili-kali", "s-tunapika-pilau", "s-mchuzi-mtamu"] }
       ]
     }
   ]

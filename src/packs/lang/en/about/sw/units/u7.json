@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u7",
+  "notes": {
+    "ekisenge": "Plural: vyumba.",
+    "jikoni": "Jiko is the stove or cooker; jikoni is the kitchen, where the stove is.",
+    "entebe": "Plural: viti.",
+    "yuko": "Where a person is: Mama yuko jikoni. For many people: wako.",
+    "njoo": "To several people: Njooni.",
+    "tuula": "To several people: Kaeni.",
+    "nimlimie": "From -lima + -i-: farm for someone."
+  },
+  "guidebook": {
+    "intro": "Visitors are welcomed inside with Karibu ndani!, offered the best chair and, before long, something to drink.",
+    "tips": [
+      {
+        "id": "kuna-hakuna",
+        "title": "Kuna and hakuna",
+        "body": [
+          "**Kuna** means “there is” or “there are”: **Kuna kitanda** (there is a bed). Put **ha-** in front for the negative: **Hakuna maji** (there is no water).",
+          "So **Hakuna matata** is simply “there are no problems”: a real, everyday phrase, not just a song."
+        ]
+      },
+      {
+        "id": "yuko-wako",
+        "title": "Where people are: yuko, wako",
+        "body": [
+          "For people, “is (at a place)” is **yuko** for one and **wako** for many: **Mama yuko jikoni** (mum is in the kitchen), **Watoto wako nje** (the children are outside).",
+          "For things, you met **iko**: **Chai iko juu ya meza**."
+        ]
+      },
+      {
+        "id": "colours-agree",
+        "title": "Colours that change",
+        "body": [
+          "**Nyekundu**, **nyeupe** and **nyeusi** are describing words, so they take the noun’s prefix: **nyumba nyeupe** (white house), but **mlango mwekundu** (red door) and **kitanda cheusi** (black bed).",
+          "**Kijani**, **njano** and **buluu** never change. People often say **rangi ya kijani**, “the colour of leaves”."
+        ],
+        "table": [
+          ["Noun", "Red", "White"],
+          ["nyumba", "nyumba nyekundu", "nyumba nyeupe"],
+          ["mlango", "mlango mwekundu", "mlango mweupe"],
+          ["kitanda", "kitanda chekundu", "kitanda cheupe"]
+        ],
+        "targetColumns": [0, 1, 2]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Swahili doors",
+        "body": [
+          "The carved wooden doors of Lamu and Zanzibar’s Stone Town are famous. A family’s door showed its wealth and wishes, carved with chains for security, fish for plenty and lotus flowers for many children."
+        ]
+      }
+    ]
+  }
+}

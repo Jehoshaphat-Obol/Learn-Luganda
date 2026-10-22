@@ -23,7 +23,9 @@
     "ssaawa-mmeka": { "text": "Ni saa ngapi?", "alts": ["saa ngapi"] },
     "ssaawa-emu": { "text": "saa moja", "alts": ["saa 1", "saa moja asubuhi"] },
     "ssaawa-nnya": { "text": "saa nne", "alts": ["saa 4", "saa nne asubuhi"] },
-    "ssaawa-mukaaga": { "text": "saa sita", "alts": ["saa 6", "saa sita mchana", "saa sita usiku"] }
+    "ssaawa-mukaaga": { "text": "saa sita", "alts": ["saa 6", "saa sita mchana", "saa sita usiku"] },
+    "na-nusu": { "text": "na nusu" },
+    "jioni": { "text": "jioni" }
   },
   "sentences": {
     "s-nsoma-leero": { "text": "Ninasoma leo.", "alts": ["Nasoma leo.", "Leo ninasoma."] },
@@ -36,8 +38,20 @@
     "s-ku-lwakutaano": { "text": "Tutaonana Ijumaa.", "alts": ["Tuonane Ijumaa.", "Tutaonana siku ya Ijumaa."] },
     "s-ssaawa-mmeka": { "text": "Ni saa ngapi?", "alts": ["Saa ngapi?"] },
     "s-ssaawa-nnya": { "text": "Ni saa nne.", "alts": ["Saa nne."] },
-    "s-ssaawa-emu-ku-makya": { "text": "Saa moja asubuhi.", "alts": ["Saa 1 asubuhi."] }
+    "s-ssaawa-emu-ku-makya": { "text": "Saa moja asubuhi.", "alts": ["Saa 1 asubuhi."] },
+    "s-saa-ngapi-sasa": { "text": "Ni saa ngapi sasa?" },
+    "s-saa-tatu-na-nusu": { "text": "Saa tatu na nusu." },
+    "s-saa-sita-mchana": { "text": "Saa sita mchana." },
+    "s-saa-mbili-usiku": { "text": "Saa mbili usiku." },
+    "s-leo-na-kesho": { "text": "Leo na kesho." },
+    "s-jana-jioni": { "text": "Jana jioni." },
+    "s-siku-saba": { "text": "Wiki ni siku saba." },
+    "s-leo-ni-jumatatu": { "text": "Leo ni Jumatatu." },
+    "s-kesho-ni-jumanne": { "text": "Kesho ni Jumanne." },
+    "s-jumamosi-na-jumapili": { "text": "Jumamosi na Jumapili." },
+    "s-kila-mwezi": { "text": "Kila mwezi ninaenda Mombasa." },
+    "s-kila-mwaka": { "text": "Masika yanakuja kila mwaka." }
   },
   "phrases": ["Leo", "Kesho", "Tutaonana kesho.", "Ninasoma Jumatatu.", "Ni saa ngapi?", "Ni saa nne."],
-  "dialogues": { "u5s3l2": [{ "line": "Ni saa ngapi?" }] }
+  "dialogues": { "u5s3l2": [{ "line": "Ni saa ngapi?", "options": ["Saa kumi.", "Shilingi elfu mbili.", "Jumatatu."] }] }
 }

@@ -21,7 +21,19 @@
     "ggulawo",
     "ndeetera",
     "mpa",
-    "ssaako"
+    "ssaako",
+    "jikoni",
+    "viti",
+    "yuko",
+    "ndani",
+    "nje",
+    "juu-ya",
+    "chini-ya",
+    "njoo",
+    "leta",
+    "chukua",
+    "nimlimie",
+    "ninakupikia"
   ],
   "sentences": [
     "s-ennyumba-yange",
@@ -35,7 +47,25 @@
     "s-ggulawo-eddirisa",
     "s-ndeetera-amazzi",
     "s-mpa-ekikopo",
-    "s-ssaako-ettaala"
+    "s-ssaako-ettaala",
+    "s-nyumba-yangu",
+    "s-nyumba-kubwa",
+    "s-kuna-vyumba-vitatu",
+    "s-kuna-kitanda",
+    "s-viti-vinne",
+    "s-chai-juu-ya-meza",
+    "s-chini-ya-kitanda",
+    "s-mtoto-yuko-nje",
+    "s-karibu-ndani",
+    "s-njoo-hapa",
+    "s-kaa-tafadhali",
+    "s-leta-maji",
+    "s-weka-kikombe",
+    "s-chukua-kiti",
+    "s-fungua-dirisha",
+    "s-nimlimie",
+    "s-ninakupikia",
+    "s-niletee-maji"
   ],
   "phrases": 6,
   "skills": [
@@ -82,6 +112,30 @@
           "sentences": ["s-ggalawo-oluggi", "s-ggulawo-eddirisa", "s-ssaako-ettaala"]
         },
         { "id": "u7s3l2", "newWords": ["ndeetera", "mpa"], "sentences": ["s-ndeetera-amazzi", "s-mpa-ekikopo", "s-ggalawo-oluggi"] }
+      ]
+    },
+    {
+      "id": "u7s4",
+      "icon": "home",
+      "since": 2,
+      "lessons": [
+        { "id": "u7s4l1", "newWords": ["jikoni", "yuko", "ndani", "nje"], "sentences": ["s-mtoto-yuko-nje", "s-karibu-ndani"] },
+        {
+          "id": "u7s4l2",
+          "newWords": ["viti", "juu-ya", "chini-ya"],
+          "sentences": ["s-kuna-vyumba-vitatu", "s-kuna-kitanda", "s-viti-vinne", "s-chai-juu-ya-meza"]
+        },
+        {
+          "id": "u7s4l3",
+          "newWords": ["njoo", "leta"],
+          "sentences": ["s-chini-ya-kitanda", "s-nyumba-yangu", "s-nyumba-kubwa", "s-njoo-hapa"]
+        },
+        { "id": "u7s4l4", "newWords": ["chukua"], "sentences": ["s-kaa-tafadhali", "s-leta-maji", "s-weka-kikombe", "s-chukua-kiti"] },
+        {
+          "id": "u7s4l5",
+          "newWords": ["nimlimie", "ninakupikia"],
+          "sentences": ["s-fungua-dirisha", "s-nimlimie", "s-ninakupikia", "s-niletee-maji"]
+        }
       ]
     }
   ]
