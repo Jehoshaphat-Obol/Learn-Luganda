@@ -13,7 +13,13 @@
     "kye-kimu": { "text": "kye kimu" },
     "enjawulo": { "text": "enjawulo" },
     "afaanana": { "text": "afaanana" },
-    "nga": { "text": "nga" }
+    "nga": { "text": "nga" },
+    "zaidi": { "text": "okusingawo" },
+    "kuliko-wote": { "text": "okusinga bonna" },
+    "sawa-na": { "text": "kye kimu ne" },
+    "bora": { "text": "kisingako" },
+    "kidogo-zaidi": { "text": "kitonoko" },
+    "mali": { "text": "obugagga" }
   },
   "sentences": {
     "s33-enjovu-okusinga-ente": { "text": "Enjovu nnene okusinga ente." },
@@ -26,7 +32,15 @@
     "s33-kye-kimu": { "text": "Bino byombi kye kimu." },
     "s33-si-kye-kimu": { "text": "Si kye kimu!" },
     "s33-enjawulo": { "text": "Enjawulo eri wa?" },
-    "s33-afaanana-maama-we": { "text": "Afaanana nga maama we." }
+    "s33-afaanana-maama-we": { "text": "Afaanana nga maama we." },
+    "s-kuliko": { "text": "Enjovu nnene okusinga empologoma." },
+    "s-zaidi": { "text": "Neema muwanvu okusingawo." },
+    "s-kuliko-wote": { "text": "Kilimanjaro lwe lusinga zonna obuwanvu." },
+    "s-sawa-na": { "text": "Ekikopo kyange kye kimu n'ekikyo." },
+    "s-tofauti": { "text": "Oluswayiri n'Olungereza byawukana." },
+    "s-kama": { "text": "Ayimba ng'ekinyonyi." },
+    "s-bora": { "text": "Obulamu businga obugagga." },
+    "s-kidogo-zaidi": { "text": "Leero enkuba ntono okusinga." }
   },
   "phrases": [
     "Enjovu nnene okusinga ente.",

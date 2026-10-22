@@ -11,9 +11,15 @@
     "ekisinga": { "text": "the most", "alts": ["the best", "which is most"] },
     "okusinga-byonna": { "text": "most of all", "alts": ["above all", "more than everything"] },
     "kye-kimu": { "text": "the same", "alts": ["it’s the same", "it is the same", "same thing"] },
-    "enjawulo": { "text": "difference", "alts": ["the difference", "different"] },
+    "enjawulo": { "text": "difference", "alts": ["the difference", "different", "differently"] },
     "afaanana": { "text": "looks like", "alts": ["resembles", "he looks like", "she looks like"] },
-    "nga": { "text": "like", "alts": ["as", "such as"] }
+    "nga": { "text": "like", "alts": ["as", "such as", "if"] },
+    "zaidi": { "text": "more", "alts": ["most", "extra"] },
+    "kuliko-wote": { "text": "the most of all", "alts": ["of all", "than all", "the most"] },
+    "sawa-na": { "text": "the same as", "alts": ["like", "equal to", "as"] },
+    "bora": { "text": "better", "alts": ["best", "excellent"] },
+    "kidogo-zaidi": { "text": "less", "alts": ["a bit less", "fewer"] },
+    "mali": { "text": "wealth", "alts": ["riches", "property", "possessions"] }
   },
   "sentences": {
     "s33-enjovu-okusinga-ente": { "text": "An elephant is bigger than a cow.", "alts": ["The elephant is bigger than the cow.", "Elephants are bigger than cows."] },
@@ -26,7 +32,15 @@
     "s33-kye-kimu": { "text": "These two are the same.", "alts": ["Both of these are the same.", "These are the same."] },
     "s33-si-kye-kimu": { "text": "It’s not the same!", "alts": ["It is not the same!", "That’s not the same!"] },
     "s33-enjawulo": { "text": "Where is the difference?", "alts": ["What is the difference?", "What’s the difference?"] },
-    "s33-afaanana-maama-we": { "text": "She looks like her mother.", "alts": ["He looks like his mother.", "She resembles her mother.", "He resembles his mother."] }
+    "s33-afaanana-maama-we": { "text": "She looks like her mother.", "alts": ["He looks like his mother.", "She resembles her mother.", "He resembles his mother."] },
+    "s-kuliko": { "text": "The elephant is bigger than the lion.", "alts": ["An elephant is bigger than a lion."] },
+    "s-zaidi": { "text": "Neema is taller.", "alts": ["Neema is the tallest."] },
+    "s-kuliko-wote": { "text": "Kilimanjaro is the highest of all.", "alts": ["Kilimanjaro is the tallest of all."] },
+    "s-sawa-na": { "text": "My cup is the same as yours." },
+    "s-tofauti": { "text": "Swahili and English are different." },
+    "s-kama": { "text": "She sings like a bird.", "alts": ["He sings like a bird."] },
+    "s-bora": { "text": "Health is better than wealth." },
+    "s-kidogo-zaidi": { "text": "Today there is less rain.", "alts": ["There’s less rain today."] }
   },
   "phrases": [
     "An elephant is bigger than a cow.",

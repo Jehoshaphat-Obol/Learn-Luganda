@@ -3,7 +3,23 @@
   "id": "u40",
   "color": "butter",
   "character": "amara",
-  "words": ["wakayima", "omugezi", "yalimba", "akakodyo", "kintu", "nnambi", "walumbe", "yeerabira", "obulo", "etuyigiriza"],
+  "words": [
+    "wakayima",
+    "omugezi",
+    "yalimba",
+    "akakodyo",
+    "kintu",
+    "nnambi",
+    "walumbe",
+    "yeerabira",
+    "obulo",
+    "etuyigiriza",
+    "fisi",
+    "tamaa",
+    "alimdanganya",
+    "busara",
+    "funzo"
+  ],
   "sentences": [
     "s40-wakayima-mugezi",
     "s40-yalimba-enjovu",
@@ -13,7 +29,14 @@
     "s40-yeerabira-obulo",
     "s40-walumbe",
     "s40-etuyigiriza-ki",
-    "s40-etuyigiriza-nti"
+    "s40-etuyigiriza-nti",
+    "s-fisi",
+    "s-mjanja",
+    "s-tamaa",
+    "s-alimdanganya",
+    "s-busara",
+    "s-funzo",
+    "s-inatufundisha"
   ],
   "phrases": 6,
   "skills": [
@@ -47,6 +70,19 @@
           "sentences": ["s40-etuyigiriza-nti", "s40-walumbe"],
           "dialogues": [{ "speaker": "amara", "answer": 0 }]
         }
+      ]
+    },
+    {
+      "id": "u40s4",
+      "icon": "stories",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u40s4l1",
+          "newWords": ["fisi", "tamaa", "alimdanganya", "busara"],
+          "sentences": ["s-fisi", "s-mjanja", "s-tamaa", "s-alimdanganya"]
+        },
+        { "id": "u40s4l2", "newWords": ["funzo"], "sentences": ["s-busara", "s-funzo", "s-inatufundisha"] }
       ]
     }
   ],

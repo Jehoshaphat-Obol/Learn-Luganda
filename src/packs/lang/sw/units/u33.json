@@ -13,7 +13,13 @@
     "kye-kimu": { "text": "sawa", "alts": ["ni sawa", "ni vilevile", "sawasawa", "ni kitu kimoja"] },
     "enjawulo": { "text": "tofauti", "alts": ["utofauti", "tofauti yake"] },
     "afaanana": { "text": "anafanana na", "alts": ["anafanana", "anamfanana", "anashabihiana na"] },
-    "nga": { "text": "kama", "alts": ["mfano wa", "sawa na"] }
+    "nga": { "text": "kama", "alts": ["mfano wa", "sawa na"] },
+    "zaidi": { "text": "zaidi" },
+    "kuliko-wote": { "text": "kuliko wote" },
+    "sawa-na": { "text": "sawa na" },
+    "bora": { "text": "bora" },
+    "kidogo-zaidi": { "text": "kidogo zaidi" },
+    "mali": { "text": "mali" }
   },
   "sentences": {
     "s33-enjovu-okusinga-ente": { "text": "Tembo ni mkubwa kuliko ng’ombe.", "alts": ["Tembo ni mkubwa zaidi ya ng’ombe.", "Ndovu ni mkubwa kuliko ng’ombe."] },
@@ -29,7 +35,15 @@
     "s33-kye-kimu": { "text": "Hivi viwili ni sawa.", "alts": ["Vyote viwili ni sawa.", "Hivi ni sawa."] },
     "s33-si-kye-kimu": { "text": "Si sawa!", "alts": ["Hii si sawa!", "Hiyo si sawa!"] },
     "s33-enjawulo": { "text": "Tofauti iko wapi?", "alts": ["Tofauti ni nini?", "Kuna tofauti gani?"] },
-    "s33-afaanana-maama-we": { "text": "Anafanana na mama yake.", "alts": ["Anamfanana mama yake.", "Amefanana na mama yake."] }
+    "s33-afaanana-maama-we": { "text": "Anafanana na mama yake.", "alts": ["Anamfanana mama yake.", "Amefanana na mama yake."] },
+    "s-kuliko": { "text": "Tembo ni mkubwa kuliko simba." },
+    "s-zaidi": { "text": "Neema ni mrefu zaidi." },
+    "s-kuliko-wote": { "text": "Kilimanjaro ni mlima mrefu kuliko yote." },
+    "s-sawa-na": { "text": "Kikombe changu ni sawa na chako." },
+    "s-tofauti": { "text": "Kiswahili na Kiingereza ni tofauti." },
+    "s-kama": { "text": "Anaimba kama ndege." },
+    "s-bora": { "text": "Afya ni bora kuliko mali." },
+    "s-kidogo-zaidi": { "text": "Leo kuna mvua kidogo zaidi." }
   },
   "phrases": [
     "Tembo ni mkubwa kuliko ng’ombe.",
@@ -39,5 +53,5 @@
     "Si sawa!",
     "Anafanana na mama yake."
   ],
-  "dialogues": { "u33s2l3": [{ "line": "Unapenda nini kuliko vyote?" }] }
+  "dialogues": { "u33s2l3": [{ "line": "Unapenda nini kuliko vyote?", "options": ["Ninapenda muziki kuliko vyote.", "Si sawa.", "Tembo ni mkubwa."] }] }
 }

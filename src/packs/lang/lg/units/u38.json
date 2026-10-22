@@ -13,7 +13,11 @@
     "ambulensi": { "text": "ambulensi" },
     "linda": { "text": "Linda" },
     "tewali-kizibu": { "text": "Tewali kizibu" },
-    "ndi-bulungi": { "text": "Ndi bulungi" }
+    "ndi-bulungi": { "text": "Ndi bulungi" },
+    "kumetokea": { "text": "wabaddewo" },
+    "ameibiwa": { "text": "abbiddwako" },
+    "naomba": { "text": "Nkusaba" },
+    "pole-kwa-kazi": { "text": "Gyebale ko" }
   },
   "sentences": {
     "s38-nnyamba": { "text": "Nnyamba! Nnyamba!" },
@@ -26,7 +30,16 @@
     "s38-ambulensi": { "text": "Tukubire ambulensi mangu!" },
     "s38-linda-wano": { "text": "Tuula wano, linda." },
     "s38-oli-bulungi": { "text": "Oli bulungi? Yee, ndi bulungi." },
-    "s38-tewali-kizibu": { "text": "Weebale nnyo! Tewali kizibu." }
+    "s38-tewali-kizibu": { "text": "Weebale nnyo! Tewali kizibu." },
+    "s-ajali": { "text": "Wabaddewo akabenje ku kkubo!" },
+    "s-gari-wagonjwa": { "text": "Twetaaga ambulensi mangu!" },
+    "s-damu": { "text": "Avaamu omusaayi mungi." },
+    "s-ameumia": { "text": "Omwana alumiziddwa okugulu." },
+    "s-mwizi": { "text": "Omubbi! Omubbi!" },
+    "s-ameibiwa": { "text": "Abbiddwako essimu ye." },
+    "s-naomba": { "text": "Nkusaba amazzi, mwattu." },
+    "s-hamna-shida": { "text": "Tewali kizibu, mukwano gwange." },
+    "s-pole-kwa-kazi": { "text": "Gyebale ko, maama!" }
   },
   "phrases": [
     "Nnyamba! Nnyamba!",

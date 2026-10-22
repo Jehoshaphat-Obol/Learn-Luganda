@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u35",
+  "guidebook": {
+    "intro": "Hadithi za Kiingereza huanza na **Once upon a time** na huendelea kwa **and then… and then…**",
+    "tips": [
+      {
+        "id": "once-upon",
+        "title": "Once upon a time",
+        "body": [
+          "**Hapo zamani za kale** ni **Once upon a time**. **Palikuwa na** ni **there was**: **Once upon a time, there was a hare.**",
+          "Mwisho wa hadithi nyingi za watoto: **…and they lived happily ever after.** (…wakaishi kwa furaha milele.)"
+        ]
+      },
+      {
+        "id": "and-then",
+        "title": "And then: wakati uliopita",
+        "body": [
+          "Kiingereza hakina **-ka-**. Kila tukio hukaa katika wakati uliopita, likiunganishwa na **and**, **then** au **and then**: **The hare went to the river, and then he met a crocodile.**",
+          "Maneno ya kusimulia: **one day** (siku moja), **suddenly** (ghafla), **in the end** (mwishowe)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Hadithi za Kiingereza",
+        "body": [
+          "Hadithi maarufu za Kiingereza ni **fairy tales** na **fables**, kama **The Tortoise and the Hare** (Kobe na Sungura), ambamo kobe mwepesi wa polepole anashinda."
+        ]
+      }
+    ]
+  }
+}

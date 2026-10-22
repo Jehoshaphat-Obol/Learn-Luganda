@@ -15,7 +15,22 @@
     "ndowooza",
     "endowooza",
     "nzikiriza",
-    "sikkiriza"
+    "sikkiriza",
+    "jamii",
+    "kiongozi",
+    "serikali",
+    "uchaguzi",
+    "kura",
+    "harambee",
+    "tusaidiane",
+    "tunapendana",
+    "gazeti",
+    "taarifa-ya-habari",
+    "tukio",
+    "tatizo",
+    "suluhisho",
+    "kwa-maoni-yangu",
+    "muhimu"
   ],
   "sentences": [
     "s37-owulidde-amawulire",
@@ -27,7 +42,27 @@
     "s37-ndowooza-nti",
     "s37-endowooza-yo",
     "s37-nzikiriza",
-    "s37-sikkiriza"
+    "s37-sikkiriza",
+    "s-jamii",
+    "s-mkutano",
+    "s-kiongozi",
+    "s-serikali",
+    "s-uchaguzi",
+    "s-kura",
+    "s-harambee",
+    "s-tusaidiane",
+    "s-tunapendana",
+    "s-gazeti",
+    "s-redio",
+    "s-taarifa",
+    "s-tukio",
+    "s-tatizo",
+    "s-suluhisho",
+    "s-maoni",
+    "s-nadhani",
+    "s-kwa-maoni-yangu",
+    "s-nakubali",
+    "s-sikubaliani"
   ],
   "phrases": 6,
   "skills": [
@@ -65,6 +100,30 @@
           "newWords": [],
           "sentences": ["s37-endowooza-yo", "s37-nzikiriza", "s37-ndowooza-nti"],
           "dialogues": [{ "speaker": "mukasa", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u37s4",
+      "icon": "profile",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u37s4l1",
+          "newWords": ["jamii", "kiongozi", "serikali", "uchaguzi", "kura"],
+          "sentences": ["s-jamii", "s-mkutano", "s-kiongozi", "s-serikali"]
+        },
+        {
+          "id": "u37s4l2",
+          "newWords": ["harambee", "tusaidiane", "tunapendana"],
+          "sentences": ["s-uchaguzi", "s-kura", "s-harambee", "s-tusaidiane"]
+        },
+        { "id": "u37s4l3", "newWords": ["gazeti", "taarifa-ya-habari"], "sentences": ["s-tunapendana", "s-gazeti", "s-redio", "s-taarifa"] },
+        { "id": "u37s4l4", "newWords": ["tukio", "tatizo", "suluhisho"], "sentences": ["s-tukio", "s-tatizo", "s-suluhisho"] },
+        {
+          "id": "u37s4l5",
+          "newWords": ["kwa-maoni-yangu", "muhimu"],
+          "sentences": ["s-maoni", "s-nadhani", "s-kwa-maoni-yangu", "s-nakubali", "s-sikubaliani"]
         }
       ]
     }

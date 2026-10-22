@@ -2,17 +2,23 @@
   "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
   "id": "u35",
   "words": {
-    "enfumo": { "text": "folktale", "alts": ["story", "fable", "tale"] },
-    "olwatuuka": { "text": "Once upon a time", "alts": ["it happened", "it came to pass", "once"] },
+    "enfumo": { "text": "folktale", "alts": ["story", "fable", "tale", "stories", "the story"] },
+    "olwatuuka": { "text": "Once upon a time", "alts": ["it happened", "it came to pass", "once", "long long ago", "in the old days"] },
     "olwali-olumu": { "text": "one day", "alts": ["once", "on one day"] },
     "waaliwo": { "text": "there was", "alts": ["there were", "there once was"] },
-    "awo": { "text": "Then", "alts": ["and then", "so"] },
-    "nagenda": { "text": "and he went", "alts": ["and she went", "then he went", "then she went"] },
+    "awo": { "text": "Then", "alts": ["and then", "so", "afterwards", "after that"] },
+    "nagenda": { "text": "and he went", "alts": ["and she went", "then he went", "then she went", "and then went"] },
     "nalaba": { "text": "and he saw", "alts": ["and she saw", "then he saw", "then she saw"] },
-    "nagamba": { "text": "and he said", "alts": ["and she said", "then he said", "then she said"] },
+    "nagamba": { "text": "and he said", "alts": ["and she said", "then he said", "then she said", "and then said"] },
     "ekyavaamu": { "text": "In the end", "alts": ["finally", "the result", "at last"] },
     "kale-nno": { "text": "Well then", "alts": ["so then", "well", "okay then"] },
-    "enfumo-ewedde": { "text": "My story ends there", "alts": ["the end", "that is the end of my story", "my story ends here"] }
+    "enfumo-ewedde": { "text": "My story ends there", "alts": ["the end", "that is the end of my story", "my story ends here"] },
+    "ilinyesha": { "text": "it rained", "alts": ["rained", "was raining"] },
+    "ilikuwa": { "text": "It was", "alts": ["it used to be"] },
+    "paukwa": { "text": "Paukwa!", "alts": ["once upon a time", "story!"] },
+    "pakawa": { "text": "Pakawa!", "alts": ["tell us!", "we’re listening"] },
+    "mwisho": { "text": "end", "alts": ["the end", "finally", "last"] },
+    "hadithi-imeishia": { "text": "That’s the end of the story", "alts": ["the story ends there", "the end"] }
   },
   "sentences": {
     "s35-olwatuuka": { "text": "Once upon a time, one day…", "alts": ["It happened one day…", "Once upon a time…"] },
@@ -23,7 +29,17 @@
     "s35-nagamba": { "text": "And he said, “Don’t be afraid!”", "alts": ["And she said, “Don’t be afraid!”", "Then he said, “Don’t be afraid!”"] },
     "s35-ekyavaamu": { "text": "In the end, he went back home.", "alts": ["In the end, she went back home.", "Finally, he went back home."] },
     "s35-kale-nno": { "text": "Well then, listen to this story.", "alts": ["Well, listen to this story.", "So then, listen to this folktale."] },
-    "s35-enfumo-ekomye": { "text": "My story ends there.", "alts": ["That’s the end of my story.", "My story ends here."] }
+    "s35-enfumo-ekomye": { "text": "My story ends there.", "alts": ["That’s the end of my story.", "My story ends here."] },
+    "s-jana-ilinyesha": { "text": "Yesterday it rained.", "alts": ["It rained yesterday."] },
+    "s-ilikuwa-baridi": { "text": "It was very cold." },
+    "s-kulikuwa-na-upepo": { "text": "It was windy.", "alts": ["There was wind."] },
+    "s-paukwa": { "text": "Story! Tell us!", "alts": ["Once upon a time! We’re listening!"] },
+    "s-hapo-zamani": { "text": "Once upon a time, there was a hare.", "alts": ["Long ago, there was a hare."] },
+    "s-hadithi": { "text": "Grandma, tell us a story!" },
+    "s-akaenda": { "text": "And the hare went to the river.", "alts": ["Then the hare went to the river."] },
+    "s-akasema": { "text": "And he said, “How are you all?”", "alts": ["And she said, “How are you all?”"] },
+    "s-mwisho": { "text": "In the end, the hare won.", "alts": ["Finally, the hare won."] },
+    "s-imeishia": { "text": "That’s the end of the story.", "alts": ["The story ends there."] }
   },
   "phrases": [
     "Once upon a time, one day…",

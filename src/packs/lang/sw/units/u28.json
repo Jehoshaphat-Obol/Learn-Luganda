@@ -77,7 +77,7 @@
       "questions": [
         { "question": "Nakato analeta zawadi gani?", "options": ["Keki", "Sukari na chumvi", "Jembe"] },
         { "question": "Nani anamsaidia bibi harusi katika kwanjula?", "options": ["Ssenga", "Kabaka", "Mwalimu"] },
-        { "question": "Nakato anasemaje “ninakutakia”?" }
+        { "question": "Nakato anasemaje “ninakutakia”?", "options": ["Nakutakia", "Nakupenda", "Ninakusubiri"] }
       ]
     }
   }

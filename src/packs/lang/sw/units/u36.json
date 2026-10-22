@@ -17,7 +17,14 @@
     "prov-atannayitaayita": {
       "text": "Asiyesafiri hudhani mama yake ndiye mpishi bora.",
       "alts": ["asiyesafiri husifu mapishi ya mama yake", "kusafiri hufungua macho", "asiyetembea hudhani mama yake ndiye mpishi bora"]
-    }
+    },
+    "haraka-haraka": { "text": "Haraka haraka haina baraka" },
+    "pole-pole-ndio": { "text": "Pole pole ndio mwendo" },
+    "haba-na-haba": { "text": "Haba na haba hujaza kibaba" },
+    "asiyesikia": { "text": "Asiyesikia la mkuu huvunjika guu" },
+    "mgeni-siku-mbili": { "text": "Mgeni siku mbili, siku ya tatu mpe jembe" },
+    "usipoziba-ufa": { "text": "Usipoziba ufa utajenga ukuta" },
+    "akili-ni-nywele": { "text": "Akili ni nywele, kila mtu ana zake" }
   },
   "sentences": {
     "s36-olugero-luno": { "text": "Methali hii inamaanisha nini?", "alts": ["Maana ya methali hii ni nini?", "Methali hii ina maana gani?"] },
@@ -36,7 +43,16 @@
       "text": "Tufanye kazi pamoja! Meno yaliyo pamoja huuma nyama.",
       "alts": ["Tufanye kazi pamoja! Umoja ni nguvu.", "Tushirikiane! Meno yaliyo pamoja huuma nyama."]
     },
-    "s36-olugalo-olumu": { "text": "Nisaidie. Kidole kimoja hakivunji chawa.", "alts": ["Nisaidie. Kidole kimoja hakiui chawa."] }
+    "s36-olugalo-olumu": { "text": "Nisaidie. Kidole kimoja hakivunji chawa.", "alts": ["Nisaidie. Kidole kimoja hakiui chawa."] },
+    "s-methali": { "text": "Bibi anapenda methali." },
+    "s-maana-yake": { "text": "Maana yake ni nini?" },
+    "s-haraka-haraka": { "text": "Haraka haraka haina baraka." },
+    "s-pole-pole-ndio": { "text": "Pole pole ndio mwendo." },
+    "s-haba": { "text": "Haba na haba hujaza kibaba." },
+    "s-asiyesikia": { "text": "Asiyesikia la mkuu huvunjika guu." },
+    "s-mgeni": { "text": "Mgeni siku mbili, siku ya tatu mpe jembe." },
+    "s-usipoziba": { "text": "Usipoziba ufa utajenga ukuta." },
+    "s-akili": { "text": "Akili ni nywele, kila mtu ana zake." }
   },
   "phrases": [
     "Haba na haba hujaza kibaba.",
@@ -46,7 +62,14 @@
     "Methali hii inamaanisha nini?",
     "Kama wasemavyo…"
   ],
-  "dialogues": { "u36s3l3": [{ "line": "{to} ni kigumu. Nimechoka!" }] },
+  "dialogues": {
+    "u36s3l3": [
+      {
+        "line": "{to} ni kigumu. Nimechoka!",
+        "options": ["Usiogope. Haba na haba hujaza kibaba.", "Kidole kimoja hakivunji chawa.", "Asiyesafiri husema mama yake ndiye mpishi bora."]
+      }
+    ]
+  },
   "stories": {
     "jjajjas-advice": {
       "title": "Ushauri wa Jjajja",
@@ -63,7 +86,10 @@
       ],
       "questions": [
         { "question": "Ushauri wa Jjajja ni upi?", "options": ["Kuwa na subira", "Funga duka", "Hamia Jinja"] },
-        { "question": "Methali gani inamwambia Ssali afanye kazi na wengine?" }
+        {
+          "question": "Methali gani inamwambia Ssali afanye kazi na wengine?",
+          "options": ["Kidole kimoja hakivunji chawa", "Pole pole ndio mwendo", "Haba na haba hujaza kibaba"]
+        }
       ]
     }
   }

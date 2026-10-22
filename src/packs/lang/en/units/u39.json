@@ -10,7 +10,12 @@
     "mwattu": { "text": "please", "alts": ["kindly"] },
     "webale-okujja": { "text": "Thanks for coming", "alts": ["thank you for coming", "welcome"] },
     "omugenyi": { "text": "guest", "alts": ["visitor", "the guest", "a guest"] },
-    "olyeko": { "text": "Have some food", "alts": ["eat a little", "please eat", "have something to eat"] }
+    "olyeko": { "text": "Have some food", "alts": ["eat a little", "please eat", "have something to eat"] },
+    "adabu": { "text": "manners", "alts": ["good manners", "politeness"] },
+    "hodi": { "text": "May I come in?", "alts": ["anyone home?", "hello, anyone in?"] },
+    "mkono-wa-kulia": { "text": "right hand", "alts": ["the right hand"] },
+    "ukarimu": { "text": "hospitality", "alts": ["generosity", "kindness"] },
+    "karibu-tena": { "text": "Come again", "alts": ["welcome again", "you are welcome again"] }
   },
   "sentences": {
     "s39-bafukamira": {
@@ -30,7 +35,13 @@
     },
     "s39-omugenyi": { "text": "The guest is the important one.", "alts": ["The guest comes first.", "The guest is the most important."] },
     "s39-olyeko": { "text": "Sit down and have some food.", "alts": ["Sit and eat a little.", "Sit down, have something to eat."] },
-    "s39-yingira-otuule": { "text": "Come in and sit down.", "alts": ["Come in and sit.", "Come in and have a seat."] }
+    "s39-yingira-otuule": { "text": "Come in and sit down.", "alts": ["Come in and sit.", "Come in and have a seat."] },
+    "s-heshima": { "text": "Respect is very important." },
+    "s-adabu": { "text": "This child has good manners.", "alts": ["This child is well-mannered.", "This child has manners."] },
+    "s-hodi": { "text": "May I come in? Come in!", "alts": ["Anyone home? Welcome!", "May I come in? Welcome!"] },
+    "s-mkono-kulia": { "text": "Eat with the right hand.", "alts": ["Eat with your right hand."] },
+    "s-ukarimu": { "text": "Thank you for your hospitality.", "alts": ["Thanks for your hospitality."] },
+    "s-karibu-tena": { "text": "Thank you, come again!", "alts": ["Thanks, come again!", "Thank you, welcome again!"] }
   },
   "phrases": [
     "Good morning, sir.",

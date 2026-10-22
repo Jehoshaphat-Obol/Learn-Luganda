@@ -10,7 +10,12 @@
     "mwattu": { "text": "mwattu" },
     "webale-okujja": { "text": "Webale okujja" },
     "omugenyi": { "text": "omugenyi" },
-    "olyeko": { "text": "Olyeko" }
+    "olyeko": { "text": "Olyeko" },
+    "adabu": { "text": "empisa" },
+    "hodi": { "text": "Ko ko ko!" },
+    "mkono-wa-kulia": { "text": "omukono ogwa ddyo" },
+    "ukarimu": { "text": "obugabi" },
+    "karibu-tena": { "text": "Komawo nate" }
   },
   "sentences": {
     "s39-bafukamira": { "text": "Abaana bafukamira nga babuuza abakadde." },
@@ -21,7 +26,13 @@
     "s39-webale-okujja": { "text": "Webale okujja! Tusanyuse okukulaba." },
     "s39-omugenyi": { "text": "Omugenyi ye mukulu." },
     "s39-olyeko": { "text": "Tuula, olyeko." },
-    "s39-yingira-otuule": { "text": "Yingira otuule." }
+    "s39-yingira-otuule": { "text": "Yingira otuule." },
+    "s-heshima": { "text": "Ekitiibwa kikulu nnyo." },
+    "s-adabu": { "text": "Omwana ono alina empisa ennungi." },
+    "s-hodi": { "text": "Ko ko ko! Yingira!" },
+    "s-mkono-kulia": { "text": "Lya n'omukono ogwa ddyo." },
+    "s-ukarimu": { "text": "Weebale obugabi bwo." },
+    "s-karibu-tena": { "text": "Weebale, komawo nate!" }
   },
   "phrases": ["Mwasuze mutya, ssebo?", "Mwebale nnyo, nnyabo.", "Mwattu, mpa amazzi.", "Webale okujja!", "Yingira otuule.", "Tuula, olyeko."],
   "dialogues": {

@@ -836,3 +836,176 @@ sw	dialogue	u29s3l3.0	Ni baba yangu! | Ngoma ni kubwa. | Asanteni kwa kuja.	Mwan
 sw	dialogue	u30s3l3.0	Na wewe, Krismasi njema! | Nimeshiba. | Sielewi mpira.	Krismasi njema! :: Naawe, Ssekukkulu ennungi! | Nkkuse. | Sitegeera omupiira. (answer 1)
 sw	dialogue	u31s1l3.0	Vizuri. Leo wateja ni wengi. | Amina. | Piga ngoma!	Pole na kazi! Biashara inaendaje? :: Bulungi. Leero abaguzi bangi. | Amiina. | Kuba engoma! (answer 1)
 sw	dialogue	u32s3l3.0	Tupande miti, usitupe takataka. | Kabaka aishi milele! | Ninawanywesha ng'ombe maji.	Tufanye nini kulinda ardhi? :: Tusimbe emiti, tosuula kasasiro. | Kabaka awangaale! | Nnywesa ente amazzi. (answer 1)
+lg	word	ilinyesha	yatonnya	it rained = ilinyesha
+lg	word	ilikuwa	Kyali	It was = Ilikuwa
+lg	sentence	s-jana-ilinyesha	Jjo enkuba yatonnya.	Yesterday it rained. = Jana mvua ilinyesha.
+lg	sentence	s-ilikuwa-baridi	Kyali kinnyogovu nnyo.	It was very cold. = Ilikuwa baridi sana.
+lg	sentence	s-kulikuwa-na-upepo	Waaliwo embuyaga.	It was windy. = Kulikuwa na upepo.
+lg	word	jamii	ekitundu	community = jamii
+lg	word	kiongozi	omukulembeze	leader = kiongozi
+lg	word	serikali	gavumenti	government = serikali
+lg	word	uchaguzi	okulonda	election = uchaguzi
+lg	word	kura	akalulu	vote = kura
+lg	word	harambee	okusonda	harambee = harambee
+lg	word	tusaidiane	Tuyambagane	Let’s help each other = Tusaidiane
+lg	word	tunapendana	twagalana	we love each other = tunapendana
+lg	sentence	s-jamii	Ekitundu kyaffe kinene.	Our community is big. = Jamii yetu ni kubwa.
+lg	sentence	s-mkutano	Waliwo olukiiko enkya akawungeezi.	There is a meeting tomorrow evening. = Kuna mkutano kesho jioni.
+lg	sentence	s-kiongozi	Omukulembeze waffe mukazi mukugu.	Our leader is a capable woman. = Kiongozi wetu ni mwanamke hodari.
+lg	sentence	s-serikali	Gavumenti ejja kuzimba essomero eppya.	The government will build a new school. = Serikali itajenga shule mpya.
+lg	sentence	s-uchaguzi	Okulonda kuliba omwaka ogujja.	The election will be next year. = Uchaguzi utakuwa mwaka ujao.
+lg	sentence	s-kura	Ndikuba akalulu.	I will vote. = Nitapiga kura.
+lg	sentence	s-harambee	Tusonda ssente z'eddwaliro.	We are having a harambee for the hospital. = Tuna harambee kwa ajili ya hospitali.
+lg	sentence	s-tusaidiane	Tuyambagane!	Let’s help each other! = Tusaidiane!
+lg	sentence	s-tunapendana	Mu maka gaffe twagalana.	In our family we love each other. = Katika familia yetu tunapendana.
+lg	word	zaidi	okusingawo	more = zaidi
+lg	word	kuliko-wote	okusinga bonna	the most of all = kuliko wote
+lg	word	sawa-na	kye kimu ne	the same as = sawa na
+lg	word	bora	kisingako	better = bora
+lg	word	kidogo-zaidi	kitonoko	less = kidogo zaidi
+lg	word	mali	obugagga	wealth = mali
+lg	sentence	s-kuliko	Enjovu nnene okusinga empologoma.	The elephant is bigger than the lion. = Tembo ni mkubwa kuliko simba.
+lg	sentence	s-zaidi	Neema muwanvu okusingawo.	Neema is taller. = Neema ni mrefu zaidi.
+lg	sentence	s-kuliko-wote	Kilimanjaro lwe lusinga zonna obuwanvu.	Kilimanjaro is the highest of all. = Kilimanjaro ni mlima mrefu kuliko yote.
+lg	sentence	s-sawa-na	Ekikopo kyange kye kimu n'ekikyo.	My cup is the same as yours. = Kikombe changu ni sawa na chako.
+lg	sentence	s-tofauti	Oluswayiri n'Olungereza byawukana.	Swahili and English are different. = Kiswahili na Kiingereza ni tofauti.
+lg	sentence	s-kama	Ayimba ng'ekinyonyi.	She sings like a bird. = Anaimba kama ndege.
+lg	sentence	s-bora	Obulamu businga obugagga.	Health is better than wealth. = Afya ni bora kuliko mali.
+lg	sentence	s-kidogo-zaidi	Leero enkuba ntono okusinga.	Today there is less rain. = Leo kuna mvua kidogo zaidi.
+lg	word	ukifika	bw'onootuuka	when you arrive = ukifika
+lg	word	mvua-ikinyesha	enkuba bw'eneetonnya	if it rains = mvua ikinyesha
+lg	word	nikipata	bwe nnaafuna	if I get = nikipata
+lg	word	ningekuwa	singa nnali	if I were = ningekuwa
+lg	word	laiti	kale singa	if only = laiti
+lg	word	tajiri	omugagga	rich = tajiri
+lg	sentence	s-ukifika	Bw'onootuuka, onkubire essimu.	When you arrive, call me. = Ukifika, nipigie simu.
+lg	sentence	s-mvua-ikinyesha	Enkuba bw'eneetonnya, tujja kusigala waka.	If it rains, we will stay at home. = Mvua ikinyesha, tutakaa nyumbani.
+lg	sentence	s-nikipata-pesa	Bwe nnaafuna ssente, nja kutambula.	If I get money, I will travel. = Nikipata pesa, nitasafiri.
+lg	sentence	s-ningekuwa-tajiri	Singa nnali mugagga, nnandiguze mmotoka.	If I were rich, I would buy a car. = Ningekuwa tajiri, ningenunua gari.
+lg	sentence	s-ningenunua	Nnandiguze ennyumba ennene.	I would buy a big house. = Ningenunua nyumba kubwa.
+lg	sentence	s-laiti	Kale singa nnalina akaseera!	If only I had time! = Laiti ningekuwa na muda!
+lg	sentence	s-ikiwa	Bw'oba n'ekibuuzo, buuza.	If you have a question, ask. = Ikiwa una swali, uliza.
+lg	word	paukwa	Mbagerere?	Paukwa! = Paukwa!
+lg	word	pakawa	Tugerere!	Pakawa! = Pakawa!
+lg	word	mwisho	enkomerero	end = mwisho
+lg	word	hadithi-imeishia	Enfumo ekomye awo	That’s the end of the story = Hadithi imeishia hapo
+lg	sentence	s-paukwa	Mbagerere? Tugerere!	Story! Tell us! = Paukwa! Pakawa!
+lg	sentence	s-hapo-zamani	Edda ennyo, waaliwo wakayima.	Once upon a time, there was a hare. = Hapo zamani za kale, palikuwa na sungura.
+lg	sentence	s-hadithi	Jjajja, tugerere enfumo!	Grandma, tell us a story! = Bibi, tusimulie hadithi!
+lg	sentence	s-akaenda	Wakayima n'agenda ku mugga.	And the hare went to the river. = Sungura akaenda mtoni.
+lg	sentence	s-akasema	N'agamba nti, “Mwenna muli mutya?”	And he said, “How are you all?” = Akasema, “Habari zenu?”
+lg	sentence	s-mwisho	Ku nkomerero, wakayima n'awangula.	In the end, the hare won. = Mwisho, sungura akashinda.
+lg	sentence	s-imeishia	Enfumo ekomye awo.	That’s the end of the story. = Hadithi imeishia hapo.
+lg	word	haraka-haraka	Okwanguyiriza tekuleeta mukisa	Hurry, hurry has no blessing = Haraka haraka haina baraka
+lg	word	pole-pole-ndio	Mpola mpola lye kkubo	Slowly, slowly is the way = Pole pole ndio mwendo
+lg	word	haba-na-haba	Katono katono kajjuza ekibbo	Little by little fills the measure = Haba na haba hujaza kibaba
+lg	word	asiyesikia	Atawuliriza bakadde amenyeka okugulu	Who ignores elders breaks a leg = Asiyesikia la mkuu huvunjika guu
+lg	word	mgeni-siku-mbili	Omugenyi nnaku bbiri; olw'okusatu mukwase enkumbi	A guest for two days; on the third, give them a hoe = Mgeni siku mbili, siku ya tatu mpe jembe
+lg	word	usipoziba-ufa	Bw'otoziba lwatika, olizimba kisenge	If you don’t fill the crack, you’ll build a wall = Usipoziba ufa utajenga ukuta
+lg	word	akili-ni-nywele	Amagezi nviiri, buli muntu alina ge	Brains are like hair, everyone has their own = Akili ni nywele, kila mtu ana zake
+lg	sentence	s-methali	Jjajja ayagala nnyo engero.	Grandma loves proverbs. = Bibi anapenda methali.
+lg	sentence	s-maana-yake	Amakulu gaakyo ge galiwa?	What does it mean? = Maana yake ni nini?
+lg	sentence	s-haraka-haraka	Okwanguyiriza tekuleeta mukisa.	Hurry, hurry has no blessing. = Haraka haraka haina baraka.
+lg	sentence	s-pole-pole-ndio	Mpola mpola lye kkubo.	Slowly, slowly is the way. = Pole pole ndio mwendo.
+lg	sentence	s-haba	Katono katono kajjuza ekibbo.	Little by little fills the measure. = Haba na haba hujaza kibaba.
+lg	sentence	s-asiyesikia	Atawuliriza bakadde amenyeka okugulu.	Who ignores the elders breaks a leg. = Asiyesikia la mkuu huvunjika guu.
+lg	sentence	s-mgeni	Omugenyi nnaku bbiri; olw'okusatu mukwase enkumbi.	A guest for two days; on the third, give them a hoe. = Mgeni siku mbili, siku ya tatu mpe jembe.
+lg	sentence	s-usipoziba	Bw'otoziba lwatika, olizimba kisenge.	If you don’t fill the crack, you’ll build a wall. = Usipoziba ufa utajenga ukuta.
+lg	sentence	s-akili	Amagezi nviiri, buli muntu alina ge.	Brains are like hair, everyone has their own. = Akili ni nywele, kila mtu ana zake.
+lg	word	gazeti	olupapula lw'amawulire	newspaper = gazeti
+lg	word	taarifa-ya-habari	amawulire g'oku leediyo	the news = taarifa ya habari
+lg	word	tukio	ekyabaddewo	event = tukio
+lg	word	tatizo	ekizibu	problem = tatizo
+lg	word	suluhisho	eky'okugonjoola	solution = suluhisho
+lg	word	kwa-maoni-yangu	mu ndowooza yange	in my opinion = kwa maoni yangu
+lg	word	muhimu	kikulu	important = muhimu
+lg	sentence	s-gazeti	Taata asoma olupapula lw'amawulire buli ku makya.	Dad reads the newspaper every morning. = Baba anasoma gazeti kila asubuhi.
+lg	sentence	s-redio	Nnawulira amawulire ku leediyo.	I heard the news on the radio. = Nilisikia habari redioni.
+lg	sentence	s-taarifa	Amawulire gali ssaawa bbiri ez'ekiro.	The news is at eight in the evening. = Taarifa ya habari ni saa mbili usiku.
+lg	sentence	s-tukio	Ekyabaddewo kyabadde mu kibuga jjo.	The event happened in town yesterday. = Tukio lilitokea mjini jana.
+lg	sentence	s-tatizo	Ekizibu ekinene ge mazzi.	The big problem is water. = Tatizo kubwa ni maji.
+lg	sentence	s-suluhisho	Twagala eky'okugonjoola.	We want a solution. = Tunataka suluhisho.
+lg	sentence	s-maoni	Endowooza yo y'eruwa?	What is your opinion? = Maoni yako ni nini?
+lg	sentence	s-nadhani	Ndowooza enkuba ejja kutonnya leero.	I think it will rain today. = Nadhani mvua itanyesha leo.
+lg	sentence	s-kwa-maoni-yangu	Mu ndowooza yange, essomero kikulu nnyo.	In my opinion, school is very important. = Kwa maoni yangu, shule ni muhimu sana.
+lg	sentence	s-nakubali	Nzikiriza, kituufu.	I agree, it’s true. = Nakubali, ni kweli.
+lg	sentence	s-sikubaliani	Nsonyiwa, sikkiriziganya naawe.	Sorry, I don’t agree with you. = Samahani, sikubaliani na wewe.
+lg	word	kumetokea	wabaddewo	there has been = kumetokea
+lg	word	ameibiwa	abbiddwako	he has been robbed = ameibiwa
+lg	sentence	s-ajali	Wabaddewo akabenje ku kkubo!	There has been an accident on the road! = Kumetokea ajali barabarani!
+lg	sentence	s-gari-wagonjwa	Twetaaga ambulensi mangu!	We need an ambulance quickly! = Tunataka gari la wagonjwa haraka!
+lg	sentence	s-damu	Avaamu omusaayi mungi.	He is bleeding a lot. = Anatoka damu nyingi.
+lg	sentence	s-ameumia	Omwana alumiziddwa okugulu.	The child has hurt a leg. = Mtoto ameumia mguu.
+lg	sentence	s-mwizi	Omubbi! Omubbi!	Thief! Thief! = Mwizi! Mwizi!
+lg	sentence	s-ameibiwa	Abbiddwako essimu ye.	His phone has been stolen. = Ameibiwa simu yake.
+lg	word	adabu	empisa	manners = adabu
+lg	word	hodi	Ko ko ko!	May I come in? = Hodi!
+lg	word	naomba	Nkusaba	may I have = naomba
+lg	word	pole-kwa-kazi	Gyebale ko	Well done for your hard work = Pole kwa kazi
+lg	word	mkono-wa-kulia	omukono ogwa ddyo	right hand = mkono wa kulia
+lg	word	ukarimu	obugabi	hospitality = ukarimu
+lg	word	karibu-tena	Komawo nate	Come again = Karibu tena
+lg	sentence	s-heshima	Ekitiibwa kikulu nnyo.	Respect is very important. = Heshima ni muhimu sana.
+lg	sentence	s-adabu	Omwana ono alina empisa ennungi.	This child has good manners. = Mtoto huyu ana adabu.
+lg	sentence	s-hodi	Ko ko ko! Yingira!	May I come in? Come in! = Hodi! Karibu!
+lg	sentence	s-naomba	Nkusaba amazzi, mwattu.	May I have some water, please. = Naomba maji, tafadhali.
+lg	sentence	s-hamna-shida	Tewali kizibu, mukwano gwange.	No problem, my friend. = Hamna shida, rafiki yangu.
+lg	sentence	s-pole-kwa-kazi	Gyebale ko, maama!	Well done for your hard work, mama! = Pole kwa kazi, mama!
+lg	sentence	s-mkono-kulia	Lya n'omukono ogwa ddyo.	Eat with the right hand. = Kula kwa mkono wa kulia.
+lg	sentence	s-ukarimu	Weebale obugabi bwo.	Thank you for your hospitality. = Asante kwa ukarimu wako.
+lg	sentence	s-karibu-tena	Weebale, komawo nate!	Thank you, come again! = Asante, karibu tena!
+lg	word	fisi	empisi	hyena = fisi
+lg	word	tamaa	omululu	greed = tamaa
+lg	word	alimdanganya	yamulimba	he tricked him = alimdanganya
+lg	word	busara	amagezi	wisdom = busara
+lg	word	funzo	eky'okuyiga	lesson = funzo
+lg	sentence	s-fisi	Empisi erina omululu mungi.	The hyena is very greedy. = Fisi ana tamaa sana.
+lg	sentence	s-mjanja	Wakayima mugezi okusinga empisi.	The hare is cleverer than the hyena. = Sungura ni mjanja kuliko fisi.
+lg	sentence	s-tamaa	Omululu mubi.	Greed is bad. = Tamaa ni mbaya.
+lg	sentence	s-alimdanganya	Wakayima yalimba empisi.	The hare tricked the hyena. = Sungura alimdanganya fisi.
+lg	sentence	s-busara	Jjajja alina amagezi mangi.	Grandma has a lot of wisdom. = Bibi ana busara nyingi.
+lg	sentence	s-funzo	Eky'okuyiga mu nfumo kye kiruwa?	What is the lesson of the story? = Funzo la hadithi ni nini?
+lg	sentence	s-inatufundisha	Enfumo eno etuyigiriza okuyambagana.	This story teaches us to help each other. = Hadithi hii inatufundisha kusaidiana.
+fr	skill	u33s4	Plus ou moins	
+fr	skill	u34s4	Si j'étais riche	
+fr	skill	u35s4	Paukwa ! Pakawa !	
+fr	skill	u36s4	Proverbes swahilis	
+fr	skill	u37s4	Communauté et actualités	
+fr	skill	u38s4	Urgences	
+fr	skill	u39s4	Les bonnes manières	
+fr	skill	u40s4	Le lièvre et la hyène	
+lg	skill	u33s4	Okusingawo n'okutono	
+lg	skill	u34s4	Singa nnali mugagga	
+lg	skill	u35s4	Mbagerere? Tugerere!	
+lg	skill	u36s4	Engero z'Oluswayiri	
+lg	skill	u37s4	Ekitundu n'amawulire	
+lg	skill	u38s4	Ebizibu eby'amangu	
+lg	skill	u39s4	Empisa	
+lg	skill	u40s4	Wakayima n'empisi	
+en	skill	u33s4	More or less	
+en	skill	u34s4	If I were rich	
+en	skill	u35s4	Paukwa! Pakawa!	
+en	skill	u36s4	Swahili proverbs	
+en	skill	u37s4	Community and news	
+en	skill	u38s4	Emergencies	
+en	skill	u39s4	Manners	
+en	skill	u40s4	The hare and the hyena	
+sw	skill	u33s4	Zaidi na pungufu	
+sw	skill	u34s4	Ningekuwa tajiri	
+sw	skill	u35s4	Paukwa! Pakawa!	
+sw	skill	u36s4	Methali za Kiswahili	
+sw	skill	u37s4	Jamii na habari	
+sw	skill	u38s4	Dharura	
+sw	skill	u39s4	Adabu	
+sw	skill	u40s4	Sungura na fisi	
+sw	dialogue	u33s2l3.0	Ninapenda muziki kuliko vyote. | Si sawa. | Tembo ni mkubwa.	Unapenda nini kuliko vyote? :: Njagala ennyimba okusinga byonna. | Si kye kimu. | Enjovu nnene. (answer 1)
+sw	dialogue	u34s2l3.0	Ningenunua nyumba kubwa. | Ninapoamka, ninakunywa chai. | Tuone msitu.	Kama ungekuwa na pesa nyingi, ungenunua nini? :: Nnandiguze ennyumba ennene. | Bwe nzuukuka, nnywa caayi. | Ka tulabe ekibira. (answer 1)
+sw	dialogue	u34s3l3.0	Nitakuja, Mungu akipenda. | Ningenunua gari. | Anafanana na mama yake.	Utakuja kwenye sherehe kesho? :: Nja kujja, Katonda bw’anaayagala. | Nnandiguze mmotoka. | Afaanana nga maama we. (answer 1)
+sw	dialogue	u35s3l3.0	Akaona nini? | Ningependa chai. | Ni sawa.	Palikuwa na mwanamume. Kisha akaenda msituni… :: N’alaba ki? | Nnandyagadde caayi. | Kye kimu. (answer 1)
+sw	dialogue	u36s3l3.0	Usiogope. Haba na haba hujaza kibaba. | Kidole kimoja hakivunji chawa. | Asiyesafiri husema mama yake ndiye mpishi bora.	{to} ni kigumu. Nimechoka! :: Totya. Kamu kamu gwe muganda. | Olugalo olumu terutta nda. | Atannayitaayita y’atenda nnyina okufumba. (answer 1)
+sw	dialogue	u37s2l3.0	Ndiyo! Wanasema barabara mpya imekamilika. | Ningependa chai. | Hapo zamani za kale.	Umesikia habari? :: Yee! Bagamba nti ekkubo eriggya liwedde. | Nnandyagadde caayi. | Olwatuuka olwali olumu. (answer 1)
+sw	dialogue	u37s3l3.0	Nakubaliana nawe! | Umesikia redioni? | Nimeshiba.	Nadhani tupande miti kijijini. Maoni yako ni yapi? :: Nzikiriza naawe! | Owulidde ku leediyo? | Nkkuse. (answer 1)
+sw	dialogue	u38s3l3.0	Tupigie gari la wagonjwa haraka! | Nakubaliana nawe. | Hamna shida.	Kuna ajali! Mwanamume ameumia. :: Tukubire ambulensi mangu! | Nzikiriza naawe. | Tewali kizibu. (answer 1)
+sw	dialogue	u39s2l3.0	Salama, bwana. Mmeamkaje? | Nakubaliana nawe. | Haraka!	Mwanangu, umeamkaje? :: Bulungi, ssebo. Mwasuze mutya? | Nzikiriza naawe. | Yanguwa! (answer 1)
+sw	dialogue	u39s3l3.0	Asante sana, bwana. | Mwizi! Mkamateni! | Sikubali.	Asanteni kwa kuja! Keti ule chakula. :: Mwebale nnyo, ssebo. | Omubbi! Mumukwate! | Sikkiriza. (answer 1)
+sw	dialogue	u40s3l3.0	Inatufundisha kwamba akili hushinda nguvu. | Mmeamkaje? | Piga simu polisi!	Sungura alimdanganya tembo. Hadithi hii inatufundisha nini? :: Etuyigiriza nti obugezi businga amaanyi. | Mwasuze mutya? | Kubira poliisi essimu! (answer 1)

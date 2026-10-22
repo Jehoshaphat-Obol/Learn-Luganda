@@ -10,7 +10,13 @@
     "nnandigenze": { "text": "nnandigenze" },
     "nnandyagadde": { "text": "Nnandyagadde" },
     "ka-tulabe": { "text": "Ka tulabe" },
-    "katonda-bwanaayagala": { "text": "Katonda bw’anaayagala", "alts": ["Katonda bwanaayagala"] }
+    "katonda-bwanaayagala": { "text": "Katonda bw’anaayagala", "alts": ["Katonda bwanaayagala"] },
+    "ukifika": { "text": "bw'onootuuka" },
+    "mvua-ikinyesha": { "text": "enkuba bw'eneetonnya" },
+    "nikipata": { "text": "bwe nnaafuna" },
+    "ningekuwa": { "text": "singa nnali" },
+    "laiti": { "text": "kale singa" },
+    "tajiri": { "text": "omugagga" }
   },
   "sentences": {
     "s34-bwe-nzuukuka": { "text": "Bwe nzuukuka, nnywa caayi." },
@@ -21,7 +27,14 @@
     "s34-nnandyagadde-caayi": { "text": "Nnandyagadde caayi, nsaba." },
     "s34-nnandyagadde-okugenda": { "text": "Nnandyagadde okugenda e Jinja." },
     "s34-ka-tulabe": { "text": "Ka tulabe enkya." },
-    "s34-katonda-bwanaayagala": { "text": "Nja kujja, Katonda bw’anaayagala.", "alts": ["Nja kujja, Katonda bwanaayagala."] }
+    "s34-katonda-bwanaayagala": { "text": "Nja kujja, Katonda bw’anaayagala.", "alts": ["Nja kujja, Katonda bwanaayagala."] },
+    "s-ukifika": { "text": "Bw'onootuuka, onkubire essimu." },
+    "s-mvua-ikinyesha": { "text": "Enkuba bw'eneetonnya, tujja kusigala waka." },
+    "s-nikipata-pesa": { "text": "Bwe nnaafuna ssente, nja kutambula." },
+    "s-ningekuwa-tajiri": { "text": "Singa nnali mugagga, nnandiguze mmotoka." },
+    "s-ningenunua": { "text": "Nnandiguze ennyumba ennene." },
+    "s-laiti": { "text": "Kale singa nnalina akaseera!" },
+    "s-ikiwa": { "text": "Bw'oba n'ekibuuzo, buuza." }
   },
   "phrases": [
     "Bwe nzuukuka, nnywa caayi.",

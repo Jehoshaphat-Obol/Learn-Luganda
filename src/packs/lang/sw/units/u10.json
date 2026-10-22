@@ -100,7 +100,7 @@
         { "question": "Kwanjula ni lini?", "options": ["Jumatatu", "Jumamosi", "Leo"] },
         { "question": "Nakato anataka rangi gani?", "options": ["Zambarau", "Nyekundu", "Nyeupe"] },
         { "question": "Gomesi nyekundu ina tatizo gani?", "options": ["Ni ndogo mno", "Ni ghali mno", "Ni kuukuu"] },
-        { "question": "Nakato anasemaje “Sawa, nitaichukua”?" }
+        { "question": "Nakato anasemaje “Sawa, nitaichukua”?", "options": ["Sawa, nitachukua.", "Vua viatu.", "Ninahisi baridi."] }
       ]
     }
   }

@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u38",
+  "notes": { "ambulensi": "Literally “car of the sick”.", "omubbi": "Plural: wezi." },
+  "guidebook": {
+    "intro": "You hope never to need these words, but knowing them makes you calmer when something goes wrong.",
+    "tips": [
+      {
+        "id": "ku-there",
+        "title": "Something happened: ku-",
+        "body": [
+          "For events with no clear subject, Swahili uses the place prefix **ku-**: **kumetokea ajali** (there has been an accident), **kuna moto** (there is a fire).",
+          "Changes that happen to someone often take **-wa** (the passive) or a stative ending: **ameibiwa** (has been robbed), **ameumia** (is hurt)."
+        ]
+      },
+      {
+        "id": "usi-dont",
+        "title": "Don’t: usi- … -e",
+        "body": [
+          "To tell someone not to do something, use **usi-** and change the last **-a** to **-e**: **ogopa** (fear) → **usiogope** (don’t be afraid), **kimbia** (run) → **usikimbie** (don’t run).",
+          "You already know **Usijali** (don’t worry). Talking to several people, use **msi-**: **msiogope**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Neighbours first",
+        "body": [
+          "In an emergency the first help usually comes from the people around you: neighbours, shopkeepers and boda boda riders who carry the injured to hospital. Emergency numbers differ from country to country, so save the local ones when you arrive."
+        ]
+      }
+    ]
+  }
+}

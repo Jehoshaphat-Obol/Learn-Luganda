@@ -11,7 +11,12 @@
     "walumbe": { "text": "Kifo", "alts": ["Walumbe", "mauti"] },
     "yeerabira": { "text": "alisahau", "alts": ["amesahau"] },
     "obulo": { "text": "mtama", "alts": ["ulezi", "wimbi"] },
-    "etuyigiriza": { "text": "inatufundisha", "alts": ["hutufundisha", "inatufunza"] }
+    "etuyigiriza": { "text": "inatufundisha", "alts": ["hutufundisha", "inatufunza"] },
+    "fisi": { "text": "fisi" },
+    "tamaa": { "text": "tamaa" },
+    "alimdanganya": { "text": "alimdanganya" },
+    "busara": { "text": "busara" },
+    "funzo": { "text": "funzo" }
   },
   "sentences": {
     "s40-wakayima-mugezi": { "text": "Sungura alikuwa mjanja sana.", "alts": ["Sungura alikuwa mwerevu sana.", "Bwana Sungura alikuwa mjanja sana."] },
@@ -28,7 +33,14 @@
     "s40-etuyigiriza-nti": {
       "text": "Inatufundisha kwamba busara hushinda nguvu.",
       "alts": ["Inatufundisha kwamba akili hushinda nguvu.", "Inatufunza kwamba hekima ni bora kuliko nguvu."]
-    }
+    },
+    "s-fisi": { "text": "Fisi ana tamaa sana." },
+    "s-mjanja": { "text": "Sungura ni mjanja kuliko fisi." },
+    "s-tamaa": { "text": "Tamaa ni mbaya." },
+    "s-alimdanganya": { "text": "Sungura alimdanganya fisi." },
+    "s-busara": { "text": "Bibi ana busara nyingi." },
+    "s-funzo": { "text": "Funzo la hadithi ni nini?" },
+    "s-inatufundisha": { "text": "Hadithi hii inatufundisha kusaidiana." }
   },
   "phrases": [
     "Sungura alikuwa mjanja sana.",
@@ -38,7 +50,14 @@
     "Hadithi hii inatufundisha nini?",
     "Inatufundisha kwamba busara hushinda nguvu."
   ],
-  "dialogues": { "u40s3l3": [{ "line": "Sungura alimdanganya tembo. Hadithi hii inatufundisha nini?" }] },
+  "dialogues": {
+    "u40s3l3": [
+      {
+        "line": "Sungura alimdanganya tembo. Hadithi hii inatufundisha nini?",
+        "options": ["Inatufundisha kwamba akili hushinda nguvu.", "Mmeamkaje?", "Piga simu polisi!"]
+      }
+    ]
+  },
   "stories": {
     "kintu-and-nnambi": {
       "title": "Kintu na Nnambi",

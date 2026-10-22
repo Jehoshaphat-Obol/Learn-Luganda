@@ -19,6 +19,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 import { formatJson } from './format-json.js';
+import { fillNames } from '../src/content/compose.js';
 
 const args = process.argv.slice(2);
 const opt = (name, fallback) => (args.includes(name) ? args[args.indexOf(name) + 1] : fallback);
@@ -64,6 +65,10 @@ const norm = (t) =>
     .replace(/\s+/g, ' ')
     .trim();
 
+// Curriculum text names languages as `{to}`/`{from}`; the pair spells
+// them out, so match on the pair's own names.
+const named = (code, t) => fillNames(t, lang[code].meta.languageNames, { from, to });
+
 // Index the curriculum: text in each language -> concept ids.
 const index = { words: {}, sentences: {} };
 const where = {}; // concept id -> curriculum unit
@@ -74,14 +79,14 @@ for (const cu of Object.values(curriculum.units)) {
       for (const code of [from, to]) {
         const item = lang[code].units[cu.id]?.[kind]?.[id];
         if (!item) continue;
-        for (const t of [item.text, ...(item.alts ?? [])]) (((index[kind][code] ??= {})[norm(t)] ??= new Set())).add(id);
+        for (const t of [item.text, ...(item.alts ?? [])]) (((index[kind][code] ??= {})[norm(named(code, t))] ??= new Set())).add(id);
       }
     }
   }
 }
 const textsOf = (code, kind, id) => {
   const item = lang[code].units[where[id]]?.[kind]?.[id];
-  return item ? [item.text, ...(item.alts ?? [])].map(norm) : [];
+  return item ? [item.text, ...(item.alts ?? [])].map((t) => norm(named(code, t))) : [];
 };
 
 // The pair's items, with the reverse course's accepted answers merged in.
@@ -113,7 +118,7 @@ for (const u of Object.values(pair.units).sort((a, b) => byNumber(a.id, b.id))) 
 // meaning agrees, else same meaning whose target text agrees, else the same
 // target text alone (a word with one more meaning than the curriculum gives).
 const all = (code, t) => [t.text, ...t.alts].map(norm);
-const mainOf = (code, kind, id) => norm(lang[code].units[where[id]]?.[kind]?.[id]?.text ?? '');
+const mainOf = (code, kind, id) => norm(named(code, lang[code].units[where[id]]?.[kind]?.[id]?.text ?? ''));
 // How closely concept `id` agrees with the item in language `code`: the
 // same main text (3), the item's text among the concept's answers (2), the
 // concept's text among the item's answers (1), or neither (0).

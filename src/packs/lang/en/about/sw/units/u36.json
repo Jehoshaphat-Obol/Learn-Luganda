@@ -1,0 +1,25 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u36",
+  "guidebook": {
+    "intro": "Elders end arguments with a proverb, and kangas carry them on their hems. Knowing a few marks you as someone who really speaks Swahili.",
+    "tips": [
+      {
+        "id": "hu-habit",
+        "title": "Always true: hu-",
+        "body": [
+          "Proverbs use **hu-** for things that always happen: **hujaza** (fills), **huvunjika** (gets broken). It has no person prefix: **hu-** works for everyone.",
+          "You’ll hear it for habits too: **Mimi hunywa chai asubuhi** (I usually drink tea in the morning)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Proverbs on kangas",
+        "body": [
+          "A kanga’s message is often a proverb. A woman might wear **Haba na haba hujaza kibaba** to say she is patient, or something sharper to answer a neighbour’s gossip."
+        ]
+      }
+    ]
+  }
+}

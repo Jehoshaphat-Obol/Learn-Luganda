@@ -83,7 +83,10 @@
       "questions": [
         { "question": "Mukasa anajisikiaje?", "options": ["Amefurahi", "Amechoka", "Amekasirika"] },
         { "question": "Nini kimetokea sasa hivi?", "options": ["Goli", "Mchezo umeisha", "Mvua imeanza kunyesha"] },
-        { "question": "Mukasa anasemaje “timu yetu imeshinda”?" }
+        {
+          "question": "Mukasa anasemaje “timu yetu imeshinda”?",
+          "options": ["Timu yetu imeshinda", "Nani ameshinda?", "Ninafurahia mpira"]
+        }
       ]
     }
   }

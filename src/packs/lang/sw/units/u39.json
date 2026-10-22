@@ -10,7 +10,12 @@
     "mwattu": { "text": "tafadhali", "alts": ["naomba", "kwa hisani yako"] },
     "webale-okujja": { "text": "Asanteni kwa kuja", "alts": ["asante kwa kuja", "karibu", "karibuni"] },
     "omugenyi": { "text": "mgeni", "alts": ["mtembeleaji", "mgeni wetu"] },
-    "olyeko": { "text": "Karibu chakula", "alts": ["kula kidogo", "tafadhali kula", "karibu ule", "karibuni chakula"] }
+    "olyeko": { "text": "Karibu chakula", "alts": ["kula kidogo", "tafadhali kula", "karibu ule", "karibuni chakula"] },
+    "adabu": { "text": "adabu" },
+    "hodi": { "text": "Hodi!" },
+    "mkono-wa-kulia": { "text": "mkono wa kulia" },
+    "ukarimu": { "text": "ukarimu" },
+    "karibu-tena": { "text": "Karibu tena" }
   },
   "sentences": {
     "s39-bafukamira": {
@@ -24,7 +29,13 @@
     "s39-webale-okujja": { "text": "Asanteni kwa kuja! Tumefurahi kuwaona.", "alts": ["Asante kwa kuja! Tumefurahi kukuona.", "Karibuni! Tumefurahi kuwaona."] },
     "s39-omugenyi": { "text": "Mgeni ndiye mkubwa.", "alts": ["Mgeni ndiye wa kwanza.", "Mgeni ni mfalme.", "Mgeni ndiye muhimu."] },
     "s39-olyeko": { "text": "Keti ule chakula.", "alts": ["Kaa ule chakula.", "Keti, karibu chakula.", "Kaa ule kidogo."] },
-    "s39-yingira-otuule": { "text": "Karibu ndani uketi.", "alts": ["Ingia ukae.", "Karibu ndani, keti.", "Karibu ukae."] }
+    "s39-yingira-otuule": { "text": "Karibu ndani uketi.", "alts": ["Ingia ukae.", "Karibu ndani, keti.", "Karibu ukae."] },
+    "s-heshima": { "text": "Heshima ni muhimu sana." },
+    "s-adabu": { "text": "Mtoto huyu ana adabu." },
+    "s-hodi": { "text": "Hodi! Karibu!" },
+    "s-mkono-kulia": { "text": "Kula kwa mkono wa kulia." },
+    "s-ukarimu": { "text": "Asante kwa ukarimu wako." },
+    "s-karibu-tena": { "text": "Asante, karibu tena!" }
   },
   "phrases": [
     "Habari za asubuhi, bwana.",
@@ -34,5 +45,8 @@
     "Karibu ndani uketi.",
     "Keti ule chakula."
   ],
-  "dialogues": { "u39s2l3": [{ "line": "Mwanangu, umeamkaje?" }], "u39s3l3": [{ "line": "Asanteni kwa kuja! Keti ule chakula." }] }
+  "dialogues": {
+    "u39s2l3": [{ "line": "Mwanangu, umeamkaje?", "options": ["Salama, bwana. Mmeamkaje?", "Nakubaliana nawe.", "Haraka!"] }],
+    "u39s3l3": [{ "line": "Asanteni kwa kuja! Keti ule chakula.", "options": ["Asante sana, bwana.", "Mwizi! Mkamateni!", "Sikubali."] }]
+  }
 }

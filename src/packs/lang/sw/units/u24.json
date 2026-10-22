@@ -81,7 +81,7 @@
       "questions": [
         { "question": "Amara anafanya nini kwanza?", "options": ["Anakata vitunguu na nyanya", "Anawasha moto", "Anaosha sufuria"] },
         { "question": "Luwombo inapikwa kwa muda gani?", "options": ["Dakika kumi", "Saa mbili", "Usiku mzima"] },
-        { "question": "Amara anasema nini baada ya mlo?" }
+        { "question": "Amara anasema nini baada ya mlo?", "options": ["Asante kwa kupika", "Kwanza kata", "Ninakusubiri"] }
       ]
     }
   }

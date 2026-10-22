@@ -2,18 +2,25 @@
   "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
   "id": "u38",
   "words": {
-    "nnyamba": { "text": "Help me!", "alts": ["help", "help!"] },
+    "nnyamba": { "text": "Help me!", "alts": ["help", "help!", "help me please", "please help me"] },
     "yanguwa": { "text": "Hurry!", "alts": ["hurry up", "quickly", "be quick"] },
     "omubbi": { "text": "thief", "alts": ["robber", "a thief", "the thief"] },
-    "poliisi": { "text": "police", "alts": ["the police"] },
+    "poliisi": { "text": "police", "alts": ["the police", "police officer"] },
     "ebbiddwa": { "text": "has been stolen", "alts": ["was stolen", "is stolen", "stolen"] },
     "akabenje": { "text": "accident", "alts": ["an accident", "the accident", "crash"] },
-    "alumiziddwa": { "text": "is injured", "alts": ["has been hurt", "is hurt", "injured", "was injured"] },
+    "alumiziddwa": {
+      "text": "is injured",
+      "alts": ["has been hurt", "is hurt", "injured", "was injured", "he is hurt", "she is hurt", "he has been hurt", "she has been hurt"]
+    },
     "omusaayi": { "text": "blood", "alts": ["the blood", "bleeding"] },
     "ambulensi": { "text": "ambulance", "alts": ["the ambulance", "an ambulance"] },
-    "linda": { "text": "Wait", "alts": ["wait here", "hold on"] },
-    "tewali-kizibu": { "text": "No problem", "alts": ["there is no problem", "it’s fine", "no worries"] },
-    "ndi-bulungi": { "text": "I’m okay", "alts": ["i am fine", "i’m fine", "i am okay", "i am ok", "i’m ok"] }
+    "linda": { "text": "Wait", "alts": ["wait here", "hold on", "wait a moment", "hang on"] },
+    "tewali-kizibu": { "text": "No problem", "alts": ["there is no problem", "it’s fine", "no worries", "it’s no problem"] },
+    "ndi-bulungi": { "text": "I’m okay", "alts": ["i am fine", "i’m fine", "i am okay", "i am ok", "i’m ok"] },
+    "kumetokea": { "text": "there has been", "alts": ["it has happened", "something happened"] },
+    "ameibiwa": { "text": "he has been robbed", "alts": ["she has been robbed", "has had something stolen"] },
+    "naomba": { "text": "may I have", "alts": ["i ask for", "please may i have", "i request"] },
+    "pole-kwa-kazi": { "text": "Well done for your hard work", "alts": ["sorry for the work", "thank you for your work", "good work"] }
   },
   "sentences": {
     "s38-nnyamba": { "text": "Help me! Help me!", "alts": ["Help! Help!"] },
@@ -29,7 +36,19 @@
     "s38-ambulensi": { "text": "Let’s call an ambulance quickly!", "alts": ["Let us call an ambulance quickly!", "Call an ambulance fast!"] },
     "s38-linda-wano": { "text": "Sit here and wait.", "alts": ["Sit here, wait.", "Sit here and hold on."] },
     "s38-oli-bulungi": { "text": "Are you okay? Yes, I’m okay.", "alts": ["Are you alright? Yes, I am fine.", "Are you ok? Yes, I am ok."] },
-    "s38-tewali-kizibu": { "text": "Thank you very much! No problem.", "alts": ["Thanks a lot! No problem."] }
+    "s38-tewali-kizibu": { "text": "Thank you very much! No problem.", "alts": ["Thanks a lot! No problem."] },
+    "s-ajali": { "text": "There has been an accident on the road!", "alts": ["There’s been an accident on the road!"] },
+    "s-gari-wagonjwa": { "text": "We need an ambulance quickly!", "alts": ["We want an ambulance quickly!", "We need an ambulance fast!"] },
+    "s-damu": { "text": "He is bleeding a lot.", "alts": ["She is bleeding a lot.", "He’s bleeding a lot.", "She’s bleeding a lot."] },
+    "s-ameumia": { "text": "The child has hurt a leg.", "alts": ["The child has hurt his leg.", "The child has hurt her leg.", "The child hurt a leg."] },
+    "s-mwizi": { "text": "Thief! Thief!", "alts": ["Stop, thief!"] },
+    "s-ameibiwa": {
+      "text": "His phone has been stolen.",
+      "alts": ["Her phone has been stolen.", "He has been robbed of his phone.", "She has been robbed of her phone."]
+    },
+    "s-naomba": { "text": "May I have some water, please.", "alts": ["May I have water, please?", "Could I have some water, please?"] },
+    "s-hamna-shida": { "text": "No problem, my friend.", "alts": ["No worries, my friend."] },
+    "s-pole-kwa-kazi": { "text": "Well done for your hard work, mama!", "alts": ["Thank you for your work, mama!", "Good work, mama!"] }
   },
   "phrases": [
     "Help me! Help me!",

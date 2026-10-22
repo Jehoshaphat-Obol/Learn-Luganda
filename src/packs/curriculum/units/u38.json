@@ -15,7 +15,11 @@
     "ambulensi",
     "linda",
     "tewali-kizibu",
-    "ndi-bulungi"
+    "ndi-bulungi",
+    "kumetokea",
+    "ameibiwa",
+    "naomba",
+    "pole-kwa-kazi"
   ],
   "sentences": [
     "s38-nnyamba",
@@ -28,7 +32,16 @@
     "s38-ambulensi",
     "s38-linda-wano",
     "s38-oli-bulungi",
-    "s38-tewali-kizibu"
+    "s38-tewali-kizibu",
+    "s-ajali",
+    "s-gari-wagonjwa",
+    "s-damu",
+    "s-ameumia",
+    "s-mwizi",
+    "s-ameibiwa",
+    "s-naomba",
+    "s-hamna-shida",
+    "s-pole-kwa-kazi"
   ],
   "phrases": 6,
   "skills": [
@@ -61,6 +74,19 @@
           "newWords": [],
           "sentences": ["s38-essimu-ebbiddwa", "s38-ambulensi", "s38-nnyamba"],
           "dialogues": [{ "speaker": "ssali", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u38s4",
+      "icon": "bolt",
+      "since": 2,
+      "lessons": [
+        { "id": "u38s4l1", "newWords": ["kumetokea", "ameibiwa"], "sentences": ["s-ajali", "s-mwizi", "s-damu", "s-ameumia"] },
+        {
+          "id": "u38s4l2",
+          "newWords": ["naomba", "pole-kwa-kazi"],
+          "sentences": ["s-ameibiwa", "s-gari-wagonjwa", "s-naomba", "s-hamna-shida", "s-pole-kwa-kazi"]
         }
       ]
     }

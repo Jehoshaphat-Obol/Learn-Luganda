@@ -85,7 +85,7 @@
       "questions": [
         { "question": "Nakato anataka kwenda wapi?", "options": ["Mukono", "Jinja", "Masaka"] },
         { "question": "Nauli ni kiasi gani?", "options": ["Elfu tano", "Elfu kumi", "Elfu moja"] },
-        { "question": "Nakato anamwambiaje mama yake kwamba amefika?" }
+        { "question": "Nakato anamwambiaje mama yake kwamba amefika?", "options": ["Nimefika salama.", "Nenda polepole.", "Simama hapa."] }
       ]
     }
   }

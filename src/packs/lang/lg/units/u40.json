@@ -11,7 +11,12 @@
     "walumbe": { "text": "Walumbe" },
     "yeerabira": { "text": "yeerabira" },
     "obulo": { "text": "obulo" },
-    "etuyigiriza": { "text": "etuyigiriza" }
+    "etuyigiriza": { "text": "etuyigiriza" },
+    "fisi": { "text": "empisi" },
+    "tamaa": { "text": "omululu" },
+    "alimdanganya": { "text": "yamulimba" },
+    "busara": { "text": "amagezi" },
+    "funzo": { "text": "eky'okuyiga" }
   },
   "sentences": {
     "s40-wakayima-mugezi": { "text": "Wakayima yali mugezi nnyo." },
@@ -22,7 +27,14 @@
     "s40-yeerabira-obulo": { "text": "Nnambi yeerabira obulo bw’enkoko." },
     "s40-walumbe": { "text": "Walumbe n’abagoberera." },
     "s40-etuyigiriza-ki": { "text": "Enfumo eno etuyigiriza ki?" },
-    "s40-etuyigiriza-nti": { "text": "Etuyigiriza nti obugezi businga amaanyi." }
+    "s40-etuyigiriza-nti": { "text": "Etuyigiriza nti obugezi businga amaanyi." },
+    "s-fisi": { "text": "Empisi erina omululu mungi." },
+    "s-mjanja": { "text": "Wakayima mugezi okusinga empisi." },
+    "s-tamaa": { "text": "Omululu mubi." },
+    "s-alimdanganya": { "text": "Wakayima yalimba empisi." },
+    "s-busara": { "text": "Jjajja alina amagezi mangi." },
+    "s-funzo": { "text": "Eky'okuyiga mu nfumo kye kiruwa?" },
+    "s-inatufundisha": { "text": "Enfumo eno etuyigiriza okuyambagana." }
   },
   "phrases": [
     "Wakayima yali mugezi nnyo.",
