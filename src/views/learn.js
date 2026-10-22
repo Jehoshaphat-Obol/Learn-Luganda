@@ -6,7 +6,7 @@
  * units when expanded, so a long course stays light.
  */
 import '../styles/learn.css';
-import { course } from '../content/course.js';
+import { castMember, course } from '../content/course.js';
 import { store } from '../state/store.js';
 import { canJumpTo, isCourseComplete, isLessonDone, isLessonSkipped, isLessonUnlocked, isSectionUnlocked, isUnitUnlocked, nextLessonId, sectionProgress, skillProgress, unitProgress } from '../state/progress.js';
 import { XP, dailyGoal } from '../state/xp.js';
@@ -73,7 +73,7 @@ function unitSection(state, unit, current, due) {
     })
     .join('');
   // Cast members stand beside the trail, alternating sides.
-  const cast = [unit.character, ...unit.skills.map((s) => s.character).filter(Boolean)];
+  const cast = [unit.character, ...unit.skills.map((s) => s.character).filter(Boolean)].map((id) => castMember(id).look);
   return `
     <section class="unit unit--${unit.color}${open ? '' : ' unit--locked'}" aria-labelledby="unit-${unit.id}">
       <header class="unit__banner">
@@ -86,7 +86,7 @@ function unitSection(state, unit, current, due) {
         <div class="unit__meter" role="progressbar" aria-valuemin="0" aria-valuemax="${prog.total}" aria-valuenow="${prog.done}" aria-label="${escapeHtml(t('learn.unitMeter', { unit: unit.title, done: prog.done, total: prog.total }))}"><span style="width:${(prog.done / prog.total) * 100}%"></span></div>
       </header>
       <div class="unit__body">
-        <div class="unit__cast" aria-hidden="true">${cast.map((id) => `<div class="unit__character">${portrait(id, { expression: prog.complete ? pick(['happy', 'wink']) : pick(['neutral', 'neutral', 'happy', 'surprised']) })}</div>`).join('')}<div class="unit__prop">${prop(pick(PROP_IDS))}</div></div>
+        <div class="unit__cast" aria-hidden="true">${cast.map((look) => `<div class="unit__character">${portrait(look, { expression: prog.complete ? pick(['happy', 'wink']) : pick(['neutral', 'neutral', 'happy', 'surprised']) })}</div>`).join('')}<div class="unit__prop">${prop(pick(PROP_IDS))}</div></div>
         <ol class="skills">${skills}</ol>
         <ol class="trail trail--checkpoint">${checkpointNode(state, unit, position)}</ol>
       </div>

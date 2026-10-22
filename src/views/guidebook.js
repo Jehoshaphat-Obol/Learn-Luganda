@@ -3,7 +3,7 @@
  * unit's stories. `?tip=<id>` scrolls straight to one tip.
  */
 import '../styles/stories.css';
-import { course, langAttr } from '../content/course.js';
+import { castMember, course, langAttr } from '../content/course.js';
 import { store } from '../state/store.js';
 import { storyList } from '../state/stories.js';
 import { portrait } from '../illustrations/index.js';
@@ -46,7 +46,7 @@ export function guidebookView({ root, params, query, navigate }) {
           <h1>${escapeHtml(unit.title)}</h1>
           <p class="muted">${escapeHtml(book.intro)}</p>
         </div>
-        <div class="guide__art" aria-hidden="true">${portrait(unit.character, { expression: 'happy' })}</div>
+        <div class="guide__art" aria-hidden="true">${portrait(castMember(unit.character).look, { expression: 'happy' })}</div>
       </header>
 
       <section class="guide__section" aria-labelledby="guide-phrases">

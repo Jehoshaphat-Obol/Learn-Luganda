@@ -129,3 +129,18 @@ describe('progress per course', () => {
     expect(s.courses).toEqual({});
   });
 });
+
+describe('pre-selecting a course', () => {
+  const english = { code: 'en', canLearn: true, canSpeak: true };
+
+  it('picks the course for the likeliest language in the region', () => {
+    expect(replyToGuess('speak', english, PAIRS, { likely: ['sw', 'en'] }).course).toBe('en-sw');
+    expect(replyToGuess('speak', english, PAIRS, { likely: ['lg', 'en', 'sw'] }).course).toBe('en-lg');
+    expect(replyToGuess('learn', english, PAIRS, { likely: ['en', 'sw', 'ar'] }).course).toBe('sw-en');
+  });
+
+  it('falls back to the default course, or leaves the choice open', () => {
+    expect(replyToGuess('speak', english, PAIRS, { likely: ['de'], fallback: 'en-lg' }).course).toBe('en-lg');
+    expect(replyToGuess('speak', english, PAIRS, { likely: ['de'] }).course).toBeNull();
+  });
+});

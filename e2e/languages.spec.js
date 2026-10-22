@@ -41,6 +41,28 @@ test.describe('in Kampala, with a Luganda browser', () => {
   });
 });
 
+test.describe('in Nairobi', () => {
+  test.use({ timezoneId: 'Africa/Nairobi', locale: 'en-KE' });
+
+  test('an English speaker is offered Swahili first, and its first lesson opens', async ({ page }) => {
+    await page.goto('./#/onboarding');
+    await page.getByRole('radio', { name: /I speak English/ }).click();
+    await expect(page.getByRole('radio', { name: /Swahili, taught in English/ })).toHaveAttribute('aria-checked', 'true');
+    await expect(page.getByRole('radio', { name: /Luganda, taught in English/ })).toHaveAttribute('aria-checked', 'false');
+    await page.locator('[data-nav="next"]').click();
+    await expect.poll(async () => (await readState(page)).settings.course).toBe('en-sw');
+    await expect(page.getByRole('heading', { name: /Habari\? .*your guide to Swahili/ })).toBeVisible();
+  });
+
+  test('the Swahili path and first lesson open', async ({ page }) => {
+    await openWith(page, savedState({ settings: { course: 'en-sw' } }), '#/learn');
+    await expect(page.getByText('Greetings').first()).toBeVisible();
+    await page.goto('./#/lesson/u1s1l1?seed=1');
+    await expect(page.getByRole('progressbar', { name: 'Lesson progress' })).toBeVisible();
+    await expect(page.getByText(/Habari\?|Nzuri|Asante|Karibu|Sana/).first()).toBeVisible();
+  });
+});
+
 test.describe('in Dubai', () => {
   test.use({ timezoneId: 'Asia/Dubai', locale: 'en-AE' });
 

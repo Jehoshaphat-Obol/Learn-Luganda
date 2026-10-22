@@ -1,0 +1,197 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u5",
+  "title": "Getting around",
+  "description": "Ask where things are, give directions and travel by matatu, daladala or boda boda.",
+  "color": "lilac",
+  "character": "juma",
+  "words": [
+    { "id": "wapi", "target": "wapi", "base": "where", "altBase": ["where is"] },
+    { "id": "iko-wapi", "target": "iko wapi?", "base": "where is it?", "altBase": ["where is", "where’s"], "notes": "For places and things: Hospitali iko wapi? Where is the hospital?" },
+    { "id": "hapa", "target": "hapa", "base": "here" },
+    { "id": "pale", "target": "pale", "base": "there", "altBase": ["over there"] },
+    { "id": "karibu-na", "target": "karibu na", "base": "near", "altBase": ["close to", "near to"], "notes": "The same karibu as “welcome”: it means close." },
+    { "id": "mbali", "target": "mbali", "base": "far", "altBase": ["far away"] },
+    { "id": "kushoto", "target": "kushoto", "base": "left", "altBase": ["on the left", "to the left"] },
+    { "id": "kulia", "target": "kulia", "base": "right", "altBase": ["on the right", "to the right"] },
+    { "id": "moja-kwa-moja", "target": "moja kwa moja", "base": "straight on", "altBase": ["straight ahead", "straight"] },
+    { "id": "nenda", "target": "Nenda", "base": "Go", "altBase": ["go on"] },
+    { "id": "geuka", "target": "Geuka", "base": "Turn", "altBase": ["turn around"] },
+    { "id": "simama", "target": "Simama", "base": "Stop", "altBase": ["stand", "stand up"], "notes": "Also what you say to the driver when you want to get off: Simama hapa!" },
+    { "id": "ninaenda", "target": "Ninaenda", "base": "I am going", "altBase": ["i go", "i’m going"] },
+    { "id": "unaenda-wapi", "target": "Unaenda wapi?", "base": "Where are you going?", "altBase": ["where do you go"] },
+    { "id": "nyumbani", "target": "nyumbani", "base": "home", "altBase": ["at home", "to home"], "notes": "Nyumba is house; nyumbani is at home, to home." },
+    { "id": "shuleni", "target": "shuleni", "base": "to school", "altBase": ["at school", "school"] },
+    { "id": "kazini", "target": "kazini", "base": "to work", "altBase": ["at work", "work"] },
+    { "id": "hospitali", "target": "hospitali", "base": "hospital", "altBase": ["the hospital", "a hospital"] },
+    { "id": "duka", "target": "duka", "base": "shop", "altBase": ["the shop", "a shop", "store"] },
+    { "id": "benki", "target": "benki", "base": "bank", "altBase": ["the bank", "a bank"] },
+    { "id": "kanisa", "target": "kanisa", "base": "church", "altBase": ["the church", "a church"] },
+    { "id": "msikiti", "target": "msikiti", "base": "mosque", "altBase": ["the mosque", "a mosque"] },
+    { "id": "mji", "target": "mji", "base": "town", "altBase": ["city", "the town", "the city"], "notes": "Mjini, in town, to town." },
+    { "id": "barabara", "target": "barabara", "base": "road", "altBase": ["the road", "street"] },
+    { "id": "matatu", "target": "matatu", "base": "minibus", "altBase": ["matatu", "daladala", "taxi", "bus"], "notes": "Matatu in Kenya and Uganda, daladala in Tanzania." },
+    { "id": "boda-boda", "target": "boda boda", "base": "motorbike taxi", "altBase": ["boda boda", "bodaboda", "motorcycle taxi", "piki piki"] },
+    { "id": "basi", "target": "basi", "base": "bus", "altBase": ["the bus", "a bus"] },
+    { "id": "nauli", "target": "nauli", "base": "fare", "altBase": ["the fare", "ticket price"] },
+    { "id": "sawa", "target": "Sawa", "base": "Okay", "altBase": ["ok", "fine", "alright", "all right", "same"] }
+  ],
+  "sentences": [
+    { "id": "s-hospitali-iko-wapi", "target": "Hospitali iko wapi?", "base": "Where is the hospital?", "altBase": ["Where’s the hospital?"] },
+    { "id": "s-benki-iko-wapi", "target": "Benki iko wapi?", "base": "Where is the bank?", "altBase": ["Where’s the bank?"] },
+    { "id": "s-duka-iko-hapa", "target": "Duka iko hapa.", "base": "The shop is here.", "altBase": ["The shop’s here."] },
+    { "id": "s-msikiti-uko-pale", "target": "Msikiti iko pale.", "base": "The mosque is over there.", "altBase": ["The mosque is there."] },
+    { "id": "s-karibu-na-benki", "target": "Iko karibu na benki.", "base": "It’s near the bank.", "altBase": ["It is near the bank.", "It is close to the bank."] },
+    { "id": "s-ni-mbali", "target": "Ni mbali sana?", "base": "Is it very far?", "altBase": ["Is it far?"] },
+    { "id": "s-geuka-kushoto", "target": "Geuka kushoto.", "base": "Turn left.", "altBase": ["Turn to the left."] },
+    { "id": "s-geuka-kulia", "target": "Geuka kulia.", "base": "Turn right.", "altBase": ["Turn to the right."] },
+    { "id": "s-moja-kwa-moja", "target": "Nenda moja kwa moja.", "base": "Go straight on.", "altBase": ["Go straight ahead.", "Go straight."] },
+    { "id": "s-simama-hapa", "target": "Simama hapa, tafadhali.", "base": "Stop here, please.", "altBase": ["Stop here please."] },
+    { "id": "s-unaenda-wapi", "target": "Unaenda wapi?", "base": "Where are you going?" },
+    { "id": "s-ninaenda-nyumbani", "target": "Ninaenda nyumbani.", "base": "I am going home.", "altBase": ["I’m going home.", "I go home."] },
+    { "id": "s-ninaenda-kazini", "target": "Ninaenda kazini.", "base": "I am going to work.", "altBase": ["I’m going to work.", "I go to work."] },
+    { "id": "s-ninaenda-shuleni", "target": "Ninaenda shuleni.", "base": "I am going to school.", "altBase": ["I’m going to school.", "I go to school."] },
+    { "id": "s-ninaenda-mjini", "target": "Ninaenda mjini kwa matatu.", "base": "I am going to town by minibus.", "altBase": ["I’m going to town by matatu.", "I am going to town by matatu."] },
+    { "id": "s-nauli-ni-bei-gani", "target": "Nauli ni bei gani?", "base": "How much is the fare?", "altBase": ["What is the fare?", "What’s the fare?"] },
+    { "id": "s-boda-boda-haraka", "target": "Boda boda ni haraka.", "base": "A motorbike taxi is quick.", "altBase": ["The boda boda is fast.", "A boda boda is quick."] },
+    { "id": "s-sawa-asante", "target": "Sawa, asante.", "base": "Okay, thank you.", "altBase": ["Ok, thanks.", "Fine, thank you.", "Alright, thank you."] }
+  ],
+  "skills": [
+    {
+      "id": "u5s1",
+      "title": "Where is it?",
+      "icon": "target",
+      "tip": "iko-wapi",
+      "lessons": [
+        { "id": "u5s1l1", "newWords": ["wapi", "iko-wapi", "hospitali", "benki", "sawa"], "sentences": ["s-hospitali-iko-wapi", "s-benki-iko-wapi", "s-sawa-asante"] },
+        { "id": "u5s1l2", "newWords": ["hapa", "pale", "duka", "msikiti", "kanisa"], "sentences": ["s-duka-iko-hapa", "s-msikiti-uko-pale"] },
+        {
+          "id": "u5s1l3",
+          "newWords": ["karibu-na", "mbali"],
+          "sentences": ["s-karibu-na-benki", "s-ni-mbali", "s-hospitali-iko-wapi"],
+          "dialogues": [
+            { "speaker": "amani", "target": "Duka iko karibu na kanisa.", "base": "The shop is near the church.", "options": ["Sawa, asante.", "Nina njaa.", "Shikamoo."], "answer": "Sawa, asante." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u5s2",
+      "title": "Directions",
+      "icon": "arrow",
+      "lessons": [
+        { "id": "u5s2l1", "newWords": ["kushoto", "kulia", "geuka"], "sentences": ["s-geuka-kushoto", "s-geuka-kulia"] },
+        {
+          "id": "u5s2l2",
+          "newWords": ["nenda", "moja-kwa-moja", "barabara", "simama"],
+          "sentences": ["s-moja-kwa-moja", "s-simama-hapa", "s-geuka-kulia"],
+          "dialogues": [
+            { "speaker": "emma", "target": "Benki iko wapi?", "base": "Where is the bank?", "options": ["Nenda moja kwa moja, geuka kushoto.", "Nina watoto watatu.", "Saa moja asubuhi."], "answer": "Nenda moja kwa moja, geuka kushoto." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u5s3",
+      "title": "On the move",
+      "icon": "bolt",
+      "tip": "ni-going",
+      "lessons": [
+        { "id": "u5s3l1", "newWords": ["ninaenda", "unaenda-wapi", "nyumbani", "shuleni", "kazini"], "sentences": ["s-unaenda-wapi", "s-ninaenda-nyumbani", "s-ninaenda-kazini", "s-ninaenda-shuleni"] },
+        { "id": "u5s3l2", "newWords": ["mji", "matatu", "basi", "nauli"], "sentences": ["s-ninaenda-mjini", "s-nauli-ni-bei-gani"] },
+        {
+          "id": "u5s3l3",
+          "newWords": ["boda-boda"],
+          "sentences": ["s-boda-boda-haraka", "s-simama-hapa", "s-nauli-ni-bei-gani"],
+          "dialogues": [
+            { "speaker": "juma", "target": "Unaenda wapi?", "base": "Where are you going?", "options": ["Ninaenda mjini.", "Ni ghali sana!", "Jina langu ni Emma."], "answer": "Ninaenda mjini." }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Getting around East Africa means minibuses with names painted on the back, boda bodas weaving through traffic, and asking directions from whoever is nearest.",
+    "phrases": [
+      { "target": "Hospitali iko wapi?", "base": "Where is the hospital?" },
+      { "target": "Iko karibu na benki.", "base": "It’s near the bank." },
+      { "target": "Ni mbali sana?", "base": "Is it very far?" },
+      { "target": "Geuka kushoto.", "base": "Turn left." },
+      { "target": "Nenda moja kwa moja.", "base": "Go straight on." },
+      { "target": "Unaenda wapi?", "base": "Where are you going?" },
+      { "target": "Nauli ni bei gani?", "base": "How much is the fare?" },
+      { "target": "Simama hapa, tafadhali.", "base": "Stop here, please." }
+    ],
+    "tips": [
+      {
+        "id": "iko-wapi",
+        "title": "Iko wapi?",
+        "body": [
+          "To ask where a place or thing is, put **iko wapi?** after it: **Benki iko wapi?** (where is the bank?). The answer uses **iko** too: **Iko pale** (it’s over there).",
+          "Strictly, **iko** changes with the noun’s class (**Msikiti uko wapi?**), but **iko** is understood everywhere and is what you’ll hear on the street."
+        ]
+      },
+      {
+        "id": "ni-going",
+        "title": "Ni-na-: I am …ing",
+        "body": [
+          "Swahili verbs are built from pieces. **Ni-na-enda** is **ni** (I) + **na** (now, present) + **enda** (go): “I am going”. Swap the first piece for “you”: **u-na-enda** (you are going).",
+          "Add **-ni** to a place to mean “at” or “to” it: **shule** → **shuleni** (to school), **kazi** → **kazini** (to work), **nyumba** → **nyumbani** (home)."
+        ],
+        "table": [
+          ["Place", "To / at the place", "English"],
+          ["shule", "shuleni", "school"],
+          ["kazi", "kazini", "work"],
+          ["nyumba", "nyumbani", "home"],
+          ["mji", "mjini", "town"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Matatu, daladala, boda boda",
+        "body": [
+          "Shared minibuses are called **matatu** in Kenya and Uganda and **daladala** in Tanzania. Motorbike taxis are **boda boda** (from “border to border”) or **piki piki**. Agree on the **nauli** (fare) before you set off, and say **Simama hapa!** when you want to get off."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-lost-in-town",
+      "title": "Which way to the bank?",
+      "unlockAfter": "u5s2l2",
+      "cast": ["emma", "amani"],
+      "summary": "Emma needs the bank in Dar es Salaam and Amani gives directions.",
+      "steps": [
+        { "line": { "speaker": "emma", "target": "Amani, benki iko wapi?", "base": "Amani, where is the bank?" } },
+        { "line": { "speaker": "amani", "target": "Si mbali. Iko karibu na msikiti.", "base": "It’s not far. It’s near the mosque." }, "gloss": { "Si": "not" } },
+        { "question": "Where is the bank?", "options": ["Near the mosque", "Near the hospital", "Far away"], "answer": 0 },
+        { "line": { "speaker": "amani", "target": "Nenda moja kwa moja, kisha geuka kulia.", "base": "Go straight on, then turn right." }, "gloss": { "kisha": "then" } },
+        { "question": "Which way does Emma turn?", "options": ["Left", "Right"], "answer": 1 },
+        { "line": { "speaker": "emma", "target": "Moja kwa moja, kisha kulia. Sawa!", "base": "Straight on, then right. Okay!" } },
+        { "line": { "speaker": "amani", "target": "Benki iko kushoto, karibu na duka.", "base": "The bank is on the left, near the shop." } },
+        { "question": "How does Amani say “straight on”?", "options": ["Moja kwa moja", "Pole pole", "Karibu na"], "answer": 0, "optionsLang": "target" },
+        { "line": { "speaker": "emma", "target": "Asante sana!", "base": "Thank you very much!" } }
+      ]
+    },
+    {
+      "id": "sw-boda-ride",
+      "title": "A ride into town",
+      "unlockAfter": "u5s3l3",
+      "cast": ["juma", "neema"],
+      "summary": "Neema flags down Juma, who is driving a boda boda today.",
+      "steps": [
+        { "line": { "speaker": "juma", "target": "Habari, dada! Unaenda wapi?", "base": "Hi, sister! Where are you going?" } },
+        { "line": { "speaker": "neema", "target": "Ninaenda mjini. Nauli ni bei gani?", "base": "I’m going to town. How much is the fare?" } },
+        { "line": { "speaker": "juma", "target": "Shilingi elfu moja.", "base": "One thousand shillings." } },
+        { "question": "Where is Neema going?", "options": ["Home", "To school", "To town"], "answer": 2 },
+        { "line": { "speaker": "neema", "target": "Ni ghali! Punguza bei.", "base": "That’s expensive! Lower the price." } },
+        { "line": { "speaker": "juma", "target": "Haya, mia nane. Twende!", "base": "Okay, eight hundred. Let’s go!" }, "gloss": { "Twende": "let’s go" } },
+        { "question": "What is the final fare?", "options": ["800 shillings", "1,000 shillings", "500 shillings"], "answer": 0 },
+        { "line": { "speaker": "neema", "target": "Simama hapa, tafadhali. Asante!", "base": "Stop here, please. Thank you!" } },
+        { "question": "What does Neema say to get off?", "options": ["Simama hapa", "Unaenda wapi", "Geuka kushoto"], "answer": 0, "optionsLang": "target" }
+      ]
+    }
+  ]
+}

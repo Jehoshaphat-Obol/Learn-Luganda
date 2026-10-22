@@ -14,8 +14,9 @@
 import regions from '../packs/regions.json';
 import { detectUiLanguage, languageLabel, t, UI_LANGUAGES } from '../i18n/index.js';
 import { LANGUAGES, languageInfo } from '../i18n/languages.js';
-import { baseLanguages, coursesFrom, coursesTo, deviceTimeZone, suggestLanguage } from '../i18n/catalog.js';
+import { baseLanguages, coursesFrom, coursesTo, deviceTimeZone, likelyLanguages, suggestLanguage } from '../i18n/catalog.js';
 import { COURSES, changeCourse, changeUiLanguage } from '../app/languages.js';
+import { DEFAULT_COURSE } from '../content/load.js';
 import { escapeHtml } from '../ui/components.js';
 
 const nameOf = languageLabel;
@@ -50,15 +51,31 @@ export function languageFlow(answers, { suggestion, pairs }) {
   return { stage: 'pick', bases, speak, options: coursesFrom(speak, pairs), course };
 }
 
-/** Answers implied by a reply to the guess: a single possible course is picked straight away. */
-export function replyToGuess(reply, suggestion, pairs) {
+/**
+ * The course to pre-select among `options`: the one whose other language is
+ * most likely for this learner (Luganda before Swahili in Uganda), else
+ * `fallback` if it is an option. Null leaves the choice to the learner.
+ */
+export function likelyCourse(options, other, { likely = [], fallback = null } = {}) {
+  if (options.length === 1) return options[0].id;
+  const rank = (p) => (likely.includes(p[other]) ? likely.indexOf(p[other]) : Infinity);
+  const best = [...options].sort((a, b) => rank(a) - rank(b))[0];
+  if (best && rank(best) < Infinity) return best.id;
+  return options.some((p) => p.id === fallback) ? fallback : null;
+}
+
+/**
+ * Answers implied by a reply to the guess: a single possible course is
+ * picked straight away, and among several the likeliest is pre-selected.
+ */
+export function replyToGuess(reply, suggestion, pairs, hints) {
   if (reply === 'learn') {
     const options = coursesTo(suggestion.code, pairs);
-    return { langAnswer: 'learn', learn: suggestion.code, course: options.length === 1 ? options[0].id : null };
+    return { langAnswer: 'learn', learn: suggestion.code, course: likelyCourse(options, 'from', hints) };
   }
   if (reply === 'speak') {
     const options = coursesFrom(suggestion.code, pairs);
-    return { langAnswer: 'speak', speak: suggestion.code, course: options.length === 1 ? options[0].id : null };
+    return { langAnswer: 'speak', speak: suggestion.code, course: likelyCourse(options, 'to', hints) };
   }
   return { langAnswer: 'other', course: null };
 }
@@ -143,7 +160,8 @@ export function languageScreen(answers) {
 export function onGuessReply(reply) {
   const suggestion = currentGuess();
   if (reply === 'other' || !suggestion) return replyToGuess('other');
-  return replyToGuess(reply, suggestion, COURSES);
+  const { languages } = likelyLanguages({ timeZone: deviceTimeZone(), preferred: globalThis.navigator?.languages ?? [], regions });
+  return replyToGuess(reply, suggestion, COURSES, { likely: languages, fallback: DEFAULT_COURSE });
 }
 
 /** Applies the chosen course and interface language when the step is done. */
