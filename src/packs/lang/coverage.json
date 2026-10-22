@@ -2,7 +2,7 @@
   "threshold": 0.95,
   "languages": {
     "en": { "target": 1, "base": 1 },
-    "fr": { "target": 0.476, "base": 0.515 },
+    "fr": { "target": 0.676, "base": 0.7 },
     "lg": { "target": 1, "base": 1 },
     "sw": { "target": 1, "base": 1 }
   },

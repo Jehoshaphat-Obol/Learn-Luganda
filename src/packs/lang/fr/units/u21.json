@@ -1,0 +1,112 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u21",
+  "words": {
+    "nsanyuse": { "text": "je suis content", "alts": ["je suis contente", "je suis heureux", "je suis heureuse", "je suis ravi", "je suis ravie"] },
+    "nnakuwadde": { "text": "je suis triste", "alts": ["je suis malheureux", "je suis malheureuse"] },
+    "oli-bulungi": { "text": "Ça va ?", "alts": ["tu vas bien", "est-ce que ça va", "vous allez bien"] },
+    "nneewuunya": { "text": "je suis surpris", "alts": ["je suis surprise", "je suis étonné", "je suis étonnée", "ouah"] },
+    "nkooye": { "text": "je suis fatigué", "alts": ["je suis fatiguée", "je suis épuisé", "je suis épuisée"] },
+    "ntidde": { "text": "j’ai peur", "alts": ["je suis effrayé", "je suis effrayée"] },
+    "nneeraliikirira": { "text": "je suis inquiet", "alts": ["je suis inquiète", "je m’inquiète", "je suis anxieux", "je suis anxieuse"] },
+    "nnyiize": { "text": "je suis en colère", "alts": ["je suis fâché", "je suis fâchée", "je suis énervé", "je suis énervée"] },
+    "ali-atya": { "text": "Comment va-t-il ?", "alts": ["comment va-t-elle", "comment il va", "comment elle va", "comment vont-ils"] },
+    "bambi": { "text": "Désolé", "alts": ["désolée", "mon pauvre", "ma pauvre", "je suis désolé", "je suis désolée"] },
+    "nsonyiwa": { "text": "Pardonne-moi", "alts": ["pardon", "excuse-moi", "désolé", "désolée", "pardonnez-moi"] },
+    "nkwagala": { "text": "je t’aime", "alts": ["je t’adore"] },
+    "nkusubwa": { "text": "tu me manques", "alts": ["tu m’as manqué"] },
+    "mukwano-gwange": { "text": "mon ami", "alts": ["mon amie", "ami", "cher ami", "chère amie"] },
+    "tokaaba": { "text": "Ne pleure pas", "alts": ["arrête de pleurer", "ne pleurez pas"] },
+    "samahani": { "text": "Excusez-moi", "alts": ["pardon", "excuse-moi", "désolé", "désolée"] },
+    "furaha": { "text": "bonheur", "alts": ["joie", "heureux", "heureuse"] },
+    "nina-furaha": { "text": "je suis heureux", "alts": ["je suis heureuse", "je suis content", "je suis contente"] },
+    "huzuni": { "text": "tristesse", "alts": ["triste", "chagrin", "peine"] },
+    "hasira": { "text": "colère", "alts": ["en colère", "fâché"] },
+    "naogopa": { "text": "j’ai peur", "alts": ["je crains"] },
+    "wasiwasi": { "text": "inquiétude", "alts": ["inquiet", "inquiète", "anxiété", "nervosité"] },
+    "kuhusu": { "text": "au sujet de", "alts": ["à propos de", "concernant", "sur"] },
+    "usijali": { "text": "Ne t’inquiète pas", "alts": ["ne vous inquiétez pas", "pas de souci", "t’inquiète"] },
+    "bahati-njema": { "text": "Bonne chance" }
+  },
+  "sentences": {
+    "s21-nsanyuse-nnyo": {
+      "text": "Je suis très content aujourd’hui !",
+      "alts": ["Je suis très contente aujourd’hui !", "Je suis très heureux aujourd’hui !", "Je suis très heureuse aujourd’hui !"]
+    },
+    "s21-lwaki-onakuwadde": { "text": "Pourquoi es-tu triste ?", "alts": ["Pourquoi tu es triste ?", "Pourquoi êtes-vous triste ?"] },
+    "s21-oli-bulungi": { "text": "Ça va, mon ami ?", "alts": ["Ça va, mon amie ?", "Tu vas bien, mon ami ?", "Tu vas bien, mon amie ?"] },
+    "s21-nneewuunya": {
+      "text": "Je suis surpris ! Tu viens aujourd’hui ?",
+      "alts": ["Je suis surprise ! Tu viens aujourd’hui ?", "Quelle surprise ! Tu viens aujourd’hui ?"]
+    },
+    "s21-nkooye-nnyo": {
+      "text": "Je suis très fatigué. Je vais dormir.",
+      "alts": ["Je suis très fatiguée. Je vais dormir.", "Je suis très fatigué. Je vais me coucher.", "Je suis très fatiguée. Je vais me coucher."]
+    },
+    "s21-ntidde": { "text": "J’ai peur, il tonne.", "alts": ["J’ai peur, il y a du tonnerre."] },
+    "s21-nneeraliikirira": { "text": "Je suis inquiet pour l’examen.", "alts": ["Je suis inquiète pour l’examen.", "Je m’inquiète pour l’examen."] },
+    "s21-nnyiize": {
+      "text": "Je suis en colère parce que le taxi n’est pas venu.",
+      "alts": ["Je suis fâché parce que le taxi n’est pas venu.", "Je suis fâchée parce que le taxi n’est pas venu."]
+    },
+    "s21-maama-ali-atya": { "text": "Comment va ta mère ?", "alts": ["Comment va ta maman ?", "Comment va votre mère ?"] },
+    "s21-bambi": {
+      "text": "Je suis désolé ! Bon rétablissement.",
+      "alts": ["Je suis désolée ! Bon rétablissement.", "Désolé ! Bon rétablissement.", "Désolée ! Remets-toi vite."]
+    },
+    "s21-nsonyiwa": {
+      "text": "Pardonne-moi, je suis en retard.",
+      "alts": ["Pardon, je suis en retard.", "Excuse-moi, je suis arrivé en retard.", "Excuse-moi, je suis arrivée en retard."]
+    },
+    "s21-nkwagala-maama": { "text": "Je t’aime très fort, maman.", "alts": ["Je t’aime beaucoup, maman.", "Je t’aime tellement, maman."] },
+    "s21-nkusubwa": { "text": "Tu me manques, mon ami.", "alts": ["Tu me manques, mon amie.", "Tu m’as manqué, mon ami."] },
+    "s21-tokaaba": { "text": "Ne pleure pas, mon enfant." },
+    "s-pole-sana": { "text": "Je suis vraiment désolé !", "alts": ["Je suis vraiment désolée !", "Tellement désolé !", "Tellement désolée !"] },
+    "s-samahani-daktari": { "text": "Excusez-moi, docteur.", "alts": ["Pardon, docteur."] },
+    "s-nimechoka-sana": { "text": "Je suis très fatigué.", "alts": ["Je suis très fatiguée.", "Je suis épuisé.", "Je suis épuisée."] },
+    "s-nina-furaha": {
+      "text": "Je suis heureux aujourd’hui !",
+      "alts": ["Je suis heureuse aujourd’hui !", "Je suis content aujourd’hui !", "Je suis contente aujourd’hui !"]
+    },
+    "s-siku-ya-furaha": { "text": "C’est un jour heureux.", "alts": ["C’est un jour de joie."] },
+    "s-nina-huzuni": { "text": "Je suis triste." },
+    "s-nimefurahi-sana": { "text": "Je suis très content !", "alts": ["Je suis très contente !", "Je suis ravi !", "Je suis ravie !"] },
+    "s-nimeshangaa": {
+      "text": "Je suis vraiment surpris !",
+      "alts": ["Je suis vraiment surprise !", "Je suis complètement surpris !", "Je suis complètement surprise !"]
+    },
+    "s-bosi-hasira": { "text": "Le patron est en colère.", "alts": ["La patronne est en colère.", "Le patron est fâché."] },
+    "s-nimekasirika": { "text": "Je suis très en colère !", "alts": ["Je suis vraiment en colère !", "Je suis très fâché !", "Je suis très fâchée !"] },
+    "s-naogopa-mbwa": { "text": "J’ai peur des chiens.", "alts": ["J’ai peur du chien."] },
+    "s-usijali": {
+      "text": "Ne t’inquiète pas, pas de problème.",
+      "alts": ["Ne t’inquiète pas, ce n’est pas grave.", "Ne vous inquiétez pas, pas de problème."]
+    },
+    "s-nakupenda-bibi": { "text": "Je t’aime, Mamie.", "alts": ["Je t’aime, grand-mère."] },
+    "s-hongera-mtihani": { "text": "Félicitations pour l’examen !", "alts": ["Bravo pour l’examen !"] },
+    "s-bahati-njema": { "text": "Bonne chance pour demain !", "alts": ["Bonne chance demain !"] }
+  },
+  "phrases": [
+    "Je suis très content aujourd’hui !",
+    "Ça va, mon ami ?",
+    "Je suis très fatigué.",
+    "Je suis inquiet pour l’examen.",
+    "Je suis désolé ! Bon rétablissement.",
+    "Pardonne-moi, je suis en retard.",
+    "Tu me manques."
+  ],
+  "dialogues": {
+    "u21s2l3": [
+      {
+        "line": "Ça va ? Tu as l’air fatigué.",
+        "options": ["Oui, je suis très fatigué. J’ai beaucoup travaillé aujourd’hui.", "Je suis content de te voir.", "Ne pleure pas."]
+      }
+    ],
+    "u21s3l3": [
+      {
+        "line": "Je suis triste. Mamie est malade.",
+        "options": ["Je suis désolé ! Je vais lui rendre visite.", "Je suis très content !", "Je suis en colère."]
+      }
+    ]
+  }
+}

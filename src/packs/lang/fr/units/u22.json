@@ -1,0 +1,137 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u22",
+  "words": {
+    "nnyumirwa": { "text": "j’aime", "alts": ["j’adore", "je prends plaisir à", "j’apprécie"] },
+    "okudduka": { "text": "courir", "alts": ["la course", "faire du jogging"] },
+    "okuwuga": { "text": "nager", "alts": ["la natation"] },
+    "era": { "text": "et", "alts": ["aussi", "et aussi", "avec"] },
+    "omupiira": { "text": "football", "alts": ["foot", "ballon", "le ballon", "le match", "le foot"] },
+    "nzannya": { "text": "je joue" },
+    "ttiimu": { "text": "équipe", "alts": ["l’équipe"] },
+    "goolo": { "text": "but", "alts": ["un but", "le but"] },
+    "ewangudde": { "text": "a gagné", "alts": ["elle a gagné", "il a gagné", "gagné"] },
+    "awangudde": { "text": "a gagné", "alts": ["il a gagné", "elle a gagné", "qui a gagné"] },
+    "okuyimba": { "text": "chanter", "alts": ["le chant"] },
+    "okuzina": { "text": "danser", "alts": ["la danse"] },
+    "ennyimba": { "text": "chansons", "alts": ["musique", "les chansons"] },
+    "omuzannyo": { "text": "jeu", "alts": ["un jeu", "sport", "match", "le jeu", "partie"] },
+    "omweso": { "text": "omweso", "alts": ["jeu de plateau", "mancala", "awalé"] },
+    "muda": { "text": "temps", "alts": ["temps libre", "un moment", "période"] },
+    "kuangalia": { "text": "regarder" },
+    "mashabiki": { "text": "supporters", "alts": ["fans", "les supporters", "les fans"] },
+    "tumeshinda": { "text": "On a gagné", "alts": ["nous avons gagné"] },
+    "tumefungwa": { "text": "On a perdu", "alts": ["nous avons perdu", "on a été battus"] },
+    "karata": { "text": "cartes", "alts": ["jeu de cartes", "les cartes"] },
+    "bao": { "text": "bao", "alts": ["jeu de plateau", "mancala", "awalé"] }
+  },
+  "sentences": {
+    "s22-nnyumirwa-okusoma": { "text": "J’aime lire des livres.", "alts": ["J’adore lire des livres.", "J’aime lire."] },
+    "s22-ndduka-ku-makya": { "text": "J’aime courir le matin.", "alts": ["J’adore courir le matin."] },
+    "s22-okuwuga": { "text": "J’aime nager dans le lac.", "alts": ["Je veux nager dans le lac.", "J’adore nager dans le lac."] },
+    "s22-era": { "text": "J’étudie, et je joue.", "alts": ["J’étudie et je joue.", "Je lis et je joue."] },
+    "s22-nzannya-omupiira": { "text": "Je joue au foot le samedi.", "alts": ["Je joue au football le samedi.", "Je joue au foot samedi."] },
+    "s22-ttiimu-yange": { "text": "Mon équipe a gagné !" },
+    "s22-goolo": { "text": "But ! Deux buts !" },
+    "s22-ani-awangudde": { "text": "Qui a gagné ?" },
+    "s22-okuyimba": { "text": "J’aime chanter et danser.", "alts": ["J’adore chanter et danser."] },
+    "s22-ennyimba-za-luganda": { "text": "J’aime les chansons en luganda.", "alts": ["J’adore les chansons en luganda."] },
+    "s22-omuzannyo": { "text": "Le match commence à quatre heures.", "alts": ["Le jeu commence à quatre heures.", "Le match commence à 16 h."] },
+    "s22-omweso": {
+      "text": "Grand-parent joue à l’omweso.",
+      "alts": ["Papi joue à l’omweso.", "Mamie joue à l’omweso.", "Grand-père joue à l’omweso.", "Grand-mère joue à l’omweso."]
+    },
+    "s-sina-muda": { "text": "Je n’ai pas le temps aujourd’hui.", "alts": ["Aujourd’hui, je n’ai pas le temps."] },
+    "s-kuogelea": { "text": "J’aime nager.", "alts": ["J’adore nager.", "J’aime la natation."] },
+    "s-neema-kuimba": { "text": "{@amara} aime chanter.", "alts": ["{@amara} adore chanter."] },
+    "s-kuangalia-mpira": { "text": "J’aime regarder le foot.", "alts": ["J’adore regarder le foot.", "J’aime regarder le football."] },
+    "s-mpira-wa-miguu": { "text": "J’aime le foot.", "alts": ["J’adore le foot.", "J’aime le football."] },
+    "s-timu-hodari": { "text": "Mon équipe est bonne.", "alts": ["Mon équipe est forte.", "Mon équipe est douée."] },
+    "s-goli": { "text": "But ! But !" },
+    "s-mchezo-gani": { "text": "Quel jeu ?", "alts": ["Quel sport ?"] },
+    "s-mashabiki-wengi": { "text": "Plein de supporters !", "alts": ["Tant de supporters !", "Beaucoup de supporters !"] },
+    "s-tumeshinda": { "text": "On a gagné !", "alts": ["Nous avons gagné !"] },
+    "s-tumefungwa-leo": { "text": "On a perdu aujourd’hui.", "alts": ["Nous avons perdu aujourd’hui.", "Aujourd’hui, on a perdu."] },
+    "s-wimbo-wako": { "text": "J’aime ta chanson.", "alts": ["J’adore ta chanson."] },
+    "s-nyimbo-bongo": { "text": "Des chansons de bongo flava.", "alts": ["Les chansons de bongo flava."] },
+    "s-tucheze-karata": { "text": "Jouons aux cartes !", "alts": ["On joue aux cartes !"] },
+    "s-babu-bao": { "text": "Grand-père joue au bao.", "alts": ["Papi joue au bao."] }
+  },
+  "phrases": [
+    "J’aime lire des livres.",
+    "Je joue au foot le samedi.",
+    "Mon équipe a gagné !",
+    "Qui a gagné ?",
+    "J’aime chanter et danser.",
+    "J’aime les chansons en luganda."
+  ],
+  "dialogues": {
+    "u22s1l3": [
+      {
+        "line": "Qu’est-ce que tu aimes faire ?",
+        "options": ["J’aime courir et nager.", "Je suis très fatigué.", "Je ne connais pas l’omweso."]
+      }
+    ]
+  },
+  "stories": {
+    "match-day": {
+      "title": "Jour de match",
+      "summary": "{@ssali} et {@mukasa} regardent les Cranes jouer.",
+      "lines": [
+        "{@mukasa} ! Le match commence à quatre heures. Tu viens ?",
+        "Oui ! Mais je suis fatigué. J’ai beaucoup travaillé aujourd’hui.",
+        "Ne t’inquiète pas, on va juste s’asseoir. On boira du thé.",
+        "Notre équipe va gagner ?",
+        "Je ne sais pas. Cette équipe est très forte.",
+        "But ! But !",
+        "Je suis tellement content ! Qui a marqué ?",
+        "Ssaabaganzi ! Notre équipe a gagné !"
+      ],
+      "questions": [
+        { "question": "Comment se sent {@mukasa} ?", "options": ["Content", "Fatigué", "En colère"] },
+        { "question": "Que vient-il de se passer ?", "options": ["Un but", "Le match est fini", "Il s’est mis à pleuvoir"] },
+        {
+          "question": "Comment {@mukasa} dit-il « notre équipe a gagné » ?",
+          "options": ["Notre équipe a gagné", "Qui a gagné ?", "J’aime le foot"]
+        }
+      ]
+    },
+    "sw-busy-week": {
+      "title": "Une semaine chargée",
+      "summary": "Amani et Neema cherchent un jour pour se voir.",
+      "lines": [
+        "Neema, on se voit lundi ?",
+        "Non, lundi j’étudie.",
+        "Et mercredi ?",
+        "Mercredi, je joue au foot.",
+        "Je travaille tous les jours, mais pas le samedi.",
+        "D’accord ! À samedi. J’adore la musique, allons danser !"
+      ],
+      "questions": [
+        { "question": "Que fait Neema le mercredi ?", "options": ["Elle étudie", "Elle joue au foot", "Elle cuisine"] },
+        { "question": "Quel jour Amani est-elle libre ?", "options": ["Lundi", "Mercredi", "Samedi"] },
+        { "question": "Comment Neema dit-elle samedi ?", "options": ["Dimanche", "Samedi", "Lundi"] }
+      ]
+    },
+    "sw-big-match": {
+      "title": "Le grand match",
+      "summary": "Juma et Baraka regardent un match de foot à la télé, à l’échoppe de Baraka.",
+      "lines": [
+        "Juma, bienvenue ! Le match a commencé.",
+        "Mon équipe va gagner aujourd’hui !",
+        "Pas question ! Mon équipe est meilleure.",
+        "But ! But ! On a marqué !",
+        "Ah ! Pas grave, le match n’est pas encore fini.",
+        "D’accord, mais si on gagne, le thé est gratuit !"
+      ],
+      "questions": [
+        { "question": "Que pense Juma ?", "options": ["Son équipe va gagner", "Son équipe va perdre", "Il n’a pas d’équipe"] },
+        {
+          "question": "Que s’est-il passé ?",
+          "options": ["L’équipe de Juma a marqué", "L’équipe de Baraka a marqué", "La télé est tombée en panne"]
+        },
+        { "question": "Comment Juma crie-t-il « but » ?", "options": ["But !", "Équipe !", "Ballon !"] }
+      ]
+    }
+  }
+}
