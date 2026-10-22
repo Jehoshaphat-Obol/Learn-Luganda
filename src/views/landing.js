@@ -26,6 +26,7 @@ import { brandMark } from '../app/brand-mark.js';
 import { siteLinks } from '../app/site.js';
 import { installButton } from '../app/pwa.js';
 import { bindLanguageSwitcher, languageSwitcher } from '../ui/language-switcher.js';
+import { cycleText } from '../ui/cycle.js';
 
 const STEPS = [
   { id: 'lessons', icon: 'bolt' },
@@ -56,7 +57,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
     const language = courseLanguage('target');
     const primaryCta = returning
       ? button({ label: t('landing.cta.continueLearning'), size: 'lg', href: '#/learn' })
-      : button({ label: t('landing.cta.start'), size: 'lg', href: '#/onboarding' });
+      : button({ labelHtml: cycleText('landing.cta.start'), size: 'lg', href: '#/onboarding' });
     const secondaryCta = returning
       ? ''
       : `<a class="hero__link" href="#/settings?import=1">${escapeHtml(t('landing.cta.import'))}</a>`;
@@ -78,7 +79,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
           <div class="landing__actions">
             ${languageSwitcher()}
             ${installButton('landing__install')}
-            ${button({ label: t(returning ? 'landing.cta.continue' : 'landing.cta.start'), href: returning ? '#/learn' : '#/onboarding' })}
+            ${returning ? button({ label: t('landing.cta.continue'), href: '#/learn' }) : button({ labelHtml: cycleText('landing.cta.start'), href: '#/onboarding' })}
           </div>
         </header>
 
@@ -109,7 +110,6 @@ export function createLandingView({ hasProgress = () => false } = {}) {
               <p class="eyebrow">${escapeHtml(t('landing.why.eyebrow', { language }))}</p>
               <h2>${rich(copy.why.title)}</h2>
             </div>
-            <p class="why__text">${rich(copy.why.text)}</p>
           </div>
           <div class="why__cards">
             ${copy.why.cards.map((c, i) => `<article class="card card--pastel-${CARD_COLOURS[i % CARD_COLOURS.length]}"><h3>${rich(c.title)}</h3><p>${rich(c.text)}</p></article>`).join('')}

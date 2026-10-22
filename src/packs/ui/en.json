@@ -63,6 +63,7 @@
       }
     },
     "languageSwitch": {
+      "short": "Language",
       "button": "Language: {language}. Change the app language",
       "title": "Choose your language"
     },
@@ -236,7 +237,7 @@
       "hero": {
         "eyebrow": "Free · Bite-sized · Fun",
         "title": "The playful way to **learn {language}.**",
-        "lead": "Short, game-like lessons that take you from _{hello}_ to real conversations, one day at a time."
+        "lead": "Five-minute lessons that take you from _{hello}_ to real conversations."
       },
       "ticker": "Sample words",
       "why": {
@@ -247,19 +248,19 @@
         "title": "Learning that feels **like a game.**",
         "lessons": {
           "title": "Bite-sized lessons",
-          "text": "Five-minute lessons with pictures, word tiles, listening and matching games."
+          "text": "Five minutes of pictures, word tiles and games."
         },
         "streaks": {
           "title": "Daily streaks",
-          "text": "Practise a little every day. Your streak and daily goal keep you coming back."
+          "text": "A little every day keeps your streak alive."
         },
         "hearts": {
           "title": "Hearts",
-          "text": "Mistakes cost a heart, so every answer counts. Run out and a quick look back at earlier words fills them up again. You never have to stop learning."
+          "text": "Mistakes cost a heart. A quick review fills them up again."
         },
         "review": {
           "title": "Spaced review",
-          "text": "Words return just before you’d forget them, so they stick for good."
+          "text": "Words come back just before you’d forget them."
         }
       },
       "try": {
@@ -270,9 +271,9 @@
       },
       "showcase": {
         "streakTitle": "Keep your **streak** alive",
-        "streakText": "Hit your daily goal to grow your streak. Busy day? A streak freeze has your back.",
+        "streakText": "Busy day? A streak freeze has your back.",
         "xpTitle": "Earn **XP** and unlock achievements",
-        "xpText": "Every lesson earns XP. Hit milestones to unlock achievement badges and earn gems. Gems are never sold: you earn every one."
+        "xpText": "Every lesson earns XP, badges and gems."
       },
       "cast": {
         "eyebrow": "Meet the cast",
@@ -287,11 +288,11 @@
         "title": "Good to **know.**",
         "free": {
           "q": "Is it free?",
-          "a": "Yes. Lessons are free and there’s no account. A few clearly marked sponsored cards help keep it that way."
+          "a": "Yes, and there’s no account. A few marked sponsored cards keep it free."
         },
         "saved": {
           "q": "Where is my progress saved?",
-          "a": "In your browser’s local storage on this device. You can export it to a file and import it on another device from Settings."
+          "a": "On this device, in your browser. Move it with export and import in Settings."
         },
         "who": {
           "q": "Who is it for?",
@@ -303,19 +304,19 @@
         },
         "length": {
           "q": "How long is the course?",
-          "a": "{units} units in {sections}: {lessons} lessons and {words} words, from first greetings to real conversations. Already know some? Take a section test to jump ahead."
+          "a": "{units} units in {sections}: {lessons} lessons and {words} words. Know some already? Take a section test to jump ahead."
         },
         "sections": { "one": "{count} section", "other": "{count} sections" },
         "install": {
           "q": "Can I install it like an app?",
-          "a": "Yes. Tap Install app at the top of the page, or on an iPhone tap Share and then Add to Home Screen. Once installed, lessons work without a connection."
+          "a": "Yes. Tap Install app, or on an iPhone tap Share, then Add to Home Screen. Lessons then work offline."
         }
       },
       "final": {
         "title": "Ready? **{start}**"
       },
       "footer": {
-        "made": "Made with care for {language} learners. Your progress stays on your device."
+        "made": "Made with care for {language} learners."
       }
     },
     "onboarding": {

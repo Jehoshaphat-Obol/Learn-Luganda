@@ -965,3 +965,33 @@
   margin-inline-end: var(--space-2);
   color: var(--color-primary);
 }
+
+/* Labels that fade through every language (src/ui/cycle.js) */
+.cycle {
+  display: inline-grid;
+  justify-items: center;
+}
+
+/* The old wording fades out before the new one fades in, so two never
+   overlap and every moment on screen is readable. */
+.cycle__item {
+  grid-area: 1 / 1;
+  opacity: 0;
+  translate: 0 -0.15em;
+  white-space: nowrap;
+  transition:
+    opacity 280ms ease-in,
+    translate 280ms ease-in;
+}
+
+.cycle__item.is-on {
+  opacity: 1;
+  translate: 0 0;
+  transition:
+    opacity 420ms ease-out 300ms,
+    translate 420ms ease-out 300ms;
+}
+
+.lang-switch .cycle {
+  justify-items: start;
+}

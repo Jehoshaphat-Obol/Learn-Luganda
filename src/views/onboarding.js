@@ -13,6 +13,7 @@ import { avatar } from '../ui/avatar.js';
 import { icon } from '../ui/icons.js';
 import { trackPixel } from '../marketing/pixel.js';
 import { bindLanguageSwitcher, languageSwitcher } from '../ui/language-switcher.js';
+import { cycleText } from '../ui/cycle.js';
 import { applyLanguages, filterLanguages, languageScreen, onGuessReply } from './language-picker.js';
 import { course } from '../content/course.js';
 import { courseLanguage } from '../content/names.js';
@@ -155,7 +156,7 @@ export function onboardingView({ root, navigate }) {
           <div class="onb__body">${s.body}</div>
         </section>
         <footer class="onb__footer">
-          ${button({ label: s.cta ?? t('onboarding.continue'), size: 'lg', block: true, disabled: !s.ready, attrs: 'data-nav="next"' })}
+          ${button({ label: s.cta, labelHtml: s.cta ? undefined : cycleText('onboarding.continue'), size: 'lg', block: true, disabled: !s.ready, attrs: 'data-nav="next"' })}
         </footer>
       </div>`;
     root.querySelector('#onb-name')?.focus();

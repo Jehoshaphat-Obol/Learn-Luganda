@@ -18,11 +18,12 @@ export function escapeHtml(text) {
 /**
  * A chunky pressable button.
  * @param {{ label: string, variant?: 'primary'|'secondary'|'ghost'|'success'|'danger'|'blue',
- *   size?: 'md'|'lg', href?: string, attrs?: string, block?: boolean, disabled?: boolean, iconName?: string }} o
+ *   size?: 'md'|'lg', href?: string, attrs?: string, block?: boolean, disabled?: boolean, iconName?: string,
+ *   labelHtml?: string }} o  `labelHtml` (already safe HTML) replaces `label`
  */
-export function button({ label, variant = 'primary', size = 'md', href, attrs = '', block = false, disabled = false, iconName }) {
+export function button({ label, labelHtml, variant = 'primary', size = 'md', href, attrs = '', block = false, disabled = false, iconName }) {
   const cls = `btn btn--${variant}${size === 'lg' ? ' btn--lg' : ''}${block ? ' btn--block' : ''}`;
-  const inner = `${iconName ? icon(iconName, { size: 20 }) : ''}<span>${escapeHtml(label)}</span>`;
+  const inner = `${iconName ? icon(iconName, { size: 20 }) : ''}<span>${labelHtml ?? escapeHtml(label)}</span>`;
   if (href) return `<a class="${cls}" href="${href}" ${attrs}>${inner}</a>`;
   return `<button class="${cls}" type="button" ${disabled ? 'disabled' : ''} ${attrs}>${inner}</button>`;
 }
