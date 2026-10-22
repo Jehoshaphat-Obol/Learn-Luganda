@@ -115,6 +115,13 @@
       "level": "Intermediate",
       "description": "The Swahili coast, village life, celebrations, music, faith, business, nature and community.",
       "units": ["u25", "u26", "u27", "u28", "u29", "u30", "u31", "u32"]
+    },
+    {
+      "id": "s5",
+      "title": "Confident speaker",
+      "level": "Upper intermediate",
+      "description": "Compare, imagine, tell stories, use proverbs, follow the news, handle emergencies, show respect and enjoy folktales.",
+      "units": ["u33", "u34", "u35", "u36", "u37", "u38", "u39", "u40"]
     }
   ]
 }

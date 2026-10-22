@@ -15,6 +15,16 @@
       "title": "Emboozi",
       "level": "Ab’omu makkati abasooka",
       "description": "Gaana, buuza ebibuuzo, yogera ku byayita n’ebijja, enneewulira, eby’okwesanyusaamu, essimu n’okufumba."
+    },
+    "s4": {
+      "title": "Ekitundu n’obuwangwa",
+      "level": "Ab’omu makkati",
+      "description": "Olubalama lw’Abaswayiri, ekyalo n’okulima, emikolo, ennyimba, eddiini, bizinensi, obutonde n’ekitundu."
+    },
+    "s5": {
+      "title": "Omwogezi omukugu",
+      "level": "Abali waggulu",
+      "description": "Geraageranya, teebereza, nnyumya emboozi, kozesa engero, goberera amawulire, kola ku bigwa bitalaze, laga ekitiibwa era onyumirwe engero z’edda."
     }
   },
   "units": {
@@ -113,6 +123,70 @@
     "u24": {
       "title": "Okufumba",
       "description": "Fumba mu ffumbiro ly’Abaswayiri: sala, siika, fumba era oteekemu eby’akaloosa mu nsaka ya pilawo, oluvannyuma mugabane emmere."
+    },
+    "u25": {
+      "title": "Olubalama lw’Abaswayiri",
+      "description": "Emyalo, amaato g’amayanda n’emyaka lukumi egy’obusuubuzi: olubalama Oluswayiri gye lwazaalibwa."
+    },
+    "u26": {
+      "title": "Ekyalo n’okulima",
+      "description": "Obulamu mu kyalo: okusimba, amakungula n’okukolera abalala."
+    },
+    "u27": {
+      "title": "Emikolo",
+      "description": "Ennaku enkulu, embaga n’ebirabo, n’abantu abajja, abaalya n’abaazina."
+    },
+    "u28": {
+      "title": "Ennyimba n’amazina",
+      "description": "Taarab, bongo flava n’ennoma, n’amannya g’abantu abakola ennyimba."
+    },
+    "u29": {
+      "title": "Okukkiriza n’emikisa",
+      "description": "Ebifo eby’okusinzizaamu, okusaba, okusiiba n’emikisa abantu gye bawaŋŋana."
+    },
+    "u30": {
+      "title": "Bizinensi",
+      "description": "Ddukanya bizinensi entono: bakasitoma, amagoba n’okufiirwa, okutereka, n’okuyigiriza abalala omulimu."
+    },
+    "u31": {
+      "title": "Obutonde",
+      "description": "Ensozi, ennyanja, ebibira n’emigga, n’okukuuma ettaka."
+    },
+    "u32": {
+      "title": "Ekitundu",
+      "description": "Enkiiko, abakulembeze n’okukolera awamu: harambee."
+    },
+    "u33": {
+      "title": "Okugeraageranya",
+      "description": "Yogera ekisinga obunene, ekisinga obulungi, ekisinga byonna, ekifaanagana oba ekyawukana."
+    },
+    "u34": {
+      "title": "Bwe… ne singa…",
+      "description": "Yogera ku bibaawo bwe…, ku byandibaddewo singa…, ne by’oyagala."
+    },
+    "u35": {
+      "title": "Okunyumya emboozi",
+      "description": "Tandika emboozi mu ngeri y’Abaswayiri, gigende mu maaso era ogimalirize."
+    },
+    "u36": {
+      "title": "Engero",
+      "description": "Yiga engero z’Oluswayiri ezimanyiddwa, amakulu gaazo n’ekiseera eky’okuzikozesa."
+    },
+    "u37": {
+      "title": "Amawulire n’endowooza",
+      "description": "Goberera amawulire, yogera ky’olowooza, era kkiriza oba gaana mu mpisa."
+    },
+    "u38": {
+      "title": "Ebigwa bitalaze",
+      "description": "Saba obuyambi, nnyonnyola ekibaddewo era okkakkanye omuntu."
+    },
+    "u39": {
+      "title": "Ekitiibwa n’empisa",
+      "description": "Kyalira omuntu ewuwe, saba mu mpisa era olage ekitiibwa mu ngeri y’Abaswayiri."
+    },
+    "u40": {
+      "title": "Engero z’edda",
+      "description": "Manya Sungura wakayima ne Abunuwasi omukujjukujju, era ozuule eky’okuyiga mu mboozi."
     }
   },
   "skills": {
@@ -187,6 +261,45 @@
     "u23s3": "Okusisinkana",
     "u24s1": "Mu ffumbiro",
     "u24s2": "Okufumba pilawo",
-    "u24s3": "Okugabana emmere"
+    "u24s3": "Okugabana emmere",
+    "u25s1": "Ennyanja n’ebizinga",
+    "u25s2": "Obusuubuzi",
+    "u25s3": "Ebibuga eby’edda",
+    "u26s1": "Ekyalo",
+    "u26s2": "Okusimba n’amakungula",
+    "u26s3": "Okukolera omuntu",
+    "u27s1": "Ennaku enkulu",
+    "u27s2": "Embaga",
+    "u27s3": "Abajja",
+    "u28s1": "Abakola ennyimba",
+    "u28s2": "Okukuba n’okuwuliriza",
+    "u29s1": "Ebifo n’okusaba",
+    "u29s2": "Okuzaalibwa n’okuyitibwa",
+    "u30s1": "Edduuka eritono",
+    "u30s2": "Okukozesa abalala",
+    "u31s1": "Ensozi n’amazzi",
+    "u31s2": "Okukuuma ettaka",
+    "u32s1": "Enkiiko n’abakulembeze",
+    "u32s2": "Okukolera awamu",
+    "u33s1": "Ekisinga obunene n’obutono",
+    "u33s2": "Ekifaanagana n’ekyawukana",
+    "u34s1": "Bwe…",
+    "u34s2": "Singa…",
+    "u35s1": "Olwatuuka",
+    "u35s2": "Awo",
+    "u36s1": "Engero za buli lunaku",
+    "u36s2": "Engero ku bantu",
+    "u37s1": "Emitwe gy’amawulire",
+    "u37s2": "Okuwa endowooza",
+    "u37s3": "Okukkiriza n’okugaana",
+    "u38s1": "Mumbeere!",
+    "u38s2": "Obubenje",
+    "u38s3": "Oluvannyuma lw’akabi",
+    "u39s1": "Okulamusa abakadde",
+    "u39s2": "Ebigambo eby’empisa",
+    "u39s3": "Okubeera omugenyi",
+    "u40s1": "Sungura wakayima",
+    "u40s2": "Abunuwasi",
+    "u40s3": "Eky’okuyiga"
   }
 }

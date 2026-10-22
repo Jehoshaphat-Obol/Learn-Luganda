@@ -1,0 +1,198 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u37",
+  "title": "News and opinions",
+  "description": "Follow the news, say what you think, and agree or disagree politely.",
+  "color": "lilac",
+  "character": "baraka",
+  "words": [
+    { "id": "gazeti", "target": "gazeti", "base": "newspaper", "altBase": ["the newspaper", "paper"], "notes": "Plural: magazeti." },
+    { "id": "redio", "target": "redio", "base": "radio", "altBase": ["the radio"] },
+    { "id": "taarifa-ya-habari", "target": "taarifa ya habari", "base": "the news", "altBase": ["news bulletin", "the news bulletin"] },
+    { "id": "tukio", "target": "tukio", "base": "event", "altBase": ["incident", "the event"], "notes": "Plural: matukio." },
+    { "id": "tatizo", "target": "tatizo", "base": "problem", "altBase": ["the problem", "issue"], "notes": "Plural: matatizo." },
+    { "id": "suluhisho", "target": "suluhisho", "base": "solution", "altBase": ["the solution", "answer"] },
+    { "id": "maoni", "target": "maoni", "base": "opinion", "altBase": ["opinions", "views", "comments"] },
+    { "id": "nadhani", "target": "nadhani", "base": "I think", "altBase": ["i suppose", "i guess"] },
+    { "id": "kwa-maoni-yangu", "target": "kwa maoni yangu", "base": "in my opinion", "altBase": ["in my view"] },
+    { "id": "muhimu", "target": "muhimu", "base": "important", "altBase": ["necessary", "essential"], "notes": "Never changes its form." },
+    { "id": "nakubali", "target": "nakubali", "base": "I agree", "altBase": ["i accept"] },
+    { "id": "sikubaliani", "target": "sikubaliani", "base": "I don’t agree", "altBase": ["i disagree", "i do not agree"] }
+  ],
+  "sentences": [
+    {
+      "id": "s-gazeti",
+      "target": "Baba anasoma gazeti kila asubuhi.",
+      "base": "Dad reads the newspaper every morning.",
+      "altBase": ["Father reads the newspaper every morning.", "Dad is reading the newspaper every morning."]
+    },
+    { "id": "s-redio", "target": "Nilisikia habari redioni.", "base": "I heard the news on the radio." },
+    {
+      "id": "s-taarifa",
+      "target": "Taarifa ya habari ni saa mbili usiku.",
+      "base": "The news is at eight in the evening.",
+      "altBase": ["The news bulletin is at 8 pm.", "The news is at 8 pm."]
+    },
+    {
+      "id": "s-tukio",
+      "target": "Tukio lilitokea mjini jana.",
+      "base": "The event happened in town yesterday.",
+      "altBase": ["The incident happened in town yesterday."]
+    },
+    {
+      "id": "s-tatizo",
+      "target": "Tatizo kubwa ni maji.",
+      "base": "The big problem is water.",
+      "altBase": ["The biggest problem is water."]
+    },
+    { "id": "s-suluhisho", "target": "Tunataka suluhisho.", "base": "We want a solution." },
+    {
+      "id": "s-maoni",
+      "target": "Maoni yako ni nini?",
+      "base": "What is your opinion?",
+      "altBase": ["What’s your opinion?", "What do you think?"]
+    },
+    {
+      "id": "s-nadhani",
+      "target": "Nadhani mvua itanyesha leo.",
+      "base": "I think it will rain today.",
+      "altBase": ["I think it’ll rain today."]
+    },
+    { "id": "s-kwa-maoni-yangu", "target": "Kwa maoni yangu, shule ni muhimu sana.", "base": "In my opinion, school is very important." },
+    { "id": "s-nakubali", "target": "Nakubali, ni kweli.", "base": "I agree, it’s true.", "altBase": ["I agree, it is true."] },
+    {
+      "id": "s-sikubaliani",
+      "target": "Samahani, sikubaliani na wewe.",
+      "base": "Sorry, I don’t agree with you.",
+      "altBase": ["Excuse me, I disagree with you.", "Sorry, I do not agree with you."]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u37s1",
+      "title": "Headlines",
+      "icon": "book",
+      "lessons": [
+        { "id": "u37s1l1", "newWords": ["gazeti", "redio", "taarifa-ya-habari"], "sentences": ["s-gazeti", "s-redio", "s-taarifa"] },
+        { "id": "u37s1l2", "newWords": ["tukio", "tatizo", "suluhisho"], "sentences": ["s-tukio", "s-tatizo", "s-suluhisho"] }
+      ]
+    },
+    {
+      "id": "u37s2",
+      "title": "Giving opinions",
+      "icon": "info",
+      "tip": "opinions",
+      "lessons": [
+        {
+          "id": "u37s2l1",
+          "newWords": ["maoni", "nadhani", "kwa-maoni-yangu", "muhimu"],
+          "sentences": ["s-maoni", "s-nadhani", "s-kwa-maoni-yangu"],
+          "dialogues": [
+            {
+              "speaker": "baraka",
+              "target": "Maoni yako ni nini?",
+              "base": "What is your opinion?",
+              "options": ["Nadhani ni vizuri.", "Saa mbili usiku.", "Gazeti la jana."],
+              "answer": "Nadhani ni vizuri."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u37s3",
+      "title": "Agree and disagree",
+      "icon": "check",
+      "lessons": [
+        {
+          "id": "u37s3l1",
+          "newWords": ["nakubali", "sikubaliani"],
+          "sentences": ["s-nakubali", "s-sikubaliani", "s-kwa-maoni-yangu"],
+          "dialogues": [
+            {
+              "speaker": "juma",
+              "target": "Nadhani timu yetu itashinda.",
+              "base": "I think our team will win.",
+              "options": ["Nakubali!", "Gazeti!", "Redio!"],
+              "answer": "Nakubali!"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Swahili radio and newspapers reach millions every day. This unit gives you the words to follow the news and join the argument after it.",
+    "phrases": [
+      { "target": "Maoni yako ni nini?", "base": "What is your opinion?" },
+      { "target": "Kwa maoni yangu…", "base": "In my opinion…" },
+      { "target": "Nakubali.", "base": "I agree." },
+      { "target": "Samahani, sikubaliani na wewe.", "base": "Sorry, I don’t agree with you." }
+    ],
+    "tips": [
+      {
+        "id": "opinions",
+        "title": "Saying what you think",
+        "body": [
+          "**Nadhani** (I think) and **kwa maoni yangu** (in my opinion) start an opinion. **Nafikiri** also means “I think”.",
+          "**Nakubali** is “I agree”. To disagree, Swahili uses the each-other form **-kubaliana** (agree with each other) in the negative: **sikubaliani na wewe**, “I don’t agree with you”. Start with **Samahani** to keep it polite."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Radio first",
+        "body": [
+          "In much of East Africa the radio is still the first place people hear the news. Swahili newspapers such as **Mwananchi** in Tanzania and **Taifa Leo** in Kenya are passed from hand to hand and argued over at the kiosk."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-morning-paper",
+      "title": "The morning paper",
+      "unlockAfter": "u37s3l1",
+      "cast": ["baraka", "juma"],
+      "summary": "Baraka and Juma read the paper over chai and don’t quite agree.",
+      "steps": [
+        { "line": { "speaker": "baraka", "target": "Juma, umesoma gazeti la leo?", "base": "Juma, have you read today’s paper?" } },
+        { "line": { "speaker": "juma", "target": "Bado. Kuna habari gani?", "base": "Not yet. What news is there?" } },
+        {
+          "line": {
+            "speaker": "baraka",
+            "target": "Serikali itajenga barabara mpya kijijini kwetu.",
+            "base": "The government will build a new road in our village."
+          }
+        },
+        { "question": "What will the government build?", "options": ["A new road", "A new school", "A hospital"], "answer": 0 },
+        {
+          "line": {
+            "speaker": "juma",
+            "target": "Kwa maoni yangu, maji ni muhimu kuliko barabara.",
+            "base": "In my opinion, water is more important than a road."
+          }
+        },
+        {
+          "line": {
+            "speaker": "baraka",
+            "target": "Samahani, sikubaliani. Barabara italeta biashara.",
+            "base": "Sorry, I don’t agree. A road will bring business."
+          },
+          "gloss": { "italeta": "it will bring" }
+        },
+        { "question": "What does Juma think is more important?", "options": ["Water", "The road", "Business"], "answer": 0 },
+        {
+          "line": { "speaker": "juma", "target": "Basi, tuandike maoni yetu kwa gazeti!", "base": "Then let’s write our opinions to the paper!" },
+          "gloss": { "tuandike": "let’s write" }
+        },
+        {
+          "question": "How does Baraka say “I don’t agree”?",
+          "options": ["sikubaliani", "nakubali", "nadhani"],
+          "answer": 0,
+          "optionsLang": "target"
+        }
+      ]
+    }
+  ]
+}
