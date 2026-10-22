@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u8",
+  "notes": {
+    "gunnuma": "My head hurts : my + partie du corps + hurts.",
+    "ndi-mulwadde": "I am sick.",
+    "ssennyiga": "The flu : I have the flu.",
+    "omusujja": "A fever : I have a fever.",
+    "omusawo": "The doctor.",
+    "wona-mangu": "Get well soon!"
+  },
+  "tips": { "u8s1": "i-am-sick", "u8s2": "my-head-hurts" },
+  "guidebook": {
+    "intro": "Nomme les parties du corps et dis où tu as mal. L’anglais met « my » là où le français met « le » ou « la ».",
+    "tips": [
+      {
+        "id": "my-head-hurts",
+        "title": "« My head hurts »",
+        "body": [
+          "Le français dit **j’ai mal à la tête**. L’anglais dit **My head hurts** (ma tête fait mal), avec **my** : **My stomach hurts. My leg hurts.**",
+          "On peut aussi dire **I have a headache** (mal de tête) ou **I have a stomach ache** (mal au ventre)."
+        ]
+      },
+      {
+        "id": "i-am-sick",
+        "title": "« I am sick »",
+        "body": [
+          "**I am sick** ou **I am ill** : je suis malade. Pour une maladie, **have** : **I have the flu** (j’ai la grippe), **I have a fever** (j’ai de la fièvre). Pour souhaiter un bon rétablissement : **Get well soon!**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "La clinique",
+        "body": [
+          "En Ouganda, on va souvent d’abord à une petite **clinic** ou à la **pharmacy** du quartier avant l’hôpital. Le médecin, c’est **the doctor**."
+        ]
+      }
+    ]
+  }
+}

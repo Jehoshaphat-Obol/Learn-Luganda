@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Kifaransa huzungumzwa katika mabara yote matano, kuanzia Paris na Montreal hadi Kinshasa, Dakar na Abidjan, na wazungumzaji wake wengi wako Afrika.",
+  "notes": "Drafted by Claude (AI) for the French courses (#145); needs a native-speaker review. The Swahili needs a native-speaker review; word and unit notes fall back to the English notes (lang/en/about/fr).",
+  "landing": {
+    "hello": "Bonjour !",
+    "thanks": "Merci",
+    "place": "nchi zinazozungumza Kifaransa",
+    "word": "apprendre — kujifunza",
+    "words": [
+      ["Bonjour", "Habari"],
+      ["Ça va ?", "Mambo?"],
+      ["Merci", "Asante"],
+      ["D’accord", "Sawa"],
+      ["Ami", "Rafiki"],
+      ["Eau", "Maji"],
+      ["Nourriture", "Chakula"],
+      ["Monsieur", "Bwana"],
+      ["Madame", "Bibi"],
+      ["Au revoir", "Kwaheri"]
+    ],
+    "why": {
+      "title": "Lugha ya **nusu ya Afrika, na zaidi.**",
+      "text": "Kifaransa ni lugha rasmi katika nchi zaidi ya ishirini za Afrika, kuanzia Senegal hadi Kongo, na kwa majirani wa Afrika Mashariki, Rwanda na Burundi. Jifunze usafiri, usome, ufanye kazi kuvuka mipaka na ufurahie muziki, kuanzia rumba hadi coupé-décalé.",
+      "cards": [
+        { "title": "Kwa wasafiri", "text": "Tafuta njia kutoka Kigali hadi Kinshasa, Dakar au Paris." },
+        { "title": "Kwa kazi", "text": "Fanya biashara, soma na shirikiana na watu kote Afrika ya Kifaransa." },
+        { "title": "Kwa wadadisi", "text": "Gundua jinsia ya nomino, herufi zisizotamkwa na namba za kushangaza." }
+      ]
+    },
+    "sample": {
+      "prompt": "Lipi maana yake “asante”?",
+      "options": ["Bonjour", "Merci", "Non"],
+      "answer": "Merci",
+      "explain": "_Merci_ maana yake asante."
+    },
+    "start": { "word": "C’est parti !", "caption": "c’est parti — tuanze" },
+    "farewell": "Merci beaucoup — asante sana.",
+    "audience": "Wazungumzaji wa Kiswahili wanaoanza Kifaransa: wanafunzi, wasafiri na wafanyabiashara wanaokwenda Kongo, Rwanda, Burundi na kwingineko.",
+    "first": "Salamu, kujitambulisha na namba, kisha familia, chakula, sokoni, saa, mahali, nyumbani na afya, sehemu kwa sehemu."
+  },
+  "cast": { "emma": "Mgeni kutoka nje anayezungumza Kifaransa" }
+}

@@ -1,0 +1,58 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u8",
+  "notes": {
+    "gunnuma": "J’ai mal à la… for a feminine body part: J’ai mal à la tête.",
+    "lunnuma": "J’ai mal au… for a masculine body part: J’ai mal au ventre.",
+    "amaaso": "Irregular: un œil, des yeux.",
+    "ndi-mulwadde": "A woman says it the same way: Je suis malade.",
+    "omusawo": "Le médecin, also le docteur. For a woman: la médecin.",
+    "wona-mangu": "Bon rétablissement ! Literally “good recovery”.",
+    "nimepona": "A woman writes guérie; it sounds the same."
+  },
+  "tips": { "u8s1": "oeil-yeux", "u8s2": "avoir-mal", "u8s3": "je-suis-malade" },
+  "guidebook": {
+    "intro": "Name the parts of the body and say what hurts. French uses “the” where English says “my”, and “I have pain at the head”.",
+    "tips": [
+      {
+        "id": "avoir-mal",
+        "title": "J’ai mal à la tête",
+        "body": [
+          "To say what hurts, use **avoir mal à**: **J’ai mal à la tête** (my head hurts), literally “I have pain at the head”. **À** joins with **le** and **les**: **J’ai mal au ventre, j’ai mal aux yeux.**",
+          "French uses **la, le, les** for body parts, not **mon, ma**: **J’ai mal au bras**, not “à mon bras”."
+        ],
+        "table": [
+          ["French", "English"],
+          ["J’ai mal à la tête.", "My head hurts."],
+          ["J’ai mal au ventre.", "My stomach hurts."],
+          ["J’ai mal aux dents.", "My teeth hurt."]
+        ],
+        "targetColumns": [0]
+      },
+      {
+        "id": "je-suis-malade",
+        "title": "Being ill",
+        "body": [
+          "**Je suis malade** (I’m ill) uses **être**, like English. Illnesses use **avoir**: **J’ai la grippe** (I have the flu), **J’ai de la fièvre** (I have a fever).",
+          "To wish someone well: **Bon rétablissement !** (get well soon) and **Repose-toi** (rest)."
+        ]
+      },
+      {
+        "id": "oeil-yeux",
+        "title": "Œil, yeux",
+        "body": [
+          "Some nouns have irregular plurals: **un œil, des yeux** (eye, eyes). Many words ending in **-al** change to **-aux**: **un hôpital, des hôpitaux**.",
+          "**Le bras** (arm) and **le nez** (nose) already end in **s** or **z**, so they don’t change in the plural."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Pharmacies",
+        "body": [
+          "In French-speaking cities, a green cross marks **la pharmacie**. Pharmacists give advice and can often help with small problems before you see **le médecin**."
+        ]
+      }
+    ]
+  }
+}

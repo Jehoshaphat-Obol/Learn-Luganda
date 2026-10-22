@@ -1,0 +1,59 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u2",
+  "notes": {
+    "abaana": "Children : pluriel irrégulier de child.",
+    "abasajja": "Men : pluriel irrégulier de man.",
+    "abakazi": "Women : pluriel irrégulier de woman ; le o se prononce « i ».",
+    "abantu": "People : le pluriel courant de person.",
+    "ebitabo": "Books : -s régulier.",
+    "wange": "My, pour tout : my mother, my father, my books.",
+    "amazzi": "Water, sans article : I want water.",
+    "oyagala-ki": "What do you want? : la question commence par what et utilise do."
+  },
+  "tips": { "u2s1": "my-your", "u2s2": "plurals", "u2s3": "a-the" },
+  "guidebook": {
+    "intro": "Les noms anglais n’ont pas de genre : « the » et « my » ne changent jamais. Le pluriel se fait presque toujours avec -s.",
+    "tips": [
+      {
+        "id": "my-your",
+        "title": "« My » ne change pas",
+        "body": [
+          "En français, on choisit entre mon, ma et mes. En anglais, **my** sert partout : **my father**, **my mother**, **my books**. Même chose pour **your** (ton, ta, tes, votre, vos).",
+          "Pour « son » et « sa », l’anglais regarde le possesseur : **his** pour un homme, **her** pour une femme. **His mother** = la mère de lui, **her mother** = la mère d’elle."
+        ]
+      },
+      {
+        "id": "plurals",
+        "title": "Le pluriel en -s",
+        "body": [
+          "La plupart des noms prennent **-s** : **book, books**; **cup, cups**. Contrairement au français, ce **-s** se prononce. Quelques noms sont irréguliers et s’apprennent par cœur :"
+        ],
+        "table": [
+          ["Singulier", "Pluriel", "Français"],
+          ["child", "children", "enfant(s)"],
+          ["man", "men", "homme(s)"],
+          ["woman", "women", "femme(s)"],
+          ["person", "people", "personne(s), gens"]
+        ],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "a-the",
+        "title": "« A », « the » et pas d’article partitif",
+        "body": [
+          "**The** remplace le, la et les : **the man, the woman, the books**. **A** (ou **an** devant une voyelle) remplace un et une : **a book, an apple**.",
+          "L’anglais n’a pas de du ni de de la : **I want water** (je veux de l’eau), **I drink tea** (je bois du thé). On ne met pas **the** devant ces mots quand on parle en général."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Auntie et uncle",
+        "body": [
+          "En Ouganda, on appelle volontiers **auntie** ou **uncle** un adulte de la famille ou un ami des parents, comme tonton et tata en Afrique francophone."
+        ]
+      }
+    ]
+  }
+}
