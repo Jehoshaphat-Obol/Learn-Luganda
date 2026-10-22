@@ -1,0 +1,280 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u16",
+  "title": "Travel",
+  "description": "Buy a ticket, catch a train or a plane, and say what you will do.",
+  "color": "sky",
+  "character": "juma",
+  "words": [
+    { "id": "safari", "target": "safari", "base": "journey", "altBase": ["trip", "the journey", "travel"] },
+    { "id": "tiketi", "target": "tiketi", "base": "ticket", "altBase": ["the ticket", "a ticket"] },
+    {
+      "id": "kituo",
+      "target": "kituo",
+      "base": "station",
+      "altBase": ["stop", "the station", "bus stop", "stage"],
+      "notes": "Kituo cha basi: bus stop. Kituoni: at the station."
+    },
+    { "id": "treni", "target": "treni", "base": "train", "altBase": ["the train"], "notes": "Also gari la moshi, “smoke vehicle”." },
+    {
+      "id": "uwanja-wa-ndege",
+      "target": "uwanja wa ndege",
+      "base": "airport",
+      "altBase": ["the airport"],
+      "notes": "Literally “field of birds”: ndege is both bird and plane."
+    },
+    { "id": "twende", "target": "Twende", "base": "Let’s go", "altBase": ["let us go", "come on"] },
+    { "id": "kusafiri", "target": "kusafiri", "base": "to travel", "altBase": ["travel", "travelling"] },
+    { "id": "nitasafiri", "target": "Nitasafiri", "base": "I will travel", "altBase": ["i’ll travel", "i am going to travel"] },
+    {
+      "id": "tutaondoka",
+      "target": "Tutaondoka",
+      "base": "We will leave",
+      "altBase": ["we’ll leave", "we will go", "we are going to leave"]
+    },
+    { "id": "itafika", "target": "itafika", "base": "it will arrive", "altBase": ["will arrive", "it’ll arrive", "will get here"] },
+    { "id": "lini", "target": "lini", "base": "when", "altBase": ["what time"], "notes": "At the end of the question: Utasafiri lini?" },
+    { "id": "kesho-kutwa", "target": "kesho kutwa", "base": "the day after tomorrow", "altBase": ["day after tomorrow"] },
+    { "id": "mapema", "target": "mapema", "base": "early", "altBase": ["in good time"] },
+    {
+      "id": "gari",
+      "target": "gari",
+      "base": "car",
+      "altBase": ["vehicle", "the car"],
+      "notes": "Plural: magari. It takes ji- agreement: gari langu jipya."
+    },
+    {
+      "id": "mzigo",
+      "target": "mzigo",
+      "base": "luggage",
+      "altBase": ["load", "bag", "baggage", "the luggage"],
+      "notes": "Plural: mizigo."
+    },
+    { "id": "nimechelewa", "target": "Nimechelewa", "base": "I’m late", "altBase": ["i am late", "i’m running late"] },
+    {
+      "id": "safari-njema",
+      "target": "Safari njema!",
+      "base": "Have a good trip!",
+      "altBase": ["safe journey", "have a good journey", "bon voyage", "have a safe trip"]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s-tiketi-bei",
+      "target": "Tiketi ni bei gani?",
+      "base": "How much is the ticket?",
+      "altBase": ["How much does the ticket cost?"]
+    },
+    {
+      "id": "s-kituo-cha-basi",
+      "target": "Kituo cha basi kiko wapi?",
+      "base": "Where is the bus stop?",
+      "altBase": ["Where’s the bus stop?", "Where is the bus station?"]
+    },
+    {
+      "id": "s-safari-ndefu",
+      "target": "Safari ya Dar es Salaam ni ndefu.",
+      "base": "The journey to Dar es Salaam is long.",
+      "altBase": ["The trip to Dar es Salaam is long."]
+    },
+    { "id": "s-twende-kituoni", "target": "Twende kituoni.", "base": "Let’s go to the station.", "altBase": ["Let us go to the station."] },
+    {
+      "id": "s-uwanja-wa-ndege",
+      "target": "Uwanja wa ndege uko mbali.",
+      "base": "The airport is far.",
+      "altBase": ["The airport is far away."]
+    },
+    {
+      "id": "s-nitasafiri-kesho",
+      "target": "Nitasafiri kesho.",
+      "base": "I will travel tomorrow.",
+      "altBase": ["I’ll travel tomorrow.", "I am travelling tomorrow."]
+    },
+    { "id": "s-tutaondoka-mapema", "target": "Tutaondoka mapema.", "base": "We will leave early.", "altBase": ["We’ll leave early."] },
+    {
+      "id": "s-treni-itafika",
+      "target": "Treni itafika saa ngapi?",
+      "base": "What time will the train arrive?",
+      "altBase": ["When will the train arrive?", "What time does the train arrive?"]
+    },
+    {
+      "id": "s-utasafiri-lini",
+      "target": "Utasafiri lini?",
+      "base": "When will you travel?",
+      "altBase": ["When are you travelling?", "When will you go?"]
+    },
+    {
+      "id": "s-kesho-kutwa-mombasa",
+      "target": "Kesho kutwa nitaenda Mombasa.",
+      "base": "The day after tomorrow I will go to Mombasa.",
+      "altBase": ["I’ll go to Mombasa the day after tomorrow.", "The day after tomorrow I’m going to Mombasa."]
+    },
+    { "id": "s-gari-jipya", "target": "Gari langu ni jipya.", "base": "My car is new." },
+    { "id": "s-mzigo-mzito", "target": "Mzigo wako ni mzito!", "base": "Your luggage is heavy!", "altBase": ["Your bag is heavy!"] },
+    {
+      "id": "s-nimechelewa",
+      "target": "Nimechelewa! Samahani.",
+      "base": "I’m late! Sorry.",
+      "altBase": ["I am late! Sorry.", "Sorry, I’m late!"]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u16s1",
+      "title": "Tickets and stations",
+      "icon": "arrow",
+      "lessons": [
+        {
+          "id": "u16s1l1",
+          "newWords": ["safari", "tiketi", "kituo", "treni"],
+          "sentences": ["s-tiketi-bei", "s-kituo-cha-basi", "s-safari-ndefu"]
+        },
+        {
+          "id": "u16s1l2",
+          "newWords": ["uwanja-wa-ndege", "twende"],
+          "sentences": ["s-twende-kituoni", "s-uwanja-wa-ndege", "s-tiketi-bei"],
+          "dialogues": [
+            {
+              "speaker": "juma",
+              "target": "Tiketi yako iko wapi?",
+              "base": "Where is your ticket?",
+              "options": ["Iko hapa.", "Nitasafiri kesho.", "Ninapenda sayansi."],
+              "answer": "Iko hapa."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u16s2",
+      "title": "Will travel",
+      "icon": "clock",
+      "tip": "ta-future",
+      "lessons": [
+        {
+          "id": "u16s2l1",
+          "newWords": ["kusafiri", "nitasafiri", "tutaondoka", "itafika"],
+          "sentences": ["s-nitasafiri-kesho", "s-treni-itafika"]
+        },
+        {
+          "id": "u16s2l2",
+          "newWords": ["lini", "kesho-kutwa", "mapema"],
+          "sentences": ["s-utasafiri-lini", "s-kesho-kutwa-mombasa", "s-tutaondoka-mapema"]
+        }
+      ]
+    },
+    {
+      "id": "u16s3",
+      "title": "On the road",
+      "icon": "bolt",
+      "tip": "ji-ma",
+      "lessons": [
+        {
+          "id": "u16s3l1",
+          "newWords": ["gari", "mzigo", "nimechelewa", "safari-njema"],
+          "sentences": ["s-gari-jipya", "s-mzigo-mzito", "s-nimechelewa"],
+          "dialogues": [
+            {
+              "speaker": "amani",
+              "target": "Safari njema!",
+              "base": "Have a good trip!",
+              "options": ["Asante! Tutaonana.", "Nimechelewa!", "Mzigo ni mzito."],
+              "answer": "Asante! Tutaonana."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Buses, trains and planes connect the towns of East Africa. Here you’ll plan a journey and learn to talk about the future.",
+    "phrases": [
+      { "target": "Tiketi ni bei gani?", "base": "How much is the ticket?" },
+      { "target": "Nitasafiri kesho.", "base": "I will travel tomorrow." },
+      { "target": "Utasafiri lini?", "base": "When will you travel?" },
+      { "target": "Tutaondoka mapema.", "base": "We will leave early." },
+      { "target": "Nimechelewa! Samahani.", "base": "I’m late! Sorry." },
+      { "target": "Safari njema!", "base": "Have a good trip!" }
+    ],
+    "tips": [
+      {
+        "id": "ta-future",
+        "title": "The future: -ta-",
+        "body": [
+          "Put **-ta-** where **-na-** was and you are talking about the future: **ninasafiri** (I’m travelling) becomes **nitasafiri** (I will travel). Notice **nina-** shortens to **ni-**.",
+          "It works for everyone: **utasafiri** (you will), **tutaondoka** (we will leave), **treni itafika** (the train will arrive). Ask when with **lini** at the end: **Utasafiri lini?**"
+        ],
+        "table": [["Now", "Future"], ["ninasafiri", "nitasafiri"], ["tunaondoka", "tutaondoka"], ["inafika", "itafika"]],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "ji-ma",
+        "title": "Gari and its friends",
+        "body": [
+          "Some nouns have no prefix in the singular and **ma-** in the plural: **gari, magari**; **jibu, majibu**; **swali, maswali**. Their describing words take **ji-** or **l-**: **gari langu jipya** (my new car), **swali la tatu** (the third question).",
+          "In the plural they all use **ma-** forms: **magari mapya**, **maswali yangu**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Pole pole, but on time",
+        "body": [
+          "Long-distance buses leave when they are full, and a **matatu** may wait a while. Trains and planes do not: for those, **mapema** (early) is the rule."
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-train-to-mombasa",
+      "title": "The train to Mombasa",
+      "unlockAfter": "u16s3l1",
+      "cast": ["emma", "juma"],
+      "summary": "Juma drives Emma to Nairobi’s station for the train to Mombasa.",
+      "steps": [
+        {
+          "line": { "speaker": "emma", "target": "Juma, treni itaondoka saa tatu.", "base": "Juma, the train will leave at nine." },
+          "gloss": { "saa tatu": "the third hour: 9 o’clock" }
+        },
+        { "question": "When does the train leave?", "options": ["9 a.m.", "3 a.m.", "3 p.m."], "answer": 0 },
+        {
+          "line": { "speaker": "juma", "target": "Usijali, tutafika mapema. Twende!", "base": "Don’t worry, we’ll get there early. Let’s go!" },
+          "gloss": { "Usijali": "don’t worry" }
+        },
+        { "line": { "speaker": "emma", "target": "Mzigo wangu ni mzito sana!", "base": "My luggage is very heavy!" } },
+        {
+          "line": { "speaker": "juma", "target": "Nipe, nitakusaidia.", "base": "Give it to me, I’ll help you." },
+          "gloss": { "nitakusaidia": "I will help you" }
+        },
+        {
+          "question": "What does Juma do?",
+          "options": ["He helps with the luggage", "He buys a ticket", "He drives the train"],
+          "answer": 0
+        },
+        {
+          "line": {
+            "speaker": "juma",
+            "target": "Tumefika kituoni. Safari njema, Emma!",
+            "base": "Here we are at the station. Have a good trip, Emma!"
+          },
+          "gloss": { "Tumefika": "we have arrived" }
+        },
+        {
+          "line": {
+            "speaker": "emma",
+            "target": "Asante sana, Juma! Nitarudi wiki ijayo.",
+            "base": "Thank you very much, Juma! I’ll be back next week."
+          },
+          "gloss": { "Nitarudi": "I will come back", "wiki ijayo": "next week" }
+        },
+        {
+          "question": "How does Juma say “have a good trip”?",
+          "options": ["Safari njema", "Twende", "Pole pole"],
+          "answer": 0,
+          "optionsLang": "target"
+        }
+      ]
+    }
+  ]
+}
