@@ -1,0 +1,380 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u15",
+  "title": "Essomero",
+  "description": "Ekibiina, amasomo, ebibuuzo n’omulimu gw’awaka.",
+  "color": "vermillion",
+  "character": "amara",
+  "words": [
+    {
+      "id": "ekibiina",
+      "target": "class",
+      "base": "ekibiina",
+      "altTarget": ["classroom", "the class", "group"]
+    },
+    {
+      "id": "ekkalaamu",
+      "target": "pen",
+      "base": "ekkalaamu",
+      "altTarget": ["pencil", "a pen", "the pen"]
+    },
+    {
+      "id": "olupapula",
+      "target": "paper",
+      "base": "olupapula",
+      "altTarget": ["a sheet of paper", "page", "the paper"]
+    },
+    {
+      "id": "ekigambo",
+      "target": "word",
+      "base": "ekigambo",
+      "altTarget": ["a word", "the word"]
+    },
+    {
+      "id": "ebigambo",
+      "target": "words",
+      "base": "ebigambo",
+      "altTarget": ["the words"]
+    },
+    {
+      "id": "mpandiika",
+      "target": "I write",
+      "base": "Mpandiika",
+      "altTarget": ["i am writing"]
+    },
+    {
+      "id": "musome",
+      "target": "Read",
+      "base": "Musome",
+      "altTarget": ["read", "study", "everyone read"]
+    },
+    {
+      "id": "muwandiike",
+      "target": "Write",
+      "base": "Muwandiike",
+      "altTarget": ["write", "everyone write"]
+    },
+    {
+      "id": "muwulirize",
+      "target": "Listen",
+      "base": "Muwulirize",
+      "altTarget": ["listen", "everyone listen"]
+    },
+    {
+      "id": "olungereza",
+      "target": "English",
+      "base": "Olungereza",
+      "altTarget": ["the english language"]
+    },
+    {
+      "id": "okubala",
+      "target": "maths",
+      "base": "okubala",
+      "altTarget": ["math", "mathematics", "counting", "to count"]
+    },
+    {
+      "id": "ssaayansi",
+      "target": "science",
+      "base": "ssaayansi",
+      "altTarget": ["the science"]
+    },
+    {
+      "id": "ebyafaayo",
+      "target": "history",
+      "base": "ebyafaayo",
+      "altTarget": ["the history"]
+    },
+    {
+      "id": "nnyagala-nnyo",
+      "target": "I really like",
+      "base": "Nnyagala nnyo",
+      "altTarget": ["i love", "i like very much", "i like a lot"]
+    },
+    {
+      "id": "ekibuuzo",
+      "target": "question",
+      "base": "ekibuuzo",
+      "altTarget": ["a question", "the question"]
+    },
+    {
+      "id": "ntegeera",
+      "target": "I understand",
+      "base": "Ntegeera",
+      "altTarget": ["i get it", "understood"]
+    },
+    {
+      "id": "otegeera",
+      "target": "Do you understand?",
+      "base": "Otegeera?",
+      "altTarget": ["you understand", "do you get it"]
+    },
+    {
+      "id": "ddamu",
+      "target": "Repeat",
+      "base": "Ddamu",
+      "altTarget": ["again", "say it again", "answer"]
+    },
+    {
+      "id": "omulimu-gwawaka",
+      "target": "homework",
+      "base": "omulimu gw’awaka",
+      "altTarget": ["home work", "the homework"],
+      "altBase": ["omulimu gwawaka"]
+    },
+    {
+      "id": "ekigezo",
+      "target": "exam",
+      "base": "ekigezo",
+      "altTarget": ["test", "an exam", "the exam"]
+    }
+  ],
+  "sentences": [
+    {
+      "id": "s15-ekibiina-kyaffe",
+      "target": "Our class is big.",
+      "base": "Ekibiina kyaffe kinene.",
+      "altTarget": ["Our classroom is big."]
+    },
+    {
+      "id": "s15-mpa-ekkalaamu",
+      "target": "Give me a pen, madam.",
+      "base": "Mpa ekkalaamu, nnyabo.",
+      "altTarget": ["Give me the pen, madam.", "Pass me a pen, madam."]
+    },
+    {
+      "id": "s15-mpandiika-ebigambo",
+      "target": "I write the words on paper.",
+      "base": "Mpandiika ebigambo ku lupapula.",
+      "altTarget": [
+        "I am writing the words on paper.",
+        "I write words on the paper."
+      ]
+    },
+    {
+      "id": "s15-musome-ekitabo",
+      "target": "Read the book, everyone.",
+      "base": "Musome ekitabo.",
+      "altTarget": ["Read the book.", "Everyone read the book."]
+    },
+    {
+      "id": "s15-muwandiike-erinnya",
+      "target": "Write your names, everyone.",
+      "base": "Muwandiike erinnya lyammwe.",
+      "altTarget": ["Write your name.", "Everyone write your name."]
+    },
+    {
+      "id": "s15-muwulirize",
+      "target": "Listen to the teacher, everyone.",
+      "base": "Muwulirize omusomesa.",
+      "altTarget": [
+        "Listen to the teacher.",
+        "Everyone listen to the teacher."
+      ]
+    },
+    {
+      "id": "s15-nsoma-olungereza",
+      "target": "I study English and Luganda.",
+      "base": "Nsoma Olungereza n’Oluganda.",
+      "altTarget": [
+        "I learn English and Luganda.",
+        "I read English and Luganda."
+      ],
+      "altBase": ["Nsoma Olungereza nOluganda."]
+    },
+    {
+      "id": "s15-nnyagala-nnyo-okubala",
+      "target": "I really like maths.",
+      "base": "Nnyagala nnyo okubala.",
+      "altTarget": ["I love maths.", "I love math.", "I really like math."]
+    },
+    {
+      "id": "s15-ssaayansi-nzibu",
+      "target": "Science is hard.",
+      "base": "Ssaayansi nzibu.",
+      "altTarget": ["Science is difficult."]
+    },
+    {
+      "id": "s15-nnina-ekibuuzo",
+      "target": "I have a question.",
+      "base": "Nnina ekibuuzo."
+    },
+    {
+      "id": "s15-otegeera",
+      "target": "Do you understand? Yes, I understand.",
+      "base": "Otegeera? Yee, ntegeera.",
+      "altTarget": ["Do you understand? Yes, I do."]
+    },
+    {
+      "id": "s15-ddamu-mpola",
+      "target": "Repeat slowly, sir.",
+      "base": "Ddamu mpola, ssebo.",
+      "altTarget": ["Say it again slowly, sir.", "Repeat it slowly, sir."]
+    },
+    {
+      "id": "s15-omulimu-gwawaka",
+      "target": "I am doing homework.",
+      "base": "Nkola omulimu gw’awaka.",
+      "altTarget": [
+        "I do my homework.",
+        "I am doing my homework.",
+        "I do homework."
+      ],
+      "altBase": ["Nkola omulimu gwawaka."]
+    },
+    {
+      "id": "s15-ekigezo-enkya",
+      "target": "The exam is tomorrow.",
+      "base": "Ekigezo kiri enkya.",
+      "altTarget": ["The test is tomorrow."]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u15s1",
+      "title": "Mu kibiina",
+      "icon": "book",
+      "tip": "everyone",
+      "lessons": [
+        {
+          "id": "u15s1l1",
+          "newWords": ["ekibiina", "ekkalaamu", "olupapula"],
+          "sentences": ["s15-ekibiina-kyaffe", "s15-mpa-ekkalaamu"]
+        },
+        {
+          "id": "u15s1l2",
+          "newWords": ["ekigambo", "ebigambo", "mpandiika"],
+          "sentences": ["s15-mpandiika-ebigambo"]
+        },
+        {
+          "id": "u15s1l3",
+          "newWords": ["musome", "muwandiike", "muwulirize"],
+          "sentences": [
+            "s15-musome-ekitabo",
+            "s15-muwandiike-erinnya",
+            "s15-muwulirize"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u15s2",
+      "title": "Amasomo",
+      "icon": "star",
+      "tip": "capitals",
+      "lessons": [
+        {
+          "id": "u15s2l1",
+          "newWords": ["olungereza", "okubala"],
+          "sentences": ["s15-nsoma-olungereza"]
+        },
+        {
+          "id": "u15s2l2",
+          "newWords": ["ssaayansi", "ebyafaayo"],
+          "sentences": ["s15-ssaayansi-nzibu", "s15-nsoma-olungereza"]
+        },
+        {
+          "id": "u15s2l3",
+          "newWords": ["nnyagala-nnyo"],
+          "sentences": ["s15-nnyagala-nnyo-okubala", "s15-ssaayansi-nzibu"]
+        }
+      ]
+    },
+    {
+      "id": "u15s3",
+      "title": "Ebibuuzo n’omulimu gw’awaka",
+      "icon": "target",
+      "tip": "questions",
+      "lessons": [
+        {
+          "id": "u15s3l1",
+          "newWords": ["ekibuuzo", "ntegeera", "otegeera"],
+          "sentences": ["s15-nnina-ekibuuzo", "s15-otegeera"]
+        },
+        {
+          "id": "u15s3l2",
+          "newWords": ["ddamu"],
+          "sentences": ["s15-ddamu-mpola", "s15-otegeera"]
+        },
+        {
+          "id": "u15s3l3",
+          "newWords": ["omulimu-gwawaka", "ekigezo"],
+          "sentences": ["s15-omulimu-gwawaka", "s15-ekigezo-enkya"],
+          "dialogues": [
+            {
+              "speaker": "mukasa",
+              "target": "Write these words, everyone. Do you understand?",
+              "base": "Muwandiike ebigambo bino. Otegeera?",
+              "options": [
+                "No. Repeat slowly, sir.",
+                "The cows eat grass.",
+                "I bathe in the morning."
+              ],
+              "answer": "No. Repeat slowly, sir."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Ebigambo by’omu kibiina: ebintu, amasomo, ebiragiro by’omusomesa n’okubuuza ebibuuzo.",
+    "phrases": [
+      {
+        "target": "Read the book, everyone.",
+        "base": "Musome ekitabo."
+      },
+      {
+        "target": "Listen to the teacher, everyone.",
+        "base": "Muwulirize omusomesa."
+      },
+      {
+        "target": "I have a question.",
+        "base": "Nnina ekibuuzo."
+      },
+      {
+        "target": "Do you understand?",
+        "base": "Otegeera?"
+      },
+      {
+        "target": "Repeat slowly, sir.",
+        "base": "Ddamu mpola, ssebo."
+      },
+      {
+        "target": "I really like maths.",
+        "base": "Nnyagala nnyo okubala."
+      }
+    ],
+    "tips": [
+      {
+        "id": "everyone",
+        "title": "Ekiragiro kye kimu",
+        "body": [
+          "Mu Luganda omusomesa agamba omuntu omu **soma**, n’abangi **musome**. Mu Lungereza kye kimu: **Read!** Okulaga nti oyogera n’abantu bonna, yongerako **everyone**: **Read the book, everyone.**"
+        ]
+      },
+      {
+        "id": "capitals",
+        "title": "Ennukuta ennene",
+        "body": [
+          "Amannya g’ennimi gatandika n’ennukuta ennene: **English**, **Luganda**, **Swahili**. Amasomo amalala tegatandika nazo: **maths**, **science**, **history**."
+        ]
+      },
+      {
+        "id": "questions",
+        "title": "Okubuuza mu kibiina",
+        "body": [
+          "**Do you understand?** — **Yes, I understand.** oba **No, I don’t understand.**",
+          "Bw’oba toyidde, gamba **Please repeat slowly.** oba **I have a question.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Olungereza ku ssomero",
+        "body": [
+          "Mu Uganda Olungereza lwe lusomesebwamu okuva mu kibiina eky’okuna (P4). Ekibuuzo ekisinga okuyamba: **How do you say … in English?**"
+        ]
+      }
+    ]
+  }
+}

@@ -5,6 +5,11 @@
       "title": "Foundations",
       "level": "Beginner",
       "description": "Greetings, people, food, numbers, time, places, the home and health."
+    },
+    "s2": {
+      "title": "Everyday life",
+      "level": "Elementary",
+      "description": "Describe things, get dressed, talk about your day, the weather, animals, work, school and travel."
     }
   },
   "units": {
@@ -39,6 +44,38 @@
     "u8": {
       "title": "Health and the body",
       "description": "Name parts of the body, say what hurts and see a doctor."
+    },
+    "u9": {
+      "title": "Colours and describing",
+      "description": "Name colours and describe things and people."
+    },
+    "u10": {
+      "title": "Clothes",
+      "description": "Name your clothes, get dressed and buy something new."
+    },
+    "u11": {
+      "title": "My day",
+      "description": "Talk about your routine from morning to night."
+    },
+    "u12": {
+      "title": "Weather and seasons",
+      "description": "Talk about sun and rain, the seasons and feeling hot or cold."
+    },
+    "u13": {
+      "title": "Animals",
+      "description": "Farm animals, wild animals, pets and Uganda’s crested crane."
+    },
+    "u14": {
+      "title": "Work and jobs",
+      "description": "Say what you do, ask about jobs and talk about pay."
+    },
+    "u15": {
+      "title": "School",
+      "description": "The classroom, school subjects, questions and homework."
+    },
+    "u16": {
+      "title": "Travel and transport",
+      "description": "Catch a taxi or bus and plan a journey across Uganda."
     }
   },
   "skills": {
@@ -65,6 +102,30 @@
     "u7s3": "Around the house",
     "u8s1": "The body",
     "u8s2": "Feeling unwell",
-    "u8s3": "At the doctor"
+    "u8s3": "At the doctor",
+    "u9s1": "Colours",
+    "u9s2": "Big and small",
+    "u9s3": "Describing people",
+    "u10s1": "What I wear",
+    "u10s2": "Getting dressed",
+    "u10s3": "Buying clothes",
+    "u11s1": "Waking up",
+    "u11s2": "At work and home",
+    "u11s3": "Evening",
+    "u12s1": "Sun and rain",
+    "u12s2": "Seasons",
+    "u12s3": "Hot and cold",
+    "u13s1": "Farm animals",
+    "u13s2": "Wild animals",
+    "u13s3": "Pets and birds",
+    "u14s1": "Jobs",
+    "u14s2": "At work",
+    "u14s3": "Earning a living",
+    "u15s1": "The classroom",
+    "u15s2": "Subjects",
+    "u15s3": "Questions and homework",
+    "u16s1": "Taxi and bus",
+    "u16s2": "Boda boda and car",
+    "u16s3": "A journey"
   }
 }

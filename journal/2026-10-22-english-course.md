@@ -16,3 +16,14 @@
 ## Next
 - Sections 2–5 of lg-en, following the en-lg outline.
 - Native review of ui/lg and lg-en.
+
+# 2026-10-22 · lg-en Sections 2–5 (#162)
+
+## Method
+- `scripts/flip-course.js` now does the mechanical part of turning an en-lg unit round (swap target/base and the alternatives, drop glosses and Luganda-grammar notes, translate dialogue and story options through the en-lg words and sentences, titles from `en-lg/labels/lg.json`). A per-unit overlay holds what has to be written: dropped duplicates, Luganda notes, the guidebook, story titles, summaries and questions. The script fails if any of it is missing.
+- Overlays live in scratch space; the unit JSON is the source after that. Story questions without hand-written options keep English options (`optionsLang: "target"`), which doubles as reading practice.
+- Section labels: `lg-en/labels/en.json` takes the en-lg English titles, `sw.json` the en-lg Swahili labels (same ids).
+
+## Section 2 (units 9–16)
+- 8 units, 72 lessons, 150 words, 4 stories. Dropped words whose English repeats another word: kirungi, balungi, mukadde, munene, bawanvu (u9), yange, zange, eno, nnene, ntono, yambala (u10), nnyo-nnyo (u12). `mulungi` teaches "beautiful"; the class commands teach "Read", "Write", "Listen".
+- Guidebooks in Luganda about English: adjectives before the noun and unchanged, is/are, old/young/new; "my" never changes, this/these, plural trousers; present simple for routines and he/she -s; "It is raining"; plurals with -s and sheep; there is/are; "I am a farmer" with a/an and -er jobs; one command for everyone, capital letters for languages; does/goes, from…to, by taxi.
