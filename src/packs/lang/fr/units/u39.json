@@ -1,0 +1,106 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u39",
+  "words": {
+    "okufukamira": { "text": "s’agenouiller", "alts": ["se mettre à genoux"] },
+    "abakadde": { "text": "aînés", "alts": ["anciens", "personnes âgées", "les aînés", "les anciens"] },
+    "ekitiibwa": { "text": "respect", "alts": ["honneur", "dignité", "le respect"] },
+    "mwasuze": { "text": "Bonjour (respectueux)", "alts": ["bien dormi", "bonjour", "avez-vous bien dormi"] },
+    "mwebale": { "text": "Merci (respectueux)", "alts": ["merci", "merci à vous", "merci à tous"] },
+    "mwattu": { "text": "s’il vous plaît", "alts": ["je vous prie", "s’il te plaît"] },
+    "webale-okujja": { "text": "Merci d’être venu", "alts": ["merci d’être venue", "bienvenue"] },
+    "omugenyi": { "text": "invité", "alts": ["invitée", "visiteur", "hôte", "l’invité"] },
+    "olyeko": { "text": "Mange un peu", "alts": ["sers-toi", "prends quelque chose à manger", "mangez un peu"] },
+    "adabu": { "text": "bonnes manières", "alts": ["politesse", "savoir-vivre", "manières"] },
+    "hodi": { "text": "Je peux entrer ?", "alts": ["il y a quelqu’un ?", "puis-je entrer"] },
+    "mkono-wa-kulia": { "text": "main droite", "alts": ["la main droite"] },
+    "ukarimu": { "text": "hospitalité", "alts": ["générosité", "gentillesse", "l’hospitalité"] },
+    "karibu-tena": { "text": "Reviens quand tu veux", "alts": ["reviens nous voir", "à bientôt", "revenez quand vous voulez"] }
+  },
+  "sentences": {
+    "s39-bafukamira": { "text": "Les enfants s’agenouillent pour saluer les aînés.", "alts": ["Les enfants se mettent à genoux pour saluer les anciens."] },
+    "s39-mwasuze-ssebo": { "text": "Bonjour, monsieur.", "alts": ["Vous avez bien dormi, monsieur ?"] },
+    "s39-mwebale-nnyabo": { "text": "Merci beaucoup, madame.", "alts": ["Merci infiniment, madame."] },
+    "s39-ekitiibwa": { "text": "Nous devons respecter les aînés.", "alts": ["Il faut respecter les anciens.", "On doit respecter les aînés."] },
+    "s39-mwattu": { "text": "Donnez-moi de l’eau, s’il vous plaît.", "alts": ["De l’eau, s’il vous plaît.", "Donne-moi de l’eau, s’il te plaît."] },
+    "s39-webale-okujja": {
+      "text": "Merci d’être venu ! Nous sommes contents de te voir.",
+      "alts": ["Merci d’être venue ! Nous sommes contents de te voir.", "Merci d’être venu ! On est contents de te voir."]
+    },
+    "s39-omugenyi": { "text": "L’invité est le plus important.", "alts": ["L’invité passe en premier."] },
+    "s39-olyeko": { "text": "Assieds-toi et mange un peu.", "alts": ["Assieds-toi et sers-toi.", "Asseyez-vous et mangez un peu."] },
+    "s39-yingira-otuule": { "text": "Entre et assieds-toi.", "alts": ["Entrez et asseyez-vous."] },
+    "s-heshima": { "text": "Le respect est très important." },
+    "s-adabu": { "text": "Cet enfant a de bonnes manières.", "alts": ["Cet enfant est bien élevé.", "Cet enfant est poli."] },
+    "s-hodi": { "text": "Je peux entrer ? Entre !", "alts": ["Il y a quelqu’un ? Bienvenue !", "Je peux entrer ? Bienvenue !"] },
+    "s-mkono-kulia": { "text": "Mange avec la main droite.", "alts": ["Mange avec ta main droite.", "Mangez avec la main droite."] },
+    "s-ukarimu": { "text": "Merci pour ton hospitalité.", "alts": ["Merci pour votre hospitalité."] },
+    "s-karibu-tena": { "text": "Merci, reviens quand tu veux !", "alts": ["Merci, reviens nous voir !", "Merci, revenez quand vous voulez !"] }
+  },
+  "phrases": [
+    "Bonjour, monsieur.",
+    "Merci beaucoup, madame.",
+    "Donnez-moi de l’eau, s’il vous plaît.",
+    "Merci d’être venu !",
+    "Entre et assieds-toi.",
+    "Assieds-toi et mange un peu."
+  ],
+  "dialogues": {
+    "u39s2l3": [
+      {
+        "line": "Mon enfant, tu as bien dormi ?",
+        "options": ["J’ai bien dormi, monsieur. Et vous ?", "Je suis d’accord avec toi.", "Vite !"]
+      }
+    ],
+    "u39s3l3": [
+      {
+        "line": "Merci d’être venu ! Assieds-toi et mange un peu.",
+        "options": ["Merci beaucoup, monsieur.", "Au voleur ! Attrapez-le !", "Je ne suis pas d’accord."]
+      }
+    ]
+  },
+  "stories": {
+    "sw-mango-deal": {
+      "title": "Un bon prix pour des mangues",
+      "summary": "Amani marchande des mangues au marché de Kariakoo, avec l’aide de Juma.",
+      "lines": [
+        "C’est combien, une mangue ?",
+        "Cent shillings.",
+        "C’est très cher ! Baissez le prix, s’il vous plaît.",
+        "D’accord, quatre-vingts shillings.",
+        "Bon. Donnez-moi cinq mangues.",
+        "Merci beaucoup ! Les mangues sont sucrées."
+      ],
+      "questions": [
+        { "question": "Que pense Amani du prix ?", "options": ["C’est bon marché", "C’est cher", "C’est correct"] },
+        { "question": "Combien de mangues Amani achète-t-elle ?", "options": ["Trois", "Cinq", "Dix"] },
+        {
+          "question": "Quels mots Amani a-t-elle utilisés pour demander un prix plus bas ?",
+          "options": ["Donnez-moi", "Baissez le prix", "Bienvenue"]
+        }
+      ]
+    },
+    "sw-visiting-bibi": {
+      "title": "Visite chez Bibi",
+      "summary": "Emma rend visite à Bibi et n’oublie pas les bonnes manières.",
+      "lines": [
+        "Je peux entrer ?",
+        "Entre, mon enfant ! Entre.",
+        "Mes respects, Mamie.",
+        "Merci. Tu veux du thé ?",
+        "Merci. Je pourrais d’abord avoir de l’eau, s’il te plaît ?",
+        "Pas de problème. Maintenant, mange avec la main droite !",
+        "Merci pour ton hospitalité, Mamie.",
+        "Reviens quand tu veux !"
+      ],
+      "questions": [
+        { "question": "Comment Emma salue-t-elle Bibi ?", "options": ["Shikamoo", "Mambo", "Poa"] },
+        { "question": "Avec quelle main Emma doit-elle manger ?", "options": ["La main droite", "La main gauche", "N’importe laquelle"] },
+        {
+          "question": "Comment Emma demande-t-elle poliment de l’eau ?",
+          "options": ["Je pourrais avoir de l’eau, s’il te plaît ?", "Je veux de l’eau.", "Donne-moi de l’eau."]
+        }
+      ]
+    }
+  }
+}
