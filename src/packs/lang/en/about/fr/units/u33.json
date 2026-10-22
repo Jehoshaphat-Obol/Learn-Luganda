@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u33",
+  "notes": {
+    "okusinga": "Plus … que: more … than.",
+    "asinga": "Le plus or la plus, depending on the person.",
+    "kisinga": "Plus: est plus grand que.",
+    "ekisinga": "Le meilleur, or le plus.",
+    "okusinga-byonna": "Plus que tout.",
+    "kye-kimu": "Pareil, pareille: it agrees.",
+    "enjawulo": "La différence.",
+    "afaanana": "Ressemble à.",
+    "nga": "Comme.",
+    "bora": "Meilleur, never plus bon.",
+    "kidogo-zaidi": "Moins."
+  },
+  "tips": { "u33s1": "plus-que", "u33s2": "meilleur", "u33s3": "pareil" },
+  "guidebook": {
+    "intro": "Compare people and things: bigger, the best, the same, different. French comparisons wrap the adjective in “plus … que”.",
+    "tips": [
+      {
+        "id": "plus-que",
+        "title": "Plus … que, moins … que, aussi … que",
+        "body": [
+          "**Plus** + adjective + **que** means “more … than”: **Un éléphant est plus grand qu’une vache.** **Moins … que** is “less … than”, **aussi … que** is “as … as”.",
+          "The adjective still agrees: **Kampala est plus grande que Masaka** (ville is feminine)."
+        ],
+        "table": [["French", "English"], ["plus grand que", "bigger than"], ["moins cher que", "cheaper than"], ["aussi grand que", "as big as"]],
+        "targetColumns": [0]
+      },
+      {
+        "id": "meilleur",
+        "title": "Meilleur, le meilleur",
+        "body": [
+          "**Bon** has its own comparative: **meilleur** (better) and **le meilleur** (the best), never “plus bon”. **C’est le meilleur.** For **bien** (well), it’s **mieux**: **La santé vaut mieux que la richesse.**",
+          "The superlative puts **le, la, les** before **plus**: **le plus grand, la plus haute**."
+        ]
+      },
+      {
+        "id": "pareil",
+        "title": "Pareil, différent, ressembler à",
+        "body": [
+          "**Pareil** (the same) and **différent** agree like other adjectives: **Ces deux-là sont pareils. Le swahili et l’anglais sont différents.**",
+          "To look like: **ressembler à**: **Elle ressemble à sa mère.** “Like” in a comparison is **comme**: **Elle chante comme un oiseau.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Compliments by comparison",
+        "body": [
+          "Praising someone by comparison is common and friendly: **Tu cuisines mieux que ma mère !** is one of the best compliments a cook can get."
+        ]
+      }
+    ]
+  }
+}

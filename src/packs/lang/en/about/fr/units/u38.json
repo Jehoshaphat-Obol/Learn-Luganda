@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u38",
+  "notes": {
+    "nnyamba": "Au secours !",
+    "yanguwa": "Vite !",
+    "omubbi": "Un voleur: Au voleur !",
+    "poliisi": "La police.",
+    "ebbiddwa": "On m’a volé… : French prefers on.",
+    "akabenje": "Un accident.",
+    "alumiziddwa": "Il est blessé; elle est blessée.",
+    "omusaayi": "Le sang: il saigne.",
+    "ambulensi": "Une ambulance.",
+    "tewali-kizibu": "Pas de problème, or de rien.",
+    "naomba": "Puis-je avoir… ? formal; casually, Je peux avoir… ?"
+  },
+  "tips": { "u38s1": "au-secours", "u38s3": "on-m-a-vole" },
+  "guidebook": {
+    "intro": "Call for help, deal with accidents and report a theft. French emergency calls start with “Au …!”",
+    "tips": [
+      {
+        "id": "au-secours",
+        "title": "Au secours ! Au feu ! Au voleur !",
+        "body": [
+          "Emergency shouts use **au**: **Au secours !** (help!), **Au feu !** (fire!), **Au voleur !** (thief!). Then: **Appelle la police ! Appelez une ambulance !**",
+          "**Il faut** (it’s necessary) and **il nous faut** (we need): **Il nous faut une ambulance !**"
+        ]
+      },
+      {
+        "id": "on-m-a-vole",
+        "title": "On m’a volé mon téléphone",
+        "body": [
+          "French often uses **on** where English uses the passive: **On m’a volé mon téléphone** (my phone was stolen; literally “someone stole my phone from me”).",
+          "Getting hurt: **se blesser**: **Il s’est blessé à la jambe.** Bleeding: **Il saigne.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Emergency numbers",
+        "body": [
+          "Emergency numbers differ by country: in France, **15** for the ambulance (SAMU), **17** for the police and **18** for the fire brigade, or **112** from any mobile in Europe. Ask locally when you travel."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u34",
+  "notes": {
+    "bwe": "Quand; with the future when it’s about the future.",
+    "bw-etonnya": "Quand il pleut: a habit, so the present.",
+    "singa": "Si; becomes s’ before il.",
+    "nnandiguze": "J’achèterais: conditional.",
+    "nnandigenze": "J’irais: conditional of aller.",
+    "nnandyagadde": "Je voudrais.",
+    "ka-tulabe": "On verra.",
+    "katonda-bwanaayagala": "Si Dieu le veut.",
+    "ukifika": "Quand tu arriveras: future after quand.",
+    "laiti": "Si seulement…",
+    "tajiri": "Riche: the same for men and women."
+  },
+  "tips": { "u34s1": "quand-futur", "u34s2": "si-clauses", "u34s4": "conditionnel" },
+  "guidebook": {
+    "intro": "Say what happens when, what would happen if, and what you’d like. French uses the future after “quand” and the imperfect after “si”.",
+    "tips": [
+      {
+        "id": "quand-futur",
+        "title": "Quand j’arriverai",
+        "body": [
+          "When “when” is about the future, French uses the future tense where English doesn’t: **Quand j’arriverai, je t’appellerai** (when I arrive, I’ll call you).",
+          "For habits, the present: **Quand il pleut, je n’y vais pas.**"
+        ]
+      },
+      {
+        "id": "si-clauses",
+        "title": "Si: real and imagined",
+        "body": [
+          "Something likely: **si** + present, then future: **S’il pleut, nous resterons à la maison.** Something imagined: **si** + imperfect, then conditional: **Si j’avais de l’argent, j’achèterais une voiture.**",
+          "Never put the future or conditional right after **si**. Before **il**, **si** becomes **s’**: **s’il pleut**, but **si elle vient**."
+        ],
+        "table": [
+          ["If…", "then…", "English"],
+          ["Si j’ai de l’argent,", "je voyagerai.", "If I have money, I’ll travel."],
+          ["Si j’étais riche,", "j’achèterais une maison.", "If I were rich, I’d buy a house."]
+        ],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "conditionnel",
+        "title": "J’achèterais, j’irais",
+        "body": [
+          "The conditional uses the future stem with the imperfect endings **-ais, -ais, -ait, -ions, -iez, -aient**: **j’achèterais, j’irais, je voudrais, j’aimerais**.",
+          "**Si seulement…!** (if only…!) and **On verra** (we’ll see) are everyday phrases."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Si Dieu le veut",
+        "body": ["As with plans, many speakers soften promises about the future with **si Dieu le veut**, **Inch’Allah**, or simply **on verra**."]
+      }
+    ]
+  }
+}

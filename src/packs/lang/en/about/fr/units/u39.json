@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u39",
+  "notes": {
+    "okufukamira": "S’agenouiller: to kneel.",
+    "abakadde": "Les aînés, or les anciens.",
+    "ekitiibwa": "Le respect.",
+    "mwasuze": "Bonjour, with vous: Bonjour, madame.",
+    "mwebale": "Merci, with vous: Merci beaucoup, madame.",
+    "mwattu": "S’il vous plaît.",
+    "webale-okujja": "Merci d’être venu; a woman: venue.",
+    "omugenyi": "Un invité, une invitée.",
+    "adabu": "Les bonnes manières.",
+    "hodi": "Puis-je entrer ? or Je peux entrer ?",
+    "ukarimu": "L’hospitalité.",
+    "karibu-tena": "Reviens quand tu veux !"
+  },
+  "tips": { "u39s1": "vous-respect", "u39s3": "puis-je" },
+  "guidebook": {
+    "intro": "Greet elders with respect and be a good guest. In French, respect starts with vous.",
+    "tips": [
+      {
+        "id": "vous-respect",
+        "title": "Vous for respect",
+        "body": [
+          "With elders, strangers and anyone senior, use **vous**, add **monsieur** or **madame**, and say **s’il vous plaît**: **Bonjour, madame. Donnez-moi de l’eau, s’il vous plaît.**",
+          "Wait to be invited to say **tu**. In many African families, children use **vous** with their parents’ friends, and some even with their parents."
+        ]
+      },
+      {
+        "id": "puis-je",
+        "title": "Puis-je ? Je peux ?",
+        "body": [
+          "To ask permission politely: **Puis-je entrer ?** (may I come in?) Less formally: **Je peux entrer ?**",
+          "Thanking a host: **Merci pour votre hospitalité.** Inviting back: **Reviens quand tu veux !** or **Revenez quand vous voulez !**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Respecting elders",
+        "body": [
+          "Across francophone Africa, elders are greeted first, served first and never contradicted openly. Calling an older man **papa** or **tonton**, and an older woman **maman** or **tata**, is a sign of respect."
+        ]
+      }
+    ]
+  }
+}

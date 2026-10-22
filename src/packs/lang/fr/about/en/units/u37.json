@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u37",
+  "notes": {
+    "amawulire": "The news : toujours singulier, the news is…",
+    "owulidde": "Did you hear…?",
+    "nti": "That ; souvent omis.",
+    "agamba": "He says that…",
+    "olukiiko": "A meeting.",
+    "ssentebe": "The chairman, ou the chairperson.",
+    "ndowooza": "I think…",
+    "nzikiriza": "I agree.",
+    "sikkiriza": "I don’t agree.",
+    "kwa-maoni-yangu": "In my opinion."
+  },
+  "tips": { "u37s1": "says-that", "u37s3": "i-agree" },
+  "guidebook": {
+    "intro": "Suis l’actualité et donne ton avis. Attention au faux ami : « I agree », jamais « I am agree ».",
+    "tips": [
+      {
+        "id": "says-that",
+        "title": "« He says that »",
+        "body": [
+          "**He says that the rain is coming.** En anglais, **that** peut disparaître : **I think it’s good.** **People say that…** ou **They say…** (on dit que).",
+          "**Did you hear the news?** (tu as entendu la nouvelle ?)"
+        ]
+      },
+      {
+        "id": "i-agree",
+        "title": "« I agree »",
+        "body": [
+          "Être d’accord se dit **agree**, un verbe : **I agree with you. I don’t agree.** Jamais « I am agree ».",
+          "**In my opinion…** (à mon avis), **What do you think?** (qu’en penses-tu ?)"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Les réunions de quartier",
+        "body": [
+          "En Ouganda, le **LC1 chairman** (président du conseil local) réunit les habitants pour parler des routes, de l’eau et de la sécurité."
+        ]
+      }
+    ]
+  }
+}
