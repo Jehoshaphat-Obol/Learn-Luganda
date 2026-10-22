@@ -1,0 +1,234 @@
+{
+  "$schema": "../../../../../docs/packs/schema/course-unit.schema.json",
+  "id": "u9",
+  "title": "Kueleza vitu",
+  "description": "Eleza vitu na watu: kizuri au kibaya, kipya au kichafu, kikubwa au kidogo.",
+  "color": "sky",
+  "character": "neema",
+  "words": [
+    { "id": "mbaya", "target": "bad", "base": "mbaya", "altTarget": ["ugly", "not good"] },
+    { "id": "mpya", "target": "new", "base": "mpya", "altTarget": ["brand new"] },
+    { "id": "safi", "target": "clean", "base": "safi", "altTarget": ["great", "nice", "cool"] },
+    { "id": "chafu", "target": "dirty", "base": "chafu", "altTarget": ["unclean"] },
+    { "id": "kikombe", "target": "cup", "base": "kikombe", "altTarget": ["the cup", "a cup", "mug"] },
+    { "id": "vikombe", "target": "cups", "base": "vikombe", "altTarget": ["the cups", "mugs"], "notes": "Mmoja: cup. Wengi: cups." },
+    { "id": "vizuri", "target": "well", "base": "vizuri", "altTarget": ["good", "nice", "nicely", "fine"] },
+    { "id": "gani", "target": "which", "base": "gani", "altTarget": ["what", "what kind of", "what sort of"] },
+    { "id": "kabisa", "target": "completely", "base": "kabisa", "altTarget": ["totally", "absolutely", "really", "at all"] },
+    { "id": "wazuri", "target": "good (people)", "base": "wazuri", "altTarget": ["good", "nice", "beautiful", "lovely"] },
+    { "id": "nzito", "target": "heavy", "base": "nzito" },
+    { "id": "nyepesi", "target": "light", "base": "nyepesi", "altTarget": ["not heavy", "easy"] },
+    { "id": "mrembo", "target": "beautiful", "base": "mrembo", "altTarget": ["pretty", "lovely", "a beauty"] },
+    { "id": "hodari", "target": "clever", "base": "hodari", "altTarget": ["skilful", "capable", "brave", "hard-working", "good at it"] },
+    { "id": "mwembamba", "target": "thin", "base": "mwembamba", "altTarget": ["slim", "slender"] },
+    { "id": "mpole", "target": "gentle", "base": "mpole", "altTarget": ["calm", "kind", "polite", "quiet"] },
+    { "id": "mchangamfu", "target": "cheerful", "base": "mchangamfu", "altTarget": ["lively", "friendly", "happy"] }
+  ],
+  "sentences": [
+    { "id": "s-nyumba-mpya", "target": "My house is new.", "base": "Nyumba yangu ni mpya.", "altTarget": ["My home is new."] },
+    { "id": "s-meza-chafu", "target": "The table is dirty.", "base": "Meza ni chafu." },
+    { "id": "s-si-mbaya", "target": "Not bad.", "base": "Si mbaya.", "altTarget": ["It’s not bad.", "It is not bad."] },
+    { "id": "s-kikombe-safi", "target": "The cup is clean.", "base": "Kikombe ni safi." },
+    {
+      "id": "s-chakula-kizuri",
+      "target": "The food is very good!",
+      "base": "Chakula ni kizuri sana!",
+      "altTarget": ["The food is very nice!", "The food is great!"]
+    },
+    {
+      "id": "s-vikombe-vizuri",
+      "target": "Nice cups.",
+      "base": "Vikombe vizuri.",
+      "altTarget": ["Good cups.", "Beautiful cups.", "Lovely cups."]
+    },
+    { "id": "s-kikombe-gani", "target": "Which cup?", "base": "Kikombe gani?", "altTarget": ["What cup?"] },
+    {
+      "id": "s-mpya-kabisa",
+      "target": "It’s brand new!",
+      "base": "Ni mpya kabisa!",
+      "altTarget": ["It is brand new!", "It’s completely new!", "It is completely new!"]
+    },
+    {
+      "id": "s-safi-kabisa",
+      "target": "Absolutely great!",
+      "base": "Safi kabisa!",
+      "altTarget": ["Great!", "Really great!", "Totally clean!", "Excellent!"]
+    },
+    {
+      "id": "s-watoto-wazuri",
+      "target": "Good children.",
+      "base": "Watoto wazuri.",
+      "altTarget": ["Lovely children.", "Beautiful children.", "Nice children."]
+    },
+    { "id": "s-kikombe-kikubwa", "target": "A big cup.", "base": "Kikombe kikubwa.", "altTarget": ["The big cup.", "A large cup."] },
+    { "id": "s-vikombe-vidogo", "target": "Small cups.", "base": "Vikombe vidogo.", "altTarget": ["Little cups.", "The small cups."] },
+    { "id": "s-meza-nzito", "target": "The table is heavy.", "base": "Meza ni nzito." },
+    { "id": "s-ni-nyepesi", "target": "It’s very light.", "base": "Ni nyepesi sana.", "altTarget": ["It is very light."] },
+    {
+      "id": "s-dada-mrembo",
+      "target": "Your sister is beautiful.",
+      "base": "Dada yako ni mrembo.",
+      "altTarget": ["Your sister is pretty."]
+    },
+    {
+      "id": "s-mwalimu-hodari",
+      "target": "The teacher is very clever.",
+      "base": "Mwalimu ni hodari sana.",
+      "altTarget": ["The teacher is very good.", "The teacher is very capable.", "The teacher is very skilful."]
+    },
+    { "id": "s-kaka-mwembamba", "target": "My brother is thin.", "base": "Kaka yangu ni mwembamba.", "altTarget": ["My brother is slim."] },
+    {
+      "id": "s-bibi-mpole",
+      "target": "Grandma is very gentle.",
+      "base": "Bibi ni mpole sana.",
+      "altTarget": ["Grandmother is very gentle.", "Grandma is very kind."]
+    },
+    {
+      "id": "s-neema-mchangamfu",
+      "target": "Neema is cheerful.",
+      "base": "Neema ni mchangamfu.",
+      "altTarget": ["Neema is lively.", "Neema is friendly."]
+    }
+  ],
+  "skills": [
+    {
+      "id": "u9s1",
+      "title": "Kizuri, kibaya na kipya",
+      "icon": "star",
+      "tip": "adj-before",
+      "lessons": [
+        { "id": "u9s1l1", "newWords": ["mbaya", "mpya", "safi", "chafu"], "sentences": ["s-nyumba-mpya", "s-meza-chafu", "s-si-mbaya"] },
+        {
+          "id": "u9s1l2",
+          "newWords": ["kikombe", "vikombe", "vizuri"],
+          "sentences": ["s-kikombe-safi", "s-chakula-kizuri", "s-vikombe-vizuri"]
+        },
+        {
+          "id": "u9s1l3",
+          "newWords": ["gani", "kabisa", "wazuri"],
+          "sentences": ["s-kikombe-gani", "s-mpya-kabisa", "s-safi-kabisa", "s-watoto-wazuri"],
+          "dialogues": [
+            {
+              "speaker": "baraka",
+              "target": "Is the food good?",
+              "base": "Chakula ni kizuri?",
+              "options": ["Yes, it’s very good!", "A big cup.", "No, I don’t have a sister."],
+              "answer": "Yes, it’s very good!"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u9s2",
+      "title": "Kikubwa na kidogo",
+      "icon": "target",
+      "tip": "plural-s",
+      "lessons": [
+        { "id": "u9s2l1", "newWords": ["nzito"], "sentences": ["s-kikombe-kikubwa", "s-vikombe-vidogo", "s-meza-nzito"] },
+        {
+          "id": "u9s2l2",
+          "newWords": ["nyepesi"],
+          "sentences": ["s-ni-nyepesi", "s-kikombe-kikubwa", "s-kikombe-gani"],
+          "dialogues": [
+            {
+              "speaker": "emma",
+              "target": "Is the table heavy?",
+              "base": "Meza ni nzito?",
+              "options": ["No, it’s light.", "It’s brand new!", "Small cups."],
+              "answer": "No, it’s light."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "u9s3",
+      "title": "Kueleza watu",
+      "icon": "profile",
+      "lessons": [
+        {
+          "id": "u9s3l1",
+          "newWords": ["mrembo", "hodari", "mwembamba"],
+          "sentences": ["s-dada-mrembo", "s-mwalimu-hodari", "s-kaka-mwembamba"]
+        },
+        {
+          "id": "u9s3l2",
+          "newWords": ["mpole", "mchangamfu"],
+          "sentences": ["s-bibi-mpole", "s-neema-mchangamfu", "s-watoto-wazuri"],
+          "dialogues": [
+            {
+              "speaker": "neema",
+              "target": "What kind of person is your teacher?",
+              "base": "Mwalimu wako ni mtu gani?",
+              "options": ["She is gentle and clever.", "It is red.", "A small cup."],
+              "answer": "She is gentle and clever."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "guidebook": {
+    "intro": "Kiingereza huweka kivumishi kabla ya nomino, na kivumishi hakibadiliki kamwe.",
+    "phrases": [
+      { "target": "The food is very good!", "base": "Chakula ni kizuri sana!" },
+      { "target": "Not bad.", "base": "Si mbaya." },
+      { "target": "It’s brand new!", "base": "Ni mpya kabisa!" },
+      { "target": "Which cup?", "base": "Kikombe gani?" },
+      { "target": "The table is heavy.", "base": "Meza ni nzito." },
+      { "target": "Grandma is very gentle.", "base": "Bibi ni mpole sana." }
+    ],
+    "tips": [
+      {
+        "id": "adj-before",
+        "title": "Kivumishi kwanza",
+        "body": [
+          "Kiswahili husema **kikombe kipya**; Kiingereza hupindua: **a new cup**. Kivumishi huja **kabla** ya nomino.",
+          "Baada ya **is/are**, kivumishi hukaa mwisho kama Kiswahili: **The cup is new.** (Kikombe ni kipya.)"
+        ]
+      },
+      {
+        "id": "plural-s",
+        "title": "Wengi: ongeza -s",
+        "body": [
+          "Nomino nyingi huongeza **-s**: **cup → cups**, **book → books**. Kivumishi hakibadiliki: **a big cup → big cups**.",
+          "Hakuna ngeli: **new** ni ile ile kwa kikombe, nyumba au mtoto."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "“Very” na “really”",
+        "body": [
+          "Kwa kusifu, Kiingereza huongeza **very** au **really**: **very good**, **really nice**. **Safi kabisa!** inaweza kuwa **Absolutely great!** au **Brilliant!**"
+        ]
+      }
+    ]
+  },
+  "stories": [
+    {
+      "id": "sw-new-cups",
+      "title": "Vikombe vipya",
+      "unlockAfter": "u9s2l2",
+      "cast": ["baraka", "neema"],
+      "summary": "Baraka ana vikombe vipya, lakini kimoja ni kichafu.",
+      "steps": [
+        { "line": { "speaker": "baraka", "target": "Neema, look! New cups.", "base": "Neema, angalia! Vikombe vipya." } },
+        { "line": { "speaker": "neema", "target": "Very nice! They’re big.", "base": "Vizuri sana! Ni vikubwa." } },
+        { "question": "Baraka ana nini?", "options": ["Vikombe vipya", "Viti vipya", "Nyumba mpya"], "answer": 0 },
+        { "line": { "speaker": "baraka", "target": "Yes, and they’re very light.", "base": "Ndiyo, na ni vyepesi sana." } },
+        { "line": { "speaker": "neema", "target": "And this cup? It’s dirty!", "base": "Na kikombe hiki? Ni kichafu!" } },
+        { "question": "Kikombe kimoja kina shida gani?", "options": ["Ni kichafu", "Ni kizito", "Ni kidogo"], "answer": 0 },
+        { "line": { "speaker": "baraka", "target": "Sorry! It’s my old cup.", "base": "Samahani! Ni kikombe changu cha zamani." } },
+        { "line": { "speaker": "neema", "target": "No worries. The tea is really good!", "base": "Hakuna matata. Chai ni nzuri kabisa!" } },
+        {
+          "question": "Neema anasemaje “vizuri sana”?",
+          "options": ["Very nice", "Very light", "Not bad"],
+          "answer": 0,
+          "optionsLang": "target"
+        }
+      ]
+    }
+  ]
+}
