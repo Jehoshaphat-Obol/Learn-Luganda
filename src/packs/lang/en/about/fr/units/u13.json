@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u13",
+  "notes": {
+    "ebisolo": "Animaux: animal, animaux.",
+    "ente": "Une vache; un taureau is a bull.",
+    "embuzi": "Une chèvre.",
+    "endiga": "Un mouton; the plural is regular: des moutons.",
+    "ntya": "Avoir peur de: j’ai peur du chien, j’ai peur de la nuit.",
+    "waliwo": "Il y a: never changes, for one thing or many.",
+    "ebinyonyi": "Oiseaux: plural in -x.",
+    "kkapa": "Un chat; a female cat is une chatte.",
+    "engaali": "La grue couronnée, Uganda’s national bird.",
+    "hakuna-matata": "Pas de souci, or pas de problème."
+  },
+  "tips": { "u13s1": "avoir-peur", "u13s3": "aux" },
+  "guidebook": {
+    "intro": "Name farm animals, wild animals and pets. French plurals have some surprises, and fear takes “de”.",
+    "tips": [
+      {
+        "id": "aux",
+        "title": "Animal, animaux",
+        "body": [
+          "Nouns ending in **-al** usually change to **-aux** in the plural: **un animal, des animaux; un cheval, des chevaux**. Nouns ending in **-eau** add **-x**: **un oiseau, des oiseaux**.",
+          "As with **-s**, you don’t hear the **-x**: **oiseau** and **oiseaux** sound the same."
+        ]
+      },
+      {
+        "id": "avoir-peur",
+        "title": "J’ai peur du serpent",
+        "body": [
+          "Fear uses **avoir peur de** (to have fear of): **J’ai peur des lions.** **De + le** becomes **du** and **de + les** becomes **des**: **J’ai peur du serpent.**",
+          "**Il y a** (there is/are) and its negative **il n’y a pas de**: **Il y a des girafes. Il n’y a pas d’eau.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Animals in stories",
+        "body": [
+          "In West African tales, the clever hero is often **Leuk le lièvre** (the hare), and the foolish one **Bouki l’hyène**. Sounds familiar? In Buganda, the hare **Wakayima** plays the same trickster role."
+        ]
+      }
+    ]
+  }
+}

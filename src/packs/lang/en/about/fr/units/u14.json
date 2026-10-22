@@ -1,0 +1,58 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u14",
+  "notes": {
+    "omulimi": "Un agriculteur, une agricultrice; also un cultivateur.",
+    "omusuubuzi": "Un commerçant, une commerçante.",
+    "omuvuzi": "Un chauffeur: no article after est.",
+    "omupoliisi": "Un policier, une policière.",
+    "abakozi": "Les employés, or les travailleurs.",
+    "omusaala": "Le salaire; toucher un salaire, to earn a salary.",
+    "muuguzi": "Un infirmier, une infirmière.",
+    "bosi": "Le patron, la patronne; at an office, le chef.",
+    "okola-mulimu-ki": "Friendly; to be polite: Vous faites quel travail ?"
+  },
+  "tips": { "u14s1": "no-article", "u14s2": "feminine-jobs", "u14s3": "nous-ils" },
+  "guidebook": {
+    "intro": "Talk about jobs and work. French drops “a” when you say what someone does, and many job names have a feminine form.",
+    "tips": [
+      {
+        "id": "no-article",
+        "title": "Je suis agriculteur",
+        "body": [
+          "When you say someone’s job with **être**, there’s no **un** or **une**: **Je suis agriculteur. Mon père est chauffeur.** With **c’est**, keep it: **C’est un bon chauffeur.**",
+          "To ask: **Tu fais quel travail ?** or **Qu’est-ce que tu fais dans la vie ?**"
+        ]
+      },
+      {
+        "id": "feminine-jobs",
+        "title": "Infirmier, infirmière",
+        "body": [
+          "Many jobs have a feminine form: **commerçant → commerçante, infirmier → infirmière, cuisinier → cuisinière, travailleur → travailleuse**. Some stay the same: **une chauffeur** or **une chauffeuse**, **une médecin**, **une policière**."
+        ],
+        "table": [
+          ["Man", "Woman", "English"],
+          ["agriculteur", "agricultrice", "farmer"],
+          ["commerçant", "commerçante", "trader"],
+          ["infirmier", "infirmière", "nurse"]
+        ],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "nous-ils",
+        "title": "Nous, ils, on",
+        "body": [
+          "You’ve seen **nous travaillons** (we work) and **ils travaillent** (they work). In everyday speech, French speakers usually say **on** for “we”, with the **il** form: **On travaille ensemble.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Le petit commerce",
+        "body": [
+          "Much of francophone Africa’s economy runs on small trade: street sellers, market women and roadside **maquis** (small open-air restaurants). A seller is **un commerçant** or, informally, **un vendeur**."
+        ]
+      }
+    ]
+  }
+}

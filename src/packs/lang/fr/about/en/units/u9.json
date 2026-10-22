@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u9",
+  "notes": {
+    "kinene": "Big, pour une chose.",
+    "muwanvu": "Tall, pour une personne grande.",
+    "kikadde": "Old ; pour une personne, on dit aussi elderly, plus poli.",
+    "mulungi": "Beautiful ; pour un homme, plutôt handsome.",
+    "kiggya": "New.",
+    "safi": "Clean.",
+    "chafu": "Dirty."
+  },
+  "tips": { "u9s1": "adj-before", "u9s4": "very" },
+  "guidebook": {
+    "intro": "Décris les choses et les gens. Bonne nouvelle : les adjectifs anglais ne s’accordent jamais et se placent avant le nom.",
+    "tips": [
+      {
+        "id": "adj-before",
+        "title": "L’adjectif avant le nom, sans accord",
+        "body": [
+          "En anglais, l’adjectif se met devant le nom : **a red cup** (une tasse rouge), **a white house** (une maison blanche). Il ne change jamais : **a big cup, big cups**, pour un homme comme pour une femme.",
+          "Après **is** ou **are**, il reste aussi invariable : **The cups are red.**"
+        ]
+      },
+      {
+        "id": "very",
+        "title": "« Very » et « too »",
+        "body": [
+          "**Very** veut dire très : **very good**. **Too** veut dire trop : **too long**. Pour « grand », l’anglais distingue **tall** (pour une personne) et **big** (pour une chose)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Les compliments",
+        "body": [
+          "En Ouganda, on fait des compliments simples : **You look smart!** (tu es élégant) ou **That’s nice!** Un compliment sur les vêtements fait toujours plaisir."
+        ]
+      }
+    ]
+  }
+}

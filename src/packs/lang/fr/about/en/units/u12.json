@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u12",
+  "notes": {
+    "enkuba": "Rain : it is raining.",
+    "omusana": "The sun : it is sunny.",
+    "empewo": "Cold : it is cold, ou I am cold.",
+    "ekiwempe": "An umbrella : an devant une voyelle.",
+    "upepo": "Wind : it is windy.",
+    "obudde-bulungi": "The weather is nice."
+  },
+  "tips": { "u12s1": "it-is", "u12s3": "i-am-cold" },
+  "guidebook": {
+    "intro": "Parle du temps qu’il fait. Là où le français dit « il fait », l’anglais dit « it is ».",
+    "tips": [
+      {
+        "id": "it-is",
+        "title": "« It’s raining », « it’s sunny »",
+        "body": [
+          "Le temps se dit avec **it** : **It is hot** (il fait chaud), **It is cold** (il fait froid), **It is sunny** (il y a du soleil), **It is windy** (il y a du vent).",
+          "Pour la pluie en ce moment : **It is raining** (il pleut). Pour une habitude : **It rains a lot.**"
+        ]
+      },
+      {
+        "id": "i-am-cold",
+        "title": "« I am cold »",
+        "body": ["Pour ce que tu ressens, l’anglais utilise **be** : **I am cold** (j’ai froid), **I am hot** (j’ai chaud), comme **I am hungry**."]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Deux saisons des pluies",
+        "body": [
+          "L’Ouganda a deux saisons des pluies, de mars à mai et de septembre à novembre. On parle de **the rainy season** et **the dry season** plutôt que d’été ou d’hiver."
+        ]
+      }
+    ]
+  }
+}
