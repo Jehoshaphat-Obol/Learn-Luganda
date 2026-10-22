@@ -1,0 +1,117 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u16",
+  "words": {
+    "ttakisi": { "text": "taxi", "alts": ["minibus", "le taxi", "matatu"] },
+    "bbaasi": { "text": "bus", "alts": ["car", "le bus", "autobus", "autocar"] },
+    "paaka": { "text": "gare routière", "alts": ["parc à taxis", "la gare routière", "station"] },
+    "siteegi": { "text": "arrêt", "alts": ["arrêt de bus", "l’arrêt", "station"] },
+    "egenda": { "text": "il va", "alts": ["elle va", "va"] },
+    "mmotoka": { "text": "voiture", "alts": ["la voiture", "véhicule", "auto"] },
+    "bodaboda": { "text": "boda boda", "alts": ["moto-taxi", "moto", "boda"] },
+    "eggaali": { "text": "vélo", "alts": ["bicyclette", "le vélo"] },
+    "mpola": { "text": "lentement", "alts": ["doucement", "lent", "prudemment", "doucement doucement"] },
+    "mangu": { "text": "vite", "alts": ["rapidement", "bientôt", "dépêche-toi"] },
+    "olugendo": { "text": "voyage", "alts": ["trajet", "le voyage", "le trajet"] },
+    "okuva": { "text": "de", "alts": ["depuis", "venir de", "partir"] },
+    "okutuuka": { "text": "arriver", "alts": ["jusqu’à", "atteindre"] },
+    "ntuuse": { "text": "je suis arrivé", "alts": ["je suis arrivée", "je suis là"] },
+    "ennyonyi": { "text": "avion", "alts": ["l’avion", "un avion"] },
+    "tugende": { "text": "Allons-y", "alts": ["on y va", "allons", "en route"] },
+    "olugendo-olulungi": { "text": "Bon voyage !", "alts": ["bonne route", "fais bon voyage", "bon trajet"] },
+    "tiketi": { "text": "billet", "alts": ["le billet", "un billet", "ticket"] },
+    "treni": { "text": "train", "alts": ["le train"] },
+    "uwanja-wa-ndege": { "text": "aéroport", "alts": ["l’aéroport"] },
+    "kusafiri": { "text": "voyager", "alts": ["le voyage"] },
+    "nitasafiri": { "text": "je voyagerai", "alts": ["je vais voyager"] },
+    "tutaondoka": { "text": "Nous partirons", "alts": ["on partira", "on va partir", "nous allons partir"] },
+    "itafika": { "text": "il arrivera", "alts": ["elle arrivera", "va arriver", "il va arriver"] },
+    "mzigo": { "text": "bagages", "alts": ["sac", "charge", "les bagages", "valise"] },
+    "nimechelewa": { "text": "Je suis en retard", "alts": ["désolé du retard"] }
+  },
+  "sentences": {
+    "s16-ttakisi-egenda-wa": { "text": "Où va ce taxi ?", "alts": ["Ce taxi va où ?"] },
+    "s16-ttakisi-egenda-entebbe": { "text": "Le taxi va à {@nearby}." },
+    "s16-bbaasi-eri-ku-paaka": { "text": "Le bus est à la gare routière.", "alts": ["Le bus est à la station."] },
+    "s16-yimirira-ku-siteegi": { "text": "Arrête-toi à l’arrêt.", "alts": ["Arrêtez-vous à l’arrêt.", "Arrête-toi à l’arrêt de bus."] },
+    "s16-mmotoka-yange": { "text": "Ma voiture est neuve.", "alts": ["Ma voiture est nouvelle."] },
+    "s16-ntwala-ku-bodaboda": { "text": "Je prends un boda boda.", "alts": ["J’y vais en boda boda.", "Je vais en boda boda."] },
+    "s16-genda-mpola": { "text": "Roulez doucement, monsieur !", "alts": ["Allez lentement, monsieur !", "Ralentissez, monsieur !"] },
+    "s16-tugende-mangu": { "text": "Allons-y vite !", "alts": ["Partons vite !", "On y va vite !"] },
+    "s16-okuva-kampala": { "text": "De {@city} à {@hometown}.", "alts": ["De {@city} jusqu’à {@hometown}."] },
+    "s16-olugendo-luwanvu": { "text": "Le voyage est long.", "alts": ["C’est un long voyage.", "Le trajet est long."] },
+    "s16-ntuuse": { "text": "Je suis bien arrivé.", "alts": ["Je suis bien arrivée.", "Je suis arrivé sain et sauf.", "Je suis arrivée saine et sauve."] },
+    "s16-ennyonyi-ebuuka": { "text": "L’avion vole." },
+    "s16-olugendo-olulungi": { "text": "Au revoir ! Bon voyage !", "alts": ["Salut ! Bonne route !", "Au revoir ! Fais bon voyage !"] },
+    "s-pole-pole": { "text": "Doucement, s’il te plaît.", "alts": ["Lentement, s’il te plaît.", "Doucement, s’il vous plaît."] },
+    "s-haraka": { "text": "Vite, vite !", "alts": ["Dépêche-toi, dépêche-toi !", "Plus vite !"] },
+    "s-tiketi-bei": { "text": "Combien coûte le billet ?", "alts": ["C’est combien, le billet ?", "Le billet coûte combien ?"] },
+    "s-kituo-cha-basi": { "text": "Où est l’arrêt de bus ?", "alts": ["Où est la gare routière ?"] },
+    "s-safari-ndefu": { "text": "Le voyage jusqu’à {@city} est long.", "alts": ["Le trajet jusqu’à {@city} est long."] },
+    "s-twende-kituoni": { "text": "Allons à la gare.", "alts": ["On va à la gare."] },
+    "s-uwanja-wa-ndege": { "text": "L’aéroport est loin." },
+    "s-nitasafiri-kesho": { "text": "Je voyagerai demain.", "alts": ["Je vais voyager demain.", "Je pars en voyage demain."] },
+    "s-treni-itafika": { "text": "À quelle heure le train arrivera-t-il ?", "alts": ["Quand le train arrivera-t-il ?", "Le train arrive à quelle heure ?"] },
+    "s-mzigo-mzito": { "text": "Tes bagages sont lourds !", "alts": ["Ton sac est lourd !", "Vos bagages sont lourds !"] },
+    "s-nimechelewa": { "text": "Je suis en retard ! Désolé.", "alts": ["Je suis en retard ! Désolée.", "Désolé, je suis en retard !"] }
+  },
+  "phrases": [
+    "Où va ce taxi ?",
+    "Arrête-toi à l’arrêt.",
+    "Roulez doucement, monsieur !",
+    "De {@city} à {@hometown}.",
+    "Je suis bien arrivé.",
+    "Bon voyage !"
+  ],
+  "dialogues": {
+    "u16s1l3": [
+      {
+        "line": "Où vas-tu ?",
+        "options": ["Je vais à {@nearby}. Ce taxi va à {@nearby} ?", "J’ai peur du serpent !", "J’ai une question."]
+      }
+    ]
+  },
+  "stories": {
+    "taxi-to-jinja": {
+      "title": "Le taxi pour {@getaway}",
+      "summary": "{@nakato} trouve le bon taxi et arrive à {@getaway}.",
+      "lines": [
+        "Monsieur, où va ce taxi ?",
+        "Il va à Mukono. Où allez-vous ?",
+        "Je vais à {@getaway}.",
+        "Le taxi pour {@getaway} est là-bas, à l’arrêt.",
+        "Merci beaucoup ! C’est combien jusqu’à {@getaway} ?",
+        "Dix mille.",
+        "Le voyage est long ?",
+        "Non, deux heures seulement.",
+        "D’accord. Allons-y !",
+        "Maman, je suis bien arrivée à {@getaway} !"
+      ],
+      "questions": [
+        { "question": "Où {@nakato} veut-elle aller ?", "options": ["Mukono", "{@getaway}", "{@hometown}"] },
+        { "question": "Combien coûte le trajet ?", "options": ["Cinq mille", "Dix mille", "Mille"] },
+        {
+          "question": "Comment {@nakato} dit-elle à sa mère qu’elle est arrivée ?",
+          "options": ["Je suis bien arrivée.", "Roulez doucement.", "Arrêtez-vous ici."]
+        }
+      ]
+    },
+    "sw-train-to-mombasa": {
+      "title": "Le train pour Mombasa",
+      "summary": "Juma conduit Emma à la gare de Nairobi pour prendre le train de Mombasa.",
+      "lines": [
+        "Juma, le train part à neuf heures.",
+        "Ne t’inquiète pas, on arrivera en avance. Allons-y !",
+        "Mes bagages sont très lourds !",
+        "Donne-les-moi, je vais t’aider.",
+        "Nous voici à la gare. Bon voyage, Emma !",
+        "Merci beaucoup, Juma ! Je reviens la semaine prochaine."
+      ],
+      "questions": [
+        { "question": "Quand le train part-il ?", "options": ["À 9 h", "À 3 h", "À 15 h"] },
+        { "question": "Que fait Juma ?", "options": ["Il aide avec les bagages", "Il achète un billet", "Il conduit le train"] },
+        { "question": "Comment Juma dit-il « bon voyage » ?", "options": ["Bon voyage", "Allons-y", "Doucement"] }
+      ]
+    }
+  }
+}

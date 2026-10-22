@@ -1,0 +1,91 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u15",
+  "words": {
+    "ekibiina": { "text": "classe", "alts": ["la classe", "salle de classe", "groupe"] },
+    "ekkalaamu": { "text": "stylo", "alts": ["crayon", "un stylo", "le stylo"] },
+    "olupapula": { "text": "papier", "alts": ["une feuille", "feuille de papier", "page", "le papier"] },
+    "ekigambo": { "text": "mot", "alts": ["un mot", "le mot"] },
+    "ebigambo": { "text": "mots", "alts": ["les mots", "des mots"] },
+    "mpandiika": { "text": "j’écris", "alts": ["je suis en train d’écrire"] },
+    "musome": { "text": "Lisez", "alts": ["lisez tous", "étudiez", "lis"] },
+    "muwandiike": { "text": "Écrivez", "alts": ["écrivez tous", "écris"] },
+    "muwulirize": { "text": "Écoutez", "alts": ["écoutez tous", "écoute"] },
+    "olungereza": { "text": "anglais", "alts": ["l’anglais", "la langue anglaise"] },
+    "okubala": { "text": "maths", "alts": ["mathématiques", "les maths", "calcul", "compter", "arithmétique"] },
+    "ssaayansi": { "text": "sciences", "alts": ["les sciences", "science"] },
+    "ebyafaayo": { "text": "histoire", "alts": ["l’histoire"] },
+    "nnyagala-nnyo": { "text": "j’aime beaucoup", "alts": ["j’adore", "j’aime vraiment", "j’aime bien"] },
+    "ekibuuzo": { "text": "question", "alts": ["une question", "la question"] },
+    "ntegeera": { "text": "je comprends", "alts": ["j’ai compris", "compris"] },
+    "otegeera": { "text": "Tu comprends ?", "alts": ["tu as compris", "vous comprenez", "comprends-tu"] },
+    "ddamu": { "text": "Répète", "alts": ["encore", "redis", "réponds", "répétez"] },
+    "omulimu-gwawaka": { "text": "devoirs", "alts": ["les devoirs", "travail à la maison", "tâches ménagères"] },
+    "ekigezo": { "text": "examen", "alts": ["contrôle", "un examen", "l’examen", "test", "interro"] },
+    "daftari": { "text": "cahier", "alts": ["le cahier", "un cahier", "carnet"] },
+    "ubao": { "text": "tableau", "alts": ["le tableau", "tableau noir", "tableau blanc"] },
+    "somo": { "text": "leçon", "alts": ["matière", "la leçon", "cours"] },
+    "masomo": { "text": "leçons", "alts": ["matières", "les leçons", "cours", "études"] },
+    "maswali": { "text": "questions", "alts": ["les questions", "des questions"] },
+    "jibu": { "text": "réponse", "alts": ["la réponse"] },
+    "andika": { "text": "Écris", "alts": ["écris-le", "note"] },
+    "soma": { "text": "Lis", "alts": ["lis-le", "étudie"] },
+    "unasemaje": { "text": "Comment dit-on", "alts": ["comment tu dis", "comment on dit"] },
+    "karne": { "text": "siècle", "alts": ["siècles", "le siècle"] }
+  },
+  "sentences": {
+    "s15-ekibiina-kyaffe": { "text": "Notre classe est grande.", "alts": ["Notre salle de classe est grande."] },
+    "s15-mpa-ekkalaamu": { "text": "Donnez-moi un stylo, madame.", "alts": ["Donnez-moi le stylo, madame.", "Passez-moi un stylo, madame."] },
+    "s15-mpandiika-ebigambo": { "text": "J’écris les mots sur une feuille.", "alts": ["J’écris les mots sur le papier.", "J’écris des mots sur une feuille."] },
+    "s15-musome-ekitabo": { "text": "Lisez le livre, tout le monde.", "alts": ["Lisez le livre.", "Lisez tous le livre."] },
+    "s15-muwandiike-erinnya": { "text": "Écrivez vos noms, tout le monde.", "alts": ["Écrivez votre nom.", "Écrivez tous votre nom."] },
+    "s15-muwulirize": {
+      "text": "Écoutez l’enseignant, tout le monde.",
+      "alts": ["Écoutez le professeur.", "Écoutez tous le maître.", "Écoutez l’enseignant."]
+    },
+    "s15-nsoma-olungereza": { "text": "J’étudie l’anglais et le luganda.", "alts": ["J’apprends l’anglais et le luganda."] },
+    "s15-nnyagala-nnyo-okubala": { "text": "J’aime beaucoup les maths.", "alts": ["J’adore les maths.", "J’aime beaucoup les mathématiques."] },
+    "s15-ssaayansi-nzibu": { "text": "Les sciences, c’est difficile.", "alts": ["Les sciences sont difficiles.", "La science, c’est dur."] },
+    "s15-nnina-ekibuuzo": { "text": "J’ai une question." },
+    "s15-otegeera": { "text": "Tu comprends ? Oui, je comprends.", "alts": ["Tu as compris ? Oui, j’ai compris."] },
+    "s15-ddamu-mpola": { "text": "Répétez lentement, monsieur.", "alts": ["Redites-le lentement, monsieur.", "Répétez doucement, monsieur."] },
+    "s15-omulimu-gwawaka": { "text": "Je fais mes devoirs.", "alts": ["Je fais les devoirs.", "Je suis en train de faire mes devoirs."] },
+    "s15-ekigezo-enkya": { "text": "L’examen est demain.", "alts": ["Le contrôle est demain."] },
+    "s-kalamu-nyeusi": { "text": "Mon stylo est noir." },
+    "s-mwalimu-ubaoni": { "text": "L’enseignant écrit au tableau.", "alts": ["Le professeur écrit au tableau.", "La maîtresse écrit au tableau."] },
+    "s-somo-hesabu": { "text": "La leçon d’aujourd’hui, c’est les maths.", "alts": ["Aujourd’hui, la leçon est sur les maths.", "Aujourd’hui, on a maths."] },
+    "s-napenda-sayansi": { "text": "J’aime les sciences.", "alts": ["J’adore les sciences."] },
+    "s-masomo-mengi": { "text": "Il y a beaucoup de matières !", "alts": ["Il y a beaucoup de leçons !", "Tant de matières !"] },
+    "s-una-swali": { "text": "Tu as une question ?", "alts": ["Des questions ?", "Avez-vous une question ?"] },
+    "s-jibu-ni-nini": { "text": "Quelle est la réponse ?", "alts": ["C’est quoi, la réponse ?"] },
+    "s-kesho-mtihani": { "text": "Demain, on a un examen.", "alts": ["Nous avons un examen demain.", "Demain, nous avons un contrôle."] },
+    "s-kazi-nyumbani-nyingi": { "text": "Il y a beaucoup de devoirs !", "alts": ["Tant de devoirs !", "Que de devoirs !"] },
+    "s-andika-jina": { "text": "Écris ton nom.", "alts": ["Note ton nom.", "Écrivez votre nom."] },
+    "s-soma-kitabu": { "text": "Lis le livre.", "alts": ["Lis un livre.", "Lisez le livre."] },
+    "s-unasemaje": { "text": "Comment dit-on ça en {to} ?", "alts": ["Comment tu dis ça en {to} ?", "Comment on dit ça en {to} ?"] },
+    "s-neno-gani": { "text": "Quel mot ?" },
+    "s-ina-maana-gani": { "text": "Qu’est-ce que ça veut dire ?", "alts": ["Ça veut dire quoi ?", "Que signifie ce mot ?"] },
+    "s-historia-ndefu": { "text": "La côte a une longue histoire." },
+    "s-karne-nyingi": { "text": "Il y a de nombreux siècles.", "alts": ["Il y a bien des siècles."] },
+    "s-biashara-ya-bahari": {
+      "text": "Le commerce maritime était important.",
+      "alts": ["Le commerce par la mer était important.", "Le commerce maritime était grand."]
+    }
+  },
+  "phrases": [
+    "Lisez le livre, tout le monde.",
+    "Écoutez l’enseignant, tout le monde.",
+    "J’ai une question.",
+    "Tu comprends ?",
+    "Répétez lentement, monsieur.",
+    "J’aime beaucoup les maths."
+  ],
+  "dialogues": {
+    "u15s3l3": [
+      {
+        "line": "Écrivez ces mots, tout le monde. Vous comprenez ?",
+        "options": ["Non. Répétez lentement, monsieur.", "Les vaches mangent de l’herbe.", "Je me lave le matin."]
+      }
+    ]
+  }
+}
