@@ -16,7 +16,15 @@
     "amazaalibwa",
     "nkwagaliza",
     "keeki",
-    "mwebale-okujja"
+    "mwebale-okujja",
+    "mpango",
+    "wageni",
+    "kualika",
+    "bwana-harusi",
+    "aliyekuja",
+    "waliokuja",
+    "sikukuu-njema",
+    "heri-ya-mwaka-mpya"
   ],
   "sentences": [
     "s28-kwanjula-ku-lwamukaaga",
@@ -29,7 +37,20 @@
     "s28-amazaalibwa",
     "s28-nkwagaliza",
     "s28-keeki",
-    "s28-mwebale-okujja"
+    "s28-mwebale-okujja",
+    "s-utaenda-wapi",
+    "s-mpango-gani",
+    "s-sherehe-jumamosi",
+    "s-harusi",
+    "s-zawadi",
+    "s-wageni-wengi",
+    "s-kualika",
+    "s-bibi-harusi",
+    "s-bwana-harusi",
+    "s-aliyekuja",
+    "s-waliokuja",
+    "s-sikukuu-njema",
+    "s-mwaka-mpya"
   ],
   "phrases": 6,
   "skills": [
@@ -62,6 +83,28 @@
           "newWords": [],
           "sentences": ["s28-amazaalibwa", "s28-tujaguze", "s28-ekirabo"],
           "dialogues": [{ "speaker": "nakato", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u28s4",
+      "icon": "star",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u28s4l1",
+          "newWords": ["mpango", "wageni", "kualika", "bwana-harusi"],
+          "sentences": ["s-utaenda-wapi", "s-mpango-gani", "s-sherehe-jumamosi", "s-harusi"]
+        },
+        {
+          "id": "u28s4l2",
+          "newWords": ["aliyekuja", "waliokuja"],
+          "sentences": ["s-wageni-wengi", "s-kualika", "s-bibi-harusi", "s-bwana-harusi"]
+        },
+        {
+          "id": "u28s4l3",
+          "newWords": ["sikukuu-njema", "heri-ya-mwaka-mpya"],
+          "sentences": ["s-aliyekuja", "s-waliokuja", "s-zawadi", "s-sikukuu-njema", "s-mwaka-mpya"]
         }
       ]
     }

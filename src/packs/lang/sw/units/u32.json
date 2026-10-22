@@ -16,7 +16,11 @@
     "okusimba": { "text": "kupanda", "alts": ["kupanda miti"] },
     "okukuuma": { "text": "kulinda", "alts": ["kutunza", "kuhifadhi"] },
     "kasasiro": { "text": "takataka", "alts": ["uchafu", "taka", "takataka nyingi"] },
-    "tosuula": { "text": "Usitupe", "alts": ["msitupe", "usimwage", "usitupe hapa"] }
+    "tosuula": { "text": "Usitupe", "alts": ["msitupe", "usimwage", "usitupe hapa"] },
+    "mlima": { "text": "mlima" },
+    "mazingira": { "text": "mazingira" },
+    "tutunze": { "text": "tutunze" },
+    "kupanda-miti": { "text": "kupanda miti" }
   },
   "sentences": {
     "s32-ennyanja-nnene": { "text": "Ziwa Viktoria ni ziwa kubwa.", "alts": ["Ziwa Nyanza ni ziwa kubwa.", "Nnalubaale ni ziwa kubwa."] },
@@ -30,7 +34,15 @@
     "s32-ebimuli": { "text": "Maua ni mazuri sana.", "alts": ["Maua yanapendeza sana."] },
     "s32-tusimbe-emiti": { "text": "Tupande miti!", "alts": ["Haya tupande miti!"] },
     "s32-tukuume-ettaka": { "text": "Tulinde ardhi yetu.", "alts": ["Tutunze ardhi yetu.", "Tuilinde ardhi yetu."] },
-    "s32-tosuula-kasasiro": { "text": "Usitupe takataka hapa!", "alts": ["Msitupe takataka hapa!", "Usitupe taka hapa!"] }
+    "s32-tosuula-kasasiro": { "text": "Usitupe takataka hapa!", "alts": ["Msitupe takataka hapa!", "Usitupe taka hapa!"] },
+    "s-kilimanjaro": { "text": "Kilimanjaro ni mlima mrefu zaidi Afrika." },
+    "s-ziwa-victoria": { "text": "Ziwa Viktoria ni kubwa sana." },
+    "s-mto-nile": { "text": "Mto Naili unaanzia Uganda." },
+    "s-msitu": { "text": "Msitu una miti mingi." },
+    "s-maua": { "text": "Maua ni mazuri." },
+    "s-ardhi": { "text": "Ardhi ni kavu." },
+    "s-tutunze": { "text": "Tutunze mazingira yetu." },
+    "s-kupanda-miti": { "text": "Shule inapanda miti kila mwaka." }
   },
   "phrases": [
     "Ziwa Viktoria ni ziwa kubwa.",
@@ -40,7 +52,14 @@
     "Tupande miti!",
     "Usitupe takataka hapa!"
   ],
-  "dialogues": { "u32s3l3": [{ "line": "Tufanye nini kulinda ardhi?" }] },
+  "dialogues": {
+    "u32s3l3": [
+      {
+        "line": "Tufanye nini kulinda ardhi?",
+        "options": ["Tupande miti, usitupe takataka.", "Kabaka aishi milele!", "Ninawanywesha ng'ombe maji."]
+      }
+    ]
+  },
   "stories": {
     "source-of-nile": {
       "title": "Chanzo cha Mto Naili",

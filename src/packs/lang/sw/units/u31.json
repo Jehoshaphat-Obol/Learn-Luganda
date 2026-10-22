@@ -14,7 +14,15 @@
     "nsomesa": { "text": "ninafundisha", "alts": ["nafundisha", "ninasomesha", "nasomesha"] },
     "ndisa": { "text": "ninalisha", "alts": ["nalisha", "ninawalisha"] },
     "nnywesa": { "text": "ninanywesha", "alts": ["nanywesha", "ninawapa maji", "ninanyweshea"] },
-    "ntunza": { "text": "ninauza", "alts": ["nauza", "ninafanya biashara"] }
+    "ntunza": { "text": "ninauza", "alts": ["nauza", "ninafanya biashara"] },
+    "kuuza": { "text": "kuuza" },
+    "bidhaa": { "text": "bidhaa" },
+    "hasara": { "text": "hasara" },
+    "akiba": { "text": "akiba" },
+    "mkopo": { "text": "mkopo" },
+    "fundisha": { "text": "Fundisha" },
+    "onyesha": { "text": "Onyesha" },
+    "rudisha": { "text": "Rudisha" }
   },
   "sentences": {
     "s31-nnina-bizinensi": { "text": "Nina biashara ndogo.", "alts": ["Ninamiliki biashara ndogo."] },
@@ -27,7 +35,16 @@
     "s31-okwewola": { "text": "Ninataka kukopa pesa.", "alts": ["Nataka kukopa pesa.", "Ningependa kukopa pesa."] },
     "s31-nsomesa-abaana": { "text": "Ninawafundisha watoto {to}.", "alts": ["Nawafundisha watoto {to}.", "Ninawasomesha watoto {to}."] },
     "s31-ndisa-abaana": { "text": "Ninawalisha watoto asubuhi.", "alts": ["Nawalisha watoto asubuhi.", "Ninawalisha watoto kila asubuhi."] },
-    "s31-nnywesa-ente": { "text": "Ninawanywesha ng’ombe maji.", "alts": ["Ninawapa ng’ombe maji.", "Nawanywesha ng’ombe maji."] }
+    "s31-nnywesa-ente": { "text": "Ninawanywesha ng’ombe maji.", "alts": ["Ninawapa ng’ombe maji.", "Nawanywesha ng’ombe maji."] },
+    "s-kuuza": { "text": "Ninauza chai na chapati." },
+    "s-bidhaa": { "text": "Bidhaa ni nzuri na rahisi." },
+    "s-faida": { "text": "Mwezi huu tumepata faida." },
+    "s-hasara": { "text": "Mvua ilileta hasara." },
+    "s-akiba": { "text": "Ninaweka akiba kila wiki." },
+    "s-mkopo": { "text": "Ninahitaji mkopo mdogo." },
+    "s-fundisha": { "text": "Nifundishe biashara, tafadhali." },
+    "s-onyesha": { "text": "Nionyeshe bidhaa zako." },
+    "s-rudisha": { "text": "Rudisha pesa yangu!" }
   },
   "phrases": [
     "Nina biashara ndogo.",
@@ -37,5 +54,5 @@
     "Ninawafundisha watoto {to}.",
     "Ninawanywesha ng’ombe maji."
   ],
-  "dialogues": { "u31s1l3": [{ "line": "Pole na kazi! Biashara inaendaje?" }] }
+  "dialogues": { "u31s1l3": [{ "line": "Pole na kazi! Biashara inaendaje?", "options": ["Vizuri. Leo wateja ni wengi.", "Amina.", "Piga ngoma!"] }] }
 }

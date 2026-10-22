@@ -678,3 +678,161 @@ sw	dialogue	u22s1l3.0	Ninafurahia kukimbia na kuogelea. | Nimechoka sana. | Siju
 sw	dialogue	u23s2l3.0	Ni mimi Ssali. Habari yako, Nakato? | Niko njiani. | Sina pesa.	Halo? Ni nani anaongea? :: Nze Ssali. Oli otya, Nakato? | Ndi mu kkubo. | Sirina ssente. (answer 1)
 sw	dialogue	u23s3l3.0	Samahani, niko njiani. Ninakuja! | Tukutane kesho. | Nipe kalamu.	Uko wapi? Ninakusubiri! :: Nsonyiwa, ndi mu kkubo. Nzija! | Tusisinkane jjo. | Mpa ekkalaamu. (answer 1)
 sw	dialogue	u24s3l3.0	Hapana, nimeshiba. Asante kwa kupika! | Kwanza kata vitunguu. | Ninakusubiri stendi.	Unataka chakula zaidi? :: Nedda, nkkuse. Webale okufumba! | Sooka sala obutungulu. | Nkulinze ku siteegi. (answer 1)
+lg	word	mpango	enteekateeka	plan = mpango
+lg	sentence	s-utaenda-wapi	Oligenda wa ku wiikendi?	Where will you go at the weekend? = Utaenda wapi wikendi?
+lg	sentence	s-mpango-gani	Enteekateeka yo y'eruwa?	What’s your plan? = Una mpango gani?
+lg	sentence	s-sherehe-jumamosi	Waliwo akabaga ku Lwomukaaga.	There’s a party on Saturday. = Kuna sherehe Jumamosi.
+lg	sentence	s-harusi	Embaga eriba omwezi ogujja.	The wedding will be next month. = Harusi itakuwa mwezi ujao.
+lg	word	mazoezi	okwegezaamu	practice = mazoezi
+lg	sentence	s-wanacheza-ngoma	Bazina.	They are dancing. = Wanacheza ngoma.
+lg	sentence	s-mazoezi-kila-siku	Nneegezaamu buli lunaku.	I have practice every day. = Nina mazoezi kila siku.
+lg	word	pwani	olubalama	coast = pwani
+lg	word	bahari	ennyanja ennene	sea = bahari
+lg	word	kisiwa	ekizinga	island = kisiwa
+lg	word	jahazi	eryato ery'amatanga	dhow = jahazi
+lg	word	kaskazi	empewo ey'obukiikakkono	north-east monsoon = kaskazi
+lg	word	wafanyabiashara	abasuubuzi	traders = wafanyabiashara
+lg	word	lugha	olulimi	language = lugha
+lg	word	kutoka-kiarabu	okuva mu Luwarabu	from Arabic = kutoka Kiarabu
+lg	word	wenye	erina	with = wenye
+lg	word	maarufu	ekimanyiddwa	famous = maarufu
+lg	word	mji-wa-kale	ekibuga eky'edda	old town = mji wa kale
+lg	sentence	s-pwani-nzuri	Olubalama lulungi nnyo.	The coast is very beautiful. = Pwani ni nzuri sana.
+lg	sentence	s-bahari-kubwa	Ennyanja ennene ngazi!	The sea is big! = Bahari ni kubwa!
+lg	sentence	s-kisiwa-cha-zanzibar	Zanzibar kizinga.	Zanzibar is an island. = Zanzibar ni kisiwa.
+lg	sentence	s-jahazi-baharini	Eryato ery'amatanga liri ku nnyanja.	The dhow is at sea. = Jahazi liko baharini.
+lg	sentence	s-kaskazi	Empewo ey'obukiikakkono yaleeta amaato.	The monsoon brought the dhows. = Kaskazi ilileta majahazi.
+lg	sentence	s-wafanyabiashara-walifika	Abasuubuzi bajja okuva e Buwarabu ne Buyindi.	Traders came from Arabia and India. = Wafanyabiashara walifika kutoka Arabia na India.
+lg	sentence	s-lugha-ya-pwani	Oluswayiri lwe lulimi lw'oku lubalama.	Swahili is the language of the coast. = Kiswahili ni lugha ya pwani.
+lg	sentence	s-maneno-kiarabu	Ekigambo “kitabu” kiva mu Luwarabu.	The word “kitabu” is from Arabic. = Neno “kitabu” ni kutoka Kiarabu.
+lg	sentence	s-mji-wenye-historia	Lamu kibuga ekirina ebyafaayo.	Lamu is a town with history. = Lamu ni mji wenye historia.
+lg	sentence	s-maarufu	Ekibuga eky'edda ekya Kilwa kimanyiddwa nnyo.	The old town of Kilwa is famous. = Mji wa kale wa Kilwa ni maarufu.
+lg	word	mpunga	emiceere	rice plants = mpunga
+lg	word	maji-ya-mvua	amazzi g'enkuba	rainwater = maji ya mvua
+lg	sentence	s-mpunga	Emiceere gyagala amazzi mangi.	Rice plants like a lot of water. = Mpunga unapenda maji mengi.
+lg	sentence	s-kupanda-mbegu	Leero tujja kusiga ensigo.	Today we will plant seeds. = Leo tutapanda mbegu.
+lg	sentence	s-mavuno-mazuri	Amakungula malungi omwaka guno.	The harvest is good this year. = Mavuno ni mazuri mwaka huu.
+lg	sentence	s-jembe	Twala enkumbi.	Take the hoe. = Chukua jembe.
+lg	sentence	s-maji-ya-mvua	Tutereka amazzi g'enkuba.	We store rainwater. = Tunahifadhi maji ya mvua.
+lg	word	sikukuu	olunaku olukulu	holiday = sikukuu
+lg	word	wageni	abagenyi	guests = wageni
+lg	word	kualika	okuyita	to invite = kualika
+lg	word	bwana-harusi	omugole omusajja	groom = bwana harusi
+lg	word	aliyekuja	eyajja	who came = aliyekuja
+lg	word	waliokuja	abajja	who came (many) = waliokuja
+lg	word	sikukuu-njema	Ennaku enkulu ennungi!	Happy holidays! = Sikukuu njema!
+lg	word	heri-ya-mwaka-mpya	Omwaka omuggya omulungi!	Happy New Year! = Heri ya mwaka mpya!
+lg	sentence	s-sikukuu-kesho	Enkya lunaku lukulu.	Tomorrow is a holiday. = Kesho ni sikukuu.
+lg	sentence	s-idi	Tujja kujaguza Iddi wamu.	We will celebrate Eid together. = Tutasherehekea Idi pamoja.
+lg	sentence	s-krismasi	Ku Ssekukkulu tugenda mu kyalo.	At Christmas we go to the village. = Krismasi tunaenda kijijini.
+lg	sentence	s-zawadi	Kino kirabo kyo.	This is your gift. = Hii ni zawadi yako.
+lg	sentence	s-wageni-wengi	Abagenyi bangi bajja.	Many guests came. = Wageni wengi walikuja.
+lg	sentence	s-kualika	Nkuyise ku mbaga.	I’ve invited you to the wedding. = Nimekualika harusini.
+lg	sentence	s-bibi-harusi	Omugole mulungi nnyo.	The bride is very beautiful. = Bibi harusi ni mrembo sana.
+lg	sentence	s-bwana-harusi	Omugole omusajja ayambadde kkanzu.	The groom is wearing a kanzu. = Bwana harusi amevaa kanzu.
+lg	sentence	s-aliyekuja	Omuntu eyajja ye muganda wange.	The person who came is my brother. = Mtu aliyekuja ni kaka yangu.
+lg	sentence	s-waliokuja	Abagenyi abajja baasanyuka.	The guests who came were happy. = Wageni waliokuja walifurahi.
+lg	sentence	s-sikukuu-njema	Ennaku enkulu ennungi, jjajja!	Happy holidays, Grandma! = Sikukuu njema, bibi!
+lg	sentence	s-mwaka-mpya	Omwaka omuggya omulungi, mukwano!	Happy New Year, friend! = Heri ya mwaka mpya, rafiki!
+lg	word	mchezaji	omuzannyi	player = mchezaji
+lg	word	mpiga-ngoma	omukubi w'engoma	drummer = mpiga ngoma
+lg	word	bendi	bbandi	band = bendi
+lg	word	taarab	taarab	taarab = taarab
+lg	word	gitaa	ggita	guitar = gitaa
+lg	word	sauti	eddoboozi	voice = sauti
+lg	word	tamasha	ekivvulu	concert = tamasha
+lg	word	kusikiliza	okuwuliriza	to listen = kusikiliza
+lg	sentence	s-mwimbaji	Omuyimbi alina eddoboozi eddungi.	The singer has a beautiful voice. = Mwimbaji ana sauti nzuri.
+lg	sentence	s-mchezaji	Neema muzinyi mukugu.	Neema is a skilful dancer. = Neema ni mchezaji hodari.
+lg	sentence	s-mpiga-ngoma	Omukubi w'engoma ye jjajja wange.	The drummer is my grandfather. = Mpiga ngoma ni babu yangu.
+lg	sentence	s-bendi	Bbandi ejja kukuba ennyimba ekiro.	The band will play music tonight. = Bendi itapiga muziki usiku.
+lg	sentence	s-taarab	Jjajja ayagala nnyo taarab.	Grandma loves taarab. = Bibi anapenda taarab.
+lg	sentence	s-kupiga-gitaa	Njiga okukuba ggita.	I’m learning to play the guitar. = Ninajifunza kupiga gitaa.
+lg	sentence	s-tamasha	Waliwo ekivvulu ku Lwomukaaga.	There’s a concert on Saturday. = Kuna tamasha Jumamosi.
+lg	sentence	s-kusikiliza	Nsiima okuwuliriza omuziki.	I like listening to music. = Ninapenda kusikiliza muziki.
+lg	sentence	s-sauti	Eddoboozi lingi nnyo!	The sound is very loud! = Sauti ni kubwa sana!
+lg	word	dini	eddiini	religion = dini
+lg	word	ramadhani	Lamadaani	Ramadan = Ramadhani
+lg	word	alizaliwa	yazaalibwa	he was born = alizaliwa
+lg	word	anaitwa	ayitibwa	he is called = anaitwa
+lg	word	mungu-akubariki	Katonda akuwe omukisa	God bless you = Mungu akubariki
+lg	sentence	s-dini	Mu Buvanjuba bwa Afrika mulimu eddiini nnyingi.	There are many religions in East Africa. = Kuna dini nyingi Afrika Mashariki.
+lg	sentence	s-kusali-msikitini	Jjajja asinziza mu muzigiti.	Grandfather prays at the mosque. = Babu anasali msikitini.
+lg	sentence	s-kusali-kanisani	Ku Ssande tusabira mu kkanisa.	On Sunday we pray at church. = Jumapili tunasali kanisani.
+lg	sentence	s-ramadhani	Mu Lamadaani, abantu basiiba.	During Ramadan, people fast. = Wakati wa Ramadhani, watu wanafunga.
+lg	sentence	s-baraka	Enkuba mukisa.	Rain is a blessing. = Mvua ni baraka.
+lg	sentence	s-alizaliwa	Jjajja yazaalibwa e Zanzibar.	Grandma was born in Zanzibar. = Bibi alizaliwa Zanzibar.
+lg	sentence	s-anaitwa	Omwana ayitibwa Amani.	The child is called Amani. = Mtoto anaitwa Amani.
+lg	sentence	s-akubariki	Katonda akuwe omukisa, mwana wange.	God bless you, my child. = Mungu akubariki, mwanangu.
+lg	word	kuuza	okutunda	to sell = kuuza
+lg	word	bidhaa	ebyamaguzi	goods = bidhaa
+lg	word	hasara	okufiirwa	loss = hasara
+lg	word	akiba	ebitereke	savings = akiba
+lg	word	mkopo	looni	loan = mkopo
+lg	word	fundisha	Somesa	Teach = Fundisha
+lg	word	onyesha	Laga	Show = Onyesha
+lg	word	rudisha	Zzaayo	Give back = Rudisha
+lg	sentence	s-kuuza	Ntunda caayi ne capati.	I sell tea and chapati. = Ninauza chai na chapati.
+lg	sentence	s-bidhaa	Ebyamaguzi birungi era bya layisi.	The goods are good and cheap. = Bidhaa ni nzuri na rahisi.
+lg	sentence	s-faida	Omwezi guno tufunye amagoba.	This month we made a profit. = Mwezi huu tumepata faida.
+lg	sentence	s-hasara	Enkuba yaleeta okufiirwa.	The rain caused a loss. = Mvua ilileta hasara.
+lg	sentence	s-akiba	Nterekayo ssente buli wiiki.	I put money aside every week. = Ninaweka akiba kila wiki.
+lg	sentence	s-mkopo	Nneetaaga looni entono.	I need a small loan. = Ninahitaji mkopo mdogo.
+lg	sentence	s-fundisha	Nsomesa bizinensi, mwattu.	Teach me business, please. = Nifundishe biashara, tafadhali.
+lg	sentence	s-onyesha	Ndaga ebyamaguzi byo.	Show me your goods. = Nionyeshe bidhaa zako.
+lg	sentence	s-rudisha	Zzaayo ssente zange!	Give me back my money! = Rudisha pesa yangu!
+lg	word	mlima	olusozi oluwanvu	mountain = mlima
+lg	word	mazingira	obutonde bw'ensi	environment = mazingira
+lg	word	tutunze	tukuume	let’s look after = tutunze
+lg	word	kupanda-miti	okusimba emiti	to plant trees = kupanda miti
+lg	sentence	s-kilimanjaro	Kilimanjaro lwe lusozi olusinga obuwanvu mu Afrika.	Kilimanjaro is the highest mountain in Africa. = Kilimanjaro ni mlima mrefu zaidi Afrika.
+lg	sentence	s-ziwa-victoria	Nnalubaale nnene nnyo.	Lake Victoria is very big. = Ziwa Viktoria ni kubwa sana.
+lg	sentence	s-mto-nile	Kiyira kitandikira mu Uganda.	The River Nile starts in Uganda. = Mto Naili unaanzia Uganda.
+lg	sentence	s-msitu	Ekibira kirimu emiti mingi.	The forest has many trees. = Msitu una miti mingi.
+lg	sentence	s-maua	Ebimuli birungi.	The flowers are beautiful. = Maua ni mazuri.
+lg	sentence	s-ardhi	Ettaka kikalu.	The land is dry. = Ardhi ni kavu.
+lg	sentence	s-tutunze	Tukuume obutonde bw'ensi bwaffe.	Let’s look after our environment. = Tutunze mazingira yetu.
+lg	sentence	s-kupanda-miti	Essomero lisimba emiti buli mwaka.	The school plants trees every year. = Shule inapanda miti kila mwaka.
+lg	word	abunuwasi	Abunuwasi	Abunuwasi = Abunuwasi
+lg	sentence	s-abunuwasi	Abunuwasi yali mugezi nnyo.	Abunuwasi was very clever. = Abunuwasi alikuwa mjanja sana.
+lg	sentence	s-mfalme	Kabaka yayita Abunuwasi.	The king called Abunuwasi. = Mfalme alimwita Abunuwasi.
+fr	skill	u25s4	La côte swahilie	
+fr	skill	u26s4	Abunuwasi	
+fr	skill	u27s4	Riz et pluie	
+fr	skill	u28s4	Invités et fêtes	
+fr	skill	u29s4	Groupes et concerts	
+fr	skill	u30s4	Foi et prénoms	
+fr	skill	u31s4	Commerce et épargne	
+fr	skill	u32s4	Montagnes et nature	
+lg	skill	u25s4	Olubalama lw'Abaswayiri	
+lg	skill	u26s4	Abunuwasi	
+lg	skill	u27s4	Omuceere n'enkuba	
+lg	skill	u28s4	Abagenyi n'ennaku enkulu	
+lg	skill	u29s4	Bbandi n'ebivvulu	
+lg	skill	u30s4	Eddiini n'amannya	
+lg	skill	u31s4	Obusuubuzi n'okutereka	
+lg	skill	u32s4	Ensozi n'obutonde	
+en	skill	u25s4	The Swahili coast	
+en	skill	u26s4	Abunuwasi	
+en	skill	u27s4	Rice and rain	
+en	skill	u28s4	Guests and holidays	
+en	skill	u29s4	Bands and concerts	
+en	skill	u30s4	Faith and names	
+en	skill	u31s4	Trade and savings	
+en	skill	u32s4	Mountains and nature	
+sw	skill	u25s4	Pwani ya Waswahili	
+sw	skill	u26s4	Abunuwasi	
+sw	skill	u27s4	Mpunga na mvua	
+sw	skill	u28s4	Wageni na sikukuu	
+sw	skill	u29s4	Bendi na matamasha	
+sw	skill	u30s4	Dini na majina	
+sw	skill	u31s4	Biashara na akiba	
+sw	skill	u32s4	Milima na mazingira	
+sw	dialogue	u25s3l3.0	Mimi ni wa ukoo wa Lugave, babu. | Nimechoka sana. | Ongeza chumvi.	Wewe ni wa ukoo gani, mwanangu? :: Ndi wa Lugave, Jjajja. | Nkooye nnyo. | Gattako omunnyo. (answer 1)
+sw	dialogue	u26s3l3.0	Aishi milele! | Sikusikii. | Nimeshiba.	Kabaka aishi milele! :: Awangaale! | Sikuwulira. | Nkkuse. (answer 1)
+sw	dialogue	u27s3l3.0	Ninamlimia bibi shamba la ndizi. | Mimi ni wa Lugave. | Kabaka aishi milele!	Pole na kazi! Unafanya nini? :: Ndimira jjajja olusuku. | Ndi wa Lugave. | Kabaka awangaale! (answer 1)
+sw	dialogue	u28s3l3.0	Nakutakia siku njema ya kuzaliwa! | Pole! | Niko njiani.	Leo ni siku yangu ya kuzaliwa! :: Nkwagaliza amazaalibwa amalungi! | Bambi! | Ndi mu kkubo. (answer 1)
+sw	dialogue	u29s3l3.0	Ni baba yangu! | Ngoma ni kubwa. | Asanteni kwa kuja.	Mwanamume anayepiga ngoma ni nani? :: Ye taata wange! | Engoma nnene. | Mwebale okujja. (answer 1)
+sw	dialogue	u30s3l3.0	Na wewe, Krismasi njema! | Nimeshiba. | Sielewi mpira.	Krismasi njema! :: Naawe, Ssekukkulu ennungi! | Nkkuse. | Sitegeera omupiira. (answer 1)
+sw	dialogue	u31s1l3.0	Vizuri. Leo wateja ni wengi. | Amina. | Piga ngoma!	Pole na kazi! Biashara inaendaje? :: Bulungi. Leero abaguzi bangi. | Amiina. | Kuba engoma! (answer 1)
+sw	dialogue	u32s3l3.0	Tupande miti, usitupe takataka. | Kabaka aishi milele! | Ninawanywesha ng'ombe maji.	Tufanye nini kulinda ardhi? :: Tusimbe emiti, tosuula kasasiro. | Kabaka awangaale! | Nnywesa ente amazzi. (answer 1)

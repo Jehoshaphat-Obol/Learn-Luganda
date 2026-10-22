@@ -18,7 +18,18 @@
     "oli-wa-kika-ki",
     "tetulya",
     "owooluganda",
-    "jjajja-omutaka"
+    "jjajja-omutaka",
+    "pwani",
+    "bahari",
+    "kisiwa",
+    "jahazi",
+    "kaskazi",
+    "wafanyabiashara",
+    "lugha",
+    "kutoka-kiarabu",
+    "wenye",
+    "maarufu",
+    "mji-wa-kale"
   ],
   "sentences": [
     "s25-ekika-kyange",
@@ -30,7 +41,17 @@
     "s25-tetulya-mmamba",
     "s25-omuziro-gwa-ngeye",
     "s25-tuli-booluganda",
-    "s25-omutaka"
+    "s25-omutaka",
+    "s-pwani-nzuri",
+    "s-bahari-kubwa",
+    "s-kisiwa-cha-zanzibar",
+    "s-jahazi-baharini",
+    "s-kaskazi",
+    "s-wafanyabiashara-walifika",
+    "s-lugha-ya-pwani",
+    "s-maneno-kiarabu",
+    "s-mji-wenye-historia",
+    "s-maarufu"
   ],
   "phrases": 6,
   "skills": [
@@ -63,6 +84,28 @@
           "newWords": ["jjajja-omutaka"],
           "sentences": ["s25-omutaka", "s25-oli-wa-kika-ki"],
           "dialogues": [{ "speaker": "jjajja", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u25s4",
+      "icon": "flame",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u25s4l1",
+          "newWords": ["pwani", "bahari", "kisiwa"],
+          "sentences": ["s-pwani-nzuri", "s-bahari-kubwa", "s-kisiwa-cha-zanzibar"]
+        },
+        {
+          "id": "u25s4l2",
+          "newWords": ["jahazi", "kaskazi", "wafanyabiashara", "lugha", "kutoka-kiarabu"],
+          "sentences": ["s-jahazi-baharini", "s-kaskazi", "s-wafanyabiashara-walifika", "s-lugha-ya-pwani"]
+        },
+        {
+          "id": "u25s4l3",
+          "newWords": ["wenye", "maarufu", "mji-wa-kale"],
+          "sentences": ["s-maneno-kiarabu", "s-mji-wenye-historia", "s-maarufu"]
         }
       ]
     }

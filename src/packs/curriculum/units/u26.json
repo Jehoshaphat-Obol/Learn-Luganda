@@ -17,7 +17,8 @@
     "amasiro",
     "essaza",
     "amasaza",
-    "edda-ennyo"
+    "edda-ennyo",
+    "abunuwasi"
   ],
   "sentences": [
     "s26-kabaka-afuga",
@@ -31,7 +32,9 @@
     "s26-amasiro-e-kasubi",
     "s26-amasaza",
     "s26-essaza-lyange",
-    "s26-edda-ennyo"
+    "s26-edda-ennyo",
+    "s-abunuwasi",
+    "s-mfalme"
   ],
   "phrases": 6,
   "skills": [
@@ -70,6 +73,12 @@
           "dialogues": [{ "speaker": "mukasa", "answer": 0 }]
         }
       ]
+    },
+    {
+      "id": "u26s4",
+      "icon": "star",
+      "since": 2,
+      "lessons": [{ "id": "u26s4l1", "newWords": ["abunuwasi"], "sentences": ["s-abunuwasi", "s-mfalme"] }]
     }
   ],
   "stories": [

@@ -1,0 +1,32 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u27",
+  "notes": { "okusiga": "Also “to climb” or “to get on”: kupanda basi.", "enkumbi": "Plural: majembe." },
+  "guidebook": {
+    "intro": "Most East Africans have a shamba or family in the village. Farming follows the rains, and neighbours help each other.",
+    "tips": [
+      {
+        "id": "applicative",
+        "title": "Doing it for someone: -i-, -e-",
+        "body": [
+          "Add **-i-** or **-e-** before the last **-a** and the verb is done for or to someone: **-lima** (farm) → **-limia** (farm for), **-pika** → **-pikia** (cook for), **-leta** → **-letea** (bring to).",
+          "With a person inside the verb: **ninakupikia** (I’m cooking for you), **niletee** (bring me), **nitamlimia** (I’ll farm for him or her)."
+        ],
+        "table": [["Verb", "For someone"], ["-lima", "-limia"], ["-pika", "-pikia"], ["-leta", "-letea"], ["-andika", "-andikia"]],
+        "targetColumns": [0, 1]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Ugali and maize",
+        "body": [
+          "Maize came from the Americas, but **ugali**, a stiff porridge of maize flour, is now the everyday staple of Kenya and Tanzania. A meal without it can feel like no meal at all."
+        ]
+      },
+      {
+        "title": "Working together",
+        "body": ["At planting and harvest, neighbours often work each other’s fields in turn, with food and drink provided by the host family."]
+      }
+    ]
+  }
+}

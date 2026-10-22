@@ -15,7 +15,8 @@
     "amasiro": { "text": "makaburi ya kifalme", "alts": ["makaburi", "makaburi ya wafalme"] },
     "essaza": { "text": "kaunti", "alts": ["wilaya", "ssaza"] },
     "amasaza": { "text": "kaunti nyingi", "alts": ["wilaya", "kaunti"] },
-    "edda-ennyo": { "text": "zamani sana", "alts": ["hapo zamani za kale", "zamani za kale"] }
+    "edda-ennyo": { "text": "zamani sana", "alts": ["hapo zamani za kale", "zamani za kale"] },
+    "abunuwasi": { "text": "Abunuwasi" }
   },
   "sentences": {
     "s26-kabaka-afuga": { "text": "Kabaka anatawala Buganda.", "alts": ["Mfalme anatawala Buganda.", "Kabaka hutawala Buganda."] },
@@ -32,7 +33,9 @@
     "s26-edda-ennyo": {
       "text": "Zamani sana, Kintu alikuwa Kabaka wa kwanza.",
       "alts": ["Hapo zamani za kale, Kintu alikuwa mfalme wa kwanza.", "Zamani sana, Kintu alikuwa mfalme wa kwanza."]
-    }
+    },
+    "s-abunuwasi": { "text": "Abunuwasi alikuwa mjanja sana." },
+    "s-mfalme": { "text": "Mfalme alimwita Abunuwasi." }
   },
   "phrases": [
     "Kabaka aishi milele!",
@@ -42,7 +45,7 @@
     "Makaburi ya kifalme ya Kasubi.",
     "Buganda ina kaunti kumi na nane."
   ],
-  "dialogues": { "u26s3l3": [{ "line": "Kabaka aishi milele!" }] },
+  "dialogues": { "u26s3l3": [{ "line": "Kabaka aishi milele!", "options": ["Aishi milele!", "Sikusikii.", "Nimeshiba."] }] },
   "stories": {
     "kasubi-visit": {
       "title": "Ziara Kasubi",

@@ -15,7 +15,8 @@
     "amasiro": { "text": "royal tombs", "alts": ["tombs", "the royal tombs"] },
     "essaza": { "text": "county", "alts": ["district", "the county"] },
     "amasaza": { "text": "counties", "alts": ["districts", "the counties"] },
-    "edda-ennyo": { "text": "very long ago", "alts": ["long long ago", "a very long time ago"] }
+    "edda-ennyo": { "text": "very long ago", "alts": ["long long ago", "a very long time ago"] },
+    "abunuwasi": { "text": "Abunuwasi", "alts": ["abu nuwas"] }
   },
   "sentences": {
     "s26-kabaka-afuga": { "text": "The Kabaka rules Buganda.", "alts": ["The king rules Buganda."] },
@@ -35,7 +36,9 @@
     "s26-edda-ennyo": {
       "text": "Very long ago, Kintu was the first Kabaka.",
       "alts": ["Long long ago, Kintu was the first king.", "A very long time ago, Kintu was the first Kabaka."]
-    }
+    },
+    "s-abunuwasi": { "text": "Abunuwasi was very clever." },
+    "s-mfalme": { "text": "The king called Abunuwasi.", "alts": ["The king summoned Abunuwasi."] }
   },
   "phrases": [
     "Long live the Kabaka!",

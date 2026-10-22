@@ -15,7 +15,9 @@
     "ndimira": { "text": "ninalimia", "alts": ["nalimia", "ninamlimia"] },
     "nfumbira": { "text": "ninapikia", "alts": ["napikia", "ninawapikia"] },
     "ntundira": { "text": "ninauzia", "alts": ["nauzia", "ninauza katika"] },
-    "mpandiikira": { "text": "ninaandikia", "alts": ["naandikia", "ninamwandikia"] }
+    "mpandiikira": { "text": "ninaandikia", "alts": ["naandikia", "ninamwandikia"] },
+    "mpunga": { "text": "mpunga" },
+    "maji-ya-mvua": { "text": "maji ya mvua" }
   },
   "sentences": {
     "s27-olusuku-lwange": { "text": "Shamba langu la migomba ni kubwa.", "alts": ["Shamba langu ni kubwa.", "Shamba langu la ndizi ni kubwa."] },
@@ -32,7 +34,12 @@
     },
     "s27-nfumbira-abaana": { "text": "Ninawapikia watoto chakula.", "alts": ["Nawapikia watoto chakula.", "Ninawapikia watoto."] },
     "s27-ntundira-mu-katale": { "text": "Ninauzia kahawa sokoni.", "alts": ["Nauza kahawa sokoni.", "Ninauza kahawa sokoni."] },
-    "s27-mpandiikira-maama": { "text": "Ninamwandikia mama ujumbe.", "alts": ["Namwandikia mama ujumbe.", "Ninamwandikia mama yangu ujumbe."] }
+    "s27-mpandiikira-maama": { "text": "Ninamwandikia mama ujumbe.", "alts": ["Namwandikia mama ujumbe.", "Ninamwandikia mama yangu ujumbe."] },
+    "s-mpunga": { "text": "Mpunga unapenda maji mengi." },
+    "s-kupanda-mbegu": { "text": "Leo tutapanda mbegu." },
+    "s-mavuno-mazuri": { "text": "Mavuno ni mazuri mwaka huu." },
+    "s-jembe": { "text": "Chukua jembe." },
+    "s-maji-ya-mvua": { "text": "Tunahifadhi maji ya mvua." }
   },
   "phrases": [
     "Ninalima kwa jembe asubuhi.",
@@ -42,5 +49,12 @@
     "Ninawapikia watoto chakula.",
     "Ninamwandikia mama ujumbe."
   ],
-  "dialogues": { "u27s3l3": [{ "line": "Pole na kazi! Unafanya nini?" }] }
+  "dialogues": {
+    "u27s3l3": [
+      {
+        "line": "Pole na kazi! Unafanya nini?",
+        "options": ["Ninamlimia bibi shamba la ndizi.", "Mimi ni wa Lugave.", "Kabaka aishi milele!"]
+      }
+    ]
+  }
 }

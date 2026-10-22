@@ -17,7 +17,9 @@
     "ndimira",
     "nfumbira",
     "ntundira",
-    "mpandiikira"
+    "mpandiikira",
+    "mpunga",
+    "maji-ya-mvua"
   ],
   "sentences": [
     "s27-olusuku-lwange",
@@ -31,7 +33,12 @@
     "s27-ndimira-jjajja",
     "s27-nfumbira-abaana",
     "s27-ntundira-mu-katale",
-    "s27-mpandiikira-maama"
+    "s27-mpandiikira-maama",
+    "s-mpunga",
+    "s-kupanda-mbegu",
+    "s-mavuno-mazuri",
+    "s-jembe",
+    "s-maji-ya-mvua"
   ],
   "phrases": 6,
   "skills": [
@@ -64,6 +71,18 @@
           "newWords": [],
           "sentences": ["s27-ndimira-jjajja", "s27-amakungula", "s27-nfumbira-abaana"],
           "dialogues": [{ "speaker": "jjajja", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u27s4",
+      "icon": "home",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u27s4l1",
+          "newWords": ["mpunga", "maji-ya-mvua"],
+          "sentences": ["s-mpunga", "s-jembe", "s-maji-ya-mvua", "s-kupanda-mbegu", "s-mavuno-mazuri"]
         }
       ]
     }

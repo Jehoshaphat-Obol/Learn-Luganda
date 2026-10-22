@@ -17,7 +17,13 @@
     "abajulizi",
     "omukisa",
     "akuwe",
-    "omwaka-omuggya"
+    "omwaka-omuggya",
+    "sikukuu",
+    "dini",
+    "ramadhani",
+    "alizaliwa",
+    "anaitwa",
+    "mungu-akubariki"
   ],
   "sentences": [
     "s30-tusaba-katonda",
@@ -32,7 +38,18 @@
     "s30-okusiiba",
     "s30-abajulizi",
     "s30-katonda-akuwe-omukisa",
-    "s30-amiina"
+    "s30-amiina",
+    "s-sikukuu-kesho",
+    "s-idi",
+    "s-krismasi",
+    "s-dini",
+    "s-kusali-msikitini",
+    "s-kusali-kanisani",
+    "s-ramadhani",
+    "s-baraka",
+    "s-alizaliwa",
+    "s-anaitwa",
+    "s-akubariki"
   ],
   "phrases": 6,
   "skills": [
@@ -65,6 +82,19 @@
           "newWords": [],
           "sentences": ["s30-iddi", "s30-omwaka-omuggya", "s30-tusaba-katonda"],
           "dialogues": [{ "speaker": "mukasa", "answer": 0 }]
+        }
+      ]
+    },
+    {
+      "id": "u30s4",
+      "icon": "star",
+      "since": 2,
+      "lessons": [
+        { "id": "u30s4l1", "newWords": ["sikukuu", "dini"], "sentences": ["s-sikukuu-kesho", "s-idi", "s-krismasi", "s-dini"] },
+        {
+          "id": "u30s4l2",
+          "newWords": ["ramadhani", "alizaliwa", "anaitwa", "mungu-akubariki"],
+          "sentences": ["s-kusali-msikitini", "s-kusali-kanisani", "s-ramadhani", "s-baraka", "s-alizaliwa", "s-anaitwa", "s-akubariki"]
         }
       ]
     }

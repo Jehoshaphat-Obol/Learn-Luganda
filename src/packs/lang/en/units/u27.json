@@ -6,16 +6,18 @@
     "enkumbi": { "text": "hoe", "alts": ["the hoe", "a hoe"] },
     "ndima": { "text": "I dig", "alts": ["i farm", "i cultivate", "i am digging"] },
     "ensigo": { "text": "seeds", "alts": ["seed", "the seeds"] },
-    "okusiga": { "text": "to plant", "alts": ["to sow", "planting", "sowing"] },
+    "okusiga": { "text": "to plant", "alts": ["to sow", "planting", "sowing", "to climb"] },
     "kasooli": { "text": "maize", "alts": ["corn", "the maize"] },
     "ebinyeebwa": { "text": "groundnuts", "alts": ["peanuts", "the groundnuts"] },
     "emmwanyi": { "text": "coffee beans", "alts": ["coffee plants", "coffee"] },
-    "amakungula": { "text": "harvest", "alts": ["the harvest", "harvest time"] },
+    "amakungula": { "text": "harvest", "alts": ["the harvest", "harvest time", "crop"] },
     "okukungula": { "text": "to harvest", "alts": ["harvesting", "to reap"] },
     "ndimira": { "text": "I dig for", "alts": ["i farm for", "i dig in"] },
     "nfumbira": { "text": "I cook for", "alts": ["i am cooking for"] },
     "ntundira": { "text": "I sell at", "alts": ["i sell for", "i sell in"] },
-    "mpandiikira": { "text": "I write to", "alts": ["i write for"] }
+    "mpandiikira": { "text": "I write to", "alts": ["i write for"] },
+    "mpunga": { "text": "rice plants", "alts": ["rice", "paddy"] },
+    "maji-ya-mvua": { "text": "rainwater", "alts": ["rain water"] }
   },
   "sentences": {
     "s27-olusuku-lwange": { "text": "My banana garden is big.", "alts": ["My plantation is big.", "My garden is big."] },
@@ -32,7 +34,12 @@
     },
     "s27-nfumbira-abaana": { "text": "I cook food for the children.", "alts": ["I cook for the children."] },
     "s27-ntundira-mu-katale": { "text": "I sell coffee at the market.", "alts": ["I sell the coffee at the market."] },
-    "s27-mpandiikira-maama": { "text": "I write a message to mother.", "alts": ["I write mum a message.", "I write a message to my mother."] }
+    "s27-mpandiikira-maama": { "text": "I write a message to mother.", "alts": ["I write mum a message.", "I write a message to my mother."] },
+    "s-mpunga": { "text": "Rice plants like a lot of water.", "alts": ["Rice likes a lot of water."] },
+    "s-kupanda-mbegu": { "text": "Today we will plant seeds.", "alts": ["We’ll plant seeds today."] },
+    "s-mavuno-mazuri": { "text": "The harvest is good this year." },
+    "s-jembe": { "text": "Take the hoe.", "alts": ["Take a hoe."] },
+    "s-maji-ya-mvua": { "text": "We store rainwater.", "alts": ["We keep rainwater."] }
   },
   "phrases": [
     "I dig with a hoe in the morning.",

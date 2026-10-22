@@ -15,7 +15,8 @@
     "amasiro": { "text": "amasiro" },
     "essaza": { "text": "essaza" },
     "amasaza": { "text": "amasaza" },
-    "edda-ennyo": { "text": "edda ennyo" }
+    "edda-ennyo": { "text": "edda ennyo" },
+    "abunuwasi": { "text": "Abunuwasi" }
   },
   "sentences": {
     "s26-kabaka-afuga": { "text": "Kabaka afuga Buganda." },
@@ -29,7 +30,9 @@
     "s26-amasiro-e-kasubi": { "text": "Amasiro g’e Kasubi.", "alts": ["Amasiro ge Kasubi."] },
     "s26-amasaza": { "text": "Buganda erina amasaza kkumi na munaana." },
     "s26-essaza-lyange": { "text": "Essaza lyange Kyaddondo." },
-    "s26-edda-ennyo": { "text": "Edda ennyo, Kintu ye yali Kabaka eyasooka." }
+    "s26-edda-ennyo": { "text": "Edda ennyo, Kintu ye yali Kabaka eyasooka." },
+    "s-abunuwasi": { "text": "Abunuwasi yali mugezi nnyo." },
+    "s-mfalme": { "text": "Kabaka yayita Abunuwasi." }
   },
   "phrases": [
     "Kabaka awangaale!",

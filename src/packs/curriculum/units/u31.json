@@ -16,7 +16,15 @@
     "nsomesa",
     "ndisa",
     "nnywesa",
-    "ntunza"
+    "ntunza",
+    "kuuza",
+    "bidhaa",
+    "hasara",
+    "akiba",
+    "mkopo",
+    "fundisha",
+    "onyesha",
+    "rudisha"
   ],
   "sentences": [
     "s31-nnina-bizinensi",
@@ -29,7 +37,16 @@
     "s31-okwewola",
     "s31-nsomesa-abaana",
     "s31-ndisa-abaana",
-    "s31-nnywesa-ente"
+    "s31-nnywesa-ente",
+    "s-kuuza",
+    "s-bidhaa",
+    "s-faida",
+    "s-hasara",
+    "s-akiba",
+    "s-mkopo",
+    "s-fundisha",
+    "s-onyesha",
+    "s-rudisha"
   ],
   "phrases": 6,
   "skills": [
@@ -63,6 +80,23 @@
         { "id": "u31s3l1", "newWords": ["nsomesa"], "sentences": ["s31-nsomesa-abaana"] },
         { "id": "u31s3l2", "newWords": ["ndisa", "nnywesa"], "sentences": ["s31-ndisa-abaana", "s31-nnywesa-ente"] },
         { "id": "u31s3l3", "newWords": [], "sentences": ["s31-nsomesa-abaana", "s31-nnywesa-ente", "s31-nfunye-amagoba"] }
+      ]
+    },
+    {
+      "id": "u31s4",
+      "icon": "shop",
+      "since": 2,
+      "lessons": [
+        {
+          "id": "u31s4l1",
+          "newWords": ["kuuza", "bidhaa", "hasara", "akiba", "mkopo"],
+          "sentences": ["s-kuuza", "s-bidhaa", "s-faida", "s-hasara"]
+        },
+        {
+          "id": "u31s4l2",
+          "newWords": ["fundisha", "onyesha", "rudisha"],
+          "sentences": ["s-akiba", "s-mkopo", "s-fundisha", "s-onyesha", "s-rudisha"]
+        }
       ]
     }
   ]

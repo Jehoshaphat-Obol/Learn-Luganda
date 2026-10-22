@@ -16,7 +16,18 @@
     "oli-wa-kika-ki": { "text": "Wewe ni wa ukoo gani?", "alts": ["ukoo wako ni upi", "unatoka ukoo gani", "wewe ni ukoo gani"] },
     "tetulya": { "text": "hatuli", "alts": ["sisi hatuli"] },
     "owooluganda": { "text": "ndugu", "alts": ["jamaa", "ndugu wa ukoo"] },
-    "jjajja-omutaka": { "text": "mkuu wa ukoo", "alts": ["kiongozi wa ukoo", "mzee wa ukoo", "chifu"] }
+    "jjajja-omutaka": { "text": "mkuu wa ukoo", "alts": ["kiongozi wa ukoo", "mzee wa ukoo", "chifu"] },
+    "pwani": { "text": "pwani" },
+    "bahari": { "text": "bahari" },
+    "kisiwa": { "text": "kisiwa" },
+    "jahazi": { "text": "jahazi" },
+    "kaskazi": { "text": "kaskazi" },
+    "wafanyabiashara": { "text": "wafanyabiashara" },
+    "lugha": { "text": "lugha" },
+    "kutoka-kiarabu": { "text": "kutoka Kiarabu" },
+    "wenye": { "text": "wenye" },
+    "maarufu": { "text": "maarufu" },
+    "mji-wa-kale": { "text": "mji wa kale" }
   },
   "sentences": {
     "s25-ekika-kyange": { "text": "Ukoo wangu ni Ffumbe.", "alts": ["Ukoo wangu ni fungo."] },
@@ -28,7 +39,17 @@
     "s25-tetulya-mmamba": { "text": "Hatuli kamongo.", "alts": ["Sisi hatuli kamongo."] },
     "s25-omuziro-gwa-ngeye": { "text": "Mwiko wa Ngeye ni mbega.", "alts": ["Mwiko wa ukoo wa Ngeye ni mbega."] },
     "s25-tuli-booluganda": { "text": "Sisi ni ndugu.", "alts": ["Tu ndugu.", "Sisi ni jamaa.", "Tuko ukoo mmoja."] },
-    "s25-omutaka": { "text": "Mkuu wa ukoo anakuja.", "alts": ["Mzee wa ukoo anakuja.", "Kiongozi wa ukoo anakuja."] }
+    "s25-omutaka": { "text": "Mkuu wa ukoo anakuja.", "alts": ["Mzee wa ukoo anakuja.", "Kiongozi wa ukoo anakuja."] },
+    "s-pwani-nzuri": { "text": "Pwani ni nzuri sana." },
+    "s-bahari-kubwa": { "text": "Bahari ni kubwa!" },
+    "s-kisiwa-cha-zanzibar": { "text": "Zanzibar ni kisiwa." },
+    "s-jahazi-baharini": { "text": "Jahazi liko baharini." },
+    "s-kaskazi": { "text": "Kaskazi ilileta majahazi." },
+    "s-wafanyabiashara-walifika": { "text": "Wafanyabiashara walifika kutoka Arabia na India." },
+    "s-lugha-ya-pwani": { "text": "Kiswahili ni lugha ya pwani." },
+    "s-maneno-kiarabu": { "text": "Neno “kitabu” ni kutoka Kiarabu." },
+    "s-mji-wenye-historia": { "text": "Lamu ni mji wenye historia." },
+    "s-maarufu": { "text": "Mji wa kale wa Kilwa ni maarufu." }
   },
   "phrases": [
     "Wewe ni wa ukoo gani?",
@@ -38,5 +59,7 @@
     "Hatuli kamongo.",
     "Sisi ni ndugu."
   ],
-  "dialogues": { "u25s3l3": [{ "line": "Wewe ni wa ukoo gani, mwanangu?" }] }
+  "dialogues": {
+    "u25s3l3": [{ "line": "Wewe ni wa ukoo gani, mwanangu?", "options": ["Mimi ni wa ukoo wa Lugave, babu.", "Nimechoka sana.", "Ongeza chumvi."] }]
+  }
 }
