@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u29",
+  "words": {
+    "engoma": { "text": "leri" },
+    "okukuba": { "text": "ve" },
+    "endingidi": { "text": "endingidi" },
+    "amadinda": { "text": "amadinda" },
+    "ennanga": { "text": "adungu" },
+    "oluyimba": { "text": "ongo" },
+    "omuyimbi": { "text": "ongo ngo ba" },
+    "amazina": { "text": "ongo to" },
+    "bakisimba": { "text": "Bakisimba" },
+    "abayimba": { "text": "ongo ngo ni" },
+    "abazina": { "text": "ongo to ni" },
+    "akuba": { "text": "ve ni" },
+    "kinyuma": { "text": "asi muke ndra" },
+    "mazoezi": { "text": "imbazu" },
+    "mchezaji": { "text": "o'be ba" },
+    "mpiga-ngoma": { "text": "leri ve ba" },
+    "bendi": { "text": "bendi" },
+    "taarab": { "text": "taarab" },
+    "gitaa": { "text": "gita" },
+    "sauti": { "text": "ti eri" },
+    "tamasha": { "text": "ongo aliko" },
+    "kusikiliza": { "text": "eri" }
+  },
+  "sentences": {
+    "s29-kuba-engoma": { "text": "Ve leri!" },
+    "s29-njagala-okukuba-engoma": { "text": "Ma le leri ve." },
+    "s29-endingidi": { "text": "Endingidi ka amadinda." },
+    "s29-ennanga": { "text": "Adungu aradu ndra." },
+    "s29-oluyimba-lwe": { "text": "Ongo nde muke." },
+    "s29-omuyimbi": { "text": "Ongo ngo ba ngo ongo muke." },
+    "s29-amazina-kinyuma": { "text": "Ongo to nde asi muke ndra!" },
+    "s29-bakisimba": { "text": "Ama to Bakisimba." },
+    "s29-abantu-abayimba": { "text": "Bayi ongo ngo ni ambo." },
+    "s29-abaana-abazina": { "text": "Anzi ongo to ni asi muke." },
+    "s29-omusajja-akuba": { "text": "Agupi leri ve ni ni ati." },
+    "s29-kinyuma": { "text": "Asi muke ndra ndra!" },
+    "s-wanacheza-ngoma": { "text": "Yi ongo to." },
+    "s-mazoezi-kila-siku": { "text": "Ma ovu be imbazu etu dria." },
+    "s-mwimbaji": { "text": "Ongo ngo ba ovu be ti eri aradu." },
+    "s-mchezaji": { "text": "{@amara} ni ongo to ba muke ndra." },
+    "s-mpiga-ngoma": { "text": "Leri ve ba ni ma atibi." },
+    "s-bendi": { "text": "Bendi ka ongo ve ini nde." },
+    "s-taarab": { "text": "Dede le taarab ndra." },
+    "s-kupiga-gitaa": { "text": "Ma imba gita ve." },
+    "s-tamasha": { "text": "Ongo aliko ovu Etu azya." },
+    "s-kusikiliza": { "text": "Ma le ongo eri." },
+    "s-sauti": { "text": "Ti eri amboa ndra!" }
+  },
+  "phrases": ["Ve leri!", "Ongo nde muke.", "Ongo ngo ba ngo ongo muke.", "Ama to Bakisimba.", "Anzi ongo to ni asi muke.", "Asi muke ndra ndra!"],
+  "dialogues": { "u29s3l3": [{ "line": "Agupi leri ve ni ni a'di?", "options": ["Eri ni ma ati!", "Leri amboa.", "Awa'difo emuzu ni."] }] },
+  "stories": {
+    "drum-lesson": {
+      "title": "Leri imbazu",
+      "summary": "{@amara} imba leri ve sukulu ongo aliko ni.",
+      "lines": [
+        "Ati, ma le leri ve sukulu ongo aliko alia.",
+        "Muke! Ji leri nde.",
+        "Amboa ya mvaa ya?",
+        "Mvaa. Eri: bum, bum, ka-bum.",
+        "Bum, bum, ka-bum! Asi muke ndra ndra!",
+        "Anzi ongo to ni ka Bakisimba to.",
+        "Ka a'di ka ongo ngo?",
+        "{@nakato}! Eri ni ongo ngo ba muke.",
+        "Ma asi muke ndra. Awa'difo, ati!"
+      ],
+      "questions": [
+        { "question": "{@amara} ve leri ngo?", "options": ["Amboa", "Mvaa", "Leri ku"] },
+        { "question": "Ongo to bayi ka ngo to?", "options": ["Bakisimba", "Mupira", "Bao"] },
+        { "question": "Mi a'yo \"anzi ongo to ni\" ngoni?", "options": ["anzi ongo to ni", "anzi ongo to", "anzi o'be"] }
+      ]
+    }
+  }
+}
