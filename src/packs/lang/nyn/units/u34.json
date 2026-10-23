@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u34",
+  "words": {
+    "bwe": { "text": "obu" },
+    "bwe-nzuukuka": { "text": "obu ninsisimuka" },
+    "bw-etonnya": { "text": "obu enjura erikugwa" },
+    "singa": { "text": "ku" },
+    "nnandiguze": { "text": "nkaaguzire" },
+    "nnandigenze": { "text": "nkaagiire" },
+    "nnandyagadde": { "text": "Nakunda" },
+    "ka-tulabe": { "text": "Tureebe" },
+    "katonda-bwanaayagala": { "text": "Ruhanga yaayenda" },
+    "ukifika": { "text": "obu oraahika" },
+    "mvua-ikinyesha": { "text": "enjura yaagwa" },
+    "nikipata": { "text": "ku ndaatunga" },
+    "ningekuwa": { "text": "ku nkaba ndi" },
+    "laiti": { "text": "nkanaaba" },
+    "tajiri": { "text": "omugaiga" }
+  },
+  "sentences": {
+    "s34-bwe-nzuukuka": { "text": "Obu ninsisimuka, ninywa caai." },
+    "s34-bwe-ntuuka": { "text": "Obu ndaahika, ninza kukuteerera." },
+    "s34-enkuba-bwetonnya": { "text": "Obu enjura erikugwa, tindikugyenda." },
+    "s34-singa-nnina-ssente": { "text": "Ku nkaba nyine esente, nkaaguzire emotoka." },
+    "s34-singa-tewali-nkuba": { "text": "Ku hatakabaireho njura, nkaagiire." },
+    "s34-nnandyagadde-caayi": { "text": "Nakunda caai, ninkushaba." },
+    "s34-nnandyagadde-okugenda": { "text": "Nakunda kugyenda {@getaway}." },
+    "s34-ka-tulabe": { "text": "Tureebe nyenkya." },
+    "s34-katonda-bwanaayagala": { "text": "Ninza kwija, Ruhanga yaayenda." },
+    "s-ukifika": { "text": "Obu oraahika, onteerere esimu." },
+    "s-mvua-ikinyesha": { "text": "Enjura yaagwa, nituza kuguma omuka." },
+    "s-nikipata-pesa": { "text": "Ku ndaatunga esente, ninza kutambura." },
+    "s-ningekuwa-tajiri": { "text": "Ku nkaba ndi omugaiga, nkaaguzire emotoka." },
+    "s-ningenunua": { "text": "Nkaaguzire enju mpango." },
+    "s-laiti": { "text": "Nkanaaba nyine omwanya!" },
+    "s-ikiwa": { "text": "Ku oraabe oine ekibuuzo, buuza." }
+  },
+  "phrases": [
+    "Obu ninsisimuka, ninywa caai.",
+    "Obu enjura erikugwa, tindikugyenda.",
+    "Ku nkaba nyine esente, nkaaguzire emotoka.",
+    "Nakunda caai, ninkushaba.",
+    "Tureebe nyenkya.",
+    "Ninza kwija, Ruhanga yaayenda."
+  ],
+  "dialogues": {
+    "u34s2l3": [
+      {
+        "line": "Ku okaba oine esente nyingi, okaaguzire ki?",
+        "options": ["Nkaaguzire enju mpango.", "Obu ninsisimuka, ninywa caai.", "Tureebe ekibira."]
+      }
+    ],
+    "u34s3l3": [
+      {
+        "line": "Noija aha kigyenda nyenkya?",
+        "options": ["Ninza kwija, Ruhanga yaayenda.", "Nkaaguzire emotoka.", "Naashushana na maama we."]
+      }
+    ]
+  },
+  "stories": {}
+}

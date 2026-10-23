@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u8",
+  "notes": {
+    "eriiso": "Plural amaisho, which also means the front: omu maisho, straight ahead.",
+    "gunnuma": "Agrees with omutwe (omu- nouns take gu-).",
+    "lunnuma": "Agrees with enda (n- nouns take i-).",
+    "omusawo": "Omushaho, a doctor or healer.",
+    "olubuto": "Enda, the stomach or belly.",
+    "ndi-mulwadde": "Ndwaire, I’m sick; omurwaire, a sick person."
+  },
+  "tips": { "u8s1": "it-hurts", "u8s2": "it-hurts", "u8s3": "it-hurts" },
+  "guidebook": {
+    "intro": "Name the parts of the body, say what hurts and see the doctor. The word for “hurts” agrees with the part of the body.",
+    "tips": [
+      {
+        "id": "it-hurts",
+        "title": "It hurts me agrees too",
+        "body": [
+          "“It hurts me” is **-nshaasha**, and it takes the prefix of the body part: **Omutwe nigunshaasha** (my head hurts), **Enda niinshaasha** (my stomach hurts), **Okuguru nikunshaasha** (my leg hurts).",
+          "**Ndwaire** means “I am sick”. To say what you have, use **nyine**: **Nyine omushwija** (I have a fever)."
+        ],
+        "table": [
+          ["Body part", "It hurts me", "English"],
+          ["omutwe", "nigunshaasha", "head"],
+          ["enda", "niinshaasha", "stomach"],
+          ["okuguru", "nikunshaasha", "leg"],
+          ["eriino", "nirinshaasha", "tooth"]
+        ],
+        "targetColumns": [0, 1]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Okire bwangu",
+        "body": [
+          "Visiting the sick is a duty. Friends bring food and say **Okire bwangu!** (get well soon). Many families still use herbal remedies alongside the clinic."
+        ]
+      }
+    ]
+  }
+}

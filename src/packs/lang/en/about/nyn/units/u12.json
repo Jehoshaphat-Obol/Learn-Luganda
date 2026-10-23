@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u12",
+  "notes": {
+    "etonnya": "Enjura neegwa, literally “the rain is falling”.",
+    "gwaka": "Omushana nigwaaka, the sun is shining.",
+    "obudde": "Obwire is the weather and also time.",
+    "ttoggo": "Itumba, the long rains around March to May.",
+    "ekyeya": "Ekyanda, the dry season.",
+    "empewo": "Obutiti, cold; nimpurira obutiti, I feel cold."
+  },
+  "tips": { "u12s1": "weather-does", "u12s2": "weather-does", "u12s3": "seasons" },
+  "guidebook": {
+    "intro": "Talk about the weather and the seasons. Rain and sun “do things” in Runyankore: rain falls and the sun burns.",
+    "tips": [
+      {
+        "id": "weather-does",
+        "title": "The weather does things",
+        "body": [
+          "**Enjura neegwa** is “it’s raining”, literally “the rain is falling”. **Omushana nigwaaka**, “the sun is burning”, means it’s sunny. **Nibwotsya** means it’s hot (the weather is burning).",
+          "To say how you feel, use **Nimpurira**: **Nimpurira obutiti** (I feel cold)."
+        ]
+      },
+      {
+        "id": "seasons",
+        "title": "Wet and dry",
+        "body": [
+          "The long rains are **itumba**, and the rains later in the year are **omuhanga**. The dry season is **ekyanda**. **Obwire** means the weather and also time: **Obwire ni burungi** (the weather is nice)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Planting with the rains",
+        "body": [
+          "Farmers in Ankole plant millet, beans and bananas with the rains, and herders move cattle to find water and grass in the dry season."
+        ]
+      }
+    ]
+  }
+}

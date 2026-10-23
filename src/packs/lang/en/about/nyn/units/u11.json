@@ -1,0 +1,49 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u11",
+  "notes": {
+    "nzuukuka": "Ninsisimuka, I wake up; Ninyimuka, I get up.",
+    "ekyenkya": "Ekyanyenkya, literally “the morning thing”.",
+    "nfumba": "From -teeka, to cook.",
+    "bulijjo": "Buriijo, always.",
+    "oluvannyuma": "Bwanyima, afterwards.",
+    "nneebaka": "Nimbyama, I sleep / I’m going to bed."
+  },
+  "tips": { "u11s1": "who", "u11s2": "who", "u11s3": "ku-verbs" },
+  "guidebook": {
+    "intro": "Talk about your day from waking up to going to sleep. The verb’s first letters say who is doing it.",
+    "tips": [
+      {
+        "id": "who",
+        "title": "Who is doing it",
+        "body": [
+          "The present starts with **ni-** and then the person: **ninkora** (I work), **nookora** (you work), **naakora** (he or she works), **nitukora** (we work), **nimukora** (you all work), **nibakora** (they work)."
+        ],
+        "table": [
+          ["Person", "Runyankore", "English"],
+          ["I", "Ninkora", "I work"],
+          ["you", "Nookora", "you work"],
+          ["he / she", "Naakora", "he / she works"],
+          ["we", "Nitukora", "we work"],
+          ["they", "Nibakora", "they work"]
+        ],
+        "targetColumns": [1]
+      },
+      {
+        "id": "ku-verbs",
+        "title": "Ku-: the verb’s name",
+        "body": [
+          "The dictionary form of a verb starts with **ku-** (or **oku-**): **kusoma** (to read), **kuzaana** (to play). Use it after verbs like “like”: **Ninkunda kusoma** (I like reading)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Early mornings",
+        "body": [
+          "Village days start before sunrise with milking the cows. Children often fetch water and help with chores before walking to school."
+        ]
+      }
+    ]
+  }
+}

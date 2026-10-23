@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u40",
+  "words": {
+    "wakayima": { "text": "Wakame", "alts": ["Kamuroga"] },
+    "omugezi": { "text": "omunyabwengye", "alts": ["ow'amagezi"] },
+    "yalimba": { "text": "akabeiha", "alts": ["yaabeiha"] },
+    "akakodyo": { "text": "orukwe" },
+    "kintu": { "text": "Kintu" },
+    "nnambi": { "text": "Nambi", "alts": ["Nnambi"] },
+    "walumbe": { "text": "Walumbe" },
+    "yeerabira": { "text": "akeebwa", "alts": ["yaayebwa"] },
+    "obulo": { "text": "oburo" },
+    "etuyigiriza": { "text": "netwegyesa" },
+    "fisi": { "text": "empisi" },
+    "tamaa": { "text": "omururu" },
+    "alimdanganya": { "text": "akamubeiha" },
+    "busara": { "text": "amagezi" },
+    "funzo": { "text": "ekyokwega" }
+  },
+  "sentences": {
+    "s40-wakayima-mugezi": { "text": "Wakame akaba ari omunyabwengye munonga." },
+    "s40-yalimba-enjovu": { "text": "Wakame akabeiha enjojo." },
+    "s40-akakodyo": { "text": "Akaba aine orukwe." },
+    "s40-kintu-eyasooka": { "text": "Kintu niwe muntu owabandize." },
+    "s40-kintu-nnambi": { "text": "Kintu akashwera Nambi, muhara wa Ggulu." },
+    "s40-yeerabira-obulo": { "text": "Nambi akeebwa oburo bw'enkoko." },
+    "s40-walumbe": { "text": "Kandi Walumbe yaabakuratira." },
+    "s40-etuyigiriza-ki": { "text": "Omugani ogu netwegyesa ki?" },
+    "s40-etuyigiriza-nti": { "text": "Netwegyesa ngu amagezi nigasinga amaani." },
+    "s-fisi": { "text": "Empisi eine omururu mwingi." },
+    "s-mjanja": { "text": "Wakame aine amagezi kukira empisi." },
+    "s-tamaa": { "text": "Omururu ni mubi." },
+    "s-alimdanganya": { "text": "Wakame akabeiha empisi." },
+    "s-busara": { "text": "Nyakuru aine amagezi maingi." },
+    "s-funzo": { "text": "Ekyokwega omu mugani ni ki?" },
+    "s-inatufundisha": { "text": "Omugani ogu netwegyesa kuhwerana." }
+  },
+  "phrases": [
+    "Wakame akaba ari omunyabwengye munonga.",
+    "Wakame akabeiha enjojo.",
+    "Kintu niwe muntu owabandize.",
+    "Nambi akeebwa oburo bw'enkoko.",
+    "Omugani ogu netwegyesa ki?",
+    "Netwegyesa ngu amagezi nigasinga amaani."
+  ],
+  "dialogues": {
+    "u40s3l3": [
+      {
+        "line": "Wakame akabeiha enjojo. Omugani ogu netwegyesa ki?",
+        "options": ["Netwegyesa ngu amagezi nigasinga amaani.", "Oraire ota?", "Teera poliisi esimu!"]
+      }
+    ]
+  },
+  "stories": {
+    "kintu-and-nnambi": {
+      "title": "Kintu na Nambi",
+      "summary": "{@jjajja} naagambira {@emma} omugani gw'oku okufa kwaizire omu nsi.",
+      "lines": [
+        "Nyakuru, nimpurira ngu hariho omugani gwa Kintu. Ngambira!",
+        "Kare. Kare na kare, Kintu niwe muntu owabandize. Akaba atuura wenka n'ente ye.",
+        "Reero Nambi, muhara wa Ggulu, yaamukunda. Kintu yaamushwera.",
+        "Ggulu yaagira ati: “Mugyende ahonaaho, Walumbe arekye kubakuratira.”",
+        "Kwonka omu muhanda, Nambi akeebwa oburo bw'enkoko. Yaagaruka.",
+        "Walumbe yaabakuratira omu nsi. Kuruga obwo, abantu nibafa.",
+        "Ai! Omugani ogu netwegyesa ki?",
+        "Netwegyesa ngu tushemereire kuhuriiriza abakuru.",
+        "Webale munonga, Nyakuru!"
+      ],
+      "questions": [
+        { "question": "Nambi akaba ari oha?", "options": ["Muhara wa Ggulu", "Munyaanya Kintu", "Wakame ow'amagezi"] },
+        { "question": "Ahabw'enki Nambi yaagaruka?", "options": ["Ahabw'ente ye", "Ahabw'oburo bw'enkoko", "Kureeba Walumbe"] },
+        { "question": "{@jjajja} naatuha kyokwega ki?", "options": ["Muhuriirize abakuru", "Amagezi nigasinga amaani", "Mwanguhe kutaaha"] }
+      ]
+    }
+  }
+}

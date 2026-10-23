@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Oruswahili nirwo rurimi rw'aba East Africa boona, rurikugambwa abantu obukaikuru bwingi kuruga Mombasa na Zanzibar kuhika Kampala, Kigali na Goma.",
+  "notes": "Drafted by Claude (AI) for the Runyankore courses (#128) with low confidence in Runyankore; needs a native-speaker review. Word and unit notes fall back to the English notes.",
+  "landing": {
+    "hello": "Habari?",
+    "thanks": "Asante",
+    "place": "East Africa",
+    "word": "kujifunza — kwega",
+    "words": [
+      ["Habari?", "Agandi?"],
+      ["Nzuri", "Ni marungi"],
+      ["Asante", "Webale"],
+      ["Karibu", "Tukwakiire"],
+      ["Rafiki", "Omunywani"],
+      ["Maji", "Amaizi"],
+      ["Chakula", "Ebyokurya"],
+      ["Pole pole", "Mpora mpora"],
+      ["Hakuna shida", "Tihariho kizibu"],
+      ["Kwaheri", "Ogumeho"]
+    ],
+    "why": {
+      "title": "Orurimi rumwe ahabw'**East Africa yoona.**",
+      "text": "Oruswahili n'orurimi rwa gavumenti omu Kenya, Tanzania, Uganda n'omu East African Community, kandi nirugambwa buri izooba kuruga aha nyanja kuhika Congo. Ruyege otambure, osubuure, okore abanywani kandi ohuriire ebyemiziki, kuruga taarab kuhika bongo flava.",
+      "cards": [
+        { "title": "Ahabw'abatambuzi", "text": "Tambura kuruga Mombasa kuhika Mwanza omu matatu, daladala nari obwato." },
+        { "title": "Ahabw'omurimo", "text": "Gamba n'abu orikukora nabo n'abaguzi omu kitundu kyona." },
+        { "title": "Ahabw'abarikwenda kumanya", "text": "Shanga ebika by'amaziina, enfumu n'ebyevugo by'emyaka rukumi." }
+      ]
+    },
+    "sample": {
+      "prompt": "Ni kiha ekirikumanyisa “webale”?",
+      "options": ["Habari?", "Asante", "Hapana"],
+      "answer": "Asante",
+      "explain": "_Asante_ nikimanyisa webale."
+    },
+    "start": { "word": "Tuanze!", "caption": "tuanze — tutandike hati" },
+    "farewell": "Asante sana — webale munonga.",
+    "audience": "Abarikutandika, abatambuzi n'abarikwehayo abarikuza East Africa, n'eka ezirikugumya Oruswahili omuka.",
+    "first": "Okuramukya, okweyanjura n'enamba, bwanyima eka, ebyokurya, akatare, eshaaha, ebifo, omuka n'amagara, ekicweka ku kicweka."
+  },
+  "cast": {
+    "nakato": "Omwebembezi wawe, omwegi wa yunivasite omuri Dar es Salaam",
+    "mukasa": "Naagurisa caai na chapati omuri Mombasa",
+    "jjajja": "Nyakuru omuri Zanzibar orikugarukamu byona n'enfumu",
+    "ssali": "Omuvuzi wa matatu omuri Nairobi omanyire buri siteegi",
+    "amara": "Omwegi wa sekendare omuri Arusha orikukunda bongo flava",
+    "emma": "Omugyenyi kuruga aheeru, orikweega Oruswahili nkaiwe"
+  }
+}

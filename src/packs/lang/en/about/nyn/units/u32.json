@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u32",
+  "notes": {
+    "nnalubaale": "Lake Victoria.",
+    "kiyira": "The Nile.",
+    "omugga": "Omugyera, a river.",
+    "olusozi": "Omusozi, a hill; plural emisozi.",
+    "tosuula": "Otanaga, don’t throw away.",
+    "okusimba": "Kutera emiti, to plant trees."
+  },
+  "tips": { "u32s1": "place-words", "u32s2": "place-words", "u32s3": "place-words" },
+  "guidebook": {
+    "intro": "Lakes, rivers, hills and forests, and how to look after them. Places take omu, aha and kuruga.",
+    "tips": [
+      {
+        "id": "place-words",
+        "title": "Omu, aha and kuruga",
+        "body": [
+          "**Omu** means in or into: **omu kibira** (in the forest). **Aha** means at or on: **aha musozi** (on the hill). **Kuruga** means from: **kuruga Nalubaale** (from Lake Victoria)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Hills and lakes of Ankole",
+        "body": [
+          "Ankole is rolling green hills, **emisozi**, with Lake Mburo to the east and the River Rwizi winding through Mbarara. Lake Victoria is **Nalubaale** and the Nile is **Kiyira**."
+        ]
+      }
+    ]
+  }
+}

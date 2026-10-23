@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Kinyankore huzungumzwa na watu takriban milioni tatu katika Ankole, milima ya kijani ya kusini-magharibi mwa Uganda karibu na Mbarara, nchi ya ng’ombe wenye pembe ndefu.",
+  "notes": "Drafted by Claude (AI) for the Runyankore courses (#128); needs a native-speaker review. The Swahili needs a native-speaker review; word and unit notes fall back to the English notes (lang/en/about/nyn).",
+  "landing": {
+    "hello": "Agandi!",
+    "thanks": "Webale",
+    "place": "Ankole",
+    "word": "kwega — kujifunza",
+    "words": [
+      ["Agandi?", "Habari?"],
+      ["Ni marungi", "Nzuri"],
+      ["Webale", "Asante"],
+      ["Kare", "Sawa"],
+      ["Omunywani", "Rafiki"],
+      ["Amaizi", "Maji"],
+      ["Ebyokurya", "Chakula"],
+      ["Sebo", "Bwana"],
+      ["Nyabo", "Mama"],
+      ["Ogumeho", "Kwaheri"]
+    ],
+    "why": {
+      "title": "Lugha ya **milima na ng’ombe wa Ankole.**",
+      "text": "Kinyankore ni lugha ya Mbarara, Bushenyi, Ntungamo na Ibanda, na inakaribiana na Kikiga, Kinyoro na Kitooro, kwa hiyo kuijifunza kunakufungulia sehemu kubwa ya magharibi mwa Uganda. Ijifunze kwa ajili ya familia, safari, kazi na mashairi ya sifa ya Ankole.",
+      "cards": [
+        { "title": "Kwa familia", "text": "Ongea na babu, bibi na ndugu magharibi mwa Uganda." },
+        { "title": "Kwa wasafiri", "text": "Tafuta njia kutoka Mbarara hadi Ziwa Mburo na Kabale." },
+        { "title": "Kwa wadadisi", "text": "Gundua ngeli za nomino, salamu ndefu na maneno mengi ya ng’ombe." }
+      ]
+    },
+    "sample": {
+      "prompt": "Lipi lina maana ya “asante”?",
+      "options": ["Agandi", "Webale", "Ngaaha"],
+      "answer": "Webale",
+      "explain": "_Webale_ ina maana ya asante."
+    },
+    "start": { "word": "Tutandike!", "caption": "tutandike — tuanze" },
+    "farewell": "Webale munonga — asante sana.",
+    "audience": "Wanaoanza kabisa, familia kutoka Ankole, wanaojitolea na wasafiri wanaoelekea magharibi mwa Uganda.",
+    "first": "Salamu, kujitambulisha na namba, kisha familia, chakula, sokoni, saa, mahali, nyumbani na afya, kipengele kwa kipengele."
+  },
+  "cast": { "emma": "Mgeni anayejifunza Kinyankore kabla ya safari yake" }
+}

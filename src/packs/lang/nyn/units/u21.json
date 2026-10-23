@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u21",
+  "words": {
+    "nsanyuse": { "text": "Nshemereirwe" },
+    "nnakuwadde": { "text": "Nyine eshaari" },
+    "oli-bulungi": { "text": "Ori gye?", "alts": ["Ori kurungi?"] },
+    "nneewuunya": { "text": "Natangaara" },
+    "nkooye": { "text": "Nduhire" },
+    "ntidde": { "text": "Natiina" },
+    "nneeraliikirira": { "text": "Ninyeraarikirira" },
+    "nnyiize": { "text": "Nyine ekiniga" },
+    "ali-atya": { "text": "Ari ata?" },
+    "bambi": { "text": "Ihangane" },
+    "nsonyiwa": { "text": "Nsaasira" },
+    "nkwagala": { "text": "Nkukunda" },
+    "nkusubwa": { "text": "Naakukumbura" },
+    "mukwano-gwange": { "text": "munywani wangye" },
+    "tokaaba": { "text": "Otarira" },
+    "samahani": { "text": "Mbabarira" },
+    "furaha": { "text": "okushemererwa" },
+    "nina-furaha": { "text": "Ndi mushemerevu" },
+    "huzuni": { "text": "eshaari" },
+    "hasira": { "text": "ekiniga" },
+    "naogopa": { "text": "Nyine obwoba" },
+    "wasiwasi": { "text": "okweraarikirira" },
+    "kuhusu": { "text": "ebirikukwata aha" },
+    "usijali": { "text": "Otaheeraarikirira" },
+    "bahati-njema": { "text": "Omugisha murungi" }
+  },
+  "sentences": {
+    "s21-nsanyuse-nnyo": { "text": "Nshemereirwe munonga erizooba!" },
+    "s21-lwaki-onakuwadde": { "text": "Ahabw'enki oine eshaari?" },
+    "s21-oli-bulungi": { "text": "Ori gye, munywani wangye?" },
+    "s21-nneewuunya": { "text": "Natangaara! Noija erizooba?" },
+    "s21-nkooye-nnyo": { "text": "Nduhire munonga. Ninza kubyama." },
+    "s21-ntidde": { "text": "Natiina, eiguru nirihinda." },
+    "s21-nneeraliikirira": { "text": "Ninyeraarikirira ekigyezo." },
+    "s21-nnyiize": { "text": "Nyine ekiniga ahabw'okuba takisi teyaizire." },
+    "s21-maama-ali-atya": { "text": "Maama waawe ari ata?" },
+    "s21-bambi": { "text": "Ihangane! Okire bwangu." },
+    "s21-nsonyiwa": { "text": "Nsaasira, naija nkyerereirwe." },
+    "s21-nkwagala-maama": { "text": "Nkukunda munonga, Maama." },
+    "s21-nkusubwa": { "text": "Naakukumbura, munywani wangye." },
+    "s21-tokaaba": { "text": "Otarira, mwana wangye." },
+    "s-pole-sana": { "text": "Ihangane munonga!" },
+    "s-samahani-daktari": { "text": "Mbabarira, mushaho." },
+    "s-nimechoka-sana": { "text": "Nduhire munonga." },
+    "s-nina-furaha": { "text": "Ndi mushemerevu erizooba!" },
+    "s-siku-ya-furaha": { "text": "N'eizooba ry'okushemererwa." },
+    "s-nina-huzuni": { "text": "Nyine eshaari." },
+    "s-nimefurahi-sana": { "text": "Nshemereirwe munonga munonga!" },
+    "s-nimeshangaa": { "text": "Natangaara buzima!" },
+    "s-bosi-hasira": { "text": "Boosi aine ekiniga." },
+    "s-nimekasirika": { "text": "Nyine ekiniga kingi!" },
+    "s-naogopa-mbwa": { "text": "Nintiina embwa." },
+    "s-usijali": { "text": "Otaheeraarikirira, tihariho kizibu." },
+    "s-nakupenda-bibi": { "text": "Nkukunda, Nyakuru." },
+    "s-hongera-mtihani": { "text": "Twakushemerererwa aha kigyezo!" },
+    "s-bahati-njema": { "text": "Omugisha murungi nyenkya!" }
+  },
+  "phrases": [
+    "Nshemereirwe munonga erizooba!",
+    "Ori gye, munywani wangye?",
+    "Nduhire munonga.",
+    "Ninyeraarikirira ekigyezo.",
+    "Ihangane! Okire bwangu.",
+    "Nsaasira, naija nkyerereirwe.",
+    "Naakukumbura."
+  ],
+  "dialogues": {
+    "u21s2l3": [
+      {
+        "line": "Ori gye? Noorebeka oruhire.",
+        "options": ["Ego, nduhire munonga. Nkozire munonga erizooba.", "Nshemereirwe kukureeba.", "Otarira."]
+      }
+    ],
+    "u21s3l3": [{ "line": "Nyine eshaari. Nyakuru arwaire.", "options": ["Ihangane! Ninza kumurambura.", "Nshemereirwe munonga!", "Nyine ekiniga."] }]
+  }
+}

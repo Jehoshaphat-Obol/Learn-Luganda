@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u23",
+  "notes": {
+    "nkukubira": "-ku- inside the verb means “you”.",
+    "mmukubira": "-mu- means him or her.",
+    "nkubira": "Nteerera, call me.",
+    "ani-ayogera": "N’oha orikugamba? who is speaking?",
+    "sikuwulira": "Tindikukuhurira, I can’t hear you.",
+    "nkulinze": "Ninkurindiire, I’m waiting for you."
+  },
+  "tips": { "u23s1": "object", "u23s2": "object", "u23s3": "object" },
+  "guidebook": {
+    "intro": "Make calls, send messages and arrange to meet. “Me”, “you” and “him” go inside the verb.",
+    "tips": [
+      {
+        "id": "object",
+        "title": "Me, you, him inside the verb",
+        "body": [
+          "The object goes just before the verb stem: **ninkuteerera** (I’m calling you: **-ku-**), **ninmuteerera** (I’m calling him or her: **-mu-**). “Me” is **n-** or **m-**: **Nteerera** (call me), **Ntumira** (send me)."
+        ],
+        "table": [
+          ["Object", "Runyankore", "English"],
+          ["you", "Ninkuteerera", "I’m calling you"],
+          ["him / her", "Ninmuteerera", "I’m calling him / her"],
+          ["me", "Nteerera", "Call me"]
+        ],
+        "targetColumns": [1]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Mobile money",
+        "body": [
+          "Phones are used for everything: calls, messages and paying with mobile money. People often “flash”, ringing once so the other person calls back."
+        ]
+      }
+    ]
+  }
+}

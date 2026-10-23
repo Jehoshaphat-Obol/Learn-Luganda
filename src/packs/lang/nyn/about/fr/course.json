@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Orufaransa nirugambwa omu bitundu byona bitaano by'ensi, kuruga Paris na Montreal kuhika Kinshasa, Dakar na Abidjan, kandi abarikurugamba abaingi bari omu Africa.",
+  "notes": "Drafted by Claude (AI) for the Runyankore courses (#128) with low confidence in Runyankore; needs a native-speaker review. Word and unit notes fall back to the English notes.",
+  "landing": {
+    "hello": "Bonjour !",
+    "thanks": "Merci",
+    "place": "ensi ezirikugamba Orufaransa",
+    "word": "apprendre — kwega",
+    "words": [
+      ["Bonjour", "Agandi"],
+      ["Ça va ?", "Ni marungi?"],
+      ["Merci", "Webale"],
+      ["D’accord", "Kare"],
+      ["Ami", "Omunywani"],
+      ["Eau", "Amaizi"],
+      ["Nourriture", "Ebyokurya"],
+      ["Monsieur", "Sebo"],
+      ["Madame", "Nyabo"],
+      ["Au revoir", "Ogumeho"]
+    ],
+    "why": {
+      "title": "Orurimi rw'**ekicweka kya Africa, n'okukiraho.**",
+      "text": "Orufaransa n'orurimi rwa gavumenti omu nsi za Africa ezirikukira makumi abiri, kuruga Senegal kuhika Congo, n'omu baataahi ba Uganda, Rwanda na Burundi. Ruyege otambure, oshome, okore emirimo aheeru y'ensi kandi ohuriire ebyemiziki.",
+      "cards": [
+        { "title": "Ahabw'abatambuzi", "text": "Tambura kuruga Kigali kuhika Kinshasa, Dakar nari Paris." },
+        { "title": "Ahabw'omurimo", "text": "Subuura, shoma kandi okore n'abantu omu Africa erikugamba Orufaransa." },
+        {
+          "title": "Ahabw'abarikwenda kumanya",
+          "text": "Shanga amaziina g'ekikazi n'ag'ekishaija, enyukuta ezitarikushomwa n'enamba ezirikutangaaza."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Ni kiha ekirikumanyisa “webale”?",
+      "options": ["Bonjour", "Merci", "Non"],
+      "answer": "Merci",
+      "explain": "_Merci_ nikimanyisa webale."
+    },
+    "start": { "word": "C’est parti !", "caption": "c’est parti — tugyende" },
+    "farewell": "Merci beaucoup — webale munonga.",
+    "audience": "Abarikugamba Orunyankore abarikutandika: abeegi, abatambuzi n'abasubuuzi abarikuza omu nsi ezirikugamba Orufaransa.",
+    "first": "Okuramukya, okweyanjura n'enamba, bwanyima eka, ebyokurya, akatare, eshaaha, ebifo, omuka n'amagara, ekicweka ku kicweka."
+  },
+  "cast": { "emma": "Omugyenyi kuruga aheeru orikugamba Orufaransa" }
+}

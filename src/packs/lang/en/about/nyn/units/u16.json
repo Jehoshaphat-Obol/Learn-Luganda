@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u16",
+  "notes": {
+    "okuva": "Kuruga, from: kuruga Mbarara.",
+    "okutuuka": "Kuhika, to arrive, until.",
+    "ntuuse": "Naahika, I’ve arrived.",
+    "ennyonyi": "Endegye, an aeroplane.",
+    "olugendo-olulungi": "Wishes someone a safe trip.",
+    "nimechelewa": "Nkyerereirwe, I’m late."
+  },
+  "tips": { "u16s1": "from-to", "u16s2": "from-to", "u16s3": "speed" },
+  "guidebook": {
+    "intro": "Travel by taxi, bus or boda boda: find the stage, ask where a vehicle is going and arrive.",
+    "tips": [
+      {
+        "id": "from-to",
+        "title": "From … to …",
+        "body": [
+          "**Kuruga** (from) and **kuhika** (to, until) mark the start and end of a journey: **Kuruga Mbarara kuhika Kabale**. **Naahika** means “I’ve arrived”.",
+          "Ask where a taxi is going: **Takisi egi neegyenda nkahi?**"
+        ]
+      },
+      {
+        "id": "speed",
+        "title": "Mpora and bwangu",
+        "body": [
+          "**Mpora** is slowly and **bwangu** is quickly. Ask the driver **Vuga mpora, ninkushaba** (drive slowly, please). Wish someone a safe trip: **Orugyendo rurungi!**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Taxi park",
+        "body": [
+          "Long-distance taxis leave from the taxi park when they are full, not at fixed times. The conductor calls out the destination: listen for your town."
+        ]
+      }
+    ]
+  }
+}

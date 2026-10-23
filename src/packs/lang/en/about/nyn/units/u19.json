@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u19",
+  "notes": {
+    "ndidde": "Recent past: today or just now.",
+    "nnagenda": "Far past: yesterday or earlier.",
+    "nnalya": "Far past of -rya, eat.",
+    "mmaze": "Naaheza, I’ve finished.",
+    "edda": "Ira, long ago.",
+    "wiiki-ewedde": "Literally “the week that has ended”.",
+    "nkyali": "Nkyari, I’m still."
+  },
+  "tips": { "u19s1": "recent-past", "u19s2": "recent-past", "u19s3": "far-past" },
+  "guidebook": {
+    "intro": "Talk about what you did. Runyankore has a recent past for today and a far past for yesterday and before.",
+    "tips": [
+      {
+        "id": "recent-past",
+        "title": "Today’s past: -ire",
+        "body": [
+          "For things that happened today or just now, the verb ends in **-ire** (or **-ize, -ire, -ere** depending on the stem): **Ndiire** (I’ve eaten), **Nyweire** (I’ve drunk), **Nkozire** (I’ve worked), **Nsomire** (I’ve read).",
+          "**Oriire?** asks “have you eaten?”, a common way to show care."
+        ]
+      },
+      {
+        "id": "far-past",
+        "title": "Yesterday and before: -ka-",
+        "body": [
+          "For yesterday or earlier, add **-ka-**: **Nkagyenda** (I went), **Nkarya** (I ate), **Nkasoma** (I read). Other persons: **okagyenda** (you went), **akagyenda** (he went), **tukagyenda** (we went)."
+        ],
+        "table": [
+          ["Today", "Before today", "English"],
+          ["Ndiire", "Nkarya", "I ate"],
+          ["Nsomire", "Nkasoma", "I read"],
+          ["Nkozire", "Nkakora", "I worked"]
+        ],
+        "targetColumns": [0, 1]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Oriire?",
+        "body": ["Asking **Oriire?** (have you eaten?) is a sign of care, and an invitation may follow. If you have, say **Ego, ndiire, webale**."]
+      }
+    ]
+  }
+}

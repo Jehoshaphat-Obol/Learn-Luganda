@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u26",
+  "notes": {
+    "kabaka": "Buganda’s king. Ankole’s king was the Omugabe.",
+    "obwakabaka": "Obukama, a kingdom or kingship.",
+    "afuga": "Naategyeka, he rules.",
+    "awangaale": "Arame, may he live long.",
+    "katikkiro": "The Kabaka’s prime minister.",
+    "olubiri": "Ekikaari, the royal palace."
+  },
+  "tips": { "u26s1": "royal-titles", "u26s2": "royal-titles", "u26s3": "omugabe" },
+  "guidebook": {
+    "intro": "Learn the words for a kingdom and its court. Buganda’s Kabaka still reigns; Ankole had its own king, the Omugabe.",
+    "tips": [
+      {
+        "id": "royal-titles",
+        "title": "Royal titles",
+        "body": [
+          "The king of Buganda is **Kabaka**, and his queen **Nnaabagereka**. Runyankore speakers use the same titles for Buganda’s court. A kingdom is **obukama** and its leader rules, **naategyeka**.",
+          "Wish the king long life with **Arame!** (may he live long)."
+        ]
+      },
+      {
+        "id": "omugabe",
+        "title": "The Omugabe of Ankole",
+        "body": [
+          "Ankole’s king was the **Omugabe**, and his royal drum, **Bagyendanwa**, was the symbol of the kingdom. The kingdom was abolished in 1967 and, unlike Buganda, has not been restored."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Bagyendanwa",
+        "body": [
+          "The royal drum **Bagyendanwa** was said to be more important than the king himself: whoever held it held the kingdom. It is still kept near Mbarara."
+        ]
+      }
+    ]
+  }
+}

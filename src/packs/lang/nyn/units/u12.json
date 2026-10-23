@@ -1,0 +1,99 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u12",
+  "words": {
+    "obudde": { "text": "obwire" },
+    "enkuba": { "text": "enjura" },
+    "etonnya": { "text": "neegwa", "alts": ["nerigwa"] },
+    "omusana": { "text": "omushana" },
+    "gwaka": { "text": "nigwaaka" },
+    "ebire": { "text": "ebicu" },
+    "empewo": { "text": "obutiti" },
+    "eggulu": { "text": "eiguru" },
+    "laddu": { "text": "omurabyo" },
+    "ekyeya": { "text": "ekyanda" },
+    "ttoggo": { "text": "itumba" },
+    "bwokya": { "text": "nibwotsya" },
+    "bunnyogovu": { "text": "buhoreire" },
+    "mpulira": { "text": "Nimpurira" },
+    "ebbugumu": { "text": "ekyerereezi" },
+    "nnyo-nnyo": { "text": "munonga munonga" },
+    "obudde-bulungi": { "text": "Obwire ni burungi", "alts": ["Obwire burungi"] },
+    "ekiwempe": { "text": "amburera", "alts": ["omutaka"] },
+    "upepo": { "text": "omuyaga" },
+    "radi": { "text": "okuhinda" },
+    "jua-kali": { "text": "omushana mwingi" },
+    "kavu": { "text": "kyomire" },
+    "nyingi": { "text": "nyingi" },
+    "msimu": { "text": "ekiseera" },
+    "vuli": { "text": "omuhanga" }
+  },
+  "sentences": {
+    "s-enkuba-etonnya": { "text": "Enjura neegwa." },
+    "s-omusana-gwaka": { "text": "Omushana nigwaaka." },
+    "s-leero-obudde-bulungi": { "text": "Erizooba obwire ni burungi." },
+    "s-waliwo-ebire": { "text": "Hariho ebicu bingi." },
+    "s-empewo-nnyingi": { "text": "Hariho omuyaga mwingi." },
+    "s-eggulu-libwatuka": { "text": "Eiguru nirihinda." },
+    "s-laddu-n-eggulu": { "text": "Omurabyo n'okuhinda kw'eiguru." },
+    "s-ttoggo-enkuba-nnyingi": { "text": "Omu itumba enjura ni nyingi." },
+    "s-mu-kyeya-bwokya": { "text": "Omu kyanda obwire nibwotsya." },
+    "s-obudde-bunnyogovu": { "text": "Obwire buhoreire erizooba." },
+    "s-mpulira-empewo": { "text": "Nimpurira obutiti." },
+    "s-mpulira-ebbugumu": { "text": "Nimpurira ekyerereezi." },
+    "s-obudde-bwokya-nnyo-nnyo": { "text": "Obwire nibwotsya munonga munonga!" },
+    "s-twala-ekiwempe": { "text": "Twara amburera." },
+    "s-hali-ya-hewa": { "text": "Obwire ni burungi erizooba." },
+    "s-kuna-jua": { "text": "Erizooba hariho omushana." },
+    "s-kuna-joto": { "text": "Erizooba hariho ekyerereezi kyingi." },
+    "s-kuna-baridi": { "text": "Ekiro hariho obutiti." },
+    "s-kuna-upepo": { "text": "Erizooba hariho omuyaga." },
+    "s-kuna-mawingu": { "text": "Erizooba hariho ebicu." },
+    "s-radi-usiku": { "text": "Eiguru nirihinda ekiro." },
+    "s-jua-kali-leo": { "text": "Omushana mwingi erizooba!" },
+    "s-mvua-nyingi": { "text": "Enjura nyingi!" },
+    "s-kiangazi-kavu": { "text": "Ekyanda kyomire kandi nikyotsya." },
+    "s-msimu-gani": { "text": "Ekiseera ki?" },
+    "s-masika-mvua": { "text": "Itumba nijo njura empango." },
+    "s-vuli-mvua-fupi": { "text": "Omuhanga nijo njura nkye." }
+  },
+  "phrases": [
+    "Enjura neegwa.",
+    "Omushana nigwaaka.",
+    "Erizooba obwire ni burungi.",
+    "Nimpurira obutiti.",
+    "Obwire nibwotsya munonga munonga!",
+    "Twara amburera."
+  ],
+  "dialogues": {
+    "u12s3l3": [
+      { "line": "Enjura neegwa munonga!", "options": ["Twara amburera.", "Omushana nigwaaka.", "Ninda ekyanyenkya."] },
+      { "line": "Nimpurira obutiti. Iwe?", "options": ["Nanye nimpurira obutiti.", "Omushana nigwaaka.", "Ebiraato byangye."] }
+    ]
+  },
+  "stories": {
+    "rainy-day": {
+      "title": "Ihangwe ry'enjura",
+      "summary": "Enjura y'amaani neeremesa {@amara} kuruga owa nyakuru we.",
+      "lines": [
+        "Nyakuru, ningyenda omuka.",
+        "Ngaaha! Reeba, ebicu ni bingi. Enjura neeija.",
+        "Kwonka omushana nigwaaka!",
+        "Hurikiza… eiguru nirihinda.",
+        "Aah! Enjura neegwa munonga munonga!",
+        "Ikara hanu. Nimpurira obutiti. Iwe?",
+        "Nanye. Ninyenda caai.",
+        "Kare, tunywe caai. Bwanyima, twara amburera yangye.",
+        "Webale munonga, Nyakuru!"
+      ],
+      "questions": [
+        { "question": "Ahabw'enki {@jjajja} naagira ngu ngaaha?", "options": ["Bwaira", "Enjura neeija", "{@amara} arwaire"] },
+        {
+          "question": "Obwire buri buta hati?",
+          "options": ["Omushana n'ekyerereezi", "Enjura neegwa munonga", "Obwire buhoreire kandi bwomire"]
+        },
+        { "question": "{@amara} naaza kutwara ki omuka?", "options": ["Amburera ya {@jjajja}", "Esweta", "Ebyokurya"] }
+      ]
+    }
+  }
+}

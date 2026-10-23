@@ -1,0 +1,61 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u31",
+  "words": {
+    "bizinensi": { "text": "obusubuuzi", "alts": ["bizinesi"] },
+    "omuguzi": { "text": "omuguzi" },
+    "abaguzi": { "text": "abaguzi" },
+    "amagoba": { "text": "amagoba" },
+    "nfunye": { "text": "Naatunga" },
+    "okutereka": { "text": "kubiika" },
+    "bbanka": { "text": "banka" },
+    "ebbanja": { "text": "ibanja" },
+    "okwewola": { "text": "kwerima" },
+    "nsomesa": { "text": "Ninyegyesa" },
+    "ndisa": { "text": "Nindiisa" },
+    "nnywesa": { "text": "Ninyweesa" },
+    "ntunza": { "text": "Ninsubuura" },
+    "kuuza": { "text": "kugurisa" },
+    "bidhaa": { "text": "ebintu by'okugurisa" },
+    "hasara": { "text": "okufeerwa" },
+    "akiba": { "text": "ebibiiko" },
+    "mkopo": { "text": "looni" },
+    "fundisha": { "text": "Yegyesa" },
+    "onyesha": { "text": "Yoreka" },
+    "rudisha": { "text": "Garura" }
+  },
+  "sentences": {
+    "s31-nnina-bizinensi": { "text": "Nyine obusubuuzi bukye." },
+    "s31-ntunza-engoye": { "text": "Ninsubuura emyenda omu katare." },
+    "s31-omuguzi": { "text": "Omuguzi naaija!" },
+    "s31-abaguzi-bangi": { "text": "Erizooba abaguzi ni baingi." },
+    "s31-nfunye-amagoba": { "text": "Naatunga amagoba maingi." },
+    "s31-ntereka-ssente": { "text": "Ninbiika esente omu banka." },
+    "s31-ebbanja": { "text": "Tinyine ibanja." },
+    "s31-okwewola": { "text": "Ninyenda kwerima esente." },
+    "s31-nsomesa-abaana": { "text": "Ninyegyesa abaana {to}." },
+    "s31-ndisa-abaana": { "text": "Nindiisa abaana nyenkyakare." },
+    "s31-nnywesa-ente": { "text": "Ninyweesa ente amaizi." },
+    "s-kuuza": { "text": "Ningurisa caai na chapati." },
+    "s-bidhaa": { "text": "Ebintu by'okugurisa ni birungi kandi nibyorobi." },
+    "s-faida": { "text": "Okwezi oku twatunga amagoba." },
+    "s-hasara": { "text": "Enjura ekareeta okufeerwa." },
+    "s-akiba": { "text": "Ninbiika esente buri sande." },
+    "s-mkopo": { "text": "Ninyetenga looni nkye." },
+    "s-fundisha": { "text": "Nyegyesa obusubuuzi, ninkushaba." },
+    "s-onyesha": { "text": "Nyoreka ebintu byawe by'okugurisa." },
+    "s-rudisha": { "text": "Ngarurira esente zangye!" }
+  },
+  "phrases": [
+    "Nyine obusubuuzi bukye.",
+    "Erizooba abaguzi ni baingi.",
+    "Naatunga amagoba maingi.",
+    "Ninbiika esente omu banka.",
+    "Ninyegyesa abaana {to}.",
+    "Ninyweesa ente amaizi."
+  ],
+  "dialogues": {
+    "u31s1l3": [{ "line": "Webale kukora! Obusubuuzi nibugyenda buta?", "options": ["Gye. Erizooba abaguzi ni baingi.", "Amiina.", "Teera engoma!"] }]
+  },
+  "stories": {}
+}

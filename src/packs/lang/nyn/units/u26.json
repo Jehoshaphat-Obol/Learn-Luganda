@@ -1,0 +1,70 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u26",
+  "words": {
+    "kabaka": { "text": "Kabaka", "alts": ["omukama"] },
+    "nnaabagereka": { "text": "Nnaabagereka" },
+    "ssaabasajja": { "text": "Ssaabasajja" },
+    "obwakabaka": { "text": "obukama" },
+    "afuga": { "text": "naategyeka" },
+    "awangaale": { "text": "arame" },
+    "katikkiro": { "text": "Katikiro" },
+    "lukiiko": { "text": "Orukiiko" },
+    "olubiri": { "text": "ekikaari" },
+    "bulange": { "text": "Bulange" },
+    "amasiro": { "text": "amasiro" },
+    "essaza": { "text": "eishaza" },
+    "amasaza": { "text": "amashaza" },
+    "edda-ennyo": { "text": "ira munonga" },
+    "abunuwasi": { "text": "Abunuwasi" }
+  },
+  "sentences": {
+    "s26-kabaka-afuga": { "text": "Kabaka naategyeka Buganda." },
+    "s26-kabaka-awangaale": { "text": "Kabaka arame!" },
+    "s26-nnaabagereka": { "text": "Nnaabagereka naaija erizooba." },
+    "s26-ssaabasajja": { "text": "Ssaabasajja Kabaka yaahika." },
+    "s26-obwakabaka-bwa-buganda": { "text": "Obukama bwa Buganda ni bukuru munonga." },
+    "s26-katikkiro": { "text": "Katikiro naagamba omu Rukiiko." },
+    "s26-olubiri-e-mengo": { "text": "Ekikaari kiri Mengo." },
+    "s26-bulange": { "text": "Orukiiko nirwikarira omu Bulange." },
+    "s26-amasiro-e-kasubi": { "text": "Amasiro ga Kasubi." },
+    "s26-amasaza": { "text": "Buganda eine amashaza ikumi na munaana." },
+    "s26-essaza-lyange": { "text": "Eishaza ryangye ni Kyaddondo." },
+    "s26-edda-ennyo": { "text": "Ira munonga, Kintu niwe yaabaire Kabaka w'okubanza." },
+    "s-abunuwasi": { "text": "Abunuwasi akaba ari omugezi munonga." },
+    "s-mfalme": { "text": "Kabaka akeeta Abunuwasi." }
+  },
+  "phrases": [
+    "Kabaka arame!",
+    "Kabaka naategyeka Buganda.",
+    "Katikiro naagamba omu Rukiiko.",
+    "Ekikaari kiri Mengo.",
+    "Amasiro ga Kasubi.",
+    "Buganda eine amashaza ikumi na munaana."
+  ],
+  "dialogues": { "u26s3l3": [{ "line": "Kabaka arame!", "options": ["Arame!", "Tindikukuhurira.", "Naiguta."] }] },
+  "stories": {
+    "kasubi-visit": {
+      "title": "Kurambura Kasubi",
+      "summary": "{@mukasa} naayoreka {@emma} amasiro kandi naamugambira aha bukama.",
+      "lines": [
+        "{@emma}, aga ni Amasiro ga Kasubi.",
+        "Enju ni mpango munonga! N'oha aziikirwe hanu?",
+        "Bakabaka bana.",
+        "Kandi Kabaka wa hati ari nkahi?",
+        "Naatuura omu kikaari Mengo.",
+        "Orukiiko nirwikarira nkahi?",
+        "Omu Bulange. Katikiro naagambira omwo.",
+        "N'oha owaabaire Kabaka w'okubanza?",
+        "Kintu. Ira munonga!",
+        "Kabaka arame!",
+        "Arame!"
+      ],
+      "questions": [
+        { "question": "Bakabaka bangahi abaziikirwe Kasubi?", "options": ["Babiri", "Bana", "Ikumi na munaana"] },
+        { "question": "Orukiiko nirwikarira nkahi?", "options": ["Omu Bulange", "Kasubi", "Omu katare"] },
+        { "question": "Omuntu yaagamba “Kabaka arame!”, oryagarukamu ota?", "options": ["Arame!", "Ogumeho!", "Twakushemerererwa!"] }
+      ]
+    }
+  }
+}

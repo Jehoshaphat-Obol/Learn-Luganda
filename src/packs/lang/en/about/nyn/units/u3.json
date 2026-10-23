@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u3",
+  "notes": {
+    "matooke": "Ebitookye are cooked bananas; ekitooke is the banana plant or a bunch.",
+    "amata": "Amate, the pride of Ankole: fresh, soured (amacunda) or with tea.",
+    "enva": "The sauce eaten with the staple. Plural agreement: enva nizinuura.",
+    "kiwooma": "Agrees with the food: ebyokurya nibinuura, enva nizinuura.",
+    "nnina": "Nyine enjara, I’m hungry: you “have” hunger.",
+    "ntunda": "Literally “I make (someone) buy”.",
+    "embe": "Omuyembe, plural emiyembe.",
+    "amenvu": "Eminekye are ripe sweet bananas, eaten raw."
+  },
+  "tips": { "u3s1": "nyine", "u3s2": "nyine", "u3s3": "buy-sell" },
+  "guidebook": {
+    "intro": "Food in Ankole means bananas, millet, beans and, above all, milk. You’ll say you’re hungry, name the staples and buy and sell at the market.",
+    "tips": [
+      {
+        "id": "nyine",
+        "title": "Nyine: “I have” for hunger",
+        "body": [
+          "Runyankore says you **have** hunger and thirst: **Nyine enjara** (I’m hungry), **Nyine enyoota** (I’m thirsty).",
+          "**-ine** means have: **nyine** (I have), **oine** (you have), **aine** (he or she has). Add **ti-** for “not”: **Tinyine munyaanyazi** (I don’t have a sister)."
+        ],
+        "table": [
+          ["Have", "Don’t have", "English"],
+          ["Nyine", "Tinyine", "I have"],
+          ["Oine", "Toine", "You have"],
+          ["Aine", "Taine", "He / she has"]
+        ],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "buy-sell",
+        "title": "Ningura, ningurisa",
+        "body": [
+          "**-gura** is to buy, and **-gurisa** is to sell: literally “make buy”. **Ningura ebitookye** (I’m buying matooke), **Noogurisa ki?** (what are you selling?).",
+          "**Nikinuura** means “it’s tasty”: **ki-** agrees with ekintu-type nouns. For enva (sauce) say **nizinuura**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Milk and eshabwe",
+        "body": [
+          "Ankole is cattle country, famous for its long-horned **Ankole cows**. Milk (**amate**) is drunk fresh or soured, and **eshabwe**, a sauce of whipped ghee and salt, is served with matooke at special meals."
+        ]
+      }
+    ]
+  }
+}

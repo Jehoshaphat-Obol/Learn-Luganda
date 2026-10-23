@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u22",
+  "words": {
+    "nnyumirwa": { "text": "Ninyesiimira" },
+    "okudduka": { "text": "kwiruka" },
+    "okuwuga": { "text": "kuziha" },
+    "era": { "text": "kandi" },
+    "omupiira": { "text": "omupiira" },
+    "nzannya": { "text": "Ninzaana" },
+    "ttiimu": { "text": "tiimu" },
+    "goolo": { "text": "goolo" },
+    "ewangudde": { "text": "yaasinga" },
+    "awangudde": { "text": "aasinga" },
+    "okuyimba": { "text": "kweshongora" },
+    "okuzina": { "text": "kuzina" },
+    "ennyimba": { "text": "ebyeshongoro" },
+    "omuzannyo": { "text": "omuzaano" },
+    "omweso": { "text": "omweso" },
+    "muda": { "text": "omwanya" },
+    "kuangalia": { "text": "kureeba" },
+    "mashabiki": { "text": "abahagizi" },
+    "tumeshinda": { "text": "Twasinga" },
+    "tumefungwa": { "text": "Twasingwa" },
+    "karata": { "text": "kaadi" },
+    "bao": { "text": "omweso" }
+  },
+  "sentences": {
+    "s22-nnyumirwa-okusoma": { "text": "Ninyesiimira kusoma ebitabo." },
+    "s22-ndduka-ku-makya": { "text": "Ninyesiimira kwiruka nyenkyakare." },
+    "s22-okuwuga": { "text": "Ninkunda kuziha omu nyanja." },
+    "s22-era": { "text": "Ninsoma, kandi ninzaana." },
+    "s22-nzannya-omupiira": { "text": "Ninzaana omupiira aha Orwamukaaga." },
+    "s22-ttiimu-yange": { "text": "Tiimu yangye yaasinga!" },
+    "s22-goolo": { "text": "Goolo! Goolo ibiri!" },
+    "s22-ani-awangudde": { "text": "N'oha aasinga?" },
+    "s22-okuyimba": { "text": "Ninyesiimira kweshongora n'okuzina." },
+    "s22-ennyimba-za-luganda": { "text": "Ninkunda ebyeshongoro by'Oruganda." },
+    "s22-omuzannyo": { "text": "Omuzaano nigutandika shaaha ikumi." },
+    "s22-omweso": { "text": "Nyakuru naazaana omweso." },
+    "s-sina-muda": { "text": "Tinyine mwanya erizooba." },
+    "s-kuogelea": { "text": "Ninkunda kuziha." },
+    "s-neema-kuimba": { "text": "{@amara} naakunda kweshongora." },
+    "s-kuangalia-mpira": { "text": "Ninkunda kureeba omupiira." },
+    "s-mpira-wa-miguu": { "text": "Ninkunda omupiira gw'amaguru." },
+    "s-timu-hodari": { "text": "Tiimu yangye ni nungi." },
+    "s-goli": { "text": "Goolo! Goolo!" },
+    "s-mchezo-gani": { "text": "Muzaano ki?" },
+    "s-mashabiki-wengi": { "text": "Abahagizi baingi!" },
+    "s-tumeshinda": { "text": "Twasinga!" },
+    "s-tumefungwa-leo": { "text": "Twasingwa erizooba." },
+    "s-wimbo-wako": { "text": "Ninkunda ekyeshongoro kyawe." },
+    "s-nyimbo-bongo": { "text": "Ebyeshongoro bya bongo flava." },
+    "s-tucheze-karata": { "text": "Tuzaane kaadi!" },
+    "s-babu-bao": { "text": "Shwenkuru naazaana omweso." }
+  },
+  "phrases": [
+    "Ninyesiimira kusoma ebitabo.",
+    "Ninzaana omupiira aha Orwamukaaga.",
+    "Tiimu yangye yaasinga!",
+    "N'oha aasinga?",
+    "Ninyesiimira kweshongora n'okuzina.",
+    "Ninkunda ebyeshongoro by'Oruganda."
+  ],
+  "dialogues": { "u22s1l3": [{ "line": "Noyesiimira ki?", "options": ["Ninyesiimira kwiruka n'okuziha.", "Nduhire munonga.", "Timmanyire omweso."] }] },
+  "stories": {
+    "match-day": {
+      "title": "Eizooba ry'omupiira",
+      "summary": "{@ssali} na {@mukasa} nibareeba Cranes ezaana.",
+      "lines": [
+        "{@mukasa}! Omupiira nigutandika shaaha ikumi. Noija?",
+        "Ego! Kwonka nduhire. Nkozire munonga erizooba.",
+        "Otaheeraarikirira, nituza kwikara kwonka. Nitunywa caai.",
+        "Tiimu yaitu neeza kusinga?",
+        "Timmanyire. Tiimu egyo ni nungi munonga.",
+        "Goolo! Goolo!",
+        "Nshemereirwe munonga! N'oha ateire goolo?",
+        "Ssaabaganzi! Tiimu yaitu yaasinga!"
+      ],
+      "questions": [
+        { "question": "{@mukasa} naayehurira ata?", "options": ["Ashemereirwe", "Aruhire", "Aine ekiniga"] },
+        { "question": "Niki ekibaho hati?", "options": ["Goolo", "Omuzaano gwahwa", "Enjura yatandika kugwa"] },
+        {
+          "question": "{@mukasa} naagamba ata “tiimu yaitu yaasinga”?",
+          "options": ["Tiimu yaitu yaasinga", "N'oha aasinga?", "Ninyesiimira omupiira"]
+        }
+      ]
+    }
+  }
+}
