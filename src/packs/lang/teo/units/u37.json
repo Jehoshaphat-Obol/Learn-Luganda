@@ -1,0 +1,88 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u37",
+  "words": {
+    "amawulire": { "text": "ŋakiro ŋulu etepete" },
+    "owulidde": { "text": "Abu iirar bo" },
+    "leediyo": { "text": "erediyo" },
+    "nti": { "text": "ebe" },
+    "agamba": { "text": "ebala" },
+    "bagamba": { "text": "ebalaete" },
+    "olukiiko": { "text": "aitutokin" },
+    "ssentebe": { "text": "ekapolon ka aitutokin" },
+    "ndowooza": { "text": "Aomit" },
+    "endowooza": { "text": "aomisio" },
+    "nzikiriza": { "text": "Ayei" },
+    "sikkiriza": { "text": "Mam ayei" },
+    "jamii": { "text": "itunga ka ere" },
+    "kiongozi": { "text": "ekapolon" },
+    "serikali": { "text": "apugan" },
+    "uchaguzi": { "text": "akiseun" },
+    "kura": { "text": "akura" },
+    "harambee": { "text": "harambee" },
+    "tusaidiane": { "text": "Kiŋarakinata oni" },
+    "tunapendana": { "text": "iminasi oni" },
+    "gazeti": { "text": "egazeti" },
+    "taarifa-ya-habari": { "text": "ŋakiro ŋulu etepete ka erediyo" },
+    "tukio": { "text": "ŋini abu ebuni" },
+    "tatizo": { "text": "aronis" },
+    "suluhisho": { "text": "aitosomaun" },
+    "kwa-maoni-yangu": { "text": "kotoma aomisio kaŋ" },
+    "muhimu": { "text": "epolot noi" }
+  },
+  "sentences": {
+    "s37-owulidde-amawulire": { "text": "Abu iirar ŋakiro ŋulu etepete bo?" },
+    "s37-ku-leediyo": { "text": "Abu airar kotoma erediyo." },
+    "s37-agamba-nti": { "text": "Ebala ebe akiru elomari." },
+    "s37-bagamba-nti": { "text": "Ebalaete ebe erot ŋina etep abu edolit." },
+    "s37-olukiiko": { "text": "Aitutokin ejai Sabiti." },
+    "s37-ssentebe": { "text": "Ekapolon ka aitutokin elimori kotoma aitutokin." },
+    "s37-ndowooza-nti": { "text": "Aomit ebe ejok." },
+    "s37-endowooza-yo": { "text": "Aomisio kon ka inyo?" },
+    "s37-nzikiriza": { "text": "Ayei ka iyoŋ." },
+    "s37-sikkiriza": { "text": "Mam ayei. Aomit ebe mam ejok." },
+    "s-jamii": { "text": "Itunga ka ere wok ipu." },
+    "s-mkutano": { "text": "Ejai aitutokin moi ataparan." },
+    "s-kiongozi": { "text": "Ekapolon wok ka aberu ŋesi ecoit." },
+    "s-serikali": { "text": "Apugan ebeit aduk esukul ŋina etep." },
+    "s-uchaguzi": { "text": "Akiseun ejai ekaru ŋina elomari." },
+    "s-kura": { "text": "Abeit akiseun." },
+    "s-harambee": { "text": "Isuamete oni harambee kanuka esipitali." },
+    "s-tusaidiane": { "text": "Kiŋarakinata oni!" },
+    "s-tunapendana": { "text": "Kotoma ekal wok iminasi oni." },
+    "s-gazeti": { "text": "Papa esomi egazeti ŋinikoloŋit nakwana." },
+    "s-redio": { "text": "Abu airar ŋakiro ŋulu etepete kotoma erediyo." },
+    "s-taarifa": { "text": "Ŋakiro ŋulu etepete ka erediyo ejai esaawa iuni ataparan." },
+    "s-tukio": { "text": "Ŋini abu ebuni kotoma etaun ŋolo." },
+    "s-tatizo": { "text": "Aronis ŋina epolot ka akipi." },
+    "s-suluhisho": { "text": "Iminasi oni aitosomaun." },
+    "s-maoni": { "text": "Iyoŋ iomit inyo?" },
+    "s-nadhani": { "text": "Aomit akiru ebeit adoliar lolo." },
+    "s-kwa-maoni-yangu": { "text": "Kotoma aomisio kaŋ, esukul epolot noi." },
+    "s-nakubali": { "text": "Ayei, ka abeit." },
+    "s-sikubaliani": { "text": "Ikiaŋ, mam ayei ka iyoŋ." }
+  },
+  "phrases": [
+    "Abu iirar ŋakiro ŋulu etepete bo?",
+    "Ebala ebe akiru elomari.",
+    "Ebalaete ebe erot ŋina etep abu edolit.",
+    "Aomit ebe ejok.",
+    "Aomisio kon ka inyo?",
+    "Ayei ka iyoŋ."
+  ],
+  "dialogues": {
+    "u37s2l3": [
+      {
+        "line": "Abu iirar ŋakiro ŋulu etepete bo?",
+        "options": ["Ee! Ebalaete ebe erot ŋina etep abu edolit.", "Amina ecai.", "Ŋolo kaŋulu, akoloŋit ape…"]
+      }
+    ],
+    "u37s3l3": [
+      {
+        "line": "Aomit ebe ekoto iporete oni ikito kotoma ere. Aomisio kon ka inyo?",
+        "options": ["Ayei ka iyoŋ!", "Abu iirar kotoma erediyo bo?", "Abu aŋoon."]
+      }
+    ]
+  },
+  "stories": {}
+}
