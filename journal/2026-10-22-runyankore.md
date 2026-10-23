@@ -73,3 +73,28 @@ are the words I'm least sure of:
 - u38: akabiihirizibwa (is injured), Mwakora (pole kwa kazi), yaibwa / yaibirwe (stolen / robbed)
 - u39: okuteera evi (to kneel), ekitiinwa (respect), Hodi / Karibu (borrowed knock greeting), Ogaruke (come again), obugabe (hospitality)
 - u40: Wakame (the hare in Runyakitara tales), orukwe (trick), akeebwa (forgot), omururu (greed), netwegyesa (teaches us); the story keeps the Ganda legend of Kintu
+
+## 2026-10-23: guidebook notes and landing copy
+
+- `lang/en/about/nyn/units/u1–u40`: guidebook intro, 1–3 tips, a culture
+  note, skill→tip links and word notes about Runyankore, in English
+  (noun classes, ni- present, ti- negatives, -ire / -ka- pasts, -za ku- and
+  -ri- futures, -ir- / -is- / -w- extensions, kukira comparisons, the
+  plural of respect). Luganda, Swahili and French speakers get these
+  through the English fallback.
+- `lang/{en,lg,sw,fr}/about/nyn/course.json`: description, landing copy
+  and Emma's role about Runyankore in each interface language.
+- `lang/nyn/about/{lg,sw,fr}/course.json`: landing copy in Runyankore for
+  the Runyankore-base courses, so nyn-lg, nyn-sw and nyn-fr no longer show
+  English copy (this fixed three landing-i18n failures on the branch).
+- The catalog now composes 19 courses, adding en-nyn, lg-nyn, sw-nyn and
+  fr-nyn. nyn-en still needs `lang/nyn/about/en` notes (a later issue).
+- e2e: an English speaker now has four languages to learn.
+
+All of it is a low-confidence draft for a native-speaker review. Doubts
+beyond the word list above: the u36 proverbs and the u26 note on the
+Omugabe and Bagyendanwa should be checked, and the clan names in u25
+(Abahinda, Abashambo, Abagahe, Abasingo).
+
+Drafting tools: project folder `handoff/nyn-notes/` (`ref.mjs N` prints a
+unit's words in en and nyn; `sN.py` sources; `build.py sN`).

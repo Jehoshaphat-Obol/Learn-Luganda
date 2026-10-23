@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Oruganda nirugambwa abantu obukaikuru bwingi omu Buganda, rwagati ya Uganda, omu Kampala n'okwetoroora.",
+  "notes": "Drafted by Claude (AI) for the Runyankore courses (#128) with low confidence in Runyankore; needs a native-speaker review. Word and unit notes fall back to the English notes.",
+  "landing": {
+    "hello": "Oli otya?",
+    "thanks": "Weebale",
+    "place": "Uganda",
+    "word": "okuyiga — kwega",
+    "words": [
+      ["Oli otya?", "Agandi?"],
+      ["Gyendi", "Ni marungi"],
+      ["Weebale", "Webale"],
+      ["Kale", "Kare"],
+      ["Mukwano", "Omunywani"],
+      ["Amazzi", "Amaizi"],
+      ["Emmere", "Ebyokurya"],
+      ["Ssebo", "Sebo"],
+      ["Nnyabo", "Nyabo"],
+      ["Webale kujja", "Tukwakiire"]
+    ],
+    "why": {
+      "title": "Orurimi rw'**emihanda ya Kampala.**",
+      "text": "Oruganda nirugambwa abantu bingi omu Uganda ya rwagati, kandi nirwo rurimi orurikukira kugambwa omu Kampala. Ruyege ogambe n'eka, okore abanywani omu katare, kandi oyehurire ori omuka omu rugyendo rwawe.",
+      "cards": [
+        { "title": "Ahabw'eka", "text": "Gamba na banyakuru kandi oyegyese abaana orurimi." },
+        { "title": "Ahabw'abatambuzi", "text": "Ramukya, kyendeeza aha muhendo kandi otambure otatiina." },
+        { "title": "Ahabw'abarikwenda kumanya", "text": "Shanga ebika by'amaziina, amaraka n'enfumu." }
+      ]
+    },
+    "sample": {
+      "prompt": "Ni kiha ekirikumanyisa “webale”?",
+      "options": ["Oli otya?", "Weebale", "Nedda"],
+      "answer": "Weebale",
+      "explain": "_Weebale_ nikimanyisa webale."
+    },
+    "start": { "word": "Tandika!", "caption": "tandika — tandika" },
+    "farewell": "Weebale nnyo — webale munonga.",
+    "audience": "Abarikutandika, eka ezirikugaruka aha rurimi, n'abagyenyi omu Uganda abarikwenda kumanya ebirikukira “agandi”.",
+    "first": "Okuramukya, okweyanjura n'enamba, bwanyima eka, ebyokurya, akatare, eshaaha, ebifo, omuka n'amagara, ekicweka ku kicweka."
+  }
+}

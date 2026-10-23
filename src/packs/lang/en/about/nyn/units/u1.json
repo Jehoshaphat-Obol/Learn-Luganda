@@ -1,0 +1,66 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u1",
+  "notes": {
+    "oli-otya": "Literally “other news?”: the greeting for any time of day.",
+    "gyendi": "Literally “it’s good”: the usual reply to Agandi?",
+    "wasuze-otya": "Literally “how did you sleep?”, to one person. To a group: Muraire muta?",
+    "nsuze-bulungi": "The reply to Oraire ota?",
+    "osiibye-otya": "Literally “how have you spent the day?”",
+    "gyebale-ko": "Literally “thank you for working”.",
+    "weraba": "Literally “stay well”, said by the one leaving. The one staying says Ogende gye, “go well”.",
+    "lyange": "Agrees with eiziina: eiziina ryangye, my name.",
+    "lyo": "Agrees with eiziina: eiziina ryawe, your name.",
+    "ova-wa": "Literally “you come from where?”",
+    "ndi": "Ndi omwegi, I am a student.",
+    "shikamoo": "There’s no single word for this; a respectful greeting with ekitiinwa, respect."
+  },
+  "tips": { "u1s1": "agandi", "u1s2": "r-not-l", "u1s3": "r-not-l", "u1s4": "one-or-many" },
+  "guidebook": {
+    "intro": "In Ankole, nobody gets down to business before greeting. Greetings ask after your news, your night and your work, and they change when you talk to more than one person.",
+    "tips": [
+      {
+        "id": "agandi",
+        "title": "Agandi? Ni marungi",
+        "body": [
+          "**Agandi?** literally asks “other news?”, and it is the everyday greeting at any time of day. The answer is **Ni marungi** (it’s good), often followed by **Webale** and the same question back: **Agandi?**",
+          "In the morning ask **Oraire ota?** (how did you sleep?) and answer **Ndaire gye** (I slept well). Later in the day ask **Osiibire ota?** (how have you spent the day?)."
+        ]
+      },
+      {
+        "id": "one-or-many",
+        "title": "One person or many",
+        "body": ["Greetings and thanks change for a group: the singular **o-** or **w-** at the start becomes **mu-** or **mw-**."],
+        "table": [
+          ["One person", "Many people", "English"],
+          ["Oraire ota?", "Muraire muta?", "Good morning"],
+          ["Webale", "Mwebale", "Thank you"],
+          ["Ogumeho", "Mugumeho", "Goodbye"]
+        ],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "r-not-l",
+        "title": "R where Luganda has L",
+        "body": [
+          "Runyankore is close to Luganda, Rukiga and Runyoro, and many words are cousins. Runyankore uses **r** where Luganda uses **l**: Luganda **erinnya** is **eiziina**, **lyange** is **ryangye**, **Oluganda** is **Oruganda**.",
+          "Every letter is said, and vowels sound much like Spanish or Italian ones. Numbers to ten: **emwe, ibiri, ishatu, ina, itaano, mukaaga, mushanju, munaana, mwenda, ikumi**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Take time to greet",
+        "body": [
+          "A greeting is a short conversation. People ask after your night, your family and your work before anything else, and rushing it can seem rude. Add **sebo** (sir) or **nyabo** (madam) for anyone older or unknown."
+        ]
+      },
+      {
+        "title": "Webale kukora",
+        "body": [
+          "Say **Webale kukora** (thank you for working) to anyone who is busy: a farmer, a shopkeeper, someone cooking. The reply is **Webale** or **Kare**."
+        ]
+      }
+    ]
+  }
+}

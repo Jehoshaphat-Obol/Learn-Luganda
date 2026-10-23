@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u40",
+  "notes": {
+    "wakayima": "Wakame, the clever hare.",
+    "yalimba": "Akabeiha, he lied / tricked.",
+    "akakodyo": "Orukwe, a trick.",
+    "walumbe": "Death, in the story of Kintu.",
+    "obulo": "Oburo, millet.",
+    "fisi": "Empisi, the hyena: greedy in stories.",
+    "funzo": "Ekyokwega, the lesson."
+  },
+  "tips": { "u40s1": "wakame", "u40s2": "wakame", "u40s3": "kintu" },
+  "guidebook": {
+    "intro": "Folktales close the course: the clever hare and the story of how death came into the world.",
+    "tips": [
+      {
+        "id": "wakame",
+        "title": "Wakame the hare",
+        "body": [
+          "**Wakame** the hare is the clever trickster of the stories. He outwits stronger animals like **empisi** (the hyena), which is greedy, **omururu**. The lesson is **amagezi**, wit, beats strength."
+        ]
+      },
+      {
+        "id": "kintu",
+        "title": "Kintu, Nambi and Walumbe",
+        "body": [
+          "Many Ugandans tell how **Kintu**, the first man, married **Nambi**, the daughter of heaven. She went back for millet, **oburo**, and her brother **Walumbe**, death, followed her to earth."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "What the stories teach",
+        "body": [
+          "Every folktale ends with a lesson, **ekyokwega**: don’t be greedy, think before you act, listen to your elders. Children are asked what the story taught them."
+        ]
+      }
+    ]
+  }
+}

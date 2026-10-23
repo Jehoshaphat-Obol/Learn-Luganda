@@ -1,0 +1,51 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u4",
+  "notes": {
+    "abiri": "“Two tens”. Numbers that count things agree with them: ebitabo ikumi na bibiri.",
+    "kikumi": "Plural magana: magana abiri, 200.",
+    "lukumi": "Plural enkumi: enkumi ibiri, 2,000.",
+    "mmeka": "Agrees with what you count: esente zingahi, abantu bangahi.",
+    "kya-bbeeyi": "Literally “it’s heavy”."
+  },
+  "tips": { "u4s1": "building-numbers", "u4s2": "building-numbers", "u4s3": "haggling" },
+  "guidebook": {
+    "intro": "Prices in Uganda run into thousands of shillings, so you’ll count big quickly. Numbers are built from tens, hundreds and thousands, and they agree with what you count.",
+    "tips": [
+      {
+        "id": "building-numbers",
+        "title": "Building numbers",
+        "body": [
+          "Tens are counted as “two tens”, “three tens”: **makumi abiri** (20), **makumi ashatu** (30). Add units with **na**: **ikumi na ibiri** (12). From 60 the tens have their own names: **nkaaga, nshanju, kinaana, kyenda**.",
+          "**Igana** is 100 and **magana** its plural: **magana ataano** (500). **Rukumi** is 1,000, **enkumi ibiri** 2,000, and **omutwaro** 10,000."
+        ],
+        "table": [
+          ["Number", "Runyankore"],
+          ["11", "ikumi n’emwe"],
+          ["20", "makumi abiri"],
+          ["100", "igana"],
+          ["500", "magana ataano"],
+          ["1,000", "rukumi"],
+          ["5,000", "enkumi itaano"]
+        ],
+        "targetColumns": [1]
+      },
+      {
+        "id": "haggling",
+        "title": "Zingahi? Haggling politely",
+        "body": [
+          "**Zingahi?** (how many?) agrees with esente: **Esente zingahi?** **Eki ni esente zingahi?** is “how much is this?”.",
+          "If it’s **nikiguma** (expensive), ask **Kyendeezeho** (lower it a little). When you agree: **Kare, ninkitwara** (okay, I’ll take it)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Shillings",
+        "body": [
+          "Ugandan prices are in shillings, and coins and small notes run from 100 to 1,000. Market sellers expect a little bargaining, done with a smile and a greeting first."
+        ]
+      }
+    ]
+  }
+}

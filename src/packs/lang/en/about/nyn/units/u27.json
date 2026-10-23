@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u27",
+  "notes": {
+    "olusuku": "Orutookye, the banana garden.",
+    "enkumbi": "Enfuka, a hoe.",
+    "emmwanyi": "Omwani, coffee beans.",
+    "amakungula": "Amasharuro, the harvest.",
+    "ndimira": "-ir- added: I dig for (someone).",
+    "nfumbira": "-er- added: I cook for (someone)."
+  },
+  "tips": { "u27s1": "for-someone", "u27s2": "for-someone", "u27s3": "for-someone" },
+  "guidebook": {
+    "intro": "Talk about the farm, the banana garden and the harvest. You’ll also learn to do things for someone else.",
+    "tips": [
+      {
+        "id": "for-someone",
+        "title": "Doing it for someone: -ir- / -er-",
+        "body": [
+          "Add **-ir-** or **-er-** before the last vowel to do something for someone: **Ninhinga** (I dig) → **Ninhingira** (I dig for); **Ninteeka** (I cook) → **Ninteekyera** (I cook for)."
+        ],
+        "table": [
+          ["Verb", "For someone", "English"],
+          ["Ninhinga", "Ninhingira", "I dig / I dig for"],
+          ["Ninhandiika", "Ninhandiikira", "I write / I write to"],
+          ["Ningurisa", "Ningurisiza", "I sell / I sell for"]
+        ],
+        "targetColumns": [0, 1]
+      }
+    ],
+    "culture": [
+      {
+        "title": "The banana garden",
+        "body": [
+          "Every homestead has its **orutookye**, a banana garden, next to the house. Millet, beans, groundnuts and coffee (**omwani**) grow in the fields, and harvest time, **amasharuro**, brings the family together."
+        ]
+      }
+    ]
+  }
+}

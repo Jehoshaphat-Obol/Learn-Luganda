@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u14",
+  "notes": {
+    "omulimi": "From kuhinga, to dig or farm.",
+    "omufumbi": "From kuteeka, to cook.",
+    "okola-mulimu-ki": "Literally “you do what work?”",
+    "omusaala": "Omushaara, salary.",
+    "nfuna": "Nintunga, I get / earn.",
+    "ennimiro": "Omusiri, a garden or field."
+  },
+  "tips": { "u14s1": "verb-to-job", "u14s2": "verb-to-job", "u14s3": "verb-to-job" },
+  "guidebook": {
+    "intro": "Say what people do for a living. Many job words come from a verb with omu- in front.",
+    "tips": [
+      {
+        "id": "verb-to-job",
+        "title": "From verb to job",
+        "body": [
+          "Add **omu-** to a verb stem and change the last vowel to **-i** to get the person who does it: **-hinga** (dig, farm) → **omuhingi** (farmer); **-teeka** (cook) → **omuteeki** (cook); **-vuga** (drive) → **omuvuzi** (driver).",
+          "The plural is **aba-**: **abahingi** (farmers), **abakozi** (workers)."
+        ],
+        "table": [
+          ["Verb", "Job", "English"],
+          ["kuhinga", "omuhingi", "farmer"],
+          ["kuteeka", "omuteeki", "cook"],
+          ["kuvuga", "omuvuzi", "driver"],
+          ["kukora", "omukozi", "worker"]
+        ],
+        "targetColumns": [0, 1]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Cattle keepers and farmers",
+        "body": [
+          "Traditionally, Ankole society had herders, **Bahima**, and farmers, **Bairu**. Today most families mix both, and many young people work in towns like Mbarara."
+        ]
+      }
+    ]
+  }
+}

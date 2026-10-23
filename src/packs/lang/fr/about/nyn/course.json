@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Le runyankore est parlé par environ trois millions de personnes dans l’Ankole, les collines vertes du sud-ouest de l’Ouganda autour de Mbarara, pays des vaches aux longues cornes.",
+  "notes": "Drafted by Claude (AI) for the Runyankore courses (#128); needs a native-speaker review. The French needs a native-speaker review; word and unit notes fall back to the English notes (lang/en/about/nyn).",
+  "landing": {
+    "hello": "Agandi!",
+    "thanks": "Webale",
+    "place": "l’Ankole",
+    "word": "kwega — apprendre",
+    "words": [
+      ["Agandi?", "Ça va ?"],
+      ["Ni marungi", "Ça va bien"],
+      ["Webale", "Merci"],
+      ["Kare", "D’accord"],
+      ["Omunywani", "Ami"],
+      ["Amaizi", "Eau"],
+      ["Ebyokurya", "Nourriture"],
+      ["Sebo", "Monsieur"],
+      ["Nyabo", "Madame"],
+      ["Ogumeho", "Au revoir"]
+    ],
+    "why": {
+      "title": "La langue **des collines et des vaches de l’Ankole.**",
+      "text": "Le runyankore est la langue de Mbarara, Bushenyi, Ntungamo et Ibanda, et il est proche du rukiga, du runyoro et du rutooro : l’apprendre ouvre une grande partie de l’ouest de l’Ouganda. Apprenez-le pour la famille, le voyage, le travail et les poèmes de louange de l’Ankole.",
+      "cards": [
+        { "title": "Pour la famille", "text": "Parlez avec les grands-parents et la famille dans l’ouest de l’Ouganda." },
+        { "title": "Pour les voyageurs", "text": "Trouvez votre chemin de Mbarara au lac Mburo et à Kabale." },
+        {
+          "title": "Pour les curieux",
+          "text": "Découvrez les classes nominales, les longues salutations et une langue riche en mots sur les vaches."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Lequel veut dire « merci » ?",
+      "options": ["Agandi", "Webale", "Ngaaha"],
+      "answer": "Webale",
+      "explain": "_Webale_ veut dire merci."
+    },
+    "start": { "word": "Tutandike!", "caption": "tutandike — commençons" },
+    "farewell": "Webale munonga — merci beaucoup.",
+    "audience": "Les grands débutants, les familles originaires de l’Ankole, les bénévoles et les voyageurs en route vers l’ouest de l’Ouganda.",
+    "first": "Les salutations, les présentations et les nombres, puis la famille, la nourriture, le marché, l’heure, les lieux, la maison et la santé, unité par unité."
+  },
+  "cast": { "emma": "Une visiteuse qui apprend le runyankore avant son voyage" }
+}

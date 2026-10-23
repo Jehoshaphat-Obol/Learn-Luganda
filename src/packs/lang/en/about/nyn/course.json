@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Runyankore is spoken by about three million people in Ankole, the green hills of south-western Uganda around Mbarara, a land of long-horned cattle.",
+  "notes": "Drafted by Claude (AI) for the Runyankore courses (#128); needs a native-speaker review.",
+  "landing": {
+    "hello": "Agandi!",
+    "thanks": "Webale",
+    "place": "Ankole",
+    "word": "kwega — v. to learn",
+    "words": [
+      ["Agandi?", "How are you?"],
+      ["Ni marungi", "I’m fine"],
+      ["Webale", "Thank you"],
+      ["Kare", "Okay"],
+      ["Omunywani", "Friend"],
+      ["Amaizi", "Water"],
+      ["Ebyokurya", "Food"],
+      ["Sebo", "Sir"],
+      ["Nyabo", "Madam"],
+      ["Ogumeho", "Goodbye"]
+    ],
+    "why": {
+      "title": "The language of **Ankole’s hills and cattle.**",
+      "text": "Runyankore is the language of Mbarara, Bushenyi, Ntungamo and Ibanda, and it is close to Rukiga, Runyoro and Rutooro, so learning it opens up much of western Uganda. Learn it for family, travel, work and the praise poems of Ankole.",
+      "cards": [
+        { "title": "For family", "text": "Talk with grandparents and relatives in western Uganda." },
+        { "title": "For travellers", "text": "Find your way from Mbarara to Lake Mburo and Kabale." },
+        { "title": "For the curious", "text": "Meet noun classes, long greetings and a language full of cattle words." }
+      ]
+    },
+    "sample": {
+      "prompt": "Which one means “thank you”?",
+      "options": ["Agandi", "Webale", "Ngaaha"],
+      "answer": "Webale",
+      "explain": "_Webale_ means thank you."
+    },
+    "start": { "word": "Tutandike!", "caption": "tutandike — let’s begin" },
+    "farewell": "Webale munonga — thank you very much.",
+    "audience": "Complete beginners, families from Ankole, volunteers and travellers heading to western Uganda.",
+    "first": "Greetings, introductions and numbers, then family, food, the market, time, places, the home and health, unit by unit."
+  },
+  "cast": { "emma": "A visitor learning Runyankore before her trip" }
+}

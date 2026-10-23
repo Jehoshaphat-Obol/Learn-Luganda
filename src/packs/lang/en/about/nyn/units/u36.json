@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u36",
+  "notes": {
+    "olugero": "Enfumu, a proverb.",
+    "amakulu": "Amanyiso, the meaning.",
+    "kitegeeza": "Nikimanyisa, it means.",
+    "nga-bwe-bagamba": "Nk’oku bagira, as they say.",
+    "prov-agali-awamu": "Teeth that are together bite the meat: unity is strength.",
+    "prov-olugalo-olumu": "One hand doesn’t kill a louse: we need each other.",
+    "prov-akwata-mpola": "Whoever goes slowly gets far.",
+    "mgeni-siku-mbili": "A guest for two days; on the third, give them a hoe: guests should help out."
+  },
+  "tips": { "u36s1": "reading-proverb", "u36s2": "reading-proverb", "u36s3": "bringing-one-in" },
+  "guidebook": {
+    "intro": "Proverbs, enfumu, carry the wisdom of elders. Using one well in conversation earns respect.",
+    "tips": [
+      {
+        "id": "reading-proverb",
+        "title": "Reading a proverb",
+        "body": [
+          "Proverbs are short and use images from daily life: teeth, hands, cattle, journeys. **Amaino agari hamwe nigo garuma enyama**: “teeth that are together bite the meat”, unity is strength.",
+          "**Engaro emwe teita nda**: “one hand doesn’t kill a louse”, you need others to get things done."
+        ]
+      },
+      {
+        "id": "bringing-one-in",
+        "title": "Bringing one in",
+        "body": ["Introduce a proverb with **Nk’oku bagira …** (as they say …). Ask what one means with **Nikimanyisa ki?** (what does it mean?)."]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Mpora mpora",
+        "body": [
+          "**Orikugyenda mpora ahika hare**: “whoever goes slowly gets far”. Patience is a theme of many proverbs across Uganda. The proverbs in this unit are drafts awaiting a native speaker, who may swap in well-known Runyankore ones."
+        ]
+      }
+    ]
+  }
+}

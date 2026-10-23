@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u34",
+  "notes": {
+    "bwe": "Obu, when.",
+    "singa": "Ku, if.",
+    "nnandiguze": "Nkaaguzire, I would have bought.",
+    "nnandigenze": "Nkaagiire, I would have gone.",
+    "ka-tulabe": "Tureebe, let’s see.",
+    "katonda-bwanaayagala": "If God wills."
+  },
+  "tips": { "u34s1": "when", "u34s2": "when", "u34s3": "if" },
+  "guidebook": {
+    "intro": "Talk about when things happen and what would happen if. Obu means “when” and ku means “if”.",
+    "tips": [
+      {
+        "id": "when",
+        "title": "When: obu",
+        "body": [
+          "**Obu** introduces a time: **Obu ninsisimuka, ninywa caai** (when I wake up, I drink tea). **Obu enjura erikugwa, tindikugyenda** (when it rains, I don’t go). For the future: **Obu oraahika, nteerera** (when you arrive, call me)."
+        ]
+      },
+      {
+        "id": "if",
+        "title": "If: ku and nkaa-",
+        "body": [
+          "**Ku** means if for things that may happen: **Ku ndaatunga esente, ndigura emotoka** (if I get money, I’ll buy a car).",
+          "For things that won’t happen, use **-kaa-** in both halves: **Nkaaguzire** (I would have bought), **Nkaagiire** (I would have gone). **Ruhanga yaayenda** is “God willing”."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Ruhanga yaayenda",
+        "body": [
+          "Future plans are often softened with **Ruhanga yaayenda**, “if God wills”. Saying a plan too boldly can sound like tempting fate."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u38",
+  "notes": {
+    "nnyamba": "Nyamba, help me!",
+    "yanguwa": "Yanguha, hurry!",
+    "omubbi": "Omushuma, a thief.",
+    "ebbiddwa": "Passive: it was stolen.",
+    "alumiziddwa": "Passive: he or she was injured.",
+    "ndi-bulungi": "Ndi gye, I’m fine."
+  },
+  "tips": { "u38s1": "passive", "u38s2": "passive", "u38s3": "passive" },
+  "guidebook": {
+    "intro": "Ask for help, report a problem and reassure someone. You’ll meet the passive: “was stolen”, “was hurt”.",
+    "tips": [
+      {
+        "id": "passive",
+        "title": "Was stolen, is hurt",
+        "body": [
+          "The passive adds **-w-** or **-bw-** before the last vowel: **-iba** (steal) → **yaibwa** (it was stolen). **Yaibirwe** means “he was robbed”, and **akabiihirizibwa** “he was injured”.",
+          "In an emergency, shout **Nyamba!** (help me!) and **Yanguha!** (hurry!)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Everyone helps",
+        "body": [
+          "In a village or a taxi park, a shout for help brings people running. Emergency numbers exist, but neighbours and boda boda riders are often first to arrive."
+        ]
+      }
+    ]
+  }
+}
