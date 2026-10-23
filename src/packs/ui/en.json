@@ -247,13 +247,14 @@
         "import": "I already have progress"
       },
       "hero": {
-        "eyebrow": "Free · Bite-sized · Fun",
-        "title": "The playful way to **learn {language}.**",
-        "lead": "Five-minute lessons that take you from _{hello}_ to real conversations."
+        "eyebrow": "Free · Bite-sized · No account",
+        "title": "The playful way to **learn African languages.**",
+        "lead": "Bite-sized lessons in {count} languages, with more on the way.",
+        "languages": "Languages you can learn"
       },
       "ticker": "Sample words",
       "why": {
-        "eyebrow": "Why {language}"
+        "eyebrow": "Spotlight: {language}"
       },
       "how": {
         "eyebrow": "How it works",
@@ -293,7 +294,7 @@
       },
       "places": {
         "eyebrow": "Out and about",
-        "title": "Practise where **{language} lives.**"
+        "title": "Practise in **real places.**"
       },
       "faq": {
         "eyebrow": "Questions",
@@ -302,33 +303,29 @@
           "q": "Is it free?",
           "a": "Yes, and there’s no account. A few marked sponsored cards keep it free."
         },
+        "languages": {
+          "q": "Which languages can I learn?",
+          "a": "{languages}. More African languages are on the way, and you can learn most of them from any of the others."
+        },
         "saved": {
           "q": "Where is my progress saved?",
           "a": "On this device, in your browser. Move it with export and import in Settings."
         },
-        "who": {
-          "q": "Who is it for?",
-          "a": "{audience}"
-        },
-        "first": {
-          "q": "What will I learn first?",
-          "a": "{first}"
-        },
         "length": {
-          "q": "How long is the course?",
-          "a": "{units} units in {sections}: {lessons} lessons and {words} words. Know some already? Take a section test to jump ahead."
+          "q": "How long is a course?",
+          "a": "{units} units in {sections}: {lessons} lessons and {words} words. Know some already? Test out of a section."
         },
         "sections": { "one": "{count} section", "other": "{count} sections" },
         "install": {
           "q": "Can I install it like an app?",
-          "a": "Yes. Tap Install app, or on an iPhone tap Share, then Add to Home Screen. Lessons then work offline."
+          "a": "Yes. Tap Install app (on iPhone: Share, then Add to Home Screen). Lessons then work offline."
         }
       },
       "final": {
         "title": "Ready? **{start}**"
       },
       "footer": {
-        "made": "Made with care for {language} learners."
+        "made": "Made with care for learners of African languages."
       }
     },
     "onboarding": {

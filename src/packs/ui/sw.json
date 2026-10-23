@@ -275,13 +275,14 @@
         "import": "Tayari nina maendeleo"
       },
       "hero": {
-        "eyebrow": "Bure · Kidogo kidogo · Kwa furaha",
-        "title": "Njia ya kufurahisha ya **kujifunza {language}.**",
-        "lead": "Masomo ya dakika tano yanayokutoa kwenye _{hello}_ hadi mazungumzo halisi."
+        "eyebrow": "Bure · Kidogo kidogo · Bila akaunti",
+        "title": "Njia ya kufurahisha ya **kujifunza lugha za Kiafrika.**",
+        "lead": "Masomo mafupi katika lugha {count}, na zaidi zinakuja.",
+        "languages": "Lugha unazoweza kujifunza"
       },
       "ticker": "Mifano ya maneno",
       "why": {
-        "eyebrow": "Kwa nini {language}"
+        "eyebrow": "Kwa undani: {language}"
       },
       "how": {
         "eyebrow": "Jinsi inavyofanya kazi",
@@ -321,7 +322,7 @@
       },
       "places": {
         "eyebrow": "Huku na kule",
-        "title": "Jizoeze mahali **{language} inapoishi.**"
+        "title": "Jizoeze **mahali halisi.**"
       },
       "faq": {
         "eyebrow": "Maswali",
@@ -330,33 +331,29 @@
           "q": "Je, ni bure?",
           "a": "Ndiyo, na hakuna akaunti. Kadi chache za wadhamini zinasaidia ibaki bure."
         },
+        "languages": {
+          "q": "Ninaweza kujifunza lugha gani?",
+          "a": "{languages}. Lugha zaidi za Kiafrika zinakuja, na kozi nyingi zinaweza kusomwa kutoka lugha yoyote kati ya hizi."
+        },
         "saved": {
           "q": "Maendeleo yangu yanahifadhiwa wapi?",
           "a": "Kwenye kifaa hiki, ndani ya kivinjari chako. Yahamishe kupitia Mipangilio."
         },
-        "who": {
-          "q": "Ni kwa ajili ya nani?",
-          "a": "{audience}"
-        },
-        "first": {
-          "q": "Nitajifunza nini kwanza?",
-          "a": "{first}"
-        },
         "length": {
           "q": "Kozi ni ndefu kiasi gani?",
-          "a": "Vipengele {units} katika {sections}: masomo {lessons} na maneno {words}. Tayari unajua kidogo? Fanya jaribio la sehemu ili kuruka mbele."
+          "a": "Vipengele {units} katika {sections}: masomo {lessons} na maneno {words}. Unajua kidogo tayari? Fanya jaribio la sehemu uruke mbele."
         },
         "sections": { "one": "sehemu {count}", "other": "sehemu {count}" },
         "install": {
           "q": "Je, naweza kuisakinisha kama programu?",
-          "a": "Ndiyo. Gusa Sakinisha programu, au kwenye iPhone gusa Share kisha Add to Home Screen. Masomo yanafanya kazi bila mtandao."
+          "a": "Ndiyo. Gusa Sakinisha programu (kwenye iPhone: Share, kisha Add to Home Screen). Masomo yanafanya kazi bila mtandao."
         }
       },
       "final": {
         "title": "Uko tayari? **{start}**"
       },
       "footer": {
-        "made": "Imetengenezwa kwa upendo kwa wanaojifunza {language}."
+        "made": "Imetengenezwa kwa upendo kwa wanaojifunza lugha za Kiafrika."
       }
     },
     "onboarding": {
