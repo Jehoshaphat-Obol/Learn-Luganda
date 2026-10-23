@@ -1,0 +1,78 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u35",
+  "words": {
+    "enfumo": { "text": "enfumo" },
+    "olwatuuka": { "text": "Olwatuuka" },
+    "olwali-olumu": { "text": "olwali olumu" },
+    "waaliwo": { "text": "waaliwo" },
+    "awo": { "text": "Awo" },
+    "nagenda": { "text": "n’agenda", "alts": ["nagenda"] },
+    "nalaba": { "text": "n’abona", "alts": ["nabona"] },
+    "nagamba": { "text": "n’agamba", "alts": ["nagamba"] },
+    "ekyavaamu": { "text": "Ekyavaamu" },
+    "kale-nno": { "text": "Kale no" },
+    "enfumo-ewedde": { "text": "Enfumo yange ekomye awo" },
+    "ilinyesha": { "text": "yatonya" },
+    "ilikuwa": { "text": "Kyali" },
+    "paukwa": { "text": "Mbagerere?" },
+    "pakawa": { "text": "Tugerere!" },
+    "mwisho": { "text": "enkomerero" },
+    "hadithi-imeishia": { "text": "Enfumo ekomye awo" }
+  },
+  "sentences": {
+    "s35-olwatuuka": { "text": "Olwatuuka olwali olumu…" },
+    "s35-waaliwo-omusajja": { "text": "Waaliwo omusadha omu." },
+    "s35-waaliwo-omukazi": { "text": "Waaliwo omukazi n’omwana we.", "alts": ["Waaliwo omukazi nomwana we."] },
+    "s35-nagenda-mu-kibira": { "text": "Awo n’agenda mu kibira.", "alts": ["Awo nagenda mu kibira."] },
+    "s35-nalaba-empologoma": { "text": "N’abona empologoma!", "alts": ["Nabona empologoma!"] },
+    "s35-nagamba": { "text": "N’agamba ti, “Totya!”", "alts": ["Nagamba ti, “Totya!”"] },
+    "s35-ekyavaamu": { "text": "Ekyavaamu, n’adayo awaka.", "alts": ["Ekyavaamu, nadayo awaka."] },
+    "s35-kale-nno": { "text": "Kale no, wuliriza enfumo eno." },
+    "s35-enfumo-ekomye": { "text": "Enfumo yange ekomye awo." },
+    "s-jana-ilinyesha": { "text": "Idho enkuba yatonya." },
+    "s-ilikuwa-baridi": { "text": "Kyali kinyogovu inho." },
+    "s-kulikuwa-na-upepo": { "text": "Waaliwo embuyaga." },
+    "s-paukwa": { "text": "Mbagerere? Tugerere!" },
+    "s-hapo-zamani": { "text": "Eda enyo, waaliwo wakayima." },
+    "s-hadithi": { "text": "Dhaadha, tugerere enfumo!" },
+    "s-akaenda": { "text": "Wakayima n'agenda ku muga." },
+    "s-akasema": { "text": "N'agamba ti, “Mwena muli mutya?”" },
+    "s-mwisho": { "text": "Ku nkomerero, wakayima n'awangula." },
+    "s-imeishia": { "text": "Enfumo ekomye awo." }
+  },
+  "phrases": [
+    "Olwatuuka olwali olumu…",
+    "Waaliwo omusadha omu.",
+    "Awo n’agenda mu kibira.",
+    "N’abona empologoma!",
+    "Ekyavaamu, n’adayo awaka.",
+    "Enfumo yange ekomye awo."
+  ],
+  "dialogues": { "u35s3l3": [{ "line": "Waaliwo omusadha omu. Awo n’agenda mu kibira…", "options": ["N’abona ki?", "Nandyagade caayi.", "Kye kimu."] }] },
+  "stories": {
+    "amaras-story": {
+      "title": "{@amara} anyumya olufumo",
+      "summary": "{@amara} anyumiza {@emma} olufumo lw’omulenzi n’empologoma.",
+      "lines": [
+        "{@amara}, ngerera enfumo!",
+        "Kale no. Olwatuuka olwali olumu, waaliwo omulenzi omu.",
+        "Awo n’agenda mu kibira okunoonya enku.",
+        "N’abona ki?",
+        "N’abona empologoma nene inho!",
+        "Ayi! N’aduka?",
+        "Nedda. N’atuula wansi, n’ayimba oluyimba.",
+        "Empologoma n’ewuliriza, n’ewumula, n’egenda.",
+        "Ekyavaamu, omulenzi n’adayo awaka n’enku. Enfumo yange ekomye awo."
+      ],
+      "questions": [
+        { "question": "Lwaki omulenzi yagenda mu kibira?", "options": ["Okunoonya enku", "Okuyiga", "Okuzanya omupiira"] },
+        { "question": "Omulenzi yakola ki bwe yabona empologoma?", "options": ["Yaduka", "Yatuula n’ayimba oluyimba", "Yalinya omuti"] },
+        {
+          "question": "{@amara} amaliriza atya olufumo mu Lungereza?",
+          "options": ["Enfumo yange ekomye awo.", "Olwatuuka olwali olumu.", "Waaliwo omusadha."]
+        }
+      ]
+    }
+  }
+}

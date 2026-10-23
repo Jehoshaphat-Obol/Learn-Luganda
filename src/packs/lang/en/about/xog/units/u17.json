@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u17",
+  "notes": {
+    "saagala": "si- + yagala.",
+    "si-kyange": "For eki- things. si = is not.",
+    "s17-sinywa-amata": "After a negative verb the noun usually drops its first vowel."
+  },
+  "tips": { "u17s1": "negatives" },
+  "guidebook": {
+    "intro": "Saying no politely is a big step towards real conversation. Lusoga makes a verb negative with a small prefix.",
+    "tips": [
+      {
+        "id": "negatives",
+        "title": "si-, to-, ta-",
+        "body": [
+          "Put **si-** in front for “I don’t”: **simanyi**, **sirina**, **sigenda**. When the verb starts with a vowel, the sounds merge: **si + yagala** becomes **saagala**.",
+          "For “you don’t” use **to-** (**toyagala**), for “he/she doesn’t” use **ta-** (**tagenda**), and for “we don’t” use **tetu-** (**tetulina**). A **to-** command means “don’t!”: **Togenda!**, **Totya!**",
+          "After a negative verb, the noun usually drops its first vowel: **Sinywa mata** (not *amata*), **Tewali madhi**."
+        ],
+        "table": [
+          ["", "Yes", "No"],
+          ["I", "njagala", "saagala"],
+          ["you", "oyagala", "toyagala"],
+          ["he / she", "ayagala", "tayagala"],
+          ["we", "twagala", "tetwagala"],
+          ["there is", "waliwo", "tewali"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "A soft no",
+        "body": [
+          "A flat **Nedda** can feel abrupt. People soften a refusal with thanks and a reason: **Weebale, naye saagala kaawa** (thank you, but I don’t want coffee). Refusing food entirely can seem unfriendly, so taking a little is kind."
+        ]
+      }
+    ]
+  }
+}

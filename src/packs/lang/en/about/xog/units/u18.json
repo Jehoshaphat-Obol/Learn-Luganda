@@ -1,0 +1,54 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u18",
+  "notes": {
+    "ki": "Comes after the verb: Oyagala ki?",
+    "kiki": "Kino kiki? What is this?",
+    "ekyo": "For eki- things. Kino is “this”.",
+    "oyo": "Ani oyo? Who is that?",
+    "wa": "Comes after the verb: Ogenda wa?",
+    "ddi": "Odha di? When are you coming?",
+    "kitya": "For eki- things: kiyitibwa kitya? what is it called?"
+  },
+  "tips": { "u18s1": "question-words", "u18s3": "ask-about-words" },
+  "glosses": {
+    "what-is-this": { "1": { "kibo": "a basket" }, "2": { "Ate": "and, what about" }, "3": { "kyambe": "a knife" }, "8": { "naawe": "with you" } }
+  },
+  "guidebook": {
+    "intro": "Lusoga questions keep the same word order as statements. The question word simply goes where the answer would be, usually at the end.",
+    "tips": [
+      {
+        "id": "question-words",
+        "title": "The answer goes in the same place",
+        "body": [
+          "Ask **Ogenda wa?** (you-go where?) and answer **Ŋŋenda Jinja** (I-go Jinja). Swap the question word for the answer and the sentence is done.",
+          "A yes/no question is a statement with a rising voice: **Oyogera Olusoga?** Add **oba** (or) to offer a choice: **Caayi oba kaawa?**"
+        ],
+        "table": [
+          ["Word", "Meaning", "Example"],
+          ["ki", "what", "Oyagala ki?"],
+          ["ani", "who", "Ani oyo?"],
+          ["wa", "where", "Oli wa?"],
+          ["di", "when", "Odha di?"],
+          ["lwaki", "why", "Lwaki osoma?"],
+          ["meka", "how many / how much", "Sente meka?"]
+        ]
+      },
+      {
+        "id": "ask-about-words",
+        "title": "Learning from people",
+        "body": [
+          "The best phrase for a learner: point and ask **Kino kiyitibwa kitya mu Lusoga?** (What is this called in Lusoga?). If you miss the answer, say **Damu mpola** (repeat slowly). People love helping a learner."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Njogera katono",
+        "body": [
+          "Answering **Njogera katono** (I speak a little) to **Oyogera Olusoga?** almost always gets a smile, and often a long conversation. Ugandans are proud when visitors try their language."
+        ]
+      }
+    ]
+  }
+}

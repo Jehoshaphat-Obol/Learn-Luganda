@@ -1,0 +1,37 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u36",
+  "tips": { "u36s1": "english-proverbs", "u36s3": "as-they-say" },
+  "guidebook": {
+    "intro": "Vuunula engero za Lusoga mu Lungereza, era omanye engero z’Olungereza ezifaanana nazo.",
+    "tips": [
+      {
+        "id": "english-proverbs",
+        "title": "Engero ezifaanana",
+        "body": ["Engero nyingi eza Lusoga zirina ezifaanana nazo mu Lungereza. Bw’ovuunula olugero, osobola okwongerako olw’Olungereza."],
+        "table": [
+          ["Olusoga", "Olungereza"],
+          ["Kamu kamu gwe muganda.", "Little by little. / Rome wasn’t built in a day."],
+          ["Akwata empola atuuka wala.", "Slow and steady wins the race."],
+          ["Agali awamu ge galuma enyama.", "Unity is strength."],
+          ["Olugalo olumu teruta nda.", "Many hands make light work."]
+        ]
+      },
+      {
+        "id": "as-they-say",
+        "title": "Okuyingiza olugero",
+        "body": [
+          "Okutandika olugero: **As they say, …** oba **There is a saying: …** Okunyonyola: **It means unity is strength.** Okubuuza: **What does this proverb mean?**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Engero ku mikolo",
+        "body": [
+          "Ku mikolo abogezi bakozesa engero nyingi. Bw’ovuunula mu Lungereza, nyonyola amakulu: **In Lusoga we say “Kamu kamu gwe muganda”. It means little by little makes a bundle.**"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u26",
+  "words": {
+    "kabaka": { "text": "Kabaka" },
+    "nnaabagereka": { "text": "Naabagereka" },
+    "ssaabasajja": { "text": "Saabasadha" },
+    "obwakabaka": { "text": "obwakabaka" },
+    "afuga": { "text": "afuga" },
+    "awangaale": { "text": "awangaale" },
+    "katikkiro": { "text": "Katikiro" },
+    "lukiiko": { "text": "Lukiiko" },
+    "olubiri": { "text": "olubiri" },
+    "bulange": { "text": "Bulange" },
+    "amasiro": { "text": "amasiro" },
+    "essaza": { "text": "esaza" },
+    "amasaza": { "text": "amasaza" },
+    "edda-ennyo": { "text": "eda enyo" },
+    "abunuwasi": { "text": "Abunuwasi" }
+  },
+  "sentences": {
+    "s26-kabaka-afuga": { "text": "Kabaka afuga Buganda." },
+    "s26-kabaka-awangaale": { "text": "Kabaka awangaale!" },
+    "s26-nnaabagereka": { "text": "Naabagereka adha lero." },
+    "s26-ssaabasajja": { "text": "Saabasadha Kabaka atuuse." },
+    "s26-obwakabaka-bwa-buganda": { "text": "Obwakabaka bwa Buganda bukade inho." },
+    "s26-katikkiro": { "text": "Katikiro ayogera mu Lukiiko." },
+    "s26-olubiri-e-mengo": { "text": "Olubiri luli e Mengo." },
+    "s26-bulange": { "text": "Lukiiko lutuula mu Bulange." },
+    "s26-amasiro-e-kasubi": { "text": "Amasiro g’e Kasubi.", "alts": ["Amasiro ge Kasubi."] },
+    "s26-amasaza": { "text": "Buganda erina amasaza ikumi na munaana." },
+    "s26-essaza-lyange": { "text": "Esaza lyange Kyadondo." },
+    "s26-edda-ennyo": { "text": "Eda enyo, Kintu ye yali Kabaka eyasooka." },
+    "s-abunuwasi": { "text": "Abunuwasi yali mugezi inho." },
+    "s-mfalme": { "text": "Kabaka yayita Abunuwasi." }
+  },
+  "phrases": [
+    "Kabaka awangaale!",
+    "Kabaka afuga Buganda.",
+    "Katikiro ayogera mu Lukiiko.",
+    "Olubiri luli e Mengo.",
+    "Amasiro g’e Kasubi.",
+    "Buganda erina amasaza ikumi na munaana."
+  ],
+  "dialogues": { "u26s3l3": [{ "line": "Kabaka awangaale!", "options": ["Awangaale!", "Sikuwulira.", "Nkuse."] }] },
+  "stories": {
+    "kasubi-visit": {
+      "title": "Okukyalira Kasubi",
+      "summary": "{@mukasa} alaga {@emma} amasiro era amubuulira ku bwakabaka.",
+      "lines": [
+        "{@emma}, gano ge Masiro g’e Kasubi.",
+        "Enyumba nene inho! Ani aziikidwa wano?",
+        "Bakabaka bana.",
+        "Ate Kabaka wa atyanu ali wa?",
+        "Abeera mu lubiri e Mengo.",
+        "Lukiiko lutuula wa?",
+        "Mu Bulange. Katikiro ayogera eyo.",
+        "Ani yali Kabaka eyasooka?",
+        "Kintu. Eda enyo!",
+        "Kabaka awangaale!",
+        "Awangaale!"
+      ],
+      "questions": [
+        { "question": "Bakabaka bameka abaziikidwa e Kasubi?", "options": ["Babiri", "Bana", "Ikumi na munaana"] },
+        { "question": "Olukiiko lutuula wa?", "options": ["Mu Bulange", "E Kasubi", "Mu katale"] },
+        { "question": "Omuntu bw’agamba “Long live the Kabaka!”, odamu otya?", "options": ["Awangaale!", "Weeraba!", "Kulika!"] }
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u29",
+  "tips": { "u29s1": "play", "u29s3": "who" },
+  "guidebook": {
+    "intro": "Yogera ku ngoma, enyimba n’amazina, era onyonyole ani akola ki.",
+    "tips": [
+      {
+        "id": "play",
+        "title": "“Play the drum”",
+        "body": [
+          "Mu Lusoga **okukuba engoma**. Mu Lungereza ku bivuga byona ogamba **play**: **play the drum**, **play the harp**, **play the xylophone**."
+        ]
+      },
+      {
+        "id": "who",
+        "title": "“Who” ku bantu",
+        "body": [
+          "Mu Lusoga **abazina** kitegeeza “abo abazina”. Mu Lungereza kozesa **who** ku bantu: **the children who are dancing**, **the man who plays the drum**.",
+          "Ku bintu kozesa **that** oba **which**: **the song that I like**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Engoma",
+        "body": [
+          "Engoma ekulu nnyo mu Buganda: ekuŋŋaanya abantu era eraga ebiseera by’emikolo. Mu Lungereza: **The drum calls people together.** **Bakisimba is a royal dance.**"
+        ]
+      }
+    ]
+  }
+}

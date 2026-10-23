@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Orusoga nirugambwa abantu nka obukaikuru bushatu omu Busoga, oburugwa izooba bwa Uganda, ahagati y'enyanja Nalubaale, Kiira n'enyanja Kyoga, Jinja n'ahu Kiira etandikira biri ahagati.",
+  "notes": "Drafted by Claude (AI) for the Lusoga courses (#129) with low confidence in Lusoga; needs a native-speaker review. The Runyankore needs a native-speaker review too; word and unit notes fall back to the English notes (lang/en/about/xog).",
+  "landing": {
+    "hello": "Oli otya?",
+    "thanks": "Weebale",
+    "place": "Busoga",
+    "word": "okuyiga — kwega",
+    "words": [
+      ["Inho", "Munonga"],
+      ["Atyanu", "Hati"],
+      ["Lero", "Erizooba"],
+      ["Idho", "Nyomwabazyo"],
+      ["Amaadhi", "Amaizi"],
+      ["Emere", "Ebyokurya"],
+      ["Iwe", "Iwe"],
+      ["Ikumi", "Ikumi"],
+      ["Nsangaire", "Nshemereirwe"],
+      ["Tulibonagana", "Turaareebana"]
+    ],
+    "why": {
+      "title": "Orurimi rwa **Busoga n'ahu Kiira etandikira.**",
+      "text": "Orusoga nirwo rurimi rwa Jinja, Iganga, Kamuli na Mayuge, kandi nirushushana munonga n'Oruganda, n'ahabw'ekyo kurwega nikukwigurira obwiire bwingi bwa Uganda. Ruyege ahabw'eka, orugyendo, emirimo, n'ebyeshongoro n'engano za Busoga.",
+      "cards": [
+        { "title": "Ahabw'eka", "text": "Gamba na banyakuru n'ab'eka omu Busoga." },
+        { "title": "Ahabw'abatambuzi", "text": "Tambura kuruga Jinja kuhika aha Bujagali n'aha kizinga Buvuma." },
+        {
+          "title": "Ahabw'abarikwenda kumanya",
+          "text": "Shanga ebika by'amaziina, enyukuta empanvu n'ebigambo bingi Orusoga ebi rugabana n'Oruganda."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Ni kiha ekirikumanyisa “webale”?",
+      "options": ["Oli otya?", "Weebale", "Nedda"],
+      "answer": "Weebale",
+      "explain": "_Weebale_ nikimanyisa webale."
+    },
+    "start": { "word": "Tutandike!", "caption": "tutandike — reka tutandike" },
+    "farewell": "Weebale inho — webale munonga.",
+    "audience": "Abarikutandika, eka ezirikuruga Busoga, n'abatambuzi abarikuza oburugwa izooba bwa Uganda.",
+    "first": "Okuramukya, okweyanjura n'enamba, bwanyima eka, ebyokurya, akatale, eshaaha, ebifo, omuka n'amagara, ekicweka ku kicweka."
+  },
+  "cast": { "emma": "Omugyenyi orikwega Orusoga atakagiire omu rugyendo" }
+}

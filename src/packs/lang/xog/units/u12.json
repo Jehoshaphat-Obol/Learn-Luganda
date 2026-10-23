@@ -1,0 +1,89 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u12",
+  "words": {
+    "obudde": { "text": "obude" },
+    "enkuba": { "text": "enkuba" },
+    "etonnya": { "text": "etonya" },
+    "omusana": { "text": "omusana" },
+    "gwaka": { "text": "gwaka" },
+    "ebire": { "text": "ebire" },
+    "empewo": { "text": "empewo" },
+    "eggulu": { "text": "egulu" },
+    "laddu": { "text": "ladu" },
+    "ekyeya": { "text": "ekyeya" },
+    "ttoggo": { "text": "togo" },
+    "bwokya": { "text": "bwokya" },
+    "bunnyogovu": { "text": "bunyogovu" },
+    "mpulira": { "text": "Mpulira" },
+    "ebbugumu": { "text": "ebugumu" },
+    "nnyo-nnyo": { "text": "inho inho" },
+    "obudde-bulungi": { "text": "Obude bulungi" },
+    "ekiwempe": { "text": "ekiwempe" },
+    "upepo": { "text": "embuyaga" },
+    "radi": { "text": "okubwatuka" },
+    "jua-kali": { "text": "omusana omungi" },
+    "kavu": { "text": "kikalu" },
+    "nyingi": { "text": "nyingi" },
+    "msimu": { "text": "ekiseera" },
+    "vuli": { "text": "dumbi" }
+  },
+  "sentences": {
+    "s-enkuba-etonnya": { "text": "Enkuba etonya." },
+    "s-omusana-gwaka": { "text": "Omusana gwaka." },
+    "s-leero-obudde-bulungi": { "text": "Lero obude bulungi." },
+    "s-waliwo-ebire": { "text": "Waliwo ebire bingi." },
+    "s-empewo-nnyingi": { "text": "Waliwo empewo nyingi." },
+    "s-eggulu-libwatuka": { "text": "Egulu libwatuka." },
+    "s-laddu-n-eggulu": { "text": "Ladu n’egulu.", "alts": ["Ladu negulu."] },
+    "s-ttoggo-enkuba-nnyingi": { "text": "Mu togo enkuba nyingi." },
+    "s-mu-kyeya-bwokya": { "text": "Mu kyeya obude bwokya." },
+    "s-obudde-bunnyogovu": { "text": "Obude bunyogovu lero." },
+    "s-mpulira-empewo": { "text": "Mpulira empewo." },
+    "s-mpulira-ebbugumu": { "text": "Mpulira ebugumu." },
+    "s-obudde-bwokya-nnyo-nnyo": { "text": "Obude bwokya inho inho!" },
+    "s-twala-ekiwempe": { "text": "Twala ekiwempe." },
+    "s-hali-ya-hewa": { "text": "Obude bulungi lero." },
+    "s-kuna-jua": { "text": "Lero omusana gwaka." },
+    "s-kuna-joto": { "text": "Lero ebugumu lingi inho." },
+    "s-kuna-baridi": { "text": "Ekiro wabaawo empewo." },
+    "s-kuna-upepo": { "text": "Lero waliwo embuyaga." },
+    "s-kuna-mawingu": { "text": "Lero waliwo ebire." },
+    "s-radi-usiku": { "text": "Egulu libwatuka ekiro." },
+    "s-jua-kali-leo": { "text": "Omusana mungi lero!" },
+    "s-mvua-nyingi": { "text": "Enkuba nyingi!" },
+    "s-kiangazi-kavu": { "text": "Ekyeya kikalu era kyokya." },
+    "s-msimu-gani": { "text": "Kiseera ki?" },
+    "s-masika-mvua": { "text": "Togo ye nkuba empanvu." },
+    "s-vuli-mvua-fupi": { "text": "Dumbi ye nkuba enyimpi." }
+  },
+  "phrases": ["Enkuba etonya.", "Omusana gwaka.", "Lero obude bulungi.", "Mpulira empewo.", "Obude bwokya inho inho!", "Twala ekiwempe."],
+  "dialogues": {
+    "u12s3l3": [
+      { "line": "Enkuba etonya inho!", "options": ["Twala ekiwempe.", "Omusana gwaka.", "Ndya ekyenkya."] },
+      { "line": "Mpulira empewo. Iwe?", "options": ["Nanze mpulira empewo.", "Omusana gwaka.", "Engato zange."] }
+    ]
+  },
+  "stories": {
+    "rainy-day": {
+      "title": "Olwegulo lw’enkuba",
+      "summary": "Enkuba ey’amaanyi ekuuma {@amara} ewa dhaadha we.",
+      "lines": [
+        "Dhaadha, ŋŋenda awaka.",
+        "Nedda! Bona, ebire bingi. Enkuba edha.",
+        "Naye omusana gwaka!",
+        "Wuliriza… egulu libwatuka.",
+        "Ayi! Enkuba etonya inho inho!",
+        "Tuula wano. Mpulira empewo. Iwe?",
+        "Nanze. Njagala caayi.",
+        "Kale, tunywe caayi. Oluvanyuma, twala ekiwempe kyange.",
+        "Weebale inho, Dhaadha!"
+      ],
+      "questions": [
+        { "question": "Lwaki {@jjajja} agamba nedda?", "options": ["Kiro kituuse", "Enkuba edha", "{@amara} mulwade"] },
+        { "question": "Obude buli butya atyanu?", "options": ["Enjuba n’ebugumu", "Enkuba etonya inho", "Mpewo nga tewali nkuba"] },
+        { "question": "{@amara} anaatwala ki eka?", "options": ["Ekisiikirize kya {@jjajja}", "Sweta", "Emere"] }
+      ]
+    }
+  }
+}

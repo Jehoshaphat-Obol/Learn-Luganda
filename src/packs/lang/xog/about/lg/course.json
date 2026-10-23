@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Oluganda lwogerwa abantu bukade na bukade mu Buganda, wakati mu Uganda, mu Kampala n’okwetooloola.",
+  "notes": "Drafted by Claude (AI) for the Lusoga courses (#129) with low confidence in Lusoga; needs a native-speaker review.",
+  "landing": {
+    "hello": "Oli otya?",
+    "thanks": "Weebale",
+    "place": "Uganda",
+    "word": "okuyiga — okuyiga (ekikolwa)",
+    "words": [
+      ["Oli otya?", "Ki atyanu?"],
+      ["Gyendi", "Ndi bulungi"],
+      ["Weebale", "Weebale inho"],
+      ["Kale", "Kale"],
+      ["Mukwano", "Mukwano"],
+      ["Amazzi", "Amaadhi"],
+      ["Emmere", "Emere"],
+      ["Ssebo", "Sebo"],
+      ["Nnyabo", "Nyabo"],
+      ["Webale kujja", "Tukusangaaliire"]
+    ],
+    "why": {
+      "title": "Olulimi lw’**enguudo dh’e Kampala.**",
+      "text": "Oluganda lwogerwa abantu bukade na bukade mu Uganda wakati, era lwe lulimi olusinga okwogerwa mu Kampala. Luyige oyogere n’ab’omu maka, ofune emikwano mu katale, era owulire ng’oli waka ku lugendo lwo.",
+      "cards": [
+        { "title": "Eri ab’omu maka", "text": "Yogera ne badhaadha era oyigirize abaana olulimi." },
+        { "title": "Eri abatambuze", "text": "Lamusa, kendeeza ku beeyi era otambule nga totya." },
+        { "title": "Eri abaagala okumanya", "text": "Zuula ebika by’amanya n’engero." }
+      ]
+    },
+    "sample": {
+      "prompt": "Kigambo ki ekitegeeza “weebale”?",
+      "options": ["Oli otya?", "Weebale", "Nedda"],
+      "answer": "Weebale",
+      "explain": "_Weebale_ kitegeeza weebale."
+    },
+    "start": { "word": "Tandika!", "caption": "tandika — ka tutandike nno" },
+    "farewell": "Weebale nnyo — weebale inho.",
+    "audience": "Aboogera Olusoga abatandika okuva ku ntandikwa, n’ab’omu maka abaagala okwogera ne baganda baabwe e Buganda.",
+    "first": "Okulamusa, okweyanjula n’enamba, oluvanyuma ab’omu maka, emere, akatale, esaawa, ebifo, awaka n’obulamu, ekitundu ku kitundu."
+  }
+}

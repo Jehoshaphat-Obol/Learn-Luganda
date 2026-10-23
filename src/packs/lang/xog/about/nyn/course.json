@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Orunyankore lwogerwa abantu nga obukade busatu mu Ankole, ensozi eziri ku luuyi lw’obugwanjuba bwa Uganda okwetooloola Mbarara, ensi y’ente ez’amayembe amawanvu.",
+  "notes": "Drafted by Claude (AI) for the Lusoga courses (#129) from the Luganda text, with low confidence in Lusoga; needs a native-speaker review.",
+  "landing": {
+    "hello": "Agandi!",
+    "thanks": "Webale",
+    "place": "Ankole",
+    "word": "kwega — okuyiga (ekikolwa)",
+    "words": [
+      ["Agandi?", "Oli otya?"],
+      ["Ni marungi", "Gyendi"],
+      ["Webale", "Weebale"],
+      ["Kare", "Kale"],
+      ["Omunywani", "Mukwano"],
+      ["Amaizi", "Amaadhi"],
+      ["Ebyokurya", "Emere"],
+      ["Sebo", "Sebo"],
+      ["Nyabo", "Nyabo"],
+      ["Ogumeho", "Weeraba"]
+    ],
+    "why": {
+      "title": "Olulimi lw’**ensozi n’ente dh’e Ankole.**",
+      "text": "Orunyankore lwe lulimi lw’e Mbarara, Bushenyi, Ntungamo ne Ibanda, era lufaanana Olukiga, Olunyoro n’Olutooro, kale okuluyiga kukugulawo ebitundu bingi eby’obugwanjuba bwa Uganda. Luyige olw’ab’omu maka, okutambula, emirimu n’ebitontome bya Ankole.",
+      "cards": [
+        { "title": "Eri ab’omu maka", "text": "Yogera ne badhaadha n’ab’eŋŋanda mu bugwanjuba bwa Uganda." },
+        { "title": "Eri abatambuze", "text": "Tambula okuva e Mbarara okutuuka ku Nyanja Mburo ne Kabale." },
+        { "title": "Eri abaagala okumanya", "text": "Zuula ebika by’amanya, okulamusa okuwanvu n’ebigambo bingi eby’ente." }
+      ]
+    },
+    "sample": {
+      "prompt": "Kigambo ki ekitegeeza “weebale”?",
+      "options": ["Agandi", "Webale", "Ngaaha"],
+      "answer": "Webale",
+      "explain": "_Webale_ kitegeeza weebale."
+    },
+    "start": { "word": "Tutandike!", "caption": "tutandike — ka tutandike nno" },
+    "farewell": "Webale munonga — weebale inho.",
+    "audience": "Aboogera Olusoga abatandika okuva ku ntandikwa, ab’omu maka abava mu Ankole, n’abatambuze abagenda mu bugwanjuba bwa Uganda.",
+    "first": "Okulamusa, okwenyanjula n’enamba, oluvanyuma ab’omu maka, emere, akatale, esaawa, ebifo, awaka n’obulamu, ekitundu ku kitundu."
+  },
+  "cast": { "emma": "Omugenyi ayiga Orunyankore nga tanaba kutambula" }
+}

@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u16",
+  "tips": { "u16s1": "does-it-go", "u16s3": "from-to" },
+  "guidebook": {
+    "intro": "Kwata takisi oba baasi, kozesa bodaboda, era ogambe ti otuuse bulungi.",
+    "tips": [
+      {
+        "id": "does-it-go",
+        "title": "“Where does this taxi go?”",
+        "body": [
+          "Okubuuza ku muntu omu oba ekintu ekimu, kozesa **does**: **Where does this taxi go?** **Does this bus go to Jinja?** Okudamu: **It goes to Entebe.** (**goes** ne **-es**)."
+        ]
+      },
+      {
+        "id": "from-to",
+        "title": "From … to … ne by …",
+        "body": [
+          "**From Kampala to Masaka** — okuva e Kampala okutuuka e Masaka.",
+          "Ekiduka ky’olinya: **by**: **by taxi**, **by bus**, **by boda boda**, **by plane**. Naye ku bigere: **on foot**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Okutuuka obulungi",
+        "body": [
+          "Bw’otuuka, abantu baagala okumanya. Mu Lungereza gamba **I have arrived safely.** Mu Uganda abantu era bagamba **I have reached.** Bw’oba osiibula omuntu agenda: **Have a good journey!** oba **Safe journey!**"
+        ]
+      }
+    ]
+  }
+}

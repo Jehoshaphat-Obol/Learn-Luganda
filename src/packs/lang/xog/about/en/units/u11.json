@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u11",
+  "tips": { "u11s1": "every-day", "u11s2": "he-works" },
+  "guidebook": {
+    "intro": "Nyonyola olunaku lwo okuva ku makya okutuuka ekiro: okuzuukuka, emirimu, okufumba n’okwebaka.",
+    "tips": [
+      {
+        "id": "every-day",
+        "title": "Ebikolebwa buli lunaku",
+        "body": [
+          "Ku bintu by’okola buli lunaku, kozesa ekikolwa nga bwe kiri: **I wake up at six. I work every day.**",
+          "**Always** kidha wakati w’omuntu n’ekikolwa: **I always drink tea.**"
+        ]
+      },
+      {
+        "id": "he-works",
+        "title": "“He works” ayongerako -s",
+        "body": [
+          "Mu Lusoga entandikwa y’ekikolwa ekyuka: **nkola, akola, tukola, bakola**. Mu Lungereza ekikolwa tekikyuka, okugyako ku **he**, **she** ne **it**, bw’oyongerako **-s**."
+        ],
+        "table": [
+          ["Olusoga", "Olungereza"],
+          ["nkola", "I work"],
+          ["okola", "you work"],
+          ["akola", "he works / she works"],
+          ["tukola", "we work"],
+          ["bakola", "they work"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Emere esatu",
+        "body": [
+          "**Breakfast** (ekyenkya), **lunch** (ekyemisana) ne **dinner** (ekyegulo). Mu Lungereza abantu batera okugamba **have**: **I have breakfast at seven.** Kye kimu ne **I eat breakfast**."
+        ]
+      }
+    ]
+  }
+}

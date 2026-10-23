@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u24",
+  "tips": { "u24s2": "recipe-steps" },
+  "glosses": { "cooking-luwombo": { "0": { "luwombo": "a stew steamed in banana leaves" }, "5": { "osibe": "and wrap" } } },
+  "guidebook": {
+    "intro": "Cooking brings together everything: comands, time words, food and sharing. Luwombo, a stew steamed in banana leaves, is the dish of celebration.",
+    "tips": [
+      {
+        "id": "recipe-steps",
+        "title": "Steps in order",
+        "body": [
+          "A recipe is a list of comands: **Sala** (cut), **Teeka** (put), **Gatako** (add), **Siika** (fry). Start with **Sooka** (first) and continue with **Oluvanyuma** (then, afterwards).",
+          "**-ko** at the end of a verb adds “a bit, some”: **Gatako omunyo** (add some salt). You met it in **Kendeezaako** (lower it a bit)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Matooke in banana leaves",
+        "body": [
+          "Matooke is peeled, wrapped in **endagala** (banana leaves), steamed for hours and mashed inside the leaves. The leaves keep it warm and give it its taste, and they are used as plates and lids too."
+        ]
+      },
+      {
+        "title": "Webale okufumba",
+        "body": [
+          "After a meal, thank the cook: **Webale okufumba**. Saying **Nkuse** (I’m full) is the polite way to stop, otherwise your plate will be filled again."
+        ]
+      }
+    ]
+  }
+}

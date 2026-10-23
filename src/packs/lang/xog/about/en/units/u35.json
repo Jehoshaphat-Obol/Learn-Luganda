@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u35",
+  "tips": { "u35s1": "once-upon", "u35s2": "and-then", "u35s3": "the-end" },
+  "guidebook": {
+    "intro": "Nyumya olufumo mu Lungereza: entandikwa, ebyaliwo n’enkomerero.",
+    "tips": [
+      {
+        "id": "once-upon",
+        "title": "Okutandika olufumo",
+        "body": [
+          "Enfumo mu Lungereza zitandika ne **Once upon a time …** Abantu b’omu lufumo boogerwako ne **there was**: **There was a man. There was a woman and her child.**"
+        ]
+      },
+      {
+        "id": "and-then",
+        "title": "And then …",
+        "body": [
+          "Mu Lusoga **ne-** kigata ebyaliwo: **n’agenda, n’abona**. Mu Lungereza kozesa ebikolwa by’ebyayita ne **and** oba **then**: **Then he went into the forest. And he saw a lion!**"
+        ],
+        "table": [["Lero", "Mu lufumo"], ["go", "went"], ["see", "saw"], ["say", "said"], ["come", "came"]]
+      },
+      {
+        "id": "the-end",
+        "title": "Enkomerero",
+        "body": ["**In the end, he went back home.** Olufumo lugwa ne **The end.** oba **And that is the end of my story.**"]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Enfumo ez’ekiro",
+        "body": [
+          "Mu Buganda enfumo zinyumizibwa ekiro okumpi n’omuliro. Mu Lungereza abazade basomera abaana **bedtime stories** nga tebanaba kwebaka."
+        ]
+      }
+    ]
+  }
+}

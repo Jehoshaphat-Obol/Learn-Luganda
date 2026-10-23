@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u40",
+  "notes": {
+    "wakayima": "The clever trickster of Ganda folktales.",
+    "kintu": "The first man in the Ganda creation story.",
+    "nnambi": "Kintu’s wife, daughter of Ggulu (the sky).",
+    "walumbe": "Nnambi’s brother: death, in the legend."
+  },
+  "tips": { "u40s1": "wakayima", "u40s2": "kintu-legend" },
+  "glosses": { "kintu-and-nnambi": { "1": { "yeka": "alone" }, "4": { "aleme": "so that he does not" }, "7": { "ku nsi": "to the earth" } } },
+  "guidebook": {
+    "intro": "Ganda folktales (**enfumo**) are told in the evening. The two most famous are the tricks of **Wakayima** the hare, and the legend of **Kintu**, the first man.",
+    "tips": [
+      {
+        "id": "wakayima",
+        "title": "Wakayima the trickster",
+        "body": [
+          "The small hare beats bigger animals by cleverness: he tricks the elephant, the lion and the leopard. The lesson is usually **obugezi businga amaanyi** (wisdom beats strength), though sometimes Wakayima is caught out by his own lies."
+        ]
+      },
+      {
+        "id": "kintu-legend",
+        "title": "Kintu and Nnambi",
+        "body": [
+          "**Kintu** lived alone with his cow until **Nnambi**, daughter of **Ggulu** (the sky), married him. Ggulu told them to leave quickly before her brother **Walumbe** (Death) could follow.",
+          "On the way, Nnambi went back for the millet she had forgotten for her chicken. **Walumbe** followed her, and that is why death came to the earth."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Reteling",
+        "body": [
+          "A good storyteller opens with **Olwatuuka olwali olumu**, gets the listeners to answer, and ends with the lesson: **Enfumo eno etuyigiriza ti…**. Now you can tell one too. Congratulations on reaching the last unit!"
+        ]
+      }
+    ]
+  }
+}

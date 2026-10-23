@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u23",
+  "tips": { "u23s1": "call-me", "u23s3": "on-the-way" },
+  "guidebook": {
+    "intro": "Kuba esimu, weereza obubaka era osisinkane mukwano gwo mu Lungereza.",
+    "tips": [
+      {
+        "id": "call-me",
+        "title": "Me, you, him, her",
+        "body": [
+          "Mu Lusoga omuntu ali munda mu kikolwa: **nkukubira**, **nkubira**, **mukubira**. Mu Lungereza adha oluvanyuma lw’ekikolwa: **I call you. Call me. I call him.**"
+        ],
+        "table": [
+          ["Olusoga", "Olungereza"],
+          ["nkukubira", "I call you"],
+          ["nkubira", "Call me"],
+          ["mukubira", "I call him / I call her"],
+          ["mpeereza", "Send me"]
+        ]
+      },
+      {
+        "id": "on-the-way",
+        "title": "Ku simu",
+        "body": [
+          "Ku simu otandika ne **Hello?** Okulaga gw’oli: **It’s Nakato** oba **This is Nakato speaking.**",
+          "Ng’olwawo: **I’m on the way!** **I’m coming!**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Okubeepa",
+        "body": [
+          "Mu Uganda abantu bagamba **I will beep you**. Abalala aboogera Olungereza bagamba **I’ll give you a missed call** oba **I’ll call you**."
+        ]
+      }
+    ]
+  }
+}

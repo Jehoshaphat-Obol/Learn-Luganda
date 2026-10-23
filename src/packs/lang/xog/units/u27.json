@@ -1,0 +1,50 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u27",
+  "words": {
+    "olusuku": { "text": "olusuku" },
+    "enkumbi": { "text": "enkumbi" },
+    "ndima": { "text": "Ndima" },
+    "ensigo": { "text": "ensigo" },
+    "okusiga": { "text": "okusiga" },
+    "kasooli": { "text": "kasooli" },
+    "ebinyeebwa": { "text": "ebinyeebwa" },
+    "emmwanyi": { "text": "emwanyi" },
+    "amakungula": { "text": "amakungula" },
+    "okukungula": { "text": "okukungula" },
+    "ndimira": { "text": "Ndimira" },
+    "nfumbira": { "text": "Nfumbira" },
+    "ntundira": { "text": "Ntundira" },
+    "mpandiikira": { "text": "Mpandiikira" },
+    "mpunga": { "text": "emiceere" },
+    "maji-ya-mvua": { "text": "amaadhi g'enkuba" }
+  },
+  "sentences": {
+    "s27-olusuku-lwange": { "text": "Olusuku lwange lunene." },
+    "s27-ndima-n-enkumbi": { "text": "Ndima n’enkumbi ku makya.", "alts": ["Ndima nenkumbi ku makya."] },
+    "s27-okusiga-ensigo": { "text": "Tusiga ensigo mu togo." },
+    "s27-kasooli": { "text": "Kasooli akuze bulungi." },
+    "s27-ebinyeebwa": { "text": "Ntunda ebinyeebwa ne kasooli." },
+    "s27-emmwanyi": { "text": "Emwanyi ya Buganda nungi inho." },
+    "s27-amakungula": { "text": "Amakungula gatuuse!" },
+    "s27-okukungula": { "text": "Enkya tudha kukungula ebinyeebwa." },
+    "s27-ndimira-jjajja": { "text": "Ndimira dhaadha olusuku." },
+    "s27-nfumbira-abaana": { "text": "Nfumbira abaana emere." },
+    "s27-ntundira-mu-katale": { "text": "Ntundira emwanyi mu katale." },
+    "s27-mpandiikira-maama": { "text": "Mpandiikira maama obubaka." },
+    "s-mpunga": { "text": "Emiceere gyagala amaadhi mangi." },
+    "s-kupanda-mbegu": { "text": "Lero tudha kusiga ensigo." },
+    "s-mavuno-mazuri": { "text": "Amakungula malungi omwaka guno." },
+    "s-jembe": { "text": "Twala enkumbi." },
+    "s-maji-ya-mvua": { "text": "Tutereka amaadhi g'enkuba." }
+  },
+  "phrases": [
+    "Ndima n’enkumbi ku makya.",
+    "Tusiga ensigo mu togo.",
+    "Amakungula gatuuse!",
+    "Ndimira dhaadha olusuku.",
+    "Nfumbira abaana emere.",
+    "Mpandiikira maama obubaka."
+  ],
+  "dialogues": { "u27s3l3": [{ "line": "Gyebale ko! Okola ki?", "options": ["Ndimira dhaadha olusuku.", "Ndi wa Lugave.", "Kabaka awangaale!"] }] }
+}

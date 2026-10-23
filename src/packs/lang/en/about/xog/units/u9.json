@@ -1,0 +1,86 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u9",
+  "notes": {
+    "kimyufu": "For eki- nouns. The root is -myufu.",
+    "kiddugavu": "For eki- nouns. The root is -dugavu.",
+    "kyeru": "For eki- nouns. The root is -eru.",
+    "kiragala": "Use with kya/ya: ekitabo kya kiragala.",
+    "kyenvu": "For eki- nouns. The root is -yenvu.",
+    "bbulu": "From English. Use with kya/ya: kya bulu.",
+    "kitaka": "Literally “soil”. Use with kya/ya: ya kitaka.",
+    "kakobe": "Use with kya/ya: kya kakobe.",
+    "kinene": "For eki- nouns. The root is -nene.",
+    "kitono": "For eki- nouns. The root is -tono.",
+    "kiggya": "For eki- nouns. The root is -ggya.",
+    "kikadde": "For eki- nouns: old things. The root is -kadde.",
+    "kirungi": "For eki- nouns. The root is -lungi.",
+    "kibi": "For eki- nouns. The root is -bi.",
+    "mulungi": "For one person: omukazi mulungi.",
+    "muwanvu": "For one person.",
+    "mumpi": "For one person.",
+    "muto": "For one person.",
+    "mukadde": "For one person. Respectful.",
+    "munene": "For one person.",
+    "balungi": "For people (aba- nouns).",
+    "bawanvu": "For people (aba- nouns)."
+  },
+  "tips": { "u9s1": "colours", "u9s2": "agreement", "u9s3": "people-adjectives" },
+  "guidebook": {
+    "intro": "Describing words in Lusoga follow the noun, and they wear the noun’s class prefix. Learn the root once and you can describe anything.",
+    "tips": [
+      {
+        "id": "colours",
+        "title": "Two kinds of colour word",
+        "body": [
+          "Some colours are adjectives with a root that takes the noun’s prefix: **-myufu** (red), **-dugavu** (black), **-eru** (white) and **-yenvu** (yellow). With an **eki-** noun they become **kimyufu**, **kidugavu**, **kyeru**, **kyenvu**.",
+          "Others are nouns, so you say “of green”: **kya kiragala**, **kya bulu**, **kya kakobe**. The **kya** changes with the class too: **emeeza ya kitaka** (a brown table)."
+        ],
+        "table": [
+          ["Colour", "eki- noun"],
+          ["red", "ekikopo kimyufu"],
+          ["black", "ekitabo kidugavu"],
+          ["white", "ekitanda kyeru"],
+          ["green", "ekitabo kya kiragala"],
+          ["blue", "ekikopo kya bulu"]
+        ]
+      },
+      {
+        "id": "agreement",
+        "title": "Saying “is” and “the red one”",
+        "body": [
+          "To say a thing **is** big, put the adjective after the noun with no initial vowel: **Ekibuga kinene** (the town is big).",
+          "To describe it inside a sentence, keep the initial vowel: **ekikopo ekimyufu** (the red cup). **Njagala ekikopo ekimyufu** means “I want the red cup”."
+        ]
+      },
+      {
+        "id": "people-adjectives",
+        "title": "Describing people",
+        "body": [
+          "People take **mu-** for one person and **ba-** for many, just like **omuntu** and **abantu**. The same roots you used for things work here."
+        ],
+        "table": [
+          ["Root", "One person", "People", "Things (eki-)"],
+          ["-lungi (good)", "mulungi", "balungi", "kirungi"],
+          ["-wanvu (tall)", "muwanvu", "bawanvu", "kiwanvu"],
+          ["-nene (big)", "munene", "banene", "kinene"],
+          ["-kadde (old)", "mukade", "bakade", "kikade"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Mukade is a compliment",
+        "body": [
+          "Calling an elder **mukade** (old one) is respectful, not rude. Age brings standing, and the word **abakade** (the elders) is used for respected senior people in a family or village."
+        ]
+      },
+      {
+        "title": "Kirungi, the all-purpose word",
+        "body": [
+          "**Kirungi** (it’s good) is one of the most useful words you’ll hear: to agree, to approve, to say “that’s fine”. **Kirungi nnyo!** is “excellent!”."
+        ]
+      }
+    ]
+  }
+}
