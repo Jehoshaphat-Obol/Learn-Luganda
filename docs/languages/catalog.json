@@ -81,7 +81,7 @@
       "speakersMillions": 2.4,
       "wave": 1,
       "draftConfidence": "low",
-      "inRegistry": false
+      "inRegistry": true
     },
     {
       "code": "lgg",
