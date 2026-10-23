@@ -1,0 +1,83 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u20",
+  "words": {
+    "nja": { "text": "Abeit" },
+    "kugenda": { "text": "alosit" },
+    "tujja": { "text": "ibeit oni" },
+    "ajja": { "text": "ebeit" },
+    "awamu": { "text": "kiboŋok" },
+    "wiikendi": { "text": "ewikendi" },
+    "wiiki-ejja": { "text": "asabiti ŋina ebuni" },
+    "omwaka-ogujja": { "text": "ekaru ŋina ebuni" },
+    "okukyalira": { "text": "akiinapak" },
+    "ndigenda": { "text": "Abeit alosit" },
+    "ndyogera": { "text": "Abeit akirworo" },
+    "olunaku-lumu": { "text": "akolong ape" },
+    "nsuubira": { "text": "Aŋarakini" },
+    "oteekateeka-ki": { "text": "Iyarai inyo?" },
+    "utaenda": { "text": "ibeit alosit" },
+    "atakuja": { "text": "ebeit akibun" },
+    "tutakutana": { "text": "Ibeit oni akiriamakin" },
+    "nitarudi": { "text": "Abeit akiboŋokin" },
+    "mwezi-ujao": { "text": "elap ŋina ebuni" },
+    "ndoto": { "text": "akirujet" }
+  },
+  "sentences": {
+    "s20-nja-kugenda-masaka": { "text": "Moi abeit alosit ko {@hometown}." },
+    "s20-nja-kulya": { "text": "Abeit akinyam amatooke." },
+    "s20-tujja-kusoma": { "text": "Ibeit oni akisom kiboŋok." },
+    "s20-ajja-kujja": { "text": "{@nakato} ebeit akibun moi." },
+    "s20-wiikendi": { "text": "Ko ewikendi abeit akiinapak tata kaŋ." },
+    "s20-wiiki-ejja": { "text": "Asabiti ŋina ebuni ibeit oni alosit ko {@getaway}." },
+    "s20-omwaka-ogujja": { "text": "Ekaru ŋina ebuni abeit akisom esayansi." },
+    "s20-olunaku-lumu-ndigenda": { "text": "Akolong ape abeit alosit ko Buganda." },
+    "s20-ndyogera-oluganda": { "text": "Akolong ape abeit akirworo {to} ejok." },
+    "s20-nsuubira": { "text": "Aŋarakini aanyun Kabaka." },
+    "s20-oteekateeka-ki": { "text": "Iyarai inyo kanuka ewikendi?" },
+    "s-nisaidie-tafadhali": { "text": "Kiŋarakin eoŋ, kiyalama." },
+    "s-kwanza-halafu": { "text": "Kiŋaren kilop itabaon, kau kiyeyi." },
+    "s-pamoja": { "text": "Kosuamaro oni kiboŋok." },
+    "s-nitaenda-kazini": { "text": "Moi abeit alosit ko aswam." },
+    "s-bibi-atakuja": { "text": "Tata ebeit akibun Nakaikanykape." },
+    "s-tutakutana": { "text": "Ibeit oni akiriamakin esaawa ikanykarei." },
+    "s-nitarudi": { "text": "Abeit akiboŋokin asabiti ŋina ebuni." },
+    "s-mwezi-ujao": { "text": "Elap ŋina ebuni abeit alosit." },
+    "s-ningependa-kahawa": { "text": "Amina ekawa, kiyalama." },
+    "s-ningependa-kusafiri": { "text": "Amina akilosit." },
+    "s-ndoto-yangu": { "text": "Akirujet kaŋ ka akijaar edakitari." },
+    "s-siku-moja": { "text": "Akolong ape abeit akijaar ekesiaunan." }
+  },
+  "phrases": [
+    "Moi abeit alosit ko {@hometown}.",
+    "Ibeit oni akisom kiboŋok.",
+    "Iyarai inyo kanuka ewikendi?",
+    "Ko ewikendi abeit akiinapak tata kaŋ.",
+    "Akolong ape abeit akirworo {to} ejok.",
+    "Aŋarakini aanyun Kabaka."
+  ],
+  "dialogues": {
+    "u20s2l3": [{ "line": "Iyarai inyo kanuka ewikendi?", "options": ["Abeit akiinapak tata kaŋ.", "Ŋolo alosit ko {@getaway}.", "Mam ajeni emun."] }]
+  },
+  "stories": {
+    "weekend-plans": {
+      "title": "Ayaraun lo ewikendi",
+      "summary": "{@ssali} ka {@nakato} erworete ewikendi ŋina abu elosi ka ŋina ebuni.",
+      "lines": [
+        "{@nakato}! Isuamit inyo ko ewikendi ŋina abu elosi?",
+        "Alosit ko {@hometown} akiinapak toto kaŋ.",
+        "Ejok! Ka ewikendi ŋini?",
+        "Mam ajeni. Iyoŋ iyarai inyo?",
+        "Alosi ko anam ko {@nearby}. Ibuni bo?",
+        "Ee! Konye mam kaŋ isiringin ipu.",
+        "Mam ikiaŋ. Ibeit oni alosit ko emotoka kaŋ.",
+        "Eyalama noi! Ikinyanyit Nakaikanykape."
+      ],
+      "questions": [
+        { "question": "{@nakato} elosit ai ko ewikendi ŋina abu elosi?", "options": ["{@getaway}", "{@hometown}", "{@nearby}"] },
+        { "question": "Ayaraun ka {@ssali} ka inyo?", "options": ["Akilosit ko anam", "Akiinapak toto keŋ", "Akisom ore"] },
+        { "question": "{@ssali} ewalai “Ibeit oni alosit” ai?", "options": ["Ibeit oni alosit", "Ilosit oni", "Mam ilosi"] }
+      ]
+    }
+  }
+}
