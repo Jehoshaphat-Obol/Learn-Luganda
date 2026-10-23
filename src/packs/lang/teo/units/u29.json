@@ -1,0 +1,79 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u29",
+  "words": {
+    "engoma": { "text": "atenus" },
+    "okukuba": { "text": "akidoŋ" },
+    "endingidi": { "text": "adeudeu" },
+    "amadinda": { "text": "amadinda" },
+    "ennanga": { "text": "adungu" },
+    "oluyimba": { "text": "esuban" },
+    "omuyimbi": { "text": "ekasubanit" },
+    "amazina": { "text": "ailip" },
+    "bakisimba": { "text": "Bakisimba" },
+    "abayimba": { "text": "ŋulu esubete" },
+    "abazina": { "text": "ŋulu elipete" },
+    "akuba": { "text": "ŋesi edoŋi" },
+    "kinyuma": { "text": "Elakara noi" },
+    "mazoezi": { "text": "akitatam" },
+    "mchezaji": { "text": "ekalipan" },
+    "mpiga-ngoma": { "text": "ekadoŋan atenus" },
+    "bendi": { "text": "ebendi" },
+    "taarab": { "text": "taarab" },
+    "gitaa": { "text": "egitaa" },
+    "sauti": { "text": "epor" },
+    "tamasha": { "text": "ailip ka esuban" },
+    "kusikiliza": { "text": "akiirar" }
+  },
+  "sentences": {
+    "s29-kuba-engoma": { "text": "Kidoŋ atenus!" },
+    "s29-njagala-okukuba-engoma": { "text": "Amina akidoŋ atenus." },
+    "s29-endingidi": { "text": "Adeudeu ka amadinda." },
+    "s29-ennanga": { "text": "Adungu ejok noi." },
+    "s29-oluyimba-lwe": { "text": "Esuban na ejok." },
+    "s29-omuyimbi": { "text": "Ekasubanit esubi ejok." },
+    "s29-amazina-kinyuma": { "text": "Ailip na elakara noi!" },
+    "s29-bakisimba": { "text": "Ilipi oni Bakisimba." },
+    "s29-abantu-abayimba": { "text": "Itunga ŋulu esubete ipu." },
+    "s29-abaana-abazina": { "text": "Idwe ŋulu elipete ealakar." },
+    "s29-omusajja-akuba": { "text": "Ekile ŋesi edoŋi atenus ka papa." },
+    "s29-kinyuma": { "text": "Elakara noi noi!" },
+    "s-wanacheza-ngoma": { "text": "Elipete kesi." },
+    "s-mazoezi-kila-siku": { "text": "Ajaasi akitatam ŋinikoloŋit." },
+    "s-mwimbaji": { "text": "Ekasubanit ejaasi epor ejokan." },
+    "s-mchezaji": { "text": "{@amara} ka ekalipan ŋesi ecoit." },
+    "s-mpiga-ngoma": { "text": "Ekadoŋan atenus ka papa lo tata kaŋ." },
+    "s-bendi": { "text": "Ebendi ebeit akidoŋ esuban akwar." },
+    "s-taarab": { "text": "Tata emina taarab." },
+    "s-kupiga-gitaa": { "text": "Asisianakini akidoŋ egitaa." },
+    "s-tamasha": { "text": "Ejai ailip ka esuban Sabiti." },
+    "s-kusikiliza": { "text": "Amina akiirar esuban." },
+    "s-sauti": { "text": "Epor epolot noi!" }
+  },
+  "phrases": ["Kidoŋ atenus!", "Esuban na ejok.", "Ekasubanit esubi ejok.", "Ilipi oni Bakisimba.", "Idwe ŋulu elipete ealakar.", "Elakara noi noi!"],
+  "dialogues": {
+    "u29s3l3": [{ "line": "Ŋai ka ekile ŋesi edoŋi atenus?", "options": ["Ŋesi ka papa kaŋ!", "Atenus epolot.", "Eyalama kanuka abunore."] }]
+  },
+  "stories": {
+    "drum-lesson": {
+      "title": "Asisianakin ka atenus",
+      "summary": "{@amara} esisianakini akidoŋ atenus kanuka ailip ka esuban ka esukul.",
+      "lines": [
+        "Lokapolon, amina akidoŋ atenus kotoma ailip ka esuban ka esukul.",
+        "Ejok! Kiriamu atenus na.",
+        "Ŋini epolot arai ŋini kidiŋ?",
+        "Ŋini kidiŋ. Kiirar: bum, bum, ka-bum.",
+        "Bum, bum, ka-bum! Elakara noi noi!",
+        "Idwe ŋulu elipete ebeit alip Bakisimba.",
+        "Ka ŋai ebeit asuban?",
+        "{@nakato}! Ŋesi ka ekasubanit ŋesi ejok.",
+        "Alakara noi. Eyalama, lokapolon!"
+      ],
+      "questions": [
+        { "question": "{@amara} edoŋi atenus ŋai?", "options": ["Ŋini epolot", "Ŋini kidiŋ", "Mam atenus"] },
+        { "question": "Ikalipak ebeit alip inyo?", "options": ["Bakisimba", "Akwap", "Omweso"] },
+        { "question": "Ibala ekwaŋ “idwe ŋulu elipete”?", "options": ["idwe ŋulu elipete", "idwe elipete", "idwe eboliete"] }
+      ]
+    }
+  }
+}
