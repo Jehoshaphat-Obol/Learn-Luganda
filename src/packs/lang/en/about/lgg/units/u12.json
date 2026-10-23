@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u12",
+  "notes": { "enkuba": "Ezu: rain.", "omusana": "Etu: sun and day." },
+  "tips": { "u12s1": "rain", "u12s2": "feel", "u12s3": "rain", "u12s4": "feel" },
+  "guidebook": {
+    "intro": "Weather and seasons. West Nile has one long rainy season and a hot dry season.",
+    "tips": [
+      {
+        "id": "rain",
+        "title": "Ezu de",
+        "body": [
+          "**Ezu de** (rain falls) is “it’s raining”; **Etu ega** (the sun is hot) is “it’s sunny”. **Ezu ve** is thunder.",
+          "**Ji amvula** (take an umbrella)."
+        ]
+      },
+      {
+        "id": "feel",
+        "title": "Ma eri ali",
+        "body": [
+          "**Ma eri** is “I feel”: **Ma eri ali** (I feel cold), **Ma eri ega** (I feel hot).",
+          "**Ndra ndra** doubles the strength: **Lele ega ndra ndra!**"
+        ]
+      }
+    ],
+    "culture": [{ "title": "Dry season", "body": ["From December to March the dry season brings dust, heat and harvest time in West Nile."] }]
+  }
+}

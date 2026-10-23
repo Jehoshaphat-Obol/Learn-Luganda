@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u27",
+  "notes": { "ndima": "Amvu ngu: work the garden.", "ndimira": "… ni: for someone." },
+  "tips": { "u27s1": "farm", "u27s2": "for", "u27s3": "farm", "u27s4": "for" },
+  "guidebook": {
+    "intro": "Village and farming. **X ni** after the action means “for X”: **Ma amvu ngu dede ni** (I dig for Grandma).",
+    "tips": [
+      {
+        "id": "farm",
+        "title": "Amvu ngu",
+        "body": [
+          "**amvu** garden, **jau** hoe, **ofi** plant, **ofiyi** seeds, **kaka** maize, **ofunyo** groundnuts.",
+          "**Nyaka jizu** (taking food) is the harvest."
+        ]
+      },
+      {
+        "id": "for",
+        "title": "… ni",
+        "body": [
+          "**Ma ozo nyaka anzi ni** (I cook for the children), **Ma si e’yo sezu andre ni** (I write to Mother).",
+          "**Ma fe ii ti ni** (I give the cows water)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Crops of West Nile",
+        "body": ["Cassava, sorghum, simsim, groundnuts and tobacco grow on the hills around Arua and Maracha."]
+      }
+    ]
+  }
+}

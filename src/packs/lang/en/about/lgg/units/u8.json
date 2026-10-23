@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u8",
+  "notes": { "gunnuma": "Ze ma: it hurts me.", "omusawo": "Dokita: doctor." },
+  "tips": { "u8s1": "body", "u8s2": "sick", "u8s3": "body", "u8s4": "sick" },
+  "guidebook": {
+    "intro": "Health and the body. To say something hurts, say it bites you: **Ma drile ze ma** (my head hurts me).",
+    "tips": [
+      {
+        "id": "body",
+        "title": "Drile, dri, pa",
+        "body": ["**drile** head, **dri** hand/arm, **pa** leg, **mile** eye, **bi** ear, **ti** mouth, **si** tooth, **a** belly."],
+        "table": [["Lugbara", "English"], ["drile", "head"], ["dri", "arm"], ["pa", "leg"], ["a", "stomach"]],
+        "targetColumns": [0]
+      },
+      {
+        "id": "sick",
+        "title": "Ma ovu azo si",
+        "body": [
+          "**Azo** is sickness: **Ma ovu azo si** (I am sick). **Ega azo** fever, **ali azo** flu.",
+          "Wish someone well with **Mi ovu muke ndrani ndrani!** (be well soon!)."
+        ]
+      }
+    ],
+    "culture": [{ "title": "Health centres", "body": ["Every sub-county has a health centre, and the regional referral hospital is in Arua."] }]
+  }
+}

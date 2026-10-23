@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u4",
+  "notes": { "mmeka": "Ngbe: how many, how much.", "kya-bbeeyi": "Wara amboa: big price." },
+  "tips": { "u4s1": "teens", "u4s2": "price", "u4s3": "teens", "u4s4": "price" },
+  "guidebook": {
+    "intro": "Numbers and money. Tens are built from **mudri** (ten): **mudri iri** is twenty, **mudri na** thirty.",
+    "tips": [
+      {
+        "id": "teens",
+        "title": "Mudri drini alu",
+        "body": ["Eleven is **mudri drini alu** (ten and one), twelve **mudri drini iri**. A hundred is **turu alu**, a thousand **elifu alu**."],
+        "table": [
+          ["Lugbara", "English"],
+          ["mudri iri", "20"],
+          ["mudri towi", "50"],
+          ["turu alu", "100"],
+          ["elifu alu", "1,000"],
+          ["elifu mudri", "10,000"]
+        ],
+        "targetColumns": [0]
+      },
+      {
+        "id": "price",
+        "title": "Ngbe parata?",
+        "body": [
+          "**Nde ni ngbe parata?** is “how much is this?”. **Eri wara amboa!** (it’s expensive!) and **Ji wara ni mvaa** (make the price small) are your haggling phrases.",
+          "Agree with **Ka’dini, ma ji** (okay, I’ll take it)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Shillings",
+        "body": ["Prices in Uganda are in shillings and often in thousands, so **elifu** is a word you will hear all day."]
+      }
+    ]
+  }
+}

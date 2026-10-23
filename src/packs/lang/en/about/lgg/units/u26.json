@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u26",
+  "notes": { "kabaka": "Opi: chief, king.", "awangaale": "Ovu dria: may he stay forever." },
+  "tips": { "u26s1": "king", "u26s2": "story", "u26s3": "king", "u26s4": "story" },
+  "guidebook": {
+    "intro": "The kingdom of Buganda. Titles like **Kabaka**, **Katikkiro** and **Lukiiko** are kept as they are.",
+    "tips": [
+      {
+        "id": "king",
+        "title": "Kabaka ovu dria!",
+        "body": [
+          "**Opi** is chief or king. **Kabaka ovu dria!** (may the Kabaka live on!) answered by **Ovu dria!**",
+          "**Opi jo** (king’s house) is the palace, **opi ce** the royal tombs."
+        ]
+      },
+      {
+        "id": "story",
+        "title": "Ndra’bo ndra",
+        "body": [
+          "**Ndra’bo ndra** (very long ago) begins history. **Kintu ovu ra Kabaka kakau ni** (Kintu was the first Kabaka).",
+          "**Abunuwasi** is the trickster of coastal stories."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Chiefs in West Nile",
+        "body": ["The Lugbara traditionally had no king; rain-makers and clan elders (**opi**) led communities."]
+      }
+    ]
+  }
+}
