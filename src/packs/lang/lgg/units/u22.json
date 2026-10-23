@@ -1,0 +1,87 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u22",
+  "words": {
+    "nnyumirwa": { "text": "Ma asi muke … si" },
+    "okudduka": { "text": "ere" },
+    "okuwuga": { "text": "ru" },
+    "era": { "text": "ka" },
+    "omupiira": { "text": "mupira" },
+    "nzannya": { "text": "Ma o'be" },
+    "ttiimu": { "text": "timu" },
+    "goolo": { "text": "goli" },
+    "ewangudde": { "text": "ega ra" },
+    "awangudde": { "text": "ega ra" },
+    "okuyimba": { "text": "ongo ngo" },
+    "okuzina": { "text": "ongo to" },
+    "ennyimba": { "text": "ongoyi" },
+    "omuzannyo": { "text": "o'bezu" },
+    "omweso": { "text": "bao" },
+    "muda": { "text": "sawa" },
+    "kuangalia": { "text": "ndre" },
+    "mashabiki": { "text": "mupira ndre bayi" },
+    "tumeshinda": { "text": "Ama ega ra" },
+    "tumefungwa": { "text": "Ama ru ra" },
+    "karata": { "text": "karata" },
+    "bao": { "text": "bao" }
+  },
+  "sentences": {
+    "s22-nnyumirwa-okusoma": { "text": "Ma asi muke buku ali si." },
+    "s22-ndduka-ku-makya": { "text": "Ma asi muke ere si ngaa." },
+    "s22-okuwuga": { "text": "Ma le ru ide alia." },
+    "s22-era": { "text": "Ma imba, ka ma o'be." },
+    "s22-nzannya-omupiira": { "text": "Ma o'be mupira Etu azya." },
+    "s22-ttiimu-yange": { "text": "Ma timu ega ra!" },
+    "s22-goolo": { "text": "Goli! Goli iri!" },
+    "s22-ani-awangudde": { "text": "A'di ega ra?" },
+    "s22-okuyimba": { "text": "Ma asi muke ongo ngo ka ongo to si." },
+    "s22-ennyimba-za-luganda": { "text": "Ma le ongoyi Lugbarati ni." },
+    "s22-omuzannyo": { "text": "O'bezu eto sawa mudri." },
+    "s22-omweso": { "text": "Dede o'be bao." },
+    "s-sina-muda": { "text": "Ma ovu be sawa ndrani ku." },
+    "s-kuogelea": { "text": "Ma le ru." },
+    "s-neema-kuimba": { "text": "{@amara} le ongo ngo." },
+    "s-kuangalia-mpira": { "text": "Ma le mupira ndre." },
+    "s-mpira-wa-miguu": { "text": "Ma le mupira." },
+    "s-timu-hodari": { "text": "Ma timu muke." },
+    "s-goli": { "text": "Goli! Goli!" },
+    "s-mchezo-gani": { "text": "O'bezu ngo?" },
+    "s-mashabiki-wengi": { "text": "Mupira ndre bayi ambo!" },
+    "s-tumeshinda": { "text": "Ama ega ra!" },
+    "s-tumefungwa-leo": { "text": "Ama ru ra ndrani." },
+    "s-wimbo-wako": { "text": "Ma le mi ongo." },
+    "s-nyimbo-bongo": { "text": "Ongoyi bongo flava ni." },
+    "s-tucheze-karata": { "text": "Ama o'be karata!" },
+    "s-babu-bao": { "text": "Atibi o'be bao." }
+  },
+  "phrases": [
+    "Ma asi muke buku ali si.",
+    "Ma o'be mupira Etu azya.",
+    "Ma timu ega ra!",
+    "A'di ega ra?",
+    "Ma asi muke ongo ngo ka ongo to si.",
+    "Ma le ongoyi Lugbarati ni."
+  ],
+  "dialogues": { "u22s1l3": [{ "line": "Mi asi muke ngo si?", "options": ["Ma asi muke ere ka ru si.", "Ma tia ndra.", "Ma ni bao ku."] }] },
+  "stories": {
+    "match-day": {
+      "title": "Etu mupira ni",
+      "summary": "{@ssali} ka {@mukasa} ndre Cranes o'be.",
+      "lines": [
+        "{@mukasa}! Mupira eto sawa mudri. Mi ka emu ya?",
+        "Ii! Te ma tia. Ma azi ngu ra ndra ndrani.",
+        "Mi asi aa ku, ama ka ri dika. Ama ka mvu caai.",
+        "Ama timu ka ega ya?",
+        "Ma ni ku. Timu ngulu muke ndra.",
+        "Goli! Goli!",
+        "Ma asi muke ndra! A'di ji goli ra?",
+        "Ssaabaganzi! Ama timu ega ra!"
+      ],
+      "questions": [
+        { "question": "{@mukasa} asi ngoni?", "options": ["Asi muke", "Tia", "Asi ofu"] },
+        { "question": "Afa ngo ngu ra ndraa?", "options": ["Goli", "O'bezu de ra", "Ezu eto de"] },
+        { "question": "{@mukasa} a'yo \"ama timu ega ra\" ngoni?", "options": ["Ama timu ega ra", "A'di ega ra?", "Ma asi muke mupira si"] }
+      ]
+    }
+  }
+}

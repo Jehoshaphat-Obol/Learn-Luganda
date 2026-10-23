@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u21",
+  "words": {
+    "nsanyuse": { "text": "Ma asi muke" },
+    "nnakuwadde": { "text": "Ma asi onzi" },
+    "oli-bulungi": { "text": "Mi muke ya?" },
+    "nneewuunya": { "text": "Ma omvi ra" },
+    "nkooye": { "text": "Ma tia" },
+    "ntidde": { "text": "Ma ofo" },
+    "nneeraliikirira": { "text": "Ma asi aa" },
+    "nnyiize": { "text": "Ma asi ofu" },
+    "ali-atya": { "text": "Eri ngoni?" },
+    "bambi": { "text": "Asi aa!" },
+    "nsonyiwa": { "text": "Ovi ma ma" },
+    "nkwagala": { "text": "Ma le mi" },
+    "nkusubwa": { "text": "Ma le mi ndre" },
+    "mukwano-gwange": { "text": "ma agyi" },
+    "tokaaba": { "text": "Mi wo ku" },
+    "samahani": { "text": "Ovi ma ma" },
+    "furaha": { "text": "asi muke" },
+    "nina-furaha": { "text": "Ma asi muke" },
+    "huzuni": { "text": "asi onzi" },
+    "hasira": { "text": "asi ofu" },
+    "naogopa": { "text": "Ma ofo" },
+    "wasiwasi": { "text": "asi aa" },
+    "kuhusu": { "text": "e'yo" },
+    "usijali": { "text": "Mi asi aa ku" },
+    "bahati-njema": { "text": "Ayiko!" }
+  },
+  "sentences": {
+    "s21-nsanyuse-nnyo": { "text": "Ma asi muke ndra ndrani!" },
+    "s21-lwaki-onakuwadde": { "text": "Mi asi onzi a'disi?" },
+    "s21-oli-bulungi": { "text": "Mi muke ya, ma agyi?" },
+    "s21-nneewuunya": { "text": "Ma omvi ra! Mi emu ndrani ya?" },
+    "s21-nkooye-nnyo": { "text": "Ma tia ndra. Ma ka u'du." },
+    "s21-ntidde": { "text": "Ma ofo, ezu ve." },
+    "s21-nneeraliikirira": { "text": "Ma asi aa mitiani e'yo si." },
+    "s21-nnyiize": { "text": "Ma asi ofu te takisi emu ra ku." },
+    "s21-maama-ali-atya": { "text": "Mi andre ngoni?" },
+    "s21-bambi": { "text": "Asi aa ndra! Mi ovu muke ndrani ndrani." },
+    "s21-nsonyiwa": { "text": "Ovi ma ma, ma emu vutia." },
+    "s21-nkwagala-maama": { "text": "Ma le mi ndra, Andre." },
+    "s21-nkusubwa": { "text": "Ma le mi ndre, ma agyi." },
+    "s21-tokaaba": { "text": "Mi wo ku, ma mva." },
+    "s-pole-sana": { "text": "Asi aa ndra!" },
+    "s-samahani-daktari": { "text": "Ovi ma ma, dokita." },
+    "s-nimechoka-sana": { "text": "Ma tia ndra." },
+    "s-nina-furaha": { "text": "Ma asi muke ndrani!" },
+    "s-siku-ya-furaha": { "text": "Eri ni etu asi muke ni." },
+    "s-nina-huzuni": { "text": "Ma asi onzi." },
+    "s-nimefurahi-sana": { "text": "Ma asi muke ndra ndra!" },
+    "s-nimeshangaa": { "text": "Ma omvi ra ndra ndra!" },
+    "s-bosi-hasira": { "text": "Bosi asi ofu." },
+    "s-nimekasirika": { "text": "Ma asi ofu ndra!" },
+    "s-naogopa-mbwa": { "text": "Ma ofo otseyi." },
+    "s-usijali": { "text": "Mi asi aa ku, e'yo ovu ku." },
+    "s-nakupenda-bibi": { "text": "Ma le mi, Dede." },
+    "s-hongera-mtihani": { "text": "Awa'difo, mi ngu mitiani ra muke!" },
+    "s-bahati-njema": { "text": "Ayiko drusi!" }
+  },
+  "phrases": [
+    "Ma asi muke ndra ndrani!",
+    "Mi muke ya, ma agyi?",
+    "Ma tia ndra.",
+    "Ma asi aa mitiani e'yo si.",
+    "Asi aa ndra! Mi ovu muke ndrani ndrani.",
+    "Ovi ma ma, ma emu vutia.",
+    "Ma le mi ndre."
+  ],
+  "dialogues": {
+    "u21s2l3": [
+      {
+        "line": "Mi muke ya? Mi ndre tia.",
+        "options": ["Ii, ma tia ndra. Ma azi ngu ra ndra ndrani.", "Ma asi muke mi ndre si.", "Mi wo ku."]
+      }
+    ],
+    "u21s3l3": [{ "line": "Ma asi onzi. Dede ovu azo si.", "options": ["Asi aa ndra! Ma ka eri ndre.", "Ma asi muke ndra!", "Ma asi ofu."] }]
+  }
+}

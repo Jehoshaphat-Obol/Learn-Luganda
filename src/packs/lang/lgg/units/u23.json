@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u23",
+  "words": {
+    "essimu": { "text": "simu" },
+    "halo": { "text": "Halo" },
+    "ani-ayogera": { "text": "A'di a'yo?" },
+    "nkukubira": { "text": "Ma omvi mi" },
+    "nkubira": { "text": "Omvi ma" },
+    "mmukubira": { "text": "Ma omvi eri" },
+    "sikuwulira": { "text": "Ma eri mi ku" },
+    "obubaka": { "text": "e'yo sezu" },
+    "mpeereza": { "text": "Se ma ni" },
+    "nnamba": { "text": "namba" },
+    "tusisinkane": { "text": "Ama ra" },
+    "nkulinze": { "text": "Ma ope mi" },
+    "ndi-mu-kkubo": { "text": "Ma geri dria" },
+    "piga-simu": { "text": "simu omvi" },
+    "nitakupigia": { "text": "Ma ka mi omvi" },
+    "tuma": { "text": "Se" },
+    "mtandao": { "text": "netiwaki" },
+    "betri": { "text": "betiri" },
+    "salio": { "text": "simu parata" }
+  },
+  "sentences": {
+    "s23-halo": { "text": "Halo? A'di a'yo?" },
+    "s23-nze-nakato-ayogera": { "text": "Ma {@nakato} a'yo." },
+    "s23-nja-kukukubira": { "text": "Ma ka mi omvi drusi." },
+    "s23-nkubira-ekiro": { "text": "Omvi ma ini." },
+    "s23-mmukubira": { "text": "Ma omvi eri etu dria." },
+    "s23-sikuwulira": { "text": "Ma eri mi muke ku. A'yo dika." },
+    "s23-mpeereza-obubaka": { "text": "Se e'yo sezu ma ni." },
+    "s23-mpa-nnamba": { "text": "Fe ma mi namba." },
+    "s23-tusisinkane": { "text": "Ama ra sawa su." },
+    "s23-nkulinze": { "text": "Ma ope mi siteji." },
+    "s23-ndi-mu-kkubo": { "text": "Ma geri dria, ma emu!" },
+    "s-simu-iko-wapi": { "text": "Ma simu ovu ngoa?" },
+    "s-haloo-nani": { "text": "Halo? Nde a'di?" },
+    "s-piga-simu": { "text": "Omvi drusi." },
+    "s-nipigie-jioni": { "text": "Omvi ma ondre." },
+    "s-subiri-kidogo": { "text": "Ope mvaa." },
+    "s-tuma-ujumbe": { "text": "Se e'yo sezu." },
+    "s-namba-yako": { "text": "Mi namba ngo?" },
+    "s-hakuna-mtandao": { "text": "Netiwaki ovu nde ku." },
+    "s-sina-betri": { "text": "Ma betiri de ra." },
+    "s-sina-salio": { "text": "Ma ovu be simu parata ku." }
+  },
+  "phrases": [
+    "Halo? A'di a'yo?",
+    "Ma {@nakato} a'yo.",
+    "Ma ka mi omvi drusi.",
+    "Ma eri mi muke ku.",
+    "Se e'yo sezu ma ni.",
+    "Ama ra sawa su.",
+    "Ma geri dria, ma emu!"
+  ],
+  "dialogues": {
+    "u23s2l3": [{ "line": "Halo? A'di a'yo?", "options": ["Ma {@ssali}. Mi ngoni, {@nakato}?", "Ma geri dria.", "Ma ovu be parata ku."] }],
+    "u23s3l3": [{ "line": "Mi ovu ngoa? Ma ope mi!", "options": ["Ovi ma ma, ma geri dria. Ma emu!", "Ama ra ndrozi.", "Fe ma kalamu."] }]
+  },
+  "stories": {}
+}
