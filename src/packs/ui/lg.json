@@ -257,13 +257,14 @@
         "import": "Nnina dda enkulaakulana yange"
       },
       "hero": {
-        "eyebrow": "Bwereere · Mu bitundutundu · Kya ssanyu",
-        "title": "Engeri ey’essanyu ey’**okuyiga {language}.**",
-        "lead": "Amasomo amampi agakutwala okuva ku _{hello}_ okutuuka ku kunyumya okwa ddala."
+        "eyebrow": "Bwereere · Mu bitundutundu · Tewali akawunti",
+        "title": "Engeri ey’essanyu ey’**okuyiga ennimi z’Afrika.**",
+        "lead": "Amasomo amampi mu nnimi {count}, n’endala zijja.",
+        "languages": "Ennimi z’osobola okuyiga"
       },
       "ticker": "Ebigambo eby’okulabirako",
       "why": {
-        "eyebrow": "Lwaki {language}"
+        "eyebrow": "Essira ku {language}"
       },
       "how": {
         "eyebrow": "Bwe kikola",
@@ -303,7 +304,7 @@
       },
       "places": {
         "eyebrow": "Ebweru",
-        "title": "Yegezaamu awali **{language}.**"
+        "title": "Yegezaamu mu **bifo ebya ddala.**"
       },
       "faq": {
         "eyebrow": "Ebibuuzo",
@@ -312,21 +313,17 @@
           "q": "Kya bwereere?",
           "a": "Yee, era tewali akawunti."
         },
+        "languages": {
+          "q": "Nnimi ki ze nsobola okuyiga?",
+          "a": "{languages}. Ennimi z’Afrika endala zijja, era emisomo egisinga gisobola okuyigibwa okuva mu lulimi lwonna ku zino."
+        },
         "saved": {
           "q": "Enkulaakulana yange eterekebwa wa?",
           "a": "Mu browser yo ku kyuma kino."
         },
-        "who": {
-          "q": "Kya ani?",
-          "a": "{audience}"
-        },
-        "first": {
-          "q": "Kiki kye nnaasooka okuyiga?",
-          "a": "{first}"
-        },
         "length": {
           "q": "Omusomo guwanvu kwenkana wa?",
-          "a": "Ebitundu {units} mu {sections}: amasomo {lessons} n’ebigambo {words}. Omanyiiko? Kola ekigezo ky’omutendera obuuke mu maaso."
+          "a": "Ebitundu {units} mu {sections}: amasomo {lessons} n’ebigambo {words}. Omanyiiko? Kola ekigezo obuuke mu maaso."
         },
         "sections": {
           "one": "omutendera {count}",
@@ -341,7 +338,7 @@
         "title": "Weetegese? **{start}**"
       },
       "footer": {
-        "made": "Yakolebwa n’obwegendereza eri abayiga {language}."
+        "made": "Yakolebwa n’obwegendereza eri abayiga ennimi z’Afrika."
       }
     },
     "onboarding": {

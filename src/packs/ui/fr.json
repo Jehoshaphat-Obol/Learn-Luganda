@@ -248,13 +248,14 @@
         "import": "J’ai déjà une progression"
       },
       "hero": {
-        "eyebrow": "Gratuit · En petites bouchées · Amusant",
-        "title": "La façon ludique d’**apprendre le {language}.**",
-        "lead": "Des leçons de cinq minutes qui t’emmènent de _{hello}_ à de vraies conversations."
+        "eyebrow": "Gratuit · En petites bouchées · Sans compte",
+        "title": "La façon ludique d’**apprendre les langues africaines.**",
+        "lead": "Des leçons express dans {count} langues, et d’autres arrivent.",
+        "languages": "Langues que tu peux apprendre"
       },
       "ticker": "Exemples de mots",
       "why": {
-        "eyebrow": "Pourquoi le {language}"
+        "eyebrow": "Zoom sur le {language}"
       },
       "how": {
         "eyebrow": "Comment ça marche",
@@ -294,7 +295,7 @@
       },
       "places": {
         "eyebrow": "En sortie",
-        "title": "Entraîne-toi là où **vit le {language}.**"
+        "title": "Entraîne-toi dans **de vrais lieux.**"
       },
       "faq": {
         "eyebrow": "Questions",
@@ -303,33 +304,29 @@
           "q": "C’est gratuit ?",
           "a": "Oui, et sans compte. Quelques cartes sponsorisées, bien signalées, le gardent gratuit."
         },
+        "languages": {
+          "q": "Quelles langues puis-je apprendre ?",
+          "a": "{languages}. D’autres langues africaines arrivent, et la plupart des cours se suivent depuis n’importe laquelle de ces langues."
+        },
         "saved": {
           "q": "Où est enregistrée ma progression ?",
-          "a": "Sur cet appareil, dans ton navigateur. Déplace-la avec l’export et l’import dans les Paramètres."
-        },
-        "who": {
-          "q": "C’est pour qui ?",
-          "a": "{audience}"
-        },
-        "first": {
-          "q": "Qu’est-ce que j’apprends en premier ?",
-          "a": "{first}"
+          "a": "Sur cet appareil, dans ton navigateur. Déplace-la avec l’export dans les Paramètres."
         },
         "length": {
-          "q": "Combien de temps dure le cours ?",
-          "a": "{units} unités en {sections} : {lessons} leçons et {words} mots. Tu en sais déjà un peu ? Passe un test de section pour sauter en avant."
+          "q": "Quelle est la durée d’un cours ?",
+          "a": "{units} unités en {sections} : {lessons} leçons et {words} mots. Tu en sais déjà un peu ? Passe un test de section."
         },
         "sections": { "one": "{count} section", "other": "{count} sections" },
         "install": {
           "q": "Puis-je l’installer comme une appli ?",
-          "a": "Oui. Touche Installer l’appli, ou sur iPhone touche Partager, puis Sur l’écran d’accueil. Les leçons marchent alors hors ligne."
+          "a": "Oui. Touche Installer l’appli (sur iPhone : Partager, puis Sur l’écran d’accueil). Les leçons marchent alors hors ligne."
         }
       },
       "final": {
         "title": "Prêt ? **{start}**"
       },
       "footer": {
-        "made": "Fait avec soin pour celles et ceux qui apprennent le {language}."
+        "made": "Fait avec soin pour qui apprend les langues africaines."
       }
     },
     "onboarding": {

@@ -1,6 +1,7 @@
 /*
- * Landing page: what the app is, how it teaches, the cast, a playable sample
- * question and an FAQ. Returning learners get a "continue" call to action.
+ * Landing page: the languages on offer, how it teaches, a spotlight on the
+ * current course (sample words, why learn it, a playable question), the cast
+ * and an FAQ. Returning learners get a "continue" call to action.
  */
 import '../styles/landing.css';
 import {
@@ -20,7 +21,12 @@ import { icon } from '../ui/icons.js';
 import { reducedMotion } from '../ui/motion.js';
 import { castMember, course, courseStats, langAttr } from '../content/course.js';
 import { courseLanguage } from '../content/names.js';
-import { t, tHtml } from '../i18n/index.js';
+import { COURSE_IDS } from '../content/load.js';
+import { pairsOf, targetLanguages } from '../i18n/catalog.js';
+import { languageInfo } from '../i18n/languages.js';
+import { currentLanguage, languageLabel, languageTitle, t, tHtml } from '../i18n/index.js';
+import { languageFlag } from '../ui/flags.js';
+import regions from '../packs/regions.json';
 import { rich } from '../i18n/rich.js';
 import { brandMark } from '../app/brand-mark.js';
 import { siteLinks } from '../app/site.js';
@@ -37,12 +43,24 @@ const STEPS = [
 
 const CARD_COLOURS = ['butter', 'sky', 'sage'];
 
-const FAQ = ['free', 'saved', 'who', 'first', 'length', 'install'];
+const FAQ = ['free', 'languages', 'saved', 'length', 'install'];
 
-// Built at render time: the course loads after this module.
-function faqAnswer(id, copy) {
-  if (id === 'who') return copy.audience;
-  if (id === 'first') return copy.first;
+// Countries with an African time zone, so African languages can lead the list.
+const AFRICA = new Set(Object.entries(regions.timeZones).filter(([zone]) => zone.startsWith('Africa/')).map(([, country]) => country.toLowerCase()));
+const african = (code) => AFRICA.has(languageInfo(code).flag);
+
+const TARGETS = targetLanguages(pairsOf(COURSE_IDS));
+
+/** Every language there's a course for, African languages first, then by name. */
+const learnable = () =>
+  [...TARGETS].sort((a, b) => african(b) - african(a) || languageTitle(a).localeCompare(languageTitle(b), currentLanguage()));
+
+// Built at render time: the course and interface language load after this module.
+function faqAnswer(id) {
+  if (id === 'languages') {
+    const list = new Intl.ListFormat(currentLanguage(), { type: 'conjunction' }).format(learnable().map(languageLabel));
+    return t('landing.faq.languages.a', { languages: list });
+  }
   if (id !== 'length') return t(`landing.faq.${id}.a`);
   const stats = courseStats();
   return t('landing.faq.length.a', { ...stats, sections: t('landing.faq.sections', { count: stats.sections }) });
@@ -86,8 +104,11 @@ export function createLandingView({ hasProgress = () => false } = {}) {
         <section class="hero">
           <div class="hero__copy">
             <p class="eyebrow">${escapeHtml(t('landing.hero.eyebrow'))}</p>
-            <h1>${tHtml('landing.hero.title', { language })}</h1>
-            <p class="hero__lead">${tHtml('landing.hero.lead', { hello: copy.hello })}</p>
+            <h1>${tHtml('landing.hero.title')}</h1>
+            <p class="hero__lead">${tHtml('landing.hero.lead', { count: TARGETS.length })}</p>
+            <ul class="hero__langs" aria-label="${escapeHtml(t('landing.hero.languages'))}">
+              ${learnable().map((code) => `<li>${languageFlag(code)}<span>${escapeHtml(languageTitle(code))}</span></li>`).join('')}
+            </ul>
             <div class="hero__ctas">${primaryCta}${installButton('hero__install', { size: 'lg' })}</div>
             ${secondaryCta}
             ${copy.word ? `<p class="caption"${target}>${escapeHtml(copy.word)}</p>` : ''}
@@ -168,7 +189,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
 
         <section class="landing__section places">
           <p class="eyebrow">${escapeHtml(t('landing.places.eyebrow'))}</p>
-          <h2>${tHtml('landing.places.title', { language })}</h2>
+          <h2>${tHtml('landing.places.title')}</h2>
           <div class="places__grid">
             ${places.map((id) => `
               <figure class="places__item">
@@ -182,7 +203,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
           <p class="eyebrow">${escapeHtml(t('landing.faq.eyebrow'))}</p>
           <h2>${tHtml('landing.faq.title')}</h2>
           <div class="faq__list">
-            ${FAQ.map((id) => `<details class="faq__item"><summary>${escapeHtml(t(`landing.faq.${id}.q`))}</summary><p>${rich(faqAnswer(id, copy))}</p></details>`).join('')}
+            ${FAQ.map((id) => `<details class="faq__item"><summary>${escapeHtml(t(`landing.faq.${id}.q`))}</summary><p>${rich(faqAnswer(id))}</p></details>`).join('')}
           </div>
         </section>
 
@@ -195,7 +216,7 @@ export function createLandingView({ hasProgress = () => false } = {}) {
 
         <footer class="landing__footer">
           <span class="landing__brand">${brandMark()}<span>${escapeHtml(t('app.shortName'))}</span></span>
-          <p>${escapeHtml(t('landing.footer.made', { language }))}</p>
+          <p>${escapeHtml(t('landing.footer.made'))}</p>
           ${copy.farewell ? `<p class="caption">${rich(copy.farewell)}</p>` : ''}
           ${siteLinks()}
         </footer>
