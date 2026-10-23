@@ -1,0 +1,68 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u38",
+  "words": {
+    "nnyamba": { "text": "Konya!" },
+    "yanguwa": { "text": "Oyot!" },
+    "omubbi": { "text": "lakwo" },
+    "poliisi": { "text": "polic" },
+    "ebbiddwa": { "text": "gikwalo" },
+    "akabenje": { "text": "aksidan" },
+    "alumiziddwa": { "text": "obedo ki bal" },
+    "omusaayi": { "text": "remo" },
+    "ambulensi": { "text": "ambulans" },
+    "linda": { "text": "Kur" },
+    "tewali-kizibu": { "text": "Peko pe" },
+    "ndi-bulungi": { "text": "Atye maber" },
+    "kumetokea": { "text": "gin mo otime" },
+    "ameibiwa": { "text": "gikwalo jamine" },
+    "naomba": { "text": "Akwayo" },
+    "pole-kwa-kazi": { "text": "Apwoyo tic" }
+  },
+  "sentences": {
+    "s38-nnyamba": { "text": "Konya! Konya!" },
+    "s38-omuliro": { "text": "Mac! Oyot!" },
+    "s38-omubbi": { "text": "Lakwo! Make!" },
+    "s38-kubira-poliisi": { "text": "Go cim bot polic!" },
+    "s38-essimu-ebbiddwa": { "text": "Gikwalo cim mera." },
+    "s38-akabenje": { "text": "Aksidan tye i yo." },
+    "s38-alumiziddwa": { "text": "Laco obedo ki bal. Remo tye ka mol." },
+    "s38-ambulensi": { "text": "Walwong ambulans oyot!" },
+    "s38-linda-wano": { "text": "Bed kany ci ikur." },
+    "s38-oli-bulungi": { "text": "Itye maber? Eyo, atye maber." },
+    "s38-tewali-kizibu": { "text": "Apwoyo matek! Peko pe." },
+    "s-ajali": { "text": "Gin mo otime: aksidan i yo!" },
+    "s-gari-wagonjwa": { "text": "Wamito ambulans oyot!" },
+    "s-damu": { "text": "Remo tye ka mol ki kome matek." },
+    "s-ameumia": { "text": "Latin obedo ki bal i tyene." },
+    "s-mwizi": { "text": "Lakwo! Lakwo!" },
+    "s-ameibiwa": { "text": "Gikwalo cim mere." },
+    "s-naomba": { "text": "Akwayo pii, tim ber." },
+    "s-hamna-shida": { "text": "Peko pe, lawota." },
+    "s-pole-kwa-kazi": { "text": "Apwoyo tic, mego!" }
+  },
+  "phrases": ["Konya! Konya!", "Go cim bot polic!", "Gikwalo cim mera.", "Laco obedo ki bal.", "Walwong ambulans oyot!", "Itye maber?"],
+  "dialogues": { "u38s3l3": [{ "line": "Aksidan tye! Laco mo obedo ki bal.", "options": ["Walwong ambulans oyot!", "Ayee lokki.", "Peko pe."] }] },
+  "stories": {
+    "stolen-phone": {
+      "title": "Cim ma gikwalo",
+      "summary": "Gikwalo cim pa {@nakato} i cuk, ci {@ssali} konye.",
+      "lines": [
+        "Lakwo! Lakwo! Konya!",
+        "{@nakato}! Ngo ma otime?",
+        "Gikwalo cim mera! Laco mo oringo yo cen.",
+        "Itye maber? Itye ki bal?",
+        "Pe, atye maber. Ento lworo omaka matek.",
+        "Bed kany ci ikur. Abigoyo cim bot polic.",
+        "Polic giwaco ni gitye ka bino oyot.",
+        "Apwoyo matek, {@ssali}.",
+        "Peko pe. Lurem gitye pi meno!"
+      ],
+      "questions": [
+        { "question": "Ngo ma otime bot {@nakato}?", "options": ["Gikwalo cim mere", "Onongo aksidan", "Orweny gunia mere"] },
+        { "question": "{@ssali} timo ngo?", "options": ["Lubo lakwo", "Goyo cim bot polic", "Lwongo ambulans"] },
+        { "question": "{@ssali} gamo “Apwoyo matek” nining?", "options": ["Peko pe.", "Oyot!", "Konya!"] }
+      ]
+    }
+  }
+}

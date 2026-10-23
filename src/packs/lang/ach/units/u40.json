@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u40",
+  "words": {
+    "wakayima": { "text": "Apwoyo" },
+    "omugezi": { "text": "ryek" },
+    "yalimba": { "text": "obwolo" },
+    "akakodyo": { "text": "bwola" },
+    "kintu": { "text": "Kintu" },
+    "nnambi": { "text": "Nnambi" },
+    "walumbe": { "text": "Too" },
+    "yeerabira": { "text": "wiye owil" },
+    "obulo": { "text": "kal" },
+    "etuyigiriza": { "text": "pwonyowa" },
+    "fisi": { "text": "ongwen" },
+    "tamaa": { "text": "wor" },
+    "alimdanganya": { "text": "obwole" },
+    "busara": { "text": "ryeko" },
+    "funzo": { "text": "pwony" }
+  },
+  "sentences": {
+    "s40-wakayima-mugezi": { "text": "Apwoyo onongo ryek matek." },
+    "s40-yalimba-enjovu": { "text": "Apwoyo obwolo lyec." },
+    "s40-akakodyo": { "text": "Onongo tye ki bwola." },
+    "s40-kintu-eyasooka": { "text": "Kintu onongo obedo dano mukwongo." },
+    "s40-kintu-nnambi": { "text": "Kintu onyomo Nnambi, nyar Ggulu." },
+    "s40-yeerabira-obulo": { "text": "Wic Nnambi owil i kom kal pa gweno." },
+    "s40-walumbe": { "text": "Ci Too olubogi." },
+    "s40-etuyigiriza-ki": { "text": "Ododo man pwonyowa ngo?" },
+    "s40-etuyigiriza-nti": { "text": "Pwonyowa ni ryeko loyo teko." },
+    "s-fisi": { "text": "Ongwen tye ki wor matek." },
+    "s-mjanja": { "text": "Apwoyo ryek loyo ongwen." },
+    "s-tamaa": { "text": "Wor rac." },
+    "s-alimdanganya": { "text": "Apwoyo obwolo ongwen." },
+    "s-busara": { "text": "Adaa tye ki ryeko mapol." },
+    "s-funzo": { "text": "Pwony me ododo obedo ngo?" },
+    "s-inatufundisha": { "text": "Ododo man pwonyowa me konye kenwa." }
+  },
+  "phrases": [
+    "Apwoyo onongo ryek matek.",
+    "Apwoyo obwolo lyec.",
+    "Kintu onongo obedo dano mukwongo.",
+    "Wic Nnambi owil i kom kal pa gweno.",
+    "Ododo man pwonyowa ngo?",
+    "Pwonyowa ni ryeko loyo teko."
+  ],
+  "dialogues": {
+    "u40s3l3": [
+      {
+        "line": "Apwoyo obwolo lyec. Ododo man pwonyowa ngo?",
+        "options": ["Pwonyowa ni ryeko loyo teko.", "Icoo maber?", "Go cim bot polic!"]
+      }
+    ]
+  },
+  "stories": {
+    "kintu-and-nnambi": {
+      "title": "Kintu ki Nnambi",
+      "summary": "{@jjajja} tito bot {@emma} ododo me kit ma too obino kwede i lobo.",
+      "lines": [
+        "Adaa, awinyo ni ododo mo tye i kom Kintu. Titta!",
+        "Ber. Con ki con, Kintu onongo obedo dano mukwongo. Onongo bedo kene ki dyang mere.",
+        "Ci Nnambi, nyar Ggulu, omare. Kintu onyome.",
+        "Ggulu owaco ni: “Wucit oyot, wek Too pe olubowu.”",
+        "Ento i yo, wic Nnambi owil i kom kal pa gweno. Odwogo cen.",
+        "Too olubogi i lobo. Cakke i kare meno, dano too.",
+        "Oo! Ododo man pwonyowa ngo?",
+        "Pwonyowa ni myero wawinyi ludongo.",
+        "Apwoyo matek, Adaa!"
+      ],
+      "questions": [
+        { "question": "Nnambi onongo obedo nga?", "options": ["Nyar Ggulu", "Lamin Kintu", "Apwoyo ma ryek"] },
+        { "question": "Pingo Nnambi odwogo cen?", "options": ["Pi dyang mere", "Pi kal pa gweno", "Me neno Walumbe"] },
+        { "question": "{@jjajja} miyo pwony ango?", "options": ["Winy ludongo", "Ryeko loyo teko", "Dwog gang oyot"] }
+      ]
+    }
+  }
+}
