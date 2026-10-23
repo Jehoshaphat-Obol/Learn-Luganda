@@ -1,0 +1,50 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u2",
+  "notes": {
+    "wange": "Mera for one thing, mega for many: buk mera, buke mega.",
+    "jjajja": "Kwaro is a grandparent or ancestor; a grandmother is often called adaa.",
+    "omusomesa": "From pwonyo, to teach. A student is lakwan, from kwano, to read.",
+    "kaka": "A woman’s brother. Between brothers, people say omera.",
+    "dada": "A man’s sister.",
+    "ninaitwa": "Literally “they call me”."
+  },
+  "tips": { "u2s1": "plurals", "u2s2": "plurals", "u2s3": "verb-prefix", "u2s4": "verb-prefix" },
+  "guidebook": {
+    "intro": "Acholi nouns have no class prefixes. Plurals are learnt word by word, and “my” changes only for one thing or many.",
+    "tips": [
+      {
+        "id": "plurals",
+        "title": "Plurals you learn by heart",
+        "body": [
+          "Many plurals change the end or the vowel of the word: **latin, lutino** (child, children); **laco, coo** (man, men); **dako, mon** (woman, women). Words for people who do something start with **la-** and make the plural with **lu-**: **lapwony, lupwony** (teacher, teachers)."
+        ],
+        "table": [
+          ["One", "Many", "English"],
+          ["latin", "lutino", "child / children"],
+          ["laco", "coo", "man / men"],
+          ["dako", "mon", "woman / women"],
+          ["lakwan", "lukwan", "student / students"],
+          ["buk", "buke", "book / books"]
+        ],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "verb-prefix",
+        "title": "A- for I, i- for you",
+        "body": [
+          "Verbs take the person at the front: **a-** for I, **i-** for you, **wa-** for we, **wu-** for you all, **gi-** for they. **Acamo** (I eat), **Amato** (I drink), **Imito ngo?** (what do you want?).",
+          "My, your and his come after the noun: **buk mera** (my book), **buke mega** (my books), **buk meri** (your book), **buk mere** (his or her book)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Family is wide",
+        "body": [
+          "Your father’s brothers are also your fathers and your mother’s sisters your mothers. **Omin** is a woman’s brother and **lamin** a man’s sister, and cousins are called brothers and sisters too."
+        ]
+      }
+    ]
+  }
+}

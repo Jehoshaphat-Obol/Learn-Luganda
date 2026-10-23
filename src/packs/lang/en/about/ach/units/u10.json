@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u10",
+  "notes": {
+    "yambala": "Ruk is to put on or wear.",
+    "yambula": "Lony is to take off or untie.",
+    "inanifaa": "Literally “it fits my body”.",
+    "nnaaba": "Literally “I wash my body”."
+  },
+  "tips": { "u10s1": "ruk-lony", "u10s2": "ruk-lony", "u10s3": "too-big", "u10s4": "too-big" },
+  "guidebook": {
+    "intro": "**Bongo** means clothes. Learn to dress, undress and buy something new.",
+    "tips": [
+      {
+        "id": "ruk-lony",
+        "title": "Ruk and lony",
+        "body": [
+          "**Ruk** is put on and **lony** take off: **Ruk cweta** (put on a sweater), **Lony war megi** (take off your shoes). **Aruko** is “I wear” and **Atye ka ruko** “I am putting on”.",
+          "Shoes are many, so “your” is **megi**: **war megi**. One shirt takes **meri**: **cati meri**."
+        ]
+      },
+      {
+        "id": "too-big",
+        "title": "Too big, too small",
+        "body": [
+          "**Dit** (big) and **tidi** (small) with **matek** (strongly) mean too much: **Kalacal bor matek** (the trousers are too long). When something fits, say **Romo koma** (it fits my body)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Dressing up",
+        "body": [
+          "For church, weddings and the **kwanjula** women often wear the **gomesi** and men a **kanju** with a jacket. Many Acholi women also tie a bright **kanga** over their clothes for work and dance."
+        ]
+      }
+    ]
+  }
+}

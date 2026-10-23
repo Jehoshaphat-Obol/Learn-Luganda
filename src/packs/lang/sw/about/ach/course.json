@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Kiacholi (Leb Acoli) ni lugha ya Kiluo inayozungumzwa na watu takriban milioni moja na nusu kaskazini mwa Uganda, karibu na Gulu, Kitgum na Pader, na ng’ambo ya mpaka nchini Sudan Kusini.",
+  "notes": "Drafted by Claude (AI) for the Acholi courses (#130) with low confidence in Acholi; needs a native-speaker review. The Swahili needs a native-speaker review too; word and unit notes fall back to the English notes (lang/en/about/ach).",
+  "landing": {
+    "hello": "Itye nining?",
+    "thanks": "Apwoyo",
+    "place": "Acholi",
+    "word": "pwonye — kujifunza",
+    "words": [
+      ["Itye nining?", "Habari?"],
+      ["Atye maber", "Nzuri"],
+      ["Apwoyo", "Asante"],
+      ["Wajoli", "Karibu"],
+      ["Lawot", "Rafiki"],
+      ["Pii", "Maji"],
+      ["Cam", "Chakula"],
+      ["Ladit", "Bwana"],
+      ["Mego", "Bibi"],
+      ["Bed maber", "Kwaheri"]
+    ],
+    "why": {
+      "title": "Lugha ya **Gulu, Kitgum na kaskazini.**",
+      "text": "Kiacholi kinazungumzwa kote kaskazini mwa Uganda na kinakaribiana na Kilango, Kialur na Kijaluo cha Kenya, kwa hivyo kinafungua familia nzima ya lugha za Kiluo. Jifunze kwa ajili ya familia, safari, kazi, na nyimbo, ngoma na hadithi za kaskazini.",
+      "cards": [
+        { "title": "Kwa familia", "text": "Ongea na babu, bibi na ndugu huko Gulu na Kitgum." },
+        { "title": "Kwa wasafiri", "text": "Safiri kutoka Gulu hadi Kitgum, Pader na Mto Nile huko Karuma." },
+        { "title": "Kwa wadadisi", "text": "Gundua lugha ya Kiluo yenye toni, irabu ndefu na fupi, na isiyo na ngeli za majina." }
+      ]
+    },
+    "sample": {
+      "prompt": "Lipi lina maana ya “asante”?",
+      "options": ["Itye nining?", "Apwoyo", "Pe"],
+      "answer": "Apwoyo",
+      "explain": "_Apwoyo_ maana yake ni asante."
+    },
+    "start": { "word": "Wacak!", "caption": "wacak — tuanze" },
+    "farewell": "Apwoyo matek — asante sana.",
+    "audience": "Wanaoanza kabisa, familia za Acholi, wajitolea na wasafiri wanaoelekea kaskazini mwa Uganda.",
+    "first": "Salamu, kujitambulisha na namba, kisha familia, chakula, sokoni, saa, mahali, nyumbani na afya, kipengele kwa kipengele."
+  },
+  "cast": { "emma": "Mgeni anayejifunza Kiacholi kabla ya safari yake" }
+}

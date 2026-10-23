@@ -28,9 +28,9 @@ describe('catalogue', () => {
 describe('the first guess', () => {
   it('maps a time zone to the languages used there, then the browser’s', () => {
     expect(likelyLanguages({ timeZone: 'Asia/Dubai', preferred: ['en-GB'], regions })).toEqual({ country: 'AE', languages: ['en', 'ar'] });
-    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: ['en-US'], regions }).languages).toEqual(['en', 'lg', 'sw', 'nyn', 'xog']);
-    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: [], regions }).languages).toEqual(['lg', 'en', 'sw', 'nyn', 'xog']);
-    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: ['fr'], regions }).languages).toEqual(['lg', 'en', 'sw', 'nyn', 'xog', 'fr']);
+    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: ['en-US'], regions }).languages).toEqual(['en', 'lg', 'sw', 'nyn', 'xog', 'ach']);
+    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: [], regions }).languages).toEqual(['lg', 'en', 'sw', 'nyn', 'xog', 'ach']);
+    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: ['fr'], regions }).languages).toEqual(['lg', 'en', 'sw', 'nyn', 'xog', 'ach', 'fr']);
     expect(likelyLanguages({ timeZone: 'Mars/Olympus', preferred: ['sw-KE'], regions })).toEqual({ country: null, languages: ['sw'] });
   });
 
@@ -92,6 +92,9 @@ describe('the get-started flow', () => {
     expect(flow).toMatchObject({ stage: 'pick', bases: ['en', 'ar', 'sw', 'fr'], speak: 'fr' });
     expect(flow.options.map((p) => p.id)).toEqual(['fr-sw']);
     expect(languageFlow({}, { suggestion: null, pairs: PAIRS })).toMatchObject({ stage: 'pick', speak: 'en' });
+    const acholiFirst = [{ id: 'ach-sw', from: 'ach', to: 'sw' }, ...PAIRS];
+    expect(languageFlow({ langAnswer: 'other' }, { suggestion: { code: 'sw', canLearn: true, canSpeak: true }, pairs: acholiFirst })).toMatchObject({ speak: 'sw' });
+    expect(languageFlow({ langAnswer: 'other' }, { suggestion: null, pairs: acholiFirst })).toMatchObject({ speak: 'en' });
   });
 });
 

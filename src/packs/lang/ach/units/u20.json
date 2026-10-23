@@ -1,0 +1,83 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u20",
+  "words": {
+    "nja": { "text": "Abi" },
+    "kugenda": { "text": "cito" },
+    "tujja": { "text": "Wabi" },
+    "ajja": { "text": "bi" },
+    "awamu": { "text": "kacel" },
+    "wiikendi": { "text": "agiki cabit" },
+    "wiiki-ejja": { "text": "cabit ma bino" },
+    "omwaka-ogujja": { "text": "mwaka ma bino" },
+    "okukyalira": { "text": "limo" },
+    "ndigenda": { "text": "Abicito" },
+    "ndyogera": { "text": "Abiloko" },
+    "olunaku-lumu": { "text": "nino mo" },
+    "nsuubira": { "text": "Ageno" },
+    "oteekateeka-ki": { "text": "Itye ka yubu ngo?" },
+    "utaenda": { "text": "ibicito" },
+    "atakuja": { "text": "bibino" },
+    "tutakutana": { "text": "Wabirwatte" },
+    "nitarudi": { "text": "Abidwogo" },
+    "mwezi-ujao": { "text": "dwe ma bino" },
+    "ndoto": { "text": "lek" }
+  },
+  "sentences": {
+    "s20-nja-kugenda-masaka": { "text": "Diki abicito i {@hometown}." },
+    "s20-nja-kulya": { "text": "Abicamo matoke." },
+    "s20-tujja-kusoma": { "text": "Wabikwano kacel." },
+    "s20-ajja-kujja": { "text": "{@nakato} bibino diki." },
+    "s20-wiikendi": { "text": "I agiki cabit abilimo kwaro mera." },
+    "s20-wiiki-ejja": { "text": "Cabit ma bino wabicito i {@getaway}." },
+    "s20-omwaka-ogujja": { "text": "Mwaka ma bino abikwano cayan." },
+    "s20-olunaku-lumu-ndigenda": { "text": "Nino mo abicito i Buganda." },
+    "s20-ndyogera-oluganda": { "text": "Nino mo abiloko {to} maber." },
+    "s20-nsuubira": { "text": "Ageno ni abineno Kabaka." },
+    "s20-oteekateeka-ki": { "text": "Itye ka yubu ngo pi agiki cabit?" },
+    "s-nisaidie-tafadhali": { "text": "Konya, tim ber." },
+    "s-kwanza-halafu": { "text": "Mukwongo lwok cani, ci ywe." },
+    "s-pamoja": { "text": "Watiy kacel." },
+    "s-nitaenda-kazini": { "text": "Diki abicito i tic." },
+    "s-bibi-atakuja": { "text": "Adaa bibino i Ceng Abicel." },
+    "s-tutakutana": { "text": "Wabirwatte cawa aboro dyeceng.", "alts": ["Wabirwatte cawa aboro."] },
+    "s-nitarudi": { "text": "Abidwogo cabit ma bino." },
+    "s-mwezi-ujao": { "text": "Dwe ma bino abiwoto." },
+    "s-ningependa-kahawa": { "text": "Amito kawa, tim ber." },
+    "s-ningependa-kusafiri": { "text": "Amito woto." },
+    "s-ndoto-yangu": { "text": "Lek mera obedo me bedo daktar." },
+    "s-siku-moja": { "text": "Nino mo abibedo lapwony." }
+  },
+  "phrases": [
+    "Diki abicito i {@hometown}.",
+    "Wabikwano kacel.",
+    "Itye ka yubu ngo pi agiki cabit?",
+    "I agiki cabit abilimo kwaro mera.",
+    "Nino mo abiloko {to} maber.",
+    "Ageno ni abineno Kabaka."
+  ],
+  "dialogues": {
+    "u20s2l3": [{ "line": "Itye ka yubu ngo pi agiki cabit?", "options": ["Abilimo kwaro mera.", "Lawoo acito i {@getaway}.", "Pe angeyo twol."] }]
+  },
+  "stories": {
+    "weekend-plans": {
+      "title": "Yub me agiki cabit",
+      "summary": "{@ssali} ki {@nakato} gilok i kom agiki cabit mukato ki ma bino.",
+      "lines": [
+        "{@nakato}! Itimo ngo i agiki cabit mukato?",
+        "Acito i {@hometown} me limo mego mera.",
+        "Ber! Ki agiki cabit man?",
+        "Pe angeyo. In itye ka yubu ngo?",
+        "Atye ka cito i nam i {@nearby}. Ibibino?",
+        "Eyo! Ento pe atye ki cente mapol.",
+        "Pe iparo. Wabicito ki motoka mera.",
+        "Apwoyo matek! Wabinen i Ceng Abicel."
+      ],
+      "questions": [
+        { "question": "{@nakato} ocito kwene i agiki cabit mukato?", "options": ["{@getaway}", "{@hometown}", "{@nearby}"] },
+        { "question": "Yub pa {@ssali} obedo ngo?", "options": ["Cito i nam", "Limo mego ne", "Kwano i gang"] },
+        { "question": "{@ssali} waco “Wabicito” nining?", "options": ["Wabicito", "Wacito", "Pe icit"] }
+      ]
+    }
+  }
+}

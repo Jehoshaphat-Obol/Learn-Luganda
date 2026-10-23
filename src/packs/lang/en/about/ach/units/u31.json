@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u31",
+  "notes": {
+    "omuguzi": "From wilo, to buy.",
+    "ndisa": "Pito is to feed or raise.",
+    "nsomesa": "Pwonyo is to teach.",
+    "hasara": "Rweny is to be lost."
+  },
+  "tips": { "u31s1": "cat-wil", "u31s2": "cat-wil", "u31s3": "make-do", "u31s4": "cat-wil" },
+  "guidebook": {
+    "intro": "Run a small business. Acholi uses many borrowed words for money, alongside its own words for selling and buying.",
+    "tips": [
+      {
+        "id": "cat-wil",
+        "title": "Cato and wilo",
+        "body": [
+          "**Cato** is to sell and **wilo** to buy: **Acato bongo i cuk** (I sell clothes at the market). A **lacat** is a trader and a **lawil** a customer."
+        ]
+      },
+      {
+        "id": "make-do",
+        "title": "Apito lutino",
+        "body": [
+          "Some verbs carry “make someone do” in them: **pito** is to feed or raise, **pwonyo** to teach (make learn), **miyo** to give: **Amiyo dyang pii** (I give the cows water)."
+        ],
+        "table": [["Acholi", "English"], ["biacara", "business"], ["magoba", "profit"], ["rweny", "loss"], ["banya", "debt"], ["bengi", "bank"]],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Saving together",
+        "body": [
+          "Many traders save in a **village savings group**: members put in a little each week and take turns to borrow. It is how many market stalls in Gulu were started."
+        ]
+      }
+    ]
+  }
+}

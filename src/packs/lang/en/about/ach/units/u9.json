@@ -1,0 +1,49 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u9",
+  "notes": {
+    "mulungi": "Literally “good to see”.",
+    "balungi": "Plural of ber, good.",
+    "bawanvu": "Plural of bor, tall.",
+    "kiragala": "Literally “grass-coloured”.",
+    "kitaka": "Literally “soil-coloured”."
+  },
+  "tips": { "u9s1": "ma-adjective", "u9s2": "ma-adjective", "u9s3": "plural-adjectives", "u9s4": "plural-adjectives" },
+  "guidebook": {
+    "intro": "Describing words in Acholi come after the noun. Said on their own they mean “is …”; with **ma-** in front they mean “the … one”.",
+    "tips": [
+      {
+        "id": "ma-adjective",
+        "title": "Kikopo kwar, kikopo makwar",
+        "body": [
+          "**Kikopo kwar** is “the cup is red”, a full sentence with no word for “is”. **Kikopo makwar** is “a red cup”: the **ma-** joins the describing word to the noun."
+        ],
+        "table": [
+          ["Is …", "The … one", "English"],
+          ["kwar", "makwar", "red"],
+          ["col", "macol", "black"],
+          ["tar", "matar", "white"],
+          ["dit", "madit", "big"],
+          ["tidi", "matidi", "small"]
+        ],
+        "targetColumns": [0, 1]
+      },
+      {
+        "id": "plural-adjectives",
+        "title": "Ber, beco",
+        "body": [
+          "Some describing words have their own plural: **ber** (good) becomes **beco**: **Lutino beco** (the children are good), **lutino mabeco** (good children). **Bor** (tall) becomes **bocu**.",
+          "Colours outside black, white and red are often said as “the colour of”: **ma rangi lum** (grass-coloured, green), **ma rangi ngom** (soil-coloured, brown)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Ber neno",
+        "body": [
+          "**Ber neno**, literally “good to see”, is how you call a person or a thing beautiful. Calling someone **mwolo** (gentle, humble) is high praise in Acholi land."
+        ]
+      }
+    ]
+  }
+}

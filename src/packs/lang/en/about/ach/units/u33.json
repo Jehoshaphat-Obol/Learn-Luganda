@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u33",
+  "notes": {
+    "okusinga": "Loyo is to beat or surpass.",
+    "kye-kimu": "Rom, the same.",
+    "enjawulo": "Pat, different.",
+    "afaanana": "Cal ki: looks like."
+  },
+  "tips": { "u33s1": "loyo", "u33s2": "loyo", "u33s3": "same", "u33s4": "loyo" },
+  "guidebook": {
+    "intro": "Compare things with **loyo**, “to beat, to surpass”.",
+    "tips": [
+      {
+        "id": "loyo",
+        "title": "Dit loyo: bigger than",
+        "body": [
+          "Say the quality, then **loyo** (beats) and what it beats: **Lyec dit loyo dyang** (an elephant is bigger than a cow). For “the most”, say **loyo ducu** (beats all): **Kilimanjaro bor loyo ducu**."
+        ]
+      },
+      {
+        "id": "same",
+        "title": "Rom and pat",
+        "body": [
+          "**Rom** is the same and **pat** different: **Magi aryo rom** (these two are the same), **Pe rom!** (it’s not the same). **Cal ki** is “looks like”: **En cal ki mego ne** (she looks like her mother). **Calo** is “like”: **calo winyo** (like a bird)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Praise with care",
+        "body": [
+          "People are careful about comparing children or praising one over another in front of them. Compare things, not people, and add a kind word."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u24",
+  "notes": { "nkkuse": "The polite way to stop eating.", "endagala": "Literally “banana leaves”.", "tulye": "Wa- on a command: let’s." },
+  "tips": { "u24s1": "recipe", "u24s2": "recipe", "u24s3": "full", "u24s4": "recipe" },
+  "guidebook": {
+    "intro": "Follow a recipe with short commands, and share a meal.",
+    "tips": [
+      {
+        "id": "recipe",
+        "title": "Ngol, ket, med",
+        "body": [
+          "Recipe steps are bare verbs: **Ngol tungulu** (cut the onions), **Ket agulu i wi mac** (put the pot on the fire), **Med kado** (add salt), **Kal** (fry), **Rub** (mix).",
+          "Order the steps with **mukwongo** (first), **lacen** (then) and **ci** (and then)."
+        ]
+      },
+      {
+        "id": "full",
+        "title": "Ayeng",
+        "body": ["**Ayeng** is “I am full”, the polite way to stop eating. Thank the cook with **Apwoyo pi tedo** (thanks for cooking)."],
+        "table": [["Acholi", "English"], ["agulu", "cooking pot"], ["mac", "fire"], ["moo", "oil"], ["kado", "salt"], ["dek", "sauce"]],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Malakwang and boo",
+        "body": [
+          "Two favourite Acholi dishes are **malakwang**, sour sorrel leaves cooked with groundnut paste, and **boo**, cowpea leaves with **odii** (groundnut paste). They are eaten with **kwon** made from millet or cassava flour."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Acholi (Leb Acoli) is a Luo language spoken by about one and a half million people in northern Uganda, around Gulu, Kitgum and Pader, and across the border in South Sudan.",
+  "notes": "Drafted by Claude (AI) for the Acholi courses (#130) with low confidence in Acholi; needs a native-speaker review.",
+  "landing": {
+    "hello": "Itye nining?",
+    "thanks": "Apwoyo",
+    "place": "Acholi land",
+    "word": "pwonye — v. to learn",
+    "words": [
+      ["Itye nining?", "How are you?"],
+      ["Atye maber", "I’m fine"],
+      ["Apwoyo", "Thank you"],
+      ["Wajoli", "Welcome"],
+      ["Lawot", "Friend"],
+      ["Pii", "Water"],
+      ["Cam", "Food"],
+      ["Ladit", "Sir"],
+      ["Mego", "Madam"],
+      ["Bed maber", "Goodbye"]
+    ],
+    "why": {
+      "title": "The language of **Gulu, Kitgum and the north.**",
+      "text": "Acholi is spoken across northern Uganda and is close to Lango, Alur and the Luo of Kenya, so it opens a whole family of Luo languages. Learn it for family, travel, work, and the songs, dances and stories of the north.",
+      "cards": [
+        { "title": "For family", "text": "Talk with grandparents and relatives in Gulu and Kitgum." },
+        { "title": "For travellers", "text": "Find your way from Gulu to Kitgum, Pader and the Nile at Karuma." },
+        { "title": "For the curious", "text": "Meet a Luo language with tones, long and short vowels and no noun classes." }
+      ]
+    },
+    "sample": {
+      "prompt": "Which one means “thank you”?",
+      "options": ["Itye nining?", "Apwoyo", "Pe"],
+      "answer": "Apwoyo",
+      "explain": "_Apwoyo_ means thank you."
+    },
+    "start": { "word": "Wacak!", "caption": "wacak — let’s begin" },
+    "farewell": "Apwoyo matek — thank you very much.",
+    "audience": "Complete beginners, families from Acholi land, volunteers and travellers heading to northern Uganda.",
+    "first": "Greetings, introductions and numbers, then family, food, the market, time, places, the home and health, unit by unit."
+  },
+  "cast": { "emma": "A visitor learning Acholi before her trip" }
+}

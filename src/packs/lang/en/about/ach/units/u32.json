@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u32",
+  "notes": {
+    "nnalubaale": "Nam Lolwe, the Luo name for Lake Victoria.",
+    "kiyira": "Kulu Nil, the River Nile.",
+    "tutunze": "Wa-: let’s.",
+    "kasasiro": "Yugi, rubbish."
+  },
+  "tips": { "u32s1": "nature-words", "u32s2": "nature-words", "u32s3": "lets", "u32s4": "nature-words" },
+  "guidebook": {
+    "intro": "Lakes, rivers, forests and hills, and caring for the land with **wa-**, “let’s”.",
+    "tips": [
+      {
+        "id": "lets",
+        "title": "Wapit yadi! Let’s plant trees",
+        "body": [
+          "**Wa-** on a command means “let’s”: **Wapit yadi** (let’s plant trees), **Wagwok ngom mewa** (let’s protect our land). **Pe ibol yugi** (don’t throw rubbish)."
+        ]
+      },
+      {
+        "id": "nature-words",
+        "title": "Land and water",
+        "body": ["**Kulu Nil** is the Nile and **Nam Lolwe** Lake Victoria, its Luo name."],
+        "table": [
+          ["Acholi", "English"],
+          ["nam", "lake"],
+          ["kulu", "river"],
+          ["tim", "forest, wild land"],
+          ["yat, yadi", "tree, trees"],
+          ["got, godi", "hill, hills"],
+          ["ngom", "land, soil"]
+        ],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "The Nile and the north",
+        "body": [
+          "The Nile runs along the western edge of Acholi land, past Karuma and Murchison Falls. **Tim**, the open bush, is where people hunt, gather firewood and graze cattle."
+        ]
+      }
+    ]
+  }
+}

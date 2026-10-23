@@ -83,7 +83,7 @@
     "America/Sao_Paulo": "BR"
   },
   "countries": {
-    "UG": ["lg", "en", "sw", "nyn", "xog"],
+    "UG": ["lg", "en", "sw", "nyn", "xog", "ach"],
     "KE": ["sw", "en"],
     "TZ": ["sw", "en"],
     "RW": ["rw", "en", "fr", "sw"],

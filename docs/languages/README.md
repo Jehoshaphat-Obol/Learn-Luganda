@@ -127,7 +127,7 @@ them is done, so the tracker only holds work we are about to do.
 | `teo` | Ateso | Ateso | Nilo-Saharan › Nilotic | Latin | UG KE | 2.4M | low |  |
 | `lgg` | Lugbara | Lugbarati | Nilo-Saharan › Central Sudanic | Latin | UG CD | 2.2M | low |  |
 | `laj` | Lango | Leb Lango | Nilo-Saharan › Nilotic | Latin | UG | 2.1M | low |  |
-| `ach` | Acholi | Lwo | Nilo-Saharan › Nilotic | Latin | UG SS | 1.6M | low |  |
+| `ach` | Acholi | Lwo | Nilo-Saharan › Nilotic | Latin | UG SS | 1.6M | low | yes |
 | `alz` | Alur | Dho Alur | Nilo-Saharan › Nilotic | Latin | UG CD | 1.4M | low |  |
 | `myx` | Lumasaba | Lumasaaba | Niger-Congo › Bantu | Latin | UG | 1.1M | low |  |
 | `ttj` | Rutooro | Rutooro | Niger-Congo › Bantu | Latin | UG | 900k | low |  |

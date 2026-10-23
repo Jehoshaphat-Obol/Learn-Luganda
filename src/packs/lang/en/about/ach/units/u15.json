@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u15",
+  "notes": {
+    "musome": "Wu- is “you all”.",
+    "otegeera": "Niang is to understand.",
+    "ddamu": "Dok is to go back, to repeat.",
+    "unasemaje": "Literally “you say how?”"
+  },
+  "tips": { "u15s1": "wu-commands", "u15s2": "understand", "u15s3": "understand", "u15s4": "understand" },
+  "guidebook": {
+    "intro": "At school you hear many instructions to the whole class. They start with **wu-**, “you all”.",
+    "tips": [
+      {
+        "id": "wu-commands",
+        "title": "Wukwan! Read, everyone",
+        "body": [
+          "A command to one person is the bare verb: **Kwan** (read), **Coo** (write). To a group, add **wu-**: **Wukwan** (read, everyone), **Wucoo** (write, everyone), **Wuwiny** (listen, everyone)."
+        ]
+      },
+      {
+        "id": "understand",
+        "title": "Iniang?",
+        "body": [
+          "**Niang** is to understand: **Iniang?** (do you understand?), **Aniang** (I understand), **Pe aniang** (I don’t understand). Ask someone to say it again with **Dok ki mot** (repeat slowly).",
+          "**Tyen lok ne ngo?** asks “what does it mean?”, literally “what is the root of the word?”"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "A love of learning",
+        "body": [
+          "After the war, schools were rebuilt across Acholi land, and families sacrifice a great deal for school fees. Students often study in groups in the evening, reading aloud together."
+        ]
+      }
+    ]
+  }
+}

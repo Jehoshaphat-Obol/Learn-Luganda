@@ -60,7 +60,8 @@ export function languageFlow(answers, { suggestion, pairs }) {
     return { stage: 'target', speak: answers.speak, options: from.length ? from : pairs, none: !from.length, course };
   }
   const bases = baseLanguages(pairs);
-  const speak = answers.speak && bases.includes(answers.speak) ? answers.speak : bases[0];
+  // Start from the guessed language, else English, not whichever base sorts first.
+  const speak = [answers.speak, suggestion?.code, 'en'].find((c) => c && bases.includes(c)) ?? bases[0];
   return { stage: 'pick', bases, speak, options: coursesFrom(speak, pairs), course };
 }
 

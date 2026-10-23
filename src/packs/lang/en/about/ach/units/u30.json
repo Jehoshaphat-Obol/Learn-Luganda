@@ -1,0 +1,45 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u30",
+  "notes": {
+    "katonda": "Rubanga, God.",
+    "nsaba": "Kwayo is to ask politely, to beg.",
+    "okusiiba": "Literally “to close off hunger”.",
+    "paasika": "Cer is rising, resurrection."
+  },
+  "tips": { "u30s1": "holidays", "u30s2": "holidays", "u30s3": "blessings", "u30s4": "blessings" },
+  "guidebook": {
+    "intro": "Places of worship, holidays and blessings. **Rubanga** is God.",
+    "tips": [
+      {
+        "id": "blessings",
+        "title": "Rubanga omiyi gum",
+        "body": [
+          "**Gum** is blessing or luck: **Rubanga omiyi gum!** (God bless you, literally “God give you blessing”). **Lego** is to pray and **Akwayo** to ask politely: **Akwayo pii** (may I have water)."
+        ]
+      },
+      {
+        "id": "holidays",
+        "title": "Bunyac and Cer",
+        "body": ["Christmas is **Bunyac** and Easter **Cer** (rising). **Id** stays as it is. Wish people well with **maber**: **Bunyac maber!**"],
+        "table": [
+          ["Acholi", "English"],
+          ["kanica", "church"],
+          ["misikiti", "mosque"],
+          ["Baibul", "Bible"],
+          ["cibo kec", "to fast"],
+          ["gum", "blessing"]
+        ],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Martyrs of the north",
+        "body": [
+          "Besides the Uganda Martyrs of 3 June, Acholi land honours two young catechists, **Daudi Okelo** and **Jildo Irwa**, killed in 1918 near Kitgum and beatified in 2002."
+        ]
+      }
+    ]
+  }
+}
