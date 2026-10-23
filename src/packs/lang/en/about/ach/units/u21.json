@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u21",
+  "notes": {
+    "nsanyuse": "Literally “my heart is sweet”.",
+    "nnakuwadde": "Literally “my heart aches”.",
+    "nnyiize": "Literally “my heart has burnt”.",
+    "nsonyiwa": "Literally “do mercy to me”.",
+    "nkusubwa": "Literally “I think of you”."
+  },
+  "tips": { "u21s1": "cwiny", "u21s2": "cwiny", "u21s3": "care", "u21s4": "care" },
+  "guidebook": {
+    "intro": "Acholi talks about feelings through **cwiny**, the heart.",
+    "tips": [
+      {
+        "id": "cwiny",
+        "title": "Cwinya yom: my heart is sweet",
+        "body": [
+          "**Cwinya** is “my heart”. **Cwinya yom** (my heart is soft, sweet) is “I am happy”; **Cwinya cwer** (my heart aches) is “I am sad”; **Cwinya owang** (my heart burnt) is “I am angry”."
+        ]
+      },
+      {
+        "id": "care",
+        "title": "Cwinya cwer piri",
+        "body": [
+          "Show sympathy with **Cwinya cwer piri** (my heart aches for you). Say sorry with **Timwa kica** (forgive me). **Amari** is “I love you” and **Apari** “I miss you” (I think of you)."
+        ],
+        "table": [["Acholi", "English"], ["Aol", "I am tired"], ["Aparo", "I am worried"], ["Lworo omaka", "I am scared"], ["Aur", "I am surprised"]],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Kica, forgiveness",
+        "body": [
+          "**Kica** (mercy, forgiveness) has deep meaning in Acholi land. After the war, communities used the **mato oput** ceremony to bring peace between families, and **Lakica** (one who forgives) is a common name."
+        ]
+      }
+    ]
+  }
+}

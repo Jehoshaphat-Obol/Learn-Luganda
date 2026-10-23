@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u37",
+  "notes": {
+    "nti": "Ni introduces what is said or thought.",
+    "endowooza": "Tam, an opinion or idea.",
+    "nzikiriza": "Ye is to accept or agree.",
+    "kiongozi": "Latel, a leader."
+  },
+  "tips": { "u37s1": "ni", "u37s2": "opinion", "u37s3": "opinion", "u37s4": "ni" },
+  "guidebook": {
+    "intro": "Follow the news, speak at a meeting and give your opinion with **ni**, “that”.",
+    "tips": [
+      {
+        "id": "ni",
+        "title": "Giwaco ni…",
+        "body": [
+          "**Ni** introduces what someone says or thinks: **Waco ni kot tye ka bino** (he says that rain is coming), **Aparo ni ber** (I think that it’s good)."
+        ]
+      },
+      {
+        "id": "opinion",
+        "title": "Tami obedo ngo?",
+        "body": [
+          "**Tam** is an opinion or idea: **Tami obedo ngo?** (what is your opinion?), **I tam mera** (in my opinion). Agree with **Ayee lokki** (I accept your word); disagree politely with **Timwa kica, pe ayee**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Radio in the north",
+        "body": [
+          "Radio stations in Gulu broadcast in Acholi and were a lifeline during the war, with programmes that called fighters home. Today they carry news, debate and call-in shows."
+        ]
+      }
+    ]
+  }
+}

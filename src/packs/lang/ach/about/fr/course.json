@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Leb Faranja giloko kwede i lobo mapol i Afrika ki i wi lobo ducu, cakke ki Paris cito wa Dakar, Kinshasa ki Montréal.",
+  "notes": "Drafted by Claude (AI) for the Acholi courses (#130) with low confidence in Acholi; needs a native-speaker review. Word and unit notes fall back to the English notes about the target language.",
+  "landing": {
+    "hello": "Bonjour !",
+    "thanks": "Merci",
+    "place": "lobo ma giloko Leb Faranja",
+    "word": "apprendre — pwonye",
+    "words": [
+      ["Bonjour", "Itye?"],
+      ["Ça va ?", "Itye nining?"],
+      ["Merci", "Apwoyo"],
+      ["D’accord", "Ber"],
+      ["Ami", "Lawot"],
+      ["Eau", "Pii"],
+      ["Nourriture", "Cam"],
+      ["Monsieur", "Ladit"],
+      ["Madame", "Mego"],
+      ["Au revoir", "Bed maber"]
+    ],
+    "why": {
+      "title": "Leb me **lobo mapol i wi lobo ducu.**",
+      "text": "Leb Faranja giloko kwede i lobo mapol i Afrika, i Europe, i Canada ki kabedo mukene. Pwonye me wot, kwan, tic, ki niang wer, buk ki film.",
+      "cards": [
+        { "title": "Pi luwot", "text": "Wot cakke ki Kinshasa cito wa Dakar, Paris ki Montréal." },
+        { "title": "I tic ki kwan", "text": "Ti ki lobo mapol ma giloko Leb Faranja i Afrika." },
+        { "title": "Pi jo ma mito ngeyo", "text": "Nong buk, wer ki film ma giketo i Leb Faranja." }
+      ]
+    },
+    "sample": {
+      "prompt": "Lok mene ma tyen lok ne “apwoyo”?",
+      "options": ["Bonjour", "Merci", "Non"],
+      "answer": "Merci",
+      "explain": "_Merci_ tyen lok ne apwoyo."
+    },
+    "start": { "word": "C’est parti !", "caption": "c’est parti — wacak" },
+    "farewell": "Merci beaucoup — apwoyo matek.",
+    "audience": "Jo ma loko Leb Acoli ma gicako manyen, lukwan, lutic ki luwot ma gicito i lobo ma giloko Leb Faranja.",
+    "first": "Moto, tito nyingi ki kwan wel, lacen dog gang, cam, cuk, cawa, kabedo, gang ki yot kom, dul ki dul."
+  },
+  "cast": { "emma": "Welo ma oa ki lobo mukene ma loko Leb Faranja" }
+}

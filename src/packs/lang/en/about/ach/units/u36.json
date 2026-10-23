@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u36",
+  "notes": { "olugero": "Carolok, a proverb.", "amakulu": "Literally “the root of the word”.", "nga-bwe-bagamba": "Literally “like what they say”." },
+  "tips": { "u36s1": "carolok", "u36s2": "acholi-proverbs", "u36s3": "carolok", "u36s4": "acholi-proverbs" },
+  "guidebook": {
+    "intro": "Proverbs, **carolok**, carry the wisdom of elders. In this unit the Ganda proverbs are said in Acholi.",
+    "tips": [
+      {
+        "id": "carolok",
+        "title": "Tyen lok ne ngo?",
+        "body": [
+          "Ask the meaning of a proverb with **Tyen lok ne ngo?** (what is its root?). Introduce one with **Calo gin ma giwaco** (as they say)."
+        ]
+      },
+      {
+        "id": "acholi-proverbs",
+        "title": "Proverbs in Acholi",
+        "body": [
+          "**Manok manok pongo aduku** (little by little fills the basket) and **Lak ma tye kacel kayo ringo** (teeth that are together bite the meat) carry Ganda wisdom in Acholi words. Acholi has its own proverbs too, many about patience, unity and respect for elders."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Speaking in proverbs",
+        "body": [
+          "Elders show their skill by answering with a proverb instead of a plain sentence. Using one well, at the right moment, earns respect."
+        ]
+      }
+    ]
+  }
+}

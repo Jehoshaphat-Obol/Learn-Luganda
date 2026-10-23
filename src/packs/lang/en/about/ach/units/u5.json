@@ -1,0 +1,41 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u5",
+  "notes": {
+    "ssaawa-emu": "Hour one: seven o’clock.",
+    "ssaawa-nnya": "Hour four: ten o’clock.",
+    "ssaawa-mukaaga": "Hour six: twelve o’clock.",
+    "omwezi": "Dwe is both month and moon."
+  },
+  "tips": { "u5s1": "days", "u5s2": "days", "u5s3": "east-african-time", "u5s4": "east-african-time" },
+  "guidebook": {
+    "intro": "Acholi counts the hours from sunrise, like Swahili and Luganda: seven in the morning is the first hour of the day.",
+    "tips": [
+      {
+        "id": "east-african-time",
+        "title": "Cawa acel is seven o’clock",
+        "body": [
+          "**Cawa** is hour. The day starts at about 7 a.m., so **cawa acel** (hour one) is 7 o’clock, **cawa angwen** (hour four) is 10 o’clock and **cawa abicel** (hour six) is noon. Add six to the Acholi number to get the clock.",
+          "Add **odiko** (morning), **dyeceng** (afternoon), **otyeno** (evening) or **dyewor** (night)."
+        ]
+      },
+      {
+        "id": "days",
+        "title": "Ceng Baraja to Ceng Cabit",
+        "body": [
+          "**Ceng** is the sun and the day. The week counts from Monday: **Ceng Baraja**, **Ceng Aryo** (day two), **Ceng Adek**, **Ceng Angwen**, **Ceng Abic**, **Ceng Abicel**, and Sunday is **Ceng Cabit**. **Cabit** is also the word for week."
+        ],
+        "table": [["Acholi", "English"], ["tin", "today"], ["diki", "tomorrow"], ["lawoo", "yesterday"], ["cabit", "week"], ["dwe", "month, moon"]],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Time moves with the day",
+        "body": [
+          "Plans are often made by the sun: **odiko** before work, **dyeceng** when it is hot, **otyeno** when people come home. Being a little late is normal; greeting properly when you arrive matters more."
+        ]
+      }
+    ]
+  }
+}

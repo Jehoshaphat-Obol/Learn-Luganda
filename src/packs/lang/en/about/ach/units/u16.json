@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u16",
+  "notes": {
+    "okutuuka": "Oo, to arrive.",
+    "olugendo-olulungi": "Literally “walk well”.",
+    "eggaali": "Gari, a bicycle; gari mac, “fire bicycle”, is a train.",
+    "nimechelewa": "Galo is to be delayed."
+  },
+  "tips": { "u16s1": "bi-future", "u16s2": "bi-future", "u16s3": "arrive", "u16s4": "arrive" },
+  "guidebook": {
+    "intro": "Travel by taxi, bus and boda boda, and say the future with **bi-**.",
+    "tips": [
+      {
+        "id": "bi-future",
+        "title": "Bi- for will",
+        "body": [
+          "Put **bi-** after the person to talk about the future: **Abiwoto diki** (I will travel tomorrow), **Wabiaa con** (we will leave early), **Gari mac bio cawa adi?** (what time will the train arrive?)."
+        ]
+      },
+      {
+        "id": "arrive",
+        "title": "Aoo maber",
+        "body": [
+          "**Oo** is to arrive: **Aoo maber** (I have arrived safely), the message every mother waits for. **Wot maber!** (walk well) wishes a good journey."
+        ],
+        "table": [
+          ["Acholi", "English"],
+          ["takci", "minibus taxi"],
+          ["bac", "bus"],
+          ["boda", "motorbike taxi"],
+          ["gari", "bicycle"],
+          ["teg", "stage, stop"]
+        ],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Gulu to Kampala",
+        "body": [
+          "Buses leave Gulu for Kampala many times a day, a journey of about five hours. Ask **Takci man cito kwene?** (where does this taxi go?) before you climb in."
+        ]
+      }
+    ]
+  }
+}

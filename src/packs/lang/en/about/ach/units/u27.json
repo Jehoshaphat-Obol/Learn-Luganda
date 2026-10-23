@@ -1,0 +1,46 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u27",
+  "notes": {
+    "ndimira": "Pi: for someone.",
+    "mpandiikira": "Bot: to someone.",
+    "amakungula": "Kac, the harvest.",
+    "okusiga": "Pito is to plant (and also to feed or raise)."
+  },
+  "tips": { "u27s1": "crops", "u27s2": "crops", "u27s3": "pi", "u27s4": "crops" },
+  "guidebook": {
+    "intro": "Work the garden, name the crops and bring in the harvest. You also learn **pi**, “for”, to say who you do it for.",
+    "tips": [
+      {
+        "id": "pi",
+        "title": "Apuro pi kwaro mera",
+        "body": [
+          "Put **pi** (for) before the person you work for: **Apuro poto pi kwaro mera** (I dig the garden for my grandparent), **Atedo cam pi lutino** (I cook food for the children). **Bot** is “to”: **Acoyo kwena bot mego** (I write a message to mother)."
+        ]
+      },
+      {
+        "id": "crops",
+        "title": "Crops of the north",
+        "body": ["Acholi farms grow millet, sorghum, simsim (sesame), groundnuts, cassava and beans."],
+        "table": [
+          ["Acholi", "English"],
+          ["kal", "millet"],
+          ["oduma", "maize"],
+          ["mok", "groundnuts"],
+          ["gwana", "cassava"],
+          ["kweri", "hoe"],
+          ["kac", "harvest"]
+        ],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Digging together",
+        "body": [
+          "Neighbours dig each other’s fields in turn in work groups, singing as they go, and the host family cooks for everyone. Many families returned to their land after the camps closed in 2006–2008."
+        ]
+      }
+    ]
+  }
+}

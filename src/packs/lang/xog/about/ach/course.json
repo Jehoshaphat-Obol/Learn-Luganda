@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Olwacholi lulimi lwa Luo olwogerwa abantu ng’akakade kamu n’ekitundu mu bukiikakono bwa Uganda, okwetoolola Gulu, Kitgum ne Pader, n’emitala w’ensalo mu South Sudan.",
+  "notes": "Drafted by Claude (AI) for the Acholi courses (#130) with low confidence in Acholi; needs a native-speaker review. The Lusoga needs a native-speaker review too; word and unit notes fall back to the English notes (lang/en/about/ach).",
+  "landing": {
+    "hello": "Itye nining?",
+    "thanks": "Apwoyo",
+    "place": "Acholi",
+    "word": "pwonye — kuyiga",
+    "words": [
+      ["Itye nining?", "Ki atyanu?"],
+      ["Atye maber", "Ndi bulungi"],
+      ["Apwoyo matek", "Weebale inho"],
+      ["Wajoli", "Tukusangaaliire"],
+      ["Lawot", "Mukwano gwange"],
+      ["Pii", "Amaadhi"],
+      ["Cam", "Emere"],
+      ["Ladit", "Sebo"],
+      ["Mego", "Nyabo"],
+      ["Bed maber", "Sigala bulungi"]
+    ],
+    "why": {
+      "title": "Olulimi lwa **Gulu, Kitgum n’obukiikakono.**",
+      "text": "Olwacholi lwogerwa mu bukiikakono bwa Uganda yonna era lufaanana n’Olulango, Olwalur n’Olujaluo lw’e Kenya, atyanu bw’oluyiga oigula enimi dha Luo inhi. Luyige olw’ab’eka, entambula, emirimu, n’enyimba, amazina n’engero dh’obukiikakono.",
+      "cards": [
+        { "title": "Ku lw’ab’eka", "text": "Yogera ne badhaadha n’ab’eka e Gulu ne Kitgum." },
+        { "title": "Ku lw’abatambuli", "text": "Tambula okuva e Gulu okutuuka e Kitgum, Pader ne ku Kiira e Karuma." },
+        {
+          "title": "Ku lw’abeegomba okumanya",
+          "text": "Bona olulimi lwa Luo oluliko amaloboozi agalinya n’okuka, enukuta empanvu n’empimpi, era nga teruliko bika bya manya."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Kiriwa ekitegeeza “weebale”?",
+      "options": ["Itye nining?", "Apwoyo", "Pe"],
+      "answer": "Apwoyo",
+      "explain": "_Apwoyo_ amakulu gaakyo ti weebale."
+    },
+    "start": { "word": "Wacak!", "caption": "wacak — tutandike" },
+    "farewell": "Apwoyo matek — weebale inho.",
+    "audience": "Aboogera Olusoga abatandika okuva ku ntandikwa, ab’eka abava mu Acholi, n’abatambuli abagenda mu bukiikakono bwa Uganda.",
+    "first": "Okulamusa, okweyanjula n’enamba, oluvanyuma ab’omu maka, emere, akatale, esaawa, ebifo, awaka n’obulamu, ekitundu ku kitundu."
+  },
+  "cast": { "emma": "Omugenyi ayiga Olwacholi nga tanaba kutambula" }
+}

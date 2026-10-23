@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Leb Nyankole giloko kwede ki dano milion adek i Ankole, i godi me Uganda tung piny, cok ki Mbarara, lobo pa dyang ma tunggi bor.",
+  "notes": "Drafted by Claude (AI) for the Acholi courses (#130) with low confidence in Acholi; needs a native-speaker review. Word and unit notes fall back to the English notes about the target language.",
+  "landing": {
+    "hello": "Agandi!",
+    "thanks": "Webale",
+    "place": "Ankole",
+    "word": "kwega — pwonye",
+    "words": [
+      ["Agandi?", "Itye nining?"],
+      ["Ni marungi", "Atye maber"],
+      ["Webale", "Apwoyo"],
+      ["Kare", "Ber"],
+      ["Omunywani", "Lawot"],
+      ["Amaizi", "Pii"],
+      ["Ebyokurya", "Cam"],
+      ["Sebo", "Ladit"],
+      ["Nyabo", "Mego"],
+      ["Ogumeho", "Bed maber"]
+    ],
+    "why": {
+      "title": "Leb me **Ankole ki dyang ma tunggi bor.**",
+      "text": "Leb Nyankole giloko kwede i Mbarara, Bushenyi, Ntungamo ki Ibanda, dok cok ki Leb Kiga ki Leb Nyoro. Pwonye pi dog gang, wot, tic, ki wer ki ododo me Ankole.",
+      "cards": [
+        { "title": "Pi dog gang", "text": "Lok ki kwaro ki wat i Ankole." },
+        { "title": "Pi luwot", "text": "Wot cakke ki Mbarara cito wa Kabale ki nam Bunyonyi." },
+        { "title": "Pi jo ma mito ngeyo", "text": "Nong kit nying, nyukuta mabor ki lok me dyang." }
+      ]
+    },
+    "sample": {
+      "prompt": "Lok mene ma tyen lok ne “apwoyo”?",
+      "options": ["Agandi", "Webale", "Ngaaha"],
+      "answer": "Webale",
+      "explain": "_Webale_ tyen lok ne apwoyo."
+    },
+    "start": { "word": "Tutandike!", "caption": "tutandike — wacak" },
+    "farewell": "Webale munonga — apwoyo matek.",
+    "audience": "Jo ma loko Leb Acoli ma gicako manyen, dog gang ma oa ki Ankole, ki luwot ma gicito tung piny me Uganda.",
+    "first": "Moto, tito nyingi ki kwan wel, lacen dog gang, cam, cuk, cawa, kabedo, gang ki yot kom, dul ki dul."
+  },
+  "cast": { "emma": "Welo ma tye ka pwonye Leb Nyankole ma peya owoto" }
+}

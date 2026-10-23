@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u23",
+  "notes": { "nkukubira": "Literally “I hit the phone to you”.", "nkulinze": "Kuro, to wait.", "ndi-mu-kkubo": "Literally “I am on the road”." },
+  "tips": { "u23s1": "go-cim", "u23s2": "go-cim", "u23s3": "waiting", "u23s4": "waiting" },
+  "guidebook": {
+    "intro": "Make calls, send messages and arrange to meet.",
+    "tips": [
+      {
+        "id": "go-cim",
+        "title": "Go cim bota",
+        "body": [
+          "To call is **goyo cim**, literally to hit the phone: **Go cim bota** (call me), **Abigoyo cim boti** (I will call you). **Bota** is to me, **boti** to you, **bote** to him or her."
+        ]
+      },
+      {
+        "id": "waiting",
+        "title": "Atye ka kuri",
+        "body": [
+          "**Kuro** is to wait: **Atye ka kuri** (I am waiting for you), **Kur manok** (wait a little). **Atye i yo** (I am on the road) is the classic “I’m on the way!”"
+        ],
+        "table": [
+          ["Acholi", "English"],
+          ["cim", "phone"],
+          ["kwena", "message"],
+          ["namba", "number"],
+          ["netwak", "network"],
+          ["cente me cim", "airtime"]
+        ],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Atye i yo",
+        "body": ["**Atye i yo** may mean the person is still at home. Allow some time, and call again with a smile."]
+      }
+    ]
+  }
+}

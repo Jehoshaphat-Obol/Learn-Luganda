@@ -117,7 +117,7 @@
       "speakersMillions": 1.6,
       "wave": 1,
       "draftConfidence": "low",
-      "inRegistry": false
+      "inRegistry": true
     },
     {
       "code": "alz",

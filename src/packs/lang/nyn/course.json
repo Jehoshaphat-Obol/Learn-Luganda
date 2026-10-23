@@ -5,7 +5,7 @@
   "status": "draft",
   "notes": "Drafted by Claude (AI) for #128 with low confidence in Runyankore: needs a native-speaker review before it is marked reviewed. Headings, culture and lesson text follow the shared curriculum; doubts are listed in journal/2026-10-22-runyankore.md.",
   "courseTitle": "{to} ahabw'abagamba Orunyankore",
-  "languageNames": { "en": { "name": "Orungyereza", "mu": "Rungyereza" }, "lg": { "name": "Oruganda", "mu": "Ruganda" }, "sw": { "name": "Oruswahili", "mu": "Ruswahili" }, "fr": { "name": "Orufaransa", "mu": "Rufaransa" }, "nyn": { "name": "Orunyankore", "mu": "Runyankore" }, "xog": { "name": "Orusoga", "mu": "Rusoga" } },
+  "languageNames": { "en": { "name": "Orungyereza", "mu": "Rungyereza" }, "lg": { "name": "Oruganda", "mu": "Ruganda" }, "sw": { "name": "Oruswahili", "mu": "Ruswahili" }, "fr": { "name": "Orufaransa", "mu": "Rufaransa" }, "nyn": { "name": "Orunyankore", "mu": "Runyankore" }, "xog": { "name": "Orusoga", "mu": "Rusoga" }, "ach": { "name": "Orwacholi", "mu": "Rwacholi" } },
   "sections": {
     "s1": { "title": "Entandikwa", "level": "Omutendera gw'okubanza", "description": "Okuramukya, abantu, ebyokurya, enamba, obunaku, ebifo, ka n'amagara marungi." },
     "s2": { "title": "Amagara ga buri izooba", "level": "Omutendera gwa kabiri", "description": "Kushoboorora ebintu, kujwara, kugamba aha izooba ryawe, obwire, enyamaishwa, emirimo, eishomero n'orugyendo." },

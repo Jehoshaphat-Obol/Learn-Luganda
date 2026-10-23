@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u11",
+  "notes": {
+    "akola": "He or she: no prefix in the present.",
+    "oluvannyuma": "Lacen is afterwards or later.",
+    "fagia": "Ywe is to sweep.",
+    "kazi-nzuri": "Literally “you have done well”."
+  },
+  "tips": { "u11s1": "persons", "u11s2": "persons", "u11s3": "lacen", "u11s4": "lacen" },
+  "guidebook": {
+    "intro": "Talk about your day: **odiko** (morning), **dyeceng** (afternoon), **otyeno** (evening) and **dyewor** (night).",
+    "tips": [
+      {
+        "id": "persons",
+        "title": "I, you, he, we, they",
+        "body": ["The person goes on the front of the verb. With **tiyo** (to work):"],
+        "table": [
+          ["Acholi", "English"],
+          ["Atiyo", "I work"],
+          ["Itiyo", "you work"],
+          ["Tiyo", "he or she works"],
+          ["Watiyo", "we work"],
+          ["Wutiyo", "you all work"],
+          ["Gitiyo", "they work"]
+        ],
+        "targetColumns": [0]
+      },
+      {
+        "id": "lacen",
+        "title": "Lacen: afterwards",
+        "body": [
+          "Link your day with **ci** (and then) and **lacen** (afterwards): **Acoo, ci acamo cam me odiko. Lacen akwano.**",
+          "**Kare ducu** (every time) means always, and **nino ducu** (every day) daily."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Chores are shared",
+        "body": [
+          "Children sweep the compound (**ywe**) and fetch water before school, and everyone helps to wash dishes after the evening meal. Thank them with **Itimo maber!** (you’ve done well)."
+        ]
+      }
+    ]
+  }
+}

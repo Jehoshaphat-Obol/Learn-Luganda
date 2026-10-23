@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Leb Soga giloko kwede ki dano milion adek i Busoga, tung wokceng me Uganda, ka ma Kulu Nil cakke iye cok ki Jinja.",
+  "notes": "Drafted by Claude (AI) for the Acholi courses (#130) with low confidence in Acholi; needs a native-speaker review. Word and unit notes fall back to the English notes about the target language.",
+  "landing": {
+    "hello": "Oli otya?",
+    "thanks": "Weebale",
+    "place": "Busoga",
+    "word": "okuyiga — pwonye",
+    "words": [
+      ["Inho", "Matek"],
+      ["Atyanu", "Kombedi"],
+      ["Lero", "Tin"],
+      ["Idho", "Lawoo"],
+      ["Amaadhi", "Pii"],
+      ["Emere", "Cam"],
+      ["Iwe", "In"],
+      ["Ikumi", "Apar"],
+      ["Nsangaire", "Cwinya yom"],
+      ["Tulibonagana", "Wabinen"]
+    ],
+    "why": {
+      "title": "Leb me **Busoga ki wang Kulu Nil.**",
+      "text": "Leb Soga obedo leb me Jinja, Iganga, Kamuli ki Mayuge, dok cok ki Leb Ganda, ci pwonyone yabo yo i tung wokceng ki dye Uganda. Pwonye pi dog gang, wot, tic, ki wer ki ododo me Busoga.",
+      "cards": [
+        { "title": "Pi dog gang", "text": "Lok ki kwaro ki wat i Busoga." },
+        { "title": "Pi luwot", "text": "Wot cakke ki Jinja cito wa Bujagali ki Buvuma." },
+        { "title": "Pi jo ma mito ngeyo", "text": "Nong kit nying, nyukuta mabor ki lok mapol ma Leb Soga nywako ki Leb Ganda." }
+      ]
+    },
+    "sample": {
+      "prompt": "Lok mene ma tyen lok ne “apwoyo”?",
+      "options": ["Oli otya?", "Weebale", "Nedda"],
+      "answer": "Weebale",
+      "explain": "_Weebale_ tyen lok ne apwoyo."
+    },
+    "start": { "word": "Tutandike!", "caption": "tutandike — wacak" },
+    "farewell": "Weebale inho — apwoyo matek.",
+    "audience": "Jo ma loko Leb Acoli ma gicako manyen, dog gang ma oa ki Busoga, ki luwot ma gicito tung wokceng me Uganda.",
+    "first": "Moto, tito nyingi ki kwan wel, lacen dog gang, cam, cuk, cawa, kabedo, gang ki yot kom, dul ki dul."
+  },
+  "cast": { "emma": "Welo ma tye ka pwonye Leb Soga ma peya owoto" }
+}

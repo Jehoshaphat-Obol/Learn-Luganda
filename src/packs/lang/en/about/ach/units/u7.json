@@ -1,0 +1,48 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u7",
+  "notes": {
+    "kkodi": "Called from outside instead of knocking.",
+    "tusanyuse": "Literally “our hearts are sweet”.",
+    "ndeetera": "Kel, bring, with bota, to me.",
+    "juu-ya": "Literally “at the head of”.",
+    "chini-ya": "Literally “at the bottom of”."
+  },
+  "tips": { "u7s1": "where", "u7s2": "commands", "u7s3": "commands", "u7s4": "where" },
+  "guidebook": {
+    "intro": "Welcoming guests is a big part of Acholi life. Learn the rooms of the house and short commands for asking and offering.",
+    "tips": [
+      {
+        "id": "commands",
+        "title": "Commands are short",
+        "body": [
+          "To tell one person what to do, use the bare verb: **Bed** (sit), **Dony** (come in), **Lor dogola** (close the door), **Yab dirica** (open the window), **Kel pii** (bring water). Add **tim ber** (please, literally “do good”).",
+          "**Bota** is “to me”: **Kel bota pii** (bring me water). **Miya** is “give me”."
+        ]
+      },
+      {
+        "id": "where",
+        "title": "On, under, inside",
+        "body": [
+          "Places use body words: **i wi** (on, literally “at the head of”), **i te** (under, “at the base of”). **i iye** is inside and **woko** outside."
+        ],
+        "table": [
+          ["Acholi", "English"],
+          ["i wi meja", "on the table"],
+          ["i te kitanda", "under the bed"],
+          ["i ot tedo", "in the kitchen"],
+          ["woko", "outside"]
+        ],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Odi!",
+        "body": [
+          "There is no knocking on an open door: call **Odi!** from outside and wait for **Dony!** (come in). A guest is given a seat and something to drink before any business is discussed."
+        ]
+      }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 {
   "threshold": 0.95,
   "languages": {
+    "ach": { "target": 1, "base": 1 },
     "en": { "target": 1, "base": 1 },
     "fr": { "target": 1, "base": 1 },
     "lg": { "target": 1, "base": 1 },
@@ -9,11 +10,12 @@
     "xog": { "target": 1, "base": 1 }
   },
   "about": {
-    "en": { "en": 0, "fr": 1, "lg": 1, "nyn": 1, "sw": 1, "xog": 1 },
-    "fr": { "en": 1, "fr": 0, "lg": 0, "nyn": 0, "sw": 0, "xog": 0 },
-    "lg": { "en": 1, "fr": 0, "lg": 0, "nyn": 0, "sw": 0, "xog": 0 },
-    "nyn": { "fr": 0, "lg": 0, "sw": 0, "xog": 0 },
-    "sw": { "en": 1, "fr": 0, "lg": 1, "nyn": 0, "sw": 0, "xog": 0 },
-    "xog": { "en": 1, "fr": 0, "lg": 0, "nyn": 0, "sw": 0 }
+    "ach": { "fr": 0, "lg": 0, "nyn": 0, "sw": 0, "xog": 0 },
+    "en": { "ach": 1, "en": 0, "fr": 1, "lg": 1, "nyn": 1, "sw": 1, "xog": 1 },
+    "fr": { "ach": 0, "en": 1, "fr": 0, "lg": 0, "nyn": 0, "sw": 0, "xog": 0 },
+    "lg": { "ach": 0, "en": 1, "fr": 0, "lg": 0, "nyn": 0, "sw": 0, "xog": 0 },
+    "nyn": { "ach": 0, "fr": 0, "lg": 0, "sw": 0, "xog": 0 },
+    "sw": { "ach": 0, "en": 1, "fr": 0, "lg": 1, "nyn": 0, "sw": 0, "xog": 0 },
+    "xog": { "ach": 0, "en": 1, "fr": 0, "lg": 0, "nyn": 0, "sw": 0 }
   }
 }

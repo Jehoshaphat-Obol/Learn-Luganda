@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u22",
+  "notes": {
+    "nnyumirwa": "Literally “my heart is sweet with”.",
+    "omweso": "Coro is the Acholi board game played with seeds in holes.",
+    "tumefungwa": "Literally “they have beaten us”."
+  },
+  "tips": { "u22s1": "yom-cwinya-ki", "u22s2": "winning", "u22s3": "yom-cwinya-ki", "u22s4": "winning" },
+  "guidebook": {
+    "intro": "Free time means football, music, dance and games of **coro**.",
+    "tips": [
+      {
+        "id": "yom-cwinya-ki",
+        "title": "Yom cwinya ki…",
+        "body": [
+          "Say what you enjoy with **Yom cwinya ki** (my heart is sweet with): **Yom cwinya ki kwano buk** (I enjoy reading books). **Amaro** (I like, I love) works too: **Amaro odilo**."
+        ]
+      },
+      {
+        "id": "winning",
+        "title": "Waloyo! We won!",
+        "body": [
+          "**Loyo** is to beat or win: **Waloyo!** (we won!), **Kilub mera oloyo** (my team has won), **Nga ma oloyo?** (who has won?). When you lose, **giloyowa** (they beat us)."
+        ],
+        "table": [["Acholi", "English"], ["odilo", "football"], ["gol", "goal"], ["wer", "song, music"], ["myel", "dance"], ["coro", "board game"]],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Larakaraka and bwola",
+        "body": [
+          "Acholi dances are famous: **larakaraka**, danced by young people at courtship gatherings, and **bwola**, the royal dance of the chiefs with its big drums."
+        ]
+      }
+    ]
+  }
+}

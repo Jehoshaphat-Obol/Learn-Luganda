@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u8",
+  "notes": {
+    "gunnuma": "Lit is said of any pain: wiya lit, tyena lit.",
+    "omusujja": "Lyeto is heat and fever.",
+    "wona-mangu": "Literally “heal quickly”.",
+    "eddagala": "Medicine is drunk in Acholi, even pills."
+  },
+  "tips": { "u8s1": "my-body", "u8s2": "sick", "u8s3": "sick", "u8s4": "my-body" },
+  "guidebook": {
+    "intro": "Name the parts of the body, say what hurts and visit the doctor.",
+    "tips": [
+      {
+        "id": "my-body",
+        "title": "Wiya lit: my head hurts",
+        "body": [
+          "Body parts often take **-a** for “my” straight onto the word: **wic** becomes **wiya** (my head), **cing** becomes **cinga** (my hand), **tyen** becomes **tyena** (my leg), **lak** becomes **laka** (my tooth), **ic** becomes **iya** (my stomach).",
+          "**Lit** is “it hurts”: **Wiya lit** (my head hurts). The longer form **wic mera** also works."
+        ]
+      },
+      {
+        "id": "sick",
+        "title": "Atye ka two",
+        "body": [
+          "**Two** is to be sick: **Atye ka two** (I am sick). **Atye ki lyeto** (I have a fever). Medicine is drunk: **Amato yat**. Wish someone well with **Cang oyot!** (heal quickly)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "At the health centre",
+        "body": [
+          "Fever is the first thing a health worker asks about, because malaria is common. Bring someone with you if you can: in Acholi land nobody goes to the hospital alone."
+        ]
+      }
+    ]
+  }
+}
