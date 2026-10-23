@@ -1,0 +1,70 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u26",
+  "words": {
+    "kabaka": { "text": "Kabaka" },
+    "nnaabagereka": { "text": "Nnaabagereka" },
+    "ssaabasajja": { "text": "Ssaabasajja" },
+    "obwakabaka": { "text": "ker" },
+    "afuga": { "text": "loyo" },
+    "awangaale": { "text": "kwo mabor" },
+    "katikkiro": { "text": "Katikkiro" },
+    "lukiiko": { "text": "lukiiko" },
+    "olubiri": { "text": "gang ker" },
+    "bulange": { "text": "Bulange" },
+    "amasiro": { "text": "lyel pa luker" },
+    "essaza": { "text": "saza" },
+    "amasaza": { "text": "saza mapol" },
+    "edda-ennyo": { "text": "con con" },
+    "abunuwasi": { "text": "Abunuwasi" }
+  },
+  "sentences": {
+    "s26-kabaka-afuga": { "text": "Kabaka loyo Buganda." },
+    "s26-kabaka-awangaale": { "text": "Kabaka kwo mabor!" },
+    "s26-nnaabagereka": { "text": "Nnaabagereka tye ka bino tin." },
+    "s26-ssaabasajja": { "text": "Ssaabasajja Kabaka oo dong." },
+    "s26-obwakabaka-bwa-buganda": { "text": "Ker me Buganda tye con matek." },
+    "s26-katikkiro": { "text": "Katikkiro loko i lukiiko." },
+    "s26-olubiri-e-mengo": { "text": "Gang ker tye i Mengo." },
+    "s26-bulange": { "text": "Lukiiko bedo i Bulange." },
+    "s26-amasiro-e-kasubi": { "text": "Lyel pa luker i Kasubi." },
+    "s26-amasaza": { "text": "Buganda tye ki saza apar wiye aboro." },
+    "s26-essaza-lyange": { "text": "Saza mera Kyaddondo." },
+    "s26-edda-ennyo": { "text": "Con con, Kintu onongo obedo Kabaka mukwongo." },
+    "s-abunuwasi": { "text": "Abunuwasi onongo ryek matek." },
+    "s-mfalme": { "text": "Kabaka olwongo Abunuwasi." }
+  },
+  "phrases": [
+    "Kabaka kwo mabor!",
+    "Kabaka loyo Buganda.",
+    "Katikkiro loko i lukiiko.",
+    "Gang ker tye i Mengo.",
+    "Lyel pa luker i Kasubi.",
+    "Buganda tye ki saza apar wiye aboro."
+  ],
+  "dialogues": { "u26s3l3": [{ "line": "Kabaka kwo mabor!", "options": ["Kwo mabor!", "Pe awinyo dwani.", "Ayeng."] }] },
+  "stories": {
+    "kasubi-visit": {
+      "title": "Limo Kasubi",
+      "summary": "{@mukasa} nyuto {@emma} lyel pa luker ci tito bote i kom ker.",
+      "lines": [
+        "{@emma}, man aye lyel pa luker me Kasubi.",
+        "Ot dit matek! Nga ma giyiko kany?",
+        "Kabaka angwen.",
+        "Ki Kabaka me tin tye kwene?",
+        "Bedo i gang ker i Mengo.",
+        "Lukiiko bedo kwene?",
+        "I Bulange. Katikkiro loko kunnu.",
+        "Nga ma onongo obedo Kabaka mukwongo?",
+        "Kintu. Con con!",
+        "Kabaka kwo mabor!",
+        "Wek okwo mabor!"
+      ],
+      "questions": [
+        { "question": "Kabaka adi ma giyiko i Kasubi?", "options": ["Aryo", "Angwen", "Apar wiye aboro"] },
+        { "question": "Lukiiko rwatte kwene?", "options": ["I Bulange", "I Kasubi", "I cuk"] },
+        { "question": "Igamo “Kabaka awangaale!” nining?", "options": ["Kwo mabor!", "Bed maber!", "Apwoyo, iloyo!"] }
+      ]
+    }
+  }
+}

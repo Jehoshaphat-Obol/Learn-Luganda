@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u27",
+  "words": {
+    "olusuku": { "text": "poto labolo" },
+    "enkumbi": { "text": "kweri" },
+    "ndima": { "text": "Apuro" },
+    "ensigo": { "text": "kodi" },
+    "okusiga": { "text": "pito" },
+    "kasooli": { "text": "oduma" },
+    "ebinyeebwa": { "text": "mok" },
+    "emmwanyi": { "text": "nyig kawa" },
+    "amakungula": { "text": "kac" },
+    "okukungula": { "text": "kayo" },
+    "ndimira": { "text": "Apuro pi" },
+    "nfumbira": { "text": "Atedo pi" },
+    "ntundira": { "text": "Acato i" },
+    "mpandiikira": { "text": "Acoyo bot" },
+    "mpunga": { "text": "mucele ma tye ka twi" },
+    "maji-ya-mvua": { "text": "pii kot" }
+  },
+  "sentences": {
+    "s27-olusuku-lwange": { "text": "Poto labolo mera dit." },
+    "s27-ndima-n-enkumbi": { "text": "Apuro ki kweri odiko." },
+    "s27-okusiga-ensigo": { "text": "Wapito kodi i cwir." },
+    "s27-kasooli": { "text": "Oduma otwi maber." },
+    "s27-ebinyeebwa": { "text": "Acato mok ki oduma." },
+    "s27-emmwanyi": { "text": "Kawa me Buganda ber matek." },
+    "s27-amakungula": { "text": "Kac oo dong!" },
+    "s27-okukungula": { "text": "Diki wabikayo mok." },
+    "s27-ndimira-jjajja": { "text": "Apuro poto pi kwaro mera." },
+    "s27-nfumbira-abaana": { "text": "Atedo cam pi lutino." },
+    "s27-ntundira-mu-katale": { "text": "Acato kawa i cuk." },
+    "s27-mpandiikira-maama": { "text": "Acoyo kwena bot mego." },
+    "s-mpunga": { "text": "Mucele ma tye ka twi maro pii mapol." },
+    "s-kupanda-mbegu": { "text": "Tin wabipito kodi." },
+    "s-mavuno-mazuri": { "text": "Kac ber mwaka man." },
+    "s-jembe": { "text": "Kwany kweri." },
+    "s-maji-ya-mvua": { "text": "Wagwoko pii kot." }
+  },
+  "phrases": [
+    "Apuro ki kweri odiko.",
+    "Wapito kodi i cwir.",
+    "Kac oo dong!",
+    "Apuro poto pi kwaro mera.",
+    "Atedo cam pi lutino.",
+    "Acoyo kwena bot mego."
+  ],
+  "dialogues": {
+    "u27s3l3": [{ "line": "Apwoyo tic! Itye ka timo ngo?", "options": ["Apuro poto pi kwaro mera.", "An a kaka me Lugave.", "Kabaka kwo mabor!"] }]
+  }
+}
