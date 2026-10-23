@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u40",
+  "words": {
+    "wakayima": { "text": "o'bi" },
+    "omugezi": { "text": "ozi be" },
+    "yalimba": { "text": "ozi ra" },
+    "akakodyo": { "text": "ozi" },
+    "kintu": { "text": "Kintu" },
+    "nnambi": { "text": "Nnambi" },
+    "walumbe": { "text": "Walumbe" },
+    "yeerabira": { "text": "avi ra" },
+    "obulo": { "text": "anya" },
+    "etuyigiriza": { "text": "imba fe ama ni" },
+    "fisi": { "text": "ondru" },
+    "tamaa": { "text": "le ndra" },
+    "alimdanganya": { "text": "eri ozi eri ra" },
+    "busara": { "text": "ozi" },
+    "funzo": { "text": "imbazu" }
+  },
+  "sentences": {
+    "s40-wakayima-mugezi": { "text": "O'bi ovu ra ozi be ndra." },
+    "s40-yalimba-enjovu": { "text": "O'bi ozi ewa ra." },
+    "s40-akakodyo": { "text": "Eri ovu ra ozi be." },
+    "s40-kintu-eyasooka": { "text": "Kintu ovu ra ba kakau ni." },
+    "s40-kintu-nnambi": { "text": "Kintu ji Nnambi ra, Ggulu zamva." },
+    "s40-yeerabira-obulo": { "text": "Nnambi avi au anya ra." },
+    "s40-walumbe": { "text": "Ka Walumbe emu yi vutia." },
+    "s40-etuyigiriza-ki": { "text": "E'yo ati nde imba fe ama ni ngo?" },
+    "s40-etuyigiriza-nti": { "text": "Eri imba fe ama ni ka ozi ega okpo dria." },
+    "s-fisi": { "text": "Ondru le ndra." },
+    "s-mjanja": { "text": "O'bi ozi be ondru dria." },
+    "s-tamaa": { "text": "Le ndra onzi." },
+    "s-alimdanganya": { "text": "O'bi ozi ondru ra." },
+    "s-busara": { "text": "Dede ovu be ozi ambo." },
+    "s-funzo": { "text": "E'yo ati imbazu ni ngo?" },
+    "s-inatufundisha": { "text": "E'yo ati nde imba fe ama ni ka ama ko ama." }
+  },
+  "phrases": [
+    "O'bi ovu ra ozi be ndra.",
+    "O'bi ozi ewa ra.",
+    "Kintu ovu ra ba kakau ni.",
+    "Nnambi avi au anya ra.",
+    "E'yo ati nde imba fe ama ni ngo?",
+    "Eri imba fe ama ni ka ozi ega okpo dria."
+  ],
+  "dialogues": {
+    "u40s3l3": [
+      {
+        "line": "O'bi ozi ewa ra. E'yo ati nde imba fe ama ni ngo?",
+        "options": ["Eri imba fe ama ni ka ozi ega okpo dria.", "Mi ngaa ngoni?", "Omvi polisi!"]
+      }
+    ]
+  },
+  "stories": {
+    "kintu-and-nnambi": {
+      "title": "Kintu ka Nnambi",
+      "summary": "{@jjajja} a'yo e'yo ati {@emma} ni, Walumbe emu ji'bo dria ngoni.",
+      "lines": [
+        "Dede, ma eri ka e'yo ati Kintu ni ovu. A'yo ma ni!",
+        "Ka'dini. Ndra'bo ndra'bo, Kintu ovu ra ba kakau ni. Eri ovu ra eri alu eri ti be.",
+        "Ka vutia Nnambi, Ggulu zamva, le eri ra. Kintu ji eri ra.",
+        "Ggulu a'yo: \"Emi mu ure, ka Walumbe emu emi vutia ku.\"",
+        "Te geri dria, Nnambi avi au anya ra. Eri ikoa ra.",
+        "Walumbe emu yi vutia ji'bo dria. Sawa ngulu ni, bayi dra.",
+        "Ee! E'yo ati nde imba fe ama ni ngo?",
+        "Eri imba fe ama ni ka ama eri ba amboa.",
+        "Awa'difo amboni, Dede!"
+      ],
+      "questions": [
+        { "question": "Nnambi ni a'di?", "options": ["Ggulu zamva", "Kintu amvipi", "O'bi ozi be"] },
+        { "question": "Nnambi ikoa a'disi?", "options": ["Eri ti si", "Au anya si", "Walumbe ndre"] },
+        { "question": "{@jjajja} fe imbazu ngo?", "options": ["Eri ba amboa", "Ozi ega okpo dria", "Ure mu jo"] }
+      ]
+    }
+  }
+}
