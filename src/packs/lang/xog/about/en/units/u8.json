@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u8",
+  "notes": { "gunnuma": "“It hurts me”. Ku mutwe ogamba “My head hurts” oba “I have a headache”." },
+  "tips": { "u8s2": "my-head-hurts" },
+  "guidebook": {
+    "intro": "Manya ebitundu by’omubiri, gamba ekikuluma, era oyogere n’omusawo mu Lungereza.",
+    "tips": [
+      {
+        "id": "my-head-hurts",
+        "title": "“My head hurts”",
+        "body": [
+          "Mu Lusoga ogamba **Omutwe gunuma**. Mu Lungereza oteekamu **my**: **My head hurts.** **My stomach hurts.**",
+          "Era osobola okugamba **I have a headache** oba **I have a stomach ache**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Mu dwaliro",
+        "body": [
+          "Abasawo mu Uganda batera okwogera Olungereza. Ebigambo bino bikuyamba: **I am sick**, **I have a fever**, **It hurts here**. Bw’otategeera, gamba **Please say it again slowly.**"
+        ]
+      }
+    ]
+  }
+}

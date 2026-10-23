@@ -1,0 +1,38 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u10",
+  "notes": {
+    "engoye": "“Clothes” bulidho mu bungi: my clothes are clean.",
+    "empale": "Mu Lungereza “trousers” bulidho mu bungi: my trousers are new."
+  },
+  "tips": { "u10s1": "my", "u10s3": "this-these" },
+  "guidebook": {
+    "intro": "Yogera ku ngoye z’oyambala era ogule engoye mu katale mu Lungereza.",
+    "tips": [
+      {
+        "id": "my",
+        "title": "“My” tekikyuka",
+        "body": [
+          "Mu Lusoga “wange” kikyuka okusinziira ku kintu: **esaati yange**, **engato zange**, **ekitabo kyange**. Mu Lungereza bulidho **my**: **my shirt**, **my shoes**, **my book**."
+        ],
+        "table": [["Olusoga", "Olungereza"], ["esaati yange", "my shirt"], ["engato zange", "my shoes"], ["engoye zange", "my clothes"]]
+      },
+      {
+        "id": "this-these",
+        "title": "“This” ne “these”",
+        "body": [
+          "Ku kintu kimu gamba **this**: **this shirt**. Ku bingi gamba **these**: **these shoes**. **Trousers** ne **clothes** bibalibwa nga bingi: **These trousers are big.**",
+          "Okubuuza omuwendo: **How much is this shirt?**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Gomesi ne kanzu",
+        "body": [
+          "Mu Lungereza lwa Uganda abantu bakozesa amanya gaabwe: **a gomesi**, **a kanzu**. Omugenyi bw’abuuza, osobola okunyonyola: **A gomesi is a long dress for women.**"
+        ]
+      }
+    ]
+  }
+}

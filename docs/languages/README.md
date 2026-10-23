@@ -122,7 +122,7 @@ them is done, so the tracker only holds work we are about to do.
 | `sw` | Swahili | Kiswahili | Niger-Congo › Bantu | Latin | TZ KE UG CD RW BI MZ KM | 90M | high | yes |
 | `lg` | Luganda | Luganda | Niger-Congo › Bantu | Latin | UG | 11M | medium | yes |
 | `nyn` | Runyankore | Runyankore | Niger-Congo › Bantu | Latin | UG | 3.4M | low | yes |
-| `xog` | Lusoga | Lusoga | Niger-Congo › Bantu | Latin | UG | 3.1M | low |  |
+| `xog` | Lusoga | Lusoga | Niger-Congo › Bantu | Latin | UG | 3.1M | low | yes |
 | `cgg` | Rukiga | Rukiga | Niger-Congo › Bantu | Latin | UG | 2.4M | low |  |
 | `teo` | Ateso | Ateso | Nilo-Saharan › Nilotic | Latin | UG KE | 2.4M | low |  |
 | `lgg` | Lugbara | Lugbarati | Nilo-Saharan › Central Sudanic | Latin | UG CD | 2.2M | low |  |

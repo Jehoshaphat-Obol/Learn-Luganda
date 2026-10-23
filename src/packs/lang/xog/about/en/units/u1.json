@@ -1,0 +1,65 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u1",
+  "notes": {
+    "nnyabo": "“Madam” oba “ma’am”: engeri ey’ekitiibwa ey’okwogera n’omukazi.",
+    "wasuze-otya": "Abangereza tebabuuza ti wasuuze otya. Bagamba “Good morning” okutuusa mu tuntu.",
+    "osiibye-otya": "“Good afternoon” okuva mu tuntu, ate “Good evening” akawungeezi.",
+    "gyebale-ko": "Mu Lungereza lwa Uganda, “Well done” kye kigambo ky’ogamba omuntu akola.",
+    "nze": "Mu Lungereza “I” bulidho kiwandiikibwa n’enukuta enene, ne wakati mu sentensi.",
+    "ggwe": "“You” kye kimu, ka obe ng’oyogera n’omuntu omu oba n’abangi.",
+    "erinnya": "“Name”: “My name is …” kitegeeza “Erinya lyange …”.",
+    "ndi": "“I am” bangi bakimpimpisa nga “I’m”. Byombi bituufu."
+  },
+  "tips": { "u1s1": "greetings-clock", "u1s2": "i-am" },
+  "glosses": { "new-friend": { "8": { "too": "era, nanze" } } },
+  "guidebook": {
+    "intro": "Mu Lungereza okulamusa kumpi: “Hello” oba “Good morning”, “How are you?”, “I’m fine, thank you.” Ekitundu kino kikuyigiriza okulamusa, okweyanjula n’okubala okutuuka ku ikumi.",
+    "tips": [
+      {
+        "id": "greetings-clock",
+        "title": "Okulamusa kugoberera esaawa",
+        "body": [
+          "Okutuusa mu tuntu gamba **Good morning**. Okuva mu tuntu okutuuka akawungeezi, **Good afternoon**. Akawungeezi n’ekiro, **Good evening**.",
+          "**How are you?** kikola esaawa yona. Okudamu okwa bulidho kwe **I’m fine, thank you.**"
+        ]
+      },
+      {
+        "id": "i-am",
+        "title": "“I” ne “I am”",
+        "body": [
+          "Mu Lusoga “nze” n’ekikolwa bigatibwa: **ndi** kitegeeza “I am”. Mu Lungereza ebigambo biba bibiri: **I** (nze) ne **am** (ndi).",
+          "**I** bulidho kiwandiikibwa n’enukuta enene. **I am** bangi bakimpimpisa nga **I’m**."
+        ]
+      },
+      {
+        "id": "you-one-many",
+        "title": "“You” ku muntu omu n’abangi",
+        "body": [
+          "Mu Lusoga ogamba **Weebale** eri omuntu omu ne **Mwebale** eri abangi. Mu Lungereza **Thank you** kye kimu ku bombi, era **you** kye kimu ku muntu omu n’abangi."
+        ],
+        "table": [
+          ["Lungereza", "Omuntu omu", "Abantu bangi"],
+          ["Thank you", "Weebale", "Mwebale"],
+          ["Goodbye", "Weeraba", "Mweeraba"],
+          ["Good morning", "Wasuuze otya?", "Mwasuze mutya?"]
+        ],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Olungereza mu Uganda",
+        "body": [
+          "Olungereza lwe lulimi lw’egwanga mu Uganda. Lukozesebwa mu masomero, mu ofiisi, mu kooti ne mu mawulire, era lwe luyunga abantu aboogera enimi ez’enjawulo."
+        ]
+      },
+      {
+        "title": "Okulamusa okumpi",
+        "body": [
+          "Aboogera Olungereza batera okulamusa mu bigambo bitono: **Hi!** oba **Hello!** Si bubi; bwe batyo bwe bakola. Mu Uganda, abantu era bagamba **Well done** eri omuntu akola, nga Gyebale ko."
+        ]
+      }
+    ]
+  }
+}

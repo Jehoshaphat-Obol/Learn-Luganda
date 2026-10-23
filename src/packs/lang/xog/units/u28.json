@@ -1,0 +1,84 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u28",
+  "words": {
+    "kwanjula": { "text": "kwanjula" },
+    "ssenga": { "text": "senga" },
+    "omukolo": { "text": "omukolo" },
+    "ekirabo": { "text": "ekirabo" },
+    "embaga": { "text": "embaga" },
+    "omugole": { "text": "omugole" },
+    "kulika": { "text": "Kulika!" },
+    "okujaguza": { "text": "okujaguza" },
+    "tujaguze": { "text": "Tujaguze!" },
+    "amazaalibwa": { "text": "amazaalibwa" },
+    "nkwagaliza": { "text": "Nkwagaliza" },
+    "keeki": { "text": "keeki" },
+    "mwebale-okujja": { "text": "Mwebale okudha" },
+    "mpango": { "text": "enteekateeka" },
+    "wageni": { "text": "abagenyi" },
+    "kualika": { "text": "okuyita" },
+    "bwana-harusi": { "text": "omugole omusadha" },
+    "aliyekuja": { "text": "eyadha" },
+    "waliokuja": { "text": "abadha" },
+    "sikukuu-njema": { "text": "Enaku enkulu enungi!" },
+    "heri-ya-mwaka-mpya": { "text": "Omwaka omugya omulungi!" }
+  },
+  "sentences": {
+    "s28-kwanjula-ku-lwamukaaga": { "text": "Kwanjula eri ku Lwamukaaga." },
+    "s28-ssenga": { "text": "Senga ayamba omugole." },
+    "s28-omukolo-mulungi": { "text": "Omukolo mulungi inho!" },
+    "s28-ekirabo": { "text": "Ndeese ekirabo." },
+    "s28-embaga": { "text": "Embaga edha kuba mu kanisa." },
+    "s28-kulika-omugole": { "text": "Kulika, mugole!" },
+    "s28-tujaguze": { "text": "Tujaguze awamu!" },
+    "s28-amazaalibwa": { "text": "Lero mazaalibwa gange." },
+    "s28-nkwagaliza": { "text": "Nkwagaliza amazaalibwa amalungi!" },
+    "s28-keeki": { "text": "Keeki eno nungi inho." },
+    "s28-mwebale-okujja": { "text": "Mwebale okudha!" },
+    "s-utaenda-wapi": { "text": "Oligenda wa ku wiikendi?" },
+    "s-mpango-gani": { "text": "Enteekateeka yo y'eruwa?" },
+    "s-sherehe-jumamosi": { "text": "Waliwo akabaga ku Lwomukaaga." },
+    "s-harusi": { "text": "Embaga eriba omwezi ogudha." },
+    "s-zawadi": { "text": "Kino kirabo kyo." },
+    "s-wageni-wengi": { "text": "Abagenyi bangi badha." },
+    "s-kualika": { "text": "Nkuyise ku mbaga." },
+    "s-bibi-harusi": { "text": "Omugole mulungi inho." },
+    "s-bwana-harusi": { "text": "Omugole omusadha ayambade kanzu." },
+    "s-aliyekuja": { "text": "Omuntu eyadha ye muganda wange." },
+    "s-waliokuja": { "text": "Abagenyi abadha baasangaala." },
+    "s-sikukuu-njema": { "text": "Enaku enkulu enungi, dhaadha!" },
+    "s-mwaka-mpya": { "text": "Omwaka omugya omulungi, mukwano!" }
+  },
+  "phrases": [
+    "Kwanjula eri ku Lwamukaaga.",
+    "Ndeese ekirabo.",
+    "Kulika, mugole!",
+    "Tujaguze awamu!",
+    "Nkwagaliza amazaalibwa amalungi!",
+    "Mwebale okudha!"
+  ],
+  "dialogues": { "u28s3l3": [{ "line": "Lero mazaalibwa gange!", "options": ["Nkwagaliza amazaalibwa amalungi!", "Bambi!", "Ndi mu kubo."] }] },
+  "stories": {
+    "the-kwanjula": {
+      "title": "Okwanjula",
+      "summary": "{@nakato} ne {@jjajja} beeteekateeka okugenda ku kwanjula kwa muganda we.",
+      "lines": [
+        "{@nakato}, oyambade gomesi yo?",
+        "Ee, Dhaadha. Nungi?",
+        "Nungi inho! Ekirabo kiri wa?",
+        "Kiri wano. Sukaali n’omunyo.",
+        "Kirungi. Senga ayamba omugole.",
+        "Abagenyi bangi inho!",
+        "Ee. Lero tujaguza.",
+        "Kulika, mugole! Nkwagaliza obulamu obulungi!",
+        "Tujaguze! Mwebale okudha mwena!"
+      ],
+      "questions": [
+        { "question": "{@nakato} atwala kirabo ki?", "options": ["Keeki", "Sukaali n’omunyo", "Enkumbi"] },
+        { "question": "Ani ayamba omugole ku kwanjula?", "options": ["Senga", "Kabaka", "Omusomesa"] },
+        { "question": "Mu Lungereza ogamba otya “Nkwagaliza”?", "options": ["Nkwagaliza", "Nkwagala", "Nkulinze"] }
+      ]
+    }
+  }
+}

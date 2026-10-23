@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u24",
+  "words": {
+    "okufumba": { "text": "okufumba" },
+    "entamu": { "text": "entamu" },
+    "omuliro": { "text": "omuliro" },
+    "amafuta": { "text": "amafuta" },
+    "obutungulu": { "text": "obutungulu" },
+    "ennyaanya": { "text": "enyaanya" },
+    "sooka": { "text": "Sooka" },
+    "sala": { "text": "Sala" },
+    "teeka": { "text": "Teeka" },
+    "gattako": { "text": "Gatako" },
+    "okusiika": { "text": "okusiika" },
+    "endagala": { "text": "endagala" },
+    "okusiba": { "text": "okusiba" },
+    "tulye": { "text": "Tulye" },
+    "nkkuse": { "text": "Nkuse" },
+    "webale-okufumba": { "text": "Webale okufumba" },
+    "chemsha": { "text": "Bugumya" },
+    "kaanga": { "text": "Siika" },
+    "kitunguu": { "text": "akatungulu" },
+    "changanya": { "text": "Tabula" }
+  },
+  "sentences": {
+    "s24-njagala-okufumba": { "text": "Njagala okufumba emere." },
+    "s24-teeka-entamu": { "text": "Teeka entamu ku muliro." },
+    "s24-gattako-amafuta": { "text": "Gatako amafuta." },
+    "s24-sooka-sala": { "text": "Sooka sala obutungulu." },
+    "s24-oluvannyuma-ennyaanya": { "text": "Oluvanyuma gatako enyaanya." },
+    "s24-gattako-omunnyo": { "text": "Gatako omunyo katono." },
+    "s24-okusiika": { "text": "Siika obutungulu mu mafuta." },
+    "s24-okusiba": { "text": "Tusiba matooke mu ndagala." },
+    "s24-tulye": { "text": "Emere eyide. Tulye!" },
+    "s24-mpa-ku-mmere": { "text": "Mpa ku mere, nyabo." },
+    "s24-nkkuse": { "text": "Nkuse, weebale inho." },
+    "s24-webale-okufumba": { "text": "Webale okufumba, Dhaadha!" },
+    "s-kupika": { "text": "Nsiima okufumba." },
+    "s-mafuta-moto": { "text": "Amafuta gookya inho." },
+    "s-kata-kitunguu": { "text": "Sala akatungulu." },
+    "s-chemsha-maji": { "text": "Bugumya amaadhi." },
+    "s-kaanga-vitunguu": { "text": "Siika obutungulu." },
+    "s-changanya-pamoja": { "text": "Tabula wamu." }
+  },
+  "phrases": [
+    "Teeka entamu ku muliro.",
+    "Sooka sala obutungulu.",
+    "Oluvanyuma gatako enyaanya.",
+    "Tusiba matooke mu ndagala.",
+    "Emere eyide. Tulye!",
+    "Nkuse, weebale inho.",
+    "Webale okufumba!"
+  ],
+  "dialogues": {
+    "u24s3l3": [{ "line": "Oyagala emere endala?", "options": ["Nedda, nkuse. Webale okufumba!", "Sooka sala obutungulu.", "Nkulinze ku siteegi."] }]
+  },
+  "stories": {
+    "cooking-luwombo": {
+      "title": "Okufumba ne {@jjajja}",
+      "summary": "{@amara} ayiga okufumba luwombo w’enkoko.",
+      "lines": [
+        "Lero tudha kufumba luwombo lw’enkoko.",
+        "Kale! Nkola ki?",
+        "Sooka sala obutungulu n’enyaanya.",
+        "Maze! Oluvanyuma?",
+        "Teeka enkoko n’enva mu ndagala, osibe bulungi.",
+        "Oluvanyuma tuteeka entamu ku muliro, esaawa ibiri.",
+        "Esaawa ibiri? Nina enjala inho!",
+        "Haha! Emere eyide. Tulye!",
+        "Kiwooma inho! Webale okufumba, Dhaadha."
+      ],
+      "questions": [
+        { "question": "{@amara} asooka kukola ki?", "options": ["Asala obutungulu n’enyaanya", "Akuma omuliro", "Anaaba entamu"] },
+        { "question": "Luwombo afumbibwa banga ki?", "options": ["Edakiika ikumi", "Esaawa ibiri", "Ekiro kyona"] },
+        { "question": "Mu Lungereza {@amara} agamba ki ng’amaze okulya?", "options": ["Webale okufumba", "Sooka sala", "Nkulinze"] }
+      ]
+    }
+  }
+}

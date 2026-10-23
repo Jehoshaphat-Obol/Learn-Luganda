@@ -1,0 +1,83 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u32",
+  "words": {
+    "ennyanja": { "text": "enyanja" },
+    "nnalubaale": { "text": "Nalubaale" },
+    "omugga": { "text": "omuga" },
+    "kiyira": { "text": "Kiyira" },
+    "ekibira": { "text": "ekibira" },
+    "omuti": { "text": "omuti" },
+    "emiti": { "text": "emiti" },
+    "olusozi": { "text": "olusozi" },
+    "ensozi": { "text": "ensozi" },
+    "ebimuli": { "text": "ebimuli" },
+    "ettaka": { "text": "etaka" },
+    "okusimba": { "text": "okusimba" },
+    "okukuuma": { "text": "okukuuma" },
+    "kasasiro": { "text": "kasasiro" },
+    "tosuula": { "text": "Tosuula" },
+    "mlima": { "text": "olusozi oluwanvu" },
+    "mazingira": { "text": "obutonde bw'ensi" },
+    "tutunze": { "text": "tukuume" },
+    "kupanda-miti": { "text": "okusimba emiti" }
+  },
+  "sentences": {
+    "s32-ennyanja-nnene": { "text": "Nalubaale ye nyanja enene." },
+    "s32-ebyennyanja": { "text": "Ebyenyanja biva mu nyanja." },
+    "s32-omugga-kiyira": { "text": "Kiyira gwe muga omuwanvu." },
+    "s32-kiyira-jinja": { "text": "Kiyira gutandikira e Jinja." },
+    "s32-ekibira": { "text": "Enkima ziri mu kibira." },
+    "s32-omuti-omunene": { "text": "Omuti guno munene inho." },
+    "s32-ensozi-musanvu": { "text": "Kampala erina ensozi musanvu." },
+    "s32-ku-lusozi": { "text": "Enyumba yange eri ku lusozi." },
+    "s32-ebimuli": { "text": "Ebimuli birungi inho." },
+    "s32-tusimbe-emiti": { "text": "Tusimbe emiti!" },
+    "s32-tukuume-ettaka": { "text": "Tukuume etaka lyafe." },
+    "s32-tosuula-kasasiro": { "text": "Tosuula kasasiro wano!" },
+    "s-kilimanjaro": { "text": "Kilimanjaro lwe lusozi olusinga obuwanvu mu Afrika." },
+    "s-ziwa-victoria": { "text": "Nalubaale nene inho." },
+    "s-mto-nile": { "text": "Kiyira kitandikira mu Uganda." },
+    "s-msitu": { "text": "Ekibira kirimu emiti mingi." },
+    "s-maua": { "text": "Ebimuli birungi." },
+    "s-ardhi": { "text": "Etaka kikalu." },
+    "s-tutunze": { "text": "Tukuume obutonde bw'ensi bwafe." },
+    "s-kupanda-miti": { "text": "Esomero lisimba emiti buli mwaka." }
+  },
+  "phrases": [
+    "Nalubaale ye nyanja enene.",
+    "Kiyira gutandikira e {@getaway}.",
+    "Enkima ziri mu kibira.",
+    "{@city} erina ensozi musanvu.",
+    "Tusimbe emiti!",
+    "Tosuula kasasiro wano!"
+  ],
+  "dialogues": {
+    "u32s3l3": [{ "line": "Tukole ki okukuuma etaka?", "options": ["Tusimbe emiti, tosuula kasasiro.", "Kabaka awangaale!", "Nywesa ente amaadhi."] }]
+  },
+  "stories": {
+    "source-of-nile": {
+      "title": "Ensibuko ya Kiyira",
+      "summary": "{@ssali} atwala {@emma} okubona Kiyira w’atandikira.",
+      "lines": [
+        "Tutuuse e {@getaway}! Bona, Kiyira.",
+        "Wa Kiyira w’atandikira?",
+        "Wano! Amaadhi gava mu Nalubaale.",
+        "Ekinyonyi ekyo kiki?",
+        "Ekyo ngaali! Ebuuka wagulu w’omuga.",
+        "Ebimuli n’emiti birungi inho wano.",
+        "Ee. Naye bona, kasasiro ku lubalama.",
+        "Tukuume etaka lyafe! Tukung’aanye kasasiro.",
+        "Kirungi inho, {@emma}!"
+      ],
+      "questions": [
+        { "question": "Amaadhi ga Kiyira gava wa?", "options": ["Enyanja Nalubaale", "Ekibira", "Enkuba yoka"] },
+        { "question": "{@ssali} abona ki ku lubalama?", "options": ["Kasasiro", "Empologoma", "Eryato"] },
+        {
+          "question": "Mu Lungereza ogamba otya “Tukuume etaka lyafe”?",
+          "options": ["Tukuume etaka lyafe", "Tosuula kasasiro", "Tusimbe emiti"]
+        }
+      ]
+    }
+  }
+}

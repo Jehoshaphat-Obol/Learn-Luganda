@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u26",
+  "notes": {
+    "kabaka": "The king of Buganda.",
+    "nnaabagereka": "The Kabaka’s wife.",
+    "ssaabasajja": "A title for the Kabaka.",
+    "awangaale": "Kabaka awangaale! Long live the Kabaka!",
+    "lukiiko": "Buganda’s parliament.",
+    "bulange": "The building where the Lukiiko meets, in Mengo."
+  },
+  "tips": { "u26s1": "royal-words", "u26s3": "kintu" },
+  "glosses": {
+    "kasubi-visit": { "0": { "gano": "these (for ama- nouns)" }, "1": { "aziikidwa": "is buried" }, "5": { "Abeera": "he lives" }, "7": { "eyo": "there" } }
+  },
+  "guidebook": {
+    "intro": "Buganda is one of the oldest kingdoms in East Africa, and the Kabaka is still at the heart of Ganda identity.",
+    "tips": [
+      {
+        "id": "royal-words",
+        "title": "Royal titles",
+        "body": [
+          "The king is the **Kabaka**, also called **Saabasadha** (chief of men). His wife is the **Naabagereka**. The **Katikkiro** (prime minister) leads the Kabaka’s government, and the **Lukiiko** is the kingdom’s parliament, meeting at **Bulange**.",
+          "Answer **Kabaka awangaale!** with **Awangaale!**"
+        ]
+      },
+      {
+        "id": "kintu",
+        "title": "Kintu and the beginning",
+        "body": [
+          "In Ganda tradition, **Kintu** was the first Kabaka and the first man, who married **Nnambi**, daughter of the sky. Their story explains how death came into the world, and you will meet it again in the folktales of Unit 40."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Kasubi tombs",
+        "body": [
+          "The **Amasiro g’e Kasubi** are the burial grounds of four Kabakas, under a huge thatched house. They are a UNESCO World Heritage Site, rebuilt by hand after a fire in 2010."
+        ]
+      }
+    ]
+  }
+}

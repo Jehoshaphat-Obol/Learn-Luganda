@@ -1,0 +1,95 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u16",
+  "words": {
+    "ttakisi": { "text": "takisi" },
+    "bbaasi": { "text": "baasi" },
+    "paaka": { "text": "paaka" },
+    "siteegi": { "text": "siteegi" },
+    "egenda": { "text": "egenda" },
+    "mmotoka": { "text": "motoka" },
+    "bodaboda": { "text": "bodaboda" },
+    "eggaali": { "text": "egaali" },
+    "mpola": { "text": "mpola" },
+    "mangu": { "text": "mangu" },
+    "olugendo": { "text": "olugendo" },
+    "okuva": { "text": "okuva" },
+    "okutuuka": { "text": "okutuuka" },
+    "ntuuse": { "text": "Ntuuse" },
+    "ennyonyi": { "text": "enyonyi" },
+    "tugende": { "text": "Tugende" },
+    "olugendo-olulungi": { "text": "Olugendo olulungi!" },
+    "tiketi": { "text": "tikiti" },
+    "treni": { "text": "egaali y'omuka" },
+    "uwanja-wa-ndege": { "text": "ekisaawe ky'enyonyi" },
+    "kusafiri": { "text": "okutambula" },
+    "nitasafiri": { "text": "Naatambula" },
+    "tutaondoka": { "text": "Tunaasimbula" },
+    "itafika": { "text": "eneetuuka" },
+    "mzigo": { "text": "omugugu" },
+    "nimechelewa": { "text": "Ndude" }
+  },
+  "sentences": {
+    "s16-ttakisi-egenda-wa": { "text": "Takisi eno egenda wa?" },
+    "s16-ttakisi-egenda-entebbe": { "text": "Takisi egenda {@nearby}." },
+    "s16-bbaasi-eri-ku-paaka": { "text": "Baasi eri ku paaka." },
+    "s16-yimirira-ku-siteegi": { "text": "Yimirira ku siteegi." },
+    "s16-mmotoka-yange": { "text": "Motoka yange mpya." },
+    "s16-ntwala-ku-bodaboda": { "text": "Ŋŋenda ku bodaboda.", "alts": ["Ngenda ku bodaboda."] },
+    "s16-genda-mpola": { "text": "Genda mpola, sebo!" },
+    "s16-tugende-mangu": { "text": "Tugende mangu!" },
+    "s16-okuva-kampala": { "text": "Okuva e {@city} okutuuka e {@hometown}." },
+    "s16-olugendo-luwanvu": { "text": "Olugendo luwanvu." },
+    "s16-ntuuse": { "text": "Ntuuse bulungi." },
+    "s16-ennyonyi-ebuuka": { "text": "Enyonyi ebuuka." },
+    "s16-olugendo-olulungi": { "text": "Weeraba! Olugendo olulungi!" },
+    "s-pole-pole": { "text": "Mpola mpola, mwatu." },
+    "s-haraka": { "text": "Mangu, mangu!" },
+    "s-tiketi-bei": { "text": "Tikiti sente meka?" },
+    "s-kituo-cha-basi": { "text": "Siteegi ya baasi eri luda wa?" },
+    "s-safari-ndefu": { "text": "Olugendo lw'e {@city} luwanvu." },
+    "s-twende-kituoni": { "text": "Tugende ku siteegi." },
+    "s-uwanja-wa-ndege": { "text": "Ekisaawe ky'enyonyi kiri wala." },
+    "s-nitasafiri-kesho": { "text": "Naatambula enkya." },
+    "s-treni-itafika": { "text": "Egaali y'omuka eneetuuka saawa meka?" },
+    "s-mzigo-mzito": { "text": "Omugugu gwo muzito!" },
+    "s-nimechelewa": { "text": "Ndude! Nsonyiwa." }
+  },
+  "phrases": [
+    "Takisi eno egenda wa?",
+    "Yimirira ku siteegi.",
+    "Genda mpola, sebo!",
+    "Okuva e {@city} okutuuka e {@hometown}.",
+    "Ntuuse bulungi.",
+    "Olugendo olulungi!"
+  ],
+  "dialogues": {
+    "u16s1l3": [{ "line": "Ogenda wa?", "options": ["Ŋŋenda {@nearby}. Takisi eno egenda {@nearby}?", "Ntya omusota!", "Nina ekibuuzo."] }]
+  },
+  "stories": {
+    "taxi-to-jinja": {
+      "title": "Takisi egenda e {@getaway}",
+      "summary": "{@nakato} afuna takisi entuufu era atuuka e {@getaway}.",
+      "lines": [
+        "Sebo, takisi eno egenda wa?",
+        "Egenda Mukono. Iwe ogenda wa?",
+        "Ŋŋenda {@getaway}.",
+        "Takisi ya {@getaway} eri eri, ku siteegi.",
+        "Weebale inho! Sente meka okutuuka e {@getaway}?",
+        "Omutwalo gumu.",
+        "Olugendo luwanvu?",
+        "Nedda, saawa ibiri zoka.",
+        "Kale. Tugende!",
+        "Maama, ntuuse bulungi e {@getaway}!"
+      ],
+      "questions": [
+        { "question": "{@nakato} ayagala kugenda wa?", "options": ["Mukono", "{@getaway}", "{@hometown}"] },
+        { "question": "Okusasula kwa sente meka?", "options": ["Enkumi itaano", "Mitwalo emu", "Lukumi"] },
+        {
+          "question": "{@nakato} agamba atya maama we ti atuuse, mu Lungereza?",
+          "options": ["Ntuuse bulungi.", "Genda mpola.", "Yimirira wano."]
+        }
+      ]
+    }
+  }
+}

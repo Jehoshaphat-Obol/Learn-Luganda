@@ -57,7 +57,7 @@
       "speakersMillions": 3.1,
       "wave": 1,
       "draftConfidence": "low",
-      "inRegistry": false
+      "inRegistry": true
     },
     {
       "code": "cgg",

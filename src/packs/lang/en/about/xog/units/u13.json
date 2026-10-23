@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u13",
+  "notes": {
+    "ente": "One or many: n- nouns often look the same in the plural.",
+    "zirya": "For n- animals: ente zirya, the cows eat.",
+    "engaali": "Uganda’s national bird, on the flag.",
+    "ebuuka": "For n- nouns. Okubuuka, to fly."
+  },
+  "tips": { "u13s1": "same-plural" },
+  "glosses": {
+    "village-farm": {
+      "1": { "biri": "are (for ebi- nouns)" },
+      "2": { "Bona": "look" },
+      "8": { "Ogwo": "that (for mu- nouns)", "muguwa": "a rope" },
+      "11": { "wagulu": "up, above" }
+    }
+  },
+  "guidebook": {
+    "intro": "Most animal names belong to the n- class, so the agreement you learnt for clothes works for animals too.",
+    "tips": [
+      {
+        "id": "same-plural",
+        "title": "One cow, many cows",
+        "body": [
+          "Many n- nouns are the same in the singular and the plural: **ente** is one cow or a herd. The words around the noun tell you which. **Ente erya** is “the cow eats”, **ente zirya** is “the cows eat”.",
+          "**Waliwo** means “there is” or “there are”, for any noun: **Waliwo empologoma?** (Is there a lion?)."
+        ],
+        "table": [
+          ["", "One", "Many"],
+          ["eats", "ente erya", "ente zirya"],
+          ["is here / are here", "embwa eri wano", "embwa ziri wano"],
+          ["my", "embuzi yange", "embuzi zange"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "The crested crane",
+        "body": [
+          "The grey crowned crane, **engaali**, stands on Uganda’s flag and coat of arms. It mates for life and dances to court, which is why it is a symbol of the nation. (It is also our mascot’s inspiration.)"
+        ]
+      },
+      {
+        "title": "Cattle as wealth",
+        "body": [
+          "Cows have long meant wealth and status. They feature in bride price, in proverbs and in many clan totems you’ll meet in Section 4."
+        ]
+      }
+    ]
+  }
+}

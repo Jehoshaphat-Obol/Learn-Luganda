@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u22",
+  "words": {
+    "nnyumirwa": { "text": "Nyumirwa" },
+    "okudduka": { "text": "okuduka" },
+    "okuwuga": { "text": "okuwuga" },
+    "era": { "text": "era" },
+    "omupiira": { "text": "omupiira" },
+    "nzannya": { "text": "Nzanya" },
+    "ttiimu": { "text": "tiimu" },
+    "goolo": { "text": "goolo" },
+    "ewangudde": { "text": "ewangude" },
+    "awangudde": { "text": "awangude" },
+    "okuyimba": { "text": "okuyimba" },
+    "okuzina": { "text": "okuzina" },
+    "ennyimba": { "text": "enyimba" },
+    "omuzannyo": { "text": "omuzanyo" },
+    "omweso": { "text": "omweso" },
+    "muda": { "text": "akaseera" },
+    "kuangalia": { "text": "okubona" },
+    "mashabiki": { "text": "abawagizi" },
+    "tumeshinda": { "text": "Tuwangude" },
+    "tumefungwa": { "text": "Tukubidwa" },
+    "karata": { "text": "kaadi" },
+    "bao": { "text": "omweso" }
+  },
+  "sentences": {
+    "s22-nnyumirwa-okusoma": { "text": "Nyumirwa okusoma ebitabo." },
+    "s22-ndduka-ku-makya": { "text": "Nyumirwa okuduka ku makya." },
+    "s22-okuwuga": { "text": "Njagala okuwuga mu nyanja." },
+    "s22-era": { "text": "Nsoma, era nzanya." },
+    "s22-nzannya-omupiira": { "text": "Nzanya omupiira ku Lwamukaaga." },
+    "s22-ttiimu-yange": { "text": "Tiimu yange ewangude!" },
+    "s22-goolo": { "text": "Goolo! Goolo ibiri!" },
+    "s22-ani-awangudde": { "text": "Ani awangude?" },
+    "s22-okuyimba": { "text": "Nyumirwa okuyimba n’okuzina.", "alts": ["Nyumirwa okuyimba nokuzina."] },
+    "s22-ennyimba-za-luganda": { "text": "Njagala enyimba z’Oluganda.", "alts": ["Njagala enyimba zoluganda."] },
+    "s22-omuzannyo": { "text": "Omuzanyo gutandika saawa ikumi." },
+    "s22-omweso": { "text": "Dhaadha azanya omweso." },
+    "s-sina-muda": { "text": "Sirina kaseera lero." },
+    "s-kuogelea": { "text": "Nsiima okuwuga." },
+    "s-neema-kuimba": { "text": "{@amara} asiima okuyimba." },
+    "s-kuangalia-mpira": { "text": "Nsiima okubona omupiira." },
+    "s-mpira-wa-miguu": { "text": "Nsiima omupiira gw'ebigere." },
+    "s-timu-hodari": { "text": "Tiimu yange nungi." },
+    "s-goli": { "text": "Goolo! Goolo!" },
+    "s-mchezo-gani": { "text": "Muzanyo ki?" },
+    "s-mashabiki-wengi": { "text": "Abawagizi bangi!" },
+    "s-tumeshinda": { "text": "Tuwangude!" },
+    "s-tumefungwa-leo": { "text": "Tukubidwa lero." },
+    "s-wimbo-wako": { "text": "Nsiima oluyimba lwo." },
+    "s-nyimbo-bongo": { "text": "Enyimba za bongo flava." },
+    "s-tucheze-karata": { "text": "Tuzanye kaadi!" },
+    "s-babu-bao": { "text": "Dhaadha azanya omweso." }
+  },
+  "phrases": [
+    "Nyumirwa okusoma ebitabo.",
+    "Nzanya omupiira ku Lwamukaaga.",
+    "Tiimu yange ewangude!",
+    "Ani awangude?",
+    "Nyumirwa okuyimba n’okuzina.",
+    "Njagala enyimba z’Oluganda."
+  ],
+  "dialogues": { "u22s1l3": [{ "line": "Onyumirwa ki?", "options": ["Nyumirwa okuduka n’okuwuga.", "Nkooye inho.", "Simanyi omweso."] }] },
+  "stories": {
+    "match-day": {
+      "title": "Olunaku lw’omupiira",
+      "summary": "{@ssali} ne {@mukasa} babona Cranes ng’ezanya.",
+      "lines": [
+        "{@mukasa}! Omupiira gutandika saawa ikumi. Odha?",
+        "Ee! Naye nkooye. Nkoze inho lero.",
+        "Totya, tudha kutuula butuuzi. Tunywa caayi.",
+        "Tiimu yafe edha kuwangula?",
+        "Simanyi. Tiimu eyo nungi inho.",
+        "Goolo! Goolo!",
+        "Nsangaire inho! Ani akubye goolo?",
+        "Saabaganzi! Tiimu yafe ewangude!"
+      ],
+      "questions": [
+        { "question": "{@mukasa} awulira atya?", "options": ["Musangaafu", "Akooye", "Anyiize"] },
+        { "question": "Kiki ekibadewo atyanu?", "options": ["Goolo", "Omupiira guwede", "Enkuba etandise"] },
+        {
+          "question": "Mu Lungereza ogamba otya “tiimu yafe ewangude”?",
+          "options": ["Tiimu yafe ewangude", "Ani awangude?", "Nyumirwa omupiira"]
+        }
+      ]
+    }
+  }
+}

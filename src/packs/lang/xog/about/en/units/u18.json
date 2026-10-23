@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u18",
+  "tips": { "u18s1": "question-words", "u18s3": "in-english" },
+  "guidebook": {
+    "intro": "Buuza ebibuuzo: ki, ani, wa, di, lwaki ne kitya.",
+    "tips": [
+      {
+        "id": "question-words",
+        "title": "Ekigambo ky’ekibuuzo kisooka",
+        "body": [
+          "Mu Lusoga ekigambo ky’ekibuuzo kitera okudha ku nkomerero: **Ekitabo kyange kiri wa?** Mu Lungereza kisooka: **Where is my book?**"
+        ],
+        "table": [
+          ["Olusoga", "Olungereza"],
+          ["ki? / kiki?", "what?"],
+          ["ani?", "who?"],
+          ["wa?", "where?"],
+          ["di?", "when?"],
+          ["lwaki?", "why?"],
+          ["kitya?", "how?"]
+        ]
+      },
+      {
+        "id": "in-english",
+        "title": "Okuyiga okuva mu bantu",
+        "body": [
+          "Ebibuuzo bino bikuyamba okuyiga ebigambo ebigya: **What is this called in English?** **How do you say “ekibo” in English?** **How do you spel it?**",
+          "Okudamu **Why?** tandika ne **Because**: **Because I want to speak with people.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "“I speak a little”",
+        "body": ["Bw’ogamba **I speak a little English**, abantu batera okwogera mpola n’okukuyamba. Tewatya okukozesa Olungereza lw’omanyi."]
+      }
+    ]
+  }
+}

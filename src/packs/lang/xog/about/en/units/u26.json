@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u26",
+  "tips": { "u26s1": "titles", "u26s3": "long-ago" },
+  "guidebook": {
+    "intro": "Yogera ku bwakabaka bwa Buganda mu Lungereza: Kabaka, Lukiiko, Bulange n’amasiro.",
+    "tips": [
+      {
+        "id": "titles",
+        "title": "Enukuta enene ku bitiibwa",
+        "body": [
+          "Amanya g’abantu, ebifo n’ebitiibwa gatandika n’enukuta enene: **the Kabaka**, **the Queen**, **His Majesty**, **Buganda**, **Mengo**.",
+          "Ku Kabaka oteeka **the**: **The Kabaka rules Buganda.**"
+        ]
+      },
+      {
+        "id": "long-ago",
+        "title": "Ebyafaayo",
+        "body": [
+          "Okunyonyola ebyafaayo, kozesa ebikolwa by’ebyayita: **Very long ago, Kintu was the first Kabaka.** Ku bintu ebikyaliwo atyanu kozesa **is**: **The kingdom of Buganda is very old.**"
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Amasiro g’e Kasubi",
+        "body": ["Amasiro g’e Kasubi gamanyikidwa mu nsi yona: **The Kasubi Tombs are a World Heritage Site.** Abalambuzi bangi badha okugalaba."]
+      }
+    ]
+  }
+}

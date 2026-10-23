@@ -1,0 +1,77 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u29",
+  "words": {
+    "engoma": { "text": "engoma" },
+    "okukuba": { "text": "okukuba" },
+    "endingidi": { "text": "endingidi" },
+    "amadinda": { "text": "amadinda" },
+    "ennanga": { "text": "enanga" },
+    "oluyimba": { "text": "oluyimba" },
+    "omuyimbi": { "text": "omuyimbi" },
+    "amazina": { "text": "amazina" },
+    "bakisimba": { "text": "Bakisimba" },
+    "abayimba": { "text": "abayimba" },
+    "abazina": { "text": "abazina" },
+    "akuba": { "text": "akuba" },
+    "kinyuma": { "text": "kinyuma" },
+    "mazoezi": { "text": "okwegezaamu" },
+    "mchezaji": { "text": "omuzanyi" },
+    "mpiga-ngoma": { "text": "omukubi w'engoma" },
+    "bendi": { "text": "bandi" },
+    "taarab": { "text": "taarab" },
+    "gitaa": { "text": "gita" },
+    "sauti": { "text": "edoboozi" },
+    "tamasha": { "text": "ekivulu" },
+    "kusikiliza": { "text": "okuwuliriza" }
+  },
+  "sentences": {
+    "s29-kuba-engoma": { "text": "Kuba engoma!" },
+    "s29-njagala-okukuba-engoma": { "text": "Njagala okukuba engoma." },
+    "s29-endingidi": { "text": "Endingidi n’amadinda.", "alts": ["Endingidi namadinda."] },
+    "s29-ennanga": { "text": "Enanga nungi inho." },
+    "s29-oluyimba-lwe": { "text": "Oluyimba luno lulungi." },
+    "s29-omuyimbi": { "text": "Omuyimbi ayimba bulungi." },
+    "s29-amazina-kinyuma": { "text": "Amazina gano ganyuma!" },
+    "s29-bakisimba": { "text": "Tuzina Bakisimba." },
+    "s29-abantu-abayimba": { "text": "Abantu abayimba bangi." },
+    "s29-abaana-abazina": { "text": "Abaana abazina basangaire." },
+    "s29-omusajja-akuba": { "text": "Omusadha akuba engoma ye taata." },
+    "s29-kinyuma": { "text": "Kinyuma inho!" },
+    "s-wanacheza-ngoma": { "text": "Bazina." },
+    "s-mazoezi-kila-siku": { "text": "Neegezaamu buli lunaku." },
+    "s-mwimbaji": { "text": "Omuyimbi alina edoboozi edungi." },
+    "s-mchezaji": { "text": "{@amara} muzinyi mukugu." },
+    "s-mpiga-ngoma": { "text": "Omukubi w'engoma ye dhaadha wange." },
+    "s-bendi": { "text": "Bandi edha kukuba enyimba ekiro." },
+    "s-taarab": { "text": "Dhaadha ayagala inho taarab." },
+    "s-kupiga-gitaa": { "text": "Njiga okukuba gita." },
+    "s-tamasha": { "text": "Waliwo ekivulu ku Lwomukaaga." },
+    "s-kusikiliza": { "text": "Nsiima okuwuliriza omuziki." },
+    "s-sauti": { "text": "Edoboozi lingi inho!" }
+  },
+  "phrases": ["Kuba engoma!", "Oluyimba luno lulungi.", "Omuyimbi ayimba bulungi.", "Tuzina Bakisimba.", "Abaana abazina basangaire.", "Kinyuma inho!"],
+  "dialogues": { "u29s3l3": [{ "line": "Omusadha akuba engoma y’ani?", "options": ["Ye taata wange!", "Engoma nene.", "Mwebale okudha."] }] },
+  "stories": {
+    "drum-lesson": {
+      "title": "Okuyiga okukuba engoma",
+      "summary": "{@amara} ayiga okukuba engoma olw’ekivulu ky’esomero.",
+      "lines": [
+        "Sebo, njagala okukuba engoma ku mukolo gw’esomero.",
+        "Kirungi! Kwata engoma eno.",
+        "Enene oba entono?",
+        "Entono. Wuliriza: bum, bum, ka-bum.",
+        "Bum, bum, ka-bum! Kinyuma inho!",
+        "Abaana abazina badha kuzina Bakisimba.",
+        "Ate ani adha kuyimba?",
+        "{@nakato}! Ye muyimbi omulungi.",
+        "Nsangaire inho. Weebale, sebo!"
+      ],
+      "questions": [
+        { "question": "{@amara} akuba ngoma ki?", "options": ["Enene", "Entono", "Tewali ngoma"] },
+        { "question": "Abazinyi banaazina ki?", "options": ["Bakisimba", "Omupiira", "Omweso"] },
+        { "question": "Mu Lungereza ogamba otya “abaana abazina”?", "options": ["abaana abazina", "abaana bazina", "abaana bazanya"] }
+      ]
+    }
+  }
+}

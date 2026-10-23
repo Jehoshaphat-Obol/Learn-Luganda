@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Olungereza lwe lulimi lw’egwanga mu Uganda: mu masomero, mu ofiisi ne mu mawulire, era lwogerwa mu nsi nyingi.",
+  "notes": "Drafted by Claude (AI) for the Lusoga courses (#129) from the Luganda text, with low confidence in Lusoga; needs a native-speaker review.",
+  "landing": {
+    "hello": "Hello!",
+    "thanks": "Thank you",
+    "place": "nsi z’ebweru",
+    "word": "learn — okuyiga (ekikolwa)",
+    "words": [
+      ["Hello", "Oli otya"],
+      ["I’m fine", "Gyendi"],
+      ["Thank you", "Weebale"],
+      ["Okay", "Kale"],
+      ["Friend", "Mukwano"],
+      ["Water", "Amaadhi"],
+      ["Food", "Emere"],
+      ["Sir", "Sebo"],
+      ["Madam", "Nyabo"],
+      ["Welcome", "Tusangaire okukubona"]
+    ],
+    "why": {
+      "title": "Olulimi lw’**esomero n’omulimu ogwa buli lunaku.**",
+      "text": "Olungereza lwe lulimi lw’egwanga mu Uganda. Lukozesebwa mu masomero, mu kooti, mu ofiisi ne ku yintaneti. Luyige osobole okusoma, okufuna omulimu, n’okwogera n’abantu okuva mu nsi yona.",
+      "cards": [
+        { "title": "Ku somero", "text": "Tegeera abasomesa n’ebitabo, era oyitire wagulu mu bigezo." },
+        { "title": "Ku mulimu", "text": "Wandiika, yogera era okole n’abantu ab’enjawulo n’obwesige." },
+        { "title": "Mu nsi yona", "text": "Yogera n’abagenyi, otambule era osome ku yintaneti." }
+      ]
+    },
+    "sample": {
+      "prompt": "Kigambo ki ekitegeeza “weebale”?",
+      "options": ["How are you?", "Thank you", "No"],
+      "answer": "Thank you",
+      "explain": "_Thank you_ kitegeeza weebale."
+    },
+    "start": { "word": "Let’s go!", "caption": "let’s go — ka tutandike nno" },
+    "farewell": "Thank you very much — weebale inho.",
+    "audience": "Aboogera Olusoga abaagala okuyiga Olungereza okuva ku ntandikwa: abayizi, abakozi, n’abazade abaagala okuyamba abaana baabwe ku somero.",
+    "first": "Okulamusa, okweyanjula n’enamba, oluvanyuma ab’omu maka, emere, akatale, obude, ebifo, awaka n’obulamu, ekitundu ku kitundu."
+  },
+  "cast": { "emma": "Omugenyi okuva ebweru ayogera Olungereza" }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u31",
+  "notes": {
+    "nsomesa": "-soma (read) + -es-: make someone read.",
+    "ndisa": "-lya (eat) + -is-: make someone eat.",
+    "nnywesa": "-nywa (drink) + -es-.",
+    "ntunza": "Often used for selling as a business."
+  },
+  "tips": { "u31s3": "causative" },
+  "guidebook": {
+    "intro": "Small businesses keep Uganda running: market stalls, kiosks, tailors and boda bodas. This unit adds verbs for making someone else do something.",
+    "tips": [
+      {
+        "id": "causative",
+        "title": "Making someone do: -is- / -es-",
+        "body": [
+          "Add **-is-** or **-es-** before the last vowel to mean “make someone do” or “help someone do”: **-soma** (read) becomes **-somesa** (teach), **-lya** (eat) becomes **-lisa** (feed), **-nywa** (drink) becomes **-nywesa** (give a drink).",
+          "You already know one: **omusomesa** (teacher) is literally “one who makes people read”."
+        ],
+        "table": [
+          ["Verb", "Make do", "English"],
+          ["-soma", "-somesa", "teach"],
+          ["-lya", "-lisa", "feed"],
+          ["-nywa", "-nywesa", "give a drink"],
+          ["-tunda", "-tunza", "sell (as trade)"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Savings groups",
+        "body": [
+          "Many people save in groups: members pay in every week and take turns receiving the pot. These groups also lend to members, so a debt (**ebanja**) is owed to friends, not a bank."
+        ]
+      }
+    ]
+  }
+}

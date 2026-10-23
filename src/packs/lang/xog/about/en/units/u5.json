@@ -1,0 +1,40 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u5",
+  "notes": {
+    "bbalaza": "Enaku za wiiki zitandika n’enukuta enene: Monday, Tuesday.",
+    "ssaawa-emu": "Saawa emu ku makya mu Lungereza ye “seven o’clock”. Gatako mukaaga."
+  },
+  "tips": { "u5s2": "days-on", "u5s3": "english-time" },
+  "guidebook": {
+    "intro": "Yogera ku lero, enkya ne idho, enaku za wiiki n’esaawa. Esaawa z’Olungereza zibalibwa mu ngeri ya njawulo, kale soma akatabo kano.",
+    "tips": [
+      {
+        "id": "english-time",
+        "title": "Esaawa z’Olungereza",
+        "body": [
+          "Mu Lusoga esaawa zibalibwa okuva enjuba lw’evaayo: **saawa emu** ku makya. Mu Lungereza zibalibwa okuva mu tumbi, kale saawa emu ku makya ye **seven o’clock**.",
+          "Gatako mukaaga: saawa ina ye **ten o’clock**, saawa mukaaga ye **twelve o’clock**."
+        ],
+        "table": [["Lungereza", "Lusoga"], ["seven o’clock", "saawa emu"], ["ten o’clock", "saawa ina"], ["twelve o’clock", "saawa mukaaga"]],
+        "targetColumns": [0]
+      },
+      {
+        "id": "days-on",
+        "title": "“On Monday”",
+        "body": [
+          "Enaku za wiiki zitandika n’enukuta enene: **Monday**, **Friday**. Ku lunaku ogamba **on**: **on Monday** = ku Balaza.",
+          "Ku bude bw’olunaku ogamba **in**: **in the morning**, **in the afternoon**. Naye ekiro kiri **at night**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Esaawa z’Abaganda",
+        "body": [
+          "Mu Uganda, bw’owulira omuntu ng’ayogera Olungereza n’agamba “seven”, buuza oba ategeeza saawa emu. Abantu abamu bagamba **seven o’clock** ate abalala bagamba “saa moja” oba “saawa emu”."
+        ]
+      }
+    ]
+  }
+}

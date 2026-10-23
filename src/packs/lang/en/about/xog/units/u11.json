@@ -1,0 +1,42 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u11",
+  "notes": {
+    "akola": "a- means he or she.",
+    "tukola": "tu- means we.",
+    "bakola": "ba- means they (people).",
+    "njoza": "For washing things: dishes, clothes.",
+    "okusoma": "The ku- form is the infinitive: “to …”."
+  },
+  "tips": { "u11s2": "subject-prefixes" },
+  "guidebook": {
+    "intro": "With a handful of verbs and the subject prefixes, you can describe a whole day. The verb stem stays the same; only the front changes.",
+    "tips": [
+      {
+        "id": "subject-prefixes",
+        "title": "Who is doing it",
+        "body": [
+          "You know **n-** (I) and **o-** (you). Add **a-** (he or she), **tu-** (we), **mu-** (you all) and **ba-** (they). Lusoga has no separate word for he and she.",
+          "The **ku-** form is the infinitive, “to …”: **okusoma** (to read), **okukola** (to work). Use it after **Njagala**: **Njagala okusoma**, I want to read."
+        ],
+        "table": [
+          ["Person", "-kola (work)", "-soma (read)"],
+          ["I", "nkola", "nsoma"],
+          ["you", "okola", "osoma"],
+          ["he / she", "akola", "asoma"],
+          ["we", "tukola", "tusoma"],
+          ["you all", "mukola", "musoma"],
+          ["they", "bakola", "basoma"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Three meals",
+        "body": [
+          "**Ekyenkya** (breakfast) is often tea with bread or a snack, **ekyemisana** (lunch) is the main meal for many, and **ekyegulo** (supper) is eaten after dark. Each name comes from the time of day."
+        ]
+      }
+    ]
+  }
+}

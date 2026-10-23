@@ -1,0 +1,49 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u25",
+  "notes": {
+    "kya": "For eki- nouns: ekika kya Ffumbe, the clan of the civet cat.",
+    "gwa": "For omu- (things) nouns: omuziro gwa…, the totem of…",
+    "ffumbe": "A clan and its totem.",
+    "lugave": "A clan and its totem.",
+    "mmamba": "One of the largest clans.",
+    "ndi-wa": "Ndi wa Lugave: I am of the Lugave clan."
+  },
+  "tips": { "u25s1": "clans", "u25s2": "of" },
+  "guidebook": {
+    "intro": "Every Muganda belongs to a clan, passed down from the father. Clans shape names, marriage, ceremonies and even what people eat.",
+    "tips": [
+      {
+        "id": "clans",
+        "title": "Clan and totem",
+        "body": [
+          "A clan, **ekika**, is a large family that traces itself to one ancestor. Each clan has a main totem, **omuziro**, usually an animal or plant, and many take their name from it: the **Ffumbe** clan’s totem is the civet cat, **Lugave**’s is the pangolin.",
+          "Members respect their totem and do not eat it. People of the same clan count as relatives, **abooluganda**, and traditionally may not marry each other."
+        ]
+      },
+      {
+        "id": "of",
+        "title": "“Of” agrees with the first noun",
+        "body": [
+          "“Of” is **-a** with the class prefix of the thing owned: **ekika kya Mmamba** (the clan of Mmamba), **omuziro gwa Ngeye** (the totem of Ngeye), **esaati ya Nakato** (Nakato’s shirt), **omwana wa Mukasa** (Mukasa’s child)."
+        ],
+        "table": [
+          ["Noun", "of", "Example"],
+          ["omwana (child)", "wa", "omwana wa Mukasa"],
+          ["ekika (clan)", "kya", "ekika kya Ffumbe"],
+          ["omuziro (totem)", "gwa", "omuziro gwa Ngeye"],
+          ["esaati (shirt)", "ya", "esaati ya Nakato"],
+          ["ebitabo (books)", "bya", "ebitabo bya Amara"]
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Clan names",
+        "body": [
+          "Many Ganda names belong to a particular clan, so a name can tell people your clan before you say it. Buganda has over fifty clans, each led by a clan head, **omutaka**."
+        ]
+      }
+    ]
+  }
+}

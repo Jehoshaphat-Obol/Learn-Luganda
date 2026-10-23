@@ -1,0 +1,43 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u39",
+  "words": {
+    "okufukamira": { "text": "okufukamira" },
+    "abakadde": { "text": "abakade" },
+    "ekitiibwa": { "text": "ekitiibwa" },
+    "mwasuze": { "text": "Mwasuze mutya?" },
+    "mwebale": { "text": "Mwebale" },
+    "mwattu": { "text": "mwatu" },
+    "webale-okujja": { "text": "Webale okudha" },
+    "omugenyi": { "text": "omugenyi" },
+    "olyeko": { "text": "Olyeko" },
+    "adabu": { "text": "empisa" },
+    "hodi": { "text": "Ko ko ko!" },
+    "mkono-wa-kulia": { "text": "omukono ogwa dyo" },
+    "ukarimu": { "text": "obugabi" },
+    "karibu-tena": { "text": "Komawo nate" }
+  },
+  "sentences": {
+    "s39-bafukamira": { "text": "Abaana bafukamira nga babuuza abakade." },
+    "s39-mwasuze-ssebo": { "text": "Mwasuze mutya, sebo?" },
+    "s39-mwebale-nnyabo": { "text": "Mwebale inho, nyabo." },
+    "s39-ekitiibwa": { "text": "Tulina okuwa abakade ekitiibwa." },
+    "s39-mwattu": { "text": "Mwatu, mpa amaadhi." },
+    "s39-webale-okujja": { "text": "Webale okudha! Tusangaire okukubona." },
+    "s39-omugenyi": { "text": "Omugenyi ye mukulu." },
+    "s39-olyeko": { "text": "Tuula, olyeko." },
+    "s39-yingira-otuule": { "text": "Yingira otuule." },
+    "s-heshima": { "text": "Ekitiibwa kikulu inho." },
+    "s-adabu": { "text": "Omwana ono alina empisa enungi." },
+    "s-hodi": { "text": "Ko ko ko! Yingira!" },
+    "s-mkono-kulia": { "text": "Lya n'omukono ogwa dyo." },
+    "s-ukarimu": { "text": "Weebale obugabi bwo." },
+    "s-karibu-tena": { "text": "Weebale, komawo nate!" }
+  },
+  "phrases": ["Mwasuze mutya, sebo?", "Mwebale inho, nyabo.", "Mwatu, mpa amaadhi.", "Webale okudha!", "Yingira otuule.", "Tuula, olyeko."],
+  "dialogues": {
+    "u39s2l3": [{ "line": "Mwana wange, wasuuze otya?", "options": ["Bulungi, sebo. Mwasuze mutya?", "Nzikiriza naawe.", "Yanguwa!"] }],
+    "u39s3l3": [{ "line": "Webale okudha! Tuula, olyeko.", "options": ["Mwebale inho, sebo.", "Omubi! Mumukwate!", "Sikiriza."] }]
+  },
+  "stories": {}
+}

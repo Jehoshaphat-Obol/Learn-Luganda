@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u23",
+  "words": {
+    "essimu": { "text": "esimu" },
+    "halo": { "text": "Halo" },
+    "ani-ayogera": { "text": "Ani ayogera?" },
+    "nkukubira": { "text": "nkukubira" },
+    "nkubira": { "text": "Nkubira" },
+    "mmukubira": { "text": "mukubira" },
+    "sikuwulira": { "text": "Sikuwulira" },
+    "obubaka": { "text": "obubaka" },
+    "mpeereza": { "text": "Mpeereza" },
+    "nnamba": { "text": "namba" },
+    "tusisinkane": { "text": "Tusisinkane" },
+    "nkulinze": { "text": "Nkulinze" },
+    "ndi-mu-kkubo": { "text": "Ndi mu kubo" },
+    "piga-simu": { "text": "kuba esimu" },
+    "nitakupigia": { "text": "Nja kukukubira" },
+    "tuma": { "text": "Weereza" },
+    "mtandao": { "text": "netiweeke" },
+    "betri": { "text": "baatule" },
+    "salio": { "text": "sente za ku simu" }
+  },
+  "sentences": {
+    "s23-halo": { "text": "Halo? Ani ayogera?" },
+    "s23-nze-nakato-ayogera": { "text": "Nze {@nakato} ayogera." },
+    "s23-nja-kukukubira": { "text": "Nja kukukubira esimu enkya." },
+    "s23-nkubira-ekiro": { "text": "Nkubira esimu ekiro." },
+    "s23-mmukubira": { "text": "Mukubira esimu buli lunaku." },
+    "s23-sikuwulira": { "text": "Sikuwulira bulungi. Damu." },
+    "s23-mpeereza-obubaka": { "text": "Mpeereza obubaka." },
+    "s23-mpa-nnamba": { "text": "Mpa namba yo." },
+    "s23-tusisinkane": { "text": "Tusisinkane ku saawa ina." },
+    "s23-nkulinze": { "text": "Nkulinze ku siteegi." },
+    "s23-ndi-mu-kkubo": { "text": "Ndi mu kubo, nzija!" },
+    "s-simu-iko-wapi": { "text": "Esimu yange eri luda wa?" },
+    "s-haloo-nani": { "text": "Halo? Ani?" },
+    "s-piga-simu": { "text": "Kuba esimu enkya." },
+    "s-nipigie-jioni": { "text": "Nkubira akawungeezi." },
+    "s-subiri-kidogo": { "text": "Linda katono." },
+    "s-tuma-ujumbe": { "text": "Weereza obubaka." },
+    "s-namba-yako": { "text": "Namba yo y'eruwa?" },
+    "s-hakuna-mtandao": { "text": "Wano tewali netiweeke." },
+    "s-sina-betri": { "text": "Baatule yange ewedemu." },
+    "s-sina-salio": { "text": "Sirina sente za ku simu." }
+  },
+  "phrases": [
+    "Halo? Ani ayogera?",
+    "Nze {@nakato} ayogera.",
+    "Nja kukukubira esimu enkya.",
+    "Sikuwulira bulungi.",
+    "Mpeereza obubaka.",
+    "Tusisinkane ku saawa ina.",
+    "Ndi mu kubo, nzija!"
+  ],
+  "dialogues": {
+    "u23s2l3": [{ "line": "Halo? Ani ayogera?", "options": ["Nze {@ssali}. Oli otya, {@nakato}?", "Ndi mu kubo.", "Sirina sente."] }],
+    "u23s3l3": [{ "line": "Oli wa? Nkulinze!", "options": ["Nsonyiwa, ndi mu kubo. Nzija!", "Tusisinkane idho.", "Mpa ekalaamu."] }]
+  },
+  "stories": {}
+}
