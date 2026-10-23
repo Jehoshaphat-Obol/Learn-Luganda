@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Faransati ba a’yo vu ambo Africa alia ka dunia dria, Paris ni ani Dakar, Kinshasa ka Montréal.",
+  "notes": "Drafted by Claude (AI) for the Lugbara courses (#132) with low confidence in Lugbara; needs a native-speaker review. Word and unit notes fall back to the English notes about the target language.",
+  "landing": {
+    "hello": "Bonjour !",
+    "thanks": "Merci",
+    "place": "vu Faransati a’yozu ni",
+    "word": "apprendre — imba",
+    "words": [
+      ["Bonjour", "Ngoni"],
+      ["Ça va ?", "Mi ngoni?"],
+      ["Merci", "Awa’difo"],
+      ["D’accord", "Ka’dini"],
+      ["Ami", "Agyi"],
+      ["Eau", "Ii"],
+      ["Nourriture", "Nyaka"],
+      ["Monsieur", "Ati"],
+      ["Madame", "Andre"],
+      ["Au revoir", "Mi mu muke"]
+    ],
+    "why": {
+      "title": "E’yo **vu ambo dunia dria ni.**",
+      "text": "Faransati ba a’yo Africa, Europe, Canada ka vu ere alia. Imba geri ndizu ni, sukulu ni, azi ni, ka ongo, buku ka filim ni.",
+      "cards": [
+        { "title": "Ba ndi geri dria ni", "text": "Ndi Kinshasa ni ani Dakar, Paris ka Montréal." },
+        { "title": "Azi ka sukulu", "text": "Azi ngu vu ambo Faransati a’yo ni Africa alia be." },
+        { "title": "Ba le e’yo ni ni", "text": "Ndre bukuyi, ongoyi ka filim Faransati alia." }
+      ]
+    },
+    "sample": { "prompt": "Ngo ni “awa’difo”?", "options": ["Bonjour", "Merci", "Non"], "answer": "Merci", "explain": "_Merci_ ni awa’difo." },
+    "start": { "word": "C’est parti !", "caption": "c’est parti — ama eto" },
+    "farewell": "Merci beaucoup — awa’difo amboni.",
+    "audience": "Ba Lugbarati a’yo ni etozu ni, anzi sukulu, azi bayi ka ba ndi vu Faransati a’yo ni.",
+    "first": "Ngoni, ru a’yozu ka nde, vutia aku ba, nyaka, suku, sawa, vu, jo ka ruakini, alu alu."
+  },
+  "cast": { "emma": "Uji vu ere ni a’yo Faransati" }
+}

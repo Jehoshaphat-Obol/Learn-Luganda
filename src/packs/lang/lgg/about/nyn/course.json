@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Nyankoreti ni e’yo ba Ankole ni, Uganda ondre vu, Mbarara ngbangba, vu oniyi aya ka ti ndu yi ni.",
+  "notes": "Drafted by Claude (AI) for the Lugbara courses (#132) with low confidence in Lugbara; needs a native-speaker review. Word and unit notes fall back to the English notes about the target language.",
+  "landing": {
+    "hello": "Agandi!",
+    "thanks": "Webale",
+    "place": "Ankole",
+    "word": "kwega — imba",
+    "words": [
+      ["Agandi?", "Mi ngoni?"],
+      ["Ni marungi", "Ma muke"],
+      ["Webale", "Awa’difo"],
+      ["Kare", "Ka’dini"],
+      ["Omunywani", "Agyi"],
+      ["Amaizi", "Ii"],
+      ["Ebyokurya", "Nyaka"],
+      ["Sebo", "Ati"],
+      ["Nyabo", "Andre"],
+      ["Ogumeho", "Mi mu muke"]
+    ],
+    "why": {
+      "title": "E’yo **Ankole ka oniyi aya ni.**",
+      "text": "Nyankoreti ba a’yo Mbarara, Bushenyi, Ntungamo ka Ibanda alia, ka eri ovu Kigati ka Nyoroti ndi. Imba aku ba ni, geri ndizu ni, azi ni, ka ongo ka ti Ankole ni.",
+      "cards": [
+        { "title": "Aku ba ni", "text": "A’yo atibi ka aku bayi be Ankole alia." },
+        { "title": "Ba ndi geri dria ni", "text": "Ndi Mbarara ni ani Kabale ka ide Bunyonyi." },
+        { "title": "Ba le e’yo ni ni", "text": "Ndre ovu yi ni ka e’yo ndra’bo niyi oniyi ni." }
+      ]
+    },
+    "sample": { "prompt": "Ngo ni “awa’difo”?", "options": ["Agandi", "Webale", "Ngaaha"], "answer": "Webale", "explain": "_Webale_ ni awa’difo." },
+    "start": { "word": "Tutandike!", "caption": "tutandike — ama eto" },
+    "farewell": "Webale munonga — awa’difo amboni.",
+    "audience": "Ba Lugbarati a’yo ni etozu ni, aku bayi emu Ankole ni, ka ba ndi geri dria Uganda ondre vu.",
+    "first": "Ngoni, ru a’yozu ka nde, vutia aku ba, nyaka, suku, sawa, vu, jo ka ruakini, alu alu."
+  },
+  "cast": { "emma": "Uji imba Nyankoreti ndi geri dria ndraa" }
+}
