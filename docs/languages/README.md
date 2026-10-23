@@ -125,7 +125,7 @@ them is done, so the tracker only holds work we are about to do.
 | `xog` | Lusoga | Lusoga | Niger-Congo › Bantu | Latin | UG | 3.1M | low | yes |
 | `cgg` | Rukiga | Rukiga | Niger-Congo › Bantu | Latin | UG | 2.4M | low |  |
 | `teo` | Ateso | Ateso | Nilo-Saharan › Nilotic | Latin | UG KE | 2.4M | low | yes |
-| `lgg` | Lugbara | Lugbarati | Nilo-Saharan › Central Sudanic | Latin | UG CD | 2.2M | low |  |
+| `lgg` | Lugbara | Lugbarati | Nilo-Saharan › Central Sudanic | Latin | UG CD | 2.2M | low | yes |
 | `laj` | Lango | Leb Lango | Nilo-Saharan › Nilotic | Latin | UG | 2.1M | low |  |
 | `ach` | Acholi | Lwo | Nilo-Saharan › Nilotic | Latin | UG SS | 1.6M | low | yes |
 | `alz` | Alur | Dho Alur | Nilo-Saharan › Nilotic | Latin | UG CD | 1.4M | low |  |

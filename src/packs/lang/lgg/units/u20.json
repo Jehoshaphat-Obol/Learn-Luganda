@@ -1,0 +1,83 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u20",
+  "words": {
+    "nja": { "text": "Ma ka" },
+    "kugenda": { "text": "mu" },
+    "tujja": { "text": "ama ka" },
+    "ajja": { "text": "eri ka" },
+    "awamu": { "text": "alu" },
+    "wiikendi": { "text": "wiki ti" },
+    "wiiki-ejja": { "text": "wiki emuzu ni" },
+    "omwaka-ogujja": { "text": "ilu emuzu ni" },
+    "okukyalira": { "text": "ndre" },
+    "ndigenda": { "text": "Ma ka mu" },
+    "ndyogera": { "text": "Ma ka a'yo" },
+    "olunaku-lumu": { "text": "etu alu" },
+    "nsuubira": { "text": "Ma asi ovu" },
+    "oteekateeka-ki": { "text": "Mi ngu e'yo ngo?" },
+    "utaenda": { "text": "mi ka mu" },
+    "atakuja": { "text": "eri ka emu" },
+    "tutakutana": { "text": "Ama ka ra" },
+    "nitarudi": { "text": "Ma ka ikoa" },
+    "mwezi-ujao": { "text": "mba emuzu ni" },
+    "ndoto": { "text": "lezu" }
+  },
+  "sentences": {
+    "s20-nja-kugenda-masaka": { "text": "Drusi ma ka mu {@hometown}." },
+    "s20-nja-kulya": { "text": "Ma ka nya matooke." },
+    "s20-tujja-kusoma": { "text": "Ama ka imba alu." },
+    "s20-ajja-kujja": { "text": "{@nakato} ka emu drusi." },
+    "s20-wiikendi": { "text": "Wiki ti ma ka ndre ma dede." },
+    "s20-wiiki-ejja": { "text": "Wiki emuzu ni ama ka mu {@getaway}." },
+    "s20-omwaka-ogujja": { "text": "Ilu emuzu ni ma ka imba sayansi." },
+    "s20-olunaku-lumu-ndigenda": { "text": "Etu alu ma ka mu Buganda." },
+    "s20-ndyogera-oluganda": { "text": "Etu alu ma ka a'yo {to} muke." },
+    "s20-nsuubira": { "text": "Ma asi ovu ma ka Kabaka ndre." },
+    "s20-oteekateeka-ki": { "text": "Mi ngu e'yo ngo wiki ti ni?" },
+    "s-nisaidie-tafadhali": { "text": "Ko ma, awa'difo." },
+    "s-kwanza-halafu": { "text": "Zi sanaayi kakau, vutia pe." },
+    "s-pamoja": { "text": "Ama azi ngu alu." },
+    "s-nitaenda-kazini": { "text": "Drusi ma ka mu azi vu." },
+    "s-bibi-atakuja": { "text": "Dede ka emu Etu azya." },
+    "s-tutakutana": { "text": "Ama ka ra sawa mudri drini iri." },
+    "s-nitarudi": { "text": "Ma ka ikoa wiki emuzu ni." },
+    "s-mwezi-ujao": { "text": "Mba emuzu ni ma ka ndi geri dria." },
+    "s-ningependa-kahawa": { "text": "Ma le kawa, awa'difo." },
+    "s-ningependa-kusafiri": { "text": "Ma le ndi geri dria." },
+    "s-ndoto-yangu": { "text": "Ma lezu ni dokita." },
+    "s-siku-moja": { "text": "Etu alu ma ka ovu malimu." }
+  },
+  "phrases": [
+    "Drusi ma ka mu {@hometown}.",
+    "Ama ka imba alu.",
+    "Mi ngu e'yo ngo wiki ti ni?",
+    "Wiki ti ma ka ndre ma dede.",
+    "Etu alu ma ka a'yo {to} muke.",
+    "Ma asi ovu ma ka Kabaka ndre."
+  ],
+  "dialogues": {
+    "u20s2l3": [{ "line": "Mi ngu e'yo ngo wiki ti ni?", "options": ["Ma ka ndre ma dede.", "Ndrozi ma mu {@getaway} ra.", "Ma ni inyiri ku."] }]
+  },
+  "stories": {
+    "weekend-plans": {
+      "title": "Wiki ti e'yo",
+      "summary": "{@ssali} ka {@nakato} a'yo wiki ti ra ni ka emuzu ni e'yo.",
+      "lines": [
+        "{@nakato}! Wiki ti ra ni mi ngu ngo ra?",
+        "Ma mu {@hometown} ra ma andre ndre.",
+        "Muke! Ka wiki ti nde?",
+        "Ma ni ku. Mi ngu e'yo ngo?",
+        "Ma ka mu ide {@nearby} alia. Mi ka emu ya?",
+        "Ii! Te ma ovu be parata ambo ku.",
+        "Mi asi aa ku. Ama ka mu ma motoka si.",
+        "Awa'difo amboni! Ama ka ndre Etu azya."
+      ],
+      "questions": [
+        { "question": "Wiki ti ra ni {@nakato} mu ngoa ra?", "options": ["{@getaway}", "{@hometown}", "{@nearby}"] },
+        { "question": "{@ssali} e'yo ngu ngo?", "options": ["Mu ide vu", "Ndre eri andre", "Imba jo"] },
+        { "question": "{@ssali} a'yo \"Ama ka mu\" ngoni?", "options": ["Ama ka mu", "Ama mu ra", "Mi mu ku"] }
+      ]
+    }
+  }
+}

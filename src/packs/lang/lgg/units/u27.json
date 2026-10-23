@@ -1,0 +1,52 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u27",
+  "words": {
+    "olusuku": { "text": "labolo amvu" },
+    "enkumbi": { "text": "jau" },
+    "ndima": { "text": "Ma amvu ngu" },
+    "ensigo": { "text": "ofiyi" },
+    "okusiga": { "text": "ofi" },
+    "kasooli": { "text": "kaka" },
+    "ebinyeebwa": { "text": "ofunyo" },
+    "emmwanyi": { "text": "kawa ofi" },
+    "amakungula": { "text": "nyaka jizu" },
+    "okukungula": { "text": "nyaka ji" },
+    "ndimira": { "text": "Ma amvu ngu … ni" },
+    "nfumbira": { "text": "Ma ozo … ni" },
+    "ntundira": { "text": "Ma ozi … alia" },
+    "mpandiikira": { "text": "Ma si … ni" },
+    "mpunga": { "text": "mucele ese" },
+    "maji-ya-mvua": { "text": "ezu ii" }
+  },
+  "sentences": {
+    "s27-olusuku-lwange": { "text": "Ma labolo amvu amboa." },
+    "s27-ndima-n-enkumbi": { "text": "Ma amvu ngu jau si ngaa." },
+    "s27-okusiga-ensigo": { "text": "Ama ofi ofiyi ezu sawa." },
+    "s27-kasooli": { "text": "Kaka ofu ra muke." },
+    "s27-ebinyeebwa": { "text": "Ma ozi ofunyo ka kaka." },
+    "s27-emmwanyi": { "text": "Buganda kawa muke ndra." },
+    "s27-amakungula": { "text": "Nyaka jizu kaa ra!" },
+    "s27-okukungula": { "text": "Drusi ama ka ofunyo ji." },
+    "s27-ndimira-jjajja": { "text": "Ma amvu ngu dede ni." },
+    "s27-nfumbira-abaana": { "text": "Ma ozo nyaka anzi ni." },
+    "s27-ntundira-mu-katale": { "text": "Ma ozi kawa suku alia." },
+    "s27-mpandiikira-maama": { "text": "Ma si e'yo sezu andre ni." },
+    "s-mpunga": { "text": "Mucele ese le ii ambo." },
+    "s-kupanda-mbegu": { "text": "Ndrani ama ka ofiyi ofi." },
+    "s-mavuno-mazuri": { "text": "Nyaka jizu muke ilu nde." },
+    "s-jembe": { "text": "Ji jau." },
+    "s-maji-ya-mvua": { "text": "Ama o'di ezu ii." }
+  },
+  "phrases": [
+    "Ma amvu ngu jau si ngaa.",
+    "Ama ofi ofiyi ezu sawa.",
+    "Nyaka jizu kaa ra!",
+    "Ma amvu ngu dede ni.",
+    "Ma ozo nyaka anzi ni.",
+    "Ma si e'yo sezu andre ni."
+  ],
+  "dialogues": {
+    "u27s3l3": [{ "line": "Awa'difo azi ni! Mi ngu ngo?", "options": ["Ma amvu ngu ma dede ni.", "Ma ni Lugave suru.", "Kabaka ovu dria!"] }]
+  }
+}

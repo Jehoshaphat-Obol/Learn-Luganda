@@ -92,7 +92,7 @@ test('search narrows the full picker, and flags stay small', async ({ page }) =>
   await page.getByRole('button', { name: 'Something else' }).click();
   const speak = page.getByRole('group', { name: 'I speak' });
   const learn = page.getByRole('group', { name: 'I want to learn' });
-  await expect(learn.getByRole('radio')).toHaveCount(7);
+  await expect(learn.getByRole('radio')).toHaveCount(8);
 
   const flag = learn.getByRole('radio', { name: 'Swahili', exact: true }).locator('img.flag');
   const box = await flag.boundingBox();

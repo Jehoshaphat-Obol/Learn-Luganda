@@ -93,7 +93,7 @@
       "speakersMillions": 2.2,
       "wave": 1,
       "draftConfidence": "low",
-      "inRegistry": false
+      "inRegistry": true
     },
     {
       "code": "laj",

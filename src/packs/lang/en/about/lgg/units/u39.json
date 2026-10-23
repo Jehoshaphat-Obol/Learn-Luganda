@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u39",
+  "notes": { "mwasuze": "Emi: respectful plural.", "ekitiibwa": "Inzita: respect." },
+  "tips": { "u39s1": "elders", "u39s2": "guest", "u39s3": "elders", "u39s4": "guest" },
+  "guidebook": {
+    "intro": "Respect and etiquette. Speaking to an elder in the plural (**emi**) is a sign of respect.",
+    "tips": [
+      {
+        "id": "elders",
+        "title": "Emi ngaa ngoni?",
+        "body": [
+          "**Emi ngaa ngoni, ati?** (good morning, sir, plural of respect), **Awa’difo amboni emi ni** (thank you very much).",
+          "**Inzita** is respect: **Ama ka inzita fe ba amboa ni**."
+        ]
+      },
+      {
+        "id": "guest",
+        "title": "Uji",
+        "body": [
+          "**Uji** is a guest. **Ci alia ka ri vu** (come in and sit down), **Ri vu ka nya nyaka** (sit and eat).",
+          "**Awa’difo, emu dika!** (thank you, come again!)."
+        ]
+      }
+    ],
+    "culture": [{ "title": "Kneeling", "body": ["In many Ugandan homes children and women kneel or bow when greeting elders and serving food."] }]
+  }
+}

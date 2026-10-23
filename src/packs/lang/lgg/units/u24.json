@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u24",
+  "words": {
+    "okufumba": { "text": "ozo" },
+    "entamu": { "text": "dele" },
+    "omuliro": { "text": "aci" },
+    "amafuta": { "text": "mafuta" },
+    "obutungulu": { "text": "tungulu" },
+    "ennyaanya": { "text": "nyanya" },
+    "sooka": { "text": "Kakau" },
+    "sala": { "text": "Ka" },
+    "teeka": { "text": "Ji … dria" },
+    "gattako": { "text": "Ji kpe" },
+    "okusiika": { "text": "ozo mafuta alia" },
+    "endagala": { "text": "labolo pa" },
+    "okusiba": { "text": "bi" },
+    "tulye": { "text": "Ama nya" },
+    "nkkuse": { "text": "Ma a ndri ra" },
+    "webale-okufumba": { "text": "Awa'difo nyaka ozo ni" },
+    "chemsha": { "text": "Ji ega" },
+    "kaanga": { "text": "Ozo mafuta alia" },
+    "kitunguu": { "text": "tungulu" },
+    "changanya": { "text": "Ji alu" }
+  },
+  "sentences": {
+    "s24-njagala-okufumba": { "text": "Ma le nyaka ozo." },
+    "s24-teeka-entamu": { "text": "Ji dele aci dria." },
+    "s24-gattako-amafuta": { "text": "Ji mafuta kpe." },
+    "s24-sooka-sala": { "text": "Kakau ka tungulu." },
+    "s24-oluvannyuma-ennyaanya": { "text": "Vutia ji nyanya kpe." },
+    "s24-gattako-omunnyo": { "text": "Ji ayi mvaa kpe." },
+    "s24-okusiika": { "text": "Ozo tungulu mafuta alia." },
+    "s24-okusiba": { "text": "Ama bi matooke labolo pa alia." },
+    "s24-tulye": { "text": "Nyaka de ra. Ama nya!" },
+    "s24-mpa-ku-mmere": { "text": "Fe ma nyaka mvaa, andre." },
+    "s24-nkkuse": { "text": "Ma a ndri ra, awa'difo amboni." },
+    "s24-webale-okufumba": { "text": "Awa'difo nyaka ozo ni, Dede!" },
+    "s-kupika": { "text": "Ma le nyaka ozo." },
+    "s-mafuta-moto": { "text": "Mafuta ega ndra." },
+    "s-kata-kitunguu": { "text": "Ka tungulu." },
+    "s-chemsha-maji": { "text": "Ji ii ega." },
+    "s-kaanga-vitunguu": { "text": "Ozo tungulu mafuta alia." },
+    "s-changanya-pamoja": { "text": "Ji alu." }
+  },
+  "phrases": [
+    "Ji dele aci dria.",
+    "Kakau ka tungulu.",
+    "Vutia ji nyanya kpe.",
+    "Ama bi matooke labolo pa alia.",
+    "Nyaka de ra. Ama nya!",
+    "Ma a ndri ra, awa'difo amboni.",
+    "Awa'difo nyaka ozo ni!"
+  ],
+  "dialogues": {
+    "u24s3l3": [{ "line": "Mi le nyaka dika ya?", "options": ["Ku, ma a ndri ra. Awa'difo nyaka ozo ni!", "Kakau ka tungulu.", "Ma ope mi siteji."] }]
+  },
+  "stories": {
+    "cooking-luwombo": {
+      "title": "Nyaka ozo {@jjajja} be",
+      "summary": "{@amara} imba au luwombo ozo.",
+      "lines": [
+        "Ndrani ama ka au luwombo ozo.",
+        "Ka'dini! Ma ngu ngo?",
+        "Kakau ka tungulu ka nyanya.",
+        "Ma de ra! Vutia ngo?",
+        "Ji au ka ai labolo pa alia, ka bi muke.",
+        "Vutia ama ji dele aci dria, sawa iri.",
+        "Sawa iri? Ma le nyaka ndra!",
+        "Haha! Nyaka de ra. Ama nya!",
+        "Eri adri ndra! Awa'difo nyaka ozo ni, Dede."
+      ],
+      "questions": [
+        { "question": "{@amara} ngu ngo kakau?", "options": ["Ka tungulu ka nyanya", "Ji aci", "Zi dele"] },
+        { "question": "Luwombo ozo sawa ngbe?", "options": ["Dakika mudri", "Sawa iri", "Ini dria"] },
+        { "question": "{@amara} a'yo ngo nyaka vutia?", "options": ["Awa'difo nyaka ozo ni", "Kakau ka", "Ma ope mi"] }
+      ]
+    }
+  }
+}

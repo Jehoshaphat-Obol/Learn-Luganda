@@ -1,0 +1,75 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u35",
+  "words": {
+    "enfumo": { "text": "e'yo ati" },
+    "olwatuuka": { "text": "Ndra'bo ndra'bo" },
+    "olwali-olumu": { "text": "etu alu" },
+    "waaliwo": { "text": "… ovu ra" },
+    "awo": { "text": "Ka vutia" },
+    "nagenda": { "text": "ka eri mu" },
+    "nalaba": { "text": "ka eri ndre" },
+    "nagamba": { "text": "ka eri a'yo" },
+    "ekyavaamu": { "text": "Dria si" },
+    "kale-nno": { "text": "Ka'dini" },
+    "enfumo-ewedde": { "text": "Ma e'yo de nde" },
+    "ilinyesha": { "text": "ezu de ra" },
+    "ilikuwa": { "text": "Eri ovu ra" },
+    "paukwa": { "text": "Paukwa!" },
+    "pakawa": { "text": "Pakawa!" },
+    "mwisho": { "text": "dezu" },
+    "hadithi-imeishia": { "text": "E'yo ati de nde" }
+  },
+  "sentences": {
+    "s35-olwatuuka": { "text": "Ndra'bo ndra'bo, etu alu…" },
+    "s35-waaliwo-omusajja": { "text": "Agupi alu ovu ra." },
+    "s35-waaliwo-omukazi": { "text": "Oku alu ka eri mva ovu ra." },
+    "s35-nagenda-mu-kibira": { "text": "Ka vutia eri mu adravu alia." },
+    "s35-nalaba-empologoma": { "text": "Ka eri ndre simba!" },
+    "s35-nagamba": { "text": "Ka eri a'yo, \"Mi ofo ku!\"" },
+    "s35-ekyavaamu": { "text": "Dria si, eri ikoa jo." },
+    "s35-kale-nno": { "text": "Ka'dini, emi eri e'yo ati nde." },
+    "s35-enfumo-ekomye": { "text": "Ma e'yo de nde." },
+    "s-jana-ilinyesha": { "text": "Ndrozi ezu de ra." },
+    "s-ilikuwa-baridi": { "text": "Eri ovu ra ali ndra." },
+    "s-kulikuwa-na-upepo": { "text": "Oli ovu ra." },
+    "s-paukwa": { "text": "E'yo ati! A'yo ama ni!" },
+    "s-hapo-zamani": { "text": "Ndra'bo ndra'bo, o'bi alu ovu ra." },
+    "s-hadithi": { "text": "Dede, a'yo e'yo ati ama ni!" },
+    "s-akaenda": { "text": "Ka o'bi mu eyi vu." },
+    "s-akasema": { "text": "Ka eri a'yo, \"Emi dria ngoni?\"" },
+    "s-mwisho": { "text": "Dria si, o'bi ega ra." },
+    "s-imeishia": { "text": "E'yo ati de nde." }
+  },
+  "phrases": [
+    "Ndra'bo ndra'bo, etu alu…",
+    "Agupi alu ovu ra.",
+    "Ka vutia eri mu adravu alia.",
+    "Ka eri ndre simba!",
+    "Dria si, eri ikoa jo.",
+    "Ma e'yo de nde."
+  ],
+  "dialogues": { "u35s3l3": [{ "line": "Agupi alu ovu ra. Ka vutia eri mu adravu alia…", "options": ["Ka eri ndre ngo?", "Ma le caai.", "Eri alu."] }] },
+  "stories": {
+    "amaras-story": {
+      "title": "{@amara} a'yo e'yo ati",
+      "summary": "{@amara} a'yo e'yo ati mva agupi ka simba ni {@emma} ni.",
+      "lines": [
+        "{@amara}, a'yo e'yo ati ma ni!",
+        "Ka'dini. Ndra'bo ndra'bo, mva agupi alu ovu ra.",
+        "Ka vutia eri mu adravu alia ase uzi.",
+        "Ka eri ndre ngo?",
+        "Eri ndre simba amboa ndra!",
+        "Ee! Eri ere ra ya?",
+        "Ku. Eri ri vu ka ongo ngo.",
+        "Simba eri, ovu tre ka mu ra.",
+        "Dria si, mva agupi ikoa jo ase be. Ma e'yo de nde."
+      ],
+      "questions": [
+        { "question": "Mva agupi mu adravu alia a'disi?", "options": ["Ase uzi", "Eza uzi", "Mupira o'be"] },
+        { "question": "Mva agupi ngu ngo sawa eri ndre simba ni?", "options": ["Eri ere ra", "Eri ri ka ongo ngo", "Eri ndi pati dria"] },
+        { "question": "{@amara} de e'yo ati ngoni?", "options": ["Ma e'yo de nde.", "Ndra'bo ndra'bo, etu alu…", "Agupi alu ovu ra."] }
+      ]
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Itesoti ni Nilotic e’yo, ba a’yo Uganda ngaa vu, Soroti, Kumi, Serere ka Amuria alia, ka Kenya alia.",
+  "notes": "Drafted by Claude (AI) for the Lugbara courses (#132) with low confidence in Lugbara; needs a native-speaker review. Word and unit notes fall back to the English notes about the target language.",
+  "landing": {
+    "hello": "Yoga",
+    "thanks": "Eyalama",
+    "place": "Teso",
+    "word": "akisisianakin — imba",
+    "words": [
+      ["Ijai bo?", "Mi ngoni?"],
+      ["Ejai ejok", "Ma muke"],
+      ["Eyalama", "Awa’difo"],
+      ["Kobuka", "Mi emu muke"],
+      ["Ekone", "Agyi"],
+      ["Akipi", "Ii"],
+      ["Akimuj", "Nyaka"],
+      ["Lokapolon", "Ati"],
+      ["Toto", "Andre"],
+      ["Kolosi ejok", "Mi mu muke"]
+    ],
+    "why": {
+      "title": "E’yo **Soroti, Kumi ka Teso ideyi ni.**",
+      "text": "Itesoti ovu Karimojongti ka Turkanati ndi, Ateker suru alia. Imba aku ba ni, geri ndizu ni, azi ni, ka ongo ka e’yo ati Teso ni.",
+      "cards": [
+        { "title": "Aku ba ni", "text": "A’yo atibi ka aku bayi be Soroti ka Kumi alia." },
+        { "title": "Ba ndi geri dria ni", "text": "Ndi Soroti ni ani Kumi, Ngora ka ide Bisina." },
+        { "title": "Ba le e’yo ni ni", "text": "Ndre Nilotic e’yo, rui ovu be oku ka agupi ni." }
+      ]
+    },
+    "sample": { "prompt": "Ngo ni “awa’difo”?", "options": ["Ijai bo?", "Eyalama", "Mam"], "answer": "Eyalama", "explain": "_Eyalama_ ni awa’difo." },
+    "start": { "word": "Kiŋarenata oni!", "caption": "kiŋarenata oni — ama eto" },
+    "farewell": "Eyalama noi — awa’difo amboni.",
+    "audience": "Ba Lugbarati a’yo ni etozu ni, aku bayi emu Teso ni, ka ba ndi Soroti.",
+    "first": "Ngoni, ru a’yozu ka nde, vutia aku ba, nyaka, suku, sawa, vu, jo ka ruakini, alu alu."
+  },
+  "cast": { "emma": "Uji imba Itesoti ndi geri dria ndraa" }
+}

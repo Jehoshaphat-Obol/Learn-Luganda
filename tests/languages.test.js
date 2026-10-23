@@ -28,9 +28,9 @@ describe('catalogue', () => {
 describe('the first guess', () => {
   it('maps a time zone to the languages used there, then the browser’s', () => {
     expect(likelyLanguages({ timeZone: 'Asia/Dubai', preferred: ['en-GB'], regions })).toEqual({ country: 'AE', languages: ['en', 'ar'] });
-    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: ['en-US'], regions }).languages).toEqual(['en', 'lg', 'sw', 'nyn', 'xog', 'ach', 'teo']);
-    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: [], regions }).languages).toEqual(['lg', 'en', 'sw', 'nyn', 'xog', 'ach', 'teo']);
-    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: ['fr'], regions }).languages).toEqual(['lg', 'en', 'sw', 'nyn', 'xog', 'ach', 'teo', 'fr']);
+    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: ['en-US'], regions }).languages).toEqual(['en', 'lg', 'sw', 'nyn', 'xog', 'ach', 'teo', 'lgg']);
+    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: [], regions }).languages).toEqual(['lg', 'en', 'sw', 'nyn', 'xog', 'ach', 'teo', 'lgg']);
+    expect(likelyLanguages({ timeZone: 'Africa/Kampala', preferred: ['fr'], regions }).languages).toEqual(['lg', 'en', 'sw', 'nyn', 'xog', 'ach', 'teo', 'lgg', 'fr']);
     expect(likelyLanguages({ timeZone: 'Mars/Olympus', preferred: ['sw-KE'], regions })).toEqual({ country: null, languages: ['sw'] });
   });
 

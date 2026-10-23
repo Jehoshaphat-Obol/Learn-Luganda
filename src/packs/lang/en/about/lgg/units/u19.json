@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u19",
+  "notes": { "ndidde": "Ma nya ra: I ate, I have eaten.", "edda": "Ndra’bo: long ago." },
+  "tips": { "u19s1": "ra", "u19s2": "when", "u19s3": "ra", "u19s4": "when" },
+  "guidebook": {
+    "intro": "What I did. Add **ra** after the verb for something done: **Ma nya ra** (I have eaten / I ate).",
+    "tips": [
+      {
+        "id": "ra",
+        "title": "… ra",
+        "body": [
+          "**Ma mu taun ra** (I went to town), **Ma de ra** (I have finished). The time word shows when: **ndrozi** yesterday, **ndra’bo** long ago.",
+          "Not yet: **Ma nya ndraa ku** (I haven’t eaten yet)."
+        ]
+      },
+      {
+        "id": "when",
+        "title": "Wiki ra ni",
+        "body": ["**wiki ra ni** last week, **ilu ra ni** last year, **ndrozi ndrozi** the day before yesterday.", "**Ma ovu ra** is “I was”."]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Talking about the past",
+        "body": ["Lugbara speakers often leave the tense to context and a time word, so **ra** is enough in most sentences."]
+      }
+    ]
+  }
+}

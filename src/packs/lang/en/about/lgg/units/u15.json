@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u15",
+  "notes": { "otegeera": "Mi eri ra ya?: have you heard (understood)?", "ddamu": "A’yo dika: say again." },
+  "tips": { "u15s1": "class", "u15s2": "subjects", "u15s3": "class", "u15s4": "subjects" },
+  "guidebook": {
+    "intro": "School. Address a whole class with **emi** (you all): **Emi ali buku** (read the book, everyone).",
+    "tips": [
+      {
+        "id": "class",
+        "title": "Emi ali, emi si",
+        "body": [
+          "**Emi ali** read, **Emi si** write, **Emi eri** listen (everyone).",
+          "**Mi eri ra ya?** (do you understand?) — **Ii, ma eri ra**. **A’yo dika** (say it again)."
+        ]
+      },
+      {
+        "id": "subjects",
+        "title": "Hesabu, sayansi",
+        "body": [
+          "School subjects are mostly borrowed: **hesabu** maths, **sayansi** science, **Ingilisiti** English.",
+          "**Ma le hesabu ndra** (I really like maths)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Language at school",
+        "body": ["Lugbarati is taught in the first years of primary school in West Nile, then lessons move to English."]
+      }
+    ]
+  }
+}

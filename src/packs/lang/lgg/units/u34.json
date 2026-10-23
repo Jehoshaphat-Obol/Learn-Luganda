@@ -1,0 +1,57 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u34",
+  "words": {
+    "bwe": { "text": "sawa … ni" },
+    "bwe-nzuukuka": { "text": "sawa ma nga ni" },
+    "bw-etonnya": { "text": "sawa ezu de ni" },
+    "singa": { "text": "ka" },
+    "nnandiguze": { "text": "Ma ka ogu" },
+    "nnandigenze": { "text": "Ma ka mu" },
+    "nnandyagadde": { "text": "Ma le" },
+    "ka-tulabe": { "text": "Ama ndre" },
+    "katonda-bwanaayagala": { "text": "Adroa le ka" },
+    "ukifika": { "text": "sawa mi kaa ni" },
+    "mvua-ikinyesha": { "text": "ka ezu de" },
+    "nikipata": { "text": "ka ma isu" },
+    "ningekuwa": { "text": "ka ma ovu" },
+    "laiti": { "text": "ka … ni muke" },
+    "tajiri": { "text": "ba parata" }
+  },
+  "sentences": {
+    "s34-bwe-nzuukuka": { "text": "Sawa ma nga ni, ma mvu caai." },
+    "s34-bwe-ntuuka": { "text": "Sawa ma kaa ni, ma ka mi omvi." },
+    "s34-enkuba-bwetonnya": { "text": "Sawa ezu de ni, ma mu ku." },
+    "s34-singa-nnina-ssente": { "text": "Ka ma ovu be parata, ma ka motoka ogu." },
+    "s34-singa-tewali-nkuba": { "text": "Ka ezu ovu ku, ma ka mu." },
+    "s34-nnandyagadde-caayi": { "text": "Ma le caai, awa'difo." },
+    "s34-nnandyagadde-okugenda": { "text": "Ma le mu {@getaway}." },
+    "s34-ka-tulabe": { "text": "Ama ndre drusi." },
+    "s34-katonda-bwanaayagala": { "text": "Ma ka emu, Adroa le ka." },
+    "s-ukifika": { "text": "Sawa mi kaa ni, omvi ma." },
+    "s-mvua-ikinyesha": { "text": "Ka ezu de, ama ka ovu jo." },
+    "s-nikipata-pesa": { "text": "Ka ma isu parata, ma ka ndi geri dria." },
+    "s-ningekuwa-tajiri": { "text": "Ka ma ovu ba parata, ma ka motoka ogu." },
+    "s-ningenunua": { "text": "Ma ka jo amboa ogu." },
+    "s-laiti": { "text": "Ka ma ovu be sawa ni muke!" },
+    "s-ikiwa": { "text": "Ka mi ovu be e'yo uzizu, uzi." }
+  },
+  "phrases": [
+    "Sawa ma nga ni, ma mvu caai.",
+    "Sawa ezu de ni, ma mu ku.",
+    "Ka ma ovu be parata, ma ka motoka ogu.",
+    "Ma le caai, awa'difo.",
+    "Ama ndre drusi.",
+    "Ma ka emu, Adroa le ka."
+  ],
+  "dialogues": {
+    "u34s2l3": [
+      {
+        "line": "Ka mi ovu be parata ambo, mi ka ngo ogu?",
+        "options": ["Ma ka jo amboa ogu.", "Sawa ma nga ni, ma mvu caai.", "Ama ndre adravu."]
+      }
+    ],
+    "u34s3l3": [{ "line": "Mi ka emu aliko alia drusi ya?", "options": ["Ma ka emu, Adroa le ka.", "Ma ka motoka ogu.", "Eri ovu eri andre ndi."] }]
+  },
+  "stories": {}
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Acoliti ni Luo e’yo, ba a’yo Gulu, Kitgum ka Pader alia, ka South Sudan alia.",
+  "notes": "Drafted by Claude (AI) for the Lugbara courses (#132) with low confidence in Lugbara; needs a native-speaker review. Word and unit notes fall back to the English notes about the target language.",
+  "landing": {
+    "hello": "Itye nining?",
+    "thanks": "Apwoyo",
+    "place": "Acoli vu",
+    "word": "pwonye — imba",
+    "words": [
+      ["Itye nining?", "Mi ngoni?"],
+      ["Atye maber", "Ma muke"],
+      ["Apwoyo", "Awa’difo"],
+      ["Wajoli", "Ka’dini"],
+      ["Lawot", "Agyi"],
+      ["Pii", "Ii"],
+      ["Cam", "Nyaka"],
+      ["Ladit", "Ati"],
+      ["Mego", "Andre"],
+      ["Bed maber", "Mi mu muke"]
+    ],
+    "why": {
+      "title": "E’yo **Gulu, Kitgum ka Acoli vu dria ni.**",
+      "text": "Acoliti ba a’yo Gulu, Kitgum ka Pader alia, eri ovu Langoti, Aluruti ka Luoti Kenya ni ndi. Imba aku ba ni, geri ndizu ni, azi ni, ka ongo ka e’yo ati Acoli ni.",
+      "cards": [
+        { "title": "Aku ba ni", "text": "A’yo atibi ka aku bayi be Gulu ka Kitgum alia." },
+        { "title": "Ba ndi geri dria ni", "text": "Ndi Arua ni ani Pakwach, Gulu ka Kitgum." },
+        { "title": "Ba le e’yo ni ni", "text": "Ndre Luo e’yo, eri ovu be ozu bika ku." }
+      ]
+    },
+    "sample": { "prompt": "Ngo ni “awa’difo”?", "options": ["Itye nining?", "Apwoyo", "Pe"], "answer": "Apwoyo", "explain": "_Apwoyo_ ni awa’difo." },
+    "start": { "word": "Wacak!", "caption": "wacak — ama eto" },
+    "farewell": "Apwoyo matek — awa’difo amboni.",
+    "audience": "Ba Lugbarati a’yo ni etozu ni, aku bayi emu Acoli vu ni, ka ba ndi Gulu.",
+    "first": "Ngoni, ru a’yozu ka nde, vutia aku ba, nyaka, suku, sawa, vu, jo ka ruakini, alu alu."
+  },
+  "cast": { "emma": "Uji imba Acoliti ndi geri dria ndraa" }
+}

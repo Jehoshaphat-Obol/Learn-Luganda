@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u11",
+  "notes": { "oluvannyuma": "Vutia: afterwards.", "nneebaka": "Ma u’du: I sleep." },
+  "tips": { "u11s1": "routine", "u11s2": "meals", "u11s3": "routine", "u11s4": "meals" },
+  "guidebook": {
+    "intro": "My day. The present is the bare verb: **Ma nga ngaa** (I wake in the morning).",
+    "tips": [
+      {
+        "id": "routine",
+        "title": "Ma nga, ma oli",
+        "body": [
+          "**Ma nga** I wake up, **Ma oli** I get up, **Ma zi rua** I bathe, **Ma azi ngu** I work, **Ma u’du** I sleep.",
+          "**Vutia** (afterwards) links steps: **Vutia ma ali buku**."
+        ]
+      },
+      {
+        "id": "meals",
+        "title": "Nyaka ngaa ni",
+        "body": [
+          "Meals are named by time: **nyaka ngaa ni** breakfast, **nyaka etu ti ni** lunch, **nyaka ini ni** dinner.",
+          "**Sawa dria** is always (all the time)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Chores",
+        "body": ["Children help with water, sweeping and dishes before school; **Awa’difo azi ni** thanks them for it."]
+      }
+    ]
+  }
+}

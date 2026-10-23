@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Leb Lugbara obedo leb Central Sudanic ma dano milion aryo loko i West Nile, i Arua, Koboko, Maracha ki Terego, ki i Congo.",
+  "notes": "Drafted by Claude (AI) for the Lugbara courses (#132) with low confidence in Lugbara; needs a native-speaker review. The Acholi needs a native-speaker review too; word and unit notes fall back to the English notes (lang/en/about/lgg).",
+  "landing": {
+    "hello": "Mi ngoni",
+    "thanks": "Awa’difo",
+    "place": "West Nile",
+    "word": "imba — pwonye",
+    "words": [
+      ["Mi ngoni?", "Itye nining?"],
+      ["Ma muke", "Atye maber"],
+      ["Awa’difo", "Apwoyo"],
+      ["Mi emu muke", "Wajoli"],
+      ["Agyi", "Lawot"],
+      ["Ii", "Pii"],
+      ["Nyaka", "Cam"],
+      ["Ati", "Ladit"],
+      ["Andre", "Mego"],
+      ["Mi mu muke", "Bed maber"]
+    ],
+    "why": {
+      "title": "Leb me **Arua, Koboko ki got Wati.**",
+      "text": "Leb Lugbara tye i dog gang acel ki Leb Madi, Leb Aringa ki Leb Logo, leb Central Sudanic ma cakke ki Uganda cito wa Congo ki South Sudan. Pwonye pi dog gang, wot, tic, ki wer, myel ki lok pa West Nile.",
+      "cards": [
+        { "title": "Pi dog gang", "text": "Lok ki kwaro ki wat i Arua ki Koboko." },
+        { "title": "Pi luwot", "text": "Wot cakke ki Arua cito wa Koboko, Nebbi ki got Wati." },
+        { "title": "Pi jo ma mito ngeyo", "text": "Nong leb ma pe tye ki dul nying, ma lokke pe loke." }
+      ]
+    },
+    "sample": {
+      "prompt": "Lok mene ma tyen lok ne “apwoyo”?",
+      "options": ["Mi ngoni?", "Awa’difo", "Ku"],
+      "answer": "Awa’difo",
+      "explain": "_Awa’difo_ tyen lok ne apwoyo."
+    },
+    "start": { "word": "Ama eto!", "caption": "ama eto — wacak" },
+    "farewell": "Awa’difo amboni — apwoyo matek.",
+    "audience": "Jo ma loko Leb Acoli ma gicako manyen, dog gang ma oa ki West Nile, ki luwot ma gicito Arua.",
+    "first": "Moto, tito nyingi ki kwan wel, lacen dog gang, cam, cuk, cawa, kabedo, gang ki yot kom, dul ki dul."
+  },
+  "cast": { "emma": "Welo ma tye ka pwonye Leb Lugbara ma peya owoto" }
+}

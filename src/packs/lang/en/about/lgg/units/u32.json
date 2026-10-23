@@ -1,0 +1,28 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u32",
+  "notes": { "omugga": "Eyi: river.", "tosuula": "Mi ozi … ku: don’t throw." },
+  "tips": { "u32s1": "land", "u32s2": "care", "u32s3": "land", "u32s4": "care" },
+  "guidebook": {
+    "intro": "Nature. **Ama …!** suggests doing something together: **Ama patiyi ofi!** (let’s plant trees!).",
+    "tips": [
+      {
+        "id": "land",
+        "title": "Ide, eyi, oni",
+        "body": [
+          "**ide** lake, **eyi** river, **adravu** forest, **pati** tree, **oni** hill, **ji’bo** land.",
+          "**Eyi Nile** is the River Nile, which flows past West Nile."
+        ]
+      },
+      {
+        "id": "care",
+        "title": "Ama ndre … muke",
+        "body": [
+          "**Ama ndre ama ji’bo muke** (let’s look after our land), **Mi ozi taka nde ku!** (don’t throw rubbish here!).",
+          "**Nalubaale** is Lake Victoria."
+        ]
+      }
+    ],
+    "culture": [{ "title": "Mount Wati", "body": ["Mount Wati near Arua is sacred in Lugbara tradition as the place linked to the first ancestors."] }]
+  }
+}

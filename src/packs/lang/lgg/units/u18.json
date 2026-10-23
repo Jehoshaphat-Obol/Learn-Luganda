@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u18",
+  "words": {
+    "ki": { "text": "ngo" },
+    "kiki": { "text": "nde ngo" },
+    "ekyo": { "text": "ngulu" },
+    "oyo": { "text": "ba ngulu" },
+    "wa": { "text": "ngoa" },
+    "oli-wa": { "text": "Mi ovu ngoa?" },
+    "ddi": { "text": "sawa ngoa" },
+    "ojja": { "text": "mi emu" },
+    "lwaki": { "text": "a'disi" },
+    "kubanga": { "text": "te" },
+    "oba": { "text": "ya" },
+    "okwogera": { "text": "a'yo" },
+    "njogera": { "text": "Ma a'yo" },
+    "oyogera": { "text": "Mi a'yo" },
+    "katono": { "text": "mvaa" },
+    "kiyitibwa": { "text": "ru ni" },
+    "kitya": { "text": "ngoni" },
+    "kesho-kutwa": { "text": "drusi vutia" },
+    "mapema": { "text": "ngaa ngaa" },
+    "miaka": { "text": "ilu" },
+    "mingapi": { "text": "ngbe" },
+    "ngapi": { "text": "ngbe" },
+    "wangapi": { "text": "ngbe" }
+  },
+  "sentences": {
+    "s18-oyagala-ki": { "text": "Mi le ngo ndrani?" },
+    "s18-kino-kiki": { "text": "Nde ngo?" },
+    "s18-ekyo-kiki": { "text": "Ngulu ngo?" },
+    "s18-ani-oyo": { "text": "Ba ngulu a'di?" },
+    "s18-ekitabo-kiri-wa": { "text": "Ma buku ovu ngoa?" },
+    "s18-oli-wa": { "text": "Mi ovu ngoa ndraa?" },
+    "s18-ojja-ddi": { "text": "Mi emu sawa ngoa?" },
+    "s18-njija-enkya": { "text": "Ma emu drusi." },
+    "s18-lwaki-osoma": { "text": "Mi imba {to} a'disi?" },
+    "s18-kubanga": { "text": "Te ma le e'yo a'yo bayi be." },
+    "s18-caayi-oba-kaawa": { "text": "Caai ya kawa ya?" },
+    "s18-oyogera-oluganda": { "text": "Mi a'yo {to} ya?" },
+    "s18-njogera-katono": { "text": "Ma a'yo mvaa." },
+    "s18-kiyitibwa-kitya": { "text": "Nde ru ni ngo {to} alia?" },
+    "s-tutaondoka-mapema": { "text": "Ama ka mu ngaa ngaa." },
+    "s-utasafiri-lini": { "text": "Mi ka ndi geri dria sawa ngoa?" },
+    "s-kesho-kutwa-mombasa": { "text": "Drusi vutia ma ka mu {@getaway}." },
+    "s-miaka-mingapi": { "text": "Mi ilu ngbe?" },
+    "s-miaka-ishirini": { "text": "Ma ilu mudri iri." },
+    "s-shilingi-ngapi": { "text": "Shilingi ngbe?" },
+    "s-watoto-wangapi": { "text": "Mi ovu be anzi ngbe?" },
+    "s-habari-vipi": { "text": "E'yo ngoni?" },
+    "s-kwa-nini": { "text": "Mi le caai ku a'disi?" },
+    "s-kwa-sababu": { "text": "Te ma le caai ku." }
+  },
+  "phrases": [
+    "Nde ngo?",
+    "Ba ngulu a'di?",
+    "Mi ovu ngoa ndraa?",
+    "Mi emu sawa ngoa?",
+    "Mi imba {to} a'disi?",
+    "Mi a'yo {to} ya?",
+    "Nde ru ni ngo {to} alia?"
+  ],
+  "dialogues": {
+    "u18s2l3": [{ "line": "Mi ovu ngoa ndraa?", "options": ["Ma ovu takisi paka. Ma emu!", "Ma ni Lugbarati ku.", "Nde ngo?"] }],
+    "u18s3l3": [{ "line": "Mi imba {to} a'disi?", "options": ["Te ma le e'yo a'yo ma dede be.", "Caai ya kawa ya?", "Mi emu sawa ngoa?"] }]
+  },
+  "stories": {
+    "what-is-this": {
+      "title": "Nde ru ni ngo?",
+      "summary": "{@emma} uzi {@jjajja} afayi ozo jo alia ni ru.",
+      "lines": [
+        "Dede, nde ru ni ngo Lugbarati alia?",
+        "Ngulu ni ita.",
+        "Ita. Ka nde ngo?",
+        "Nde ni ope.",
+        "Ma eri ku. A'yo dika tre tre, Dede.",
+        "Ope. Nde ni ope.",
+        "Mi imba Lugbarati a'disi, ma mva?",
+        "Te ma le e'yo a'yo mi be!",
+        "Ee, eri muke ndra! Mi a'yo muke.",
+        "Ku, ma a'yo mvaa."
+      ],
+      "questions": [
+        { "question": "{@emma} ngu ngo?", "options": ["Uzi afayi ru", "Ozo nyaka ini ni", "Ogu ita"] },
+        { "question": "{@emma} imba Lugbarati a'disi?", "options": ["Sukulu ni", "E'yo a'yo {@jjajja} be", "Afayi ogu suku alia"] }
+      ]
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u36",
+  "words": {
+    "olugero": { "text": "e'yo ndra'bo ni" },
+    "engero": { "text": "e'yo ndra'bo niyi" },
+    "amakulu": { "text": "asi" },
+    "kitegeeza": { "text": "eri ni" },
+    "nga-bwe-bagamba": { "text": "ba a'yo ndi" },
+    "prov-kamu-kamu": { "text": "Alu alu ngu ita pi." },
+    "prov-akwata-mpola": { "text": "Ba ndi tre tre kaa ndrandra." },
+    "prov-agali-awamu": { "text": "Si alu ka eza nya." },
+    "prov-olugalo-olumu": { "text": "Dri alu ka i ufu ku." },
+    "prov-atannayitaayita": { "text": "Ba ndi ra ku ni a'yo eri andre ozo muke ndra dria." },
+    "haraka-haraka": { "text": "Ure ure ovu be ayiko ku" },
+    "pole-pole-ndio": { "text": "Tre tre ni geri" },
+    "haba-na-haba": { "text": "Mvaa mvaa ngu afa amboa" },
+    "asiyesikia": { "text": "Ba eri ba amboa ku ni ka pa ga" },
+    "mgeni-siku-mbili": { "text": "Uji etu iri; etu na ni, fe eri jau" },
+    "usipoziba-ufa": { "text": "Ka mi ji ufa ku, mi ka ama si" },
+    "akili-ni-nywele": { "text": "Ozi ni drile ndri ndi, ba dria be eri ni" }
+  },
+  "sentences": {
+    "s36-olugero-luno": { "text": "E'yo ndra'bo ni nde ni ngo?" },
+    "s36-jjajja-amanyi-engero": { "text": "Dede ni e'yo ndra'bo niyi ambo." },
+    "s36-amakulu": { "text": "Ma le eri asi ni." },
+    "s36-kitegeeza-okwegatta": { "text": "Eri ni ovu alu ni ozi." },
+    "s36-kamu-kamu": { "text": "Ba a'yo ndi, alu alu ngu ita pi." },
+    "s36-akwata-mpola": { "text": "Mi asi aa ku. Ba ndi tre tre kaa ndrandra." },
+    "s36-agali-awamu": { "text": "Ama azi ngu alu! Si alu ka eza nya." },
+    "s36-olugalo-olumu": { "text": "Ko ma. Dri alu ka i ufu ku." },
+    "s-methali": { "text": "Dede le e'yo ndra'bo niyi ndra." },
+    "s-maana-yake": { "text": "Eri ni ngo?" },
+    "s-haraka-haraka": { "text": "Ure ure ovu be ayiko ku." },
+    "s-pole-pole-ndio": { "text": "Tre tre ni geri." },
+    "s-haba": { "text": "Mvaa mvaa ngu afa amboa." },
+    "s-asiyesikia": { "text": "Ba eri ba amboa ku ni ka pa ga." },
+    "s-mgeni": { "text": "Uji etu iri; etu na ni, fe eri jau." },
+    "s-usipoziba": { "text": "Ka mi ji ufa ku, mi ka ama si." },
+    "s-akili": { "text": "Ozi ni drile ndri ndi, ba dria be eri ni." }
+  },
+  "phrases": [
+    "Alu alu ngu ita pi.",
+    "Ba ndi tre tre kaa ndrandra.",
+    "Si alu ka eza nya.",
+    "Dri alu ka i ufu ku.",
+    "E'yo ndra'bo ni nde ni ngo?",
+    "Ba a'yo ndi…"
+  ],
+  "dialogues": {
+    "u36s3l3": [
+      {
+        "line": "{to} ndri. Ma tia!",
+        "options": ["Mi asi aa ku. Alu alu ngu ita pi.", "Dri alu ka i ufu ku.", "Ba ndi ra ku ni a'yo eri andre ozo muke ndra dria."]
+      }
+    ]
+  },
+  "stories": {
+    "jjajjas-advice": {
+      "title": "{@jjajja} e'yo",
+      "summary": "{@ssali} asi ure eri biasara onyiru si, ka {@jjajja} ji e'yo ndra'bo niyi si.",
+      "lines": [
+        "Dede, ma biasara ngu muke ku. Ogu bayi mvaa.",
+        "Mi asi aa ku, ma mva. Ba ndi tre tre kaa ndrandra.",
+        "Eri ni ngo?",
+        "Eri ni: ovu tre. Alu alu ngu ita pi.",
+        "Te ma azi ngu ma alu. Ma tia.",
+        "Dri alu ka i ufu ku! Azi ngu {@nakato} be.",
+        "E'yo muke. Si alu ka eza nya!",
+        "Haha! Ndraa mi a'yo dede ndi!"
+      ],
+      "questions": [
+        { "question": "{@jjajja} e'yo ni ngo?", "options": ["Ovu tre", "Duka tile", "Mu {@getaway}"] },
+        {
+          "question": "E'yo ndra'bo ni ngo a'yo {@ssali} ni azi ngu bayi be?",
+          "options": ["Dri alu ka i ufu ku.", "Ba ndi tre tre kaa ndrandra.", "Alu alu ngu ita pi."]
+        }
+      ]
+    }
+  }
+}

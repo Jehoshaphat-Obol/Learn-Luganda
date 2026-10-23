@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u16",
+  "notes": { "ntuuse": "Ma kaa ra: I have arrived.", "tugende": "Ama mu: we go = let’s go." },
+  "tips": { "u16s1": "taxi", "u16s2": "journey", "u16s3": "taxi", "u16s4": "journey" },
+  "guidebook": {
+    "intro": "Travel and transport. Use **si** (with, by) for the vehicle: **Ma mu boda boda si**.",
+    "tips": [
+      {
+        "id": "taxi",
+        "title": "Takisi mu ngoa?",
+        "body": [
+          "**Takisi nde mu ngoa?** (where does this taxi go?), **Oli siteji** (stop at the stage), **Mu tre tre** (go slowly).",
+          "**Ama mu ure!** (let’s go quickly!)."
+        ]
+      },
+      {
+        "id": "journey",
+        "title": "Ma kaa ra",
+        "body": [
+          "**Ma kaa ra muke** (I have arrived well). **Arua ni ani Koboko** is “from Arua to Koboko”.",
+          "Wish a traveller **Mi ndi geri muke!** (walk the road well)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "The road to West Nile",
+        "body": ["Buses from Kampala to Arua cross the Nile at Pakwach; the journey takes most of a day."]
+      }
+    ]
+  }
+}

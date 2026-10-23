@@ -1,0 +1,89 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u12",
+  "words": {
+    "obudde": { "text": "lele" },
+    "enkuba": { "text": "ezu" },
+    "etonnya": { "text": "de" },
+    "omusana": { "text": "etu" },
+    "gwaka": { "text": "ega" },
+    "ebire": { "text": "ora" },
+    "empewo": { "text": "ali" },
+    "eggulu": { "text": "bu" },
+    "laddu": { "text": "ozu" },
+    "ekyeya": { "text": "etu ega sawa" },
+    "ttoggo": { "text": "ezu sawa" },
+    "bwokya": { "text": "ega" },
+    "bunnyogovu": { "text": "ali mvaa" },
+    "mpulira": { "text": "Ma eri" },
+    "ebbugumu": { "text": "ega" },
+    "nnyo-nnyo": { "text": "ndra ndra" },
+    "obudde-bulungi": { "text": "Lele muke" },
+    "ekiwempe": { "text": "amvula" },
+    "upepo": { "text": "oli" },
+    "radi": { "text": "ezu ve" },
+    "jua-kali": { "text": "etu ega ndra" },
+    "kavu": { "text": "owi" },
+    "nyingi": { "text": "ambo" },
+    "msimu": { "text": "sawa" },
+    "vuli": { "text": "ezu mvaa" }
+  },
+  "sentences": {
+    "s-enkuba-etonnya": { "text": "Ezu de." },
+    "s-omusana-gwaka": { "text": "Etu ega." },
+    "s-leero-obudde-bulungi": { "text": "Ndrani lele muke." },
+    "s-waliwo-ebire": { "text": "Ora ambo ovu." },
+    "s-empewo-nnyingi": { "text": "Oli ambo ovu." },
+    "s-eggulu-libwatuka": { "text": "Ezu ve." },
+    "s-laddu-n-eggulu": { "text": "Ozu ka ezu ve." },
+    "s-ttoggo-enkuba-nnyingi": { "text": "Ezu sawa ezu ambo de." },
+    "s-mu-kyeya-bwokya": { "text": "Etu ega sawa lele ega." },
+    "s-obudde-bunnyogovu": { "text": "Ndrani lele ali mvaa." },
+    "s-mpulira-empewo": { "text": "Ma eri ali." },
+    "s-mpulira-ebbugumu": { "text": "Ma eri ega." },
+    "s-obudde-bwokya-nnyo-nnyo": { "text": "Lele ega ndra ndra!" },
+    "s-twala-ekiwempe": { "text": "Ji amvula." },
+    "s-hali-ya-hewa": { "text": "Lele muke ndrani." },
+    "s-kuna-jua": { "text": "Etu ega ndrani." },
+    "s-kuna-joto": { "text": "Ndrani lele ega ndra." },
+    "s-kuna-baridi": { "text": "Ini lele ali." },
+    "s-kuna-upepo": { "text": "Oli ovu ndrani." },
+    "s-kuna-mawingu": { "text": "Ora ovu ndrani." },
+    "s-radi-usiku": { "text": "Ezu ve ini." },
+    "s-jua-kali-leo": { "text": "Etu ega ndra ndrani!" },
+    "s-mvua-nyingi": { "text": "Ezu ambo!" },
+    "s-kiangazi-kavu": { "text": "Etu ega sawa owi ka ega." },
+    "s-msimu-gani": { "text": "Sawa ngo?" },
+    "s-masika-mvua": { "text": "Masika ni ezu amboa." },
+    "s-vuli-mvua-fupi": { "text": "Vuli ni ezu mvaa." }
+  },
+  "phrases": ["Ezu de.", "Etu ega.", "Ndrani lele muke.", "Ma eri ali.", "Lele ega ndra ndra!", "Ji amvula."],
+  "dialogues": {
+    "u12s3l3": [
+      { "line": "Ezu de ndra!", "options": ["Ji amvula.", "Etu ega.", "Ma nya nyaka ngaa ni."] },
+      { "line": "Ma eri ali. Mi dika?", "options": ["Ma eri ali dika.", "Etu ega.", "Ma sapato."] }
+    ]
+  },
+  "stories": {
+    "rainy-day": {
+      "title": "Ezu etu ti",
+      "summary": "Ezu amboa ji {@amara} eri dede jo.",
+      "lines": [
+        "Dede, ma mu jo.",
+        "Ku! Ndre, ora ambo ovu. Ezu emu.",
+        "Te etu ega!",
+        "Eri… ezu ve.",
+        "Ee! Ezu de ndra ndra!",
+        "Ri nde. Ma eri ali. Mi dika?",
+        "Ma dika. Ma le caai.",
+        "Ka'dini, ama mvu caai. Vutia, ji ma amvula.",
+        "Awa'difo amboni, Dede!"
+      ],
+      "questions": [
+        { "question": "{@jjajja} a'yo \"ku\" a'disi?", "options": ["Sawa de ra", "Ezu emu", "{@amara} ovu azo si"] },
+        { "question": "Lele ngoni ndraa?", "options": ["Etu ka ega", "Ezu de ndra ndra", "Ali mvaa ka owi"] },
+        { "question": "{@amara} ka ji ngo mu jo?", "options": ["{@jjajja} amvula", "Sweta", "Nyaka mvaa"] }
+      ]
+    }
+  }
+}

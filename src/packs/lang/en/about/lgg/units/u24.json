@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u24",
+  "notes": { "nkkuse": "Ma a ndri ra: I am full.", "sooka": "Kakau: first." },
+  "tips": { "u24s1": "steps", "u24s2": "meal", "u24s3": "steps", "u24s4": "meal" },
+  "guidebook": {
+    "intro": "Cooking. Recipes are a chain of commands: **Kakau ka tungulu** (first cut the onions).",
+    "tips": [
+      {
+        "id": "steps",
+        "title": "Kakau, vutia",
+        "body": [
+          "**Kakau** first, **vutia** then. **Ji dele aci dria** (put the pot on the fire), **Ji mafuta kpe** (add oil).",
+          "**Nyaka de ra. Ama nya!** (the food is ready. Let’s eat!)"
+        ]
+      },
+      {
+        "id": "meal",
+        "title": "Awa’difo nyaka ozo ni",
+        "body": [
+          "Thank the cook with **Awa’difo nyaka ozo ni**. **Ma a ndri ra** (my belly is heavy) means I’m full.",
+          "**Nya dri ago si** (eat with the right hand)."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Kalo and sauce",
+        "body": ["A West Nile meal is often a firm millet or cassava bread with a sauce of beans, fish, meat or greens."]
+      }
+    ]
+  }
+}
