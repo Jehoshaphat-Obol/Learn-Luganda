@@ -1,0 +1,81 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u36",
+  "words": {
+    "olugero": { "text": "alemikin" },
+    "engero": { "text": "alemikineta" },
+    "amakulu": { "text": "aiteteun" },
+    "kitegeeza": { "text": "Eteteuni" },
+    "nga-bwe-bagamba": { "text": "ekwaŋ elimuni itunga" },
+    "prov-kamu-kamu": { "text": "Ape ape kitiaŋ ekeny." },
+    "prov-akwata-mpola": { "text": "Ŋesi elosi ajokis elosi kalwaan." },
+    "prov-agali-awamu": { "text": "Ŋakiyei ŋulu ejai kiboŋok ekonyete akiriŋ." },
+    "prov-olugalo-olumu": { "text": "Ekimoit ape mam eyari elat." },
+    "prov-atannayitaayita": { "text": "Ŋesi mam elosi ebalaete toto keŋ eyari ejok elau." },
+    "haraka-haraka": { "text": "Abaŋit kere mam aijar" },
+    "pole-pole-ndio": { "text": "Ajokis ajokis ka erot" },
+    "haba-na-haba": { "text": "Ape ape ejai atabo" },
+    "asiyesikia": { "text": "Ŋesi mam eirari ikapolok ebuki akejen" },
+    "mgeni-siku-mbili": { "text": "Ekaitoŋaon akoloŋiti iarei; ŋina iuni kiinak ŋesi akuta" },
+    "usipoziba-ufa": { "text": "Arai mam icoki aboros, ibeit iduki ekisiker" },
+    "akili-ni-nywele": { "text": "Aomisio ekwaŋ ŋakoik, ŋinituŋanan ejaasi keŋ" }
+  },
+  "sentences": {
+    "s36-olugero-luno": { "text": "Alemikin na eteteuni inyo?" },
+    "s36-jjajja-amanyi-engero": { "text": "Tata ejeni alemikineta ŋulu ipu." },
+    "s36-amakulu": { "text": "Amina ajenun aiteteun." },
+    "s36-kitegeeza-okwegatta": { "text": "Eteteuni atipet ka agogoŋu." },
+    "s36-kamu-kamu": { "text": "Ekwaŋ elimuni itunga, ape ape kitiaŋ ekeny." },
+    "s36-akwata-mpola": { "text": "Mam itamata. Ŋesi elosi ajokis elosi kalwaan." },
+    "s36-agali-awamu": { "text": "Kisuamata oni kiboŋok! Ŋakiyei ŋulu ejai kiboŋok ekonyete akiriŋ." },
+    "s36-olugalo-olumu": { "text": "Kiŋarakin eoŋ. Ekimoit ape mam eyari elat." },
+    "s-methali": { "text": "Tata emina alemikineta." },
+    "s-maana-yake": { "text": "Eteteuni inyo?" },
+    "s-haraka-haraka": { "text": "Abaŋit kere mam aijar." },
+    "s-pole-pole-ndio": { "text": "Ajokis ajokis ka erot." },
+    "s-haba": { "text": "Ape ape ejai atabo." },
+    "s-asiyesikia": { "text": "Ŋesi mam eirari ikapolok ebuki akejen." },
+    "s-mgeni": { "text": "Ekaitoŋaon akoloŋiti iarei; ŋina iuni kiinak ŋesi akuta." },
+    "s-usipoziba": { "text": "Arai mam icoki aboros, ibeit iduki ekisiker." },
+    "s-akili": { "text": "Aomisio ekwaŋ ŋakoik, ŋinituŋanan ejaasi keŋ." }
+  },
+  "phrases": [
+    "Ape ape kitiaŋ ekeny.",
+    "Ŋesi elosi ajokis elosi kalwaan.",
+    "Ŋakiyei ŋulu ejai kiboŋok ekonyete akiriŋ.",
+    "Ekimoit ape mam eyari elat.",
+    "Alemikin na eteteuni inyo?",
+    "Ekwaŋ elimuni itunga…"
+  ],
+  "dialogues": {
+    "u36s3l3": [
+      {
+        "line": "{to} etiyaka. Aonyar!",
+        "options": ["Mam itamata. Ape ape kitiaŋ ekeny.", "Ekimoit ape mam eyari elat.", "Ŋesi mam elosi ebalaete toto keŋ eyari ejok elau."]
+      }
+    ]
+  },
+  "stories": {
+    "jjajjas-advice": {
+      "title": "Akisisianakin ka {@jjajja}",
+      "summary": "{@ssali} mam ekoti akiŋiti ebiasara keŋ ŋina etep, ka {@jjajja} ebwaikini ka alemikineta.",
+      "lines": [
+        "Tata, ebiasara kaŋ mam ejok. Ikagielak ediete.",
+        "Mam itamata, ikoku kaŋ. Ŋesi elosi ajokis elosi kalwaan.",
+        "Eteteuni inyo?",
+        "Eteteuni: kiŋit. Ape ape kitiaŋ ekeny.",
+        "Konye asuami eoŋ bon. Aonyar.",
+        "Ekimoit ape mam eyari elat! Kisuam ka {@nakato}.",
+        "Aomisio ejok. Ŋakiyei ŋulu ejai kiboŋok ekonyete akiriŋ!",
+        "Haha! Kolo ilimori ekwaŋ tata!"
+      ],
+      "questions": [
+        { "question": "Akisisianakin ka {@jjajja} ka inyo?", "options": ["Kiŋit", "Kiŋat edukan", "Kilosi {@getaway}"] },
+        {
+          "question": "Alemikin ŋai elimokini {@ssali} asuam ka ice?",
+          "options": ["Ekimoit ape mam eyari elat.", "Ŋesi elosi ajokis elosi kalwaan.", "Ape ape kitiaŋ ekeny."]
+        }
+      ]
+    }
+  }
+}

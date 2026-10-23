@@ -1,0 +1,62 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u34",
+  "words": {
+    "bwe": { "text": "ne" },
+    "bwe-nzuukuka": { "text": "ne aŋaa" },
+    "bw-etonnya": { "text": "ne edoliari akiru" },
+    "singa": { "text": "arai" },
+    "nnandiguze": { "text": "adumuni" },
+    "nnandigenze": { "text": "alosini" },
+    "nnandyagadde": { "text": "Amina" },
+    "ka-tulabe": { "text": "Koŋarata oni" },
+    "katonda-bwanaayagala": { "text": "Arai Edeke emina" },
+    "ukifika": { "text": "ne ibunio" },
+    "mvua-ikinyesha": { "text": "arai edoliari akiru" },
+    "nikipata": { "text": "arai adumu" },
+    "ningekuwa": { "text": "arai ajaasi" },
+    "laiti": { "text": "Kolim" },
+    "tajiri": { "text": "ekabaran" }
+  },
+  "sentences": {
+    "s34-bwe-nzuukuka": { "text": "Ne aŋaa, amati ecai." },
+    "s34-bwe-ntuuka": { "text": "Ne abunio, abeit anyara iyoŋ." },
+    "s34-enkuba-bwetonnya": { "text": "Ne edoliari akiru, mam alosi." },
+    "s34-singa-nnina-ssente": { "text": "Arai ajaasi isiringin, adumuni emotoka." },
+    "s34-singa-tewali-nkuba": { "text": "Arai mam akiru, alosini." },
+    "s34-nnandyagadde-caayi": { "text": "Amina ecai, alipi." },
+    "s34-nnandyagadde-okugenda": { "text": "Amina alosit {@getaway}." },
+    "s34-ka-tulabe": { "text": "Koŋarata oni moi." },
+    "s34-katonda-bwanaayagala": { "text": "Abeit abunore, arai Edeke emina." },
+    "s-ukifika": { "text": "Ne ibunio, kinyara eoŋ." },
+    "s-mvua-ikinyesha": { "text": "Arai edoliari akiru, ibeit oni ajaasi ore." },
+    "s-nikipata-pesa": { "text": "Arai adumu isiringin, abeit alosit." },
+    "s-ningekuwa-tajiri": { "text": "Arai ajaasi ekabaran, adumuni emotoka." },
+    "s-ningenunua": { "text": "Adumuni ekal epolot." },
+    "s-laiti": { "text": "Kolim ajaasi apak!" },
+    "s-ikiwa": { "text": "Arai ijaasi ailip, kilip." }
+  },
+  "phrases": [
+    "Ne aŋaa, amati ecai.",
+    "Ne edoliari akiru, mam alosi.",
+    "Arai ajaasi isiringin, adumuni emotoka.",
+    "Amina ecai, alipi.",
+    "Koŋarata oni moi.",
+    "Abeit abunore, arai Edeke emina."
+  ],
+  "dialogues": {
+    "u34s2l3": [
+      {
+        "line": "Arai ijaasi isiringin ŋuna ipu, idumuni inyo?",
+        "options": ["Adumuni ekal epolot.", "Ne aŋaa, amati ecai.", "Koŋarata oni ateŋ."]
+      }
+    ],
+    "u34s3l3": [
+      {
+        "line": "Ibeit abunore ko ailip moi bo?",
+        "options": ["Abeit abunore, arai Edeke emina.", "Adumuni emotoka.", "Ŋesi epoloi toto keŋ."]
+      }
+    ]
+  },
+  "stories": {}
+}

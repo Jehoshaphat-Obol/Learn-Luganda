@@ -1,0 +1,81 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u35",
+  "words": {
+    "enfumo": { "text": "ailimor" },
+    "olwatuuka": { "text": "Ŋolo kaŋulu" },
+    "olwali-olumu": { "text": "akoloŋit ape" },
+    "waaliwo": { "text": "Abu ejaasi" },
+    "awo": { "text": "Kau" },
+    "nagenda": { "text": "ka elosit" },
+    "nalaba": { "text": "ka eŋarit" },
+    "nagamba": { "text": "ka elimit" },
+    "ekyavaamu": { "text": "Kotoma aŋaren" },
+    "kale-nno": { "text": "Kwana kolo" },
+    "enfumo-ewedde": { "text": "Ailimor kaŋ edolit ne" },
+    "ilinyesha": { "text": "abu edoliari akiru" },
+    "ilikuwa": { "text": "Abu ejaasi" },
+    "paukwa": { "text": "Paukwa!" },
+    "pakawa": { "text": "Pakawa!" },
+    "mwisho": { "text": "aŋaren" },
+    "hadithi-imeishia": { "text": "Ailimor abu edolit ne" }
+  },
+  "sentences": {
+    "s35-olwatuuka": { "text": "Ŋolo kaŋulu, akoloŋit ape…" },
+    "s35-waaliwo-omusajja": { "text": "Abu ejaasi ekile." },
+    "s35-waaliwo-omukazi": { "text": "Abu ejaasi aberu ka ikoku keŋ." },
+    "s35-nagenda-mu-kibira": { "text": "Kau elosit kotoma ateŋ." },
+    "s35-nalaba-empologoma": { "text": "Ka eŋarit engatuny!" },
+    "s35-nagamba": { "text": "Ka elimit, “Mam ikuriana!”" },
+    "s35-ekyavaamu": { "text": "Kotoma aŋaren, aboŋit ko ore." },
+    "s35-kale-nno": { "text": "Kwana kolo, kiirar ailimor na." },
+    "s35-enfumo-ekomye": { "text": "Ailimor kaŋ edolit ne." },
+    "s-jana-ilinyesha": { "text": "Ŋolo abu edoliari akiru." },
+    "s-ilikuwa-baridi": { "text": "Abu ejaasi akoloŋit ka akoit noi." },
+    "s-kulikuwa-na-upepo": { "text": "Abu ejaasi ekuwam." },
+    "s-paukwa": { "text": "Ailimor! Kilimokin oni!" },
+    "s-hapo-zamani": { "text": "Ŋolo kaŋulu, abu ejaasi apuu." },
+    "s-hadithi": { "text": "Tata, kilimokin oni ailimor!" },
+    "s-akaenda": { "text": "Ka apuu elosit ko akare." },
+    "s-akasema": { "text": "Ka elimit, “Ijaasi ai kere?”" },
+    "s-mwisho": { "text": "Kotoma aŋaren, apuu abu eloŋ." },
+    "s-imeishia": { "text": "Ailimor abu edolit ne." }
+  },
+  "phrases": [
+    "Ŋolo kaŋulu, akoloŋit ape…",
+    "Abu ejaasi ekile.",
+    "Kau elosit kotoma ateŋ.",
+    "Ka eŋarit engatuny!",
+    "Kotoma aŋaren, aboŋit ko ore.",
+    "Ailimor kaŋ edolit ne."
+  ],
+  "dialogues": { "u35s3l3": [{ "line": "Abu ejaasi ekile. Kau elosit kotoma ateŋ…", "options": ["Ka eŋarit inyo?", "Amina ecai.", "Ebe ŋini ape."] }] },
+  "stories": {
+    "amaras-story": {
+      "title": "{@amara} elimokini ailimor",
+      "summary": "{@amara} elimokini {@emma} ailimor ka esapat ka engatuny.",
+      "lines": [
+        "{@amara}, kilimokin eoŋ ailimor!",
+        "Kwana kolo. Ŋolo kaŋulu, abu ejaasi esapat.",
+        "Kau elosit kotoma ateŋ akiwar ŋakuni.",
+        "Ka eŋarit inyo?",
+        "Eŋarit engatuny epolot noi!",
+        "Oo! Abu elot bo?",
+        "Mam. Abu eboikin ka esubit esuban.",
+        "Engatuny abu eirarit, ayuaritor ka elosit.",
+        "Kotoma aŋaren, esapat aboŋit ko ore ka ŋakuni. Ailimor kaŋ edolit ne."
+      ],
+      "questions": [
+        { "question": "Kanu esapat abu elosi kotoma ateŋ?", "options": ["Akiwar ŋakuni", "Akiwor", "Akidoŋ akwap"] },
+        {
+          "question": "Esapat abu esuam inyo ne abu eŋar engatuny?",
+          "options": ["Abu elot", "Abu eboikin ka esubit esuban", "Abu edoko ekitoi"]
+        },
+        {
+          "question": "{@amara} edolokini ailimor ekwaŋ?",
+          "options": ["Ailimor kaŋ edolit ne.", "Ŋolo kaŋulu, akoloŋit ape…", "Abu ejaasi ekile."]
+        }
+      ]
+    }
+  }
+}
