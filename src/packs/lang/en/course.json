@@ -5,7 +5,7 @@
   "status": "draft",
   "notes": "Drafted by Claude (AI): needs a native-speaker review. Split from the en-lg, sw-lg and lg-en courses by scripts/split-course.js (#185).",
   "courseTitle": "{to} for English speakers",
-  "languageNames": { "en": "English", "lg": "Luganda", "sw": "Swahili", "fr": "French", "nyn": "Runyankore", "xog": "Lusoga", "ach": "Acholi", "teo": "Ateso" },
+  "languageNames": { "en": "English", "lg": "Luganda", "sw": "Swahili", "fr": "French", "nyn": "Runyankore", "xog": "Lusoga", "ach": "Acholi", "teo": "Ateso", "lgg": "Lugbara" },
   "sections": {
     "s1": { "title": "Foundations", "level": "Beginner", "description": "Greetings, people, food, numbers, time, places, the home and health." },
     "s2": {

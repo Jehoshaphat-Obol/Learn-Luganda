@@ -1,0 +1,78 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u8",
+  "words": {
+    "omutwe": { "text": "drile" },
+    "eriiso": { "text": "mile" },
+    "amaaso": { "text": "mileyi" },
+    "okutu": { "text": "bi" },
+    "ennyindo": { "text": "ombi" },
+    "akamwa": { "text": "ti" },
+    "omukono": { "text": "dri" },
+    "okugulu": { "text": "pa" },
+    "olubuto": { "text": "a" },
+    "gunnuma": { "text": "ze ma" },
+    "lunnuma": { "text": "ze ma" },
+    "ndi-mulwadde": { "text": "Ma ovu azo si" },
+    "ssennyiga": { "text": "ali azo" },
+    "omusujja": { "text": "ega azo" },
+    "omusawo": { "text": "dokita" },
+    "eddagala": { "text": "dawa" },
+    "wona-mangu": { "text": "Mi ovu muke ndrani ndrani!" },
+    "wummula": { "text": "Ovu tre" },
+    "mwili": { "text": "rua" },
+    "jino": { "text": "si" },
+    "mgonjwa": { "text": "azo si" },
+    "ninaumwa": { "text": "Afa ze ma" },
+    "inauma": { "text": "eri ze" },
+    "nimepona": { "text": "Ma ovu muke ra" },
+    "afya": { "text": "ruakini" },
+    "njema": { "text": "muke" }
+  },
+  "sentences": {
+    "s-omutwe-gunnuma": { "text": "Ma drile ze ma." },
+    "s-olubuto-lunnuma": { "text": "Ma a ze ma." },
+    "s-omukono-gunnuma": { "text": "Ma dri ze ma." },
+    "s-amaaso-gange": { "text": "Ma mileyi." },
+    "s-ndi-mulwadde": { "text": "Ma ovu azo si." },
+    "s-nnina-ssennyiga": { "text": "Ma ovu be ali azo." },
+    "s-nnina-omusujja": { "text": "Ma ovu be ega azo." },
+    "s-ngenda-eri-omusawo": { "text": "Ma mu osipitali." },
+    "s-omusawo-wange": { "text": "Ma dokita." },
+    "s-nnywa-eddagala": { "text": "Ma mvu dawa." },
+    "s-wummula-wona-mangu": { "text": "Ovu tre. Mi ovu muke ndrani ndrani!" },
+    "s-kichwa-kinauma": { "text": "Ma drile ze ma." },
+    "s-ninaumwa-na-tumbo": { "text": "Ma a ze ma ndra." },
+    "s-mguu-inauma": { "text": "Ma pa ze ma." },
+    "s-jino-linauma": { "text": "Ma si ze ma." },
+    "s-macho-mazuri": { "text": "Ti ka mileyi." },
+    "s-osha-mikono": { "text": "Dri ka pa." },
+    "s-daktari-yuko-wapi": { "text": "Dokita ovu ngoa?" },
+    "s-nataka-dawa": { "text": "Ma le dawa, awa'difo." },
+    "s-pumzika-leo": { "text": "Ovu tre ndrani." },
+    "s-nimepona-asante": { "text": "Ma ovu muke ra, awa'difo." },
+    "s-ugua-pole": { "text": "Mi ovu muke ndrani ndrani, ma agyi." },
+    "s-afya-njema": { "text": "Ruakini muke!" }
+  },
+  "phrases": ["Ma ovu azo si.", "Ma drile ze ma.", "Ma a ze ma.", "Ma ovu be ega azo.", "Ma mu osipitali.", "Mi ovu muke ndrani ndrani!"],
+  "dialogues": { "u8s3l2": [{ "line": "Mi ngoni?", "options": ["Ma ovu azo si. Ma drile ze ma.", "Ali dri ago.", "Ma ozi cungwa."] }] },
+  "stories": {
+    "doctor-visit": {
+      "title": "Osipitali mvaa alia",
+      "summary": "{@amara} ovu muke ku, eri mu dokita vu.",
+      "lines": [
+        "Mi ngoni, {@amara}?",
+        "Ma ovu azo si. Ma drile ze ma.",
+        "Mi ovu be ega azo ya?",
+        "Ii, ma ovu be ega azo.",
+        "Mvu dawa nde ka ovu tre.",
+        "Awa'difo amboni, dokita.",
+        "Ka'dini. Mi ovu muke ndrani ndrani!"
+      ],
+      "questions": [
+        { "question": "Afa ngo ze eri?", "options": ["Eri a", "Eri drile", "Eri pa"] },
+        { "question": "{@mukasa} fe {@amara} ngo?", "options": ["Dawa", "Caai", "Matooke"] }
+      ]
+    }
+  }
+}

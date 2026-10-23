@@ -9,6 +9,7 @@
     { "code": "xog", "name": "Lusoga", "nativeName": "Lusoga", "greeting": "Wasuze otya", "flag": "ug", "dir": "ltr" },
     { "code": "ach", "name": "Acholi", "nativeName": "Leb Acoli", "greeting": "Itye nining", "flag": "ug", "dir": "ltr" },
     { "code": "teo", "name": "Ateso", "nativeName": "Ateso", "greeting": "Yoga", "flag": "ug", "dir": "ltr" },
+    { "code": "lgg", "name": "Lugbara", "nativeName": "Lugbarati", "greeting": "Mi ngoni?", "flag": "ug", "dir": "ltr" },
     { "code": "rw", "name": "Kinyarwanda", "nativeName": "Ikinyarwanda", "greeting": "Muraho", "flag": "rw", "speak": "Mvuga", "learn": "Ndashaka kwiga", "dir": "ltr" },
     { "code": "ha", "name": "Hausa", "nativeName": "Hausa", "greeting": "Sannu", "flag": "ng", "speak": "Ina magana", "learn": "Ina son koyo", "dir": "ltr" },
     { "code": "yo", "name": "Yoruba", "nativeName": "Yorùbá", "greeting": "Báwo ni", "flag": "ng", "speak": "Mo ń sọ̀rọ̀", "learn": "Mo fẹ́ kọ́", "dir": "ltr" },

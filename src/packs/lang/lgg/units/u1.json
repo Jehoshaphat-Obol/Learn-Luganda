@@ -1,0 +1,146 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u1",
+  "words": {
+    "oli-otya": { "text": "Mi ngoni?", "alts": ["Ngoni?"] },
+    "gyendi": { "text": "Ma muke", "alts": ["Muke"] },
+    "bulungi": { "text": "Muke" },
+    "weebale": { "text": "Awa'difo" },
+    "nnyo": { "text": "amboni", "alts": ["ndra"] },
+    "kale": { "text": "Ka'dini", "alts": ["Muke"] },
+    "ssebo": { "text": "ati" },
+    "nnyabo": { "text": "andre" },
+    "yee": { "text": "Ii" },
+    "nedda": { "text": "Ku" },
+    "wasuze-otya": { "text": "Mi ngaa ngoni?", "alts": ["Mi ngaa ngoni"] },
+    "nsuze-bulungi": { "text": "Ma ngaa muke" },
+    "osiibye-otya": { "text": "Mi etu ngoni?", "alts": ["Mi etu ngoni"] },
+    "gyebale-ko": { "text": "Awa'difo azi ni" },
+    "weraba": { "text": "Mi mu muke" },
+    "tunaalabagana": { "text": "Ama ka ndre vutia" },
+    "nze": { "text": "Ma" },
+    "ggwe": { "text": "Mi" },
+    "erinnya": { "text": "ru" },
+    "lyange": { "text": "ma" },
+    "lyo": { "text": "mi" },
+    "ani": { "text": "a'di" },
+    "mbeera": { "text": "Ma ovu" },
+    "ova-wa": { "text": "Mi emu ngoa ni?", "alts": ["Mi emu ngoa?"] },
+    "nva": { "text": "Ma emu" },
+    "ndi": { "text": "Ma ni" },
+    "muyizi": { "text": "mva sukulu" },
+    "nsanyuse-okukulaba": { "text": "Ma asi muke mi ndre si" },
+    "emu": { "text": "alu" },
+    "bbiri": { "text": "iri" },
+    "ssatu": { "text": "na" },
+    "nnya": { "text": "su" },
+    "ttaano": { "text": "towi" },
+    "mukaaga": { "text": "azya" },
+    "musanvu": { "text": "aziri" },
+    "munaana": { "text": "aro" },
+    "mwenda": { "text": "oromi" },
+    "kkumi": { "text": "mudri" },
+    "karibu": { "text": "Mi emu muke" },
+    "jambo": { "text": "Ngoni" },
+    "mambo": { "text": "E'yo ngo?" },
+    "poa": { "text": "Muke ndra" },
+    "shikamoo": { "text": "Ma inzi mi" },
+    "marahaba": { "text": "Awa'difo, ma le ra" },
+    "ni": { "text": "ni" }
+  },
+  "sentences": {
+    "s-oli-otya-ssebo": { "text": "Mi ngoni, ati?", "alts": ["Ngoni, ati."] },
+    "s-oli-otya-nnyabo": { "text": "Mi ngoni, andre?" },
+    "s-gyendi-weebale": { "text": "Ma muke, awa'difo.", "alts": ["Muke, awa'difo."] },
+    "s-weebale-nnyo": { "text": "Awa'difo amboni." },
+    "s-yee-ssebo": { "text": "Ii, ati." },
+    "s-nedda-nnyabo": { "text": "Ku, andre." },
+    "s-wasuze-otya-nnyabo": { "text": "Mi ngaa ngoni, andre?" },
+    "s-nsuze-bulungi": { "text": "Ma ngaa muke, awa'difo." },
+    "s-osiibye-otya-ssebo": { "text": "Mi etu ngoni, ati?" },
+    "s-gyebale-ko-ssebo": { "text": "Awa'difo azi ni, ati." },
+    "s-kale-weraba": { "text": "Ka'dini, mi mu muke.", "alts": ["Muke, mi mu muke."] },
+    "s-weraba-tunaalabagana": { "text": "Mi mu muke, ama ka ndre vutia." },
+    "s-nze-nakato": { "text": "Ma ni {@nakato}.", "alts": ["Ma {@nakato}."] },
+    "s-erinnya-lyo-ani": { "text": "Mi ru a'di?" },
+    "s-erinnya-lyange-mukasa": { "text": "Ma ru {@mukasa}." },
+    "s-ggwe-ani": { "text": "Mi a'di?" },
+    "s-mbeera-kampala": { "text": "Ma ovu {@city}." },
+    "s-nva-masaka": { "text": "Ma emu {@hometown} ni." },
+    "s-ndi-muyizi": { "text": "Ma ni mva sukulu." },
+    "s-nsanyuse-okukulaba": { "text": "Ma asi muke mi ndre si, {@ssali}." },
+    "s-habari-yako": { "text": "Mi ngoni?", "alts": ["E'yo ngo?"] },
+    "s-karibu-sana": { "text": "Mi emu muke ndra!" },
+    "s-mambo-poa": { "text": "E'yo ngo? Muke ndra!" },
+    "s-shikamoo-bibi": { "text": "Ma inzi mi, dede." },
+    "s-ndiyo-asante": { "text": "Ii, awa'difo." },
+    "s-hapana-asante": { "text": "Ku, awa'difo." },
+    "s-habari-za-asubuhi-baraka": { "text": "Mi ngaa ngoni, {@mukasa}?" },
+    "s-jina-langu-amani": { "text": "Ma ru {@nakato}." },
+    "s-mimi-ni-emma": { "text": "Ma ni {@emma}." },
+    "s-ninaishi-mombasa": { "text": "Ma ovu {@getaway}." },
+    "s-ninatoka-arusha": { "text": "Ma emu {@town} ni." },
+    "s-nimefurahi-kukuona": { "text": "Ma asi muke mi ndre si, {@ssali}." }
+  },
+  "phrases": [
+    "Mi ngoni?",
+    "Ma muke, awa'difo.",
+    "Mi ngaa ngoni?",
+    "Ma ngaa muke.",
+    "Mi etu ngoni?",
+    "Awa'difo azi ni!",
+    "Mi ru a'di?",
+    "Ma ni {@nakato}.",
+    "Ma emu {@hometown} ni.",
+    "Mi mu muke, ama ka ndre vutia."
+  ],
+  "dialogues": {
+    "u1s1l3": [{ "line": "Mi ngaa ngoni, ma mva?", "options": ["Ma ngaa muke, andre.", "Mi mu muke, andre.", "Ku, ati."] }],
+    "u1s1l4": [{ "line": "Ka'dini, mi mu muke!", "options": ["Mi mu muke, ama ka ndre vutia.", "Mi ngaa ngoni?", "Ma muke."] }],
+    "u1s2l3": [
+      { "line": "Mi ru a'di?", "options": ["Ma ni {@amara}.", "Ma ovu {@city}.", "Awa'difo azi ni."] },
+      { "line": "Ma ni {@emma}. Mi emu ngoa ni?", "options": ["Ma emu {@hometown} ni.", "Ma ni mva sukulu.", "Awa'difo amboni."] }
+    ]
+  },
+  "stories": {
+    "new-friend": {
+      "title": "Agyi onyiru",
+      "summary": "{@emma} ndre {@nakato} buku jo ti dria.",
+      "lines": [
+        "Mi ngoni?",
+        "Ma muke, awa'difo. Mi ngoni?",
+        "Muke. Mi ru a'di?",
+        "Ma ni {@emma}. Mi a'di?",
+        "Ma ni {@nakato}. Mi emu ngoa ni, {@emma}?",
+        "Ma emu {@hometown} ni. Ma ni mva sukulu.",
+        "Ma ni mva sukulu dika! Ma asi muke mi ndre si.",
+        "Awa'difo amboni. Ama ka ndre vutia!"
+      ],
+      "questions": [
+        { "question": "{@nakato} uzi ngo?", "options": ["{@emma} ru", "{@emma} ovu ngoa", "{@emma} le nyaka ya"] },
+        { "question": "{@emma} emu ngoa ni?", "options": ["{@city}", "{@hometown}", "Buku jo"] },
+        {
+          "question": "{@nakato} a'yo \"ma asi muke mi ndre si\" ngoni?",
+          "options": ["Awa'difo amboni", "Ma asi muke mi ndre si", "Ama ka ndre vutia"]
+        }
+      ]
+    },
+    "morning-jjajja": {
+      "title": "Mi ngaa ngoni, {@jjajja}",
+      "summary": "{@amara} inzi eri dede sukulu mu ni.",
+      "lines": [
+        "Mi ngaa ngoni, Dede.",
+        "Ma ngaa muke, ma mva. Mi ngaa ngoni?",
+        "Ma ngaa muke, Dede.",
+        "Ka'dini. Awa'difo azi ni!",
+        "Awa'difo, Dede. Ka'dini, mi mu muke!",
+        "Mi mu muke, ma mva. Ama ka ndre vutia."
+      ],
+      "questions": [
+        { "question": "Sawa ngo ni?", "options": ["Ngaa", "Ondre", "Ini"] },
+        { "question": "{@amara} ji {@jjajja} e'yo ngoni?", "options": ["Ku, andre", "Ma ngaa muke", "Mi mu muke"] },
+        { "question": "{@amara} mu ya, emu ya?", "options": ["Emu", "Mu"] }
+      ]
+    }
+  }
+}
