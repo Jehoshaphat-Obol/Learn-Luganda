@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u2",
+  "notes": { "wange": "Kaŋ comes after the noun: toto kaŋ.", "jjajja": "Tata here is grandmother; usage varies by area." },
+  "tips": { "u2s1": "family", "u2s2": "gender", "u2s3": "family", "u2s4": "gender" },
+  "guidebook": {
+    "intro": "Family words and your first verbs. Ateso marks the person with a prefix: **a-** I, **i-** you, **e-** he or she.",
+    "tips": [
+      {
+        "id": "family",
+        "title": "Toto, papa, tata",
+        "body": [
+          "**Toto** is mother, **papa** father and **tata** grandmother (grandfather is **papa lo tata** in this course). **Kaŋ** (my) comes after the noun: **toto kaŋ**, my mother.",
+          "Many nouns change at the end in the plural: **ikoku** child, **idwe** children; **ekile** man, **ikiliok** men; **etuŋanan** person, **itunga** people."
+        ]
+      },
+      {
+        "id": "gender",
+        "title": "e- and a-",
+        "body": [
+          "Most nouns start with a vowel that shows gender: **e-** for masculine (**ekile**, man) and **a-** for feminine (**aberu**, woman). Plurals usually take **i-**.",
+          "The same vowels mark the verb: **a-** I, **i-** you, **e-** he or she: **Amina** I want, **Imina** you want, **Emina** she wants."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Names and family",
+        "body": [
+          "Iteso children are often named after the time or place of their birth: **Opolot** and **Apolot** after a day of heavy rain, **Emong** and **Amongin** after the cattle kraal. **O-** and **E-** names are usually boys, **A-** names girls."
+        ]
+      }
+    ]
+  }
+}

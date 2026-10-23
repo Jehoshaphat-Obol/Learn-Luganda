@@ -25,7 +25,7 @@
   },
   "sentences": {
     "s30-tusaba-katonda": { "text": "Ilipi oni Edeke ŋinikoloŋit." },
-    "s30-ssabbiiti-ekkanisa": { "text": "Nakaape alosi ko ekanisa." },
+    "s30-ssabbiiti-ekkanisa": { "text": "Sabiti alosi ko ekanisa." },
     "s30-lwakutaano-omuzigiti": { "text": "Nakaikany elosi ko emusiridi." },
     "s30-nsaba-amazzi": { "text": "Alipi akipi, toto." },
     "s30-bbayibuli-kulaani": { "text": "Ebaibuli ka Ekurani." },
@@ -42,7 +42,7 @@
     "s-krismasi": { "text": "Kotoma Ekrisimas ilosi oni ko ere." },
     "s-dini": { "text": "Ejaasi adinin ŋulu ipu kotoma East Africa." },
     "s-kusali-msikitini": { "text": "Papa lo tata elipi kotoma emusiridi." },
-    "s-kusali-kanisani": { "text": "Nakaape ilipi oni kotoma ekanisa." },
+    "s-kusali-kanisani": { "text": "Sabiti ilipi oni kotoma ekanisa." },
     "s-ramadhani": { "text": "Kotoma Ramadhani, itunga ebuŋete akimuj." },
     "s-baraka": { "text": "Akiru ka aijar ka Edeke." },
     "s-alizaliwa": { "text": "Tata abu edounete {@island}." },
@@ -50,7 +50,7 @@
     "s-akubariki": { "text": "Edeke kiinak iyoŋ aijar, ikoku kaŋ." }
   },
   "phrases": [
-    "Nakaape alosi ko ekanisa.",
+    "Sabiti alosi ko ekanisa.",
     "Nakaikany elosi ko emusiridi.",
     "Ekrisimas ejokan!",
     "Eidi ejokan!",

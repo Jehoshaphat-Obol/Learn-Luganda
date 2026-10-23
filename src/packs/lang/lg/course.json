@@ -12,7 +12,8 @@
     "fr": { "name": "Olufalansa", "mu": "Lufalansa" },
     "nyn": { "name": "Olunyankole", "mu": "Lunyankole" },
     "xog": { "name": "Olusoga", "mu": "Lusoga" },
-    "ach": { "name": "Olwacholi", "mu": "Lwacholi" }
+    "ach": { "name": "Olwacholi", "mu": "Lwacholi" },
+    "teo": { "name": "Olwateso", "mu": "Lwateso" }
   },
   "cheers": ["Kale!", "Bulungi nnyo!"],
   "phrases": { "congrats": "Wayita bulungi", "thanks": "Weebale nnyo!" },

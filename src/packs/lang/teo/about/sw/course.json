@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Aswahili ka akiro ka East Africa, ŋina erworete itunga ŋulu ipu noi kiŋaren Mombasa ka Zanzibar tetere Kampala, Kigali ka Goma.",
+  "notes": "Drafted by Claude (AI) for the Ateso courses (#131) with low confidence in Ateso; needs a native-speaker review. Word and unit notes fall back to the English notes about the target language.",
+  "landing": {
+    "hello": "Habari?",
+    "thanks": "Asante",
+    "place": "East Africa",
+    "word": "kujifunza — akisisianakin",
+    "words": [
+      ["Habari?", "Ijai bo?"],
+      ["Nzuri", "Ejok"],
+      ["Asante", "Eyalama"],
+      ["Karibu", "Kobuka"],
+      ["Rafiki", "Ekone"],
+      ["Maji", "Akipi"],
+      ["Chakula", "Akimuj"],
+      ["Pole pole", "Kamon kamon"],
+      ["Hakuna shida", "Mam aronis"],
+      ["Kwaheri", "Kolosi ejok"]
+    ],
+    "why": {
+      "title": "Akiro ka **East Africa kere.**",
+      "text": "Aswahili ka akiro ka akwap kotoma Kenya, Tanzania ka Uganda, ka erworete kotoma ekeya ka kotoma aswam kiŋaren aokot ka anyanza tetere Congo. Kisisianakin kanuka elosit, ebiasara, akiriamun ikone ka akiirar isuban, kiŋaren taarab tetere bongo flava.",
+      "cards": [
+        { "title": "Kanuka ikalosak", "text": "Kilosi kiŋaren Mombasa tetere Mwanza kotoma matatu, daladala arai ejahazi." },
+        { "title": "Kotoma aswam", "text": "Kirwor ka ikasuamak ka ikagielak kotoma akwap kere." },
+        { "title": "Kanuka ŋulu emina ajenun", "text": "Kiriamu ŋakiro, alemikineta ka isuban ka aokot ka anyanza ka ŋolo kaŋulu." }
+      ]
+    },
+    "sample": {
+      "prompt": "Ŋai eteteuni “eyalama”?",
+      "options": ["Habari?", "Asante", "Hapana"],
+      "answer": "Asante",
+      "explain": "_Asante_ eteteuni eyalama."
+    },
+    "start": { "word": "Tuanze!", "caption": "tuanze — kiŋarenata oni" },
+    "farewell": "Asante sana — eyalama noi.",
+    "audience": "Itunga ŋulu erworete Ateso ŋulu ekiŋaren: ikalosak, ikabiasharak ka ikasuamak kotoma East Africa, ka isomaok ŋulu emina Aswahili.",
+    "first": "Ayakuno, aitodiaar ka ikarin, kau ekal, akimuj, ekeya, apak, ŋiboro, etogo ka ajokus ka akwaŋan, aitodolet ka aitodolet."
+  },
+  "cast": { "emma": "Ekaitoŋaon kotoma akwap ace ŋesi esisianakini Aswahili ekwaŋ iyoŋ" }
+}

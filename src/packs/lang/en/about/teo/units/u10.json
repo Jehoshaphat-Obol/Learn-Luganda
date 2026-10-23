@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u10",
+  "notes": { "zange": "Kaŋ lu: my, with plural nouns." },
+  "tips": { "u10s1": "clothes", "u10s2": "dress", "u10s3": "clothes", "u10s4": "dress" },
+  "guidebook": {
+    "intro": "Clothes: getting dressed and buying something new.",
+    "tips": [
+      {
+        "id": "clothes",
+        "title": "Inanga, ilwatin",
+        "body": [
+          "**Inanga** clothes, **ilwatin** shoes. Many clothing words are borrowed: **esati**, **esuruali**, **egaun**, **ekofia**, **ekoti**, **egomesi**, **ekanzu**."
+        ]
+      },
+      {
+        "id": "dress",
+        "title": "Asuki, kisuk",
+        "body": [
+          "**Asuki** is “I put on, I dress”; **Kisuk!** is “put it on!”. **Kaŋ** (my) agrees with plurals as **kaŋ lu**: **ilwatin kaŋ lu**."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "The gomesi in Teso",
+        "body": [
+          "Iteso women wear the **egomesi** at weddings and church, as in Buganda, often in bright colours. Men wear the **ekanzu** with a jacket."
+        ]
+      }
+    ]
+  }
+}

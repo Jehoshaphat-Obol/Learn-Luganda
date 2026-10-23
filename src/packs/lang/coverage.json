@@ -7,15 +7,17 @@
     "lg": { "target": 1, "base": 1 },
     "nyn": { "target": 1, "base": 1 },
     "sw": { "target": 1, "base": 1 },
+    "teo": { "target": 1, "base": 1 },
     "xog": { "target": 1, "base": 1 }
   },
   "about": {
-    "ach": { "fr": 0, "lg": 0, "nyn": 0, "sw": 0, "xog": 0 },
-    "en": { "ach": 1, "en": 0, "fr": 1, "lg": 1, "nyn": 1, "sw": 1, "xog": 1 },
-    "fr": { "ach": 0, "en": 1, "fr": 0, "lg": 0, "nyn": 0, "sw": 0, "xog": 0 },
-    "lg": { "ach": 0, "en": 1, "fr": 0, "lg": 0, "nyn": 0, "sw": 0, "xog": 0 },
-    "nyn": { "ach": 0, "fr": 0, "lg": 0, "sw": 0, "xog": 0 },
-    "sw": { "ach": 0, "en": 1, "fr": 0, "lg": 1, "nyn": 0, "sw": 0, "xog": 0 },
-    "xog": { "ach": 0, "en": 1, "fr": 0, "lg": 0, "nyn": 0, "sw": 0 }
+    "ach": { "fr": 0, "lg": 0, "nyn": 0, "sw": 0, "teo": 0, "xog": 0 },
+    "en": { "ach": 1, "en": 0, "fr": 1, "lg": 1, "nyn": 1, "sw": 1, "teo": 1, "xog": 1 },
+    "fr": { "ach": 0, "en": 1, "fr": 0, "lg": 0, "nyn": 0, "sw": 0, "teo": 0, "xog": 0 },
+    "lg": { "ach": 0, "en": 1, "fr": 0, "lg": 0, "nyn": 0, "sw": 0, "teo": 0, "xog": 0 },
+    "nyn": { "ach": 0, "fr": 0, "lg": 0, "sw": 0, "teo": 0, "xog": 0 },
+    "sw": { "ach": 0, "en": 1, "fr": 0, "lg": 1, "nyn": 0, "sw": 0, "teo": 0, "xog": 0 },
+    "teo": { "ach": 0, "fr": 0, "lg": 0, "nyn": 0, "sw": 0, "xog": 0 },
+    "xog": { "ach": 0, "en": 1, "fr": 0, "lg": 0, "nyn": 0, "sw": 0, "teo": 0 }
   }
 }

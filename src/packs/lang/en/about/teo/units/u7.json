@@ -1,0 +1,34 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u7",
+  "notes": { "kkodi": "Said at the door of a house before entering.", "tuula": "Kiboi: sit (one person)." },
+  "tips": { "u7s1": "rooms", "u7s2": "welcome", "u7s3": "rooms", "u7s4": "welcome" },
+  "guidebook": {
+    "intro": "The home: rooms, furniture and welcoming guests.",
+    "tips": [
+      {
+        "id": "rooms",
+        "title": "Etogo, ekek",
+        "body": [
+          "**Etogo** is a house or hut and **ekek** a door. **Ekicolong** is a chair. Many modern words are borrowed: **emeeza** (table), **etala** (lamp), **edirisa** (window)."
+        ]
+      },
+      {
+        "id": "welcome",
+        "title": "Kodi kodi! Kobuka!",
+        "body": [
+          "At the door call **Kodi kodi!**; the host answers **Kobuka!** (come in). **Kiboi** is “sit”. Commands start with **ki-** or **ko-**.",
+          "**Alakara oni** means “we are happy”, a warm way to say a guest is welcome."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "The homestead",
+        "body": [
+          "A traditional Iteso home, **ore**, is a ring of round huts around a yard, with a granary and a kraal for the cattle. Guests are offered a seat and something to drink before any business."
+        ]
+      }
+    ]
+  }
+}

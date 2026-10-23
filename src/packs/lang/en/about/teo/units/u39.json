@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u39",
+  "notes": { "mwasuze": "Literally “did you sleep well?”, to an elder." },
+  "tips": { "u39s1": "respect", "u39s2": "guests", "u39s3": "respect", "u39s4": "guests" },
+  "guidebook": {
+    "intro": "Respect and manners.",
+    "tips": [
+      {
+        "id": "respect",
+        "title": "Akiosikin",
+        "body": ["**Akiosikin** is respect. Greet elders first, with **Iperi ejok bo, lokapolon?** Children often bow or kneel to greet elders."]
+      },
+      {
+        "id": "guests",
+        "title": "Kilomaa ka kiboikin",
+        "body": ["**Kilomaa** is “come in”, **Kiboikin** “sit down”. **Kinyam kidiŋ** offers a little food. **Kiboŋo daŋ!** is “come again!”."]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Hospitality",
+        "body": ["A guest, **ekaitoŋaon**, is always offered a seat and something to eat or drink. Refusing everything can seem unfriendly."]
+      }
+    ]
+  }
+}

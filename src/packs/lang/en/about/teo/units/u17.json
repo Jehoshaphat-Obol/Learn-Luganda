@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u17",
+  "notes": { "tewali": "Mam alone: there is none, no." },
+  "tips": { "u17s1": "mam", "u17s2": "mere", "u17s3": "mam", "u17s4": "mere" },
+  "guidebook": {
+    "intro": "Saying no. **Mam** is no and the negative.",
+    "tips": [
+      {
+        "id": "mam",
+        "title": "Mam before the verb",
+        "body": ["Put **mam** before a verb to make it negative: **Amina** I want, **Mam amina** I don’t want. **Mam ilosi!** means “don’t go!”."]
+      },
+      {
+        "id": "mere",
+        "title": "Mere: it is not",
+        "body": [
+          "**Mere** is “it is not”: **Mere kaŋ** (it isn’t mine). **Mam ajeni** is “I don’t know”, **Mam airari** “I don’t understand / hear”."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "A soft no",
+        "body": ["A blunt no can sound rude. People soften it with **konye** (but) and a reason, or with **Kidiŋ** (later, a little)."]
+      }
+    ]
+  }
+}

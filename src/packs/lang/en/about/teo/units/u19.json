@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u19",
+  "notes": { "edda": "Ŋolo kaŋulu: long ago." },
+  "tips": { "u19s1": "abu", "u19s2": "it", "u19s3": "abu", "u19s4": "it" },
+  "guidebook": {
+    "intro": "What I did: the past.",
+    "tips": [
+      {
+        "id": "abu",
+        "title": "Abu: done",
+        "body": ["**Abu** before a verb says something has happened: **Abu anyam** (I have eaten), **Abu adiar** (I have finished)."]
+      },
+      {
+        "id": "it",
+        "title": "-it: long ago",
+        "body": ["The ending **-it** puts a verb in the past: **Alosit** I went, **Anyamit** I ate. **Ŋolo kaŋulu** is long ago."]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Stories of the past",
+        "body": ["Older Iteso tell of the migration from the north-east, from Karamoja, and of how families settled the land around the lakes."]
+      }
+    ]
+  }
+}

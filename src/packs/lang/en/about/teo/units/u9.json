@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u9",
+  "notes": { "kirungi": "Ejok: good, fine, nice. Also used alone to say “good!”." },
+  "tips": { "u9s1": "colours", "u9s2": "describe", "u9s3": "colours", "u9s4": "describe" },
+  "guidebook": {
+    "intro": "Colours and describing things. Adjectives come after the noun and agree with it.",
+    "tips": [
+      {
+        "id": "colours",
+        "title": "Arengan, akwangan",
+        "body": [
+          "**Arengan** red, **akiryon** black, **akwangan** white, **akijani** green, **ayelo** yellow. **Ebulu** (blue) and **ekahawia** (brown) are borrowed."
+        ]
+      },
+      {
+        "id": "describe",
+        "title": "Big, small, good",
+        "body": [
+          "**Epolon** big, **ediit** small, **ejok** good, **ititaŋ** new, **akaru** old. They follow the noun: **etogo epolon**, a big house."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Cattle colours",
+        "body": [
+          "Like other Nilotic herders, the Iteso have many words for cattle colours and patterns. A man could be known by the colour of his favourite ox."
+        ]
+      }
+    ]
+  }
+}

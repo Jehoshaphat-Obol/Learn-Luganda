@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u33",
+  "notes": { "okusinga": "Elau: it passes, more than." },
+  "tips": { "u33s1": "elau", "u33s2": "same", "u33s3": "elau", "u33s4": "same" },
+  "guidebook": {
+    "intro": "Comparing: bigger, the most, the same.",
+    "tips": [
+      {
+        "id": "elau",
+        "title": "Elau: more than",
+        "body": [
+          "**Elau** (it passes) makes a comparison: **Etome epolot elau aite** (an elephant is bigger than a cow). **Elau kere** (passes all) is “the most”."
+        ]
+      },
+      {
+        "id": "same",
+        "title": "Ebe ŋini ape",
+        "body": ["**Ebe ŋini ape** is “it is the same”, **Mere ŋini ape** “it isn’t the same”. **Epoloi** is “looks like”, **ekwaŋ** “like”."]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Comparing cattle",
+        "body": [
+          "Herders compare cattle all the time: which ox is biggest, whose cow gives most milk. It is the classic topic for practising **elau**."
+        ]
+      }
+    ]
+  }
+}

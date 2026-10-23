@@ -1,0 +1,50 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u1",
+  "notes": {
+    "oli-otya": "Literally “are you there?”.",
+    "gyebale-ko": "Literally “thanks for the work”.",
+    "ssebo": "Lokapolon, from ekapolon, a leader or elder.",
+    "nnyabo": "Toto is mother; it is also polite for any woman."
+  },
+  "tips": { "u1s1": "yoga", "u1s2": "sounds", "u1s3": "yoga", "u1s4": "sounds" },
+  "guidebook": {
+    "intro": "Ateso is an Eastern Nilotic language, a cousin of Karimojong and Turkana, not of Luganda. Nouns have no classes, but most start with a vowel that shows gender, and the person is a short prefix on the verb. Start with the greetings used every day.",
+    "tips": [
+      {
+        "id": "yoga",
+        "title": "Yoga! Ijai bo?",
+        "body": [
+          "**Yoga** is hello, at any time of day. Follow it with **Ijai bo?** (are you there? how are you?) and answer **Ejai** or **Ejai ejok** (it is well). **Bo** at the end turns a sentence into a question.",
+          "In the morning ask **Iperit bo?** (did you sleep?) and answer **Aperit ejok**. **Eyalama** is thank you; **Eyalama noi** is thank you very much."
+        ]
+      },
+      {
+        "id": "sounds",
+        "title": "How Ateso sounds",
+        "body": [
+          "**ŋ** is the sound in “singer”, even at the start of a word: **ŋai** (who). **c** is like the “ch” in church: **ecai** (tea). Vowels are as in Spanish or Italian.",
+          "Ateso has tone and a set of “whispered” final vowels that written Ateso does not mark, so listen and copy the recordings."
+        ],
+        "table": [
+          ["Ateso", "English"],
+          ["ape", "one"],
+          ["iarei", "two"],
+          ["iuni", "three"],
+          ["iwoŋon", "four"],
+          ["ikany", "five"],
+          ["itomon", "ten"]
+        ],
+        "targetColumns": [0]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Eyalama kanuka aswam",
+        "body": [
+          "**Eyalama kanuka aswam** (thanks for the work) greets anyone who is busy, from a farmer to a shopkeeper. Call an older or unknown man **lokapolon** (sir) and a woman **toto** (mother, madam)."
+        ]
+      }
+    ]
+  }
+}

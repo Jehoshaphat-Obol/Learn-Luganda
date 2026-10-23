@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u18",
+  "notes": { "lwaki": "Kanu: why.", "kubanga": "Naarai: because." },
+  "tips": { "u18s1": "wh", "u18s2": "bo", "u18s3": "wh", "u18s4": "bo" },
+  "guidebook": {
+    "intro": "Asking questions: who, what, where, when and why.",
+    "tips": [
+      {
+        "id": "wh",
+        "title": "Ŋai, inyo, ai, nai, kanu",
+        "body": ["**Ŋai** who, **inyo** what, **ai** where or how, **nai** when, **kanu** why. **Naarai** is because."],
+        "table": [["Ateso", "English"], ["ŋai", "who"], ["inyo", "what"], ["ai", "where"], ["nai", "when"], ["kanu", "why"], ["ipei", "how many"]],
+        "targetColumns": [0]
+      },
+      {
+        "id": "bo",
+        "title": "Yes-or-no questions with bo",
+        "body": ["End a sentence with **bo** to ask a yes-or-no question: **Irwori Ateso bo?** (do you speak Ateso?)."]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Asking about words",
+        "body": ["Iteso enjoy explaining their language. **Einyarae ekwaŋ?** (what is it called?) will start a long, happy conversation."]
+      }
+    ]
+  }
+}

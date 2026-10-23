@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u37",
+  "notes": { "nti": "Ebe: that, introducing speech." },
+  "tips": { "u37s1": "say", "u37s2": "opinion", "u37s3": "say", "u37s4": "opinion" },
+  "guidebook": {
+    "intro": "News and opinions.",
+    "tips": [
+      {
+        "id": "say",
+        "title": "Ebala ebe…",
+        "body": [
+          "**Ebala** is “he or she says”, **ebalaete** “they say”; **ebe** introduces what is said: **Ebala ebe akiru elomari** (she says that rain is coming)."
+        ]
+      },
+      {
+        "id": "opinion",
+        "title": "Aomit, ayei",
+        "body": ["**Aomit ebe…** is “I think that…”; **aomisio** is an opinion. **Ayei** is “I agree”, **Mam ayei** “I don’t agree”."]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Radio in Teso",
+        "body": ["Local FM stations broadcast news and talk shows in Ateso, and listeners call in with their opinions."]
+      }
+    ]
+  }
+}

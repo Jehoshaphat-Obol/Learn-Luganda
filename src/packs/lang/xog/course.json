@@ -12,7 +12,8 @@
     "fr": { "name": "Olufalansa", "mu": "Lufalansa" },
     "nyn": { "name": "Olunyankole", "mu": "Lunyankole" },
     "xog": { "name": "Olusoga", "mu": "Lusoga" },
-    "ach": { "name": "Olwacholi", "mu": "Lwacholi" }
+    "ach": { "name": "Olwacholi", "mu": "Lwacholi" },
+    "teo": { "name": "Olwateso", "mu": "Lwateso" }
   },
   "sections": {
     "s1": { "title": "Omusingi", "level": "Abatandika", "description": "Okulamusa, abantu, emere, enamba, obude, ebifo, awaka n’obulamu." },

@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Anyankole erworete itunga ŋulu ipu kotoma Ankole, ko ataparan ka Uganda, ŋiuwai ka Mbarara, akwap ka aituk ŋulu ejaasi ŋamuwaŋin ŋulu elwanak.",
+  "notes": "Drafted by Claude (AI) for the Ateso courses (#131) with low confidence in Ateso; needs a native-speaker review. Word and unit notes fall back to the English notes about the target language.",
+  "landing": {
+    "hello": "Agandi!",
+    "thanks": "Webale",
+    "place": "Ankole",
+    "word": "kwega — akisisianakin",
+    "words": [
+      ["Agandi?", "Ijai bo?"],
+      ["Ni marungi", "Ejai ejok"],
+      ["Webale", "Eyalama"],
+      ["Kare", "Kwana"],
+      ["Omunywani", "Ekone"],
+      ["Amaizi", "Akipi"],
+      ["Ebyokurya", "Akimuj"],
+      ["Sebo", "Lokapolon"],
+      ["Nyabo", "Toto"],
+      ["Ogumeho", "Kolosi ejok"]
+    ],
+    "why": {
+      "title": "Akiro ka **Ankole ka aituk ŋulu ejaasi ŋamuwaŋin ŋulu elwanak.**",
+      "text": "Anyankole erworete kotoma Mbarara, Bushenyi, Ntungamo ka Ibanda, ka epoloi Akiga ka Anyoro. Kisisianakin kanuka ekal, elosit, aswam, ka isuban ka ailip ka Ankole.",
+      "cards": [
+        { "title": "Kanuka ekal", "text": "Kirwor ka ikapolok ka ikaitotak kotoma Ankole." },
+        { "title": "Kanuka ikalosak", "text": "Kilosi kiŋaren Mbarara tetere Kabale ka Anyanza Bunyonyi." },
+        { "title": "Kanuka ŋulu emina ajenun", "text": "Kiriamu italia ka ŋakiro ŋulu ka aituk." }
+      ]
+    },
+    "sample": {
+      "prompt": "Ŋai eteteuni “eyalama”?",
+      "options": ["Agandi", "Webale", "Ngaaha"],
+      "answer": "Webale",
+      "explain": "_Webale_ eteteuni eyalama."
+    },
+    "start": { "word": "Tutandike!", "caption": "tutandike — kiŋarenata oni" },
+    "farewell": "Webale munonga — eyalama noi.",
+    "audience": "Itunga ŋulu erworete Ateso ŋulu ekiŋaren, ikalia ŋulu elomete Ankole, ka ikalosak ŋulu elosete ko ataparan ka Uganda.",
+    "first": "Ayakuno, aitodiaar ka ikarin, kau ekal, akimuj, ekeya, apak, ŋiboro, etogo ka ajokus ka akwaŋan, aitodolet ka aitodolet."
+  },
+  "cast": { "emma": "Ekaitoŋaon ŋesi esisianakini Anyankole kiŋaren elosit" }
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Afaransa erworete kotoma akwapin ŋulu ipu kotoma Afrika ka kotoma akwap kere, kiŋaren Paris tetere Dakar, Kinshasa ka Montréal.",
+  "notes": "Drafted by Claude (AI) for the Ateso courses (#131) with low confidence in Ateso; needs a native-speaker review. Word and unit notes fall back to the English notes about the target language.",
+  "landing": {
+    "hello": "Bonjour !",
+    "thanks": "Merci",
+    "place": "akwapin ŋulu erworete Afaransa",
+    "word": "apprendre — akisisianakin",
+    "words": [
+      ["Bonjour", "Yoga"],
+      ["Ça va ?", "Ijai ai?"],
+      ["Merci", "Eyalama"],
+      ["D’accord", "Kwana"],
+      ["Ami", "Ekone"],
+      ["Eau", "Akipi"],
+      ["Nourriture", "Akimuj"],
+      ["Monsieur", "Lokapolon"],
+      ["Madame", "Toto"],
+      ["Au revoir", "Kolosi ejok"]
+    ],
+    "why": {
+      "title": "Akiro ka **akwapin ŋulu ipu kotoma akwap kere.**",
+      "text": "Afaransa erworete kotoma akwapin ŋulu ipu kotoma Afrika, Europe, Canada ka neni ace. Kisisianakin kanuka elosit, akisom, aswam, ka akiirar isuban, ibukui ka ifilim.",
+      "cards": [
+        { "title": "Kanuka ikalosak", "text": "Kilosi kiŋaren Kinshasa tetere Dakar, Paris ka Montréal." },
+        { "title": "Kotoma aswam ka akisom", "text": "Kisuam ka akwapin ŋulu ipu ŋulu erworete Afaransa kotoma Afrika." },
+        { "title": "Kanuka ŋulu emina ajenun", "text": "Kiriamu ibukui, isuban ka ifilim kotoma Afaransa." }
+      ]
+    },
+    "sample": {
+      "prompt": "Ŋai eteteuni “eyalama”?",
+      "options": ["Bonjour", "Merci", "Non"],
+      "answer": "Merci",
+      "explain": "_Merci_ eteteuni eyalama."
+    },
+    "start": { "word": "C’est parti !", "caption": "c’est parti — kiŋarenata oni" },
+    "farewell": "Merci beaucoup — eyalama noi.",
+    "audience": "Itunga ŋulu erworete Ateso ŋulu ekiŋaren, isomaok, ikasuamak ka ikalosak ŋulu elosete kotoma akwapin ŋulu erworete Afaransa.",
+    "first": "Ayakuno, aitodiaar ka ikarin, kau ekal, akimuj, ekeya, apak, ŋiboro, etogo ka ajokus ka akwaŋan, aitodolet ka aitodolet."
+  },
+  "cast": { "emma": "Ekaitoŋaon kotoma akwap ace ŋesi erworo Afaransa" }
+}
