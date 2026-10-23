@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u30",
+  "notes": { "nsaba": "Alipi: I pray, I ask; also “please”." },
+  "tips": { "u30s1": "pray", "u30s2": "holidays", "u30s3": "pray", "u30s4": "holidays" },
+  "guidebook": {
+    "intro": "Faith and holidays.",
+    "tips": [
+      {
+        "id": "pray",
+        "title": "Ilipi oni Edeke",
+        "body": [
+          "**Edeke** is God; **akilip** to pray or ask, so **Alipi** is both “I pray” and “please”. **Edeke kiinak iyoŋ aijar!** is “God bless you!”."
+        ]
+      },
+      {
+        "id": "holidays",
+        "title": "Ekrisimas ejokan!",
+        "body": ["Holidays take **ejokan** (good): **Ekrisimas ejokan!**, **Epasaka ejokan!**, **Eidi ejokan!**. **Asikukuu** is a holiday."]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Faith in Teso",
+        "body": [
+          "Most Iteso are Christian, Catholic or Anglican, with Muslim communities in the towns. Ngora and Soroti have old mission churches and schools."
+        ]
+      }
+    ]
+  }
+}

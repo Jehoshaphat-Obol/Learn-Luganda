@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u28",
+  "notes": {
+    "kwanjula": "Akitodiaar: introduction, from “to show”.",
+    "ssenga": "Literally “father’s mother-sister”; in Teso the aunt also guides the bride."
+  },
+  "tips": { "u28s1": "celebrate", "u28s2": "wish", "u28s3": "celebrate", "u28s4": "wish" },
+  "guidebook": {
+    "intro": "Ceremonies: weddings, introductions and birthdays.",
+    "tips": [
+      {
+        "id": "celebrate",
+        "title": "Kilakara!",
+        "body": [
+          "**Kilakara!** (be happy!) is congratulations; **Kilakarata oni!** “let’s celebrate!”. **Ailip** is a celebration or dance, **ainakinet** a gift."
+        ]
+      },
+      {
+        "id": "wish",
+        "title": "Amina koni",
+        "body": [
+          "**Amina koni…** is “I wish you…”. **Akoloŋit ka akidouni ejokan!** is happy birthday (good day of birth). **Eyalama kanuka abunore** thanks people for coming."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Bride wealth",
+        "body": [
+          "In Teso a marriage is sealed by the groom’s family giving cattle to the bride’s family. The introduction, **akitodiaar**, is where the families meet and agree."
+        ]
+      }
+    ]
+  }
+}

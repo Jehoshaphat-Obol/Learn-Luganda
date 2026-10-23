@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Orwateso ni rurimi rwa Nilotic orugambwa abantu nka obukaikuru bubiri n'ekicweka omu burugwizooba bwa Uganda, ahari Soroti, Kumi, Serere na Amuria, n'Abateso ba Kenya.",
+  "notes": "Drafted by Claude (AI) for the Ateso courses (#131) with low confidence in Ateso; needs a native-speaker review. The Runyankore needs a native-speaker review too; word and unit notes fall back to the English notes (lang/en/about/teo).",
+  "landing": {
+    "hello": "Yoga",
+    "thanks": "Eyalama",
+    "place": "Teso",
+    "word": "akisisianakin — kwega",
+    "words": [
+      ["Ijai bo?", "Agandi?"],
+      ["Ejai ejok", "Ni marungi"],
+      ["Eyalama", "Webale"],
+      ["Kobuka", "Tukwakiire"],
+      ["Ekone", "Omunywani"],
+      ["Akipi", "Amaizi"],
+      ["Akimuj", "Ebyokurya"],
+      ["Lokapolon", "Sebo"],
+      ["Toto", "Nyabo"],
+      ["Kolosi ejok", "Ogumeho"]
+    ],
+    "why": {
+      "title": "Orurimi rwa **Soroti, Kumi n'ennyanja za Teso.**",
+      "text": "Orwateso ruri omu ruganda rwa Ateker hamwe n'Orukaramoja n'Oruturukana, n'ahabw'ekyo kurwega nikukwigurira endimi nyingi kuruga Uganda kuhika Kenya na South Sudan. Ruyege ahabw'eka, orugyendo, emirimo, n'ebyeshongoro, emizano n'engano za Teso.",
+      "cards": [
+        { "title": "Ahabw'eka", "text": "Gamba na banyakuru n'ab'eka omuri Soroti na Kumi." },
+        { "title": "Ahabw'abatambuzi", "text": "Tambura kuruga Soroti kuhika Kumi, Ngora n'ennyanja Bisina." },
+        {
+          "title": "Ahabw'abarikwenda kumanya",
+          "text": "Shanga orurimi rwa Nilotic oruriho amaziina g'ekikazi n'ekishaija, kandi orutaine bika by'amaziina."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Ni kiha ekirikumanyisa “webale”?",
+      "options": ["Ijai bo?", "Eyalama", "Mam"],
+      "answer": "Eyalama",
+      "explain": "_Eyalama_ nikimanyisa webale."
+    },
+    "start": { "word": "Kiŋarenata oni!", "caption": "kiŋarenata oni — reka tutandike" },
+    "farewell": "Eyalama noi — webale munonga.",
+    "audience": "Abarikutandika, eka ezirikuruga Teso, n'abatambuzi abarikuza omu burugwizooba bwa Uganda.",
+    "first": "Okuramukya, okweyanjura n'enamba, bwanyima eka, ebyokurya, akatale, eshaaha, ebifo, omuka n'amagara, ekicweka ku kicweka."
+  },
+  "cast": { "emma": "Omugyenyi orikwega Orwateso atakagiire omu rugyendo" }
+}

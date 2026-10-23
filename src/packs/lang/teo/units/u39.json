@@ -1,0 +1,55 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u39",
+  "words": {
+    "okufukamira": { "text": "akiriam akuŋ" },
+    "abakadde": { "text": "ikapolok" },
+    "ekitiibwa": { "text": "akiosikin" },
+    "mwasuze": { "text": "Iperi ejok bo?" },
+    "mwebale": { "text": "Eyalama kus" },
+    "mwattu": { "text": "alipi" },
+    "webale-okujja": { "text": "Eyalama kanuka abunore" },
+    "omugenyi": { "text": "ekaitoŋaon" },
+    "olyeko": { "text": "Kinyam kidiŋ" },
+    "adabu": { "text": "aijar ŋina ejok" },
+    "hodi": { "text": "Hodi?" },
+    "mkono-wa-kulia": { "text": "akan ka ekediany" },
+    "ukarimu": { "text": "akiitoŋaar" },
+    "karibu-tena": { "text": "Kiboŋo daŋ" }
+  },
+  "sentences": {
+    "s39-bafukamira": { "text": "Idwe eriamete akuŋ ne ekosete ikapolok." },
+    "s39-mwasuze-ssebo": { "text": "Iperi ejok bo, lokapolon?" },
+    "s39-mwebale-nnyabo": { "text": "Eyalama noi, toto." },
+    "s39-ekitiibwa": { "text": "Ekoto iosikinete oni ikapolok." },
+    "s39-mwattu": { "text": "Alipi, kiinakin eoŋ akipi." },
+    "s39-webale-okujja": { "text": "Eyalama kanuka abunore! Ilakara oni aŋar iyoŋ." },
+    "s39-omugenyi": { "text": "Ekaitoŋaon ka ŋesi epolot." },
+    "s39-olyeko": { "text": "Kiboikin ka kinyam kidiŋ." },
+    "s39-yingira-otuule": { "text": "Kilomaa ka kiboikin." },
+    "s-heshima": { "text": "Akiosikin epolot noi." },
+    "s-adabu": { "text": "Ikoku na ejaasi aijar ŋina ejok." },
+    "s-hodi": { "text": "Hodi? Kilomaa!" },
+    "s-mkono-kulia": { "text": "Kinyam ka akan ka ekediany." },
+    "s-ukarimu": { "text": "Eyalama kanuka akiitoŋaar kon." },
+    "s-karibu-tena": { "text": "Eyalama, kiboŋo daŋ!" }
+  },
+  "phrases": [
+    "Iperi ejok bo, lokapolon?",
+    "Eyalama noi, toto.",
+    "Alipi, kiinakin eoŋ akipi.",
+    "Eyalama kanuka abunore!",
+    "Kilomaa ka kiboikin.",
+    "Kiboikin ka kinyam kidiŋ."
+  ],
+  "dialogues": {
+    "u39s2l3": [{ "line": "Ikoku kaŋ, iperi ejok bo?", "options": ["Aperi ejok, lokapolon. Ka iyoŋ?", "Ayei ka iyoŋ.", "Kibaŋa!"] }],
+    "u39s3l3": [
+      {
+        "line": "Eyalama kanuka abunore! Kiboikin ka kinyam kidiŋ.",
+        "options": ["Eyalama noi, lokapolon.", "Ekoko! Kiriamu ŋesi!", "Mam ayei."]
+      }
+    ]
+  },
+  "stories": {}
+}

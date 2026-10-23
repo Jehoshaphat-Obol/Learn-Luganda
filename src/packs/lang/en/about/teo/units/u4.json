@@ -1,0 +1,36 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u4",
+  "notes": { "ssente": "Isiringin: shillings, money.", "lukumi": "Elufu, from Swahili elfu." },
+  "tips": { "u4s1": "tens", "u4s2": "price", "u4s3": "tens", "u4s4": "price" },
+  "guidebook": {
+    "intro": "Numbers and money. Ateso counts on five, then on ten.",
+    "tips": [
+      {
+        "id": "tens",
+        "title": "Itomon kape",
+        "body": [
+          "Eleven is **itomon kape** (ten and one), twelve **itomon kaarei**. Tens are **akai-** plus the number: **akaiarei** 20, **akaiuni** 30, **akaikany** 50."
+        ],
+        "table": [["Ateso", "English"], ["itomon", "10"], ["akaiarei", "20"], ["akwatat", "100"], ["elufu", "1000"]],
+        "targetColumns": [0]
+      },
+      {
+        "id": "price",
+        "title": "Ilalak ai?",
+        "body": [
+          "**Ilalak ai?** asks “how much?” (price). Money is **isiringin**, shillings. Thousands use **elufu**: **elufu ikany** (5,000).",
+          "To bargain, say **Kidiŋ!** (a little!) and smile."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Market days",
+        "body": [
+          "Towns in Teso have a weekly market day, when people walk in from the villages with millet, groundnuts, chickens and cattle. Bargaining is expected and friendly."
+        ]
+      }
+    ]
+  }
+}

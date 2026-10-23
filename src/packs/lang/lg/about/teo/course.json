@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Olwateso lulimi lwa Nilotic olwogerwa abantu ng’obukadde bubiri n’ekitundu mu buvanjuba bwa Uganda, okwetooloola Soroti, Kumi, Serere ne Amuria, n’Abateso b’e Kenya.",
+  "notes": "Drafted by Claude (AI) for the Ateso courses (#131) with low confidence in Ateso; needs a native-speaker review. The Luganda needs a native-speaker review too; word and unit notes fall back to the English notes (lang/en/about/teo).",
+  "landing": {
+    "hello": "Yoga",
+    "thanks": "Eyalama",
+    "place": "Teso",
+    "word": "akisisianakin — okuyiga",
+    "words": [
+      ["Ijai bo?", "Oli otya?"],
+      ["Ejai ejok", "Gyendi"],
+      ["Eyalama", "Weebale"],
+      ["Kobuka", "Tukwanirizza"],
+      ["Ekone", "Mukwano"],
+      ["Akipi", "Amazzi"],
+      ["Akimuj", "Emmere"],
+      ["Lokapolon", "Ssebo"],
+      ["Toto", "Nnyabo"],
+      ["Kolosi ejok", "Weeraba"]
+    ],
+    "why": {
+      "title": "Olulimi lwa **Soroti, Kumi n’ennyanja za Teso.**",
+      "text": "Olwateso luli mu kika kya Ateker wamu n’Olukaramoja n’Oluturukana, kale bw’oluyiga oggulawo ennimi nnyingi okuva mu Uganda okutuuka e Kenya ne South Sudan. Luyige olw’ab’omu maka, entambula, emirimu, n’ennyimba, amazina n’engero za Teso.",
+      "cards": [
+        { "title": "Eri ab’omu maka", "text": "Yogera ne bajjajja n’ab’eŋŋanda e Soroti ne Kumi." },
+        { "title": "Eri abatambuze", "text": "Tambula okuva e Soroti okutuuka e Kumi, Ngora ne ku nnyanja Bisina." },
+        {
+          "title": "Eri abaagala okumanya",
+          "text": "Zuula olulimi lwa Nilotic olulina amannya ag’ekikazi n’ekisajja, era nga terulina bika bya mannya."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Kiruwa ekitegeeza “weebale”?",
+      "options": ["Ijai bo?", "Eyalama", "Mam"],
+      "answer": "Eyalama",
+      "explain": "_Eyalama_ kitegeeza weebale."
+    },
+    "start": { "word": "Kiŋarenata oni!", "caption": "kiŋarenata oni — ka tutandike" },
+    "farewell": "Eyalama noi — weebale nnyo.",
+    "audience": "Aboogera Oluganda abatandika okuva ku ntandikwa, ab’omu maka abava mu Teso, n’abatambuze abagenda mu buvanjuba bwa Uganda.",
+    "first": "Okulamusa, okweyanjula n’ennamba, oluvannyuma ab’omu maka, emmere, akatale, essaawa, ebifo, awaka n’obulamu, ekitundu ku kitundu."
+  },
+  "cast": { "emma": "Omugenyi ayiga Olwateso nga tannaba kutambula" }
+}

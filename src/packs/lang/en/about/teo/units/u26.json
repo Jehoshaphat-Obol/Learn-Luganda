@@ -1,0 +1,33 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u26",
+  "notes": { "kabaka": "Erwosit: king.", "awangaale": "Literally “live for ever”." },
+  "tips": { "u26s1": "erwosit", "u26s2": "ekiko", "u26s3": "erwosit", "u26s4": "ekiko" },
+  "guidebook": {
+    "intro": "The kingdom of Buganda, told in Ateso. Teso had no king; elders and clan leaders ruled.",
+    "tips": [
+      {
+        "id": "erwosit",
+        "title": "Erwosit: the king",
+        "body": [
+          "**Erwosit** is king, **apugan** government or rule, **epugi** he rules. **Kitolomaa ŋinipak!** (live for ever!) answers **Kabaka awangaale!**."
+        ]
+      },
+      {
+        "id": "ekiko",
+        "title": "Ekiko and the prime minister",
+        "body": [
+          "**Ekiko** is the Lukiiko, the parliament; **ekapolon ka ikanam** is the prime minister (leader of the council). **Ekal ka erwosit** is the palace."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Rule by elders",
+        "body": [
+          "Before colonial times the Iteso were governed by age-sets and clan elders, not kings. Today the **Emorimor** is the cultural leader of the Iteso."
+        ]
+      }
+    ]
+  }
+}

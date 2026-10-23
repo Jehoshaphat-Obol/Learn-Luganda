@@ -5,7 +5,7 @@
   "status": "draft",
   "notes": "Drafted by Claude (AI): needs a native-speaker review. Split from the en-lg, sw-lg and lg-en courses by scripts/split-course.js (#185).",
   "courseTitle": "{to} kwa wazungumzaji wa Kiswahili",
-  "languageNames": { "en": "Kiingereza", "lg": "Kiganda", "sw": "Kiswahili", "fr": "Kifaransa", "nyn": "Kinyankore", "xog": "Kisoga", "ach": "Kiacholi" },
+  "languageNames": { "en": "Kiingereza", "lg": "Kiganda", "sw": "Kiswahili", "fr": "Kifaransa", "nyn": "Kinyankore", "xog": "Kisoga", "ach": "Kiacholi", "teo": "Kiteso" },
   "sections": {
     "s1": { "title": "Misingi", "level": "Wanaoanza", "description": "Salamu, watu, chakula, namba, wakati, mahali, nyumbani na afya." },
     "s2": {

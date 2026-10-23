@@ -1,0 +1,27 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u13",
+  "notes": { "zirya": "Enyamete: they eat." },
+  "tips": { "u13s1": "cattle", "u13s2": "wild", "u13s3": "cattle", "u13s4": "wild" },
+  "guidebook": {
+    "intro": "Animals: on the farm and in the wild.",
+    "tips": [
+      {
+        "id": "cattle",
+        "title": "Aite, akine",
+        "body": ["**Aite** cow (**aituk** cows), **akine** goat, **amesek** sheep, **epege** pig. **Ebaren** is an animal, especially livestock."]
+      },
+      {
+        "id": "wild",
+        "title": "Engatuny, etome",
+        "body": ["**Engatuny** lion, **etome** elephant, **ekiboko** hippo, **ekaukau** monkey. **Ejai** means “there is”."]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Cattle are wealth",
+        "body": ["For the Iteso cattle are wealth, bride price and pride. A family’s herd is counted, named and sung about."]
+      }
+    ]
+  }
+}

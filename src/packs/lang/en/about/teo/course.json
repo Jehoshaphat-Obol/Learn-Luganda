@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Ateso is an Eastern Nilotic language spoken by about two and a half million people in eastern Uganda, around Soroti, Kumi, Serere and Amuria, and by the Iteso of western Kenya.",
+  "notes": "Drafted by Claude (AI) for the Ateso courses (#131) with low confidence in Ateso; needs a native-speaker review.",
+  "landing": {
+    "hello": "Yoga",
+    "thanks": "Eyalama",
+    "place": "Teso",
+    "word": "akisisianakin — v. to learn",
+    "words": [
+      ["Ijai bo?", "How are you?"],
+      ["Ejai ejok", "I’m fine"],
+      ["Eyalama", "Thank you"],
+      ["Kobuka", "Welcome"],
+      ["Ekone", "Friend"],
+      ["Akipi", "Water"],
+      ["Akimuj", "Food"],
+      ["Lokapolon", "Sir"],
+      ["Toto", "Madam"],
+      ["Kolosi ejok", "Goodbye"]
+    ],
+    "why": {
+      "title": "The language of **Soroti, Kumi and the lakes of Teso.**",
+      "text": "Ateso belongs to the Ateker family with Karimojong and Turkana, so it opens a whole group of languages from Uganda to Kenya and South Sudan. Learn it for family, travel, work, and the songs, dances and stories of Teso.",
+      "cards": [
+        { "title": "For family", "text": "Talk with grandparents and relatives in Soroti and Kumi." },
+        { "title": "For travellers", "text": "Find your way from Soroti to Kumi, Ngora and Lake Bisina." },
+        { "title": "For the curious", "text": "Meet a Nilotic language with gendered nouns, verb prefixes and no noun classes." }
+      ]
+    },
+    "sample": {
+      "prompt": "Which one means “thank you”?",
+      "options": ["Ijai bo?", "Eyalama", "Mam"],
+      "answer": "Eyalama",
+      "explain": "_Eyalama_ means thank you."
+    },
+    "start": { "word": "Kiŋarenata oni!", "caption": "kiŋarenata oni — let’s begin" },
+    "farewell": "Eyalama noi — thank you very much.",
+    "audience": "Complete beginners, families from Teso, volunteers and travellers heading to eastern Uganda.",
+    "first": "Greetings, introductions and numbers, then family, food, the market, time, places, the home and health, unit by unit."
+  },
+  "cast": { "emma": "A visitor learning Ateso before her trip" }
+}

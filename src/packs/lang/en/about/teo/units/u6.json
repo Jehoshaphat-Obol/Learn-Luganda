@@ -1,0 +1,30 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u6",
+  "notes": { "awaka": "Ore: home, the homestead.", "omuzigiti": "Emusikiti, from Swahili msikiti." },
+  "tips": { "u6s1": "where", "u6s2": "directions", "u6s3": "where", "u6s4": "directions" },
+  "guidebook": {
+    "intro": "Places and directions in town.",
+    "tips": [
+      {
+        "id": "where",
+        "title": "Ilosi ai?",
+        "body": [
+          "**Ai** is “where”: **Ilosi ai?** (where are you going?), **Ejai ai?** (where is it?). Answer with **Alosi ko…** (I am going to…): **Alosi ko etaun**.",
+          "**Ore** is home: **Alosi ore**."
+        ]
+      },
+      {
+        "id": "directions",
+        "title": "Left, right, straight",
+        "body": ["**Ko ŋakan ŋulu ejoka** to the right (the good hand), **ko ŋakan ŋulu ekediany** to the left. **Kailakit** is straight on."]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Soroti Rock",
+        "body": ["Soroti town grew around a huge granite rock. People give directions from it, from the market and from the main road to Mbale."]
+      }
+    ]
+  }
+}

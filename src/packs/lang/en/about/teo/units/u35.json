@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u35",
+  "notes": { "enfumo": "Ailimor: story." },
+  "tips": { "u35s1": "start", "u35s2": "end", "u35s3": "start", "u35s4": "end" },
+  "guidebook": {
+    "intro": "Telling a story.",
+    "tips": [
+      {
+        "id": "start",
+        "title": "Ŋolo kaŋulu…",
+        "body": [
+          "Stories begin **Ŋolo kaŋulu** (long ago) and **Abu ejaasi…** (there was…). **Kau** is “then”, and **ka** + past verb carries the story on: **ka elosit** (and he went), **ka eŋarit** (and he saw)."
+        ]
+      },
+      {
+        "id": "end",
+        "title": "Ailimor kaŋ edolit ne",
+        "body": ["**Ailimor** is a story. End it with **Ailimor kaŋ edolit ne** (my story ends here). **Kotoma aŋaren** is “in the end”."]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Stories by the fire",
+        "body": [
+          "Grandparents tell stories at night by the fire, about the hare, **apuu**, the hyena, **ebu**, and the lion, **engatuny**. Children answer and sing along."
+        ]
+      }
+    ]
+  }
+}

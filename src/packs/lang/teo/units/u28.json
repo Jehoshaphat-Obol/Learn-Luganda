@@ -1,0 +1,86 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u28",
+  "words": {
+    "kwanjula": { "text": "akitodiaar" },
+    "ssenga": { "text": "toto lo papa" },
+    "omukolo": { "text": "ailip" },
+    "ekirabo": { "text": "ainakinet" },
+    "embaga": { "text": "akuuta" },
+    "omugole": { "text": "akaurut" },
+    "kulika": { "text": "Kilakara!" },
+    "okujaguza": { "text": "akilakar" },
+    "tujaguze": { "text": "Kilakarata oni!" },
+    "amazaalibwa": { "text": "akoloŋit ka akidouni" },
+    "nkwagaliza": { "text": "Amina koni" },
+    "keeki": { "text": "ekeki" },
+    "mwebale-okujja": { "text": "Eyalama kanuka abunore" },
+    "mpango": { "text": "eŋolit" },
+    "wageni": { "text": "ikaitoŋaok" },
+    "kualika": { "text": "akinyar" },
+    "bwana-harusi": { "text": "ekile ka akuuta" },
+    "aliyekuja": { "text": "ŋesi abu ebunete" },
+    "waliokuja": { "text": "ŋulu abu ebunete" },
+    "sikukuu-njema": { "text": "Asikukuu ejokan!" },
+    "heri-ya-mwaka-mpya": { "text": "Ekaru ŋina etep ejokan!" }
+  },
+  "sentences": {
+    "s28-kwanjula-ku-lwamukaaga": { "text": "Akitodiaar ejai Nakaikanykape." },
+    "s28-ssenga": { "text": "Toto lo papa ekiŋarakini akaurut." },
+    "s28-omukolo-mulungi": { "text": "Ailip ejok noi!" },
+    "s28-ekirabo": { "text": "Abu ayaun ainakinet." },
+    "s28-embaga": { "text": "Akuuta ejai kotoma ekanisa." },
+    "s28-kulika-omugole": { "text": "Kilakara, akaurut!" },
+    "s28-tujaguze": { "text": "Kilakarata oni kiboŋok!" },
+    "s28-amazaalibwa": { "text": "Lolo ka akoloŋit kaŋ ka akidouni." },
+    "s28-nkwagaliza": { "text": "Akoloŋit ka akidouni ejokan!" },
+    "s28-keeki": { "text": "Ekeki na elamit noi." },
+    "s28-mwebale-okujja": { "text": "Eyalama kanuka abunore!" },
+    "s-utaenda-wapi": { "text": "Ilosit ai ŋinakoloŋit ka akiyoŋ?" },
+    "s-mpango-gani": { "text": "Eŋolit kon ka inyo?" },
+    "s-sherehe-jumamosi": { "text": "Ejai ailip Nakaikanykape." },
+    "s-harusi": { "text": "Akuuta ejai elap ŋina elomari." },
+    "s-zawadi": { "text": "Na ka ainakinet kon." },
+    "s-wageni-wengi": { "text": "Ikaitoŋaok ŋulu ipu abu ebunete." },
+    "s-kualika": { "text": "Abu anyara iyoŋ ko akuuta." },
+    "s-bibi-harusi": { "text": "Akaurut ejokan noi." },
+    "s-bwana-harusi": { "text": "Ekile ka akuuta abu eboloi ekanzu." },
+    "s-aliyekuja": { "text": "Etuŋanan ŋesi abu ebunete ka ekaitotan kaŋ." },
+    "s-waliokuja": { "text": "Ikaitoŋaok ŋulu abu ebunete abu ealakar." },
+    "s-sikukuu-njema": { "text": "Asikukuu ejokan, Tata!" },
+    "s-mwaka-mpya": { "text": "Ekaru ŋina etep ejokan, ekone!" }
+  },
+  "phrases": [
+    "Akitodiaar ejai Nakaikanykape.",
+    "Abu ayaun ainakinet.",
+    "Kilakara, akaurut!",
+    "Kilakarata oni kiboŋok!",
+    "Akoloŋit ka akidouni ejokan!",
+    "Eyalama kanuka abunore!"
+  ],
+  "dialogues": {
+    "u28s3l3": [{ "line": "Lolo ka akoloŋit kaŋ ka akidouni!", "options": ["Akoloŋit ka akidouni ejokan!", "Ikiaŋ noi!", "Ajai kotoma erot."] }]
+  },
+  "stories": {
+    "the-kwanjula": {
+      "title": "Akitodiaar",
+      "summary": "{@nakato} edikari akitodiaar ka ekaitotan keŋ ka {@jjajja}.",
+      "lines": [
+        "{@nakato}, abu iboloi egomesi kon bo?",
+        "Ee, Tata. Ejokan bo?",
+        "Ejokan noi! Ainakinet ejai ai?",
+        "Ejai ne. Esukari ka emoŋo.",
+        "Ejok. Toto lo papa ekiŋarakini akaurut.",
+        "Ikaitoŋaok ipu noi!",
+        "Ee. Lolo ilakarete oni.",
+        "Kilakara, akaurut! Amina koni aijar na ejok!",
+        "Kilakarata oni! Eyalama kanuka abunore kere!"
+      ],
+      "questions": [
+        { "question": "{@nakato} eyauni ainakinet ŋai?", "options": ["Ekeki", "Esukari ka emoŋo", "Akuta"] },
+        { "question": "Ŋai ekiŋarakini akaurut kotoma akitodiaar?", "options": ["Toto lo papa", "Erwosit", "Ekesiaunan"] },
+        { "question": "{@nakato} ebala ekwaŋ “Amina koni”?", "options": ["Amina koni", "Amina iyoŋ", "Akiŋiti iyoŋ"] }
+      ]
+    }
+  }
+}

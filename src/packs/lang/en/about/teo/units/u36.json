@@ -1,0 +1,31 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u36",
+  "notes": { "olugero": "Alemikin: proverb." },
+  "tips": { "u36s1": "alemikin", "u36s2": "proverbs", "u36s3": "alemikin", "u36s4": "proverbs" },
+  "guidebook": {
+    "intro": "Proverbs. Elders use them to teach, advise and win arguments.",
+    "tips": [
+      {
+        "id": "alemikin",
+        "title": "Alemikin na eteteuni inyo?",
+        "body": [
+          "**Alemikin** is a proverb (**alemikineta** proverbs). **Eteteuni** is “it means”: **Alemikin na eteteuni inyo?** (what does this proverb mean?)."
+        ]
+      },
+      {
+        "id": "proverbs",
+        "title": "Some proverbs",
+        "body": [
+          "**Ape ape kitiaŋ ekeny** (one by one the bird builds its nest), **Ekimoit ape mam eyari elat** (one finger can’t kill a louse), **Ŋakiyei ŋulu ejai kiboŋok…** (teeth together…). These are draft translations of the Luganda proverbs."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Ekwaŋ elimuni itunga",
+        "body": ["A speaker starts a proverb with **ekwaŋ elimuni itunga** (as people say). Knowing proverbs shows wisdom and respect for elders."]
+      }
+    ]
+  }
+}

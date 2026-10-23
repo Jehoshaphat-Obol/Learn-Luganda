@@ -1,0 +1,82 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u18",
+  "words": {
+    "ki": { "text": "inyo" },
+    "kiki": { "text": "ŋinyo bo" },
+    "ekyo": { "text": "ŋol" },
+    "oyo": { "text": "ŋolo" },
+    "wa": { "text": "ai" },
+    "oli-wa": { "text": "Ijai ai?" },
+    "ddi": { "text": "nai" },
+    "ojja": { "text": "ibuni" },
+    "lwaki": { "text": "kanu" },
+    "kubanga": { "text": "naarai" },
+    "oba": { "text": "kori" },
+    "okwogera": { "text": "akirworo" },
+    "njogera": { "text": "Arwori" },
+    "oyogera": { "text": "Irwori" },
+    "katono": { "text": "diŋ" },
+    "kiyitibwa": { "text": "einyarae" },
+    "kitya": { "text": "ekwaŋ" },
+    "kesho-kutwa": { "text": "moi kaŋulu" },
+    "mapema": { "text": "kaali" },
+    "miaka": { "text": "ikarin" },
+    "mingapi": { "text": "ikarin ipei" },
+    "ngapi": { "text": "ipei" },
+    "wangapi": { "text": "itunga ipei" }
+  },
+  "sentences": {
+    "s18-oyagala-ki": { "text": "Imina inyo lolo?" },
+    "s18-kino-kiki": { "text": "Lo ŋinyo bo?" },
+    "s18-ekyo-kiki": { "text": "Ŋol ŋinyo bo?" },
+    "s18-ani-oyo": { "text": "Ŋolo ŋai?" },
+    "s18-ekitabo-kiri-wa": { "text": "Ekitabo kaŋ ejai ai?" },
+    "s18-oli-wa": { "text": "Ijai ai kolo?" },
+    "s18-ojja-ddi": { "text": "Ibuni nai?" },
+    "s18-njija-enkya": { "text": "Abuni moi." },
+    "s18-lwaki-osoma": { "text": "Kanu isisianakini {to}?" },
+    "s18-kubanga": { "text": "Naarai amina akirworo ka itunga." },
+    "s18-caayi-oba-kaawa": { "text": "Icai kori ekawa?" },
+    "s18-oyogera-oluganda": { "text": "Irwori bo {to}?" },
+    "s18-njogera-katono": { "text": "Arwori diŋ." },
+    "s18-kiyitibwa-kitya": { "text": "Lo einyarae ekwaŋ ko {to}?" },
+    "s-tutaondoka-mapema": { "text": "Ibeit oni alosit kaali." },
+    "s-utasafiri-lini": { "text": "Ibeit alosit nai?" },
+    "s-kesho-kutwa-mombasa": { "text": "Moi kaŋulu abeit alosit ko {@getaway}." },
+    "s-miaka-mingapi": { "text": "Ijaasi ikarin ipei?" },
+    "s-miaka-ishirini": { "text": "Ejaasi kaŋ ikarin akaiarei." },
+    "s-shilingi-ngapi": { "text": "Isiringin ipei?" },
+    "s-watoto-wangapi": { "text": "Ijaasi idwe ipei?" },
+    "s-habari-vipi": { "text": "Ŋakiro ekwaŋ?" },
+    "s-kwa-nini": { "text": "Kanu mam imina icai?" },
+    "s-kwa-sababu": { "text": "Naarai mam alakara ka icai." }
+  },
+  "phrases": ["Lo ŋinyo bo?", "Ŋolo ŋai?", "Ijai ai kolo?", "Ibuni nai?", "Kanu isisianakini {to}?", "Irwori bo {to}?", "Lo einyarae ekwaŋ ko {to}?"],
+  "dialogues": {
+    "u18s2l3": [{ "line": "Ijai ai kolo?", "options": ["Ejai eoŋ ko epaaka lo etakisi. Abuni!", "Mam ajeni Aganda.", "Lo ŋinyo bo?"] }],
+    "u18s3l3": [{ "line": "Kanu isisianakini {to}?", "options": ["Naarai amina akirworo ka tata kaŋ.", "Icai kori ekawa?", "Ibuni nai?"] }]
+  },
+  "stories": {
+    "what-is-this": {
+      "title": "Lo einyarae ekwaŋ?",
+      "summary": "{@emma} eŋit {@jjajja} ikiror lu ibore ko etogo lo akiyar keŋ.",
+      "lines": [
+        "Tata, lo einyarae ekwaŋ ko Aganda?",
+        "Ŋol ka ecupa.",
+        "Ecupa. Ka lo ŋinyo bo?",
+        "Lo ka ekileŋ.",
+        "Mam airari. Kiwalak bobo kamon, Tata.",
+        "Ekileŋ. Lo ka ekileŋ.",
+        "Kanu isisianakini Aganda, ikoku kaŋ?",
+        "Naarai amina akirworo ka iyoŋ!",
+        "Ai, ejok noi! Irwori ejok.",
+        "Mam, arwori diŋ."
+      ],
+      "questions": [
+        { "question": "{@emma} esuamai inyo?", "options": ["Eŋit ikiror lu ibore", "Eyari akimuj lo akwar", "Egweli ecupa"] },
+        { "question": "Kanu {@emma} esisianakini Aganda?", "options": ["Kanuka esukul", "Akirworo ka {@jjajja}", "Akigwel ibore ko ocuga"] }
+      ]
+    }
+  }
+}

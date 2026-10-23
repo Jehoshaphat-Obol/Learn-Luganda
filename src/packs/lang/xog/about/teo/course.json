@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Olwateso lulimi olw’aba Nilotic, olwogerwa abantu abasoba obukade bubiri mu buvanjuba bwa Uganda: e Soroti, Kumi, Serere n’e Amuria, era n’Abateso abali e Kenya.",
+  "notes": "Drafted by Claude (AI) for the Ateso courses (#131) with low confidence in Ateso; needs a native-speaker review. The Lusoga needs a native-speaker review too; word and unit notes fall back to the English notes (lang/en/about/teo).",
+  "landing": {
+    "hello": "Yoga",
+    "thanks": "Eyalama",
+    "place": "Teso",
+    "word": "akisisianakin — kuyiga",
+    "words": [
+      ["Ijai bo?", "Ki atyanu?"],
+      ["Ejai ejok", "Ndi bulungi"],
+      ["Eyalama noi", "Weebale inho"],
+      ["Kobuka", "Tukusangaaliire"],
+      ["Ekone kaŋ", "Mukwano gwange"],
+      ["Akipi", "Amaadhi"],
+      ["Akimuj", "Emere"],
+      ["Lokapolon", "Sebo"],
+      ["Toto", "Nyabo"],
+      ["Kolosi ejok", "Sigala bulungi"]
+    ],
+    "why": {
+      "title": "Olulimi lw’e **Soroti, Kumi n’enyanja dh’e Teso.**",
+      "text": "Olwateso luli mu kika kya Ateker n’Olukaramoja n’Oluturukana, atyanu bw’oluyiga oigula enimi inhi okuva mu Uganda okutuuka e Kenya ne South Sudan. Luyige olw’ab’eka, entambula, emirimu, n’enyimba, amazina n’engero dh’e Teso.",
+      "cards": [
+        { "title": "Ku lw’ab’eka", "text": "Yogera ne badhaadha n’ab’eka e Soroti ne Kumi." },
+        { "title": "Ku lw’abatambuli", "text": "Tambula okuva e Soroti okutuuka e Kumi, Ngora ne ku nyanja Bisina." },
+        {
+          "title": "Ku lw’abeegomba okumanya",
+          "text": "Bona olulimi lwa Nilotic oluliko amanya ag’ekikazi n’ekisadha, era nga teruliko bika bya manya."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Kiriwa ekitegeeza “weebale”?",
+      "options": ["Ijai bo?", "Eyalama", "Mam"],
+      "answer": "Eyalama",
+      "explain": "_Eyalama_ amakulu gaakyo ti weebale."
+    },
+    "start": { "word": "Kiŋarenata oni!", "caption": "kiŋarenata oni — tutandike" },
+    "farewell": "Eyalama noi — weebale inho.",
+    "audience": "Aboogera Olusoga abatandika okuva ku ntandikwa, ab’eka abava mu Teso, n’abatambuli abagenda e Soroti.",
+    "first": "Okulamusa, okweyanjula n’enamba, oluvanyuma ab’omu maka, emere, akatale, esaawa, ebifo, awaka n’obulamu, ekitundu ku kitundu."
+  },
+  "cast": { "emma": "Omugenyi ayiga Olwateso nga tanaba kutambula" }
+}

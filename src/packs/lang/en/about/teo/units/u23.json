@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u23",
+  "notes": { "halo": "From English hello." },
+  "tips": { "u23s1": "call", "u23s2": "meet", "u23s3": "call", "u23s4": "meet" },
+  "guidebook": {
+    "intro": "On the phone: calls, messages and meeting up.",
+    "tips": [
+      {
+        "id": "call",
+        "title": "Aŋari iyoŋ esimu",
+        "body": [
+          "**Esimu** is the phone. **Aŋari iyoŋ esimu** is “I call you”, **Kiŋar eoŋ esimu** “call me”. A call starts with **Halo** and **Ŋai erworo?** (who is speaking?)."
+        ]
+      },
+      {
+        "id": "meet",
+        "title": "Koriamakis oni",
+        "body": ["**Koriamakis oni** is “let’s meet”. **Akilari iyoŋ** is “I am waiting for you”, and **Ejai eoŋ ko erot** “I’m on the way”."]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Phones and mobile money",
+        "body": ["Even in the villages almost everyone has a phone, and money is sent by phone to relatives in town and back."]
+      }
+    ]
+  }
+}

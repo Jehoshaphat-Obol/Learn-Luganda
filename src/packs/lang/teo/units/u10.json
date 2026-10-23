@@ -1,0 +1,110 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u10",
+  "words": {
+    "engoye": { "text": "inanga" },
+    "essaati": { "text": "esati" },
+    "empale": { "text": "esuruali" },
+    "ekiteeteeyi": { "text": "egaun" },
+    "engatto": { "text": "ilwatin" },
+    "enkoofiira": { "text": "ekofia" },
+    "ekkooti": { "text": "ekoti" },
+    "essweta": { "text": "esweta" },
+    "gomesi": { "text": "egomesi" },
+    "kkanzu": { "text": "ekanzu" },
+    "yange": { "text": "kaŋ" },
+    "zange": { "text": "kaŋ lu" },
+    "nnyambala": { "text": "Asuki" },
+    "yambala": { "text": "Kisuk" },
+    "yambula": { "text": "Kidukokin" },
+    "nnaaba": { "text": "Alotari" },
+    "naaba": { "text": "Kilot" },
+    "eno": { "text": "lo" },
+    "nnene": { "text": "epolon" },
+    "ntono": { "text": "ediit" },
+    "ngitwala": { "text": "Akoliakini" },
+    "nnungi": { "text": "ejok" },
+    "sketi": { "text": "esikati" },
+    "kanga": { "text": "ekanga" },
+    "nimevaa": { "text": "Abu asuk" },
+    "kiatu": { "text": "elwat" },
+    "soksi": { "text": "isokisin" },
+    "ninavaa": { "text": "Asuki kolo" },
+    "ndefu": { "text": "elwanan" },
+    "fupi": { "text": "ekutan" },
+    "kununua": { "text": "akigwel" },
+    "saizi": { "text": "esaizi" },
+    "inanifaa": { "text": "Ekarit eoŋ" },
+    "jaribu": { "text": "Kitem" },
+    "kioo": { "text": "ekio" }
+  },
+  "sentences": {
+    "s-essaati-yange": { "text": "Esati kaŋ." },
+    "s-empale-yange": { "text": "Esuruali kaŋ." },
+    "s-engatto-zange": { "text": "Ilwatin kaŋ." },
+    "s-engoye-zange": { "text": "Inanga kaŋ." },
+    "s-ekiteeteeyi-kyange": { "text": "Egaun kaŋ." },
+    "s-enkoofiira-yange": { "text": "Ekofia kaŋ." },
+    "s-nnyambala-gomesi": { "text": "Asuki egomesi." },
+    "s-taata-ayambala-kkanzu": { "text": "Papa esuki ekanzu." },
+    "s-yambala-essweta": { "text": "Kisuk esweta." },
+    "s-yambula-engatto": { "text": "Kidukokin ilwatin." },
+    "s-nnaaba-ku-makya": { "text": "Alotari nakwana." },
+    "s-essaati-eno-ssente-mmeka": { "text": "Esati lo ilalak ai?" },
+    "s-empale-eno-nnene": { "text": "Esuruali lo epolon." },
+    "s-essaati-eno-ntono": { "text": "Esati lo ediit." },
+    "s-essaati-nnungi": { "text": "Esati lo ejok." },
+    "s-kale-ngitwala": { "text": "Kwana, akoliakini." },
+    "s-nimevaa-shati": { "text": "Abu asuk esati akwangan." },
+    "s-kofia-iko-wapi": { "text": "Ekofia kaŋ ejai ai?" },
+    "s-nguo-ghali": { "text": "Inanga ilalak noi." },
+    "s-kanga-mpya": { "text": "Ekanga kaŋ ititaŋ." },
+    "s-nimevaa-gauni": { "text": "Abu asuk egaun ka ekofia." },
+    "s-viatu-vichafu": { "text": "Ilwatin kaŋ ecil." },
+    "s-soksi-nyeusi": { "text": "Isokisin akiryon." },
+    "s-ninavaa-suruali": { "text": "Asuki esuruali kolo." },
+    "s-vaa-koti": { "text": "Kisuk ekoti, elilim." },
+    "s-vua-viatu": { "text": "Kidukokin ilwatin, kiyalama." },
+    "s-suruali-ndefu": { "text": "Esuruali elwanan noi." },
+    "s-sketi-fupi": { "text": "Esikati ekutan." },
+    "s-kununua-viatu": { "text": "Amina akigwel ilwatin." },
+    "s-saizi-gani": { "text": "Esaizi ŋai?" },
+    "s-inanifaa-vizuri": { "text": "Ekarit eoŋ ejok." },
+    "s-jaribu": { "text": "Kitem, kiyalama!" },
+    "s-kioo-kiko-wapi": { "text": "Ekio ejai ai?" }
+  },
+  "phrases": ["Esati kaŋ.", "Ilwatin kaŋ.", "Asuki egomesi.", "Kisuk esweta.", "Kidukokin ilwatin.", "Esati lo ilalak ai?", "Kwana, akoliakini."],
+  "dialogues": {
+    "u10s3l3": [
+      { "line": "Esati lo elufu itomon.", "options": ["Ilalak noi! Kidiitosi aigwel.", "Alotari nakwana.", "Ilwatin kaŋ."] },
+      { "line": "Kwana, elufu ikanyarei.", "options": ["Kwana, akoliakini.", "Kidukokin ilwatin.", "Eoŋ ekutan."] }
+    ]
+  },
+  "stories": {
+    "new-gomesi": {
+      "title": "Egomesi kanuka akilakar",
+      "summary": "{@nakato} egweli ŋinyo esuki ko kwanjula ka ikanacan keŋ.",
+      "lines": [
+        "Yoga, toto! Imina inyo?",
+        "Amina egomesi. Ejai kwanjula Nakaikanykape.",
+        "Egomesi lo epapo. Ejok noi!",
+        "Mam, amina ŋina arengan.",
+        "Kwana. Ŋina arengan kanu. Kitem!",
+        "Lo ediit. Ejai bo ŋina epolon?",
+        "Ee, lo epolon. Elufu akaikany.",
+        "Ilalak noi! Kidiitosi diŋ.",
+        "Kwana, elufu akaiwoŋon.",
+        "Kwana, akoliakini. Eyalama noi!"
+      ],
+      "questions": [
+        { "question": "Kwanjula ejai ŋolo?", "options": ["Nakaape", "Nakaikanykape", "Lolo"] },
+        { "question": "{@nakato} emina ekala ŋai?", "options": ["Epapo", "Arengan", "Akwangan"] },
+        { "question": "Egomesi arengan ejai ka inyo?", "options": ["Ediit noi", "Ilalak noi", "Akaru"] },
+        {
+          "question": "{@nakato} ewalai “Kwana, akoliakini” ai?",
+          "options": ["Kwana, akoliakini.", "Kidukokin ilwatin.", "Ejai kaŋ elilim."]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "Aganda erworete itunga ŋulu ipu kotoma Buganda, kiding ka Uganda, kotoma Kampala ka ŋulu elukuni.",
+  "notes": "Drafted by Claude (AI) for the Ateso courses (#131) with low confidence in Ateso; needs a native-speaker review. Word and unit notes fall back to the English notes about the target language.",
+  "landing": {
+    "hello": "Oli otya?",
+    "thanks": "Weebale",
+    "place": "Uganda",
+    "word": "okuyiga — akisisianakin",
+    "words": [
+      ["Oli otya?", "Ijai bo?"],
+      ["Gyendi", "Ejai ejok"],
+      ["Weebale", "Eyalama"],
+      ["Kale", "Kwana"],
+      ["Mukwano", "Ekone"],
+      ["Amazzi", "Akipi"],
+      ["Emmere", "Akimuj"],
+      ["Ssebo", "Lokapolon"],
+      ["Nnyabo", "Toto"],
+      ["Webale kujja", "Kobuka"]
+    ],
+    "why": {
+      "title": "Akiro ka **erot ka Kampala.**",
+      "text": "Aganda erworete itunga ŋulu ipu kiding ka Uganda, ka ŋesi ka akiro ŋina erworete noi kotoma Kampala. Kisisianakin kanuka akirworo ka ekal, akiriamun ikone kotoma ekeya, ka akiinyunia ekwaŋ ijai ore kotoma elosit.",
+      "cards": [
+        { "title": "Kanuka ekal", "text": "Kirwor ka ikapolok ka kisisianakin idwe akiro na." },
+        { "title": "Kanuka ikalosak", "text": "Kosiom itunga, kiwalak ikarin ka kilosi mam ikuriana." },
+        { "title": "Kanuka ŋulu emina ajenun", "text": "Kiriamu italia ka Buganda ka alemikineta keŋ." }
+      ]
+    },
+    "sample": {
+      "prompt": "Ŋai eteteuni “eyalama”?",
+      "options": ["Oli otya?", "Weebale", "Nedda"],
+      "answer": "Weebale",
+      "explain": "_Weebale_ eteteuni eyalama."
+    },
+    "start": { "word": "Tandika!", "caption": "tandika — kiŋarenata oni" },
+    "farewell": "Weebale nnyo — eyalama noi.",
+    "audience": "Itunga ŋulu erworete Ateso ŋulu ekiŋaren, ikalia ŋulu emina akirworo ka ikaitotak kesi kotoma Buganda, ka ikalosak ŋulu elosete kiding ka Uganda.",
+    "first": "Ayakuno, aitodiaar ka ikarin, kau ekal, akimuj, ekeya, apak, ŋiboro, etogo ka ajokus ka akwaŋan, aitodolet ka aitodolet."
+  },
+  "cast": { "emma": "Ekaitoŋaon ŋesi esisianakini Aganda kiŋaren elosit" }
+}

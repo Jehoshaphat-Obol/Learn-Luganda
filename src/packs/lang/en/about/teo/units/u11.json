@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u11",
+  "notes": { "buli-lunaku": "Literally “every day all”." },
+  "tips": { "u11s1": "routine", "u11s2": "we-they", "u11s3": "routine", "u11s4": "we-they" },
+  "guidebook": {
+    "intro": "My day: your routine from morning to night.",
+    "tips": [
+      {
+        "id": "routine",
+        "title": "Aŋari, abuni kuju",
+        "body": [
+          "**Aŋari** I wake up, **abuni kuju** I get up. **Ŋinikolong kere** means every day. **Asuamai** is “I work”; **aswam** is work.",
+          "Plural persons add **oni** (we) or **kesi** (they): **isuamai oni**, **esuamai kesi**."
+        ]
+      },
+      {
+        "id": "we-they",
+        "title": "oni and kesi",
+        "body": [
+          "Ateso often puts a pronoun after the verb: **Isuamai oni** (we work), **Esuamai kesi** (they work).",
+          "**Ayari** I cook, **alopi** I wash, **akisom** to read."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Early mornings",
+        "body": [
+          "In the village the day starts before sunrise: fetching water, milking, sweeping the yard. Breakfast, **akimuj lo nakwana**, is often porridge or tea."
+        ]
+      }
+    ]
+  }
+}

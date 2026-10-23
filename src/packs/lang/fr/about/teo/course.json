@@ -1,0 +1,47 @@
+{
+  "$schema": "../../../../../../docs/packs/schema/about.schema.json",
+  "status": "draft",
+  "description": "L’ateso est une langue nilotique orientale parlée par environ deux millions et demi de personnes dans l’est de l’Ouganda, autour de Soroti, Kumi, Serere et Amuria, et par les Iteso de l’ouest du Kenya.",
+  "notes": "Drafted by Claude (AI) for the Ateso courses (#131) with low confidence in Ateso; needs a native-speaker review. The French needs a native-speaker review too; word and unit notes fall back to the English notes (lang/en/about/teo).",
+  "landing": {
+    "hello": "Yoga",
+    "thanks": "Eyalama",
+    "place": "Teso",
+    "word": "akisisianakin — apprendre",
+    "words": [
+      ["Ijai bo?", "Comment vas-tu ?"],
+      ["Ejai ejok", "Je vais bien"],
+      ["Eyalama", "Merci"],
+      ["Kobuka", "Bienvenue"],
+      ["Ekone", "Ami"],
+      ["Akipi", "Eau"],
+      ["Akimuj", "Nourriture"],
+      ["Lokapolon", "Monsieur"],
+      ["Toto", "Madame"],
+      ["Kolosi ejok", "Au revoir"]
+    ],
+    "why": {
+      "title": "La langue de **Soroti, Kumi et des lacs du Teso.**",
+      "text": "L’ateso appartient à la famille ateker, avec le karimojong et le turkana : l’apprendre ouvre tout un groupe de langues, de l’Ouganda au Kenya et au Soudan du Sud. Apprenez-le pour la famille, le voyage, le travail, et les chants, les danses et les contes du Teso.",
+      "cards": [
+        { "title": "Pour la famille", "text": "Parlez avec les grands-parents et la famille à Soroti et Kumi." },
+        { "title": "Pour les voyageurs", "text": "Allez de Soroti à Kumi, à Ngora et au lac Bisina." },
+        {
+          "title": "Pour les curieux",
+          "text": "Découvrez une langue nilotique aux noms genrés et aux préfixes verbaux, sans classes nominales."
+        }
+      ]
+    },
+    "sample": {
+      "prompt": "Lequel veut dire « merci » ?",
+      "options": ["Ijai bo?", "Eyalama", "Mam"],
+      "answer": "Eyalama",
+      "explain": "_Eyalama_ veut dire merci."
+    },
+    "start": { "word": "Kiŋarenata oni !", "caption": "kiŋarenata oni — commençons" },
+    "farewell": "Eyalama noi — merci beaucoup.",
+    "audience": "Grands débutants, familles originaires du Teso, bénévoles et voyageurs en route vers l’est de l’Ouganda.",
+    "first": "Les salutations, les présentations et les nombres, puis la famille, la nourriture, le marché, l’heure, les lieux, la maison et la santé, unité par unité."
+  },
+  "cast": { "emma": "Une visiteuse qui apprend l’ateso avant son voyage" }
+}

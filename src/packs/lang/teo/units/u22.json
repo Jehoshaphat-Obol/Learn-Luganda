@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u22",
+  "words": {
+    "nnyumirwa": { "text": "Alakara ka" },
+    "okudduka": { "text": "akiruk" },
+    "okuwuga": { "text": "akilaŋar" },
+    "era": { "text": "ka" },
+    "omupiira": { "text": "epiira" },
+    "nzannya": { "text": "Alaki" },
+    "ttiimu": { "text": "etiimu" },
+    "goolo": { "text": "egoolo" },
+    "ewangudde": { "text": "abu elanyu" },
+    "awangudde": { "text": "ŋolo abu elanyu" },
+    "okuyimba": { "text": "akiwo" },
+    "okuzina": { "text": "akitolot" },
+    "ennyimba": { "text": "iwoi" },
+    "omuzannyo": { "text": "akileleb" },
+    "omweso": { "text": "omweso" },
+    "muda": { "text": "apak" },
+    "kuangalia": { "text": "akianyun" },
+    "mashabiki": { "text": "ikamakin" },
+    "tumeshinda": { "text": "Abu ilanyu oni" },
+    "tumefungwa": { "text": "Abu ikurunai oni" },
+    "karata": { "text": "ikadi" },
+    "bao": { "text": "ebawo" }
+  },
+  "sentences": {
+    "s22-nnyumirwa-okusoma": { "text": "Alakara ka akisom ikitabon." },
+    "s22-ndduka-ku-makya": { "text": "Alakara ka akiruk nakwana." },
+    "s22-okuwuga": { "text": "Amina akilaŋar ko anam." },
+    "s22-era": { "text": "Asomi, ka alaki." },
+    "s22-nzannya-omupiira": { "text": "Alaki epiira Nakaikanykape." },
+    "s22-ttiimu-yange": { "text": "Etiimu kaŋ abu elanyu!" },
+    "s22-goolo": { "text": "Egoolo! Igoolon iarei!" },
+    "s22-ani-awangudde": { "text": "Ŋai abu elanyu?" },
+    "s22-okuyimba": { "text": "Alakara ka akiwo ka akitolot." },
+    "s22-ennyimba-za-luganda": { "text": "Amina iwoi lu Aganda." },
+    "s22-omuzannyo": { "text": "Akileleb esiakit esaawa itomon." },
+    "s22-omweso": { "text": "Tata elaki omweso." },
+    "s-sina-muda": { "text": "Mam kaŋ apak lolo." },
+    "s-kuogelea": { "text": "Amina akilaŋar." },
+    "s-neema-kuimba": { "text": "{@amara} emina akiwo." },
+    "s-kuangalia-mpira": { "text": "Amina akianyun epiira." },
+    "s-mpira-wa-miguu": { "text": "Amina epiira." },
+    "s-timu-hodari": { "text": "Etiimu kaŋ ejok." },
+    "s-goli": { "text": "Egoolo! Egoolo!" },
+    "s-mchezo-gani": { "text": "Akileleb ŋai?" },
+    "s-mashabiki-wengi": { "text": "Ikamakin ipu!" },
+    "s-tumeshinda": { "text": "Abu ilanyu oni!" },
+    "s-tumefungwa-leo": { "text": "Abu ikurunai oni lolo." },
+    "s-wimbo-wako": { "text": "Amina ewo kon." },
+    "s-nyimbo-bongo": { "text": "Iwoi lu bongo flava." },
+    "s-tucheze-karata": { "text": "Kolakis oni ikadi!" },
+    "s-babu-bao": { "text": "Apapa elaki ebawo." }
+  },
+  "phrases": [
+    "Alakara ka akisom ikitabon.",
+    "Alaki epiira Nakaikanykape.",
+    "Etiimu kaŋ abu elanyu!",
+    "Ŋai abu elanyu?",
+    "Alakara ka akiwo ka akitolot.",
+    "Amina iwoi lu Aganda."
+  ],
+  "dialogues": { "u22s1l3": [{ "line": "Ilakara ka inyo?", "options": ["Alakara ka akiruk ka akilaŋar.", "Aonyar noi noi.", "Mam ajeni omweso."] }] },
+  "stories": {
+    "match-day": {
+      "title": "Akolong lo epiira",
+      "summary": "{@ssali} ka {@mukasa} eanyete Cranes elaki.",
+      "lines": [
+        "{@mukasa}! Epiira esiakit esaawa itomon. Ibuni bo?",
+        "Ee! Konye aonyar. Lolo abu asuam noi.",
+        "Mam itamata, ibeit oni akiboi bon. Ibeit oni akimat icai.",
+        "Etiimu wok ebeit akilany bo?",
+        "Mam ajeni. Etiimu ŋol ejok noi.",
+        "Egoolo! Egoolo!",
+        "Alakara noi noi! Ŋai abu ebil egoolo?",
+        "Ssaabaganzi! Etiimu wok abu elanyu!"
+      ],
+      "questions": [
+        { "question": "{@mukasa} einyunia ai?", "options": ["Elakara", "Eonyar", "Eŋoŋorit"] },
+        { "question": "Inyo abu esub kolo?", "options": ["Egoolo", "Akileleb abu edit", "Akiru abu esiak"] },
+        {
+          "question": "{@mukasa} ewalai “etiimu wok abu elanyu” ai?",
+          "options": ["Etiimu wok abu elanyu", "Ŋai abu elanyu?", "Alakara ka epiira"]
+        }
+      ]
+    }
+  }
+}

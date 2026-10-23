@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u34",
+  "notes": { "singa": "Arai: if." },
+  "tips": { "u34s1": "ne", "u34s2": "would", "u34s3": "ne", "u34s4": "would" },
+  "guidebook": {
+    "intro": "When and if.",
+    "tips": [
+      {
+        "id": "ne",
+        "title": "Ne: when",
+        "body": ["**Ne** starts a “when” clause: **Ne aŋaa, amati ecai** (when I wake up, I drink tea). **Arai** is “if”."]
+      },
+      {
+        "id": "would",
+        "title": "Arai… -ni: would",
+        "body": [
+          "With **arai** (if), the verb ending **-ni** gives “would”: **Arai ajaasi isiringin, adumuni emotoka** (if I had money, I would buy a car). **Arai Edeke emina** is “God willing”."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "God willing",
+        "body": ["**Arai Edeke emina** is said after any promise about the future, from a meeting tomorrow to a harvest next year."]
+      }
+    ]
+  }
+}

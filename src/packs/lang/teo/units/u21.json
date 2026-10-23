@@ -1,0 +1,80 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u21",
+  "words": {
+    "nsanyuse": { "text": "Alakara eoŋ" },
+    "nnakuwadde": { "text": "Akuro eoŋ" },
+    "oli-bulungi": { "text": "Ijai ejok bo?" },
+    "nneewuunya": { "text": "Akwaŋit" },
+    "nkooye": { "text": "Aonyar" },
+    "ntidde": { "text": "Akuriana" },
+    "nneeraliikirira": { "text": "Atamata" },
+    "nnyiize": { "text": "Aŋoŋorit" },
+    "ali-atya": { "text": "Ejai bo?" },
+    "bambi": { "text": "Ikiaŋ" },
+    "nsonyiwa": { "text": "Kiŋalakin eoŋ" },
+    "nkwagala": { "text": "Amina iyoŋ" },
+    "nkusubwa": { "text": "Abu atamata iyoŋ" },
+    "mukwano-gwange": { "text": "ekone kaŋ" },
+    "tokaaba": { "text": "Mam ikiyo" },
+    "samahani": { "text": "Kiŋalakin" },
+    "furaha": { "text": "alakara" },
+    "nina-furaha": { "text": "Ejaasi kaŋ alakara" },
+    "huzuni": { "text": "akuro" },
+    "hasira": { "text": "aŋoŋor" },
+    "naogopa": { "text": "Ejaasi kaŋ akikuria" },
+    "wasiwasi": { "text": "atamat" },
+    "kuhusu": { "text": "kanuka" },
+    "usijali": { "text": "Mam itamata" },
+    "bahati-njema": { "text": "Akisub ejok" }
+  },
+  "sentences": {
+    "s21-nsanyuse-nnyo": { "text": "Alakara eoŋ noi lolo!" },
+    "s21-lwaki-onakuwadde": { "text": "Kanu ikuro iyoŋ?" },
+    "s21-oli-bulungi": { "text": "Ijai ejok bo, ekone kaŋ?" },
+    "s21-nneewuunya": { "text": "Akwaŋit! Ibuni lolo?" },
+    "s21-nkooye-nnyo": { "text": "Aonyar noi. Abeit aperit." },
+    "s21-ntidde": { "text": "Akuriana, ekiron eruoto." },
+    "s21-nneeraliikirira": { "text": "Atamata kanuka akitemokin." },
+    "s21-nnyiize": { "text": "Aŋoŋorit naarai etakisi mam abu ebuni." },
+    "s21-maama-ali-atya": { "text": "Toto kon ejai bo?" },
+    "s21-bambi": { "text": "Ikiaŋ! Kidam atipet." },
+    "s21-nsonyiwa": { "text": "Kiŋalakin eoŋ, abu atebokin." },
+    "s21-nkwagala-maama": { "text": "Amina iyoŋ noi, Toto." },
+    "s21-nkusubwa": { "text": "Abu atamata iyoŋ, ekone kaŋ." },
+    "s21-tokaaba": { "text": "Mam ikiyo, ikoku kaŋ." },
+    "s-pole-sana": { "text": "Ikiaŋ noi!" },
+    "s-samahani-daktari": { "text": "Kiŋalakin, edakitari." },
+    "s-nimechoka-sana": { "text": "Aonyar noi noi." },
+    "s-nina-furaha": { "text": "Ejaasi kaŋ alakara lolo!" },
+    "s-siku-ya-furaha": { "text": "Akolong lo alakara." },
+    "s-nina-huzuni": { "text": "Ejaasi kaŋ akuro." },
+    "s-nimefurahi-sana": { "text": "Alakara noi noi!" },
+    "s-nimeshangaa": { "text": "Akwaŋit jwi!" },
+    "s-bosi-hasira": { "text": "Ekapolon ejaasi aŋoŋor." },
+    "s-nimekasirika": { "text": "Aŋoŋorit noi!" },
+    "s-naogopa-mbwa": { "text": "Ejaasi kaŋ akikuria ka ikinok." },
+    "s-usijali": { "text": "Mam itamata, mam ikiaŋ." },
+    "s-nakupenda-bibi": { "text": "Amina iyoŋ, Tata." },
+    "s-hongera-mtihani": { "text": "Eyalama kanuka akitemokin!" },
+    "s-bahati-njema": { "text": "Akisub ejok moi!" }
+  },
+  "phrases": [
+    "Alakara eoŋ noi lolo!",
+    "Ijai ejok bo, ekone kaŋ?",
+    "Aonyar noi noi.",
+    "Atamata kanuka akitemokin.",
+    "Ikiaŋ! Kidam atipet.",
+    "Kiŋalakin eoŋ, abu atebokin.",
+    "Abu atamata iyoŋ."
+  ],
+  "dialogues": {
+    "u21s2l3": [
+      {
+        "line": "Ijai ejok bo? Ianyunare ionyar.",
+        "options": ["Ee, aonyar noi noi. Lolo abu asuam noi.", "Alakara aanyun iyoŋ.", "Mam ikiyo."]
+      }
+    ],
+    "u21s3l3": [{ "line": "Akuro eoŋ. Tata edekak.", "options": ["Ikiaŋ! Abeit akiinapak ŋesi.", "Alakara eoŋ noi!", "Aŋoŋorit."] }]
+  }
+}

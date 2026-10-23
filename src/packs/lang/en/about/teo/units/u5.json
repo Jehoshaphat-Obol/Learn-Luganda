@@ -1,0 +1,35 @@
+{
+  "$schema": "../../../../../../../docs/packs/schema/about-unit.schema.json",
+  "id": "u5",
+  "notes": { "leero": "Lolo: today.", "ekiro": "Akwar: night." },
+  "tips": { "u5s1": "days", "u5s2": "time", "u5s3": "days", "u5s4": "time" },
+  "guidebook": {
+    "intro": "Time and days. Ateso tells time the East African way: the day starts at 7am, **esaawa ape** (hour one).",
+    "tips": [
+      {
+        "id": "days",
+        "title": "Nakaape, Nakaarei…",
+        "body": [
+          "The weekdays are counted from Monday: **Nakaape** (day one), **Nakaarei**, **Nakauni**, **Nakaiwoŋon**, **Nakaikany**, **Nakaikanykape** (day six, Saturday), then **Sabiti** (Sunday, the Sabbath).",
+          "**Lolo** today, **moi** tomorrow, **ŋolo** yesterday."
+        ]
+      },
+      {
+        "id": "time",
+        "title": "Esaawa ape",
+        "body": [
+          "Hours start at sunrise: **esaawa ape** is 7am, **esaawa iarei** 8am. Add six to the English hour and you will be close.",
+          "**Nakwana** morning, **akolong** daytime, **ataparan** evening, **akwar** night."
+        ]
+      }
+    ],
+    "culture": [
+      {
+        "title": "Telling time by the sun",
+        "body": [
+          "In the village people still read the day by the sun and the cattle: milking time, when the cows go out to graze, and when they come home at **ataparan**."
+        ]
+      }
+    ]
+  }
+}
