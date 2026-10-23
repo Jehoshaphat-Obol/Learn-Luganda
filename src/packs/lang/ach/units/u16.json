@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u16",
+  "words": {
+    "ttakisi": { "text": "takci" },
+    "bbaasi": { "text": "bac" },
+    "paaka": { "text": "pak" },
+    "siteegi": { "text": "teg" },
+    "egenda": { "text": "cito" },
+    "mmotoka": { "text": "motoka" },
+    "bodaboda": { "text": "boda" },
+    "eggaali": { "text": "gari" },
+    "mpola": { "text": "mot" },
+    "mangu": { "text": "oyot" },
+    "olugendo": { "text": "wot" },
+    "okuva": { "text": "ki" },
+    "okutuuka": { "text": "oo" },
+    "ntuuse": { "text": "Aoo" },
+    "ennyonyi": { "text": "ndege" },
+    "tugende": { "text": "Wacit" },
+    "olugendo-olulungi": { "text": "Wot maber!" },
+    "tiketi": { "text": "tikiti" },
+    "treni": { "text": "gari mac" },
+    "uwanja-wa-ndege": { "text": "kabedo me ndege" },
+    "kusafiri": { "text": "woto" },
+    "nitasafiri": { "text": "Abiwoto" },
+    "tutaondoka": { "text": "Wabiaa" },
+    "itafika": { "text": "bio" },
+    "mzigo": { "text": "jami" },
+    "nimechelewa": { "text": "Agalo" }
+  },
+  "sentences": {
+    "s16-ttakisi-egenda-wa": { "text": "Takci man cito kwene?" },
+    "s16-ttakisi-egenda-entebbe": { "text": "Takci cito i {@nearby}." },
+    "s16-bbaasi-eri-ku-paaka": { "text": "Bac tye i pak." },
+    "s16-yimirira-ku-siteegi": { "text": "Cung i teg." },
+    "s16-mmotoka-yange": { "text": "Motoka mera nyen." },
+    "s16-ntwala-ku-bodaboda": { "text": "Atye ka cito ki boda.", "alts": ["Atye ka cito ki boda boda."] },
+    "s16-genda-mpola": { "text": "Cit mot, ladit!" },
+    "s16-tugende-mangu": { "text": "Wacit oyot!" },
+    "s16-okuva-kampala": { "text": "Ki i {@city} cito i {@hometown}." },
+    "s16-olugendo-luwanvu": { "text": "Wot bor." },
+    "s16-ntuuse": { "text": "Aoo maber." },
+    "s16-ennyonyi-ebuuka": { "text": "Ndege tye ka por." },
+    "s16-olugendo-olulungi": { "text": "Bed maber! Wot maber!" },
+    "s-pole-pole": { "text": "Mot mot, tim ber." },
+    "s-haraka": { "text": "Oyot, oyot!" },
+    "s-tiketi-bei": { "text": "Tikiti wel ne adi?" },
+    "s-kituo-cha-basi": { "text": "Teg me bac tye kwene?" },
+    "s-safari-ndefu": { "text": "Wot me cito i {@city} bor." },
+    "s-twende-kituoni": { "text": "Wacit i teg." },
+    "s-uwanja-wa-ndege": { "text": "Kabedo me ndege bor." },
+    "s-nitasafiri-kesho": { "text": "Abiwoto diki." },
+    "s-treni-itafika": { "text": "Gari mac bio cawa adi?" },
+    "s-mzigo-mzito": { "text": "Jami meri pek!" },
+    "s-nimechelewa": { "text": "Agalo! Timwa kica." }
+  },
+  "phrases": ["Takci man cito kwene?", "Cung i teg.", "Cit mot, ladit!", "Ki i {@city} cito i {@hometown}.", "Aoo maber.", "Wot maber!"],
+  "dialogues": {
+    "u16s1l3": [
+      {
+        "line": "Itye ka cito kwene?",
+        "options": ["Atye ka cito i {@nearby}. Takci man cito i {@nearby}?", "Alworo twol!", "Atye ki lapeny."]
+      }
+    ]
+  },
+  "stories": {
+    "taxi-to-jinja": {
+      "title": "Takci me {@getaway}",
+      "summary": "{@nakato} nongo takci ma atir ci oo i {@getaway}.",
+      "lines": [
+        "Ladit, takci man cito kwene?",
+        "Cito i Mukono. In itye ka cito kwene?",
+        "Atye ka cito i {@getaway}.",
+        "Takci me {@getaway} tye kunnu, i teg.",
+        "Apwoyo matek! Cente adi me cito i {@getaway}?",
+        "Alip apar.",
+        "Wot bor?",
+        "Pe, cawa aryo keken.",
+        "Ber. Wacit!",
+        "Maa, aoo maber i {@getaway}!"
+      ],
+      "questions": [
+        { "question": "{@nakato} mito cito kwene?", "options": ["Mukono", "{@getaway}", "{@hometown}"] },
+        { "question": "Cente me wot adi?", "options": ["Alip abic", "Alip apar", "Alip acel"] },
+        { "question": "{@nakato} waco bot min ne ni oo nining?", "options": ["Aoo maber.", "Cit mot.", "Cung kany."] }
+      ]
+    }
+  }
+}

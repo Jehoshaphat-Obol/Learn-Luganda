@@ -1,0 +1,90 @@
+{
+  "$schema": "../../../../../docs/packs/schema/lang-unit.schema.json",
+  "id": "u18",
+  "words": {
+    "ki": { "text": "ngo" },
+    "kiki": { "text": "Obedo ngo?" },
+    "ekyo": { "text": "meno" },
+    "oyo": { "text": "ngat meno" },
+    "wa": { "text": "kwene" },
+    "oli-wa": { "text": "Itye kwene?" },
+    "ddi": { "text": "awene" },
+    "ojja": { "text": "ibino" },
+    "lwaki": { "text": "pingo" },
+    "kubanga": { "text": "pien" },
+    "oba": { "text": "onyo" },
+    "okwogera": { "text": "loko" },
+    "njogera": { "text": "Aloko" },
+    "oyogera": { "text": "Iloko" },
+    "katono": { "text": "manok" },
+    "kiyitibwa": { "text": "gilwongo ni" },
+    "kitya": { "text": "nining" },
+    "kesho-kutwa": { "text": "diki ka okato" },
+    "mapema": { "text": "con" },
+    "miaka": { "text": "mwaki" },
+    "mingapi": { "text": "mwaki adi" },
+    "ngapi": { "text": "adi" },
+    "wangapi": { "text": "dano adi" }
+  },
+  "sentences": {
+    "s18-oyagala-ki": { "text": "Imito ngo tin?" },
+    "s18-kino-kiki": { "text": "Man ngo?" },
+    "s18-ekyo-kiki": { "text": "Meno ngo?" },
+    "s18-ani-oyo": { "text": "Meno nga?" },
+    "s18-ekitabo-kiri-wa": { "text": "Buk mera tye kwene?" },
+    "s18-oli-wa": { "text": "Itye kwene kombedi?" },
+    "s18-ojja-ddi": { "text": "Ibino awene?" },
+    "s18-njija-enkya": { "text": "Abibino diki." },
+    "s18-lwaki-osoma": { "text": "Pingo itye ka pwonye {to}?" },
+    "s18-kubanga": { "text": "Pien amito loko ki dano." },
+    "s18-caayi-oba-kaawa": { "text": "Cai onyo kawa?" },
+    "s18-oyogera-oluganda": { "text": "Iloko {to}?" },
+    "s18-njogera-katono": { "text": "Aloko manok." },
+    "s18-kiyitibwa-kitya": { "text": "Man gilwongo ni ngo i {to}?" },
+    "s-tutaondoka-mapema": { "text": "Wabiaa con." },
+    "s-utasafiri-lini": { "text": "Ibiwoto awene?" },
+    "s-kesho-kutwa-mombasa": { "text": "Diki ka okato abicito i {@getaway}." },
+    "s-miaka-mingapi": { "text": "Itye ki mwaki adi?" },
+    "s-miaka-ishirini": { "text": "Atye ki mwaki pyeraryo." },
+    "s-shilingi-ngapi": { "text": "Ciling adi?" },
+    "s-watoto-wangapi": { "text": "Itye ki lutino adi?" },
+    "s-habari-vipi": { "text": "Jami tye nining?" },
+    "s-kwa-nini": { "text": "Pingo pe imito cai?" },
+    "s-kwa-sababu": { "text": "Pien pe amaro cai." }
+  },
+  "phrases": [
+    "Man ngo?",
+    "Meno nga?",
+    "Itye kwene kombedi?",
+    "Ibino awene?",
+    "Pingo itye ka pwonye {to}?",
+    "Iloko {to}?",
+    "Man gilwongo ni ngo i {to}?"
+  ],
+  "dialogues": {
+    "u18s2l3": [{ "line": "Itye kwene kombedi?", "options": ["Atye i pak me takci. Atye ka bino!", "Pe angeyo Leb Ganda.", "Man ngo?"] }],
+    "u18s3l3": [{ "line": "Pingo itye ka pwonye {to}?", "options": ["Pien amito loko ki kwaro mera.", "Cai onyo kawa?", "Ibino awene?"] }]
+  },
+  "stories": {
+    "what-is-this": {
+      "title": "Man gilwongo ni ngo?",
+      "summary": "{@emma} penyo {@jjajja} nying jami i ot tedo mere.",
+      "lines": [
+        "Adaa, man gilwongo ni ngo i Leb Ganda?",
+        "Meno aduku.",
+        "Aduku. Ki man ngo?",
+        "Man pala.",
+        "Pe aniang. Dok ki mot, Adaa.",
+        "Pala. Man pala.",
+        "Pingo itye ka pwonye Leb Ganda, latina?",
+        "Pien amito loko kwedi!",
+        "Oo, meno ber matek! Iloko maber.",
+        "Pe, aloko manok."
+      ],
+      "questions": [
+        { "question": "{@emma} tye ka timo ngo?", "options": ["Penyo nying jami", "Tedo cam me otyeno", "Wilo aduku"] },
+        { "question": "Pingo {@emma} tye ka pwonye Leb Ganda?", "options": ["Pi cukul", "Me loko ki {@jjajja}", "Me wilo jami i cuk"] }
+      ]
+    }
+  }
+}
